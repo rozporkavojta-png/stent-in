@@ -1,0 +1,896 @@
+{
+ "task": "web_horni-falc_cile",
+ "kraj": "Horní Falc",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "w58246643",
+   "name": "Amberger Congress Centrum (ACC)",
+   "obec": "Amberg",
+   "address": "Schießstätteweg 8",
+   "lat": 49.441389,
+   "lng": 11.859457,
+   "category": "kultura",
+   "source_url": "https://www.acc-amberg.de/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup do budovy i všechny prostory pro hosty jsou bez schodů nebo dostupné výtahem; dveře a průchody min. 90 cm; certifikace „Reisen für Alle“ (bezbariérové pro osoby s omezenou chůzí, částečně pro vozíčkáře).",
+    "wc": "Bezbariérové WC v suterénu foyer.",
+    "parkovani": "Vlastní vyhrazené místo pro OZP u „Künstlereingang“ (vedle hotelového parkoviště); veřejné vyhrazené místo na Ernst-Michl-Platz pár metrů od hlavního vchodu.",
+    "vytah": "Výtah, kabina 113 × 160 cm.",
+    "jine": "Ve Velkém sále rezervovaná místa pro vozíčkáře; v gastronomii podjízdné stoly; pokladní pult 97 cm s alternativou vsedě."
+   },
+   "measurements": [
+    {
+     "co": "kabina výtahu (š × h)",
+     "hodnota": "113 × 160",
+     "jednotka": "cm"
+    },
+    {
+     "co": "min. šířka dveří a průchodů",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška pokladního pultu",
+     "hodnota": 97,
+     "jednotka": "cm"
+    },
+    {
+     "co": "manipulační plocha vlevo od WC (dle webu)",
+     "hodnota": "36 × 54",
+     "jednotka": "cm"
+    },
+    {
+     "co": "manipulační plocha vpravo od WC (dle webu)",
+     "hodnota": "124 × 54",
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "barrierefrei für Menschen mit Gehbehinderung und teilweise barrierefrei für Rollstuhlfahrer"
+  },
+  {
+   "osm_id": "w205976278",
+   "name": "Provinzialbibliothek Amberg",
+   "obec": "Amberg",
+   "address": "Malteserplatz 4",
+   "lat": 49.444282,
+   "lng": 11.85037,
+   "category": "kultura",
+   "source_url": "https://www.provinzialbibliothek-amberg.de/kontakt/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "parkovani": "Město Amberg vyznačuje v centru místa pro OZP, 2 z nich přímo na Malteserplatz u knihovny."
+   },
+   "measurements": [],
+   "evidence_quote": "Davon befinden sich 2 direkt am Malteserplatz."
+  },
+  {
+   "osm_id": "w130711788",
+   "name": "BaierWeinMuseum",
+   "obec": "Bach an der Donau",
+   "address": "Hauptstraße 1b",
+   "lat": 49.020929,
+   "lng": 12.294674,
+   "category": "pamatky",
+   "source_url": "https://www.baierwein-museum.de/kontakt/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Přístup „omezeně bezbariérový“: většina muzea je bezbariérová, kromě sklepní expozice a vinice."
+   },
+   "measurements": [],
+   "evidence_quote": "Zugang eingeschränkt barrierefrei"
+  },
+  {
+   "osm_id": "w520647205",
+   "name": "Sibyllenbad",
+   "obec": "Bad Neualbenreuth",
+   "address": "Kurallee 1",
+   "lat": 49.980638,
+   "lng": 12.420739,
+   "category": "sport",
+   "source_url": "https://www.sibyllenbad.de/ueber-das-sibyllenbad/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "V rámci rekonstrukce BadeTempelu se plánuje nové sociální zázemí včetně WC pro OZP (stránka o rekonstrukci https://www.sibyllenbad.de/update-badetempel-sanierung/).",
+    "vytah": "Kurmittelhaus má výtahy.",
+    "jine": "Celý Kurmittelhaus je vybaven pro vozíčkáře: zvedáky do van, fango místnost sjízdná vozíkem, zvedák do terapeutického bazénu, převlékárna pro OZP, bezbariérové wellness. Orientální BadeTempel není ze stavebních důvodů sjízdný vozíkem."
+   },
+   "measurements": [],
+   "evidence_quote": "Der orientalische BadeTempel ist aus baulichen Gründen nicht mit Rollstühlen befahrbar."
+  },
+  {
+   "osm_id": "w276511856",
+   "name": "Bulmare Hallenbad",
+   "obec": "Burglengenfeld",
+   "address": "Im Naabtalpark 44",
+   "lat": 49.193797,
+   "lng": 12.04485,
+   "category": "sport",
+   "source_url": "https://www.bulmare.de/infos/menschen-mit-handicap/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "WC pro OZP mimo bazénovou část u restaurace; prostorné sociální zázemí pro OZP.",
+    "parkovani": "Vyhrazená parkovací místa pro OZP před bazénem.",
+    "jine": "Do zážitkového bazénu se lze dostat mobilním zvedákem; k zapůjčení 2 vozíky do mokrého prostředí; 2 převlékárny pro OZP. Den předem je vhodné se ohlásit; doprovod s „B“ v průkazu zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Mit dem Rollstuhl ins Bulmare? Kein Problem."
+  },
+  {
+   "osm_id": "w162176074",
+   "name": "Geschichtspark Bärnau - Tachov",
+   "obec": "Bärnau",
+   "address": "Naaber Straße 5b",
+   "lat": 49.807908,
+   "lng": 12.431787,
+   "category": "pamatky",
+   "source_url": "https://www.geschichtspark.de/elementor-6373/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Některé domy mají poměrně vysoké prahy.",
+    "wc": "WC je bezbariérově dostupné.",
+    "jine": "Cesty v areálu jsou dobře sjízdné vozíkem i kočárkem; muzejní hostinec a stálá expozice bezbariérově dostupné; pravidelně lavičky."
+   },
+   "measurements": [],
+   "evidence_quote": "Die Wege auf dem Gelände sind mit Rollstuhl und Kinderwagen gut befahrbar."
+  },
+  {
+   "osm_id": "w600728544",
+   "name": "Walhalla",
+   "obec": "Donaustauf",
+   "address": null,
+   "lat": 49.031119,
+   "lng": 12.224061,
+   "category": "pamatky",
+   "source_url": "https://www.schloesser.bayern.de/deutsch/schloss/objekte/walhalla_mobilitaet.htm",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstupní úroveň dostupná rampou (sklon max. 6 %); cesta k pokladně rovná, dveře otevřené; na práh položí personál na požádání přenosnou rampu. Uvnitř všechny důležité části bez schodů, dveře min. 80 cm, podlaha rovná a trochu kluzká.",
+    "wc": "Bezbariérové WC v domku za Walhallou, na Euroklíč (lze zapůjčit u pokladny).",
+    "parkovani": "2 místa pro OZP přímo vedle Walhally; s Euroklíčem lze projet závorou autem. Z návštěvnického parkoviště vede bezbariérová cesta (zpevněný štěrk, bez schodů, malé stoupání).",
+    "jine": "K zapůjčení přenosné skládací stoličky. Pozor: pěší cesta od autobusu (Walhallastraße) vede po 358 schodech. Web odkazuje na video vozíčkářky z prohlídky."
+   },
+   "measurements": [
+    {
+     "co": "max. sklon rampy ke vstupu",
+     "hodnota": 6,
+     "jednotka": "%"
+    },
+    {
+     "co": "min. šířka dveří uvnitř",
+     "hodnota": 80,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Die Eingangsebene der Walhalla ist barrierefrei über eine Rampe zu erreichen"
+  },
+  {
+   "osm_id": "n5104023600",
+   "name": "Ausstellung \"Was bleibt - Nachwirkungen des KZ Flossenbürg\"",
+   "obec": "Flossenbürg",
+   "address": null,
+   "lat": 49.736047,
+   "lng": 12.357551,
+   "category": "pamatky",
+   "source_url": "https://www.gedenkstaette-flossenbuerg.de/de/besuch/informationen/barrierefreiheit",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Výstava je součástí KZ-Gedenkstätte Flossenbürg; všechny části vzdělávacího centra a výstavních budov jsou bezbariérové.",
+    "wc": "Bezbariérová WC v obou výstavních budovách i ve vzdělávacím centru.",
+    "parkovani": "Místa pro OZP naproti hlavnímu vchodu bývalé komandatury a u muzejní kavárny.",
+    "vytah": "Budovy jsou vybaveny výtahy.",
+    "jine": "Cesty v areálu bezbariérové, v zimě možná omezení."
+   },
+   "measurements": [],
+   "evidence_quote": "Sämtliche Bereiche im Bildungszentrum und den Ausstellungsgebäuden sind barrierefrei"
+  },
+  {
+   "osm_id": "w150141297",
+   "name": "KZ-Gedenkstätte Flossenbürg",
+   "obec": "Flossenbürg",
+   "address": "Gedächtnisallee 5",
+   "lat": 49.735325,
+   "lng": 12.357125,
+   "category": "pamatky",
+   "source_url": "https://www.gedenkstaette-flossenbuerg.de/de/besuch/informationen/barrierefreiheit",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Všechny části vzdělávacího centra a výstavních budov jsou bezbariérové.",
+    "wc": "Bezbariérová WC v obou výstavních budovách i ve vzdělávacím centru.",
+    "parkovani": "Místa pro OZP naproti hlavnímu vchodu bývalé komandatury a u muzejní kavárny; všechna parkoviště zdarma.",
+    "vytah": "Budovy jsou vybaveny výtahy.",
+    "jine": "Vedení cest v areálu je bezbariérové; v zimě může dojít k omezení."
+   },
+   "measurements": [],
+   "evidence_quote": "Die Wegeführung auf dem Gelände ist barrierefrei gestaltet."
+  },
+  {
+   "osm_id": "w430194219",
+   "name": "Aurelium",
+   "obec": "Lappersdorf",
+   "address": "Am Anger 1",
+   "lat": 49.049008,
+   "lng": 12.091793,
+   "category": "kultura",
+   "source_url": "https://aurelium.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí jen heslovitě „Barrierefrei“ bez podrobností.",
+    "parkovani": "Parkování přímo před budovou (obecně, ne konkrétně pro OZP)."
+   },
+   "measurements": [],
+   "evidence_quote": "Barrierefrei Parken vor der Tür"
+  },
+  {
+   "osm_id": "w240482296",
+   "name": "Bayerwald-Tierpark",
+   "obec": "Lohberg",
+   "address": "Schwarzenbacher Straße 1 a",
+   "lat": 49.169667,
+   "lng": 13.087415,
+   "category": "pamatky",
+   "source_url": "https://www.bayerwald-tierpark.de/besucher-info/ausstattung",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Dvě WC, i pro OZP.",
+    "parkovani": "Stinné parkoviště v lese pro auta a autobusy (místa pro OZP web nezmiňuje).",
+    "jine": "Certifikát „Barrierefreiheit geprüft“ (šetření 10. 7. 2020): částečně bezbariérové pro osoby s omezenou chůzí; platnost značky dle webu 07/2020–06/2023. Podrobná zpráva i pro vozíčkáře je na webu v PDF."
+   },
+   "measurements": [],
+   "evidence_quote": "teilweise barrierefrei für Menschen mit Gehbehinderung"
+  },
+  {
+   "osm_id": "w39174574",
+   "name": "Freilandmuseum Oberpfalz",
+   "obec": "Nabburg",
+   "address": "Neusath 200",
+   "lat": 49.46496,
+   "lng": 12.223128,
+   "category": "pamatky",
+   "source_url": "https://www.freilandmuseum-oberpfalz.de/ihr-besuch/barrierefrei-im-museum",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "WC pro OZP v pokladní části a v muzejním hostinci Unterbürg.",
+    "jine": "Cesty v muzeu nejsou asfaltové a pro vozík místy dost strmé; u pokladny poradí vhodnou trasu. Programy pro lidi s handicapem po domluvě."
+   },
+   "measurements": [],
+   "evidence_quote": "für Menschen mit Gehbehinderung oder im Rollstuhl zum Teil recht steil"
+  },
+  {
+   "osm_id": "w18798414",
+   "name": "Reitstadel",
+   "obec": "Neumarkt in der Oberpfalz",
+   "address": "Residenzplatz 3",
+   "lat": 49.280985,
+   "lng": 11.46032,
+   "category": "pamatky",
+   "source_url": "https://www.neumarkt.de/kultur-stadtinfo/veranstaltungsraeume/reitstadel/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "parkovani": "140 míst v podzemní garáži s přímým přístupem do foyer (místa pro OZP nejsou uvedena).",
+    "vytah": "Výtah do koncertního sálu (přístavba Reitstadelu).",
+    "jine": "V sále 3 místa pro vozíčkáře (z celkem 455 míst)."
+   },
+   "measurements": [
+    {
+     "co": "místa pro vozíčkáře v sále",
+     "hodnota": 3,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "3 Rollstuhlplätze"
+  },
+  {
+   "osm_id": "n1729673548",
+   "name": "Therapiezentrum im REZ",
+   "obec": "Oberwinzer",
+   "address": null,
+   "lat": 49.013342,
+   "lng": 12.051951,
+   "category": "sport",
+   "source_url": "https://therapiezentrum-im-rez.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vchod v pasáži Rennplatzzentrum vedle lékárny; praxe ve 3. patře je vhodná pro vozík.",
+    "vytah": "Dostupné výtahem."
+   },
+   "measurements": [],
+   "evidence_quote": "Unsere Praxis ist im dritten Stock, rollstuhlgeeignet und mit dem Aufzug erreichbar."
+  },
+  {
+   "osm_id": "n3170082716",
+   "name": "Vulkanerlebnis Parkstein",
+   "obec": "Parkstein",
+   "address": "Schloßgasse 5",
+   "lat": 49.732137,
+   "lng": 12.067646,
+   "category": "pamatky",
+   "source_url": "https://www.vulkanerlebnis-parkstein.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Muzeum je podle webu „durchgängig barrierefrei“; Festsaal a Steinstadl dostupné výtahem.",
+    "wc": "Bezbariérové WC v muzeu; další bezbariérové veřejné WC s naváděcím systémem na parkovišti Basaltwand (denně 7–20 h).",
+    "parkovani": "Hosté s handicapem mohou parkovat přímo před vchodem.",
+    "vytah": "Výtah v muzeu.",
+    "jine": "Výstup k čedičové kupě podél Geopfadu je vhodný pro kočárky (o vozíku web nemluví)."
+   },
+   "measurements": [],
+   "evidence_quote": "Unser Museum ist barrierefrei und verfügt über einen Lift sowie ein barrierefreies WC."
+  },
+  {
+   "osm_id": "w231496374",
+   "name": "Bischöfliche Zentralbibliothek",
+   "obec": "Regensburg",
+   "address": "Sankt-Peters-Weg 11;13",
+   "lat": 49.015638,
+   "lng": 12.095614,
+   "category": "kultura",
+   "source_url": "https://bistum-regensburg.de/bistum/einrichtungen-a-z/bischoefliche-zentralbibliothek-regensburg",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "K dispozici výtah vhodný pro OZP."
+   },
+   "measurements": [],
+   "evidence_quote": "Ein behindertengerechter Aufzug steht zur Verfügung."
+  },
+  {
+   "osm_id": "w100118132",
+   "name": "Kunstforum Ostdeutsche Galerie",
+   "obec": "Regensburg",
+   "address": "Dr.-Johann-Maier-Straße 5",
+   "lat": 49.019888,
+   "lng": 12.08224,
+   "category": "kultura",
+   "source_url": "https://www.kunstforum.net/ihr-besuch/barrierefreiheit",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup do muzea je v úrovni terénu; prostory s dočasnými výstavami v přízemí jsou přístupné bez překážek.",
+    "wc": "Bezbariérové WC v přízemí.",
+    "parkovani": "Muzeum nemá vlastní parkoviště; při potřebě kontaktovat muzeum.",
+    "vytah": "Stálá expozice v 1. patře je normálně dostupná výtahem, ale kvůli stavebním pracím (od 09/2022) výtah nefunguje – jen po schodech; v přízemí zřízen náhradní sál s výběrem děl.",
+    "jine": "K dispozici mobilní muzejní stoličky."
+   },
+   "measurements": [],
+   "evidence_quote": "Der Eingang ins Museum ist ebenerdig."
+  },
+  {
+   "osm_id": "w558371648",
+   "name": "Museum der Bayerischen Geschichte",
+   "obec": "Regensburg",
+   "address": "Donaumarkt 1",
+   "lat": 49.020107,
+   "lng": 12.102286,
+   "category": "pamatky",
+   "source_url": "https://www.hdbg.de/ihr-besuch/inklusion.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup do budovy, k pokladně, informacím, sociálnímu zázemí, šatně, výtahu a do stálé expozice.",
+    "wc": "Sociální zázemí ve foyer je bezbariérově dostupné.",
+    "parkovani": "Veřejná místa pro OZP poblíž jižního vchodu.",
+    "vytah": "Výtah ve foyer.",
+    "jine": "Zapůjčení vozíků a mobilních stoliček; vitríny a mediální stanice v přístupné výšce; indukční smyčky, tyflografika, videa ve znakovém jazyce."
+   },
+   "measurements": [],
+   "evidence_quote": "Barrierefreier Zugang zum Museumsgebäude"
+  },
+  {
+   "osm_id": "w100317431",
+   "name": "Naturkundemuseum Ostbayern",
+   "obec": "Regensburg",
+   "address": "Am Prebrunntor 4",
+   "lat": 49.022156,
+   "lng": 12.082865,
+   "category": "pamatky",
+   "source_url": "https://www.nmo-regensburg.de/museum/besucherinfo/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Pro vozíčkáře zatím jen „barrierearm“: personál pomůže se vstupem po zazvonění na zvonek „Pforte“ na jižní fasádě vpravo od brány do Herzogspark. Téměř všechny výstavní části bezbariérově dostupné, kromě muzejně-pedagogické místnosti ve 2. patře.",
+    "wc": "Bezbariérové WC v 1. patře.",
+    "parkovani": "U muzea není možnost parkování.",
+    "vytah": "Výtah do horních výstavních prostor 90 cm široký a 138 cm hluboký."
+   },
+   "measurements": [
+    {
+     "co": "šířka výtahu",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka výtahu",
+     "hodnota": 138,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Der Aufzug für die oberen Ausstellungsräume ist 90 cm breit und 138 cm tief."
+  },
+  {
+   "osm_id": "w97255871",
+   "name": "Theater am Bismarckplatz",
+   "obec": "Regensburg",
+   "address": "Bismarckplatz 7",
+   "lat": 49.019299,
+   "lng": 12.089642,
+   "category": "kultura",
+   "source_url": "https://www.staatstheater-regensburg.de/seiten/barrierefreiheit.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérově omezený (barrierearm) vstup přes vrátnici u vchodu z Arnulfsplatz.",
+    "wc": "WC s pomůckou pro přesedání v divadelní kavárně (přízemí).",
+    "parkovani": "Místa pro OZP a výtah v parkovacím domě Bismarckplatz (výtahy v parkovacím domě byly dle webu dočasně mimo provoz).",
+    "vytah": "Výtah do Neuhaussaalu a jeho foyer (1. patro).",
+    "jine": "Místa pro vozík jen v přízemí (parket): po jednom vlevo a vpravo v 8. řadě, místo pro doprovod hned vedle; v Neuhaussaalu místa v řadě 9 a 10."
+   },
+   "measurements": [],
+   "evidence_quote": "Rollstuhlplätze: Je ein Rollstuhlplatz im Parkett links und rechts, Reihe 8"
+  },
+  {
+   "osm_id": "n510159137",
+   "name": "Theater am Haidplatz",
+   "obec": "Regensburg",
+   "address": "Haidplatz 8",
+   "lat": 49.020326,
+   "lng": 12.093435,
+   "category": "kultura",
+   "source_url": "https://www.staatstheater-regensburg.de/seiten/barrierefreiheit.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup přes vnitřní nádvoří Thon-Dittmer-Palais.",
+    "wc": "WC s pomůckou pro přesedání v suterénu, výtah k dispozici.",
+    "parkovani": "Místa pro OZP na Haidplatz a v Baumhackergasse.",
+    "vytah": "Výtah k WC v suterénu.",
+    "jine": "Jedno místo pro vozík v řadě 8 (vpravo), místo pro doprovod vedle; indukční smyčka."
+   },
+   "measurements": [],
+   "evidence_quote": "Barrierefreier Zugang über Innenhof Thon-Dittmer-Palais"
+  },
+  {
+   "osm_id": "n269321178",
+   "name": "Wildpark Höllohe",
+   "obec": "Teublitz",
+   "address": "Höllohe 1",
+   "lat": 49.233558,
+   "lng": 12.088278,
+   "category": "pamatky",
+   "source_url": "https://wildpark-hoellohe.de/besucher-info",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "WC pro osoby s postižením na místě.",
+    "parkovani": "200 placených parkovacích míst (místa pro OZP neuvedena).",
+    "jine": "Areál i prostory jsou převážně bezbariérové; štěrkové okružní cesty vhodné pro vozíčkáře a kočárky; nositel signetu „Bayern barrierefrei“."
+   },
+   "measurements": [],
+   "evidence_quote": "Die geschotterten Rundwege sind für Rollstuhlfahrer und Kinderwägen geeignet."
+  },
+  {
+   "osm_id": "w31788919",
+   "name": "Donau-Arena",
+   "obec": "Thanhof",
+   "address": "Walhalla-Allee 22",
+   "lat": 49.025207,
+   "lng": 12.132822,
+   "category": "sport",
+   "source_url": "https://www.das-stadtwerk-regensburg.de/donau-arena/barrierefrei",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Sociální zařízení pro OZP ve střední části ochozu (mezi vchody Západ a Východ) a v přízemí.",
+    "parkovani": "8 označených míst pro držitele průkazu OZP u vchodu Západ, další místa pro vozíčkáře na parkovišti Ost; zdarma po předložení průkazu.",
+    "jine": "Místa pro vozíčkáře na ochozu (vchody Východ a Západ) a v ploše (vchod Sever), doprovod hned vedle; počet podle uspořádání pódia. Kiosky a hlavní gastronomie bezbariérově na ochozu."
+   },
+   "measurements": [
+    {
+     "co": "vyhrazená parkovací místa u vchodu Západ",
+     "hodnota": 8,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Die Zuschauerplätze für Rollstuhlfahrerinnen und -fahrer liegen auf der Umgangsebene"
+  },
+  {
+   "osm_id": "r11018037",
+   "name": "Erlebnisbad AquaFit Waldmünchen",
+   "obec": "Waldmünchen",
+   "address": null,
+   "lat": 49.383931,
+   "lng": 12.703376,
+   "category": "sport",
+   "source_url": "https://erlebnisbad-aquafit.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Všechny důležité prostory jsou dostupné v úrovni terénu; okraj bazénu bezbariérově sjízdný vozíkem.",
+    "koupelna": "Velká převlékárna a sprcha uzpůsobená pro osoby s postižením.",
+    "vytah": "Výtah od sprch v přízemí do bazénové části v suterénu.",
+    "jine": "Do bazénu po schodech se zábradlím nebo speciálním bazénovým zvedákem."
+   },
+   "measurements": [],
+   "evidence_quote": "Der Beckenrand ist stufenlos mit dem Rollstuhl erreichbar."
+  },
+  {
+   "osm_id": "n1576562055",
+   "name": "Internationales Keramik-Museum Weiden",
+   "obec": "Weiden in der Oberpfalz",
+   "address": "Luitpoldstraße 25",
+   "lat": 49.678257,
+   "lng": 12.164221,
+   "category": "pamatky",
+   "source_url": "https://www.ikmweiden.de/besuch-planen/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Díky výtahu je přístupná velká část expozice; do dvou místností je přístup omezený.",
+    "wc": "Bezbariérové WC.",
+    "parkovani": "Parkovací domy a parkoviště v blízkosti (místa pro OZP neuvedena).",
+    "vytah": "Dva výtahy do všech podlaží.",
+    "jine": "Zapůjčení skládacích stoliček; na požádání doprovod personálu."
+   },
+   "measurements": [],
+   "evidence_quote": "Das Museum verfügt über einen Aufzug, sodass große Teile der Ausstellung zugänglich sind."
+  },
+  {
+   "osm_id": "n1576562033",
+   "name": "Regionalbibliothek",
+   "obec": "Weiden in der Oberpfalz",
+   "address": "Scheibenstraße 7",
+   "lat": 49.678592,
+   "lng": 12.164137,
+   "category": "kultura",
+   "source_url": "https://www.regionalbibliothek-weiden.de/barrierefreie-bibliothek/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Historická budova je bezbariérově přístupná širokými dveřmi s automatickým otevíráním.",
+    "wc": "Bezbariérové WC v suterénu, dostupné výtahem.",
+    "parkovani": "S průkazem OZP lze parkovat přímo před vchodem.",
+    "vytah": "Výtah do všech podlaží, tlačítka s vystouplými číslicemi.",
+    "jine": "Katalogové počítače v různých výškách, výškově nastavitelné automaty na výpůjčky; sál (2. patro) a Studio L (přízemí) bezbariérové s místy pro vozík; kavárna, zimní zahrada i dvůr bez schodů; signet „Bayern barrierefrei“."
+   },
+   "measurements": [],
+   "evidence_quote": "Mit dem Aufzug können alle Etagen bequem und selbstständig erreicht werden."
+  },
+  {
+   "osm_id": "w367963448",
+   "name": "Weidener Thermenwelt",
+   "obec": "Weiden in der Oberpfalz",
+   "address": "Raiffeisenstraße 7",
+   "lat": 49.686632,
+   "lng": 12.161662,
+   "category": "sport",
+   "source_url": "https://weidener-thermenwelt.de/informationen/anfahrt",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "parkovani": "3 parkovací místa pro OZP před Thermenwelt."
+   },
+   "measurements": [
+    {
+     "co": "parkovací místa pro OZP",
+     "hodnota": 3,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "3 Behinderten-Parkplätze vor der Thermenwelt"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n3394541578",
+   "name": "Cineplex",
+   "url": "https://cineplex.de/amberg",
+   "reason": "web blokuje automatický přístup (HTTP 403), neprocházeno"
+  },
+  {
+   "osm_id": "w59265913",
+   "name": "Eishalle Amberg",
+   "url": "http://www.eishalle-amberg.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w339369219",
+   "name": "Kurfürstenbad",
+   "url": "https://www.kurfuerstenbad-amberg.de/",
+   "reason": "web má jen prohlášení o přístupnosti webu, o budově nic"
+  },
+  {
+   "osm_id": "n5157300624",
+   "name": "Musikomm",
+   "url": "https://www.musikomm.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w337934511",
+   "name": "Stadion am Schanzl",
+   "url": "https://www.tvamberg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "r4593665",
+   "name": "Stadtbibliothek Amberg (Raseliushaus)",
+   "url": "https://stadtbibliothek.amberg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w59265908",
+   "name": "Tennisanlage",
+   "url": "https://tcamschanzl.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w365735150",
+   "name": "Jahnstadion Regensburg",
+   "url": "https://www.jahnstadion-regensburg.de",
+   "reason": "web má jen prohlášení o přístupnosti webu, o stadionu nic"
+  },
+  {
+   "osm_id": "w28966889",
+   "name": "Erlebnisbad Berle",
+   "url": "https://www.berching.de/poi/erlebnisbad_berle-76/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3830810174",
+   "name": "Gemeinschaftshaus Sollngriesbach",
+   "url": "http://www.sollngriesbach.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2672418099",
+   "name": "Starmexx",
+   "url": "https://www.starmexx.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2495614662",
+   "name": "Hallenbad Bärnau",
+   "url": "https://www.baernau.de/rathaus/staedtische-einrichtungen/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1693088077",
+   "name": "Knopfmuseum",
+   "url": "https://www.deutsches-knopfmuseum.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w234834044",
+   "name": "Cine-World Cham",
+   "url": "http://www.kino-cham.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w531206016",
+   "name": "Chinesischer Turm",
+   "url": "https://www.chinesischerturm-donaustauf.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w368186379",
+   "name": "Freizeitzentrum Erbendorf",
+   "url": "https://www.erbendorf.de/041freizeitzentr.htm",
+   "reason": "stránka ze vstupu neexistuje (HTTP 404)"
+  },
+  {
+   "osm_id": "w179793005",
+   "name": "Drachenhöhle",
+   "url": "http://www.further-drache.de",
+   "reason": "web přesměrován na turistický portál, o přístupnosti nic"
+  },
+  {
+   "osm_id": "n8586892722",
+   "name": "Marktbibliothek Kallmünz",
+   "url": "https://www.kallmuenz.de/leben-in-kallmuenz/marktbibliothek-kallmuenz/",
+   "reason": "web obce má jen prohlášení o přístupnosti webu"
+  },
+  {
+   "osm_id": "n10006918247",
+   "name": "Theres-Neumann-Museum",
+   "url": "https://www.theres-neumann-museum.de/",
+   "reason": "web má jen prohlášení o přístupnosti webu"
+  },
+  {
+   "osm_id": "w338261278",
+   "name": "Freibad Perschen",
+   "url": "https://www.freibad-perschen.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1146574661",
+   "name": "Cineplex Neumarkt",
+   "url": "https://www.cineplex.de/neumarkt",
+   "reason": "web blokuje automatický přístup (HTTP 403), neprocházeno"
+  },
+  {
+   "osm_id": "w624273819",
+   "name": "DAV-Kletterzentrum Neumarkt",
+   "url": "https://www.kletterzentrum-neumarkt.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w18796762",
+   "name": "Museum Lothar Fischer",
+   "url": "http://www.museum-lothar-fischer.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1710148096",
+   "name": "Eustachius-Kugler-Denkmal",
+   "url": "https://www.eustachius-kugler.de/",
+   "reason": "web nedostupný"
+  },
+  {
+   "osm_id": "n903338797",
+   "name": "Gauschützenheim",
+   "url": "http://www.ksv-donaugau.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w29383761",
+   "name": "Mehrzweckhalle Obertraubling",
+   "url": "http://www.obertraubling.de/gemeinde.asp?naviid=&ORGID={7F705C7A-04BD-4264-B65D-6151AAC054C3}",
+   "reason": "stránka ze vstupu neexistuje (HTTP 404)"
+  },
+  {
+   "osm_id": "n9120851971",
+   "name": "Art Affair",
+   "url": "https://art-affair.net/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2977210449",
+   "name": "Bischof-Johann-Michael-von-Sailer Denkmal",
+   "url": "https://de.wikisource.org/wiki/ADB:Sailer,_Johann_Michael_von",
+   "reason": "zdrojem je životopis na Wikisource, ne web místa"
+  },
+  {
+   "osm_id": "n5366395904",
+   "name": "Diözesanzentrum Obermünster",
+   "url": "https://www.bistum-regensburg.de/bistum/einrichtungen-a-z/dioezesanzentrum-obermuenster/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w39962246",
+   "name": "Dom Sankt Peter",
+   "url": "https://www.bistum-regensburg.de/bistum/dom-st-peter/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w29153707",
+   "name": "Hochschulbibliothek",
+   "url": "https://www.oth-regensburg.de/hochschule/einrichtungen/hochschulbibliothek.html",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu"
+  },
+  {
+   "osm_id": "n1653823266",
+   "name": "Kinos im Andreasstadel",
+   "url": "http://www.kinos-im-andreasstadel.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w32070908",
+   "name": "Kulturzentrum Alte Mälzerei",
+   "url": "http://www.alte-maelzerei.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w91837236",
+   "name": "Leerer Beutel",
+   "url": "https://www.leerer-beutel.de",
+   "reason": "web nedostupný (timeout)"
+  },
+  {
+   "osm_id": "n6724776079",
+   "name": "Ostentor-Kino",
+   "url": "https://www.altstadtkinos.de/",
+   "reason": "web altstadtkinos.de uvádí bezbariérovost jen u Garbo-Kina, o Ostentor-Kinu nic; ostentorkino.de prázdný"
+  },
+  {
+   "osm_id": "w94522109",
+   "name": "Velodrom",
+   "url": "https://www.theater-regensburg.de/haus/spielstaetten/velodrom.html",
+   "reason": "stránka ze vstupu neexistuje (404); stránka Staatstheater o bezbariérovosti Velodrom neuvádí"
+  },
+  {
+   "osm_id": "n5969984486",
+   "name": "Schützenhaus Schützenverein Jägerwiesl Reichertshofen",
+   "url": "https://www.jaegerwiesl-reichertshofen.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3255642429",
+   "name": "Heimatmuseum Sünching",
+   "url": "https://www.heimatmuseum-suenching.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n324755564",
+   "name": "RFZ Rückenzentrum Regensburg",
+   "url": "http://www.rfz-regensburg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n251164945",
+   "name": "Kulzer Stonehenge",
+   "url": "https://www.sehenswerter-bayerischer-wald.de/kulz-stonehenge-oberpfalz-attraktionen.html",
+   "reason": "zdroj je turistický průvodce třetí strany, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "n1653823278",
+   "name": "Kneipenbühne",
+   "url": "http://www.kneipenbuehne.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w458779632",
+   "name": "Pfarrzentrum Waffenbrunn",
+   "url": "https://www.pg-gpw.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w361259320",
+   "name": "TSG Mantel-Weiherhammer",
+   "url": "http://www.tsg-weiherhammer.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů (úvodní stránka + max. 6 podstránek, klíčová slova barrierefrei/rollstuhl/aufzug…)",
+   "url": "",
+   "note": "Automatický průchod skriptem 2026-10-07, User-Agent kudyprojedu-student-project/0.1; souřadnice převzaty ze vstupu (OSM)."
+  },
+  {
+   "title": "Bayerische Schlösserverwaltung – Walhalla, Service für Menschen mit Behinderung",
+   "url": "https://www.schloesser.bayern.de/deutsch/schloss/objekte/walhalla_mobilitaet.htm",
+   "note": "Podrobné údaje o přístupnosti Walhally."
+  },
+  {
+   "title": "Staatstheater Regensburg – Barrierefreiheit",
+   "url": "https://www.staatstheater-regensburg.de/seiten/barrierefreiheit.html",
+   "note": "Údaje pro scény Bismarckplatz, Haidplatz, Antoniushaus, Junges Theater; Velodrom neuveden."
+  },
+  {
+   "title": "das Stadtwerk Regensburg – Donau-Arena barrierefrei",
+   "url": "https://www.das-stadtwerk-regensburg.de/donau-arena/barrierefrei",
+   "note": ""
+  },
+  {
+   "title": "KZ-Gedenkstätte Flossenbürg – Barrierefreiheit",
+   "url": "https://www.gedenkstaette-flossenbuerg.de/de/besuch/informationen/barrierefreiheit",
+   "note": "Platí pro celý památník i výstavu „Was bleibt“."
+  },
+  {
+   "title": "Haus der Bayerischen Geschichte – Inklusion",
+   "url": "https://www.hdbg.de/ihr-besuch/inklusion.html",
+   "note": ""
+  },
+  {
+   "title": "ACC Amberg – Barrierefreiheit (Reisen für Alle)",
+   "url": "https://www.acc-amberg.de/barrierefreiheit/",
+   "note": "Krátká zpráva a certifikát v PDF na webu ACC; data z PDF nepřebírána, jen odkaz."
+  }
+ ]
+}

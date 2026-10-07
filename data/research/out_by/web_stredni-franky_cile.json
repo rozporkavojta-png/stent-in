@@ -1,0 +1,892 @@
+{
+ "task": "weby – turistické cíle (muzea, zámky, hrady, kultura, sport, parky): údaje o bezbariérovosti z webů provozovatelů",
+ "kraj": "Střední Franky",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "w28348682",
+   "name": "St. Johannis",
+   "obec": "Ansbach",
+   "address": "Martin-Luther-Platz 16",
+   "lat": 49.303172,
+   "lng": 10.571099,
+   "category": "pamatky",
+   "source_url": "https://www.theater-ansbach.de/ihr-weg-zu-uns/",
+   "source_type": "web třetí strany (Theater Ansbach – přehled hracích míst)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup hlavním portálem na západní straně kostela.",
+    "wc": "Toalety (i bezbariérové) jsou v sousedním Gemeindezentrum Johannis, ne přímo v kostele.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Barrierefreier Zugang über das Hauptportal an der Westseite."
+  },
+  {
+   "osm_id": "n849662557",
+   "name": "Theater Ansbach",
+   "obec": "Ansbach",
+   "address": null,
+   "lat": 49.302648,
+   "lng": 10.577645,
+   "category": "kultura",
+   "source_url": "https://www.theater-ansbach.de/ihr-weg-zu-uns/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Foyer Borkholderhausu je v úrovni terénu a bezbariérově přístupné. Malý sál (Kleines Haus) je přístupný výtahem a má místo pro vozík. Scéna „Theater hinterm Eisernen“ bezbariérová není (boční vchod a pak 5 schodů se zábradlím), scéna Eyber Straße také ne.",
+    "wc": "Ve foyer je bezbariérová (behindertengerechte) toaleta.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Divadlo uvádí parkování podél Promenade, na parkovišti Hofwiese a Reitbahn (3–4 min chůze); vyhrazená místa pro ZTP neuvádí.",
+    "vytah": "Osobní výtah vede do foyer v 1. patře (dámské toalety) a do Malého sálu.",
+    "jine": "Místa pro vozík jsou v Malém sále i v „Theater hinterm Eisernen“. Stránka popisuje i další scény (Onoldiasaal, Karlshalle, kostely St. Gumbertus a St. Johannis)."
+   },
+   "measurements": [
+    {
+     "co": "schody u bočního vchodu (Theater hinterm Eisernen)",
+     "hodnota": 5,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Das Foyer ist ebenerdig und barrierefrei zu erreichen."
+  },
+  {
+   "osm_id": "n2299729881",
+   "name": "Kunstpalais",
+   "obec": "Erlangen",
+   "address": null,
+   "lat": 49.59724,
+   "lng": 11.00377,
+   "category": "pamatky",
+   "source_url": "https://www.kunstpalais.de/de/133/Besuch-planen.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Prostory jsou bez schodů přístupné bočním vchodem z Hauptstraße (vedle Café Bassanese); nejužší místo průchodu 85 cm.",
+    "wc": "Bezbariérová (behindertengerechte) toaleta je k dispozici.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Výstavní prostory v suterénu jsou bezbariérově přístupné výtahem.",
+    "jine": "Ve výstavě jsou místa k sezení."
+   },
+   "measurements": [
+    {
+     "co": "šířka průchodu v nejužším místě (boční vchod)",
+     "hodnota": 85,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Die Breite des Durchgangs beträgt an der schmalsten Stelle 85 cm."
+  },
+  {
+   "osm_id": "n2431199581",
+   "name": "Stadtmuseum",
+   "obec": "Erlangen",
+   "address": "Martin-Luther-Platz 9",
+   "lat": 49.601846,
+   "lng": 11.003477,
+   "category": "pamatky",
+   "source_url": "https://stadtmuseum-erlangen.de/de/ihr-besuch/barrierefreies-museum",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vchod do hlavní budovy (Martin-Luther-Platz 9) je v úrovni terénu, dveře se otevírají elektricky tlačítkem; šířka dveří 96–123 cm. Všechny výstavní a akční prostory jsou přístupné na vozíku.",
+    "wc": "Bezbariérová toaleta v přízemí, bez elektrického otvírání dveří – pomůže personál pokladny.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Návštěvnický výtah je vhodný pro vozík.",
+    "jine": "Zastávka MHD přímo před vchodem. Zdarma k zapůjčení skládací vozík a mobilní sedátka; asistenční psi povoleni."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří (min.)",
+     "hodnota": 96,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří (max.)",
+     "hodnota": 123,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Der Besucheraufzug ist rollstuhlgeeignet."
+  },
+  {
+   "osm_id": "w147015641",
+   "name": "Stadttheater Fürth",
+   "obec": "Fürth",
+   "address": "Königstraße 116",
+   "lat": 49.475518,
+   "lng": 10.991304,
+   "category": "kultura",
+   "source_url": "https://www.stadttheater.de/service/zugaenglichkeit",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup bočními dveřmi z Bäumenstraße; do parteru Velkého domu bez schodů, jsou tam místa pro vozík. 1. pořadí bezbariérové není (v hledišti chybí výtah).",
+    "wc": "V divadle je toaleta vhodná pro vozík, bezbariérově dosažitelná.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Doporučuje podzemní garáž nákupního centra FLAIR (výtahem nahoru, blízko bočního vchodu).",
+    "vytah": "Výtah jen v zákulisí – pro vozíčkáře na úvody ve foyer 2. pořadí, pouze s doprovodem personálu.",
+    "jine": "Místa pro vozík a vstupenky pro doprovod nelze koupit online – jen na pokladně."
+   },
+   "measurements": [],
+   "evidence_quote": "Der Zugang zum Parkett ist stufenlos möglich und barrierefrei gestaltet."
+  },
+  {
+   "osm_id": "n6535921254",
+   "name": "Deutsches Museum Nürnberg",
+   "obec": "Nürnberg",
+   "address": "Augustinerhof 4",
+   "lat": 49.45369,
+   "lng": 11.074758,
+   "category": "pamatky",
+   "source_url": "https://www.deutsches-museum.de/nuernberg/besuch/barrierefreier-besuch",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vchod (Augustinerhof 4) je bezbariérový; všechny prostory pro hosty jsou bez schodů nebo přístupné výtahem; prahy max. 2 cm; dveře a průchody min. 90 cm. Certifikát „Reisen für Alle – Barrierefreiheit geprüft“.",
+    "wc": "Bezbariérová toaleta v přízemí.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "V Augustinerparkhaus přímo pod muzeem jsou 2 místa pro ZTP (cca 100 m od vchodu), min. 350 × 530 cm.",
+    "vytah": "Výstavy přístupné bezbariérovým výtahem; kabina min. 110 × 210 cm, dveře výtahu min. 90 cm. Z parkovacího domu výtahem na úroveň vchodu.",
+    "jine": "Zapůjčení vozíku u pokladny, mobilní sedátka; pokladna nejníže 85 cm; většina stanic podjezdná; trasa prohlídky bez schodů. Zastávka bus Weintraubengasse ~150 m, U1 Lorenzkirche (výtahy) ~350 m."
+   },
+   "measurements": [
+    {
+     "co": "práh dveří (max.)",
+     "hodnota": 2,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří a průchodů (min.)",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "kabina výtahu (min.)",
+     "hodnota": "110 x 210",
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří výtahu (min.)",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška pokladny (nejnižší místo)",
+     "hodnota": 85,
+     "jednotka": "cm"
+    },
+    {
+     "co": "parkovací místo ZTP (min.)",
+     "hodnota": "350 x 530",
+     "jednotka": "cm"
+    },
+    {
+     "co": "vzdálenost parkování ZTP od vchodu",
+     "hodnota": 100,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Der Eingang/Zugang ins Gebäude ist stufenlos möglich."
+  },
+  {
+   "osm_id": "r56430",
+   "name": "Germanisches Nationalmuseum",
+   "obec": "Nürnberg",
+   "address": "Kartäusergasse 1",
+   "lat": 49.448067,
+   "lng": 11.075847,
+   "category": "pamatky",
+   "source_url": "https://www.gnm.de/services/haeufige-fragen",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Téměř všechny části sbírky jsou na vozíku dosažitelné přes rampy a výtahy, někdy ale ne přímou cestou; pomůže dozor.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Muzeum nemá vlastní parkoviště; doporučuje městské parkovací domy (např. Parkhaus am Sterntor). Místa pro ZTP neuvádí.",
+    "vytah": "Výtahy a rampy jsou v budově k dispozici (bez dalších podrobností).",
+    "jine": "Mediaguide má inkluzivní trasu pro uživatele vozíků (https://www.gnm.de/fuerjungundalt/inklusiv)."
+   },
+   "measurements": [],
+   "evidence_quote": "Fast alle Bereiche der Sammlung können Sie mit dem Rollstuhl über Rampen und Aufzüge problemlos erreichen"
+  },
+  {
+   "osm_id": "w35399404",
+   "name": "Neues Museum",
+   "obec": "Nürnberg",
+   "address": "Luitpoldstraße 5",
+   "lat": 49.447671,
+   "lng": 11.079956,
+   "category": "pamatky",
+   "source_url": "https://www.nmn.de/de/f1/barrierefreiheit.htm",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vchod na Klarissenplatz je bezbariérově dosažitelný uličkou z Luitpoldstraße; automatické otočné dveře do foyer jsou bez schodů.",
+    "wc": "Toalety vhodné pro vozík jsou k dispozici.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Web uvádí okolní veřejná místa pro ZTP (např. Parkhaus Hauptbahnhof patra 4–11, Klaragasse, Königstraße 60).",
+    "vytah": "Všechny sbírkové a výstavní sály, dolní foyer a auditorium jsou přístupné rampami nebo výtahem.",
+    "jine": "Bezplatné zapůjčení vozíku a chodítka u pokladny; místa k sezení v sálech."
+   },
+   "measurements": [],
+   "evidence_quote": "Der Eingang durch die automatischen Trommeltüren ins Foyer ist stufenlos."
+  },
+  {
+   "osm_id": "w143984905",
+   "name": "PSD Bank Nürnberg ARENA",
+   "obec": "Nürnberg",
+   "address": "Kurt-Leucht-Weg 11",
+   "lat": 49.42761,
+   "lng": 11.122928,
+   "category": "sport",
+   "source_url": "https://www.psd-nuernberg-arena.de/besucherinnen-service/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérové vstupy u vchodu Jih nebo Sever (podle akce); všechny kiosky a restaurace jsou na svých podlažích bezbariérově dosažitelné.",
+    "wc": "Bezbariérové toalety: patro 0 vlevo za vstupem do parteru, patro 1 za bloky 115 a 134; otevírají se Euroklíčem.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Zvláštní parkoviště S5 pro vozíčkáře (příjezd Regensburger Straße / Hans-Kalb-Straße), s modrým parkovacím průkazem zdarma.",
+    "vytah": "U bezbariérových vchodů jsou výtahy do příslušných pater.",
+    "jine": "Místa pro vozík při zápasech Ice Tigers za bloky 123/124, 133/134 a na pódiu za brankou na severu; vstupenky přes pořadatele."
+   },
+   "measurements": [],
+   "evidence_quote": "Die Toiletten lassen sich mit dem Euro-Schlüssel öffnen"
+  },
+  {
+   "osm_id": "n1529570372",
+   "name": "Salz+Pfeffer",
+   "obec": "Nürnberg",
+   "address": "Frauentorgraben 73",
+   "lat": 49.447149,
+   "lng": 11.068328,
+   "category": "kultura",
+   "source_url": "https://www.salzundpfeffer-theater.de/theaterbesuch.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Divadlo nabízí místa pro vozík a pro rolátor; rezervace jen přímo přes divadlo (ne online). Vstup, WC ani výtah web nepopisuje."
+   },
+   "measurements": [],
+   "evidence_quote": "Rollstuhlplätze | Rollatorenplätze | Begleitpersonenplätze … sind nur über das Theater buchbar"
+  },
+  {
+   "osm_id": "n1539285608",
+   "name": "Verkehrsmuseum Nürnberg (DB Museum)",
+   "obec": "Nürnberg",
+   "address": "Lessingstraße 6",
+   "lat": 49.445503,
+   "lng": 11.074361,
+   "category": "pamatky",
+   "source_url": "https://dbmuseum.de/nuernberg/informationen",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přes vnitřní dvůr (zadní vchod) se do foyer dostanete v úrovni terénu; všechna oddělení jsou bezbariérově přístupná rampami a výtahy.",
+    "wc": "Bezbariérové toalety v přízemí.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Čtyři parkovací místa pro ZTP přímo u budovy.",
+    "vytah": "Výtahy (a rampy) do všech oddělení.",
+    "jine": "K zapůjčení dva vozíky a skládací židle."
+   },
+   "measurements": [
+    {
+     "co": "parkovací místa ZTP",
+     "hodnota": 4,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Alle Abteilungen im Haus sind über Rampen und Aufzüge barrierefrei zu erreichen."
+  },
+  {
+   "osm_id": "n2063958819",
+   "name": "rote Bühne",
+   "obec": "Nürnberg",
+   "address": "Vordere Cramergasse 11",
+   "lat": 49.447586,
+   "lng": 11.101941,
+   "category": "kultura",
+   "source_url": "https://www.rote-buehne.de/service/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Divadlo je ve sklepě; dveře do sálu necelý metr široké.",
+    "wc": "Toalety vhodné pro vozík v divadle nejsou.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Do sklepa vede výtah s dostatkem místa i pro elektrický vozík (dveře cca 1,20 m); doprovod musí požádat personál pokladny/baru o přivolání výtahu (jinak jen na klíč).",
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří výtahu (cca)",
+     "hodnota": 120,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří do sálu (necelý)",
+     "hodnota": 100,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Rollstuhl-gerechte Toiletten gibt es im Theater leider nicht."
+  },
+  {
+   "osm_id": "w49862295",
+   "name": "Kulturfabrik Roth",
+   "obec": "Roth",
+   "address": "Stieberstraße 7",
+   "lat": 49.246596,
+   "lng": 11.089479,
+   "category": "kultura",
+   "source_url": "https://kulturfabrik.de/service/barrierefreiheit",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezschodový vstup do domu, foyer s šatnou a barem i do sálu v úrovni terénu; přístup k hlavnímu vchodu bez schodů.",
+    "wc": "Bezbariérová hygienická místnost v zadním foyer (Gartensaal).",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Na parkovišti „Kulturfabrik“ hned vedle domu je vyhrazené místo pro ZTP.",
+    "vytah": null,
+    "jine": "Pevná místa pro vozík v sále nejsou; po telefonické domluvě se rezervují v prvních třech řadách parteru u dveří (online nelze), doprovod zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Der Zugang zum Haupteingang ist ebenerdig."
+  },
+  {
+   "osm_id": "w338032851",
+   "name": "Limeseum Ruffenhofen",
+   "obec": "Wittelshofen",
+   "address": "Römerpark Ruffenhofen 1",
+   "lat": 49.044196,
+   "lng": 10.487665,
+   "category": "pamatky",
+   "source_url": "https://www.limeseum.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Muzeum se označuje za bezbariérový dům, který umožňuje návštěvu i lidem s omezenou pohyblivostí; podrobnosti (WC, výtah, rozměry) web neuvádí.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Das LIMESEUM ist ein barrierefreies Haus"
+  },
+  {
+   "osm_id": "w105152310",
+   "name": "Freibad Allersberg",
+   "obec": "Allersberg",
+   "address": null,
+   "lat": 49.256486,
+   "lng": 11.233006,
+   "category": "sport",
+   "source_url": "https://www.allersberg.de/freizeit/a-z/beheiztes_freibad_allersberg-5726/",
+   "source_type": "web obce (provozovatel)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Celý areál koupaliště je bezbariérový (sprchy, převlékárny).",
+    "wc": "WC pro osoby s postižením je k dispozici.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Do plaveckého bazénu je přístup pomocí zvedáku (Lifter); informační tabule v Braillově písmu."
+   },
+   "measurements": [],
+   "evidence_quote": "Zugang zum Schwimmerbecken über einen Lifter möglich"
+  },
+  {
+   "osm_id": "n4302589489",
+   "name": "Markgräfliche Residenz - Prunkräume",
+   "obec": "Ansbach",
+   "address": "Promenade 27",
+   "lat": 49.302349,
+   "lng": 10.576336,
+   "category": "pamatky",
+   "source_url": "https://www.schloesser.bayern.de/deutsch/schloss/objekte/ansbach_mobilitaet.htm",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup do prunkového schodiště je bez schodů, odtud k pokladně 2 schody. Dveře min. 90 cm, prahy 3–4 cm, podlaha rovná a protiskluzová. Účast na prohlídce jen s doprovodem personálu.",
+    "wc": "Bezbariérové WC v přízemí rezidence (část Regierung von Mittelfranken), jen s doprovodem personálu; další veřejná bezbariérová WC cca 200 m.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Několik veřejných míst pro ZTP v okolí rezidence a Hofgartenu (50–250 m, rovný povrch, bez stoupání).",
+    "vytah": "Prostory přístupné výtahem: dveře 90 cm, kabina 130 × 140 cm.",
+    "jine": "Hofgarten: brány 125–140 cm, cesty ze zpevněného štěrku, několik krátkých mírných stoupání, lavičky."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří výtahu",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny výtahu",
+     "hodnota": 130,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny výtahu",
+     "hodnota": 140,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří (min.)",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška prahů",
+     "hodnota": "3-4",
+     "jednotka": "cm"
+    },
+    {
+     "co": "schody k pokladně",
+     "hodnota": 2,
+     "jednotka": "ks"
+    },
+    {
+     "co": "vzdálenost parkování ZTP",
+     "hodnota": "50-250",
+     "jednotka": "m"
+    },
+    {
+     "co": "šířka bran Hofgarten",
+     "hodnota": "125-140",
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Eingang Prunktreppenhaus stufenlos erreichbar; von dort Zugang zur Schlosskasse über 2 Stufen"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n1441733737",
+   "name": "Hochschulbibliothek",
+   "obec": "Ansbach",
+   "web": "http://www.hs-ansbach.de/hochschule/einrichtungen/bibliothek.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w387353213",
+   "name": "Regierung von Mittelfranken, Dienstgebäude Bischof-Meiser-Straße",
+   "obec": "Ansbach",
+   "web": "https://www.freistaat.bayern/dokumente/behoerde/8456058335113",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w140617151",
+   "name": "Staatliche Bibliothek Ansbach",
+   "obec": "Ansbach",
+   "web": "https://www.schlossbibliothek-ansbach.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w218272004",
+   "name": "Spitalkirche / Museum Kirche in Franken",
+   "obec": "Bad Windsheim",
+   "web": "https://www.badwindsheim-evangelisch.de/pfarreien/bad-windsheim/kirchen.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w175834400",
+   "name": "St. Johannis",
+   "obec": "Bechhofen",
+   "web": "https://www.bechhofen-evangelisch.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w248341944",
+   "name": "Cyriakus-Kapelle",
+   "obec": "Dentlein am Forst",
+   "web": "https://www.youtube.com/watch?v=eYaRkma1dYg",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n12294260327",
+   "name": "Haus der Geschichte Dinkelsbühl",
+   "obec": "Dinkelsbühl",
+   "web": "https://www.hausdergeschichte-dinkelsbuehl.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w203009928",
+   "name": "Münster St. Georg",
+   "obec": "Dinkelsbühl",
+   "web": "https://www.st-georg-dinkelsbuehl.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w32430614",
+   "name": "Erlöserkirche",
+   "obec": "Erlangen",
+   "web": "https://www.erloeserkirche-erlangen.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w1451379179",
+   "name": "Herz-Jesu",
+   "obec": "Erlangen",
+   "web": "https://www.herzjesu-erlangen.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w31509304",
+   "name": "Hugenottenkirche",
+   "obec": "Erlangen",
+   "web": "https://www.hugenottenkirche.de/hugenottenkirche-erlangen",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w28234847",
+   "name": "Kreuz+Quer - Haus der Kirche Erlangen",
+   "obec": "Erlangen",
+   "web": "https://www.kreuz-und-quer.church",
+   "duvod": "web nedostupný (chyba načtení: The read operation timed out)"
+  },
+  {
+   "osm_id": "n448776516",
+   "name": "Lamm-Lichtspiele",
+   "obec": "Erlangen",
+   "web": "https://www.lamm-lichtspiele.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w907322802",
+   "name": "Ludwigskanaldenkmal",
+   "obec": "Erlangen",
+   "web": "https://www.ludwig-donau-main-kanal.de/poi/kanaldenkmal_in_erlangen-30635/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w228835499",
+   "name": "Redoutensaal",
+   "obec": "Erlangen",
+   "web": "https://www.erlangen-tagungen.de/locations/erlangen/conferences/ConferenceCentre/single/redoutensaal/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w49220534",
+   "name": "St. Heinrich",
+   "obec": "Erlangen",
+   "web": "https://heinrich-erlangen.kirche-bamberg.de/index.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n990078879",
+   "name": "Stadtbibliothek Erlangen",
+   "obec": "Erlangen",
+   "web": "http://stadtbibliothek.erlangen.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w35597617",
+   "name": "Strahlenklinik",
+   "obec": "Erlangen",
+   "web": "https://www.strahlenklinik.uk-erlangen.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w42812016",
+   "name": "Technikerschule Erlangen",
+   "obec": "Erlangen",
+   "web": "https://technikerschule-erlangen.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n4718118989",
+   "name": "Comödie",
+   "obec": "Fürth",
+   "web": "https://www.comoedie.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n251258537",
+   "name": "Stadtmuseum Fürth",
+   "obec": "Fürth",
+   "web": "http://www.stadtmuseum-fuerth.de",
+   "duvod": "robots.txt zakazuje procházení – web nečten"
+  },
+  {
+   "osm_id": "w42028853",
+   "name": "Rathaus",
+   "obec": "Heilsbronn",
+   "web": "https://www.heilsbronn.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n82596749",
+   "name": "Stadtgeschichtliches Museum",
+   "obec": "Heilsbronn",
+   "web": "https://museum-heilsbronn.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w38454126",
+   "name": "Rathaus Hersbruck",
+   "obec": "Hersbruck",
+   "web": "https://www.hersbruck.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w90023732",
+   "name": "Altmühlbad Leutershausen",
+   "obec": "Leutershausen",
+   "web": "http://www.altmuehlbad.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n12227701199",
+   "name": "Gustav-Weisskopf-Museum",
+   "obec": "Leutershausen",
+   "web": "https://www.pionierederluefte.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n268517675",
+   "name": "Admiral Boutique Kino",
+   "obec": "Nürnberg",
+   "web": "https://www.admiral-kino-nuernberg.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n1425957606",
+   "name": "Das Kreuz bei den Kreuzäckern",
+   "obec": "Nürnberg",
+   "web": "http://www.suehnekreuz.de/bayern/neunhof.htm#6",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w143415043",
+   "name": "Frauenkirche",
+   "obec": "Nürnberg",
+   "web": "https://www.frauenkirche-nuernberg.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w1301388403",
+   "name": "Naturhistorisches Museum",
+   "obec": "Nürnberg",
+   "web": "https://www.naturhistorischesmuseumnuernberg.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w32908740",
+   "name": "Nicolaus-Copernicus-Planetarium Nürnberg",
+   "obec": "Nürnberg",
+   "web": "http://www.planetarium-nuernberg.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w10702249",
+   "name": "St. Jakob",
+   "obec": "Nürnberg",
+   "web": "https://jakobskirche-nuernberg.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w144721691",
+   "name": "St. Lorenz",
+   "obec": "Nürnberg",
+   "web": "https://www.lorenzkirche.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w139460727",
+   "name": "St. Sebald",
+   "obec": "Nürnberg",
+   "web": "https://www.sebalduskirche.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "r3183560",
+   "name": "Tiergarten Nürnberg",
+   "obec": "Nürnberg",
+   "web": "https://tiergarten.nuernberg.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n1582440768",
+   "name": "Uhrenmuseum",
+   "obec": "Nürnberg",
+   "web": "https://uhrensammlungkarlgebhardt.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w1313873376",
+   "name": "St. Jakob",
+   "obec": "Rothenburg ob der Tauber",
+   "web": "http://rothenburg-evangelisch.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w42205638",
+   "name": "St. Peter und Paul",
+   "obec": "Rothenburg ob der Tauber",
+   "web": "http://rothenburg-evangelisch.de/pfarrei-st-jakob/st-peter-und-paul-detwang/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w141331646",
+   "name": "Tourismus Service Rothenburg ob der Tauber",
+   "obec": "Rothenburg ob der Tauber",
+   "web": "https://www.rothenburg.de/",
+   "duvod": "web uvádí jen bezbariérový Turmweg (městské hradby), ne údaje o samotném infocentru"
+  },
+  {
+   "osm_id": "w91018858",
+   "name": "Franzosenkirche",
+   "obec": "Schwabach",
+   "web": "https://reformiert-schwabach.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n262203906",
+   "name": "Bürgermeister-Müller-Museum",
+   "obec": "Solnhofen",
+   "web": "https://www.museum-solnhofen.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n3740119708",
+   "name": "HopfenBierGut",
+   "obec": "Spalt",
+   "web": "https://hopfenbiergut.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n1826059336",
+   "name": "Museum Fundreich",
+   "obec": "Thalmässing",
+   "web": "https://www.thalmaessing.de/deutsch/freizeit-tourismus/museen/archaeologisches-museum",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w303607004",
+   "name": "Altmühltherme",
+   "obec": "Treuchtlingen",
+   "web": "https://www.altmuehltherme.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w74004383",
+   "name": "Bergwaldtheater",
+   "obec": "Weißenburg in Bayern",
+   "web": "http://www.weissenburg.info/bergwaldtheater/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w27855049",
+   "name": "Römermuseum",
+   "obec": "Weißenburg in Bayern",
+   "web": "https://www.weissenburg.de/sehenswertes/roemermuseum-2266/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w179050111",
+   "name": "Münster Mariä Himmelfahrt",
+   "obec": "Wolframs-Eschenbach",
+   "web": "https://www.bistum-eichstaett.de/pfarrei/wolframs-eschenbach/geschichte/",
+   "duvod": "web nedostupný (chyba načtení: HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "w610341184",
+   "name": "St. Martin",
+   "obec": "Wörnitz",
+   "web": "https://www.e-kirche.de/web/woernitz",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n13045253421",
+   "name": "Aurachtal-Alpakas",
+   "obec": "Abenberg",
+   "web": "https://www.aurachtal-alpakas.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w30608704",
+   "name": "Ewald-Münch-Halle (ehemals Aischgrundhalle)",
+   "obec": "Adelsdorf",
+   "web": "https://www.adelsdorf.de/unsere-gemeinde/unsere-einrichtungen/aischgrundhalle",
+   "duvod": "web nedostupný (chyba načtení: HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "w33779813",
+   "name": "Freibad Altdorf",
+   "obec": "Altdorf bei Nürnberg",
+   "web": "https://www.freibad-altdorf.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n1763331543",
+   "name": "Stadtbücherei Altdorf",
+   "obec": "Altdorf bei Nürnberg",
+   "web": "https://www.altdorf.de/seite/de/stadt/038:127/c_6/Stadtbuecherei.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n13584343922",
+   "name": "Kunsthaus R3",
+   "obec": "Ansbach",
+   "web": "https://www.kulturforum-ansbach.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n4603971189",
+   "name": "jumpers fitness Ansbach",
+   "obec": "Ansbach",
+   "web": "https://www.jumpers-fitness.com/studios/ansbach/",
+   "duvod": "web nedostupný (chyba načtení: HTTP Error 404: Not Found)"
+  }
+ ],
+ "sources": [
+  "https://dbmuseum.de/nuernberg/informationen",
+  "https://kulturfabrik.de/service/barrierefreiheit",
+  "https://stadtmuseum-erlangen.de/de/ihr-besuch/barrierefreies-museum",
+  "https://www.allersberg.de/freizeit/a-z/beheiztes_freibad_allersberg-5726/",
+  "https://www.deutsches-museum.de/nuernberg/besuch/barrierefreier-besuch",
+  "https://www.gnm.de/services/haeufige-fragen",
+  "https://www.kunstpalais.de/de/133/Besuch-planen.html",
+  "https://www.limeseum.de/",
+  "https://www.nmn.de/de/f1/barrierefreiheit.htm",
+  "https://www.psd-nuernberg-arena.de/besucherinnen-service/barrierefreiheit/",
+  "https://www.rote-buehne.de/service/barrierefreiheit/",
+  "https://www.salzundpfeffer-theater.de/theaterbesuch.html",
+  "https://www.schloesser.bayern.de/deutsch/schloss/objekte/ansbach_mobilitaet.htm",
+  "https://www.stadttheater.de/service/zugaenglichkeit",
+  "https://www.theater-ansbach.de/ihr-weg-zu-uns/",
+  "https://www.gnm.de/fuerjungundalt/inklusiv",
+  "Souřadnice a osm_id: OpenStreetMap (ODbL), vstup data/research/inputs_by/stredni-franky_cile.json"
+ ]
+}

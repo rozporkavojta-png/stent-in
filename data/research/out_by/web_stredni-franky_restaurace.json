@@ -1,0 +1,647 @@
+{
+ "task": "web_stredni-franky_restaurace",
+ "kraj": "Střední Franky",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "method": "Skript prošel úvodní stránku + max 6 podstránek (odkazy barrierefrei|zimmer|anreise|service|ausstattung|kontakt|info|besuch), respektoval robots.txt, User-Agent kudyprojedu-student-project/0.1, max 6 paralelně, timeout 10 s; nedostupné weby zkoušeny znovu s variantou www/https. Prohlášení o přístupnosti webu (BFSG) a přístupnostní lišty nejsou brány jako údaj o budově. Souřadnice a adresy z OSM (vstupní soubor).",
+ "places": [
+  {
+   "osm_id": "w32521765",
+   "name": "Ritter St. Georg",
+   "obec": "Erlangen",
+   "address": "Herzogenauracher Damm 11",
+   "lat": 49.576515,
+   "lng": 10.985131,
+   "category": "restaurace",
+   "source_url": "https://www.gasthof-ritter-st-georg.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Hotel při gasthausu uvádí tři pokoje vhodné pro vozíčkáře.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "O restauraci samotné (vstup, WC) web nic konkrétního neuvádí; podstránka Barrierefreiheit je prohlášení o přístupnosti webu (BFSG), ne budovy. Ve výstavbě (2026) nová lobby a recepce v přízemí."
+   },
+   "measurements": [],
+   "evidence_quote": "Drei rollstuhlgerechte Gästezimmer"
+  },
+  {
+   "osm_id": "n2044146163",
+   "name": "Gasthaus Bammes",
+   "obec": "Nürnberg",
+   "address": "Bucher Hauptstraße 63",
+   "lat": 49.496768,
+   "lng": 11.045531,
+   "category": "restaurace",
+   "source_url": "https://www.assmanns-bammes.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že gasthaus je bezbariérový (bez podrobností o vstupu či WC).",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Dostatek parkovacích míst přímo před vchodem (vyhrazené stání pro ZTP neuvedeno).",
+    "vytah": null,
+    "jine": "Zahrádka pod kaštany; autobusová zastávka asi 5 minut chůze."
+   },
+   "measurements": [],
+   "evidence_quote": "Unser Gasthaus ist barrierefrei"
+  },
+  {
+   "osm_id": "n4135928670",
+   "name": "Bio Restaurant Schwarzer Bock",
+   "obec": "Ansbach",
+   "address": "Pfarrstraße 31",
+   "lat": 49.303254,
+   "lng": 10.573551,
+   "category": "restaurace",
+   "source_url": "https://schwarzerbock.de/about/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": null,
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Apartmány a dvoulůžkové pokoje v hlavní budově jsou v 1.–2. patře, 17–29 schodů, bez výtahu.",
+    "koupelna": "Pokoje Federspiel v Gästehausu (č. 25 a King) mají bezbariérový (bodengleich) sprchový kout, pokoj 22 nízkou sprchovou vaničku.",
+    "parkovani": null,
+    "vytah": "Web výslovně uvádí „kein Lift“ u pokojů v patrech.",
+    "jine": "O vstupu do restaurace a WC web nic neuvádí."
+   },
+   "measurements": [
+    {
+     "co": "schody k apartmánu Wilder Markgraf (1. patro)",
+     "hodnota": 17,
+     "jednotka": "schodů"
+    },
+    {
+     "co": "schody k apartmánu ve 2. patře",
+     "hodnota": 29,
+     "jednotka": "schodů"
+    },
+    {
+     "co": "plocha pokoje Federspiel 22/25",
+     "hodnota": 30,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Zimmer 25 mit mit bodengleicher Dusche"
+  },
+  {
+   "osm_id": "n1232679085",
+   "name": "Café-Restaurant Orangerie",
+   "obec": "Ansbach",
+   "address": "Promenade 33",
+   "lat": 49.302161,
+   "lng": 10.579736,
+   "category": "restaurace",
+   "source_url": "https://orangerie-ansbach.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že všechny prostory a sály Orangerie jsou bezbariérově přístupné.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Údaje o WC a parkování web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "alle barrierefrei zugänglich"
+  },
+  {
+   "osm_id": "n14119113195",
+   "name": "Rosenbad",
+   "obec": "Ansbach",
+   "address": "Rosenbadstraße 8",
+   "lat": 49.301346,
+   "lng": 10.570787,
+   "category": "restaurace",
+   "source_url": "https://www.rosenbad-ansbach.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Web výslovně uvádí, že podnik není bezbariérový – vchod je přístupný jen po schodech.",
+    "wc": "Toalety jsou o patro níž (v suterénu).",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Nejbližší parkoviště Am Herrieder Tor, odtud několik minut pěšky.",
+    "vytah": null,
+    "jine": "Provozovatel nabízí pomoc, pokud host potřebuje podporu."
+   },
+   "measurements": [],
+   "evidence_quote": "Leider nein. Unser Eingang ist nur über Stufen erreichbar."
+  },
+  {
+   "osm_id": "n410467717",
+   "name": "Goldener Hirsch",
+   "obec": "Burgthann",
+   "address": "Burgstraße 2",
+   "lat": 49.354537,
+   "lng": 11.315883,
+   "category": "restaurace",
+   "source_url": "https://goldener-hirsch-burgthann.de/premium/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": null,
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Podzemní garáž s parkovacími místy a přímým výtahem k pokojům (vyhrazené stání neuvedeno).",
+    "vytah": "V Burghotelu výtah do sauny, podzemní garáže a přímo k pokojům.",
+    "jine": "O restauraci (vstup, WC) web nic neuvádí; „Barrierefreiheits-Anpassungen“ na webu je jen nástrojová lišta webu (OneTap)."
+   },
+   "measurements": [],
+   "evidence_quote": "mit direktem Aufzug zu den Zimmern"
+  },
+  {
+   "osm_id": "n3405036760",
+   "name": "Gasthaus Fetz",
+   "obec": "Dietenhofen",
+   "address": "Götteldorf 25",
+   "lat": 49.407924,
+   "lng": 10.628459,
+   "category": "restaurace",
+   "source_url": "https://gasthaus-fetz.de",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Web uvádí, že nový sál „Alter Stall“ (pro oslavy do 70 osob) je bezbariérový; o hlavní restauraci neuvádí nic.",
+    "wc": "Sál „Alter Stall“ má bezbariérovou toaletu.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "unser neuer „Alter Stall“ barrierefrei – inklusive barrierefreier Toilette"
+  },
+  {
+   "osm_id": "n5152128721",
+   "name": "Weib's Brauhaus",
+   "obec": "Dinkelsbühl",
+   "address": "Untere Schmiedgasse 13",
+   "lat": 49.070291,
+   "lng": 10.316974,
+   "category": "restaurace",
+   "source_url": "https://www.weibsbrauhaus.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérovou výčepní místnost (Gastraum) v přízemí; další místnosti a pivní zahrada bez údaje.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Pivní zahrada a 6 pokojů pro hosty – přístupnost neuvedena."
+   },
+   "measurements": [],
+   "evidence_quote": "barrierefreiem Gastraum im Erdgeschoss"
+  },
+  {
+   "osm_id": "n13340195899",
+   "name": "CASANOVA BAR",
+   "obec": "Emskirchen",
+   "address": "Marktplatz 6",
+   "lat": 49.550008,
+   "lng": 10.718521,
+   "category": "restaurace",
+   "source_url": "https://goldenerhirsch-restobar.metro.bar/?lang=de",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Profil Goldener Hirsch Resto Bar (Emskirchen) uvádí mezi službami „Barrierefrei“, bez podrobností.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Web z OSM (goldenerhirsch-restobar.com) přesměrovává na profil Goldener Hirsch Resto Bar na platformě metro.bar; shodu s Casanova Bar na Marktplatz 6 ověřit."
+   },
+   "measurements": [],
+   "evidence_quote": "Unsere Services Barrierefrei"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w146167333",
+   "name": "PostmeisterEis",
+   "url": "https://postmeistereis.de",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n662777652",
+   "name": "Café Mengin",
+   "url": "http://www.mengin.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w90882171",
+   "name": "Goldener Schwan",
+   "url": "https://goldenerschwan-tennenlohe.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2431410168",
+   "name": "Strohalm",
+   "url": "https://www.strohalm.de/",
+   "reason": "web nedostupný (The read operation timed out)"
+  },
+  {
+   "osm_id": "w125908779",
+   "name": "Grüner Felsenkeller",
+   "url": "https://www.gruener-felsenkeller.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w43061046",
+   "name": "Zum Stadtwappen",
+   "url": "https://gaststaette-zum-stadtwappen.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1614049066",
+   "name": "Weißes Roß",
+   "url": "https://immel-dorf.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1527179560",
+   "name": "Barockhäusle",
+   "url": "https://www.barock-haeusle.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2708689244",
+   "name": "Schöne Aussicht",
+   "url": "https://schoeneaussicht.info/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w218589936",
+   "name": "Landwehr am Turm",
+   "url": "https://landwehramturm.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w464637958",
+   "name": "Restaurant Ilios",
+   "url": "http://www.ilios-windsbach.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3268154961",
+   "name": "Gasthaus Goldener Stern",
+   "url": "https://www.gasthaus-goldener-stern-abenberg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w37125977",
+   "name": "Brauerei & Gasthof Rittmayer",
+   "url": "http://www.rittmayer-aisch.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n11336497992",
+   "name": "Ristorante Pizzeria Milano",
+   "url": "https://milano-adelsdorf.restaurant/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n298271357",
+   "name": "Zum Scharfen Eck",
+   "url": "http://www.metzgerei-niebler.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w31827338",
+   "name": "McDonald's",
+   "url": "https://www.mcdonalds.com/de/de-de/restaurant-suche.html/l/altdorf-bei-nurnberg/prackenfelser-strasse-14/820",
+   "reason": "web McDonald's uvádí jen prohlášení o přístupnosti webu/kiosků, ne o budově"
+  },
+  {
+   "osm_id": "n442679716",
+   "name": "Restaurant Pizzeria Adria",
+   "url": "https://www.adria-ristorante.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n440233211",
+   "name": "Sport Bavaria",
+   "url": "http://www.sport-bavaria.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n447809581",
+   "name": "An der Schwedenschanze",
+   "url": "https://www.schwedenschanz.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w204439840",
+   "name": "Bratwurst-Glöckle",
+   "url": "https://www.bratwurst-gloeckle.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1768007899",
+   "name": "Cafe Klatsch",
+   "url": "https://cafe-klatsch-ansbach.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4227692210",
+   "name": "Danys Cupcakery",
+   "url": "https://www.danys-cupcakery.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1295524099",
+   "name": "Gasthaus zum Mohren",
+   "url": "https://www.mohren-ansbach.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1833612926",
+   "name": "Gaststätte Kaspar Hauser",
+   "url": "https://www.restaurant-kaspar-hauser.de/",
+   "reason": "web nedostupný (Remote end closed connection without response)"
+  },
+  {
+   "osm_id": "n311333824",
+   "name": "Kammerkneipe",
+   "url": "https://www.kammerspiele.com/gastronomie/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1277745222",
+   "name": "Korfu",
+   "url": "https://www.korfu-ansbach.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w236401065",
+   "name": "La Taverna",
+   "url": "http://www.lataverna-an.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n14127683894",
+   "name": "MR AN",
+   "url": "http://mr-an.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2153198379",
+   "name": "Mamma Mia Eiscafè - Cocktail Bar - Restaurant",
+   "url": "https://www.mamma-mia-ansbach.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2153198409",
+   "name": "Mamma Mia Eiscafè - Cocktail Bar - Restaurant",
+   "url": "https://www.mamma-mia-ansbach.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1295524102",
+   "name": "Mono",
+   "url": "https://www.mono-ansbach.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2120546459",
+   "name": "Restaurant im Bürger Palais",
+   "url": "https://www.buerger-palais-ansbach.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4227786089",
+   "name": "Saikyo",
+   "url": "https://www.saikyo-restaurant.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w199213075",
+   "name": "Taverne Grüne Au",
+   "url": "https://www.taverne-grueneau.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1882915552",
+   "name": "McDonald's",
+   "url": "https://www.mcdonalds.com/de/de-de/restaurant-suche.html/l/aurach/ansbacher-strasse-44/1637",
+   "reason": "web McDonald's uvádí jen prohlášení o přístupnosti webu/kiosků, ne o budově"
+  },
+  {
+   "osm_id": "n1610575733",
+   "name": "Brauhaus Döbler",
+   "url": "https://www.brauhaus-doebler.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w218494477",
+   "name": "Café Utopia",
+   "url": "https://www.cafeutopia.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2199853212",
+   "name": "Le Anfore",
+   "url": "https://www.leanfore-bw.de/restaurant/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1610575731",
+   "name": "Mr An",
+   "url": "http://www.mr-an.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n676683630",
+   "name": "Restaurant Delphi",
+   "url": "https://www.delphi-bad-windsheim.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n680020767",
+   "name": "Zu den 3 Kronen",
+   "url": "https://www.weinstube-3kronen.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n6222592504",
+   "name": "Irodion",
+   "url": "https://www.rest-irodion.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1197113951",
+   "name": "Landgasthof Syburg",
+   "url": "https://www.landgasthof-syburg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4509464284",
+   "name": "Mama Mady's Diner",
+   "url": "https://www.mamamadysdiner.de/",
+   "reason": "web nedostupný (<urlopen error timed out>)"
+  },
+  {
+   "osm_id": "n12278717697",
+   "name": "Biergarten Schleuse 35",
+   "url": "https://www.schleuse35-burgthann.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n307975590",
+   "name": "Blaue Traube",
+   "url": "http://www.landgasthof-blauetraube.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n410467729",
+   "name": "L'Isola",
+   "url": "http://www.isola-burgthann.de",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n2578270868",
+   "name": "Gasthaus zur Post",
+   "url": "http://www.zurpost-cadolzburg.de",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n6349937217",
+   "name": "Loisl's Eiscafé",
+   "url": "https://www.loisls.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1600915773",
+   "name": "Royal India",
+   "url": "https://www.royalindia-cadolzburg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w243102594",
+   "name": "Zu den drei Linden",
+   "url": "https://www.hofmann-zautendorf.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n990258365",
+   "name": "Zum Dorfbrunnen",
+   "url": "https://www.dorfbrunnen-wachendorf.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w241800711",
+   "name": "Gaststätte im Golfclub Colmberg",
+   "url": "http://www.golf-ansbach.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3392273393",
+   "name": "Cafe am Münster",
+   "url": "https://cafeammuenster.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2129018308",
+   "name": "Café Haagen",
+   "url": "https://www.cafe-haagen.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12373340311",
+   "name": "Fränkischer Hof",
+   "url": "http://www.fr-hof.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n383055766",
+   "name": "Jedermanns",
+   "url": "https://www.jedermanns-online.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n6734989700",
+   "name": "Pizzeria Capri",
+   "url": "https://www.capri-eckental.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n384059784",
+   "name": "Restaurant Kavala",
+   "url": "https://restaurantkavala.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w264165474",
+   "name": "Sägewerk",
+   "url": "https://www.saegewerk-eckental.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3376330646",
+   "name": "Eislie Eiscafé",
+   "url": "https://www.eislie.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Ritter St. Georg – web",
+   "url": "https://www.gasthof-ritter-st-georg.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Gasthaus Bammes – web",
+   "url": "https://www.assmanns-bammes.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Bio Restaurant Schwarzer Bock – web",
+   "url": "https://schwarzerbock.de/about/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Café-Restaurant Orangerie – web",
+   "url": "https://orangerie-ansbach.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Rosenbad – web",
+   "url": "https://www.rosenbad-ansbach.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Goldener Hirsch – web",
+   "url": "https://goldener-hirsch-burgthann.de/premium/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Gasthaus Fetz – web",
+   "url": "https://gasthaus-fetz.de",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Weib's Brauhaus – web",
+   "url": "https://www.weibsbrauhaus.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "CASANOVA BAR – web",
+   "url": "https://goldenerhirsch-restobar.metro.bar/?lang=de",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  }
+ ]
+}

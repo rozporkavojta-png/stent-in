@@ -1,0 +1,935 @@
+{
+ "task": "web_dolni-franky_ubytovani",
+ "kraj": "Dolní Franky",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "n600305521",
+   "name": "Hotel Anker",
+   "obec": "Marktheidenfeld",
+   "address": "Kolpingstraße 7, 97828 Marktheidenfeld (dle webu)",
+   "lat": 49.845431,
+   "lng": 9.600474,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-anker.de/barrierefreies-hotel-in-franken/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Celý areál (parkoviště, nádvoří, recepce, snídaňová místnost, pokoje) je bez schodů, případně přes výtah nebo rampu; vstupní dveře v přízemí min. 118 cm, rampa 84 cm široká, práh max. 3 cm. Historický Weinhaus Anker (restaurace) má 2 schody u vstupu, k dispozici mobilní rampa.",
+    "wc": "Veřejné WC pro OZP podle DIN v budově „Casa Vitalis“: oboustranná sklopná madla, podjízdné umyvadlo, nouzová šňůra; dveře 86 cm, plocha před WC 200 × 151 cm.",
+    "pokoj": "Dva pokoje speciálně pro vozík: č. 2 (Torhaus) – výška postele 49 cm, manipulační plocha vlevo od postele 90 × 190 cm, dveře min. 80 cm; č. 5 (Hofgartenhaus) – výška postele 55 cm, dveře do pokoje 83 cm, plochy až 200 × 200 cm. Polohovací postel na vyžádání.",
+    "koupelna": "Pokoj č. 2: bezbariérový vstup do sprchy, plocha sprchy 80 × 153 cm, sklopné/mobilní sedátko, madla ve sprše a vpravo od WC (sklopné), podjízdné umyvadlo, zrcadlo použitelné vsedě, WC 45 cm. Pokoj č. 5: sprcha 170 × 116 cm se sedátkem a madly, sklopné madlo vpravo od WC, WC 45 cm.",
+    "parkovani": "Označené parkovací místo pro OZP přímo u domu; prostorné garáže a příjezdy.",
+    "vytah": "Výtah vhodný pro vozík, kabina 98 × 155 cm, dveře 79–80 cm.",
+    "jine": "Certifikace Reisen für Alle (Bayern Tourist GmbH, platná 11/2023–01/2027, ID PA-01348-2023) a DUNITAL; vítáni asistenční psi; podjízdné stoly v restauraci (výška 67 cm, hloubka 30 cm); zastávka autobusu přímo u hotelu."
+   },
+   "measurements": [
+    {
+     "co": "šířka vstupních dveří (přízemí)",
+     "hodnota": ">=118",
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka rampy",
+     "hodnota": 84,
+     "jednotka": "cm"
+    },
+    {
+     "co": "max. výška prahu",
+     "hodnota": 3,
+     "jednotka": "cm"
+    },
+    {
+     "co": "kabina výtahu",
+     "hodnota": "98 × 155",
+     "jednotka": "cm"
+    },
+    {
+     "co": "dveře výtahu",
+     "hodnota": "79–80",
+     "jednotka": "cm"
+    },
+    {
+     "co": "dveře veřejného WC",
+     "hodnota": 86,
+     "jednotka": "cm"
+    },
+    {
+     "co": "plocha před veřejným WC",
+     "hodnota": "200 × 151",
+     "jednotka": "cm"
+    },
+    {
+     "co": "pokoj 2 – plocha sprchy",
+     "hodnota": "80 × 153",
+     "jednotka": "cm"
+    },
+    {
+     "co": "pokoj 2 – výška postele",
+     "hodnota": 49,
+     "jednotka": "cm"
+    },
+    {
+     "co": "pokoj 2 – výška WC",
+     "hodnota": 45,
+     "jednotka": "cm"
+    },
+    {
+     "co": "pokoj 2 – plocha vedle postele",
+     "hodnota": "90 × 190",
+     "jednotka": "cm"
+    },
+    {
+     "co": "pokoj 2 – šířka dveří",
+     "hodnota": ">=80",
+     "jednotka": "cm"
+    },
+    {
+     "co": "pokoj 5 – plocha sprchy",
+     "hodnota": "170 × 116",
+     "jednotka": "cm"
+    },
+    {
+     "co": "pokoj 5 – výška postele",
+     "hodnota": 55,
+     "jednotka": "cm"
+    },
+    {
+     "co": "pokoj 5 – výška WC",
+     "hodnota": 45,
+     "jednotka": "cm"
+    },
+    {
+     "co": "pokoj 5 – dveře pokoje",
+     "hodnota": 83,
+     "jednotka": "cm"
+    },
+    {
+     "co": "pokoj 5 – vstupní dveře",
+     "hodnota": 93,
+     "jednotka": "cm"
+    },
+    {
+     "co": "podjízdné stoly – výška",
+     "hodnota": 67,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Vom Parkplatz bis zum Zimmer alles ebenerdig, per Aufzug oder Rampe erreichbar."
+  },
+  {
+   "osm_id": "w1040150353",
+   "name": "Gästehaus Pension Heuler",
+   "obec": "Eußenheim",
+   "address": "Am Gebersthal 6",
+   "lat": 49.986493,
+   "lng": 9.818478,
+   "category": "ubytovani",
+   "source_url": "https://www.pension-heuler.de/komfortzimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový (ebenerdig) přístup na recepci a do snídaňových místností (https://www.pension-heuler.de/unser-haus/service/).",
+    "wc": "Veřejné WC vhodné pro vozík u snídaňové místnosti.",
+    "pokoj": "Pokoj Lilie: prostorný dvoulůžkový pokoj pro vozík v přízemí s terasou, tyč v šatní skříni lze stáhnout dolů. Pokoj Orchidee: bezbariérový pokoj v přízemí. Pokoj Feldspatz: pokoj pro OZP ve zvýšeném přízemí, přístupný po rampách.",
+    "koupelna": "Pokoj Lilie: podjízdné umyvadlo, madla u WC, velmi prostorná sprcha pro vozík s pevným sedátkem.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "geräumiges, rollstuhl-gerechtes Doppelzimmer im Erdgeschoss mit Terrasse"
+  },
+  {
+   "osm_id": "n3846491383",
+   "name": "Gästehaus Schäfer",
+   "obec": "Güntersleben",
+   "address": "Gramschatzer Straße 1",
+   "lat": 49.869903,
+   "lng": 9.9072,
+   "category": "ubytovani",
+   "source_url": "https://www.gaestehaus-wuerzburg.de/barrierefreie-zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Bezbariérové pokoje s dostatkem místa v pokoji i v hygienickém zázemí.",
+    "koupelna": "Bezbariérové sprchy a WC uzpůsobené pro OZP.",
+    "parkovani": null,
+    "vytah": "Do horního patra vede schodišťová sedačka (Treppenlift), ne výtah; použitelnost pro vozík neuvedena.",
+    "jine": "Web výslovně zmiňuje hosty na vozíku nebo o berlích."
+   },
+   "measurements": [],
+   "evidence_quote": "Dank eines installierten Treppenlifts können Sie ohne Probleme die obere Etage erreichen."
+  },
+  {
+   "osm_id": "w124253728",
+   "name": "Garner Hotel Post Aschaffenburg",
+   "obec": "Aschaffenburg",
+   "address": "Goldbacher Straße 19-21",
+   "lat": 49.978619,
+   "lng": 9.150231,
+   "category": "ubytovani",
+   "source_url": "https://www.ihg.com/garner-hotels/hotels/de/de/aschaffenburg/zcbgs/hoteldetail/amenities",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup z parkoviště ke vchodu, rampa do hotelu, místo k zastavení pro vystoupení/naložení přímo u vchodu.",
+    "wc": "Uvedeny přístupné veřejné toalety a umyvadla.",
+    "pokoj": "3 bezbariérové pokoje (z 62, 4 podlaží).",
+    "koupelna": null,
+    "parkovani": "2 parkovací místa pro vozíčkáře; snížené obrubníky.",
+    "vytah": "Výtahy uvedeny jako bezbariérové (ADA).",
+    "jine": "Na recepci je k dispozici invalidní vozík."
+   },
+   "measurements": [],
+   "evidence_quote": "Anzahl barrierefreier Parkplätze für Rollstuhlfahrer: 2"
+  },
+  {
+   "osm_id": "n5151921110",
+   "name": "Sporthotel Großwallstadt",
+   "obec": "Großwallstadt",
+   "address": "Am Neubergsweg 6-10",
+   "lat": 49.880648,
+   "lng": 9.149118,
+   "category": "ubytovani",
+   "source_url": "https://business-sporthotel.com/zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Kategorie Barrierefreie Junior Suite: dost místa pro vozík kolem postelí, šatní skříň přístupná vozíkem, postele 100 × 200 cm, koberec.",
+    "koupelna": "Bezbariérové vybavení koupelny s nouzovým signálem.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "postele v bezbariérové junior suite",
+     "hodnota": "100 × 200",
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "ausreichend Platz für Rollstühle um die Betten"
+  },
+  {
+   "osm_id": "n4812933721",
+   "name": "Alte Rose Gasthaus",
+   "obec": "Ebelsbach",
+   "address": "Dorfstraße 1",
+   "lat": 49.991752,
+   "lng": 10.645679,
+   "category": "ubytovani",
+   "source_url": "http://www.alterosegasthaus.de/Zimmer/Familenzimmer-Rollstuhl-moeglich/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Rodinný pokoj (40 m²) uzpůsobený pro vozík, lze i jako dvoulůžkový; hotel má jeden pokoj vybavený pro OZP, podrobnosti na dotaz.",
+    "koupelna": "Koupelna speciálně upravená pro OZP a vozík.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "plocha rodinného pokoje pro vozík",
+     "hodnota": 40,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Familezimmer (40 m2) spezial angepassten Bad für Behinderte und Rollstuhl"
+  },
+  {
+   "osm_id": "w677267753",
+   "name": "Hotel Gutsmühle",
+   "obec": "Obernburg am Main",
+   "address": "An der Wehrinsel 3",
+   "lat": 49.831361,
+   "lng": 9.128788,
+   "category": "ubytovani",
+   "source_url": "https://hotel-gutsmuehle.de/de/zimmer",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Bezbariérový pokoj 24 m² v přízemí, jednolůžko nebo dvoulůžko, uveden jako vhodný pro vozíčkáře.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérového pokoje",
+     "hodnota": 24,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Barrierefreies Zimmer 24m² (Erdgeschoss) ... geeignet für Rollstuhlfahrer"
+  },
+  {
+   "osm_id": "n11414404666",
+   "name": "Cavallestro",
+   "obec": "Kitzingen",
+   "address": "Richthofen Circle 5",
+   "lat": 49.748359,
+   "lng": 10.187838,
+   "category": "ubytovani",
+   "source_url": "https://hotel-cavallestro.de/zimmer-appartments/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Většina pokojů je bezbariérová, jsou k dispozici pokoje pro OZP; přání je třeba uvést při rezervaci.",
+    "koupelna": null,
+    "parkovani": "Velké parkoviště přímo u budov, v ceně; vyhrazená místa pro OZP neuvedena.",
+    "vytah": "Výtahy v obou budovách hotelu.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Behindertengerechte Zimmer vorhanden. Aufzüge in beiden Hotelgebäuden."
+  },
+  {
+   "osm_id": "w526081132",
+   "name": "Hotel Imhof",
+   "obec": "Gemünden am Main",
+   "address": "Frankenstraße 1",
+   "lat": 50.060839,
+   "lng": 9.669464,
+   "category": "ubytovani",
+   "source_url": "https://hotel-imhof.de/info/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup v úrovni terénu; většina pokojů a celá restaurace s terasou dostupná bez bariér (https://hotel-imhof.de/zimmer-angebote/reisegruppen/).",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Bezplatné parkoviště pro autobusy přímo před hotelem; místa pro OZP neuvedena.",
+    "vytah": "Výtah v hotelu.",
+    "jine": "V přehledu vybavení uvedeno „rollstuhlfahrergeeignet“; podrobnosti o pokoji a koupelně neuvedeny."
+   },
+   "measurements": [],
+   "evidence_quote": "Barrierefrei, behindertengerecht und mit ebenerdigem Zugang"
+  },
+  {
+   "osm_id": "w106655589",
+   "name": "Hotel Kapellenberg",
+   "obec": "Eibelstadt",
+   "address": "Am Kapellenberg 2",
+   "lat": 49.731703,
+   "lng": 9.993908,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-kapellenberg.de/zimmer",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Hotel má 2 pokoje vhodné pro OZP (behindertenfreundlich); podrobnosti neuvedeny.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Ebenso verfügen wir über 2 behindertenfreundliche Zimmer."
+  },
+  {
+   "osm_id": "n280885226",
+   "name": "Gottwalds Inn",
+   "obec": "Obernburg am Main",
+   "address": "Mainstraße 3",
+   "lat": 49.842048,
+   "lng": 9.148203,
+   "category": "ubytovani",
+   "source_url": "https://gottwalds-inn.de/zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Z 28 pokojů je jeden pro vozík / bezbariérový; podrobnosti neuvedeny.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Selbstverständlich beinhaltet dies auch ein rollstuhlgerechtes bzw. barrierefreies Zimmer."
+  },
+  {
+   "osm_id": "n7265019694",
+   "name": "Hotel Waldeck garni",
+   "obec": "Kist",
+   "address": "Am Forst 2",
+   "lat": 49.744585,
+   "lng": 9.849243,
+   "category": "ubytovani",
+   "source_url": "https://waldeck-kist.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "V přehledu vybavení uveden bezbariérový přístup; nic dalšího o pokojích či koupelnách.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Barrierefreiheit Barrierefreier Zugang"
+  },
+  {
+   "osm_id": "w681836495",
+   "name": "Main Boardinghouse",
+   "obec": "Erlenbach am Main",
+   "address": "Am Brückensteg 5",
+   "lat": 49.802214,
+   "lng": 9.154579,
+   "category": "ubytovani",
+   "source_url": "https://main-boarding.de/hotel_room/zimmer-mit-doppelbett/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": "Pokoj s dvoulůžkem: koupelna se sprchou bez vaničky (begehbare Dusche), kterou web označuje za bezbariérovou.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Jiné údaje (vstup, výtah, parkování) web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Das moderne Bad beeindruckt mit einer begehbaren Dusche"
+  },
+  {
+   "osm_id": "n415258423",
+   "name": "Zur schönen Aussicht",
+   "obec": "Marktheidenfeld",
+   "address": "Brückenstraße 8",
+   "lat": 49.847307,
+   "lng": 9.600656,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelaussicht.de/zimmer.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": "Pokoje všech kategorií mají koupelnu se sprchou v úrovni podlahy (ebenerdige Dusche).",
+    "parkovani": null,
+    "vytah": null,
+    "jine": "O vstupu, výtahu či pokoji pro vozík web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "modernem Badezimmer mit ebenerdiger Dusche"
+  },
+  {
+   "osm_id": "w183718478",
+   "name": "Stellplatz Frankentherme",
+   "obec": "Bad Königshofen im Grabfeld",
+   "address": null,
+   "lat": 50.301616,
+   "lng": 10.476884,
+   "category": "ubytovani",
+   "source_url": "https://www.frankentherme.de/wohnmobilisten",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": "Bezbariérová budova sanitárního zázemí s několika sprchami a WC, pro hosty stání zdarma (klíč při registraci).",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "100 stání u lázní FrankenTherme; areál lázní a kurzentra je podle webu z velké části bezbariérový, Tourist-Information Bad Königshofen má certifikaci Reisen für Alle (https://www.frankentherme.de/info-service/barrierefreie-angebote)."
+   },
+   "measurements": [],
+   "evidence_quote": "Barrierefreies Gebäude mit mehreren Duschen und WCs."
+  },
+  {
+   "osm_id": "w304654870",
+   "name": "Reisemobilstellplatz \"Am Freibad\"",
+   "obec": "Hofheim in Unterfranken",
+   "address": null,
+   "lat": 50.141936,
+   "lng": 10.517726,
+   "category": "ubytovani",
+   "source_url": "https://stadt-hofheim.de/tourismus-freizeitgestaltung/wohnmobilstellplatz",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": "Sanitární budova s WC a sprchami a bezbariérovou unisex místností (behindertengerecht) přímo u stání.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "behindertengerechter Unisex-Raum unmittelbar am Stellplatz"
+  },
+  {
+   "osm_id": "n6743848584",
+   "name": "Stellplatz an der Edelbrennerei Hohmann",
+   "obec": "Nordheim vor der Rhön",
+   "address": "Bünd 16",
+   "lat": 50.473856,
+   "lng": 10.185368,
+   "category": "ubytovani",
+   "source_url": "https://edelbrennerei-hohmann.de/camping/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Stání pro 3 obytné vozy ve dvoře pálenice; v seznamu vybavení uvedeno „barrierefreier Stellplatz“, toaleta a sprcha bez dalších podrobností."
+   },
+   "measurements": [],
+   "evidence_quote": "Barrierefreier Stellplatz"
+  },
+  {
+   "osm_id": "n2724093392",
+   "name": "Hotel Dalberg",
+   "obec": "Aschaffenburg",
+   "address": "Pfaffengasse 12-14",
+   "lat": 49.974353,
+   "lng": 9.145327,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-dalberg.de/lage-und-kontakt/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "V přehledu vybavení na stránce Lage & Kontakt je uvedeno jen „Behindertenfreundlich“, bez podrobností."
+   },
+   "measurements": [],
+   "evidence_quote": "Behindertenfreundlich"
+  },
+  {
+   "osm_id": "w238463069",
+   "name": "Aparthotel Hohenzollern",
+   "obec": "Bad Kissingen",
+   "address": "Kurhausstraße 29",
+   "lat": 50.193015,
+   "lng": 10.078376,
+   "category": "ubytovani",
+   "source_url": "https://hotel-badkissingen.de/zimmer-preise/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Výtah v domě je k dispozici.",
+    "jine": "O bezbariérovosti pokojů a vstupu web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Aufzug im Haus vorhanden."
+  },
+  {
+   "osm_id": "n5374981593",
+   "name": "Dappers Hotel | Spa | Genuss",
+   "obec": "Bad Kissingen",
+   "address": "Menzelstraße 21",
+   "lat": 50.195206,
+   "lng": 10.081281,
+   "category": "ubytovani",
+   "source_url": "https://www.residence-dapper.de/de/zimmer-und-suiten/inklusivleistungen/36-0.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "V přehledu služeb uveden výtah v domě.",
+    "jine": "O bezbariérovosti web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Lift im Haus"
+  },
+  {
+   "osm_id": "n267039939",
+   "name": "Hotel Classico",
+   "obec": "Aschaffenburg",
+   "address": "Geschwister-Scholl-Platz 10",
+   "lat": 49.964141,
+   "lng": 9.1212,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-classico.de/info.htm",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Podzemní garáž s více než 20 stáními; místa pro OZP neuvedena.",
+    "vytah": "Výtah vede z podzemní garáže do všech pater.",
+    "jine": "O bezbariérovosti pokojů web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Unser Lift bringt Sie bequem von der hellerleuchteten Tiefgarage ... ins gewünschte Stockwerk."
+  },
+  {
+   "osm_id": "n11773809569",
+   "name": "Hotel Sonnenhügel Bad Kissingen",
+   "obec": "Bad Kissingen",
+   "address": "Burgstraße 15",
+   "lat": 50.190708,
+   "lng": 10.089402,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelsonnenhuegel.de/zimmer-hotel-angebote-appartement-bad-kissingen/familienzimmer-hotel-sonnenhuegel",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Výtah u recepce (zmíněn k ošetřovnám v 1. patře).",
+    "jine": "Hotel výslovně uvádí, že není bezbariérový."
+   },
+   "measurements": [],
+   "evidence_quote": "Das Hotel Sonnenhügel ist nicht barrierefrei."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w406242662",
+   "name": "Wernecker Brauerei Gasthof",
+   "url": "https://www.brauereigasthof-werneck.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n317688967",
+   "name": "Babelfish Hostel",
+   "url": "https://www.babelfish-hostel.de/intro/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2357970994",
+   "name": "Fränkischer Hof",
+   "url": "https://www.fraenkischer-hof-alzenau.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w302652543",
+   "name": "Reisemobilstellplatz - Am Alten Schwimmbad",
+   "url": "https://stadtarnstein.de/tourismus/",
+   "reason": "stránka města (turistické informace) – jen prohlášení o přístupnosti webu, o stání nic"
+  },
+  {
+   "osm_id": "w357193270",
+   "name": "Reisemobilstellplatz Bad Bocklet",
+   "url": "https://badbocklet.de/reise-planen/reisemobil-stellplaetze/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w52330876",
+   "name": "Campingpark Bad Kissingen",
+   "url": "https://www.knauscamp.de/bad-kissingen.html",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w892075951",
+   "name": "Hotel Fontana",
+   "url": "https://www.hotelfontana.de",
+   "reason": "web odmítl přístup (HTTP 403)"
+  },
+  {
+   "osm_id": "n5374543799",
+   "name": "Hotel Sonneneck",
+   "url": "https://www.hotel-sonneneck.de/",
+   "reason": "web odmítl přístup (HTTP 403)"
+  },
+  {
+   "osm_id": "n1476631291",
+   "name": "Hotel Frankenland",
+   "url": "https://www.hotel-frankenland.de/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu, o budově nic"
+  },
+  {
+   "osm_id": "n5375078597",
+   "name": "Hotel Weißes Haus",
+   "url": "https://www.hotel-weisses-haus.de",
+   "reason": "web nedostupný (HTTP 502, přesměrování na .com bez obsahu)"
+  },
+  {
+   "osm_id": "n5374743906",
+   "name": "Parkwohnstift Bad Kissingen",
+   "url": "https://www.parkwohnstift.de/",
+   "reason": "web nic o přístupnosti neuvádí (seniorská rezidence)"
+  },
+  {
+   "osm_id": "n5374811925",
+   "name": "Villa Spahn",
+   "url": "https://www.villa-spahn.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w358896438",
+   "name": "Westpark Hotel",
+   "url": "https://www.westpark-hotel.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w446147214",
+   "name": "Wohnmobilstellplatz - KissSalis Therme",
+   "url": "https://www.kisssalis.de/info/womo-stellplatz",
+   "reason": "stránka lázní KissSalis – jen prohlášení o přístupnosti webu, o stání nic"
+  },
+  {
+   "osm_id": "w299857450",
+   "name": "Hotel Ebner",
+   "url": "https://www.hotel-ebner.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7289424750",
+   "name": "Da Rosario",
+   "url": "https://rosario-nes.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w91609625",
+   "name": "Schlosshotel Bad Neustadt",
+   "url": "http://www.schlosshotel-bad-neustadt.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w120453768",
+   "name": "Wohnmobilstellplatz >Am Kurpark<",
+   "url": "https://www.bad-neustadt-erleben.de/reisemobilstellplatz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n444584496",
+   "name": "Adler Landhotel",
+   "url": "https://www.adler-buergstadt.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1840181718",
+   "name": "Waldhotel Heppe KG",
+   "url": "https://www.waldhotelheppe.de/",
+   "reason": "web uvádí jen bezbariérové zobrazení webu, o budově nic"
+  },
+  {
+   "osm_id": "w42220597",
+   "name": "Wohnmobilstellplatz Ebern",
+   "url": "https://www.wohnmobilstellplatz-ebern.de",
+   "reason": "robots.txt zakazuje procházení – nenačteno"
+  },
+  {
+   "osm_id": "w283800958",
+   "name": "Hotel Ullrich",
+   "url": "https://www.hotel-ullrich.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n310099014",
+   "name": "Meisnerhof",
+   "url": "https://www.meisnerhof.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w710637396",
+   "name": "Sonnentau",
+   "url": "https://www.sonnentau.com/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu, o budově nic"
+  },
+  {
+   "osm_id": "w340151655",
+   "name": "Wohnmobilstellplatz Geiselbach",
+   "url": "https://www.geiselbach.de/Default.aspx?tabid=9045",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w363822927",
+   "name": "Reisemobilstellplatz Lindenwiese - Platz 1",
+   "url": "https://www.stadt-gemuenden.de/seite/de/main-spessart/0816/msr/Wohnmobilstellplaetze.html",
+   "reason": "web města nedostupný (spojení ukončeno serverem)"
+  },
+  {
+   "osm_id": "n5494012928",
+   "name": "Hotel-Gasthof Lutz",
+   "url": "http://www.gasthoflutz.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w342716462",
+   "name": "Landhotel Heimathenhof",
+   "url": "https://www.heimathenhof.com",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu, o budově nic"
+  },
+  {
+   "osm_id": "n2135343178",
+   "name": "Landhotel Rügheim",
+   "url": "https://www.landhotel-ruegheim.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n305979841",
+   "name": "Hotel Lamm",
+   "url": "https://www.lamm-wuerzburg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w439241436",
+   "name": "Wohnmobilstellplatz am Einersheimer Tor",
+   "url": "https://www.iphofen.de/urlaub/gastgeber/wohnmobilstellplaetze.html",
+   "reason": "stránka města Iphofen – jen prohlášení o přístupnosti webu, o stání nic"
+  },
+  {
+   "osm_id": "w62091482",
+   "name": "Wohnmobilstellplatz Kitzingen",
+   "url": "https://www.kitzingen.info/tourismus/wohnmobilstellplatz/",
+   "reason": "odkaz vede na úvodní stránku města Kitzingen; o stání nic (jen prohlášení o přístupnosti webu)"
+  },
+  {
+   "osm_id": "w374165335",
+   "name": "Main.Berg.Blick",
+   "url": "https://www.mainbergblick.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n693309344",
+   "name": "Geburtshaus Regiomontanus (J. Müller), Astromon 15. Jhd.",
+   "url": "http://www.regiomontanushaus.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1087731744",
+   "name": "Stellplatz am Bleichdamm",
+   "url": "https://www.koenigsberg.de/tourismus-und-kultur/wohnmobilstellplatz",
+   "reason": "odkaz vede na úvodní stránku města Königsberg; o stání nic"
+  },
+  {
+   "osm_id": "w353659810",
+   "name": "Grüner Baum",
+   "url": "http://gruener-baum-leidersbach.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w37278711",
+   "name": "ACHAT Hotel Lohr am Main",
+   "url": "https://achat-hotels.com/hotels/lohr-am-main",
+   "reason": "odkaz vede na přehled hotelů řetězce ACHAT, kde hotel Lohr am Main už není uveden"
+  },
+  {
+   "osm_id": "n10819886596",
+   "name": "Bike Lodge Spessart",
+   "url": "https://bikelodge.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w44024813",
+   "name": "Reisemobilstellplatz am Malbach",
+   "url": "https://www.mellrichstadt-rhoen.de/wohnmobilstellplatz.html",
+   "reason": "odkaz vede na úvodní stránku města Mellrichstadt; bezbariérovost zmíněna jen u centra města"
+  },
+  {
+   "osm_id": "n6478356613",
+   "name": "Berghof",
+   "url": "http://www.berghof-böttigheim.de/",
+   "reason": "web nedostupný (HTTP 500 / doména nenalezena)"
+  },
+  {
+   "osm_id": "w245417523",
+   "name": "Reisemobilstellplatz an der Els",
+   "url": "http://www.oberelsbach-rhoen.de/15.html?&cHash=1e15a928f04e029eeb3aaaf13284250e&tx_mhbranchenbuch_pi1[detail]=32",
+   "reason": "odkaz nefunkční (HTTP 404)"
+  },
+  {
+   "osm_id": "n5694522043",
+   "name": "Berggasthof - Zum Dreistelzhof",
+   "url": "https://dreistelzhof.de/",
+   "reason": "doména neexistuje (DNS)"
+  },
+  {
+   "osm_id": "n297631178",
+   "name": "Hotel Römerhof",
+   "url": "https://www.roemerhof.de/de/hotel",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4262833864",
+   "name": "Wohnmobilstellplatz Markt Obersinn",
+   "url": "https://www.markt-obersinn.de/tourismusfreizeit1/bikerwaldspessart/index.html",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w100655684",
+   "name": "Berghaus Rhön",
+   "url": "https://berghausrhoen.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n298746898",
+   "name": "Gut Dürnhof",
+   "url": "https://www.mein-hotel.info/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n260617307",
+   "name": "Zum Kirschbaum",
+   "url": "https://hotel-zum-kirschbaum.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w233195023",
+   "name": "Naturfreundehaus Mainblick",
+   "url": "http://www.naturfreundehaus-schonungen.de/",
+   "reason": "web zmiňuje jen turistické cesty částečně vhodné pro vozík, o ubytování nic"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Vstupní seznam ubytování Dolní Franky (OSM, s webem)",
+   "url": "https://www.openstreetmap.org",
+   "note": "data/research/inputs_by/dolni-franky_ubytovani.json (70 míst); souřadnice a adresy z OSM (ODbL)."
+  },
+  {
+   "title": "Weby provozovatelů (70 adres z OSM tagu website)",
+   "url": "",
+   "note": "Projito skriptem 2026-10-07: úvodní stránka + max. 6 podstránek (barrierefrei|zimmer|anreise|service|ausstattung|kontakt|info|besuch), respektován robots.txt, max. 6 souběžných požadavků, timeout 10 s; nepřebírány recenze hostů ani rezervační portály."
+  },
+  {
+   "title": "FrankenTherme Bad Königshofen – Barrierefreie Angebote",
+   "url": "https://www.frankentherme.de/info-service/barrierefreie-angebote",
+   "note": "Lázně a kurzentrum z velké části bezbariérové; Tourist-Information Bad Königshofen certifikována Reisen für Alle."
+  },
+  {
+   "title": "Reisen für Alle",
+   "url": "https://www.reisen-fuer-alle.de",
+   "note": "Certifikaci (ID PA-01348-2023) uvádí na svém webu Hotel Anker Marktheidenfeld; v databázi Reisen für Alle neověřováno."
+  }
+ ]
+}

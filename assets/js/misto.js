@@ -1,4 +1,5 @@
-/* Detail místa – vše z data/places.json (OpenStreetMap + otevřená data měst + weby provozovatelů), nic se nedomýšlí.
+/* Detail místa – vše z data/regions/ (OpenStreetMap + otevřená data měst + weby provozovatelů), nic se nedomýšlí.
+   Odkaz: misto.html?id=<id>&r=<region>; starý odkaz bez r dohledá region přes data/regions/ids.json.
    Rozvržení (verze 3, DESIGN.md): velký název a vedle něj fotka z Wikimedia Commons (pokud existuje),
    4 klíčové údaje jako .tile s linkou nahoře, sekce jako výpisy s linkami, vpravo (desktop) lepící sloupec
    bez rámečků s mapou, kontaktem a zdrojem dat. Na mobilu lepící spodní lišta s akcemi. */
@@ -189,7 +190,7 @@
   }
 
   function nearItem(x, p) {
-    return '<li><a href="misto.html?id=' + encodeURIComponent(x.i) + '">' + (x.c === 'parkovani' ? K.statusHtml('ok', '') : K.statusHtml(K.W[x.w || 'null'].st, '')) +
+    return '<li><a href="' + K.placeUrl(x) + '">' + (x.c === 'parkovani' ? K.statusHtml('ok', '') : K.statusHtml(K.W[x.w || 'null'].st, '')) +
       '<span class="nm"><b>' + K.esc(x.n) + '</b><span>' + K.esc(x.s) + (x.t === 'yes' ? ' · bezbariérové WC' : '') + (x.pk ? ' · ' + x.pk + '× ZTP' : '') + '</span></span><span class="d num">' + dist(K.distanceKm(p, x)) + '</span></a></li>';
   }
 
@@ -222,7 +223,9 @@
     if (p.oh) r.push(row('Otevírací doba', '<span class="pl-oh">' + K.esc(p.oh.replace(/;\s*/g, '\n')) + '</span>'));
     if (p.st) r.push(row('Hvězdičky', K.esc(p.st)));
     if (p.op && p.c !== 'parkovani') r.push(row('Provozovatel', K.esc(p.op)));
-    r.push(row('Kraj', K.esc(p.k || '–')));
+    const de = K.zemeOf(p) === 'de';
+    r.push(row(de ? 'Vládní obvod' : 'Kraj', p.k ? '<a href="kraj.html?k=' + encodeURIComponent(p.k) + '">' + K.esc(K.krajName(p.k, K.zemeOf(p))) + '</a>' : '–'));
+    r.push(row('Země', K.esc(K.ZEME_LONG[K.zemeOf(p)] || '–')));
     return '<div class="pl-card pl-contact" id="s-kontakt"><h2>Kontakt</h2>' + rows(r) + '</div>';
   }
 
@@ -230,7 +233,8 @@
     const c = K.completeness(p), missing = K.missingFields(p);
     const body = isResearch(p)
       ? '<p class="small">Místo zatím není v OpenStreetMap. Název, poloha a údaje pocházejí z webu provozovatele' + (p.r && p.r[0] && p.r[0].date ? ', zkontrolováno ' + K.fmtDate(p.r[0].date) : '') + '. Polohu si před cestou ověřte na mapě.</p>'
-      : '<p class="small">Údaje o přístupnosti pocházejí z ' + ext(K.osmUrl(p), 'OpenStreetMap (objekt ' + K.esc(p.i.slice(1)) + ', verze ' + K.esc(p.v || '–') + ')') + ', staženo 5. 10. 2026. Data © přispěvatelé OpenStreetMap, licence ODbL.</p>' +
+      : !K.isOsm(p) ? '<p class="small">Místo pochází z otevřených dat uvedených v oddílu „Naměřené údaje“ (zdroj, licence a datum jsou u nich). V OpenStreetMap jsme ho zatím nenašli.</p>'
+      : '<p class="small">Údaje o přístupnosti pocházejí z ' + ext(K.osmUrl(p), 'OpenStreetMap (objekt ' + K.esc(p.i.slice(1)) + ', verze ' + K.esc(p.v || '–') + ')') + ', staženo ' + K.fmtDate(K.OSM_DATE[K.zemeOf(p)] || K.OSM_DATE.cz) + (K.zemeOf(p) === 'de' ? ' (výřez Geofabrik pro Bavorsko)' : '') + '. Data © přispěvatelé OpenStreetMap, licence ODbL.</p>' +
         (p.r && p.r.length ? '<p class="small">Údaje „Podle webu provozovatele“ jsme převzali z uvedeného webu, data OSM nijak nemění.</p>' : '');
     return '<div class="pl-card" id="s-zdroj"><h2>Zdroj dat a úplnost</h2>' +
       '<p class="pl-badges">' + (isResearch(p) ? K.sourceBadge('firma') : K.sourceBadge('komunita')) + (Array.isArray(p.x) && p.x.length ? K.sourceBadge('overeno') : '') + '</p>' + body +
@@ -259,6 +263,7 @@
 
     ROOT().innerHTML =
       '<nav class="pl-crumbs" aria-label="Drobečková navigace"><a href="mapa.html">Mapa</a><span aria-hidden="true">›</span>' +
+      (K.zemeOf(p) === 'de' ? '<a href="mapa.html?zeme=de">Bavorsko</a><span aria-hidden="true">›</span>' : '') +
       (p.k ? '<a href="kraj.html?k=' + encodeURIComponent(p.k) + '">' + K.esc(p.k) + '</a><span aria-hidden="true">›</span>' : '') +
       (p.o ? '<a href="mapa.html?q=' + encodeURIComponent(p.o) + '">' + K.esc(p.o) + '</a><span aria-hidden="true">›</span>' : '') +
       '<span aria-current="page">' + K.esc(p.n) + '</span></nav>' +
@@ -279,7 +284,7 @@
 
     ROOT().querySelectorAll('[data-open-needs-inline]').forEach(b => b.addEventListener('click', K.needsDrawer));
     ROOT().querySelectorAll('[data-save]').forEach(b => b.addEventListener('click', () => {
-      const now = K.saved.toggle(p.i);
+      const now = K.saved.toggle(p.i, p);
       ROOT().querySelectorAll('[data-save]').forEach(x => { x.setAttribute('aria-pressed', now); x.innerHTML = saveLabel(now); });
       K.toast(now ? 'Místo uloženo do profilu.' : 'Místo odebráno z uložených.');
     }));
@@ -302,11 +307,18 @@
   }
 
   async function init() {
-    const id = new URLSearchParams(location.search).get('id');
-    let all;
-    try { all = await K.loadPlaces(); } catch (e) { ROOT().innerHTML = '<p class="callout">Data se nepodařilo načíst. Otevřete web přes server, ne jako soubor.</p>'; return; }
-    const p = all.find(x => x.i === id);
+    const sp = new URLSearchParams(location.search);
+    const id = sp.get('id'), r = sp.get('r');
+    let p, all;
+    try {
+      p = await K.findPlace(id, r);
+      // okolí do 1,5 km: jen regiony, které do něj zasahují (u hranice i sousední země)
+      all = p ? await K.loadPlacesInBounds({ s: p.la - 0.02, n: p.la + 0.02, w: p.lo - 0.03, e: p.lo + 0.03 }).catch(() => [p]) : [];
+    } catch (e) { ROOT().innerHTML = '<p class="callout">Data se nepodařilo načíst. Otevřete web přes server, ne jako soubor.</p>'; return; }
     if (!p) { ROOT().innerHTML = '<div class="empty"><h1>Místo jsme nenašli</h1><p>Odkaz je možná starý nebo místo z OpenStreetMap zmizelo.</p><p><a class="btn btn-primary" href="mapa.html">Zpět na mapu</a></p></div>'; return; }
+    // starý odkaz bez regionu: doplnit r, ať příště stačí načíst jen jeden region
+    if (p._r && r !== p._r) { try { history.replaceState(null, '', K.placeUrl(p) + location.hash); } catch (e) { /* bez historie */ } }
+    if (K.saved.has(p.i)) K.rememberRegion(p);
     render(p, all);
     document.addEventListener('kp:needs', () => render(p, all));
   }

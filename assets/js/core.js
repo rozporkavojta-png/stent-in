@@ -192,12 +192,138 @@
   };
 
   // ---------- Data ----------
-  let DATA = null;
+  // Data jsou rozdělená po regionech (14 krajů ČR + 7 vládních obvodů Bavorska): data/regions/index.json
+  // + data/regions/<zeme>-<slug>.json. Načítá se jen to, co stránka potřebuje; načtené regiony se drží v cache.
+  const ZEME = { cz: 'Česko', de: 'Bavorsko' };
+  const ZEME_LONG = { cz: 'Česká republika', de: 'Bavorsko (Německo)' };
+  const OSM_DATE = { cz: '2026-10-05', de: '2026-10-07' }; // kdy jsme stáhli OpenStreetMap
+  const ok = (r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); };
+  let IDX = null, IDXP = null, DATA = null, DATAP = null, TOWNSP = null, IDSP = null;
+  const REG = {};            // id regionu → Promise<pole míst>
+  const BYID = new Map();    // id místa → místo (z načtených regionů)
+
+  function loadRegionsIndex() {
+    if (!IDXP) {
+      const pr = fetch('data/regions/index.json').then(ok).then(d => (IDX = d));
+      IDXP = pr;
+      pr.catch(() => { if (IDXP === pr) IDXP = null; });
+    }
+    return IDXP;
+  }
+  function regionMeta(id) { return (IDX || []).find(r => r.id === id) || null; }
+  function regionByName(k) { return (IDX || []).find(r => r.nazev === k) || null; }
+  function fetchRegionFiles(r) { return Promise.all((r.soubory || [r.soubor]).map(f => fetch(f).then(ok))).then(parts => [].concat(...parts)); }
+  function loadRegion(id) {
+    if (REG[id]) return REG[id];
+    const pr = loadRegionsIndex().then(idx => {
+      const r = idx.find(x => x.id === id);
+      if (!r) throw new Error('Neznámý region ' + id);
+      return fetchRegionFiles(r).then(list => {
+        list.forEach(p => { p._r = id; if (!p.z) p.z = r.zeme; BYID.set(p.i, p); });
+        return list;
+      });
+    });
+    REG[id] = pr;
+    pr.catch(() => { if (REG[id] === pr) delete REG[id]; });
+    return pr;
+  }
+  function isRegionLoaded(id) { return !!REG[id]; }
+  // bounds = { s, w, n, e }; bbox regionu = [západ, jih, východ, sever]
+  function regionsInBounds(idx, b, zeme) {
+    return idx.filter(r => (!zeme || r.zeme === zeme) && !(r.bbox[0] > b.e || r.bbox[2] < b.w || r.bbox[1] > b.n || r.bbox[3] < b.s)).map(r => r.id);
+  }
+  // Všechna místa z regionů, které zasahují do výřezu (celé regiony; přesný filtr na výřez si dělá stránka).
+  // opts.zeme = 'cz' | 'de' omezí načítání na jednu zemi.
+  function loadPlacesInBounds(b, opts) {
+    const o = opts || {};
+    return loadRegionsIndex().then(idx => {
+      const ids = b ? regionsInBounds(idx, b, o.zeme) : idx.filter(r => !o.zeme || r.zeme === o.zeme).map(r => r.id);
+      return Promise.all(ids.map(loadRegion)).then(parts => [].concat(...parts));
+    });
+  }
+  // Projde všechny regiony (nejvýš 3 najednou) a vrátí jen místa, která projdou filtrem.
+  // Regiony, které ještě nejsou v cache, si v paměti nenechává – vhodné pro výpisy jako Ubytování.
+  function loadAll(filter, opts) {
+    const o = opts || {};
+    return loadRegionsIndex().then(idx => {
+      const list = idx.filter(r => !o.zeme || r.zeme === o.zeme);
+      const out = new Array(list.length);
+      let next = 0, done = 0, failed = false;
+      return new Promise((resolve, reject) => {
+        if (!list.length) { resolve([]); return; }
+        const run = () => {
+          if (failed || next >= list.length) return;
+          const k = next++, r = list[k];
+          (REG[r.id] || fetchRegionFiles(r)).then(arr => {
+            out[k] = (filter ? arr.filter(filter) : arr).map(p => { p._r = r.id; if (!p.z) p.z = r.zeme; return p; });
+            done++;
+            if (o.onProgress) o.onProgress(done, list.length);
+            if (done === list.length) resolve([].concat(...out)); else run();
+          }).catch(e => { failed = true; reject(e); });
+        };
+        for (let i = 0; i < 3; i++) run();
+      });
+    });
+  }
+  // Kompatibilní: všechna místa (Česko i Bavorsko, asi 84 tisíc). Bez indexu regionů spadne na starý data/places.json (jen ČR).
   function loadPlaces() {
     if (DATA) return Promise.resolve(DATA);
-    return fetch('data/places.json').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then(d => (DATA = d));
+    if (!DATAP) {
+      const pr = loadPlacesInBounds(null)
+        .catch(() => fetch('data/places.json').then(ok).then(d => { d.forEach(p => BYID.set(p.i, p)); return d; }))
+        .then(d => (DATA = d));
+      DATAP = pr;
+      pr.catch(() => { if (DATAP === pr) DATAP = null; });
+    }
+    return DATAP;
   }
-  function loadStats() { return fetch('data/stats.json').then(r => r.json()); }
+  function loadStats() { return fetch('data/stats.json').then(ok); }
+  // Obce: [[název, region, počet míst, jih, západ, sever, východ], …] – hledání obce bez načtení všech regionů
+  function loadTowns() {
+    if (!TOWNSP) { const pr = fetch('data/regions/obce.json').then(ok); TOWNSP = pr; pr.catch(() => { if (TOWNSP === pr) TOWNSP = null; }); }
+    return TOWNSP;
+  }
+  // Ve kterém regionu místo je (pro staré odkazy bez ?r=); data/regions/ids.json se stahuje jen v takovém případě
+  function lookupRegion(id) {
+    if (BYID.has(id) && BYID.get(id)._r) return Promise.resolve(BYID.get(id)._r);
+    const hint = store.get('placeRegion', {})[id];
+    if (hint && regionMeta(hint)) return Promise.resolve(hint);
+    if (!IDSP) { const pr = fetch('data/regions/ids.json').then(ok); IDSP = pr; pr.catch(() => { if (IDSP === pr) IDSP = null; }); }
+    return IDSP.then(m => { const needle = ',' + id + ','; return Object.keys(m).find(r => (',' + m[r] + ',').includes(needle)) || null; });
+  }
+  function rememberRegion(p) {
+    if (!p || !p._r) return;
+    const m = store.get('placeRegion', {});
+    if (m[p.i] !== p._r) { m[p.i] = p._r; store.set('placeRegion', m); }
+  }
+  // Najde místo podle id (a regionu, pokud ho odkaz nese). Vrací null, když místo neexistuje.
+  async function findPlace(id, r) {
+    if (!id) return null;
+    if (BYID.has(id)) return BYID.get(id);
+    await loadRegionsIndex().catch(() => null);
+    if (!IDX) { const all = await loadPlaces(); return all.find(x => x.i === id) || null; }
+    if (r && regionMeta(r)) {
+      const p = (await loadRegion(r)).find(x => x.i === id);
+      if (p) return p;
+    }
+    const rr = await lookupRegion(id);
+    if (!rr || rr === r || !regionMeta(rr)) return null;
+    return (await loadRegion(rr)).find(x => x.i === id) || null;
+  }
+  async function findPlaces(ids) {
+    const out = [];
+    for (const id of ids) { const p = await findPlace(id).catch(() => null); if (p) out.push(p); }
+    return out;
+  }
+  function placeUrl(p) { return 'misto.html?id=' + encodeURIComponent(p.i) + (p._r ? '&r=' + encodeURIComponent(p._r) : ''); }
+  // Celý název: „Jihočeský kraj“, „Kraj Vysočina“, „Hlavní město Praha“; bavorské vládní obvody beze změny („Horní Bavorsko“)
+  function krajName(k, z) {
+    if (!k) return '';
+    const zz = z || (regionByName(k) || {}).zeme || (/(Bavorsko|Franky|Falc|Švábsko)$/.test(k) ? 'de' : 'cz');
+    if (zz === 'de') return k;
+    return k === 'Hlavní město Praha' ? k : k === 'Vysočina' ? 'Kraj Vysočina' : k + ' kraj';
+  }
+  function zemeOf(p) { return p.z || (p._r ? p._r.slice(0, 2) : 'cz'); }
 
   // ---------- Logo ----------
   const LOGO = '<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="var(--tape)"/><path d="M9 15v10M31 15v10M9 20h22" stroke="var(--tape-ink)" stroke-width="2.6" stroke-linecap="round"/><path d="M15 20v-3M20 20v-5M25 20v-3" stroke="var(--tape-ink)" stroke-width="2" stroke-linecap="round"/></svg>';
@@ -230,7 +356,7 @@
   function header() {
     const h = here();
     return '<a class="skip-link" href="#main">Přeskočit na obsah</a>' +
-      '<div class="demo-bar">Studentský prototyp STENT-IN 2026<span class="hide-md"> · skutečná místa z otevřených dat, stav k 6. 10. 2026</span> · <a href="metodika.html#zdroje">Odkud data jsou</a></div>' +
+      '<div class="demo-bar">Studentský prototyp STENT-IN 2026<span class="hide-md"> · skutečná místa z otevřených dat, Česko a Bavorsko, stav k 7. 10. 2026</span> · <a href="metodika.html#zdroje">Odkud data jsou</a></div>' +
       '<header class="site-header"><div class="inner">' +
       '<a class="brand" href="index.html" aria-label="kudyprojedu.cz – úvod">' + LOGO + '<span>kudyprojedu<span class="dom">.cz</span></span></a>' +
       '<nav class="main-nav" aria-label="Hlavní navigace">' + NAV.map(([href, label]) => '<a href="' + href + '"' + (h === href ? ' aria-current="page"' : '') + '>' + label + '</a>').join('') +
@@ -276,13 +402,13 @@
 
   function footer() {
     return '<footer class="site-footer"><div class="wrap"><div class="cols">' +
-      '<div><a class="brand" href="index.html">' + LOGO + '<span>kudyprojedu<span class="dom">.cz</span></span></a><p class="small muted" style="margin-top:12px;max-width:34ch">Přístupnost v centimetrech, ne v nálepkách. Mapa míst pro lidi na vozíku a s omezenou pohyblivostí v celém Česku.</p>' +
+      '<div><a class="brand" href="index.html">' + LOGO + '<span>kudyprojedu<span class="dom">.cz</span></span></a><p class="small muted" style="margin-top:12px;max-width:34ch">Přístupnost v centimetrech, ne v nálepkách. Mapa míst pro lidi na vozíku a s omezenou pohyblivostí v Česku a v Bavorsku.</p>' +
       '<div class="footer-tools"><button class="btn btn-ghost btn-sm" type="button" data-theme-toggle>' + icon('moon') + 'Světlý / tmavý režim</button></div></div>' +
       '<div><h4>Hledat</h4><ul><li><a href="mapa.html">Mapa míst</a></li><li><a href="ubytovani.html">Ubytování</a></li><li><a href="mapa.html#wc">Veřejné WC</a></li><li><a href="trasy.html">Bariéry v ulicích</a></li><li><a href="kraj.html">Kraje</a></li></ul></div>' +
       '<div><h4>Přispět</h4><ul><li><a href="pridat.html">Přidat nebo upravit místo</a></li><li><a href="metodika.html#mereni">Jak měřit dveře a schody</a></li><li><a href="komunita.html">Komunita</a></li><li><a href="profil.html">Můj profil</a></li></ul></div>' +
       '<div><h4>Pro organizace</h4><ul><li><a href="pro-firmy.html">Pro podniky</a></li><li><a href="pro-firmy.html#obce">Pro obce a kraje</a></li><li><a href="pro-firmy.html#cenik">Ceník</a></li><li><a href="zdroje.html">Zdroje a trh</a></li></ul></div>' +
       '<div><h4>Projekt</h4><ul><li><a href="o-projektu.html">O projektu</a></li><li><a href="o-projektu.html#plan">Plán rozvoje</a></li><li><a href="metodika.html">Jak měříme</a></li><li><a href="metodika.html#soukromi">Soukromí a GDPR</a></li></ul><div class="partner-logos"><span>VŠTE ČB</span><span>OTH Regensburg</span><span>Interreg BY–CZ</span></div></div>' +
-      '</div><div class="legal"><span>© 2026 kudyprojedu.cz – studentský projekt STENT-IN</span><span>Data © přispěvatelé OpenStreetMap (ODbL), Mapy bez bariér, Brno a IPR Praha (CC BY), Statutární město Ostrava (CC BY-SA 4.0) · fotky Wikimedia Commons · mapy Google</span></div></div></footer>';
+      '</div><div class="legal"><span>© 2026 kudyprojedu.cz – studentský projekt STENT-IN</span><span>Data © přispěvatelé OpenStreetMap (ODbL), Mapy bez bariér, Brno a IPR Praha (CC BY), Statutární město Ostrava (CC BY-SA 4.0) · Bavorsko: DB InfraGO OpenStation (CC0), Landeshauptstadt München a Stadt Würzburg (dl-de/by-2-0), Stadt Haar (CC BY 4.0), BayernCloud Tourismus (CC BY 4.0 a CC0) · fotky Wikimedia Commons · mapy Google · <a href="zdroje.html#bavorsko">Všechny zdroje a licence</a></span></div></div></footer>';
   }
 
   // ---------- Panel „Moje potřeby“ ----------
@@ -327,7 +453,7 @@
   const saved = {
     all: () => store.get('saved', []),
     has: (id) => saved.all().includes(id),
-    toggle: (id) => { const s = saved.all(); const i = s.indexOf(id); if (i >= 0) s.splice(i, 1); else s.push(id); store.set('saved', s); return i < 0; },
+    toggle: (id, p) => { const s = saved.all(); const i = s.indexOf(id); if (i >= 0) s.splice(i, 1); else { s.push(id); rememberRegion(p || BYID.get(id)); } store.set('saved', s); return i < 0; },
   };
 
   // ---------- Téma ----------
@@ -360,7 +486,7 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount); else mount();
 
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
-  function placeById(id) { return (DATA || []).find(p => p.i === id); }
+  function placeById(id) { return BYID.get(id) || (DATA || []).find(p => p.i === id); }
   function distanceKm(a, b) {
     const R = 6371, dLat = (b.la - a.la) * Math.PI / 180, dLng = (b.lo - a.lo) * Math.PI / 180;
     const x = Math.sin(dLat / 2) ** 2 + Math.cos(a.la * Math.PI / 180) * Math.cos(b.la * Math.PI / 180) * Math.sin(dLng / 2) ** 2;
@@ -368,5 +494,5 @@
   }
 
   window.KP = { store, icon, CATS, SOURCES, W, T, FIELDS, getNeeds, setNeeds, completeness, missingFields, match, generalStatus, STATUS_LABEL, STATUS_SHORT,
-    fmt, fmtDate, ageLabel, sourceBadge, statusHtml, isOsm, osmUrl, osmEditUrl, commonsImg, commonsPage, gmaps, loadPlaces, loadStats, toast, saved, needsDrawer, esc, placeById, distanceKm, LOGO, moreSheet, toggleTheme };
+    fmt, fmtDate, ageLabel, sourceBadge, statusHtml, isOsm, osmUrl, osmEditUrl, commonsImg, commonsPage, gmaps, loadPlaces, loadStats, loadRegionsIndex, loadRegion, loadPlacesInBounds, loadAll, loadTowns, findPlace, findPlaces, placeUrl, rememberRegion, regionMeta, regionByName, isRegionLoaded, krajName, zemeOf, ZEME, ZEME_LONG, OSM_DATE, toast, saved, needsDrawer, esc, placeById, distanceKm, LOGO, moreSheet, toggleTheme };
 })();

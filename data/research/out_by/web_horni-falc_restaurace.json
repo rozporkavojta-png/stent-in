@@ -1,0 +1,537 @@
+{
+ "task": "web_horni-falc_restaurace",
+ "kraj": "Horní Falc",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "n11067095985",
+   "name": "Café Waffel",
+   "obec": "Miltach",
+   "address": "Bahnhofstraße 20",
+   "lat": 49.163861,
+   "lng": 12.768019,
+   "category": "restaurace",
+   "source_url": "https://www.waffelbahnhof.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že kavárna je bezbariérová a vybavená pro vozíčkáře.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Parkování přímo za kavárnou (bez zmínky o vyhrazeném stání).",
+    "vytah": null,
+    "jine": "Terasa s asi 80 krytými místy k sezení; bezbariérovost terasy ani WC web výslovně neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Barrierefrei für Rollstuhlfahrer entsprechend eingerichtet"
+  },
+  {
+   "osm_id": "n5635960454",
+   "name": "Anemos",
+   "obec": "Neumarkt in der Oberpfalz",
+   "address": "Rotbuchenstraße 21",
+   "lat": 49.279842,
+   "lng": 11.443688,
+   "category": "restaurace",
+   "source_url": "https://djkneumarkt.de/hp1104/Gaststaette-Anemos.htm",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup do restaurace.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Parkování před domem (bez zmínky o vyhrazeném stání).",
+    "vytah": null,
+    "jine": "Restaurace je v areálu sportoviště DJK Neumarkt; web je stránka sportovního klubu."
+   },
+   "measurements": [],
+   "evidence_quote": "mit Parkmöglichkeiten vor dem Haus sowie barrierefreiem Zugang"
+  },
+  {
+   "osm_id": "n911610035",
+   "name": "Korfu",
+   "obec": "Lappersdorf",
+   "address": "Regensburger Straße 31",
+   "lat": 49.048108,
+   "lng": 12.091457,
+   "category": "restaurace",
+   "source_url": "https://korfu-restaurant-lappersdorf.eatbu.com/?lang=de",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí mezi službami jen štítek „Barrierefrei“ bez dalších podrobností.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Mezi službami uvedena parkoviště (bez podrobností).",
+    "vytah": null,
+    "jine": "Uvedeno venkovní posezení (Außenbereich); web je na platformě eatbu, údaj je jen obecný štítek – ověřit."
+   },
+   "measurements": [],
+   "evidence_quote": "Unsere Services Barrierefrei Außenbereich Parkplätze"
+  },
+  {
+   "osm_id": "n8661774988",
+   "name": "Post Berching",
+   "obec": "Berching",
+   "address": "Johannesbrücke 5",
+   "lat": 49.106364,
+   "lng": 11.443768,
+   "category": "restaurace",
+   "source_url": "https://www.post-berching.de/zimmer-suiten/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hotel uvádí, že všechny pokoje jsou bezbariérově dostupné; o vstupu do samotné restaurace web nic konkrétního neuvádí.",
+    "wc": null,
+    "pokoj": "1 pokoj je bezbariérově přístupný a vybavený pro vozíčkáře (rollstuhlgerecht).",
+    "koupelna": null,
+    "parkovani": "Parkoviště přímo před hotelem (ve všední dny 8–18 h parkovací kotouč na 2 h); další bezplatná parkoviště asi 300 m (Alter Bahnhof, Zeißlgässchen). Vyhrazené stání web neuvádí.",
+    "vytah": "V budově je výtah (sekce Häufige Fragen).",
+    "jine": "Hotel s restaurací a pivní zahradou u řeky Sulz; údaje se týkají hlavně hotelu. Zdroje: https://www.post-berching.de/zimmer-suiten/haeufige-fragen/"
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost veřejných parkovišť od hotelu",
+     "hodnota": 300,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "1 Zimmer ist barrierefrei zugänglich und rollstuhlgerecht ausgestattet."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n1287392387",
+   "name": "Café Baroco",
+   "url": "https://www.baroco.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3571737597",
+   "name": "Casino Saal - Kneipe, Bar, Liveclub",
+   "url": "https://casinosaal.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1870053753",
+   "name": "Colomba",
+   "url": "http://colomba-amberg.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4315983914",
+   "name": "Heimatgenuss im Bruckmüller",
+   "url": "http://heimatgenuss-amberg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3330916959",
+   "name": "Hiro Sakao",
+   "url": "https://www.hiro-amberg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w104519795",
+   "name": "L'Osteria",
+   "url": "https://www.losteria.de/restaurant/amberg/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1923685696",
+   "name": "Syrtaki",
+   "url": "https://www.syrtaki-amberg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2626221250",
+   "name": "Taverna Zorbas",
+   "url": "https://www.taverna-zorbas-amberg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1287393820",
+   "name": "Wild Vaitl",
+   "url": "https://www.wild-vaitl.de/",
+   "reason": "web nedostupný (doména neexistuje)"
+  },
+  {
+   "osm_id": "n2844281956",
+   "name": "Winkler Bräuwirt",
+   "url": "http://winkler-braeuwirt.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w757868817",
+   "name": "Goggolori",
+   "url": "http://www.goggolori.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2383614645",
+   "name": "Barbinger",
+   "url": "https://www.das-barbinger.de/",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "w229599379",
+   "name": "Burger King",
+   "url": "http://www.burger-king.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9612565219",
+   "name": "Hotel Gasthof Lindenhof",
+   "url": "http://www.lindenhof-berg.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7079913368",
+   "name": "Sportgaststätte Bernhardswald",
+   "url": "http://sg.bernhardswald.net/",
+   "reason": "web nedostupný (HTTP Error 500: Internal Server Error)"
+  },
+  {
+   "osm_id": "n3741553469",
+   "name": "Laurer",
+   "url": "https://www.gasthaus-laurer.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n410312362",
+   "name": "Zum Schloß",
+   "url": "https://www.zum-schloss.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7833726382",
+   "name": "Brauereigasthof Jacob",
+   "url": "https://gasthof.brauerei-jacob.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w240812672",
+   "name": "Gasthof zum Lehnerwirt",
+   "url": "https://gasthoflehner.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1423301383",
+   "name": "Kiosk Sandoase",
+   "url": "https://www.marktbruck.de/leben-in-bruck/sandoase/sandoase-prospekt.html",
+   "reason": "nalezena jen stránka obce Markt Bruck s prohlášením o přístupnosti webu, o kiosku nic"
+  },
+  {
+   "osm_id": "n147991728",
+   "name": "Stadthalle Burglengenfeld",
+   "url": "http://www.stadthalle-bul.de/",
+   "reason": "web nedostupný (doména neexistuje)"
+  },
+  {
+   "osm_id": "n2488287502",
+   "name": "Bistro Brot&Zeit",
+   "url": "https://brotundzeit-geschichtspark.de/",
+   "reason": "web nedostupný (HTTP Error 500: Internal Server Error)"
+  },
+  {
+   "osm_id": "n7333984185",
+   "name": "934 Beachbar & Lounge",
+   "url": "https://neundreivier.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4109742504",
+   "name": "Bäckerei Hutterer",
+   "url": "https://baeckerei-hutterer.de/",
+   "reason": "web nedostupný (HTTP Error 500: Internal Server Error)"
+  },
+  {
+   "osm_id": "n2229491176",
+   "name": "Frey Restaurant",
+   "url": "http://frey-mode.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w202879821",
+   "name": "Gasthof mit Pension Käsbauer",
+   "url": "https://www.pension-kaesbauer.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2412312690",
+   "name": "Metzgerei Fischer",
+   "url": "http://www.metzgerei-fischer.de/",
+   "reason": "web nedostupný (<urlopen error timed out>)"
+  },
+  {
+   "osm_id": "n2879452091",
+   "name": "Wirtshaus Lamberg",
+   "url": "http://www.wirtshaus-lamberg.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w31394647",
+   "name": "d' Wasserwirtschaft",
+   "url": "https://www.wasserwirtschaft-cham.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n685956205",
+   "name": "Bay.Chi",
+   "url": "https://www.bay-chi.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n11911076460",
+   "name": "Pizzeria Al Ponte",
+   "url": "https://www.pizza-alponte.de/de/",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n1758321023",
+   "name": "Zum Blechernen Reiter",
+   "url": "https://www.zum-blechernen-reiter.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4572061909",
+   "name": "Rindstaurant im Stadtpark",
+   "url": "https://www.rindstaurant.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1664391865",
+   "name": "MAMA's",
+   "url": "http://www.mamas-weiden.de/",
+   "reason": "web nedostupný (<urlopen error timed out>)"
+  },
+  {
+   "osm_id": "n375394521",
+   "name": "Gasthof Riebel",
+   "url": "http://gasthof-pension-riebel.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n5610995372",
+   "name": "Museumscafé im Bildungszentrum",
+   "url": "https://www.museumscafe-flossenbuerg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n526826594",
+   "name": "Familiengasthof Schaller",
+   "url": "https://www.familiengasthof-schaller.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1923767750",
+   "name": "Café Mitte",
+   "url": "https://www.cafe-mitte-weiden.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4541215574",
+   "name": "YANA´S",
+   "url": "http://www.yanas-weiden.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w688566182",
+   "name": "Zum Steinköppl",
+   "url": "https://www.steinkoeppl.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n465241516",
+   "name": "Siegls - Das Restaurant",
+   "url": "https://siegls-restaurant.de",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu (BFSG), o budově nic"
+  },
+  {
+   "osm_id": "n1652543259",
+   "name": "Alte Kaserne",
+   "url": "https://www.altekaserne.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1829081688",
+   "name": "Cafe \"KaffeeZeit - Das Dorfcafe\"",
+   "url": "https://www.dorfcafe-gleiritsch.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12185656080",
+   "name": "CHICKENPICKIN'",
+   "url": "https://www.chickenpickin.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1110736923",
+   "name": "Hiltner",
+   "url": "https://www.baeckerei-hiltner.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2478190379",
+   "name": "Trefferia",
+   "url": "https://www.globus-baumarkt.de/",
+   "reason": "odkaz vede na web Globus Baumarkt – jen prohlášení o přístupnosti e-shopu, o restauraci nic"
+  },
+  {
+   "osm_id": "n3742662536",
+   "name": "Drahthammer Schlößl",
+   "url": "https://www.drahthammerschloessl.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n772986307",
+   "name": "taverne-korfu2",
+   "url": "https://www.korfu2-hirschau.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n415608214",
+   "name": "Hubertushöhe",
+   "url": "https://www.hubertushoehe.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1493397101",
+   "name": "Power Meals",
+   "url": "https://linktr.ee/pm_powermeals",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "w95637696",
+   "name": "Goldener Hirsch",
+   "url": "http://www.goldener-hirsch-regensburg.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n6109302644",
+   "name": "Gasthof Prößl",
+   "url": "https://lgh-proessl.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12927390432",
+   "name": "Konditorei Cafe Hahn",
+   "url": "https://www.konditorei-hahn.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1645106499",
+   "name": "Pegasus Flugplatzrestaurant",
+   "url": "http://www.pegasus-weiden.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w245726392",
+   "name": "McDonald's",
+   "url": "http://www.mcdonalds-elster.de",
+   "reason": "web McDonald’s (stránka jiné pobočky) – jen prohlášení o přístupnosti webu, o této provozovně nic"
+  },
+  {
+   "osm_id": "w667112528",
+   "name": "Zoiglstube Lugert",
+   "url": "https://www.zoigl-lugert.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w666846577",
+   "name": "Zoiglstube Oppl",
+   "url": "http://www.oppl-zoigl.de",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n453246614",
+   "name": "Gasthof Reinbachtal",
+   "url": "https://gasthof-reinbachtal.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n11167023996",
+   "name": "52°",
+   "url": "https://wittmanns-neumarkt.de/de-de/restaurants/steak-restaurant-52/",
+   "reason": "web hotelu Wittmann’s uvádí jen „teils barrierefrei“ pokoje, o restauraci 52° nic"
+  },
+  {
+   "osm_id": "n4373315873",
+   "name": "Der Beck",
+   "url": "https://www.der-beck.de",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu, o prodejnách/kavárnách nic"
+  },
+  {
+   "osm_id": "n1951657227",
+   "name": "G6",
+   "url": "https://www.jugend-neumarkt.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n600175244",
+   "name": "Mai Tai",
+   "url": "https://www.maitai-neumarkt.de/",
+   "reason": "web nedostupný (HTTP Error 503: Service Temporarily Unavailable)"
+  },
+  {
+   "osm_id": "w25493662",
+   "name": "See-Cafe",
+   "url": "https://www.seecafe-neumarkt.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2429128663",
+   "name": "Amberger Garten",
+   "url": "http://www.amberger-garten.de",
+   "reason": "web nedostupný (doména neexistuje)"
+  },
+  {
+   "osm_id": "n3274415962",
+   "name": "Restaurant Esszimmer",
+   "url": "https://esszimmer.restaurant/restaurant-esszimmer/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w635535160",
+   "name": "Kulmterrasse",
+   "url": "https://www.kulmterrasse-neustadt.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Café Waffel – web",
+   "url": "https://www.waffelbahnhof.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Anemos – web",
+   "url": "https://djkneumarkt.de/hp1104/Gaststaette-Anemos.htm",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Korfu – web",
+   "url": "https://korfu-restaurant-lappersdorf.eatbu.com/?lang=de",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Post Berching – web",
+   "url": "https://www.post-berching.de/zimmer-suiten/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Post Berching – Häufige Fragen",
+   "url": "https://www.post-berching.de/zimmer-suiten/haeufige-fragen/",
+   "note": "Výtah, parkování."
+  },
+  {
+   "title": "Vstupní seznam míst (OSM, kudyprojedu)",
+   "url": "data/research/inputs_by/horni-falc_restaurace.json",
+   "note": "Souřadnice a odkazy na weby z OpenStreetMap (ODbL)."
+  }
+ ],
+ "method": "Skript prošel úvodní stránku + max 6 podstránek (odkazy barrierefrei|zimmer|anreise|service|ausstattung|kontakt|info|besuch), respektoval robots.txt, User-Agent kudyprojedu-student-project/0.1, max 6 paralelně, timeout 10 s. Prohlášení o přístupnosti webu (BFSG/BayDiV) nejsou brána jako údaj o budově."
+}

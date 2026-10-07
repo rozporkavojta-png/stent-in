@@ -1,0 +1,912 @@
+{
+ "task": "web_dolni-bavorsko_ubytovani",
+ "kraj": "Dolní Bavorsko",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "w178776535",
+   "name": "Wasmayr Hof",
+   "obec": "Altdorf",
+   "address": "Aich 4",
+   "lat": 48.563924,
+   "lng": 12.094619,
+   "category": "ubytovani",
+   "source_url": "https://www.wasmayr-hof.de/apartments/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Jeden bezbariérový apartmán v přízemí (32 m², postel 160×200 cm pro 2 osoby, kuchyňka); ostatní pokoje a apartmány (většinou v 1. patře) jsou v tabulce označeny jako nebezbariérové.",
+    "koupelna": "Koupelna (sprcha/WC) i kuchyň bezbariérového apartmánu jsou podle webu přizpůsobené pro vozík.",
+    "jine": "Na úvodní stránce web uvádí, že ze 17 pokojů a apartmánů jsou některé bezbariérové."
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérového apartmánu",
+     "hodnota": 32,
+     "jednotka": "m²"
+    },
+    {
+     "co": "rozměr postele",
+     "hodnota": "160×200",
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Küche sowie Bad sind rollstuhlgerecht"
+  },
+  {
+   "osm_id": "w36380560",
+   "name": "Camping Holmernhof",
+   "obec": "Bad Füssing",
+   "address": "Am Tennispark 10",
+   "lat": 48.359269,
+   "lng": 13.30706,
+   "category": "ubytovani",
+   "source_url": "https://holmernhof-camping.de/unser-resort/barrierefreiheit",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Moderní sanitární budovy mají bezbariérové části (sprchy, WC, umyvadla) s dostatkem prostoru; poloha je vyznačena v plánku kempu.",
+    "vstup": "Mnoho cest je zpevněných, řada míst areálu je dostupná bez schodů nebo s minimem schodů; místy mírná stoupání a různé povrchy.",
+    "jine": "Kemp se označuje za bezbariérový a vhodný pro vozík; nabízí pomoc s výběrem vhodného stanoviště a poradenství před příjezdem. Konkrétní rozměry neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Unser 5-Sterne Campingresort ist barrierefrei und rollstuhlgerecht"
+  },
+  {
+   "osm_id": "w153239813",
+   "name": "Haus Mirabell",
+   "obec": "Bad Füssing",
+   "address": "Birkenallee 10",
+   "lat": 48.348495,
+   "lng": 13.31296,
+   "category": "ubytovani",
+   "source_url": "https://www.hausmirabell.de/info-service-1",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vchod do domu je bez schodů.",
+    "vytah": "V domě je výtah.",
+    "jine": "Bezbariérové pokoje ani koupelny web výslovně neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Alle Zimmer mit Balkon Lift Stufenloser Hauseingang"
+  },
+  {
+   "osm_id": "w235365683",
+   "name": "Kurhotel Panland",
+   "obec": "Bad Füssing",
+   "address": "Thermalbadstraße 14",
+   "lat": 48.352826,
+   "lng": 13.310561,
+   "category": "ubytovani",
+   "source_url": "https://www.kurhotel-panland.de/zimmer.aspx",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Pokoje jsou dostupné výtahem.",
+    "jine": "O bezbariérových pokojích web nic neuvádí; odkaz „Barrierefreiheit“ vede jen na prohlášení o přístupnosti webu."
+   },
+   "measurements": [],
+   "evidence_quote": "Ihr Zimmer erreichen Sie übrigens ganz bequem mit dem Lift."
+  },
+  {
+   "osm_id": "w149739793",
+   "name": "Thermen-Hotel Apollo",
+   "obec": "Bad Füssing",
+   "address": "Mozartstraße 1",
+   "lat": 48.349267,
+   "lng": 13.319494,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-apollo.de/de/zimmer-appartements/urlaub-von-a-z.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "V hotelu je výtah (zmíněn v suterénu u automatů).",
+    "parkovani": "V podzemní garáži lze zdarma nabít elektrický vozík nebo e-kolo.",
+    "jine": "Bezbariérové pokoje web výslovně neuvádí; doporučuje přivézt průkaz osoby se zdravotním postižením (sleva na lázeňský poplatek)."
+   },
+   "measurements": [],
+   "evidence_quote": "E-BIKE / E-ROLLSTUHL Die Lademöglichkeit finden Sie in der Tiefgarage."
+  },
+  {
+   "osm_id": "w149739852",
+   "name": "Thermenhotel Rottaler Hof",
+   "obec": "Bad Füssing",
+   "address": "Richard-Wagner-Straße 5",
+   "lat": 48.349551,
+   "lng": 13.318254,
+   "category": "ubytovani",
+   "source_url": "https://www.rottaler-hof.de/zimmer-suiten",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Výtah vede ke všem pokojům a apartmánům.",
+    "jine": "Bezbariérové pokoje ani koupelny web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Außerdem bringt Sie ein Lift bequem zu allen Zimmern und Suiten."
+  },
+  {
+   "osm_id": "w118972481",
+   "name": "W. Hartl´s Kur- und Feriencamping Dreiquellenbad e.K.",
+   "obec": "Bad Griesbach i.Rottal",
+   "address": "Singham 40",
+   "lat": 48.42139,
+   "lng": 13.192547,
+   "category": "ubytovani",
+   "source_url": "https://camping-bad-griesbach.de/unser-resort/barrierefreiheit",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Recepce s kioskem, terapeutické a wellness centrum, kempové suity, hostinec „Zur Leibspeis“ a obě sanitární budovy jsou podle webu bezbariérové; zmiňuje širší dveře, rampy nebo výtahy.",
+    "koupelna": "Koupelny přizpůsobené pro vozík: dostatek místa, madla, sprcha v úrovni podlahy.",
+    "pokoj": "Kempové suity (Camping-Suiten) uvedeny jako bezbariérové a vhodné pro vozík.",
+    "wc": "Obě sanitární budovy v kempu jsou bezbariérové."
+   },
+   "measurements": [],
+   "evidence_quote": "Wir verfügen über rollstuhlgerechte Badezimmer."
+  },
+  {
+   "osm_id": "n7214803811",
+   "name": "Gästehaus \"Biggi\"",
+   "obec": "Bodenmais",
+   "address": "Regener Straße 24",
+   "lat": 49.061438,
+   "lng": 13.105014,
+   "category": "ubytovani",
+   "source_url": "https://gaestehaus-biggi.de/ferienwohnungen.htm",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Apartmán cca 90 m² se 2 ložnicemi, 2 koupelnami (sprcha/WC) a velkou terasou je podle webu vhodný pro vozíčkáře.",
+    "jine": "Podrobnosti (rozměry, typ sprchy) web neuvádí."
+   },
+   "measurements": [
+    {
+     "co": "plocha apartmánu vhodného pro vozík",
+     "hodnota": 90,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "geeignet für Rollstuhlfahrer"
+  },
+  {
+   "osm_id": "w295735767",
+   "name": "Wohnmobilstellplätze Bogen",
+   "obec": "Bogen",
+   "address": null,
+   "lat": 48.907621,
+   "lng": 12.687366,
+   "category": "ubytovani",
+   "source_url": "https://www.bogen.de/freizeit-und-tourismus/service-fuer-die-gaeste/wohnmobilstellplaetze",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Na stellplatzu (u koupaliště) je venkovní WC pro osoby se zdravotním postižením, otevřené nonstop.",
+    "jine": "Sprchy jen v koupališti v otevírací době; o bezbariérovosti stanovišť web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Behinderten WC Außengelände Tag und Nacht geöffnet"
+  },
+  {
+   "osm_id": "n5568526278",
+   "name": "Das Stemp ****S Wellnessresort",
+   "obec": "Büchlberg",
+   "address": "Goldener Steig 24",
+   "lat": 48.653399,
+   "lng": 13.50673,
+   "category": "ubytovani",
+   "source_url": "https://www.das-stemp.de/zimmer",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Blumenwiesen-Suite (50 m², 2–4 osoby, dům se suitami, strana do zahrady) je podle webu zařízena pro vozík; postel 1,80 × 2,10 m, velká terasa.",
+    "koupelna": "Koupelna suity má WC s bidetovou funkcí, sprchu bez vaničky (begehbare Dusche) a výškově nastavitelné umyvadlo."
+   },
+   "measurements": [
+    {
+     "co": "plocha suity",
+     "hodnota": 50,
+     "jednotka": "m²"
+    },
+    {
+     "co": "rozměr postele",
+     "hodnota": "180×210",
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Diese Suiten sind rollstuhlgerecht eingerichtet."
+  },
+  {
+   "osm_id": "n939154905",
+   "name": "Hotel Gasthof Höttl",
+   "obec": "Deggendorf",
+   "address": "Luitpoldplatz 22",
+   "lat": 48.831871,
+   "lng": 12.961821,
+   "category": "ubytovani",
+   "source_url": "https://www.hoettl.de/hotel/zimmer-preise/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "koupelna": "Všechny pokoje (8 suit a 67 dvoulůžkových a jednolůžkových) mají podle webu bezbariérové koupelny.",
+    "jine": "O vstupu, výtahu a pokojích pro vozík web podrobnosti neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "ausgestattet mit barrierefreien Bädern"
+  },
+  {
+   "osm_id": "w222388674",
+   "name": "Innsento Health Campus",
+   "obec": "Dobl",
+   "address": "Kapuzinerstraße 32",
+   "lat": 48.570309,
+   "lng": 13.476836,
+   "category": "ubytovani",
+   "source_url": "https://www.innsento.de/infos-faq",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Několik pokojů je vybaveno pro osoby s postižením a bezbariérově přístupných; všechny jsou v přízemí.",
+    "vytah": "Z parkoviště i z podzemní garáže se k nim dostanete bezbariérově výtahem.",
+    "vstup": "Bezbariérový přístup z parkoviště a garáže do všech částí (recepce, pokoje, restaurace, bar) – stránka Kontakt.",
+    "parkovani": "Venkovní parkoviště 5 €/noc, podzemní garáž 15 €/noc; vyhrazená místa pro OZP web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Einige unserer Zimmer sind behindertengerecht ausgestattet und barrierefrei zugänglich."
+  },
+  {
+   "osm_id": "n6355154849",
+   "name": "Rivers",
+   "obec": "Dobl",
+   "address": null,
+   "lat": 48.570543,
+   "lng": 13.47146,
+   "category": "ubytovani",
+   "source_url": "https://www.rivers-passau.de/de/hotel/ausstattung.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "V hotelu je výtah.",
+    "jine": "Bezbariérové pokoje web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Snack- & Getränkeautomat Aufzug"
+  },
+  {
+   "osm_id": "n4429662627",
+   "name": "Gasthaus Forster am See",
+   "obec": "Eching",
+   "address": "Stauseestraße 1",
+   "lat": 48.503876,
+   "lng": 12.056852,
+   "category": "ubytovani",
+   "source_url": "https://www.forster-am-see.de/hotel/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Komfortní a rodinné pokoje i jednolůžkové/dvoulůžkové pokoje jsou v přehledu označeny „Barrierefrei, Aufzug“.",
+    "vytah": "Výtah k pokojům.",
+    "jine": "Podrobnosti o koupelně a rozměrech web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Besonders geeignet: Business / Paare / Familien Barrierefrei, Aufzug"
+  },
+  {
+   "osm_id": "w113194038",
+   "name": "Hotel zum Kramerwirt",
+   "obec": "Geiersthal",
+   "address": "Bgm.-Fleischmann-Straße 1",
+   "lat": 49.049289,
+   "lng": 12.979388,
+   "category": "ubytovani",
+   "source_url": "https://www.kramerwirt.de/zimmer-suiten/luxus-appartements.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Apartmán F „Luxus Chalet“ (135 m², terasa 90 m², 2–6 osob, cca 80 m od hotelu) je označen jako bezbariérový.",
+    "parkovani": "Chalet leží bezbariérově hned u přístřešku pro auta (carport); parkování zdarma.",
+    "jine": "Koupelnu (sprcha, samostatné WC) web podrobněji nepopisuje."
+   },
+   "measurements": [
+    {
+     "co": "plocha apartmánu",
+     "hodnota": 135,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Es befindet sich barrierefrei in unmittelbarer Nähe zum Carport."
+  },
+  {
+   "osm_id": "n1979970524",
+   "name": "Hohenauer Hof",
+   "obec": "Hohenau",
+   "address": "Dorfplatz 18",
+   "lat": 48.849564,
+   "lng": 13.488686,
+   "category": "ubytovani",
+   "source_url": "https://www.hohenauer-hof.de/de/themenurlaub/behindertengerecht.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel nabízí pokoje upravené pro osoby s postižením / pro vozík (na vyžádání); postele 2,00 × 1,80 m; WC, sprcha nebo vana.",
+    "jine": "Krytý bazén a sauna NEJSOU bezbariérové. Pokoje jsou v hlavní a vedlejší budově (cca 50 m od sebe)."
+   },
+   "measurements": [
+    {
+     "co": "rozměr postele",
+     "hodnota": "200×180",
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Der Zugang zu unserem Hallenbad und zur Sauna sind jedoch nicht barrierefrei."
+  },
+  {
+   "osm_id": "w604247118",
+   "name": "Wohnmobilstellplatz am \"Pflegerspitz\"",
+   "obec": "Kelheim",
+   "address": "Am Pflegerspitz 1",
+   "lat": 48.914891,
+   "lng": 11.876766,
+   "category": "ubytovani",
+   "source_url": "https://tourismus.kelheim.de/adressen/wohnmobilstellplatz-am-pflegerspitz/",
+   "source_type": "web města (turistické informace Kelheim)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Turistický web města uvádí u stellplatzu atribut „Barrierefrei“ bez podrobností (45 míst, plocha 4700 m²).",
+    "parkovani": "Držitelé parkovacího průkazu pro těžce postižené se mohou předem nahlásit na Ordnungsamt a parkovat obytným autem zdarma."
+   },
+   "measurements": [
+    {
+     "co": "plocha stellplatzu",
+     "hodnota": 4700,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Hunde erlaubt Barrierefrei"
+  },
+  {
+   "osm_id": "w242023071",
+   "name": "Landhotel Larenzen",
+   "obec": "Kirchham",
+   "address": "Aigener Straße 6",
+   "lat": 48.342331,
+   "lng": 13.262869,
+   "category": "ubytovani",
+   "source_url": "https://www.landhotel-larenzen.de/zimmer.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "2 dvoulůžkové pokoje s terasou jsou vhodné pro vozík.",
+    "vytah": "Výtah do všech pater.",
+    "vstup": "V domě nejsou rušivé prahy.",
+    "parkovani": "Bezplatné parkoviště (vyhrazená místa neuvedena)."
+   },
+   "measurements": [],
+   "evidence_quote": "2 DZ mit Terrasse sind rollstuhlgeeignet"
+  },
+  {
+   "osm_id": "w652947884",
+   "name": "Hotel ibis Landshut City",
+   "obec": "Landshut",
+   "address": "Bahnhofplatz 2",
+   "lat": 48.547627,
+   "lng": 12.139072,
+   "category": "ubytovani",
+   "source_url": "https://all.accor.com/hotel/B1T8/index.de.shtml",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel uvádí 2 bezbariérové typy ubytování, mj. standardní bezbariérový pokoj s manželskou postelí (19 m², max. 2 osoby).",
+    "jine": "V přehledu služeb uvedeno „Rollstuhlgängig“ a parkování na místě; detaily koupelny ve stažené části chybí."
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérového pokoje",
+     "hodnota": 19,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Standard Zimmer barrierefrei mit 1 Doppelbett"
+  },
+  {
+   "osm_id": "n9288153651",
+   "name": "Stadthotel Herzog Ludwig",
+   "obec": "Landshut",
+   "address": "Neustadt 519",
+   "lat": 48.536244,
+   "lng": 12.154354,
+   "category": "ubytovani",
+   "source_url": "https://www.stadthotel-landshut.de/zimmer",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Pokoje ve 3 patrech (přední a zadní dům) jsou dostupné výtahem.",
+    "jine": "Bezbariérové pokoje web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "bequem mit dem Aufzug zu erreichen"
+  },
+  {
+   "osm_id": "n2477433440",
+   "name": "Klosterbräustüberl",
+   "obec": "Mallersdorf-Pfaffenberg",
+   "address": "Nardinistraße",
+   "lat": 48.778174,
+   "lng": 12.253027,
+   "category": "ubytovani",
+   "source_url": "https://www.klosterbraeustueberl-mallersdorf.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Prostory hostince jsou podle webu bez potíží dostupné pro vozíčkáře a osoby s omezenou chůzí.",
+    "pokoj": "3 jednolůžkové a 2 dvoulůžkové pokoje se sprchou a WC; o jejich přístupnosti web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Für Rollstuhlfahrer und gehbehinderte Personen sind die Räumlichkeiten unseres Bräustüberls mühelos zu erreichen."
+  },
+  {
+   "osm_id": "w275694352",
+   "name": "Wellnesshotel Zum Koch",
+   "obec": "Ortenburg",
+   "address": "Vorderhainberg 8",
+   "lat": 48.541758,
+   "lng": 13.235621,
+   "category": "ubytovani",
+   "source_url": "https://www.zumkoch.de/living/zimmer-preise",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Všechny pokoje jsou dostupné výtahem.",
+    "jine": "Bezbariérové pokoje web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Alle Zimmer sind bequem mit dem Lift erreichbar."
+  },
+  {
+   "osm_id": "n848760859",
+   "name": "mk Hotel Passau",
+   "obec": "Passau",
+   "address": "Bahnhofstraße 24",
+   "lat": 48.574584,
+   "lng": 13.452285,
+   "category": "ubytovani",
+   "source_url": "https://www.mkhotels.de/home/passau/de",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "K dispozici jsou pokoje upravené pro osoby s postižením (podrobnosti neuvedeny).",
+    "parkovani": "Veřejná podzemní garáž ve stejné budově s přístupem do hotelu."
+   },
+   "measurements": [],
+   "evidence_quote": "Behindertengerechte Zimmer verfügbar"
+  },
+  {
+   "osm_id": "n1851330667",
+   "name": "Landhotel Haus Waldeck",
+   "obec": "Philippsreut",
+   "address": "Alzenbergstraße 9",
+   "lat": 48.894491,
+   "lng": 13.642495,
+   "category": "ubytovani",
+   "source_url": "https://www.haus-waldeck-koch.de/zimmerpreise",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "Dvoulůžkové pokoje a suity jsou dostupné výtahem; jednolůžkový pokoj (v podkroví) jen do patra pod ním.",
+    "jine": "Bezbariérové pokoje web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Das Einzelzimmer ist nur bis 1 Stockwerk darunter mit dem Aufzug anfahrbar."
+  },
+  {
+   "osm_id": "w336996528",
+   "name": "Pockinger Hof",
+   "obec": "Pocking",
+   "address": "Klosterstraße 13",
+   "lat": 48.402885,
+   "lng": 13.310175,
+   "category": "ubytovani",
+   "source_url": "https://www.pockinger-hof.de/zimmer-preise/behindertenfreundliche-zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Kategorie COMFORT má pokoje vhodné pro osoby s postižením; vyšší postele (50 cm), volný prostor před a vedle postele min. 60 cm.",
+    "vstup": "Dveře pokojů min. 80 cm široké a bez prahu.",
+    "vytah": "Pokoje jsou bez schodů dostupné výtahem.",
+    "koupelna": "Volný prostor v koupelně min. 80 cm, sedátko ve sprše a madlo."
+   },
+   "measurements": [
+    {
+     "co": "výška postele",
+     "hodnota": 50,
+     "jednotka": "cm"
+    },
+    {
+     "co": "volný prostor před a vedle postele (min.)",
+     "hodnota": 60,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří pokoje (min.)",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "volný prostor v koupelně (min.)",
+     "hodnota": 80,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Der Zimmertüren sind mindestens 80 cm breit und schwellenlos."
+  },
+  {
+   "osm_id": "w209050059",
+   "name": "Buglhof",
+   "obec": "Sankt Englmar",
+   "address": "Glashütt 1",
+   "lat": 48.995549,
+   "lng": 12.833243,
+   "category": "ubytovani",
+   "source_url": "https://www.buglhof.de/de/zimmer-preise/zimmer-appartements.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "V novostavbě hostince je jeden apartmán upravený pro osoby s postižením; apartmány „Sonnenland“ mají ve vybavení „bezbariérové zařízení“.",
+    "vytah": "Dvoulůžkové pokoje v hostinci a apartmán ve 3. patře jsou dostupné výtahem.",
+    "jine": "Rozměry ani popis koupelny web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Zudem ein behinderten gerechtes Appartement sowie weitere Einzelzimmer."
+  },
+  {
+   "osm_id": "w111353852",
+   "name": "Landhaus zur Ohe",
+   "obec": "Schönberg",
+   "address": "Maukenreuth 1",
+   "lat": 48.823629,
+   "lng": 13.342391,
+   "category": "ubytovani",
+   "source_url": "https://www.landhaus-zur-ohe.de/de/angebote-preise/zimmer-preise.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Pokoje vhodné pro osoby s postižením jsou k dispozici na vyžádání; podrobnosti web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Behindertenfreundliche Zimmer auf Anfrage verfügbar."
+  },
+  {
+   "osm_id": "n4901808312",
+   "name": "Motel Inn",
+   "obec": "Simbach",
+   "address": "Münchner Straße 86",
+   "lat": 48.261393,
+   "lng": 13.008142,
+   "category": "ubytovani",
+   "source_url": "https://motelinn.de/serviced-apartments/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "koupelna": "Apartmány mají sprchu XL 100 × 100 cm se vstupem v úrovni podlahy.",
+    "vytah": "V domě je výtah.",
+    "jine": "Jako bezbariérové se apartmány výslovně neoznačují."
+   },
+   "measurements": [
+    {
+     "co": "rozměr sprchy",
+     "hodnota": "100×100",
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "XL-Dusche (100×100 cm) mit ebenerdigem Einstieg"
+  },
+  {
+   "osm_id": "w361481128",
+   "name": "Hotel-Residence Hochriegel",
+   "obec": "Spiegelau",
+   "address": "Frauenauer Straße 31",
+   "lat": 48.92198,
+   "lng": 13.318756,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-hochriegel.de/kontakt-service/faq.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vytah": "V obou budovách je výtah.",
+    "jine": "Hotel ve FAQ výslovně uvádí, že není bezbariérový."
+   },
+   "measurements": [],
+   "evidence_quote": "Das Hotel ist nicht barrierefrei."
+  },
+  {
+   "osm_id": "w307807039",
+   "name": "Asam Hotel",
+   "obec": "Straubing",
+   "address": "Wittelsbacherhöhe 1",
+   "lat": 48.874366,
+   "lng": 12.567037,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelasam.de/de/zimmer-suiten/ostfluegel.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel (37 pokojů) má zřízenou jednu bezbariérovou ubytovací jednotku; podrobnosti web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Darüber hinaus haben wir auch eine barrierefreie Unterkunft eingerichtet"
+  },
+  {
+   "osm_id": "n2130876725",
+   "name": "Ferienhof Schiermaier",
+   "obec": "Thyrnau",
+   "address": null,
+   "lat": 48.648391,
+   "lng": 13.551922,
+   "category": "ubytovani",
+   "source_url": "https://www.hof-schiermeier.de/75/camping-und-zelten",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Pro hosty kempu je sanitární zařízení upravené pro osoby s postižením (jednotlivé sprchové kabiny, dřez, pračka, sušička).",
+    "jine": "O přístupnosti apartmánů a skupinového domu web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "komfortable behindertengerechte Sanitäranlage mit Einzelduschkabinen"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w224279529",
+   "name": "Gasthof Waldschänke",
+   "url": "https://www.gasthof-waldschaenke.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w79473767",
+   "name": "Hotel Lifestyle",
+   "url": "https://www.hotel-lifestyle.com/",
+   "reason": "web nedostupný (chyba spojení)"
+  },
+  {
+   "osm_id": "n1854838403",
+   "name": "Hotel-Cafe Rathaus",
+   "url": "https://www.hotel-cafe-rathaus.de/",
+   "reason": "robots.txt zakazuje automatické procházení – nekontrolováno"
+  },
+  {
+   "osm_id": "w159956668",
+   "name": "Kur-Gutshof-Camping Arterhof",
+   "url": "https://www.arterhof.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w236083097",
+   "name": "My Mühlbach - Premium Wellness Resort ****S",
+   "url": "https://www.muehlbach.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w242955375",
+   "name": "Stellplatz vorm CP Holmernhof",
+   "url": "https://www.holmernhof.de/",
+   "reason": "web vede na kemp Camping Holmernhof (viz samostatný záznam w36380560); o samotném stellplatzu nic"
+  },
+  {
+   "osm_id": "n599982403",
+   "name": "Hotel Gasthof zur Mühle",
+   "url": "https://www.gasthof-zur-muehle.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2917599799",
+   "name": "Gasthof Adam Bräu",
+   "url": "https://www.adam-braeu.de",
+   "reason": "web nic o fyzické přístupnosti neuvádí (jen prohlášení o přístupnosti webu)"
+  },
+  {
+   "osm_id": "n325207730",
+   "name": "Hotel Zur Post",
+   "url": "https://www.zurpost-hotel.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w81241237",
+   "name": "Scotty & Paul Hotel Deggendorf",
+   "url": "https://scottys-deggendorf.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w192668259",
+   "name": "Ilzbrücke",
+   "url": "https://www.passau.de/bauen-umwelt/mobilitaet-verkehr/parkmoeglichkeiten/",
+   "reason": "odkaz vede na obecnou stránku města Passau o parkování; o tomto místě nic konkrétního"
+  },
+  {
+   "osm_id": "n8016445187",
+   "name": "Echinger Hof",
+   "url": "http://www.hotel-echinger-hof.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n393202551",
+   "name": "Hotel-Gasthof Ulrich Meyer",
+   "url": "https://www.gasthof-meyer.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2908799043",
+   "name": "Hotel Gasthof Dallmaier",
+   "url": "https://www.dallmaier.de",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n301869459",
+   "name": "Ritterschänke Burg Randeck",
+   "url": "https://www.ritterschaenke-sturm.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n942684866",
+   "name": "Landgasthof Hubertus",
+   "url": "https://www.landgasthof-hubertus.de/",
+   "reason": "doména není aktivní (přesměrování na DENIC)"
+  },
+  {
+   "osm_id": "w300633920",
+   "name": "71 Nyhavn Hotel",
+   "url": "https://www.71nyhavnhotel.dk/",
+   "reason": "web dánského hotelu (71 Nyhavn, Kodaň) – zřejmě chybný odkaz v OSM; o přístupnosti nic"
+  },
+  {
+   "osm_id": "n463207014",
+   "name": "Naturfreundehaus Hammertal",
+   "url": "https://haus.naturfreunde-kelheim.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w166371394",
+   "name": "DORMERO Hotel Kelheim",
+   "url": "https://www.dormero.de/hotel-kelheim/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w142538524",
+   "name": "Gasthof Berzl",
+   "url": "http://www.gasthof-berzl-kelheim.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w174689196",
+   "name": "Sporthotel Ahornhof",
+   "url": "https://www.hotel-ahornhof.com/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n668081219",
+   "name": "Landgasthof Apfelbeck",
+   "url": "http://www.landgasthof-apfelbeck.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1650223215",
+   "name": "Gasthof Fuchs",
+   "url": "https://fuchs-mauth.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí (jen prohlášení o přístupnosti webu)"
+  },
+  {
+   "osm_id": "n12116467250",
+   "name": "Landhotel Bärnriegel",
+   "url": "https://www.landhotel-baernriegel.de",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n11049732948",
+   "name": "Cafe am Kloster",
+   "url": "https://www.cafeamkloster.eu/zimmer.html",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n267665814",
+   "name": "Der Eisvogel",
+   "url": "https://www.hotel-eisvogel.de",
+   "reason": "web nic o fyzické přístupnosti neuvádí (jen prohlášení o přístupnosti webu)"
+  },
+  {
+   "osm_id": "w427761976",
+   "name": "Gasthaus Paulus",
+   "url": "https://gasthaus-paulus.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n267819206",
+   "name": "Marc Aurel",
+   "url": "https://www.marcaurel.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12331545553",
+   "name": "Marc Aurel Resort",
+   "url": "https://www.marcaurel.de",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3953894774",
+   "name": "Hotel Preysinghof",
+   "url": "http://www.preysinghof-plattling.de/hotel",
+   "reason": "původní adresa nefunguje; nový web preysinghof.de nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n321863949",
+   "name": "Wirtshaus in Neurandsberg",
+   "url": "https://wirtshaus-neurandsberg.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n926668843",
+   "name": "Hotel-Gasthof zur Krone",
+   "url": "http://www.hotel-zur-krone-prunn.de/",
+   "reason": "web nedostupný"
+  },
+  {
+   "osm_id": "w552843145",
+   "name": "Hotel Antoniushof",
+   "url": "https://www.hotel-antoniushof.de",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7856767289",
+   "name": "Pension Moosbräu",
+   "url": "http://www.moosbraeu.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w328844902",
+   "name": "Palmberger Hof",
+   "url": "http://www.palmberger-hof.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w43520413",
+   "name": "Campingplatz Stadt Straubing",
+   "url": "https://www.campingplatzstraubing.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n312353290",
+   "name": "Genusshotel Wenisch",
+   "url": "https://www.genusshotel-wenisch.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí (jen prohlášení o přístupnosti webu)"
+  },
+  {
+   "osm_id": "w139421643",
+   "name": "Gäubodenhof",
+   "url": "https://www.hotel-gaeubodenhof.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n323161307",
+   "name": "Hotel Theresientor",
+   "url": "https://hotel-theresientor.de/",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů ubytování (70 webů ze vstupního seznamu z OSM)",
+   "url": "https://www.openstreetmap.org/",
+   "note": "Prošla se úvodní stránka a max. 6 podstránek každého webu (klíčová slova barrierefrei, rollstuhl, behindert, aufzug, ebenerdig, stufenlos aj.); respektován robots.txt; souřadnice z OSM (© přispěvatelé OpenStreetMap, ODbL). Booking, TripAdvisor ani Google nevytěžovány. Odkazy „Barrierefreiheit“ v patičkách většinou vedou jen na prohlášení o přístupnosti webu (BFSG), ne na fyzickou přístupnost."
+  },
+  {
+   "title": "Tourist-Information Stadt Kelheim – Wohnmobilstellplatz am Pflegerspitz",
+   "url": "https://tourismus.kelheim.de/adressen/wohnmobilstellplatz-am-pflegerspitz/",
+   "note": "Turistický web města."
+  },
+  {
+   "title": "Stadt Bogen – Wohnmobilstellplätze",
+   "url": "https://www.bogen.de/freizeit-und-tourismus/service-fuer-die-gaeste/wohnmobilstellplaetze",
+   "note": "Web obce."
+  }
+ ]
+}

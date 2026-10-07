@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="assets/css/style.css?v=13">
-<link rel="stylesheet" href="assets/css/pages-a.css?v=11">
+<link rel="stylesheet" href="assets/css/pages-a.css?v=12">
 </head>
 <body>
 <div id="site-header"></div>
@@ -189,6 +189,37 @@
           <li>Otevřená data o přístupnosti v příhraničních okresech (Regen, Freyung-Grafenau, Cham, Passau) v katalogu OpenData Bayern nejsou <a href="#z64">[64]</a>. V OSM má značku wheelchair 800–2 200 objektů na okres, jen jako semafor bez rozměrů <a href="#z65">[65]</a>.</li>
         </ul>
         <p class="small">Pořadí oslovení (<i>odhad</i>): NP Bavorský les, koordinace Reisen für Alle (výměna dat), Ostbayern Tourismus jako partner do Fondu malých projektů.</p>
+        <h3 id="bavorsko-data">Bavorsko na mapě: data a licence</h3>
+        <p>Od 7. 10. 2026 ukazuje mapa i Bavorsko: 55 598 míst v 7 vládních obvodech. Většina pochází z OpenStreetMap, k nim jsou připojená otevřená data Mnichova, Würzburgu, města Haar, BayernCloud Tourismus a nádraží DB. Údaje z webů provozovatelů jen parafrázujeme s odkazem.</p>
+        <ul>
+          <li>Jediné bavorské město s několika otevřenými sadami o přístupnosti je Mnichov (WC s rozměry, vyhrazená stání, P+R, volební místnosti) <a href="https://opendata.muenchen.de/dataset/wc_finder" target="_blank" rel="noopener">[WC-Finder]</a>.</li>
+          <li>DB InfraGO zveřejňuje pod CC0 bezbariérovost 924 nádraží a zastávek v Bavorsku; pro vozík je podle DB přístupných 727 z nich <a href="https://mobilithek.info/offers/879076212433727488" target="_blank" rel="noopener">[OpenStation]</a>.</li>
+          <li>K 31. 12. 2025 žilo v Bavorsku 1 191 585 lidí s těžkým zdravotním postižením, 9,0 % obyvatel <a href="https://genesis-5-prod-extern.bayern.de/datenbank/online/statistic/22711" target="_blank" rel="noopener">[LfStat, GENESIS 22711]</a>.</li>
+          <li>Franky a Horní Falc kromě Würzburgu otevřenou sadu o přístupnosti míst nemají; zemský geoportál BayernAtlas vrstvu přístupnosti nenabízí <a href="https://geoportal.bayern.de/csw/gdi" target="_blank" rel="noopener">[Geoportal Bayern]</a>.</li>
+        </ul>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Zdroj</th><th>Co z něj bereme</th><th>Licence</th></tr></thead>
+            <tbody>
+              <tr><td><a href="https://download.geofabrik.de/europe/germany/bayern.html" target="_blank" rel="noopener">OpenStreetMap – výřezy pro vládní obvody Bavorska (Geofabrik)</a></td><td>Základ bavorských míst, značky přístupnosti, WC, stání ZTP (stejné dotazy jako v Česku) <span class="muted">(54 054 záznamů)</span></td><td><a href="https://opendatacommons.org/licenses/odbl/" target="_blank" rel="noopener">ODbL 1.0</a></td></tr>
+              <tr><td><a href="https://opendata.wuerzburg.de/explore/dataset/barrierefreie-toiletten-im-stadtgebiet-wuerzburg/" target="_blank" rel="noopener">Stadt Würzburg – Nette Toiletten im Stadtgebiet Würzburg (záznamy typu „Barrierefreie WC-Anlage“)</a></td><td>Bezbariérová veřejná WC ve Würzburgu <span class="muted">(38 záznamů)</span></td><td><a href="https://www.govdata.de/dl-de/by-2-0" target="_blank" rel="noopener">dl-de/by-2-0</a></td></tr>
+              <tr><td><a href="https://opendata.wuerzburg.de/explore/dataset/sozialmonitoring-justizielle-fallzahlen/" target="_blank" rel="noopener">Stadt Würzburg – Sozialmonitoring – Inklusion (bezbariérové zastávky, počet osob s těžkým postižením)</a></td><td>Jen statistika: bezbariérové zastávky a počet lidí s těžkým postižením (v mapě není)</td><td><a href="https://www.govdata.de/dl-de/by-2-0" target="_blank" rel="noopener">dl-de/by-2-0</a></td></tr>
+              <tr><td><a href="https://opendata.muenchen.de/dataset/wc_finder" target="_blank" rel="noopener">Landeshauptstadt München – WC-Standorte der Landeshauptstadt München (WC-Finder)</a></td><td>Veřejná WC v Mnichově s rozměry (dveře, mísa, volný prostor) <span class="muted">(303 záznamů)</span></td><td><a href="https://www.govdata.de/dl-de/by-2-0" target="_blank" rel="noopener">dl-de/by-2-0</a></td></tr>
+              <tr><td><a href="https://opendata.muenchen.de/dataset/behindertenparkplaetze" target="_blank" rel="noopener">Landeshauptstadt München – Behindertenparkplätze (allgemeine, auf öffentlichem Grund)</a></td><td>Vyhrazená parkovací stání v Mnichově <span class="muted">(569 záznamů)</span></td><td><a href="https://www.govdata.de/dl-de/by-2-0" target="_blank" rel="noopener">dl-de/by-2-0</a></td></tr>
+              <tr><td><a href="https://opendata.muenchen.de/dataset/p-r-anlagen-muenchen" target="_blank" rel="noopener">P+R Park &amp; Ride GmbH München – P+R Anlagen München (Stand 06/2025), jen zařízení s vyhrazenými stáními</a></td><td>Parkoviště P+R s vyhrazenými stáními <span class="muted">(29 záznamů)</span></td><td><a href="https://www.govdata.de/dl-de/by-2-0" target="_blank" rel="noopener">dl-de/by-2-0</a></td></tr>
+              <tr><td><a href="https://opendata.muenchen.de/dataset/bundestagswahl-2025-wahlraeume-in-muenchen" target="_blank" rel="noopener">Landeshauptstadt München – Bundestagswahl 2025 – Wahlräume in München (CSV + bodová vrstva Shape)</a></td><td>Volební místnosti a jejich bezbariérovost <span class="muted">(200 záznamů)</span></td><td><a href="https://www.govdata.de/dl-de/by-2-0" target="_blank" rel="noopener">dl-de/by-2-0</a></td></tr>
+              <tr><td><a href="https://open.bydata.de/datasets/poi-haar" target="_blank" rel="noopener">Stadt Haar – Verzeichnis der Points of Interest (POI) der Stadt Haar, jen záznamy „Behindertenparkplatz“</a></td><td>Vyhrazená parkovací stání ve městě Haar <span class="muted">(6 záznamů)</span></td><td><a href="https://creativecommons.org/licenses/by/4.0/deed.cs" target="_blank" rel="noopener">CC BY 4.0</a></td></tr>
+              <tr><td><a href="https://open.bydata.de/datasets/https-data-bayerncloud-digital-api-v4-endpoints-list_attractions" target="_blank" rel="noopener">BayernCloud Tourismus – Attraktionen in Bayern (jen objekty v Horním Bavorsku a Švábsku s údajem o bezbariérovosti a otevřenou licencí objektu)</a></td><td>Turistické cíle v Horním Bavorsku a Švábsku s údajem o bezbariérovosti <span class="muted">(85 záznamů)</span></td><td><a href="https://creativecommons.org/licenses/by/4.0/deed.cs" target="_blank" rel="noopener">CC BY 4.0 a CC0 1.0 (podle objektu; objekty s CC BY-SA 4.0 vynechány)</a></td></tr>
+              <tr><td><a href="https://open.bydata.de/datasets/http-informationsportal-augsburg-de-opendataaugsburg-dataset-de-by-augsburg-sozialwesen_-_schwerbehinderte" target="_blank" rel="noopener">Stadt Augsburg – Sozialwesen – Schwerbehinderte (statistika, jen pro tema_bavorsko_mnichov.md)</a></td><td>Jen statistika lidí s těžkým postižením v Augsburgu</td><td><a href="https://creativecommons.org/licenses/by/4.0/deed.cs" target="_blank" rel="noopener">CC BY 4.0</a></td></tr>
+              <tr><td><a href="https://open.bydata.de/datasets/nachhaltigkeitsbericht-augsburg-k3-1-beschaeftigte-mit-behinderungsgrad-50" target="_blank" rel="noopener">Stadt Augsburg – Nachhaltigkeitsbericht K3.1 Beschäftigte mit Behinderungsgrad 50 (statistika)</a></td><td>Jen statistika zaměstnaných s postižením v Augsburgu</td><td><a href="https://creativecommons.org/licenses/by/4.0/deed.cs" target="_blank" rel="noopener">CC BY 4.0</a></td></tr>
+              <tr><td><a href="https://mobilithek.info/offers/879076212433727488" target="_blank" rel="noopener">DB InfraGO AG – OpenStation (NeTEx, EU PI Stop Offer / Inventory of Assets TSI-PRM): nádraží a zastávky DB v Bavorsku s údaji o bezbariérovosti</a></td><td>Bezbariérovost nádraží a zastávek DB: nástupiště, výška hrany, výtahy, rampy <span class="muted">(924 záznamů)</span></td><td><a href="https://creativecommons.org/publicdomain/zero/1.0/deed.cs" target="_blank" rel="noopener">CC0 1.0</a></td></tr>
+              <tr><td><a href="https://genesis-5-prod-extern.bayern.de/datenbank/online/statistic/22711" target="_blank" rel="noopener">Bayerisches Landesamt für Statistik – GENESIS-Online Bayern, tabulky 22711-001r, 22711-003z, 22711-004z (Schwerbehinderte) a 12411-003r (Bevölkerung)</a></td><td>Jen statistika: lidé s těžkým postižením a obyvatelé po vládních obvodech</td><td><a href="https://creativecommons.org/licenses/by/4.0/deed.cs" target="_blank" rel="noopener">CC BY 4.0</a></td></tr>
+              <tr><td><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap – souřadnice nádraží (railway=station/halt v Bavorsku) a názvy obcí podle AGS</a></td><td>Souřadnice nádraží DB (párování podle kódu stanice)</td><td><a href="https://opendatacommons.org/licenses/odbl/" target="_blank" rel="noopener">ODbL 1.0</a></td></tr>
+              <tr><td>Weby provozovatelů, obcí a turistických portálů v Bavorsku (např. <a href="https://erlebe.bayern/urlaub-fuer-alle/" target="_blank" rel="noopener">erlebe.bayern – Urlaub für Alle</a>)</td><td>Údaje o bezbariérovosti uvedené na jejich stránkách, česky parafrázované, vždy s odkazem a datem kontroly</td><td>Bez otevřené licence: jen krátká parafráze s odkazem, texty ani fotky nepřebíráme</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted">Rešerše: <a href="data/research/out/tema_bavorsko_mnichov.md">Mnichov, Horní Bavorsko a Švábsko</a> · <a href="data/research/out/tema_bavorsko_franky.md">Franky a Horní Falc</a> · <a href="data/research/out/tema_bavorsko_zemske.md">zemská a celostátní data</a> · seznam všech zdrojů <a href="data/by/zdroje.json">data/by/zdroje.json</a>.</p>
       </section>
 
       <section id="partneri">
@@ -305,7 +336,7 @@
   </div>
 </main>
 <div id="site-footer"></div>
-<script src="assets/js/config.js?v=11"></script>
-<script src="assets/js/core.js?v=11"></script>
+<script src="assets/js/config.js?v=12"></script>
+<script src="assets/js/core.js?v=12"></script>
 </body>
 </html>

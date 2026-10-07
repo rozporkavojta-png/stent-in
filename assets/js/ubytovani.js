@@ -1,4 +1,4 @@
-/* Stránka Ubytování: výpis míst s c='ubytovani' z data/places.json, filtry v řadě čipů (na mobilu ve spodním panelu) a řazení.
+/* Stránka Ubytování: výpis míst s c='ubytovani' ze všech regionů v data/regions/ (Česko a Bavorsko; výtah data/regions/ubytovani.json, záložně KP.loadAll), filtry v řadě čipů (na mobilu ve spodním panelu) a řazení.
    Výpis je adresář s linkami (verze 3, DESIGN.md), fotka z Wikimedia Commons jen u míst s polem img.
    Pole r (nepovinné) = údaje z webu provozovatele:
    [{ url, date, source_type, claim, items: { vstup, wc, pokoj, koupelna, parkovani, vytah, jine }, measurements: [{ co, hodnota, jednotka }] }] */
@@ -60,12 +60,12 @@
     const unknown = [];
     if (!p.t) unknown.push('toaleta');
     if (!rs.length) unknown.push('pokoj a koupelna');
-    const href = 'misto.html?id=' + encodeURIComponent(p.i);
+    const href = K.placeUrl(p);
     const photo = p.img ? '<figure class="photo ub-photo"><a href="' + href + '" tabindex="-1" aria-hidden="true"><img src="' + K.commonsImg(p.img, 320) + '" srcset="' + K.commonsImg(p.img, 320) + ' 320w, ' + K.commonsImg(p.img, 640) + ' 640w" sizes="(min-width: 640px) 220px, 120px" width="320" height="213" alt="" loading="lazy" decoding="async"></a>' +
       '<figcaption><a href="' + K.commonsPage(p.img) + '" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>' : '';
     return '<li class="ub-row' + (p.img ? ' has-photo' : '') + '"><a class="ub-card" href="' + href + '">' +
       '<span class="ub-name">' + K.esc(p.n) + '</span>' +
-      '<span class="ub-meta">' + K.esc([p.o, p.s].filter(Boolean).join(' · ')) + '</span>' +
+      '<span class="ub-meta">' + K.esc([p.o, p.s, K.zemeOf(p) === 'de' ? 'Bavorsko' : ''].filter(Boolean).join(' · ')) + '</span>' +
       '<span class="ub-facts">' + K.statusHtml(w.st, 'Vstup: ' + w.short.toLowerCase()) +
       (p.t ? K.statusHtml(K.T[p.t].st, K.T[p.t].label) : K.statusHtml('unk', 'WC neuvedeno')) + '</span>' +
       (rs.length ? '<span class="badge badge-business" title="Údaj jsme přečetli na webu ubytování, neověřili jsme ho na místě.">' + K.icon('building') + 'Podle webu provozovatele</span>' : '') +
@@ -135,14 +135,23 @@
 
   async function init() {
     let stats = null, data;
-    try { [data, stats] = await Promise.all([K.loadPlaces(), K.loadStats().catch(() => null)]); }
+    $('#ub-count').textContent = 'Načítám ubytování z Česka a Bavorska…';
+    try {
+      [data, stats] = await Promise.all([
+        // Výtah jen s ubytováním (tools/build_web_index.py, asi 1,4 MB); bez něj projde všechny regiony
+        Promise.all([fetch('data/regions/ubytovani.json').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }), K.loadRegionsIndex()]).then(([d]) => d)
+          .catch(() => K.loadAll(p => p.c === 'ubytovani', { onProgress: (d, n) => { $('#ub-count').textContent = 'Načítám ubytování… ' + d + ' z ' + n + ' oblastí'; } })),
+        K.loadStats().catch(() => null)]);
+    }
     catch (e) { $('#ub-count').innerHTML = '<span class="callout">Data se nepodařilo načíst. Zkuste stránku obnovit.</span>'; return; }
-    if (stats && stats.fetched) $('#ub-fetched').textContent = K.fmtDate(stats.fetched);
-    ALL = data.filter(p => p.c === 'ubytovani');
+    ALL = data;
     ALL.forEach(p => { p._c = K.completeness(p); });
 
-    const kraje = [...new Set(ALL.map(p => p.k).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'cs'));
-    $('#f-kraj').innerHTML += kraje.map(k => '<option value="' + K.esc(k) + '">' + K.esc(k) + ' (' + ALL.filter(p => p.k === k).length + ')</option>').join('');
+    const kn = {}; ALL.forEach(p => { if (p.k) kn[p.k] = (kn[p.k] || 0) + 1; });
+    const kraje = Object.keys(kn);
+    const zk = (z) => kraje.filter(k => ((K.regionByName(k) || {}).zeme || 'cz') === z).sort((a, b) => a.localeCompare(b, 'cs'));
+    $('#f-kraj').innerHTML += ['cz', 'de'].map(z => zk(z).length ? '<optgroup label="' + K.ZEME[z] + (z === 'de' ? ' – vládní obvody' : ' – kraje') + '">' +
+      zk(z).map(k => '<option value="' + K.esc(k) + '">' + K.esc(k) + ' (' + kn[k] + ')</option>').join('') + '</optgroup>' : '').join('');
     const typy = {}; ALL.forEach(p => { if (p.s) typy[p.s] = (typy[p.s] || 0) + 1; });
     $('#f-typ').innerHTML += Object.entries(typy).sort((a, b) => b[1] - a[1]).map(([t, c]) => '<option value="' + K.esc(t) + '">' + K.esc(t) + ' (' + c + ')</option>').join('');
 

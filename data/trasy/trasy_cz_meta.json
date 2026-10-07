@@ -1,0 +1,38 @@
+{
+ "vytvoreno": "2026-10-07",
+ "pocet": 21,
+ "kandidatu_celkem": 21,
+ "mimo_cr_a_bavorsko_vyrazeno": 0,
+ "relace_a": 4,
+ "relace_b": 1,
+ "useky_c": 16,
+ "pocty_wheelchair": {
+  "yes": 19,
+  "null": 1,
+  "no": 1
+ },
+ "pocty_kraj": {
+  "Ústecký kraj": 1,
+  "Moravskoslezský kraj": 3,
+  "Olomoucký kraj": 1,
+  "Hlavní město Praha": 4,
+  "Jihočeský kraj": 2,
+  "Kraj Vysočina": 2,
+  "Plzeňský kraj": 3,
+  "Středočeský kraj": 2,
+  "Pardubický kraj": 2,
+  "Liberecký kraj": 1
+ },
+ "pocty_typ": {
+  "A→B": 17,
+  "tam a zpět": 1,
+  "okruh": 3
+ },
+ "dotazy_vysky": {},
+ "geometrie_format": "pole částí; každá část je pole [lat, lng]",
+ "profil_format": "[vzdálenost_m od startu (mezery mezi částmi se nepočítají), výška_m]",
+ "sklony": "z DEM, body po 50 m (u tras delších než 75 km řidší), úseky >= 20 m; useky_nad_X = počet souvislých úseků se sklonem nad X %, *_m jejich délka",
+ "zdroje_vstupu": [
+  "Geofabrik czech-republic-261006.osm.pbf (https://download.geofabrik.de/europe/czech-republic-261006.osm.pbf), staženo 2026-10-07"
+ ]
+}

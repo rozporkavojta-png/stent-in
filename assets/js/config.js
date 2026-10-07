@@ -4,6 +4,6 @@
    navigace, Street View a vložená mapa u detailu místa – ty fungují i bez klíče. */
 window.KP_CONFIG = {
   googleMapsApiKey: '',
-  defaultCenter: { lat: 49.8, lng: 15.5 },
-  defaultZoom: 7,
+  defaultCenter: { lat: 49.3, lng: 13.6 }, // Česko a Bavorsko
+  defaultZoom: 6,
 };

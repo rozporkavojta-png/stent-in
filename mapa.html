@@ -5,11 +5,11 @@
 <link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mapa míst · kudyprojedu.cz</title>
-<meta name="description" content="Mapa skutečných míst v Česku s údaji o přístupnosti pro lidi na vozíku: vstup, toaleta, parkování ZTP. Filtrujte podle svých potřeb.">
+<meta name="description" content="Mapa skutečných míst v Česku a v Bavorsku s údaji o přístupnosti pro lidi na vozíku: vstup, toaleta, parkování ZTP. Filtrujte podle svých potřeb.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="assets/css/style.css?v=13">
-<link rel="stylesheet" href="assets/css/mapa.css?v=11">
+<link rel="stylesheet" href="assets/css/mapa.css?v=12">
 </head>
 <body class="page-map">
 <div id="site-header"></div>
@@ -35,7 +35,8 @@
       <button type="button" class="chip" data-toggle="pk" aria-pressed="false"><span data-icon="parking"></span>Parkování ZTP</button>
       <button type="button" class="chip" data-toggle="hx" aria-pressed="false"><span data-icon="ruler"></span>Naměřeno</button>
       <button type="button" class="chip" data-toggle="hr" aria-pressed="false"><span data-icon="building"></span>Od provozovatele</button>
-      <button type="button" class="chip drop" data-pop="kraj" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-kraj">Kraj</span><span data-icon="chevron"></span></button>
+      <button type="button" class="chip drop" data-pop="zeme" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-zeme">Země</span><span data-icon="chevron"></span></button>
+      <button type="button" class="chip drop" data-pop="kraj" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-kraj">Kraj / obvod</span><span data-icon="chevron"></span></button>
       <button type="button" class="chip more-chip" id="more-filters" aria-haspopup="dialog" aria-controls="filters-sheet"><span data-icon="filter"></span>Další filtry<span class="count-dot" id="more-count" hidden>0</span></button>
     </div>
 
@@ -121,10 +122,15 @@
         <label class="check"><input type="checkbox" id="f-ek"> Euroklíč u WC</label>
       </div>
     </fieldset>
+    <fieldset id="fs-zeme">
+      <legend>Země</legend>
+      <label class="sr-only" for="f-zeme">Země</label>
+      <select id="f-zeme"><option value="">Česko i Bavorsko</option><option value="cz">Česká republika</option><option value="de">Bavorsko (Německo)</option></select>
+    </fieldset>
     <fieldset id="fs-kraj">
-      <legend>Kraj</legend>
-      <label class="sr-only" for="f-kraj">Kraj</label>
-      <select id="f-kraj"><option value="">Celá Česká republika</option></select>
+      <legend>Kraj nebo vládní obvod</legend>
+      <label class="sr-only" for="f-kraj">Kraj nebo vládní obvod</label>
+      <select id="f-kraj"><option value="">Všechny kraje a obvody</option></select>
     </fieldset>
     <fieldset>
       <legend>Moje potřeby</legend>
@@ -138,9 +144,9 @@
   </footer>
 </div>
 
-<script src="assets/js/config.js?v=11"></script>
-<script src="assets/js/core.js?v=11"></script>
+<script src="assets/js/config.js?v=12"></script>
+<script src="assets/js/core.js?v=12"></script>
 <script src="assets/js/map-engine.js?v=11"></script>
-<script src="assets/js/mapa.js?v=11"></script>
+<script src="assets/js/mapa.js?v=12"></script>
 </body>
 </html>

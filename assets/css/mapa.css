@@ -178,3 +178,11 @@ body.page-map { height: 100vh; height: 100dvh; display: flex; flex-direction: co
   .res h3 { font-size: 1.1rem; }
   .preview h2 { font-size: 1.35rem; }
 }
+
+/* Česko + Bavorsko: nadpisy skupin v nabídce Kraj / obvod a adresář oblastí, když je výřez moc velký */
+.opt-group { margin: 0; padding: 12px 12px 6px; border-bottom: 1px solid var(--rule); }
+.reg-head { list-style: none; padding: 18px 0 6px; border-bottom: 1px solid var(--rule); }
+.reg-head .kicker { margin: 0; }
+.res.reg-row { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
+.res.reg-row .reg-n { font: 800 1.25rem/1 var(--f-display); letter-spacing: -.03em; }
+.results > li.reg-note { padding-bottom: 8px; }

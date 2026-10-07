@@ -1,0 +1,1215 @@
+{
+ "task": "web_stredni-franky_ubytovani",
+ "kraj": "Střední Franky",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "w251046680",
+   "name": "Landgasthaus Jägerhof",
+   "obec": "Absberg",
+   "address": "Deutschordenstraße 4",
+   "lat": 49.145241,
+   "lng": 10.883496,
+   "category": "Penzion",
+   "source_url": "https://www.jaegerhof-absberg.de/gaestezimmer/gh_erdgeschoss",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "V přízemí jsou 3 pokoje uvedené jako bezbariérové, se zvýšenými postelemi.",
+    "koupelna": "Bezbariérové pokoje mají sprchu v úrovni podlahy.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "3 Zimmer sind barrierefrei gestaltet mit bodenebener Dusche und erhöhten Betten."
+  },
+  {
+   "osm_id": "n10081439805",
+   "name": "Bio BoutiqueHotel Schwarzer Bock",
+   "obec": "Ansbach",
+   "address": "Pfarrstraße 31",
+   "lat": 49.303352,
+   "lng": 10.573606,
+   "category": "Hotel",
+   "source_url": "https://schwarzerbock.de/about/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Většina pokojů a apartmánů je v 1.–2. patře, přístupná po 17–29 schodech, bez výtahu.",
+    "koupelna": "Pokoj 25 má sprchu v úrovni podlahy, pokoj 22 plochou sprchu; bezprahovou sprchu mají i pokoje King Federspiel v hostinském domě.",
+    "parkovani": null,
+    "vytah": "Web u pokojů v patrech výslovně uvádí: bez výtahu.",
+    "jine": "Web neuvádí, zda jsou pokoje 22/25 dostupné bez schodů."
+   },
+   "measurements": [
+    {
+     "co": "pokoj 25 / 22 – plocha",
+     "hodnota": 30,
+     "jednotka": "m²"
+    },
+    {
+     "co": "schody do 1. patra",
+     "hodnota": 17,
+     "jednotka": "schodů"
+    },
+    {
+     "co": "schody do 2. patra",
+     "hodnota": 29,
+     "jednotka": "schodů"
+    }
+   ],
+   "evidence_quote": "Zimmer 25 mit mit bodengleicher Dusche, Zimmer 22 mit einer flachen Dusche"
+  },
+  {
+   "osm_id": "w202498372",
+   "name": "Hotel-Gasthof Goldener Greifen",
+   "obec": "Rothenburg ob der Tauber",
+   "address": "Obere Schmiedgasse 5",
+   "lat": 49.376658,
+   "lng": 10.179631,
+   "category": "Hotel",
+   "source_url": "https://gasthof-greifen-rothenburg.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Web uvádí, že dům nemá výtah.",
+    "jine": "Historický dům s nízkými zárubněmi a vrzajícími schody (vlastní popis provozovatele)."
+   },
+   "measurements": [],
+   "evidence_quote": "Kein Aufzug, keine Klimaanlage - dafür niedrige Türstöcke und knarzende Treppen."
+  },
+  {
+   "osm_id": "n5908596016",
+   "name": "Das Hürner",
+   "obec": "Ansbach",
+   "address": "Schloßstraße 7",
+   "lat": 49.304118,
+   "lng": 10.576797,
+   "category": "Hotel",
+   "source_url": "https://www.das-huerner.de/hb_accommodation/premium-doppelzimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "V kategorii Premium dvoulůžkový pokoj je k dispozici jeden zcela bezbariérový pokoj (na vyžádání).",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "In dieser Zimmerkategorie ist ein komplett barrierefreies Zimmer verfügbar (auf Anfrage)."
+  },
+  {
+   "osm_id": "n772846826",
+   "name": "Gasthof Schwarzes Roß",
+   "obec": "Ansbach",
+   "address": "Wasserzell 21",
+   "lat": 49.317371,
+   "lng": 10.540502,
+   "category": "Penzion",
+   "source_url": "https://www.schwarzes-ross-wasserzell.de/wohnen/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Rodinný pokoj (Komfort) má extra široké dveře a velký manipulační prostor; web ho doporučuje hostům, kteří potřebují bezbariérovou koupelnu.",
+    "koupelna": "Všechny pokoje mají koupelnu se sprchou v úrovni podlahy; rodinný pokoj má koupelnu „behindertengerecht“.",
+    "parkovani": "Web uvádí pohodlné parkování i pro hosty s omezenou pohyblivostí.",
+    "vytah": "Pokoje jsou dostupné výtahem, i pro vozíčkáře.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Rollstuhlfahrer ... erreichen unsere Zimmer bequem über unseren Aufzug im Haus."
+  },
+  {
+   "osm_id": "w298134242",
+   "name": "Hotel/Restaurant Grünwald",
+   "obec": "Ansbach",
+   "address": "Am Bocksberg 80",
+   "lat": 49.305022,
+   "lng": 10.536784,
+   "category": "Hotel",
+   "source_url": "https://www.hotel-gruenwald.com/unsere-zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Web uvádí „barrierefreundliche“ pokoje v úrovni terénu (ebenerdig); bližší vybavení neuvádí.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Velký seminární sál je rovněž v úrovni terénu."
+   },
+   "measurements": [],
+   "evidence_quote": "Alle barrierefreundlichen Zimmer und der große Seminarraum sind ebenerdig."
+  },
+  {
+   "osm_id": "w1288645175",
+   "name": "AU Hotel",
+   "obec": "Aurach",
+   "address": "Lange Mähder 1",
+   "lat": 49.248936,
+   "lng": 10.420203,
+   "category": "Hotel",
+   "source_url": "https://au-hotel.de/de/hotelinformation",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Hotel nabízí 1 „bezbariérový“ jednolůžkový pokoj (22 m²); pokoje v přízemí jsou přístupné bez bariér, ale web výslovně uvádí, že nejsou vybavené pro vozíčkáře.",
+    "koupelna": null,
+    "parkovani": "Parkovací místa přímo před hotelem (bez zmínky o vyhrazeném stání).",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "bezbariérový jednolůžkový pokoj – plocha",
+     "hodnota": 22,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Unsere Zimmer sind jedoch nicht für Rollstuhlfahrer geeignet und ausgestattet."
+  },
+  {
+   "osm_id": "w1137956647",
+   "name": "Hotel Späth",
+   "obec": "Bad Windsheim",
+   "address": "Oberntiefer Straße 40",
+   "lat": 49.508458,
+   "lng": 10.406877,
+   "category": "Hotel",
+   "source_url": "https://hotel-spaeth.de/die-zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Nový bezbariérový pokoj (od srpna 2025), 32 m², varianta s balkonem.",
+    "koupelna": "Bezbariérová koupelna s pojízdnou sprchou, ruční i hlavová sprcha.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "bezbariérový pokoj – plocha",
+     "hodnota": 32,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Barrierefreies Badezimmer mit Dusche Befahrbare Dusche mit Hand- und Kopfbrause"
+  },
+  {
+   "osm_id": "w956970466",
+   "name": "Vital Hotel an der Therme",
+   "obec": "Bad Windsheim",
+   "address": "Erkenbrechtallee 14",
+   "lat": 49.514936,
+   "lng": 10.41449,
+   "category": "Hotel",
+   "source_url": "https://www.vital-hotel-adt.de/zimmer/barrierefrei",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Parkoviště, lobby, snídaňová místnost i lázně Franken-Therme (spojovací chodbou) jsou z těchto pokojů dostupné zcela bez schodů; všechny pokoje a části hotelu jsou z parkoviště bez prahů.",
+    "wc": null,
+    "pokoj": "Bezbariérové dvoulůžkové pokoje v přízemí, 38 m², širší dveře, boční volný prostor u postele pro najetí vozíkem.",
+    "koupelna": "Sprcha v úrovni podlahy, madla, podjízdné umyvadlo.",
+    "parkovani": "Hotelové parkoviště před hotelem (podle dostupnosti); vyhrazené stání web neuvádí.",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "bezbariérový pokoj – plocha",
+     "hodnota": 38,
+     "jednotka": "m²"
+    },
+    {
+     "co": "postel – délka × šířka",
+     "hodnota": "200 × 200",
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Die Bäder sind mit einer bodengleichen Dusche, Haltegriffen sowie einem unterfahrbarem Waschbecken"
+  },
+  {
+   "osm_id": "w34958092",
+   "name": "Burghotel",
+   "obec": "Burgthann",
+   "address": "Burgstraße 3",
+   "lat": 49.354608,
+   "lng": 11.316445,
+   "category": "Hotel",
+   "source_url": "https://goldener-hirsch-burgthann.de/premium/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Podzemní garáž s výtahem přímo k pokojům.",
+    "vytah": "Sauna, garáž i pokoje v Burghotelu jsou dostupné výtahem.",
+    "jine": "Bezbariérové pokoje web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "ausreichend Parkplätze für Sie zur Verfügung, mit direktem Aufzug zu den Zimmern."
+  },
+  {
+   "osm_id": "n2592435267",
+   "name": "Jugendherberge Dinkelsbühl",
+   "obec": "Dinkelsbühl",
+   "address": "Koppengasse 10",
+   "lat": 49.069401,
+   "lng": 10.314664,
+   "category": "Hostel",
+   "source_url": "https://www.jugendherberge.de/jugendherbergen/dinkelsbuehl/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezschodový vstup do budovy.",
+    "wc": null,
+    "pokoj": "2 pokoje s koupelnou vhodné pro vozíčkáře.",
+    "koupelna": "Pokoje pro vozíčkáře mají vlastní koupelnu (detaily neuvedeny).",
+    "parkovani": "1 vyhrazené místo pro osoby se zdravotním postižením přímo u domu; jinak jen krátké zastavení, veřejné parkoviště P3 asi 500 m.",
+    "vytah": "Výtah je k dispozici.",
+    "jine": "Společné prostory a seminární místnosti označeny jako vhodné pro vozík."
+   },
+   "measurements": [
+    {
+     "co": "pokoje vhodné pro vozík",
+     "hodnota": 2,
+     "jednotka": "ks"
+    },
+    {
+     "co": "vyhrazená parkovací místa",
+     "hodnota": 1,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "rollstuhlgerechte Zimmer mit Bad: 2 stufenloser Zugang zum Gebäude"
+  },
+  {
+   "osm_id": "n6755968000",
+   "name": "Meiser Design Hotel",
+   "obec": "Dinkelsbühl",
+   "address": "Neue Allee 4",
+   "lat": 49.068531,
+   "lng": 10.307815,
+   "category": "Hotel",
+   "source_url": "https://meiser-hotels.de/kontakt-anfahrt-design-hotel",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Hotelové parkování (garáž) s rozšířenými místy 2,70 m a místy pro osoby se zdravotním postižením.",
+    "vytah": "V parkovacím objektu 2 výtahy.",
+    "jine": "Bezbariérové pokoje web na prověřených stránkách neuvádí; prohlášení o přístupnosti webu se netýká budovy."
+   },
+   "measurements": [
+    {
+     "co": "šířka parkovacího místa",
+     "hodnota": 2.7,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Überbreite Parkplätze (2,70 m) Mutter-Kind- und Behindertenparkplätze"
+  },
+  {
+   "osm_id": "n4230062193",
+   "name": "Reiterhof Fraunholz",
+   "obec": "Dinkelsbühl",
+   "address": "Lohe 5",
+   "lat": 49.091406,
+   "lng": 10.330076,
+   "category": "Hostel",
+   "source_url": "https://www.reiterhof-fraunholz.de/hof/zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "V zahradní „jezdecké vesničce“ (stany kota pro děti) mohou být ubytováni i vozíčkáři.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Jde o jezdecký tábor pro děti; vybavení (WC, koupelna) web blíže nepopisuje."
+   },
+   "measurements": [],
+   "evidence_quote": "Hier können auch Rollstuhlfahrer untergebracht werden."
+  },
+  {
+   "osm_id": "n12384115772",
+   "name": "Weib's Bräu",
+   "obec": "Dinkelsbühl",
+   "address": "Untere Schmiedgasse 13",
+   "lat": 49.070215,
+   "lng": 10.317043,
+   "category": "Hotel",
+   "source_url": "https://www.weibsbrauhaus.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hostinská místnost v přízemí je podle webu bezbariérová.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "U 6 hostinských pokojů web přístupnost neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "bietet neben barrierefreiem Gastraum im Erdgeschoss weitere Räume und Biergarten"
+  },
+  {
+   "osm_id": "w203630890",
+   "name": "Garner Hotel Erlangen Süd by IHG",
+   "obec": "Erlangen",
+   "address": "Wetterkreuz 7",
+   "lat": 49.543687,
+   "lng": 11.028945,
+   "category": "Hotel",
+   "source_url": "https://www.ihg.com/garner-hotels/hotels/gb/en/erlangen/zczwt/hoteldetail",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Rovné chodníky a vstup s rampou.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Asi 100 parkovacích míst včetně míst pro osoby s postižením („accessible options“).",
+    "vytah": null,
+    "jine": "Bezbariérové pokoje na prověřené stránce nepopsány."
+   },
+   "measurements": [],
+   "evidence_quote": "Level pathways and a ramped entrance add extra convenience"
+  },
+  {
+   "osm_id": "n7182446812",
+   "name": "Holiday Inn Express",
+   "obec": "Erlangen",
+   "address": "Güterbahnhofstraße 9",
+   "lat": 49.590086,
+   "lng": 11.002692,
+   "category": "Hotel",
+   "source_url": "https://www.ihg.com/holidayinnexpress/hotels/de/de/erlangen/zczel/hoteldetail/amenities",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup z parkoviště ke vchodu, rampa do hotelu, baru a restaurace.",
+    "wc": "Madla a zvýšené toalety (v bezbariérových pokojích).",
+    "pokoj": "2 bezbariérové pokoje ze 186.",
+    "koupelna": "Dostatečný otáčecí prostor v koupelně, madla.",
+    "parkovani": "Podzemní garáž s bezbariérovým přístupem do hotelu; 4 vyhrazená místa pro vozíčkáře, místo pro vystoupení u vchodu.",
+    "vytah": "Výtahy uvedeny jako bezbariérové (ADA).",
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "bezbariérové pokoje",
+     "hodnota": 2,
+     "jednotka": "ks"
+    },
+    {
+     "co": "parkovací místa pro vozíčkáře",
+     "hodnota": 4,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Barrierefreie Zimmer: 2"
+  },
+  {
+   "osm_id": "w244986388",
+   "name": "Hotel Bayerischer Hof",
+   "obec": "Erlangen",
+   "address": "Schuhstraße 31",
+   "lat": 49.593582,
+   "lng": 11.008925,
+   "category": "Hotel",
+   "source_url": "https://www.bayerischer-hof-erlangen.de/zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Hotel nabízí bezbariérový pokoj vhodný pro vozík; podrobnosti web neuvádí.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Gerne stellen wir Ihnen ein barrierefreies, rollstuhlgerechtes Zimmer zur Verfügung."
+  },
+  {
+   "osm_id": "w204714172",
+   "name": "Hotel Gasthof Rangau",
+   "obec": "Erlangen",
+   "address": "Röttenbacher Straße 9",
+   "lat": 49.629358,
+   "lng": 10.938547,
+   "category": "Hotel",
+   "source_url": "https://www.hotel-rangau.de/zimmer",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Bezplatná parkovací místa (bez zmínky o vyhrazeném stání).",
+    "vytah": "Všechny pokoje jsou dostupné výtahem.",
+    "jine": "Bezbariérové pokoje web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Alle Zimmer können bequem mit dem Lift erreicht werden."
+  },
+  {
+   "osm_id": "n4618944590",
+   "name": "Hotel Gasthof Rangau",
+   "obec": "Ansbach",
+   "address": "Laurentiusstraße 5",
+   "lat": 49.278398,
+   "lng": 10.516672,
+   "category": "Hotel",
+   "source_url": "https://www.hotel-gasthof-rangau.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": "Web uvádí WC vhodné pro vozík.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Bezplatná parkovací místa ve dvoře a před domem.",
+    "vytah": null,
+    "jine": "O pokojích pro vozíčkáře web nic neuvádí. Adresa ze vstupu (/home/) vrací 404, použita úvodní stránka."
+   },
+   "measurements": [],
+   "evidence_quote": "Rollstuhlgerechtes WC"
+  },
+  {
+   "osm_id": "n258495275",
+   "name": "Hotel Luise",
+   "obec": "Erlangen",
+   "address": "Sophienstraße 10",
+   "lat": 49.589724,
+   "lng": 11.014646,
+   "category": "Hotel",
+   "source_url": "https://hotel-luise.de/zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Web uvádí bezbariérovost v některých pokojích, bez podrobností.",
+    "koupelna": null,
+    "parkovani": "Garáž (bez zmínky o vyhrazeném stání).",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Barrierefrei in einigen Zimmern"
+  },
+  {
+   "osm_id": "n1641963355",
+   "name": "NH Hotel",
+   "obec": "Erlangen",
+   "address": "Beethovenstraße 3",
+   "lat": 49.590103,
+   "lng": 11.007219,
+   "category": "Hotel",
+   "source_url": "https://www.nh-hotels.com/en/hotel/nh-erlangen/services",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup s rampou, přístup pro vozík.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Kryté parkování (bez zmínky o vyhrazeném stání).",
+    "vytah": "Výtahy přístupné pro vozík.",
+    "jine": "Pokoje pro vozíčkáře na prověřené stránce nepopsány."
+   },
+   "measurements": [],
+   "evidence_quote": "Ramp access Wheelchair access Wheelchair accessible elevators"
+  },
+  {
+   "osm_id": "n4070391992",
+   "name": "Novotel",
+   "obec": "Erlangen",
+   "address": "Hofmannstraße 34",
+   "lat": 49.592799,
+   "lng": 11.013156,
+   "category": "Hotel",
+   "source_url": "https://all.accor.com/hotel/5376/index.en.shtml",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Na stránce hotelu je mezi službami jen obecná položka „Wheelchair accessible“, bez podrobností."
+   },
+   "measurements": [],
+   "evidence_quote": "Wheelchair accessible"
+  },
+  {
+   "osm_id": "w740666965",
+   "name": "Ferienhof Gögelein",
+   "obec": "Feuchtwangen",
+   "address": "Aichau 3",
+   "lat": 49.185388,
+   "lng": 10.423942,
+   "category": "Penzion",
+   "source_url": "https://ferienhofgoegelein.de/ferienwohnungen/ferienwohnung-max/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Apartmány Max a Moritz jsou v úrovni terénu (ebenerdig).",
+    "wc": null,
+    "pokoj": "Apartmány „Max“ a „Moritz“ jsou podle webu vhodné pro vozíčkáře, každá místnost má extra široké dveře.",
+    "koupelna": "Pojízdná sprcha.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Die Wohnung ist für Rollstuhlfahrer geeignet, da sie ebenerdig ist"
+  },
+  {
+   "osm_id": "n6603628617",
+   "name": "Excelsior Hotel Nürnberg Fürth",
+   "obec": "Fürth",
+   "address": "Europaallee 1",
+   "lat": 49.448925,
+   "lng": 10.998926,
+   "category": "Hotel",
+   "source_url": "https://www.gchhotelgroup.com/de/hotel/excelsior-nuernberg-fuerth",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": "WC s madly.",
+    "pokoj": "2 bezbariérové pokoje.",
+    "koupelna": "Sprcha vhodná pro vozík a sníženě umístěné umyvadlo.",
+    "parkovani": "Podzemní garáž u hotelu (vyhrazená místa neuvedena).",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "bezbariérové pokoje",
+     "hodnota": 2,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "mit einer rollstuhlgerechten Dusche und einem nach unten versetzten Waschbecken ausgestattet"
+  },
+  {
+   "osm_id": "w33183928",
+   "name": "Altmühlsee Camping Herzog",
+   "obec": "Gunzenhausen",
+   "address": "Seestraße 12",
+   "lat": 49.127734,
+   "lng": 10.743903,
+   "category": "Kemp",
+   "source_url": "https://www.camping-herzog.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": "Podle článku na webu kempu se při rekonstrukci sanitární budovy myslelo i na osoby s postižením; konkrétní vybavení neuvedeno.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Auch an die Familien (große Duschen) und Behinderten wurde gedacht."
+  },
+  {
+   "osm_id": "w143903098",
+   "name": "Hotel Adlerbräu",
+   "obec": "Gunzenhausen",
+   "address": "Marktplatz 10/12",
+   "lat": 49.114854,
+   "lng": 10.753142,
+   "category": "Hotel",
+   "source_url": "https://www.hotel-adlerbraeu.de/zimmer-preise-2026",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": "WC vhodné pro vozík, výška sedátka 0,44 m.",
+    "pokoj": "3 velké dvoulůžkové pokoje pro vozíčkáře (~36 m²) v 1. patře domu Altmühlaue; šířka dveří pokoje i koupelny 80 cm; postel s výškou hrany 0,52 m.",
+    "koupelna": "Pojízdná sprcha, podjízdné umyvadlo.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Pokoje hodnoceny podle systému „Reisen für Alle“ (certifikát „Barrierefreiheit geprüft“ uveden na období 3/2023–2/2026, tj. podle textu webu již prošlý). Lázeňský poplatek se při GdB 100 neplatí."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří pokoje a koupelny",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška sedátka WC",
+     "hodnota": 44,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška hrany postele",
+     "hodnota": 52,
+     "jednotka": "cm"
+    },
+    {
+     "co": "pokoj pro vozíčkáře – plocha",
+     "hodnota": 36,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Zimmer- und Badezimmertürenbreite: 80 cm"
+  },
+  {
+   "osm_id": "n361995537",
+   "name": "Landgasthof-Hotel Bergwirt",
+   "obec": "Herrieden",
+   "address": "Schernberg 1",
+   "lat": 49.243517,
+   "lng": 10.492506,
+   "category": "Hotel",
+   "source_url": "https://www.hotel-bergwirt.de/Zimmer-Preise/index.php/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Pokoje v domech 2, 3 a 4 jsou dostupné výtahem; výtah v domě 1 zatím chybí.",
+    "jine": "Bezbariérové pokoje web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Alle unsere Zimmer im Haus 2, Haus 3 & Haus 4 sind per Lift erreichbar!"
+  },
+  {
+   "osm_id": "w46654222",
+   "name": "Hotel Herzogs Park",
+   "obec": "Herzogenaurach",
+   "address": "Beethovenstraße 6",
+   "lat": 49.56088,
+   "lng": 10.872247,
+   "category": "Hotel",
+   "source_url": "https://www.herzogspark.de/zimmer",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Standardní pokoje (25–27 m²) web označuje jako „teilweise behindertenfreundlich“; podrobnosti chybí.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Apartmány v přístavbě: částečně kuchyň a výtah.",
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "standardní pokoj – plocha",
+     "hodnota": "25–27",
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Standard 25 - 27 m² teilweise behindertenfreundlich"
+  },
+  {
+   "osm_id": "n564628149",
+   "name": "Gästehaus des Postwirts",
+   "obec": "Kirchensittenbach",
+   "address": "Hauptstraße 21",
+   "lat": 49.55696,
+   "lng": 11.421322,
+   "category": "Hotel",
+   "source_url": "https://www.post-wirt.de/zimmer-und-preise",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Všechny pokoje jsou dostupné výtahem.",
+    "jine": "Bezbariérové pokoje web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Alle Zimmer sind über unseren Aufzug erreichbar"
+  },
+  {
+   "osm_id": "n3422245908",
+   "name": "Seerose",
+   "obec": "Langenzenn",
+   "address": "Gräfenweg 13",
+   "lat": 49.492809,
+   "lng": 10.818387,
+   "category": "Hotel",
+   "source_url": "https://www.hotel-seerose.de/de/kontakt-service/anfragen.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hostinec Seerose má podle FAQ bezbariérový vstup.",
+    "wc": "Toalety jsou k dispozici, ale s max. 3 schody.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "O pokojích pro vozíčkáře FAQ nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Der Gasthof Seerose hat einen barrierefreien Eingang ... (max. 3 Stufen)"
+  },
+  {
+   "osm_id": "n12344542779",
+   "name": "Landhotel Sonne",
+   "obec": "Neuendettelsau",
+   "address": "Hauptstraße 43",
+   "lat": 49.285321,
+   "lng": 10.789418,
+   "category": "Hotel",
+   "source_url": "https://www.landhotel-sonne.com/Hotel/Zimmer.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Jeden bezbariérový pokoj vhodný pro vozík.",
+    "koupelna": "Všechny pokoje mají koupelnu se sprchou v úrovni podlahy.",
+    "parkovani": "Bezplatná parkovací místa na pozemku hotelu (vyhrazené stání neuvedeno).",
+    "vytah": "Všechny pokoje jsou dostupné výtahem.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Ein barrierefreies, rollstuhlgerechtes Zimmer"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w33177827",
+   "name": "Waldgasthof Wildbad",
+   "url": "https://www.waldgasthof-wildbad.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "w213200755",
+   "name": "Gasthaus zum Lamm",
+   "url": "http://www.gasthaus-lamm-gebsattel-rothenburg.de",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "w194825642",
+   "name": "Gasthof Rödertor",
+   "url": "https://www.roedertor.com/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "w140466447",
+   "name": "Herrnschlösschen",
+   "url": "https://www.hotel-rothenburg.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "w141208834",
+   "name": "Hotel Gotisches Haus",
+   "url": "https://gotisches-haus.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n575372414",
+   "name": "Landgasthof \"Zur Schmiede\"",
+   "url": "https://www.landgasthof-sebald.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n285669827",
+   "name": "Hotel zur Windmühle",
+   "url": "https://www.hotel-windmuehle.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "w957268931",
+   "name": "Kurhotel Pyramide",
+   "url": "https://www.kurhotel-pyramide-badwindsheim.de",
+   "reason": "web obsahuje jen prohlášení o přístupnosti webu (BFSG/BayDiV), o budově nic"
+  },
+  {
+   "osm_id": "n919147084",
+   "name": "Burg Colmberg",
+   "url": "http://www.burg-colmberg.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n4268485453",
+   "name": "Gasthaus „zum Ochsen“",
+   "url": "https://www.gasthaus-birkner.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n265235390",
+   "name": "Schwarzer Adler",
+   "url": "http://www.gasthaus-lober.de/",
+   "reason": "doména webu neexistuje (DNS chyba)"
+  },
+  {
+   "osm_id": "n12373336388",
+   "name": "Haus Appelberg",
+   "url": "https://www.haus-appelberg.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n1608523826",
+   "name": "Art Hotel",
+   "url": "https://www.booking.com/hotel/de/art-erlangen.de.html",
+   "reason": "v OSM je jako web jen Booking.com – netěženo (podmínky platformy)"
+  },
+  {
+   "osm_id": "n9993864001",
+   "name": "First Appart",
+   "url": "https://www.book-it.de/apartments/first-apart",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n2776888486",
+   "name": "Historic Apart",
+   "url": "https://www.book-it.de/apartments/historic-apart",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n538912440",
+   "name": "Kral",
+   "url": "https://www.hotel-kral.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n538940715",
+   "name": "Kral",
+   "url": "https://www.hotel-kral.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n10721077541",
+   "name": "Holiday Inn Express Fürth",
+   "url": "https://www.ihg.com",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n1602111979",
+   "name": "Hotel am Stadtpark",
+   "url": "http://hotel-am-stadtpark.com/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "w515420516",
+   "name": "the niu Saddle",
+   "url": "https://the.niu.de/hotels/deutschland/fuerth/holiday-inn---the-niu-saddle-fuerth",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "w213199042",
+   "name": "Gasthof Schwarzer Adler",
+   "url": "https://www.schwarzer-adler-rothenburg.com/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n1398482442",
+   "name": "Landgasthof Zur Hammerschmiede",
+   "url": "http://www.landgasthof-hammerschmiede.de",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "w140308618",
+   "name": "Weißer Schimmel",
+   "url": "https://weisser-schimmel.weebly.com/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n1606945823",
+   "name": "Hotel am Markt",
+   "url": "https://www.hotelammarkt.com/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n1628590373",
+   "name": "Parkhotel Altmühltal",
+   "url": "http://www.aktiv-parkhotel.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n13406468077",
+   "name": "Gasthof Schönau",
+   "url": "https://www.gasthof-schoenau.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n9357477377",
+   "name": "DORMERO Hotel Hersbruck",
+   "url": "https://www.dormero.de/hotel-hersbruck/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n1558156526",
+   "name": "Landhotel und Restaurant Grüner Baum",
+   "url": "https://www.gruener-baum-kuehnhofen.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "w36685749",
+   "name": "Campingplatz Kauerlach",
+   "url": "https://www.naturcamp-kauerlach.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n3464513846",
+   "name": "Gasthaus Hallerschlösschen",
+   "url": "https://www.hallerschloesschen.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n554127244",
+   "name": "Hotel Löwe",
+   "url": "https://www.loewe-lehrberg.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n298328348",
+   "name": "Distlerhof",
+   "url": "https://www.distlerhof.de/",
+   "reason": "web obsahuje jen prohlášení o přístupnosti webu (BFSG/BayDiV), o budově nic"
+  },
+  {
+   "osm_id": "n1591398229",
+   "name": "Landgasthof Löhner",
+   "url": "https://www.landgasthof-loehner.com/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "w402003547",
+   "name": "Landgasthof zum Schwarzen Adler",
+   "url": "https://frankenurlaub.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n1143900261",
+   "name": "Rotes Ross",
+   "url": "http://www.rotes-ross-marktbergel.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n5194740921",
+   "name": "FeWo Christine Wolf",
+   "url": "http://www.gaestehaus-barbara-meinheim.de/index.html",
+   "reason": "web vrací 404 (i úvodní stránka)"
+  },
+  {
+   "osm_id": "w37215778",
+   "name": "Hotel Schützenhof",
+   "url": "https://www.landhotel-schuetzenhof.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n2565915045",
+   "name": "Wohnmobilstellplatz am Waldbad Neustadt",
+   "url": "https://freizeit.neustadt-aisch.de/infothek/wohnmobilstellplaetze",
+   "reason": "web obsahuje jen prohlášení o přístupnosti webu (BFSG/BayDiV), o budově nic"
+  },
+  {
+   "osm_id": "w1228613336",
+   "name": "Wohnmobilstellplatz auf dem Festplatz",
+   "url": "https://www.neustadt-aisch.de/seite/de/aischtal/053:1776/tn_53_cc_3/Wohnmobilstellplaetze.html",
+   "reason": "web obsahuje jen prohlášení o přístupnosti webu (BFSG/BayDiV), o budově nic"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Landgasthaus Jägerhof – web",
+   "url": "https://www.jaegerhof-absberg.de/gaestezimmer/gh_erdgeschoss",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Bio BoutiqueHotel Schwarzer Bock – web",
+   "url": "https://schwarzerbock.de/about/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Hotel-Gasthof Goldener Greifen – web",
+   "url": "https://gasthof-greifen-rothenburg.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Das Hürner – web",
+   "url": "https://www.das-huerner.de/hb_accommodation/premium-doppelzimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Gasthof Schwarzes Roß – web",
+   "url": "https://www.schwarzes-ross-wasserzell.de/wohnen/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Hotel/Restaurant Grünwald – web",
+   "url": "https://www.hotel-gruenwald.com/unsere-zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "AU Hotel – web",
+   "url": "https://au-hotel.de/de/hotelinformation",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Hotel Späth – web",
+   "url": "https://hotel-spaeth.de/die-zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Vital Hotel an der Therme – web",
+   "url": "https://www.vital-hotel-adt.de/zimmer/barrierefrei",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Burghotel – web",
+   "url": "https://goldener-hirsch-burgthann.de/premium/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Jugendherberge Dinkelsbühl – web",
+   "url": "https://www.jugendherberge.de/jugendherbergen/dinkelsbuehl/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Meiser Design Hotel – web",
+   "url": "https://meiser-hotels.de/kontakt-anfahrt-design-hotel",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Reiterhof Fraunholz – web",
+   "url": "https://www.reiterhof-fraunholz.de/hof/zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Weib's Bräu – web",
+   "url": "https://www.weibsbrauhaus.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Garner Hotel Erlangen Süd by IHG – web",
+   "url": "https://www.ihg.com/garner-hotels/hotels/gb/en/erlangen/zczwt/hoteldetail",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Holiday Inn Express – web",
+   "url": "https://www.ihg.com/holidayinnexpress/hotels/de/de/erlangen/zczel/hoteldetail/amenities",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Hotel Bayerischer Hof – web",
+   "url": "https://www.bayerischer-hof-erlangen.de/zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Hotel Gasthof Rangau – web",
+   "url": "https://www.hotel-rangau.de/zimmer",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Hotel Gasthof Rangau – web",
+   "url": "https://www.hotel-gasthof-rangau.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Hotel Luise – web",
+   "url": "https://hotel-luise.de/zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "NH Hotel – web",
+   "url": "https://www.nh-hotels.com/en/hotel/nh-erlangen/services",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Novotel – web",
+   "url": "https://all.accor.com/hotel/5376/index.en.shtml",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Ferienhof Gögelein – web",
+   "url": "https://ferienhofgoegelein.de/ferienwohnungen/ferienwohnung-max/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Excelsior Hotel Nürnberg Fürth – web",
+   "url": "https://www.gchhotelgroup.com/de/hotel/excelsior-nuernberg-fuerth",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Altmühlsee Camping Herzog – web",
+   "url": "https://www.camping-herzog.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Hotel Adlerbräu – web",
+   "url": "https://www.hotel-adlerbraeu.de/zimmer-preise-2026",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Landgasthof-Hotel Bergwirt – web",
+   "url": "https://www.hotel-bergwirt.de/Zimmer-Preise/index.php/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Hotel Herzogs Park – web",
+   "url": "https://www.herzogspark.de/zimmer",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Gästehaus des Postwirts – web",
+   "url": "https://www.post-wirt.de/zimmer-und-preise",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Seerose – web",
+   "url": "https://www.hotel-seerose.de/de/kontakt-service/anfragen.html",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Landhotel Sonne – web",
+   "url": "https://www.landhotel-sonne.com/Hotel/Zimmer.html",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  }
+ ],
+ "method": "Skript prošel úvodní stránku + max 6 podstránek (odkazy barrierefrei|zimmer|anreise|service|ausstattung|kontakt|info|besuch), respektoval robots.txt, User-Agent kudyprojedu-student-project/0.1, max 6 paralelně, timeout 10 s. Booking.com a podobné platformy nebyly těženy. Prohlášení o přístupnosti webu (BFSG/BayDiV) nejsou brána jako údaj o budově. Recenze hostů nebyly použity. Souřadnice převzaty ze vstupu (OSM)."
+}

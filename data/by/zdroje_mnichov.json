@@ -1,0 +1,58 @@
+[
+ {
+  "nazev": "Landeshauptstadt München – WC-Standorte der Landeshauptstadt München (WC-Finder)",
+  "url": "https://opendata.muenchen.de/dataset/wc_finder",
+  "licence": "dl-de/by-2-0 (Datenlizenz Deutschland – Namensnennung – Version 2.0), https://www.govdata.de/dl-de/by-2-0; ověřeno v CKAN metadatech opendata.muenchen.de (license_id dl-by-de/2.0, extras „GeoPortal Lizenz“) a v katalogu open.bydata.de",
+  "dolozka": "Datenquelle: Landeshauptstadt München – GeodatenService (www.muenchen.de/rathaus/Stadtverwaltung/Kommunalreferat/geodatenservice), Datenlizenz Deutschland – Namensnennung – Version 2.0. Data upravena: kabiny na stejném místě sloučeny do jednoho místa, údaje převedeny do češtiny.",
+  "pocet": 303
+ },
+ {
+  "nazev": "Landeshauptstadt München – Behindertenparkplätze (allgemeine, auf öffentlichem Grund)",
+  "url": "https://opendata.muenchen.de/dataset/behindertenparkplaetze",
+  "licence": "dl-de/by-2-0; CKAN metadata opendata.muenchen.de (license_id dl-by-de/2.0, extras „GeoPortal Lizenz“)",
+  "dolozka": "dl-de/by-2-0: Landeshauptstadt München – opendata.muenchen.de (Mobilitätsreferat). Data upravena: převod do češtiny a schématu kudyprojedu.",
+  "pocet": 569
+ },
+ {
+  "nazev": "P+R Park & Ride GmbH München – P+R Anlagen München (Stand 06/2025), jen zařízení s vyhrazenými stáními",
+  "url": "https://opendata.muenchen.de/dataset/p-r-anlagen-muenchen",
+  "licence": "dl-de/by-2-0; CKAN metadata (license_id dl-by-de/2.0, licence zdroje http://dcat-ap.de/def/licenses/dl-by-de/2.0)",
+  "dolozka": "Datenquelle: P+R Park & Ride GmbH München über opendata.muenchen.de, Datenlizenz Deutschland – Namensnennung – Version 2.0. Data upravena: výběr zařízení s Behindertenstellplätze > 0, souřadnice převedeny z formátu stupně/minuty/sekundy.",
+  "pocet": 29
+ },
+ {
+  "nazev": "Landeshauptstadt München – Bundestagswahl 2025 – Wahlräume in München (CSV + bodová vrstva Shape)",
+  "url": "https://opendata.muenchen.de/dataset/bundestagswahl-2025-wahlraeume-in-muenchen",
+  "licence": "dl-de/by-2-0; CKAN metadata (license_id dl-by-de/2.0, u obou zdrojů licence http://dcat-ap.de/def/licenses/dl-by-de/2.0)",
+  "dolozka": "Datenquelle: Landeshauptstadt München, Kreisverwaltungsreferat – Wahlen und Abstimmungen (opendata.muenchen.de), Datenlizenz Deutschland – Namensnennung – Version 2.0. Data upravena: okrsky ve stejné budově sloučeny, souřadnice převedeny z ETRS89/UTM 32N do WGS84.",
+  "pocet": 200
+ },
+ {
+  "nazev": "Stadt Haar – Verzeichnis der Points of Interest (POI) der Stadt Haar, jen záznamy „Behindertenparkplatz“",
+  "url": "https://open.bydata.de/datasets/poi-haar",
+  "licence": "CC BY 4.0 (http://dcat-ap.de/def/licenses/cc-by/4.0) podle metadat distribuce v katalogu open.bydata.de (katalog haar-import)",
+  "dolozka": "Datenquelle: Stadt Haar (www.gemeinde-haar.de), CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Data upravena: výběr vyhrazených stání; souřadnice doplněny z Nominatim/OpenStreetMap (© OpenStreetMap contributors, ODbL) na úrovni ulice. 1 záznam (Ottendichler Straße) nebyl v Haar nalezen a je vynechán.",
+  "pocet": 6
+ },
+ {
+  "nazev": "BayernCloud Tourismus – Attraktionen in Bayern (jen objekty v Horním Bavorsku a Švábsku s údajem o bezbariérovosti a otevřenou licencí objektu)",
+  "url": "https://open.bydata.de/datasets/https-data-bayerncloud-digital-api-v4-endpoints-list_attractions",
+  "licence": "licence po objektech (pole sdLicense a cc:license): převzato jen CC BY 4.0 (81) a CC0 1.0 (4); objekty s CC BY-SA 4.0 (49 s údajem o bezbariérovosti) vynechány. Distribuce v katalogu open.bydata.de uvádí CC BY-SA 4.0 pro souhrnný soubor, popis sady říká, že každý objekt má vlastní licenci (CC0, CC BY nebo CC BY-SA).",
+  "dolozka": "Datenquelle: BayernCloud Tourismus (Bayern Tourismus Marketing GmbH, https://bayerncloud.digital/), licence podle objektu CC BY 4.0, resp. CC0 1.0; u každého místa uveden copyrightNotice poskytovatele (x[].attribution, např. „CC BY 4.0 Chiemsee-Alpenland Tourismus“). Data upravena: převzata jen označení a popisy bezbariérovosti, bez obrázků.",
+  "pocet": 85
+ },
+ {
+  "nazev": "Stadt Augsburg – Sozialwesen – Schwerbehinderte (statistika, jen pro tema_bavorsko_mnichov.md)",
+  "url": "https://open.bydata.de/datasets/http-informationsportal-augsburg-de-opendataaugsburg-dataset-de-by-augsburg-sozialwesen_-_schwerbehinderte",
+  "licence": "CC BY 4.0 (metadata distribuce v open.bydata.de, katalog augsburg-statistik)",
+  "dolozka": "Datenquelle: Stadt Augsburg, Amt für Statistik und Stadtforschung (informationsportal.augsburg.de), CC BY 4.0. Použito jen pro statistiky.",
+  "pocet": 0
+ },
+ {
+  "nazev": "Stadt Augsburg – Nachhaltigkeitsbericht K3.1 Beschäftigte mit Behinderungsgrad 50 (statistika)",
+  "url": "https://open.bydata.de/datasets/nachhaltigkeitsbericht-augsburg-k3-1-beschaeftigte-mit-behinderungsgrad-50",
+  "licence": "CC BY 4.0 (metadata distribuce v open.bydata.de, katalog augsburg-subcatalog)",
+  "dolozka": "Datenquelle: Stadt Augsburg (augsburg.de, Smart City Open Data), CC BY 4.0. Použito jen pro statistiky.",
+  "pocet": 0
+ }
+]

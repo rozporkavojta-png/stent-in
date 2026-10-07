@@ -1,0 +1,967 @@
+{
+ "task": "web_svabsko_ubytovani",
+ "kraj": "Švábsko",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "n4748935521",
+   "name": "Art Hotel Allgäu",
+   "obec": "Kempten (Allgäu)",
+   "address": null,
+   "lat": 47.719732,
+   "lng": 10.313218,
+   "category": "ubytovani",
+   "source_url": "https://allgaeuarthotel.de/doppelzimmer-rollstuhlgerecht/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Dvoulůžkové pokoje „rollstuhlgerecht“ (i varianta s balkonem, bezbariérový přístup na balkon 7 m²); prostor pro pohyb na vozíku; na přání pokoj s polohovací (pečovatelskou) postelí.",
+    "koupelna": "Koupelna uzpůsobená pro vozík se sprchou, WC a madly.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Hotel se profiluje jako inkluzivní; certifikace Reisen für Alle (leden 2024 – prosinec 2026); 4 bezbariérové konferenční sály, indukční smyčka/přijímače pro nedoslýchavé; spolupráce s dopravcem pro bezbariérovou přepravu (Steber-Tours) a asistenční službou."
+   },
+   "measurements": [
+    {
+     "co": "plocha pokoje rollstuhlgerecht",
+     "hodnota": "29",
+     "jednotka": "m²"
+    },
+    {
+     "co": "plocha balkonu (pokoj s balkonem)",
+     "hodnota": "7",
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Die geräumigen und komfortablen Doppelzimmer ermöglichen die ungehinderte Fortbewegung mit dem Rollstuhl"
+  },
+  {
+   "osm_id": "w209397792",
+   "name": "Café-Pension Gerlinde",
+   "obec": "Schwangau",
+   "address": "Forggenseestraße 85",
+   "lat": 47.587335,
+   "lng": 10.72966,
+   "category": "ubytovani",
+   "source_url": "https://www.pension-gerlinde.de/gaestezimmer",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Penzion uvádí, že má pokoje i apartmány v přízemí (ebenerdig); o vybavení pro vozík nic.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Ebenerdige Zimmer sind vorhanden."
+  },
+  {
+   "osm_id": "w593149079",
+   "name": "B&B Hotel Neu-Ulm",
+   "obec": "Neu-Ulm",
+   "address": "Memminger Straße 31",
+   "lat": 48.388243,
+   "lng": 10.002256,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-bb.com/de/services/deutschland",
+   "source_type": "web provozovatele (řetězec B&B HOTELS, obecná stránka)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Řetězec B&B HOTELS uvádí, že ve všech jeho hotelech v Německu a Rakousku jsou bezbariérové pokoje; konkrétní údaje k hotelu Neu-Ulm na webu nenalezeny.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "In all unseren Hotels in Deutschland und Österreich gibt es Familien- und barrierefreie Zimmer."
+  },
+  {
+   "osm_id": "w1279720650",
+   "name": "Explorer Hotel Oberstdorf",
+   "obec": "Fischen im Allgäu",
+   "address": "An der Breitach 3",
+   "lat": 47.425506,
+   "lng": 10.265827,
+   "category": "ubytovani",
+   "source_url": "https://www.explorer-hotels.com/inklusivleistungen/zimmer/",
+   "source_type": "web provozovatele (řetězec Explorer Hotels, FAQ)",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Řetězec v FAQ uvádí, že pokoje pro vozíčkáře mají všechny jeho hotely KROMĚ Oberstdorfu – tento hotel tedy pokoj pro vozík podle webu nemá.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "In allen Explorer Hotels (außer in Oberstdorf) gibt es rollstuhlgerechte Zimmer!"
+  },
+  {
+   "osm_id": "w1021418096",
+   "name": "Allgäuhaus Wertach - Kolping-Familienferienzentrum",
+   "obec": "Wertach",
+   "address": "Kolpingstraße 2-5",
+   "lat": 47.615581,
+   "lng": 10.431106,
+   "category": "ubytovani",
+   "source_url": "https://www.allgaeuhaus-wertach.de/familienhotel-allgaeu/barrierefrei",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Doporučený bezbariérový příjezd: severní parkoviště, odtud severní vchod téměř v úrovni terénu a výtahem k recepci.",
+    "wc": null,
+    "pokoj": "Bezbariérový rodinný apartmán (elektricky polohovatelné postele, možnost napřimovače) a 4 bezbariérové („barrierearm“) pokoje: 2 jednolůžkové, 1 dvoulůžkový, 1 třílůžkový; volání personálu; postele u jedno- a dvoulůžkového lze podjet zvedákem.",
+    "koupelna": "Sprcha/WC „nach DIN“; k dispozici sprchová stolička; další madla na požádání.",
+    "parkovani": "Parkovací místa pro vozíčkáře u severního vchodu.",
+    "vytah": "Výtahy a zvedací plošina v domě; pokoje v patře dosažitelné výtahem.",
+    "jine": "Dům prověřen v projektu Bayern barrierefrei / Reisen für Alle s označením „teilweise barrierefrei für Menschen mit Gehbehinderung“ (pro vozíčkáře tedy jen částečně); na webu ke stažení zprávy Reisen für Alle 2024."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří (jednolůžkový a dvoulůžkový pokoj)",
+     "hodnota": "90",
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří (třílůžkový pokoj)",
+     "hodnota": "80",
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška klik dveří",
+     "hodnota": "70",
+     "jednotka": "cm"
+    },
+    {
+     "co": "rozměr lůžka v jednolůžkovém pokoji",
+     "hodnota": "90x200",
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "teilweise barrierefrei für Menschen mit Gehbehinderung"
+  },
+  {
+   "osm_id": "w24493425",
+   "name": "Alpsee Camping",
+   "obec": "Immenstadt im Allgäu",
+   "address": "Seestraße 25",
+   "lat": 47.572644,
+   "lng": 10.193625,
+   "category": "ubytovani",
+   "source_url": "https://www.alpsee-camping.de/de/campingplatz/ausstattung/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": "Moderní sanitární budova je podle webu přístupná pro osoby s postižením (behindertengerecht zugänglich).",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Soukromé koupelny k pronájmu jsou v 1. patře (o výtahu web nic neuvádí)."
+   },
+   "measurements": [],
+   "evidence_quote": "Das moderne Sanitärgebäude ist […] behindertengerecht zugänglich."
+  },
+  {
+   "osm_id": "w196284547",
+   "name": "Berghof Kinker",
+   "obec": "Roßhaupten",
+   "address": "Ussenburg 77",
+   "lat": 47.636305,
+   "lng": 10.711491,
+   "category": "ubytovani",
+   "source_url": "https://www.berghof-kinker.de/wohnen-preise.php",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup v úrovni terénu do apartmánu Schlossblick.",
+    "wc": null,
+    "pokoj": "Apartmán Schlossblick (90 m², 2–5 osob) vybaven pro seniory a osoby s postižením, bezbariérový dle DIN 18025 část 2, vhodný i pro vozíčkáře.",
+    "koupelna": "Koupelna/WC uzpůsobené pro osoby s postižením.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Bio statek s apartmány; na webu samostatná sekce „Behindertengerecht“."
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérového apartmánu Schlossblick",
+     "hodnota": "90",
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "barrierefrei nach DIN 18025 Teil 2"
+  },
+  {
+   "osm_id": "n12018291531",
+   "name": "Ferienwohnung Familie Weiße",
+   "obec": "Waltenhofen",
+   "address": null,
+   "lat": 47.683068,
+   "lng": 10.311331,
+   "category": "ubytovani",
+   "source_url": "https://fewo.kalica.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Celý apartmán (2 pokoje, 1–4 osoby, terasa) je podle majitelů bezbariérový a vhodný pro vozíčkáře; v rodinném domě na okraji obce.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Die gesamte Wohnung ist barrierefrei und für Rollstuhlfahrer geeignet."
+  },
+  {
+   "osm_id": "w203402210",
+   "name": "Burghotel Bären",
+   "obec": "Eisenberg",
+   "address": "Dorfstraße 4",
+   "lat": 47.603449,
+   "lng": 10.588125,
+   "category": "ubytovani",
+   "source_url": "https://www.derbaeren.de/infos",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hotel uvádí, že je celý bezbariérově přístupný, včetně restaurace a všech veřejných prostor.",
+    "wc": "Bezbariérové WC jsou k dispozici.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Podzemní garáž napojená výtahem (vyhrazená místa pro OZP web neuvádí).",
+    "vytah": "Výtah vede z podzemní garáže až do 3. patra, obsluhuje všechna podlaží.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Das Hotel ist vollständig barrierefrei zugänglich."
+  },
+  {
+   "osm_id": "w1020404698",
+   "name": "Augsburg-Hotel Sonnenhof",
+   "obec": "Gersthofen",
+   "address": "Henleinstraße 31",
+   "lat": 48.443698,
+   "lng": 10.873986,
+   "category": "ubytovani",
+   "source_url": "https://sonnenhof-augsburg.de/zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Jedno apartmá ve 4. NP (52 m²) je označeno jako „behindertengerecht“ (vhodné pro osoby s postižením); o výtahu a koupelně web nic konkrétního.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérového apartmá",
+     "hodnota": "52",
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Mit 52qm Fläche ist sie zudem sehr geräumig und darüber hinaus behindertengerecht."
+  },
+  {
+   "osm_id": "w581547410",
+   "name": "Alpenflair Hotel",
+   "obec": "Buchloe",
+   "address": "Münchener Straße 49",
+   "lat": 48.031836,
+   "lng": 10.736287,
+   "category": "ubytovani",
+   "source_url": "https://alpenflair-hotel.com/hotelzimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Všechny pokoje jsou podle hotelu bezbariérové, dva z nich „behindertenfreundlich“ (vhodné pro osoby s postižením).",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Alle Zimmer sind barrierefrei, zwei davon behindertenfreundlich."
+  },
+  {
+   "osm_id": "n2515243924",
+   "name": "Brauereigasthof St. Afra im Felde",
+   "obec": "Friedberg",
+   "address": "Afrastraße 144",
+   "lat": 48.340039,
+   "lng": 10.966244,
+   "category": "ubytovani",
+   "source_url": "https://www.sankt-afra.eu/hotel.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hotel uvádí, že je dům zcela bezbariérový.",
+    "wc": null,
+    "pokoj": "Pokoje pro osoby s postižením jsou k dispozici – nutno uvést při rezervaci.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Behindertengerechte Zimmer sind vorhanden – bitte bei der Buchung mit angeben."
+  },
+  {
+   "osm_id": "w852667590",
+   "name": "Camping Ottobeuren",
+   "obec": "Ottobeuren",
+   "address": "Hawanger Straße 20",
+   "lat": 47.951423,
+   "lng": 10.287042,
+   "category": "ubytovani",
+   "source_url": "https://www.camping-ottobeuren.de/barrierefrei.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Recepce je přístupná pro vozík; celá provozní budova je v přízemí bez prahů.",
+    "wc": "Samostatné sanitární zázemí pro vozíčkáře.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Parkování přímo u recepce; auto stojí na vlastním místě (100 m²). Vyhrazená místa s krátkou cestou k sanitárnímu zázemí.",
+    "vytah": null,
+    "jine": "Povrch zpevněný štěrkový trávník, cesty sjízdné a v noci osvětlené; 200 m² plochy pro stanování vozíčkářů; hromadné ubytování (Bettenlager) v patře je bez prahů, ale jen po schodech; zastávka autobusu u kempu."
+   },
+   "measurements": [
+    {
+     "co": "velikost stání",
+     "hodnota": "100",
+     "jednotka": "m²"
+    },
+    {
+     "co": "plocha pro stanování vozíčkářů",
+     "hodnota": "200",
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Es gibt einen separaten rollstuhlgerechten Sanitärbereich."
+  },
+  {
+   "osm_id": "n4149140068",
+   "name": "Schullandheim Bliensbach",
+   "obec": "Wertingen",
+   "address": "Beim Schullandheim 2",
+   "lat": 48.550357,
+   "lng": 10.714989,
+   "category": "ubytovani",
+   "source_url": "https://schullandheim-bliensbach.de/unser-haus/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Dům je podle provozovatele zcela bezbariérový.",
+    "wc": null,
+    "pokoj": "5 „dublet“ (dva dvoulůžkové pokoje spojené koupelnou), každá s pečovatelským lůžkem.",
+    "koupelna": "Velké bezbariérové koupelny u dublet; navíc prostorná pečovatelská koupelna s vanou, sprchou, WC a zvedacím zařízením; vanový zvedák.",
+    "parkovani": null,
+    "vytah": "Ložnice v patře jsou dostupné výtahem.",
+    "jine": "Školní středisko (Schullandheim) pro skupiny, 96 lůžek."
+   },
+   "measurements": [],
+   "evidence_quote": "Unser Haus ist komplett barrierefrei und für Menschen mit Behinderung bestens ausgestattet."
+  },
+  {
+   "osm_id": "w549578770",
+   "name": "Zum Adler",
+   "obec": "Bachhagel",
+   "address": "Schloßstraße 1",
+   "lat": 48.633808,
+   "lng": 10.348332,
+   "category": "ubytovani",
+   "source_url": "https://www.landhotel-zum-adler.de/zimmer-apartments/landhotel/family-suite.html?language=de",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Rodinné apartmá (Family Suite, 2 ložnice, koupelna, kuchyňka) je bezbariérové a vhodné pro vozíčkáře.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "V hlavní budově se do všech pater dostanete výtahem.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Barrierefrei und für Rollstuhlfahrer geeignet"
+  },
+  {
+   "osm_id": "n4048918989",
+   "name": "Gasthof Magg",
+   "obec": "Biberbach",
+   "address": "Hauptstraße 8",
+   "lat": 48.51843,
+   "lng": 10.811018,
+   "category": "ubytovani",
+   "source_url": "https://gasthof-magg.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hostinec (restaurace) se všemi vedlejšími sály je podle webu zcela bezbariérový.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Parkoviště vlevo i vpravo od hostince (vyhrazená místa neuvedena).",
+    "vytah": null,
+    "jine": "Údaj se týká restaurace; o pokojích a koupelnách web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Unsere Gaststätte mit allen Nebenräumen ist komplett barrierefrei."
+  },
+  {
+   "osm_id": "w100692954",
+   "name": "Jugendhaus Reischenau",
+   "obec": "Dinkelscherben",
+   "address": "Burggasse 98",
+   "lat": 48.356019,
+   "lng": 10.59342,
+   "category": "ubytovani",
+   "source_url": "https://www.kjr-augsburg.de/unterkuenfte/jugendhaus-reischenau/",
+   "source_type": "web provozovatele (Kreisjugendring Augsburg-Land)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": "Vedle oddělených WC a sprch je k dispozici sanitární místnost pro osoby s postižením.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Skupinová chata Krajského svazu mládeže Augsburg-Land; o vstupu a ložnicích web nic."
+   },
+   "measurements": [],
+   "evidence_quote": "einen behindertengerechten Sanitärraum"
+  },
+  {
+   "osm_id": "w248977888",
+   "name": "Hotel Seligweiler",
+   "obec": "Elchingen",
+   "address": "Seligweiler 3",
+   "lat": 48.457224,
+   "lng": 10.031637,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-seligweiler-ulm.de/hotelzimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup do celého domu.",
+    "wc": null,
+    "pokoj": "Bezbariérové pokoje s prostornými koupelnami; v přehledu vybavení „Rollstuhlgerecht“.",
+    "koupelna": "Prostorné koupelny v bezbariérových pokojích.",
+    "parkovani": "Hotel uvádí odpovídající parkovací možnosti.",
+    "vytah": "Výtah.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "barrierefreie Hotelzimmer, welche sich vor allem über entsprechend geräumige Badezimmer auszeichnen"
+  },
+  {
+   "osm_id": "n4759751360",
+   "name": "Alpchalet Schwanstein",
+   "obec": "Halblech",
+   "address": "Romantische Straße 16",
+   "lat": 47.619619,
+   "lng": 10.809321,
+   "category": "ubytovani",
+   "source_url": "https://www.alpchalet-schwanstein.de/zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Jeden bezbariérově zařízený pokoj s terasou; podrobnosti web neuvádí.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Ein barrierefrei eingerichtetes Zimmer mit Terrasse"
+  },
+  {
+   "osm_id": "w162362353",
+   "name": "Landhotel Wiesbauer",
+   "obec": "Hopferau",
+   "address": "Riederwies 112",
+   "lat": 47.591093,
+   "lng": 10.660364,
+   "category": "ubytovani",
+   "source_url": "https://www.landhotel-wiesbauer.de/unser-hotel/hotelzimmer/komfortzimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Jeden z pokojů kategorie Komfort je určen pro osoby s handicapem.",
+    "koupelna": "Tento pokoj má bezbariérově přístupnou koupelnu.",
+    "parkovani": null,
+    "vytah": "Výtah (uveden u vybavení všech pokojů).",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Eines der Komfortzimmer hat ein barrierefrei zugängliches Badezimmer"
+  },
+  {
+   "osm_id": "n812181396",
+   "name": "Autenrieder Brauereigasthof",
+   "obec": "Ichenhausen",
+   "address": "Hopfengartenweg 2",
+   "lat": 48.364597,
+   "lng": 10.254804,
+   "category": "ubytovani",
+   "source_url": "https://brauereigasthof-autenried.de/hotel-gaestehaus/hotel-preise",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Dům je podle hotelu postaven bezbariérově.",
+    "wc": null,
+    "pokoj": "2 dvoulůžkové pokoje vybavené pro osoby s postižením („behindertenfreundlich“).",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Unser Haus ist barrierefrei gebaut"
+  },
+  {
+   "osm_id": "w938576688",
+   "name": "ILL Hotel Illertissen",
+   "obec": "Illertissen",
+   "address": "Leitschäcker 3",
+   "lat": 48.218843,
+   "lng": 10.126438,
+   "category": "ubytovani",
+   "source_url": "https://ill-hotel.de/de/hotelinformation",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Pokoje v přízemí jsou přístupné bez bariér.",
+    "wc": null,
+    "pokoj": "Hotel výslovně uvádí, že pokoje nejsou vhodné ani vybavené pro vozíčkáře.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Unsere Zimmer sind jedoch nicht für Rollstuhlfahrer geeignet und ausgestattet."
+  },
+  {
+   "osm_id": "w217225577",
+   "name": "Taste Hotel Jettingen",
+   "obec": "Jettingen-Scheppach",
+   "address": "Robert-Bosch-Straße 3",
+   "lat": 48.409178,
+   "lng": 10.441699,
+   "category": "ubytovani",
+   "source_url": "https://taste-hotels.de/taste-hotel-jettingen/zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Hotel nabízí varianty pro vozíčkáře a bezbariérové pokoje; přání je třeba uvést při rezervaci; podrobnosti neuvedeny.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Optionen für Rollstuhlfahrer und barrierefreie Hotelzimmer"
+  },
+  {
+   "osm_id": "n847893209",
+   "name": "Goldener Hirsch",
+   "obec": "Kaufbeuren",
+   "address": null,
+   "lat": 47.879051,
+   "lng": 10.619534,
+   "category": "ubytovani",
+   "source_url": "https://goldener-hirsch-kaufbeuren.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Kromě 42 pokojů má hotel jeden bezbariérový dvoulůžkový pokoj; podrobnosti neuvedeny.",
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "sowie einem barrierefreien Doppelzimmer"
+  },
+  {
+   "osm_id": "w168238011",
+   "name": "ZELLER's Quartier",
+   "obec": "Königsbrunn",
+   "address": "Bürgermeister-Wohlfarth-Straße 78",
+   "lat": 48.267679,
+   "lng": 10.886642,
+   "category": "ubytovani",
+   "source_url": "https://www.zellers-quartier.de/zimmer",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup do hotelu i do restaurace Cervus (restaurace prověřena v projektu „Rollstuhlgeeignete Gastronomie“ okresu).",
+    "wc": null,
+    "pokoj": "Dva bezbariérové pokoje se širokými dveřmi; nutno předem poptat.",
+    "koupelna": "Sprcha v úrovni podlahy se sedátkem, podjízdné umyvadlo, madla u WC.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "breiten Türen, einer bodengleichen Dusche mit Sitz, unterfahrbarem Waschbecken"
+  },
+  {
+   "osm_id": "w140048394",
+   "name": "Bärenbachhütte",
+   "obec": "Langenneufnach",
+   "address": "Zieglerweg 1",
+   "lat": 48.269131,
+   "lng": 10.597249,
+   "category": "ubytovani",
+   "source_url": "https://www.dpsg-augsburg.de/haeuser-und-zeltplaetze/baerenbachhuette/",
+   "source_type": "web provozovatele (DPSG Augsburg)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Z 25 lůžek jsou 2 označena jako „behindertengerecht“.",
+    "koupelna": "Jedna umývárna se sprchou a toaletou pro osoby s postižením.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Skupinová chata skautů (DPSG Augsburg)."
+   },
+   "measurements": [],
+   "evidence_quote": "davon 2 Betten behindertengerecht"
+  },
+  {
+   "osm_id": "n6551001207",
+   "name": "Ferienhof Leiß",
+   "obec": "Lechbruck am See",
+   "address": null,
+   "lat": 47.71265,
+   "lng": 10.795368,
+   "category": "ubytovani",
+   "source_url": "https://www.ferienhofleiss.de/barrierefrei-urlauben.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Bezbariérový apartmán Enzian (110 m², 2–6 osob) s terasou.",
+    "koupelna": "Koupelna se sprchou a WC uzpůsobená pro vozík.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Web odkazuje na přehled bezbariérových míst v Lechbrucku (lechbruck.de/barrierefrei.html)."
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérového apartmánu Enzian",
+     "hodnota": "110",
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Badezimmer mit Dusche und WC rollstuhlgerecht"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n10776058872",
+   "name": "Altstadthotel Augsburg",
+   "url": "https://www.altstadthotelaugsburg.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí"
+  },
+  {
+   "osm_id": "n829867954",
+   "name": "Bodenseehotel",
+   "url": "http://www.lindau-bodenseehotel.de/",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "w215845419",
+   "name": "Aktiv Hotel Schweiger",
+   "url": "https://www.aktiv-hotel-schweiger.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w102016391",
+   "name": "Berggasthof Spielmannsau",
+   "url": "https://www.spielmannsau.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w120060581",
+   "name": "AllgäuSternHotel",
+   "url": "https://www.allgaeustern.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w25771200",
+   "name": "Gasthof Goldener Hirsch",
+   "url": "https://www.goldener-hirsch-donauwoerth.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n288869607",
+   "name": "Alte Post",
+   "url": "https://www.hotel-alte-post.de/",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "w127328818",
+   "name": "Berggasthof Hochbühl",
+   "url": "https://www.berggasthof-hochbuehl.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w38933762",
+   "name": "Campingplatz Magdalena",
+   "url": "https://www.sonnen-lage.de/camping-magdalena",
+   "reason": "stránka kempu na webu sonnen-lage.de nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w195811983",
+   "name": "Der Sonnenhof",
+   "url": "http://www.spahotel-sonnenhof.de",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu, o budově nic"
+  },
+  {
+   "osm_id": "n1243877406",
+   "name": "Drexel's Parkhotel",
+   "url": "https://www.parkhotel-memmingen.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n6151344601",
+   "name": "Café Altreuter",
+   "url": "https://cafe-altreuter.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n506083354",
+   "name": "Pension zum Engel",
+   "url": "https://pensionzumengel.de/",
+   "reason": "web nic o přístupnosti neuvádí (jen panel přístupnosti webu)"
+  },
+  {
+   "osm_id": "n8186601313",
+   "name": "Ferienhof Obsthof Schwand",
+   "url": "https://www.ferienhof-schwand.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9467095551",
+   "name": "Hotel Prinz-Luitpold-Bad",
+   "url": "https://www.luitpoldbad.de/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu, o budově nic"
+  },
+  {
+   "osm_id": "n1709583440",
+   "name": "Hotel Post",
+   "url": "https://www.hotel-post-inleipheim.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n894526053",
+   "name": "Landhaus Ohnesorg",
+   "url": "https://www.landhaus-ohnesorg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n11640428231",
+   "name": "Allgäuer Hof",
+   "url": "https://www.kleinanzeigen.de/pro/allgaeuer-hof",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "w214400053",
+   "name": "Hotel Gasthof zum Löwen",
+   "url": "https://www.der-loewen.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w394541273",
+   "name": "Goldener Löwe",
+   "url": "https://www.goldenerloewe.eu/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n6875233951",
+   "name": "Barrierefreie Ferienwohnung Allgäuwinkel - Bodensee",
+   "url": "https://ferienwohnung-barrierefrei.com",
+   "reason": "adresa z OSM vede na doménu na prodej, ne na web ubytování"
+  },
+  {
+   "osm_id": "n9507985785",
+   "name": "Hotel Am Sonnenhang",
+   "url": "https://www.sonnenhang-allgaeu.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w37715435",
+   "name": "Alpe Kammeregg",
+   "url": "https://www.alpe-kammeregg.de/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu, o budově nic (horská chata/alpe)"
+  },
+  {
+   "osm_id": "w172493437",
+   "name": "Ferienhof Kobel",
+   "url": "https://www.kobel-bayern.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w198592993",
+   "name": "Hotel Barbarahof",
+   "url": "http://hotel-barbarahof.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n310244415",
+   "name": "Gasthof zum Kapitel",
+   "url": "https://www.wirtshaus-zum-kapitel.de/",
+   "reason": "web nedostupný (<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert)"
+  },
+  {
+   "osm_id": "w238748105",
+   "name": "Parkhotel Schmid",
+   "url": "https://www.parkhotel-schmid.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n370049551",
+   "name": "Kloster Holzen",
+   "url": "https://www.kloster-holzen.de/",
+   "reason": "web uvádí jen, že prostory pro masáže nejsou bezbariérové; o pokojích nic"
+  },
+  {
+   "osm_id": "n282834988",
+   "name": "Hubertus",
+   "url": "https://www.hotel-hubertus.de/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu, o budově nic"
+  },
+  {
+   "osm_id": "w97566645",
+   "name": "Altes Höfle",
+   "url": "https://www.dav-neu-ulm.de/huetten/altes-hoefle.html",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n8169998856",
+   "name": "Köberle",
+   "url": "https://www.koeberle-bodolz.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w250714134",
+   "name": "Der Löwe",
+   "url": "https://derloeweburgberg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7825856522",
+   "name": "Beim Schneider",
+   "url": "https://www.beim-schneider.de/",
+   "reason": "web (šablona Wix) nic o přístupnosti budovy neuvádí; adresa na webu je ve Vilshofenu"
+  },
+  {
+   "osm_id": "w150070214",
+   "name": "Trip Inn Hotel Dasing-Augsburg",
+   "url": "https://tripinn-hotels.com/dasing/",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "w144976823",
+   "name": "FKK-Gelände Haldenmühle",
+   "url": "https://www.fsg-allgaeu.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n450581897",
+   "name": "Stadthotel & Restaurant Convikt",
+   "url": "https://stadthotel-convikt-dillingen-an-der-donau.hotel-mix.de/",
+   "reason": "adresa z OSM je agregátor (hotel-mix.de), nepřebíráno"
+  },
+  {
+   "osm_id": "n263837684",
+   "name": "Gasthof Rauch",
+   "url": "http://www.hotel-rauch.eu/Startseite/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w237813506",
+   "name": "Hotel-Restaurant \"Zum Schlössle Finningen\"",
+   "url": "https://www.schloessle.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w128507703",
+   "name": "Zum Ochsen",
+   "url": "http://www.gasthof-ochsen.net/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n323089336",
+   "name": "Burgschenke Harburg",
+   "url": "https://burgschaenke-harburg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n268421192",
+   "name": "Hiltenfinger Keller",
+   "url": "https://www.hiltenfinger-keller.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1706412589",
+   "name": "Hotel Restaurant Kannenkeller",
+   "url": "https://www.kannenkeller.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w328220824",
+   "name": "Naturlandhaus Krone",
+   "url": "https://www.naturlandhaus-krone.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Vstupní seznam ubytování Švábsko (OSM, s webem)",
+   "url": "https://www.openstreetmap.org",
+   "note": "data/research/inputs_by/svabsko_ubytovani.json (70 míst); souřadnice a adresy z OSM (ODbL)."
+  },
+  {
+   "title": "Weby provozovatelů (70 adres z OSM tagu website)",
+   "url": "",
+   "note": "Projito skriptem 2026-10-07: úvodní stránka + max. 6 podstránek (barrierefrei|zimmer|anreise|service|ausstattung|kontakt|info|besuch), respektován robots.txt, 6 souběžných požadavků, timeout 10 s; nepřebírány recenze hostů ani agregátory (hotel-mix.de, kleinanzeigen.de). Prohlášení o přístupnosti webu (BFSG/BITV) nebrána jako údaj o budově."
+  },
+  {
+   "title": "Reisen für Alle – certifikace uváděné provozovateli",
+   "url": "https://www.reisen-fuer-alle.de",
+   "note": "Allgäu ART Hotel (Kempten) a Allgäuhaus Wertach uvádějí certifikaci Reisen für Alle; detailní zprávy jsou na webu provozovatele / Reisen für Alle, údaje nepřebírány nad rámec citovaného."
+  }
+ ]
+}

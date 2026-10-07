@@ -1,17 +1,20 @@
-/* Stránka Mapa míst: filtry, výpis a mapa nad skutečnými daty z data/places.json.
+/* Stránka Mapa míst: filtry, výpis a mapa nad skutečnými daty z data/regions/ (Česko a Bavorsko).
+   Data se načítají po regionech podle výřezu mapy (KP.loadRegion); když je ve výřezu moc míst, panel nabídne výběr kraje / obvodu.
    PC: levý panel (hledání, čipy, výsledky) + mapa. Mobil: mapa na celou výšku, výsledky ve vysouvacím panelu. */
 (function () {
   'use strict';
   const K = window.KP, $ = (s) => document.querySelector(s), $$ = (s) => document.querySelectorAll(s);
   const PAGE = 40;
   const DEFAULT_W = ['yes', 'limited'];
+  const LIMIT = 45000; // víc míst najednou podle výřezu nenačítáme (paměť telefonu); stačí přiblížit nebo vybrat kraj
   const state = {
     q: '', cats: new Set(), w: new Set(DEFAULT_W), wc: false, pk: false, desc: false, chk: false, img: false, ek: false, hx: false, hr: false,
-    kraj: '', needsOnly: false, inView: true, sort: 'complete', shown: PAGE, active: null,
+    kraj: '', zeme: '', needsOnly: false, inView: true, sort: 'complete', shown: PAGE, active: null,
   };
   const CHECKS = [['#f-wc', 'wc'], ['#f-pk', 'pk'], ['#f-desc', 'desc'], ['#f-chk', 'chk'], ['#f-img', 'img'], ['#f-ek', 'ek'], ['#f-hx', 'hx'], ['#f-hr', 'hr'], ['#f-needs', 'needsOnly']];
   const mqDesk = matchMedia('(min-width: 900px)');
-  let ALL = [], map = null, bounds = null, filtered = [], CAT_COUNTS = {}, W_COUNTS = {}, KRAJE = [];
+  let ALL = [], map = null, bounds = null, filtered = [], CAT_COUNTS = {}, W_COUNTS = {}, IDX = [], overview = false, loadingIds = null, TOWNS = [];
+  const LOADED = {}; // id regionu → pole míst
 
   const plural = (n, a, b, c) => n === 1 ? a : n > 1 && n < 5 ? b : c;
   const fmtN = (n) => n.toLocaleString('cs-CZ');
@@ -26,6 +29,8 @@
     if (sp.get('namereno') === '1') state.hx = true;
     if (sp.get('provozovatel') === '1') state.hr = true;
     if (sp.get('potreby') === '1') state.needsOnly = true;
+    if (K.ZEME[sp.get('zeme')]) state.zeme = sp.get('zeme');
+    if (sp.get('kraj')) state.kraj = sp.get('kraj');
   }
 
   function colorOf(p) {
@@ -58,6 +63,7 @@
       if (state.hx && !hasX(p)) return false;
       if (state.hr && !hasR(p)) return false;
       if (state.kraj && p.k !== state.kraj) return false;
+      if (state.zeme && K.zemeOf(p) !== state.zeme) return false;
       if (state.needsOnly && needs.active && K.match(p, needs).status !== 'ok') return false;
       if (q && !(p._s || (p._s = norm(p.n + ' ' + p.o + ' ' + (p.a || '') + ' ' + p.s))).includes(q)) return false;
       return true;
@@ -109,16 +115,37 @@
   function activeCount() {
     const wDefault = state.w.size === DEFAULT_W.length && DEFAULT_W.every(x => state.w.has(x));
     const extra = state.desc + state.chk + state.img + state.ek + state.needsOnly;
-    const all = (state.cats.size ? 1 : 0) + (wDefault ? 0 : 1) + state.wc + state.pk + state.hx + state.hr + (state.kraj ? 1 : 0) + extra;
+    const all = (state.cats.size ? 1 : 0) + (wDefault ? 0 : 1) + state.wc + state.pk + state.hx + state.hr + (state.kraj ? 1 : 0) + (state.zeme ? 1 : 0) + extra;
     return { all, extra, wDefault };
   }
 
+  // Výřez je moc velký: místo výsledků adresář krajů a obvodů ve výřezu (klepnutí = načíst a přiblížit)
+  function regionDirHtml() {
+    const ids = bounds ? regionIds(bounds) : IDX.map(r => r.id);
+    const rs = IDX.filter(r => ids.includes(r.id));
+    return '<li class="empty-res reg-note"><p><b>Ve výřezu je ' + fmtN(rs.reduce((a, r) => a + r.pocet, 0)) + ' míst.</b></p><p class="small">Tolik jich najednou nenačítáme. Přibližte mapu, hledejte obec, nebo vyberte kraj či vládní obvod:</p></li>' +
+      ['cz', 'de'].map(z => {
+        const g = rs.filter(r => r.zeme === z); if (!g.length) return '';
+        return '<li class="reg-head"><p class="kicker">' + K.ZEME[z] + (z === 'de' ? ' · vládní obvody' : ' · kraje') + '</p></li>' +
+          g.sort((a, b) => a.nazev.localeCompare(b.nazev, 'cs')).map(r => '<li><button type="button" class="res reg-row" data-region="' + K.esc(r.nazev) + '"><span class="res-main"><h3>' + K.esc(K.krajName(r.nazev, r.zeme)) + '</h3><span class="meta">' + (LOADED[r.id] ? 'Načteno' : 'Klepnutím načtete a přiblížíte') + '</span></span><span class="num reg-n">' + fmtN(r.pocet) + '</span></button></li>').join('');
+      }).join('');
+  }
+
   function render() {
+    if (overview) {
+      filtered = applyFilters();
+      $('#count').innerHTML = 'Vyberte oblast<span class="total">' + (state.zeme ? K.ZEME[state.zeme] : 'Česko a Bavorsko') + ': ' + fmtN(IDX.filter(r => !state.zeme || r.zeme === state.zeme).reduce((a, r) => a + r.pocet, 0)) + ' míst</span>';
+      $('#results').innerHTML = regionDirHtml();
+      $('#more').hidden = true;
+      $('#f-apply').textContent = 'Zobrazit místa';
+      syncControls();
+      return;
+    }
     filtered = applyFilters();
     const visible = state.inView ? filtered.filter(inBounds) : filtered;
     const list = sortList(visible);
     const n = list.length;
-    $('#count').innerHTML = '<span class="num">' + fmtN(n) + '</span> ' + plural(n, 'místo', 'místa', 'míst') + (state.inView ? ' v oblasti mapy' : '') +
+    $('#count').innerHTML = '<span class="num">' + fmtN(n) + '</span> ' + plural(n, 'místo', 'místa', 'míst') + (state.inView ? ' v oblasti mapy' : ' v načtených oblastech') + (loadingIds ? '<span class="total">Načítám další místa…</span>' : '') +
       (state.inView && filtered.length !== n ? '<span class="total">z ' + fmtN(filtered.length) + ' podle filtrů</span>' : '');
     $('#results').innerHTML = n ? list.slice(0, state.shown).map(resultHtml).join('')
       : '<li class="empty-res"><p><b>Tady nic neodpovídá filtrům.</b></p><p class="small">Oddalte mapu, vypněte „Jen v oblasti mapy“ nebo zrušte některý filtr.</p><p class="small"><a href="pridat.html">Znáte tu přístupné místo? Přidejte ho.</a></p></li>';
@@ -138,6 +165,7 @@
     $$('#f-cats input').forEach(i => { i.checked = state.cats.has(i.value); });
     CHECKS.forEach(([s, k]) => { $(s).checked = !!state[k]; });
     $('#f-kraj').value = state.kraj;
+    $('#f-zeme').value = state.zeme;
     // popisky rozbalovacích čipů
     const wl = $('#lbl-w'), wc = wl.closest('.chip');
     if (state.w.size === 4) wl.textContent = 'Přístupnost: vše';
@@ -149,8 +177,11 @@
     cl.textContent = !state.cats.size ? 'Kategorie' : state.cats.size === 1 ? K.CATS[[...state.cats][0]].label : 'Kategorie · ' + state.cats.size;
     cl.closest('.chip').classList.toggle('on', !!state.cats.size);
     const kl = $('#lbl-kraj');
-    kl.textContent = state.kraj || 'Kraj';
+    kl.textContent = state.kraj || 'Kraj / obvod';
     kl.closest('.chip').classList.toggle('on', !!state.kraj);
+    const zl = $('#lbl-zeme');
+    zl.textContent = state.zeme ? K.ZEME[state.zeme] : 'Země';
+    zl.closest('.chip').classList.toggle('on', !!state.zeme);
     if (!$('#fpop').hidden) syncPop();
   }
 
@@ -172,7 +203,7 @@
       (m ? '<p class="match">' + K.statusHtml(m.status, K.STATUS_LABEL[m.status]) + (m.status !== 'ok' && m.fails.concat(m.unknown).length ? '<span class="muted">: ' + K.esc(m.fails.concat(m.unknown).join(', ')) + '</span>' : '') + '</p>' : '') +
       '<p class="meta">' + srcBadges(p) + (operator ? '' : K.sourceBadge('komunita')) + (p.u ? '<span>Upraveno ' + K.fmtDate(p.u) + '</span>' : '') + (p.cd ? '<span>Kontrola na místě ' + K.fmtDate(p.cd) + '</span>' : '') + '</p>' +
       '<div class="fill"><div class="tape-meter" style="--v:' + c + '" aria-hidden="true"></div><span>Vyplněno <b class="num">' + c + ' %</b> údajů</span></div>' +
-      '<div class="actions"><a class="btn btn-primary" href="misto.html?id=' + encodeURIComponent(p.i) + '">Detail ' + K.icon('arrow') + '</a>' +
+      '<div class="actions"><a class="btn btn-primary" href="' + K.placeUrl(p) + '">Detail ' + K.icon('arrow') + '</a>' +
       '<a class="btn btn-ghost" href="' + K.gmaps.directions(p) + '" target="_blank" rel="noopener">' + K.icon('nav') + 'Navigovat</a></div>';
   }
 
@@ -273,10 +304,12 @@
   function popHtml(kind) {
     if (kind === 'w') return ['yes', 'limited', 'no', 'null'].map(k => '<label class="opt"><input type="checkbox" value="' + k + '"' + (state.w.has(k) ? ' checked' : '') + '>' + K.statusHtml(K.W[k].st, K.W[k].short) + '<span class="t"></span><span class="n">' + fmtN(W_COUNTS[k] || 0) + '</span></label>').join('');
     if (kind === 'cat') return Object.entries(K.CATS).filter(([k]) => CAT_COUNTS[k]).map(([k, c]) => '<label class="opt"><input type="checkbox" value="' + k + '"' + (state.cats.has(k) ? ' checked' : '') + '>' + K.icon(c.icon) + '<span class="t">' + c.label + '</span><span class="n">' + fmtN(CAT_COUNTS[k]) + '</span></label>').join('');
-    return ['<label class="opt"><input type="radio" name="pop-kraj" value=""' + (!state.kraj ? ' checked' : '') + '><span class="t">Celá Česká republika</span></label>']
-      .concat(KRAJE.map(([k, n]) => '<label class="opt"><input type="radio" name="pop-kraj" value="' + K.esc(k) + '"' + (state.kraj === k ? ' checked' : '') + '><span class="t">' + K.esc(k) + '</span><span class="n">' + fmtN(n) + '</span></label>')).join('');
+    if (kind === 'zeme') return [['', 'Česko i Bavorsko'], ['cz', K.ZEME_LONG.cz], ['de', K.ZEME_LONG.de]].map(([z, l]) => '<label class="opt"><input type="radio" name="pop-zeme" value="' + z + '"' + (state.zeme === z ? ' checked' : '') + '><span class="t">' + l + '</span><span class="n">' + fmtN(IDX.filter(r => !z || r.zeme === z).reduce((a, r) => a + r.pocet, 0)) + '</span></label>').join('');
+    return ['<label class="opt"><input type="radio" name="pop-kraj" value=""' + (!state.kraj ? ' checked' : '') + '><span class="t">Všechny kraje a obvody</span></label>']
+      .concat(['cz', 'de'].filter(z => !state.zeme || state.zeme === z).map(z => '<p class="opt-group kicker">' + K.ZEME[z] + (z === 'de' ? ' · vládní obvody' : ' · kraje') + '</p>' +
+        IDX.filter(r => r.zeme === z).sort((a, b) => a.nazev.localeCompare(b.nazev, 'cs')).map(r => '<label class="opt"><input type="radio" name="pop-kraj" value="' + K.esc(r.nazev) + '"' + (state.kraj === r.nazev ? ' checked' : '') + '><span class="t">' + K.esc(K.krajName(r.nazev, r.zeme)) + '</span><span class="n">' + fmtN(r.pocet) + '</span></label>').join(''))).join('');
   }
-  const POP_TITLE = { w: 'Přístupnost vstupu', cat: 'Kategorie', kraj: 'Kraj' };
+  const POP_TITLE = { w: 'Přístupnost vstupu', cat: 'Kategorie', kraj: 'Kraj nebo vládní obvod', zeme: 'Země' };
   function openPop(kind, btn) {
     if (!mqDesk.matches) { openFilters(kind); return; }
     if (popKind === kind) { closePop(); return; }
@@ -290,7 +323,7 @@
   }
   function syncPop() {
     $$('#fpop-body input').forEach(i => {
-      i.checked = popKind === 'w' ? state.w.has(i.value) : popKind === 'cat' ? state.cats.has(i.value) : state.kraj === i.value;
+      i.checked = popKind === 'w' ? state.w.has(i.value) : popKind === 'cat' ? state.cats.has(i.value) : popKind === 'zeme' ? state.zeme === i.value : state.kraj === i.value;
     });
   }
   function closePop(refocus) {
@@ -299,9 +332,52 @@
     if (popBtn) { popBtn.setAttribute('aria-expanded', 'false'); if (refocus) popBtn.focus(); }
     popKind = null; popBtn = null;
   }
-  function setKraj(k) {
-    state.kraj = k; update();
-    if (k && map && filtered.length) map.fitTo(filtered);
+  // ---------- Načítání po regionech ----------
+  function regionIds(b) {
+    if (state.kraj) { const r = K.regionByName(state.kraj); return r ? [r.id] : []; }
+    return IDX.filter(r => (!state.zeme || r.zeme === state.zeme) && !(r.bbox[0] > b.e || r.bbox[2] < b.w || r.bbox[1] > b.n || r.bbox[3] < b.s)).map(r => r.id);
+  }
+  function rebuildAll() { ALL = [].concat(...Object.values(LOADED)); buildCounts(); }
+  async function ensureData() {
+    if (!IDX.length) return;
+    const ids = bounds ? regionIds(bounds) : [];
+    const total = IDX.filter(r => ids.includes(r.id)).reduce((a, r) => a + r.pocet, 0);
+    const need = ids.filter(id => !LOADED[id]);
+    overview = !state.kraj && total > LIMIT;
+    if (overview || !need.length) { update(); return; }
+    loadingIds = need; render();
+    try {
+      const lists = await Promise.all(need.map(id => K.loadRegion(id)));
+      need.forEach((id, i) => { LOADED[id] = lists[i]; });
+      rebuildAll();
+    } catch (e) { K.toast('Část míst se nepodařilo načíst. Zkuste posunout mapu znovu.'); }
+    loadingIds = null;
+    update();
+  }
+  function fitBox(rs) {
+    if (!map || !rs.length) return;
+    map.fitTo([{ la: Math.min(...rs.map(r => r.bbox[1])), lo: Math.min(...rs.map(r => r.bbox[0])) }, { la: Math.max(...rs.map(r => r.bbox[3])), lo: Math.max(...rs.map(r => r.bbox[2])) }]);
+  }
+  async function setKraj(k) {
+    const r = k ? K.regionByName(k) : null;
+    state.kraj = r ? k : '';
+    if (r && state.zeme && state.zeme !== r.zeme) state.zeme = '';
+    if (!r) { update(); await ensureData(); return; }
+    if (!LOADED[r.id]) {
+      loadingIds = [r.id]; render();
+      try { LOADED[r.id] = await K.loadRegion(r.id); rebuildAll(); } catch (e) { K.toast('Místa se nepodařilo načíst.'); }
+      loadingIds = null;
+    }
+    overview = false; update();
+    if (map) fitBox([r]);
+  }
+  function setZeme(z) {
+    state.zeme = K.ZEME[z] ? z : '';
+    const kr = state.kraj && K.regionByName(state.kraj);
+    if (kr && state.zeme && kr.zeme !== state.zeme) state.kraj = '';
+    buildCounts(); update();
+    if (!state.kraj) fitBox(IDX.filter(r => !state.zeme || r.zeme === state.zeme));
+    ensureData();
   }
 
   // ---------- Panel se všemi filtry ----------
@@ -322,33 +398,41 @@
     if (lastFocus && document.contains(lastFocus)) lastFocus.focus();
   }
 
-  function buildLists() {
+  // Počty u kategorií a přístupnosti: z načtených oblastí (mění se s načítáním)
+  function buildCounts() {
     CAT_COUNTS = {}; W_COUNTS = {};
-    const kr = {};
     ALL.forEach(p => {
+      if (state.zeme && K.zemeOf(p) !== state.zeme) return;
       CAT_COUNTS[p.c] = (CAT_COUNTS[p.c] || 0) + 1;
       if (p.c !== 'parkovani') { const w = String(p.w || 'null'); W_COUNTS[w] = (W_COUNTS[w] || 0) + 1; }
-      if (p.k) kr[p.k] = (kr[p.k] || 0) + 1;
     });
-    KRAJE = Object.entries(kr).sort((a, b) => a[0].localeCompare(b[0], 'cs'));
-    $('#f-cats').innerHTML = Object.entries(K.CATS).filter(([k]) => CAT_COUNTS[k]).map(([k, c]) =>
-      '<label class="opt"><input type="checkbox" value="' + k + '">' + K.icon(c.icon) + '<span class="t">' + c.label + '</span><span class="n">' + fmtN(CAT_COUNTS[k]) + '</span></label>').join('');
-    $('#f-kraj').insertAdjacentHTML('beforeend', KRAJE.map(([k]) => '<option>' + K.esc(k) + '</option>').join(''));
-    const obce = {}; ALL.forEach(p => { if (p.o) obce[p.o] = (obce[p.o] || 0) + 1; });
-    $('#obce').innerHTML = Object.entries(obce).sort((a, b) => b[1] - a[1]).slice(0, 800).map(([o]) => '<option value="' + K.esc(o) + '">').join('');
+    $('#f-cats').innerHTML = Object.keys(K.CATS).map(k =>
+      '<label class="opt"><input type="checkbox" value="' + k + '"' + (state.cats.has(k) ? ' checked' : '') + '>' + K.icon(K.CATS[k].icon) + '<span class="t">' + K.CATS[k].label + '</span><span class="n">' + (CAT_COUNTS[k] ? fmtN(CAT_COUNTS[k]) : '') + '</span></label>').join('');
+  }
+  // Nabídka krajů a obvodů z indexu regionů (nezávisí na tom, co je načtené)
+  function buildLists() {
+    $('#f-kraj').innerHTML = '<option value="">Všechny kraje a obvody</option>' + ['cz', 'de'].map(z => '<optgroup label="' + K.ZEME[z] + (z === 'de' ? ' – vládní obvody' : ' – kraje') + '">' +
+      IDX.filter(r => r.zeme === z).sort((a, b) => a.nazev.localeCompare(b.nazev, 'cs')).map(r => '<option value="' + K.esc(r.nazev) + '">' + K.esc(K.krajName(r.nazev, r.zeme)) + '</option>').join('') + '</optgroup>').join('');
+    buildCounts();
+    K.loadTowns().then(t => { TOWNS = t; $('#obce').innerHTML = t.slice(0, 800).map(x => '<option value="' + K.esc(x[0]) + '">').join(''); }).catch(() => {});
   }
 
   // Hledání obce → přiblížit mapu na její místa
-  function zoomToQuery() {
+  // Obec z indexu obcí (obě země); při shodě jmen vyhraje obec s nejvíce místy ve zvolené zemi / kraji
+  async function zoomToQuery() {
     const q = norm(state.q.trim()); if (!q || !map) return;
-    const hits = ALL.filter(p => norm(p.o) === q);
-    if (hits.length) { state.inView = true; $('#in-view').checked = true; map.fitTo(hits); }
-    else if (filtered.length && filtered.length < 300) map.fitTo(filtered);
+    if (!TOWNS.length) TOWNS = await K.loadTowns().catch(() => []);
+    const kr = state.kraj && K.regionByName(state.kraj);
+    const t = TOWNS.find(x => norm(x[0]) === q && (!state.zeme || x[1].slice(0, 2) === state.zeme) && (!kr || kr.id === x[1]));
+    if (t) {
+      state.inView = true; $('#in-view').checked = true;
+      map.fitTo([{ la: t[3], lo: t[4] }, { la: t[5], lo: t[6] }]);
+    } else if (filtered.length && filtered.length < 300) map.fitTo(filtered);
   }
 
   function resetAll() {
-    Object.assign(state, { cats: new Set(), w: new Set(DEFAULT_W), wc: false, pk: false, desc: false, chk: false, img: false, ek: false, hx: false, hr: false, kraj: '', needsOnly: false, q: '' });
-    $('#q').value = ''; update();
+    Object.assign(state, { cats: new Set(), w: new Set(DEFAULT_W), wc: false, pk: false, desc: false, chk: false, img: false, ek: false, hx: false, hr: false, kraj: '', zeme: '', needsOnly: false, q: '' });
+    $('#q').value = ''; buildCounts(); update(); ensureData();
   }
 
   function bind() {
@@ -370,11 +454,13 @@
       if (popKind === 'w') { i.checked ? state.w.add(i.value) : state.w.delete(i.value); update(); }
       else if (popKind === 'cat') { i.checked ? state.cats.add(i.value) : state.cats.delete(i.value); update(); }
       else if (popKind === 'kraj') setKraj(i.value);
+      else if (popKind === 'zeme') setZeme(i.value);
     });
     $('#fpop-clear').addEventListener('click', () => {
       if (popKind === 'w') { state.w = new Set(DEFAULT_W); update(); }
       else if (popKind === 'cat') { state.cats.clear(); update(); }
       else if (popKind === 'kraj') setKraj('');
+      else if (popKind === 'zeme') setZeme('');
     });
     $('#fpop-done').addEventListener('click', () => closePop(true));
     document.addEventListener('click', e => { if (popKind && !$('#fpop').contains(e.target) && !e.target.closest('[data-pop]')) closePop(); });
@@ -397,16 +483,20 @@
       $(s).addEventListener('change', () => { state[k] = $(s).checked; if (k === 'needsOnly' && state[k] && !K.getNeeds().active) K.needsDrawer(); update(); });
     });
     $('#f-kraj').addEventListener('change', () => setKraj($('#f-kraj').value));
+    $('#f-zeme').addEventListener('change', () => setZeme($('#f-zeme').value));
     $('#f-reset').addEventListener('click', resetAll);
 
     // výsledky
     $('#in-view').addEventListener('change', () => { state.inView = $('#in-view').checked; state.shown = PAGE; render(); });
     $('#sort').addEventListener('change', () => { state.sort = $('#sort').value; render(); });
     $('#more').addEventListener('click', () => { state.shown += PAGE; render(); });
-    $('#results').addEventListener('click', e => { const b = e.target.closest('.res'); if (!b) return; select(ALL.find(x => x.i === b.dataset.id), false); });
-    $('#results').addEventListener('dblclick', e => { const b = e.target.closest('.res'); if (b) location.href = 'misto.html?id=' + encodeURIComponent(b.dataset.id); });
+    $('#results').addEventListener('click', e => {
+      const rg = e.target.closest('[data-region]'); if (rg) { setKraj(rg.dataset.region); return; }
+      const b = e.target.closest('.res[data-id]'); if (!b) return; select(K.placeById(b.dataset.id), false);
+    });
+    $('#results').addEventListener('dblclick', e => { const b = e.target.closest('.res[data-id]'); const p = b && K.placeById(b.dataset.id); if (p) location.href = K.placeUrl(p); });
     $('#locate').addEventListener('click', () => map && map.locate().catch(() => K.toast('Polohu se nepodařilo zjistit. Povolte ji v prohlížeči.')));
-    document.addEventListener('kp:needs', () => { update(); if (state.active) select(ALL.find(x => x.i === state.active), true); });
+    document.addEventListener('kp:needs', () => { update(); if (state.active) select(K.placeById(state.active), true); });
     // Fotka z Commons se nenačetla: miniaturu i náhledovou fotku odebrat, rozvržení funguje i bez ní
     document.addEventListener('error', e => {
       const img = e.target; if (!(img instanceof HTMLImageElement)) return;
@@ -422,21 +512,24 @@
     bind();
     setSheet('peek');
     syncControls();
-    try { ALL = await K.loadPlaces(); }
+    try { IDX = await K.loadRegionsIndex(); }
     catch (e) { $('#count').textContent = 'Data se nepodařilo načíst. Otevřete web přes server (viz README), ne jako soubor.'; return; }
+    if (state.kraj && !K.regionByName(state.kraj)) state.kraj = '';
     buildLists();
-    render();
     map = await KPMap.create($('#map'));
     if (map.engine === 'leaflet' && !(window.KP_CONFIG || {}).googleMapsApiKey) {
       const n = $('#engine-note'); n.hidden = false;
       n.textContent = 'Podklad: OpenStreetMap. U každého místa vede odkaz do Google Maps (navigace, Street View).';
       setTimeout(() => { n.hidden = true; }, 9000);
     }
-    map.onMove(b => { bounds = b; state.shown = PAGE; render(); });
-    refreshMap();
+    let mt;
+    map.onMove(b => { bounds = b; state.shown = PAGE; render(); clearTimeout(mt); mt = setTimeout(ensureData, 250); });
+    // Výchozí výřez: Česko a Bavorsko (nebo zvolená země / kraj z odkazu)
+    if (state.kraj) await setKraj(state.kraj);
+    else fitBox(IDX.filter(r => !state.zeme || r.zeme === state.zeme));
     bounds = map.bounds();
-    if (state.q) zoomToQuery(); else if (state.cats.size === 1 && filtered.length < 2000) map.fitTo(filtered);
-    render();
+    await ensureData();
+    if (state.q) zoomToQuery();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();

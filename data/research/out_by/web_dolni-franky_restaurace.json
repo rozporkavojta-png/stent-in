@@ -1,0 +1,667 @@
+{
+ "task": "web_dolni-franky_restaurace",
+ "kraj": "Dolní Franky",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "method": "Skript prošel úvodní stránku + max 6 podstránek (odkazy barrierefrei|zimmer|anreise|service|ausstattung|kontakt|info|besuch), respektoval robots.txt, User-Agent kudyprojedu-student-project/0.1, max 6 paralelně, timeout 10 s; nedostupné weby zkoušeny znovu s variantou www/https. Prohlášení o přístupnosti webu (BFSG/BITV) a přístupnostní lišty nejsou brány jako údaj o budově. Souřadnice a adresy z OSM (vstupní soubor). wheelchair_claim = co tvrdí web (yes/limited/unknown).",
+ "places": [
+  {
+   "osm_id": "w68588330",
+   "name": "Villa Messmer",
+   "obec": "Alzenau",
+   "address": "Brentanostraße 30",
+   "lat": 50.088932,
+   "lng": 9.066908,
+   "category": "restaurace",
+   "source_url": "https://www.villa-messmer.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle webu (sekce FAQ) je vila vhodná i pro hosty na vozíku a vedená jako bezbariérová lokace; rampy ani rozměry neuvádí.",
+    "wc": "Bezbariérové WC pro hosty je k dispozici.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Dostatek parkovacích míst přímo před vilou (vyhrazené stání pro ZTP neuvedeno).",
+    "vytah": null,
+    "jine": "Při zvláštních požadavcích na mobilitu doporučují domluvit se předem."
+   },
+   "measurements": [],
+   "evidence_quote": "Ja, die Villa Meßmer ist auch für Gäste mit Rollstuhl geeignet"
+  },
+  {
+   "osm_id": "n3674182247",
+   "name": "Ristorante „Da Gino“",
+   "obec": "Alzenau",
+   "address": "Entengasse 3",
+   "lat": 50.086383,
+   "lng": 9.070894,
+   "category": "restaurace",
+   "source_url": "https://ristorante-da-gino.eatbu.com/?lang=de",
+   "source_type": "web provozovatele (na platformě eatbu)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že restaurace je dosažitelná bezbariérově (barrierefrei); bez podrobností.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Bezplatná parkovací místa u restaurace (vyhrazené stání neuvedeno).",
+    "vytah": null,
+    "jine": "V seznamu služeb je venkovní posezení (Außenbereich); jeho přístupnost a WC web nepopisuje."
+   },
+   "measurements": [],
+   "evidence_quote": "Sie können unser Restaurant barrierefrei erreichen."
+  },
+  {
+   "osm_id": "n10554546981",
+   "name": "Janny‘s",
+   "obec": "Alzenau",
+   "address": "Friedberger Gäßchen 1",
+   "lat": 50.086092,
+   "lng": 9.073454,
+   "category": "restaurace",
+   "source_url": "https://alzenau.jannys.de/info",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "V seznamu služeb provozovny je uvedeno „Rollstuhlgerecht“ (vhodné pro vozík); bez podrobností.",
+    "wc": "V seznamu služeb uvedena bezbariérová toaleta.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "V seznamu je i venkovní terasa a místo k sezení; jejich přístupnost web nerozvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Rollstuhlgerecht Barrierefreie Toilette"
+  },
+  {
+   "osm_id": "n11773809570",
+   "name": "Restaurant Hotel Sonnenhügel",
+   "obec": "Bad Kissingen",
+   "address": "Burgstraße 15",
+   "lat": 50.190117,
+   "lng": 10.088938,
+   "category": "restaurace",
+   "source_url": "https://www.hotelsonnenhuegel.de/reisen-mit-handicap",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hotel o sobě píše, že není bezbariérový. Hlavní vstup, chodby a průchody jsou bez schodů a sjízdné vozíkem; těžké protipožární dveře na chodbách se otvírají jen ručně. V hlavní chodbě od recepce k restauracím je 6 schodů a souběžně rampa široká 1 m.",
+    "wc": "V gastronomické části není WC v úrovni podlahy, WC v suterénu jen po schodech. Nejbližší WC bez schodů u recepce / sálu Rhön-Spessart; WC pro vozíčkáře je v šatnách bazénu (7–22 h), dostupné výtahem.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Hotel má speciálně označená parkovací místa pro vozíčkáře.",
+    "vytah": "Restaurace, kavárna i bar jsou dostupné výtahy; výtahy mezi patry mají dveře široké 80 cm.",
+    "jine": "Areál je ve svahu – mezi budovami a k volnočasovým částem strmé stoupání, i okolní chodníky jsou příkré. Bazén a sauna nejsou bezbariérové (schody). Dotazy k přístupnosti: rezervace tel. 0971/83-4805."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří výtahu",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka rampy v hlavní chodbě (souběžně se 6 schody)",
+     "hodnota": 1,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Das Restaurant sowie das Café und die Bar sind barrierefrei mit Aufzügen zu erreichen."
+  },
+  {
+   "osm_id": "n760709306",
+   "name": "Weinhaus Anker",
+   "obec": "Marktheidenfeld",
+   "address": "Obertorstraße 13",
+   "lat": 49.845553,
+   "lng": 9.600347,
+   "category": "restaurace",
+   "source_url": "https://www.hotel-anker.de/hotel/zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Hotelové pokoje Deluxe s výhledem do zahrady lze mít s bezbariérovou sprchou; junior suity a apartmá mají bezbariérovou sprchu.",
+    "koupelna": "Bezbariérová sprcha v části pokojů; madla ani rozměry web neuvádí.",
+    "parkovani": "Bezplatná parkovací místa přímo u hotelu, placené garáže.",
+    "vytah": null,
+    "jine": "O vinárně/restauraci samotné (vstup, WC) web nic neuvádí; apartmá s bezbariérovou sprchou má ložnici ve 2. NP (výtah nezmíněn)."
+   },
+   "measurements": [],
+   "evidence_quote": "alternativ mit barrierefreier Dusche oder mit Bad möglich"
+  },
+  {
+   "osm_id": "n302076289",
+   "name": "Abt- und Schäferstube",
+   "obec": "Amorbach",
+   "address": "Schafhof 1",
+   "lat": 49.639871,
+   "lng": 9.195004,
+   "category": "restaurace",
+   "source_url": "https://schafhof-amorbach.de/zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Pokoje hotelu jsou v podkroví; výtah web nezmiňuje.",
+    "koupelna": "U jedné kategorie pokojů koupelna 4 m² se sprchou v úrovni podlahy (ebenerdige Dusche).",
+    "parkovani": "Parkoviště uvedeno ve vybavení (bez vyhrazeného stání).",
+    "vytah": null,
+    "jine": "Konferenční a společenské prostory ve staré lisovně (Kelterhaus) jsou v přízemí (ebenerdig). O restauraci Abt- und Schäferstube (vstup, WC) web nic neuvádí."
+   },
+   "measurements": [
+    {
+     "co": "plocha koupelny pokoje",
+     "hodnota": 4,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Die ebenerdig gelegenen Tagungs- und Veranstaltungsräume"
+  },
+  {
+   "osm_id": "n5643172217",
+   "name": "Rosaliss",
+   "obec": "Bad Kissingen",
+   "address": "Balthasar-Neumann-Promenade 12-16",
+   "lat": 50.199289,
+   "lng": 10.073736,
+   "category": "restaurace",
+   "source_url": "https://rosaliss.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Část pokojů má lůžka vhodná pro seniory.",
+    "koupelna": null,
+    "parkovani": "Parkovací místa přímo před hotelem.",
+    "vytah": "Web uvádí, že všechny pokoje hotelu (Villa Thea) jsou dostupné výtahem.",
+    "jine": "O restauraci samotné (vstup, WC, terasa) web nic konkrétního neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Alle Zimmer sind mit dem Aufzug erreichbar"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w107095086",
+   "name": "Kulinarischer Schönbusch",
+   "obec": "Aschaffenburg",
+   "url": "http://www.schoenbusch-ab.de/restaurant-bistro/",
+   "reason": "web má jen přístupnostní lištu (OneTap) pro web, o budově restaurace nic neuvádí"
+  },
+  {
+   "osm_id": "n7853112918",
+   "name": "Neumanns kulinarischer Service",
+   "obec": "Haßfurt",
+   "url": "https://neumanns-kulinar.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n9519001890",
+   "name": "Capri Blaue Grotte",
+   "obec": "Würzburg",
+   "url": "https://www.capriblauegrotte.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n3664970732",
+   "name": "Gasthof Zum Anker",
+   "obec": "Albertshofen",
+   "url": "http://www.zum-anker-albertshofen.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1870091703",
+   "name": "Alte Post",
+   "obec": "Alzenau",
+   "url": "https://www.alte-post-alzenau.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w85474501",
+   "name": "Berggasthof Hahnenkamm",
+   "obec": "Alzenau",
+   "url": "https://www.berggasthofhahnenkamm.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w68695273",
+   "name": "BuonAPEtito Café-Bar & Kino-Lounge",
+   "obec": "Alzenau",
+   "url": "https://buonapetito-alzenau.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2357838727",
+   "name": "Café Arbeit",
+   "obec": "Alzenau",
+   "url": "https://www.cafe-arbeit-alzenau.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2357999609",
+   "name": "Central Café",
+   "obec": "Alzenau",
+   "url": "https://www.central-cafe-alzenau.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n428085380",
+   "name": "Dörsthof",
+   "obec": "Alzenau",
+   "url": "https://www.doersthof.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w68589446",
+   "name": "La Taverna",
+   "obec": "Alzenau",
+   "url": "https://www.la-taverna-alzenau.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2361067937",
+   "name": "Pub-Alzenau",
+   "obec": "Alzenau",
+   "url": "https://www.pub-alzenau.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n3733649802",
+   "name": "Ristorante Roma",
+   "obec": "Alzenau",
+   "url": "http://www.ristoranteroma-alzenau.de",
+   "reason": "robots.txt zakazuje automatický přístup – web neprocházen"
+  },
+  {
+   "osm_id": "n1330679454",
+   "name": "Wenzels Weinscheune",
+   "obec": "Alzenau",
+   "url": "https://wenzel-wein-wasserlos.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w164828307",
+   "name": "Bistro Colosseo",
+   "obec": "Amorbach",
+   "url": "https://www.bistrocolosseo-sportheim-amorbach.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w165222064",
+   "name": "Brauerei Etzel",
+   "obec": "Amorbach",
+   "url": "https://www.gaststaette-brauerei-etzel.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n9309553998",
+   "name": "Brauereingasthof Burkarth",
+   "obec": "Amorbach",
+   "url": "https://www.brauereigasthof-burkarth.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n4471788109",
+   "name": "Gleis 1",
+   "obec": "Amorbach",
+   "url": "https://www.gleis1-amorbach.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w164902866",
+   "name": "Stangs Küche",
+   "obec": "Amorbach",
+   "url": "https://www.stangskueche-amorbach.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1248754530",
+   "name": "Cafè Stark",
+   "obec": "Arnstein",
+   "url": "https://cafe-stark.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n9570449867",
+   "name": "Azan Lieferservice",
+   "obec": "Aschaffenburg",
+   "url": "https://azan-ab.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n6304391244",
+   "name": "Borgo Antico",
+   "obec": "Aschaffenburg",
+   "url": "https://borgo-antico.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1232760469",
+   "name": "Bäckerei Hench",
+   "obec": "Aschaffenburg",
+   "url": "https://www.hench-feinback.de/feinback/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n3135294535",
+   "name": "Café Caro",
+   "obec": "Aschaffenburg",
+   "url": "https://cafe-caro-aschaffenburg.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n5636842008",
+   "name": "Café Grenzenlos",
+   "obec": "Aschaffenburg",
+   "url": "https://www.grenzenlos-ab.de/unser-verein/cafe/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n632706648",
+   "name": "Café Jasmin",
+   "obec": "Aschaffenburg",
+   "url": "https://ab-cafejasmin.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n266039141",
+   "name": "Dead End Rock and Blues Bar",
+   "obec": "Aschaffenburg",
+   "url": "http://www.deadend.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n256540477",
+   "name": "Delphi",
+   "obec": "Aschaffenburg",
+   "url": "https://delphi-ab.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n343398919",
+   "name": "Escobar",
+   "obec": "Aschaffenburg",
+   "url": "https://escobar-ab.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1857265013",
+   "name": "Gino T.",
+   "obec": "Aschaffenburg",
+   "url": "http://gino-t.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1233561800",
+   "name": "Hofgarten",
+   "obec": "Aschaffenburg",
+   "url": "https://hofgarten-wirtshaus.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1232778375",
+   "name": "Laven",
+   "obec": "Aschaffenburg",
+   "url": "https://restaurant-laven.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n3135294544",
+   "name": "Marquesas",
+   "obec": "Aschaffenburg",
+   "url": "https://marquesas-aschaffenburg.restaurant-king.de",
+   "reason": "robots.txt zakazuje automatický přístup – web neprocházen"
+  },
+  {
+   "osm_id": "n335640376",
+   "name": "Namaste Einstein",
+   "obec": "Aschaffenburg",
+   "url": "https://www.namaste-aschaffenburg.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2752421946",
+   "name": "Omas Kochtopf",
+   "obec": "Aschaffenburg",
+   "url": "https://www.omaskochtopf.com/start.php",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n4238866285",
+   "name": "Pano",
+   "obec": "Aschaffenburg",
+   "url": "https://www.pano.coop/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2429434729",
+   "name": "Pasta al dente",
+   "obec": "Aschaffenburg",
+   "url": "http://www.pastaaldente-ab.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n3699619847",
+   "name": "Picok",
+   "obec": "Aschaffenburg",
+   "url": "https://picok.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n4424133057",
+   "name": "Pomodorino",
+   "obec": "Aschaffenburg",
+   "url": "http://pomodorino.eu/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n257565088",
+   "name": "Schlappeseppel",
+   "obec": "Aschaffenburg",
+   "url": "https://www.schlappeseppel-ab.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2885031798",
+   "name": "Star Döner Pizzeria",
+   "obec": "Aschaffenburg",
+   "url": "https://www.star-doener-pizzeria.de/",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n4193527705",
+   "name": "Stern",
+   "obec": "Aschaffenburg",
+   "url": "http://stern-ab.de/%C3%9Cber-den-Stern",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n3705682325",
+   "name": "Tempvs",
+   "obec": "Aschaffenburg",
+   "url": "https://tempvs.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2325829305",
+   "name": "Theater Klause",
+   "obec": "Aschaffenburg",
+   "url": "http://www.theaterklause-ab.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1369960729",
+   "name": "Union",
+   "obec": "Aschaffenburg",
+   "url": "https://www.union-ab.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n632699863",
+   "name": "Wirtshaus Zum Fegerer",
+   "obec": "Aschaffenburg",
+   "url": "https://fegerer.de",
+   "reason": "stránka Barrierefreiheit je jen prohlášení o přístupnosti webu (BGG/BITV), o budově nic"
+  },
+  {
+   "osm_id": "n1533933654",
+   "name": "Wurstbendel",
+   "obec": "Aschaffenburg",
+   "url": "https://www.wurstbendel.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w163157272",
+   "name": "Zeughaus",
+   "obec": "Aschaffenburg",
+   "url": "http://www.zeughaus-ab.de",
+   "reason": "robots.txt zakazuje automatický přístup – web neprocházen"
+  },
+  {
+   "osm_id": "n2900804443",
+   "name": "aifood",
+   "obec": "Aschaffenburg",
+   "url": "https://www.aifood.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w289363080",
+   "name": "Zur Alten Brauerei",
+   "obec": "Aura an der Saale",
+   "url": "https://zur-alte-brauerei.de/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n1913759679",
+   "name": "Kurgartencafé",
+   "obec": "Bad Bocklet",
+   "url": "http://www.kurgartencafe-bad-bocklet.de/",
+   "reason": "web nedostupný (HTTP Error 525: <none>)"
+  },
+  {
+   "osm_id": "n6873269932",
+   "name": "Da Rocco",
+   "obec": "Bad Brückenau",
+   "url": "https://da-rocco-brk.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1911522561",
+   "name": "Hexenhäuschen",
+   "obec": "Bad Brückenau",
+   "url": "https://www.cafe-hexenhäuschen.de/",
+   "reason": "web (Wix, otevřen přes punycode adresu) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n3256514634",
+   "name": "Ristorante Castello Belvedere",
+   "obec": "Bad Brückenau",
+   "url": "https://www.castello-belvedere.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1814814290",
+   "name": "Bayerischer Hof",
+   "obec": "Bad Kissingen",
+   "url": "http://www.doesch-kg.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1166932558",
+   "name": "Bei Themis - im Abseits",
+   "obec": "Bad Kissingen",
+   "url": "http://www.beithemis.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n4502634156",
+   "name": "Bratwurst Glöckle",
+   "obec": "Bad Kissingen",
+   "url": "https://www.bratwurstgloeckle-badkissingen.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n5489790783",
+   "name": "Eiscafé Bassanese",
+   "obec": "Bad Kissingen",
+   "url": "https://www.bassanese.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n8523347917",
+   "name": "Eurodöner Pizzeria",
+   "obec": "Bad Kissingen",
+   "url": "https://euro-doener-bad-kissingen.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n970267095",
+   "name": "Faber Feinkost Bistro",
+   "obec": "Bad Kissingen",
+   "url": "https://www.faber-feinkost.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1001231175",
+   "name": "Forsthaus Klaushof",
+   "obec": "Bad Kissingen",
+   "url": "http://www.forsthaus-klaushof.de/",
+   "reason": "robots.txt zakazuje automatický přístup – web neprocházen"
+  },
+  {
+   "osm_id": "w238874639",
+   "name": "Gasthaus zur Post",
+   "obec": "Bad Kissingen",
+   "url": "https://zurpost-badkissingen.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w33126174",
+   "name": "Gasthausbrauerei Wittelsbacher Turm",
+   "obec": "Bad Kissingen",
+   "url": "http://www.wittelsbacher-turm.de",
+   "reason": "robots.txt zakazuje automatický přístup – web neprocházen"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Villa Messmer – web",
+   "url": "https://www.villa-messmer.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Ristorante „Da Gino“ – web",
+   "url": "https://ristorante-da-gino.eatbu.com/?lang=de",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Janny‘s – web",
+   "url": "https://alzenau.jannys.de/info",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Restaurant Hotel Sonnenhügel – web",
+   "url": "https://www.hotelsonnenhuegel.de/reisen-mit-handicap",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Weinhaus Anker – web",
+   "url": "https://www.hotel-anker.de/hotel/zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Abt- und Schäferstube – web",
+   "url": "https://schafhof-amorbach.de/zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Rosaliss – web",
+   "url": "https://rosaliss.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  }
+ ]
+}

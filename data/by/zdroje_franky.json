@@ -1,0 +1,16 @@
+[
+ {
+  "nazev": "Stadt Würzburg – Nette Toiletten im Stadtgebiet Würzburg (záznamy typu „Barrierefreie WC-Anlage“)",
+  "url": "https://opendata.wuerzburg.de/explore/dataset/barrierefreie-toiletten-im-stadtgebiet-wuerzburg/",
+  "licence": "dl-de/by-2-0 (Datenlizenz Deutschland – Namensnennung – Version 2.0), https://www.govdata.de/dl-de/by-2-0; ověřeno v metadatech portálu ODS (pole license) i v katalogu open.bydata.de (dataset barrierefreie-toiletten-im-stadtgebiet-wuerzburg-wuerzburg)",
+  "dolozka": "Datenquelle: Stadt Würzburg (opendata.wuerzburg.de), Datenlizenz Deutschland – Namensnennung – Version 2.0 (https://www.govdata.de/dl-de/by-2-0). Data upravena: výběr bezbariérových WC, převod popisu do češtiny a strukturovaných údajů.",
+  "pocet": 38
+ },
+ {
+  "nazev": "Stadt Würzburg – Sozialmonitoring – Inklusion (bezbariérové zastávky, počet osob s těžkým postižením)",
+  "url": "https://opendata.wuerzburg.de/explore/dataset/sozialmonitoring-justizielle-fallzahlen/",
+  "licence": "dl-de/by-2-0 (pole license v metadatech portálu ODS; katalog open.bydata.de: sozialmonitoring-justizielle-fallzahlen-wuerzburg)",
+  "dolozka": "Datenquelle: Stadt Würzburg, Fachabteilung Soziales (opendata.wuerzburg.de), Datenlizenz Deutschland – Namensnennung – Version 2.0 (https://www.govdata.de/dl-de/by-2-0). Použito jen pro statistiky v tema_bavorsko_franky.md.",
+  "pocet": 0
+ }
+]

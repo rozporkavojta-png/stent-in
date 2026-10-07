@@ -1,0 +1,959 @@
+{
+ "task": "web_dolni-bavorsko_cile",
+ "kraj": "Dolní Bavorsko",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "w254316154",
+   "name": "Kunsthaus Abensberg",
+   "obec": "Abensberg",
+   "address": "Schulhausplatz 4",
+   "lat": 48.816654,
+   "lng": 11.843767,
+   "category": "pamatky",
+   "source_url": "https://www.abensberg.de/inklusion",
+   "source_type": "web obce (seznam nositelů signetu „Bayern barrierefrei“)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérově přístupné je jen přízemí (obchod a část výstavní plochy).",
+    "wc": "V Kunsthausu je WC pro osoby se zdravotním postižením.",
+    "jine": "Kunsthaus je součástí areálu Kuchlbauer; město ho vede mezi nositeli signetu „Bayern barrierefrei“. Do věže Kuchlbauerturm vede výtah, do sklepa výtah a schodišťová plošina."
+   },
+   "measurements": [],
+   "evidence_quote": "Im KunstHausAbensberg ist das Erdgeschoss (Shop und ein Teil der Ausstellungsfläche) barrierefrei zugänglich."
+  },
+  {
+   "osm_id": "n450607935",
+   "name": "Stadtmuseum",
+   "obec": "Abensberg",
+   "address": "Dollingerstraße 18",
+   "lat": 48.814611,
+   "lng": 11.845594,
+   "category": "pamatky",
+   "source_url": "https://www.abensberg.de/inklusion",
+   "source_type": "web obce (seznam nositelů signetu „Bayern barrierefrei“)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Muzeum je v budově Herzogkasten; vedle vstupního portálu jsou posuvné dveře s elektrickým otvíráním. Místy rampy odpovídající normě.",
+    "wc": "Ve 2. patře je dobře vybavené WC pro osoby se zdravotním postižením.",
+    "vytah": "Všechna podlaží jsou přístupná výtahem.",
+    "jine": "Město uvádí, že budova je zcela bezbariérová."
+   },
+   "measurements": [],
+   "evidence_quote": "Alle Etagen sind mit einem Lift zugänglich."
+  },
+  {
+   "osm_id": "n1693881377",
+   "name": "Weinfurtner Das Glasdorf",
+   "obec": "Arnbruck",
+   "address": null,
+   "lat": 49.129008,
+   "lng": 12.99386,
+   "category": "pamatky",
+   "source_url": "https://www.weinfurtner.de/erleben/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Všechna oddělení Glasdorfu jsou podle webu bezbariérová; výjimkou je hostinec (Wirtshaus).",
+    "wc": "Toalety v přízemí domu Vier Jahreszeiten (bezbariérovost WC výslovně neuvedena).",
+    "parkovani": "Parkovací místa pro osoby s postižením přímo před domem Vier Jahreszeiten.",
+    "vytah": "Do hostince se jezdí výtahem – je třeba se obrátit na pokladní v domě Manufaktur."
+   },
+   "measurements": [],
+   "evidence_quote": "alle Abteilungen sind barrierefrei"
+  },
+  {
+   "osm_id": "n342866263",
+   "name": "Localbahnmuseum Bayerisch Eisenstein",
+   "obec": "Bayerisch Eisenstein",
+   "address": "Bahnhofstraße 44",
+   "lat": 49.11968,
+   "lng": 13.204265,
+   "category": "pamatky",
+   "source_url": "http://www.blv-online.eu/blv_faq/",
+   "source_type": "web provozovatele (FAQ spolku BLV)",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Web se týká hlavně jízd historickým vlakem: historické vozy kvůli stáří nejsou bezbariérové.",
+    "jine": "Personál pomůže s nástupem a výstupem; vhodné předem ohlásit, aby přidělili místo s prostorem pro vozík. Na funkci výtahů na nádražích spolek nemá vliv. O budově muzea web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Unsere historischen Wagen sind aufgrund ihres Alters nicht barrierefrei."
+  },
+  {
+   "osm_id": "w962689241",
+   "name": "Deggendorfer Stadthallen",
+   "obec": "Deggendorf",
+   "address": "Edlmairstraße 2",
+   "lat": 48.831147,
+   "lng": 12.956277,
+   "category": "kultura",
+   "source_url": "https://www.deggendorfer-stadthallen.de/handicap.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vnitřní i venkovní části sálů jsou pro vozíčkáře dostupné bez schodů.",
+    "wc": "V každé hale je nejméně jedno WC pro osoby s postižením (ženy i muži).",
+    "parkovani": "Parkoviště Stadthallen je dostupné bez schodů.",
+    "jine": "Místa pro vozíky přiděluje pořadatel akce – dotazy na něj. V hale 1 indukční smyčka."
+   },
+   "measurements": [],
+   "evidence_quote": "für Rollstuhlfahrer stufenlos erreichbar"
+  },
+  {
+   "osm_id": "w224746239",
+   "name": "Kapuzinerstadl",
+   "obec": "Deggendorf",
+   "address": "Maria-Ward-Platz 10",
+   "lat": 48.831418,
+   "lng": 12.96516,
+   "category": "kultura",
+   "source_url": "https://www.deggendorfer-stadthallen.de/handicap.html",
+   "source_type": "web provozovatele (Stadthallen Deggendorf, společná stránka pro všechny sály)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Provozovatel (Stadthallen Deggendorf) uvádí, že vnitřní i venkovní části jeho sálů jsou pro vozíčkáře bez schodů; stránka nerozlišuje jednotlivé budovy.",
+    "wc": "V každé hale nejméně jedno WC pro osoby s postižením.",
+    "parkovani": "Parkoviště Stadthallen dostupné bez schodů.",
+    "jine": "Údaj je souhrnný za provozovatele, ne konkrétně za Kapuzinerstadl."
+   },
+   "measurements": [],
+   "evidence_quote": "In jeder Halle befindet sich mindestens 1 Behinderten-WC"
+  },
+  {
+   "osm_id": "w81249123",
+   "name": "Stadtmuseum Deggendorf",
+   "obec": "Deggendorf",
+   "address": "Östlicher Stadtgraben 28",
+   "lat": 48.83175,
+   "lng": 12.963687,
+   "category": "pamatky",
+   "source_url": "https://stadtmuseum.deggendorf.de/museum-inklusiv",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Výtah s bezbariérovým (ebenerdig) vstupem na zadní straně muzea.",
+    "wc": "WC pro osoby s postižením v 1. patře (přes výtah).",
+    "parkovani": "Podzemní garáže Kulturviertel s výtahem přímo pod muzeem.",
+    "vytah": "Výtah z podzemních garáží Kulturviertel přímo pod muzeum; další výtah ze zadního vstupu.",
+    "jine": "Muzeum je členem sítě „Museen inklusive“; hmatové stanice, indukční smyčka u pokladny."
+   },
+   "measurements": [],
+   "evidence_quote": "Aufzug mit ebenerdigem Zugang auf der Rückseite des Stadtmuseums"
+  },
+  {
+   "osm_id": "w124429362",
+   "name": "Freibad Amsham",
+   "obec": "Egglham",
+   "address": null,
+   "lat": 48.515207,
+   "lng": 13.072309,
+   "category": "sport",
+   "source_url": "https://www.egglham.de/freibad.html",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Koupaliště je podle obce bezbariérově upravené.",
+    "wc": "Bezbariérové sprchy a WC.",
+    "parkovani": "Parkovací místa pro osoby s postižením.",
+    "jine": "K dispozici je zvedák do bazénu (Beckenlift)."
+   },
+   "measurements": [],
+   "evidence_quote": "Das Freibad Amsham ist barrierefrei gestaltet"
+  },
+  {
+   "osm_id": "n12668202760",
+   "name": "Goldbach MUSEUM",
+   "obec": "Ergoldsbach",
+   "address": "Rosemeyerstraße 1",
+   "lat": 48.691415,
+   "lng": 12.200639,
+   "category": "pamatky",
+   "source_url": "https://goldbachmuseum.de/besuch/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Všechny části muzea jsou přístupné na vozíku, s rolátorem i kočárkem.",
+    "vytah": "Výtah do všech podlaží.",
+    "jine": "Texty i v lehčí němčině (leichte Sprache)."
+   },
+   "measurements": [],
+   "evidence_quote": "Alle Bereiche sind mit Rollstuhl, Rollator und Kinderwagen zugänglich."
+  },
+  {
+   "osm_id": "w60108678",
+   "name": "Eskara",
+   "obec": "Essenbach",
+   "address": "Savigneuxplatz 4",
+   "lat": 48.60934,
+   "lng": 12.213495,
+   "category": "kultura",
+   "source_url": "https://www.eskara.de/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Od parkovacích míst před vchodem vede rampa přímo do foyer.",
+    "wc": "WC pro osoby s postižením v suterénu (výtahem); funguje Euroklíč.",
+    "parkovani": "Parkovací místa pro osoby s postižením přímo před vchodem.",
+    "vytah": "Šatna a WC v suterénu jsou dostupné výtahem.",
+    "jine": "Místa pro vozíky v aréně se obvykle prodávají zvlášť při nákupu vstupenek."
+   },
+   "measurements": [],
+   "evidence_quote": "Von dort aus führt eine Rampe direkt zum Foyer."
+  },
+  {
+   "osm_id": "w26747580",
+   "name": "Granitmuseum \"Steinwelten\"",
+   "obec": "Hauzenberg",
+   "address": null,
+   "lat": 48.647364,
+   "lng": 13.620998,
+   "category": "pamatky",
+   "source_url": "https://granitzentrum.bayern/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Celé Granitzentrum (vč. muzea Steinwelten) je podle webu certifikováno jako bezbariérové pro vozíčkáře; uveden bezbariérový vstup.",
+    "parkovani": "Bezplatné parkoviště pro auta a autobusy naproti Passauer Str. 4 (ne u adresy muzea)."
+   },
+   "measurements": [],
+   "evidence_quote": "Das gesamte Granitzentrum ist für Rollstuhlfahrer barrierefrei zertifiziert."
+  },
+  {
+   "osm_id": "n1406518554",
+   "name": "Stein-Welten",
+   "obec": "Hauzenberg",
+   "address": "Passauer Straße 11",
+   "lat": 48.647492,
+   "lng": 13.620483,
+   "category": "pamatky",
+   "source_url": "https://granitzentrum.bayern/",
+   "source_type": "web provozovatele (původní adresa stein-welten.de nefunguje)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Steinwelten jsou expozicí Granitzentra Bayerischer Wald (Passauer Str. 11); celé centrum je podle webu certifikováno jako bezbariérové pro vozíčkáře.",
+    "parkovani": "Bezplatné parkoviště naproti Passauer Str. 4."
+   },
+   "measurements": [],
+   "evidence_quote": "Das gesamte Granitzentrum ist für Rollstuhlfahrer barrierefrei zertifiziert."
+  },
+  {
+   "osm_id": "w24719324",
+   "name": "Befreiungshalle Kelheim",
+   "obec": "Kelheim",
+   "address": "Befreiungshallestraße 11",
+   "lat": 48.918628,
+   "lng": 11.860348,
+   "category": "pamatky",
+   "source_url": "https://www.schloesser.bayern.de/deutsch/schloss/objekte/kelheim_mobilitaet.htm",
+   "source_type": "web provozovatele (Bayerische Schlösserverwaltung)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Návštěvnické centrum: dva schody nebo rampa, uvnitř bez schodů. Befreiungshalle: bezbariérově zadním vchodem výtahem; zvonek pro vozíčkáře, personál otevře a na práh položí rampu.",
+    "wc": "WC pro osoby s postižením v domku za halou (v létě) a v prostoru pokladny (klíč na pokladně).",
+    "parkovani": "Tři místa pro osoby s postižením na parkovišti; zdarma po digitální registraci parkovacího oprávnění (H/aG/Bl). Do centra cca 50 m po asfaltu, k hale cca 450 m (270 m asfalt, 150 m štěrk), sklon pod 6 %.",
+    "vytah": "Výtah na zadní straně Befreiungshalle (130 × 200 cm).",
+    "jine": "Na vozíku lze prohlédnout jen halu se sochami Viktorií; obě galerie a vyhlídková terasa jen po úzkých točitých schodech. Za vlhka hrozí uklouznutí."
+   },
+   "measurements": [
+    {
+     "co": "šířka vstupních dveří návštěvnického centra",
+     "hodnota": 116,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří do obchodu",
+     "hodnota": 106,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC pro osoby s postižením (návštěvnické centrum)",
+     "hodnota": 97,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výtah do Befreiungshalle – šířka",
+     "hodnota": 130,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výtah do Befreiungshalle – délka",
+     "hodnota": 200,
+     "jednotka": "cm"
+    },
+    {
+     "co": "minimální šířka dveří v hale",
+     "hodnota": 92,
+     "jednotka": "cm"
+    },
+    {
+     "co": "vzdálenost parkoviště – Befreiungshalle",
+     "hodnota": 450,
+     "jednotka": "m"
+    },
+    {
+     "co": "max. sklon cesty od parkoviště",
+     "hodnota": 6,
+     "jednotka": "%"
+    }
+   ],
+   "evidence_quote": "An der Rückseite der Befreiungshalle stufenlos über einen Aufzug"
+  },
+  {
+   "osm_id": "n290227795",
+   "name": "Kastenhof Landau - Das Museum für Steinzeit und Gegenwart",
+   "obec": "Landau an der Isar",
+   "address": "Oberer Stadtplatz 20",
+   "lat": 48.668619,
+   "lng": 12.690263,
+   "category": "pamatky",
+   "source_url": "https://www.steinzeit-museum.de/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podlahy bez prahů, výškové rozdíly vyrovnané mírným sklonem.",
+    "vytah": "Všechna podlaží přístupná výtahem ve vstupní části.",
+    "jine": "Vitríny v nízké výšce, dobře osvětlené prostory."
+   },
+   "measurements": [],
+   "evidence_quote": "erreichen Sie alle Stockwerke durch einen Aufzug im Eingangsbereich"
+  },
+  {
+   "osm_id": "n4992655397",
+   "name": "KASiMiR-Museum",
+   "obec": "Landshut",
+   "address": "Alter Franziskanerplatz 484",
+   "lat": 48.534036,
+   "lng": 12.155525,
+   "category": "pamatky",
+   "source_url": "https://kasimirmuseum.de/besucherinfo/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Všechny výstavní místnosti jsou bezbariérově přístupné."
+   },
+   "measurements": [],
+   "evidence_quote": "Alle Ausstellungsräume sind barrierefrei zugänglich."
+  },
+  {
+   "osm_id": "n303188097",
+   "name": "Kinopolis Landshut",
+   "obec": "Landshut",
+   "address": "Am Alten Viehmarkt 5",
+   "lat": 48.539382,
+   "lng": 12.156944,
+   "category": "kultura",
+   "source_url": "https://www.kinopolis.de/lh",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "Web u sálů uvádí počet míst pro vozíky (1–2 v každém z 11 sálů), u položky Barrierefreiheit ale „Keine Angabe“.",
+    "jine": "Přístup, výtah ani WC web nepopisuje."
+   },
+   "measurements": [],
+   "evidence_quote": "Kino 1 83 (davon 1 Rollstuhlplatz)"
+  },
+  {
+   "osm_id": "w113858298",
+   "name": "Haus zur Wildnis",
+   "obec": "Lindberg",
+   "address": null,
+   "lat": 49.060487,
+   "lng": 13.243415,
+   "category": "pamatky",
+   "source_url": "https://www.bayerischer-wald.de/attraktion/besucherzentrum-haus-zur-wildnis-df4470bc15",
+   "source_type": "turistický portál (+ web Národního parku)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Zařízení je prověřené/certifikované systémem „Reisen für Alle“ (zpráva o prověrce na reisen-fuer-alle.de).",
+    "wc": "Podle Národního parku jsou hlavní body výstavy, gastronomie a sanitární zařízení využitelné bez bariér.",
+    "jine": "Hostinec Haus zur Wildnis získal jako první v okrese Regen pečeť bezbariérového gastro provozu."
+   },
+   "measurements": [],
+   "evidence_quote": "nach \"Reisen für Alle\" ... geprüft bzw. zertifiziert"
+  },
+  {
+   "osm_id": "n2307614371",
+   "name": "Baumwipfelpfad",
+   "obec": "Neuschönau",
+   "address": null,
+   "lat": 48.891561,
+   "lng": 13.484207,
+   "category": "priroda",
+   "source_url": "https://treetop-walks.com/bayerischer-wald/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Cesta k Baumwipfelpfadu, stezka i vyhlídková věž jsou bezbariérově řešené (barrierearm); stezka je sjízdná na vozíku.",
+    "jine": "Odpočinková místa bez stoupání. Stezka je certifikována „Reisen für Alle“ (podle Národního parku). Zapůjčení vozíků (elektrický, skládací, terénní) zdarma u parkovací služby Nationalparkzentrum Lusen, tel. 08558 9729823."
+   },
+   "measurements": [
+    {
+     "co": "maximální sklon stezky",
+     "hodnota": 6,
+     "jednotka": "%"
+    }
+   ],
+   "evidence_quote": "maximalen Steigung von 6% auch für Rollstuhlfahrer oder Kinderwagen befahrbar"
+  },
+  {
+   "osm_id": "w228068229",
+   "name": "Baumwipfelpfad",
+   "obec": "Neuschönau",
+   "address": null,
+   "lat": 48.891332,
+   "lng": 13.484912,
+   "category": "pamatky",
+   "source_url": "https://treetop-walks.com/bayerischer-wald/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Cesta k Baumwipfelpfadu, stezka i vyhlídková věž jsou bezbariérově řešené (barrierearm); stezka je sjízdná na vozíku.",
+    "jine": "Odpočinková místa bez stoupání. Zapůjčení vozíků zdarma v Nationalparkzentrum Lusen (tel. 08558 9729823)."
+   },
+   "measurements": [
+    {
+     "co": "maximální sklon stezky",
+     "hodnota": 6,
+     "jednotka": "%"
+    }
+   ],
+   "evidence_quote": "maximalen Steigung von 6% auch für Rollstuhlfahrer oder Kinderwagen befahrbar"
+  },
+  {
+   "osm_id": "w33299995",
+   "name": "Nationalparkzentrum Lusen Tier-Freigelände",
+   "obec": "Neuschönau",
+   "address": null,
+   "lat": 48.900728,
+   "lng": 13.482527,
+   "category": "pamatky",
+   "source_url": "https://www.nationalpark-bayerischer-wald.bayern.de/besucher/barrierefreiheit/index.htm",
+   "source_type": "web Národního parku Bavorský les (provozovatel)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "V Tier-Freigelände u Neuschönau jsou vybudované a označené cesty se sníženými bariérami (barrierearm); většina cest v NP pro vozíky vhodná není.",
+    "jine": "Tier-Freigelände je certifikováno „Reisen für Alle“. Parkovací služba v Nationalparkzentrum Lusen půjčuje zdarma elektrický, skládací a turistický vozík (tel. 08558 9729823)."
+   },
+   "measurements": [],
+   "evidence_quote": "kostenlose Ausleihe eines Elektro-, eines Klapp- sowie eines Wander-Rollstuhls"
+  },
+  {
+   "osm_id": "w303531839",
+   "name": "Waldgeschichtliches Museum St. Oswald",
+   "obec": "Sankt Oswald-Riedlhütte",
+   "address": "Klosterallee 4",
+   "lat": 48.891506,
+   "lng": 13.427762,
+   "category": "pamatky",
+   "source_url": "https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/waldgeschichtliches_museum/",
+   "source_type": "web Národního parku Bavorský les (provozovatel)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Muzeum bylo prověřeno systémem „Reisen für Alle“; podle NP jsou hlavní body výstavy využitelné bez bariér.",
+    "wc": "Sanitární zařízení využitelné bez bariér (podle stránky NP o bezbariérovosti)."
+   },
+   "measurements": [],
+   "evidence_quote": "von Reisen für Alle auf Barrierefreiheit geprüft"
+  },
+  {
+   "osm_id": "w1228039663",
+   "name": "Bürgersaal Bürgerhaus",
+   "obec": "Plattling",
+   "address": "Werkstraße 17-19",
+   "lat": 48.780921,
+   "lng": 12.860845,
+   "category": "kultura",
+   "source_url": "https://www.plattling.de/freizeit-kultur-tourismus/veranstaltungen-und-events/veranstaltungsorte/buergersaal-und-buergerhaus/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bürgersaal je bezbariérově přístupný.",
+    "wc": "Bezbariérové toalety v přízemí.",
+    "parkovani": "Dvě parkovací místa pro osoby s postižením hned u vchodů."
+   },
+   "measurements": [],
+   "evidence_quote": "Der Bürgersaal ist barrierefrei zugänglich"
+  },
+  {
+   "osm_id": "w89058021",
+   "name": "Falknerei Rosenburg",
+   "obec": "Riedenburg",
+   "address": null,
+   "lat": 48.960507,
+   "lng": 11.678473,
+   "category": "pamatky",
+   "source_url": "https://www.falkenhof-rosenburg.de/infos/faqs",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hradní areál je bezbariérový, s vozíkem bez problému; muzeum a část okruhu bezbariérově přístupné nejsou.",
+    "parkovani": "Bezplatná parkovací místa pro osoby s postižením přímo u vchodu."
+   },
+   "measurements": [],
+   "evidence_quote": "Das Museum und ein Teil des Rundweges ist nicht barrierefrei zu erreichen."
+  },
+  {
+   "osm_id": "n389957259",
+   "name": "Kristallmuseum Riedenburg",
+   "obec": "Riedenburg",
+   "address": "Bergkristallstraße 1",
+   "lat": 48.959346,
+   "lng": 11.689582,
+   "category": "pamatky",
+   "source_url": "https://kristallmuseum-riedenburg.de/?lang=de",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí mezi službami jen štítek „Barrierefrei“, bez podrobností.",
+    "parkovani": "Parkoviště (bez údaje o vyhrazených místech)."
+   },
+   "measurements": [],
+   "evidence_quote": "Unsere Services Barrierefrei Klimatisiert Parkplätze"
+  },
+  {
+   "osm_id": "w183039734",
+   "name": "WaldWipfelWeg",
+   "obec": "Sankt Englmar",
+   "address": "Maibrunn 2",
+   "lat": 49.011267,
+   "lng": 12.781071,
+   "category": "pamatky",
+   "source_url": "https://www.waldwipfelweg.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Waldwipfelweg i nová věž Waldturm jsou bezbariérové a dobře sjízdné na vozíku, s rolátorem i kočárkem."
+   },
+   "measurements": [],
+   "evidence_quote": "der Waldwipfelweg und der neue Waldturm sind barrierefrei"
+  },
+  {
+   "osm_id": "w213754650",
+   "name": "BLUE BRIX",
+   "obec": "Straubing",
+   "address": "Geiselhöringer Straße 23c",
+   "lat": 48.87797,
+   "lng": 12.563724,
+   "category": "pamatky",
+   "source_url": "https://www.bluebrix.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Provozovatel uvádí, že je bezbariérový a vhodný pro vozíky i kočárky.",
+    "parkovani": "Bezplatná parkoviště přímo před domem."
+   },
+   "measurements": [],
+   "evidence_quote": "Wir sind barrierefrei Rollstuhl & Kinderwagen gerecht"
+  },
+  {
+   "osm_id": "n313283774",
+   "name": "Gäubodenmuseum",
+   "obec": "Straubing",
+   "address": "Fraunhoferstraße 23",
+   "lat": 48.883396,
+   "lng": 12.570514,
+   "category": "pamatky",
+   "source_url": "http://www.gaeubodenmuseum.de/index.cfm?resid=1&res=1024&sid=2&skt=4014&pid=4049",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Kromě oddělení „Vor- und Frühgeschichte“ jsou všechna oddělení bezbariérově přístupná.",
+    "wc": "Bezbariérová toaleta je k dispozici.",
+    "jine": "Oddělení „Baiern gefunden!“ má pyramidové a Braillovo písmo a hmatové objekty."
+   },
+   "measurements": [],
+   "evidence_quote": "bis auf die \"Vor- und Frühgeschichte\" sind alle Abteilungen barrierefrei zugänglich"
+  },
+  {
+   "osm_id": "w785694080",
+   "name": "NAWAREUM",
+   "obec": "Straubing",
+   "address": "Schulgasse 23 A",
+   "lat": 48.884007,
+   "lng": 12.582131,
+   "category": "pamatky",
+   "source_url": "https://www.nawareum.de/ihr-besuch/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Dveře zádveří u hlavního vchodu se otvírají tlačítkem.",
+    "wc": "Toaleta vhodná pro vozík v suterénu, dostupná výtahem z každého patra.",
+    "parkovani": "Vyhrazená parkovací místa pro osoby s postižením hned vedle muzea, příjezd z Paul-Münch-Straße (parkoviště P1, zdarma).",
+    "vytah": "Výtah do všech výstavních pater; podkroví (bez exponátů, jen výhled) jen po schodech.",
+    "jine": "Okruh stálou expozicí je vhodný pro vozík, někdy s objížďkou k výtahu (zelené šipky značí bezbariérovou trasu). Většina interaktivních stanic je podjezdná. Cesty v muzejní zahradě dlážděné, rovné a dost široké pro vozík. Doprovod osob s postižením zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Der Rundgang durch die Dauerausstellung ist rollstuhlgerecht."
+  },
+  {
+   "osm_id": "w241107153",
+   "name": "Haus am Strom",
+   "obec": "Untergriesbach",
+   "address": "Am Kraftwerk 4",
+   "lat": 48.519948,
+   "lng": 13.709398,
+   "category": "pamatky",
+   "source_url": "https://www.hausamstrom.de/de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Dům i celá výstava jsou podle webu bezbariérové pro osoby s omezenou pohyblivostí.",
+    "parkovani": "Parkování přímo před domem, z toho dvě místa pro osoby s postižením (stránka Anfahrt)."
+   },
+   "measurements": [],
+   "evidence_quote": "Unser Haus und die komplette Ausstellung sind barrierefrei für Menschen mit Gehbehinderungen."
+  },
+  {
+   "osm_id": "n413455907",
+   "name": "Citydom",
+   "obec": "Straubing",
+   "address": "Theresienplatz 23",
+   "lat": 48.881363,
+   "lng": 12.567659,
+   "category": "kultura",
+   "source_url": "https://citydom.de/kinoinfos/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Sály jsou „behindertengerecht erreichbar“ výtahem: sál 1 přes výtah a několik schodů, sál XSENSE výtahem a rampami (s místy pro osoby s postižením), sál 3 výtahem, u sálu 7 jsou řady sedadel jen po schodech.",
+    "vytah": "Výtah k sálům 1, XSENSE, 3 a 7."
+   },
+   "measurements": [],
+   "evidence_quote": "behindertengerecht erreichbar (über Lift und Rampen)"
+  },
+  {
+   "osm_id": "n1635641188",
+   "name": "Waldmuseum",
+   "obec": "Zwiesel",
+   "address": "Kirchplatz 3",
+   "lat": 49.015245,
+   "lng": 13.234441,
+   "category": "pamatky",
+   "source_url": "https://www.waldmuseum-zwiesel.de/das-waldmuseum/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Do foyer hlavním vchodem; vedle schodů je rampa.",
+    "wc": "WC pro osoby s postižením v suterénu.",
+    "parkovani": "Dvě parkovací místa pro osoby s postižením ve vnitřním dvoře muzea.",
+    "vytah": "Všechna čtyři podlaží dostupná skleněným výtahem.",
+    "jine": "Mediální stanice a tlačítka dosažitelné z vozíku; přenosné skládací stoličky."
+   },
+   "measurements": [
+    {
+     "co": "minimální průjezdná šířka všech dveří",
+     "hodnota": 90,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Alle Türen weisen Durchfahrtsbreiten von mindestens 90cm auf"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w1392184610",
+   "name": "Josef-Stanglmeier-Halle",
+   "obec": "Abensberg",
+   "web": "https://www.josef-stanglmeier-stiftung.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w170516473",
+   "name": "Theatergruppe Lampenfieber",
+   "obec": "Abensberg",
+   "web": "https://www.theater-am-bahnhof-abensberg.de/",
+   "duvod": "web nedostupný (chyba spojení)"
+  },
+  {
+   "osm_id": "w49723585",
+   "name": "Vogel- und Tierpark Abensberg",
+   "obec": "Abensberg",
+   "web": "https://www.vogelpark-abensberg.de/",
+   "duvod": "web nedostupný (chyba TLS/spojení)"
+  },
+  {
+   "osm_id": "w1284916715",
+   "name": "Dorf- und Vereinshaus Aholfing",
+   "obec": "Aholfing",
+   "web": "https://tsv-aholfing.de/dorf-und-vereinshaus-aholfing",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w305743496",
+   "name": "Modellflugplatz MFC Aldersbach",
+   "obec": "Aldersbach",
+   "web": "https://mfc.aldersbach.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n280554132",
+   "name": "Bücherei",
+   "obec": "Altdorf",
+   "web": "https://www.markt-altdorf.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n13023134102",
+   "name": "Künsterhaus Ganslberg",
+   "obec": "Altdorf",
+   "web": "https://fritzkoenigganslberg.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "r3928953",
+   "name": "Vitarium Rottal-Terme",
+   "obec": "Bad Birnbach",
+   "web": "https://www.badbirnbach.de/index.php?menu_id=39",
+   "duvod": "web obce bez údaje o fyzické přístupnosti termálů (jen přehled ubytování)"
+  },
+  {
+   "osm_id": "w296933343",
+   "name": "Atrium",
+   "obec": "Bogen",
+   "web": "https://www.atrium.bogen.de",
+   "duvod": "slovo „barrierefrei“ jen v patičce webu města, bez vztahu k objektu"
+  },
+  {
+   "osm_id": "n3156088824",
+   "name": "Kulturforum Oberalteich",
+   "obec": "Bogen",
+   "web": "https://www.kulturforum.bogen.de",
+   "duvod": "slovo „barrierefrei“ jen v patičce webu města, bez vztahu k objektu"
+  },
+  {
+   "osm_id": "n8953289817",
+   "name": "Der Neue Geschichtsboden",
+   "obec": "Buch am Erlbach",
+   "web": "https://www.geschichtsboden.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w440156868",
+   "name": "DAV Kletterzentrum Deggendorf",
+   "obec": "Deggendorf",
+   "web": "https://esvertikal.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n9095197878",
+   "name": "Familienzentrum Deggendorf e.V.",
+   "obec": "Deggendorf",
+   "web": "https://www.familienzentrum-deggendorf.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n9458664360",
+   "name": "Jugendcenter 4You",
+   "obec": "Deggendorf",
+   "web": "https://www.4you-deggendorf.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n3730556419",
+   "name": "Lichtspielhaus Deggendorf",
+   "obec": "Deggendorf",
+   "web": "http://lichtspielhaus.com/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w223882903",
+   "name": "Stadtbibliothek Deggendorf",
+   "obec": "Deggendorf",
+   "web": "https://stadtbibliothek.deggendorf.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w264436369",
+   "name": "Stadtteilzentrum Nord",
+   "obec": "Dingolfing",
+   "web": "http://quartiermanagement-dingolfing.de",
+   "duvod": "web nedostupný (chyba spojení)"
+  },
+  {
+   "osm_id": "n306828395",
+   "name": "Theater an der Rott",
+   "obec": "Eggenfelden",
+   "web": "https://theater-an-der-rott.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "r9343408",
+   "name": "Ergomar",
+   "obec": "Ergolding",
+   "web": "https://www.ergomar-ergolding.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w721308027",
+   "name": "Keltentor",
+   "obec": "Kelheim",
+   "web": "https://www.tourismus-landkreis-kelheim.de/erleben/kultur-und-geschichte/archaeologiepark-altmuehltal",
+   "duvod": "odkaz vede na regionální portál – obecný přehled bezbariérové nabídky, ke Keltentor nic"
+  },
+  {
+   "osm_id": "r2901896",
+   "name": "Kloster Weltenburg",
+   "obec": "Kelheim",
+   "web": "https://www.kloster-weltenburg.de/",
+   "duvod": "nalezeno jen prohlášení o přístupnosti webu, o objektu nic"
+  },
+  {
+   "osm_id": "w142538554",
+   "name": "Stadtbücherei",
+   "obec": "Kelheim",
+   "web": "www.stadtbuecherei-kelheim.de",
+   "duvod": "web přesměrovává na nedostupný katalog knihovny"
+  },
+  {
+   "osm_id": "w190882806",
+   "name": "Glassaal",
+   "obec": "Landau an der Isar",
+   "web": "https://www.landau-isar.de/freizeit-und-tourismus/veranstaltungsraeume/kastenhof/",
+   "duvod": "web města bez údaje o přístupnosti Glassaalu"
+  },
+  {
+   "osm_id": "w88369533",
+   "name": "Basilika Sankt Martin",
+   "obec": "Landshut",
+   "web": "https://www.stadtkirche-landshut.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n2761366449",
+   "name": "Schützenverein Isartaler Kronwieden",
+   "obec": "Loiching",
+   "web": "https://www.isartaler-kronwieden.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w91971177",
+   "name": "Haus Der Generationen",
+   "obec": "Mallersdorf-Pfaffenberg",
+   "web": "https://www.mallersdorf-pfaffenberg.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n803424398",
+   "name": "Infohaus Isarmündung",
+   "obec": "Moos",
+   "web": "https://www.infozentrum-isarmuendung.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w994859339",
+   "name": "Edelwies Natur-und Freizeitpark",
+   "obec": "Neukirchen",
+   "web": "https://www.edelwies.com/",
+   "duvod": "web jen obecně zmiňuje důraz na bezbariérovost, bez konkrétních údajů"
+  },
+  {
+   "osm_id": "w391591474",
+   "name": "St. Laurentius",
+   "obec": "Neustadt an der Donau",
+   "web": "http://www.pfarrei-neustadt-donau.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w24771505",
+   "name": "Dom St. Stephan",
+   "obec": "Passau",
+   "web": "https://www.bistum-passau.de/dom-kultur/dom-st-stephan-passau",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n6983511183",
+   "name": "Stadtbücherei Simbach am Inn",
+   "obec": "Simbach",
+   "web": "https://www.simbach.de/verzeichnis/visitenkarte.php?mandat=196233",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w91565587",
+   "name": "Basilika St. Jakob",
+   "obec": "Straubing",
+   "web": "http://www.st-jakob-straubing.de/basilika/startseite.php",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n312383278",
+   "name": "Stadtbibliothek im Salzstadel",
+   "obec": "Straubing",
+   "web": "https://www.stadtbibliothek-straubing.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w93887319",
+   "name": "Theater Am Hagen",
+   "obec": "Straubing",
+   "web": "https://www.theater-am-hagen.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n12718706964",
+   "name": "Stadtbad Vilsbiburg",
+   "obec": "Vilsbiburg",
+   "web": "https://www.vilsbiburg.de/stadtbad-1",
+   "duvod": "web města vrací 403 (přístup pro skripty odmítnut) – nevytěžováno"
+  },
+  {
+   "osm_id": "w27542801",
+   "name": "Stadthalle Vilsbiburg",
+   "obec": "Vilsbiburg",
+   "web": "https://www.vilsbiburg.de/Stadthalle.n91.html",
+   "duvod": "web města vrací 403 (přístup pro skripty odmítnut) – nevytěžováno"
+  },
+  {
+   "osm_id": "w370410716",
+   "name": "Alte Kirche Pleinting",
+   "obec": "Vilshofen an der Donau",
+   "web": "https://alte-kirche-pleinting.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w192030348",
+   "name": "Babalu Funpark Passau",
+   "obec": "Wörth links der Donau",
+   "web": "https://babalu-passau.de/",
+   "duvod": "web uvádí jen slevu/volný vstup pro vozíčkáře, o přístupnosti nic"
+  },
+  {
+   "osm_id": "w674181101",
+   "name": "Erholungsbad",
+   "obec": "Zwiesel",
+   "web": "https://erholungsbad.zwiesel.de/",
+   "duvod": "nalezeno jen prohlášení o přístupnosti webu, o objektu nic"
+  }
+ ],
+ "sources": [
+  "http://www.blv-online.eu/blv_faq/",
+  "http://www.gaeubodenmuseum.de/index.cfm?resid=1&res=1024&sid=2&skt=4014&pid=4049",
+  "https://citydom.de/kinoinfos/",
+  "https://goldbachmuseum.de/besuch/",
+  "https://granitzentrum.bayern/",
+  "https://kasimirmuseum.de/besucherinfo/",
+  "https://kristallmuseum-riedenburg.de/?lang=de",
+  "https://reisen-fuer-alle.de/angebot-detail/?uuid=9af53451-dbbb-4879-a7fc-26a7990e415b",
+  "https://stadtmuseum.deggendorf.de/museum-inklusiv",
+  "https://treetop-walks.com/bayerischer-wald/",
+  "https://www.abensberg.de/inklusion",
+  "https://www.bayerischer-wald.de/attraktion/besucherzentrum-haus-zur-wildnis-df4470bc15",
+  "https://www.bluebrix.de/",
+  "https://www.deggendorfer-stadthallen.de/handicap.html",
+  "https://www.egglham.de/freibad.html",
+  "https://www.eskara.de/barrierefreiheit/",
+  "https://www.falkenhof-rosenburg.de/infos/faqs",
+  "https://www.hausamstrom.de/de/",
+  "https://www.kinopolis.de/lh",
+  "https://www.nationalpark-bayerischer-wald.bayern.de/besucher/barrierefreiheit/index.htm",
+  "https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/waldgeschichtliches_museum/",
+  "https://www.nawareum.de/ihr-besuch/barrierefreiheit/",
+  "https://www.plattling.de/freizeit-kultur-tourismus/veranstaltungen-und-events/veranstaltungsorte/buergersaal-und-buergerhaus/",
+  "https://www.schloesser.bayern.de/deutsch/schloss/objekte/kelheim_mobilitaet.htm",
+  "https://www.steinzeit-museum.de/barrierefreiheit/",
+  "https://www.waldmuseum-zwiesel.de/das-waldmuseum/barrierefreiheit/",
+  "https://www.waldwipfelweg.de/",
+  "https://www.weinfurtner.de/erleben/"
+ ]
+}

@@ -5,11 +5,11 @@
 <link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>kudyprojedu.cz</title>
-<meta name="description" content="Skutečná místa v Česku s údaji o přístupnosti pro lidi na vozíku a s omezenou pohyblivostí. Vstup, toaleta, parkování ZTP, odkud údaj je a kdy byl naposledy upraven.">
+<meta name="description" content="Skutečná místa v Česku a v Bavorsku s údaji o přístupnosti pro lidi na vozíku a s omezenou pohyblivostí. Vstup, toaleta, parkování ZTP, odkud údaj je a kdy byl naposledy upraven.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="assets/css/style.css?v=13">
-<link rel="stylesheet" href="assets/css/pages-a.css?v=11">
+<link rel="stylesheet" href="assets/css/pages-a.css?v=12">
 </head>
 <body>
 <div id="site-header"></div>
@@ -18,11 +18,11 @@
   <section class="home-hero" aria-labelledby="hero-h">
     <div class="wrap">
       <h1 id="hero-h"><span class="hero-word">Kudy projedu?</span><span class="hero-sub">Najděte místa, kam projedete na vozíku.</span></h1>
-      <p class="lede">Skutečná místa v celém Česku. U každého vidíte vstup, toaletu a parkování, odkud údaj je a kdy ho někdo naposledy upravil.</p>
+      <p class="lede">Skutečná místa v celém Česku a v Bavorsku. U každého vidíte vstup, toaletu a parkování, odkud údaj je a kdy ho někdo naposledy upravil.</p>
       <form class="home-search" action="mapa.html" method="get" role="search">
         <label class="sr-only" for="hq">Obec nebo název místa</label>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="hq" name="q" type="search" placeholder="Obec nebo místo, třeba Třeboň" autocomplete="off" list="hero-obce">
+        <input id="hq" name="q" type="search" placeholder="Obec nebo místo, třeba Třeboň nebo Passau" autocomplete="off" list="hero-obce">
         <datalist id="hero-obce"></datalist>
         <button class="btn btn-primary" type="submit">Hledat</button>
       </form>
@@ -41,13 +41,13 @@
     <div class="wrap">
       <div class="band-head">
         <h2 id="num-h" class="kicker">Co je teď v mapě</h2>
-        <p class="band-note">Čísla se počítají přímo z dat mapy. Stav k <span id="fetched">5. 10. 2026</span>. <a href="metodika.html#zdroje">Odkud data jsou</a></p>
+        <p class="band-note">Čísla se počítají přímo z dat mapy. Stav k <span id="fetched">5. 10. 2026 (Česko) a 7. 10. 2026 (Bavorsko)</span>. <span id="zeme-split"></span>. <a href="metodika.html#zdroje">Odkud data jsou</a></p>
       </div>
       <div class="band-stats" id="counts" aria-live="polite">
         <p class="stat stat-main"><span class="n num" data-stat="total">…</span><span class="l">míst s údajem o přístupnosti</span></p>
         <p class="stat"><span class="n num" data-stat="w_yes">…</span><span class="l">vstup přístupný na vozíku</span></p>
         <p class="stat"><span class="n num" data-stat="w_limited">…</span><span class="l">vstup částečně přístupný</span></p>
-        <p class="stat"><span class="n num" data-stat="t_yes">…</span><span class="l">míst s bezbariérovou toaletou</span></p>
+        <p class="stat"><span class="n num" data-stat="x">…</span><span class="l">míst s naměřenými údaji z otevřených dat</span></p>
         <p class="stat"><span class="n num" data-stat="parkovani">…</span><span class="l">parkovišť s vyhrazeným místem ZTP</span></p>
       </div>
     </div>
@@ -63,7 +63,7 @@
         <a class="btn btn-ghost" href="mapa.html">Celá mapa <span data-icon="arrow"></span></a>
       </div>
       <ul class="photo-grid" id="photos" aria-live="polite"></ul>
-      <p class="small muted photo-note">Vybíráme místa se vstupem přístupným na vozíku a s fotkou na Wikimedia Commons, jedno z každého z osmi krajů s nejvíce místy. Fotky patří jejich autorům, licenci najdete po kliknutí na popisek.</p>
+      <p class="small muted photo-note">Vybíráme místa se vstupem přístupným na vozíku a s fotkou na Wikimedia Commons, jedno z každého z osmi krajů a ze čtyř bavorských vládních obvodů s nejvíce místy. Fotky patří jejich autorům, licenci najdete po kliknutí na popisek.</p>
     </div>
   </section>
 
@@ -101,7 +101,7 @@
       </div>
       <ol class="split-b num-list">
         <li><h3>Nastavte své potřeby</h3><p>Čím se pohybujete a co potřebujete: bezbariérovou toaletu, parkování ZTP, jeden schod navíc. Ukládá se jen ve vašem prohlížeči.</p></li>
-        <li><h3>Najděte místo na mapě</h3><p>Filtrujte podle kategorie, kraje a konkrétních údajů. Tvar i barva značky ukazují, jestli místo vyhovuje právě vám.</p></li>
+        <li><h3>Najděte místo na mapě</h3><p>Filtrujte podle země, kategorie, kraje nebo obvodu a konkrétních údajů. Tvar i barva značky ukazují, jestli místo vyhovuje právě vám.</p></li>
         <li><h3>Zkontrolujte detail a vyrazte</h3><p>Vstup, toaleta, parkování, fotky, Street View a datum poslední úpravy. Když zjistíte něco jiného, doplňte to pro další.</p></li>
       </ol>
     </div>
@@ -111,9 +111,9 @@
     <div class="wrap split-grid">
       <div class="split-h">
         <p class="kicker">Přehled</p>
-        <h2 id="kr-h">Kraje</h2>
-        <p class="muted">Počet míst v mapě podle kraje. Detail ukáže podíl přístupných míst, obce a mapu.</p>
-        <a class="btn btn-quiet" href="kraj.html">Přehled krajů <span data-icon="arrow"></span></a>
+        <h2 id="kr-h">Kraje a obvody</h2>
+        <p class="muted">Počet míst v mapě podle kraje v Česku a vládního obvodu v Bavorsku. Detail ukáže podíl přístupných míst, obce a mapu.</p>
+        <a class="btn btn-quiet" href="kraj.html">Přehled krajů a obvodů <span data-icon="arrow"></span></a>
       </div>
       <div class="split-b">
         <ul class="rule-list kraj-links" id="kraje"></ul>
@@ -140,8 +140,8 @@
 
 </main>
 <div id="site-footer"></div>
-<script src="assets/js/config.js?v=11"></script>
-<script src="assets/js/core.js?v=11"></script>
-<script src="assets/js/index.js?v=11"></script>
+<script src="assets/js/config.js?v=12"></script>
+<script src="assets/js/core.js?v=12"></script>
+<script src="assets/js/index.js?v=12"></script>
 </body>
 </html>

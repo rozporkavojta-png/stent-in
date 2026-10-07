@@ -1,0 +1,23 @@
+[
+ {
+  "nazev": "DB InfraGO AG – OpenStation (NeTEx, EU PI Stop Offer / Inventory of Assets TSI-PRM): nádraží a zastávky DB v Bavorsku s údaji o bezbariérovosti",
+  "url": "https://mobilithek.info/offers/879076212433727488",
+  "licence": "CC0 1.0 (public domain), https://creativecommons.org/publicdomain/zero/1.0/ ; ověřeno v README https://github.com/dbinfrago/openstation-docs (sekce License)",
+  "dolozka": "Datenquelle: DB InfraGO AG, OpenStation (https://mobilithek.info/offers/879076212433727488), CC0 1.0. Uvedení zdroje není povinné, uvádíme je. Souřadnice: © přispěvatelé OpenStreetMap, ODbL. Data upravena: výběr Bavorska, převod do češtiny.",
+  "pocet": 924
+ },
+ {
+  "nazev": "Bayerisches Landesamt für Statistik – GENESIS-Online Bayern, tabulky 22711-001r, 22711-003z, 22711-004z (Schwerbehinderte) a 12411-003r (Bevölkerung)",
+  "url": "https://genesis-5-prod-extern.bayern.de/datenbank/online/statistic/22711",
+  "licence": "CC BY 4.0 (podmínky užití GENESIS-Online Bayern, sekce Nutzungsrechte / Copyright)",
+  "dolozka": "Datenquelle: Bayerisches Landesamt für Statistik – www.statistik.bayern.de (CC BY 4.0). Použito jen pro statistiky v tema_bavorsko_zemske.md.",
+  "pocet": 0
+ },
+ {
+  "nazev": "OpenStreetMap – souřadnice nádraží (railway=station/halt v Bavorsku) a názvy obcí podle AGS",
+  "url": "https://www.openstreetmap.org/copyright",
+  "licence": "ODbL 1.0",
+  "dolozka": "© přispěvatelé OpenStreetMap, ODbL 1.0.",
+  "pocet": 0
+ }
+]

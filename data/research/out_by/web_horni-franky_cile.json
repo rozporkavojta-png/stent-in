@@ -1,0 +1,973 @@
+{
+ "task": "web_horni-franky_cile",
+ "kraj": "Horní Franky",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "note": "Prošlo 70 webů z OSM (úvodní stránka + max 6 podstránek podle odkazů), u stránek s nálezem doplněno čtení konkrétní podstránky o bezbariérovosti; respektován robots.txt, User-Agent kudyprojedu-student-project/0.1. Souřadnice a adresy z OSM. wheelchair_claim = tvrzení webu (yes/limited/no/unknown); osm_wheelchair = hodnota tagu wheelchair v OSM pro srovnání. Texty parafrázované česky, citace v originále.",
+ "places": [
+  {
+   "osm_id": "n1729244575",
+   "name": "Museum Kloster Banz",
+   "obec": "Bad Staffelstein",
+   "address": null,
+   "lat": 50.133258,
+   "lng": 11.000023,
+   "category": "pamatky",
+   "subcategory": "Muzeum",
+   "source_url": "https://www.hss.de/museum-kloster-banz/informationen/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle webu je muzeum bezbariérové.",
+    "wc": "Veřejné WC jsou mimo budovu muzea; zda je bezbariérové, web neuvádí.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Dvě parkovací místa pro osoby se zdravotním postižením vlevo vedle vchodu do muzea.",
+    "vytah": null,
+    "jine": "Do muzea lze vzít pomůcky pro pohyb (Mobilitätshilfen)."
+   },
+   "measurements": [],
+   "evidence_quote": "Das Museum Kloster Banz (MKB) ist barrierefrei.",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "w122385636",
+   "name": "Bamberger Dom",
+   "obec": "Bamberg",
+   "address": "Domplatz 6",
+   "lat": 49.890709,
+   "lng": 10.88252,
+   "category": "pamatky",
+   "subcategory": "Turistický cíl",
+   "source_url": "https://dioezesanmuseum-bamberg.de/besuch/anreise/",
+   "source_type": "web provozovatele (Diözesanmuseum / Domberg-Museen)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Údaj ze stránek Diecézního muzea (Domberg), ne z webu farnosti uvedeného v OSM: dóm je bezbariérově přístupný západními vstupy (Mesnerhof, Kunigundenpforte); kvůli stavbě je přístup nyní jen omezeně bezbariérový, provizorně po rovině.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Bezbariérové parkovací místo Domplatz 1–2 naproti hlavnímu vchodu.",
+    "vytah": null,
+    "jine": null,
+    "cesty": "Přístup podél dómu po novém bezbariérovém povrchu Domstraße přes Mesnerhof."
+   },
+   "measurements": [],
+   "evidence_quote": "Trotz Baustelle ist es derzeit wieder möglich, ebenerdig in den Bamberger Dom … zu gelangen",
+   "osm_wheelchair": "yes",
+   "note": "Web z OSM (eo-bamberg.de, farnost) o přístupnosti nic neuvádí."
+  },
+  {
+   "osm_id": "w38077143",
+   "name": "Diözesanmuseum Bamberg",
+   "obec": "Bamberg",
+   "address": "Domplatz 5",
+   "lat": 49.890581,
+   "lng": 10.88322,
+   "category": "pamatky",
+   "subcategory": "Muzeum",
+   "source_url": "https://dioezesanmuseum-bamberg.de/besuch/anreise/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Dóm i Diecézní muzeum jsou podle webu přístupné bezbariérově; bezbariérové vstupy jsou na západní straně dómu přes Mesnerhof a Kunigundenpforte. Kvůli stavbě je nyní přístup jen omezeně bezbariérový: provizorně se lze dostat dovnitř po rovině (ebenerdig), ale provizorium nesplňuje všechny požadavky.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Bezbariérové parkovací místo Domplatz 1–2 naproti hlavnímu vchodu (místo na Domstraße 3a je dočasně zrušené). Jinak u muzea parkoviště nejsou.",
+    "vytah": null,
+    "jine": "Web odkazuje na městský přehled bezbariérových WC a parkovišť v Bambergu.",
+    "cesty": "Přístupová cesta vede podél dómu po novém bezbariérovém povrchu Domstraße přes Mesnerhof; od března má být úsek znovu uzavřen kvůli dokončení."
+   },
+   "measurements": [],
+   "evidence_quote": "Derzeit nur eingeschränkt barrierefreier Zugang in den Dom und das Diözesanmuseum.",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "w28273577",
+   "name": "Konzert- und Kongresshalle Bamberg",
+   "obec": "Bamberg",
+   "address": "Mußstraße 1",
+   "lat": 49.896753,
+   "lng": 10.878865,
+   "category": "kultura",
+   "subcategory": "Kulturní centrum",
+   "source_url": "https://www.bamberg-ce.de/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Z podzemní garáže se do budovy jde rovným (ebenerdig) tunelem.",
+    "wc": "Ve foyerech jsou WC upravená pro osoby s postižením.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Vyhrazená místa pro návštěvníky s průkazem v podzemní garáži Konzert- und Kongresshalle.",
+    "vytah": "Všechny návštěvnické prostory ve foyerech jsou s vozíkem přístupné výtahy.",
+    "jine": "Na každé akci místa pro vozíčkáře – nutné speciální vstupenky předem v předprodeji (i pro doprovod). Indukční smyčka v sálech Joseph-Keilberth-Saal a Hegelsaal."
+   },
+   "measurements": [],
+   "evidence_quote": "Sämtliche Besucherbereiche in den Foyers sind mithilfe von Aufzügen problemlos mit dem Rollstuhl zugänglich.",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "n1260509418",
+   "name": "Stadtbücherei Deutsches Haus",
+   "obec": "Bamberg",
+   "address": null,
+   "lat": 49.896875,
+   "lng": 10.892194,
+   "category": "kultura",
+   "subcategory": "Knihovna",
+   "source_url": "https://stadtbuecherei-bamberg.de/oeffnungszeiten-standorte/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Tři podlaží hlavní pobočky (Deutsches Haus) spojuje výtah; podle webu tak mají všichni bezbariérový přístup k médiím.",
+    "jine": "Informační pult a internetová místa v 1. patře, čtenářská kavárna ve 2. patře. Vstup a WC web nepopisuje."
+   },
+   "measurements": [],
+   "evidence_quote": "Die drei Stockwerke werden von einem offenen Treppenhaus … und einem Aufzug erschlossen.",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "w590053225",
+   "name": "Zentrum Welterbe Bamberg",
+   "obec": "Bamberg",
+   "address": "Untere Mühlbrücke 5",
+   "lat": 49.890559,
+   "lng": 10.887528,
+   "category": "pamatky",
+   "subcategory": "Muzeum",
+   "source_url": "https://welterbe.bamberg.de/de/besuchszentrum",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že výstava návštěvnického centra je bezbariérová.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Výstava je v horním patře (web popisuje přístup schodištěm); výtah, vstup ani WC výslovně nezmiňuje. Pro parkování odkazuje na okolní parkoviště."
+   },
+   "measurements": [],
+   "evidence_quote": "Unsere Ausstellung ist barrierefrei.",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "w37489499",
+   "name": "Historisches Museum",
+   "obec": "Bayreuth",
+   "address": "Kirchplatz 4",
+   "lat": 49.943481,
+   "lng": 11.57423,
+   "category": "pamatky",
+   "subcategory": "Muzeum",
+   "source_url": "https://www.historisches-museum-bayreuth.de/besuch/besuch-planen/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": "K dispozici je WC upravené pro osoby s postižením.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Výtah spojuje jednotlivá podlaží muzea.",
+    "jine": "V budově jsou k dispozici mobilní sedačky. Vstup ani parkování web nepopisuje."
+   },
+   "measurements": [],
+   "evidence_quote": "Ein Aufzug verbindet die verschiedenen Ebenen des Hauses miteinander",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "w635545377",
+   "name": "Hofgarten",
+   "obec": "Bayreuth",
+   "address": null,
+   "lat": 49.9399,
+   "lng": 11.580391,
+   "category": "pamatky",
+   "subcategory": "Turistický cíl",
+   "source_url": "https://www.bayreuth-wilhelmine.de/deutsch/tourist/mobilitaet_neues-schloss.htm",
+   "source_type": "web provozovatele (Bayerische Schlösserverwaltung)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": "WC pro osoby s postižením v Hofgartenu poblíž oranžérie (a v horním patře Nového zámku).",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Místa pro osoby s postižením v Ludwigstraße / Residenzplatz a v Glasenappweg.",
+    "vytah": null,
+    "jine": "Lavičky k dispozici; web nabízí plán Hofgartenu s kategoriemi cest pro vozíčkáře.",
+    "cesty": "Cesty rovné a dobře sjízdné, povrch většinou zpevněný štěrk, místy asfalt nebo kočičí hlavy. Most na „Große Insel“ má schody."
+   },
+   "measurements": [],
+   "evidence_quote": "Wege eben und gut befahrbar … Brücke zur \"Großen Insel\" mit Stufen",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "w34590369",
+   "name": "Iwalewahaus",
+   "obec": "Bayreuth",
+   "address": "Wölfelstraße 2",
+   "lat": 49.944791,
+   "lng": 11.578622,
+   "category": "pamatky",
+   "subcategory": "Muzeum",
+   "source_url": "https://www.iwalewahaus.uni-bayreuth.de/de/besuch/index.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hlavní vchod je na rohu Münzgasse/Wölfelstraße; bezbariérový vchod je ve vnitřním dvoře, přístupný z Münzgasse.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Výtah, WC ani parkování web nezmiňuje."
+   },
+   "measurements": [],
+   "evidence_quote": "Ein barrierefreier Eingang befindet sich im Innenhof, erreichbar über die Münzgasse.",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "w34428293",
+   "name": "Neues Schloss",
+   "obec": "Bayreuth",
+   "address": "Ludwigstraße 21",
+   "lat": 49.941837,
+   "lng": 11.577313,
+   "category": "pamatky",
+   "subcategory": "Muzeum",
+   "source_url": "https://www.bayreuth-wilhelmine.de/deutsch/tourist/mobilitaet_neues-schloss.htm",
+   "source_type": "web provozovatele (Bayerische Schlösserverwaltung)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Samostatný bezschodý vstup do pokladny a obchodu, personál ho otevře na požádání. Zvláštní bezschodý vstup (šířka 82 cm) do jižního křídla (muzeum markraběnky Wilhelminy, Staatsgalerie aj.).",
+    "wc": "WC pro osoby s postižením v horním patře Nového zámku a v Hofgartenu u oranžérie.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Po jednom místě pro osoby s postižením v Ludwigstraße / Residenzplatz (naproti hlavnímu vchodu) a v Glasenappweg.",
+    "vytah": "Všechny důležité části bezschodě výtahem (kabina 140 × 100 cm, dveře 89 cm).",
+    "jine": "Dveře nejméně 80 cm, místy prahy 3–5 cm (personál pomůže). Přes dlážděný Schlossplatz vedou k vchodu dvě rovné bezbariérové cesty z desek. Na pokladně zapůjčení vozíku a skládacích stoliček. Web nabízí plán s kategoriemi cest pro vozíčkáře a video vozíčkářky."
+   },
+   "measurements": [
+    {
+     "co": "výtah – délka kabiny",
+     "hodnota": 140,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výtah – šířka kabiny",
+     "hodnota": 100,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výtah – šířka dveří",
+     "hodnota": 89,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří (minimum)",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška prahů (místy)",
+     "hodnota": "3–5",
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka bezschodého vstupu do jižního křídla",
+     "hodnota": 82,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Alle wichtigen Bereiche stufenlos über Aufzug … erreichbar",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "r8849256",
+   "name": "Richard-Wagner-Museum",
+   "obec": "Bayreuth",
+   "address": "Richard-Wagner-Straße 48",
+   "lat": 49.940994,
+   "lng": 11.581965,
+   "category": "pamatky",
+   "subcategory": "Muzeum",
+   "source_url": "https://www.wagnermuseum.de/informationen/oeffnungszeiten-und-infos/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup do novostavby (pokladna, obchod, výstavy) vpravo od hlavního vchodu. Haus Wahnfried má bezbariérový boční vchod vlevo; do Siegfried Wagner-Haus vede rampa hlavním vchodem, případně bezbariérový vchod naproti bočnímu vchodu Wahnfriedu.",
+    "wc": "WC pro vozíčkáře v suterénu novostavby a WC pro osoby s postižením v suterénu Haus Wahnfried.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Výtah do suterénu novostavby (stálá expozice, kino, WC), další výtah přímo do suterénu Haus Wahnfried a další výtah do horních pater.",
+    "jine": "Jedinou výjimkou je západní mezipatro Haus Wahnfried – jen po točitém schodišti. Doprovod osoby s postižením má vstup zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Das Richard Wagner Museum ist barrierefrei zugänglich.",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "n1084394977",
+   "name": "Stadtbibliothek",
+   "obec": "Bayreuth",
+   "address": "Richard-Wagner-Straße 21",
+   "lat": 49.942718,
+   "lng": 11.580527,
+   "category": "kultura",
+   "subcategory": "Knihovna",
+   "source_url": "https://stadtbibliothek.bayreuth.de/kontakt/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": null,
+    "wc": "WC pro osoby s postižením (Behinderten-Toilette).",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Výtah v budově s nízkým hmatovým ovládáním a hlasovým hlášením; další výtah venku u vchodu vhs.",
+    "jine": "Budova RW21 plánována s co největší bezbariérovostí; dost místa pro vozíky a chodítka, vodicí linie pro nevidomé, hmatové štítky, mobilní indukční smyčka, lupa ve 2. patře."
+   },
+   "measurements": [],
+   "evidence_quote": "ausreichend Raum für Bürgerinnen und Bürger mit Rollatoren, Rollstühlen und Kinderwagen",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "n11136018915",
+   "name": "Levi Strauss Museum",
+   "obec": "Buttenheim",
+   "address": "Marktstr. 31-33 (podle webu)",
+   "lat": 49.802709,
+   "lng": 11.03328,
+   "category": "pamatky",
+   "subcategory": "Muzeum",
+   "source_url": "https://levi-strauss-museum.de/besucherinfo/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Muzeum (rodný dům Levi Strausse) podle webu kvůli stavebním podmínkám není bezbariérové.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Leider ist unser Haus aufgrund der baulichen Gegebenheiten nicht barrierefrei.",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "n5362979095",
+   "name": "Schloss Callenberg",
+   "obec": "Callenberg",
+   "address": null,
+   "lat": 50.277701,
+   "lng": 10.923034,
+   "category": "pamatky",
+   "subcategory": "Hrad / zámek",
+   "source_url": "https://www.schloss-callenberg.com/zugriff/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Bezplatné parkoviště pod zámkem; osoby s postižením mohou po předchozím telefonátu zámeckému týmu (09561/55150) dojet autem až k zámku.",
+    "vytah": "Zámek má výtah – bezbariérově přístupné Herzoglicher Kunstbesitz, výstavy a sály Beletage; osobní výtah má i Deutsches Schützenmuseum.",
+    "jine": "Rote Salon a růžová zahrada (Rosengarten) jen po několika schodech. WC web nezmiňuje."
+   },
+   "measurements": [],
+   "evidence_quote": "Der Rote Salon und der Rosengarten sind über ein paar Stufen zu erreichen.",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "n275283062",
+   "name": "Landesbibliothek Coburg",
+   "obec": "Coburg",
+   "address": "Schloßplatz 1",
+   "lat": 50.257909,
+   "lng": 10.967334,
+   "category": "kultura",
+   "subcategory": "Knihovna",
+   "source_url": "https://www.landesbibliothek-coburg.de/landesbibliothek-coburg/anschrift-kontakte/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Knihovna je v zámku Ehrenburg; vchod je v 1. patře přes hlavní schodiště v průchodu mezi Ehrenhofem a vnitřním dvorem. Plná bezbariérovost zatím chybí – web žádá předem kontaktovat knihovnu a domluvit individuální řešení.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Návštěvníci nesmí vjíždět do vnitřního dvora zámku; parkování v okolních parkovacích domech (vyhrazená místa web neuvádí).",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "steht die vollständige Umsetzung der Barrierefreiheit noch aus.",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "w106392393",
+   "name": "Landestheater Coburg",
+   "obec": "Coburg",
+   "address": "Schloßplatz 6",
+   "lat": 50.259795,
+   "lng": 10.967136,
+   "category": "kultura",
+   "subcategory": "Divadlo",
+   "source_url": "https://landestheater-coburg.de/besuch/service",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup v náhradních scénách GLOBE Coburg a Reithalle; o historické budově na Schloßplatz (objekt OSM) nic.",
+    "wc": "Bezbariérová WC v GLOBE Coburg.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "U GLOBE 183 míst, z toho 7 pro osoby s postižením; krátká cesta k hlavnímu vchodu.",
+    "vytah": "V GLOBE Coburg jsou všechna podlaží dostupná výtahem; automatické dveře.",
+    "jine": "Místa pro vozíčkáře jen v přízemí (Parkett), ne v 1. a 2. pořadí; rezervace s doprovodem jen na pokladně, telefonem nebo e-mailem, ne online. Vozíčkáři se mají předem ohlásit."
+   },
+   "measurements": [
+    {
+     "co": "parkovací místa pro osoby s postižením u GLOBE",
+     "hodnota": 7,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Ein barrierefreier Zugang ist im GLOBE Coburg sowie in der Reithalle gegeben.",
+   "osm_wheelchair": "yes",
+   "note": "Údaje se týkají scén GLOBE (Nina-Bellosa-Platz 1) a Reithalle, ne nutně historické budovy divadla."
+  },
+  {
+   "osm_id": "r367791",
+   "name": "Kaiserpfalz",
+   "obec": "Forchheim",
+   "address": null,
+   "lat": 49.720272,
+   "lng": 11.055449,
+   "category": "pamatky",
+   "subcategory": "Turistický cíl",
+   "source_url": "https://kaiserpfalz.forchheim.de/de/besucherinfo/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Budovy mají podle webu bezbariérové přístupy – rampy a široké cesty; všechny prostory jsou pohodlně dosažitelné.",
+    "wc": "WC pro osoby s postižením ve vnitřním dvoře.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Mnoho parkovacích míst v bezprostřední blízkosti (vyhrazená místa výslovně neuvedena).",
+    "vytah": "Výtahy v budovách.",
+    "jine": "Personál na požádání pomůže."
+   },
+   "measurements": [],
+   "evidence_quote": "verfügen unsere Gebäude über barrierefreie Zugänge, wie Rampen, breite Wege und Aufzüge",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "w1011621873",
+   "name": "Seebühne",
+   "obec": "Hornsröth",
+   "address": null,
+   "lat": 49.946298,
+   "lng": 11.601464,
+   "category": "kultura",
+   "subcategory": "Divadlo",
+   "source_url": "https://www.motion-kommunikation.de/seebuehne/",
+   "source_type": "web pořadatele (motion Kommunikation)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": "V Kulturkiosku je WC upravené pro osoby s postižením.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Přímý příjezd ke koncertnímu areálu není možný; použít běžná (i vyhrazená) parkoviště na Äußere Badstraße a dál pěšky (od parkovišť cca 5–15 min).",
+    "vytah": null,
+    "jine": "Pro vozíčkáře dvě místa s dobrým výhledem: pódium v přední části publika (omezená kapacita) a místo z boku před zábranami u pódia."
+   },
+   "measurements": [],
+   "evidence_quote": "Leider ist eine direkte Zufahrt zum Konzertgelände nicht möglich",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "n11283602396",
+   "name": "Armeemuseum Friedrich der Große",
+   "obec": "Kulmbach",
+   "address": "Festungsberg 27",
+   "lat": 50.108134,
+   "lng": 11.464116,
+   "category": "pamatky",
+   "subcategory": "Muzeum",
+   "source_url": "https://plassenburg.de/de/ihr-besuch/barrierefreiheit",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Armeemuseum Friedrich der Große je podle webu přístupné jen po schodech. Plassenburg je celkově jen omezeně přístupná pro vozíčkáře; z Kasernenhofu lze vstoupit samostatným vchodem bez prahů.",
+    "wc": "WC pro osoby s postižením v celém areálu muzeí.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Vyhrazená místa pro osoby s postižením v Kasernenhofu.",
+    "vytah": "Výtah jen v části se Zinnfigurenmuseum (muzeum cínových figurek), ne do Armeemusea.",
+    "jine": "S vozíkem přístupné i Landschaftsmuseum v přízemí, obchod a kavárna."
+   },
+   "measurements": [],
+   "evidence_quote": "das Armeemuseum Friedrich der Große … sind nur über Treppen zugänglich",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "w425914945",
+   "name": "fritz",
+   "obec": "Kulmbach",
+   "address": "Fritz-Hornschuch-Straße 9",
+   "lat": 50.108073,
+   "lng": 11.450909,
+   "category": "pamatky",
+   "subcategory": "Historická budova",
+   "source_url": "https://www.fritz-einkaufszentrum.de/das-fritz/service/272-barrierefreiheit-im-center.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Obchody a zařízení centra jsou podle webu dobře přístupné i pro lidi s postižením.",
+    "wc": "Bezbariérové WC (i pro vozíčkáře) v 1. patře, přístupné výtahem; jen s Euroklíčem.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Velkorysá místa pro osoby s postižením u vchodů na všech podlažích vlastního parkovacího domu i na ploše v přízemí, krytá cesta do obchodní pasáže.",
+    "vytah": "Osobní výtahy do všech částí centra.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Über die Personenaufzüge haben Sie freien Zugang zu allen Bereichen",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "w24600627",
+   "name": "Festspielhaus",
+   "obec": "Morethsgut",
+   "address": "Festspielhügel 1-2",
+   "lat": 49.959928,
+   "lng": 11.579643,
+   "category": "pamatky",
+   "subcategory": "Turistický cíl",
+   "source_url": "https://www.bayreuther-festspiele.de/karten-service/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup po rovině (ebenerdig) jen v cenových kategoriích A1, B1, B2, B3.",
+    "wc": "Bezbariérová WC v úrovni terénu.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Pro držitele parkovacího průkazu pro těžce postižené bezplatná vyhrazená místa na parkovišti „A“ (v den premiéry „B“). Taxi mohou osoby s omezenou mobilitou dovézt až k vjezdu na parkoviště B.",
+    "vytah": "Pro Loge Rechts, Balkon Rechts a Galerie Rechts výtah ve schodišti Ost (vpravo), v případě potřeby s doprovodem pořadatelů.",
+    "jine": "V přízemí (Parkett) až 6 míst pro vozíčkáře (kat. B3) + místo pro doprovod zdarma, rezervace e-mailem, ne online. Až 20 krajních míst pro lidi s omezenou mobilitou. Indukční smyčka v řadách 9–13."
+   },
+   "measurements": [
+    {
+     "co": "místa pro vozíčkáře v Parkettu",
+     "hodnota": 6,
+     "jednotka": "ks"
+    },
+    {
+     "co": "krajní místa pro osoby s omezenou mobilitou",
+     "hodnota": 20,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Der ebenerdige Zugang befindet sich in den Preiskategorien: A1, B1, B2, B3.",
+   "osm_wheelchair": "yes"
+  },
+  {
+   "osm_id": "w148242085",
+   "name": "Bademehr Familienbad",
+   "obec": "Neustadt bei Coburg",
+   "address": "Wildenheider Straße 11",
+   "lat": 50.33412,
+   "lng": 11.129075,
+   "category": "sport",
+   "subcategory": "Aquapark",
+   "source_url": "https://www.bademehr.de/",
+   "source_type": "web provozovatele (Neustadter Bäder GmbH)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle webu jsou zřízeny bezbariérové vstupy.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": "Speciálně vybavené převlékárny a sprchy pro hosty s handicapem.",
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Podrobnosti (zvedák do bazénu, WC, parkování) web neuvádí; stránka /barrierefreiheit/ obsahuje jen prohlášení o webu."
+   },
+   "measurements": [],
+   "evidence_quote": "haben wir barrierefreie Zugänge sowie speziell ausgestattete Umkleide- und Duschräume eingerichtet.",
+   "osm_wheelchair": "yes"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w594275487",
+   "name": "Falknerei Burg Rabenstein",
+   "obec": "Ahorntal",
+   "web": "https://www.falknerei-rabenstein.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w797914846",
+   "name": "Aqua Riese",
+   "obec": "Bad Staffelstein",
+   "web": "https://aquariese.jimdo.com",
+   "reason": "web nedostupný (HTTPSConnectionPool(host='aquariese.jimdo.com', port=443): Max retries)"
+  },
+  {
+   "osm_id": "w43972480",
+   "name": "Basilika Vierzehnheiligen",
+   "obec": "Bad Staffelstein",
+   "web": "https://vierzehnheiligen.de/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "w27942164",
+   "name": "Obermain Therme",
+   "obec": "Bad Staffelstein",
+   "web": "https://www.obermaintherme.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n263837710",
+   "name": "Pfingsttagungsstätte",
+   "obec": "Bad Steben",
+   "web": "https://pfingsttagung-bobengruen.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n3105086729",
+   "name": "Feuerwehrmuseum",
+   "obec": "Bamberg",
+   "web": "https://www.feuerwehr-bamberg.de/verein/museum",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w38080707",
+   "name": "Staatliches Bauamt Bamberg",
+   "obec": "Bamberg",
+   "web": "http://www.stbaba.bayern.de/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "n8294546291",
+   "name": "Stadtbücherei Baunach",
+   "obec": "Baunach",
+   "web": "https://stadt-baunach.de/bildung-soziales/stadtbuecherei/",
+   "reason": "stránka z OSM neexistuje (HTTP 404)"
+  },
+  {
+   "osm_id": "n5890384369",
+   "name": "Archäologisches Museum",
+   "obec": "Bayreuth",
+   "web": "https://www.hvo.franken.org/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w28877521",
+   "name": "Cineplex",
+   "obec": "Bayreuth",
+   "web": "https://www.cineplex.de/bayreuth/",
+   "reason": "web odmítl přístup (HTTP 403) – neobcházeno"
+  },
+  {
+   "osm_id": "w27665102",
+   "name": "DAS ZENTRUM",
+   "obec": "Bayreuth",
+   "web": "https://www.das-zentrum.de/",
+   "reason": "web nedostupný (HTTPSConnectionPool(host='www.das-zentrum.de', port=443): Max retries )"
+  },
+  {
+   "osm_id": "w28909725",
+   "name": "Stadtbad",
+   "obec": "Bayreuth",
+   "web": "https://www.stadtwerke-bayreuth.de/baeder-wellness/stadtbad-bayreuth/rundgang-anfahrt/",
+   "reason": "web Stadtwerke Bayreuth – jen prohlášení o přístupnosti webu, o přístupnosti bazénu nic"
+  },
+  {
+   "osm_id": "n1599147178",
+   "name": "Zentrum Bayern Familie und Soziales (Versorgungsamt)",
+   "obec": "Bayreuth",
+   "web": "https://www.zbfs.bayern.de/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "w28699996",
+   "name": "Zentrum Bayern Familie und Soziales - Region Oberfranken",
+   "obec": "Bayreuth",
+   "web": "https://www.zbfs.bayern.de/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "w96153961",
+   "name": "Schützengesellschaft 1965 e.V. Breitengüßbach",
+   "obec": "Breitengüßbach",
+   "web": "https://sg-breitenguessbach.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w52331382",
+   "name": "Rathaus Burgkunstadt",
+   "obec": "Burgkunstadt",
+   "web": "http://www.burgkunstadt.de/",
+   "reason": "web odmítl přístup (HTTP 403) – neobcházeno"
+  },
+  {
+   "osm_id": "n1350231416",
+   "name": "AWO Treff am Bürglaßschlösschen",
+   "obec": "Coburg",
+   "web": "http://www.awo-treff-coburg.de/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "n251352696",
+   "name": "Kino Utopolis",
+   "obec": "Coburg",
+   "web": "https://www.utopolis-coburg.com/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w28315237",
+   "name": "Naturkundemuseum",
+   "obec": "Coburg",
+   "web": "http://www.naturkunde-museum-coburg.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n13236774217",
+   "name": "Zukunftsraum",
+   "obec": "Coburg",
+   "web": "https://zukunftsraum.coburg.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w473277443",
+   "name": "Kurt-Heller-Halle",
+   "obec": "Creidlitz",
+   "web": "https://www.tv-ketschendorf.de/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "w64690388",
+   "name": "Zu unserer lieben Frau",
+   "obec": "Dormitz",
+   "web": "https://www.pfarrei-dormitz-kleinsendelbach.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n6410286885",
+   "name": "Bürgerhaus Dörfles-Esbach",
+   "obec": "Dörfles-Esbach",
+   "web": "https://doerfles-esbach.de",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "n4402169290",
+   "name": "Eggerbachhalle",
+   "obec": "Eggolsheim",
+   "web": "https://www.eggolsheim.de/raumbelegung",
+   "reason": "stránka z OSM neexistuje (HTTP 404); ostatní stránky webu obce jen prohlášení o přístupnosti webu"
+  },
+  {
+   "osm_id": "n7459126588",
+   "name": "Pfarrsaal St. Martin",
+   "obec": "Eggolsheim",
+   "web": "https://seelsorgeeinheit-eggolsheim.de/kirchen/pfarrkirche-st--martin",
+   "reason": "stránka z OSM neexistuje (HTTP 404)"
+  },
+  {
+   "osm_id": "n1923983818",
+   "name": "Bürgerzentrum-Mehrgenerationenhaus",
+   "obec": "Forchheim",
+   "web": "https://www.mehrgenerationenhaeuser.de/burgerzentrum-mehrgenerationenhaus",
+   "reason": "stránka z OSM neexistuje (HTTP 404)"
+  },
+  {
+   "osm_id": "w56043454",
+   "name": "Evangelisch-Lutherische St.-Johannis-Kirche Gemeindehaus",
+   "obec": "Forchheim",
+   "web": "http://www.forchheim-stjohannis.de/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "n254488421",
+   "name": "KinoCenter Forchheim, union apollo domino",
+   "obec": "Forchheim",
+   "web": "https://www.kino-fo.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n892729300",
+   "name": "Bauernmuseum Bamberger Land",
+   "obec": "Frensdorf",
+   "web": "http://www.Bauernmuseum-Frensdorf.de",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "w80868327",
+   "name": "Basilika zur Heiligsten Dreifaltigkeit",
+   "obec": "Gößweinstein",
+   "web": "https://www.pfarrgemeinde-goessweinstein.de/index.html",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w290173418",
+   "name": "Pfarr- und Wallfahrtszentrum Gößweinstein",
+   "obec": "Gößweinstein",
+   "web": "https://www.pfarrgemeinde-goessweinstein.de/einrichtungen/pwz.html",
+   "reason": "stránka z OSM neexistuje (HTTP 404)"
+  },
+  {
+   "osm_id": "n11537407194",
+   "name": "Wallfahrtsmuseum Gößweinstein",
+   "obec": "Gößweinstein",
+   "web": "https://www.wallfahrtsmuseum.info/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n9178143521",
+   "name": "Pfarrheim Jura-Aisch",
+   "obec": "Hallerndorf",
+   "web": "https://pfarreien.erzbistum-bamberg.de/dekanate-2019/dekanat-forchheim/jura-aisch/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "w34775019",
+   "name": "Stadtbücherei Sankt Kilian",
+   "obec": "Hallstadt",
+   "web": "https://www.stadtbuecherei-hallstadt.de/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "n6384121031",
+   "name": "Helmbrechts Filmwerk",
+   "obec": "Helmbrechts",
+   "web": "http://gunga.projekt-pur.de/index.php?id=9",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w83148985",
+   "name": "Alte Schule",
+   "obec": "Hirschaid",
+   "web": "https://www.kulturbuehne-hirschaid.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w62277559",
+   "name": "RegnitzArena",
+   "obec": "Hirschaid",
+   "web": "http://www.regnitzarena.de/",
+   "reason": "robots.txt zakazuje procházení – nepřistupováno"
+  },
+  {
+   "osm_id": "w1546579778",
+   "name": "Museum Bayerisches Vogtland",
+   "obec": "Hof",
+   "web": "https://museum-hof.de/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "w53843904",
+   "name": "Kintopp",
+   "obec": "Hollfeld",
+   "web": "https://www.kintopp-online.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1832184064",
+   "name": "Musikverein Kirchehrenbach e.V.",
+   "obec": "Kirchehrenbach",
+   "web": "https://www.musikverein-kirchehrenbach.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w82442718",
+   "name": "Crana Mare",
+   "obec": "Kronach",
+   "web": "https://crana-mare.de/",
+   "reason": "web (kronach.de) popisuje bezbariérovost radnice, o bazénu Crana Mare nic"
+  },
+  {
+   "osm_id": "n258321221",
+   "name": "Bücherei am Stadtpark",
+   "obec": "Kulmbach",
+   "web": "https://www.kulmbach.de/xist4c/web/Buecherei-am-Stadtpark_id_947_.htm",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w186469477",
+   "name": "Hallenbad Kulmbach",
+   "obec": "Kulmbach",
+   "web": "https://www.stadtwerke-kulmbach.de/index.php?id=93",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w50717667",
+   "name": "Stadthalle Lichtenfels",
+   "obec": "Lichtenfels",
+   "web": "https://www.lichtenfels.de/kultur-und-tourismus/veranstaltungsorte/stadthalle",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "n656479398",
+   "name": "Cineplanet Marktredwitz",
+   "obec": "Marktredwitz",
+   "web": "https://www.cineplanet.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w228094710",
+   "name": "Waldhaus Mehlmeisel",
+   "obec": "Mehlmeisel",
+   "web": "https://www.waldhaus-mehlmeisel.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w350669809",
+   "name": "Evangelisches Gemeindehaus",
+   "obec": "Neunkirchen am Brand",
+   "web": "https://www.neunkirchen-am-brand-evangelisch.de/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BITV/BFSG) nebo odkaz v navigaci, o přístupnosti místa nic"
+  },
+  {
+   "osm_id": "w129819559",
+   "name": "Synagoge Ermreuth / Jüdisches Museum",
+   "obec": "Neunkirchen am Brand",
+   "web": "http://www.synagoge-museum-ermreuth.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  }
+ ],
+ "sources": [
+  "https://dioezesanmuseum-bamberg.de/besuch/anreise/",
+  "https://kaiserpfalz.forchheim.de/de/besucherinfo/barrierefreiheit/",
+  "https://landestheater-coburg.de/besuch/service",
+  "https://levi-strauss-museum.de/besucherinfo/",
+  "https://plassenburg.de/de/ihr-besuch/barrierefreiheit",
+  "https://stadtbibliothek.bayreuth.de/kontakt/barrierefreiheit/",
+  "https://stadtbuecherei-bamberg.de/oeffnungszeiten-standorte/",
+  "https://welterbe.bamberg.de/de/besuchszentrum",
+  "https://www.bademehr.de/",
+  "https://www.bamberg-ce.de/barrierefreiheit/",
+  "https://www.bayreuth-wilhelmine.de/deutsch/tourist/mobilitaet_neues-schloss.htm",
+  "https://www.bayreuther-festspiele.de/karten-service/barrierefreiheit/",
+  "https://www.fritz-einkaufszentrum.de/das-fritz/service/272-barrierefreiheit-im-center.html",
+  "https://www.historisches-museum-bayreuth.de/besuch/besuch-planen/",
+  "https://www.hss.de/museum-kloster-banz/informationen/",
+  "https://www.iwalewahaus.uni-bayreuth.de/de/besuch/index.html",
+  "https://www.landesbibliothek-coburg.de/landesbibliothek-coburg/anschrift-kontakte/",
+  "https://www.motion-kommunikation.de/seebuehne/",
+  "https://www.schloss-callenberg.com/zugriff/",
+  "https://www.wagnermuseum.de/informationen/oeffnungszeiten-und-infos/",
+  "OpenStreetMap (ODbL) – vstupní seznam míst, souřadnice a adresy, data/research/inputs_by/horni-franky_cile.json"
+ ]
+}

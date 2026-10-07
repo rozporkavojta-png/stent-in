@@ -1,0 +1,275 @@
+[
+ {
+  "id": "cz-hlavni-mesto-praha",
+  "nazev": "Hlavní město Praha",
+  "zeme": "cz",
+  "bbox": [
+   14.26159,
+   49.9522,
+   14.68094,
+   50.17141
+  ],
+  "pocet": 7372,
+  "soubor": "data/regions/cz-hlavni-mesto-praha.json"
+ },
+ {
+  "id": "cz-jihocesky",
+  "nazev": "Jihočeský",
+  "zeme": "cz",
+  "bbox": [
+   13.56757,
+   48.60465,
+   15.58762,
+   49.54995
+  ],
+  "pocet": 2075,
+  "soubor": "data/regions/cz-jihocesky.json"
+ },
+ {
+  "id": "cz-jihomoravsky",
+  "nazev": "Jihomoravský",
+  "zeme": "cz",
+  "bbox": [
+   15.59773,
+   48.71786,
+   17.59325,
+   49.61203
+  ],
+  "pocet": 2841,
+  "soubor": "data/regions/cz-jihomoravsky.json"
+ },
+ {
+  "id": "cz-karlovarsky",
+  "nazev": "Karlovarský",
+  "zeme": "cz",
+  "bbox": [
+   12.10153,
+   49.93735,
+   13.25467,
+   50.43582
+  ],
+  "pocet": 617,
+  "soubor": "data/regions/cz-karlovarsky.json"
+ },
+ {
+  "id": "cz-kralovehradecky",
+  "nazev": "Královéhradecký",
+  "zeme": "cz",
+  "bbox": [
+   15.13552,
+   50.05465,
+   16.55265,
+   50.77206
+  ],
+  "pocet": 1091,
+  "soubor": "data/regions/cz-kralovehradecky.json"
+ },
+ {
+  "id": "cz-liberecky",
+  "nazev": "Liberecký",
+  "zeme": "cz",
+  "bbox": [
+   14.39187,
+   50.51462,
+   15.59732,
+   51.02091
+  ],
+  "pocet": 859,
+  "soubor": "data/regions/cz-liberecky.json"
+ },
+ {
+  "id": "cz-moravskoslezsky",
+  "nazev": "Moravskoslezský",
+  "zeme": "cz",
+  "bbox": [
+   17.2104,
+   49.40018,
+   18.83387,
+   50.2751
+  ],
+  "pocet": 3366,
+  "soubor": "data/regions/cz-moravskoslezsky.json"
+ },
+ {
+  "id": "cz-olomoucky",
+  "nazev": "Olomoucký",
+  "zeme": "cz",
+  "bbox": [
+   16.76678,
+   49.30083,
+   17.8725,
+   50.44053
+  ],
+  "pocet": 1131,
+  "soubor": "data/regions/cz-olomoucky.json"
+ },
+ {
+  "id": "cz-pardubicky",
+  "nazev": "Pardubický",
+  "zeme": "cz",
+  "bbox": [
+   15.41238,
+   49.59283,
+   16.83272,
+   50.1771
+  ],
+  "pocet": 925,
+  "soubor": "data/regions/cz-pardubicky.json"
+ },
+ {
+  "id": "cz-plzensky",
+  "nazev": "Plzeňský",
+  "zeme": "cz",
+  "bbox": [
+   12.40922,
+   49.02349,
+   13.78682,
+   50.04676
+  ],
+  "pocet": 2604,
+  "soubor": "data/regions/cz-plzensky.json"
+ },
+ {
+  "id": "cz-stredocesky",
+  "nazev": "Středočeský",
+  "zeme": "cz",
+  "bbox": [
+   13.46883,
+   49.51862,
+   15.48993,
+   50.56011
+  ],
+  "pocet": 2741,
+  "soubor": "data/regions/cz-stredocesky.json"
+ },
+ {
+  "id": "cz-ustecky",
+  "nazev": "Ústecký",
+  "zeme": "cz",
+  "bbox": [
+   12.97654,
+   50.09743,
+   14.6382,
+   51.0252
+  ],
+  "pocet": 1145,
+  "soubor": "data/regions/cz-ustecky.json"
+ },
+ {
+  "id": "cz-vysocina",
+  "nazev": "Vysočina",
+  "zeme": "cz",
+  "bbox": [
+   14.94544,
+   48.96513,
+   16.39886,
+   49.81959
+  ],
+  "pocet": 1076,
+  "soubor": "data/regions/cz-vysocina.json"
+ },
+ {
+  "id": "cz-zlinsky",
+  "nazev": "Zlínský",
+  "zeme": "cz",
+  "bbox": [
+   17.16364,
+   48.88562,
+   18.36479,
+   49.51968
+  ],
+  "pocet": 568,
+  "soubor": "data/regions/cz-zlinsky.json"
+ },
+ {
+  "id": "de-dolni-bavorsko",
+  "nazev": "Dolní Bavorsko",
+  "zeme": "de",
+  "bbox": [
+   11.67847,
+   48.23138,
+   13.81883,
+   49.14338
+  ],
+  "pocet": 3497,
+  "soubor": "data/regions/de-dolni-bavorsko.json"
+ },
+ {
+  "id": "de-dolni-franky",
+  "nazev": "Dolní Franky",
+  "zeme": "de",
+  "bbox": [
+   8.99324,
+   49.49383,
+   10.86021,
+   50.5505
+  ],
+  "pocet": 6147,
+  "soubor": "data/regions/de-dolni-franky.json"
+ },
+ {
+  "id": "de-horni-bavorsko",
+  "nazev": "Horní Bavorsko",
+  "zeme": "de",
+  "bbox": [
+   10.73647,
+   47.3952,
+   13.09505,
+   49.0638
+  ],
+  "pocet": 20847,
+  "soubor": "data/regions/de-horni-bavorsko.json"
+ },
+ {
+  "id": "de-horni-falc",
+  "nazev": "Horní Falc",
+  "zeme": "de",
+  "bbox": [
+   11.2845,
+   48.83584,
+   13.15907,
+   50.0293
+  ],
+  "pocet": 3838,
+  "soubor": "data/regions/de-horni-falc.json"
+ },
+ {
+  "id": "de-horni-franky",
+  "nazev": "Horní Franky",
+  "zeme": "de",
+  "bbox": [
+   10.45868,
+   49.59415,
+   12.22983,
+   50.51862
+  ],
+  "pocet": 5075,
+  "soubor": "data/regions/de-horni-franky.json"
+ },
+ {
+  "id": "de-stredni-franky",
+  "nazev": "Střední Franky",
+  "zeme": "de",
+  "bbox": [
+   10.1273,
+   48.88788,
+   11.55595,
+   49.77525
+  ],
+  "pocet": 8399,
+  "soubor": "data/regions/de-stredni-franky.json"
+ },
+ {
+  "id": "de-svabsko",
+  "nazev": "Švábsko",
+  "zeme": "de",
+  "bbox": [
+   9.6085,
+   47.28899,
+   11.18785,
+   48.9565
+  ],
+  "pocet": 7795,
+  "soubor": "data/regions/de-svabsko.json"
+ }
+]

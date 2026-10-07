@@ -1,0 +1,632 @@
+{
+ "task": "web_dolni-bavorsko_restaurace",
+ "kraj": "Dolní Bavorsko",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "note": "Prošlo 70 webů (úvodní stránka + max 6 podstránek), respektován robots.txt. Souřadnice z OSM. Pole wheelchair_claim vyjadřuje tvrzení webu: 'unknown' = web zmiňuje jen bezbariérové pokoje hotelu, ne restauraci.",
+ "places": [
+  {
+   "osm_id": "n6566218152",
+   "name": "Al Monte",
+   "obec": "Dingolfing",
+   "address": "Obere Stadt 21",
+   "lat": 48.626892,
+   "lng": 12.495509,
+   "category": "restaurace",
+   "source_url": "https://www.al-monte.de/uber-uns/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Restaurace je podle webu bezbariérově přístupná, vstup bez schodů (stufenlos)."
+   },
+   "measurements": [],
+   "evidence_quote": "Barrierefreiheit: Unser Restaurant ist stufenlos zugänglich."
+  },
+  {
+   "osm_id": "n2340035764",
+   "name": "Vis a Vis",
+   "obec": "Deggendorf",
+   "address": "Lateinschulgasse 15",
+   "lat": 48.831344,
+   "lng": 12.95998,
+   "category": "restaurace",
+   "source_url": "https://bistro-visavis.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle webu je bistro dostupné bezbariérově.",
+    "parkovani": "Parkovací místa přímo před vchodem (bez zmínky o vyhrazeném stání).",
+    "jine": "Cca 80 míst uvnitř, v létě dalších 30 na terase; přístupnost terasy web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Wir sind barrierefrei zu erreichen und Parkplätze gibt es genau vor der Tür."
+  },
+  {
+   "osm_id": "n10229022955",
+   "name": "NEUN 36",
+   "obec": "Deggendorf",
+   "address": "Edlmairstraße 1",
+   "lat": 48.830619,
+   "lng": 12.958016,
+   "category": "restaurace",
+   "source_url": "https://www.neun36.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "Restaurace je v 9. patře věže KARL-Turm; přístup výtahem od hlavního vchodu v Edlmairstraße.",
+    "vytah": "Ano – výtah u hlavního vchodu (rozměry neuvedeny).",
+    "parkovani": "Parkoviště „PARKEN AM TURM“ kolem věže a značená parkoviště u hlavního vchodu; parkovací lístek restaurace orazítkuje zdarma. Vyhrazená stání neuvedena.",
+    "jine": "Střešní terasa ve stejném patře; slovo „barrierefrei“ ani informace o WC web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Benutzen Sie bitte den Aufzug am Haupteingang"
+  },
+  {
+   "osm_id": "w96619863",
+   "name": "McDonald's",
+   "obec": "Eugenbach",
+   "address": "Ludwig-Erhard-Straße 2",
+   "lat": 48.539077,
+   "lng": 12.095988,
+   "category": "restaurace",
+   "source_url": "https://www.mcdonalds-landshut.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Provozovatel (franšíza McDonald's Landshut) uvádí, že bezbariérové toalety jsou u nich samozřejmostí (obecně pro všechny jeho restaurace).",
+    "parkovani": "Ve všech restauracích provozovatele jsou vyhrazená parkovací místa pro osoby s postižením.",
+    "jine": "Údaj je souhrnný za všechny pobočky provozovatele (Landshut-Münchnerau, Landshut-Nord, Weixerau, Wörth), ne konkrétně za tuto."
+   },
+   "measurements": [],
+   "evidence_quote": "Auch der Bau von behindertengerechten Toiletten ist für uns eine Selbstverständlichkeit."
+  },
+  {
+   "osm_id": "w32639764",
+   "name": "Eisensteiner Hütte",
+   "obec": "Bayerisch Eisenstein",
+   "address": null,
+   "lat": 49.113431,
+   "lng": 13.13948,
+   "category": "restaurace",
+   "source_url": "https://www.arber.de/sommer/barrierefrei-auf-den-berg/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Chata u horní stanice kabinové lanovky na Velký Javor; web ji označuje jako „barrierearm“ (s omezenými bariérami); přístup panoramatickým výtahem od horní stanice.",
+    "vytah": "Panoramatický výtah u horní stanice lanovky.",
+    "parkovani": "Na Velkém Javoru jsou bezbariérová parkovací místa v blízkosti zařízení (zdroj: https://www.arber.de/service/parken/); parkování je placené.",
+    "jine": "Kabinovou lanovku mohou využít vozíčkáři – personál pomáhá při nástupu/výstupu a kabinu zastaví. Bezbariérové WC web výslovně neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Der Panoramaaufzug und die barrierearme Eisensteiner Hütte an der Bergstation"
+  },
+  {
+   "osm_id": "n533621689",
+   "name": "ArberSeehaus am Großen Arbersee",
+   "obec": "Bayerisch Eisenstein",
+   "address": null,
+   "lat": 49.098536,
+   "lng": 13.158991,
+   "category": "restaurace",
+   "source_url": "https://www.arber.de/sommer/barrierefrei-auf-den-berg/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Provozovatel areálu Velký Javor (Arber) uvádí Arberseehaus u Velkého Javorského jezera jako bezbariérovou alternativu, určenou pro hosty hledající bezbariérový přístup.",
+    "jine": "U jezera vede okružní stezka s omezenými bariérami, vhodná pro vozíčkáře s doprovodem. Vlastní web Arberseehaus (arbersee.arber.de) nebyl dostupný (DNS chyba); detaily WC a vstupu neuvedeny."
+   },
+   "measurements": [],
+   "evidence_quote": "Das Arberseehaus ist speziell für Gäste konzipiert, die barrierefreien Zugang und Komfort suchen"
+  },
+  {
+   "osm_id": "n605005342",
+   "name": "Zum Kuchlbauer",
+   "obec": "Abensberg",
+   "address": "Stadtplatz 2",
+   "lat": 48.815188,
+   "lng": 11.846205,
+   "category": "restaurace",
+   "source_url": "https://www.zum-kuchlbauer.de/hotel/save-the-date/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "pokoj": "Hotel má dva bezbariérové dvoulůžkové pokoje (cca 27 m²) ve 2. patře, boxspring postele s nižším nástupem.",
+    "koupelna": "Prostorná koupelna s bezbariérovou sprchou a WC.",
+    "vytah": "Ano – 2. patro je dostupné výtahem.",
+    "jine": "O přístupnosti samotné restaurace web nic neuvádí."
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérového pokoje",
+     "hodnota": 27,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Die Zimmer befinden sich im 2. Stock, welcher über unseren Aufzug erreichbar ist!"
+  },
+  {
+   "osm_id": "n511632716",
+   "name": "Cafe \"Paracelsus\"",
+   "obec": "Bad Füssing",
+   "address": "Paracelsusstraße 12",
+   "lat": 48.350855,
+   "lng": 13.324114,
+   "category": "restaurace",
+   "source_url": "https://www.hotel-waldeck.de/de/preise/hotelzimmerpreise.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "pokoj": "Kavárna patří k hotelu Waldeck; ten nabízí apartmán Top-Suite (2 pokoje, 53 m²) „behindertengerecht“, zařízený pro vozíčkáře, v přízemí s balkonem; elektricky polohovatelná postel.",
+    "koupelna": "V koupelně u WC dvě sklopná madla; bezbariérová sprcha a WC.",
+    "jine": "O přístupnosti kavárny/restaurace web nic neuvádí; stránka „Barrierefreiheit“ se týká jen přístupnosti webu."
+   },
+   "measurements": [
+    {
+     "co": "plocha apartmánu pro vozíčkáře",
+     "hodnota": 53,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Dieses Appartement hat zwei Zimmer und ist für Rollstuhlfahrer eingerichtet."
+  },
+  {
+   "osm_id": "w205993371",
+   "name": "GutsAlm Harlachberg",
+   "obec": "Bodenmais",
+   "address": "Harlachberg 1",
+   "lat": 49.046686,
+   "lng": 13.08318,
+   "category": "restaurace",
+   "source_url": "https://harlachberg.de/zimmer-preise/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "pokoj": "Dva z pokojů pro hosty jsou bezbariérové a vhodné pro alergiky, s přímým přístupem do statku s výčepní místností (Gaststube Heinrich).",
+    "jine": "Samostatnou informaci o přístupnosti restaurace ani WC pro hosty restaurace web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Zwei der Gästezimmer sind barrierefrei und allergikerfreundlich ausgestattet"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n2294441003",
+   "name": "Gastwirtschaft Bachhuber",
+   "obec": "Abensberg",
+   "web": "https://www.gastwirtschaft-bachhuber.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n6174576579",
+   "name": "Hofcafe Röll",
+   "obec": "Abensberg",
+   "web": "https://www.hofladen-roell.de/hofladen-und-hofcafe/",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n3854303957",
+   "name": "kommod",
+   "obec": "Abensberg",
+   "web": "https://kommod-abensberg.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n4464918214",
+   "name": "Bräustüberl",
+   "obec": "Aldersbach",
+   "web": "https://www.aldersbacher.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n4464918212",
+   "name": "Klosterhof",
+   "obec": "Aldersbach",
+   "web": "http://klosterhof-aldersbach.de",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n1872928564",
+   "name": "Mayerhofer",
+   "obec": "Aldersbach",
+   "web": "https://www.mayerhofer.org",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w111449720",
+   "name": "Huberwirt",
+   "obec": "Altdorf",
+   "web": "https://www.huberwirt-gstaudach.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n274858984",
+   "name": "Huberwirt Gstaudach",
+   "obec": "Altdorf",
+   "web": "https://www.huberwirt-gstaudach.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w85478164",
+   "name": "La Strada",
+   "obec": "Altdorf",
+   "web": "https://www.restaurant-la-strada.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n946837835",
+   "name": "Pronto Pizza",
+   "obec": "Altdorf",
+   "web": "https://www.pizzaprontolandshut.de/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n4971810667",
+   "name": "grillpoint36",
+   "obec": "Altdorf",
+   "web": "https://grillpoint36.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1751751759",
+   "name": "Zum Vilserwirt",
+   "obec": "Altfraunhofen",
+   "web": "https://www.vilserwirt.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n601051147",
+   "name": "Pandaria",
+   "obec": "Am Breinhof",
+   "web": "https://www.pandaria.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n659548940",
+   "name": "Schlossbräu",
+   "obec": "Arnstorf",
+   "web": "https://www.schlossbraeu-mariakirchen.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w76140060",
+   "name": "Schlossbräu Mariakirchen",
+   "obec": "Arnstorf",
+   "web": "https://www.schlossbraeu-mariakirchen.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1853387400",
+   "name": "Café Tanzgarten",
+   "obec": "Bad Abbach",
+   "web": "http://www.cafe-tanzgarten.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1853399982",
+   "name": "Gasthaus Zirngibl",
+   "obec": "Bad Abbach",
+   "web": "https://www.gasthauszirngibl.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w257100466",
+   "name": "Alte Taverne",
+   "obec": "Bad Füssing",
+   "web": "https://www.altetaverne.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w305704221",
+   "name": "Die Hecke",
+   "obec": "Bad Füssing",
+   "web": "https://www.die-hecke.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n511687953",
+   "name": "Havel's das Kaffeehaus-Restaurant",
+   "obec": "Bad Füssing",
+   "web": "https://www.das-havels.com/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n13103255499",
+   "name": "Schmugglerhütte",
+   "obec": "Bayerisch Eisenstein",
+   "web": "https://www.schmugglerhuette.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w797605530",
+   "name": "Akropolis Athen",
+   "obec": "Bergkeller",
+   "web": "https://www.akropolis-athen.com/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w197805822",
+   "name": "Adria",
+   "obec": "Bodenmais",
+   "web": "https://www.adria-pizzeria.de/index.php/bodenmais",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2917599800",
+   "name": "Gasthof Adam Bräu",
+   "obec": "Bodenmais",
+   "web": "https://www.adam-braeu.de/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BFSG), o přístupnosti provozovny nic"
+  },
+  {
+   "osm_id": "n10860852175",
+   "name": "Eis Bistro Bar Fontanella",
+   "obec": "Bogen",
+   "web": "https://gelateria-fontanella.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n8378955687",
+   "name": "Bäckerei Cafe Hahn",
+   "obec": "Deggendorf",
+   "web": "https://www.gaeubodenbaecker.de/hahn/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1363490790",
+   "name": "Bäckerei Hahn",
+   "obec": "Deggendorf",
+   "web": "https://www.gaeubodenbaecker.de/hahn/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n9208084995",
+   "name": "Bäckerei Schifferl",
+   "obec": "Deggendorf",
+   "web": "https://www.baeckerei-schifferl.de/standorte/filiale/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BFSG), o přístupnosti provozovny nic"
+  },
+  {
+   "osm_id": "n2340031056",
+   "name": "Cafe Floh",
+   "obec": "Deggendorf",
+   "web": "https://www.cafe-floh.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n9205038842",
+   "name": "Kaffeehaus Wiedemann",
+   "obec": "Deggendorf",
+   "web": "https://www.kaffeehaus-wiedemann.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2340019958",
+   "name": "Kouros",
+   "obec": "Deggendorf",
+   "web": "https://restaurantkouros.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n8991939948",
+   "name": "LIEB. ESS",
+   "obec": "Deggendorf",
+   "web": "https://liebess.de/home",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2340009816",
+   "name": "Maximilians",
+   "obec": "Deggendorf",
+   "web": "https://www.maximilians-restaurant.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2340033713",
+   "name": "Pommesfreunde",
+   "obec": "Deggendorf",
+   "web": "https://pommesfreunde.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n6489365652",
+   "name": "RD Road Dog",
+   "obec": "Deggendorf",
+   "web": "https://road-dog.de",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n8833688355",
+   "name": "Venezia",
+   "obec": "Deggendorf",
+   "web": "http://venezia-deggendorf.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2340013203",
+   "name": "Zur Knödelwerferin",
+   "obec": "Deggendorf",
+   "web": "https://www.knoedelwerferin-deggendorf.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n10734897852",
+   "name": "edl.eins",
+   "obec": "Deggendorf",
+   "web": "https://www.edleins.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n13105872438",
+   "name": "Cafe Max",
+   "obec": "Dingolfing",
+   "web": "https://hotel-dingolfing.de/cafe-max/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n4526290461",
+   "name": "Hong Kong",
+   "obec": "Dingolfing",
+   "web": "http://hong-kong-imbiss.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n650353725",
+   "name": "Ristorante La Fenice",
+   "obec": "Dingolfing",
+   "web": "https://www.ristorante-lafenice.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1861339137",
+   "name": "Ristorante La Veranda",
+   "obec": "Dingolfing",
+   "web": "http://www.la-veranda.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n4127907738",
+   "name": "Subway",
+   "obec": "Dingolfing",
+   "web": "http://subway-dingolfing.de/",
+   "reason": "web nedostupný (<urlopen error timed out>)"
+  },
+  {
+   "osm_id": "n651268210",
+   "name": "Yamato",
+   "obec": "Dingolfing",
+   "web": "https://yamato-dgf.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w440180569",
+   "name": "Das Oberhaus",
+   "obec": "Dobl",
+   "web": "https://www.dasoberhaus.com/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n4429662628",
+   "name": "Gasthaus Forster am See",
+   "obec": "Eching",
+   "web": "https://forster-am-see.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n667363456",
+   "name": "McDonald's",
+   "obec": "Eggenfelden",
+   "web": "https://www.mcdonalds.de/",
+   "reason": "na webu jen prohlášení o přístupnosti webových stránek (BFSG), o přístupnosti provozovny nic"
+  },
+  {
+   "osm_id": "n275125082",
+   "name": "Seeufer",
+   "obec": "Eging a.See",
+   "web": "https://seeufer-eging.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1872866418",
+   "name": "Arca Verde",
+   "obec": "Einhausen",
+   "web": "http://www.arcaverde.de",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n3812770283",
+   "name": "Biergarten Ellermühle",
+   "obec": "Ellermühle",
+   "web": "http://www.biergarten-ellermuehle.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w704493805",
+   "name": "Biergarten Thomas Emslander",
+   "obec": "Ergolding",
+   "web": "https://emslander-thomas.de/tafernwirtschaft-biergarten.html",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w164548768",
+   "name": "Biergarten Ulrich Meyer",
+   "obec": "Ergolding",
+   "web": "https://www.gasthof-meyer.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n2450707799",
+   "name": "Eiscafe Riviera",
+   "obec": "Ergolding",
+   "web": "https://eiscafe-ergolding.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n4450260992",
+   "name": "Mythos Landshut",
+   "obec": "Ergolding",
+   "web": "https://www.mythos-landshut.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n6116364044",
+   "name": "Pizza Stube",
+   "obec": "Ergolding",
+   "web": "https://www.pizzastube.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n528854572",
+   "name": "Rosenhof",
+   "obec": "Ergolding",
+   "web": "https://www.rosenhof-ergolding.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1748714101",
+   "name": "Tafernwirtschaft Thomas Emslander",
+   "obec": "Ergolding",
+   "web": "https://emslander-thomas.de/tafernwirtschaft-biergarten.html",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w179354685",
+   "name": "zum Krax´n Wirt",
+   "obec": "Ergolding",
+   "web": "http://zumkraxnwirt.eu/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n3750837873",
+   "name": "AMOdoMIO",
+   "obec": "Essenbach",
+   "web": "https://amo-do-mio.de/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n541095914",
+   "name": "Bergmueller Flori",
+   "obec": "Essenbach",
+   "web": "https://gasthaus-bergmueller.de",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "n1972169748",
+   "name": "Gasthof Luginger",
+   "obec": "Essenbach",
+   "web": "https://www.luginger.de/home/",
+   "reason": "web (úvodní stránka + podstránky) neuvádí nic o bezbariérovosti"
+  }
+ ],
+ "sources": [
+  "https://bistro-visavis.de/",
+  "https://harlachberg.de/zimmer-preise/",
+  "https://www.al-monte.de/uber-uns/",
+  "https://www.arber.de/service/parken/",
+  "https://www.arber.de/sommer/barrierefrei-auf-den-berg/",
+  "https://www.hotel-waldeck.de/de/preise/hotelzimmerpreise.html",
+  "https://www.mcdonalds-landshut.de/",
+  "https://www.neun36.de/",
+  "https://www.zum-kuchlbauer.de/hotel/save-the-date/",
+  "OpenStreetMap (ODbL) – vstupní seznam míst a souřadnice, data/research/inputs_by/dolni-bavorsko_restaurace.json"
+ ]
+}

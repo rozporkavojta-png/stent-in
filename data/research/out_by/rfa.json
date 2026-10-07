@@ -1,0 +1,37 @@
+{
+ "task": "D3a_reisen_fuer_alle",
+ "zeme": "de",
+ "kraj": "Bavorsko (všechny vládní obvody – Horní Bavorsko, Dolní Bavorsko, Horní Falc, Horní Franky, Střední Franky, Dolní Franky, Švábsko)",
+ "checked_date": "2026-10-07",
+ "places": [],
+ "not_found": [
+  {
+   "co": "Seznam certifikovaných provozů Reisen für Alle v Bavorsku",
+   "duvod": "Nepřevzato kvůli podmínkám použití. Impressum říká, že rozmnožování, šíření a jakékoli další využití obsahu nad rámec autorského zákona vyžaduje písemný souhlas autora; stažení a kopie jsou povoleny jen pro soukromé nekomerční použití. Web nemá žádnou otevřenou licenci (CC, open data). Data o certifikovaných provozech poskytuje provozovatel jen kooperačním partnerům (web-widget, Partner-Gateway). Jako volnou cestu uvádí jen prosté odkázání na web projektu. Systematický výpis databáze by navíc mohl narazit na zvláštní právo pořizovatele databáze (§ 87b UrhG). Podle pravidel projektu (data bez otevřené licence nepřebírat) proto žádné provozy, stupně certifikace, platnosti ani odkazy na detaily nepřebírám.",
+   "evidence_quote": "Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
+   "source_url": "https://reisen-fuer-alle.de/impressum/"
+  }
+ ],
+ "terms_check": {
+  "impressum_url": "https://reisen-fuer-alle.de/impressum/",
+  "nutzungsbedingungen_url": "https://www.reisen-fuer-alle.de/nutzungsbedingungen – neexistuje (HTTP 404); samostatné podmínky použití web nemá",
+  "provozovatel": "Bayern Tourist GmbH (BTG), München – od ledna 2024 provozovatel, koordinační i zkušební místo; všechna užívací práva k systému drží spolkové ministerstvo hospodářství (dříve DSFT).",
+  "provozovatel_quote": "Seit Januar 2024 ist die Bayern Tourist GmbH (BTG) sowohl Betreiber als auch Koordinierungs- sowie Prüfstelle",
+  "urheberrecht": "Vervielfältigung, Bearbeitung, Verbreitung … bedürfen der schriftlichen Zustimmung des jeweiligen Autors",
+  "otevrena_licence": "žádná nenalezena (hledáno: Lizenz, Open Data, CC BY, Creative Commons na úvodní stránce, Impressum a stránkách pro partnery)",
+  "robots_txt": "Zakazuje jen /wp-admin/; to ale neznamená licenci k převzetí obsahu.",
+  "povolene_cesty": [
+   "Prosté odkázání na web projektu (Einfache Verlinkung) – vhodné jako odkaz na vyhledávání certifikovaných provozů na kudyprojedu.cz.",
+   "Stát se bezplatným kooperačním partnerem (kontakt: bundeskoordinierung-rfa@btg-service.de, +49 89 28760 123) a získat přístup k web-widgetu nebo Partner-Gateway, případně písemný souhlas s převzetím dat."
+  ],
+  "partner_quote": "Über das Partner-Gateway können Sie zertifizierte Angebote direkt aus der „Reisen für Alle“-Datenbank übernehmen.",
+  "partner_url": "https://reisen-fuer-alle.de/unsere-partner/"
+ },
+ "sources": [
+  {"url": "https://reisen-fuer-alle.de/impressum/", "co": "Impressum – autorská práva, provozovatel BTG, kontakt", "licence": "bez otevřené licence"},
+  {"url": "https://reisen-fuer-alle.de/unsere-partner/", "co": "Nabídka pro kooperační partnery: web-widget, Partner-Gateway, prosté odkázání", "licence": "bez otevřené licence"},
+  {"url": "https://reisen-fuer-alle.de/kennzeichnung-kommunizieren/", "co": "Certifikované provozy mají anglické záznamy i na webu DZT (Deutsche Zentrale für Tourismus)", "licence": "bez otevřené licence"},
+  {"url": "https://reisen-fuer-alle.de/robots.txt", "co": "robots.txt (zakazuje jen /wp-admin/)"},
+  {"url": "https://reisen-fuer-alle.de/", "co": "Hlavní web Reisen für Alle – vyhledávání certifikovaných nabídek; odkazovat jako zdroj"}
+ ]
+}

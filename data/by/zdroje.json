@@ -1,0 +1,831 @@
+{
+ "otevrena_data": [
+  {
+   "nazev": "OpenStreetMap – výřezy pro vládní obvody Bavorska (Geofabrik)",
+   "url": "https://download.geofabrik.de/europe/germany/bayern.html",
+   "licence": "ODbL 1.0, https://opendatacommons.org/licenses/odbl/",
+   "dolozka": "© přispěvatelé OpenStreetMap (openstreetmap.org/copyright), ODbL",
+   "pocet": 54054
+  },
+  {
+   "nazev": "Stadt Würzburg – Nette Toiletten im Stadtgebiet Würzburg (záznamy typu „Barrierefreie WC-Anlage“)",
+   "url": "https://opendata.wuerzburg.de/explore/dataset/barrierefreie-toiletten-im-stadtgebiet-wuerzburg/",
+   "licence": "dl-de/by-2-0 (Datenlizenz Deutschland – Namensnennung – Version 2.0), https://www.govdata.de/dl-de/by-2-0; ověřeno v metadatech portálu ODS (pole license) i v katalogu open.bydata.de (dataset barrierefreie-toiletten-im-stadtgebiet-wuerzburg-wuerzburg)",
+   "dolozka": "Datenquelle: Stadt Würzburg (opendata.wuerzburg.de), Datenlizenz Deutschland – Namensnennung – Version 2.0 (https://www.govdata.de/dl-de/by-2-0). Data upravena: výběr bezbariérových WC, převod popisu do češtiny a strukturovaných údajů.",
+   "pocet": 38,
+   "soubor": "zdroje_franky.json"
+  },
+  {
+   "nazev": "Stadt Würzburg – Sozialmonitoring – Inklusion (bezbariérové zastávky, počet osob s těžkým postižením)",
+   "url": "https://opendata.wuerzburg.de/explore/dataset/sozialmonitoring-justizielle-fallzahlen/",
+   "licence": "dl-de/by-2-0 (pole license v metadatech portálu ODS; katalog open.bydata.de: sozialmonitoring-justizielle-fallzahlen-wuerzburg)",
+   "dolozka": "Datenquelle: Stadt Würzburg, Fachabteilung Soziales (opendata.wuerzburg.de), Datenlizenz Deutschland – Namensnennung – Version 2.0 (https://www.govdata.de/dl-de/by-2-0). Použito jen pro statistiky v tema_bavorsko_franky.md.",
+   "pocet": 0,
+   "soubor": "zdroje_franky.json"
+  },
+  {
+   "nazev": "Landeshauptstadt München – WC-Standorte der Landeshauptstadt München (WC-Finder)",
+   "url": "https://opendata.muenchen.de/dataset/wc_finder",
+   "licence": "dl-de/by-2-0 (Datenlizenz Deutschland – Namensnennung – Version 2.0), https://www.govdata.de/dl-de/by-2-0; ověřeno v CKAN metadatech opendata.muenchen.de (license_id dl-by-de/2.0, extras „GeoPortal Lizenz“) a v katalogu open.bydata.de",
+   "dolozka": "Datenquelle: Landeshauptstadt München – GeodatenService (www.muenchen.de/rathaus/Stadtverwaltung/Kommunalreferat/geodatenservice), Datenlizenz Deutschland – Namensnennung – Version 2.0. Data upravena: kabiny na stejném místě sloučeny do jednoho místa, údaje převedeny do češtiny.",
+   "pocet": 303,
+   "soubor": "zdroje_mnichov.json"
+  },
+  {
+   "nazev": "Landeshauptstadt München – Behindertenparkplätze (allgemeine, auf öffentlichem Grund)",
+   "url": "https://opendata.muenchen.de/dataset/behindertenparkplaetze",
+   "licence": "dl-de/by-2-0; CKAN metadata opendata.muenchen.de (license_id dl-by-de/2.0, extras „GeoPortal Lizenz“)",
+   "dolozka": "dl-de/by-2-0: Landeshauptstadt München – opendata.muenchen.de (Mobilitätsreferat). Data upravena: převod do češtiny a schématu kudyprojedu.",
+   "pocet": 569,
+   "soubor": "zdroje_mnichov.json"
+  },
+  {
+   "nazev": "P+R Park & Ride GmbH München – P+R Anlagen München (Stand 06/2025), jen zařízení s vyhrazenými stáními",
+   "url": "https://opendata.muenchen.de/dataset/p-r-anlagen-muenchen",
+   "licence": "dl-de/by-2-0; CKAN metadata (license_id dl-by-de/2.0, licence zdroje http://dcat-ap.de/def/licenses/dl-by-de/2.0)",
+   "dolozka": "Datenquelle: P+R Park & Ride GmbH München über opendata.muenchen.de, Datenlizenz Deutschland – Namensnennung – Version 2.0. Data upravena: výběr zařízení s Behindertenstellplätze > 0, souřadnice převedeny z formátu stupně/minuty/sekundy.",
+   "pocet": 29,
+   "soubor": "zdroje_mnichov.json"
+  },
+  {
+   "nazev": "Landeshauptstadt München – Bundestagswahl 2025 – Wahlräume in München (CSV + bodová vrstva Shape)",
+   "url": "https://opendata.muenchen.de/dataset/bundestagswahl-2025-wahlraeume-in-muenchen",
+   "licence": "dl-de/by-2-0; CKAN metadata (license_id dl-by-de/2.0, u obou zdrojů licence http://dcat-ap.de/def/licenses/dl-by-de/2.0)",
+   "dolozka": "Datenquelle: Landeshauptstadt München, Kreisverwaltungsreferat – Wahlen und Abstimmungen (opendata.muenchen.de), Datenlizenz Deutschland – Namensnennung – Version 2.0. Data upravena: okrsky ve stejné budově sloučeny, souřadnice převedeny z ETRS89/UTM 32N do WGS84.",
+   "pocet": 200,
+   "soubor": "zdroje_mnichov.json"
+  },
+  {
+   "nazev": "Stadt Haar – Verzeichnis der Points of Interest (POI) der Stadt Haar, jen záznamy „Behindertenparkplatz“",
+   "url": "https://open.bydata.de/datasets/poi-haar",
+   "licence": "CC BY 4.0 (http://dcat-ap.de/def/licenses/cc-by/4.0) podle metadat distribuce v katalogu open.bydata.de (katalog haar-import)",
+   "dolozka": "Datenquelle: Stadt Haar (www.gemeinde-haar.de), CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Data upravena: výběr vyhrazených stání; souřadnice doplněny z Nominatim/OpenStreetMap (© OpenStreetMap contributors, ODbL) na úrovni ulice. 1 záznam (Ottendichler Straße) nebyl v Haar nalezen a je vynechán.",
+   "pocet": 6,
+   "soubor": "zdroje_mnichov.json"
+  },
+  {
+   "nazev": "BayernCloud Tourismus – Attraktionen in Bayern (jen objekty v Horním Bavorsku a Švábsku s údajem o bezbariérovosti a otevřenou licencí objektu)",
+   "url": "https://open.bydata.de/datasets/https-data-bayerncloud-digital-api-v4-endpoints-list_attractions",
+   "licence": "licence po objektech (pole sdLicense a cc:license): převzato jen CC BY 4.0 (81) a CC0 1.0 (4); objekty s CC BY-SA 4.0 (49 s údajem o bezbariérovosti) vynechány. Distribuce v katalogu open.bydata.de uvádí CC BY-SA 4.0 pro souhrnný soubor, popis sady říká, že každý objekt má vlastní licenci (CC0, CC BY nebo CC BY-SA).",
+   "dolozka": "Datenquelle: BayernCloud Tourismus (Bayern Tourismus Marketing GmbH, https://bayerncloud.digital/), licence podle objektu CC BY 4.0, resp. CC0 1.0; u každého místa uveden copyrightNotice poskytovatele (x[].attribution, např. „CC BY 4.0 Chiemsee-Alpenland Tourismus“). Data upravena: převzata jen označení a popisy bezbariérovosti, bez obrázků.",
+   "pocet": 85,
+   "soubor": "zdroje_mnichov.json"
+  },
+  {
+   "nazev": "Stadt Augsburg – Sozialwesen – Schwerbehinderte (statistika, jen pro tema_bavorsko_mnichov.md)",
+   "url": "https://open.bydata.de/datasets/http-informationsportal-augsburg-de-opendataaugsburg-dataset-de-by-augsburg-sozialwesen_-_schwerbehinderte",
+   "licence": "CC BY 4.0 (metadata distribuce v open.bydata.de, katalog augsburg-statistik)",
+   "dolozka": "Datenquelle: Stadt Augsburg, Amt für Statistik und Stadtforschung (informationsportal.augsburg.de), CC BY 4.0. Použito jen pro statistiky.",
+   "pocet": 0,
+   "soubor": "zdroje_mnichov.json"
+  },
+  {
+   "nazev": "Stadt Augsburg – Nachhaltigkeitsbericht K3.1 Beschäftigte mit Behinderungsgrad 50 (statistika)",
+   "url": "https://open.bydata.de/datasets/nachhaltigkeitsbericht-augsburg-k3-1-beschaeftigte-mit-behinderungsgrad-50",
+   "licence": "CC BY 4.0 (metadata distribuce v open.bydata.de, katalog augsburg-subcatalog)",
+   "dolozka": "Datenquelle: Stadt Augsburg (augsburg.de, Smart City Open Data), CC BY 4.0. Použito jen pro statistiky.",
+   "pocet": 0,
+   "soubor": "zdroje_mnichov.json"
+  },
+  {
+   "nazev": "DB InfraGO AG – OpenStation (NeTEx, EU PI Stop Offer / Inventory of Assets TSI-PRM): nádraží a zastávky DB v Bavorsku s údaji o bezbariérovosti",
+   "url": "https://mobilithek.info/offers/879076212433727488",
+   "licence": "CC0 1.0 (public domain), https://creativecommons.org/publicdomain/zero/1.0/ ; ověřeno v README https://github.com/dbinfrago/openstation-docs (sekce License)",
+   "dolozka": "Datenquelle: DB InfraGO AG, OpenStation (https://mobilithek.info/offers/879076212433727488), CC0 1.0. Uvedení zdroje není povinné, uvádíme je. Souřadnice: © přispěvatelé OpenStreetMap, ODbL. Data upravena: výběr Bavorska, převod do češtiny.",
+   "pocet": 924,
+   "soubor": "zdroje_zemske.json"
+  },
+  {
+   "nazev": "Bayerisches Landesamt für Statistik – GENESIS-Online Bayern, tabulky 22711-001r, 22711-003z, 22711-004z (Schwerbehinderte) a 12411-003r (Bevölkerung)",
+   "url": "https://genesis-5-prod-extern.bayern.de/datenbank/online/statistic/22711",
+   "licence": "CC BY 4.0 (podmínky užití GENESIS-Online Bayern, sekce Nutzungsrechte / Copyright)",
+   "dolozka": "Datenquelle: Bayerisches Landesamt für Statistik – www.statistik.bayern.de (CC BY 4.0). Použito jen pro statistiky v tema_bavorsko_zemske.md.",
+   "pocet": 0,
+   "soubor": "zdroje_zemske.json"
+  },
+  {
+   "nazev": "OpenStreetMap – souřadnice nádraží (railway=station/halt v Bavorsku) a názvy obcí podle AGS",
+   "url": "https://www.openstreetmap.org/copyright",
+   "licence": "ODbL 1.0",
+   "dolozka": "© přispěvatelé OpenStreetMap, ODbL 1.0.",
+   "pocet": 0,
+   "soubor": "zdroje_zemske.json"
+  }
+ ],
+ "reserse": [
+  {
+   "url": "https://reisen-fuer-alle.de/impressum/",
+   "co": "Impressum – autorská práva, provozovatel BTG, kontakt",
+   "licence": "bez otevřené licence",
+   "soubor": "rfa.json"
+  },
+  {
+   "url": "https://reisen-fuer-alle.de/unsere-partner/",
+   "co": "Nabídka pro kooperační partnery: web-widget, Partner-Gateway, prosté odkázání",
+   "licence": "bez otevřené licence",
+   "soubor": "rfa.json"
+  },
+  {
+   "url": "https://reisen-fuer-alle.de/kennzeichnung-kommunizieren/",
+   "co": "Certifikované provozy mají anglické záznamy i na webu DZT (Deutsche Zentrale für Tourismus)",
+   "licence": "bez otevřené licence",
+   "soubor": "rfa.json"
+  },
+  {
+   "url": "https://reisen-fuer-alle.de/robots.txt",
+   "co": "robots.txt (zakazuje jen /wp-admin/)",
+   "soubor": "rfa.json"
+  },
+  {
+   "url": "https://reisen-fuer-alle.de/",
+   "co": "Hlavní web Reisen für Alle – vyhledávání certifikovaných nabídek; odkazovat jako zdroj",
+   "soubor": "rfa.json"
+  },
+  {
+   "title": "erlebe.bayern – Urlaub für Alle (Bayern Tourismus Marketing GmbH), německé verze stránek bavaria.travel/accessible-holidays",
+   "url": "https://erlebe.bayern/urlaub-fuer-alle/",
+   "note": "127 míst. Z části „Menschen mit Gehbehinderung und Rollstuhlfahrer“ se pravidly vytáhla jednotlivá fakta a česky se parafrázovala (první uvedená hodnota z daného typu). Měření jsou z prověrek Reisen für Alle. Impressum: běžná autorskoprávní doložka, žádná otevřená licence. Celé texty ani zprávy se nepřebírají.",
+   "impressum": "https://bavaria.travel/service/imprint/",
+   "soubor": "turismus.json"
+  },
+  {
+   "title": "Bayerischer Wald (Tourismusverband Ostbayern e.V.) – Reisen für Alle: přehledy, bezbariérové výlety, NP pro lidi s handicapem",
+   "url": "https://www.bayerischer-wald.de/urlaub/reisen-fuer-alle",
+   "note": "26 míst. U položek (toubiz/datacycle) bývá uvedena licence CC BY-ND nebo CC BY-SA, u části žádná; převzata jen fakta se zdrojem. Respektován robots.txt (žádné /ukv/ doSearch).",
+   "impressum": "https://www.bayerischer-wald.de/impressum",
+   "soubor": "turismus.json"
+  },
+  {
+   "title": "Allgäu GmbH – Allgäu barrierefrei, getestet von Moritz Brückner (blogy Memmingen, Kempten, Immenstadt, Lindenberg, Mindelheim)",
+   "url": "https://www.allgaeu.de/kultur/staedte/barrierefrei",
+   "note": "8 míst, zkušenost vozíčkáře. Robots.txt ani KI-Guideline Allgäu GmbH přebírání faktů nezakazují.",
+   "soubor": "turismus.json"
+  },
+  {
+   "title": "München Tourismus – München barrierefrei",
+   "url": "https://www.muenchen.travel/artikel/muenchen-tipps-fuer/muenchen-barrierefrei",
+   "note": "12 míst.",
+   "soubor": "turismus.json"
+  },
+  {
+   "title": "Congress- und Tourismus-Zentrale Nürnberg – Barrierefreiheit in Museen und Sehenswürdigkeiten; Nürnberg barrierefrei erleben",
+   "url": "https://tourismus.nuernberg.de/informieren/reisen-fuer-alle/barrierefreihet-in-museen-und-sehenswuerdigkeiten/",
+   "note": "14 míst (sekce „Basisinformation zur Barrierefreiheit“ na detailech).",
+   "soubor": "turismus.json"
+  },
+  {
+   "title": "Regensburg Tourismus GmbH – Inklusives Regensburg",
+   "url": "https://tourismus.regensburg.de/erleben-entdecken/fuehrungen-rundfahrten/gruppenfuehrungen/inklusives-regensburg",
+   "note": "3 místa.",
+   "soubor": "turismus.json"
+  },
+  {
+   "title": "Tourismus Oberbayern München e.V. – blog Barrierefrei Wandern in Oberbayern (18. 10. 2023)",
+   "url": "https://www.oberbayern.de/blog/barrierefrei-wandern-oberbayern/",
+   "note": "6 míst.",
+   "soubor": "turismus.json"
+  },
+  {
+   "title": "Franken Tourismus – Barrierefreies Franken",
+   "url": "https://www.frankentourismus.de/barrierefrei/",
+   "note": "Jen rozcestník, žádné místo nezapsáno.",
+   "soubor": "turismus.json"
+  },
+  {
+   "title": "Ostbayern Tourismus – web a sitemap",
+   "url": "https://www.ostbayern-tourismus.de/sitemap.xml",
+   "note": "Bez bezbariérové stránky, viz not_found.",
+   "soubor": "turismus.json"
+  },
+  {
+   "title": "Nominatim (OpenStreetMap) – geokódování",
+   "url": "https://nominatim.openstreetmap.org/",
+   "note": "Dotazy max. 1/s, User-Agent kudyprojedu-student-project/0.1, countrycodes=de. Vládní obvod je odvozen z okresu/města v odpovědi Nominatimu. U 25 míst je osm_id null a souřadnice jsou jen přibližné (střed obce, nejbližší ulice nebo budova na adrese), důvod je v accessibility.jine. Data © přispěvatelé OpenStreetMap, ODbL.",
+   "soubor": "turismus.json"
+  },
+  {
+   "title": "Weby provozovatelů ubytování (70 webů ze vstupního seznamu z OSM)",
+   "url": "https://www.openstreetmap.org/",
+   "note": "Prošla se úvodní stránka a max. 6 podstránek každého webu (klíčová slova barrierefrei, rollstuhl, behindert, aufzug, ebenerdig, stufenlos aj.); respektován robots.txt; souřadnice z OSM (© přispěvatelé OpenStreetMap, ODbL). Booking, TripAdvisor ani Google nevytěžovány. Odkazy „Barrierefreiheit“ v patičkách většinou vedou jen na prohlášení o přístupnosti webu (BFSG), ne na fyzickou přístupnost.",
+   "soubor": "web_dolni-bavorsko_ubytovani.json"
+  },
+  {
+   "title": "Tourist-Information Stadt Kelheim – Wohnmobilstellplatz am Pflegerspitz",
+   "url": "https://tourismus.kelheim.de/adressen/wohnmobilstellplatz-am-pflegerspitz/",
+   "note": "Turistický web města.",
+   "soubor": "web_dolni-bavorsko_ubytovani.json"
+  },
+  {
+   "title": "Stadt Bogen – Wohnmobilstellplätze",
+   "url": "https://www.bogen.de/freizeit-und-tourismus/service-fuer-die-gaeste/wohnmobilstellplaetze",
+   "note": "Web obce.",
+   "soubor": "web_dolni-bavorsko_ubytovani.json"
+  },
+  {
+   "title": "Villa Messmer – web",
+   "url": "https://www.villa-messmer.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_dolni-franky_restaurace.json"
+  },
+  {
+   "title": "Ristorante „Da Gino“ – web",
+   "url": "https://ristorante-da-gino.eatbu.com/?lang=de",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_dolni-franky_restaurace.json"
+  },
+  {
+   "title": "Janny‘s – web",
+   "url": "https://alzenau.jannys.de/info",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_dolni-franky_restaurace.json"
+  },
+  {
+   "title": "Restaurant Hotel Sonnenhügel – web",
+   "url": "https://www.hotelsonnenhuegel.de/reisen-mit-handicap",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_dolni-franky_restaurace.json"
+  },
+  {
+   "title": "Weinhaus Anker – web",
+   "url": "https://www.hotel-anker.de/hotel/zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_dolni-franky_restaurace.json"
+  },
+  {
+   "title": "Abt- und Schäferstube – web",
+   "url": "https://schafhof-amorbach.de/zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_dolni-franky_restaurace.json"
+  },
+  {
+   "title": "Rosaliss – web",
+   "url": "https://rosaliss.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_dolni-franky_restaurace.json"
+  },
+  {
+   "title": "Vstupní seznam ubytování Dolní Franky (OSM, s webem)",
+   "url": "https://www.openstreetmap.org",
+   "note": "data/research/inputs_by/dolni-franky_ubytovani.json (70 míst); souřadnice a adresy z OSM (ODbL).",
+   "soubor": "web_dolni-franky_ubytovani.json"
+  },
+  {
+   "title": "Weby provozovatelů (70 adres z OSM tagu website)",
+   "url": "",
+   "note": "Projito skriptem 2026-10-07: úvodní stránka + max. 6 podstránek (barrierefrei|zimmer|anreise|service|ausstattung|kontakt|info|besuch), respektován robots.txt, max. 6 souběžných požadavků, timeout 10 s; nepřebírány recenze hostů ani rezervační portály.",
+   "soubor": "web_dolni-franky_ubytovani.json"
+  },
+  {
+   "title": "FrankenTherme Bad Königshofen – Barrierefreie Angebote",
+   "url": "https://www.frankentherme.de/info-service/barrierefreie-angebote",
+   "note": "Lázně a kurzentrum z velké části bezbariérové; Tourist-Information Bad Königshofen certifikována Reisen für Alle.",
+   "soubor": "web_dolni-franky_ubytovani.json"
+  },
+  {
+   "title": "Reisen für Alle",
+   "url": "https://www.reisen-fuer-alle.de",
+   "note": "Certifikaci (ID PA-01348-2023) uvádí na svém webu Hotel Anker Marktheidenfeld; v databázi Reisen für Alle neověřováno.",
+   "soubor": "web_dolni-franky_ubytovani.json"
+  },
+  {
+   "title": "Alter Wirt – web provozovatele",
+   "url": "https://www.alterwirt.de/bio-hotel/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig…)",
+   "soubor": "web_horni-bavorsko_restaurace.json"
+  },
+  {
+   "title": "Alte Post – web provozovatele",
+   "url": "https://altepost.com/hotel/deluxezimmer",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig…)",
+   "soubor": "web_horni-bavorsko_restaurace.json"
+  },
+  {
+   "title": "Biergarten Mühlenpark – web provozovatele",
+   "url": "https://www.biergarten-muehlenpark.de/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig…)",
+   "soubor": "web_horni-bavorsko_restaurace.json"
+  },
+  {
+   "title": "Gasthof Feringasee – web provozovatele",
+   "url": "https://feringa-see.de/der-see/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig…)",
+   "soubor": "web_horni-bavorsko_restaurace.json"
+  },
+  {
+   "title": "Angermaier – web provozovatele",
+   "url": "https://cafe-angermaier.de/zimmer/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig…)",
+   "soubor": "web_horni-bavorsko_restaurace.json"
+  },
+  {
+   "title": "Bärenstüberl – web provozovatele",
+   "url": "https://www.baerenstueberl.de/zimmer/familienzimmer-dachgeschoss",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig…)",
+   "soubor": "web_horni-bavorsko_restaurace.json"
+  },
+  {
+   "title": "Weby provozovatelů ubytování (70 webů ze vstupního seznamu z OSM)",
+   "url": "https://www.openstreetmap.org/",
+   "note": "Prošla se úvodní stránka a max. 6 podstránek každého webu (klíčová slova barrierefrei, rollstuhl, aufzug, ebenerdig aj.); respektován robots.txt; souřadnice z OSM (© přispěvatelé OpenStreetMap, ODbL). Booking, TripAdvisor ani Google nevytěžovány.",
+   "soubor": "web_horni-bavorsko_ubytovani.json"
+  },
+  {
+   "title": "Weby provozovatelů (úvodní stránka + max. 6 podstránek, klíčová slova barrierefrei/rollstuhl/aufzug…)",
+   "url": "",
+   "note": "Automatický průchod skriptem 2026-10-07, User-Agent kudyprojedu-student-project/0.1; souřadnice převzaty ze vstupu (OSM).",
+   "soubor": "web_horni-falc_cile.json"
+  },
+  {
+   "title": "Bayerische Schlösserverwaltung – Walhalla, Service für Menschen mit Behinderung",
+   "url": "https://www.schloesser.bayern.de/deutsch/schloss/objekte/walhalla_mobilitaet.htm",
+   "note": "Podrobné údaje o přístupnosti Walhally.",
+   "soubor": "web_horni-falc_cile.json"
+  },
+  {
+   "title": "Staatstheater Regensburg – Barrierefreiheit",
+   "url": "https://www.staatstheater-regensburg.de/seiten/barrierefreiheit.html",
+   "note": "Údaje pro scény Bismarckplatz, Haidplatz, Antoniushaus, Junges Theater; Velodrom neuveden.",
+   "soubor": "web_horni-falc_cile.json"
+  },
+  {
+   "title": "das Stadtwerk Regensburg – Donau-Arena barrierefrei",
+   "url": "https://www.das-stadtwerk-regensburg.de/donau-arena/barrierefrei",
+   "note": "",
+   "soubor": "web_horni-falc_cile.json"
+  },
+  {
+   "title": "KZ-Gedenkstätte Flossenbürg – Barrierefreiheit",
+   "url": "https://www.gedenkstaette-flossenbuerg.de/de/besuch/informationen/barrierefreiheit",
+   "note": "Platí pro celý památník i výstavu „Was bleibt“.",
+   "soubor": "web_horni-falc_cile.json"
+  },
+  {
+   "title": "Haus der Bayerischen Geschichte – Inklusion",
+   "url": "https://www.hdbg.de/ihr-besuch/inklusion.html",
+   "note": "",
+   "soubor": "web_horni-falc_cile.json"
+  },
+  {
+   "title": "ACC Amberg – Barrierefreiheit (Reisen für Alle)",
+   "url": "https://www.acc-amberg.de/barrierefreiheit/",
+   "note": "Krátká zpráva a certifikát v PDF na webu ACC; data z PDF nepřebírána, jen odkaz.",
+   "soubor": "web_horni-falc_cile.json"
+  },
+  {
+   "title": "Café Waffel – web",
+   "url": "https://www.waffelbahnhof.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_horni-falc_restaurace.json"
+  },
+  {
+   "title": "Anemos – web",
+   "url": "https://djkneumarkt.de/hp1104/Gaststaette-Anemos.htm",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_horni-falc_restaurace.json"
+  },
+  {
+   "title": "Korfu – web",
+   "url": "https://korfu-restaurant-lappersdorf.eatbu.com/?lang=de",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_horni-falc_restaurace.json"
+  },
+  {
+   "title": "Post Berching – web",
+   "url": "https://www.post-berching.de/zimmer-suiten/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_horni-falc_restaurace.json"
+  },
+  {
+   "title": "Post Berching – Häufige Fragen",
+   "url": "https://www.post-berching.de/zimmer-suiten/haeufige-fragen/",
+   "note": "Výtah, parkování.",
+   "soubor": "web_horni-falc_restaurace.json"
+  },
+  {
+   "title": "Vstupní seznam míst (OSM, kudyprojedu)",
+   "url": "data/research/inputs_by/horni-falc_restaurace.json",
+   "note": "Souřadnice a odkazy na weby z OpenStreetMap (ODbL).",
+   "soubor": "web_horni-falc_restaurace.json"
+  },
+  {
+   "title": "Weby provozovatelů ubytování (Horní Falc)",
+   "url": "viz source_url u jednotlivých míst",
+   "note": "Prošlo se 68 unikátních webů ze vstupu (úvodní stránka + max. 6 podstránek), klíčová slova barrierefrei, rollstuhl, aufzug ap.; respektován robots.txt.",
+   "soubor": "web_horni-falc_ubytovani.json"
+  },
+  {
+   "title": "Hotel INCLUDiO – Inklusion & Barrierefreiheit",
+   "url": "https://includio.de/inklusion-barrierefreiheit",
+   "note": "Nejpodrobnější zdroj: certifikace Reisen für Alle, rozměry pokojů, koupelen, výtahů a parkovišť.",
+   "soubor": "web_horni-falc_ubytovani.json"
+  },
+  {
+   "title": "Premier Inn – Zimmer (celořetězcové informace o pokojích pro vozík)",
+   "url": "https://www.premierinn.com/de/de/einfach-schoener-schlafen/zimmer.html",
+   "note": "Obecné údaje řetězce (výška postele 48 cm, vybavení koupelny).",
+   "soubor": "web_horni-falc_ubytovani.json"
+  },
+  {
+   "title": "Reisen für Alle (německý certifikační systém přístupnosti)",
+   "url": "https://www.reisen-fuer-alle.de/",
+   "note": "Jen uveden jako zdroj, data nepřebírána.",
+   "soubor": "web_horni-falc_ubytovani.json"
+  },
+  {
+   "title": "Kurhotel an der Obermaintherme – web provozovatele",
+   "url": "https://www.kurhotel-staffelstein.de/barrierefreiheit.html",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)",
+   "soubor": "web_horni-franky_restaurace.json"
+  },
+  {
+   "title": "Kurhotel an der Obermaintherme – web provozovatele (podstránka)",
+   "url": "https://www.kurhotel-staffelstein.de/zimmer.html",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)",
+   "soubor": "web_horni-franky_restaurace.json"
+  },
+  {
+   "title": "Kurhotel an der Obermaintherme – web provozovatele (podstránka)",
+   "url": "https://www.kurhotel-staffelstein.de/kontakt/lage-anfahrt.html",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)",
+   "soubor": "web_horni-franky_restaurace.json"
+  },
+  {
+   "title": "Schäfer's – web provozovatele",
+   "url": "http://www.schaefers-cafe.de",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)",
+   "soubor": "web_horni-franky_restaurace.json"
+  },
+  {
+   "title": "Zum Löwen – web provozovatele",
+   "url": "https://www.hotel-zum-loewen.de/zimmer-stammhaus",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)",
+   "soubor": "web_horni-franky_restaurace.json"
+  },
+  {
+   "title": "Pizzeria La Posta – web provozovatele",
+   "url": "https://pizzeria-laposta.eatbu.com/?lang=de",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)",
+   "soubor": "web_horni-franky_restaurace.json"
+  },
+  {
+   "title": "Brauerei Gasthof Greifenklau – web provozovatele",
+   "url": "https://www.greifenklau.de/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)",
+   "soubor": "web_horni-franky_restaurace.json"
+  },
+  {
+   "title": "Wilde Rose Keller – web provozovatele",
+   "url": "https://www.wilde-rose-keller.de/index.php/kontakt",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)",
+   "soubor": "web_horni-franky_restaurace.json"
+  },
+  {
+   "title": "Dötzer – web provozovatele",
+   "url": "https://doetzers.de/kontakt/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)",
+   "soubor": "web_horni-franky_restaurace.json"
+  },
+  {
+   "title": "Liebesbier – web provozovatele",
+   "url": "https://www.liebesbier.de/de/hotel/zimmer/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)",
+   "soubor": "web_horni-franky_restaurace.json"
+  },
+  {
+   "title": "Vstupní seznam ubytování Horní Franky (OSM, wheelchair=yes, s webem)",
+   "url": "https://www.openstreetmap.org",
+   "note": "data/research/inputs_by/horni-franky_ubytovani.json; souřadnice a adresy z OSM (ODbL).",
+   "soubor": "web_horni-franky_ubytovani.json"
+  },
+  {
+   "title": "Weby provozovatelů (70 adres z OSM tagu website)",
+   "url": "",
+   "note": "Projito skriptem 2026-10-07: úvodní stránka + max. 6 podstránek (barrierefrei|zimmer|anreise|service|ausstattung|kontakt|info|besuch), respektován robots.txt, 6 souběžných požadavků, timeout 10 s; nepřebírány recenze hostů ani agregátory (hotel-mix.de).",
+   "soubor": "web_horni-franky_ubytovani.json"
+  },
+  {
+   "title": "Bayreuth Tourismus – Barrierefreies Bayreuth",
+   "url": "https://www.bayreuth-tourismus.de/entdecken/noch-mehr-bayreuth/barrierefreies-bayreuth/",
+   "note": "Obecná stránka města o bezbariérovosti (Reisen für alle, parkování pro OZP, Wheelmap); k jednotlivým ubytováním nic.",
+   "soubor": "web_horni-franky_ubytovani.json"
+  },
+  {
+   "title": "Reisen für Alle",
+   "url": "https://www.reisen-fuer-alle.de",
+   "note": "Certifikaci uvádějí na svých webech Kurhotel an der Obermaintherme a Jugendhaus Burg Feuerstein; v databázi Reisen für Alle neověřováno.",
+   "soubor": "web_horni-franky_ubytovani.json"
+  },
+  {
+   "title": "Ritter St. Georg – web",
+   "url": "https://www.gasthof-ritter-st-georg.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_restaurace.json"
+  },
+  {
+   "title": "Gasthaus Bammes – web",
+   "url": "https://www.assmanns-bammes.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_restaurace.json"
+  },
+  {
+   "title": "Bio Restaurant Schwarzer Bock – web",
+   "url": "https://schwarzerbock.de/about/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_restaurace.json"
+  },
+  {
+   "title": "Café-Restaurant Orangerie – web",
+   "url": "https://orangerie-ansbach.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_restaurace.json"
+  },
+  {
+   "title": "Rosenbad – web",
+   "url": "https://www.rosenbad-ansbach.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_restaurace.json"
+  },
+  {
+   "title": "Goldener Hirsch – web",
+   "url": "https://goldener-hirsch-burgthann.de/premium/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_restaurace.json"
+  },
+  {
+   "title": "Gasthaus Fetz – web",
+   "url": "https://gasthaus-fetz.de",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_restaurace.json"
+  },
+  {
+   "title": "Weib's Brauhaus – web",
+   "url": "https://www.weibsbrauhaus.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_restaurace.json"
+  },
+  {
+   "title": "CASANOVA BAR – web",
+   "url": "https://goldenerhirsch-restobar.metro.bar/?lang=de",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_restaurace.json"
+  },
+  {
+   "title": "Landgasthaus Jägerhof – web",
+   "url": "https://www.jaegerhof-absberg.de/gaestezimmer/gh_erdgeschoss",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Bio BoutiqueHotel Schwarzer Bock – web",
+   "url": "https://schwarzerbock.de/about/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Hotel-Gasthof Goldener Greifen – web",
+   "url": "https://gasthof-greifen-rothenburg.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Das Hürner – web",
+   "url": "https://www.das-huerner.de/hb_accommodation/premium-doppelzimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Gasthof Schwarzes Roß – web",
+   "url": "https://www.schwarzes-ross-wasserzell.de/wohnen/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Hotel/Restaurant Grünwald – web",
+   "url": "https://www.hotel-gruenwald.com/unsere-zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "AU Hotel – web",
+   "url": "https://au-hotel.de/de/hotelinformation",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Hotel Späth – web",
+   "url": "https://hotel-spaeth.de/die-zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Vital Hotel an der Therme – web",
+   "url": "https://www.vital-hotel-adt.de/zimmer/barrierefrei",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Burghotel – web",
+   "url": "https://goldener-hirsch-burgthann.de/premium/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Jugendherberge Dinkelsbühl – web",
+   "url": "https://www.jugendherberge.de/jugendherbergen/dinkelsbuehl/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Meiser Design Hotel – web",
+   "url": "https://meiser-hotels.de/kontakt-anfahrt-design-hotel",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Reiterhof Fraunholz – web",
+   "url": "https://www.reiterhof-fraunholz.de/hof/zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Weib's Bräu – web",
+   "url": "https://www.weibsbrauhaus.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Garner Hotel Erlangen Süd by IHG – web",
+   "url": "https://www.ihg.com/garner-hotels/hotels/gb/en/erlangen/zczwt/hoteldetail",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Holiday Inn Express – web",
+   "url": "https://www.ihg.com/holidayinnexpress/hotels/de/de/erlangen/zczel/hoteldetail/amenities",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Hotel Bayerischer Hof – web",
+   "url": "https://www.bayerischer-hof-erlangen.de/zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Hotel Gasthof Rangau – web",
+   "url": "https://www.hotel-rangau.de/zimmer",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Hotel Gasthof Rangau – web",
+   "url": "https://www.hotel-gasthof-rangau.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Hotel Luise – web",
+   "url": "https://hotel-luise.de/zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "NH Hotel – web",
+   "url": "https://www.nh-hotels.com/en/hotel/nh-erlangen/services",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Novotel – web",
+   "url": "https://all.accor.com/hotel/5376/index.en.shtml",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Ferienhof Gögelein – web",
+   "url": "https://ferienhofgoegelein.de/ferienwohnungen/ferienwohnung-max/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Excelsior Hotel Nürnberg Fürth – web",
+   "url": "https://www.gchhotelgroup.com/de/hotel/excelsior-nuernberg-fuerth",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Altmühlsee Camping Herzog – web",
+   "url": "https://www.camping-herzog.de/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Hotel Adlerbräu – web",
+   "url": "https://www.hotel-adlerbraeu.de/zimmer-preise-2026",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Landgasthof-Hotel Bergwirt – web",
+   "url": "https://www.hotel-bergwirt.de/Zimmer-Preise/index.php/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Hotel Herzogs Park – web",
+   "url": "https://www.herzogspark.de/zimmer",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Gästehaus des Postwirts – web",
+   "url": "https://www.post-wirt.de/zimmer-und-preise",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Seerose – web",
+   "url": "https://www.hotel-seerose.de/de/kontakt-service/anfragen.html",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Landhotel Sonne – web",
+   "url": "https://www.landhotel-sonne.com/Hotel/Zimmer.html",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_stredni-franky_ubytovani.json"
+  },
+  {
+   "title": "Weby provozovatelů (úvodní stránka + max. 6 podstránek, klíčová slova barrierefrei/rollstuhl/aufzug…)",
+   "url": "",
+   "note": "Automatický průchod skriptem 2026-10-07, User-Agent kudyprojedu-student-project/0.1, respektován robots.txt; souřadnice převzaty ze vstupu (OSM).",
+   "soubor": "web_svabsko_cile.json"
+  },
+  {
+   "title": "Archäologischer Park Cambodunum – informace pro lidi s omezenou chůzí a vozíčkáře",
+   "url": "https://www.apc-kempten.de/de/barrierefreiheit/informationen-fuer-menschen-mit-gehbehinderung-und-rollstuhlfahrer-innen-",
+   "note": "Data z certifikace Reisen für Alle zveřejněná provozovatelem; rozměry WC, ramp a cest.",
+   "soubor": "web_svabsko_cile.json"
+  },
+  {
+   "title": "Bayerische Schlösserverwaltung – Schloss Höchstädt, Service für Menschen mit Behinderung",
+   "url": "https://www.schloss-hoechstaedt.de/deutsch/tourist/mobilitaet.htm",
+   "note": "Rozměry výtahu a dveří, sklon cest.",
+   "soubor": "web_svabsko_cile.json"
+  },
+  {
+   "title": "Deutsches Hutmuseum – Barrierefreiheit",
+   "url": "https://www.deutsches-hutmuseum.de/besucherinfo/barrierefreiheit.html",
+   "note": "Certifikát Barrierefreiheit geprüft (Reisen für Alle).",
+   "soubor": "web_svabsko_cile.json"
+  },
+  {
+   "title": "Museum der bayerischen Könige – Barrierefreiheit",
+   "url": "https://www.hohenschwangau.de/museum-der-bayerischen-koenige/museum/barrierefreiheit",
+   "note": "",
+   "soubor": "web_svabsko_cile.json"
+  },
+  {
+   "title": "Reisen für Alle (DSFT e.V.)",
+   "url": "https://www.reisen-fuer-alle.de",
+   "note": "Certifikační systém, na který odkazují APC Kempten a Hutmuseum; údaje převzaty jen z webů provozovatelů.",
+   "soubor": "web_svabsko_cile.json"
+  },
+  {
+   "title": "Alte Post – web",
+   "url": "https://www.alte-post-lindau.de/hotel-zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_svabsko_restaurace.json"
+  },
+  {
+   "title": "Chinatown – web",
+   "url": "https://restaurantchinatown.metro.biz/?lang=de",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_svabsko_restaurace.json"
+  },
+  {
+   "title": "Bel Mare – web",
+   "url": "https://bel-mare-service.eatbu.com/?lang=de",
+   "note": "Web provozovatele, údaje parafrázovány česky.",
+   "soubor": "web_svabsko_restaurace.json"
+  },
+  {
+   "title": "Vstupní seznam ubytování Švábsko (OSM, s webem)",
+   "url": "https://www.openstreetmap.org",
+   "note": "data/research/inputs_by/svabsko_ubytovani.json (70 míst); souřadnice a adresy z OSM (ODbL).",
+   "soubor": "web_svabsko_ubytovani.json"
+  },
+  {
+   "title": "Weby provozovatelů (70 adres z OSM tagu website)",
+   "url": "",
+   "note": "Projito skriptem 2026-10-07: úvodní stránka + max. 6 podstránek (barrierefrei|zimmer|anreise|service|ausstattung|kontakt|info|besuch), respektován robots.txt, 6 souběžných požadavků, timeout 10 s; nepřebírány recenze hostů ani agregátory (hotel-mix.de, kleinanzeigen.de). Prohlášení o přístupnosti webu (BFSG/BITV) nebrána jako údaj o budově.",
+   "soubor": "web_svabsko_ubytovani.json"
+  },
+  {
+   "title": "Reisen für Alle – certifikace uváděné provozovateli",
+   "url": "https://www.reisen-fuer-alle.de",
+   "note": "Allgäu ART Hotel (Kempten) a Allgäuhaus Wertach uvádějí certifikaci Reisen für Alle; detailní zprávy jsou na webu provozovatele / Reisen für Alle, údaje nepřebírány nad rámec citovaného.",
+   "soubor": "web_svabsko_ubytovani.json"
+  }
+ ]
+}

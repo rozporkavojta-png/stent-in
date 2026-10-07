@@ -1,4 +1,5 @@
-/* Stránka Trasy: bariéry v ulicích živě z OpenStreetMap (Overpass API) + plánovač mezi místy */
+/* Stránka Trasy: bariéry v ulicích živě z OpenStreetMap (Overpass API, funguje v Česku i v Bavorsku) + plánovač mezi místy.
+   Místa z databáze se načítají jen pro regiony ve výřezu (KP.loadPlacesInBounds), obce z data/regions/obce.json. */
 (function () {
   'use strict';
   const K = window.KP, $ = (s) => document.querySelector(s);
@@ -20,6 +21,8 @@
   const SURFACE_CS = { sett: 'kamenná dlažba', cobblestone: 'kočičí hlavy', unhewn_cobblestone: 'kočičí hlavy (neopracované)', gravel: 'štěrk', grass: 'tráva', sand: 'písek', dirt: 'hlína' };
   const SMOOTH_CS = { bad: 'rozbitý povrch', very_bad: 'velmi rozbitý povrch', horrible: 'téměř nesjízdný povrch', very_horrible: 'nesjízdný povrch', impassable: 'neprůjezdné' };
 
+  const PLACES_ZOOM = 11; // od tohoto přiblížení načítáme místa z regionů ve výřezu
+  let towns = [];
   let map = null, places = [], features = [], layerObjs = {}, visible = {}, loadedBox = null, loading = false, pending = null, timer = null;
   Object.keys(TYPES).forEach(k => { visible[k] = true; layerObjs[k] = []; });
 
@@ -323,7 +326,7 @@
         : '<p>' + K.statusHtml('ok', 'Podél přímé spojnice OpenStreetMap žádné bariéry neuvádí') + '</p>') +
       (good.length ? '<p class="small">Pomůže: ' + good.map(f => TYPES[f.type].label.toLowerCase()).filter((x, i, arr) => arr.indexOf(x) === i).join(', ') + ' (' + good.length + '×).</p>' : '') +
       '<p class="small muted">Orientační kontrola: počítáme s přímou čarou, ne se skutečnou trasou z Google Maps. Projděte si trasu ve Street View.</p>' +
-      '<div class="row"><a class="btn btn-action" href="' + url + '" target="_blank" rel="noopener">' + K.icon('nav') + 'Trasa v Google Maps</a><a class="btn btn-ghost" href="misto.html?id=' + b.i + '">Detail cíle</a></div></div>';
+      '<div class="row"><a class="btn btn-action" href="' + url + '" target="_blank" rel="noopener">' + K.icon('nav') + 'Trasa v Google Maps</a><a class="btn btn-ghost" href="' + K.placeUrl(b) + '">Detail cíle</a></div></div>';
   }
 
   function renderSaved() {
@@ -337,11 +340,10 @@
     $('#find-form').addEventListener('submit', e => {
       e.preventDefault();
       const q = $('#town').value.trim().toLowerCase(); if (!q || !map) return;
-      const hits = places.filter(p => (p.o || '').toLowerCase() === q);
-      if (!hits.length) { setStatus('Obec „' + $('#town').value + '“ v naší databázi nemáme. Posuňte mapu ručně.'); return; }
-      // střed = medián poloh míst v obci, přiblížení na úroveň ulic
-      const la = hits.map(p => p.la).sort((x, y) => x - y)[hits.length >> 1], lo = hits.map(p => p.lo).sort((x, y) => x - y)[hits.length >> 1];
-      map.setView(la, lo, 16);
+      const t = towns.find(x => x[0].toLowerCase() === q);
+      if (!t) { setStatus('Obec „' + $('#town').value + '“ v naší databázi nemáme. Posuňte mapu ručně.'); return; }
+      // obec s nejvíce místy toho jména (Česko i Bavorsko); střed obalu míst v obci, přiblížení na úroveň ulic
+      map.setView((t[3] + t[5]) / 2, (t[4] + t[6]) / 2, 16);
       if (mobile()) { $('#town').blur(); setSheet('peek'); }
     });
     $('#locate').addEventListener('click', () => map && map.locate().catch(() => K.toast('Polohu se nepodařilo zjistit. Povolte ji v prohlížeči.')));
@@ -381,13 +383,27 @@
           (p.img ? '<figure class="photo tr-ph"><img src="' + K.esc(K.commonsImg(p.img, 640)) + '" alt="" loading="lazy" decoding="async">' +
             '<figcaption><a href="' + K.esc(K.commonsPage(p.img)) + '" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>' : '') +
           '<p class="tr-picked-st">' + K.statusHtml(K.W[p.w || 'null'].st, K.W[p.w || 'null'].label) + (p.t ? K.statusHtml(K.T[p.t].st, K.T[p.t].label) : '') + '</p>' +
-          '<div class="tr-picked-act"><button class="btn btn-ghost btn-sm" type="button" data-set="from" data-id="' + p.i + '">Nastavit jako start A</button><button class="btn btn-ghost btn-sm" type="button" data-set="to" data-id="' + p.i + '">Nastavit jako cíl B</button><a class="btn btn-quiet btn-sm" href="misto.html?id=' + p.i + '">Detail</a></div>';
+          '<div class="tr-picked-act"><button class="btn btn-ghost btn-sm" type="button" data-set="from" data-id="' + p.i + '">Nastavit jako start A</button><button class="btn btn-ghost btn-sm" type="button" data-set="to" data-id="' + p.i + '">Nastavit jako cíl B</button><a class="btn btn-quiet btn-sm" href="' + K.placeUrl(p) + '">Detail</a></div>';
         const ph = n.querySelector('.tr-ph img');
         if (ph) ph.addEventListener('error', () => ph.closest('figure').remove(), { once: true });
         if (mobile() && $('.tr-app').dataset.sheet === 'peek') setSheet('half');
         $('#tr-scroll').scrollTop = 0;
       },
     });
+  }
+
+  // Místa z databáze jen pro regiony ve výřezu (od přiblížení PLACES_ZOOM); načtené regiony zůstávají v cache
+  let placesBusy = false, placesKey = '';
+  async function loadPlacesHere() {
+    if (!map || placesBusy || map.zoom() < PLACES_ZOOM) return;
+    const b = map.bounds(); if (!b) return;
+    placesBusy = true;
+    try {
+      const list = await K.loadPlacesInBounds(b);
+      const key = list.length + ':' + (list[0] ? list[0].i : '');
+      if (key !== placesKey) { placesKey = key; places = list; showPlaces(); fillPlanSelects(); }
+    } catch (e) { setStatus('Databázi míst se nepodařilo načíst. Bariéry ale fungují dál.'); }
+    placesBusy = false;
   }
 
   async function init() {
@@ -401,14 +417,13 @@
     map.onMove(() => {
       $('#load').disabled = map.zoom() < MIN_ZOOM || loading;
       if (map.zoom() < MIN_ZOOM && !loading) setStatus('Přibližte mapu na ulice (měřítko asi 1 : 10 000) a bariéry se načtou samy.');
-      clearTimeout(timer); timer = setTimeout(() => { loadBarriers(false); fillPlanSelects(); }, 900);
+      clearTimeout(timer); timer = setTimeout(() => { loadBarriers(false); loadPlacesHere(); fillPlanSelects(); }, 900);
     });
     try {
-      places = await K.loadPlaces();
-      const obce = {}; places.forEach(p => { if (p.o) obce[p.o] = (obce[p.o] || 0) + 1; });
-      $('#towns').innerHTML = Object.entries(obce).sort((a, b) => b[1] - a[1]).slice(0, 1500).map(([o]) => '<option value="' + K.esc(o) + '">').join('');
-      showPlaces();
-    } catch (e) { setStatus('Databázi míst se nepodařilo načíst. Bariéry ale fungují dál.'); }
+      towns = await K.loadTowns();
+      $('#towns').innerHTML = towns.slice(0, 1500).map(x => '<option value="' + K.esc(x[0]) + '">').join('');
+    } catch (e) { /* hledání obce nepůjde, mapa ano */ }
+    loadPlacesHere();
     if (hasLL) setTimeout(() => { loadBarriers(true); fillPlanSelects(); }, 300);
     else if (sp.get('obec')) { $('#town').value = sp.get('obec'); $('#find-form').requestSubmit(); }
   }

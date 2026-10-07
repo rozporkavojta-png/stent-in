@@ -17,7 +17,7 @@
     ubyt: t => t === 'ubytovani',
   };
   const STEP_NAMES = ['Místo', 'Typ místa', 'Přístupnost', 'Fotky', 'Souhrn'];
-  const state = { step: 1, sub: 0, place: null, places: [], photos: [] };
+  const state = { step: 1, sub: 0, place: null, places: [], photos: [], towns: [], regions: {}, wide: null };
 
   // ---------- Kroky ----------
   function toTop() {
@@ -84,23 +84,53 @@
 
   // ---------- Krok 1: hledání ----------
   function norm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  // Hledá v načtených regionech; když dotaz obsahuje obec (Česko i Bavorsko), načte její region.
+  // Tlačítko „Hledat všude“ projde všechny regiony postupně a nechá si jen nalezená místa.
+  const hay = (p) => p._s || (p._s = norm(p.n + ' ' + p.o + ' ' + (p.a || '') + ' ' + p.s));
+  function townRegion(q) {
+    let best = null;
+    for (const t of state.towns) {
+      const n = norm(t[0]);
+      if (n.length >= 3 && (' ' + q + ' ').includes(' ' + n + ' ') && (!best || t[2] > best[2])) best = t;
+    }
+    return best ? best[1] : null;
+  }
   function searchPlaces() {
     const q = norm($('#find').value.trim());
     const list = $('#pick');
     if (q.length < 2) { list.innerHTML = ''; return; }
     const words = q.split(/\s+/);
-    const hits = [];
-    for (const p of state.places) {
-      const hay = p._s || (p._s = norm(p.n + ' ' + p.o + ' ' + (p.a || '') + ' ' + p.s));
-      if (words.every(w => hay.includes(w))) { hits.push(p); if (hits.length >= 25) break; }
+    const rid = townRegion(q);
+    if (rid && !state.regions[rid]) {
+      state.regions[rid] = 'loading';
+      K.loadRegion(rid).then(arr => { state.regions[rid] = arr; searchPlaces(); }).catch(() => { delete state.regions[rid]; });
     }
-    list.innerHTML = hits.length ? hits.map(p => '<li><button type="button" data-id="' + p.i + '" aria-pressed="' + (state.place && state.place.i === p.i) + '">' +
-      '<span class="pp-txt"><b>' + K.esc(p.n) + '</b><small>' + K.esc(p.s) + ' · ' + K.esc([p.a, p.o].filter(Boolean).join(', ')) + '</small></span>' +
+    const pool = [].concat(state.places, ...Object.values(state.regions).filter(Array.isArray), state.wide && state.wide.q === q ? state.wide.hits : []);
+    const hits = [], seen = new Set();
+    for (const p of pool) {
+      if (seen.has(p.i)) continue;
+      if (words.every(w => hay(p).includes(w))) { seen.add(p.i); hits.push(p); if (hits.length >= 25) break; }
+    }
+    const wideBtn = !(state.wide && state.wide.q === q) ? '<li><button type="button" class="btn btn-quiet btn-sm" data-wide>' + K.icon('search') + 'Hledat ve všech místech v Česku a v Bavorsku</button></li>' : '';
+    list.innerHTML = (hits.length ? hits.map(p => '<li><button type="button" data-id="' + p.i + '" aria-pressed="' + (state.place && state.place.i === p.i) + '">' +
+      '<span class="pp-txt"><b>' + K.esc(p.n) + '</b><small>' + K.esc(p.s) + ' · ' + K.esc([p.a, p.o, K.zemeOf(p) === 'de' ? 'Bavorsko' : ''].filter(Boolean).join(', ')) + '</small></span>' +
       '<span class="pp-mark">' + K.icon('check') + '</span></button></li>').join('')
-      : '<li class="muted small">Nic jsme nenašli. Zkuste jiný tvar názvu, nebo přidejte místo jako nové.</li>';
+      : '<li class="muted small">' + (state.regions[rid] === 'loading' ? 'Načítám místa v obci…' : 'Nic jsme nenašli. Zkuste jiný tvar názvu, přidejte obec, nebo přidejte místo jako nové.') + '</li>') +
+      (hits.length < 25 ? wideBtn : '');
+  }
+  function searchEverywhere() {
+    const q = norm($('#find').value.trim()); if (q.length < 2) return;
+    const words = q.split(/\s+/);
+    $('#find-hint').textContent = 'Prohledávám všechna místa…';
+    K.loadAll(p => words.every(w => hay(p).includes(w)), { onProgress: (d, n) => { $('#find-hint').textContent = 'Prohledávám všechna místa… ' + d + ' z ' + n + ' oblastí'; } })
+      .then(hits => { state.wide = { q, hits }; $('#find-hint').textContent = 'Prohledali jsme všechna místa v Česku a v Bavorsku.'; searchPlaces(); })
+      .catch(() => { $('#find-hint').textContent = 'Hledání se nepovedlo. Zkuste to znovu.'; });
+  }
+  function findLoaded(id) {
+    return state.places.find(p => p.i === id) || K.placeById(id) || (state.wide ? state.wide.hits.find(p => p.i === id) : null) || null;
   }
   function pickPlace(id) {
-    state.place = state.places.find(p => p.i === id) || null;
+    state.place = findLoaded(id);
     $$('#pick [data-id]').forEach(b => b.setAttribute('aria-pressed', b.dataset.id === id));
     if (state.place) {
       $('#is-new').checked = false; $('#new-place').hidden = true;
@@ -251,7 +281,7 @@
     drafts.unshift({
       id: 'd' + Date.now(),
       created: new Date().toISOString().slice(0, 10),
-      place: state.place ? { i: state.place.i, n: state.place.n, o: state.place.o } : { n: $('#np-name').value.trim(), a: $('#np-street').value.trim(), o: $('#np-city').value.trim() },
+      place: state.place ? { i: state.place.i, r: state.place._r || '', n: state.place.n, o: state.place.o } : { n: $('#np-name').value.trim(), a: $('#np-street').value.trim(), o: $('#np-city').value.trim() },
       type: selectedType(),
       values: collect(),
       note: $('#note').value.trim(),
@@ -275,7 +305,7 @@
     $('#sub-tabs').addEventListener('click', e => { const b = e.target.closest('[data-sub]'); if (b) { showSub(Number(b.dataset.sub)); focusPart(); } });
     $('#is-new').addEventListener('change', () => { $('#new-place').hidden = !$('#is-new').checked; if ($('#is-new').checked) { state.place = null; $$('#pick [data-id]').forEach(b => b.setAttribute('aria-pressed', 'false')); $('#osm-link').href = 'https://www.openstreetmap.org/edit'; $('#np-name').focus(); } });
     let t; $('#find').addEventListener('input', () => { clearTimeout(t); t = setTimeout(searchPlaces, 150); });
-    $('#pick').addEventListener('click', e => { const b = e.target.closest('[data-id]'); if (b) pickPlace(b.dataset.id); });
+    $('#pick').addEventListener('click', e => { if (e.target.closest('[data-wide]')) { searchEverywhere(); return; } const b = e.target.closest('[data-id]'); if (b) pickPlace(b.dataset.id); });
     $('#types').addEventListener('change', () => { applyType(); verdict(); });
     $('#btn-prev').hidden = true;
     ['#v-ramp', '#u-lift', '#w-has'].forEach(s => $(s).addEventListener('change', toggleDeps));
@@ -291,11 +321,16 @@
     $('#wizard').addEventListener('submit', submit);
     $('#wizard').addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.tagName === 'INPUT' && state.step < 5) e.preventDefault(); });
 
-    K.loadPlaces().then(list => {
-      state.places = list;
-      $('#find-hint').textContent = 'Hledáme mezi ' + list.length.toLocaleString('cs-CZ') + ' místy z OpenStreetMap.';
-      const id = new URLSearchParams(location.search).get('id');
-      if (id) { const p = list.find(x => x.i === id); if (p) { $('#find').value = p.n; searchPlaces(); pickPlace(id); } }
+    const sp = new URLSearchParams(location.search);
+    Promise.all([K.loadRegionsIndex(), K.loadTowns().catch(() => [])]).then(async ([idx, towns]) => {
+      state.towns = towns;
+      const total = idx.reduce((a, r) => a + r.pocet, 0);
+      $('#find-hint').textContent = 'Napište název a obec. Hledáme mezi ' + total.toLocaleString('cs-CZ') + ' místy v Česku a v Bavorsku.';
+      const id = sp.get('id');
+      if (id) {
+        const p = await K.findPlace(id, sp.get('r')).catch(() => null);
+        if (p) { state.places = [p]; $('#find').value = p.n + (p.o ? ' ' + p.o : ''); searchPlaces(); pickPlace(id); }
+      }
       if ($('#find').value) searchPlaces();
     }).catch(() => { $('#find-hint').textContent = 'Seznam míst se nenačetl. Můžete přidat místo jako nové.'; });
   }

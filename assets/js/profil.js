@@ -25,8 +25,8 @@
     const ph = p.img ? '<figure class="photo pf-ph"><img src="' + K.esc(K.commonsImg(p.img, 640)) + '" alt="" loading="lazy" decoding="async">' +
       '<figcaption><a href="' + K.esc(K.commonsPage(p.img)) + '" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>' : '';
     return '<li class="rule-row pf-row' + (ph ? ' has-ph' : '') + '">' + ph +
-      '<div class="pf-txt"><a class="pf-link" href="misto.html?id=' + encodeURIComponent(p.i) + '"><b>' + K.esc(p.n) + '</b></a>' +
-      '<small>' + K.esc([p.s, p.o].filter(Boolean).join(' · ')) + '</small>' + st + '</div></li>';
+      '<div class="pf-txt"><a class="pf-link" href="' + K.placeUrl(p) + '"><b>' + K.esc(p.n) + '</b></a>' +
+      '<small>' + K.esc([p.s, p.o, K.zemeOf(p) === 'de' ? 'Bavorsko' : ''].filter(Boolean).join(' · ')) + '</small>' + st + '</div></li>';
   }
   // Fotka, která se nenačte, zmizí i s popiskem; řádek funguje dál bez ní
   function dropBrokenPhotos(root) {
@@ -42,8 +42,9 @@
       $('#saved').innerHTML = '<div class="pf-empty"><p class="muted">Zatím nemáte uložená žádná místa. Uložíte je tlačítkem Uložit v detailu místa.</p><a class="btn btn-primary" href="mapa.html">Otevřít mapu</a></div>';
       return;
     }
-    K.loadPlaces().then(() => {
-      const items = ids.map(id => K.placeById(id)).filter(Boolean);
+    // Jen regiony, ve kterých uložená místa jsou (region si pamatujeme při uložení, jinak ho dohledá data/regions/ids.json)
+    $('#saved').innerHTML = '<p class="muted">Načítám uložená místa…</p>';
+    K.findPlaces(ids).then(items => {
       const missing = ids.length - items.length;
       $('#saved').innerHTML = '<ul class="pf-list rule-list">' + items.map(placeRow).join('') + '</ul>' +
         (missing ? '<p class="small muted">' + missing + ' uložených míst už v aktuálních datech není.</p>' : '');
@@ -59,7 +60,7 @@
       return;
     }
     $('#drafts').innerHTML = '<p class="small muted">Uloženo jen v tomto prohlížeči, zatím neodesláno.</p><ul class="pf-list rule-list">' + d.map(x =>
-      '<li><a class="rule-row pf-draft" href="' + (x.place && x.place.i ? 'misto.html?id=' + encodeURIComponent(x.place.i) : 'pridat.html') + '">' +
+      '<li><a class="rule-row pf-draft" href="' + (x.place && x.place.i ? K.placeUrl({ i: x.place.i, _r: x.place.r }) : 'pridat.html') + '">' +
       '<span class="pf-date num">' + K.fmtDate(x.created) + '</span>' +
       '<span class="pf-txt"><b>' + K.esc(x.place && x.place.n || 'Bez názvu') + '</b><small>' +
       Object.keys(x.values || {}).length + ' údajů · ' + (x.photos || []).length + ' fotek' + (x.category ? ' · ' + K.esc(x.category) : '') + '</small></span>' +

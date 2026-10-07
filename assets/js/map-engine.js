@@ -82,7 +82,13 @@
       engine: 'leaflet', map,
       setPlaces(list, o) {
         colorOf = o.colorOf;
-        if (group) map.removeLayer(group);
+        // Stará skupina může ještě po částech (chunkedLoading) přidávat značky; po odebrání z mapy by spadla na _map = null
+        if (group) {
+          map.removeLayer(group);
+          const noop = function () {};
+          group._addLayer = noop; group._refreshClustersIcons = noop;
+          group._topClusterLevel = new Proxy({}, { get: () => noop });
+        }
         group = L.markerClusterGroup({ chunkedLoading: true, showCoverageOnHover: false, maxClusterRadius: 50, disableClusteringAtZoom: 17,
           iconCreateFunction: c => L.divIcon({ className: '', html: '<div class="marker-cluster-kp" style="width:' + (34 + Math.min(16, Math.log2(c.getChildCount()) * 2)) + 'px;height:' + (34 + Math.min(16, Math.log2(c.getChildCount()) * 2)) + 'px">' + c.getChildCount() + '</div>', iconSize: [40, 40] }) });
         byId = {};

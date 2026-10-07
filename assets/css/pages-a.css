@@ -250,3 +250,7 @@ a.cat-row:hover .cat-n, a.cat-row:hover .cat-n .num { color: var(--on-signal); }
 .op-team { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (max-width: 760px) { .op-team { grid-template-columns: 1fr; } }
 .split-h .callout { margin-top: 20px; }
+/* Úvod: kraje ČR a vládní obvody Bavorska ve dvou skupinách */
+.kraj-links > li.kraj-group { border-top: 0; break-after: avoid; padding: 18px 0 6px; }
+.kraj-links > li.kraj-group:first-child { padding-top: 0; }
+.kraj-links > li.kraj-group .kicker { margin: 0; }

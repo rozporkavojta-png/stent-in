@@ -1,0 +1,704 @@
+{
+ "task": "web_horni-bavorsko_cile",
+ "kraj": "Horní Bavorsko",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "n1016000295",
+   "name": "Filmstudio im Alten Stadttheater Eichstätt",
+   "obec": "Eichstätt",
+   "lat": 48.891178,
+   "lng": 11.184044,
+   "category": "kultura",
+   "source_url": "https://www.kino-eichstaett.de/ei_service.php",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Kino uvádí, že je bezbariérové – oba sály jsou dostupné na vozíku (sál 1 ve 3. patře, sál 2 v přízemí).",
+    "vytah": "V budově je výtah; je třeba se ohlásit u pokladny.",
+    "wc": "Bezbariérová toaleta je k dispozici; ohlásit se u pokladny.",
+    "jine": "Bezbariérové promítání s audiopopisem a titulky přes aplikaci GRETA."
+   },
+   "measurements": [],
+   "evidence_quote": "Das Kino ist barrierefrei (beide Kinosäle sind mit dem Rollstuhl zu erreichen)."
+  },
+  {
+   "osm_id": "n307801084",
+   "name": "Diözesanmuseum für christliche Kunst",
+   "obec": "Freising",
+   "address": "Domberg 21",
+   "lat": 48.398971,
+   "lng": 11.743404,
+   "category": "pamatky",
+   "source_url": "https://www.dimu-freising.de/barrierefrei",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Celá budova (foyer, výstavy, světelná instalace J. Turrella, gastronomie) je dostupná bez schodů nebo bezbariérovými výtahy; na stránce je plánek vstupů.",
+    "vytah": "Bezbariérové výtahy v budově; na návrší Domberg vede šikmý výtah z jižního svahu (Bahnhofsstr./Brunnhausgasse).",
+    "parkovani": "Kvůli stavebním pracím teď nejsou před muzeem vyhrazená parkovací místa pro ZTP; lze krátce zastavit a vyložit cestující (úvodní stránka webu)."
+   },
+   "measurements": [],
+   "evidence_quote": "Das gesamte Gebäude ... ist entweder stufenlos zugänglich und über barrierefreie Aufzüge erreichbar."
+  },
+  {
+   "osm_id": "n846758843",
+   "name": "Bürgerhaus",
+   "obec": "Garching bei München",
+   "lat": 48.25047,
+   "lng": 11.65035,
+   "category": "kultura",
+   "source_url": "https://www.kultur-garching.de/vermietung",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Sály „Dirnismaning“ a „Forschungszentrum“ (klubovny) mají bezbariérový přístup; sál „Hochbrück“ zatím bezbariérový není."
+   },
+   "measurements": [],
+   "evidence_quote": "der Raum \"Hochbrück\" ist leider derzeit noch nicht barrierefrei"
+  },
+  {
+   "osm_id": "w275315117",
+   "name": "Chiemgau Thermen",
+   "obec": "Bad Endorf",
+   "address": "Ströbinger Straße 18",
+   "lat": 47.901024,
+   "lng": 12.298379,
+   "category": "sport",
+   "source_url": "https://www.chiemgau-thermen.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Areál je podle provozovatele jen částečně uzpůsoben pro osoby s postižením.",
+    "vytah": "K dispozici jsou výtahy.",
+    "wc": "Bezbariérové převlékárny a sociální zařízení.",
+    "parkovani": "3 místa pro ZTP v parkovacím domě a 2 mezi parkovacím domem a termami.",
+    "jine": "Držitelé průkazu se značkou „B“ mají doprovod zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Die Anlage ist in Teilen behindertengerecht gestaltet."
+  },
+  {
+   "osm_id": "n394815173",
+   "name": "Bezirksmuseum Dachau",
+   "obec": "Dachau",
+   "address": "Augsburger Straße 3",
+   "lat": 48.259268,
+   "lng": 11.43437,
+   "category": "pamatky",
+   "source_url": "https://dachauer-galerien-museen.de/besucherinformation/faqs/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Okresní muzeum (Bezirksmuseum) není kvůli historické budově bezbariérové; přístup vede přes malé návrší s historickou dlažbou.",
+    "jine": "Plocha pro dočasné výstavy v přízemí je s pomocí sjízdná i na vozíku, ale mezi dvěma místnostmi je jeden schod. (Sousední Gemäldegalerie má výtah – jiný objekt.)"
+   },
+   "measurements": [],
+   "evidence_quote": "Aufgrund des historischen Gebäudes ist das Bezirksmuseum leider nicht barrierefrei"
+  },
+  {
+   "osm_id": "w114110806",
+   "name": "Filmpalast Kaufering",
+   "obec": "Kaufering",
+   "address": "Viktor-Frankl-Straße 7",
+   "lat": 48.080117,
+   "lng": 10.855448,
+   "category": "kultura",
+   "source_url": "https://mein-filmpalast.de/mehr/info-fuer-rollstuhlfahrer",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Kino je podle provozovatele ve všech částech postaveno a vybaveno pro osoby s postižením; pokladny, foyer i každý sál jsou dostupné bez schodů.",
+    "wc": "Bezbariérové WC ve foyer.",
+    "parkovani": "Dostatek vyhrazených parkovacích míst pro osoby s postižením.",
+    "jine": "V sálech jsou místa pro vozíky (z bezpečnostních důvodů v první řadě; v sálech 3 a 6 v řadě 3, v sále 4 v řadě 4); vejdou se i větší vozíky."
+   },
+   "measurements": [],
+   "evidence_quote": "Rollstuhlfahrer erreichen unsere Kassen, die Foyer-Ebene und jeden Kinosaal problemlos und ohne Stufen."
+  },
+  {
+   "osm_id": "w31360276",
+   "name": "Alpenwarmbad Benediktbeuern",
+   "obec": "Kochel am See",
+   "address": "Schwimmbadstraße 32",
+   "lat": 47.696569,
+   "lng": 11.416875,
+   "category": "sport",
+   "source_url": "https://www.benediktbeuern.de/barrierefreies-alpenwarmbad/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstupní prostor je dostupný po rampě; interiér je bezbariérově upraven; rampa vede i z interiéru k bazénům a podél okraje bazénu je bezbariérový přechod.",
+    "wc": "Bezbariérová převlékárna, sprcha a WC (klíč v kabině plavčíka).",
+    "parkovani": "Vyhrazené parkovací místo pro ZTP přímo před vchodem.",
+    "jine": "Vstup do obou bazénů po širokých schodech se zábradlím; personál pomůže se vstupem do vody. Koupaliště má certifikaci „Barrierefreiheit geprüft“ (Reisen für Alle) pro osoby s omezenou pohyblivostí."
+   },
+   "measurements": [],
+   "evidence_quote": "Erreichbarkeit des Eingangsbereichs über eine Rampe"
+  },
+  {
+   "osm_id": "n1337167245",
+   "name": "Chiemseeschifffahrt",
+   "obec": "Prien am Chiemsee",
+   "lat": 47.860613,
+   "lng": 12.366163,
+   "category": "pamatky",
+   "source_url": "https://www.chiemsee-schifffahrt.de/de/infos/menschen-mit-behinderung",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na lodě se nastupuje po pohyblivé rampě (přechodovém můstku) dost široké pro vozík; podle stavu vody může být šikmá a v místě uložení je malý práh. Přístup na mola (Prien/Stock, Bernau/Felden, Herreninsel, Fraueninsel aj.) je bez schodů a mola jsou dost široká. Posádka pomáhá s nástupem.",
+    "wc": "WC pro ZTP: Prien/Stock u pokladen, Bernau/Felden v infocentru, Chieming, Seebruck, Gstadt, Herreninsel (pokladní budova); Übersee/Feldwies a Fraueninsel ne. Na lodích MS Josef, Irmingard a Rudolf je WC vhodné pro ZTP.",
+    "parkovani": "Parkování pro ZTP u přístavišť Prien/Stock (placené), Bernau/Felden, Übersee/Feldwies, Chieming, Seebruck a Gstadt.",
+    "jine": "Na palubách bývá bez schodů dostupná jen část lodi (např. u parníku Ludwig Fessler střední paluba a přední volná paluba). Provozovatel doporučuje začít cestu v Prien/Stock."
+   },
+   "measurements": [
+    {
+     "co": "nejužší průchozí šířka na lodi při nástupu a výstupu",
+     "hodnota": 90,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Die schmalste Durchgangsbreite auf dem Schiff beträgt 90 cm zum Ein- und Ausstieg."
+  },
+  {
+   "osm_id": "n13197324998",
+   "name": "Hans-Peter Porsche TraumWerk",
+   "obec": "Anger",
+   "address": "Zum Traumwerk 1",
+   "lat": 47.791794,
+   "lng": 12.870235,
+   "category": "pamatky",
+   "source_url": "https://www.traumwerk.de/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Areál je dostupný bez schodů.",
+    "vytah": "Výstavy, restaurace a obchod jsou dostupné výtahem nebo v úrovni terénu.",
+    "wc": "Bezbariérové sociální zařízení je k dispozici.",
+    "jine": "Na požádání zapůjčí vozík (úvodní stránka); místnost pro odpočinek / první pomoc; ochotný personál."
+   },
+   "measurements": [],
+   "evidence_quote": "Stufenlos zugängliches Gelände; Ausstellungen, Restaurant und Shop per Aufzug bzw. ebenerdig erreichbar"
+  },
+  {
+   "osm_id": "n4280765190",
+   "name": "Augustiner-Chorherrenstift",
+   "obec": "Chiemsee",
+   "address": "Herrenchiemsee 3",
+   "lat": 47.867321,
+   "lng": 12.396935,
+   "category": "pamatky",
+   "source_url": "https://www.herrenchiemsee.de/deutsch/tourist/mobilitaet.htm",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Od informačního centra vede k Augustiniánskému klášteru značená bezschodá cesta po asfaltu a zpevněném štěrku (místy stoupání přes 6 %); samostatný bezschodý vchod přes vnitřní nádvoří (Rosengarten) se zvonkem pro vozíčkáře.",
+    "vytah": "Všechny důležité části jsou bez schodů dostupné výtahy (kabina 190 × 128 cm).",
+    "wc": "V návštěvnickém centru je „Toilette für alle“ s přebalovacím stolem, výškově nastavitelným lehátkem a zvedákem; další WC pro ZTP v Novém zámku.",
+    "parkovani": "Parkování pro ZTP je u většiny přístavišť kolem Chiemsee; pro vozíčkáře (hlavně s elektrickým vozíkem) se doporučuje loď z Prien.",
+    "jine": "Dveře min. 94 cm, povrch rovný a protiskluzový, místa k sezení; vozíky lze zapůjčit na místě. Lodě mají mobilní rampy. Na webu je plánek ostrova s kategoriemi cest pro vozík."
+   },
+   "measurements": [
+    {
+     "co": "výtah – délka kabiny",
+     "hodnota": 190,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výtah – šířka kabiny",
+     "hodnota": 128,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří (minimum)",
+     "hodnota": 94,
+     "jednotka": "cm"
+    },
+    {
+     "co": "sklon cesty k objektu (místy přes)",
+     "hodnota": 6,
+     "jednotka": "%"
+    }
+   ],
+   "evidence_quote": "Separater stufenloser Eingang über den Innenhof (Rosengarten); Klingel für Rollstuhlfahrer an der Tür"
+  },
+  {
+   "osm_id": "n5600642776",
+   "name": "Bavaria Filmstadt",
+   "obec": "Grünwald",
+   "lat": 48.065427,
+   "lng": 11.554015,
+   "category": "pamatky",
+   "source_url": "https://www.filmstadt.de/infos-preise/anfahrt",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Pěší cesta od tramvaje (linka 25) k pokladnám Filmstadt (cca 200 + 700 m) je asfaltová a bezbariérová, asi 10 minut. O přístupnosti samotných atrakcí stránka nic neuvádí."
+   },
+   "measurements": [
+    {
+     "co": "délka pěší cesty od zastávky k pokladnám (cca)",
+     "hodnota": 900,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Der Fußweg ist asphaltiert, barrierefrei und dauert insgesamt circa zehn Minuten."
+  },
+  {
+   "osm_id": "w66619285",
+   "name": "Markus Wasmeier Freilichtmuseum",
+   "obec": "Schliersee",
+   "address": "Brunnbichl 5",
+   "lat": 47.707467,
+   "lng": 11.877617,
+   "category": "pamatky",
+   "source_url": "https://www.wasmeier.de/besucherinfo/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Areál skanzenu je bezbariérově přístupný; cesty nejsou asfaltové, ale bývají dobře zpevněné. Budovy jsou v původním stavu – vozíčkáři si je s doprovodem prohlédnou z větší části.",
+    "wc": "V hostinci je bezbariérová toaleta.",
+    "jine": "Vozík je k zapůjčení zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Ein Rollstuhl steht kostenlos zur Verfügung."
+  },
+  {
+   "osm_id": "n13348760565",
+   "name": "Capitol",
+   "obec": "Unterschleißheim",
+   "address": "Alleestraße 24",
+   "lat": 48.279987,
+   "lng": 11.581125,
+   "category": "kultura",
+   "source_url": "https://capitol-lohhof.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "U vchodu do kina je dost strmá rampa; návštěvníci na mechanickém vozíku se mají předem ohlásit telefonicky, personál pomůže."
+   },
+   "measurements": [],
+   "evidence_quote": "Am Kinoeingang befindet sich eine recht steile Rampe"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n338175108",
+   "name": "ABC Kino",
+   "obec": "München",
+   "web": "https://leopold-abckinos.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "r18371747",
+   "name": "Astronomiepark",
+   "obec": "Ingolstadt",
+   "web": "https://www.astronomiepark.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n5475892321",
+   "name": "Bürgerhaus Happing",
+   "obec": "Rosenheim",
+   "web": "https://www.die-happinger.de/",
+   "duvod": "web nedostupný (chyba načtení)"
+  },
+  {
+   "osm_id": "w44820318",
+   "name": "Ballsportcenter Gerlspeck",
+   "obec": "Erding",
+   "web": "http://www.gerlspeck.com/Inhalte/ballsportcenter.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w107634249",
+   "name": "Familienzentrum Haar",
+   "obec": "Haar",
+   "web": "https://www.nbh-haar.de/familienzentrum",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n2069738380",
+   "name": "Breitwand",
+   "obec": "Starnberg",
+   "web": "https://www.breitwand.com/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n302267530",
+   "name": "Aibvision Filmtheater",
+   "obec": "Bad Aibling",
+   "web": "https://www.kino-aibling.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n300988996",
+   "name": "Gemeindebücherei Tutzing",
+   "obec": "Tutzing",
+   "web": "http://www.buecherei-tutzing.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w115625405",
+   "name": "Königliches Kurhaus",
+   "obec": "Bad Reichenhall",
+   "web": "http://www.bad-reichenhall.com/de/seminare-kongresse/",
+   "duvod": "uvedená stránka vrací 404"
+  },
+  {
+   "osm_id": "n618827638",
+   "name": "Hardy's",
+   "obec": "Fürstenfeldbruck",
+   "web": "https://www.hardys-freizeit.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w193752397",
+   "name": "Cewe Arena",
+   "obec": "Germering",
+   "web": "https://www.sv-germering.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n966142320",
+   "name": "Hardy's",
+   "obec": "Landsberg am Lech",
+   "web": "https://www.hardys-fitness.de/hardys-fitness-landsberg",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n6579139601",
+   "name": "Evang.-Luth. Kirchengemeinde Moosburg a.d. Isar",
+   "obec": "Moosburg",
+   "web": "https://www.moosburg-evangelisch.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n67134958",
+   "name": "Filmstudio",
+   "obec": "Ottobrunn",
+   "web": "https://kino-ottobrunn.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n4661237964",
+   "name": "Dioramenschau",
+   "obec": "Altötting",
+   "web": "https://www.altoettinger-marienwerk.de/",
+   "duvod": "web zmiňuje jen sousední křížovou cestu vhodnou pro vozík, ne samotnou expozici"
+  },
+  {
+   "osm_id": "n814973651",
+   "name": "Bauerntheater",
+   "obec": "Berchtesgaden",
+   "web": "https://www.berchtesgadener-bauerntheater.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w783052718",
+   "name": "Alpspitz-Wellenbad",
+   "obec": "Garmisch-Partenkirchen",
+   "web": "https://www.gw-gap.de/alpspitz-wellenbad",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n4373199590",
+   "name": "Forum Westtorhalle",
+   "obec": "Murnau am Staffelsee",
+   "web": "https://www.westtor.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n353446988",
+   "name": "Gemeindebücherei",
+   "obec": "Poing",
+   "web": "https://www.poing.de/generationen-bildung/buecherei.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n9969350740",
+   "name": "Evangelisches Gemeindehaus Pöcking",
+   "obec": "Pöcking",
+   "web": "https://www.poecking-evangelisch.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w161293092",
+   "name": "Bauernhausmuseum Amerang",
+   "obec": "Amerang",
+   "web": "https://www.bhm-amerang.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w35375694",
+   "name": "Falknerei Burghohenaschau",
+   "obec": "Aschau im Chiemgau",
+   "web": "http://www.falknerei-burghohenaschau.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n6726567182",
+   "name": "Autokino Aschheim",
+   "obec": "Aschheim",
+   "web": "https://autokino-aschheim.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n253609269",
+   "name": "Hoftheater Bergkirchen",
+   "obec": "Bergkirchen",
+   "web": "https://hoftheater-bergkirchen.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n289685652",
+   "name": "Haus der Fotografie",
+   "obec": "Burghausen",
+   "web": "https://www.burghausen.de/stadt/rathaus/staedtische-einrichtungen/haus-der-fotografie/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w202207658",
+   "name": "Altes Kino Ebersberg",
+   "obec": "Ebersberg",
+   "web": "https://kultur-in-ebersberg.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w624730953",
+   "name": "Breitwand",
+   "obec": "Gauting",
+   "web": "https://www.breitwand.com/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n1720801290",
+   "name": "Gemeindebibliothek Ismaning",
+   "obec": "Ismaning",
+   "web": "https://bibliothek-ismaning.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w108310269",
+   "name": "Heimat- und Industriemuseum",
+   "obec": "Kolbermoor",
+   "web": "https://heimatmuseum-kolbermoor.byseum.de/de/foerderverein",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n1335862883",
+   "name": "PUC - Puchheimer Kultur Zentrum",
+   "obec": "Puchheim",
+   "web": "https://www.puc-puchheim.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w120126495",
+   "name": "Museum im Pflegschloss",
+   "obec": "Schrobenhausen",
+   "web": "https://museen-schrobenhausen.byseum.de/de/pflegschloss",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w93687828",
+   "name": "Sporthalle Chiemgau-Gymnasium",
+   "obec": "Traunstein",
+   "web": "http://www.chiemgaugymnasium.de",
+   "duvod": "web nedostupný (chyba načtení)"
+  },
+  {
+   "osm_id": "w4688406",
+   "name": "Gemeindebücherei Vaterstetten",
+   "obec": "Vaterstetten",
+   "web": "http://www.buecherei-vaterstetten.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w456448464",
+   "name": "Feuerwehrmuseum Bayern",
+   "obec": "Waldkraiburg",
+   "web": "https://www.feuerwehrmuseum-bayern.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w254500725",
+   "name": "Stadtbücherei Weilheim",
+   "obec": "Weilheim in Oberbayern",
+   "web": "https://buecherei.weilheim.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n5214033422",
+   "name": "Gemeindebücherei Zorneding",
+   "obec": "Zorneding",
+   "web": "https://www.buecherei-zorneding.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n8910298841",
+   "name": "Boulderwelt München Süd",
+   "obec": "Brunnthal",
+   "web": "https://www.boulderwelt-muenchen-sued.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n256153571",
+   "name": "Aktivpark Gilching",
+   "obec": "Gilching",
+   "web": "https://www.aktivpark.com/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n5167991671",
+   "name": "Gemeindebücherei Glonn",
+   "obec": "Glonn",
+   "web": "https://marktgemeinde-glonn.de/2016/01/22/gemeindebuecherei/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w149672517",
+   "name": "Bürgerhaus Gräfelfing",
+   "obec": "Gräfelfing",
+   "web": "https://www.buergerhaus-graefelfing.de/das-haus.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n239930550",
+   "name": "Gröbenlichtspiele",
+   "obec": "Gröbenzell",
+   "web": "https://www.groebenlichtspiele.de/",
+   "duvod": "web uvádí jen aplikaci GRETA (audiopopis/titulky), ne fyzickou přístupnost"
+  },
+  {
+   "osm_id": "w421110334",
+   "name": "\"Kaiserstiftung\" Senioren-Begegnungsstätte",
+   "obec": "Hohenbrunn",
+   "web": "https://hohenbrunn.de/unser-hohenbrunn/engagement/seniorentreff-kaiserstiftung/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w300609790",
+   "name": "FC Arnsberg",
+   "obec": "Kipfenberg",
+   "web": "https://fcarnsberg.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w266616844",
+   "name": "Isarwelle",
+   "obec": "Lenggries",
+   "web": "https://www.lenggries.de/staemme/familienbad-isarwelle",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w319356463",
+   "name": "Augustiner Chorherrenmuseum",
+   "obec": "Markt Indersdorf",
+   "web": "https://www.heimatverein-indersdorf.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w45029155",
+   "name": "Gemeindehaus",
+   "obec": "Miesbach",
+   "web": "https://miesbach-evangelisch.de",
+   "duvod": "web nedostupný (chyba načtení)"
+  },
+  {
+   "osm_id": "n299499722",
+   "name": "Geigenbau-Museum",
+   "obec": "Mittenwald",
+   "web": "http://www.geigenbaumuseum-mittenwald.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n847299784",
+   "name": "Oberammergau Museum",
+   "obec": "Oberammergau",
+   "web": "https://www.oberammergaumuseum.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n667746493",
+   "name": "Gemeindebücherei Olching",
+   "obec": "Olching",
+   "web": "https://www.olching.de/bildung-and-freizeit/bildung/buechereien",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w370171762",
+   "name": "Pfarrkirche St. Johannes Baptist",
+   "obec": "Pfaffenhofen an der Ilm",
+   "web": "http://www.johannes-baptist.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w108669620",
+   "name": "Bücherei Planegg",
+   "obec": "Planegg",
+   "web": "https://www.buecherei-planegg.de/Startseite-Aktuelles.n81.html",
+   "duvod": "web nedostupný (chyba načtení)"
+  },
+  {
+   "osm_id": "n1281832698",
+   "name": "Charlotte-Dessecker-Bücherei",
+   "obec": "Pullach im Isartal",
+   "web": "https://pullach.bibliotheca-open.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n356852227",
+   "name": "Moorerlebnisstation Sterntaler Filze",
+   "obec": "Raubling",
+   "web": "https://www.baysf.de/de/wald-erkunden/ausflugsziele-tipps/das-tor-zum-moor-neuer-erlebnisreicher-lehrpfad-im-sterntaler-filz.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n509912634",
+   "name": "Keltisches Gehöft",
+   "obec": "Seeon-Seebruck",
+   "web": "https://www.seeon-seebruck.de/keltengehoeft-stoeffling-1",
+   "duvod": "web nedostupný (chyba načtení)"
+  },
+  {
+   "osm_id": "n253813066",
+   "name": "Kultur und Kongress Zentrum",
+   "obec": "Taufkirchen",
+   "web": "https://kulturzentrum-taufkirchen.de/",
+   "duvod": "nalezený výskyt klíčového slova byl jen v textu programu, ne o přístupnosti"
+  },
+  {
+   "osm_id": "w618098985",
+   "name": "FC Thaining",
+   "obec": "Thaining",
+   "web": "http://fcthaining.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w189995513",
+   "name": "Erinnerungsort Badehaus",
+   "obec": "Wolfratshausen",
+   "web": "https://www.erinnerungsort-badehaus.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  }
+ ],
+ "sources": [
+  "https://capitol-lohhof.de/",
+  "https://dachauer-galerien-museen.de/besucherinformation/faqs/",
+  "https://mein-filmpalast.de/mehr/info-fuer-rollstuhlfahrer",
+  "https://www.benediktbeuern.de/barrierefreies-alpenwarmbad/",
+  "https://www.chiemgau-thermen.de/",
+  "https://www.chiemsee-schifffahrt.de/de/infos/menschen-mit-behinderung",
+  "https://www.dimu-freising.de/",
+  "https://www.dimu-freising.de/barrierefrei",
+  "https://www.filmstadt.de/infos-preise/anfahrt",
+  "https://www.herrenchiemsee.de/deutsch/tourist/mobilitaet.htm",
+  "https://www.kino-eichstaett.de/ei_service.php",
+  "https://www.kultur-garching.de/vermietung",
+  "https://www.traumwerk.de/",
+  "https://www.traumwerk.de/barrierefreiheit/",
+  "https://www.wasmeier.de/besucherinfo/"
+ ]
+}

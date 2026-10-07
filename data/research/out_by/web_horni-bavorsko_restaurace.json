@@ -1,0 +1,542 @@
+{
+ "task": "web_horni-bavorsko_restaurace",
+ "zeme": "de",
+ "kraj": "Horní Bavorsko",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "n384945797",
+   "name": "Alter Wirt",
+   "obec": "Grünwald",
+   "address": "Marktplatz 1",
+   "lat": 48.040006,
+   "lng": 11.523238,
+   "category": "restaurace",
+   "source_url": "https://www.alterwirt.de/bio-hotel/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel u restaurace (Bio-Hotel) o sobě uvádí, že je vybaven pro osoby s postižením (behindertengerecht); podrobnosti (vstup, WC, rozměry) web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Selbstverständlich sind wir behindertengerecht ausgestattet."
+  },
+  {
+   "osm_id": "n9701853331",
+   "name": "Alte Post",
+   "obec": "Oberammergau",
+   "address": "Dorfstraße 19",
+   "lat": 47.598694,
+   "lng": 11.064441,
+   "category": "restaurace",
+   "source_url": "https://altepost.com/hotel/deluxezimmer",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Část pokojů v hlavní budově hotelu je podle webu uzpůsobena pro osoby s postižením („teilweise behindertengerecht“, u ceníku „tw. behindertenfreundlich“).",
+    "vytah": "Standardní i deluxe pokoje v hlavní budově jsou dostupné výtahem.",
+    "jine": "Informace se týkají hotelové části; o přístupnosti restaurace, WC a parkování web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Die im Haupthauses liegenden Zimmer sind bequem mit dem Aufzug erreichbar und teilweise behindertengerecht."
+  },
+  {
+   "osm_id": "w114595328",
+   "name": "Biergarten Mühlenpark",
+   "obec": "Garching bei München",
+   "address": "Mühlgasse 48",
+   "lat": 48.246238,
+   "lng": 11.66132,
+   "category": "restaurace",
+   "source_url": "https://www.biergarten-muehlenpark.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "V pivní zahradě je toaleta pro osoby s postižením (Behindertentoilette).",
+    "parkovani": "Přímo u pivní zahrady nejsou žádná parkovací místa.",
+    "jine": "Venkovní pivní zahrada; o povrchu cest a vstupu web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Ein großer Fahrradabstellplatz sowie eine Behindertentoilette sind ebenfalls vorhanden."
+  },
+  {
+   "osm_id": "n155127193",
+   "name": "Gasthof Feringasee",
+   "obec": "Unterföhring",
+   "address": "Am Feringasee 1",
+   "lat": 48.192191,
+   "lng": 11.674682,
+   "category": "restaurace",
+   "source_url": "https://feringa-see.de/der-see/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Poblíž jihovýchodní části jezera jsou dvě bezbariérové toalety; další WC pro osoby s postižením u surfařské části.",
+    "parkovani": "Parkoviště P2 (východní břeh) má 1165 míst, z toho 20 vyhrazených pro osoby s postižením.",
+    "jine": "Údaje se týkají areálu jezera Feringasee, ne přímo budovy hostince: v JV části je louka pro vozíčkáře s mírnou rampou do vody. O vstupu do restaurace web nic neuvádí."
+   },
+   "measurements": [
+    {
+     "co": "vyhrazená stání pro osoby s postižením na parkovišti P2",
+     "hodnota": 20,
+     "jednotka": "stání"
+    }
+   ],
+   "evidence_quote": "Zwei behindertengerechte Toilettenanlagen befinden sich ganz in der Nähe."
+  },
+  {
+   "osm_id": "n2370857783",
+   "name": "Angermaier",
+   "obec": "Rottach-Egern",
+   "address": "Berg 1",
+   "lat": 47.689707,
+   "lng": 11.803363,
+   "category": "restaurace",
+   "source_url": "https://cafe-angermaier.de/zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Prázdninový byt (cca 45 m²) v 1. patře penzionu má vstup bez schodů ze zadní strany domu (Eingang ebenerdig).",
+    "jine": "O přístupnosti kavárny, WC ani parkování web nic neuvádí; jde jen o vstup do apartmánu."
+   },
+   "measurements": [],
+   "evidence_quote": "Gästehaus 1. Stock (Eingang ebenerdig von der Rückseite her)"
+  },
+  {
+   "osm_id": "n4881653405",
+   "name": "Bärenstüberl",
+   "obec": "Schönau am Königssee",
+   "address": null,
+   "lat": 47.608943,
+   "lng": 12.960762,
+   "category": "restaurace",
+   "source_url": "https://www.baerenstueberl.de/zimmer/familienzimmer-dachgeschoss",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "V historické části budovy není výtah (pokoje v podkroví jsou tedy dostupné jen po schodech).",
+    "jine": "Jiné informace o přístupnosti (vstup do restaurace, WC) web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Im historischen Teil des Gebäudes gibt es keinen Aufzug."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n447022319",
+   "name": "#shami",
+   "url": "https://shami-kitchen.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12317746430",
+   "name": "08 coffee",
+   "url": "https://www.08world.world/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1801423676",
+   "name": "After Dark",
+   "url": "http://www.after-dark-cocktailbar.de",
+   "reason": "web nedostupný (chyba připojení / 403)"
+  },
+  {
+   "osm_id": "n1361996367",
+   "name": "Amici",
+   "url": "https://amici-freising.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2195090091",
+   "name": "Asien Perle",
+   "url": "https://www.asienperle-erding.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3567226609",
+   "name": "Al Gallo Nero",
+   "url": "https://algallonero.de/",
+   "reason": "web nedostupný (chyba připojení / 403)"
+  },
+  {
+   "osm_id": "w57738681",
+   "name": "Almhütte - Windbeutelalm",
+   "url": "https://elchs-almhuette.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n310875008",
+   "name": "ATHEN",
+   "url": "https://athen-ffb.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2262566337",
+   "name": "ART & CAFE - Genuss & Emotion",
+   "url": "https://www.art-und-cafe.com/",
+   "reason": "web nedostupný (chyba připojení / 403)"
+  },
+  {
+   "osm_id": "n958462358",
+   "name": "Café Baumkuchen",
+   "url": "https://baumkuchen-germering.eatbu.com/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1070449667",
+   "name": "73 Burger Bar",
+   "url": "https://www.73bb.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4189863899",
+   "name": "An Vy Kitchen",
+   "url": "https://anvykitchen.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n5320172361",
+   "name": "Auszeit",
+   "url": "https://www.auszeit-therme.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n369719176",
+   "name": "Anatolia Orient Oase",
+   "url": "https://anatoliaorientoase.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n610477701",
+   "name": "Aquarium",
+   "url": "https://restaurant-aquarium.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3966569879",
+   "name": "Alexander The Great",
+   "url": "https://www.alexander-moosburg.com",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n734248554",
+   "name": "Allgäuer Hof",
+   "url": "http://www.allgäuerhof-weilheim.de/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek (WCAG), o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n10969389919",
+   "name": "Bäckerei Konditorei A. Müller",
+   "url": "http://www.baeckerei-prien.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n269422811",
+   "name": "Deliano",
+   "url": "https://www.deliano-wasserburg.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2117548123",
+   "name": "Beitz & Lotte",
+   "url": "https://www.beitzundlotte.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n596133818",
+   "name": "Brauerei-Ausschank Schnitzlbaumer",
+   "url": "http://www.schnitzlbaumer.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3481053959",
+   "name": "Bollicine",
+   "url": "https://www.bollicine.de/",
+   "reason": "web nedostupný (chyba připojení / 403)"
+  },
+  {
+   "osm_id": "w163903132",
+   "name": "Auszeit",
+   "url": "https://www.restaurant-auszeit.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n272014336",
+   "name": "Althaching",
+   "url": "https://www.wirtshaus-althaching.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2371127165",
+   "name": "Asien Palast",
+   "url": "https://www.asienpalast-ush.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w175512576",
+   "name": "Alpengasthof Madlbauer",
+   "url": "https://www.alpengasthof-madlbauer.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n11835492760",
+   "name": "Amore Pizza",
+   "url": "https://www.pizzeriaamorebadtoelz.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9124316878",
+   "name": "AMICI Haar",
+   "url": "https://amici-haar.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w35537581",
+   "name": "Arco-Schlösschen",
+   "url": "https://www.arco-schloesschen.com/",
+   "reason": "web nedostupný (chyba připojení / 403)"
+  },
+  {
+   "osm_id": "n2294462982",
+   "name": "Café Mesner Konditorei",
+   "url": "http://www.cafe-mesner.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3774638668",
+   "name": "Akropolis",
+   "url": "https://www.akropolis-ebersberg.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1351758164",
+   "name": "Die Gams",
+   "url": "https://www.hotel-gams.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n8438636533",
+   "name": "Cafe im Paradeis",
+   "url": "https://cafeparadeis.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n570809748",
+   "name": "Anh Dao Restaurant",
+   "url": "https://www.anhdao-restaurant.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n310349136",
+   "name": "Biergarten Taufkirchen",
+   "url": "https://biergarten-taufkirchen.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w491182129",
+   "name": "Biergarten Forsthaus Ilkahöhe",
+   "url": "https://www.restaurant-ilkahoehe.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n510970600",
+   "name": "Banh mi Minh Bakes & Brewes",
+   "url": "https://banhmiminh-bakesnbrews.de/",
+   "reason": "web vrací HTTP 403, nelze ověřit"
+  },
+  {
+   "osm_id": "n1716135583",
+   "name": "Bella Theranda",
+   "url": "http://www.bella-theranda.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w151212177",
+   "name": "Café am Gröbenbach",
+   "url": "https://www.cafeamgroebenbach.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1307897374",
+   "name": "Hausler-Hof",
+   "url": "https://www.hausler-hof.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n13638058510",
+   "name": "3sine Deisenhofen",
+   "url": "https://www.3sine.eu/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1856741504",
+   "name": "Cafe Ganser",
+   "url": "https://www.cafe-ganser.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w46039017",
+   "name": "Antica Rimini",
+   "url": "https://www.rimini-penzberg.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w38754655",
+   "name": "Berggasthaus Steinberg-Alm",
+   "url": "https://www.steinberg-alm.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w142179681",
+   "name": "Cafe König",
+   "url": "http://www.cafe-koenig-konditorei.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1002566333",
+   "name": "Boxenstop",
+   "url": "https://www.boxenstop-ismaning.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1254809443",
+   "name": "Biergarten Karlsfelder See",
+   "url": "https://biergarten-karlsfeld.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n8361739628",
+   "name": "Bei Loren",
+   "url": "https://beiloren.com/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w127115871",
+   "name": "Avtar Indian Restaurant",
+   "url": "https://xn--pcking-avtar-4ib.de",
+   "reason": "web nedostupný (chyba připojení / 403)"
+  },
+  {
+   "osm_id": "w283000879",
+   "name": "Alte Schmiede",
+   "url": "http://www.alteschmiede.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1947897948",
+   "name": "Gasthaus Andrelang",
+   "url": "http://andrelang.info/",
+   "reason": "web nedostupný (chyba připojení / 403)"
+  },
+  {
+   "osm_id": "n366925027",
+   "name": "An Restaurant",
+   "url": "https://www.anrestaurant.eu/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n289388341",
+   "name": "Alte Post",
+   "url": "https://www.alte-post-holzkirchen.de/restaurant/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n639122762",
+   "name": "AMICI Pizzeria",
+   "url": "https://amici-heimstetten.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2339450565",
+   "name": "Cafe Bistro Goa",
+   "url": "https://www.cafe-goa.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3647372038",
+   "name": "Beach Bar",
+   "url": "https://kleines-seehaus.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n611723727",
+   "name": "Alte Eiche",
+   "url": "https://wirtshaus-alte-eiche.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n340248436",
+   "name": "Afrodite",
+   "url": "https://www.afrodite-poing.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w293151948",
+   "name": "Biergarten Hinterberger",
+   "url": "https://www.gasthaus-hinterberger.de/biergarten.htm",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w256344190",
+   "name": "Chiemseer Wirthaus (Unterwirt)",
+   "url": "https://www.chiemseer-wirtshaus.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n6781425088",
+   "name": "Café Seehof",
+   "url": "http://www.seehof-walchensee.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7800939529",
+   "name": "Café Lieblingsplatz",
+   "url": "https://lieblingsplatz.me/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w83231867",
+   "name": "Berggasthof Hocheck",
+   "url": "https://www.berggasthof-hocheck.de/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu (BFSG/WCAG); fyzická přístupnost neuvedena, k podniku se jde pěšky nebo lanovkou Hocheckbahn"
+  },
+  {
+   "osm_id": "n1781398296",
+   "name": "Halong Bay",
+   "url": "https://www.halongbay-vietfood.de/pullach/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Alter Wirt – web provozovatele",
+   "url": "https://www.alterwirt.de/bio-hotel/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig…)"
+  },
+  {
+   "title": "Alte Post – web provozovatele",
+   "url": "https://altepost.com/hotel/deluxezimmer",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig…)"
+  },
+  {
+   "title": "Biergarten Mühlenpark – web provozovatele",
+   "url": "https://www.biergarten-muehlenpark.de/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig…)"
+  },
+  {
+   "title": "Gasthof Feringasee – web provozovatele",
+   "url": "https://feringa-see.de/der-see/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig…)"
+  },
+  {
+   "title": "Angermaier – web provozovatele",
+   "url": "https://cafe-angermaier.de/zimmer/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig…)"
+  },
+  {
+   "title": "Bärenstüberl – web provozovatele",
+   "url": "https://www.baerenstueberl.de/zimmer/familienzimmer-dachgeschoss",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig…)"
+  }
+ ]
+}

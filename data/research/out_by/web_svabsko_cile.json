@@ -1,0 +1,1002 @@
+{
+ "task": "web_svabsko_cile",
+ "kraj": "Švábsko",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "n662942560",
+   "name": "Allgäuer Burgenmuseum",
+   "obec": "Kempten (Allgäu)",
+   "address": "Burghalde 1",
+   "lat": 47.72368,
+   "lng": 10.320261,
+   "category": "pamatky",
+   "source_url": "https://www.allgaeuer-burgenmuseum.de/besucherinfo.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Pěšky se jde po schodech; lidé na vozíku mohou dojet na Burghalde příjezdovou cestou pro rezidenty (Freudental – An der Lützelburg – Burghalde). Všechny prostory muzea jsou v přízemí, bez prahů a schodů.",
+    "wc": "Bezbariérové WC není přímo v muzeu, ale v areálu Burghalde.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Na samotné Burghalde parkování není.",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Die Räumlichkeiten des Museums sind alle ebenerdig angelegt, ohne Schwellen oder Stufen."
+  },
+  {
+   "osm_id": "n13026806593",
+   "name": "Cavazzen Museum",
+   "obec": "Lindau (Bodensee)",
+   "address": "Marktplatz 6",
+   "lat": 47.547182,
+   "lng": 9.686595,
+   "category": "pamatky",
+   "source_url": "https://kultur.lindau.de/cavazzen-museum/besuch-planen/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Muzeum uvádí bezbariérový přístup; hlavní vchod z Cramergasse je bez schodů, alternativně vstup přes vnitřní dvůr.",
+    "wc": "WC pro vozíčkáře v přízemí.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Doporučeno P+R parkoviště P1 a P2 (na ostrov Lindau nevjíždět); vyhrazená místa pro OZP web neuvádí.",
+    "vytah": "Všechna podlaží dostupná výtahem.",
+    "jine": "Doprovod držitele průkazu s „B“ nebo „H“ má vstup zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Der stufenlose Haupteingang befindet sich in der Cramergasse."
+  },
+  {
+   "osm_id": "w35591142",
+   "name": "Allgäuer Bergbauernmuseum",
+   "obec": "Immenstadt im Allgäu",
+   "address": "Diepolz 44",
+   "lat": 47.615426,
+   "lng": 10.176708,
+   "category": "pamatky",
+   "source_url": "https://www.bergbauernmuseum.de/infos-service/barrierefreiheit.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Areál je jen částečně bezbariérový (horský terén, cesty mezi budovami částečně neasfaltované). Vstupní budova – přízemí přes rampu, 1. patro zadním vchodem; statek – výstava zadním vchodem (průchozí „kraví žaludek“ jen po schodech); bylinková zahrada částečně; včelín a dům včelaře nepřístupné; Sattler-Hof částečně; Rosshütte nepřístupná; Höfle-Alpe na požádání přes dvě rampy (příjezd přilehlou cestou mimo areál).",
+    "wc": "Bezbariérové WC ve vstupní budově (přízemí).",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Vyhrazené parkovací místo pro OZP přímo před vstupní budovou.",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Das Gelände des Bergbauernmuseums ist teilweise barrierefrei zugänglich."
+  },
+  {
+   "osm_id": "n13609529062",
+   "name": "Kunsthaus",
+   "obec": "Kaufbeuren",
+   "address": null,
+   "lat": 47.881121,
+   "lng": 10.623279,
+   "category": "pamatky",
+   "source_url": "https://www.kunsthaus-kaufbeuren.de/besuch",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že budova i výstavní prostory jsou bezbariérové (bez podrobností).",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "V historickém centru parkování není; doporučeno Rathaus Parkgarage nebo Parkhaus am Kunsthaus (cca 3 min pěšky).",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Das Haus und die Ausstellungsräume sind barrierefrei."
+  },
+  {
+   "osm_id": "n10765930517",
+   "name": "Ballonmuseum Gersthofen",
+   "obec": "Gersthofen",
+   "address": "Bahnhofstraße 12",
+   "lat": 48.425714,
+   "lng": 10.875749,
+   "category": "pamatky",
+   "source_url": "https://www.ballonmuseum-gersthofen.de/seite/besucherinfo/barrierefreiheit.php",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Muzeum je z velké části bezbariérové; podlaží propojuje i spirálová rampa.",
+    "wc": "Prostorné WC pro OZP v suterénu, dostupné na vozíku.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Vyhrazené parkovací místo pro OZP na zadní straně muzea, odtud bezbariérově k recepci.",
+    "vytah": "Velký výtah propojuje všechna podlaží.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Ein großer Aufzug verbindet alle Etagen"
+  },
+  {
+   "osm_id": "w18814424",
+   "name": "Erlebnisbad Titania Neusäß",
+   "obec": "Neusäß",
+   "address": "Birkenallee 1",
+   "lat": 48.401155,
+   "lng": 10.823848,
+   "category": "sport",
+   "source_url": "https://www.titania-neusaess.de/info/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup k pokladně bez schodů a prahů. Mnoho částí koupaliště a orientální část sauny jen po schodech; do bazénů se vstupuje jen po schodech. Přízemí sauny přes otočné dveře u samoobslužné gastronomie, do mnoha saun se jde rovně; venkovní saunová část přes skleněné dveře (otevře personál).",
+    "wc": "Ve foyer WC pro OZP, společná šatna a sprcha včetně sprchovacího vozíku.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "6 označených míst pro OZP cca 50 m od vchodu; zastávka MHD cca 100 m.",
+    "vytah": "Výtahy nejsou k dispozici.",
+    "jine": "POZOR: web uvádí, že koupaliště je kvůli vodní škodě do odvolání zavřené."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost míst pro OZP od vchodu",
+     "hodnota": 50,
+     "jednotka": "m"
+    },
+    {
+     "co": "počet míst pro OZP",
+     "hodnota": 6,
+     "jednotka": "ks"
+    },
+    {
+     "co": "vzdálenost zastávky MHD",
+     "hodnota": 100,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Der Eingang zur Kasse ist stufen- und schwellenlos erreichbar."
+  },
+  {
+   "osm_id": "w1016641508",
+   "name": "Eissportzentrum Oberstdorf",
+   "obec": "Oberstdorf",
+   "address": "Roßbichlstraße 2-6",
+   "lat": 47.405539,
+   "lng": 10.28739,
+   "category": "sport",
+   "source_url": "https://www.eissportzentrum-oberstdorf.de/info/preise-oeffnungszeiten.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že prohlídka zimního stadionu je bezbariérová (bez podrobností).",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Podzemní garáž se závorou (vyhrazená místa web neuvádí).",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Die Besichtigung des Eisstadions ist barrierefrei!"
+  },
+  {
+   "osm_id": "n274739632",
+   "name": "Museum im Wittelsbacher Schloss",
+   "obec": "Friedberg",
+   "address": "Schloßstraße 21",
+   "lat": 48.357647,
+   "lng": 10.979367,
+   "category": "pamatky",
+   "source_url": "https://museum-friedberg.de/besucherinfo/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Historická budova – ne všechny místnosti jsou přístupné na vozíku.",
+    "wc": "Sociální zařízení je k dispozici (web nespecifikuje, zda bezbariérové).",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Parkovací místa pro OZP u návštěvnického centra hned vedle zámku.",
+    "vytah": "Výtah je k dispozici.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "nicht alle Räume rollstuhlgerecht zugänglich"
+  },
+  {
+   "osm_id": "n936011541",
+   "name": "Bayerisches Bienenmuseum Illertissen, Sammlung Forster",
+   "obec": "Illertissen",
+   "address": "Schloßallee 23",
+   "lat": 48.222188,
+   "lng": 10.110947,
+   "category": "pamatky",
+   "source_url": "https://www.landkreis-nu.de/bienenmuseum",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Ne všechny části památkově chráněné budovy jsou bezbariérové. Dva schody u hlavního vchodu lze překonat mobilní rampou s pomocí personálu (zazvonit u vchodu nebo předem zavolat 0731 7040-42014). Zámecká kaple bezbariérová není.",
+    "wc": "WC pro OZP v Hinteres Schloss (Hochschulzentrum) naproti.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "U zámeckého mostu 15 veřejných míst, štěrkové parkoviště (50 míst) cca 5 min pěšky; vyhrazená místa web neuvádí.",
+    "vytah": "Všechny výstavní místnosti dostupné výtahem.",
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "schody u hlavního vchodu",
+     "hodnota": 2,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Die zwei Stufen am Haupteingang können mit einer mobilen Rampe überwunden werden."
+  },
+  {
+   "osm_id": "n3475007146",
+   "name": "Deutsches Hutmuseum",
+   "obec": "Lindenberg im Allgäu",
+   "address": "Museumsplatz 1",
+   "lat": 47.604806,
+   "lng": 9.891278,
+   "category": "pamatky",
+   "source_url": "https://www.deutsches-hutmuseum.de/besucherinfo/barrierefreiheit.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Certifikát „Barrierefreiheit geprüft“ (hodnoceno systémem „Reisen für Alle“). Vstup bezprahovými dveřmi s otevíráním tlačítkem vedle dveří. Veškerý nábytek je podjízdný, ve výstavě mobilní sedačky.",
+    "wc": "WC pro OZP a přebalovací pult.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Výtah zpřístupňuje všechna podlaží.",
+    "jine": "Výstava je kvůli ochraně exponátů velmi tmavá (50 lux)."
+   },
+   "measurements": [
+    {
+     "co": "osvětlení výstavy",
+     "hodnota": 50,
+     "jednotka": "lx"
+    }
+   ],
+   "evidence_quote": "Ein Aufzug erschließt alle Ebenen für Menschen die auf Gehhilfen oder Rollstühle angewiesen sind."
+  },
+  {
+   "osm_id": "n9050196554",
+   "name": "Museum KulturLand Ries / Teil 1",
+   "obec": "Maihingen",
+   "address": "Klosterhof 3",
+   "lat": 48.928015,
+   "lng": 10.493118,
+   "category": "pamatky",
+   "source_url": "https://mklr.bezirk-schwaben.de/ihr-besuch/infos-zur-barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Klosterökonomie a Brauhaus (kromě oddělení „Kindheit“) jsou bezbariérově sjízdné; všude sedačky, k zapůjčení přenosné skládací stoličky.",
+    "wc": "Bezbariérová WC v Klosterökonomie a ve veřejném WC u klášterní zdi u Brauhausu.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Budovy zpřístupněny výtahy.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "sind barrierefrei befahrbar und durch Aufzüge erschlossen"
+  },
+  {
+   "osm_id": "n11100337078",
+   "name": "Allgäuer Schmetterling Erlebniswelt",
+   "obec": "Pfronten",
+   "address": "Gernweg 5",
+   "lat": 47.597647,
+   "lng": 10.561115,
+   "category": "pamatky",
+   "source_url": "https://schmetterling-erlebniswelt.de/DE/informationen",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Celý areál je v jedné úrovni a dobře sjízdný na vozíku.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Bezplatné parkování přímo před vchodem (vyhrazená místa neuvedena).",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Unsere gesamte Schmetterling Erlebniswelt ist ebenerdig und mit einem Rollstuhl gut zu befahren."
+  },
+  {
+   "osm_id": "n10983774784",
+   "name": "Museum der bayerischen Könige",
+   "obec": "Schwangau",
+   "address": "Alpseestraße 27",
+   "lat": 47.553557,
+   "lng": 10.736224,
+   "category": "pamatky",
+   "source_url": "https://www.hohenschwangau.de/museum-der-bayerischen-koenige/museum/barrierefreiheit",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hlavní vchod bezbariérově přes venkovní rampu; v každé místnosti pevné sedačky, u vstupu zdarma k zapůjčení skládací stolička.",
+    "wc": "WC pro OZP v přízemí muzea.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Doporučeno parkoviště P4 (Alpseeparkplatz) naproti muzeu, cca 50 m vzdušnou čarou.",
+    "vytah": "Dva osobní výtahy, kterými jsou dostupné všechny části výstavy.",
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště P4 (vzdušnou čarou)",
+     "hodnota": 50,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Der Haupteingang ist über eine Rampe im Außenbereich barrierefrei erreichbar."
+  },
+  {
+   "osm_id": "n1802527933",
+   "name": "AlpenStadtMuseum Sonthofen",
+   "obec": "Sonthofen",
+   "address": "Sonnenstraße 1",
+   "lat": 47.510119,
+   "lng": 10.279402,
+   "category": "pamatky",
+   "source_url": "https://www.alpenstadtmuseum.de/besuch/barrierereduziertes-angebot/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Díky výtahům a podjízdným vitrínám je prohlídka vhodná pro vozíky i kočárky; všude sedačky.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Výtahy jsou k dispozici.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Durch Aufzüge und unterfahrbare Vitrinen ist ein Rundgang für Rollstühle und Kinderwägen geeignet."
+  },
+  {
+   "osm_id": "r16311160",
+   "name": "Schloss Höchstädt",
+   "obec": "Höchstädt an der Donau",
+   "address": "Herzogin-Anna-Straße 52",
+   "lat": 48.610106,
+   "lng": 10.5738,
+   "category": "pamatky",
+   "source_url": "https://www.schloss-hoechstaedt.de/deutsch/tourist/mobilitaet.htm",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Cesta z parkoviště na nádvoří je bez schodů, ale stoupání přes 6 %. Strmou cestu obchází samostatný bezbariérový vstup do suterénu jižního křídla (cca 75 m od parkoviště), zvonek s interkomem ve výšce cca 110 cm. Z nádvoří k pokladně bez schodů, skleněné dveře se otevírají automaticky. Ve výstavách žádné schody, dveře min. 90 cm, rovná protiskluzová podlaha, sedačky.",
+    "wc": "Bezbariérové WC v zámecké kavárně (Schlosscafé).",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Parkoviště západně od zámku bez vyhrazených míst pro OZP; cesta (zpevněný štěrk) se sklonem pod 6 %. Po telefonické domluvě lze vjet a parkovat na nádvoří.",
+    "vytah": "Výtah pro OZP do přízemí i horních pater, kabina 210 × 110 cm, dveře 90 cm.",
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "kabina výtahu (d × š)",
+     "hodnota": "210 × 110",
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří výtahu",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "min. šířka dveří ve výstavě",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška zvonku u bezbariérového vstupu",
+     "hodnota": 110,
+     "jednotka": "cm"
+    },
+    {
+     "co": "vzdálenost bezbariérového vstupu od parkoviště",
+     "hodnota": 75,
+     "jednotka": "m"
+    },
+    {
+     "co": "sklon cesty z parkoviště k bezbariérovému vstupu",
+     "hodnota": "< 6",
+     "jednotka": "%"
+    },
+    {
+     "co": "sklon cesty na nádvoří",
+     "hodnota": "> 6",
+     "jednotka": "%"
+    }
+   ],
+   "evidence_quote": "behindertengerechten Personenaufzug (Länge: 210 cm x Breite: 110 cm , Türbreite: 90 cm )"
+  },
+  {
+   "osm_id": "n7512828440",
+   "name": "Historisches Museum - Südseesammlung",
+   "obec": "Obergünzburg",
+   "address": "Unterer Markt 2",
+   "lat": 47.847233,
+   "lng": 10.419468,
+   "category": "pamatky",
+   "source_url": "https://www.suedseesammlung.de/informationen.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Areál je bezbariérově přístupný, cesty dlážděné nebo asfaltované a zpevněné.",
+    "wc": "V budově muzea jsou WC pro OZP.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Bezplatné parkoviště „Rösslewiese“ cca 50 m od muzea (vyhrazená místa neuvedena).",
+    "vytah": "Dvoupodlažní budova muzea je přístupná výtahem.",
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště",
+     "hodnota": 50,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Die Südsee-Sammlung ist barrierefrei!"
+  },
+  {
+   "osm_id": "n1705577213",
+   "name": "Heimatmuseum",
+   "obec": "Oettingen i.Bay.",
+   "address": null,
+   "lat": 48.952538,
+   "lng": 10.606333,
+   "category": "pamatky",
+   "source_url": "https://www.heimatmuseum-oettingen.de/tickets-service/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Muzeum se označuje jako „barrierearm“ (s omezenými bariérami); všechny výstavní části (3 podlaží) dostupné rampami nebo výtahem.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Výtah (Fahrstuhl) je k dispozici.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "alle Ausstellungs-bereiche sind über Rampen oder Fahrstuhl erreichbar"
+  },
+  {
+   "osm_id": "n3694137389",
+   "name": "Bücherei Westerheim",
+   "obec": "Westerheim",
+   "address": "Hauptstraße 39",
+   "lat": 48.01753,
+   "lng": 10.302319,
+   "category": "kultura",
+   "source_url": "https://meine-buecherei.de/der-weg-zu-uns/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup levým vchodem budovy (Alter Pfarrhof); od vchodu vedou schody, bezbariérově výtahem.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Výtah na konci chodby vlevo, před skleněnými dveřmi obecního úřadu.",
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Ein Aufzug für den barrierefreien Zugang ist ebenfalls vorhanden."
+  },
+  {
+   "osm_id": "n3121339193",
+   "name": "Augsburger Puppenkiste",
+   "obec": "Augsburg",
+   "address": "Spitalgasse 15",
+   "lat": 48.360574,
+   "lng": 10.903263,
+   "category": "kultura",
+   "source_url": "https://www.puppenkiste.com/theater/faq",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Divadlo i muzeum (Heilig-Geist-Spital) jsou „weitgehend barrierefrei“; památková budova – vstupní portál a dveře k WC si vozíčkář sám neotevře, pomůže personál. Max. 4 místa pro vozíky v první řadě.",
+    "wc": "Přístup k WC vyžaduje pomoc s otevřením dveří.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Ulice Spitalgasse je obytná zóna; držitelé modrého parkovacího průkazu EU smí parkovat i mimo vyznačená místa (nezakrývat vodicí pásy). Jinak parkovací dům City-Galerie (cca 10 min pěšky).",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "místa pro vozíky v sále",
+     "hodnota": 4,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Das Theater und das Museum sind weitgehend barrierefrei."
+  },
+  {
+   "osm_id": "w475813903",
+   "name": "Archäologischer Park Cambodunum",
+   "obec": "Kempten (Allgäu)",
+   "address": "Cambodunumweg 3",
+   "lat": 47.727011,
+   "lng": 10.326161,
+   "category": "priroda",
+   "source_url": "https://www.apc-kempten.de/de/barrierefreiheit/informationen-fuer-menschen-mit-gehbehinderung-und-rollstuhlfahrer-innen-",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Certifikace „Barrierefreiheit geprüft – teilweise barrierefrei für Menschen mit Gehbehinderung“ (Reisen für Alle). Areál bez schodů, všechny hodnocené prostory bez schodů nebo přes rampy (mobilní rampa do ochozové haly sklon max. 6 %, délka 1 m; rampa mezi halou a venkem max. 16 %, 1 m). Dveře min. 84 cm. Okruh: cesty min. 150 cm široké, převážně ne snadno sjízdné (mlatový povrch), podélný sklon až 10 %. Pokladní pult 120 cm, alternativa komunikace vsedě.",
+    "wc": "Veřejné WC pro OZP (Taberna): dveře 79 cm, euroklíč, plocha před WC 108 × 157 cm, vlevo 99 × 57 cm, vpravo žádná; madla (levé sklopné), alarm. WC Kleine Thermen: euroklíč, plocha před WC 165 × 96 cm, vlevo 45 × 72 cm, vpravo 93 × 72 cm, pravé madlo sklopné.",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Veřejné parkoviště bez vyhrazených míst pro OZP.",
+    "vytah": null,
+    "jine": "K zapůjčení vozík a vozík na tahání (Bollerwagen); prohlídky pro lidi s omezenou chůzí na požádání bez předhlášení."
+   },
+   "measurements": [
+    {
+     "co": "min. šířka dveří a průchodů",
+     "hodnota": 84,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC Taberna",
+     "hodnota": 79,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška pokladního pultu",
+     "hodnota": 120,
+     "jednotka": "cm"
+    },
+    {
+     "co": "min. šířka venkovních cest",
+     "hodnota": 150,
+     "jednotka": "cm"
+    },
+    {
+     "co": "max. podélný sklon cest",
+     "hodnota": 10,
+     "jednotka": "%"
+    },
+    {
+     "co": "mobilní rampa do ochozové haly – max. sklon",
+     "hodnota": 6,
+     "jednotka": "%"
+    },
+    {
+     "co": "rampa hala–venek – max. sklon",
+     "hodnota": 16,
+     "jednotka": "%"
+    },
+    {
+     "co": "manipulační plocha před WC (Taberna)",
+     "hodnota": "108 × 157",
+     "jednotka": "cm"
+    },
+    {
+     "co": "plocha vlevo od WC (Taberna)",
+     "hodnota": "99 × 57",
+     "jednotka": "cm"
+    },
+    {
+     "co": "manipulační plocha před WC (Kleine Thermen)",
+     "hodnota": "165 × 96",
+     "jednotka": "cm"
+    },
+    {
+     "co": "plocha vlevo od WC (Kleine Thermen)",
+     "hodnota": "45 × 72",
+     "jednotka": "cm"
+    },
+    {
+     "co": "plocha vpravo od WC (Kleine Thermen)",
+     "hodnota": "93 × 72",
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Barrierefreiheit geprüft – teilweise barrierefrei für Menschen mit Gehbehinderung"
+  },
+  {
+   "osm_id": "n274859235",
+   "name": "Festspielhaus Neuschwanstein",
+   "obec": "Füssen",
+   "address": "Im See 1",
+   "lat": 47.586319,
+   "lng": 10.708802,
+   "category": "kultura",
+   "source_url": "https://das-festspielhaus.de/service/faq2/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup až do divadelního sálu; královská lóže, lóže a balkon jen po schodech. Místa pro vozíky s místem pro doprovod jen přes pokladnu (telefon / e-mail).",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Místa pro vozíčkáře přímo u budovy na parkovišti P7; s průkazem lze dojet k domu i na červenou.",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Ein rollstuhlgerechter Zugang bis zum Theatersaal ist vorhanden"
+  },
+  {
+   "osm_id": "w235934796",
+   "name": "Erzgruben Burgberg",
+   "obec": "Burgberg im Allgäu",
+   "address": null,
+   "lat": 47.539251,
+   "lng": 10.322464,
+   "category": "pamatky",
+   "source_url": "https://erzgruben-burgberg.de/faq",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Objevitelská túra (stezky) není sjízdná na vozíku. Muzejní vesnice jen částečně: cesta od parkoviště (cca 1 km) je asfaltová, ale ve vesnici jen štěrkové cesty a vjezd do chatek je obtížný.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Parkoviště Auf dem Ried (placené), dál jen pěšky; auty se k vesnici nesmí (bez výjimek).",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště – muzejní vesnice",
+     "hodnota": 1,
+     "jednotka": "km"
+    }
+   ],
+   "evidence_quote": "Nein, die Wanderwege können nicht mit einem Kinderwagen oder Rollstuhl befahren werden."
+  },
+  {
+   "osm_id": "w241298918",
+   "name": "Allgäuer Bergbauernmuseum e.V.",
+   "obec": "Immenstadt im Allgäu",
+   "address": "Diepolz 44",
+   "lat": 47.613576,
+   "lng": 10.177633,
+   "category": "pamatky",
+   "source_url": "https://www.bergbauernmuseum.de/infos-service/barrierefreiheit.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Areál je jen částečně bezbariérový (horský terén, cesty mezi budovami částečně neasfaltované). Vstupní budova – přízemí přes rampu, 1. patro zadním vchodem; statek – výstava zadním vchodem (průchozí „kraví žaludek“ jen po schodech); bylinková zahrada částečně; včelín a dům včelaře nepřístupné; Sattler-Hof částečně; Rosshütte nepřístupná; Höfle-Alpe na požádání přes dvě rampy (příjezd přilehlou cestou mimo areál).",
+    "wc": "Bezbariérové WC ve vstupní budově (přízemí).",
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Vyhrazené parkovací místo pro OZP přímo před vstupní budovou.",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Das Gelände des Bergbauernmuseums ist teilweise barrierefrei zugänglich."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n2881380586",
+   "name": "Anna Adlhoch",
+   "url": "https://www.vvn-augsburg.de/3_portraets/adlhoch_hans/adlhoch.html",
+   "reason": "pamětní místo (stránka o osobnosti), o přístupnosti nic"
+  },
+  {
+   "osm_id": "w131225383",
+   "name": "DAV Sparkassendome",
+   "url": "https://www.sparkassendome.de/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek, o budově nic"
+  },
+  {
+   "osm_id": "n275885012",
+   "name": "Alpenfilmtheater",
+   "url": "https://www.alpenfilmtheater.de",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek, o budově nic"
+  },
+  {
+   "osm_id": "r10361614",
+   "name": "Alpenfreibad",
+   "url": "https://www.scheidegg.de/alpenfreibad/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1296951293",
+   "name": "Airbus Helicopters Sportgemeinschaft",
+   "url": "http://www.eurocopter-sportgemeinschaft.de/",
+   "reason": "doména neexistuje (DNS)"
+  },
+  {
+   "osm_id": "w129879602",
+   "name": "Bavaria Kart",
+   "url": "https://bavaria-kart.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n665080314",
+   "name": "Cineplex Königsbrunn",
+   "url": "https://www.cineplex.de/koenigsbrunn/",
+   "reason": "web blokuje automatický přístup (HTTP 403), neprocházeno"
+  },
+  {
+   "osm_id": "n1231322025",
+   "name": "Bücherei Stadtbergen",
+   "url": "https://www2.winbiap.de/Stadtbergen/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w220492330",
+   "name": "BC Aichach 1917 e.V.",
+   "url": "https://www.bc-aichach.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w229158325",
+   "name": "Freilichtbühne Altusried",
+   "url": "http://www.freilichtbuehne-altusried.de",
+   "reason": "server odmítl spojení"
+  },
+  {
+   "osm_id": "w189438402",
+   "name": "Eukitea",
+   "url": "https://eukitea.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n450548308",
+   "name": "Kulturzentrum Colleg",
+   "url": "https://www.dillingen-donau.de/index.php?id=119",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek, o budově nic"
+  },
+  {
+   "osm_id": "n1122698767",
+   "name": "Heimatmuseum Dinkelscherben",
+   "url": "http://www.dinkelscherben.de/index.php/dinkelscherben/kultur-musik/heimatmuseum",
+   "reason": "časový limit vypršel"
+  },
+  {
+   "osm_id": "n2134928460",
+   "name": "Burgruine Eisenberg",
+   "url": "https://www.suedliches-allgaeu.de/region-gastgeber/die-sechs-gemeinden/eisenberg/burgruinen-hohenfreyberg-eisenberg/burgruine-eisenberg",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek, o budově nic"
+  },
+  {
+   "osm_id": "w91660416",
+   "name": "Kloster Oberschönenfeld",
+   "url": "http://www.abtei-oberschoenenfeld.de/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek, o budově nic"
+  },
+  {
+   "osm_id": "n1150650487",
+   "name": "Bücherei Mering",
+   "url": "https://mering.de/unsere-marktgemeinde/einrichtungen/i601-buecherei",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3955798968",
+   "name": "Evangelisches Gemeindehaus",
+   "url": "http://evk-steinheim.de/kirchen-einrichtungen/gemeindezentrum-nersingen",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek, o budově nic"
+  },
+  {
+   "osm_id": "w25662770",
+   "name": "Rieskratermuseum",
+   "url": "https://www.rieskrater-museum.de/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek, o budově nic"
+  },
+  {
+   "osm_id": "n3934179489",
+   "name": "KunstMuseum Donau-Ries",
+   "url": "http://kunstmuseum-donauries.de/",
+   "reason": "web blokuje automatický přístup (HTTP 403), neprocházeno"
+  },
+  {
+   "osm_id": "w617203578",
+   "name": "Waldseilgarten Bad Hindelang",
+   "url": "https://www.waldseilgarten-badhindelang.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9066944276",
+   "name": "KALAA",
+   "url": "https://kalaa-galerie.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n8208091794",
+   "name": "Stadtbücherei",
+   "url": "https://www.buchloe.de/bildung-betreuung/stadtbuecherei/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek, o budově nic"
+  },
+  {
+   "osm_id": "w111977585",
+   "name": "Mehrzweckhalle",
+   "url": "https://www.ederheim.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1338297315",
+   "name": "Gemeindebad",
+   "url": "http://www.elchingen.de/index.php4?id=77",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w188741023",
+   "name": "Naturfreibad Fischach",
+   "url": "https://naturfreibad-fischach.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7599594175",
+   "name": "Paul-Bäck-Haus",
+   "url": "https://www.heimenkirch.de/index.php?id=328&no_cache=1",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w124017777",
+   "name": "CinePark",
+   "url": "https://kru-kinos.de/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek, o budově nic"
+  },
+  {
+   "osm_id": "n14057901681",
+   "name": "Filmhaus Langerringen-Schwabmünchen",
+   "url": "https://filmhaus-kinos.de/ueber-uns/filmhaus-langerringen-schwabmuenchen",
+   "reason": "časový limit vypršel"
+  },
+  {
+   "osm_id": "w22993585",
+   "name": "Apollo-Grannus-Tempel",
+   "url": "https://www.lauingen.de/kultur/lauingen-entdecken/apollo-grannus-tempel",
+   "reason": "web nic o přístupnosti neuvádí (zmínka „Rampe“ je archeologická stavba)"
+  },
+  {
+   "osm_id": "n817288706",
+   "name": "Stadtbücherei Martoberdorf",
+   "url": "https://www.stadtbuecherei-marktoberdorf.de/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek, o budově nic"
+  },
+  {
+   "osm_id": "n392245026",
+   "name": "Cineplex",
+   "url": "https://www.cineplex.de/memmingen/",
+   "reason": "web blokuje automatický přístup (HTTP 403), neprocházeno"
+  },
+  {
+   "osm_id": "w297861974",
+   "name": "Kletteranlage des DAV Mindelheim",
+   "url": "https://www.alpenverein-mindelheim.de/kletteranlage/kletteranlage-und-boulderraum.html",
+   "reason": "stránka neexistuje (HTTP 404)"
+  },
+  {
+   "osm_id": "w612701418",
+   "name": "Freibad Monheim",
+   "url": "https://www.monheim-bayern.de/freizeit/a-z/freibad_monheim-2294/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4990751708",
+   "name": "Ostereier-Museum",
+   "url": "https://www.monica-meyer-nusser.de",
+   "reason": "chyba SSL, web nelze načíst"
+  },
+  {
+   "osm_id": "w28971287",
+   "name": "SV Oberostendorf",
+   "url": "https://www.svoberostendorf.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w96093899",
+   "name": "St. Peter und Paul",
+   "url": "https://pfarreiengemeinschaft-oberstaufen.de/st-peter-und-paul-oberstaufen",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2177059022",
+   "name": "Stadtbücherei",
+   "url": "https://opac.winbiap.net/rain/index.aspx",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w240723631",
+   "name": "Schloss Scherneck",
+   "url": "https://www.schloss-scherneck.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1177237613",
+   "name": "Stadtbücherei Schwabmünchen",
+   "url": "http://www.stadtbuecherei-schwabmuenchen.de/",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek, o budově nic"
+  },
+  {
+   "osm_id": "w467967696",
+   "name": "Stadtbücherei",
+   "url": "https://www.stadt-senden.de/leben-kultur/bildung/stadtbibliothek",
+   "reason": "web uvádí jen prohlášení o přístupnosti webových stránek, o budově nic"
+  },
+  {
+   "osm_id": "n494109820",
+   "name": "Turncable",
+   "url": "https://www.turncable.de/",
+   "reason": "web nic o přístupnosti neuvádí („Lift“ = vlek pro wakeboard)"
+  },
+  {
+   "osm_id": "w614123165",
+   "name": "Aquamarin",
+   "url": "https://www.wasserburg-bodensee.de/wassererlebnisse/freibad-aquamarin/",
+   "reason": "robots.txt zakazuje automatický přístup, neprocházeno"
+  },
+  {
+   "osm_id": "n2587583384",
+   "name": "Ostertheater Wiggensbach",
+   "url": "https://www.ostertheater-wiggensbach.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n654054701",
+   "name": "Friedensräume",
+   "url": "https://www.friedens-raeume.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w116387343",
+   "name": "Dietrich Theater",
+   "url": "https://www.cineplex.de/neu-ulm",
+   "reason": "web blokuje automatický přístup (HTTP 403), neprocházeno"
+  },
+  {
+   "osm_id": "n6411261580",
+   "name": "Stadtbücherei Kaufbeuren",
+   "url": "https://www.kaufbeuren.de/desktopdefault.aspx/tabid-114",
+   "reason": "stránka neexistuje (HTTP 404)"
+  },
+  {
+   "osm_id": "w1074107437",
+   "name": "Reptilienzoo Scheidegg",
+   "url": "https://www.reptilienzoo-scheidegg.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů (úvodní stránka + max. 6 podstránek, klíčová slova barrierefrei/rollstuhl/aufzug…)",
+   "url": "",
+   "note": "Automatický průchod skriptem 2026-10-07, User-Agent kudyprojedu-student-project/0.1, respektován robots.txt; souřadnice převzaty ze vstupu (OSM)."
+  },
+  {
+   "title": "Archäologischer Park Cambodunum – informace pro lidi s omezenou chůzí a vozíčkáře",
+   "url": "https://www.apc-kempten.de/de/barrierefreiheit/informationen-fuer-menschen-mit-gehbehinderung-und-rollstuhlfahrer-innen-",
+   "note": "Data z certifikace Reisen für Alle zveřejněná provozovatelem; rozměry WC, ramp a cest."
+  },
+  {
+   "title": "Bayerische Schlösserverwaltung – Schloss Höchstädt, Service für Menschen mit Behinderung",
+   "url": "https://www.schloss-hoechstaedt.de/deutsch/tourist/mobilitaet.htm",
+   "note": "Rozměry výtahu a dveří, sklon cest."
+  },
+  {
+   "title": "Deutsches Hutmuseum – Barrierefreiheit",
+   "url": "https://www.deutsches-hutmuseum.de/besucherinfo/barrierefreiheit.html",
+   "note": "Certifikát Barrierefreiheit geprüft (Reisen für Alle)."
+  },
+  {
+   "title": "Museum der bayerischen Könige – Barrierefreiheit",
+   "url": "https://www.hohenschwangau.de/museum-der-bayerischen-koenige/museum/barrierefreiheit",
+   "note": ""
+  },
+  {
+   "title": "Reisen für Alle (DSFT e.V.)",
+   "url": "https://www.reisen-fuer-alle.de",
+   "note": "Certifikační systém, na který odkazují APC Kempten a Hutmuseum; údaje převzaty jen z webů provozovatelů."
+  }
+ ]
+}

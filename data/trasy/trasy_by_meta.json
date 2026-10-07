@@ -1,0 +1,43 @@
+{
+ "vytvoreno": "2026-10-07",
+ "pocet": 67,
+ "kandidatu_celkem": 68,
+ "mimo_bavorsko_vyrazeno": 1,
+ "relace_a": 11,
+ "relace_b": 0,
+ "useky_c": 56,
+ "pocty_wheelchair": {
+  "yes": 64,
+  "limited": 2,
+  "null": 1
+ },
+ "pocty_kraj": {
+  "Střední Franky": 3,
+  "Dolní Bavorsko": 6,
+  "Horní Bavorsko": 48,
+  "Dolní Franky": 5,
+  "Horní Franky": 1,
+  "Švábsko": 2,
+  "Horní Falc": 2
+ },
+ "pocty_typ": {
+  "A→B": 59,
+  "okruh": 6,
+  "tam a zpět": 2
+ },
+ "dotazy_vysky": {
+  "eudem25m": 74
+ },
+ "geometrie_format": "pole částí; každá část je pole [lat, lng]",
+ "profil_format": "[vzdálenost_m od startu (mezery mezi částmi se nepočítají), výška_m]",
+ "sklony": "z DEM, body po 50 m (u tras delších než 75 km řidší), úseky >= 20 m; useky_nad_X = počet souvislých úseků se sklonem nad X %, *_m jejich délka",
+ "zdroje_vstupu": [
+  "Geofabrik mittelfranken-latest.osm.pbf (https://download.geofabrik.de/europe/germany/bayern/mittelfranken-latest.osm.pbf), staženo 2026-10-07",
+  "Geofabrik niederbayern-latest.osm.pbf (https://download.geofabrik.de/europe/germany/bayern/niederbayern-latest.osm.pbf), staženo 2026-10-07",
+  "Geofabrik oberbayern-latest.osm.pbf (https://download.geofabrik.de/europe/germany/bayern/oberbayern-latest.osm.pbf), staženo 2026-10-07",
+  "Geofabrik oberfranken-latest.osm.pbf (https://download.geofabrik.de/europe/germany/bayern/oberfranken-latest.osm.pbf), staženo 2026-10-07",
+  "Geofabrik oberpfalz-latest.osm.pbf (https://download.geofabrik.de/europe/germany/bayern/oberpfalz-latest.osm.pbf), staženo 2026-10-07",
+  "Geofabrik schwaben-latest.osm.pbf (https://download.geofabrik.de/europe/germany/bayern/schwaben-latest.osm.pbf), staženo 2026-10-07",
+  "Geofabrik unterfranken-latest.osm.pbf (https://download.geofabrik.de/europe/germany/bayern/unterfranken-latest.osm.pbf), staženo 2026-10-07"
+ ]
+}

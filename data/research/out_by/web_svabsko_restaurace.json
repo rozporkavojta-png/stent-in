@@ -1,0 +1,499 @@
+{
+ "task": "web_svabsko_restaurace",
+ "kraj": "Švábsko",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "method": "Skript prošel úvodní stránku + max 6 podstránek (odkazy barrierefrei|zimmer|anreise|service|ausstattung|kontakt|info|besuch), respektoval robots.txt, User-Agent kudyprojedu-student-project/0.1, max 6 paralelně, timeout 10 s; nedostupné weby zkoušeny znovu (varianta www/https, curl, punycode). Prohlášení o přístupnosti webu (BFSG/WCAG) a přístupnostní lišty nejsou brány jako údaj o budově. Souřadnice a adresy z OSM (vstupní soubor), u Alte Post Lindau adresa z webu.",
+ "places": [
+  {
+   "osm_id": "n596160845",
+   "name": "Alte Post",
+   "obec": "Lindau (Bodensee)",
+   "address": "Fischergasse 3",
+   "lat": 47.546882,
+   "lng": 9.688606,
+   "category": "restaurace",
+   "source_url": "https://www.alte-post-lindau.de/hotel-zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": "Hotelové pokoje jsou v 1. a 2. patře.",
+    "koupelna": null,
+    "parkovani": "Vlastní parkoviště nemá; u hotelu lze krátce zastavit kvůli vyložení, web doporučuje parkovací domy P4 Inselhalle a P3 Karl-Bever-Platz (stání pro ZTP neuvedeno).",
+    "vytah": "Památkově chráněný dům nemá výtah.",
+    "jine": "O restauraci samotné (vstup, WC) web nic neuvádí. Text o „Barrierefreiheit“ na úvodní stránce je prohlášení o přístupnosti webu (lišta OneTap), ne budovy. Adresa (Fischergasse 3, ostrov Lindau) z webu, v OSM chybí."
+   },
+   "measurements": [],
+   "evidence_quote": "Was unser Denkmal geschütztes Haus leider nicht hat: Lift, Balkon, See-Blick."
+  },
+  {
+   "osm_id": "n1381385847",
+   "name": "Chinatown",
+   "obec": "Krumbach (Schwaben)",
+   "address": "Bahnhofstraße 45",
+   "lat": 48.246402,
+   "lng": 10.359683,
+   "category": "restaurace",
+   "source_url": "https://restaurantchinatown.metro.biz/?lang=de",
+   "source_type": "web provozovatele (na platformě METRO/DISH)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web v seznamu služeb uvádí „barrierefrei“ (bez podrobností o vstupu či WC).",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "V seznamu služeb jsou uvedena parkovací místa (vyhrazené stání pro ZTP neuvedeno).",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Unsere Services Barrierefrei Büfett Catering Klimatisiert Parkplätze"
+  },
+  {
+   "osm_id": "n4823466507",
+   "name": "Bel Mare",
+   "obec": "Diedorf",
+   "address": "Lindenstraße 32",
+   "lat": 48.356714,
+   "lng": 10.788189,
+   "category": "restaurace",
+   "source_url": "https://bel-mare-service.eatbu.com/?lang=de",
+   "source_type": "web provozovatele (na platformě eatbu)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web v seznamu služeb uvádí „barrierefrei“ (bez podrobností o vstupu či WC).",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "V seznamu služeb jsou uvedena parkovací místa (vyhrazené stání pro ZTP neuvedeno).",
+    "vytah": null,
+    "jine": "Venkovní posezení (Außenbereich) uvedeno v seznamu služeb; jeho přístupnost web nepopisuje."
+   },
+   "measurements": [],
+   "evidence_quote": "Unsere Services Barrierefrei Klimatisiert Lieferservice Außenbereich Parkplätze"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n705633435",
+   "name": "11er Fußball.Kultur.Kneipe",
+   "url": "http://www.11er.biz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n817065121",
+   "name": "48 Grad Nord",
+   "url": "https://www.48grad-nord.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n475540457",
+   "name": "A Thousand Miles to Dublin (Irish Pub)",
+   "url": "https://www.thousand-miles.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3716714756",
+   "name": "Ai Quattro Canti",
+   "url": "https://www.aiquattrocanti.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9253027364",
+   "name": "Alagar Kebap",
+   "url": "https://alagarkebap.org/index.html",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n275514440",
+   "name": "Beim Olivenbauer",
+   "url": "https://beim-olivenbauer.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w642792834",
+   "name": "Asia Wok",
+   "url": "https://m.facebook.com/asiawokdonauwoerth",
+   "reason": "web je jen profil na Facebooku – nevytěžováno"
+  },
+  {
+   "osm_id": "n660143558",
+   "name": "Brauereigasthof Josef Fuchs",
+   "url": "https://brauereigasthoffuchs.de/",
+   "reason": "web má jen lištu přístupnosti webu (Barrierefreiheit Werkzeuge), o budově nic"
+  },
+  {
+   "osm_id": "n1842918774",
+   "name": "Allegro",
+   "url": "https://allegro-gz.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n8821367582",
+   "name": "Alte Heimat",
+   "url": "https://www.alteheimat-kaufbeuren.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1243877412",
+   "name": "Bienvenue Café et Bistro",
+   "url": "https://www.bienvenue-mm.de/",
+   "reason": "robots.txt zakazuje procházení – nevytěžováno"
+  },
+  {
+   "osm_id": "w370208545",
+   "name": "Biergarten Luitpoldpark",
+   "url": "https://www.biergarten-luitpoldpark.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n676650129",
+   "name": "Andechser in Mering",
+   "url": "https://www.andechser-mering.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4044013140",
+   "name": "Bayrish Pub",
+   "url": "https://bayrish-pub.com/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "w113310018",
+   "name": "Antica Sardegna",
+   "url": "https://www.antica-sardegna.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w74834393",
+   "name": "Berggasthof Giebelhaus",
+   "url": "https://www.giebelhaus-hinterstein.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n359812012",
+   "name": "Brunnenstüberl",
+   "url": "https://www.xn--brunnenstberl-4ob.de/",
+   "reason": "web odmítl přístup (HTTP 403) – nevytěžováno"
+  },
+  {
+   "osm_id": "n619354255",
+   "name": "Bar & Shisha Lounge",
+   "url": "http://www.sindbadshisha.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4530495319",
+   "name": "Ashoka Palace",
+   "url": "https://ashoka-palace.de/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n3201404038",
+   "name": "Asia Royal",
+   "url": "https://www.asia-royal-kissing.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n718958539",
+   "name": "Cafe K",
+   "url": "http://www.mein-cafe-k.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12985763971",
+   "name": "Biergarten Krone",
+   "url": "https://www.landgasthof-krone-schierhuber.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3075347259",
+   "name": "Barfüßer",
+   "url": "https://www.barfuesser-brauhaus.de/standorte/standort-weissenhorn/",
+   "reason": "web má jen prohlášení o přístupnosti webu (eRecht24), o budově nic"
+  },
+  {
+   "osm_id": "n3872604657",
+   "name": "CAFESITObar",
+   "url": "https://www.cafesitobar.de/dillingen",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n872692317",
+   "name": "Cafe Bistro Sonnenbogen",
+   "url": "https://cafe-bistro-sonnenbogen.eatbu.com/?lang=de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n8958159289",
+   "name": "Bergfischzucht Gunzesried",
+   "url": "https://www.bergfischzucht.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12318243417",
+   "name": "Cafe Kanapé",
+   "url": "https://www.cafe-kanape.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1531438070",
+   "name": "Altes Posthalterhaus",
+   "url": "https://posthalterhaus.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n410706894",
+   "name": "Beim Haxenwirt",
+   "url": "https://www.beimhaxenwirt.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2146924316",
+   "name": "Altstaufener Einkehr",
+   "url": "https://www.altstaufnereinkehr.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w104356721",
+   "name": "Braugasthof Falkenstein",
+   "url": "https://www.braugasthof-falkenstein.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2422116136",
+   "name": "Fünfländerblick",
+   "url": "https://www.fuenflaenderblick.de/",
+   "reason": "web dostupný jen přes punycode adresu (xn--fnflnderblick-efb07a.de), úvodní stránka ani podstránky das-restaurant/anfahrt/kontakt nic o přístupnosti neuvádějí"
+  },
+  {
+   "osm_id": "w97233219",
+   "name": "Altstädter Hof",
+   "url": "https://www.alpgenuss.de/alpen/detail/alpe-altstaedter-hof",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w221596930",
+   "name": "Alpenblick Berggasthaus",
+   "url": "https://berghof-alpenblick.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n6277452010",
+   "name": "Eggstein's Kaffeehaus",
+   "url": "https://www.cafe-eggstein.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n942435201",
+   "name": "Moskito",
+   "url": "https://www.moskito-spiele.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n725328721",
+   "name": "Bräuhaus Lepple",
+   "url": "https://www.braeuhaus-lepple.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n653954236",
+   "name": "Eulenspiegel",
+   "url": "https://www.eulenspiegel-wasserburg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4720212629",
+   "name": "Ambiente",
+   "url": "https://www.ambiente-wemding.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w194923205",
+   "name": "Café Fahrenschon",
+   "url": "https://www.cafe-fahrenschon.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2433831072",
+   "name": "Aero Cafe",
+   "url": "https://flugplatz-badwoerishofen.de/aero-cafe_hausgemachte-kuchen_sonnenterrasse",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w298217830",
+   "name": "Alp-Villa",
+   "url": "https://www.alp-villa.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n569515756",
+   "name": "Kreuzwirt",
+   "url": "https://www.kreuzwirt-fischen.de/",
+   "reason": "web má jen prohlášení o přístupnosti webu podle BFSG, o budově nic"
+  },
+  {
+   "osm_id": "n4981935625",
+   "name": "Landgasthof Weberhans",
+   "url": "http://www.weberhans.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n299531663",
+   "name": "Gasthaus zu Sonne",
+   "url": "https://sonne-jettingen.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n5759919546",
+   "name": "Alpe Blösse",
+   "url": "https://www.alpe-bloesse.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4211508974",
+   "name": "Piazza Castello",
+   "url": "https://www.piazza-castello-affing.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2910128865",
+   "name": "Der Löwe",
+   "url": "https://www.loewe-burgberg.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3435349594",
+   "name": "Austüble",
+   "url": "https://www.austueble.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4759752160",
+   "name": "Alpstuben Buching",
+   "url": "http://alpstuben-buching.de/",
+   "reason": "robots.txt zakazuje procházení – nevytěžováno"
+  },
+  {
+   "osm_id": "n282719544",
+   "name": "Bärenwirt Neuhausen",
+   "url": "http://www.baerig-gut.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2093126176",
+   "name": "La Vita",
+   "url": "https://www.pizzeria-la-vita.de",
+   "reason": "web nedostupný (HTTP Error 503: Service Unavailable)"
+  },
+  {
+   "osm_id": "n1057450978",
+   "name": "Gasthaus zum Schlößle",
+   "url": "http://www.schloessle-kaisheim.de/index.html",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1709585308",
+   "name": "Restaurant Zur Post",
+   "url": "https://www.hotel-post-inleipheim.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n686197284",
+   "name": "American Dream V8",
+   "url": "http://www.american-v8.com",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12312368631",
+   "name": "Cafe Contur",
+   "url": "http://cafe-contur.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n952370952",
+   "name": "Gasthof Huber",
+   "url": "https://www.landhotel-gasthof-huber.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n309359309",
+   "name": "Alte Mühle am See",
+   "url": "https://www.altemuehleamsee.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7834235365",
+   "name": "Gasthof Löwen",
+   "url": "http://www.gasthofloewen.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n319497346",
+   "name": "Khubsurat",
+   "url": "https://khubsurat.eatbu.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n717396167",
+   "name": "Calabria",
+   "url": "http://calabria-wertingen.de",
+   "reason": "web nedostupný (The read operation timed out)"
+  },
+  {
+   "osm_id": "n638720085",
+   "name": "Landgasthof Zum Bären",
+   "url": "http://www.zumbaeren-altusried.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w304832468",
+   "name": "Café Auszeit",
+   "url": "https://www.cafeauszeit-bg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w150096861",
+   "name": "Pizzahof Dasing",
+   "url": "https://pizzahof-dasing.de",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3158410089",
+   "name": "Alte Wagnerei",
+   "url": "https://alte-wagnerei.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n551260918",
+   "name": "Café am Rathaus",
+   "url": "https://www.restaurant-cafe-allgaeu.de/",
+   "reason": "robots.txt zakazuje procházení – nevytěžováno"
+  },
+  {
+   "osm_id": "n2575671030",
+   "name": "Gasthof zur Post",
+   "url": "https://www.zurpost-eurasburg.de/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Alte Post – web",
+   "url": "https://www.alte-post-lindau.de/hotel-zimmer/",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Chinatown – web",
+   "url": "https://restaurantchinatown.metro.biz/?lang=de",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  },
+  {
+   "title": "Bel Mare – web",
+   "url": "https://bel-mare-service.eatbu.com/?lang=de",
+   "note": "Web provozovatele, údaje parafrázovány česky."
+  }
+ ]
+}

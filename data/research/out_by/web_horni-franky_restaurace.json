@@ -1,0 +1,617 @@
+{
+ "task": "web_horni-franky_restaurace",
+ "zeme": "de",
+ "kraj": "Horní Franky",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "n7555520207",
+   "name": "Kurhotel an der Obermaintherme",
+   "obec": "Bad Staffelstein",
+   "address": null,
+   "lat": 50.109555,
+   "lng": 10.992944,
+   "category": "restaurace",
+   "source_url": "https://www.kurhotel-staffelstein.de/barrierefreiheit.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový (bezschodový) přístup do všech veřejných prostor – restaurace, lobby, wellness VITUS SPA, Obermain Therme, konferenční sály i podzemní garáž.",
+    "wc": "Bezbariérové WC v přízemí.",
+    "pokoj": "Bezbariérové pokoje typu Junior Suite (38 m²) a Penthouse Suite (73 m²), elektricky polohovatelná postel, nouzový náramek; balkon Junior Suite podle webu není sjízdný vozíkem.",
+    "koupelna": "Koupelna vhodná pro vozíčkáře (rollstuhlgerecht) se sprchou v úrovni podlahy.",
+    "parkovani": "Parkovací místa pro osoby s postižením v podzemní garáži přímo u vchodu.",
+    "vytah": "Výtah do všech podlaží – od podzemní garáže po 2. patro.",
+    "jine": "Zvedák do bazénu pro vozíčkáře v Obermain Therme; certifikace „Reisen für Alle“; bezbariérové nádraží Bad Staffelstein 2 minuty pěšky (od 1/2025 výtahy k nástupištím)."
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérové Junior Suite",
+     "hodnota": 38,
+     "jednotka": "m²"
+    },
+    {
+     "co": "plocha bezbariérové Penthouse Suite",
+     "hodnota": 73,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Stufenloser Zugang zu allen öffentlichen Bereichen wie Restaurant, Lobby"
+  },
+  {
+   "osm_id": "n664012658",
+   "name": "Schäfer's",
+   "obec": "Bad Staffelstein",
+   "address": "Bahnhofstraße 73",
+   "lat": 50.104787,
+   "lng": 10.996909,
+   "category": "restaurace",
+   "source_url": "http://www.schaefers-cafe.de",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že prostory kavárny jsou bezbariérově upravené (barrierefrei gestaltet); podrobnosti o vstupu, WC ani rozměry neuvádí.",
+    "jine": "Velká sluneční terasa s pavilonem u potoka – přístupnost terasy web nepopisuje."
+   },
+   "measurements": [],
+   "evidence_quote": "Die gemütlichen und barrierefrei gestalteten Räumlichkeiten laden dazu ein"
+  },
+  {
+   "osm_id": "n448776501",
+   "name": "Zum Löwen",
+   "obec": "Bad Staffelstein",
+   "address": null,
+   "lat": 50.064853,
+   "lng": 11.072227,
+   "category": "restaurace",
+   "source_url": "https://www.hotel-zum-loewen.de/zimmer-stammhaus",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "V hotelu u restaurace jsou některé dvoulůžkové pokoje ve „Stammhaus“ (15–19 m²) upravené jako bezbariérovější (barrierearm).",
+    "vytah": "Výtah uveden ve vybavení pokojů všech kategorií.",
+    "parkovani": "Bezplatné parkoviště přímo u domu (vyhrazená místa neuvedena).",
+    "jine": "Přístupnost restaurace samotné (vstup, WC) web nepopisuje; původní odkaz z OSM (essen-trinken.php) vracel chybu 400, prohledán web od úvodní stránky."
+   },
+   "measurements": [
+    {
+     "co": "plocha dvoulůžkového pokoje Stammhaus",
+     "hodnota": "15–19",
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "andere sind barrierearm gestaltet. Ausstattung: Aufzug, Dusche/WC"
+  },
+  {
+   "osm_id": "n645131216",
+   "name": "Pizzeria La Posta",
+   "obec": "Bad Steben",
+   "address": "Luitpoldstraße 4",
+   "lat": 50.365893,
+   "lng": 11.640876,
+   "category": "restaurace",
+   "source_url": "https://pizzeria-laposta.eatbu.com/?lang=de",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Restaurace má podle webu bezbariérový vstup (v seznamu služeb uvedeno „Barrierefrei“).",
+    "parkovani": "Bezplatná parkovací místa pro zákazníky (vyhrazené místo pro OZP neuvedeno).",
+    "jine": "Venkovní posezení (Außenbereich); WC ani rozměry web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Unser Restaurant hat einen barrierefreien Zugang."
+  },
+  {
+   "osm_id": "w39321524",
+   "name": "Brauerei Gasthof Greifenklau",
+   "obec": "Bamberg",
+   "address": "Laurenziplatz 20",
+   "lat": 49.883684,
+   "lng": 10.882161,
+   "category": "restaurace",
+   "source_url": "https://www.greifenklau.de/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "parkovani": "Velké parkoviště před domem, web ho označuje jako bezbariérové.",
+    "jine": "Přístupnost vstupu, lokálu ani WC web výslovně nepopisuje; zastávka MHD Laurenziplatz (linky 901, 908, 912, 937)."
+   },
+   "measurements": [],
+   "evidence_quote": "Großer Parkplatz vor dem Haus vorhanden, barrierefrei"
+  },
+  {
+   "osm_id": "w713718496",
+   "name": "Wilde Rose Keller",
+   "obec": "Bamberg",
+   "address": "Oberer Stephansberg 49",
+   "lat": 49.884203,
+   "lng": 10.886877,
+   "category": "restaurace",
+   "source_url": "https://www.wilde-rose-keller.de/index.php/kontakt",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "K dispozici je WC pro osoby s postižením (Behinderten-WC).",
+    "parkovani": "Parkoviště u pivní zahrady (vyhrazená místa neuvedena).",
+    "jine": "Pivní zahrada (Keller) s 1 500 místy, z toho 250 krytých; přístupnost vstupu a povrchů web nepopisuje."
+   },
+   "measurements": [
+    {
+     "co": "počet míst k sezení",
+     "hodnota": 1500,
+     "jednotka": "míst"
+    },
+    {
+     "co": "z toho krytých míst",
+     "hodnota": 250,
+     "jednotka": "míst"
+    }
+   ],
+   "evidence_quote": "Parkplatz, Wickelraum, Behinderten-WC"
+  },
+  {
+   "osm_id": "n3846483106",
+   "name": "Dötzer",
+   "obec": "Bayreuth",
+   "address": "Sophienstraße 22",
+   "lat": 49.94331,
+   "lng": 11.573301,
+   "category": "restaurace",
+   "source_url": "https://doetzers.de/kontakt/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Dům má dva vchody: od Dammallee 15 vedou do restaurace schody; vchod ze Sophienstraße 22 je podle webu v úrovni terénu (ebenerdig), zastavují tam i taxi.",
+    "parkovani": "Přímo u restaurace už parkoviště není.",
+    "jine": "WC ani rozměry web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Wenn Sie einen ebenerdigen Zugang bevorzugen oder als Fußgänger kommen"
+  },
+  {
+   "osm_id": "n3926555926",
+   "name": "Liebesbier",
+   "obec": "Bayreuth",
+   "address": null,
+   "lat": 49.945524,
+   "lng": 11.567058,
+   "category": "restaurace",
+   "source_url": "https://www.liebesbier.de/de/hotel/zimmer/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Hotel u restaurace má bezbariérovější (barrierearm) dvoulůžkový pokoj v přízemí s přímým vstupem do zahrádky ve dvoře; vypínače a psací stůl níže.",
+    "koupelna": "Madla u toalety a otevřený velký sprchový kout se závěsem, do kterého lze vjet vozíkem.",
+    "jine": "Přístupnost samotné restaurace (vstup, WC) web nepopisuje; stránka „Barrierefreiheit“ se týká jen přístupnosti webu."
+   },
+   "measurements": [],
+   "evidence_quote": "in die auch mit einem Rollstuhl hineingefahren werden kann"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n456182446",
+   "name": "Café Vetter",
+   "url": "https://www.cafe-vetter.de/",
+   "reason": "web se nepodařilo načíst (<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal )"
+  },
+  {
+   "osm_id": "n247071918",
+   "name": "Nepomuk",
+   "url": "https://www.nepomuk.net/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12407443900",
+   "name": "Takitos",
+   "url": "https://www.takitos-burgkunstadt.de/",
+   "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n5310830407",
+   "name": "Brauereigasthof Reichold",
+   "url": "http://www.reichold.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3517717846",
+   "name": "Lilium Restaurant",
+   "url": "https://liliumrestaurant.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n137659096",
+   "name": "Berggasthof Banzer Wald",
+   "url": "https://www.banzer-wald.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n137659240",
+   "name": "Bräustübl",
+   "url": "https://www.staffelberg-braeu.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n375981989",
+   "name": "Café Zollhaus",
+   "url": "https://www.cafe-zollhaus.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n427591761",
+   "name": "Erich Rödiger",
+   "url": "https://www.hotel-roediger.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n253790481",
+   "name": "Gasthof Dinkel",
+   "url": "https://www.dinkel-stublang.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n10811756250",
+   "name": "Mühlenhof Dinkel",
+   "url": "https://www.muehlenhof-dinkel.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w218517680",
+   "name": "Zur Schönen Schnitterin",
+   "url": "https://www.schnitterin.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1832126906",
+   "name": "rödiger´s Bistro am Meer",
+   "url": "https://www.hotel-roediger.de/de/kulinarik/roediger-s-bistro-am-meer",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n645131205",
+   "name": "Cafe Reichl",
+   "url": "https://www.cafe-reichl.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n6327364340",
+   "name": "Restaurant + Cafe Aquamarin",
+   "url": "https://www.therme-bad-steben.de/gastronomie",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu (digitální), o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "w1383840076",
+   "name": "Wirtshaus Birkenhof",
+   "url": "https://www.wirtshaus-birkenhof.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1223945817",
+   "name": "Aposto",
+   "url": "http://bamberg.aposto.eu/",
+   "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n5588453521",
+   "name": "Bamberger Kaffeerösterei M.A.G.",
+   "url": "https://www.roesterei-mag.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n6654685638",
+   "name": "Basecoffee",
+   "url": "https://www.basecoffee.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1382084509",
+   "name": "Bootshaus im Hain",
+   "url": "https://bootshaus-restaurant.de",
+   "reason": "web uvádí jen prohlášení o přístupnosti webu/služby (BFSG), o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n4989957023",
+   "name": "Cafè Leander",
+   "url": "http://www.cafeleander.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n440670818",
+   "name": "Café Niko - Loskarn",
+   "url": "http://www.baeckerei-loskarn.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1383055884",
+   "name": "Café Restaurant am Michaelsberg",
+   "url": "http://www.restaurant-michaelsberg.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n929586804",
+   "name": "Casa Italia",
+   "url": "http://www.casa-italia-bamberg.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4210779412",
+   "name": "Henrietta",
+   "url": "https://henrietta-bamberg.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n6544334246",
+   "name": "Henrii",
+   "url": "http://henrii-bamberg.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n803365351",
+   "name": "Hoffmanns",
+   "url": "http://www.hoffmanns-bamberg.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9664432954",
+   "name": "Kater Murr",
+   "url": "https://katermurr-bamberg.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1660289219",
+   "name": "Kleehof",
+   "url": "https://www.hotel-europa-bamberg.de/restaurant/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4975567878",
+   "name": "Kronprinz",
+   "url": "http://www.kronprinz.beer",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3105217932",
+   "name": "Kuro Neko",
+   "url": "https://www.restaurantkuroneko.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w746550172",
+   "name": "Mensa Austraße",
+   "url": "https://www.studentenwerk-wuerzburg.de/bamberg/essen-trinken/mensen/mensa-austrasse-bamberg.html",
+   "reason": "web se nepodařilo načíst (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n10053569704",
+   "name": "Nikko Restaurant Bamberg",
+   "url": "https://nikkobamberg.de/de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3468218633",
+   "name": "Pizzeria Cuatro Gatos",
+   "url": "https://www.cuatro-gatos.de/",
+   "reason": "web se nepodařilo načíst (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n5834988602",
+   "name": "SAPHIR-Sri Lankan Kitchen",
+   "url": "https://www.saphir-bamberg.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n912279793",
+   "name": "Dubliner",
+   "url": "https://dubliner-bayreuth.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n10303480833",
+   "name": "Il Rustico",
+   "url": "https://il-rustico-bayreuth.de/",
+   "reason": "web se nepodařilo načíst (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n441849894",
+   "name": "Kochlöffel",
+   "url": "https://www.kochloeffel.de/restaurantfinder/l/bayreuth/maximilianstrasse-51/472180",
+   "reason": "původní odkaz 404; úvodní stránka řetězce má jen prohlášení o přístupnosti webu"
+  },
+  {
+   "osm_id": "n4314300590",
+   "name": "Lesecafé 21",
+   "url": "https://lebenswerk.org/lebenswerk-2/genusswerk/",
+   "reason": "web provozovatele (Lebenswerk) zmiňuje zaměstnávání lidí s postižením, ne přístupnost kavárny"
+  },
+  {
+   "osm_id": "n6703259428",
+   "name": "Maguro Fine Asian Cuisine",
+   "url": "https://maguro-bayreuth.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7072499873",
+   "name": "Ramen108",
+   "url": "https://www.ramen108.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n912525040",
+   "name": "Roxy burger",
+   "url": "https://www.roxyburger.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7074322732",
+   "name": "Schnittchen",
+   "url": "https://www.cafeschnittchen.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w361434332",
+   "name": "Yorma's",
+   "url": "https://www.yormas.de/standorte/bayreuth/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w744853913",
+   "name": "Zur Eule",
+   "url": "https://www.eule-bayreuth.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w95975450",
+   "name": "Autohof Berg",
+   "url": "https://www.mayrs-wirtshaus.de/de/home.html",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n256008399",
+   "name": "Gusticus",
+   "url": "https://www.serways.de",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n429447116",
+   "name": "McDonald's",
+   "url": "https://www.mcdonalds.com/de/de-de/restaurant-suche.html/l/berg/am-hohen-rain-3/1776&cid=listing_1776",
+   "reason": "web řetězce uvádí jen prohlášení o digitální přístupnosti a samoobslužných kioscích, o fyzické přístupnosti pobočky nic"
+  },
+  {
+   "osm_id": "w39257579",
+   "name": "McDonald's",
+   "url": "https://www.mcdonalds-elster.de",
+   "reason": "web řetězce uvádí jen prohlášení o digitální přístupnosti a samoobslužných kioscích, o fyzické přístupnosti pobočky nic"
+  },
+  {
+   "osm_id": "w99347452",
+   "name": "On Top - Das Flugplatzrestaurant",
+   "url": "https://www.ontop-flugplatzrestaurant.org/",
+   "reason": "web se nepodařilo načíst (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n4469456190",
+   "name": "Asia Palast Bischberg",
+   "url": "http://www.asiapalast-bischberg.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n446221221",
+   "name": "Gasthof Deutscher Adler",
+   "url": "https://puchtlers.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w91368537",
+   "name": "Waldrasthaus Karches",
+   "url": "https://www.waldrasthaus-karches.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w201365183",
+   "name": "Burger King",
+   "url": "https://www.burgerking.de/store-locator/store/restaurant_10047",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1302520276",
+   "name": "Gaststätte Schützenhaus",
+   "url": "http://www.sg-breitenguessbach.de/html/gaststaette.html",
+   "reason": "web se nepodařilo načíst (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n6485214507",
+   "name": "Öxlas",
+   "url": "https://xn--xlas-4qa.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n11062964480",
+   "name": "Gözlemix",
+   "url": "https://gozlemix.com/filialen/bamberg/",
+   "reason": "web se nepodařilo načíst (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "w31693327",
+   "name": "Uni-Bamberg Mensa/Cafeteria Feldkirchenstraße",
+   "url": "https://www.studentenwerk-wuerzburg.de/bamberg/essen-trinken/mensen/mensa-feldkirchenstrasse-bamberg.html",
+   "reason": "web se nepodařilo načíst (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n3106703729",
+   "name": "Bowlinghaus Gastronomie",
+   "url": "https://www.bowlinghaus-bamberg.de/gastronomie/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1409913137",
+   "name": "MTV Gaststätte",
+   "url": "https://www.mtv-bamberg.de/mtv-hauptverein/partner-im-haus/gaststaette.html",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n8390941696",
+   "name": "Misako",
+   "url": "https://misako-sushi.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9640432816",
+   "name": "Vereinshain",
+   "url": "https://vereinshain.de/",
+   "reason": "web (úvodní + prošlé podstránky) nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Kurhotel an der Obermaintherme – web provozovatele",
+   "url": "https://www.kurhotel-staffelstein.de/barrierefreiheit.html",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)"
+  },
+  {
+   "title": "Kurhotel an der Obermaintherme – web provozovatele (podstránka)",
+   "url": "https://www.kurhotel-staffelstein.de/zimmer.html",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)"
+  },
+  {
+   "title": "Kurhotel an der Obermaintherme – web provozovatele (podstránka)",
+   "url": "https://www.kurhotel-staffelstein.de/kontakt/lage-anfahrt.html",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)"
+  },
+  {
+   "title": "Schäfer's – web provozovatele",
+   "url": "http://www.schaefers-cafe.de",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)"
+  },
+  {
+   "title": "Zum Löwen – web provozovatele",
+   "url": "https://www.hotel-zum-loewen.de/zimmer-stammhaus",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)"
+  },
+  {
+   "title": "Pizzeria La Posta – web provozovatele",
+   "url": "https://pizzeria-laposta.eatbu.com/?lang=de",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)"
+  },
+  {
+   "title": "Brauerei Gasthof Greifenklau – web provozovatele",
+   "url": "https://www.greifenklau.de/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)"
+  },
+  {
+   "title": "Wilde Rose Keller – web provozovatele",
+   "url": "https://www.wilde-rose-keller.de/index.php/kontakt",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)"
+  },
+  {
+   "title": "Dötzer – web provozovatele",
+   "url": "https://doetzers.de/kontakt/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)"
+  },
+  {
+   "title": "Liebesbier – web provozovatele",
+   "url": "https://www.liebesbier.de/de/hotel/zimmer/",
+   "note": "úvodní stránka + max 6 podstránek, hledána klíčová slova (barrierefrei, rollstuhl, behindert, aufzug, rampe, ebenerdig, stufenlos, bodengleich, Reisen für Alle…)"
+  }
+ ]
+}

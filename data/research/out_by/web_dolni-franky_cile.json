@@ -1,0 +1,717 @@
+{
+ "task": "web_dolni-franky_cile",
+ "kraj": "Dolní Franky",
+ "zeme": "de",
+ "checked_date": "2026-10-07",
+ "places": [
+  {
+   "osm_id": "r7644",
+   "name": "Schloss Johannisburg",
+   "obec": "Aschaffenburg",
+   "address": "Schloßplatz 4",
+   "lat": 49.976023,
+   "lng": 9.141675,
+   "category": "pamatky",
+   "source_url": "https://www.schloesser-aschaffenburg.de/deutsch/tourist/mobilitaet.htm",
+   "source_type": "web provozovatele (Bayerische Schlösserverwaltung, Aschaffenburg)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup přes jeden schod; nádvoří zámku je dlážděné žulovými kočičími hlavami. Do zámecké kaple se jde přes nádvoří, u vchodu je jeden schod.",
+    "vytah": "Uvnitř je výtah (dveře 100 cm, kabina 165 × 125 cm); je třeba se ohlásit u pokladny.",
+    "wc": "Bezbariérové WC v přízemí, šířka dveří 91 cm.",
+    "parkovani": "Přímo u zámku parkování není; nejbližší vyhrazené místo pro ZTP je naproti kostelu sv. Alžběty na Kapuzinerplatz.",
+    "jine": "Sedátka k dispozici. Do východní části zámecké zahrady není bezbariérový přístup přímo ze zámku (jen bránou na rohu Schloßberg/Ridingerstraße); mezi západní a východní částí zahrady jsou schody; cesty většinou zpevněný štěrk, některé úseky se sklonem přes 6 % a schody."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří bezbariérového WC",
+     "hodnota": 91,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří výtahu",
+     "hodnota": 100,
+     "jednotka": "cm"
+    },
+    {
+     "co": "délka kabiny výtahu",
+     "hodnota": 165,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny výtahu",
+     "hodnota": 125,
+     "jednotka": "cm"
+    },
+    {
+     "co": "sklon některých úseků cest v zahradě (více než)",
+     "hodnota": 6,
+     "jednotka": "%"
+    }
+   ],
+   "evidence_quote": "Zugang über eine Stufe … Innen Aufzug vorhanden (Türbreite: 100 cm; Länge: 165 cm; Breite: 125 cm)"
+  },
+  {
+   "osm_id": "w24707939",
+   "name": "Stadttheater Aschaffenburg",
+   "obec": "Aschaffenburg",
+   "address": "Schloßgasse 8",
+   "lat": 49.974123,
+   "lng": 9.144108,
+   "category": "kultura",
+   "source_url": "https://www.stadttheater-aschaffenburg.de/service/wissenswertes/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hosté na vozíku mají před nákupem vstupenky kontaktovat pokladnu, která vybere vhodné místo.",
+    "jine": "Na scéně Bühne 1 doporučuje divadlo lidem s omezenou chůzí místa v parteru (bez schodů); 1. balkon má jednotlivé schody. Doprovod osoby s příslušným záznamem v průkazu má vstup zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Plätze im Parkett (stufenlos) oder im 1. Rang (nur einzelne Stufen)"
+  },
+  {
+   "osm_id": "n12304284884",
+   "name": "Knauf-Museum",
+   "obec": "Iphofen",
+   "lat": 49.703885,
+   "lng": 10.260511,
+   "category": "pamatky",
+   "source_url": "https://www.knauf-museum.de/besucherinfo/barrierefreiheit",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vchod do muzea je v úrovni terénu (bez schodů).",
+    "vytah": "Ke stálé expozici ve staré budově i k výstavám v novostavbě vede výtah ve vstupní části.",
+    "wc": "Muzeum má toaletu vhodnou pro vozíčkáře.",
+    "jine": "Jedna výstavní místnost v přízemí staré budovy je přístupná jen po malém schodišti; v celé staré budově jsou prahy. Lavičky a skládací stoličky k dispozici."
+   },
+   "measurements": [],
+   "evidence_quote": "Der Eingang zum Museum ist ebenerdig zugänglich."
+  },
+  {
+   "osm_id": "w31251406",
+   "name": "Mainfranken Theater Würzburg",
+   "obec": "Würzburg",
+   "address": "Theaterstraße 21",
+   "lat": 49.79524,
+   "lng": 9.936825,
+   "category": "kultura",
+   "source_url": "https://www.mainfrankentheater.de/service/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup do Theaterfabrik Blaue Halle je u jevištního vchodu (Bühneneingang). V Blaue Halle i v Kleines Haus jsou po čtyřech místech pro vozíky (v Blaue Halle lze po dohodě rozšířit v 1. řadě). Zkušební scéna (Probebühne) je pro lidi s omezenou chůzí přístupná jen omezeně.",
+    "parkovani": "Parkovací místa pro ZTP přímo před vchodem do Blaue Halle; v Oeggstraße dvě místa pro ZTP.",
+    "jine": "Divadlo má certifikát „Reisen für Alle – Barrierefreiheit geprüft“ (12/2024–11/2027); na webu je ke stažení protokol z hodnocení."
+   },
+   "measurements": [
+    {
+     "co": "místa pro vozíky – Blaue Halle",
+     "hodnota": 4,
+     "jednotka": "ks"
+    },
+    {
+     "co": "místa pro vozíky – Kleines Haus",
+     "hodnota": 4,
+     "jednotka": "ks"
+    },
+    {
+     "co": "parkovací místa ZTP v Oeggstraße",
+     "hodnota": 2,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "mit der Auszeichnung \"Barrierefreiheit geprüft\" zertifiziert"
+  },
+  {
+   "osm_id": "n1270153660",
+   "name": "Martin-von-Wagner-Museum",
+   "obec": "Würzburg",
+   "lat": 49.792147,
+   "lng": 9.938743,
+   "category": "pamatky",
+   "source_url": "https://www.martinvonwagner-museum.com/besuch-und-kontakt",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup do muzea (2. vnitřní nádvoří jižního křídla Rezidence) je bezbariérový, před vchodem je rampa.",
+    "vytah": "Do výstavních sálů ve 2. a 3. patře vede výtah.",
+    "parkovani": "Dvě místa pro držitele průkazu ZTP přímo před vchodem na parkovišti ve 2. vnitřním nádvoří.",
+    "jine": "Vozíky a kočárky jsou ve výstavních sálech povoleny; dozor zapůjčí skládací stoličky (i jako oporu při chůzi)."
+   },
+   "measurements": [
+    {
+     "co": "parkovací místa ZTP u vchodu",
+     "hodnota": 2,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Der Zugang ins Museum ist barrierefrei."
+  },
+  {
+   "osm_id": "n4327185733",
+   "name": "Museum am Dom",
+   "obec": "Würzburg",
+   "address": "Kiliansplatz",
+   "lat": 49.793655,
+   "lng": 9.931587,
+   "category": "pamatky",
+   "source_url": "https://museum-am-dom.de/de/museumsbesuch/barrierefreiheit",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Muzeum je bezbariérově přístupné, i s vozíkem.",
+    "vytah": "Výtah vede do všech pater.",
+    "wc": "Toaleta pro osoby s postižením a přebalovací místo; toalety jsou v suterénu, podle webu bezbariérově přístupné.",
+    "jine": "Na požádání lze zapůjčit vozík; lehké židle jako opora při chůzi. Certifikát „Reisen für Alle – Barrierefreiheit geprüft“ (11/2024–10/2027)."
+   },
+   "measurements": [],
+   "evidence_quote": "Das MAD ist barrierefrei zugänglich."
+  },
+  {
+   "osm_id": "n1905444588",
+   "name": "Museum im Kulturspeicher",
+   "obec": "Würzburg",
+   "address": "Oskar-Laredo-Platz 1",
+   "lat": 49.801212,
+   "lng": 9.922577,
+   "category": "pamatky",
+   "source_url": "https://www.kulturspeicher.de/besuch/518377.Barrierefreiheit.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Budova je bezbariérová; vedle vstupního schodiště je rampa, vstupní dveře se otevírají automaticky. Obchod, kavárna, toalety a všechny výstavní sály jsou dostupné na vozíku.",
+    "vytah": "Všechna podlaží jsou dostupná bezbariérovými výtahy.",
+    "wc": "Toalety pro osoby s postižením v přízemí.",
+    "parkovani": "Parkovací místo pro osoby s postižením naproti hlavnímu vchodu.",
+    "jine": "U pokladny lze zapůjčit skládací vozík; skládací stoličky. Certifikát „Reisen für Alle“ (8/2024–7/2027)."
+   },
+   "measurements": [],
+   "evidence_quote": "Shop, Cafe, Toiletten und alle Ausstellungsräume sind mit dem Rollstuhl erreichbar."
+  },
+  {
+   "osm_id": "w44367167",
+   "name": "Frankentherme",
+   "obec": "Bad Königshofen im Grabfeld",
+   "lat": 50.300893,
+   "lng": 10.476116,
+   "category": "sport",
+   "source_url": "https://www.frankentherme.de/info-service/barrierefreie-angebote",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Terme a lázeňské centrum jsou podle webu převážně bezbariérové; bezbariérový přístup až k nástupu do bazénu (ploché schody se zábradlím, okraj bazénu ve výšce sedu).",
+    "vytah": "Vnitřní bazén nemá zvedák (lze ho objet na vozíku, má snížený okraj); terapeutická vana Arjo má zvedák. Restaurace a oba lázeňské sály jsou přístupné výtahem.",
+    "wc": "Bezbariérové toalety u restaurace a sálů; na stání pro obytné vozy WC a sprcha pro ZTP.",
+    "jine": "K jezeru s léčivou vodou (Heilwassersee) bez schodů; celá saunová vesnice je bezbariérová. V terapii široké dveře a rampy místo schodů. Lázeňský park s rovnými cestami."
+   },
+   "measurements": [],
+   "evidence_quote": "Ja, barrierefrei zugänglich bis zum Beckeneinstieg."
+  },
+  {
+   "osm_id": "n3279453795",
+   "name": "Gemeindebibliothek Karlstein",
+   "obec": "Karlstein am Main",
+   "address": "Am Oberborn 1",
+   "lat": 50.045691,
+   "lng": 9.023247,
+   "category": "kultura",
+   "source_url": "https://bibliothek-karlstein.de/barrierefreiheit/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Knihovna sama uvádí, že není plně bezbariérová: vchod do Haus der Begegnung je v úrovni terénu, ale dveře (ani do knihovny v 1. patře) se neotevírají samy.",
+    "vytah": "Výtah staví před knihovnou a v suterénu; do podkroví po domluvě s personálem.",
+    "wc": "Bezbariérová toaleta v suterénu."
+   },
+   "measurements": [],
+   "evidence_quote": "Unser Haus ist nicht vollständig barrierefrei."
+  },
+  {
+   "osm_id": "w35389665",
+   "name": "Deutsches Fastnachtmuseum",
+   "obec": "Kitzingen",
+   "address": "Rosenstraße 10",
+   "lat": 49.737104,
+   "lng": 10.159687,
+   "category": "pamatky",
+   "source_url": "https://deutsches-fastnachtmuseum.byseum.de/de/besucherinfo/oeffnungszeiten-und-preise",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Všechny výstavní místnosti jsou přístupné na vozíku (podrobnosti web neuvádí)."
+   },
+   "measurements": [],
+   "evidence_quote": "Alle Ausstellungsräume sind mit dem Rollstuhl zugänglich."
+  },
+  {
+   "osm_id": "n1625081042",
+   "name": "Museum Burg Miltenberg",
+   "obec": "Miltenberg",
+   "lat": 49.698629,
+   "lng": 9.250744,
+   "category": "pamatky",
+   "source_url": "https://museum-miltenberg.de/de/ihr-besuch",
+   "source_type": "web provozovatele (Museen Miltenberg; adresa ze vstupu vrací 404)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "V Museum Burg je každé podlaží dostupné výtahem.",
+    "wc": "K dispozici je toaleta pro osoby s postižením.",
+    "jine": "Web odkazuje na podrobnosti v systému „Reisen für Alle“. Pozor: druhé muzeum (Museum Stadt Miltenberg) není kvůli hrázděné stavbě přístupné ve všech patrech."
+   },
+   "measurements": [],
+   "evidence_quote": "Im Museum Burg ist jede Ebene mit einem Aufzug erreichbar."
+  },
+  {
+   "osm_id": "w96622810",
+   "name": "Filmwelt Schweinfurt",
+   "obec": "Schweinfurt",
+   "address": "Am Oberen Marienbach 3",
+   "lat": 50.047208,
+   "lng": 10.235537,
+   "category": "kultura",
+   "source_url": "http://filmweltschweinfurt.de/informationen/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Celý kinokomplex se všemi sály je podle webu uzpůsoben pro vozíky; v sálech 1–4 po 2 místech pro vozík, v sálech 5–7 po 1.",
+    "parkovani": "Dvě bezplatná parkovací místa pro ZTP na prostranství před kinem."
+   },
+   "measurements": [
+    {
+     "co": "místa pro vozíky celkem (7 sálů)",
+     "hodnota": 11,
+     "jednotka": "ks"
+    },
+    {
+     "co": "parkovací místa ZTP",
+     "hodnota": 2,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Der gesamte Kinokomplex mit allen Sälen ist rollstuhlgerecht ausgerichtet"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n1654652640",
+   "name": "Hofbibliothek Aschaffenburg",
+   "obec": "Aschaffenburg",
+   "web": "http://www.hofbibliothek-ab.de",
+   "duvod": "web odmítá automatický přístup (HTTP 403) – nevytěžováno"
+  },
+  {
+   "osm_id": "w24662630",
+   "name": "Zimmertheater",
+   "obec": "Aschaffenburg",
+   "web": "http://www.junge-buehne.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w126284848",
+   "name": "Katholische Pfarrkirche Kreuzauffindung",
+   "obec": "Grafenrheinfeld",
+   "web": "https://pg-im-maintal.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w184871633",
+   "name": "Ritterkapelle",
+   "obec": "Haßfurt",
+   "web": "http://www.ritterkapelle.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w82900102",
+   "name": "Alte Synagoge",
+   "obec": "Kitzingen",
+   "web": "https://www.kitzingen.info/",
+   "duvod": "web je obecný portál města Kitzingen, k objektu nic"
+  },
+  {
+   "osm_id": "w996702412",
+   "name": "St. Ottilia",
+   "obec": "Rüdenau",
+   "web": "https://www.pg-am-engelberg.de/pfarreien#r%C3%BCdenau-st-ottilia",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w299739441",
+   "name": "St. Bartholomäus",
+   "obec": "Sommerhausen",
+   "web": "https://www.kirche-sommerhausen.de/kirchenfuehrer",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w43367173",
+   "name": "Rathaus",
+   "obec": "Volkach",
+   "web": "https://www.stadt-volkach.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w217685375",
+   "name": "Bürgerhaus",
+   "obec": "Wörth am Main",
+   "web": "https://www.schifffahrtsmuseum-woerth.de/das-buergerhaus/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w87466109",
+   "name": "CinemaxX",
+   "obec": "Würzburg",
+   "web": "https://www.cinemaxx.de/",
+   "duvod": "web odmítá automatický přístup (HTTP 403) – nevytěžováno"
+  },
+  {
+   "osm_id": "n14079983076",
+   "name": "Teilbibliothek ZOM | ZIM",
+   "obec": "Würzburg",
+   "web": "https://www.bibliothek.uni-wuerzburg.de/teilbibliotheken/zom-zim/",
+   "duvod": "nalezený výskyt slova (Aufzug) jen v pravidlech knihovny, ne o přístupnosti"
+  },
+  {
+   "osm_id": "w27240304",
+   "name": "Kahltalhalle",
+   "obec": "Alzenau",
+   "web": "https://www.alzenau.de/Adressen/Kahltalhalle-Michelbach.php?ModID=9&FID=2413.8.1",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n2361064733",
+   "name": "www.energym.de Fitnessstudio",
+   "obec": "Alzenau",
+   "web": "https://www.energym.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n13928959624",
+   "name": "Familienstützpunkt Obernau",
+   "obec": "Aschaffenburg",
+   "web": "https://familienstuetzpunkt-obernau.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n683084283",
+   "name": "Hofgarten Kabarett",
+   "obec": "Aschaffenburg",
+   "web": "https://hofgarten-kabarett.de/",
+   "duvod": "web uvádí jen prohlášení o přístupnosti webu, ne budovy"
+  },
+  {
+   "osm_id": "w124365324",
+   "name": "Jugendkulturzentrum",
+   "obec": "Aschaffenburg",
+   "web": "https://www.jukuz.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w37410347",
+   "name": "Kinderhaus",
+   "obec": "Aschaffenburg",
+   "web": "https://familienstuetzpunkt-obernau.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n12303996513",
+   "name": "Archäologisches Museum",
+   "obec": "Bad Königshofen im Grabfeld",
+   "web": "https://www.schranne.info/archaeologiemuseum/",
+   "duvod": "web uvádí jen, že výtah z ulice bude „zukünftig“ (text z doby přestavby), a jeden citát návštěvníka – bez jasného aktuálního údaje"
+  },
+  {
+   "osm_id": "w333985846",
+   "name": "Bürgerzentrum Elsenfeld",
+   "obec": "Elsenfeld",
+   "web": "https://www.elsenfeld.de/freizeit-vereine/buergerzentrum/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n269428246",
+   "name": "Gemeindebibliothek",
+   "obec": "Elsenfeld",
+   "web": "https://www.elsenfeld.de/freizeit-vereine/gemeindebibliothek/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w306535695",
+   "name": "Frankenhalle",
+   "obec": "Erlenbach am Main",
+   "web": "https://www.stadt-erlenbach.de/Kultur-Tourismus/Frankenhalle.aspx",
+   "duvod": "stránka města o hale nic neuvádí; odkaz vede jen na vyhledávání portálu huerdenlos.de bez údajů o hale"
+  },
+  {
+   "osm_id": "w681836471",
+   "name": "Kino Passage",
+   "obec": "Erlenbach am Main",
+   "web": "https://www.kinopassage-erlenbach.de",
+   "duvod": "robots.txt zakazuje přístup – nevytěžováno"
+  },
+  {
+   "osm_id": "n315289202",
+   "name": "Stadtbibliothek",
+   "obec": "Erlenbach am Main",
+   "web": "http://www.stadtbibliothek-erlenbach.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w38305634",
+   "name": "Dorfgemeinschaftshaus",
+   "obec": "Frammersbach",
+   "web": "https://www.frammersbach.de/seite/bs/marktgemeinde/0506/msr/Dorfgemeinschaftshaus_im_Ortsteil_Habichsthal.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n2937315496",
+   "name": "Eroticmarkt",
+   "obec": "Geiselwind",
+   "web": "http://www.eroticmarkt.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w176684407",
+   "name": "Walderlebniszentrum Gramschatzer Wald",
+   "obec": "Gramschatzer Wald",
+   "web": "https://www.gramschatzer-wald.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n8294881793",
+   "name": "Bunker am Nordring",
+   "obec": "Großostheim",
+   "web": "https://www.bunker-ringheim.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w449609296",
+   "name": "TSV Pflaumheim 1913 e.V.",
+   "obec": "Großostheim",
+   "web": "https://www.tsv-pflaumheim.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w305553329",
+   "name": "Saaletalbad",
+   "obec": "Hammelburg",
+   "web": "https://www.saaletalbad.de/",
+   "duvod": "web odmítá automatický přístup (HTTP 403) – nevytěžováno"
+  },
+  {
+   "osm_id": "n431283873",
+   "name": "Stadtbibliothek Hammelburg",
+   "obec": "Hammelburg",
+   "web": "https://bibliothek.hammelburg.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "r17023988",
+   "name": "Bibliotheks- und Informationszentrum Haßfurt",
+   "obec": "Haßfurt",
+   "web": "https://www.biz-hassfurt.de/bibliothek.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w155443829",
+   "name": "Musikhalle Gambach",
+   "obec": "Karlstadt",
+   "web": "http://www.musikverein-gambach.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w132346141",
+   "name": "Roxy Kino",
+   "obec": "Kitzingen",
+   "web": "https://www.dasroxy.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n9208238345",
+   "name": "Evangelische Öffentliche Bücherei Kleinheubach",
+   "obec": "Kleinheubach",
+   "web": "http://www.buecherei-kleinheubach.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n9506219590",
+   "name": "Gemeindehaus St. Martin",
+   "obec": "Kleinheubach",
+   "web": "https://www.kleinheubach-evangelisch.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n27322248",
+   "name": "Katholische Öffentliche Bücherei Kleinostheim",
+   "obec": "Kleinostheim",
+   "web": "https://buecherei-kleinostheim.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w137480713",
+   "name": "Vitamar",
+   "obec": "Kleinostheim",
+   "web": "http://www.vitamar-kleinostheim.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w129296891",
+   "name": "Bergsporthalle",
+   "obec": "Kleinwallstadt",
+   "web": "https://turnverein-hofstetten.de/locations/bergsporthalle-hofstetten/",
+   "duvod": "uvedená stránka vrací 404"
+  },
+  {
+   "osm_id": "w298884982",
+   "name": "Zehntscheune",
+   "obec": "Kleinwallstadt",
+   "web": "https://www.kleinwallstadt.de/bildung-und-kultur/zehntscheune/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n274181667",
+   "name": "Museum für Militär und Zeitgeschichte",
+   "obec": "Kolitzheim",
+   "web": "https://museum-stammheim.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w490169085",
+   "name": "Evangelisches Gemeindehaus",
+   "obec": "Laufach",
+   "web": "https://www.petruskirche.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w1136512194",
+   "name": "Haus Nebenan",
+   "obec": "Laufach",
+   "web": "https://www.laufach.de/lebeninlaufach/familiekinderjugendundsenioren/Haus%20Nebenan",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w35304398",
+   "name": "Vereinsheim Wombach",
+   "obec": "Lohr am Main",
+   "web": "https://vereinsheim-wombach.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w121717266",
+   "name": "Gemeindezentrum Niederwerrn",
+   "obec": "Niederwerrn",
+   "web": "https://www.niederwerrn.de/freizeit/einrichtungen/turn--und-sportsttten/786.Gemeindezentrum.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n280885245",
+   "name": "Stadtbücherei Obernburg",
+   "obec": "Obernburg am Main",
+   "web": "https://www.stadtbuecherei-obernburg.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w350787459",
+   "name": "Steigerwald-Zentrum",
+   "obec": "Oberschwarzach",
+   "web": "https://steigerwald-zentrum.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n12288372029",
+   "name": "Heimatmuseum",
+   "obec": "Oerlenbach",
+   "web": "https://www.oerlenbach.de/home/buergerservice/a-z/5036.Heimatmuseum.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n12288372028",
+   "name": "John-Bauer-Museum",
+   "obec": "Oerlenbach",
+   "web": "https://museen-in-bayern.de/museen/detailseite-museum/john-bauer-museum",
+   "duvod": "adresa vede na portál museen-in-bayern.de, kde je u muzea „Barrierefreiheit keine Angabe“"
+  },
+  {
+   "osm_id": "w273005308",
+   "name": "Schönstatt-Zentrum",
+   "obec": "Randersacker",
+   "web": "https://www.schoenstatt-wuerzburg.de/index.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n388512402",
+   "name": "Ebracher Hof",
+   "obec": "Schweinfurt",
+   "web": "https://www.schweinfurt.de/kultur-event/stadtbuecherei/index.html",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w37959359",
+   "name": "Stattbahnhof",
+   "obec": "Schweinfurt",
+   "web": "https://www.stattbahnhof.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n3276971925",
+   "name": "Bücherei Sulzbach",
+   "obec": "Sulzbach am Main",
+   "web": "https://bücherei-sulzbach-main.de/",
+   "duvod": "doména bücherei-sulzbach-main.de se nepřeložila (DNS) – web nedostupný"
+  },
+  {
+   "osm_id": "n365617473",
+   "name": "KOMM",
+   "obec": "Untermerzbach",
+   "web": "https://untermerzbach.de/index.php",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w426618796",
+   "name": "terroir f Volkach",
+   "obec": "Volkach",
+   "web": "https://www.franken-weinland.de/poi/terroir_f_volkach-10534/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "w756146623",
+   "name": "Haus der Schwarzen Berge",
+   "obec": "Wildflecken",
+   "web": "https://www.biosphaerenreservat-rhoen.de/wissen/biosphaeren-informationszentren/biosphaerenzentrum-rhoen-haus-der-schwarzen-berge",
+   "duvod": "web odmítá automatický přístup (HTTP 403) – nevytěžováno"
+  },
+  {
+   "osm_id": "n8570080292",
+   "name": "Theater Sommerhaus",
+   "obec": "Winterhausen",
+   "web": "https://www.theater-sommerhaus.de/",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n1721243810",
+   "name": "Pfarrzentrum St. Nikolaus",
+   "obec": "Wörth am Main",
+   "web": "http://www.nikolaus-woerth.de",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  },
+  {
+   "osm_id": "n1721240980",
+   "name": "Stadtbibliothek",
+   "obec": "Wörth am Main",
+   "web": "https://opac.winbiap.de/woerth-main/index.aspx",
+   "duvod": "na webu (úvodní stránka + podstránky) nenalezen údaj o fyzické přístupnosti"
+  }
+ ],
+ "sources": [
+  "http://filmweltschweinfurt.de/informationen/",
+  "https://bibliothek-karlstein.de/barrierefreiheit/",
+  "https://deutsches-fastnachtmuseum.byseum.de/de/besucherinfo/oeffnungszeiten-und-preise",
+  "https://museum-am-dom.de/de/museumsbesuch/barrierefreiheit",
+  "https://museum-miltenberg.de/de/ihr-besuch",
+  "https://www.frankentherme.de/info-service/barrierefreie-angebote",
+  "https://www.knauf-museum.de/besucherinfo/barrierefreiheit",
+  "https://www.kulturspeicher.de/besuch/518377.Barrierefreiheit.html",
+  "https://www.mainfrankentheater.de/service/",
+  "https://www.martinvonwagner-museum.com/besuch-und-kontakt",
+  "https://www.schloesser-aschaffenburg.de/deutsch/tourist/mobilitaet.htm",
+  "https://www.stadttheater-aschaffenburg.de/service/wissenswertes/"
+ ]
+}
