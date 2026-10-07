@@ -1,0 +1,128 @@
+{
+ "task": "ubytovani_liberecky",
+ "kraj": "Liberecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w326685023",
+   "name": "Antonie hotel",
+   "obec": "Frýdlant",
+   "address": "Zelená 905",
+   "lat": 50.927369,
+   "lng": 15.074402,
+   "category": "ubytovani",
+   "source_url": "https://www.antoniehotel.cz/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel nabízí bezbariérové pokoje s vlastní předzahrádkou a přímým vstupem do zahrad; jsou v přízemí hlavní budovy s pohodlným přístupem k restauraci."
+   },
+   "measurements": [],
+   "evidence_quote": "Antonie nabízí bezbariérové pokoje s vlastní předzahrádkou. Nacházejí se v přízemí hlavní budovy"
+  },
+  {
+   "osm_id": "w180990477",
+   "name": "Obří sud Javorník",
+   "obec": "Dlouhý Most",
+   "address": "",
+   "lat": 50.691721,
+   "lng": 15.07992,
+   "category": "ubytovani",
+   "source_url": "https://areal-obrisud.cz/hotel-obri-sud",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel uvádí 1 bezbariérový pokoj se dvěma lůžky a přistýlkou (Standard ***, 20 m²)."
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérového pokoje",
+     "hodnota": 20,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "1x bezbariérový pokoj se dvěma lůžky a přistýlkou pro 1 osobu"
+  },
+  {
+   "osm_id": "n12088628258",
+   "name": "Hotel Fit Fun",
+   "obec": "Harrachov",
+   "address": "",
+   "lat": 50.75938,
+   "lng": 15.446077,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelfitfun.cz/cs/pokoje/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "Výtah je v hlavní budově A; budova B výtah nemá a není bezbariérová.",
+    "jine": "Recepce, restaurace a wellness jsou v budově A, s budovou B propojené vnitřní chodbou."
+   },
+   "measurements": [],
+   "evidence_quote": "Budova B nemá k dispozici výtah (prostor není bezbariérový)"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w206868877",
+   "name": "Hotel Žalý",
+   "url": "http://www.hotelzaly.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w206868855",
+   "name": "Pension Na Sychrově",
+   "url": "https://www.pensionnasychrove.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1765527304",
+   "name": "Relax Hotel Bára",
+   "url": "http://www.hotelbara.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n664125531",
+   "name": "Hotýlek pod smrkem",
+   "url": "https://www.hotylekpodsmrkem.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w159686197",
+   "name": "Villa Golden",
+   "url": "https://www.harrachov.cz/golden/default_cz.html",
+   "reason": "web nedostupný"
+  },
+  {
+   "osm_id": "n1987721383",
+   "name": "Hotel Krakonoš",
+   "url": "https://www.breuer.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1873605056",
+   "name": "Pytloun Wellness Travel Hotel",
+   "url": "https://www.pytlounhotels.com/cz/pytloun-wellness-travel-hotel/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n608582455",
+   "name": "Bajkovna Na Výsluní",
+   "url": "https://www.bajkovna.cz/",
+   "reason": "web nedostupný"
+  },
+  {
+   "osm_id": "w252520179",
+   "name": "Hotel Štumpovka",
+   "url": "https://www.dvoracky.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů ze vstupu inputs/ubytovani_liberecky.json",
+   "url": "https://www.antoniehotel.cz/ubytovani/",
+   "note": "prověřeno 12 webů; souřadnice ze vstupu"
+  }
+ ]
+}

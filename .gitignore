@@ -1,0 +1,14 @@
+# surová a stažená data (velká, dají se znovu vygenerovat skripty v tools/)
+data/raw/
+data/open/
+# ukázky z webů, jejichž podmínky nedovolují zveřejnění (presbariery.cz aj.)
+data/samples/
+# interní podklady
+data/research/licence_zadosti.md
+data/research/test/
+__pycache__/
+*.pyc
+*.tmp
+*.tmp.json
+data/research/tmp*/
+data/research/**/*.html

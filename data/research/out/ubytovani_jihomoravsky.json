@@ -1,0 +1,157 @@
+{
+ "task": "ubytovani_jihomoravsky",
+ "kraj": "Jihomoravský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n9805617310",
+   "name": "Hotel Krystal",
+   "obec": "Hodonín",
+   "address": "",
+   "lat": 48.850272,
+   "lng": 17.121574,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-krystal.cz/cs/bezbarierovy/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Bezbariérový pokoj pro osoby se sníženou pohyblivostí nebo na vozíku, s širším prostorem a manželským lůžkem.",
+    "koupelna": "Bezbariérová koupelna se sprchovým koutem a WC."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérová koupelna se sprchovým koutem a WC"
+  },
+  {
+   "osm_id": "w1480413826",
+   "name": "Clarion Congress Hotel Brno",
+   "obec": "Brno",
+   "address": "Dornych 552/3",
+   "lat": 49.190562,
+   "lng": 16.615142,
+   "category": "ubytovani",
+   "source_url": "https://www.clarioncongresshotelbrno.com/cs/pokoje",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hotel uvádí bezbariérový přístup.",
+    "parkovani": "Podzemní parkoviště se 140 místy."
+   },
+   "measurements": [
+    {
+     "co": "parkovací místa v podzemních garážích",
+     "hodnota": 140,
+     "jednotka": "míst"
+    }
+   ],
+   "evidence_quote": "Hotel disponuje bezbariérovým přístupem a podzemním parkovištěm se 140 místy"
+  },
+  {
+   "osm_id": "n3719788551",
+   "name": "eFi Hotel",
+   "obec": "Brno",
+   "address": "Bratislavská 52",
+   "lat": 49.199622,
+   "lng": 16.620515,
+   "category": "ubytovani",
+   "source_url": "https://www.efihotel.cz/efipalacehotel",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Mezi výhodami hotelu je uveden bezbariérový přístup.",
+    "parkovani": "Venkovní i zabezpečené parkoviště jsou popsány jako s bezbariérovým přístupem; garáž je přístupná autovýtahem."
+   },
+   "measurements": [],
+   "evidence_quote": "Klimatizace Bezbariérový přístup Pejsci vítaní"
+  },
+  {
+   "osm_id": "n1511528422",
+   "name": "Hotel Galant",
+   "obec": "Mikulov",
+   "address": "",
+   "lat": 48.807937,
+   "lng": 16.640911,
+   "category": "ubytovani",
+   "source_url": "https://galant.cz/hotel-galant-mikulov/hotel/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "koupelna": "Pokoje kategorie Premium mají koupelnu s bezbariérovým vstupem."
+   },
+   "measurements": [],
+   "evidence_quote": "moderní koupelna s bezbariérovým vstupem"
+  },
+  {
+   "osm_id": "n6388055795",
+   "name": "Chocohotel Fikar",
+   "obec": "Kuřim",
+   "address": "",
+   "lat": 49.299215,
+   "lng": 16.531146,
+   "category": "ubytovani",
+   "source_url": "https://www.chocohotel.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "Hostům je k dispozici prostorný výtah."
+   },
+   "measurements": [],
+   "evidence_quote": "Hostům je k dispozici prostorný výtah."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n544178783",
+   "name": "Cosmopolitan Bobycentrum",
+   "url": "http://hotelbobycentrum.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n2308110495",
+   "name": "Grand Palace Brno",
+   "url": "https://www.grandpalace.cz/",
+   "reason": "web nic o přístupnosti neuvádí (načetla se jen úvodní stránka)"
+  },
+  {
+   "osm_id": "n3391010863",
+   "name": "Hotel Pegas",
+   "url": "https://hotelpegas.com",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n296540326",
+   "name": "Quality Hotel Brno Exhibition Centre",
+   "url": "https://www.qualityhotelbrnoexhibitioncentre.com/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3601994344",
+   "name": "SONO Centrum",
+   "url": "https://www.sono.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n6967027712",
+   "name": "Hotel Mádl",
+   "url": "https://vasvinar.cz/hotelmadl_cz/index.php",
+   "reason": "stránka vrací 404"
+  },
+  {
+   "osm_id": "n11001132886",
+   "name": "Hotel Ryšavý",
+   "url": "https://www.hotelrysavy.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů ubytování z OSM (vstup ubytovani_jihomoravsky.json)",
+   "url": "data/research/inputs/ubytovani_jihomoravsky.json",
+   "note": "29 záznamů s webem; prošlo se 12 (přednostně hotely s OSM wheelchair=yes), úvodní stránka + až 6 podstránek"
+  },
+  {
+   "title": "Hotel Krystal Hodonín – Bezbariérový pokoj",
+   "url": "https://www.hotel-krystal.cz/cs/bezbarierovy/",
+   "note": "samostatná stránka bezbariérového pokoje"
+  }
+ ]
+}

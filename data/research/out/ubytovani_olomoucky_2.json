@@ -1,0 +1,455 @@
+{
+  "task": "ubytovani_olomoucky_2",
+  "kraj": "Olomoucký kraj",
+  "checked_date": "2026-10-05",
+  "places": [
+    {
+      "osm_id": "w425930822",
+      "name": "Krásná Morava (Krásná Morava Resort)",
+      "obec": "Olomouc",
+      "address": "",
+      "lat": 49.607882,
+      "lng": 17.243504,
+      "category": "ubytovani",
+      "source_url": "https://krasnamorava.cz/ubytovani",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "wc": "Web uvádí WC a sprchy pro hosty včetně bezbariérového zázemí, přístupného na euroklíč.",
+        "koupelna": "Bezbariérové zázemí zahrnuje i sprchy (bez podrobností o úpravě).",
+        "jine": "Jde o kemp/karavanové stání; o bezbariérových pokojích či chatkách web nic neuvádí."
+      },
+      "measurements": [],
+      "evidence_quote": "WC a sprchy s teplou vodou včetně bezbariérového zázemí (přístupné pomocí euroklíče)"
+    },
+    {
+      "osm_id": null,
+      "name": "Clarion Congress Hotel Olomouc",
+      "obec": "Olomouc",
+      "address": "Jeremenkova 1082/36, 779 00 Olomouc",
+      "lat": 49.5924974,
+      "lng": 17.2752508,
+      "category": "ubytovani",
+      "source_url": "https://www.clarioncongresshotelolomouc.com/cs/pokoje",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "pokoj": "V přehledu služeb hotel uvádí bezbariérové pokoje; u standardního typu pokoje je možnost bezbariérového pokoje.",
+        "koupelna": "V bezbariérovém pokoji je místo vany sprcha."
+      },
+      "measurements": [],
+      "evidence_quote": "Možnost bezbariérového pokoje (místo vany je v tomto pokoji sprcha)"
+    },
+    {
+      "osm_id": null,
+      "name": "City Inn Olomouc",
+      "obec": "Olomouc",
+      "address": "Brněnská 385/55, 783 01 Olomouc",
+      "lat": 49.5724933,
+      "lng": 17.2330137,
+      "category": "ubytovani",
+      "source_url": "https://www.cityinn.cz/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "V seznamu služeb hotelu je uveden bezbariérový přístup (bez podrobností)."
+      },
+      "measurements": [],
+      "evidence_quote": "Bezbariérový přístup"
+    },
+    {
+      "osm_id": null,
+      "name": "THERESIAN Hotel & Spa",
+      "obec": "Olomouc",
+      "address": "Javoříčská 5, 779 00 Olomouc",
+      "lat": 49.5910562,
+      "lng": 17.2497234,
+      "category": "ubytovani",
+      "source_url": "https://www.theresian.cz/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Hotel o sobě uvádí, že je bezbariérový.",
+        "pokoj": "Hotel má pokoje pro hosty s handicapem (tzv. handicap pokoje).",
+        "koupelna": "Ve fotogalerii pokojů je uvedena koupelna pro handicapované (https://www.theresian.cz/hotel-theresian/pokoje/).",
+        "jine": "Turistický portál kraje zmiňuje handicap pokoje mezi 33 pokoji hotelu (https://www.ok-tourism.cz/cil/theresian-hotel-spa/)."
+      },
+      "measurements": [],
+      "evidence_quote": "Hotel je bezbariérový, handicap pokoje jsou tedy nepostradatelnou součástí hotelu."
+    },
+    {
+      "osm_id": null,
+      "name": "Hotel Trinity",
+      "obec": "Olomouc",
+      "address": "Pavelčákova 22, 779 00 Olomouc",
+      "lat": 49.5922573,
+      "lng": 17.2500642,
+      "category": "ubytovani",
+      "source_url": "https://www.hotel-trinity.cz/pokoje/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "pokoj": "Hotel uvádí, že jeden z jeho pokojů je částečně bezbariérový; podrobnosti neuvádí."
+      },
+      "measurements": [],
+      "evidence_quote": "Jeden z našich pokojů je částečně bezbariérový."
+    },
+    {
+      "osm_id": null,
+      "name": "Hotel Golf Resort Olomouc",
+      "obec": "Dolany",
+      "address": "Véska 89, 783 16 Dolany",
+      "lat": 49.6661597,
+      "lng": 17.3599593,
+      "category": "ubytovani",
+      "source_url": "https://www.ok-tourism.cz/cil/hotel-golf-resort-olomouc/",
+      "source_type": "turistický portál kraje",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Portál kraje uvádí, že hotel má bezbariérový přístup.",
+        "pokoj": "Jeden z pokojů je podle portálu kompletně přizpůsoben hostům s handicapem.",
+        "jine": "Web provozovatele (https://www.golfolomouc.cz/) o přístupnosti hotelu při kontrole nic neuváděl."
+      },
+      "measurements": [],
+      "evidence_quote": "Hotel má bezbariérový přístup. Jeden z pokojů je kompletně přizpůsoben handicapovaným."
+    },
+    {
+      "osm_id": null,
+      "name": "Pivovarský hotel",
+      "obec": "Kojetín",
+      "address": "náměstí Dr. E. Beneše 61, 752 01 Kojetín",
+      "lat": 49.3540014,
+      "lng": 17.3031744,
+      "category": "ubytovani",
+      "source_url": "https://pivovarskyhotel.cz/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "pokoj": "Hotel nabízí jeden třílůžkový bezbariérový pokoj; v jeho výbavě je uvedeno, že je vhodný pro vozíčkáře (https://pivovarskyhotel.cz/bezbarierovy-triluzkovy-pokoj/).",
+        "koupelna": "Bezbariérový pokoj má podle webu bezbariérovou koupelnu."
+      },
+      "measurements": [],
+      "evidence_quote": "jeden třílůžkový bezbariérový pokoj včetně bezbariérové koupelny"
+    },
+    {
+      "osm_id": null,
+      "name": "Sport & Relax areál Bozeňov (wellness hotel)",
+      "obec": "Zábřeh",
+      "address": "Dolní Bušínov 146, 789 01 Zábřeh",
+      "lat": 49.8329525,
+      "lng": 16.8273863,
+      "category": "ubytovani",
+      "source_url": "https://www.bozenov.cz/ubytovani",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Web uvádí bezbariérový přístup v celém hotelu.",
+        "pokoj": "Jeden pokoj je díky dispozicím vhodný pro hosty na invalidním vozíku a je jim nabízen přednostně.",
+        "koupelna": "Každý pokoj má koupelnu s WC; o úpravách koupelny bezbariérového pokoje web nic konkrétního neuvádí."
+      },
+      "measurements": [],
+      "evidence_quote": "jeden z pokojů je díky svým dispozicím ideální pro hosty na invalidním vozíku"
+    },
+    {
+      "osm_id": null,
+      "name": "Resort Dlouhé Stráně (Hotel Dlouhé Stráně)",
+      "obec": "Loučná nad Desnou",
+      "address": "Rejhotice 72, 788 11 Loučná nad Desnou",
+      "lat": 50.0999488,
+      "lng": 17.1035463,
+      "category": "ubytovani",
+      "source_url": "https://www.ok-tourism.cz/cil/resort-dlouhe-strane/",
+      "source_type": "turistický portál kraje",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "pokoj": "Podle portálu kraje má hotel (208 pokojů) i několik bezbariérových pokojů; podrobnosti neuvádí.",
+        "jine": "Web provozovatele (www.hotelds.cz) o přístupnosti při kontrole nic neuváděl."
+      },
+      "measurements": [],
+      "evidence_quote": "Nechybí zde ani několik bezbariérových pokojů."
+    },
+    {
+      "osm_id": null,
+      "name": "Penzion Majorka (Lázně Slatinice)",
+      "obec": "Slatinice",
+      "address": "Slatinice 20, 783 42 Slatinice",
+      "lat": 49.5646925,
+      "lng": 17.0973938,
+      "category": "ubytovani",
+      "source_url": "https://www.ok-tourism.cz/cil/penzion-majorka/",
+      "source_type": "turistický portál kraje",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "pokoj": "Dva pokoje jsou podle portálu kraje řešeny jako bezbariérové pro vozíčkáře.",
+        "vytah": "V objektu penzionu je výtah.",
+        "jine": "Stránka penzionu na webu Lázní Slatinice o přístupnosti při kontrole nic neuváděla."
+      },
+      "measurements": [],
+      "evidence_quote": "Dva pokoje jsou řešeny tak, aby nabídly bezbariérové ubytování pro vozíčkáře"
+    },
+    {
+      "osm_id": null,
+      "name": "Penzion Vila (Vila Jana), Jonas Park",
+      "obec": "Ostružná",
+      "address": "Ostružná 49, 788 25 Ostružná",
+      "lat": 50.1896463,
+      "lng": 17.0359213,
+      "category": "ubytovani",
+      "source_url": "https://www.ostruzna.cz/penzion-vila.php?url=penzion-vila",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "pokoj": "Penzion má 4 apartmány, z toho 2 bezbariérové (s kuchyňkou); obecně uvádí bezbariérové ubytování.",
+        "parkovani": "Parkování u objektu (bez zmínky o místech pro ZTP).",
+        "jine": "Na portálu kraje veden jako Vila Jana (https://www.ok-tourism.cz/cil/vila-jana/)."
+      },
+      "measurements": [],
+      "evidence_quote": "Penzion Vila má 4 partmány (2 bezbariérové)"
+    },
+    {
+      "osm_id": null,
+      "name": "Autokemp Šternberk",
+      "obec": "Šternberk",
+      "address": "Dolní Žleb 26, 785 01 Šternberk",
+      "lat": 49.7478075,
+      "lng": 17.3056588,
+      "category": "ubytovani",
+      "source_url": "https://www.ok-tourism.cz/cil/autokemp-sternberk/",
+      "source_type": "turistický portál kraje",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "pokoj": "Podle portálu kraje je jedna z chat s vlastním WC a sprchou bezbariérová.",
+        "jine": "Web kempu (https://www.campsternberk.cz/) o přístupnosti při kontrole nic neuváděl."
+      },
+      "measurements": [],
+      "evidence_quote": "Jedna z těchto chat je bezbariérová."
+    },
+    {
+      "osm_id": null,
+      "name": "Chalupa Alena",
+      "obec": "Jindřichov",
+      "address": "Nové Losiny 134, 788 23 Jindřichov",
+      "lat": 50.1141188,
+      "lng": 17.0233263,
+      "category": "ubytovani",
+      "source_url": "https://www.ok-tourism.cz/cil/chalupa-alena/",
+      "source_type": "turistický portál kraje",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Celé přízemí chalupy je podle portálu bezbariérové (chodba, jídelna s kuchyní).",
+        "jine": "O bezbariérové koupelně či ložnici portál nic konkrétního neuvádí; web provozovatele při kontrole nic neuváděl."
+      },
+      "measurements": [],
+      "evidence_quote": "Celé přízemí je bezbariérové."
+    },
+    {
+      "osm_id": null,
+      "name": "Formanka – restaurace a penzion",
+      "obec": "Hanušovice",
+      "address": "Hlavní 179, 788 33 Hanušovice",
+      "lat": 50.0800638,
+      "lng": 16.935835,
+      "category": "ubytovani",
+      "source_url": "https://www.formankahanusovice.cz/ubytovani",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "pokoj": "Penzion nabízí jednolůžkový pokoj označený jako bezbariérový; podrobnosti neuvádí."
+      },
+      "measurements": [],
+      "evidence_quote": "od jednolůžkového (bezbariérového)"
+    },
+    {
+      "osm_id": null,
+      "name": "Hotel Aldo",
+      "obec": "Uničov",
+      "address": "Stromořadí 481, 783 91 Uničov",
+      "lat": 49.7723213,
+      "lng": 17.124855,
+      "category": "ubytovani",
+      "source_url": "https://www.hotelaldo.cz/cs/pokoje/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "pokoj": "Hotel má 4 nové bezbariérové pokoje (studia) s kuchyňskou linkou.",
+        "wc": "Na chodbě je společné bezbariérové WC.",
+        "koupelna": "Studia mají koupelnu s WC; o její úpravě web nic dalšího neuvádí.",
+        "parkovani": "Hotel uvádí kryté parkoviště zdarma (bez zmínky o místech pro ZTP)."
+      },
+      "measurements": [],
+      "evidence_quote": "máme 4 nové bezbariérové pokoje včetně kuchyňské linky"
+    },
+    {
+      "osm_id": null,
+      "name": "Hotel Elegance",
+      "obec": "Šumperk",
+      "address": "Husitská 2, 787 01 Šumperk",
+      "lat": 49.9670764,
+      "lng": 16.9771281,
+      "category": "ubytovani",
+      "source_url": "https://www.hotelelegance.cz/cz/pokoje",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "pokoj": "Hotel nabízí dvoulůžkový bezbariérový pokoj (Standard).",
+        "koupelna": "Pokoj má bezbariérové sociální zařízení a koupelnu se sprchovým koutem."
+      },
+      "measurements": [],
+      "evidence_quote": "Prostorný moderní pokoj s bezbarierovým sociálním zařízením"
+    },
+    {
+      "osm_id": "w117194322",
+      "name": "Wellness & Spa Hotel Villa Regenhart",
+      "obec": "Jeseník",
+      "address": "Josefa Hory 673, 790 01 Jeseník",
+      "lat": 50.2307616,
+      "lng": 17.2102001,
+      "category": "ubytovani",
+      "source_url": "https://villaregenhart.cz/rooms/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "pokoj": "Hotel nabízí typ pokoje Executive Bezbariérový Double (2 osoby), upravený pro hosty se speciálními potřebami; podrobnosti neuvádí."
+      },
+      "measurements": [
+        {
+          "co": "plocha pokoje Executive Bezbariérový Double",
+          "hodnota": 19,
+          "jednotka": "m2"
+        }
+      ],
+      "evidence_quote": "Tento pokoj je upraven pro hosty se speciálními potřebami."
+    },
+    {
+      "osm_id": null,
+      "name": "Boutique hotel Hrad Kunzov",
+      "obec": "Radíkov",
+      "address": "Radíkov 51, 753 01 Radíkov",
+      "lat": 49.5853343,
+      "lng": 17.6887304,
+      "category": "ubytovani",
+      "source_url": "https://www.kunzov.cz/pokoje/zlata-klec",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "pokoj": "U pokoje Zlatá klec je ve výbavě uveden bezbariérový přístup (bez podrobností).",
+        "koupelna": "Pokoj má koupelnu se sprchovým koutem a toaletou; o její úpravě web nic neuvádí."
+      },
+      "measurements": [],
+      "evidence_quote": "Bezbariérový přístup"
+    }
+  ],
+  "not_found": [
+    {
+      "osm_id": "n1876549954",
+      "name": "Sněženka (Horský & Wellness hotel Sněženka)",
+      "url": "http://www.hotel-snezenka.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w52457718",
+      "name": "Růžek",
+      "url": "",
+      "reason": "ve vstupu bez webu, web nedohledán"
+    },
+    {
+      "osm_id": "n5866015521",
+      "name": "Penzion Trombly",
+      "url": "",
+      "reason": "ve vstupu bez webu, web nedohledán"
+    },
+    {
+      "osm_id": "w89954930",
+      "name": "Pension a restaurace Caruso",
+      "url": "",
+      "reason": "ve vstupu bez webu, web nedohledán"
+    },
+    {
+      "osm_id": "n13966127365",
+      "name": "Pension V Centru",
+      "url": "",
+      "reason": "ve vstupu bez webu, web nedohledán"
+    },
+    {
+      "osm_id": null,
+      "name": "NH Collection Olomouc Congress",
+      "url": "https://www.nh-hotels.com/cs/hotel/nh-collection-olomouc-congress",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": null,
+      "name": "Central Park Flora",
+      "url": "https://www.hotelflora.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": null,
+      "name": "Priessnitzovy léčebné lázně, Jeseník",
+      "url": "https://www.priessnitz.cz/cz/",
+      "reason": "web uvádí jen bezbariérový koridor u LD Mír a plánované bezbariérové úpravy kapacit; o konkrétních bezbariérových pokojích nic"
+    },
+    {
+      "osm_id": null,
+      "name": "Lázně Velké Losiny",
+      "url": "https://www.lazne-losiny.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": null,
+      "name": "Lázně Bludov",
+      "url": "https://www.lazne-bludov.cz/",
+      "reason": "web uvádí jen osvobození držitelů ZTP/P od poplatku, o přístupnosti nic"
+    },
+    {
+      "osm_id": null,
+      "name": "Lázně Lipová",
+      "url": "https://www.lazne-lipova.cz/",
+      "reason": "web uvádí jen poplatky pro držitele ZTP a ZTP/P, o přístupnosti nic"
+    },
+    {
+      "osm_id": null,
+      "name": "Hotel Praděd Thamm",
+      "url": "https://www.hotelpradedthamm.cz/",
+      "reason": "web nedostupný"
+    },
+    {
+      "osm_id": null,
+      "name": "Hotel Černá Voda",
+      "url": "https://hotelcernavoda.rychleby.cz/",
+      "reason": "web nedostupný"
+    },
+    {
+      "osm_id": null,
+      "name": "Lázně Teplice nad Bečvou",
+      "url": "http://www.laznetep.cz/",
+      "reason": "web nedostupný"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Turistický informační portál Olomouckého kraje – Ubytování",
+      "url": "https://www.ok-tourism.cz/uzitecne-info/ubytovani/",
+      "note": "158 záznamů (hotely, penziony, kempy, chaty); filtr „Pouze bezbariérové cíle“ u ubytování nevrací nic, proto prohledány texty všech detailů podle klíčových slov"
+    },
+    {
+      "title": "Weby provozovatelů uvedené na portálu kraje",
+      "url": "https://www.ok-tourism.cz/uzitecne-info/ubytovani/hotely/",
+      "note": "128 webů (úvodní stránka + až 8 podstránek), hledání klíčových slov; u ostatních webů bez zmínky o bezbariérovosti"
+    },
+    {
+      "title": "Vstup OSM – ubytovani_olomoucky.json",
+      "url": "data/research/inputs/ubytovani_olomoucky.json",
+      "note": "18 záznamů; 12 prošlo v 1. kole; Sněženka a Krásná Morava doplněny přes web uvedený na portálu kraje; 4 bez webu"
+    },
+    {
+      "title": "Weby lázní a hotelů mimo portál",
+      "url": "https://www.priessnitz.cz/cz/",
+      "note": "Velké Losiny, Bludov, Lipová, Priessnitz, Slatinice, NH Collection, Flora, Petrovy kameny – bez informací o bezbariérovém ubytování"
+    },
+    {
+      "title": "Nominatim (OpenStreetMap)",
+      "url": "https://nominatim.openstreetmap.org/",
+      "note": "geokódování podle adresy z portálu kraje / webu"
+    }
+  ]
+}

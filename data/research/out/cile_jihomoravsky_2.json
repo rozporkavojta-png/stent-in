@@ -1,0 +1,294 @@
+{
+  "task": "turistické cíle a kultura – Jihomoravský kraj (zrychlené doplnění)",
+  "kraj": "Jihomoravský",
+  "checked_date": "2026-10-05",
+  "places": [
+    {
+      "osm_id": "w16371581",
+      "name": "Mahenovo divadlo",
+      "obec": "Brno",
+      "lat": 49.196162,
+      "lng": 16.613423,
+      "category": "divadlo",
+      "source_url": "https://www.ndbrno.cz/info-pro-handicapovane/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Bezbariérový vstup jen služebním vchodem z ulice Rooseveltova, personál pomůže do prostoru šaten; do Malé scény bezbariérový přístup není (podle návštěvního řádu NdB).",
+        "wc": "WC pro vozíčkáře je jen u šaten vlevo.",
+        "vytah": "Ze šatny vede výtah do 1. pořadí (místa v prezidentské lóži); výtah má max. šířku 65 cm.",
+        "jine": "Je-li vozík širší než 65 cm nebo delší než 105 cm, NdB na místě zapůjčí jiný vozík. Požadavky je třeba sdělit pokladně před nákupem vstupenek."
+      },
+      "measurements": [
+        {
+          "co": "max. šířka vozíku do výtahu",
+          "hodnota": 65,
+          "jednotka": "cm"
+        },
+        {
+          "co": "max. délka vozíku do výtahu",
+          "hodnota": 105,
+          "jednotka": "cm"
+        }
+      ],
+      "evidence_quote": "Pokud je váš vozík širší než 65 cm nebo delší než 105 cm, pracovníci NdB vám na místě zapůjčí jiný vozík."
+    },
+    {
+      "osm_id": "w49999068",
+      "name": "Divadlo Reduta",
+      "obec": "Brno",
+      "lat": 49.192039,
+      "lng": 16.6097,
+      "category": "divadlo",
+      "source_url": "https://www.ndbrno.cz/info-pro-handicapovane/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Bezbariérový přístup ze Zelného trhu až k výtahu; u vchodu do Divadelního sálu místa pro dva vozíky. Návštěvní řád NdB uvádí, že Reduta je zcela bezbariérová.",
+        "wc": "WC pro vozíčkáře v přízemí i v 1. patře.",
+        "vytah": "Výtahem do 1. patra."
+      },
+      "evidence_quote": "Bezbariérový přístup je možný ze Zelného trhu až k výtahu, výtahem do prvního patra."
+    },
+    {
+      "osm_id": "n83365417",
+      "name": "Knihovna Jiřího Mahena – Ústřední knihovna",
+      "obec": "Brno",
+      "address": "Kobližná 4",
+      "lat": 49.19517,
+      "lng": 16.609624,
+      "category": "knihovna",
+      "source_url": "https://www.kjm.cz/knihovna-bez-barier",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Bezbariérový vstup, u vchodu hlasový orientační majáček.",
+        "wc": "Toalety pro handicapované.",
+        "vytah": "Výtah (po vstupu do výpůjční haly vlevo), kterým se vozíčkář dostane do vyšších pater."
+      },
+      "evidence_quote": "V Ústřední knihovně naleznete bezbariérový vstup, výtah, pomocí něhož se vozíčkář dostane do vyšších pater"
+    },
+    {
+      "osm_id": "n3714711988",
+      "name": "KJM pobočka Starý Lískovec",
+      "obec": "Brno",
+      "address": "Kurská 1",
+      "lat": 49.168229,
+      "lng": 16.555721,
+      "category": "knihovna",
+      "source_url": "https://www.kjm.cz/provoz/stary-liskovec-kurska-1",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Pobočka je bezbariérová, v letech 2024–2025 prošla rekonstrukcí.",
+        "wc": "Bezbariérové včetně sociálního zařízení."
+      },
+      "evidence_quote": "Pobočka je bezbariérová (včetně sociálního zařízení)"
+    },
+    {
+      "osm_id": "n7091334794",
+      "name": "Knihovna Jiřího Mahena – pobočka Husovice",
+      "obec": "Brno",
+      "address": "Musilova 1540/2a",
+      "lat": 49.209677,
+      "lng": 16.629727,
+      "category": "knihovna",
+      "source_url": "https://www.kjm.cz/pobocky/husovice",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Menší moderní bezbariérová pobočka; je i v seznamu poboček KJM s bezbariérovým vstupem."
+      },
+      "evidence_quote": "Knihovna patří mezi menší, avšak moderní bezbariérové pobočky KJM"
+    },
+    {
+      "osm_id": "n7126935815",
+      "name": "Knihovna Jiřího Mahena – pobočka Komín",
+      "obec": "Brno",
+      "address": "Vavřinecká 13",
+      "lat": 49.222013,
+      "lng": 16.552256,
+      "category": "knihovna",
+      "source_url": "https://www.kjm.cz/knihovna-bez-barier",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Pobočka Komín (Vavřinecká 13) je v seznamu poboček KJM s bezbariérovým vstupem; jiné podrobnosti stránka neuvádí."
+      },
+      "evidence_quote": "Seznam poboček KJM s bezbariérovým vstupem"
+    },
+    {
+      "osm_id": "r91437",
+      "name": "Moravská zemská knihovna",
+      "obec": "Brno",
+      "address": "Kounicova 65a",
+      "lat": 49.208645,
+      "lng": 16.594057,
+      "category": "knihovna",
+      "source_url": "https://www.mzk.cz/o-knihovne/historie/o-budove",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Bezbariérový přístup k hlavnímu vchodu po chodníku ve sklonu podél budovy z ulice Hrnčířská; v přízemí recepce a přístupná kavárna.",
+        "wc": "Bezbariérová WC v 1., 3. a 5. patře (klíče u pultu v přízemí), v 1. patře i přebalovací kabina.",
+        "parkovani": "U chodníku dvě vyhrazená parkovací stání.",
+        "vytah": "Do všech pater dva výtahy.",
+        "jine": "Web nabízí videoprůvodce pro osoby se sníženou mobilitou a na vozíku a PDF s podrobnějšími informacemi o přístupnosti budovy."
+      },
+      "measurements": [
+        {
+          "co": "šířka dveří výtahu",
+          "hodnota": 80,
+          "jednotka": "cm"
+        },
+        {
+          "co": "šířka kabiny výtahu",
+          "hodnota": 110,
+          "jednotka": "cm"
+        },
+        {
+          "co": "hloubka kabiny výtahu",
+          "hodnota": 140,
+          "jednotka": "cm"
+        },
+        {
+          "co": "šířka kabiny bezbariérového WC",
+          "hodnota": 175,
+          "jednotka": "cm"
+        },
+        {
+          "co": "hloubka kabiny bezbariérového WC",
+          "hodnota": 175,
+          "jednotka": "cm"
+        },
+        {
+          "co": "počet vyhrazených parkovacích stání",
+          "hodnota": 2,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "do všech pater dva výtahy (dv. 80, š. 110, hl. 140 cm)"
+    },
+    {
+      "osm_id": "n295657862",
+      "name": "Kino Art",
+      "obec": "Brno",
+      "address": "Cihlářská 783/19",
+      "lat": 49.204216,
+      "lng": 16.603366,
+      "category": "kino",
+      "source_url": "https://www.kinoart.cz/cs/informace",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Kino je bezbariérové s výjimkou herny Pokoj 237 a Černé díry."
+      },
+      "evidence_quote": "Kino Art je bezbariérové s výjimkou herny Pokoj 237 a Černé díry."
+    }
+  ],
+  "not_found": [
+    {
+      "osm_id": "n295657863",
+      "name": "Scala",
+      "url": "https://www.kinoscala.cz/o-kine",
+      "reason": "uvádí jen slevy pro ZTP, o fyzické přístupnosti nic"
+    },
+    {
+      "osm_id": "n3367622635",
+      "name": "SONO Centrum",
+      "url": "https://www.sono.cz/",
+      "reason": "úvod, kontakty ani O nás nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n418143966",
+      "name": "Barka",
+      "url": "https://www.divadlobarka.cz/o-barce/",
+      "reason": "zmiňuje jen inkluzivní zaměření souboru, o přístupnosti budovy nic"
+    },
+    {
+      "osm_id": "n10222310647",
+      "name": "Galerie v IBC",
+      "url": "https://www.galerievibc.cz/",
+      "reason": "úvod ani kontakt nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w50004695",
+      "name": "Ústřední knihovna FF MU",
+      "url": "https://knihovna.phil.muni.cz/o-nas",
+      "reason": "úvod ani O nás nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w106904616",
+      "name": "Mohyla míru",
+      "url": "https://mohylamiru.muzeumbrnenska.cz/cz/o-pamatniku/zakladni-informace",
+      "reason": "základní informace, areál ani Jak se k nám dostanete nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6074421258",
+      "name": "Podhorácké muzeum Předklášteří",
+      "url": "https://predklasteri.muzeumbrnenska.cz/cz/muzeu/o-muzeu-2",
+      "reason": "uvádí jen vstupné zdarma pro ZTP"
+    },
+    {
+      "osm_id": "w94121682",
+      "name": "Muzeum Brněnska (Šlapanice)",
+      "url": "https://slapanice.muzeumbrnenska.cz/cz/o-muzeu",
+      "reason": "uvádí jen vstupné zdarma pro ZTP"
+    },
+    {
+      "osm_id": "n4178908901",
+      "name": "Brněnské podzemí (Labyrint pod Zelným trhem)",
+      "url": "https://podzemibrno.cz/mista-v-podzemi/labyrint-pod-zelnym-trhem/",
+      "reason": "uvádí jen zlevněné vstupné pro ZTP; URL z OSM vrací 404"
+    },
+    {
+      "osm_id": "n9400059673",
+      "name": "Městská knihovna Šlapanice",
+      "url": "https://mestskaknihovna.slapanice.cz/o-knihovne",
+      "reason": "úvod, O knihovně ani kontakt nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6352951731",
+      "name": "Kapucínská hrobka",
+      "url": "http://hrobka.kapucini.cz",
+      "reason": "úvodní stránka nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w818859681",
+      "name": "Železnice 600",
+      "url": "https://www.zeleznice600.cz",
+      "reason": "úvodní stránka nic o přístupnosti neuvádí"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Weby cílů z OSM (vstup cile_jihomoravsky.json)",
+      "url": "data/research/inputs/cile_jihomoravsky.json",
+      "note": "zrychlené doplnění: prošlo se 20 dalších míst s webem (bez míst z cile_jihomoravsky.json), skriptem podle klíčových slov"
+    },
+    {
+      "title": "Národní divadlo Brno – Info pro handicapované",
+      "url": "https://www.ndbrno.cz/info-pro-handicapovane/",
+      "note": "Janáčkovo, Mahenovo divadlo a Reduta"
+    },
+    {
+      "title": "Národní divadlo Brno – Návštěvní řád",
+      "url": "https://www.ndbrno.cz/prodej-vstupenek/navstevni-rad-ndb/",
+      "note": "souhrn přístupnosti budov NdB; Malá scéna Mahenova divadla bez bezbariérového přístupu"
+    },
+    {
+      "title": "Knihovna Jiřího Mahena – Knihovna bez bariér",
+      "url": "https://www.kjm.cz/knihovna-bez-barier",
+      "note": "Ústřední knihovna a seznam poboček s bezbariérovým vstupem"
+    },
+    {
+      "title": "Moravská zemská knihovna – O budově",
+      "url": "https://www.mzk.cz/o-knihovne/historie/o-budove",
+      "note": "sekce Přístupnost budovy s rozměry"
+    },
+    {
+      "title": "Kino Art – Informace",
+      "url": "https://www.kinoart.cz/cs/informace"
+    }
+  ]
+}

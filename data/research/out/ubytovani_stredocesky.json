@@ -1,0 +1,625 @@
+{
+ "task": "ubytovani_stredocesky",
+ "kraj": "Středočeský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w51555716",
+   "name": "Aquapalace Hotel Prague",
+   "obec": "Čestlice",
+   "address": "Obchodní 137",
+   "lat": 50.007466,
+   "lng": 14.570349,
+   "category": "ubytovani",
+   "source_url": "https://www.aquapalacehotel.cz/cz/bezbarierove-pokoje",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel nabízí samostatnou kategorii Bezbariérové pokoje pro hosty s omezenou pohyblivostí a na vozíku (typ Superior / Executive).",
+    "koupelna": "Popis pokojů uvádí koupelnu se sprchovým koutem (bez dalších podrobností o úpravách)."
+   },
+   "measurements": [],
+   "evidence_quote": "Pokoje připravené s pečlivostí pro hosty s omezenou pohyblivostí a pro hosty na vozíčku."
+  },
+  {
+   "osm_id": "n3708437600",
+   "name": "Sport Hotel Sletiště",
+   "obec": "Kladno",
+   "address": "",
+   "lat": 50.135554,
+   "lng": 14.086957,
+   "category": "ubytovani",
+   "source_url": "https://sporthotelsletiste.cz/hotel/room/pokoj-101/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Pokoje 101 a 202 jsou na webu označené jako bezbariérové třílůžkové pokoje se sprchou (pokoj 101 nově zrekonstruovaný).",
+    "jine": "Pokoj 202: https://sporthotelsletiste.cz/hotel/room/pokoj-202/"
+   },
+   "measurements": [],
+   "evidence_quote": "Nově zrekonstruovaný bezbariérový třílůžkový pokoj se sprchou"
+  },
+  {
+   "osm_id": "n4308794658",
+   "name": "U báby Šubrový",
+   "obec": "Kokořín",
+   "address": "Kokořínský Důl 12",
+   "lat": 50.427262,
+   "lng": 14.576937,
+   "category": "ubytovani",
+   "source_url": "https://www.ubabysubrovy.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Apartmán č. 14 je uveden jako bezbariérový, až pro 3 hosty, s kuchyňkou a koupelnou s WC; podrobnosti o úpravách neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Apartmán č.14 bezbariérový apartmán až pro tři hosty"
+  },
+  {
+   "osm_id": "n638425820",
+   "name": "Academic",
+   "obec": "Roztoky",
+   "address": "Tyršovo nám. 2222",
+   "lat": 50.16194,
+   "lng": 14.392065,
+   "category": "ubytovani",
+   "source_url": "https://academic.cz/cs/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "U pokojů je uvedeno, že vyšší patra jsou dostupná výtahem.",
+    "parkovani": "Soukromé parkování v areálu hotelu za poplatek (bez zmínky o místech pro ZTP)."
+   },
+   "measurements": [],
+   "evidence_quote": "Vyšší patra jsou dostupná výtahem"
+  },
+  {
+   "osm_id": "w1157207949",
+   "name": "Kemp Višňová Hájek",
+   "obec": "Roztoky",
+   "address": "",
+   "lat": 50.017326,
+   "lng": 13.858499,
+   "category": "ubytovani",
+   "source_url": "https://www.visnova-hajek.cz/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "V hlavním sociálním zařízení kempu je i sociální zařízení pro tělesně postižené."
+   },
+   "measurements": [],
+   "evidence_quote": "Nachází se zde i sociální zařízení pro tělesně postižené."
+  },
+  {
+   "osm_id": "n5752062059",
+   "name": "Monínec (Hotel Monínec)",
+   "obec": "Sedlec-Prčice",
+   "address": "Monínec 7, 257 91 Sedlec-Prčice",
+   "lat": 49.543942,
+   "lng": 14.51627,
+   "category": "ubytovani",
+   "source_url": "https://moninec.nhr.cz/cs/hotel-moninec",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vytah": "V hotelu není výtah, pokoje jsou ve dvou patrech.",
+    "jine": "Web výslovně uvádí, že hotel nemusí být vhodný pro hosty potřebující plně bezbariérový přístup; FAQ zmiňuje slevy pro ZTP (https://moninec.nhr.cz/cs/faq)."
+   },
+   "measurements": [],
+   "evidence_quote": "Hotel proto nemusí být vhodný pro hosty, kteří potřebují plně bezbariérový přístup."
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel Libuše (Lázně Poděbrady)",
+   "obec": "Poděbrady",
+   "address": "Na Valech 254/II, 290 01 Poděbrady",
+   "lat": 50.1436205,
+   "lng": 15.1199809,
+   "category": "ubytovani",
+   "source_url": "https://www.lazne-podebrady.cz/hotel-libuse",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup do hotelu je uveden jako bezbariérový.",
+    "pokoj": "K dispozici jsou 2 bezbariérové pokoje."
+   },
+   "measurements": [],
+   "evidence_quote": "Přístup do hotelu je bezbariérový, k dispozici jsou i 2 bezbariérové pokoje."
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel G-REX (Lázně Poděbrady)",
+   "obec": "Poděbrady",
+   "address": "Divadelní 66/I, 290 01 Poděbrady",
+   "lat": 50.1432072,
+   "lng": 15.1187704,
+   "category": "ubytovani",
+   "source_url": "https://www.lazne-podebrady.cz/hotel-grex",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že hotel je bezbariérový (bez podrobností)."
+   },
+   "measurements": [],
+   "evidence_quote": "Hotel je bezbariérový"
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel Zámeček (Lázně Poděbrady)",
+   "obec": "Poděbrady",
+   "address": "Husova 232/II, 290 01 Poděbrady",
+   "lat": 50.1453066,
+   "lng": 15.1121168,
+   "category": "ubytovani",
+   "source_url": "https://www.lazne-podebrady.cz/hotel-zamecek",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hotel podle webu nabízí bezbariérový přístup (bez podrobností)."
+   },
+   "measurements": [],
+   "evidence_quote": "Hotel nabízí bezbariérový přístup a děti jsou vítány."
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel & Spa Chariclea (Lázně Poděbrady)",
+   "obec": "Poděbrady",
+   "address": "Lázeňská 363/5, 290 01 Poděbrady",
+   "lat": 50.1445245,
+   "lng": 15.1208583,
+   "category": "ubytovani",
+   "source_url": "https://www.lazne-podebrady.cz/hotel-chariclea",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hotel uvádí částečně bezbariérový přístup.",
+    "jine": "U bazénu web nedoporučuje osobám na vozíku samostatný pohyb kvůli kluzké podlaze; vhodný je doprovod."
+   },
+   "measurements": [],
+   "evidence_quote": "Hotel poskytuje částečně bezbariérový přístup"
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel Libenský (Lázně Poděbrady)",
+   "obec": "Poděbrady",
+   "address": "nám. T. G. Masaryka 437/II, 290 01 Poděbrady",
+   "lat": 50.1451793,
+   "lng": 15.1211833,
+   "category": "ubytovani",
+   "source_url": "https://www.lazne-podebrady.cz/hotel-libensky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "V přehledu služeb uvedeno: bezbariérový přístup ano.",
+    "vytah": "V budově hotelu je výtah."
+   },
+   "measurements": [],
+   "evidence_quote": "V budově hotelu je výtah."
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel Bellevue Tlapák (Lázně Poděbrady)",
+   "obec": "Poděbrady",
+   "address": "nám. T. G. Masaryka 654, 290 01 Poděbrady",
+   "lat": 50.1454941,
+   "lng": 15.1209794,
+   "category": "ubytovani",
+   "source_url": "https://www.lazne-podebrady.cz/hotel-bellevue-tlapak",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vytah": "V budově je výtah.",
+    "jine": "Popis hotelu uvádí, že hotel není bezbariérový (přehled služeb na téže stránce přitom uvádí 'Bezbariérový přístup ano' – údaje si odporují)."
+   },
+   "measurements": [],
+   "evidence_quote": "Hotel není bezbariérový."
+  },
+  {
+   "osm_id": null,
+   "name": "Spa Hotel Felicitas",
+   "obec": "Poděbrady",
+   "address": "nám. T. G. Masaryka 1437/III, 290 01 Poděbrady",
+   "lat": 50.1468399,
+   "lng": 15.1224669,
+   "category": "ubytovani",
+   "source_url": "https://www.spahotelfelicitas.cz/hotel/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "V seznamu služeb hotelu je uveden bezbariérový přístup (bez podrobností)."
+   },
+   "measurements": [],
+   "evidence_quote": "Wi-Fi bez poplatku Bezbariérový přístup Adult friendly"
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel Jurkos",
+   "obec": "Příbram",
+   "address": "Čs. armády 27, 261 01 Příbram",
+   "lat": 49.6883066,
+   "lng": 14.0057178,
+   "category": "ubytovani",
+   "source_url": "https://www.poznejpribram.cz/ubytovani/hotel-jurkos/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Turistický portál města Příbram uvádí bezbariérový přístup: ano.",
+    "parkovani": "Parkoviště: ano (bez zmínky o místech pro ZTP)."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup : ano"
+  },
+  {
+   "osm_id": null,
+   "name": "Chateau Mcely",
+   "obec": "Mcely",
+   "address": "Mcely 61, 289 36 Mcely",
+   "lat": 50.2994576,
+   "lng": 15.0773251,
+   "category": "ubytovani",
+   "source_url": "https://www.chateaumcely.cz/informace-k-pobytu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "V případě potřeby lze použít bezbariérový vstup do zámku.",
+    "wc": "Toaleta pro invalidy je v přízemí hned za recepcí.",
+    "vytah": "Web zmiňuje výtah (v pokynech pro nouzové situace)."
+   },
+   "measurements": [],
+   "evidence_quote": "V případě potřeby můžete použít bezbariérový vstup do zámku."
+  },
+  {
+   "osm_id": null,
+   "name": "Penzion Panský dům",
+   "obec": "Rožmitál pod Třemšínem",
+   "address": "Náměstí 22, 262 42 Rožmitál pod Třemšínem",
+   "lat": 49.60281,
+   "lng": 13.863843,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/penzion-pansky-dum-rozmital-pod-tremsinem",
+   "source_type": "jiný oficiální zdroj",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Z 18 dvoulůžkových pokojů je jeden bezbariérový.",
+    "vytah": "Penzion má výtah.",
+    "jine": "Zdroj: Kudy z nudy (CzechTourism), štítek Bezbariérový přístup."
+   },
+   "measurements": [],
+   "evidence_quote": "18 dvoulůžkových (z toho jeden bezbariérový)"
+  },
+  {
+   "osm_id": null,
+   "name": "Penzion a Glamping Slunečno",
+   "obec": "Dobšín",
+   "address": "Kamenice 1, 294 04 Dobšín",
+   "lat": 50.4896689,
+   "lng": 15.1112937,
+   "category": "ubytovani",
+   "source_url": "https://www.slunecno-cesky-raj.cz/ubytovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Penzion nabízí dva pokoje v přízemí se samostatnými vchody pro invalidy nebo vozíčkáře.",
+    "jine": "Kudy z nudy uvádí štítek Bezbariérový přístup (https://www.kudyznudy.cz/aktivity/penzion-a-glamping-slunecno)."
+   },
+   "measurements": [],
+   "evidence_quote": "dva pokoje v přízemí se samostatnými vchody – pro invalidy, nebo vozíčkáře"
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel Pavilon",
+   "obec": "Říčany",
+   "address": "Bezručova 222, 251 01 Říčany",
+   "lat": 49.9934998,
+   "lng": 14.6807285,
+   "category": "ubytovani",
+   "source_url": "https://www.pavilon-ricany.cz/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Jeden dvoulůžkový pokoj s vyššími lůžky je připravený pro zdravotně handicapované hosty.",
+    "koupelna": "Tento pokoj má speciálně vybavenou koupelnu s WC.",
+    "parkovani": "Hotel má vlastní uzavřené parkoviště."
+   },
+   "measurements": [],
+   "evidence_quote": "speciálně vybavenou koupelnou s WC je připravený pro zdravotně handicapované hosty"
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel Beroun Golf Club",
+   "obec": "Beroun",
+   "address": "Na Veselou 909, 266 01 Beroun",
+   "lat": 49.9777958,
+   "lng": 14.0863317,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/beroun-golf-club",
+   "source_type": "jiný oficiální zdroj",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Kudy z nudy (CzechTourism) řadí hotel mezi bezbariérová ubytování se štítkem Bezbariérový přístup; web provozovatele (golfberoun.cz) o přístupnosti nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Certifikace a další informace Za každého počasí Bezbariérový přístup"
+  },
+  {
+   "osm_id": null,
+   "name": "Noc na Kačině – apartmány kočárovna",
+   "obec": "Svatý Mikuláš",
+   "address": "Svatý Mikuláš 51, 284 01",
+   "lat": 49.9817293,
+   "lng": 15.3459563,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/noc-na-kacine",
+   "source_type": "jiný oficiální zdroj",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Kudy z nudy (CzechTourism) uvádí štítek Bezbariérový přístup; popis apartmánů v kočárovně (sprchový kout, parkování zdarma v areálu) úpravy pro vozík nezmiňuje."
+   },
+   "measurements": [],
+   "evidence_quote": "Vhodné pro děti Vstup se psy Bezbariérový přístup"
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel Hrazany",
+   "obec": "Radíč",
+   "address": "Hrazany 11, 264 01 Sedlčany",
+   "lat": 49.7318724,
+   "lng": 14.3950711,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelhrazany.cz/ubytovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel má 1 bezbariérový apartmán v přízemí, dvoupokojový se čtyřmi pevnými lůžky."
+   },
+   "measurements": [],
+   "evidence_quote": "Jeden bezbariérový apartmán je v přízemí, má také dva pokoje"
+  },
+  {
+   "osm_id": null,
+   "name": "Park Hotel Průhonice",
+   "obec": "Průhonice",
+   "address": "Uhříněveská 12, 252 43 Průhonice",
+   "lat": 50.0026626,
+   "lng": 14.5614513,
+   "category": "ubytovani",
+   "source_url": "https://park-hotel-praha-pruhonice.cz/cs/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Hotel má výtah o rozměrech š. 65 cm, hl. 95 cm (pro běžný vozík spíše úzký)."
+   },
+   "measurements": [
+    {
+     "co": "šířka výtahu",
+     "hodnota": 65,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka výtahu",
+     "hodnota": 95,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "výtah (š. 65, d. 95 cm)"
+  },
+  {
+   "osm_id": null,
+   "name": "Autocamp Beroun – ubytovna",
+   "obec": "Beroun",
+   "address": "Na Hrázi, 266 01 Beroun-Závodí",
+   "lat": 49.9696837,
+   "lng": 14.0744439,
+   "category": "ubytovani",
+   "source_url": "https://campberoun.cz/ubytovna-pokoje/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Ubytovna v kempu je uvedena s bezbariérovým přístupem.",
+    "parkovani": "Parkování u ubytovny.",
+    "jine": "Ceník uvádí, že místní poplatek z pobytu neplatí pro ZTP (https://campberoun.cz/ubytovani-a-cenik/)."
+   },
+   "measurements": [],
+   "evidence_quote": "zázemí pro ubytovnu bezbariérový přístup parkování u ubytovny"
+  },
+  {
+   "osm_id": null,
+   "name": "Restaurant & Penzion Barbora",
+   "obec": "Kutná Hora",
+   "address": "Kremnická 909, 284 01 Kutná Hora",
+   "lat": 49.9457173,
+   "lng": 15.2623846,
+   "category": "ubytovani",
+   "source_url": "https://penzionbarbora.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Jeden pokoj s bezbariérovým přístupem.",
+    "koupelna": "Tento pokoj má upravenou koupelnu.",
+    "parkovani": "K bezbariérovému pokoji patří vlastní parkovací místo."
+   },
+   "measurements": [],
+   "evidence_quote": "1 pokoj s bezbariérovým přístupem, upravenou koupelnou a vlastním parkovacím místem"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n2373237304",
+   "name": "Kemp Branov",
+   "url": "https://www.kempbranov.cz/",
+   "reason": "web nic o přístupnosti neuvádí (procházeno: úvod, ceník, kontakt, stánek, okolí)"
+  },
+  {
+   "osm_id": "n4882138963",
+   "name": "Relax (Hotel RELAX Vrchbělá)",
+   "url": "https://hotelrelax-vrchbela.cz/hotel",
+   "reason": "web nic o přístupnosti neuvádí; URL z OSM vrací 404, použita nová adresa webu"
+  },
+  {
+   "osm_id": "n5173953764",
+   "name": "Resort Green Valley",
+   "url": "https://www.green-valley.cz/ubytovani",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n11041550228",
+   "name": "Penzion Bellevue - Vyhlídka Karlštejn",
+   "url": "https://www.penzion-karlstejn.cz/ubytovani",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4823301920",
+   "name": "Romantic baroque nest",
+   "url": "https://www.airbnb.de/rooms/13431336",
+   "reason": "nekontrolováno – odkaz na Airbnb, ne vlastní web provozovatele"
+  },
+  {
+   "osm_id": "w365337121",
+   "name": "Hotel Orlik",
+   "url": "https://www.hotelorlik.cz/cs/hotel-orlik/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1832258980",
+   "name": "Hotel U Zvonu",
+   "url": "https://hotel-u-zvonu.webnode.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n5534745021",
+   "name": "U Babky Bylinkářky",
+   "url": "https://www.babkabylinkarka.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2349990263",
+   "name": "U Prejzků",
+   "url": "https://www.uprejzku.cz/ubytovani.html",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w89087516",
+   "name": "Malý mnich",
+   "url": "https://www.malymnich.cz/ubytovani/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1366841116",
+   "name": "Hotel Jaro",
+   "url": "https://www.hotel-jaro.cz/cs/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7781883395",
+   "name": "Chalupa Garage U Barbory",
+   "url": "https://ubarbory.cz/informace/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w270694970",
+   "name": "Camp Srbsko",
+   "url": "https://www.campsrbsko.cz/",
+   "reason": "web nic o přístupnosti neuvádí; dosavadní provozovatel oznamuje ukončení provozu kempu"
+  },
+  {
+   "osm_id": "n6338272099",
+   "name": "Sázava",
+   "url": "http://www.hotelsazava.cz",
+   "reason": "web nefunguje (parkovaná doména)"
+  },
+  {
+   "osm_id": "n13034693532",
+   "name": "Hotel Pod Sluncem",
+   "url": "http://www.hotelpodsluncem.cz/",
+   "reason": "web nefunguje (doména bez obsahu u registrátora)"
+  },
+  {
+   "osm_id": "n977900716",
+   "name": "Hotel Hubert (Hotel Svatý Hubert)",
+   "url": "http://www.hotel-hubert.cz/",
+   "reason": "web je provizorní (připravují nové stránky), o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w62191929",
+   "name": "Na Krásné vyhlídce",
+   "url": "",
+   "reason": "v OSM chybí web, nekontrolováno"
+  },
+  {
+   "osm_id": "n11530200661",
+   "name": "Vajíčko",
+   "url": "",
+   "reason": "v OSM chybí web, nekontrolováno"
+  },
+  {
+   "osm_id": "n4064345508",
+   "name": "Penzion Valdek",
+   "url": "",
+   "reason": "v OSM chybí web, nekontrolováno"
+  },
+  {
+   "osm_id": "n6681020801",
+   "name": "U Míly",
+   "url": "",
+   "reason": "v OSM chybí web, nekontrolováno"
+  },
+  {
+   "osm_id": "n1825113957",
+   "name": "Hotel Kréta",
+   "url": "",
+   "reason": "v OSM chybí web, nekontrolováno"
+  },
+  {
+   "osm_id": "n2983514210",
+   "name": "Tábořiště mezi mosty",
+   "url": "",
+   "reason": "v OSM chybí web, nekontrolováno"
+  },
+  {
+   "osm_id": "w99283711",
+   "name": "Penzion Stranný",
+   "url": "",
+   "reason": "v OSM chybí web, nekontrolováno"
+  },
+  {
+   "osm_id": "n14059128215",
+   "name": "CHÂTEAU TŘEBEŠICE",
+   "url": "",
+   "reason": "v OSM chybí web, nekontrolováno"
+  },
+  {
+   "osm_id": "w151879913",
+   "name": "Libuše (Veltrusy)",
+   "url": "",
+   "reason": "v OSM chybí web, nekontrolováno"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Kudy z nudy – Bezbariérové ubytování, Středočeský kraj (CzechTourism)",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-ubytovani?region=stredocesky-kraj",
+   "note": "seznam 6 ubytování se štítkem Bezbariérový přístup; použito jako zdroj kandidátů, údaje ověřovány na webech provozovatelů"
+  },
+  {
+   "title": "Lázně Poděbrady, a. s. – stránky hotelů",
+   "url": "https://www.lazne-podebrady.cz/",
+   "note": "stránky jednotlivých hotelů uvádějí bezbariérovost; u Bellevue Tlapák si údaje odporují"
+  },
+  {
+   "title": "Poznej Příbram – ubytování (turistický portál města)",
+   "url": "https://www.poznejpribram.cz/ubytovani",
+   "note": "u Hotelu Jurkos uvádí bezbariérový přístup"
+  },
+  {
+   "title": "Nominatim (OpenStreetMap)",
+   "url": "https://nominatim.openstreetmap.org/",
+   "note": "geokódování nových míst podle adresy z webu provozovatele"
+  },
+  {
+   "title": "Booking.com – bezbariérová ubytování Středočeský kraj",
+   "url": "https://www.booking.com/accessible-traveling/region/cz/central-bohemia.cs.html",
+   "note": "existující zdroj, data nepřebírána (podmínky)"
+  }
+ ]
+}

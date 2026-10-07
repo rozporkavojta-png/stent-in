@@ -1,0 +1,840 @@
+{
+ "task": "portaly_jihomoravsky",
+ "kraj": "Jihomoravský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w491439213",
+   "name": "Dům přírody Moravského krasu",
+   "obec": "Blansko",
+   "address": "Skalní mlýn 96, 678 01 Blansko",
+   "lat": 49.362993,
+   "lng": 16.710198,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/dum-prirody-moravskeho-krasu",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérovou prohlídku je nutné předem objednat; je pro ni vyhrazen vstup v 16:00.",
+    "jine": "Kudy z nudy uvádí štítek „Bezbariérový přístup“; průvodce Jižní Morava bez bariér (CCRJM) uvádí plně bezbariérovou expozici, portál jizni-morava.cz bezbariérové přízemí."
+   },
+   "evidence_quote": "V případě zájmu o bezbariérovou prohlídku … je nutné se předem objednat."
+  },
+  {
+   "osm_id": "n766549601",
+   "name": "Jeskyně Výpustek",
+   "obec": "Křtiny",
+   "address": "Křtiny",
+   "lat": 49.291086,
+   "lng": 16.724143,
+   "category": "priroda",
+   "source_url": "https://www.kudyznudy.cz/aktuality/bezbarierova-trasa-i-pro-kocarky-jeskyne-vypustek",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Od léta 2025 zkrácená trasa (asi 40 min) po zpevněných chodnících, podle článku zcela bezbariérová, vede jen přírodními prostorami. Průvodce CCRJM: návštěvu ohlásit správcům, s sebou mechanický vozík a doprovod kvůli zvýšeným prahům."
+   },
+   "evidence_quote": "vede po zpevněných chodnících a je zcela bezbariérová"
+  },
+  {
+   "osm_id": "n7775941905",
+   "name": "Sloupsko-šošůvské jeskyně",
+   "obec": "Sloup",
+   "address": "Sloup 237",
+   "lat": 49.410449,
+   "lng": 16.739017,
+   "category": "priroda",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o70418-sloupsko-sosuvske-jeskyne",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Velká část jeskyní upravena jako bezbariérová; bezbariérový okruh je v provozu celoročně. Portál moravskykras.net uvádí, že jeskyně jsou z části bezbariérové a návštěvu je třeba předem nahlásit."
+   },
+   "evidence_quote": "Pro vozíčkáře: velká část jeskyní byla upravena jako bezbariérová."
+  },
+  {
+   "osm_id": "n833865586",
+   "name": "Punkevní jeskyně",
+   "obec": "Vavřinec",
+   "address": "Vavřinec (Skalní mlýn)",
+   "lat": 49.371142,
+   "lng": 16.726194,
+   "category": "priroda",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o70412-punkevni-jeskyne",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Vozíčkáři mohou navštívit Přední dóm suché části jeskyně a s menší pomocí průvodců při nástupu do lodě i plavbu po Punkvě; návštěvu je nutné předem nahlásit na +420 516 418 602."
+   },
+   "evidence_quote": "s menší pomocí průvodců při nastupování do lodě absolvujete i vodní plavbu"
+  },
+  {
+   "osm_id": "n918306251",
+   "name": "Propast Macocha – horní můstek",
+   "obec": "Vavřinec",
+   "address": "Vavřinec",
+   "lat": 49.373142,
+   "lng": 16.729316,
+   "category": "priroda",
+   "source_url": "https://www.moravskykras.net/informace.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "parkovani": "Nedaleko horního můstku propasti Macocha je parkoviště.",
+    "jine": "Cesta od parkoviště k hornímu můstku (asi 200 m) je bezbariérová."
+   },
+   "measurements": [
+    {
+     "co": "délka bezbariérové cesty od parkoviště k můstku (asi)",
+     "hodnota": 200,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Od něj až k můstku (asi 200m) je cesta bezbariérová."
+  },
+  {
+   "osm_id": "n9992082257",
+   "name": "Josefovské údolí",
+   "obec": "Adamov",
+   "address": "Adamov - Křtiny, 679 04 Adamov",
+   "lat": 49.305497,
+   "lng": 16.694305,
+   "category": "priroda",
+   "source_url": "https://www.kudyznudy.cz/aktivity/josefovske-udoli-v-moravskem-krasu",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Stránka nese štítek „Bezbariérový přístup“ a téma „bezbariérové místo“; podrobnosti o trase neuvádí."
+   },
+   "evidence_quote": "Certifikace a další informace: Zdarma, Bezbariérový přístup"
+  },
+  {
+   "osm_id": "w114444775",
+   "name": "Státní zámek Rájec nad Svitavou",
+   "obec": "Rájec-Jestřebí",
+   "address": "Blanenská 1, 679 02 Rájec-Jestřebí",
+   "lat": 49.409229,
+   "lng": 16.64389,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamek-rajec-nad-svitavou-architektonicky-skvost",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Bezbariérový přístup je umožněn jen na základní okruh I. Reprezentační prostory, na mechanickém vozíku s asistentem."
+   },
+   "evidence_quote": "umožněn na základní okruh I. … na mechanickém invalidním vozíku s asistentem"
+  },
+  {
+   "osm_id": "w1221402866",
+   "name": "Státní zámek Lysice",
+   "obec": "Lysice",
+   "address": "Zámecká 1, 679 71 Lysice",
+   "lat": 49.453386,
+   "lng": 16.533761,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/statni-zamek-lysice",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Na okruh I. vede bezbariérový přístup přes salu terrenu.",
+    "jine": "Vozíky jen na okruhy I. Reprezentační prostory a III. Zámecká zahrada; mírné terénní nerovnosti; okruh I. po mozaikové podlaze jen s vozíkem s pogumovanými koly; doporučena telefonická rezervace."
+   },
+   "evidence_quote": "možný jen s vozíkem s pogumovanými koly"
+  },
+  {
+   "osm_id": "n2130813130",
+   "name": "Hotel Sladovna",
+   "obec": "Černá Hora",
+   "address": "nám. U Pivovaru 3, 679 21 Černá Hora",
+   "lat": 49.415314,
+   "lng": 16.582532,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/sladovna-romanticky-hotel-s-atmosferou-historicke",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Stránka hotelu nese štítek „Bezbariérový přístup“; podrobnosti o pokojích neuvádí."
+   },
+   "evidence_quote": "Certifikace a další informace: Vstup se psy, Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n259569506",
+   "name": "Národní zemědělské muzeum Valtice",
+   "obec": "Valtice",
+   "address": "Valtice",
+   "lat": 48.741146,
+   "lng": 16.756708,
+   "category": "kultura",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o82832-narodni-zemedelske-muzeum",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Výtah do patra.",
+    "jine": "Muzeum je moderně zařízené a bez překážek."
+   },
+   "evidence_quote": "Moderně zařízené, s výtahem do patra a bez překážek."
+  },
+  {
+   "osm_id": "w284891713",
+   "name": "Aqualand Moravia",
+   "obec": "Pasohlávky",
+   "address": "Pasohlávky 110",
+   "lat": 48.902381,
+   "lng": 16.5736,
+   "category": "sport",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "Mezi podlažími výtah.",
+    "jine": "Celý areál bez bariér kromě vířivek; u všech bazénů sedátka usnadňující vstup do vody."
+   },
+   "evidence_quote": "celý bez bariér (kromě vířivek)"
+  },
+  {
+   "osm_id": "n9961768692",
+   "name": "Rozhledna Stezka nad vinohrady",
+   "obec": "Kobylí",
+   "address": "Kobylí, kopec Homole",
+   "lat": 48.927495,
+   "lng": 16.907711,
+   "category": "priroda",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o70465-rozhledna-stezka-nad-vinohrady-u-kobyli",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Schody nahrazuje nakloněná rovina; na vrchol lze vyjet i s kočárkem.",
+    "parkovani": "Autem lze dojet blízko k rozhledně (průvodce CCRJM)."
+   },
+   "evidence_quote": "Schody nahrazuje nakloněná rovina"
+  },
+  {
+   "osm_id": "n1848874581",
+   "name": "Excalibur City",
+   "obec": "Hatě",
+   "address": "Chvalovice (Hatě)",
+   "lat": 48.76563,
+   "lng": 16.064748,
+   "category": "sport",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o80998-muzeum-terra-technica",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Celý areál Excalibur City je podle portálu plně bezbariérový."
+   },
+   "evidence_quote": "Celý areál Excalibur CIty i Terra Technica je plně bezbariérový."
+  },
+  {
+   "osm_id": "w604208884",
+   "name": "Muzeum Terra Technica",
+   "obec": "Hatě",
+   "address": "Chvalovice (Hatě)",
+   "lat": 48.764693,
+   "lng": 16.059994,
+   "category": "kultura",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o80998-muzeum-terra-technica",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Muzeum v areálu Excalibur City je plně bezbariérové."
+   },
+   "evidence_quote": "Celý areál Excalibur CIty i Terra Technica je plně bezbariérový."
+  },
+  {
+   "osm_id": "w862086194",
+   "name": "Jukebox Hotel",
+   "obec": "Hatě",
+   "address": "Chvalovice (Hatě), areál Excalibur City",
+   "lat": 48.765332,
+   "lng": 16.061289,
+   "category": "ubytovani",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o80998-muzeum-terra-technica",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel má bezbariérové pokoje (v retro stylu)."
+   },
+   "evidence_quote": "Jukebox hotelu, který disponuje bezbariérovými pokoji"
+  },
+  {
+   "osm_id": "w32864105",
+   "name": "Zámek Strážnice",
+   "obec": "Strážnice",
+   "address": "Zámek 672, Strážnice",
+   "lat": 48.907758,
+   "lng": 17.313093,
+   "category": "pamatky",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Hladké cestičky vedou k Platanové aleji v zámeckém parku a k dendrologické stezce; o interiérech průvodce přístupnost neuvádí."
+   },
+   "evidence_quote": "Hladké cestičky vedou k vzácné Platanové aleji v zámeckém parku"
+  },
+  {
+   "osm_id": "w32865656",
+   "name": "Muzeum vesnice jihovýchodní Moravy",
+   "obec": "Strážnice",
+   "address": "Bzenecká 1510, Strážnice",
+   "lat": 48.904251,
+   "lng": 17.312502,
+   "category": "kultura",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Bezbariérová trasa skanzenem s průvodcem."
+   },
+   "evidence_quote": "Bezbariérovou trasu s průvodcem si užijete i ve skanzenu"
+  },
+  {
+   "osm_id": "w71804411",
+   "name": "Znojemský hrad",
+   "obec": "Znojmo",
+   "address": "Znojmo, areál hradu (výchozí bod Horní náměstí)",
+   "lat": 48.855677,
+   "lng": 16.042502,
+   "category": "pamatky",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "parkovani": "Výchozí bod okruhu je Horní náměstí s parkováním i MHD.",
+    "vytah": "Do infocentra na konci okruhu vede výtah.",
+    "jine": "Okruh areálem hradu je dlážděný; vede ulicí Hradní kolem rotundy sv. Kateřiny na nádvoří s vyhlídkou."
+   },
+   "evidence_quote": "Pozor, trasa je dlážděná"
+  },
+  {
+   "osm_id": "w754208477",
+   "name": "LAHOtéka",
+   "obec": "Dobšice",
+   "address": "Dobšice",
+   "lat": 48.860318,
+   "lng": 16.100993,
+   "category": "obchody",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Moderní bezbariérová vinotéka (LAHOtéka)."
+   },
+   "evidence_quote": "Moderní bezbariérová LAHOtéka"
+  },
+  {
+   "osm_id": "r16162886",
+   "name": "Gaudeo – Vranovská pláž",
+   "obec": "Vranov nad Dyjí",
+   "address": "Vranovská pláž, Vranov nad Dyjí",
+   "lat": 48.91409,
+   "lng": 15.813397,
+   "category": "ubytovani",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "V komplexu Gaudeo jsou bezbariérové 4 apartmány.",
+    "jine": "Celý areál Vranovské pláže je bez překážek; bezbariérová je i restaurace."
+   },
+   "measurements": [
+    {
+     "co": "počet bezbariérových apartmánů",
+     "hodnota": 4,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "V komplexu Gaudeo je bezbariérová nejen restaurace, ale také 4 apartmány."
+  },
+  {
+   "osm_id": "n13970696591",
+   "name": "Restaurace U Tesařů",
+   "obec": "Bítov",
+   "address": "Bítov",
+   "lat": 48.937642,
+   "lng": 15.729489,
+   "category": "restaurace",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Průvodce bez bariér uvádí, že v restauraci myslí na potřeby návštěvníků a rádi vyjdou vstříc; konkrétní úpravy neuvádí."
+   },
+   "evidence_quote": "V restauraci u Tesařů myslí na vaše potřeby"
+  },
+  {
+   "osm_id": "n6618980845",
+   "name": "Hasičský pivovar Bítov",
+   "obec": "Bítov",
+   "address": "Bítov",
+   "lat": 48.937593,
+   "lng": 15.729763,
+   "category": "restaurace",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Jeden schod; doporučeno vzít s sebou pomocníka."
+   },
+   "measurements": [
+    {
+     "co": "schod u vstupu",
+     "hodnota": 1,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Sousední Hasičský pivovar má jediný schod"
+  },
+  {
+   "osm_id": "w27326750",
+   "name": "Zámek Slavkov – Austerlitz",
+   "obec": "Slavkov u Brna",
+   "address": "Palackého náměstí 1, Slavkov u Brna",
+   "lat": 49.154826,
+   "lng": 16.874527,
+   "category": "pamatky",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "Kratší trasa Historické salonky je dostupná díky výtahu mezi podlažími."
+   },
+   "evidence_quote": "Kratší trasa Historické salonky je dostupná také díky výtahu"
+  },
+  {
+   "osm_id": "w106904616",
+   "name": "Mohyla míru",
+   "obec": "Prace",
+   "address": "K Mohyle míru 200, Prace",
+   "lat": 49.128041,
+   "lng": 16.762955,
+   "category": "kultura",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Do bezbariérové expozice vede nájezdová plošina přes 3 schody."
+   },
+   "measurements": [
+    {
+     "co": "počet schodů překonaných nájezdovou plošinou",
+     "hodnota": 3,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "vede nájezdová plošina přes 3 schody"
+  },
+  {
+   "osm_id": "mbb5773270",
+   "name": "VIDA! science centrum",
+   "obec": "Brno",
+   "address": "Křížkovského 554/12, Brno",
+   "lat": 49.186563,
+   "lng": 16.584481,
+   "category": "kultura",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Průvodce uvádí, že VIDA! neklade překážky pohybu; odkazuje na stránku vida.cz/vida-bez-barier."
+   },
+   "evidence_quote": "VIDA! neklade překážky pohybu ani pochopení experimentů"
+  },
+  {
+   "osm_id": "mbb5773463",
+   "name": "Technické muzeum v Brně",
+   "obec": "Brno",
+   "address": "Purkyňova 105, Brno – Královo Pole",
+   "lat": 49.228423,
+   "lng": 16.581793,
+   "category": "kultura",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o70941-technicke-muzeum-v-brne",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Zařazeno do výběru Výlety bez bariér (na detailu odkaz „Bezbariérový přístup“); konkrétní úpravy portál neuvádí."
+   },
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "osm_id": "mbb5773428",
+   "name": "Hrad Špilberk",
+   "obec": "Brno",
+   "address": "Špilberk 210/1, Brno",
+   "lat": 49.194346,
+   "lng": 16.59924,
+   "category": "pamatky",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "7 stálých bezbariérových expozic s možností asistence při prohlídkách."
+   },
+   "measurements": [
+    {
+     "co": "počet stálých bezbariérových expozic",
+     "hodnota": 7,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "7 stálých bezbariérových expozic s možností asistence při prohlídkách"
+  },
+  {
+   "osm_id": "w157928746",
+   "name": "ZOO Hodonín",
+   "obec": "Hodonín",
+   "address": "U Červených domků 3526, Hodonín",
+   "lat": 48.863819,
+   "lng": 17.107029,
+   "category": "priroda",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o70431-zoo-hodonin",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Zoo je kompletně bezbariérová."
+   },
+   "evidence_quote": "Kompletně bezbariérová zoo"
+  },
+  {
+   "osm_id": "w32906611",
+   "name": "Lázně Hodonín",
+   "obec": "Hodonín",
+   "address": "Měšťanská 3559, Hodonín",
+   "lat": 48.863437,
+   "lng": 17.142545,
+   "category": "zdravi",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o74283-denni-lazne-hodonin",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Připraveni na imobilní klienty včetně pokojů k ubytování.",
+    "jine": "Na imobilní klienty jsou připraveni i při procedurách."
+   },
+   "evidence_quote": "Na imobilní klienty jsou při procedurách skvěle připraveni, včetně pokojů k ubytování."
+  },
+  {
+   "osm_id": "w171207240",
+   "name": "Zámek Ždánice – Vrbasovo muzeum",
+   "obec": "Ždánice",
+   "address": "Zámek 1, Ždánice",
+   "lat": 49.063461,
+   "lng": 17.027174,
+   "category": "kultura",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o70390-zamek-a-vrbasovo-muzeum-ve-zdanicich",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Přístup do všech expozic Vrbasova muzea je bezbariérový; areál zámecké vily bezbariérový není."
+   },
+   "evidence_quote": "Přístup do všech expozic je bezbariérový."
+  },
+  {
+   "osm_id": "w177549548",
+   "name": "Hvězdárna Ždánice",
+   "obec": "Ždánice",
+   "address": "Lovecká 678, 696 32 Ždánice",
+   "lat": 49.065696,
+   "lng": 17.03798,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hvezdarna-ve-zdanicich",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "WC uvedeno v části Cestování bez bariér (označeno „WC I“).",
+    "parkovani": "Parkovací stání; zastávka hromadné dopravy přímo před hvězdárnou.",
+    "vytah": "Prostorný výtah v budově.",
+    "jine": "Bezbariérové planetárium (bez kopule); asistenční pes povolen; pro skupiny program na míru."
+   },
+   "evidence_quote": "Bezbariérové planetárium (bez kopule), parkovací stání"
+  },
+  {
+   "osm_id": "w178066958",
+   "name": "Vlastivědné muzeum Kyjov",
+   "obec": "Kyjov",
+   "address": "třída Palackého 1373/13a, Kyjov",
+   "lat": 49.009341,
+   "lng": 17.128608,
+   "category": "kultura",
+   "source_url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Bezbariérové jsou obě budovy muzea."
+   },
+   "evidence_quote": "Bezbariérové jsou obě budovy muzea"
+  },
+  {
+   "osm_id": "n13387188466",
+   "name": "Dům přírody Bílých Karpat",
+   "obec": "Veselí nad Moravou",
+   "address": "Bartolomějské náměstí 47, Veselí nad Moravou",
+   "lat": 48.953784,
+   "lng": 17.378919,
+   "category": "kultura",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o86480-dum-prirody-bilych-karpat",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Zařazeno do výběru Výlety bez bariér, na detailu odkaz „Bezbariérový přístup“; konkrétní úpravy portál neuvádí."
+   },
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n7391930302",
+   "name": "Dům přírody Hodonínské Dúbravy",
+   "obec": "Hodonín",
+   "address": "Lipová alej 19, 695 01 Hodonín",
+   "lat": 48.861737,
+   "lng": 17.111698,
+   "category": "kultura",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o86481-dum-prirody-hodoninske-dubravy",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Zařazeno do výběru Výlety bez bariér, na detailu odkaz „Bezbariérový přístup“; konkrétní úpravy portál neuvádí."
+   },
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n7626000250",
+   "name": "Bylinkový ráj Sonnentor",
+   "obec": "Čejkovice",
+   "address": "Příhon 943, Čejkovice",
+   "lat": 48.902416,
+   "lng": 16.946965,
+   "category": "obchody",
+   "source_url": "https://www.jizni-morava.cz/cz/zazitky/o70434-bylinkovy-raj-sonnentor",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Exkurze jsou vhodné pro vozíčkáře; jediné místo, které není bezbariérové, je rozhledna (Vyhlídka na výsluní)."
+   },
+   "evidence_quote": "Rozhledna je jediné místo, které není bezbariérové"
+  },
+  {
+   "osm_id": "n2778593907",
+   "name": "Krytý bazén Louka",
+   "obec": "Znojmo",
+   "address": "Melkusova 3062/42, 671 81 Znojmo",
+   "lat": 48.838893,
+   "lng": 16.058828,
+   "category": "sport",
+   "source_url": "https://www.kudyznudy.cz/aktivity/kryty-bazen-louka-ve-znojme",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Stránka nese štítek „Bezbariérový přístup“ a téma „bezbariérové místo“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "Certifikace a další informace: … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n9444582225",
+   "name": "Restaurace Hnízdo (BRuNO family park)",
+   "obec": "Brno",
+   "address": "Kigginsova 2, 627 00 Brno-Slatina",
+   "lat": 49.181262,
+   "lng": 16.668434,
+   "category": "restaurace",
+   "source_url": "https://www.kudyznudy.cz/aktivity/restaurace-hnizdo",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Restaurace má samostatný vchod (přístupná i mimo BRuNO family park).",
+    "jine": "Prostorný interiér, podle portálu kompletně bezbariérová."
+   },
+   "evidence_quote": "vyniká svým citlivě designovým a prostorným interiérem, je kompletně bezbarierová"
+  },
+  {
+   "osm_id": "n9042164997",
+   "name": "Rodinné apartmány Modrá Hortenzie",
+   "obec": "Archlebov",
+   "address": "Archlebov 427, 696 33 Archlebov",
+   "lat": 49.044124,
+   "lng": 17.003977,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/rodinne-apartmany-modra-hortenzie",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Stránka nese štítek „Bezbariérový přístup“; podrobnosti o apartmánech neuvádí."
+   },
+   "evidence_quote": "Bezbariérový přístup, Prázdniny na venkově"
+  },
+  {
+   "osm_id": "n683070820",
+   "name": "Slovanské hradiště v Mikulčicích",
+   "obec": "Mikulčice",
+   "address": "Mikulčice 738 - Valy, 696 19 Mikulčice",
+   "lat": 48.804659,
+   "lng": 17.086889,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/slovanske-hradiste-v-mikulcicich-misto-kde-pocit",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Stránka nese štítek „Bezbariérový přístup“; podrobnosti neuvádí. Expozice Knížecí hrad zatím není dokončena a přístupná."
+   },
+   "evidence_quote": "Za každého počasí, Bezbariérový přístup"
+  },
+  {
+   "osm_id": "w25798285",
+   "name": "Zámek Lednice",
+   "obec": "Lednice",
+   "address": "Zámek 1, 691 44 Lednice",
+   "lat": 48.801604,
+   "lng": 16.805369,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamek-lednice",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Do pokladny 3 nízké schody, k dispozici nájezdová plošina; do skleníku vstup bočním vchodem.",
+    "jine": "Bezbariérový je pouze I. prohlídkový okruh, skleník a rozsáhlý zámecký park."
+   },
+   "measurements": [
+    {
+     "co": "nízké schody do pokladny (s nájezdovou plošinou)",
+     "hodnota": 3,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Bezbariérový přístup na zámku má pouze I. prohlídkový okruh"
+  },
+  {
+   "osm_id": "r1715972",
+   "name": "Zámek Milotice",
+   "obec": "Milotice",
+   "address": "Zámecká 1, 696 05 Milotice",
+   "lat": 48.959511,
+   "lng": 17.137667,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamek-milotice-perla-jihovychodni-moravy",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Bezbariérový přístup mají zámecký park a zahrada; o interiérech neuvádí."
+   },
+   "evidence_quote": "Zámecký park a zahrada mají bezbariérový přístup."
+  },
+  {
+   "osm_id": "w77921639",
+   "name": "Zámek Vranov nad Dyjí",
+   "obec": "Vranov nad Dyjí",
+   "address": "Zámecká 93, 671 03 Vranov nad Dyjí",
+   "lat": 48.89259,
+   "lng": 15.811973,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamek-vranov-nad-dyji",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Upravené a modernizované sociální zařízení v domku u hlavní brány.",
+    "jine": "Žádný okruh není zcela bezbariérový. Venkovní prostory (most, obě nádvoří, vyhlídka) bez schodů, jen zvýšené prahy; okruh I. jen s asistencí – mechanický vozík se přenáší do 1. patra."
+   },
+   "evidence_quote": "Žádný z prohlídkových okruhů zámku není zcela bezbariérový."
+  },
+  {
+   "osm_id": "w27321967",
+   "name": "Trasa pro vozíčkáře Mariánským údolím",
+   "obec": "Brno",
+   "address": "Mariánské údolí, Brno-Líšeň (konečná MHD č. 45)",
+   "lat": 49.20812,
+   "lng": 16.713957,
+   "category": "priroda",
+   "source_url": "https://www.kudyznudy.cz/aktivity/trasa-urcena-vyhradne-vozickarum-na-okraji-brna",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "parkovani": "Začátek i konec trasy na parkovišti a u konečné autobusu MHD č. 45.",
+    "jine": "Trasa určená především lidem na vozíku, po asfaltové cestě proti proudu říčky kolem rybníka U Kadlecova mlýna; délky 6,5, 11 nebo 15 km."
+   },
+   "measurements": [
+    {
+     "co": "délka trasy (krátká varianta)",
+     "hodnota": 6.5,
+     "jednotka": "km"
+    },
+    {
+     "co": "délka trasy (střední varianta)",
+     "hodnota": 11,
+     "jednotka": "km"
+    },
+    {
+     "co": "délka trasy (dlouhá varianta)",
+     "hodnota": 15,
+     "jednotka": "km"
+    }
+   ],
+   "evidence_quote": "Jednou z prvních tras, určených především handicapovaným lidem na vozíčku"
+  }
+ ],
+ "not_found": [
+  {
+   "name": "Ornitologická pozorovatelna u rybníka Nesyt",
+   "url": "https://www.jizni-morava.cz/cz/zazitky/o82831-ornitologicka-pozorovatelna",
+   "reason": "nepodařilo se geokódovat přes Nominatim"
+  },
+  {
+   "name": "Tradice Slovácka v Blatničce",
+   "url": "https://www.jizni-morava.cz/cz/zazitky/o82833-tradice-slovacka-v-blatnicce",
+   "reason": "zařazeno do výběru Výlety bez bariér, ale stránka ani průvodce nic konkrétního o přístupnosti neuvádí"
+  },
+  {
+   "name": "Archeopark Pavlov",
+   "url": "https://www.jizni-morava.cz/cz/zazitky/o70470-archeopark-pavlov",
+   "reason": "už je v cile_jihomoravsky.json – nezdvojeno"
+  },
+  {
+   "name": "Farma u Staré hory (Rychmanov)",
+   "url": "https://www.jizni-morava.cz/cz/zazitky/o91973-farma-u-stare-hory",
+   "reason": "portál uvádí, že farmářská stezka je pro vozíky příliš velká výzva – nevhodné, nezapsáno"
+  },
+  {
+   "name": "Zámek Kunštát",
+   "url": "https://www.kudyznudy.cz/aktivity/zamek-kunstat",
+   "reason": "odkázán z článků o bezbariérových cílech, ale stránka bezbariérovost neuvádí"
+  },
+  {
+   "name": "Go To Brno (gotobrno.cz)",
+   "url": "https://www.gotobrno.cz/",
+   "reason": "portál nemá rubriku bez bariér; vyhledávání (i WP API) nevrátilo stránky s informacemi o přístupnosti míst"
+  },
+  {
+   "name": "Kudy z nudy – přehledy Bezbariérové ubytování/zážitky",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-ubytovani",
+   "reason": "seznamy se načítají dynamicky (JS), nešly projít; použity jen články a aktivity dohledané přes sitemapu"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Jižní Morava – Na jižní Moravu bez bariér (výběr 29 výletů)",
+   "url": "https://www.jizni-morava.cz/cz/vylety-bez-barier/",
+   "note": "katalog načten přes /sys/services/katalog.php se štítkem Bez bariér; prošlo se všech 29 detailů"
+  },
+  {
+   "title": "CCRJM – průvodce Jižní Morava bez bariér (PDF, s Paracentrem Fénix)",
+   "url": "https://www.ccrjm.cz/wp-content/uploads/2021/06/Tematicke-bezbarier-A4.pdf",
+   "note": "4 strany, popisy přístupnosti cílů"
+  },
+  {
+   "title": "Kudy z nudy – Bezbariérová místa",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier",
+   "note": "články Cestování bez bariér a aktivity z nich odkázané, filtrováno na Jihomoravský kraj"
+  },
+  {
+   "title": "Moravský kras – Informace pro turisty",
+   "url": "https://www.moravskykras.net/informace.html",
+   "note": "sekce Informace pro vozíčkáře"
+  },
+  {
+   "title": "Go To Brno",
+   "url": "https://www.gotobrno.cz/",
+   "note": "bez rubriky bez bariér, nic použitelného"
+  },
+  {
+   "title": "Nominatim (OSM)",
+   "url": "https://nominatim.openstreetmap.org/",
+   "note": "geokódování nových míst; 4 místa spárována s data/places.json"
+  }
+ ]
+}

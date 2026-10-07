@@ -1,0 +1,1614 @@
+{
+ "task": "cile_hlavni-mesto-praha",
+ "kraj": "Hlavní město Praha",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w128158762",
+   "name": "Aquacentrum Šutka",
+   "obec": "Praha",
+   "address": "Čimická",
+   "lat": 50.126088,
+   "lng": 14.436193,
+   "category": "sport",
+   "source_url": "https://www.sutka.eu/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Provozovatel uvádí, že celý areál je plně bezbariérový."
+   },
+   "measurements": [],
+   "evidence_quote": "Celý areál je plně bezbariérový."
+  },
+  {
+   "osm_id": "w10107260",
+   "name": "Armádní muzeum Žižkov",
+   "obec": "Praha",
+   "address": "U Památníku 1600/2",
+   "lat": 50.087438,
+   "lng": 14.445035,
+   "category": "pamatky",
+   "source_url": "https://www.vhu.cz/muzea/zakladni-informace-o-am-zizkov/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Expozice muzea jsou podle VHU bezbariérové."
+   },
+   "measurements": [],
+   "evidence_quote": "Expozice muzea jsou bezbariérové."
+  },
+  {
+   "osm_id": "w25456828",
+   "name": "Národní technické muzeum",
+   "obec": "Praha",
+   "address": "Kostelní 1320/42",
+   "lat": 50.097533,
+   "lng": 14.42482,
+   "category": "pamatky",
+   "source_url": "https://ntm.cz/otevrena-kultura/pristup-do-budovy-pro-navstevniky-s-omezenim-pohybu-hlavni-budova-praha",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hlavní vstup po schodech; pro vozíčkáře zvláštní vchod vpravo od schodiště, nájezd s vyhovujícím sklonem, dvoukřídlé dveře 2x 75 cm, zvonek ve výšce 100 cm; vede do restaurace v -1. podlaží.",
+    "vytah": "Pravý výtah pro vozíčkáře do většiny pater: dveře 80 cm, kabina 120 x 110 cm, ovládání ve 100 cm bez Braillova písma. Levý výtah do -3. podlaží jen s obsluhou; expozice Hornictví je nyní kvůli poruše výtahem nepřístupná.",
+    "wc": "Několik bezbariérových toalet; WC v 0. podlaží s eurozámkem, dveře 80 cm otevírané ven, prostor 172 x 172 cm, dvě madla (jedno sklopné), mísa 50 cm, umyvadlo 85 cm s podjezdem 65 cm; bez tlačítka přivolání pomoci. Další WC ve foyerech 1.–3. patra.",
+    "parkovani": "Tři vyhrazená místa na rohu ulic Kostelní a Muzejní; další parkování v areálu NTM za jižní branou.",
+    "jine": "Plošiny do expozic Doprava, Interkamera, Měření času aj.; ochozy expozice Doprava jen po schodech; Rudný a uhelný důl nepřístupný. K zapůjčení pojízdné křeslo."
+   },
+   "measurements": [
+    {
+     "co": "šířka každého křídla dveří bezbariérového vchodu",
+     "hodnota": 75,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška zvonku u bezbariérového vchodu",
+     "hodnota": 100,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří výtahu",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny výtahu",
+     "hodnota": 120,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny výtahu",
+     "hodnota": 110,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška ovládacích tlačítek ve výtahu",
+     "hodnota": 100,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC (0. podlaží)",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "půdorys WC (délka strany)",
+     "hodnota": 172,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška WC mísy",
+     "hodnota": 50,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška horní hrany madel",
+     "hodnota": 78,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška umyvadla",
+     "hodnota": 85,
+     "jednotka": "cm"
+    },
+    {
+     "co": "podjezd pod umyvadlem",
+     "hodnota": 65,
+     "jednotka": "cm"
+    },
+    {
+     "co": "nosnost plošiny do expozice Doprava",
+     "hodnota": 225,
+     "jednotka": "kg"
+    },
+    {
+     "co": "šířka plošiny do expozice Doprava",
+     "hodnota": 75,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka plošiny do expozice Doprava",
+     "hodnota": 110,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Pro návštěvníky na vozíku nebo s jiným omezením je proto k dispozici speciální vchod"
+  },
+  {
+   "osm_id": "r2412567",
+   "name": "Zoo Praha",
+   "obec": "Praha",
+   "address": "U Trojského zámku 120/3",
+   "lat": 50.117992,
+   "lng": 14.405284,
+   "category": "pamatky",
+   "source_url": "https://www.zoopraha.cz/navsteva/pro-navstevniky-s-hendikepem",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "U hlavního vchodu lze zdarma zapůjčit invalidní vozík (stačí číslo dokladu). Podle prague.eu (Prahou bez bariér – do zahrad i na památky) je areál kopcovitý, sjízdný hlavně na elektrickém vozíku; na mechanickém doporučen doprovod.",
+    "wc": "Podle prague.eu je v areálu několik plně bezbariérových WC.",
+    "parkovani": "Podle prague.eu několik bezplatných vymezených parkovacích míst u každého vstupu."
+   },
+   "measurements": [],
+   "evidence_quote": "je možné si kromě kočárků a trakařů vypůjčit i invalidní vozík"
+  },
+  {
+   "osm_id": "n993541537",
+   "name": "Národní galerie v Praze - Veletržní palác",
+   "obec": "Praha",
+   "address": "Dukelských hrdinů 530/47",
+   "lat": 50.101523,
+   "lng": 14.432334,
+   "category": "pamatky",
+   "source_url": "https://www.ngprague.cz/o-nas/pristupnost-budov",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Budova je podle NGP bezbariérová.",
+    "vytah": "K dispozici výtahy.",
+    "wc": "Bezbariérové toalety.",
+    "jine": "K zapůjčení dva invalidní vozíky."
+   },
+   "measurements": [],
+   "evidence_quote": "Budova je bezbariérová. V budově jsou k dispozici výtahy a bezbariérové toalety."
+  },
+  {
+   "osm_id": "n3927206907",
+   "name": "Národní galerie v Praze - Šternberský palác",
+   "obec": "Praha",
+   "address": "Hradčanské náměstí 57/15",
+   "lat": 50.090286,
+   "lng": 14.396695,
+   "category": "pamatky",
+   "source_url": "https://www.ngprague.cz/o-nas/pristupnost-budov",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Palác není bezbariérový, do expozice vede schodiště."
+   },
+   "measurements": [],
+   "evidence_quote": "Palác není bezbariérový, do expozice vede schodiště."
+  },
+  {
+   "osm_id": "w28921026",
+   "name": "České muzeum hudby",
+   "obec": "Praha",
+   "address": "Karmelitská 2",
+   "lat": 50.084736,
+   "lng": 14.404743,
+   "category": "pamatky",
+   "source_url": "https://www.nm.cz/navstivte-nas/narodni-muzeum-bez-barier/navsteva-objektu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Objekt je částečně bezbariérově přístupný.",
+    "vytah": "Výtah a schodišťová plošina."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt je částečně bezbariérově přístupný (výtah, schodišťová plošina)"
+  },
+  {
+   "osm_id": "n344975004",
+   "name": "Náprstkovo muzeum asijských, afrických a amerických kultur",
+   "obec": "Praha",
+   "address": "Betlémské náměstí 269/1",
+   "lat": 50.084094,
+   "lng": 14.415969,
+   "category": "pamatky",
+   "source_url": "https://www.nm.cz/navstivte-nas/narodni-muzeum-bez-barier/navsteva-objektu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Objekt je podle Národního muzea částečně bezbariérově přístupný."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt je částečně bezbariérově přístupný"
+  },
+  {
+   "osm_id": "n3278080261",
+   "name": "Památník Jaroslava Ježka (Modrý pokoj)",
+   "obec": "Praha",
+   "address": "Kaprova 10",
+   "lat": 50.088181,
+   "lng": 14.417302,
+   "category": "pamatky",
+   "source_url": "https://www.nm.cz/navstivte-nas/narodni-muzeum-bez-barier/navsteva-objektu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Objekt není bezbariérově přístupný."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt není bezbariérově přístupný"
+  },
+  {
+   "osm_id": "n6483803187",
+   "name": "Národní muzeum – kupole (věž)",
+   "obec": "Praha",
+   "address": "Václavské náměstí 68",
+   "lat": 50.079134,
+   "lng": 14.43062,
+   "category": "priroda",
+   "source_url": "https://www.nm.cz/navstivte-nas/narodni-muzeum-bez-barier/navsteva-objektu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Muzejní komplex NM je bezbariérový s výjimkou kupole, kterou nebylo možné bezbariérově zpřístupnit."
+   },
+   "measurements": [],
+   "evidence_quote": "Výjimkou je prostor kupole"
+  },
+  {
+   "osm_id": "w28517451",
+   "name": "Španělská synagoga",
+   "obec": "Praha",
+   "address": "Vězeňská 1",
+   "lat": 50.090371,
+   "lng": 14.42082,
+   "category": "pamatky",
+   "source_url": "https://www.jewishmuseum.cz/informace/navstivte-nas-rozcestnik/pristupnost/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístupná pro tělesně handicapované návštěvníky.",
+    "vytah": "Plošina."
+   },
+   "measurements": [],
+   "evidence_quote": "Španělská synagoga ano, plošina"
+  },
+  {
+   "osm_id": "w179183380",
+   "name": "Pinkasova synagoga",
+   "obec": "Praha",
+   "address": "U Staré Školy 141/1",
+   "lat": 50.089256,
+   "lng": 14.417004,
+   "category": "pamatky",
+   "source_url": "https://www.jewishmuseum.cz/informace/navstivte-nas-rozcestnik/pristupnost/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Budova synagogy není bezbariérově přístupná.",
+    "jine": "Na požádání zaměstnanců je zpřístupněna venkovní expozice Cesty bez návratu v Pinkasově uličce."
+   },
+   "measurements": [],
+   "evidence_quote": "budova synagogy není bezbariérově přístupná"
+  },
+  {
+   "osm_id": "w27376003",
+   "name": "Starý židovský hřbitov",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.089976,
+   "lng": 14.417278,
+   "category": "pamatky",
+   "source_url": "https://www.jewishmuseum.cz/informace/navstivte-nas-rozcestnik/pristupnost/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístupný návštěvnickým východem mezi Klausovou synagogou a Obřadní síní."
+   },
+   "measurements": [],
+   "evidence_quote": "Starý židovský hřbitov ano, vstup návštěvnickým východem"
+  },
+  {
+   "osm_id": "w295285613",
+   "name": "Obřadní síň",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.090036,
+   "lng": 14.41702,
+   "category": "pamatky",
+   "source_url": "https://www.jewishmuseum.cz/informace/navstivte-nas-rozcestnik/pristupnost/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Obřadní síň není v seznamu přístupných objektů; ostatní objekty ŽMP jsou podle muzea pro tělesně handicapované zatím nepřístupné."
+   },
+   "measurements": [],
+   "evidence_quote": "Ostatní objekty jsou pro tělesně handicapované návštěvníky zatím nepřístupné."
+  },
+  {
+   "osm_id": "n1269502274",
+   "name": "Židovské muzeum",
+   "obec": "Praha",
+   "address": "U staré školy 141/1",
+   "lat": 50.090285,
+   "lng": 14.4211,
+   "category": "pamatky",
+   "source_url": "https://www.jewishmuseum.cz/informace/navstivte-nas-rozcestnik/pristupnost/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Historické budovy ŽMP nabízejí tělesně handicapovaným spíše omezenou možnost návštěvy; přístupnost se liší podle objektu (Maiselova a Španělská synagoga, Starý židovský hřbitov ano; Pinkasova synagoga ne). Auditorium Maiselova 15: přízemí, jinak výtah s průchodností 75 cm."
+   },
+   "measurements": [
+    {
+     "co": "průchodnost výtahu v Auditoriu Maiselova 15",
+     "hodnota": 75,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "nabízejí spíše omezenou možnost návštěvy"
+  },
+  {
+   "osm_id": "w30875119",
+   "name": "Kunsthalle Praha",
+   "obec": "Praha",
+   "address": "Klárov 132/5",
+   "lat": 50.092293,
+   "lng": 14.409912,
+   "category": "pamatky",
+   "source_url": "https://www.kunsthallepraha.org/naplanujte-si-navstevu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup s výjimkou Věže nad Café, Galerie 3 a Blackboxu u Galerie 2.",
+    "jine": "Držitelé průkazu ZTP mají vstup zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Kunsthalle Praha nabízí bezbariérový přístup s výjimkou Věže nad Café"
+  },
+  {
+   "osm_id": "n361241046",
+   "name": "Divadlo Hybernia",
+   "obec": "Praha",
+   "address": "náměstí Republiky",
+   "lat": 50.087409,
+   "lng": 14.428697,
+   "category": "kultura",
+   "source_url": "https://www.hybernia.eu/pro-navstevniky/bezbariery/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérový vchod.",
+    "vytah": "Výtah na místa v hledišti ve 20. a 21. řadě.",
+    "wc": "Invalidní WC je podle webu momentálně v opravě.",
+    "jine": "Místa pro vozíčky je nutné rezervovat předem telefonicky nebo e-mailem, kapacita je omezená."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbariérový vchod s pohodlnou cestou výtahem na místa v hledišti"
+  },
+  {
+   "osm_id": "n1226525971",
+   "name": "Divadlo ABC",
+   "obec": "Praha",
+   "address": "Vodičkova 699/28",
+   "lat": 50.080365,
+   "lng": 14.424881,
+   "category": "kultura",
+   "source_url": "https://www.mestskadivadlaprazska.cz/bez-barier/omezeni-pohybu/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Divadla MDP nejsou plně bezbariérová; návštěvu je třeba ohlásit předem (222 996 114, divak@m-d-p.cz).",
+    "jine": "V divadle ABC jsou pro vozíčkáře místa na balkoně ve 3. řadě (sedadlo 19, další 20 a 21 na objednávku). Web nabízí návodné video k cestě na vozíku a mapu vyhrazených parkovacích stání."
+   },
+   "measurements": [],
+   "evidence_quote": "Naše divadla nejsou plně bezbariérová a počet přizpůsobených míst je omezen"
+  },
+  {
+   "osm_id": "w29199147",
+   "name": "Divadlo na Vinohradech",
+   "obec": "Praha",
+   "address": "náměstí Míru",
+   "lat": 50.076336,
+   "lng": 14.437093,
+   "category": "kultura",
+   "source_url": "https://www.divadlonavinohradech.com/vstupenky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Do vestibulu a přízemí hlediště je bezbariérový přístup.",
+    "jine": "Invalidní vozík lze z požárních důvodů umístit pouze vedle 16. řady v přízemí. ZTP a ZTP/P sleva 50 %."
+   },
+   "measurements": [],
+   "evidence_quote": "Do vestibulu a přízemí hlediště je bezbariérový přístup."
+  },
+  {
+   "osm_id": "n335800540",
+   "name": "Divadlo V Dlouhé",
+   "obec": "Praha",
+   "address": "Dlouhá 727/39",
+   "lat": 50.091235,
+   "lng": 14.42675,
+   "category": "kultura",
+   "source_url": "https://www.divadlovdlouhe.cz/bezbarierovy-pristup/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup plošinou; vozíčkáře doprovodí inspektorka hlediště k bezbariérovému vchodu a na místo. Návštěvu je nutné ohlásit předem.",
+    "wc": "Bezbariérová toaleta na balkoně.",
+    "jine": "Na balkoně prostor pro 2 vozíčkáře a doprovod; ZTP a ZTP/P s doprovodem vstup za 1 Kč."
+   },
+   "measurements": [
+    {
+     "co": "nosnost plošiny",
+     "hodnota": 300,
+     "jednotka": "kg"
+    }
+   ],
+   "evidence_quote": "Divadlo má bezbariérový přístup pomocí plošiny s nosností do 300 kg"
+  },
+  {
+   "osm_id": "n995953368",
+   "name": "Království železnic",
+   "obec": "Praha",
+   "address": "Stroupežnického 3181/23",
+   "lat": 50.071324,
+   "lng": 14.402534,
+   "category": "pamatky",
+   "source_url": "https://www.kralovstvi-zeleznic.cz/prakticke-rady/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "Výtah z prodejny vstupenek (úroveň chodníku) mezi 1.NP, 1.PP a 2.PP; je úzký a pro některé elektrické vozíky nevyhovuje – doporučeno ověřit předem; alternativou je výtah v pasáži a servisní chodba.",
+    "wc": "Toalety pro vozíčkáře ve 2. podzemním podlaží.",
+    "jine": "2.PP zcela bezbariérové; malá kolejiště v 1.PP na lávce cca 2 schody; simulátory a RC modely pro vozík nepřístupné. Asistenti ZTP/P vstup zdarma."
+   },
+   "measurements": [
+    {
+     "co": "šířka výtahu",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka výtahu",
+     "hodnota": 95,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Druhé podzemní podlaží je svou podlahou zcela bezbariérové"
+  },
+  {
+   "osm_id": "n4949583954",
+   "name": "Kryt Folimanka",
+   "obec": "Praha",
+   "address": "Pod Karlovem",
+   "lat": 50.067795,
+   "lng": 14.432426,
+   "category": "pamatky",
+   "source_url": "https://krytfolimanka.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Téměř celý kryt je bezbariérový; otevřen ve vybrané dny, vstup zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Téměř celý kryt je bezbariérový."
+  },
+  {
+   "osm_id": "n475376666",
+   "name": "DOX",
+   "obec": "Praha",
+   "address": "Poupětova 793/1",
+   "lat": 50.106785,
+   "lng": 14.447555,
+   "category": "pamatky",
+   "source_url": "https://www.dox.cz/navstivte-nas",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Prostory galerie včetně sálu DOX+ jsou bezbariérové, s výjimkou vzducholodi Gulliver.",
+    "jine": "Držitelé ZTP + doprovod vstup zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Prostory galerie včetně multifunkčního sálu DOX+ jsou bezbariérové, s výjimkou vzducholodi Gulliver."
+  },
+  {
+   "osm_id": "n4366550489",
+   "name": "Dům fotografie",
+   "obec": "Praha",
+   "address": "Revoluční 5",
+   "lat": 50.090014,
+   "lng": 14.427703,
+   "category": "pamatky",
+   "source_url": "https://www.ghmp.cz/budovy/ghmp-dum-fotografie/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Budova má bezbariérový přístup.",
+    "vytah": "Výtah – je třeba zavolat na pokladnu (+420 702 283 922)."
+   },
+   "measurements": [],
+   "evidence_quote": "Budova má bezbariérový přístup (výtah – volejte na pokladnu"
+  },
+  {
+   "osm_id": "n4441181217",
+   "name": "Galerie hlavního města Prahy – Bílkova vila",
+   "obec": "Praha",
+   "address": "Mickiewiczova 233/1",
+   "lat": 50.095195,
+   "lng": 14.408364,
+   "category": "pamatky",
+   "source_url": "https://www.ghmp.cz/budovy/ghmp-bilkova-vila/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Budova nemá bezbariérový přístup."
+   },
+   "measurements": [],
+   "evidence_quote": "Budova nemá bezbariérový přístup."
+  },
+  {
+   "osm_id": "w7649971",
+   "name": "Národní divadlo",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.080838,
+   "lng": 14.413537,
+   "category": "kultura",
+   "source_url": "https://www.narodni-divadlo.cz/cs/pred-navstevou/handicapovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Do každé budovy ND vede zvláštní přístupová cesta pro handicapované; personál doprovodí od vchodu na místo v hledišti.",
+    "jine": "Místa pro vozíčkáře: lóže č. 8 v přízemí."
+   },
+   "measurements": [],
+   "evidence_quote": "Do každé z divadelních budov je zvláštní přístupová cesta vhodná pro handicapované"
+  },
+  {
+   "osm_id": "w27247992",
+   "name": "Nová scéna Národního Divadla",
+   "obec": "Praha",
+   "address": "Národní 4",
+   "lat": 50.081183,
+   "lng": 14.414558,
+   "category": "kultura",
+   "source_url": "https://www.narodni-divadlo.cz/cs/pred-navstevou/handicapovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Zvláštní přístupová cesta pro handicapované, doprovod personálu.",
+    "jine": "Místa pro vozíčkáře v 15. řadě (V1–V4)."
+   },
+   "measurements": [],
+   "evidence_quote": "místa v 15. řadě / V1, V2, V3, V4"
+  },
+  {
+   "osm_id": "w391354925",
+   "name": "Věž Staroměstské radnice",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.087046,
+   "lng": 14.420669,
+   "category": "priroda",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-pristupnost-prazskych-vezi/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Zcela bezbariérový přístup do Staroměstské radnice pasáží z ulice Mikulášská.",
+    "vytah": "Výtah z přízemí do 3. patra a navazující výtah (10 osob) na ochoz; mezi nimi pojízdná plošina nevhodná pro elektrický vozík – lze zapůjčit mechanický vozík.",
+    "wc": "Bezbariérová toaleta ve 3. patře na Euroklíč (klíč k zapůjčení u pokladny v přízemí)."
+   },
+   "measurements": [],
+   "evidence_quote": "Věž Staroměstské radnice je bezbariérově přístupná díky výtahu"
+  },
+  {
+   "osm_id": "w7645353",
+   "name": "Petřínská rozhledna",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.083508,
+   "lng": 14.395096,
+   "category": "priroda",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-pristupnost-prazskych-vezi/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "Výtah na krytou vyhlídkovou terasu ve 20 m; kvůli užším dveřím výtahu je pro návštěvníky na elektrickém vozíku připraven mechanický vozík k přesednutí."
+   },
+   "measurements": [
+    {
+     "co": "výška přístupné vyhlídkové terasy",
+     "hodnota": 20,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Mezi další částečně bezbariérově přístupné objekty patří také Petřínská rozhledna."
+  },
+  {
+   "osm_id": "w25920526",
+   "name": "Zrcadlové bludiště na Petříně",
+   "obec": "Praha",
+   "address": "Petřínské sady",
+   "lat": 50.083528,
+   "lng": 14.396238,
+   "category": "pamatky",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-pristupnost-prazskych-vezi/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup dvoukřídlými východovými dveřmi, které otevře pokladní; asistence personálu nezbytná, doprovod vhodný.",
+    "wc": "V objektu WC není, plně bezbariérová veřejná toaleta je v těsné blízkosti.",
+    "jine": "Samotné krátké zrcadlové bludiště je pro vozíčkáře nepřístupné (úzké a lomené uličky)."
+   },
+   "measurements": [],
+   "evidence_quote": "Zde je však asistence personálu nezbytná a doprovod vhodný."
+  },
+  {
+   "osm_id": "w839278890",
+   "name": "Staroměstská mostecká věž",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.086164,
+   "lng": 14.413607,
+   "category": "pamatky",
+   "source_url": "https://www.prague.eu/cs/objekt/mista/197/staromestska-mostecka-vez",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Objekt není bezbariérový; na ochoz vede 138 schodů."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt není bezbariérový."
+  },
+  {
+   "osm_id": "w27124370",
+   "name": "Prašná brána",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.087244,
+   "lng": 14.427757,
+   "category": "pamatky",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-pristupnost-prazskych-vezi/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Prašná brána patří mezi věže bez bezbariérového přístupu; nabízena je virtuální 3D prohlídka."
+   },
+   "measurements": [],
+   "evidence_quote": "Ostatní objekty bohužel nemají z výše uvedených důvodů bezbariérový přístup."
+  },
+  {
+   "osm_id": "r15317899",
+   "name": "Katedrála svatého Víta, Václava a Vojtěcha",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.090864,
+   "lng": 14.400554,
+   "category": "pamatky",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Interiér katedrály lze zhlédnout s menší asistencí personálu.",
+    "wc": "V blízkosti WC s upravenou kabinou.",
+    "jine": "Na Pražský hrad nízkopodlažní tramvají 22 (zastávka Pražský hrad); vozíčkář a doprovod mají vstup na Hrad zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "S menší asistencí personálu lze navštívit … interiér katedrály sv. Víta"
+  },
+  {
+   "osm_id": "n4172786092",
+   "name": "Zlatá ulička",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.092057,
+   "lng": 14.40427,
+   "category": "pamatky",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Zlatá ulička je podle portálu obtížně přístupná; Obranná chodba u Daliborky nepřístupná."
+   },
+   "measurements": [],
+   "evidence_quote": "samotná Zlatá ulička je bohužel rovněž obtížně přístupná"
+  },
+  {
+   "osm_id": "w4053134",
+   "name": "Karlův most",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.086472,
+   "lng": 14.411369,
+   "category": "pamatky",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Povrch mostu tvoří hrubá dlažba; z Mostecké ulice je sjezd z chodníku jen vpravo, doporučeno pokračovat po vozovce; výjezd do Karlovy ulice obtížně sjízdný.",
+    "wc": "Přístupná toaleta u Sovových mlýnů."
+   },
+   "measurements": [],
+   "evidence_quote": "Povrch Karlova mostu tvoří hrubá dlažba."
+  },
+  {
+   "osm_id": "w379512802",
+   "name": "Matka Boží před Týnem",
+   "obec": "Praha",
+   "address": "Staroměstské náměstí 110",
+   "lat": 50.087711,
+   "lng": 14.422707,
+   "category": "pamatky",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Prohlídka po domluvě; bezbariérový vstup z ulice Celetná 5."
+   },
+   "measurements": [],
+   "evidence_quote": "Po domluvě je možná též prohlídka Týnského chrámu"
+  },
+  {
+   "osm_id": "n12850796425",
+   "name": "Galerie Kooperativy",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.093434,
+   "lng": 14.444073,
+   "category": "pamatky",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-kultura-bez-prekazek/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Portál ji uvádí jako bezbariérový výstavní prostor."
+   },
+   "measurements": [],
+   "evidence_quote": "Další bezbariérový výstavní prostor … je Galerie Kooperativy"
+  },
+  {
+   "osm_id": "n354692393",
+   "name": "Hudební divadlo Karlín",
+   "obec": "Praha",
+   "address": "Křižíkova",
+   "lat": 50.090122,
+   "lng": 14.441241,
+   "category": "kultura",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-kultura-bez-prekazek/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Prague City Tourism ho řadí mezi kulturní instituce s možností bezbariérového vstupu; u části objektů doporučuje doprovod. Podrobnosti neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "kulturních institucí, které poskytují možnost bezbariérového vstupu"
+  },
+  {
+   "osm_id": "n2504036067",
+   "name": "IMAGE Black Light Theatre",
+   "obec": "Praha",
+   "address": "Národní 25",
+   "lat": 50.082439,
+   "lng": 14.418032,
+   "category": "kultura",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-kultura-bez-prekazek/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Prague City Tourism ho řadí mezi kulturní instituce s možností bezbariérového vstupu; u části objektů doporučuje doprovod. Podrobnosti neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "kulturních institucí, které poskytují možnost bezbariérového vstupu"
+  },
+  {
+   "osm_id": "n288056907",
+   "name": "Semafor",
+   "obec": "Praha",
+   "address": "Dejvická",
+   "lat": 50.099157,
+   "lng": 14.39762,
+   "category": "kultura",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-kultura-bez-prekazek/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Prague City Tourism ho řadí mezi kulturní instituce s možností bezbariérového vstupu; u části objektů doporučuje doprovod. Podrobnosti neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "kulturních institucí, které poskytují možnost bezbariérového vstupu"
+  },
+  {
+   "osm_id": null,
+   "name": "Národní galerie Praha – Salmovský palác",
+   "obec": "Praha",
+   "address": "Hradčanské náměstí 1, Praha 1",
+   "lat": 50.089204,
+   "lng": 14.397699,
+   "category": "kultura",
+   "source_url": "https://www.ngprague.cz/o-nas/pristupnost-budov",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Palác je bezbariérový.",
+    "vytah": "Výtahy.",
+    "wc": "Bezbariérové toalety."
+   },
+   "measurements": [],
+   "evidence_quote": "Palác je bezbariérový. Jsou zde k dispozici výtahy a bezbariérové toalety."
+  },
+  {
+   "osm_id": null,
+   "name": "Národní galerie Praha – Schwarzenberský palác",
+   "obec": "Praha",
+   "address": "Hradčanské náměstí 2, Praha 1",
+   "lat": 50.089115,
+   "lng": 14.396872,
+   "category": "kultura",
+   "source_url": "https://www.ngprague.cz/o-nas/pristupnost-budov",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Palác je bezbariérový.",
+    "vytah": "Výtahy.",
+    "wc": "Bezbariérové toalety.",
+    "jine": "K zapůjčení invalidní vozík."
+   },
+   "measurements": [],
+   "evidence_quote": "Palác je bezbariérový. Jsou zde k dispozici výtahy a bezbariérové toalety."
+  },
+  {
+   "osm_id": null,
+   "name": "Národní galerie Praha – Klášter sv. Anežky České",
+   "obec": "Praha",
+   "address": "Na Františku, Praha 1",
+   "lat": 50.092734,
+   "lng": 14.423569,
+   "category": "kultura",
+   "source_url": "https://www.ngprague.cz/o-nas/pristupnost-budov",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup do expozice kláštera je bezbariérový.",
+    "jine": "K zapůjčení invalidní vozík."
+   },
+   "measurements": [],
+   "evidence_quote": "Vstup do expozice kláštera je bezbariérový."
+  },
+  {
+   "osm_id": null,
+   "name": "Národní galerie Praha – Valdštejnská jízdárna",
+   "obec": "Praha",
+   "address": "Valdštejnská, Praha 1",
+   "lat": 50.090966,
+   "lng": 14.40893,
+   "category": "kultura",
+   "source_url": "https://www.ngprague.cz/o-nas/pristupnost-budov",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Budova je bezbariérová.",
+    "vytah": "Výtah.",
+    "wc": "Bezbariérové toalety.",
+    "jine": "K zapůjčení invalidní vozík."
+   },
+   "measurements": [],
+   "evidence_quote": "Budova je bezbariérová. Je zde k dispozici výtah a bezbariérové toalety."
+  },
+  {
+   "osm_id": null,
+   "name": "Národní galerie Praha – Palác Kinských",
+   "obec": "Praha",
+   "address": "Staroměstské náměstí 12, Praha 1",
+   "lat": 50.088093,
+   "lng": 14.421677,
+   "category": "kultura",
+   "source_url": "https://www.ngprague.cz/o-nas/pristupnost-budov",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Výtahy.",
+    "wc": "Bezbariérové toalety.",
+    "jine": "K zapůjčení invalidní vozík."
+   },
+   "measurements": [],
+   "evidence_quote": "Jsou zde k dispozici výtahy a bezbariérové toalety."
+  },
+  {
+   "osm_id": null,
+   "name": "Národní muzeum – Muzejní komplex (Historická a Nová budova)",
+   "obec": "Praha",
+   "address": "Václavské náměstí 68, Praha 1",
+   "lat": 50.078919,
+   "lng": 14.430968,
+   "category": "kultura",
+   "source_url": "https://www.nm.cz/navstivte-nas/narodni-muzeum-bez-barier/navsteva-objektu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hlavní bezbariérový vstup přes návštěvnický vchod Nové budovy, kavárnu a spojovací chodbu; nepřístupná je jen kupole.",
+    "parkovani": "Bezbariérové parkovací místo v suterénu Historické budovy, vjezd z Vinohradské ulice."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt je bezbariérově přístupný s výjimkou kupole"
+  },
+  {
+   "osm_id": null,
+   "name": "Lapidárium Národního muzea",
+   "obec": "Praha",
+   "address": "Výstaviště 422, Praha 7",
+   "lat": 50.105521,
+   "lng": 14.431512,
+   "category": "kultura",
+   "source_url": "https://www.nm.cz/navstivte-nas/narodni-muzeum-bez-barier/navsteva-objektu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Objekt je částečně bezbariérově přístupný; podle prague.eu přístupný jen v letní sezóně.",
+    "wc": "Podle prague.eu je v areálu Výstaviště poblíž Lapidária částečně bezbariérové WC."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt je částečně bezbariérově přístupný"
+  },
+  {
+   "osm_id": null,
+   "name": "Národopisné muzeum Národního muzea (letohrádek Kinských)",
+   "obec": "Praha",
+   "address": "Kinského zahrada 98, Praha 5",
+   "lat": 50.076921,
+   "lng": 14.398684,
+   "category": "kultura",
+   "source_url": "https://www.nm.cz/navstivte-nas/narodni-muzeum-bez-barier/navsteva-objektu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Objekt je částečně bezbariérově přístupný."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt je částečně bezbariérově přístupný"
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum Antonína Dvořáka",
+   "obec": "Praha",
+   "address": "Ke Karlovu 20, Praha 2",
+   "lat": 50.073688,
+   "lng": 14.426921,
+   "category": "kultura",
+   "source_url": "https://www.nm.cz/navstivte-nas/narodni-muzeum-bez-barier/navsteva-objektu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Objekt není bezbariérově přístupný."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt není bezbariérově přístupný"
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum Bedřicha Smetany",
+   "obec": "Praha",
+   "address": "Novotného lávka 1, Praha 1",
+   "lat": 50.085613,
+   "lng": 14.412925,
+   "category": "kultura",
+   "source_url": "https://www.nm.cz/navstivte-nas/narodni-muzeum-bez-barier/navsteva-objektu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Objekt není bezbariérově přístupný."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt není bezbariérově přístupný"
+  },
+  {
+   "osm_id": null,
+   "name": "Památník Františka Palackého a Františka Ladislava Riegra",
+   "obec": "Praha",
+   "address": "Palackého 7, Praha 1",
+   "lat": 50.081055,
+   "lng": 14.423382,
+   "category": "kultura",
+   "source_url": "https://www.nm.cz/navstivte-nas/narodni-muzeum-bez-barier/navsteva-objektu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Objekt není bezbariérově přístupný."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt není bezbariérově přístupný"
+  },
+  {
+   "osm_id": null,
+   "name": "Maiselova synagoga (Židovské muzeum v Praze)",
+   "obec": "Praha",
+   "address": "Maiselova 10, Praha 1",
+   "lat": 50.088822,
+   "lng": 14.418867,
+   "category": "kultura",
+   "source_url": "https://www.jewishmuseum.cz/informace/navstivte-nas-rozcestnik/pristupnost/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístupná pro tělesně handicapované návštěvníky."
+   },
+   "measurements": [],
+   "evidence_quote": "Maiselova synagoga ano"
+  },
+  {
+   "osm_id": null,
+   "name": "Klausová synagoga (Židovské muzeum v Praze)",
+   "obec": "Praha",
+   "address": "U Starého hřbitova, Praha 1",
+   "lat": 50.089872,
+   "lng": 14.41721,
+   "category": "kultura",
+   "source_url": "https://www.jewishmuseum.cz/informace/navstivte-nas-rozcestnik/pristupnost/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Přístupné přízemí, nutná asistence při překonání 3 x 2 schodů."
+   },
+   "measurements": [],
+   "evidence_quote": "Klausová synagoga ano přízemí, nutná asistence při překonání 3 x 2 schodů"
+  },
+  {
+   "osm_id": null,
+   "name": "Galerie Roberta Guttmanna (Židovské muzeum v Praze)",
+   "obec": "Praha",
+   "address": "U Staré školy 3, Praha 1",
+   "lat": 50.090569,
+   "lng": 14.420893,
+   "category": "kultura",
+   "source_url": "https://www.jewishmuseum.cz/informace/navstivte-nas-rozcestnik/pristupnost/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístupná vchodem do administrativní budovy ŽMP."
+   },
+   "measurements": [],
+   "evidence_quote": "Galerie Roberta Guttmanna ano, vstup vchodem do administrativní budovy ŽMP"
+  },
+  {
+   "osm_id": null,
+   "name": "Stavovské divadlo",
+   "obec": "Praha",
+   "address": "Ovocný trh / Železná, Praha 1",
+   "lat": 50.085962,
+   "lng": 14.423638,
+   "category": "kultura",
+   "source_url": "https://www.narodni-divadlo.cz/cs/pred-navstevou/handicapovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "Lóže č. 13 na 2. balkoně je dostupná výtahem.",
+    "jine": "Do přízemí hlediště (v suterénu) vede strmé schodiště."
+   },
+   "measurements": [],
+   "evidence_quote": "Do přízemí, které je v suterénu, je nutné využít strmé schodiště"
+  },
+  {
+   "osm_id": null,
+   "name": "Státní opera",
+   "obec": "Praha",
+   "address": "Wilsonova, Praha 1",
+   "lat": 50.080486,
+   "lng": 14.432955,
+   "category": "kultura",
+   "source_url": "https://www.narodni-divadlo.cz/cs/pred-navstevou/handicapovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Místa pro vozíčkáře po obou koncích 15. řady v přízemí; ND uvádí zvláštní přístupovou cestu pro handicapované do každé budovy."
+   },
+   "measurements": [],
+   "evidence_quote": "místa po obou koncích 15. řady v přízemí"
+  },
+  {
+   "osm_id": null,
+   "name": "Uměleckoprůmyslové museum v Praze",
+   "obec": "Praha",
+   "address": "17. listopadu 2, Praha 1",
+   "lat": 50.089908,
+   "lng": 14.416447,
+   "category": "kultura",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-kultura-bez-prekazek/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Do budovy bočním vchodem z ulice Široká; Kudy z nudy uvádí bezbariérový přístup přes zahradu ze Široké ulice (https://www.kudyznudy.cz/aktivity/umeleckoprumyslove-muzeum-v-praze)."
+   },
+   "measurements": [],
+   "evidence_quote": "Stačí vstoupit do budovy bočním vchodem z ulice Široká"
+  },
+  {
+   "osm_id": null,
+   "name": "Museum Kampa",
+   "obec": "Praha",
+   "address": "U Sovových mlýnů 2, Praha 1",
+   "lat": 50.083999,
+   "lng": 14.408491,
+   "category": "kultura",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-kultura-bez-prekazek/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Výstavní prostory jsou dobře přístupné, okolní terén je náročnější."
+   },
+   "measurements": [],
+   "evidence_quote": "Samotné výstavní prostory jsou dobře přístupné, nevýhodou je náročnější okolní terén."
+  },
+  {
+   "osm_id": null,
+   "name": "Botanická zahrada hl. m. Prahy – skleník Fata Morgana",
+   "obec": "Praha",
+   "address": "Praha-Troja",
+   "lat": 50.122117,
+   "lng": 14.414032,
+   "category": "priroda",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Zahrada je svažitá; doporučen doprovod a severní přístup od zastávky Na Pazderce. Všechny přístupy a cesty ve skleníku Fata Morgana jsou bezbariérové.",
+    "wc": "Bezbariérově přístupná restaurace s bezbariérovou toaletou.",
+    "jine": "Na pokladnách a u skleníku lze zapůjčit mechanický vozík; ZTP/P s průvodcem vstup zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Všechny přístupy a cesty ve skleníku Fata Morgana jsou bezbariérové."
+  },
+  {
+   "osm_id": null,
+   "name": "Maroldovo panorama",
+   "obec": "Praha",
+   "address": "Výstaviště 417, Praha 7",
+   "lat": 50.10664,
+   "lng": 14.42752,
+   "category": "kultura",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Nejlepší přístup z parku Stromovka; dvoukřídlé mechanické dveře; schodiště k obrazu překonává šikmá schodišťová plošina. Přístupné jen v letní sezóně.",
+    "wc": "Přístupná toaleta je v neveřejných prostorách, přístup zajistí personál na pokladně."
+   },
+   "measurements": [],
+   "evidence_quote": "schodiště k obrazu překonává šikmá schodišťová plošina"
+  },
+  {
+   "osm_id": null,
+   "name": "Staré purkrabství – Vyšehrad",
+   "obec": "Praha",
+   "address": "Vyšehrad, Praha 2",
+   "lat": 50.062971,
+   "lng": 14.41739,
+   "category": "kultura",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Po obnově zde vznikl bezbariérový sál pro 80 diváků a kavárna.",
+    "wc": "Bezbariérové WC.",
+    "jine": "Areál Vyšehradu má úseky s hrubou historickou dlažbou a výrazným podélným i příčným sklonem cest."
+   },
+   "measurements": [],
+   "evidence_quote": "vznikl bezbariérový sál pro 80 diváků, kavárna i WC"
+  },
+  {
+   "osm_id": null,
+   "name": "Gotický sklep – Vyšehrad",
+   "obec": "Praha",
+   "address": "Vyšehrad, Praha 2",
+   "lat": 50.063434,
+   "lng": 14.41684,
+   "category": "kultura",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup do výstavních prostor překonává schodišťová plošina."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do jeho výstavních prostor překonává schodišťová plošina"
+  },
+  {
+   "osm_id": null,
+   "name": "Břevnovský klášter",
+   "obec": "Praha",
+   "address": "Markétská, Praha 6",
+   "lat": 50.085634,
+   "lng": 14.354876,
+   "category": "pamatky",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Venku žulové kostky, ale pruh šíře 1,22 m z drobných kostek či jemného štěrku; do baziliky sv. Markéty hlavním vchodem nebo po dohodě přes klauzurní část.",
+    "wc": "Restaurace Klášterní šenk má bezbariérovou toaletu."
+   },
+   "measurements": [
+    {
+     "co": "šířka sjízdného pruhu dlažby",
+     "hodnota": 122,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "pruh o šířce 1,22 m je tvořen malými kostkami"
+  },
+  {
+   "osm_id": null,
+   "name": "Královská obora – Stromovka",
+   "obec": "Praha",
+   "address": "Praha 7",
+   "lat": 50.106478,
+   "lng": 14.412697,
+   "category": "priroda",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Ne vše je bezbariérové; hlavní cesty mají převážně asfaltový nebo kvalitně zpevněný povrch."
+   },
+   "measurements": [],
+   "evidence_quote": "hlavní cesty mají převážně asfaltový nebo kvalitně zpevněný povrch"
+  },
+  {
+   "osm_id": null,
+   "name": "Národní zemědělské muzeum",
+   "obec": "Praha",
+   "address": "Kostelní 1300/44, Praha 7",
+   "lat": 50.097073,
+   "lng": 14.423243,
+   "category": "kultura",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-kultura-bez-prekazek/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Prague City Tourism ho řadí mezi kulturní instituce s možností bezbariérového vstupu; podrobnosti neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "kulturních institucí, které poskytují možnost bezbariérového vstupu"
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum Prahy – Dům U Zlatého prstenu",
+   "obec": "Praha",
+   "address": "Týnská, Praha 1",
+   "lat": 50.08809,
+   "lng": 14.423055,
+   "category": "kultura",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-kultura-bez-prekazek/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Nutno počítat s náročnějším přístupovým terénem (historická dlažba)."
+   },
+   "measurements": [],
+   "evidence_quote": "je však třeba počítat s náročnějším přístupovým terénem"
+  },
+  {
+   "osm_id": null,
+   "name": "Pražský hrad – Císařská konírna",
+   "obec": "Praha",
+   "address": "Pražský hrad, II. nádvoří, Praha 1",
+   "lat": 50.090776,
+   "lng": 14.398934,
+   "category": "kultura",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-kultura-bez-prekazek/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Prague City Tourism ji uvádí mezi kulturními místy s možností bezbariérového vstupu; podrobnosti neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "kulturních institucí, které poskytují možnost bezbariérového vstupu"
+  },
+  {
+   "osm_id": null,
+   "name": "Starý královský palác s Vladislavským sálem",
+   "obec": "Praha",
+   "address": "Pražský hrad, Praha 1",
+   "lat": 50.090577,
+   "lng": 14.401573,
+   "category": "pamatky",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vladislavský sál lze navštívit s menší asistencí personálu.",
+    "jine": "Všechny návštěvnické objekty Hradu mají podle portálu alespoň částečný bezbariérový přístup, kromě věží a Obranné chodby."
+   },
+   "measurements": [],
+   "evidence_quote": "S menší asistencí personálu lze navštívit mj. klenot Starého královského paláce"
+  },
+  {
+   "osm_id": null,
+   "name": "Bazilika sv. Jiří",
+   "obec": "Praha",
+   "address": "náměstí U Svatého Jiří, Praha 1",
+   "lat": 50.091194,
+   "lng": 14.402567,
+   "category": "pamatky",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Lze navštívit s menší asistencí personálu."
+   },
+   "measurements": [],
+   "evidence_quote": "S menší asistencí personálu lze navštívit … Jiřskou baziliku"
+  },
+  {
+   "osm_id": null,
+   "name": "Müllerova vila (Muzeum Prahy)",
+   "obec": "Praha",
+   "address": "Nad Hradním vodojemem 14, Praha 6",
+   "lat": 50.092567,
+   "lng": 14.378449,
+   "category": "kultura",
+   "source_url": "https://www.muzeumprahy.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Müllerova vila není bezbariérově přístupná."
+   },
+   "measurements": [],
+   "evidence_quote": "Upozornujeme, že Müllerova vila není bezbariérově přístupná."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n354692388",
+   "name": "ARCHA+",
+   "url": "https://www.archa-plus.cz/cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w28552866",
+   "name": "Muzeum Prahy",
+   "url": "https://www.muzeumprahy.cz/muzejni-budovy/hlavni-budova-muzea-prahy-1",
+   "reason": "stránka budovy nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4345448189",
+   "name": "Muzeum města Prahy",
+   "url": "https://www.muzeumprahy.cz/muzejni-budovy/hlavni-budova-muzea-prahy-1",
+   "reason": "stránka budovy nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7018902318",
+   "name": "Podskalská celnice na Výtoni",
+   "url": "https://www.muzeumprahy.cz/muzejni-budovy/podskalska-celnice-na-vytoni-2",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n5231123475",
+   "name": "CAMP - Centrum architektury a městského plánování",
+   "url": "https://praha.camp/o-nas",
+   "reason": "jen obecný závazek a kontakt na koordinátorku přístupnosti; areál v rekonstrukci, CAMP se stěhuje do Karlína"
+  },
+  {
+   "osm_id": "w49340944",
+   "name": "Forum Karlín",
+   "url": "https://www.forumkarlin.cz/pro-navstevniky/dostupnost/",
+   "reason": "stránka Dostupnost uvádí jen MHD, nic o bezbariérovosti"
+  },
+  {
+   "osm_id": "w22634016",
+   "name": "Planetárium",
+   "url": "https://www.planetum.cz/",
+   "reason": "web se načítá skriptem, obsah o přístupnosti nezjištěn"
+  },
+  {
+   "osm_id": "n4585024698",
+   "name": "Kino Aero",
+   "url": "https://www.kinoaero.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n355658947",
+   "name": "Lucerna",
+   "url": "https://www.kinolucerna.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n871336431",
+   "name": "Kino Světozor",
+   "url": "https://www.kinosvetozor.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3270484912",
+   "name": "Mucha museum",
+   "url": "https://www.mucha.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4720384283",
+   "name": "Lobkovický palác",
+   "url": "https://www.lobkowicz.com/en/collections/lobkowicz-palace/museum/",
+   "reason": "web nefunguje (chyba certifikátu / prázdná odpověď)"
+  },
+  {
+   "osm_id": "n1258758427",
+   "name": "Ponrepo",
+   "url": "https://www.bio-ponrepo.cz/",
+   "reason": "web nefunguje (HTTP 525)"
+  },
+  {
+   "osm_id": "n6157767004",
+   "name": "Papilonia - Motýlí dům Praha",
+   "url": "http://www.papilonia.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1268963413",
+   "name": "Muzeum Karlova mostu",
+   "url": "https://www.muzeumkarlovamostu.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n6157776207",
+   "name": "Czech Repubrick – Lego země českých památek",
+   "url": "https://www.czechrepubrick.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3276299082",
+   "name": "Museum of Bricks Praha",
+   "url": "https://museumofbricks.cz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4949858723",
+   "name": "Plynárenské muzeum",
+   "url": "https://www.ppas.cz/o-spolecnosti/plynarenske-muzeum",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1268946125",
+   "name": "Chlupáčovo muzeum historie Země",
+   "url": "https://www.natur.cuni.cz/geologie/chlupacovo-muzeum",
+   "reason": "stránka se nenačetla (téměř prázdná)"
+  },
+  {
+   "osm_id": "n385954664",
+   "name": "Divadlo pod Palmovkou",
+   "url": "https://www.podpalmovkou.cz/pro-navstevniky",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1269085411",
+   "name": "Divadlo Na zábradlí",
+   "url": "https://www.nazabradli.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1268916775",
+   "name": "Divadlo Viola",
+   "url": "https://www.divadloviola.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1269227960",
+   "name": "Divadlo Broadway",
+   "url": "https://www.divadlo-broadway.cz/",
+   "reason": "web vrátil prázdnou stránku"
+  },
+  {
+   "osm_id": "n2953777305",
+   "name": "Komorní Fidlovačka",
+   "url": "https://www.fidlovacka.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n920064653",
+   "name": "Palác Akropolis",
+   "url": "https://www.palacakropolis.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1290212669",
+   "name": "Činoherní klub",
+   "url": "https://cinoherniklub.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1258730179",
+   "name": "Komorní kino Evald",
+   "url": "https://www.evald.cz/",
+   "reason": "web vrátil téměř prázdnou stránku"
+  },
+  {
+   "osm_id": "n995953386",
+   "name": "Multikino Cinestar – Anděl",
+   "url": "https://www.cinestar.cz/praha-andel/",
+   "reason": "web nefunguje (HTTP 404)"
+  },
+  {
+   "osm_id": "r5389879",
+   "name": "Národní památník na Vítkově",
+   "url": "https://www.nm.cz/navstivte-nas/narodni-muzeum-bez-barier/navsteva-objektu",
+   "reason": "objekt v přehledu přístupnosti NM není uveden; stránka objektu nic neuvádí"
+  },
+  {
+   "osm_id": "n1200986338",
+   "name": "svatý Jiří",
+   "url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "reason": "OSM bod leží na III. nádvoří mimo baziliku (pravděpodobně socha); bazilika zapsána jako nové místo"
+  },
+  {
+   "osm_id": "n354692393",
+   "name": "Hudební divadlo Karlín (web provozovatele)",
+   "url": "https://www.hdk.cz/",
+   "reason": "web provozovatele nic o přístupnosti neuvádí (údaj převzat z prague.eu)"
+  },
+  {
+   "osm_id": null,
+   "name": "Městská knihovna v Praze – pobočky",
+   "url": "https://www.mlp.cz/cz/kontakty/pobocky/chodov/",
+   "reason": "stránky poboček se načítají skriptem / vrací 404, údaje nezjištěny"
+  },
+  {
+   "osm_id": "n3235823267",
+   "name": "Obrazárna Pražského hradu",
+   "url": "https://www.hrad.cz/cs/prazsky-hrad-pro-navstevniky/navstevnicke-objekty",
+   "reason": "web hrad.cz nevrátil obsah (HTTP 403 / skript)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Prague City Tourism – Praha bez bariér (rozcestník)",
+   "url": "https://prague.eu/cs/praha-bez-barier/",
+   "note": "oficiální turistický portál hl. m. Prahy; tipy a trasy (Staré Město, Hradčany, Malá Strana, Vyšehrad, Holešovice, ostrovy, Letná, Karlín bez bariér)"
+  },
+  {
+   "title": "Prahou bez bariér – do zahrad i na památky",
+   "url": "https://prague.eu/cs/prahou-bez-barier-do-zahrad-i-na-pamatky/",
+   "note": "Pražský hrad, Vyšehrad, Karlův most, Staroměstská radnice, Týn, Břevnov, Výstaviště, Stromovka, zoo, botanická zahrada"
+  },
+  {
+   "title": "Prahou bez bariér – kultura bez překážek",
+   "url": "https://prague.eu/cs/prahou-bez-barier-kultura-bez-prekazek/",
+   "note": "seznam muzeí, galerií, divadel a sálů s možností bezbariérového vstupu; u většiny bez detailů (nezapsány: Švandovo divadlo, Studio Ypsilon, Kalich, Na Jezerce, Jatka78, Spejbl a Hurvínek, Dejvické divadlo, Obecní dům, Rudolfinum, Malostranská beseda, Lichtenštejnský palác, Písecká brána)"
+  },
+  {
+   "title": "Prahou bez bariér – přístupnost pražských věží",
+   "url": "https://prague.eu/cs/prahou-bez-barier-pristupnost-prazskych-vezi/",
+   "note": "radniční věž, Petřínská rozhledna, Zrcadlové bludiště; ostatní věže nepřístupné"
+  },
+  {
+   "title": "Kudy z nudy – Bezbariérové zážitky v regionu Praha",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-zazitky?region=hlavni-mesto-praha",
+   "note": "CzechTourism; DOX, UPM, stezka pro nevidomé v botanické zahradě aj."
+  },
+  {
+   "title": "Národní galerie Praha – Přístupnost budov",
+   "url": "https://www.ngprague.cz/o-nas/pristupnost-budov",
+   "note": "stav po budovách"
+  },
+  {
+   "title": "Národní muzeum – Návštěva objektů",
+   "url": "https://www.nm.cz/navstivte-nas/narodni-muzeum-bez-barier/navsteva-objektu",
+   "note": "stav po objektech"
+  },
+  {
+   "title": "Židovské muzeum v Praze – Přístupnost pro handicapované",
+   "url": "https://www.jewishmuseum.cz/informace/navstivte-nas-rozcestnik/pristupnost/",
+   "note": "stav po objektech"
+  },
+  {
+   "title": "Národní divadlo – Návštěva divadla pro handicapované",
+   "url": "https://www.narodni-divadlo.cz/cs/pred-navstevou/handicapovani",
+   "note": "místa pro vozíčkáře po scénách; stránka se načítá skriptem, přečtena přes WebFetch"
+  },
+  {
+   "title": "Pražská organizace vozíčkářů – presbariery.cz",
+   "url": "https://www.presbariery.cz/",
+   "note": "detailní mapování, na které odkazuje prague.eu i NTM; data nepřebírána (podmínky užití)"
+  }
+ ]
+}

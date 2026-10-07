@@ -1,0 +1,294 @@
+[
+{
+"i": "w1317061712",
+"n": "Autokemp Babylon",
+"s": "Kemp",
+"o": "Babylon",
+"web": "https://www.autokempbabylon.cz/",
+"w": "limited",
+"t": "no",
+"la": 49.401899,
+"lo": 12.855369
+},
+{
+"i": "w1052840702",
+"n": "U Chodského Hradu",
+"s": "Penzion",
+"o": "Domažlice",
+"w": "no",
+"la": 49.439827,
+"lo": 12.928307
+},
+{
+"i": "w1052840704",
+"n": "U Chodského Hradu",
+"s": "Penzion",
+"o": "Domažlice",
+"w": "no",
+"la": 49.439751,
+"lo": 12.928213
+},
+{
+"i": "w529613552",
+"n": "Diana Autokemp Ejpovice",
+"s": "Kemp",
+"o": "Ejpovice",
+"web": "http://www.autokemp-ejpovice.cz/index.html",
+"w": "no",
+"la": 49.753411,
+"lo": 13.511151
+},
+{
+"i": "w290229595",
+"n": "Penzion Starý mlýn",
+"s": "Penzion",
+"o": "Hostouň",
+"a": "Štítary 6",
+"web": "http://starymlyn.cz",
+"w": "no",
+"la": 49.56589,
+"lo": 12.819987
+},
+{
+"i": "n13391100743",
+"n": "Apartmány A.Ša",
+"s": "Apartmány",
+"o": "Kašperské Hory",
+"web": "https://www.penzionasa.cz/",
+"w": "limited",
+"la": 49.142842,
+"lo": 13.553686
+},
+{
+"i": "n12568238941",
+"n": "Pension Janka",
+"s": "Hotel",
+"o": "Kdyně",
+"a": "Vodní",
+"web": "https://www.pensionjanka.cz/",
+"w": "no",
+"la": 49.391584,
+"lo": 13.040459
+},
+{
+"i": "w301278281",
+"n": "Country Saloon",
+"s": "Hotel",
+"o": "Klatovy",
+"a": "Beňovy 8",
+"web": "https://www.restauraceklatovy.cz/saloonbenovy/",
+"w": "yes",
+"la": 49.390798,
+"lo": 13.261947
+},
+{
+"i": "w171256320",
+"n": "Rozvoj",
+"s": "Hotel",
+"o": "Klatovy",
+"web": "https://www.hotel-rozvoj.cz/rozvoj/",
+"w": "yes",
+"la": 49.396185,
+"lo": 13.302947
+},
+{
+"i": "w395731294",
+"n": "Rozvoj",
+"s": "Hotel",
+"o": "Klatovy",
+"web": "https://www.hotel-rozvoj.cz/rozvoj/",
+"w": "yes",
+"la": 49.396374,
+"lo": 13.303024
+},
+{
+"i": "n4362067163",
+"n": "Autokemp Nýrsko",
+"s": "Kemp",
+"o": "Nýrsko",
+"web": "https://www.autokemp-nyrsko.cz/",
+"w": "yes",
+"la": 49.285427,
+"lo": 13.145064
+},
+{
+"i": "n1985373020",
+"n": "Hotel Zach",
+"s": "Hotel",
+"o": "Nýrsko",
+"w": "no",
+"la": 49.249856,
+"lo": 13.177917
+},
+{
+"i": "w1529933496",
+"n": "Stellplatz Němčovice",
+"s": "Karavanové stání",
+"o": "Němčovice",
+"web": "https://www.nemcovice.cz/aktualne/aktuality/stellplatz-nemcovice-193cs.html",
+"w": "yes",
+"la": 49.87741,
+"lo": 13.567538
+},
+{
+"i": "n1327710150",
+"n": "Hotel Rango",
+"s": "Hotel",
+"o": "Plzeň",
+"w": "no",
+"la": 49.747707,
+"lo": 13.379569
+},
+{
+"i": "n1388674688",
+"n": "Ibis Hotel Plzeň",
+"s": "Hotel",
+"o": "Plzeň",
+"web": "https://www.hotelibisplzen.cz/",
+"w": "yes",
+"la": 49.725011,
+"lo": 13.327152
+},
+{
+"i": "n6235964957",
+"n": "Rango",
+"s": "Hotel",
+"o": "Plzeň",
+"a": "Pražská 89/10",
+"web": "https://www.rango.cz/",
+"w": "no",
+"la": 49.747844,
+"lo": 13.3796
+},
+{
+"i": "w40808299",
+"n": "Vienna House Easy by Wyndham Pilsen",
+"s": "Hotel",
+"o": "Plzeň",
+"a": "U Prazdroje 6",
+"web": "https://www.wyndhamhotels.com/vienna-house/pilsen-czech-republic/vienna-house-easy-pilsen/overview/",
+"w": "yes",
+"la": 49.745804,
+"lo": 13.387104
+},
+{
+"i": "w178495719",
+"n": "Chata U Jakuba",
+"s": "Hostel",
+"o": "Prášily",
+"a": "112",
+"web": "http://www.sumavanet.cz/",
+"w": "no",
+"la": 49.10507,
+"lo": 13.380119
+},
+{
+"i": "n4392724288",
+"n": "Penzion U Michala",
+"s": "Penzion",
+"o": "Prášily",
+"a": "Prášily 111",
+"web": "https://www.prasilskyraj.cz/",
+"w": "limited",
+"la": 49.105424,
+"lo": 13.380359
+},
+{
+"i": "n3710587199",
+"n": "No. 1",
+"s": "Penzion",
+"o": "Rokycany",
+"a": "Jiráskova 1",
+"web": "http://no-1.cz/",
+"w": "limited",
+"la": 49.740854,
+"lo": 13.598999
+},
+{
+"i": "w1502923346",
+"n": "Chata Liščí Hora",
+"s": "Chata",
+"o": "Rybník",
+"w": "no",
+"la": 49.559443,
+"lo": 12.68662
+},
+{
+"i": "w209274588",
+"n": "Apartmánový dům Americká",
+"s": "Apartmány",
+"o": "Staňkov",
+"a": "Americká 122",
+"web": "https://hofman-hotels.cz/apartmany-stankov/",
+"w": "no",
+"la": 49.552893,
+"lo": 13.06913
+},
+{
+"i": "n3834656257",
+"n": "Na Mlýnské",
+"s": "Penzion",
+"o": "Staňkov",
+"a": "Mlýnská 33",
+"web": "https://www.namlynske.cz/",
+"w": "no",
+"la": 49.550794,
+"lo": 13.072287
+},
+{
+"i": "n11466742345",
+"n": "Pension Kalista",
+"s": "Penzion",
+"o": "Vrhaveč",
+"a": "32",
+"web": "http://www.pensionkalista.cz/",
+"w": "no",
+"la": 49.327143,
+"lo": 13.303718
+},
+{
+"i": "n3412991096",
+"n": "Hotel Magnetit",
+"s": "Hotel",
+"o": "Železná Ruda",
+"a": "Klatovská 129",
+"web": "https://www.magnetithotel.cz/",
+"w": "yes",
+"t": "yes",
+"la": 49.137593,
+"lo": 13.235173
+},
+{
+"i": "n2517746764",
+"n": "Hotel Ostrý",
+"s": "Hotel",
+"o": "Železná Ruda",
+"a": "1. máje 127",
+"t": "yes",
+"la": 49.137535,
+"lo": 13.232083
+},
+{
+"i": "w253492699",
+"n": "Orea Resort Horizont",
+"s": "Hotel",
+"o": "Železná Ruda",
+"a": "Pancíř 126",
+"web": "https://www.resorthorizont.cz/",
+"w": "yes",
+"la": 49.167345,
+"lo": 13.244777
+},
+{
+"i": "n10606720703",
+"n": "Restaurant Javor",
+"s": "Apartmány",
+"o": "Železná Ruda",
+"a": "Javorská 23",
+"web": "https://www.restaurantjavor.cz/",
+"w": "yes",
+"t": "yes",
+"la": 49.137047,
+"lo": 13.233115
+}
+]

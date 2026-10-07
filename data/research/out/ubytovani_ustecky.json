@@ -1,0 +1,121 @@
+{
+ "task": "ubytovani_ustecky",
+ "kraj": "Ústecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w114626146",
+   "name": "Hotel Česká Koruna",
+   "obec": "Děčín",
+   "address": "Masarykovo náměstí 60",
+   "lat": 50.780406,
+   "lng": 14.213994,
+   "category": "ubytovani",
+   "source_url": "https://hotelceskakoruna.cz/cs/ubytovani-decin",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel uvádí, že pro hendikepované hosty nabízí i pokoj s bezbariérovým přístupem (celkem 43 pokojů)."
+   },
+   "measurements": [],
+   "evidence_quote": "Pro naše handicapované hosty nabízíme také pokoj s bezbariérovým přístupem."
+  },
+  {
+   "osm_id": "n1780533512",
+   "name": "Clarion Congress Hotel Ústí nad Labem",
+   "obec": "Ústí nad Labem",
+   "address": "",
+   "lat": 50.662497,
+   "lng": 14.033627,
+   "category": "ubytovani",
+   "source_url": "https://www.clarioncongresshotelustinadlabem.com/cs/pokoje",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "U typů pokojů hotel uvádí, že bezbariérový pokoj je k dispozici na vyžádání."
+   },
+   "measurements": [],
+   "evidence_quote": "Na vyžádání můžete mít bezbariérový pokoj"
+  },
+  {
+   "osm_id": "n1203142038",
+   "name": "Stará Plynárna",
+   "obec": "Hřensko",
+   "address": "Hřensko 119",
+   "lat": 50.873663,
+   "lng": 14.244153,
+   "category": "ubytovani",
+   "source_url": "https://staraplynarna.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Web výslovně upozorňuje na velmi strmé mlynářské schody."
+   },
+   "measurements": [],
+   "evidence_quote": "POZOR! Máme velmi strmé mlynářské schody."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n7857352830",
+   "name": "Andy",
+   "url": "http://penzionandy.cz",
+   "reason": "web nedostupný (doména nenalezena)"
+  },
+  {
+   "osm_id": "w114624529",
+   "name": "Hostel Děčín",
+   "url": "https://www.hostel-decin.cz/",
+   "reason": "web nic o přístupnosti neuvádí (jen zmínka o parkování nedaleko)"
+  },
+  {
+   "osm_id": "n1037786736",
+   "name": "Hotel a kemp Formule",
+   "url": "https://www.hotelformule.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2478952217",
+   "name": "Starý mlýn",
+   "url": "https://www.starymlynjetrichovice.cz/cs/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w229015520",
+   "name": "Resort LUFT Sněžník",
+   "url": "https://www.resortluft.com",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9549364464",
+   "name": "Vagóny na horách (Zelený)",
+   "url": "https://vagonynahorach.cz/",
+   "reason": "web nic o přístupnosti neuvádí (jen parkování přímo u vagonů)"
+  },
+  {
+   "osm_id": "n1205716008",
+   "name": "Kyjovská terasa",
+   "url": "https://www.kyjovskaterasa.cz/",
+   "reason": "web nedostupný (chybný certifikát)"
+  },
+  {
+   "osm_id": "n251873885",
+   "name": "Belveder",
+   "url": "http://www.belvederhotel.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4230713325",
+   "name": "Anděl",
+   "url": "https://andelpenzion.eu/",
+   "reason": "web nic o přístupnosti neuvádí (jen parkoviště cca 30 m)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů ze vstupu inputs/ubytovani_ustecky.json",
+   "url": "https://hotelceskakoruna.cz/cs/ubytovani-decin",
+   "note": "prověřeno 12 webů (úvodní stránka + podstránky o ubytování); souřadnice ze vstupu"
+  }
+ ]
+}

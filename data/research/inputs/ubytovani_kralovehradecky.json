@@ -1,0 +1,328 @@
+[
+{
+"i": "n2402261245",
+"n": "Hotel Zámek Bílé Poličany",
+"s": "Hotel",
+"o": "Bílé Poličany",
+"web": "https://www.bilepolicany.cz/zamek",
+"w": "no",
+"la": 50.391247,
+"lo": 15.728996
+},
+{
+"i": "n127033973",
+"n": "Wellness hotel LIBERECKÁ BOUDA",
+"s": "Hotel",
+"o": "Dolní Dvůr",
+"a": "Dolní Dvůr 123",
+"web": "https://www.libereckabouda.cz/",
+"w": "yes",
+"la": 50.662077,
+"lo": 15.629717
+},
+{
+"i": "n12925578325",
+"n": "Hotel Prostřední mlýn",
+"s": "Hotel",
+"o": "Dílce",
+"w": "limited",
+"la": 50.46073,
+"lo": 15.365175
+},
+{
+"i": "n6508187345",
+"n": "Merlin",
+"s": "Penzion",
+"o": "Janské Lázně",
+"web": "http://ubytovanimerlin.cz/",
+"w": "no",
+"la": 50.631791,
+"lo": 15.779328
+},
+{
+"i": "w833468459",
+"n": "Hotel TAMMEL ****",
+"s": "Hotel",
+"o": "Jičín",
+"w": "yes",
+"la": 50.435229,
+"lo": 15.350028
+},
+{
+"i": "n10161972681",
+"n": "Penzion u České Koruny",
+"s": "Hotel",
+"o": "Jičín",
+"w": "no",
+"la": 50.437379,
+"lo": 15.352588
+},
+{
+"i": "n656462875",
+"n": "Dětský a rodinný penzion Permoník",
+"s": "Penzion",
+"o": "Malá Úpa",
+"a": "Dolní Malá Úpa 115",
+"web": "https://www.penzion-permonik.cz/",
+"w": "limited",
+"la": 50.712123,
+"lo": 15.811191
+},
+{
+"i": "n656463058",
+"n": "Hájenka Haida",
+"s": "Penzion",
+"o": "Malá Úpa",
+"a": "Horní Malá Úpa 4",
+"web": "https://www.chatahaida.cz/",
+"w": "no",
+"la": 50.733079,
+"lo": 15.805203
+},
+{
+"i": "w209044571",
+"n": "Grund Resort",
+"s": "Hotel",
+"o": "Mladé Buky",
+"a": "Mladé Buky 445",
+"web": "https://www.mladebuky.com/hotel/",
+"w": "yes",
+"la": 50.600417,
+"lo": 15.834615
+},
+{
+"i": "n942679979",
+"n": "U města Prahy",
+"s": "Hotel",
+"o": "Náchod",
+"w": "no",
+"la": 50.416506,
+"lo": 16.16186
+},
+{
+"i": "w203630744",
+"n": "Bouda Na Lučinách",
+"s": "Horská chata",
+"o": "Pec pod Sněžkou",
+"web": "www.boudanalucinach.cz/",
+"w": "no",
+"la": 50.671393,
+"lo": 15.728424
+},
+{
+"i": "w291722059",
+"n": "Bouda Růžohorky",
+"s": "Horská chata",
+"o": "Pec pod Sněžkou",
+"a": "Velká Úpa 182",
+"web": "http://www.ruzohorky.cz/",
+"w": "no",
+"la": 50.710377,
+"lo": 15.75008
+},
+{
+"i": "w19921113",
+"n": "Chalupa Na Rozcestí",
+"s": "Horská chata",
+"o": "Pec pod Sněžkou",
+"a": "Pec pod Sněžkou 247",
+"web": "https://www.chalupanarozcesti.cz/",
+"w": "yes",
+"la": 50.705669,
+"lo": 15.67492
+},
+{
+"i": "n5072463758",
+"n": "Hotel Atlas",
+"s": "Hotel",
+"o": "Pec pod Sněžkou",
+"a": "129",
+"web": "http://www.hotelatlas.cz/cs/",
+"w": "no",
+"la": 50.690246,
+"lo": 15.770007
+},
+{
+"i": "w19921110",
+"n": "Luční bouda",
+"s": "Horská chata",
+"o": "Pec pod Sněžkou",
+"a": "Pec pod Sněžkou 203",
+"web": "https://lucnibouda.cz/",
+"w": "no",
+"la": 50.734503,
+"lo": 15.696603
+},
+{
+"i": "w221515923",
+"n": "Penzion Selský dvůr",
+"s": "Penzion",
+"o": "Police nad Metují",
+"a": "Pěkov 153",
+"w": "limited",
+"la": 50.572025,
+"lo": 16.236264
+},
+{
+"i": "n656284686",
+"n": "Penzion a Kemp Wolf",
+"s": "Chata",
+"o": "Provodov-Šonov",
+"a": "Kleny 13",
+"w": "no",
+"la": 50.39585,
+"lo": 16.08603
+},
+{
+"i": "n4695144880",
+"n": "Chalupa u Skibaby",
+"s": "Chata",
+"o": "Rokytnice v Orlických horách",
+"web": "http://www.chalupauskibaby.cz/",
+"w": "yes",
+"la": 50.206564,
+"lo": 16.44628
+},
+{
+"i": "w205990694",
+"n": "Andula",
+"s": "Penzion",
+"o": "Strážné",
+"web": "https://penzionandula.cz/",
+"w": "yes",
+"la": 50.700198,
+"lo": 15.646023
+},
+{
+"i": "w176391103",
+"n": "Ministerská",
+"s": "Chata",
+"o": "Strážné",
+"web": "https://ministerska.cz/",
+"w": "no",
+"la": 50.698109,
+"lo": 15.64652
+},
+{
+"i": "n12468615838",
+"n": "Apartmany Zlaty Hamr",
+"s": "Apartmány",
+"o": "Svoboda nad Úpou",
+"web": "https://www.apartmanyzlatyhamr.cz/",
+"w": "no",
+"la": 50.636462,
+"lo": 15.790543
+},
+{
+"i": "w221135248",
+"n": "Camp Kamenec",
+"s": "Kemp",
+"o": "Teplice nad Metují",
+"web": "https://www.adrspach-ubytovani.cz",
+"w": "no",
+"la": 50.592135,
+"lo": 16.166946
+},
+{
+"i": "n5077316907",
+"n": "Jakubův Nový dvůr",
+"s": "Penzion",
+"o": "Velká Jesenice",
+"w": "yes",
+"la": 50.356903,
+"lo": 16.020737
+},
+{
+"i": "n12593542102",
+"n": "Dog hot, psí hotel",
+"s": "Hotel",
+"o": "Všestary",
+"w": "limited",
+"la": 50.243685,
+"lo": 15.766277
+},
+{
+"i": "w31360795",
+"n": "Lesní bouda",
+"s": "Horská chata",
+"o": "Černý Důl",
+"a": "Černý Důl 187",
+"web": "https://lesnibouda.cz/",
+"w": "limited",
+"la": 50.677057,
+"lo": 15.709221
+},
+{
+"i": "w326334500",
+"n": "Konšel",
+"s": "Hotel",
+"o": "Říčky v Orlických horách",
+"a": "Říčky v Orlických horách 97",
+"w": "limited",
+"la": 50.212579,
+"lo": 16.463698
+},
+{
+"i": "n4695144882",
+"n": "Penzion Říčky",
+"s": "Apartmány",
+"o": "Říčky v Orlických horách",
+"web": "https://www.ubytovani-orlicko.cz/penzion_ricky.php",
+"w": "yes",
+"la": 50.214353,
+"lo": 16.464929
+},
+{
+"i": "n4695144885",
+"n": "Resort Říčky",
+"s": "Hotel",
+"o": "Říčky v Orlických horách",
+"a": "Říčky v Orlických horách 254",
+"web": "https://www.resortricky.cz/",
+"w": "yes",
+"la": 50.207931,
+"lo": 16.453628
+},
+{
+"i": "n4695144883",
+"n": "U Sněžného lva",
+"s": "Apartmány",
+"o": "Říčky v Orlických horách",
+"web": "https://www.sneznylev.cz/",
+"w": "yes",
+"la": 50.207354,
+"lo": 16.454021
+},
+{
+"i": "w27594723",
+"n": "Martinova bouda",
+"s": "Horská chata",
+"o": "Špindlerův Mlýn",
+"a": "Bedřichov 29",
+"web": "http://www.martinovka.cz/",
+"w": "no",
+"la": 50.772056,
+"lo": 15.575396
+},
+{
+"i": "n656503078",
+"n": "Nabucco",
+"s": "Penzion",
+"o": "Špindlerův Mlýn",
+"a": "Bedřichov 61",
+"w": "no",
+"la": 50.724896,
+"lo": 15.605278
+},
+{
+"i": "w267818465",
+"n": "Farma Mokriny",
+"s": "Chata",
+"o": "Žďárky",
+"a": "Žďárky 205",
+"web": "https://www.farma-mokriny.cz/",
+"w": "limited",
+"la": 50.46932,
+"lo": 16.251932
+}
+]

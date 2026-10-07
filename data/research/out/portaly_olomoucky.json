@@ -1,0 +1,572 @@
+{
+ "task": "portaly_olomoucky",
+ "kraj": "Olomoucký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "r13829119",
+   "name": "Arcidiecézní muzeum Olomouc",
+   "obec": "Olomouc",
+   "address": "Václavské náměstí 3, 771 11 Olomouc",
+   "lat": 49.598113,
+   "lng": 17.261319,
+   "category": "kultura",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Ke vstupu se jede přes prostorné nádvoří s hrubou kamennou dlažbou; bariéry v objektu překonávají pevné a mobilní rampy nebo ližiny.",
+    "wc": "V muzeu je bezbariérové WC (podle brožury se k němu snáz dostanete na mechanickém vozíku s doprovodem).",
+    "vytah": "Výtah je vlevo od hlavního vstupu u pokladny a propojuje 1. a 2. patro.",
+    "parkovani": "Přímo před objektem vyhrazené stání není, nejbližší je v ul. Komenského cca 250 m; autem lze dojet k hlavní bráně muzea a pak auto odstavit na parkovišti.",
+    "jine": "Doporučena návštěva na mechanickém vozíku s doprovodem. U vchodu do sousední katedrály sv. Václava je rampa."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost vyhrazeného parkovacího stání",
+     "hodnota": 250,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Arcidiecézní muzeum je částečně bezbariérové místo."
+  },
+  {
+   "osm_id": "w357664858",
+   "name": "Bazilika minor Navštívení Panny Marie (Svatý Kopeček)",
+   "obec": "Olomouc",
+   "address": "Sadové náměstí 1, 779 00 Olomouc",
+   "lat": 49.629225,
+   "lng": 17.338141,
+   "category": "pamatky",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Z parkoviště vede cesta v mírně zvlněném terénu z mozaikové a hrubé kamenné dlažby; do objektu pevná rampa s prudším sklonem.",
+    "wc": "V blízkosti není bezbariérové WC.",
+    "parkovani": "Parkoviště cca 60 m od baziliky, bez vyhrazeného stání.",
+    "jine": "Lze navštívit na mechanickém (doporučen doprovod) i elektrickém vozíku; během mší prohlídka není možná."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště",
+     "hodnota": 60,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Jde o částečně bezbariérový objekt volně přístupný každý den."
+  },
+  {
+   "osm_id": "w83704637",
+   "name": "Zoo Olomouc",
+   "obec": "Olomouc",
+   "address": "Darwinova 29, 779 00 Olomouc",
+   "lat": 49.634887,
+   "lng": 17.33833,
+   "category": "priroda",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Pokladny vlevo od hlavního vstupu jsou v bezbariérovém prostoru; bočním vchodem se jede k turniketům, kde je vyhrazený vstup pro vozíčkáře.",
+    "wc": "Tři bezbariérová WC: u hlavního vstupu, u pavilonu opic a u pavilonu levhartů.",
+    "parkovani": "Parkoviště v ul. Darwinova cca 100 m od vstupu má 7 vyhrazených míst; s průkazem ZTP zdarma (výjezdový lístek na pokladně); k vstupu vede asfaltová cesta.",
+    "vytah": "Ke vstupu do pavilonu opic, žiraf a terária slouží svislá/výtahová plošina.",
+    "jine": "Kopcovitý terén, velkou část areálu tvoří litý asfalt; mnoho pavilonů má nájezdové rampy nebo plošinu. Výběh medvědů a vlků je plně bezbariérový, obchod se suvenýry také. S mechanickým vozíkem doporučen zdatný doprovod."
+   },
+   "measurements": [
+    {
+     "co": "počet vyhrazených parkovacích stání",
+     "hodnota": 7,
+     "jednotka": "ks"
+    },
+    {
+     "co": "vzdálenost parkoviště od vstupu",
+     "hodnota": 100,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "ZOO je částečně bezbariérový objekt s obtížnějším kopcovitým terénem"
+  },
+  {
+   "osm_id": "n2893883760",
+   "name": "Hanácké muzeum v přírodě",
+   "obec": "Příkazy",
+   "address": "Příkazy 54, 783 33 Příkazy",
+   "lat": 49.644989,
+   "lng": 17.139069,
+   "category": "kultura",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Přístup po betonové nebo hrubé kamenné dlažbě, mírně zvlněné; vstup do areálu průjezdem s hrubou kamennou dlažbou.",
+    "wc": "Bezbariérové WC je samostatně u hlavního vstupu.",
+    "parkovani": "Vyhrazené stání není; lze stát u krajnice příjezdové cesty nebo na obecním parkovišti cca 50 m od vstupu.",
+    "jine": "Vyšší a širší prahy – doporučen mechanický vozík s doprovodem; do stodol se jede po nezpevněném travnatém povrchu (lépe za pěkného počasí); elektrický vozík doporučen jen venku."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost obecního parkoviště",
+     "hodnota": 50,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Muzeum je částečně bezbariérový objekt."
+  },
+  {
+   "osm_id": "n4111818428",
+   "name": "Muzeum Olomouckých tvarůžků A.W.",
+   "obec": "Loštice",
+   "address": "Palackého 2, 789 83 Loštice",
+   "lat": 49.745541,
+   "lng": 16.927802,
+   "category": "kultura",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hlavní bezbariérový vstup se zvonkem (dveře se po zazvonění otevřou), zádveří s dostatečným prostorem pro manipulaci s vozíkem.",
+    "wc": "Bezbariérové WC je za pokladnou u turniketů.",
+    "vytah": "Do 2. patra (kinosál) vede výtah.",
+    "parkovani": "Parkoviště cca 60 m od muzea má 1 vyhrazené stání (zdarma, max. 1 h); k objektu vede chodník z mozaikové a hrubé kamenné dlažby.",
+    "jine": "Samostatnější vozíčkář zvládne návštěvu bez pomoci; bezbariérový průchod do podnikové prodejny."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště",
+     "hodnota": 60,
+     "jednotka": "m"
+    },
+    {
+     "co": "počet vyhrazených parkovacích stání",
+     "hodnota": 1,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Muzeum tvarůžků Loštice je plně bezbariérový objekt"
+  },
+  {
+   "osm_id": "r721716",
+   "name": "Zámek Čechy pod Kosířem",
+   "obec": "Čechy pod Kosířem",
+   "address": "Mánesova 1, 798 58 Čechy pod Kosířem",
+   "lat": 49.549657,
+   "lng": 17.037126,
+   "category": "pamatky",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup je z opačné strany zámku přes park (cca 10 min po štěrkových cestách); do budovy po nájezdové rampě, kterou připraví personál.",
+    "wc": "Bezbariérové WC v objektu, přístup jen přes hlavní vchod.",
+    "parkovani": "Placené parkoviště cca 370 m od zámku s 5 vyhrazenými místy; k zámku bezbariérová cesta (dlažba nebo litý asfalt) s nájezdy.",
+    "jine": "Návštěvu je nutné nahlásit předem. Prohlídka v 1. patře; kvůli vyšším a širším prahům doporučen mechanický vozík s doprovodem, elektrický spíše ne."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště",
+     "hodnota": 370,
+     "jednotka": "m"
+    },
+    {
+     "co": "počet vyhrazených parkovacích stání",
+     "hodnota": 5,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Zámek je částečně bezbariérový objekt. Návštěvu je nutné nahlásit předem"
+  },
+  {
+   "osm_id": "n2759777768",
+   "name": "Muzeum historických kočárů",
+   "obec": "Čechy pod Kosířem",
+   "address": "nám. Svobody 377, 798 58 Čechy pod Kosířem",
+   "lat": 49.551222,
+   "lng": 17.034621,
+   "category": "kultura",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "K objektu po asfaltové cestě nebo chodníku ze zámkové dlažby; vedle hlavního vstupu jsou velká vrata sloužící jako bezbariérový vstup.",
+    "wc": "Bezbariérové WC je dostupné.",
+    "parkovani": "Bezplatné parkoviště cca 50 m před vstupem s 1 vyhrazeným stáním.",
+    "jine": "Nepřístupný je jen ochoz 1. sálu. Na elektrickém vozíku se do 2. sálu jede jiným vstupem. Samostatnější vozíčkář zvládne návštěvu sám."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště",
+     "hodnota": 50,
+     "jednotka": "m"
+    },
+    {
+     "co": "počet vyhrazených parkovacích stání",
+     "hodnota": 1,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Muzeum historických kočárů Čechy pod Kosířem je plně bezbariérový objekt."
+  },
+  {
+   "osm_id": "n24578064",
+   "name": "Hrad Šternberk",
+   "obec": "Šternberk",
+   "address": "Horní nám. 6, 785 01 Šternberk",
+   "lat": 49.733078,
+   "lng": 17.301858,
+   "category": "pamatky",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "K bezbariérovému vstupu v parku vede náročný kopcovitý terén (hrubá kamenná a mozaiková dlažba, štěrk, nezpevněný povrch); bariéry uvnitř překonávají ližiny obsluhované personálem. Pokladna u hlavního vstupu je bariérová.",
+    "wc": "Bezbariérové WC je, ale vede k němu vyšší schod bez nájezdu.",
+    "parkovani": "Pod hradem 1 vyhrazené stání cca 320 m od bezbariérového vstupu (do kopce po dlažbě); po domluvě lze parkovat v hradním parku.",
+    "jine": "Návštěvu nutno předem nahlásit; zpřístupněn je bezbariérový základní okruh v 1. patře; doporučen mechanický vozík a doprovod."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost vyhrazeného stání od bezbariérového vstupu",
+     "hodnota": 320,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Hrad je částečně bezbariérové místo."
+  },
+  {
+   "osm_id": "n890896123",
+   "name": "Expozice času",
+   "obec": "Šternberk",
+   "address": "ČSA 19, 785 01 Šternberk",
+   "lat": 49.72959,
+   "lng": 17.297414,
+   "category": "kultura",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup plně bezbariérový: na chodníku nájezdy a sjezdy, dvoukřídlé dveře, za zádveřím bezbariérová pokladna.",
+    "wc": "Bezbariérové WC je ve vestibulu.",
+    "vytah": "Výtah do 1. patra; na vyvýšené patro v přízemí šikmá schodišťová plošina (s pomocí personálu).",
+    "parkovani": "Poblíž placené parkoviště s 1 vyhrazeným stáním.",
+    "jine": "Lze na mechanickém i elektrickém vozíku, samostatnější vozíčkář zvládne sám; prostory expozice jsou dostatečně prostorné."
+   },
+   "measurements": [
+    {
+     "co": "počet vyhrazených parkovacích stání",
+     "hodnota": 1,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Expozice času je částečně bezbariérové místo."
+  },
+  {
+   "osm_id": "r13255642",
+   "name": "Hrad Helfštýn",
+   "obec": "Týn nad Bečvou",
+   "address": "Týn nad Bečvou, 751 31",
+   "lat": 49.517982,
+   "lng": 17.628686,
+   "category": "pamatky",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Při vstupu dřevěný most s nestejně vysokými prkny, dále hrubá kamenná dlažba a štěrk a další dřevěný most k pokladně; dvoukřídlá brána je otevřená.",
+    "wc": "Bezbariérové WC je přístupné.",
+    "parkovani": "Placené parkoviště pod hradem cca 340 m od vstupu se 2 vyhrazenými stáními; držitelé ZTP mohou po domluvě parkovat zdarma na louce cca 55 m od vstupu.",
+    "jine": "Přístupné je 1. a 2. nádvoří a třetí příkop, bezbariérová restaurace a obchod se suvenýry; do hladomoren a paláce je přístup bariérový, kovářský dvůr a palácové nádvoří jen se zdatným doprovodem."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště od vstupu",
+     "hodnota": 340,
+     "jednotka": "m"
+    },
+    {
+     "co": "počet vyhrazených parkovacích stání",
+     "hodnota": 2,
+     "jednotka": "ks"
+    },
+    {
+     "co": "vzdálenost louky pro ZTP od vstupu",
+     "hodnota": 55,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Hrad Helfštýn je obtížně přístupný objekt"
+  },
+  {
+   "osm_id": "n2298524135",
+   "name": "ORNIS – ornitologická stanice",
+   "obec": "Přerov",
+   "address": "Bezručova 10, 750 02 Přerov",
+   "lat": 49.459492,
+   "lng": 17.461467,
+   "category": "kultura",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup plně bezbariérový, od parkoviště po zámkové a betonové dlažbě; u dveří zvonek ve výšce 120 cm.",
+    "wc": "Plně bezbariérové WC.",
+    "vytah": "Výtah do 1. patra; bezbariérová vyhlídková terasa.",
+    "parkovani": "Bezplatné parkoviště před objektem s 1 vyhrazeným kolmým stáním cca 10 m od vstupu.",
+    "jine": "Z přízemí bezbariérový vstup do zahrady s voliérami; samostatnější vozíčkář zvládne návštěvu bez pomoci."
+   },
+   "measurements": [
+    {
+     "co": "výška zvonku u dveří",
+     "hodnota": 120,
+     "jednotka": "cm"
+    },
+    {
+     "co": "vzdálenost vyhrazeného stání od vstupu",
+     "hodnota": 10,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "ORNIS je plně bezbariérové místo."
+  },
+  {
+   "osm_id": "n11601972854",
+   "name": "Přečerpávací vodní elektrárna Dlouhé stráně",
+   "obec": "Loučná nad Desnou",
+   "address": "Kouty nad Desnou 1, 788 11",
+   "lat": 50.077526,
+   "lng": 17.162531,
+   "category": "kultura",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "K budově elektrárny veze bezbariérový autobus od pokladny; vstup do objektu po nájezdové rampě; tunelem vede prostorná bezbariérová cesta (pozor na dva podélné odtoky s mřížkami).",
+    "wc": "Bezbariérové WC v budově elektrárny a v budově s restaurací u pokladny.",
+    "parkovani": "Placené parkoviště s 12 vyhrazenými místy cca 180 m od náměstíčka před Skiareálem Kouty; budova pokladny má bezbariérový vstup.",
+    "jine": "Exkurzi nutno rezervovat. Varianta s dolní nádrží plně bezbariérová; varianta s horní nádrží částečně (lanovka cca 7 min s pomocí obsluhy, poslední úsek náročnější asfaltovou cestou s doprovodem); cesta kolem horní nádrže necelé 2 km bezbariérová."
+   },
+   "measurements": [
+    {
+     "co": "počet vyhrazených parkovacích stání",
+     "hodnota": 12,
+     "jednotka": "ks"
+    },
+    {
+     "co": "vzdálenost parkoviště",
+     "hodnota": 180,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Obě nádrže elektrárny, infocentrum a podzemí elektrárny – to vše jsou plně bezbariérové objekty"
+  },
+  {
+   "osm_id": "n10629181035",
+   "name": "Pivovarské muzeum Hanušovice",
+   "obec": "Hanušovice",
+   "address": "Pivovarská 265, 788 33 Hanušovice",
+   "lat": 50.069044,
+   "lng": 16.927653,
+   "category": "kultura",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vchod ze zadní strany má pět schodů; bezbariérový vstup zajišťuje pevná zalomená rampa s oboustranným zábradlím, dál přes restauraci.",
+    "wc": "Bezbariérové WC je v objektu.",
+    "vytah": "Do expozice v 1. patře vede svislá schodišťová plošina.",
+    "parkovani": "Bezplatné parkoviště cca 40 m před budovou se 2 vyhrazenými místy, povrch zámková dlažba.",
+    "jine": "Lze na mechanickém i elektrickém vozíku; samostatnější vozíčkář zvládne sám. Kudy z nudy uvádí u muzea štítek „bezbariérový přístup“."
+   },
+   "measurements": [
+    {
+     "co": "počet schodů u vchodu (překonány rampou)",
+     "hodnota": 5,
+     "jednotka": "ks"
+    },
+    {
+     "co": "vzdálenost parkoviště",
+     "hodnota": 40,
+     "jednotka": "m"
+    },
+    {
+     "co": "počet vyhrazených parkovacích stání",
+     "hodnota": 2,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Pivovarské muzeum je plně bezbariérové místo."
+  },
+  {
+   "osm_id": "n416659847",
+   "name": "Jeskyně Na Špičáku",
+   "obec": "Písečná",
+   "address": "Písečná",
+   "lat": 50.283756,
+   "lng": 17.249773,
+   "category": "priroda",
+   "source_url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "source_type": "turistický portál kraje (brožura Výlety po Olomouckém kraji bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup/výstup jeskyně přes strmější betonový chodník; k pokladně pevná nájezdová rampa.",
+    "wc": "Bezbariérové WC je v menší budově před hlavní budovou.",
+    "parkovani": "Bezplatné parkoviště na nezpevněném kačírkovém povrchu bez vyhrazeného stání; lze zastavit i před budovou jeskyně u betonového chodníku.",
+    "jine": "Kopcovitý a nezpevněný terén – s mechanickým vozíkem doporučen zdatný doprovod; trasa cca 220 m; chodníčky se místy zužují, vozík je dobré předem přeměřit."
+   },
+   "measurements": [
+    {
+     "co": "šířka chodníčků v jeskyni",
+     "hodnota": 83,
+     "jednotka": "cm"
+    },
+    {
+     "co": "délka prohlídkové trasy",
+     "hodnota": 220,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "chodníčky v jeskyni mají šířku cca 83 cm a během trasy se různě zužují"
+  },
+  {
+   "osm_id": "w179989255",
+   "name": "Bezručovy sady",
+   "obec": "Olomouc",
+   "lat": 49.592508,
+   "lng": 17.255853,
+   "category": "priroda",
+   "source_url": "https://www.ok-tourism.cz/cil/bezrucovy-sady/",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Portál řadí park mezi „Výlety bez bariér“ s poznámkou o zpevněných i asfaltových cestách; podrobnosti neuvádí."
+   },
+   "evidence_quote": "Zpevněné i asfaltové cesty"
+  },
+  {
+   "osm_id": "n2980728427",
+   "name": "Faunapark",
+   "obec": "Lipová-lázně",
+   "lat": 50.224658,
+   "lng": 17.112221,
+   "category": "priroda",
+   "source_url": "https://www.ok-tourism.cz/cil/faunapark/",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Malá zoo v Horní Lipové; portál uvádí zpevněné cestičky a nájezdy a že je vhodná i pro tělesně postižené."
+   },
+   "evidence_quote": "Faunapark je bezbariérový a vhodný i pro kočárky, starší lidi i tělesně postižené."
+  },
+  {
+   "osm_id": "w62078687",
+   "name": "Sluňákov – centrum ekologických aktivit",
+   "obec": "Horka nad Moravou",
+   "lat": 49.641443,
+   "lng": 17.199901,
+   "category": "priroda",
+   "source_url": "https://www.ok-tourism.cz/cil/slunakov-centrum-ekologickych-aktivit/",
+   "source_type": "turistický portál kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Podle portálu je zázemí včetně ubytování bezbariérové.",
+    "jine": "Cestičky v okolí jsou štěrkové."
+   },
+   "evidence_quote": "Zázemí vč. ubytování je bezbariérové, štěrkové cestičky"
+  },
+  {
+   "osm_id": "w437715119",
+   "name": "Botanická zahrada Olomouc",
+   "obec": "Olomouc",
+   "lat": 49.592694,
+   "lng": 17.261012,
+   "category": "priroda",
+   "source_url": "https://tourism.olomouc.eu/mista/botanicka-zahrada/",
+   "source_type": "městský turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Portál uvádí bezbariérový přístup k vyvýšenému záhonu pro nevidomé a slabozraké, kam se dostanou i vozíčkáři; o zbytku zahrady neuvádí nic."
+   },
+   "evidence_quote": "Přístup k vyvýšenému záhonu je bezbariérový"
+  }
+ ],
+ "not_found": [
+  {
+   "name": "Vrchol Pradědu",
+   "url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "reason": "Nominatim umisťuje vrchol Pradědu do obce Malá Morávka (Moravskoslezský kraj) – mimo Olomoucký kraj, nepřidáno"
+  },
+  {
+   "name": "Termály Losiny",
+   "url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "reason": "Nominatim našel jen ulici Komenského (dva úseky), ne samotný areál – nelze spolehlivě geokódovat; info z brožury: plně bezbariérové, 7 vyhrazených stání, zapůjčení vozíku a zvedák do bazénu"
+  },
+  {
+   "name": "Zámecký park Čechy pod Kosířem",
+   "url": "https://www.ok-tourism.cz/cil/zamecky-park-cechy-pod-kosirem/",
+   "reason": "Nominatim nenašel park (jen informační tabuli přírodního parku) – nepřidáno"
+  },
+  {
+   "name": "ok-tourism.cz – ubytování s filtrem „Pouze bezbariérové cíle“",
+   "url": "https://www.ok-tourism.cz/uzitecne-info/ubytovani/",
+   "reason": "filtr vrací „Nebyly nalezeny žádné položky“ – portál nemá žádné ubytování označené jako bezbariérové"
+  },
+  {
+   "name": "Pevnost poznání (Olomouc)",
+   "url": "https://www.ok-tourism.cz/cil/pevnost-poznani/",
+   "reason": "je v seznamu Výlety bez bariér, ale už zpracováno v cile_olomoucky.json"
+  },
+  {
+   "name": "Multikino Premiere Cinemas Olomouc",
+   "url": "https://tourism.olomouc.eu/mista/premiere-cinemas/",
+   "reason": "portál uvádí přístupnost pro imobilní, ale už zpracováno v cile_olomoucky_2.json"
+  },
+  {
+   "name": "strednimorava-tourism.cz",
+   "url": "https://www.strednimorava-tourism.cz",
+   "reason": "web se nenačetl (spojení selhalo)"
+  },
+  {
+   "name": "jeseniky.net",
+   "url": "https://www.jeseniky.net",
+   "reason": "titulní stránka se načte, odkazy na podstránky vrací 404; o bezbariérovosti nic"
+  },
+  {
+   "name": "Kudy z nudy – kampaň Bez bariér, výpisy ubytování/zážitků/restaurací",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-ubytovani",
+   "reason": "položky výpisů se načítají až skriptem, v HTML nejsou; z článku „Cestování bez bariér – nejlepší tipy z regionů“ použity jen Termály Losiny a Pivovarské muzeum Hanušovice (obojí už z brožury)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Výlety bez bariér – ok-tourism.cz (Turistický informační portál Olomouckého kraje)",
+   "url": "https://www.ok-tourism.cz/tipy-na-vylety/tipy-na-vylet/vylety-bez-barier/",
+   "note": "seznam 21 bezbariérových cílů (2 strany)"
+  },
+  {
+   "title": "Brožura „Výlety po Olomouckém kraji bez bariér“ (PDF, Centrála cestovního ruchu Olomouckého kraje)",
+   "url": "https://www.ok-tourism.cz/propagacni-materialy/",
+   "note": "ke stažení v sekci Propagační materiály; mapování provedl v roce 2024 Spolek Trend vozíčkářů Olomouc podle metodiky Pražské organizace vozíčkářů; 16 objektů s popisem vstupu, WC, parkování"
+  },
+  {
+   "title": "Kudy z nudy – Cestování bez bariér: nejlepší tipy z regionů",
+   "url": "https://www.kudyznudy.cz/aktuality/cestovani-bez-barier-nejlepsi-tipy-z-regionu",
+   "note": "z Olomouckého kraje Pevnost poznání, Pivovarské muzeum Hanušovice, Termály Losiny"
+  },
+  {
+   "title": "Kudy z nudy – Termální park Termály Losiny",
+   "url": "https://www.kudyznudy.cz/aktivity/koupaliste-losiny-jedinecne-venkovni-termalni-ko",
+   "note": "adresa Komenského 235, štítek bezbariérový přístup"
+  },
+  {
+   "title": "Kudy z nudy – Pivovarské muzeum Hanušovice",
+   "url": "https://www.kudyznudy.cz/aktivity/pivovarske-muzeum-v-hanusovicich",
+   "note": "štítek bezbariérový přístup; adresu uvádí jako Zábřežská 265 (brožura: Pivovarská 265)"
+  },
+  {
+   "title": "tourism.olomouc.eu – místa (462 stránek prohledáno skriptem)",
+   "url": "https://tourism.olomouc.eu/mista-sitemap.xml",
+   "note": "zmínka o bezbariérovosti jen u Botanické zahrady a Premiere Cinemas"
+  }
+ ]
+}

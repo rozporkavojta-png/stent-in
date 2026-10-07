@@ -1,0 +1,67 @@
+{
+ "task": "cile_pardubicky",
+ "kraj": "Pardubický kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n296612991",
+   "name": "Muzeum Historie železniční dopravy a městské hromadné dopravy",
+   "obec": "Pardubice",
+   "address": "",
+   "lat": 50.044759,
+   "lng": 15.743406,
+   "category": "cil",
+   "source_url": "https://www.motoracek.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "jine": "Historická vozidla (jízdy motoráčkem) podle webu nejsou bezbariérově přístupná; snížené jízdné pro ZTP a ZTP-P."
+   },
+   "measurements": [],
+   "evidence_quote": "Vozidla nejsou bezbariérově přístupná"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n540203737",
+   "name": "Rozhledna Bára",
+   "url": "https://lesychrudim.cz/rozhledna-bara-ii/o-rozhledne/",
+   "reason": "stránka neexistuje (404)"
+  },
+  {
+   "osm_id": "w291482703",
+   "name": "Průmyslové muzeum Mladějov",
+   "url": "https://www.mladejov.cz/",
+   "reason": "web nic o přístupnosti neuvádí (web obce)"
+  },
+  {
+   "osm_id": "n12799648734",
+   "name": "Galerie města Pardubic",
+   "url": "https://www.otevrenakultura.cz/cs/gampa",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "n12211503540",
+   "name": "Malá scéna ve dvoře",
+   "url": "https://www.vcd.cz/o-divadle/mala-scena",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "n4921983662",
+   "name": "Muzeum dýmek Proseč",
+   "url": "https://www.muzeumdymek.cz/",
+   "reason": "web nic o přístupnosti neuvádí (jen snížené vstupné ZTP) (OSM uvádí wheelchair=yes)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby cílů z OSM (vstup cile_pardubicky.json)",
+   "url": "data/research/inputs/cile_pardubicky.json",
+   "note": "7 záznamů s webem; prošlo 6 (Krajské asistenční centrum pomoci Ukrajině vynecháno, není turistický cíl)"
+  },
+  {
+   "title": "Motoráček – Muzeum historie železniční a MHD",
+   "url": "https://www.motoracek.cz/"
+  }
+ ]
+}

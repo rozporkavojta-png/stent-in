@@ -1,0 +1,272 @@
+[
+{
+"i": "w30351164",
+"n": "Arboretum Bílá Lhota",
+"s": "Turistický cíl",
+"o": "Bílá Lhota",
+"web": "https://www.volny.cz/arboretum",
+"w": "yes",
+"la": 49.710114,
+"lo": 16.976439
+},
+{
+"i": "n8796070190",
+"n": "Minimuzeum Zálesí",
+"s": "Muzeum",
+"o": "Javorník",
+"w": "no",
+"la": 50.35942,
+"lo": 16.93381
+},
+{
+"i": "w122059360",
+"n": "Katovna",
+"s": "Turistický cíl",
+"o": "Jeseník",
+"a": "Palackého 176/12",
+"web": "https://www.jesenik.org/turista/152-historie-budovy.html",
+"w": "no",
+"la": 50.231405,
+"lo": 17.205748
+},
+{
+"i": "n6757767170",
+"n": "Obří Výhledna",
+"s": "Turistický cíl",
+"o": "Jeseník",
+"w": "no",
+"la": 50.244111,
+"lo": 17.189624
+},
+{
+"i": "n4757702669",
+"n": "Vlastivědné muzeum Jesenicka",
+"s": "Muzeum",
+"o": "Jeseník",
+"web": "https://www.muzeumjesenik.cz/",
+"w": "limited",
+"la": 50.229747,
+"lo": 17.2069
+},
+{
+"i": "n12099009998",
+"n": "Městská knihovna",
+"s": "Knihovna",
+"o": "Lipník nad Bečvou",
+"a": "náměstí T. G. Masaryka 11",
+"w": "yes",
+"la": 49.526288,
+"lo": 17.585824
+},
+{
+"i": "n2298544711",
+"n": "Bašta",
+"s": "Vyhlídka",
+"o": "Lipová",
+"w": "no",
+"la": 49.513044,
+"lo": 16.88496
+},
+{
+"i": "w244578169",
+"n": "Lipovský hrádek Špacírštejn",
+"s": "Turistický cíl",
+"o": "Lipová",
+"w": "no",
+"la": 49.526887,
+"lo": 16.846706
+},
+{
+"i": "n1437664359",
+"n": "Obecní knihovna Lipová",
+"s": "Knihovna",
+"o": "Lipová",
+"w": "no",
+"la": 49.52792,
+"lo": 16.862571
+},
+{
+"i": "w255926463",
+"n": "Partyzánský bunkr",
+"s": "Turistický cíl",
+"o": "Lipová",
+"w": "no",
+"la": 49.506214,
+"lo": 16.876272
+},
+{
+"i": "n4111818430",
+"n": "Památník Adolfa Kašpara v Lošticích",
+"s": "Muzeum",
+"o": "Loštice",
+"web": "https://www.muzeum-sumperk.cz/zarizeni/pamatnik-adolfa-kaspara-vlosticich/",
+"w": "limited",
+"la": 49.746393,
+"lo": 16.925505
+},
+{
+"i": "n4032945593",
+"n": "5D cinema Maxim",
+"s": "Kino",
+"o": "Olomouc",
+"w": "yes",
+"la": 49.587524,
+"lo": 17.256854
+},
+{
+"i": "n12493478247",
+"n": "Art Studio",
+"s": "Galerie",
+"o": "Olomouc",
+"a": "Polská 1",
+"w": "yes",
+"la": 49.587316,
+"lo": 17.258119
+},
+{
+"i": "n4032937701",
+"n": "Divadlo na Šantovce, o.p.s.",
+"s": "Divadlo",
+"o": "Olomouc",
+"w": "yes",
+"la": 49.586808,
+"lo": 17.258171
+},
+{
+"i": "w52928901",
+"n": "Horní náměstí",
+"s": "Turistický cíl",
+"o": "Olomouc",
+"w": "yes",
+"la": 49.593745,
+"lo": 17.251168
+},
+{
+"i": "n4032937700",
+"n": "Multikino - Premiere Cinemas",
+"s": "Kino",
+"o": "Olomouc",
+"a": "Polská 1",
+"web": "https://olomouc.premierecinemas.cz/",
+"w": "yes",
+"la": 49.586796,
+"lo": 17.257744
+},
+{
+"i": "n671366946",
+"n": "Orloj",
+"s": "Turistický cíl",
+"o": "Olomouc",
+"w": "yes",
+"la": 49.594031,
+"lo": 17.251425
+},
+{
+"i": "w49129550",
+"n": "Pevnost poznání",
+"s": "Muzeum",
+"o": "Olomouc",
+"a": "17. listopadu 7",
+"web": "https://www.pevnostpoznani.cz/",
+"w": "yes",
+"la": 49.592881,
+"lo": 17.25799
+},
+{
+"i": "n2304228329",
+"n": "Svatý Kopeček",
+"s": "Vyhlídka",
+"o": "Olomouc",
+"w": "yes",
+"la": 49.629085,
+"lo": 17.337533
+},
+{
+"i": "w177154801",
+"n": "vyhlídková věž",
+"s": "Vyhlídka",
+"o": "Olomouc",
+"w": "no",
+"la": 49.634134,
+"lo": 17.340445
+},
+{
+"i": "n14050898609",
+"n": "Muzeum Prosenice",
+"s": "Muzeum",
+"o": "Prosenice",
+"a": "Na Návsi 10",
+"web": "https://www.obecprosenice.cz/muzeum-prosenice#info",
+"w": "yes",
+"la": 49.49188,
+"lo": 17.481883
+},
+{
+"i": "n3148062459",
+"n": "Galerie Špalíček",
+"s": "Muzeum",
+"o": "Prostějov",
+"web": "https://www.muzeumpv.cz/html/spalicek.html",
+"w": "no",
+"la": 49.470981,
+"lo": 17.112081
+},
+{
+"i": "n3148062461",
+"n": "Muzeum Prostějovska",
+"s": "Muzeum",
+"o": "Prostějov",
+"web": "https://www.muzeumpv.cz/",
+"w": "no",
+"la": 49.472049,
+"lo": 17.111729
+},
+{
+"i": "w1216065143",
+"n": "Lanové Bludiště Helfštýn",
+"s": "Zábavní park",
+"o": "Týn nad Bečvou",
+"web": "https://www.bludiste-helfstyn.cz/",
+"w": "no",
+"la": 49.517678,
+"lo": 17.631348
+},
+{
+"i": "n10576411528",
+"n": "Cinemax",
+"s": "Kino",
+"o": "Velký Týnec",
+"web": "https://www.cine-max.cz/",
+"w": "yes",
+"la": 49.558925,
+"lo": 17.304371
+},
+{
+"i": "n7598201931",
+"n": "Geologická výstavka",
+"s": "Turistický cíl",
+"o": "Vápenná",
+"w": "yes",
+"la": 50.246061,
+"lo": 17.138811
+},
+{
+"i": "w249734256",
+"n": "Biskupská kupa (rozhledna)",
+"s": "Vyhlídka",
+"o": "Zlaté Hory",
+"a": "Rožmitál 1",
+"w": "no",
+"la": 50.256746,
+"lo": 17.428587
+},
+{
+"i": "w298292118",
+"n": "Hornická osada",
+"s": "Turistický cíl",
+"o": "Zlaté Hory",
+"w": "limited",
+"la": 50.254415,
+"lo": 17.3662
+}
+]

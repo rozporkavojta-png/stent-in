@@ -1,0 +1,514 @@
+{
+ "task": "obce_stredocesky",
+ "kraj": "Středočeský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n1341203001",
+   "name": "Radnice / Městský úřad Beroun",
+   "obec": "Beroun",
+   "address": "Husovo náměstí 68, 266 01 Beroun",
+   "lat": 49.9642603,
+   "lng": 14.0746228,
+   "category": "urady",
+   "source_url": "https://www.mesto-beroun.cz/mesto-a-urad/kontakty/subjekt-usek-matrika-72.html",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup zadním vchodem z ulice Na Příkopě; hlavním vchodem z náměstí se do 2. patra jde po schodišti."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový vstup je zadním vchodem z ulice Na Příkopě."
+  },
+  {
+   "osm_id": null,
+   "name": "Smart WC (bezbariérové) – hřiště Seifertova",
+   "obec": "Kolín",
+   "address": "hřiště v ul. Seifertova za prodejnou Billa, Kolín III (souřadnice: Nominatim – Billa, Seifertova 160; přesnou polohu WC web neuvádí)",
+   "lat": 50.0232718,
+   "lng": 15.1969155,
+   "category": "wc",
+   "source_url": "https://www.mukolin.cz/presun-smart-wc/d-21418",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Mobilní chytré WC uzpůsobené i pro imobilní návštěvníky; původně v Komenského parku, v červenci 2024 přesunuto na hřiště v ul. Seifertova za Billou.",
+    "jine": "Otevírá se SMS zprávou nebo platební kartou; nabíjení mobilu. Zdroj k uzpůsobení: https://www.mukolin.cz/dve-nove-mobilni-toalety-v-koline/d-14194"
+   },
+   "measurements": [],
+   "evidence_quote": "ta je uzpůsobena i pro imobilní návštěvníky"
+  },
+  {
+   "osm_id": null,
+   "name": "Chrám sv. Barbory",
+   "obec": "Kutná Hora",
+   "address": "Barborská, Kutná Hora",
+   "lat": 49.9449289,
+   "lng": 15.2636465,
+   "category": "pamatky",
+   "source_url": "https://www.kutnahora.cz/mapa-trasy-pro-vozickare",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Město ho uvádí mezi památkami přístupnými pro vozíčkáře; leží na městské trase pro vozíčkáře (mapa PDF)."
+   },
+   "measurements": [],
+   "evidence_quote": "Pro vozíčkáře jsou přístupné následující památky: Chrám sv. Barbory"
+  },
+  {
+   "osm_id": null,
+   "name": "Jezuitská kolej – Galerie Středočeského kraje (GASK)",
+   "obec": "Kutná Hora",
+   "address": "Barborská 51, Kutná Hora",
+   "lat": 49.9464002,
+   "lng": 15.2635138,
+   "category": "kultura",
+   "source_url": "https://www.kutnahora.cz/mapa-trasy-pro-vozickare",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Město ji uvádí mezi památkami přístupnými pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "Jezuitská kolej - Galerie Středočeského kraje (GASK)"
+  },
+  {
+   "osm_id": "w339015229",
+   "name": "Rozhledna na Kaňku / terasa Havířské boudy",
+   "obec": "Kutná Hora",
+   "address": "vrch Kaňk, Kutná Hora-Sedlec",
+   "lat": 49.970745,
+   "lng": 15.284949,
+   "category": "priroda",
+   "source_url": "https://www.kutnahora.cz/mapa-trasy-pro-vozickare",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Město ji uvádí jako jednu z mála českých bezbariérových rozhleden; terasa Havířské boudy je přístupná i vozíčkářům."
+   },
+   "measurements": [],
+   "evidence_quote": "jedná z mála českých bezbariérových rozhleden"
+  },
+  {
+   "osm_id": null,
+   "name": "Regionální muzeum Mělník – bezbariérové WC",
+   "obec": "Mělník",
+   "address": "náměstí Míru 54/20, 276 01 Mělník",
+   "lat": 50.3526688,
+   "lng": 14.4745905,
+   "category": "wc",
+   "source_url": "http://www.melnik.info/verejne-wc/ds-1055",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Městský turistický portál i TIC Mělník (https://ticmelnik.cz/sluzby/verejne-wc/) uvádějí bezbariérové WC v Regionálním muzeu Mělník – jako jediné bezbariérové v přehledu veřejných WC."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérové WC je v Regionálním muzeu Mělník."
+  },
+  {
+   "osm_id": null,
+   "name": "Svatá Hora (poutní místo)",
+   "obec": "Příbram",
+   "address": "Svatá Hora, Příbram I",
+   "lat": 49.6850015,
+   "lng": 14.018078,
+   "category": "pamatky",
+   "source_url": "https://www.poznejpribram.cz/bezbarierove-po-pribrami",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Boční nájezd do areálu.",
+    "vytah": "Uvnitř poutního místa je výtah.",
+    "wc": "K dispozici jsou bezbariérové toalety."
+   },
+   "measurements": [],
+   "evidence_quote": "Je vybudován boční nájezd do areálu a uvnitř poutního místa lze využít výtah."
+  },
+  {
+   "osm_id": null,
+   "name": "Bezbariérové WC – klidová zóna Hořejší Obora",
+   "obec": "Příbram",
+   "address": "klidová zóna u rybníka Hořejší Obora, Příbram III (souřadnice: Nominatim – rybník Hořejší Obora, přibližně)",
+   "lat": 49.6885254,
+   "lng": 14.0068292,
+   "category": "wc",
+   "source_url": "https://www.poznejpribram.cz/bezbarierove-po-pribrami",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Bezbariérové toalety na trase Zelené páteře města (mimo automobilový provoz)."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbariérové toalety na Hořejší Oboře a v klidové zóně na Rynečku"
+  },
+  {
+   "osm_id": null,
+   "name": "Bezbariérové WC – klidová zóna Ryneček",
+   "obec": "Příbram",
+   "address": "klidová zóna na Rynečku, Příbram III (souřadnice: Nominatim – ulice Ryneček)",
+   "lat": 49.6865196,
+   "lng": 14.0072633,
+   "category": "wc",
+   "source_url": "https://www.poznejpribram.cz/bezbarierove-po-pribrami",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Bezbariérové toalety v klidové zóně s dětským hřištěm a seniorparkem."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbariérové toalety na Hořejší Oboře a v klidové zóně na Rynečku"
+  },
+  {
+   "osm_id": null,
+   "name": "Rekreační areál Nový rybník",
+   "obec": "Příbram",
+   "address": "Nový rybník, Příbram VIII",
+   "lat": 49.6755721,
+   "lng": 14.0039035,
+   "category": "sport",
+   "source_url": "https://www.poznejpribram.cz/bezbarierove-po-pribrami",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérové cesty v areálu.",
+    "wc": "Bezbariérové toalety.",
+    "jine": "Bezbariérový přístup do vody, k dispozici koupací vozík."
+   },
+   "measurements": [],
+   "evidence_quote": "V areálu jsou bezbariérové cesty i přístup do vody - k dispozici je koupací vozík."
+  },
+  {
+   "osm_id": null,
+   "name": "Kulturní dům Příbram – Divadlo A. Dvořáka a kino",
+   "obec": "Příbram",
+   "address": "Politických vězňů, Příbram IV",
+   "lat": 49.681697,
+   "lng": 14.0009855,
+   "category": "kultura",
+   "source_url": "https://www.poznejpribram.cz/bezbarierove-po-pribrami",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Rampa; prostory divadla i kina jsou přizpůsobeny návštěvníkům s omezenou pohyblivostí.",
+    "vytah": "Výtah v objektu.",
+    "wc": "Bezbariérové toalety."
+   },
+   "measurements": [],
+   "evidence_quote": "Kulturní dům disponuje výtahem, rampou a bezbariérovými toaletami."
+  },
+  {
+   "osm_id": null,
+   "name": "Hornické muzeum Příbram – Březohorský skanzen (důl Anna, Ševčinský důl)",
+   "obec": "Příbram",
+   "address": "U Dolu Anna, Příbram VI – Březové Hory",
+   "lat": 49.687627,
+   "lng": 13.9941765,
+   "category": "pamatky",
+   "source_url": "https://www.poznejpribram.cz/bezbarierove-po-pribrami",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérově přístupná je expozice dolu Anna a Ševčinského dolu (ne celý skanzen).",
+    "wc": "Bezbariérové toalety.",
+    "jine": "Možná jízda hornickým vláčkem (důl Anna)."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbariérově přístupná expozice dolu Anna a Ševčinského dolu"
+  },
+  {
+   "osm_id": null,
+   "name": "Informační centrum města Příbram",
+   "obec": "Příbram",
+   "address": "Pražská 129, Příbram I",
+   "lat": 49.6883157,
+   "lng": 14.0110271,
+   "category": "urady",
+   "source_url": "https://www.poznejpribram.cz/bezbarierove-po-pribrami",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Pro vstup je nutná asistence; k dispozici je přenosný nájezdový klín.",
+    "jine": "Otevřeno denně 9–17 h; audio průvodce Smart Guide."
+   },
+   "measurements": [],
+   "evidence_quote": "Pro vstup do infocentra je nutná asistence. K dispozici je přenosný nájezdový klín."
+  },
+  {
+   "osm_id": null,
+   "name": "Hálkovo městské divadlo",
+   "obec": "Nymburk",
+   "address": "Tyršova, Nymburk",
+   "lat": 50.1845234,
+   "lng": 15.0396619,
+   "category": "kultura",
+   "source_url": "https://www.mesto-nymburk.cz/vismo/dokumenty2.asp?id_org=10823&id=1227",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Schodišťová plošina pro vozíčkáře do 1. patra, kde je hlediště (starší článek města, datum neuvedeno)."
+   },
+   "measurements": [],
+   "evidence_quote": "Schodišťová rampa nyní pomůže méně pohyblivým občanům dostat se do prvního patra"
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC na městském hřbitově",
+   "obec": "Lysá nad Labem",
+   "address": "městský hřbitov, budova vlevo u vchodu, Lysá nad Labem (souřadnice: Nominatim – areál hřbitova)",
+   "lat": 50.2077439,
+   "lng": 14.8406934,
+   "category": "wc",
+   "source_url": "https://www.mestolysa.cz/cs/aktuality/toalety-na-hrbitove-jsou-otevreny.html",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Bezbariérové WC s teplou vodou v budově vlevo u vchodu; podle města má parametry pro imobilní občany (https://www.mestolysa.cz/cs/aktuality/wc-na-hrbitove-je-hotove.html).",
+    "jine": "Otevírací doba se řídí otevírací dobou hřbitova (2026)."
+   },
+   "measurements": [],
+   "evidence_quote": "Kromě toalety je k dispozici i teplá voda a WC je bezbariérové."
+  },
+  {
+   "osm_id": null,
+   "name": "Radnice Poděbrady – obřadní síň",
+   "obec": "Poděbrady",
+   "address": "Jiřího náměstí 20/1, 290 01 Poděbrady",
+   "lat": 50.1426719,
+   "lng": 15.1165493,
+   "category": "urady",
+   "source_url": "https://www.mesto-podebrady.cz/vitani-obcanku/d-17370",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Do obřadní síně na radnici je bezbariérový přístup výtahem (o jiných částech úřadu stránka nic neuvádí)."
+   },
+   "measurements": [],
+   "evidence_quote": "Přístup do obřadní síně je bezbariérový (výtah)."
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Mnichovo Hradiště",
+   "obec": "Mnichovo Hradiště",
+   "address": "V Lípách 148, Mnichovo Hradiště",
+   "lat": 50.5275857,
+   "lng": 14.9707736,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-mnichovohradiste.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Pro vozíčkáře přístupný jen s doprovodem (vynesení do patra); samostatně na vozíku jen zámecký park. U vstupů celkem cca 35 schodů, zvýšené prahy.",
+    "wc": "Bezbariérová toaleta v přízemí, přístupná jen během prohlídek, neuzamčená; dvě pevná madla; bez nouzové signalizace.",
+    "parkovani": "Vyhrazená místa pro návštěvníky s omezenou schopností pohybu; z parkoviště k zámku není nutný doprovod.",
+    "jine": "Zvýhodněné vstupné pro ZTP a ZTP/P; elektrický vozík nelze dobít."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří předsíňky WC",
+     "hodnota": 110,
+     "jednotka": "cm"
+    },
+    {
+     "co": "rozměr předsíňky WC",
+     "hodnota": "2,2 x 2,2",
+     "jednotka": "m"
+    },
+    {
+     "co": "šířka dveří kabinky WC",
+     "hodnota": 85,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška kliky dveří WC",
+     "hodnota": 105,
+     "jednotka": "cm"
+    },
+    {
+     "co": "manipulační prostor před WC mísou",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška sedátka WC",
+     "hodnota": 45,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška madel u WC",
+     "hodnota": 75,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška horní hrany umyvadla",
+     "hodnota": 75,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška schodu u vstupu",
+     "hodnota": 15,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Památka je pro vozíčkáře zcela přístupná pouze s doprovodem"
+  },
+  {
+   "osm_id": null,
+   "name": "Městský úřad Říčany – budova F",
+   "obec": "Říčany",
+   "address": "Komenského náměstí 1619/2, 251 01 Říčany",
+   "lat": 49.9916484,
+   "lng": 14.6637387,
+   "category": "urady",
+   "source_url": "https://www.ricany.cz/kontakty/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Město označuje budovu F (evidence obyvatel, doklady, registr vozidel, Czech POINT, živnostenský úřad aj.) jako bezbariérově přístupnou; u ostatních budov to neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Komenského nám. 1619/2, 251 01 Říčany (bezbariérově přístupná budova úřadu)"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n9571728616",
+   "name": "Veřejné toalety Na Burse, Benátky nad Jizerou",
+   "url": "https://www.benatky.cz/mestsky-urad/technicke-sluzby/",
+   "reason": "web obce uvádí jen adresu a provozní dobu (Po–Pá 7–18), o přístupnosti nic"
+  },
+  {
+   "osm_id": "",
+   "name": "Veřejné WC v Libušině ulici, Kutná Hora",
+   "url": "https://www.kutnahora.cz/rozsireny-provoz-verejnych-toalet-v-libusine-ulici",
+   "reason": "web obce uvádí provozní dobu (březen–říjen denně 6–22, zima 8–17), o bezbariérovosti nic"
+  },
+  {
+   "osm_id": "",
+   "name": "Městský informační portál Kutná Hora – Bez bariér",
+   "url": "https://destinace.kutnahora.cz/d/bez-barier",
+   "reason": "web nefunguje (doména 5. 10. 2026 neexistuje v DNS)"
+  },
+  {
+   "osm_id": "",
+   "name": "Veřejné toalety Mladá Boleslav (mobilní WC, parkovací dům Militká)",
+   "url": "https://www.mb-net.cz/vismo/dokumenty2.asp?id=85312&id_org=9629",
+   "reason": "web obce uvádí místa, poplatek 10 Kč a provozní dobu, o přístupnosti nic"
+  },
+  {
+   "osm_id": "",
+   "name": "Magistrát města Mladá Boleslav – budovy",
+   "url": "https://www.mb-net.cz/budovy-uredni-hodiny/ms-62863",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "",
+   "name": "Veřejné toalety Husovo náměstí 167, Rakovník",
+   "url": "https://www.mesto-rakovnik.cz/aktualne/aktuality/verejne-toalety-771cs.html",
+   "reason": "web uvádí provozní dobu (Po–Pá 8–16, So 8–11) a poplatek, o přístupnosti nic"
+  },
+  {
+   "osm_id": "",
+   "name": "Veřejné WC náměstí Míru (pasáž U Koruny) a autobusové nádraží, Mělník",
+   "url": "https://ticmelnik.cz/sluzby/verejne-wc/",
+   "reason": "provozní doba je uvedena, ale tato WC nejsou označena jako bezbariérová (bezbariérové je jen v muzeu)"
+  },
+  {
+   "osm_id": "",
+   "name": "Magistrát města Kladna",
+   "url": "https://mestokladno.cz/magistrat-a-jeho-pracoviste/d-1401508",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "",
+   "name": "Veřejné WC Zámecká, Kolín",
+   "url": "https://www.mukolin.cz/rekonstrukce-wc-zamecka-k-10-1/d-22086",
+   "reason": "jen informace o rekonstrukci (2025), o přístupnosti nic"
+  },
+  {
+   "osm_id": "",
+   "name": "Městský úřad Kolín, Karlovo nám. 78",
+   "url": "https://www.mukolin.cz/",
+   "reason": "vyhledávání na webu nevrátilo nic o přístupnosti budov úřadu"
+  },
+  {
+   "osm_id": "",
+   "name": "Veřejné WC u atletického oválu (Vodranty), Čáslav",
+   "url": "https://www.meucaslav.cz/aktuality/vodranty-prochazi-promenou",
+   "reason": "bezbariérové toalety jsou jen plánované v rámci rekonstrukce (2025), dokončení web nepotvrzuje"
+  },
+  {
+   "osm_id": "",
+   "name": "Hořovice, Králův Dvůr, Kralupy n. Vlt., Čelákovice, Neratovice, Slaný, Milovice, Jesenice, Vestec, Brandýs n. L.-St. Boleslav, Mnichovo Hradiště (úřad), Kladno (WC)",
+   "url": "",
+   "reason": "na oficiálních webech obcí jsme nenašli seznam bezbariérových WC ani popis přístupnosti úřadu (část webů má vyhledávání jen v JavaScriptu); údaje jsou jen na VozejkMap / WC kompas, které jsme nepřebírali"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Krajský plán vyrovnávání příležitostí pro OZP Středočeského kraje 2026–2028",
+   "url": "https://stredoceskykraj.cz/web/socialni-oblast/krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim-sk-2023-2025",
+   "note": "Schválen ZK 19. 1. 2026, usnesení č. 013-08/2026/ZK; hlavní partner NRZP ČR. Opatření k přístupnosti: 5.4.3 průběžná on-line aktualizace přehledu bezbariérové dopravy (web kraje, IDSK, PID); 5.5.x zmapování, jak žadatelé o dotace na kulturní, sportovní a turistické akce zajišťují přístupnost; 5.6.1 informování veřejnosti o přístupnosti KÚ a zřizovaných organizací. Plošné mapování přístupnosti budov plán neobsahuje. Licence neuvedena."
+  },
+  {
+   "title": "KPVP SK 2026–2028 (PDF)",
+   "url": "https://stredoceskykraj.cz/documents/20688/0/KPVPSK+_2026-2028_finalni.pdf/db2394ad-8c11-06b2-b3e7-d0d3de35dcc4?t=1771834019511",
+   "note": "Plný text plánu (73 stran)."
+  },
+  {
+   "title": "Kutná Hora – Mapa trasy pro vozíčkáře",
+   "url": "https://www.kutnahora.cz/mapa-trasy-pro-vozickare",
+   "note": "Městská mapa: dva okruhy pro vozíčkáře (centrem cca 2,77 km; ze Sedlce do centra cca 2,5 km), bariérové úseky, přístupné památky, ubytování a parkoviště; PDF https://www.kutnahora.cz/file/2467949 (jen obrázek). Licence neuvedena, data nepřebírána."
+  },
+  {
+   "title": "Beroun – Interaktivní mapa bezbariérových objektů (vrstva vozíčkáři)",
+   "url": "http://www.mesto-beroun.cz/modules/mapy/poi.php?lang=cs&web=beroun_&active=735#m=cesko75&z=0&x=433424&y=5535203&l=vozickari",
+   "note": "Mapa města z projektu Beroun – Město bez bariér (Klubíčko Beroun, z. ú., mapování 2013–2016 podle vyhl. 398/2009 Sb., podpořeno městem). Licence neuvedena, data nepřebírána."
+  },
+  {
+   "title": "Beroun – Město bez bariér (Klubíčko Beroun, z. ú. / SP Klubák)",
+   "url": "https://www.sp-klubak.cz/beroun-mesto-bez-barier",
+   "note": "Popis projektu a seznam zmapovaných objektů a ulic v Berouně (týmy vozíčkář + asistent)."
+  },
+  {
+   "title": "Přístupná Příbram (Město Příbram – turismus)",
+   "url": "https://www.poznejpribram.cz/bezbarierove-po-pribrami",
+   "note": "Městský přehled přístupných míst a WC; všechny autobusy MHD nízkopodlažní; ZTP a ZTP/P parkují první 2 h zdarma na městských parkovištích s automaty; bezbariérové WC i v parkovacím domě u autobusového nádraží."
+  },
+  {
+   "title": "Poděbrady – Parkovací systém pro držitele ZTP, ZTP/P",
+   "url": "https://www.mesto-podebrady.cz/vismo/dokumenty2.asp?id_org=12349&id=46353&p1=44894",
+   "note": "Pilotní projekt senzorů obsazenosti vyhrazených stání (11 míst: nádraží, Studentská, Jiráskova, nám. 5. května) s bezplatnou aplikací."
+  },
+  {
+   "title": "Euroklíč – Středočeský kraj (NRZP ČR)",
+   "url": "https://www.euroklic.cz/stredocesky-kraj",
+   "note": "Distribuční místa Euroklíčů v kraji (NRZP; CZP SK v Benešově, Berouně, Kladně, Kolíně, Kutné Hoře, Mladé Boleslavi, Příbrami; MÚ Benešov, Hostivice, Slaný, Nymburk, Poděbrady, Kutná Hora) a leták 2/2026. Databáze míst s Eurozámky na euroklic.cz – licence neuvedena, nepřebíráno."
+  },
+  {
+   "title": "NRZP Středočeského kraje (Národní rada osob se zdravotním postižením ČR)",
+   "url": "https://nrzp.cz/krajska-centra/",
+   "note": "Krajská rada NRZP; krajská koordinátorka v Dusíkově divadle Čáslav (Masarykova 194/36), str.kraj@nrzp.cz; poradna NRZP ve Slaném."
+  },
+  {
+   "title": "Centrum pro zdravotně postižené a seniory Středočeského kraje, o.p.s.",
+   "url": "http://www.czpstredoceskykraj.cz",
+   "note": "Regionální pracoviště v Benešově, Berouně, Kladně, Kolíně, Kutné Hoře, Mladé Boleslavi, Příbrami a Praze východ-západ; mj. vydávají Euroklíče (podle letáku na euroklic.cz)."
+  },
+  {
+   "title": "Centrum Amelie Rakovník, z.s.",
+   "url": "https://www.euroklic.cz/stredocesky-kraj",
+   "note": "Vydává Euroklíče v Rakovníku (rakovnik@amelie-zs.cz), uvedeno v letáku Euroklíč SK."
+  },
+  {
+   "title": "Svaz tělesně postižených v ČR, z.s.",
+   "url": "https://www.svaztp.cz",
+   "note": "Celostátní organizace (Praha 8), vydává Euroklíče i pro SK; místní organizace v kraji jsme neověřili."
+  },
+  {
+   "title": "VozejkMap, WC kompas",
+   "url": "https://www.vozejkmap.cz",
+   "note": "Existující zdroje s daty o bezbariérových WC v obcích kraje (Neratovice, Milovice, Slaný, Kolín…); data nepřebírána (neoficiální zdroj, licence neověřena)."
+  }
+ ]
+}

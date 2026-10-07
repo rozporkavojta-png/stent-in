@@ -1,0 +1,3016 @@
+{
+ "total": 28413,
+ "fetched": "2026-10-05",
+ "cats": {
+  "restaurace": 3734,
+  "w_no": 3900,
+  "doprava": 1637,
+  "w_yes": 8025,
+  "pamatky": 710,
+  "obchody": 1415,
+  "t_yes": 929,
+  "w_limited": 3684,
+  "ubytovani": 801,
+  "kultura": 465,
+  "wc": 1501,
+  "zdravi": 823,
+  "urady": 4020,
+  "t_no": 464,
+  "sport": 162,
+  "parkovani": 12916,
+  "w_None": 12804,
+  "priroda": 229,
+  "t_limited": 24
+ },
+ "cities": [
+  {
+   "o": "Praha",
+   "n": 7372,
+   "no": 947,
+   "limited": 367,
+   "yes": 1471,
+   "unk": 4587
+  },
+  {
+   "o": "Ostrava",
+   "n": 2123,
+   "yes": 1011,
+   "no": 397,
+   "limited": 595,
+   "unk": 120
+  },
+  {
+   "o": "Brno",
+   "n": 1617,
+   "yes": 691,
+   "no": 477,
+   "limited": 192,
+   "unk": 257
+  },
+  {
+   "o": "Plzeň",
+   "n": 1115,
+   "limited": 82,
+   "yes": 260,
+   "no": 66,
+   "unk": 707
+  },
+  {
+   "o": "Olomouc",
+   "n": 480,
+   "no": 49,
+   "yes": 161,
+   "limited": 28,
+   "unk": 242
+  },
+  {
+   "o": "České Budějovice",
+   "n": 425,
+   "no": 80,
+   "yes": 163,
+   "limited": 15,
+   "unk": 167
+  },
+  {
+   "o": "Pardubice",
+   "n": 357,
+   "yes": 122,
+   "limited": 26,
+   "no": 7,
+   "unk": 202
+  },
+  {
+   "o": "Hradec Králové",
+   "n": 256,
+   "yes": 79,
+   "no": 36,
+   "limited": 12,
+   "unk": 129
+  },
+  {
+   "o": "Třebíč",
+   "n": 240,
+   "no": 88,
+   "yes": 117,
+   "limited": 29,
+   "unk": 6
+  },
+  {
+   "o": "Klatovy",
+   "n": 210,
+   "yes": 16,
+   "no": 1,
+   "limited": 1,
+   "unk": 192
+  },
+  {
+   "o": "Český Krumlov",
+   "n": 172,
+   "no": 53,
+   "limited": 18,
+   "yes": 68,
+   "unk": 33
+  },
+  {
+   "o": "Třinec",
+   "n": 170,
+   "yes": 18,
+   "unk": 151,
+   "limited": 1
+  },
+  {
+   "o": "Beroun",
+   "n": 159,
+   "limited": 4,
+   "yes": 14,
+   "no": 4,
+   "unk": 137
+  },
+  {
+   "o": "Strakonice",
+   "n": 155,
+   "unk": 140,
+   "yes": 11,
+   "limited": 3,
+   "no": 1
+  },
+  {
+   "o": "Liberec",
+   "n": 151,
+   "yes": 54,
+   "limited": 9,
+   "unk": 76,
+   "no": 12
+  },
+  {
+   "o": "Humpolec",
+   "n": 136,
+   "no": 12,
+   "yes": 26,
+   "unk": 95,
+   "limited": 3
+  },
+  {
+   "o": "Mladá Boleslav",
+   "n": 131,
+   "unk": 106,
+   "yes": 21,
+   "limited": 4
+  },
+  {
+   "o": "Písek",
+   "n": 127,
+   "yes": 16,
+   "no": 5,
+   "unk": 103,
+   "limited": 3
+  },
+  {
+   "o": "Trutnov",
+   "n": 127,
+   "unk": 102,
+   "yes": 18,
+   "limited": 4,
+   "no": 3
+  },
+  {
+   "o": "Tábor",
+   "n": 109,
+   "yes": 37,
+   "no": 13,
+   "limited": 3,
+   "unk": 56
+  },
+  {
+   "o": "Brandýs nad Labem-Stará Boleslav",
+   "n": 108,
+   "yes": 17,
+   "unk": 86,
+   "no": 5
+  },
+  {
+   "o": "Nymburk",
+   "n": 106,
+   "yes": 6,
+   "limited": 1,
+   "unk": 99
+  },
+  {
+   "o": "Karlovy Vary",
+   "n": 105,
+   "yes": 48,
+   "no": 21,
+   "limited": 8,
+   "unk": 28
+  },
+  {
+   "o": "Rokycany",
+   "n": 104,
+   "limited": 8,
+   "yes": 15,
+   "unk": 79,
+   "no": 2
+  },
+  {
+   "o": "Rakovník",
+   "n": 100,
+   "yes": 26,
+   "limited": 13,
+   "no": 5,
+   "unk": 56
+  },
+  {
+   "o": "Sušice",
+   "n": 97,
+   "yes": 6,
+   "unk": 84,
+   "limited": 5,
+   "no": 2
+  },
+  {
+   "o": "Kutná Hora",
+   "n": 97,
+   "yes": 21,
+   "no": 18,
+   "limited": 6,
+   "unk": 52
+  },
+  {
+   "o": "Jihlava",
+   "n": 96,
+   "yes": 45,
+   "no": 20,
+   "limited": 2,
+   "unk": 29
+  },
+  {
+   "o": "Mariánské Lázně",
+   "n": 93,
+   "no": 4,
+   "yes": 29,
+   "limited": 4,
+   "unk": 56
+  },
+  {
+   "o": "Kladno",
+   "n": 92,
+   "yes": 18,
+   "limited": 2,
+   "no": 1,
+   "unk": 71
+  },
+  {
+   "o": "Vimperk",
+   "n": 83,
+   "unk": 78,
+   "yes": 5
+  },
+  {
+   "o": "Teplice",
+   "n": 76,
+   "yes": 39,
+   "no": 3,
+   "limited": 7,
+   "unk": 27
+  },
+  {
+   "o": "Říčany",
+   "n": 74,
+   "yes": 17,
+   "limited": 4,
+   "unk": 49,
+   "no": 4
+  },
+  {
+   "o": "Ústí nad Labem",
+   "n": 74,
+   "no": 9,
+   "yes": 35,
+   "limited": 4,
+   "unk": 26
+  },
+  {
+   "o": "Uherské Hradiště",
+   "n": 73,
+   "yes": 42,
+   "limited": 11,
+   "no": 14,
+   "unk": 6
+  },
+  {
+   "o": "Lipník nad Bečvou",
+   "n": 72,
+   "yes": 22,
+   "no": 3,
+   "unk": 45,
+   "limited": 2
+  },
+  {
+   "o": "Most",
+   "n": 70,
+   "yes": 14,
+   "limited": 1,
+   "unk": 53,
+   "no": 2
+  },
+  {
+   "o": "Česká Lípa",
+   "n": 69,
+   "yes": 22,
+   "no": 2,
+   "limited": 2,
+   "unk": 43
+  },
+  {
+   "o": "Frýdek-Místek",
+   "n": 68,
+   "no": 7,
+   "yes": 46,
+   "limited": 2,
+   "unk": 13
+  },
+  {
+   "o": "Děčín",
+   "n": 67,
+   "yes": 19,
+   "no": 9,
+   "limited": 6,
+   "unk": 33
+  },
+  {
+   "o": "Zlín",
+   "n": 65,
+   "yes": 34,
+   "no": 5,
+   "limited": 8,
+   "unk": 18
+  },
+  {
+   "o": "Jičín",
+   "n": 63,
+   "unk": 38,
+   "limited": 6,
+   "yes": 10,
+   "no": 9
+  },
+  {
+   "o": "Čelákovice",
+   "n": 61,
+   "yes": 18,
+   "no": 9,
+   "limited": 2,
+   "unk": 32
+  },
+  {
+   "o": "Havířov",
+   "n": 60,
+   "yes": 12,
+   "unk": 47,
+   "no": 1
+  },
+  {
+   "o": "Příbor",
+   "n": 60,
+   "no": 9,
+   "unk": 45,
+   "limited": 3,
+   "yes": 3
+  },
+  {
+   "o": "Jablonec nad Nisou",
+   "n": 59,
+   "yes": 6,
+   "limited": 3,
+   "unk": 49,
+   "no": 1
+  },
+  {
+   "o": "Jindřichův Hradec",
+   "n": 58,
+   "yes": 5,
+   "no": 1,
+   "limited": 6,
+   "unk": 46
+  },
+  {
+   "o": "Horažďovice",
+   "n": 55,
+   "unk": 50,
+   "limited": 3,
+   "yes": 2
+  },
+  {
+   "o": "Třeboň",
+   "n": 54,
+   "no": 5,
+   "yes": 14,
+   "unk": 32,
+   "limited": 3
+  },
+  {
+   "o": "Chomutov",
+   "n": 54,
+   "unk": 39,
+   "no": 1,
+   "yes": 13,
+   "limited": 1
+  },
+  {
+   "o": "Milevsko",
+   "n": 53,
+   "yes": 5,
+   "no": 2,
+   "limited": 1,
+   "unk": 45
+  },
+  {
+   "o": "Velký Týnec",
+   "n": 53,
+   "yes": 17,
+   "unk": 36
+  },
+  {
+   "o": "Kolín",
+   "n": 53,
+   "yes": 22,
+   "limited": 2,
+   "unk": 28,
+   "no": 1
+  },
+  {
+   "o": "Tachov",
+   "n": 52,
+   "unk": 45,
+   "yes": 5,
+   "no": 2
+  },
+  {
+   "o": "Šenov",
+   "n": 52,
+   "limited": 11,
+   "yes": 22,
+   "no": 19
+  },
+  {
+   "o": "Kaznějov",
+   "n": 51,
+   "unk": 49,
+   "yes": 2
+  },
+  {
+   "o": "Lysá nad Labem",
+   "n": 51,
+   "limited": 7,
+   "no": 5,
+   "yes": 25,
+   "unk": 14
+  },
+  {
+   "o": "Mělník",
+   "n": 50,
+   "no": 5,
+   "unk": 35,
+   "yes": 8,
+   "limited": 2
+  },
+  {
+   "o": "Vratimov",
+   "n": 49,
+   "yes": 18,
+   "no": 17,
+   "limited": 14
+  },
+  {
+   "o": "Znojmo",
+   "n": 48,
+   "yes": 28,
+   "limited": 9,
+   "no": 9,
+   "unk": 2
+  },
+  {
+   "o": "Domažlice",
+   "n": 48,
+   "yes": 10,
+   "limited": 2,
+   "unk": 34,
+   "no": 2
+  },
+  {
+   "o": "Roudnice nad Labem",
+   "n": 48,
+   "limited": 1,
+   "no": 1,
+   "yes": 4,
+   "unk": 42
+  },
+  {
+   "o": "Žatec",
+   "n": 48,
+   "yes": 7,
+   "unk": 41
+  },
+  {
+   "o": "Cheb",
+   "n": 47,
+   "yes": 34,
+   "limited": 2,
+   "no": 6,
+   "unk": 5
+  },
+  {
+   "o": "Poděbrady",
+   "n": 47,
+   "yes": 12,
+   "unk": 29,
+   "limited": 4,
+   "no": 2
+  },
+  {
+   "o": "Louny",
+   "n": 47,
+   "yes": 4,
+   "limited": 2,
+   "no": 1,
+   "unk": 40
+  },
+  {
+   "o": "Kralupy nad Vltavou",
+   "n": 46,
+   "no": 4,
+   "limited": 1,
+   "yes": 4,
+   "unk": 37
+  },
+  {
+   "o": "Dobřany",
+   "n": 45,
+   "no": 2,
+   "yes": 3,
+   "unk": 38,
+   "limited": 2
+  },
+  {
+   "o": "Turnov",
+   "n": 45,
+   "unk": 28,
+   "no": 2,
+   "yes": 15
+  },
+  {
+   "o": "Kopřivnice",
+   "n": 44,
+   "yes": 26,
+   "no": 5,
+   "limited": 3,
+   "unk": 10
+  },
+  {
+   "o": "Příbram",
+   "n": 44,
+   "yes": 14,
+   "unk": 20,
+   "limited": 8,
+   "no": 2
+  },
+  {
+   "o": "Břeclav",
+   "n": 43,
+   "yes": 38,
+   "limited": 3,
+   "no": 2
+  },
+  {
+   "o": "Chrudim",
+   "n": 43,
+   "yes": 9,
+   "limited": 2,
+   "unk": 29,
+   "no": 3
+  },
+  {
+   "o": "Chodov",
+   "n": 41,
+   "yes": 4,
+   "unk": 35,
+   "no": 2
+  },
+  {
+   "o": "Litoměřice",
+   "n": 41,
+   "yes": 11,
+   "no": 7,
+   "limited": 2,
+   "unk": 21
+  },
+  {
+   "o": "Ostrov",
+   "n": 40,
+   "limited": 5,
+   "yes": 8,
+   "no": 2,
+   "unk": 25
+  },
+  {
+   "o": "Vestec",
+   "n": 40,
+   "yes": 6,
+   "unk": 34
+  },
+  {
+   "o": "Neratovice",
+   "n": 39,
+   "yes": 3,
+   "limited": 1,
+   "unk": 35
+  },
+  {
+   "o": "Doksy",
+   "n": 38,
+   "limited": 2,
+   "yes": 4,
+   "unk": 27,
+   "no": 5
+  },
+  {
+   "o": "Hlučín",
+   "n": 38,
+   "limited": 5,
+   "yes": 13,
+   "no": 4,
+   "unk": 16
+  },
+  {
+   "o": "Pelhřimov",
+   "n": 38,
+   "no": 1,
+   "yes": 4,
+   "unk": 32,
+   "limited": 1
+  },
+  {
+   "o": "Kroměříž",
+   "n": 37,
+   "unk": 20,
+   "yes": 10,
+   "limited": 3,
+   "no": 4
+  },
+  {
+   "o": "Milovice",
+   "n": 34,
+   "yes": 8,
+   "unk": 24,
+   "limited": 2
+  },
+  {
+   "o": "Modřice",
+   "n": 34,
+   "yes": 16,
+   "limited": 1,
+   "unk": 15,
+   "no": 2
+  },
+  {
+   "o": "Přeštice",
+   "n": 34,
+   "unk": 32,
+   "yes": 2
+  },
+  {
+   "o": "Hranice",
+   "n": 33,
+   "limited": 7,
+   "unk": 15,
+   "no": 7,
+   "yes": 4
+  },
+  {
+   "o": "Tanvald",
+   "n": 33,
+   "limited": 2,
+   "yes": 8,
+   "no": 4,
+   "unk": 19
+  },
+  {
+   "o": "Třemošná",
+   "n": 31,
+   "unk": 29,
+   "yes": 2
+  },
+  {
+   "o": "Hořovice",
+   "n": 31,
+   "yes": 11,
+   "limited": 3,
+   "unk": 13,
+   "no": 4
+  },
+  {
+   "o": "Jesenice",
+   "n": 31,
+   "yes": 14,
+   "no": 2,
+   "limited": 2,
+   "unk": 13
+  },
+  {
+   "o": "Veselí nad Lužnicí",
+   "n": 30,
+   "yes": 11,
+   "limited": 1,
+   "no": 2,
+   "unk": 16
+  },
+  {
+   "o": "Nová Paka",
+   "n": 30,
+   "no": 1,
+   "limited": 2,
+   "yes": 6,
+   "unk": 21
+  },
+  {
+   "o": "Slaný",
+   "n": 30,
+   "unk": 22,
+   "yes": 5,
+   "limited": 2,
+   "no": 1
+  },
+  {
+   "o": "Jablunkov",
+   "n": 29,
+   "no": 1,
+   "yes": 4,
+   "unk": 24
+  },
+  {
+   "o": "Holýšov",
+   "n": 29,
+   "yes": 3,
+   "unk": 26
+  },
+  {
+   "o": "Nýřany",
+   "n": 29,
+   "yes": 1,
+   "no": 1,
+   "unk": 27
+  },
+  {
+   "o": "Blansko",
+   "n": 28,
+   "limited": 4,
+   "no": 5,
+   "yes": 18,
+   "unk": 1
+  },
+  {
+   "o": "Hodonín",
+   "n": 28,
+   "yes": 22,
+   "unk": 4,
+   "no": 2
+  },
+  {
+   "o": "Dačice",
+   "n": 28,
+   "yes": 6,
+   "no": 3,
+   "unk": 18,
+   "limited": 1
+  },
+  {
+   "o": "Prostějov",
+   "n": 28,
+   "limited": 5,
+   "no": 3,
+   "yes": 9,
+   "unk": 11
+  },
+  {
+   "o": "Přerov",
+   "n": 28,
+   "yes": 7,
+   "unk": 21
+  },
+  {
+   "o": "Havlíčkův Brod",
+   "n": 28,
+   "unk": 13,
+   "yes": 9,
+   "limited": 5,
+   "no": 1
+  },
+  {
+   "o": "Luhačovice",
+   "n": 28,
+   "yes": 14,
+   "no": 3,
+   "limited": 2,
+   "unk": 9
+  },
+  {
+   "o": "Vyškov",
+   "n": 26,
+   "yes": 14,
+   "no": 6,
+   "unk": 4,
+   "limited": 2
+  },
+  {
+   "o": "Šlapanice",
+   "n": 26,
+   "yes": 12,
+   "limited": 3,
+   "unk": 6,
+   "no": 5
+  },
+  {
+   "o": "Planá",
+   "n": 26,
+   "unk": 22,
+   "no": 1,
+   "limited": 1,
+   "yes": 2
+  },
+  {
+   "o": "Frýdlant",
+   "n": 26,
+   "limited": 3,
+   "yes": 6,
+   "unk": 15,
+   "no": 2
+  },
+  {
+   "o": "Šumperk",
+   "n": 26,
+   "yes": 2,
+   "no": 1,
+   "unk": 22,
+   "limited": 1
+  },
+  {
+   "o": "Vracov",
+   "n": 25,
+   "yes": 7,
+   "limited": 8,
+   "no": 4,
+   "unk": 6
+  },
+  {
+   "o": "Opava",
+   "n": 25,
+   "yes": 14,
+   "limited": 2,
+   "unk": 9
+  },
+  {
+   "o": "Králův Dvůr",
+   "n": 25,
+   "yes": 4,
+   "limited": 1,
+   "no": 3,
+   "unk": 17
+  },
+  {
+   "o": "Čáslav",
+   "n": 25,
+   "unk": 21,
+   "yes": 2,
+   "no": 1,
+   "limited": 1
+  },
+  {
+   "o": "Krásná Lípa",
+   "n": 25,
+   "no": 8,
+   "limited": 2,
+   "yes": 7,
+   "unk": 8
+  },
+  {
+   "o": "Prachatice",
+   "n": 24,
+   "yes": 5,
+   "limited": 2,
+   "unk": 17
+  },
+  {
+   "o": "Přelouč",
+   "n": 24,
+   "yes": 4,
+   "unk": 18,
+   "no": 2
+  },
+  {
+   "o": "Ústí nad Orlicí",
+   "n": 24,
+   "limited": 5,
+   "yes": 12,
+   "no": 3,
+   "unk": 4
+  },
+  {
+   "o": "Česká Třebová",
+   "n": 24,
+   "yes": 9,
+   "unk": 15
+  },
+  {
+   "o": "Kašperské Hory",
+   "n": 23,
+   "limited": 3,
+   "no": 4,
+   "yes": 4,
+   "unk": 12
+  },
+  {
+   "o": "Železná Ruda",
+   "n": 23,
+   "no": 4,
+   "limited": 4,
+   "yes": 7,
+   "unk": 8
+  },
+  {
+   "o": "Klášterec nad Ohří",
+   "n": 23,
+   "limited": 1,
+   "yes": 3,
+   "unk": 19
+  },
+  {
+   "o": "Harrachov",
+   "n": 22,
+   "no": 12,
+   "limited": 2,
+   "yes": 5,
+   "unk": 3
+  },
+  {
+   "o": "Chotíkov",
+   "n": 22,
+   "limited": 2,
+   "yes": 3,
+   "unk": 16,
+   "no": 1
+  },
+  {
+   "o": "Mnichovo Hradiště",
+   "n": 22,
+   "limited": 3,
+   "unk": 17,
+   "yes": 2
+  },
+  {
+   "o": "Vlašim",
+   "n": 22,
+   "yes": 8,
+   "limited": 4,
+   "unk": 10
+  },
+  {
+   "o": "Tišnov",
+   "n": 21,
+   "yes": 8,
+   "limited": 5,
+   "no": 2,
+   "unk": 6
+  },
+  {
+   "o": "Blatná",
+   "n": 21,
+   "yes": 2,
+   "unk": 19
+  },
+  {
+   "o": "Nový Bor",
+   "n": 21,
+   "yes": 3,
+   "limited": 1,
+   "unk": 16,
+   "no": 1
+  },
+  {
+   "o": "Nový Jičín",
+   "n": 21,
+   "yes": 12,
+   "limited": 5,
+   "unk": 2,
+   "no": 2
+  },
+  {
+   "o": "Benešov",
+   "n": 20,
+   "limited": 3,
+   "yes": 4,
+   "unk": 11,
+   "no": 2
+  },
+  {
+   "o": "Soběslav",
+   "n": 20,
+   "yes": 10,
+   "no": 2,
+   "unk": 8
+  },
+  {
+   "o": "Františkovy Lázně",
+   "n": 20,
+   "yes": 15,
+   "no": 5
+  },
+  {
+   "o": "Náchod",
+   "n": 20,
+   "yes": 9,
+   "unk": 9,
+   "no": 2
+  },
+  {
+   "o": "Semily",
+   "n": 20,
+   "yes": 3,
+   "unk": 16,
+   "no": 1
+  },
+  {
+   "o": "Návsí",
+   "n": 20,
+   "yes": 5,
+   "limited": 1,
+   "unk": 14
+  },
+  {
+   "o": "Chotěšov",
+   "n": 20,
+   "limited": 1,
+   "no": 1,
+   "yes": 5,
+   "unk": 13
+  },
+  {
+   "o": "Světlá nad Sázavou",
+   "n": 20,
+   "unk": 17,
+   "yes": 2,
+   "limited": 1
+  },
+  {
+   "o": "Třešť",
+   "n": 20,
+   "yes": 6,
+   "no": 5,
+   "limited": 8,
+   "unk": 1
+  },
+  {
+   "o": "Kyjov",
+   "n": 19,
+   "yes": 10,
+   "no": 5,
+   "limited": 2,
+   "unk": 2
+  },
+  {
+   "o": "Mikulov",
+   "n": 19,
+   "limited": 2,
+   "yes": 6,
+   "no": 9,
+   "unk": 2
+  },
+  {
+   "o": "Mimoň",
+   "n": 19,
+   "yes": 2,
+   "unk": 17
+  },
+  {
+   "o": "Kdyně",
+   "n": 19,
+   "limited": 1,
+   "yes": 3,
+   "no": 4,
+   "unk": 11
+  },
+  {
+   "o": "Benátky nad Jizerou",
+   "n": 19,
+   "limited": 2,
+   "unk": 16,
+   "yes": 1
+  },
+  {
+   "o": "Kosmonosy",
+   "n": 19,
+   "unk": 14,
+   "yes": 3,
+   "limited": 2
+  },
+  {
+   "o": "Žďár nad Sázavou",
+   "n": 19,
+   "yes": 15,
+   "limited": 1,
+   "unk": 2,
+   "no": 1
+  },
+  {
+   "o": "Kadaň",
+   "n": 19,
+   "yes": 8,
+   "unk": 11
+  },
+  {
+   "o": "Aš",
+   "n": 18,
+   "yes": 2,
+   "limited": 1,
+   "unk": 15
+  },
+  {
+   "o": "Broumov",
+   "n": 18,
+   "no": 8,
+   "yes": 8,
+   "limited": 2
+  },
+  {
+   "o": "Chrastava",
+   "n": 18,
+   "yes": 2,
+   "unk": 16
+  },
+  {
+   "o": "Seč",
+   "n": 18,
+   "limited": 6,
+   "no": 9,
+   "yes": 3
+  },
+  {
+   "o": "Horšovský Týn",
+   "n": 18,
+   "yes": 2,
+   "limited": 1,
+   "unk": 15
+  },
+  {
+   "o": "Nepomuk",
+   "n": 18,
+   "yes": 3,
+   "limited": 1,
+   "unk": 14
+  },
+  {
+   "o": "Roztoky",
+   "n": 18,
+   "yes": 10,
+   "limited": 1,
+   "unk": 4,
+   "no": 3
+  },
+  {
+   "o": "Pacov",
+   "n": 18,
+   "yes": 1,
+   "unk": 17
+  },
+  {
+   "o": "Lovosice",
+   "n": 18,
+   "limited": 2,
+   "yes": 3,
+   "unk": 13
+  },
+  {
+   "o": "Hluboká nad Vltavou",
+   "n": 17,
+   "yes": 11,
+   "limited": 3,
+   "unk": 2,
+   "no": 1
+  },
+  {
+   "o": "Lipno nad Vltavou",
+   "n": 17,
+   "limited": 2,
+   "yes": 14,
+   "no": 1
+  },
+  {
+   "o": "Nový Bydžov",
+   "n": 17,
+   "yes": 1,
+   "unk": 16
+  },
+  {
+   "o": "Vrchlabí",
+   "n": 17,
+   "yes": 10,
+   "no": 2,
+   "unk": 2,
+   "limited": 3
+  },
+  {
+   "o": "Jilemnice",
+   "n": 17,
+   "yes": 2,
+   "limited": 1,
+   "unk": 14
+  },
+  {
+   "o": "Jeseník",
+   "n": 17,
+   "no": 4,
+   "yes": 9,
+   "limited": 3,
+   "unk": 1
+  },
+  {
+   "o": "Blovice",
+   "n": 17,
+   "yes": 3,
+   "limited": 3,
+   "unk": 11
+  },
+  {
+   "o": "Nýrsko",
+   "n": 17,
+   "yes": 2,
+   "no": 2,
+   "unk": 13
+  },
+  {
+   "o": "Zruč nad Sázavou",
+   "n": 17,
+   "unk": 12,
+   "no": 2,
+   "limited": 1,
+   "yes": 2
+  },
+  {
+   "o": "Úvaly",
+   "n": 17,
+   "yes": 4,
+   "no": 2,
+   "limited": 3,
+   "unk": 8
+  },
+  {
+   "o": "České Velenice",
+   "n": 16,
+   "yes": 2,
+   "unk": 13,
+   "limited": 1
+  },
+  {
+   "o": "Bystřice",
+   "n": 16,
+   "yes": 2,
+   "unk": 13,
+   "limited": 1
+  },
+  {
+   "o": "Heřmanův Městec",
+   "n": 16,
+   "yes": 8,
+   "no": 1,
+   "unk": 7
+  },
+  {
+   "o": "Nové Strašecí",
+   "n": 16,
+   "yes": 3,
+   "limited": 1,
+   "unk": 12
+  },
+  {
+   "o": "Stochov",
+   "n": 16,
+   "unk": 12,
+   "yes": 3,
+   "limited": 1
+  },
+  {
+   "o": "Čestlice",
+   "n": 16,
+   "yes": 7,
+   "unk": 9
+  },
+  {
+   "o": "Ledeč nad Sázavou",
+   "n": 16,
+   "no": 1,
+   "yes": 5,
+   "unk": 9,
+   "limited": 1
+  },
+  {
+   "o": "Rumburk",
+   "n": 16,
+   "yes": 7,
+   "unk": 7,
+   "limited": 1,
+   "no": 1
+  },
+  {
+   "o": "Varnsdorf",
+   "n": 16,
+   "no": 1,
+   "yes": 8,
+   "unk": 7
+  },
+  {
+   "o": "Šluknov",
+   "n": 16,
+   "no": 1,
+   "limited": 4,
+   "unk": 8,
+   "yes": 3
+  },
+  {
+   "o": "Ivančice",
+   "n": 15,
+   "yes": 10,
+   "no": 3,
+   "limited": 1,
+   "unk": 1
+  },
+  {
+   "o": "Volyně",
+   "n": 15,
+   "unk": 13,
+   "yes": 1,
+   "limited": 1
+  },
+  {
+   "o": "Chlumec nad Cidlinou",
+   "n": 15,
+   "yes": 1,
+   "unk": 13,
+   "limited": 1
+  },
+  {
+   "o": "Kostelec nad Orlicí",
+   "n": 15,
+   "yes": 5,
+   "limited": 1,
+   "unk": 8,
+   "no": 1
+  },
+  {
+   "o": "Cvikov",
+   "n": 15,
+   "no": 2,
+   "limited": 2,
+   "yes": 2,
+   "unk": 9
+  },
+  {
+   "o": "Bohumín",
+   "n": 15,
+   "no": 2,
+   "yes": 7,
+   "unk": 6
+  },
+  {
+   "o": "Rožnov pod Radhoštěm",
+   "n": 15,
+   "yes": 9,
+   "unk": 5,
+   "limited": 1
+  },
+  {
+   "o": "Podbořany",
+   "n": 15,
+   "no": 2,
+   "unk": 12,
+   "yes": 1
+  },
+  {
+   "o": "Kuřim",
+   "n": 14,
+   "no": 1,
+   "yes": 10,
+   "unk": 3
+  },
+  {
+   "o": "Slavkov u Brna",
+   "n": 14,
+   "no": 3,
+   "limited": 3,
+   "yes": 5,
+   "unk": 3
+  },
+  {
+   "o": "Horní Planá",
+   "n": 14,
+   "limited": 2,
+   "yes": 5,
+   "no": 3,
+   "unk": 4
+  },
+  {
+   "o": "Střítež",
+   "n": 14,
+   "yes": 8,
+   "unk": 4,
+   "limited": 2
+  },
+  {
+   "o": "Jáchymov",
+   "n": 14,
+   "yes": 5,
+   "no": 6,
+   "limited": 1,
+   "unk": 2
+  },
+  {
+   "o": "Hořice",
+   "n": 14,
+   "yes": 3,
+   "unk": 9,
+   "limited": 1,
+   "no": 1
+  },
+  {
+   "o": "Nechanice",
+   "n": 14,
+   "limited": 3,
+   "unk": 10,
+   "yes": 1
+  },
+  {
+   "o": "Třebechovice pod Orebem",
+   "n": 14,
+   "limited": 2,
+   "unk": 7,
+   "yes": 4,
+   "no": 1
+  },
+  {
+   "o": "Frenštát pod Radhoštěm",
+   "n": 14,
+   "yes": 9,
+   "no": 4,
+   "unk": 1
+  },
+  {
+   "o": "Frýdlant nad Ostravicí",
+   "n": 14,
+   "yes": 10,
+   "unk": 4
+  },
+  {
+   "o": "Hlinsko",
+   "n": 14,
+   "yes": 5,
+   "limited": 1,
+   "unk": 8
+  },
+  {
+   "o": "Stod",
+   "n": 14,
+   "unk": 9,
+   "yes": 3,
+   "limited": 2
+  },
+  {
+   "o": "Dolní Břežany",
+   "n": 14,
+   "yes": 2,
+   "unk": 11,
+   "no": 1
+  },
+  {
+   "o": "Sedlčany",
+   "n": 14,
+   "yes": 6,
+   "unk": 8
+  },
+  {
+   "o": "Sázava",
+   "n": 14,
+   "unk": 9,
+   "yes": 4,
+   "limited": 1
+  },
+  {
+   "o": "Telč",
+   "n": 14,
+   "unk": 1,
+   "yes": 6,
+   "limited": 5,
+   "no": 2
+  },
+  {
+   "o": "Uherský Brod",
+   "n": 14,
+   "yes": 10,
+   "unk": 2,
+   "no": 2
+  },
+  {
+   "o": "Valašské Klobouky",
+   "n": 14,
+   "no": 2,
+   "yes": 10,
+   "unk": 1,
+   "limited": 1
+  },
+  {
+   "o": "Bílina",
+   "n": 14,
+   "yes": 6,
+   "unk": 7,
+   "limited": 1
+  },
+  {
+   "o": "Hřensko",
+   "n": 14,
+   "no": 10,
+   "yes": 2,
+   "limited": 2
+  },
+  {
+   "o": "Bučovice",
+   "n": 13,
+   "yes": 4,
+   "no": 3,
+   "unk": 6
+  },
+  {
+   "o": "Jedovnice",
+   "n": 13,
+   "limited": 1,
+   "no": 4,
+   "unk": 6,
+   "yes": 2
+  },
+  {
+   "o": "Lednice",
+   "n": 13,
+   "yes": 8,
+   "no": 3,
+   "limited": 2
+  },
+  {
+   "o": "Veselí nad Moravou",
+   "n": 13,
+   "yes": 5,
+   "unk": 8
+  },
+  {
+   "o": "Bechyně",
+   "n": 13,
+   "yes": 4,
+   "limited": 2,
+   "no": 2,
+   "unk": 5
+  },
+  {
+   "o": "Protivín",
+   "n": 13,
+   "no": 1,
+   "unk": 11,
+   "yes": 1
+  },
+  {
+   "o": "Slavonice",
+   "n": 13,
+   "no": 1,
+   "yes": 2,
+   "unk": 9,
+   "limited": 1
+  },
+  {
+   "o": "Dvůr Králové nad Labem",
+   "n": 13,
+   "yes": 10,
+   "unk": 2,
+   "limited": 1
+  },
+  {
+   "o": "Jaroměř",
+   "n": 13,
+   "yes": 4,
+   "unk": 9
+  },
+  {
+   "o": "Pec pod Sněžkou",
+   "n": 13,
+   "no": 10,
+   "yes": 3
+  },
+  {
+   "o": "Kravaře",
+   "n": 13,
+   "limited": 1,
+   "yes": 3,
+   "unk": 9
+  },
+  {
+   "o": "Smržovka",
+   "n": 13,
+   "no": 4,
+   "yes": 2,
+   "limited": 3,
+   "unk": 4
+  },
+  {
+   "o": "Karviná",
+   "n": 13,
+   "yes": 7,
+   "limited": 1,
+   "unk": 5
+  },
+  {
+   "o": "Ostravice",
+   "n": 13,
+   "yes": 7,
+   "no": 4,
+   "limited": 2
+  },
+  {
+   "o": "Staré Město",
+   "n": 13,
+   "limited": 5,
+   "yes": 7,
+   "no": 1
+  },
+  {
+   "o": "Český Těšín",
+   "n": 13,
+   "yes": 5,
+   "no": 6,
+   "limited": 2
+  },
+  {
+   "o": "Žamberk",
+   "n": 13,
+   "limited": 3,
+   "yes": 6,
+   "no": 3,
+   "unk": 1
+  },
+  {
+   "o": "Ejpovice",
+   "n": 13,
+   "no": 6,
+   "unk": 7
+  },
+  {
+   "o": "Kladruby",
+   "n": 13,
+   "limited": 1,
+   "yes": 3,
+   "unk": 9
+  },
+  {
+   "o": "Rudná",
+   "n": 13,
+   "unk": 12,
+   "yes": 1
+  },
+  {
+   "o": "Černošice",
+   "n": 13,
+   "yes": 3,
+   "unk": 7,
+   "limited": 2,
+   "no": 1
+  },
+  {
+   "o": "Náměšť nad Oslavou",
+   "n": 13,
+   "no": 3,
+   "yes": 4,
+   "unk": 5,
+   "limited": 1
+  },
+  {
+   "o": "Otrokovice",
+   "n": 13,
+   "yes": 4,
+   "unk": 7,
+   "no": 1,
+   "limited": 1
+  },
+  {
+   "o": "Česká Kamenice",
+   "n": 13,
+   "limited": 3,
+   "yes": 4,
+   "no": 1,
+   "unk": 5
+  },
+  {
+   "o": "Boskovice",
+   "n": 12,
+   "limited": 2,
+   "yes": 5,
+   "no": 3,
+   "unk": 2
+  },
+  {
+   "o": "Hrádek",
+   "n": 12,
+   "yes": 4,
+   "no": 3,
+   "limited": 1,
+   "unk": 4
+  },
+  {
+   "o": "Hustopeče",
+   "n": 12,
+   "limited": 1,
+   "yes": 6,
+   "unk": 4,
+   "no": 1
+  },
+  {
+   "o": "Volary",
+   "n": 12,
+   "yes": 4,
+   "no": 4,
+   "unk": 4
+  },
+  {
+   "o": "Černá v Pošumaví",
+   "n": 12,
+   "limited": 5,
+   "yes": 4,
+   "no": 3
+  },
+  {
+   "o": "Lázně Bělohrad",
+   "n": 12,
+   "yes": 3,
+   "unk": 9
+  },
+  {
+   "o": "Špindlerův Mlýn",
+   "n": 12,
+   "yes": 3,
+   "no": 4,
+   "limited": 5
+  },
+  {
+   "o": "Hrádek nad Nisou",
+   "n": 12,
+   "yes": 2,
+   "limited": 1,
+   "unk": 9
+  },
+  {
+   "o": "Orlová",
+   "n": 12,
+   "limited": 1,
+   "yes": 1,
+   "unk": 10
+  },
+  {
+   "o": "Zábřeh",
+   "n": 12,
+   "unk": 7,
+   "yes": 5
+  },
+  {
+   "o": "Litomyšl",
+   "n": 12,
+   "yes": 4,
+   "limited": 3,
+   "unk": 3,
+   "no": 2
+  },
+  {
+   "o": "Svitavy",
+   "n": 12,
+   "yes": 4,
+   "unk": 6,
+   "no": 1,
+   "limited": 1
+  },
+  {
+   "o": "Třemošnice",
+   "n": 12,
+   "yes": 1,
+   "unk": 8,
+   "limited": 1,
+   "no": 2
+  },
+  {
+   "o": "Velké Meziříčí",
+   "n": 12,
+   "yes": 8,
+   "unk": 4
+  },
+  {
+   "o": "Litvínov",
+   "n": 12,
+   "yes": 7,
+   "no": 3,
+   "unk": 2
+  },
+  {
+   "o": "Petrovice",
+   "n": 11,
+   "yes": 2,
+   "unk": 4,
+   "limited": 5
+  },
+  {
+   "o": "Rajhrad",
+   "n": 11,
+   "unk": 9,
+   "limited": 2
+  },
+  {
+   "o": "Újezd u Brna",
+   "n": 11,
+   "yes": 3,
+   "limited": 4,
+   "no": 4
+  },
+  {
+   "o": "Židlochovice",
+   "n": 11,
+   "no": 4,
+   "unk": 1,
+   "yes": 4,
+   "limited": 2
+  },
+  {
+   "o": "Lišov",
+   "n": 11,
+   "yes": 8,
+   "no": 2,
+   "unk": 1
+  },
+  {
+   "o": "Sezimovo Ústí",
+   "n": 11,
+   "unk": 10,
+   "yes": 1
+  },
+  {
+   "o": "Adršpach",
+   "n": 11,
+   "limited": 1,
+   "no": 7,
+   "unk": 1,
+   "yes": 2
+  },
+  {
+   "o": "Krnov",
+   "n": 11,
+   "yes": 6,
+   "unk": 4,
+   "no": 1
+  },
+  {
+   "o": "Uničov",
+   "n": 11,
+   "yes": 4,
+   "no": 1,
+   "unk": 6
+  },
+  {
+   "o": "Holice",
+   "n": 11,
+   "yes": 1,
+   "unk": 9,
+   "no": 1
+  },
+  {
+   "o": "Volduchy",
+   "n": 11,
+   "unk": 8,
+   "yes": 1,
+   "limited": 2
+  },
+  {
+   "o": "Březno",
+   "n": 11,
+   "limited": 2,
+   "no": 1,
+   "unk": 8
+  },
+  {
+   "o": "Dobříš",
+   "n": 11,
+   "yes": 3,
+   "limited": 1,
+   "unk": 6,
+   "no": 1
+  },
+  {
+   "o": "Klecany",
+   "n": 11,
+   "yes": 5,
+   "no": 2,
+   "unk": 4
+  },
+  {
+   "o": "Neveklov",
+   "n": 11,
+   "limited": 2,
+   "yes": 1,
+   "unk": 6,
+   "no": 2
+  },
+  {
+   "o": "Pečky",
+   "n": 11,
+   "unk": 10,
+   "yes": 1
+  },
+  {
+   "o": "Bystřice nad Pernštejnem",
+   "n": 11,
+   "yes": 6,
+   "limited": 3,
+   "unk": 2
+  },
+  {
+   "o": "Chotěboř",
+   "n": 11,
+   "yes": 4,
+   "unk": 6,
+   "limited": 1
+  },
+  {
+   "o": "Vsetín",
+   "n": 11,
+   "yes": 5,
+   "unk": 4,
+   "no": 1,
+   "limited": 1
+  },
+  {
+   "o": "Dubí",
+   "n": 11,
+   "no": 3,
+   "yes": 5,
+   "limited": 1,
+   "unk": 2
+  },
+  {
+   "o": "Jetřichovice",
+   "n": 11,
+   "limited": 3,
+   "unk": 1,
+   "no": 7
+  },
+  {
+   "o": "Adamov",
+   "n": 10,
+   "limited": 1,
+   "unk": 3,
+   "no": 5,
+   "yes": 1
+  },
+  {
+   "o": "Rosice",
+   "n": 10,
+   "no": 4,
+   "yes": 5,
+   "unk": 1
+  },
+  {
+   "o": "Rousínov",
+   "n": 10,
+   "yes": 7,
+   "no": 3
+  },
+  {
+   "o": "Planá nad Lužnicí",
+   "n": 10,
+   "yes": 4,
+   "unk": 4,
+   "no": 2
+  },
+  {
+   "o": "Týn nad Vltavou",
+   "n": 10,
+   "yes": 5,
+   "unk": 3,
+   "no": 2
+  },
+  {
+   "o": "Vyšší Brod",
+   "n": 10,
+   "limited": 3,
+   "unk": 1,
+   "yes": 2,
+   "no": 4
+  },
+  {
+   "o": "Skalná",
+   "n": 10,
+   "no": 1,
+   "yes": 3,
+   "unk": 5,
+   "limited": 1
+  },
+  {
+   "o": "Sokolov",
+   "n": 10,
+   "no": 2,
+   "yes": 6,
+   "unk": 2
+  },
+  {
+   "o": "Janské Lázně",
+   "n": 10,
+   "yes": 6,
+   "no": 3,
+   "limited": 1
+  },
+  {
+   "o": "Dolní Lhota",
+   "n": 10,
+   "limited": 4,
+   "no": 5,
+   "yes": 1
+  },
+  {
+   "o": "Hradec nad Moravicí",
+   "n": 10,
+   "no": 2,
+   "yes": 3,
+   "unk": 4,
+   "limited": 1
+  },
+  {
+   "o": "Nošovice",
+   "n": 10,
+   "limited": 1,
+   "unk": 9
+  },
+  {
+   "o": "Nýdek",
+   "n": 10,
+   "no": 4,
+   "limited": 2,
+   "yes": 3,
+   "unk": 1
+  },
+  {
+   "o": "Chodová Planá",
+   "n": 10,
+   "limited": 1,
+   "unk": 6,
+   "yes": 1,
+   "no": 2
+  },
+  {
+   "o": "Kařez",
+   "n": 10,
+   "no": 2,
+   "unk": 6,
+   "yes": 2
+  },
+  {
+   "o": "Stříbro",
+   "n": 10,
+   "no": 1,
+   "unk": 7,
+   "yes": 2
+  },
+  {
+   "o": "Mníšek pod Brdy",
+   "n": 10,
+   "limited": 2,
+   "yes": 2,
+   "unk": 6
+  },
+  {
+   "o": "Unhošť",
+   "n": 10,
+   "yes": 2,
+   "unk": 8
+  },
+  {
+   "o": "Votice",
+   "n": 10,
+   "yes": 2,
+   "unk": 8
+  },
+  {
+   "o": "Český Brod",
+   "n": 10,
+   "yes": 2,
+   "unk": 7,
+   "limited": 1
+  },
+  {
+   "o": "Moravské Budějovice",
+   "n": 10,
+   "yes": 4,
+   "limited": 1,
+   "no": 3,
+   "unk": 2
+  },
+  {
+   "o": "Bílovice nad Svitavou",
+   "n": 9,
+   "limited": 1,
+   "no": 1,
+   "yes": 2,
+   "unk": 5
+  },
+  {
+   "o": "Pozořice",
+   "n": 9,
+   "limited": 3,
+   "unk": 4,
+   "yes": 1,
+   "no": 1
+  },
+  {
+   "o": "Valtice",
+   "n": 9,
+   "yes": 6,
+   "no": 2,
+   "limited": 1
+  },
+  {
+   "o": "Velké Pavlovice",
+   "n": 9,
+   "yes": 4,
+   "limited": 2,
+   "no": 2,
+   "unk": 1
+  },
+  {
+   "o": "Zbýšov",
+   "n": 9,
+   "no": 1,
+   "unk": 6,
+   "limited": 2
+  },
+  {
+   "o": "Chýnov",
+   "n": 9,
+   "yes": 4,
+   "unk": 3,
+   "no": 1,
+   "limited": 1
+  },
+  {
+   "o": "Hrdějovice",
+   "n": 9,
+   "yes": 3,
+   "limited": 1,
+   "unk": 5
+  },
+  {
+   "o": "Kaplice",
+   "n": 9,
+   "yes": 4,
+   "unk": 4,
+   "no": 1
+  },
+  {
+   "o": "Kardašova Řečice",
+   "n": 9,
+   "yes": 2,
+   "limited": 1,
+   "unk": 6
+  },
+  {
+   "o": "Kunžak",
+   "n": 9,
+   "no": 5,
+   "yes": 2,
+   "limited": 2
+  },
+  {
+   "o": "Netolice",
+   "n": 9,
+   "yes": 2,
+   "limited": 2,
+   "unk": 5
+  },
+  {
+   "o": "Temelín",
+   "n": 9,
+   "no": 1,
+   "yes": 1,
+   "unk": 5,
+   "limited": 2
+  },
+  {
+   "o": "Bečov nad Teplou",
+   "n": 9,
+   "limited": 3,
+   "unk": 3,
+   "yes": 1,
+   "no": 2
+  },
+  {
+   "o": "Horní Slavkov",
+   "n": 9,
+   "yes": 1,
+   "unk": 8
+  },
+  {
+   "o": "Kraslice",
+   "n": 9,
+   "yes": 5,
+   "limited": 1,
+   "no": 1,
+   "unk": 2
+  },
+  {
+   "o": "Kynšperk nad Ohří",
+   "n": 9,
+   "limited": 1,
+   "unk": 8
+  },
+  {
+   "o": "Teplá",
+   "n": 9,
+   "unk": 6,
+   "limited": 3
+  },
+  {
+   "o": "Toužim",
+   "n": 9,
+   "unk": 7,
+   "yes": 1,
+   "limited": 1
+  },
+  {
+   "o": "Železný Brod",
+   "n": 9,
+   "unk": 8,
+   "limited": 1
+  },
+  {
+   "o": "Hukvaldy",
+   "n": 9,
+   "yes": 1,
+   "limited": 1,
+   "unk": 7
+  },
+  {
+   "o": "Vřesina",
+   "n": 9,
+   "no": 5,
+   "yes": 1,
+   "limited": 3
+  },
+  {
+   "o": "Štramberk",
+   "n": 9,
+   "unk": 4,
+   "yes": 2,
+   "no": 2,
+   "limited": 1
+  },
+  {
+   "o": "Litovel",
+   "n": 9,
+   "yes": 5,
+   "unk": 2,
+   "no": 2
+  },
+  {
+   "o": "Zlaté Hory",
+   "n": 9,
+   "no": 2,
+   "limited": 3,
+   "unk": 1,
+   "yes": 3
+  },
+  {
+   "o": "Lanškroun",
+   "n": 9,
+   "yes": 6,
+   "no": 1,
+   "limited": 1,
+   "unk": 1
+  },
+  {
+   "o": "Moravská Třebová",
+   "n": 9,
+   "yes": 4,
+   "limited": 2,
+   "unk": 1,
+   "no": 2
+  },
+  {
+   "o": "Horní Bříza",
+   "n": 9,
+   "yes": 1,
+   "unk": 8
+  },
+  {
+   "o": "Kolinec",
+   "n": 9,
+   "limited": 2,
+   "unk": 7
+  },
+  {
+   "o": "Kralovice",
+   "n": 9,
+   "yes": 1,
+   "unk": 8
+  },
+  {
+   "o": "Hostivice",
+   "n": 9,
+   "yes": 6,
+   "unk": 3
+  },
+  {
+   "o": "Jílové u Prahy",
+   "n": 9,
+   "yes": 3,
+   "unk": 6
+  },
+  {
+   "o": "Průhonice",
+   "n": 9,
+   "unk": 6,
+   "yes": 1,
+   "limited": 2
+  },
+  {
+   "o": "Čerčany",
+   "n": 9,
+   "unk": 8,
+   "limited": 1
+  },
+  {
+   "o": "Žirovnice",
+   "n": 9,
+   "unk": 8,
+   "limited": 1
+  },
+  {
+   "o": "Valašské Meziříčí",
+   "n": 9,
+   "yes": 7,
+   "unk": 1,
+   "limited": 1
+  },
+  {
+   "o": "Bzenec",
+   "n": 8,
+   "limited": 2,
+   "yes": 2,
+   "no": 2,
+   "unk": 2
+  },
+  {
+   "o": "Mikulovice",
+   "n": 8,
+   "limited": 5,
+   "yes": 1,
+   "unk": 1,
+   "no": 1
+  },
+  {
+   "o": "Moravany",
+   "n": 8,
+   "limited": 1,
+   "yes": 5,
+   "unk": 2
+  },
+  {
+   "o": "Přibyslavice",
+   "n": 8,
+   "no": 1,
+   "unk": 5,
+   "yes": 2
+  },
+  {
+   "o": "Ždánice",
+   "n": 8,
+   "no": 1,
+   "yes": 6,
+   "limited": 1
+  },
+  {
+   "o": "Březnice",
+   "n": 8,
+   "no": 1,
+   "limited": 2,
+   "unk": 5
+  },
+  {
+   "o": "Kvilda",
+   "n": 8,
+   "no": 2,
+   "limited": 2,
+   "yes": 3,
+   "unk": 1
+  },
+  {
+   "o": "Nová Pec",
+   "n": 8,
+   "limited": 1,
+   "no": 4,
+   "yes": 3
+  },
+  {
+   "o": "Nové Hrady",
+   "n": 8,
+   "limited": 4,
+   "unk": 4
+  },
+  {
+   "o": "Vodňany",
+   "n": 8,
+   "unk": 6,
+   "no": 1,
+   "yes": 1
+  },
+  {
+   "o": "Čimelice",
+   "n": 8,
+   "unk": 7,
+   "yes": 1
+  },
+  {
+   "o": "Loket",
+   "n": 8,
+   "no": 1,
+   "limited": 2,
+   "unk": 3,
+   "yes": 2
+  },
+  {
+   "o": "Nejdek",
+   "n": 8,
+   "yes": 2,
+   "limited": 1,
+   "unk": 5
+  },
+  {
+   "o": "Bedřichov",
+   "n": 8,
+   "yes": 6,
+   "limited": 1,
+   "no": 1
+  },
+  {
+   "o": "Hejnice",
+   "n": 8,
+   "limited": 1,
+   "no": 6,
+   "unk": 1
+  },
+  {
+   "o": "Jablonec nad Jizerou",
+   "n": 8,
+   "unk": 2,
+   "limited": 4,
+   "yes": 1,
+   "no": 1
+  },
+  {
+   "o": "Bolatice",
+   "n": 8,
+   "yes": 1,
+   "unk": 6,
+   "no": 1
+  },
+  {
+   "o": "Mosty u Jablunkova",
+   "n": 8,
+   "yes": 3,
+   "limited": 1,
+   "unk": 4
+  },
+  {
+   "o": "Mohelnice",
+   "n": 8,
+   "no": 1,
+   "yes": 4,
+   "unk": 3
+  },
+  {
+   "o": "Plumlov",
+   "n": 8,
+   "unk": 1,
+   "limited": 2,
+   "no": 4,
+   "yes": 1
+  },
+  {
+   "o": "Velké Losiny",
+   "n": 8,
+   "unk": 2,
+   "yes": 2,
+   "no": 3,
+   "limited": 1
+  },
+  {
+   "o": "Šternberk",
+   "n": 8,
+   "limited": 4,
+   "unk": 1,
+   "yes": 2,
+   "no": 1
+  },
+  {
+   "o": "Bor",
+   "n": 8,
+   "yes": 3,
+   "unk": 3,
+   "no": 2
+  },
+  {
+   "o": "Břasy",
+   "n": 8,
+   "yes": 1,
+   "unk": 5,
+   "no": 2
+  },
+  {
+   "o": "Osek",
+   "n": 8,
+   "no": 2,
+   "limited": 2,
+   "yes": 4
+  },
+  {
+   "o": "Pačejov",
+   "n": 8,
+   "unk": 7,
+   "limited": 1
+  },
+  {
+   "o": "Srní",
+   "n": 8,
+   "yes": 4,
+   "unk": 2,
+   "limited": 1,
+   "no": 1
+  },
+  {
+   "o": "Bělá pod Bezdězem",
+   "n": 8,
+   "limited": 1,
+   "yes": 3,
+   "unk": 4
+  },
+  {
+   "o": "Dobřichovice",
+   "n": 8,
+   "yes": 3,
+   "limited": 2,
+   "unk": 3
+  },
+  {
+   "o": "Karlštejn",
+   "n": 8,
+   "limited": 4,
+   "yes": 2,
+   "no": 2
+  },
+  {
+   "o": "Lány",
+   "n": 8,
+   "limited": 3,
+   "unk": 3,
+   "yes": 2
+  },
+  {
+   "o": "Rožmitál pod Třemšínem",
+   "n": 8,
+   "no": 1,
+   "unk": 4,
+   "yes": 1,
+   "limited": 2
+  },
+  {
+   "o": "Veltrusy",
+   "n": 8,
+   "yes": 5,
+   "limited": 2,
+   "no": 1
+  },
+  {
+   "o": "Šestajovice",
+   "n": 8,
+   "unk": 5,
+   "no": 1,
+   "limited": 1,
+   "yes": 1
+  },
+  {
+   "o": "Herálec",
+   "n": 8,
+   "no": 2,
+   "yes": 2,
+   "limited": 1,
+   "unk": 3
+  },
+  {
+   "o": "Okříšky",
+   "n": 8,
+   "yes": 3,
+   "limited": 1,
+   "no": 3,
+   "unk": 1
+  },
+  {
+   "o": "Hulín",
+   "n": 8,
+   "yes": 7,
+   "unk": 1
+  },
+  {
+   "o": "Hora Svatého Šebestiána",
+   "n": 8,
+   "yes": 2,
+   "unk": 6
+  },
+  {
+   "o": "Jirkov",
+   "n": 8,
+   "limited": 1,
+   "unk": 6,
+   "yes": 1
+  },
+  {
+   "o": "Kovářská",
+   "n": 8,
+   "limited": 1,
+   "no": 4,
+   "unk": 2,
+   "yes": 1
+  },
+  {
+   "o": "Chvalovice",
+   "n": 7,
+   "limited": 1,
+   "yes": 6
+  },
+  {
+   "o": "Drásov",
+   "n": 7,
+   "limited": 1,
+   "yes": 3,
+   "unk": 3
+  },
+  {
+   "o": "Lelekovice",
+   "n": 7,
+   "limited": 1,
+   "no": 2,
+   "unk": 4
+  },
+  {
+   "o": "Nová Ves",
+   "n": 7,
+   "yes": 2,
+   "unk": 2,
+   "limited": 3
+  },
+  {
+   "o": "Ochoz u Brna",
+   "n": 7,
+   "yes": 1,
+   "unk": 6
+  },
+  {
+   "o": "Oslavany",
+   "n": 7,
+   "yes": 2,
+   "limited": 1,
+   "unk": 4
+  },
+  {
+   "o": "Pohořelice",
+   "n": 7,
+   "unk": 5,
+   "yes": 2
+  },
+  {
+   "o": "Rájec-Jestřebí",
+   "n": 7,
+   "no": 3,
+   "unk": 2,
+   "yes": 1,
+   "limited": 1
+  },
+  {
+   "o": "Vranov nad Dyjí",
+   "n": 7,
+   "yes": 3,
+   "unk": 1,
+   "no": 1,
+   "limited": 2
+  },
+  {
+   "o": "Čejkovice",
+   "n": 7,
+   "limited": 1,
+   "unk": 4,
+   "yes": 2
+  },
+  {
+   "o": "Mladá Vožice",
+   "n": 7,
+   "yes": 1,
+   "unk": 6
+  },
+  {
+   "o": "Nová Bystřice",
+   "n": 7,
+   "yes": 2,
+   "no": 1,
+   "limited": 1,
+   "unk": 3
+  },
+  {
+   "o": "Strmilov",
+   "n": 7,
+   "yes": 3,
+   "limited": 1,
+   "no": 3
+  },
+  {
+   "o": "Suchdol nad Lužnicí",
+   "n": 7,
+   "unk": 4,
+   "yes": 3
+  },
+  {
+   "o": "Vlkov",
+   "n": 7,
+   "yes": 3,
+   "no": 4
+  },
+  {
+   "o": "Ševětín",
+   "n": 7,
+   "unk": 6,
+   "limited": 1
+  },
+  {
+   "o": "Boží Dar",
+   "n": 7,
+   "yes": 2,
+   "unk": 4,
+   "no": 1
+  },
+  {
+   "o": "Březová",
+   "n": 7,
+   "no": 3,
+   "limited": 2,
+   "unk": 1,
+   "yes": 1
+  },
+  {
+   "o": "Hostinné",
+   "n": 7,
+   "no": 2,
+   "yes": 2,
+   "limited": 1,
+   "unk": 2
+  },
+  {
+   "o": "Suchý Důl",
+   "n": 7,
+   "yes": 2,
+   "no": 5
+  },
+  {
+   "o": "Říčky v Orlických horách",
+   "n": 7,
+   "yes": 5,
+   "limited": 1,
+   "no": 1
+  },
+  {
+   "o": "Benecko",
+   "n": 7,
+   "yes": 3,
+   "no": 4
+  },
+  {
+   "o": "Jablonné v Podještědí",
+   "n": 7,
+   "yes": 3,
+   "unk": 2,
+   "no": 2
+  },
+  {
+   "o": "Jenišovice",
+   "n": 7,
+   "limited": 2,
+   "no": 3,
+   "yes": 2
+  },
+  {
+   "o": "Dolní Benešov",
+   "n": 7,
+   "limited": 1,
+   "unk": 6
+  },
+  {
+   "o": "Čeladná",
+   "n": 7,
+   "yes": 3,
+   "no": 1,
+   "unk": 3
+  },
+  {
+   "o": "Šilheřovice",
+   "n": 7,
+   "yes": 3,
+   "no": 3,
+   "limited": 1
+  },
+  {
+   "o": "Lipová",
+   "n": 7,
+   "no": 5,
+   "yes": 1,
+   "limited": 1
+  },
+  {
+   "o": "Lipová-lázně",
+   "n": 7,
+   "limited": 4,
+   "yes": 2,
+   "no": 1
+  },
+  {
+   "o": "Loštice",
+   "n": 7,
+   "yes": 5,
+   "limited": 2
+  },
+  {
+   "o": "Troubky",
+   "n": 7,
+   "unk": 4,
+   "limited": 1,
+   "no": 2
+  },
+  {
+   "o": "Týn nad Bečvou",
+   "n": 7,
+   "limited": 1,
+   "no": 1,
+   "unk": 3,
+   "yes": 2
+  },
+  {
+   "o": "Chvaletice",
+   "n": 7,
+   "yes": 1,
+   "unk": 6
+  },
+  {
+   "o": "Dolní Morava",
+   "n": 7,
+   "no": 2,
+   "limited": 2,
+   "yes": 3
+  },
+  {
+   "o": "Jevíčko",
+   "n": 7,
+   "yes": 1,
+   "limited": 1,
+   "unk": 5
+  },
+  {
+   "o": "Lázně Bohdaneč",
+   "n": 7,
+   "yes": 2,
+   "unk": 5
+  },
+  {
+   "o": "Rabí",
+   "n": 7,
+   "limited": 2,
+   "unk": 3,
+   "no": 2
+  },
+  {
+   "o": "Tlučná",
+   "n": 7,
+   "unk": 6,
+   "limited": 1
+  },
+  {
+   "o": "Česká Kubice",
+   "n": 7,
+   "yes": 2,
+   "no": 3,
+   "unk": 2
+  },
+  {
+   "o": "Křivoklát",
+   "n": 7,
+   "yes": 3,
+   "limited": 2,
+   "no": 1,
+   "unk": 1
+  },
+  {
+   "o": "Lety",
+   "n": 7,
+   "yes": 2,
+   "unk": 5
+  },
+  {
+   "o": "Přerov nad Labem",
+   "n": 7,
+   "yes": 5,
+   "limited": 2
+  }
+ ],
+ "kraje": {
+  "": 23,
+  "Hlavní město Praha": 7372,
+  "Jihomoravský": 2841,
+  "Jihočeský": 2075,
+  "Karlovarský": 613,
+  "Královéhradecký": 1088,
+  "Liberecký": 859,
+  "Moravskoslezský": 3361,
+  "Olomoucký": 1131,
+  "Pardubický": 925,
+  "Plzeňský": 2604,
+  "Středočeský": 2741,
+  "Vysočina": 1076,
+  "Zlínský": 568,
+  "Ústecký": 1136
+ },
+ "sources": {
+  "osm": 24393,
+  "mapybezbarier": 240,
+  "brno": 287,
+  "praha_ipr": 2192,
+  "praha_wc": 458,
+  "ostrava": 2060,
+  "research": 1009,
+  "research_records": 1020,
+  "research_new": 551,
+  "research_measured": 159,
+  "photos": 1318
+ },
+ "measured": 4903,
+ "open_data": {
+  "mapybezbarier": {
+   "name": "Mapy bez bariér",
+   "attribution": "Mapy bez bariér a přispěvatelé",
+   "license": "ODbL / CC BY-SA 4.0",
+   "url": "https://mapybezbarier.cz/otevrena-data",
+   "added": 182,
+   "matched": 58,
+   "structured": 5
+  },
+  "brno": {
+   "name": "Brno – Mapa přístupnosti budov",
+   "attribution": "Statutární město Brno",
+   "license": "CC BY 4.0",
+   "url": "https://data.brno.cz/datasets/cca344ea2fb24eecb4e449c5970fd401_0/about",
+   "added": 58,
+   "matched": 229
+  },
+  "praha_ipr": {
+   "name": "IPR Praha / TSK – vyhrazená stání ZTP",
+   "attribution": "IPR Praha, TSK hl. m. Prahy",
+   "license": "CC BY 4.0",
+   "url": "https://mp.iprpraha.cz/arcgis/rest/services/Hosted/DOP_CUR_DOP_TSK_STANI_ZTP_B/FeatureServer/0",
+   "added": 965,
+   "matched": 1227
+  },
+  "praha_wc": {
+   "name": "IPR Praha – veřejné toalety",
+   "attribution": "IPR Praha",
+   "license": "CC BY",
+   "url": "https://mp.iprpraha.cz/arcgis/rest/services/Hosted/FSV_CUR_FSV_VEREJNAWC_B/FeatureServer/0",
+   "license_url": "https://mp.iprpraha.cz/portal/sharing/rest/content/items/c5ffe5b9940d497f9fbc15725866b587?f=json",
+   "added": 307,
+   "matched": 151
+  },
+  "ostrava": {
+   "name": "Ostrava – Mapa přístupnosti",
+   "attribution": "datový podklad © Statutární město Ostrava",
+   "license": "CC BY-SA 4.0",
+   "url": "https://mapy.ostrava.cz/mapove-sluzby/mapa-pristupnosti/",
+   "license_url": "https://mapy.ostrava.cz/opendata-info",
+   "added": 1957,
+   "matched": 103
+  }
+ }
+}

@@ -1,0 +1,181 @@
+[
+{
+"i": "w52457718",
+"n": "Růžek",
+"s": "Hotel",
+"o": "Hranice",
+"w": "no",
+"la": 49.546545,
+"lo": 17.734033
+},
+{
+"i": "n2434367110",
+"n": "Penzion Laguna",
+"s": "Penzion",
+"o": "Jeseník",
+"web": "http://www.laguna.jeseniky.com/",
+"w": "yes",
+"la": 50.227451,
+"lo": 17.197349
+},
+{
+"i": "w116931298",
+"n": "Autocamping Bobrovník, Lipová-lázně",
+"s": "Kemp",
+"o": "Lipová-lázně",
+"web": "https://www.bobrovnik.cz/",
+"w": "limited",
+"la": 50.224654,
+"lo": 17.17327
+},
+{
+"i": "n4833291700",
+"n": "Chata Červenohorské sedlo",
+"s": "Penzion",
+"o": "Loučná nad Desnou",
+"web": "https://www.chatacervenohorskesedlo.cz/",
+"w": "no",
+"la": 50.125253,
+"lo": 17.152504
+},
+{
+"i": "n5866015521",
+"n": "Penzion Trombly",
+"s": "Penzion",
+"o": "Loučná nad Desnou",
+"w": "yes",
+"la": 50.094056,
+"lo": 17.095924
+},
+{
+"i": "n12095461149",
+"n": "Mezi pařezy",
+"s": "Apartmány",
+"o": "Mikulovice",
+"web": "https://www.meziparezy.cz",
+"w": "limited",
+"la": 50.280292,
+"lo": 17.312773
+},
+{
+"i": "n12095537917",
+"n": "Na samotě u lesa",
+"s": "Apartmány",
+"o": "Mikulovice",
+"web": "https://www.jesenikyresort.com/",
+"w": "limited",
+"la": 50.279883,
+"lo": 17.313367
+},
+{
+"i": "w437969197",
+"n": "MoravaCamp",
+"s": "Kemp",
+"o": "Mohelnice",
+"web": "https://www.moravacamp.cz/",
+"w": "yes",
+"la": 49.783397,
+"lo": 16.909856
+},
+{
+"i": "w1164438160",
+"n": "ABA Apartments",
+"s": "Hotel",
+"o": "Olomouc",
+"web": "https://en.abaapartments.cz/",
+"w": "yes",
+"la": 49.59048,
+"lo": 17.288295
+},
+{
+"i": "w425930822",
+"n": "Krásná Morava",
+"s": "Karavanové stání",
+"o": "Olomouc",
+"w": "yes",
+"la": 49.607882,
+"lo": 17.243504
+},
+{
+"i": "n9595230478",
+"n": "Miss Sophie's Olomouc",
+"s": "Hotel",
+"o": "Olomouc",
+"a": "Denisova 33",
+"web": "https://www.miss-sophies.com/hotel/olomouc/",
+"w": "no",
+"la": 49.595849,
+"lo": 17.255288
+},
+{
+"i": "w89954930",
+"n": "Pension a restaurace Caruso",
+"s": "Penzion",
+"o": "Olomouc",
+"a": "Střední novosadská 200/30",
+"w": "no",
+"la": 49.574497,
+"lo": 17.258112
+},
+{
+"i": "w1101692660",
+"n": "STPL Olomouc",
+"s": "Karavanové stání",
+"o": "Olomouc",
+"a": "U Prachárny",
+"web": "https://www.stpl-olomouc.cz/",
+"w": "yes",
+"la": 49.618935,
+"lo": 17.318812
+},
+{
+"i": "w53227239",
+"n": "Smarthotel Nezvalova Archa",
+"s": "Hotel",
+"o": "Olomouc",
+"a": "Nezvalova 982/3",
+"web": "https://nezvalovaarcha.cz/",
+"w": "yes",
+"la": 49.591848,
+"lo": 17.271972
+},
+{
+"i": "w345596636",
+"n": "Penzion Svatý Martin",
+"s": "Penzion",
+"o": "Ostružná",
+"web": "https://www.skipetrikov.cz/penzion-svaty-martin",
+"w": "limited",
+"la": 50.200966,
+"lo": 17.048274
+},
+{
+"i": "n13966127365",
+"n": "Pension V Centru",
+"s": "Hotel",
+"o": "Prostějov",
+"w": "no",
+"la": 49.471949,
+"lo": 17.113219
+},
+{
+"i": "n1876549954",
+"n": "Sněženka",
+"s": "Hotel",
+"o": "Staré Město",
+"a": "Hynčice pod Sušinou 15",
+"w": "limited",
+"la": 50.157773,
+"lo": 16.903561
+},
+{
+"i": "n796172640",
+"n": "Hotel Koruna",
+"s": "Hotel",
+"o": "Šumperk",
+"web": "https://www.hotel-koruna.com/",
+"w": "no",
+"la": 49.966074,
+"lo": 16.967756
+}
+]

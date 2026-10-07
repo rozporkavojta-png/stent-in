@@ -1,0 +1,235 @@
+{
+ "task": "obce_kralovehradecky",
+ "kraj": "Královéhradecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n296772738",
+   "name": "Magistrát města Hradec Králové",
+   "obec": "Hradec Králové",
+   "address": "Československé armády 408, 502 00 Hradec Králové",
+   "lat": 50.2124869,
+   "lng": 15.836895,
+   "category": "urad",
+   "source_url": "https://www.hradeckralove.org/magistrat-mesta/ds-2157",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle webu města mají všechny budovy, kde sídlí magistrát, zajištěný bezbariérový přístup.",
+    "jine": "Imobilním občanům lze na vrátnici magistrátu zapůjčit invalidní vozík (po předložení OP doprovodu). Magistrát má i další pracoviště (Gayerova kasárna – odbor dopravy; živnostenský úřad)."
+   },
+   "evidence_quote": "Do všech budov, ve kterých sídlí magistrát města, je zajištěn bezbariérový přístup."
+  },
+  {
+   "name": "Městský úřad Trutnov",
+   "obec": "Trutnov",
+   "address": "Slovanské nám. 165, 541 01 Trutnov",
+   "lat": 50.5616963,
+   "lng": 15.9160475,
+   "category": "urad",
+   "source_url": "https://mstary.trutnov.cz/organizace-instituce/kde-je-v-trutnove-euroklic",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "WC na MěÚ Trutnov je podle webu města osazeno Eurozámkem (lze použít Euroklíč).",
+    "jine": "MěÚ je uveden i v seznamu Bezbariérové přístupy na starém webu města https://stary.trutnov.cz/turisticke-informace/bezbarierove-pristupy (bez dalších podrobností)."
+   },
+   "evidence_quote": "WC na MěÚ Trutnov, Slovanské nám. 165, Trutnov"
+  },
+  {
+   "osm_id": "w24641542",
+   "name": "WC na autobusovém nádraží Trutnov",
+   "obec": "Trutnov",
+   "address": "autobusové nádraží, Trutnov",
+   "lat": 50.5646586,
+   "lng": 15.9084308,
+   "category": "wc",
+   "source_url": "https://mstary.trutnov.cz/organizace-instituce/kde-je-v-trutnove-euroklic",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Podle webu města lze na WC na autobusovém nádraží použít Euroklíč (Eurozámek). Přesnou adresu web neuvádí, poloha je nádraží dle Nominatim."
+   },
+   "evidence_quote": "WC na autobusovém nádraží Trutnov"
+  },
+  {
+   "name": "Plošina a WC před UFFO – Společenské centrum Trutnov",
+   "obec": "Trutnov",
+   "address": "Nám. Republiky 999, Trutnov",
+   "lat": 50.5633818,
+   "lng": 15.9103336,
+   "category": "wc",
+   "source_url": "https://mstary.trutnov.cz/organizace-instituce/kde-je-v-trutnove-euroklic",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "WC před UFFO je osazeno Eurozámkem (Euroklíč).",
+    "vytah": "Plošina před UFFO je podle webu města rovněž na Euroklíč."
+   },
+   "evidence_quote": "Plošina a WC před UFFO, Společenským centrem Trutnov"
+  },
+  {
+   "osm_id": "n2604613153",
+   "name": "WC v Hobby marketu OBI Trutnov",
+   "obec": "Trutnov",
+   "address": "Obchodní 134, Trutnov",
+   "lat": 50.5721278,
+   "lng": 15.8913187,
+   "category": "wc",
+   "source_url": "https://mstary.trutnov.cz/organizace-instituce/kde-je-v-trutnove-euroklic",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Web města uvádí WC v OBI mezi místy, kde lze použít Euroklíč."
+   },
+   "evidence_quote": "WC v Hobby marketu OBI Trutnov, Obchodní 134, Trutnov"
+  },
+  {
+   "osm_id": "n656440180",
+   "name": "WC v Hypermarketu Kaufland Trutnov",
+   "obec": "Trutnov",
+   "address": "Horská 647, Trutnov",
+   "lat": 50.5836138,
+   "lng": 15.890605,
+   "category": "wc",
+   "source_url": "https://mstary.trutnov.cz/organizace-instituce/kde-je-v-trutnove-euroklic",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Web města uvádí WC v Kauflandu mezi místy, kde lze použít Euroklíč."
+   },
+   "evidence_quote": "WC v Hypermarketu Kaufland, Horská 647, Trutnov"
+  },
+  {
+   "name": "Veřejné WC na náměstí TGM (u podzemního parkoviště) a OD IT centrum",
+   "obec": "Vrchlabí",
+   "address": "náměstí TGM, Vrchlabí",
+   "lat": 50.6277403,
+   "lng": 15.6100559,
+   "category": "wc",
+   "source_url": "https://www.mestovrchlabi.cz/wc",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "WC na nám. TGM u podzemního parkoviště (po–pá 7–20, so–ne 8–20); jeho bezbariérové WC je přístupné jen v otevírací době pasáže IT centrum. Bezbariérové WC má i obchodní dům IT centrum (po–pá 9–18, so 9–12:30). Euroklíč web nezmiňuje."
+   },
+   "evidence_quote": "vč. bezbariérového WC přístupného v otevírací době obchodní pasáže IT centrum"
+  },
+  {
+   "name": "WC u kiosku dLabe na náplavce",
+   "obec": "Vrchlabí",
+   "address": "Nábřeží Marie Kubátové, Vrchlabí",
+   "lat": 50.6272512,
+   "lng": 15.6128378,
+   "category": "wc",
+   "source_url": "https://www.mestovrchlabi.cz/wc",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Včetně bezbariérového WC; jen v letní sezoně v době provozu kiosku (st–ne 9–19). Po a út 9–19 jen na zavolání (tel. 775 288 758), sdělí se kód k získání klíče. Euroklíč web nezmiňuje."
+   },
+   "evidence_quote": "WC u kiosku dLabe na náplavce ... (vč. bezbariérového WC)"
+  }
+ ],
+ "not_found": [
+  {
+   "name": "Veřejná WC Hradec Králové",
+   "url": "https://www.hradeckralove.org/verejna-wc/os-1433",
+   "reason": "Stránka organizační složky Veřejná WC neobsahuje seznam WC ani údaje o bezbariérovosti."
+  },
+  {
+   "name": "Veřejné toalety Jičín (Smiřických, Havlíčkova u MěÚ)",
+   "url": "https://www.jicin.org/verejne-toalety",
+   "reason": "Web uvádí 2 placená WC s provozní dobou, bezbariérovost ani Euroklíč neuvádí; nepřidáno."
+  },
+  {
+   "name": "Veřejné WC Jaroměř, nám. ČSA 49 (pasáž J. Žáka)",
+   "url": "https://www.jaromer-josefov.cz/prakticke-informace/verejne-wc/",
+   "reason": "Web uvádí adresu a GPS, ale nic o bezbariérovosti (stejně https://www.tsm-jaromer.cz/verejne-wc/); nepřidáno."
+  },
+  {
+   "name": "Veřejné WC Broumov (ul. Spojovací, Terminál Nádražní)",
+   "url": "https://www.broumov-mesto.cz/verejne-toalety/os-1959",
+   "reason": "Jen názvy a telefony, bez údajů o bezbariérovosti."
+  },
+  {
+   "name": "Veřejné WC Nová Paka, Mikulášská 86",
+   "url": "https://www.tsnovapaka.cz/",
+   "reason": "Web technických služeb uvádí adresu a provozní dobu, bezbariérovost neuvádí."
+  },
+  {
+   "name": "Veřejné WC Kostelec nad Orlicí",
+   "url": "https://www.mojeorlickehory.eu/kostelec-nad-orlici/20_35892_verejne-wc/",
+   "reason": "Bezbariérové WC uvádí jen web destinační společnosti (ne web obce), bez adresy; nepřidáno."
+  },
+  {
+   "name": "MěÚ Náchod – pracoviště občanských průkazů",
+   "url": "https://www.mestonachod.cz/n-zpravodajstvi/aktuality/urad/clanek/?id=10169",
+   "reason": "Článek uvádí, že pracoviště OP je plně bezbariérové a nabízí mobilní pracoviště pro imobilní, ale adresu pracoviště neuvádí; nepřidáno."
+  },
+  {
+   "name": "Dvůr Králové n. L., Nový Bydžov, Hořice – veřejná WC a radnice",
+   "url": "https://www.novybydzov.cz/verejne-sluzby/ds-1542",
+   "reason": "Na prohledaných stránkách (též https://www.tsdvur.cz/?page_id=54 a https://tshorice.cz/index.asp) nenalezeny údaje o bezbariérových WC ani radnici."
+  },
+  {
+   "name": "Jaroměř, Jičín, Vrchlabí, Kostelec n. O., Nová Paka, Broumov – bezbariérovost radnice",
+   "reason": "Rychlé hledání na webech obcí (klíčová slova, Seznam site:) nenašlo stránku o bezbariérovosti budovy úřadu."
+  },
+  {
+   "name": "Krajský úřad Královéhradeckého kraje (Pivovarské nám. 1245)",
+   "url": "https://www.khk.cz/system/files/2026-09/P%C5%99ipom%C3%ADnkovan%C3%AD_Pl%C3%A1n%20podpory%20OZP%202026-2030_strategie_3182026.pdf",
+   "reason": "Návrh plánu 2026–2030 (s. 19) uvádí jen opatření ke zlepšení pohybu imobilních osob po úřadě do 31. 12. 2030; stav bezbariérovosti budovy nepopisuje, nepřidáno."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Bezbariérový Hradec – mapový portál města Hradec Králové",
+   "url": "http://geoportal.mmhk.cz/mapa/mapa-bezbariery/",
+   "type": "atlas",
+   "note": "Odkaz ze stránky projektu https://www.hradeckralove.org/vismo/dokumenty2.asp?id_org=4687&id=54268 . Mapuje trasy a objekty z pohledu vozíčkářů i nevidomých, objekty ve 3 kategoriích (semafor); u fakultní nemocnice uvedeny rozměry dveří a počet schodů (https://www.hradeckralove.org/mapa-bezbarieroveho-hradce-je-prubezne-aktualizovana-zlepsovat-ji-mohou-take-obcane/d-45455). Vzniká s Centrem pro integraci OZP KHK. Podněty: bariery.hk@mmhk.cz. Textové popisy tras: http://texttrasy.mmhk.cz/ . Licence neuvedena (web jen uvádí, že mapové podklady poskytuje občanům zdarma)."
+  },
+  {
+   "title": "Mapa bezbariérových objektů Náchod (PDF)",
+   "url": "https://www.mestonachod.cz/potrebuji-zaridit/socialni-zdravotnitvi/mapa_nachod_bezbarier.pdf",
+   "type": "atlas",
+   "note": "Jednostránková mapa s objekty (úřady, lékaři, obchody, restaurace…), odkaz z webu města (sociální oblast). Datum a licence neuvedeny."
+  },
+  {
+   "title": "Trutnov – Bezbariérové přístupy (starý web města)",
+   "url": "https://stary.trutnov.cz/turisticke-informace/bezbarierove-pristupy",
+   "type": "atlas",
+   "note": "Prostý seznam institucí s bezbariérovým přístupem (MěÚ, úřady na Horské 5, FÚ Slezská 166, knihovna, pošta, banky); bez podrobností, web © 2005–2010 – může být zastaralé. Licence neuvedena."
+  },
+  {
+   "title": "hkregion.cz – mapování bezbariérových turistických cílů (VozejkMap)",
+   "url": "https://www.hkregion.cz/dr-cs/108881-mapovani-bezbarierovych-turistickych-cilu-v-kralovehradeckem-kraji.html",
+   "type": "atlas",
+   "note": "Krajská centrála cestovního ruchu se SPŠ stavební HK, spolkem Přesedni si a CZEPA zmapovala 27 turistických míst v kraji; data mají být vložena do aplikace VozejkMap. Licence neuvedena."
+  },
+  {
+   "title": "Plán podpory rovných příležitostí pro osoby se zdravotním postižením KHK 2026–2030 (pracovní verze k připomínkám)",
+   "url": "https://www.khk.cz/oblasti/socialni-oblast/strategie-koncepcni-dokumenty/vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim",
+   "type": "krajsky plan",
+   "note": "PDF: https://www.khk.cz/system/files/2026-09/P%C5%99ipom%C3%ADnkovan%C3%AD_Pl%C3%A1n%20podpory%20OZP%202026-2030_strategie_3182026.pdf ; připomínky 1.–11. 10. 2026. Kap. 4.2 Přístupnost staveb a dopravy: informace o přístupnosti objektů kraje zveřejňovat srozumitelně na webech zařízení (průběžně); zlepšit pohyb imobilních po krajském úřadě (do 31. 12. 2030); dílčí cíl 4.2.5 – vytipovávat turistické cíle k mapování bezbariérovosti (s Komisí RK pro OZP a organizacemi OZP) a průběžně aktualizovat sekci Bez bariér na www.hkregion.cz. Licence neuvedena."
+  },
+  {
+   "title": "Plán podpory rovných příležitostí pro OZP KHK 2022–2025 (předchozí verze)",
+   "url": "https://www.khk.cz/system/files/Plan-podpory-OZP-2022---2025_FINAL_web.pdf",
+   "type": "krajsky plan",
+   "note": "Kap. 4.3: mapování bariér jako podporovaná činnost v krajském dotačním programu (každoročně k 30. 6.); stanovit priority přístupnosti objektů kraje (do 31. 12. 2023); dílčí cíl 4.3.6 – vytipovávat turistické atraktivity k mapování bezbariérovosti."
+  },
+  {
+   "title": "Spolek vozíčkářů Hradec Králové PŘESEDNI SI, z.s.",
+   "url": "https://www.presednisi.cz/o-nas/",
+   "type": "organizace",
+   "note": "Založen 2019, působí v Hradci Králové a okolí; podílel se na mapování turistických cílů pro VozejkMap."
+  },
+  {
+   "title": "Centrum pro integraci osob se zdravotním postižením Královéhradeckého kraje, o.p.s.",
+   "url": "https://czphk.cz/",
+   "type": "organizace",
+   "note": "Mj. doprava pro osoby s omezenou pohyblivostí, centrum asistivních technologií; partner mapy Bezbariérový Hradec; v Trutnově vydává Euroklíče (Horská 5/1) dle https://mstary.trutnov.cz/organizace-instituce/kde-je-v-trutnove-euroklic ."
+  }
+ ]
+}

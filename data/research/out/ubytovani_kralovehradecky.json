@@ -1,0 +1,87 @@
+{
+ "task": "ubytovani_kralovehradecky",
+ "kraj": "Královéhradecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [],
+ "not_found": [
+  {
+   "osm_id": "n2402261245",
+   "name": "Hotel Zámek Bílé Poličany",
+   "url": "https://www.bilepolicany.cz/zamek",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n127033973",
+   "name": "Wellness hotel LIBERECKÁ BOUDA",
+   "url": "https://libereckabouda.cz/",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "n656462875",
+   "name": "Dětský a rodinný penzion Permoník",
+   "url": "https://www.penzion-permonik.cz/cs/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w209044571",
+   "name": "Grund Resort",
+   "url": "https://www.mladebuky.com/hotel/",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "w19921113",
+   "name": "Chalupa Na Rozcestí",
+   "url": "https://chalupanarozcesti.cz/",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "n4695144880",
+   "name": "Chalupa u Skibaby",
+   "url": "http://www.chalupauskibaby.cz/",
+   "reason": "stránka vrací prázdný obsah"
+  },
+  {
+   "osm_id": "w205990694",
+   "name": "Andula",
+   "url": "https://penzionandula.cz/",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "w31360795",
+   "name": "Lesní bouda",
+   "url": "https://lesnibouda.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4695144882",
+   "name": "Penzion Říčky",
+   "url": "https://www.ubytovani-orlicko.cz/penzion_ricky.php",
+   "reason": "web neodpovídá (spojení ukončeno)"
+  },
+  {
+   "osm_id": "n4695144885",
+   "name": "Resort Říčky",
+   "url": "https://resortricky.cz/cs/sluzby",
+   "reason": "o bezbariérovosti ubytování nic; zmíněna jen servisní stanice s hustilkou použitelná i pro invalidní vozík (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "n4695144883",
+   "name": "U Sněžného lva",
+   "url": "https://sneznylev.cz/",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "w267818465",
+   "name": "Farma Mokriny",
+   "url": "https://www.farma-mokriny.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů ubytování z OSM (vstup ubytovani_kralovehradecky.json)",
+   "url": "data/research/inputs/ubytovani_kralovehradecky.json",
+   "note": "prošlo se 12 webů (úvodní stránka + až 10 podstránek, hledání klíčových slov); žádný neuvádí konkrétní informace o bezbariérovosti ubytování"
+  }
+ ]
+}

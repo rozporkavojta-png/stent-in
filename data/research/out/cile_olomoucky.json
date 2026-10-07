@@ -1,0 +1,98 @@
+{
+ "task": "cile_olomoucky",
+ "kraj": "Olomoucký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w49129550",
+   "name": "Pevnost poznání",
+   "obec": "Olomouc",
+   "address": "",
+   "lat": 49.592881,
+   "lng": 17.25799,
+   "category": "cil",
+   "source_url": "https://www.pevnostpoznani.cz/kontakt/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup; podrobnosti (výtah, WC) neuvádí.",
+    "parkovani": "V areálu Korunní pevnůstky nelze parkovat, web doporučuje okolní parkovací plochy."
+   },
+   "measurements": [],
+   "evidence_quote": "Pevnost má bezbariérový přístup"
+  },
+  {
+   "osm_id": "n3148062459",
+   "name": "Galerie Špalíček",
+   "obec": "Prostějov",
+   "address": "",
+   "lat": 49.470981,
+   "lng": 17.112081,
+   "category": "cil",
+   "source_url": "https://www.muzeumpv.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "Web oznamuje, že bezbariérový výtah ve Špalíčku je mimo provoz."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový výtah ve Špalíčku mimo provoz"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n4757702669",
+   "name": "Vlastivědné muzeum Jesenicka",
+   "url": "https://www.muzeumjesenik.cz/cz/o-nas/navstivte-nas.html",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3148062461",
+   "name": "Muzeum Prostějovska",
+   "url": "https://www.muzeumpv.cz/",
+   "reason": "web ani prohlášení o přístupnosti (týká se jen webu) nic o budově neuvádí"
+  },
+  {
+   "osm_id": "n4111818430",
+   "name": "Památník Adolfa Kašpara v Lošticích",
+   "url": "https://www.muzeum-sumperk.cz/zarizeni/pamatnik-adolfa-kaspara-vlosticich/",
+   "reason": "stránka vrací 404"
+  },
+  {
+   "osm_id": "w30351164",
+   "name": "Arboretum Bílá Lhota",
+   "url": "https://www.volny.cz/arboretum",
+   "reason": "web přesměrován na portál volny.centrum.cz, stránka arboreta nedostupná"
+  },
+  {
+   "osm_id": "n14050898609",
+   "name": "Muzeum Prosenice",
+   "url": "https://www.obecprosenice.cz/muzeum-prosenice",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w122059360",
+   "name": "Katovna",
+   "url": "https://jesenik.cz/turista/152-historie-budovy.html",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1216065143",
+   "name": "Lanové Bludiště Helfštýn",
+   "url": "https://www.bludiste-helfstyn.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Pevnost poznání",
+   "url": "https://www.pevnostpoznani.cz/kontakt/",
+   "note": "zdroj informací o přístupnosti"
+  },
+  {
+   "title": "Galerie Špalíček",
+   "url": "https://www.muzeumpv.cz/",
+   "note": "zdroj informací o přístupnosti"
+  }
+ ]
+}

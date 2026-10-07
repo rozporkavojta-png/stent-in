@@ -1,0 +1,129 @@
+{
+ "task": "cile_kralovehradecky_2",
+ "kraj": "Královéhradecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n11232729279",
+   "name": "Starosta a Starostová",
+   "obec": "Adršpach",
+   "lat": 50.612299,
+   "lng": 16.113167,
+   "category": "cil",
+   "source_url": "https://www.adrspasskeskaly.cz/bezbarierova-navsteva",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Vyhlídka na Starostu a Starostovou je podle provozovatele mezi místy, která nejsou přístupná; hlavní okruh má strmé schody a úzké průchody.",
+    "wc": "Bezbariérové toalety jsou u vstupu do areálu, ve skalním městě další toalety nejsou.",
+    "parkovani": "Parkoviště u vstupu, s parkovacím průkazem ZTP zdarma bez online rezervace; ke vstupu cca 300 m po asfaltu a zpevněné pískové cestě s jedním prudším nájezdem.",
+    "jine": "Bezbariérová je jen trasa od vstupu k Malému vodopádu (cca 1,3 km, tam a zpět stejnou cestou) – písčité cesty, nerovnosti, mírné stoupání, doporučen doprovod. Doprovod ZTP/P zdarma."
+   },
+   "measurements": [
+    {
+     "co": "bezbariérová trasa ke Malému vodopádu",
+     "hodnota": 1.3,
+     "jednotka": "km"
+    },
+    {
+     "co": "parkoviště – vstup",
+     "hodnota": 300,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Hlavní okruh skalním městem není bezbariérový."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n1354665304",
+   "name": "Velká Panoráma",
+   "url": "https://www.adrspasskeskaly.cz/bezbarierova-navsteva",
+   "reason": "stránka bezbariérové návštěvy skal tuto vyhlídku nejmenuje"
+  },
+  {
+   "osm_id": "n1977585629",
+   "name": "Křížový Vrch",
+   "url": "https://www.adrspasskeskaly.cz/bezbarierova-navsteva",
+   "reason": "stránka bezbariérové návštěvy skal toto místo nejmenuje"
+  },
+  {
+   "osm_id": "n2451168666",
+   "name": "Lokomotiva",
+   "url": "https://www.teplickeskaly.cz/index.php/infocentrum/casto-kladene-dotazy",
+   "reason": "FAQ Teplických skal uvádí, že okruh není vhodný pro vozíčkáře, ale Lokomotivu nejmenuje"
+  },
+  {
+   "osm_id": "n358092954",
+   "name": "Skanzen Villa Nova - středověká vesnice",
+   "url": "https://www.villanova.cz/archeologicke-muzeum-v-prirode",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "n13030426905",
+   "name": "Lodivadlo",
+   "url": "https://www.lodivadlo.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n855347593",
+   "name": "Žaltman",
+   "url": "https://www.zaltman.cz/",
+   "reason": "web (webkamera) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n618807756",
+   "name": "Radnice",
+   "url": "https://www.hkinfo.cz/",
+   "reason": "na webu infocentra nenalezeno nic o přístupnosti radnice"
+  },
+  {
+   "osm_id": "w125508571",
+   "name": "Rozhledna Panorama",
+   "url": "https://www.janskelazne.cz/",
+   "reason": "na webu města nenalezeno nic o přístupnosti"
+  },
+  {
+   "osm_id": "n3754842772",
+   "name": "rozhledna Čeřovka (Milohlídka)",
+   "url": "https://www.jicin.org/",
+   "reason": "na webu infocentra nenalezeno nic o přístupnosti"
+  },
+  {
+   "osm_id": "n466398542",
+   "name": "Pančavský vodopád",
+   "url": "https://www.krnap.cz/navstevnici/info-na-cesty/",
+   "reason": "na webu KRNAP nenalezeno nic o přístupnosti (OSM uvádí wheelchair=limited)"
+  },
+  {
+   "osm_id": "n3411838582",
+   "name": "rozhledna Hnědý vrch",
+   "url": "https://www.pecpodsnezkou.cz/",
+   "reason": "web nedostupný (HTTP 466)"
+  },
+  {
+   "osm_id": "n12459293003",
+   "name": "Vesnický mini skanzen",
+   "url": "https://www.nechanice.cz/",
+   "reason": "na webu města nenalezeno nic o přístupnosti (OSM uvádí wheelchair=limited)"
+  },
+  {
+   "osm_id": "n1292002888",
+   "name": "Rozhledna Annenský vrch",
+   "url": "https://www.bartosovice.cz/",
+   "reason": "na webu obce nenalezeno nic o přístupnosti"
+  }
+ ],
+ "sources": [
+  "https://www.adrspasskeskaly.cz/bezbarierova-navsteva",
+  "https://www.teplickeskaly.cz/index.php/infocentrum/casto-kladene-dotazy",
+  "https://www.villanova.cz/",
+  "https://www.lodivadlo.cz/",
+  "https://www.hkinfo.cz/",
+  "https://www.krnap.cz/",
+  "https://www.jicin.org/",
+  "https://www.janskelazne.cz/",
+  "https://www.nechanice.cz/",
+  "https://www.bartosovice.cz/"
+ ]
+}

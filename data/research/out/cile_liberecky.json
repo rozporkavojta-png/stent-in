@@ -1,0 +1,57 @@
+{
+ "task": "cile_liberecky",
+ "kraj": "Liberecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w326863485",
+   "name": "Sklářské muzeum",
+   "obec": "Kamenický Šenov",
+   "address": "",
+   "lat": 50.775968,
+   "lng": 14.469887,
+   "category": "pamatky",
+   "source_url": "https://www.muzeumskla.cz/navstivte-nas/casto-kladene-dotazy/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Muzeum je v historické budově z r. 1769 před rekonstrukcí a podle webu není bezbariérové; kočárky se vynášejí po schodišti.",
+    "parkovani": "Malé parkoviště naproti muzeu, další parkoviště na nám. T. G. Masaryka (450 m)."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště na nám. T. G. Masaryka",
+     "hodnota": 450,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Objekt je před rekonstrukcí a není bezbariérový."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w102834348",
+   "name": "Rodný dům Ferdinanda Porsche",
+   "url": "https://museum.skoda-auto.cz/porsche-house",
+   "reason": "web uvádí jen vstup zdarma pro ZTP, ZTP/P a doprovod, o přístupnosti nic"
+  },
+  {
+   "osm_id": "n1769230987",
+   "name": "Bozkovské dolomitové jeskyně",
+   "url": "https://www.bozkovskejeskyne.cz/",
+   "reason": "web nedostupný"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Sklářské muzeum Kamenický Šenov – časté dotazy",
+   "url": "https://www.muzeumskla.cz/navstivte-nas/casto-kladene-dotazy/",
+   "note": ""
+  },
+  {
+   "title": "Poznámka ke vstupu",
+   "url": "",
+   "note": "vstup cile_liberecky.json obsahuje jen 2 cíle s webem; ostatní jsou vyhlídky a knihovny bez webu"
+  }
+ ]
+}

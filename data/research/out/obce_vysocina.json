@@ -1,0 +1,89 @@
+{
+ "task": "obce_vysocina",
+ "kraj": "Kraj Vysočina",
+ "checked_date": "2026-10-05",
+ "places": [],
+ "not_found": [
+  {
+   "osm_id": null,
+   "name": "Magistrát města Jihlavy – radnice (Masarykovo nám. 1 / Hluboká 8)",
+   "url": "https://www.jihlava.cz/nove-najezdy-zvonky-i-euroklic-radnice-je-dostupna-i-pro-handicapovane/d-559268",
+   "reason": "Web města (zpráva 18. 5. 2023): u hlavních vstupů z Masarykova nám. i z ul. Hluboká zvonky na přivolání pomoci (pracovnice infocentra pomohou s dveřmi, výtahem a navigací), u malé obřadní síně dvě nájezdové lišty; eurozámkem osazeny dveře toalet pro veřejnost u gotického sálu a vstup do radnice z Masarykova nám. Nepřidáno – zrychlený režim bez přidávání nových míst."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC na rohu Palackého a Židovské ulice (za bývalou Snahou), Jihlava",
+   "url": "https://www.jihlava.cz/verejne-toalety-v-centru-uz-ziskavaji-svou-podobu/d-580021",
+   "reason": "Web města uvádí bezbariérový přístup (d-580021) a 'bezbariérové toalety pro ženy i muže' (d-578766); v provozu od června 2026, otevřeno min. 8:00–20:00, 10 Kč, platba mincí i kartou (https://www.jihlava.cz/video-cena-a-oteviraci-doba-verejnych-toalet/d-581370). Euroklíč neuveden. Nepřidáno – zrychlený režim."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC v bývalé Radniční restauraci, Masarykovo nám., Jihlava",
+   "url": "https://www.jihlava.cz/v-centru-jihlavy-se-brzy-otevrou-zrekonstruovane-verejne-toalety/d-574944",
+   "reason": "Zpráva z r. 2025: rekonstrukce hotová, čekalo se na montáž plošiny pro bezbariérový přístup; zda je plošina v provozu, web v nalezených zprávách nepotvrzuje. Nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné toalety Karlovo náměstí, Třebíč",
+   "url": "https://www.trebic.cz/nove-verejne-toalety-budou-postavene-do-konce-kvetna/d-35735",
+   "reason": "Web města uvádí bezbariérovou toaletu pro handicapované a přebalovací kabinu; nové toalety jsou 'oproti původním bezbariérové', vstup 5 Kč, platební terminál (https://www.trebic.cz/na-novych-verejnych-toaletach-zaplatite-i-platebni-kartou/d-37651). Přesná adresa ani Euroklíč neuvedeny. Nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Havlíčkův Brod – bezbariérové veřejné WC a radnice",
+   "url": "https://www.muhb.cz/",
+   "reason": "V mapě stránek muhb.cz (3 691 URL) ani přes vyhledávání webu nenalezena stránka o bezbariérovém WC, Euroklíči či bezbariérovosti úřadu."
+  },
+  {
+   "osm_id": null,
+   "name": "Žďár nad Sázavou – bezbariérové veřejné WC a radnice",
+   "url": "https://www.zdarns.cz/mestsky-urad/",
+   "reason": "V mapě stránek zdarns.cz (2 766 URL) ani na stránce Městský úřad nenalezena informace o bezbariérovém WC, Euroklíči či bezbariérovosti úřadu."
+  },
+  {
+   "osm_id": null,
+   "name": "Pelhřimov – bezbariérové veřejné WC a radnice",
+   "url": "https://www.mestopelhrimov.cz/zdravotne-postizeni/ms-45720",
+   "reason": "Oficiální web je mestopelhrimov.cz (pelhrimov.cz má neplatný certifikát). Sekce Zdravotně postižení obsahuje jen rozcestník na katalog sociálních služeb; o WC/Euroklíči/bezbariérovosti radnice nic. Zpráva https://www.mestopelhrimov.cz/ve-tretim-volebnim-okrsku-nebyl-umoznen-bezbarierovy-pristup-volici-vsak-mohli-vyuzit-prenosnou-urnu/d-37424 zmiňuje chybějící bezbariérový přístup ve 3. volebním okrsku (neotevřeno podrobně)."
+  },
+  {
+   "osm_id": null,
+   "name": "Velké Meziříčí – bezbariérové veřejné WC a radnice",
+   "url": "https://www.velkemezirici.cz/mestsky-urad",
+   "reason": "Mapa stránek (210 URL) ani stránka Městský úřad nic neuvádí; vyhledávání webu nevrací výsledky."
+  },
+  {
+   "osm_id": null,
+   "name": "Městské atlasy přístupnosti v obcích Kraje Vysočina",
+   "url": "https://www.jihlava.cz/generel-bezbarierove-dopravy-a-bezbarierovych-tras-na-uzemi-mesta-jihlavy/d-386706",
+   "reason": "Na webech 6 největších měst nenalezen atlas přístupnosti. Jihlava má jen stránku 'Generel bezbariérové dopravy a bezbariérových tras' – dokument je 'mimo interval pro zveřejnění na webu' (zůstal jen seznam tras N1, S1, Z1, J1, V1)."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Krajský plán vyrovnávání příležitostí osob se zdravotním postižením na období 2023–2025 (Kraj Vysočina)",
+   "url": "https://www.kr-vysocina.cz/krajsky-plan-vyrovnavani-prilezitosti-osob-se-zdravotnim-postizenim-na-obdobi-2023-2025/d-4116653",
+   "note": "PDF: https://www.kr-vysocina.cz/assets/File.ashx?id_org=450008&id_dokumenty=4117153 (prosinec 2022, 18 str.). Novější plán (2026+) v mapě stránek kraje nenalezen. Oblast 3 'Zpřístupňování staveb, dopravy a informací': 3.1 metodika pro stavební úřady k bezbariérovému užívání staveb; 3.1.3 bezbariérový přístup u nových krajských budov; 3.2.1 zveřejnit informace o bezbariérovosti budov příspěvkových organizací kraje na jejich webech (od 2023); 3.2.2 odkaz na tyto informace z hlavní stránky webu kraje; 3.3 bezbariérová vozidla ve veřejné dopravě; 3.5 přístupnost webu kraje. Samostatné opatření na mapování přístupnosti (atlas) plán neobsahuje. Licence neuvedena."
+  },
+  {
+   "title": "Kraj Vysočina podporuje projekt Euroklíč (tisková zpráva, 2025)",
+   "url": "https://www.kr-vysocina.cz/zdravotne-postizeni-i-rodice-malych-deti-z-vysociny-budou-moci-vyuzit-o-ctyri-eurozamky-vice/d-4135212",
+   "note": "V kraji 89 míst s Eurozámkem; nové eurozámky NRZP ČR v jihlavském Prioru, motorestu u Humpolce, na čerpací stanici Shell v Měříně a v Cityparku Jihlava. Kraj přispívá NRZP ČR ročně 50 tis. Kč. Seznam míst odkazuje na web projektu Euroklíč. Licence neuvedena."
+  },
+  {
+   "title": "Centrum pro zdravotně postižené kraje Vysočina, o. p. s.",
+   "url": "https://www.muhb.cz/centrum-pro-zdravotne-postizene-kraje-vysocina-o.-p.-s./",
+   "note": "Organizace OZP v kraji (sídlo Vrchlického 57, Jihlava; pobočky Jihlava, Havlíčkův Brod, Pelhřimov, Třebíč, Žďár n. S.); web www.zdravotnepostizeni-vysocina.cz; sociální poradenství, půjčovna kompenzačních pomůcek. Podle webu Jihlavy darovala magistrátu vozíky pro klienty (https://www.jihlava.cz/nove-najezdy-zvonky-i-euroklic-radnice-je-dostupna-i-pro-handicapovane/d-559268). Samostatná organizace vozíčkářů v kraji na prověřených webech nenalezena."
+  },
+  {
+   "title": "Národní rada osob se zdravotním postižením ČR, z. s. – projekt Euroklíč v Kraji Vysočina",
+   "url": "https://www.kr-vysocina.cz/zdravotne-postizeni-i-rodice-malych-deti-z-vysociny-budou-moci-vyuzit-o-ctyri-eurozamky-vice/d-4135212",
+   "note": "Realizátor osazování Eurozámků v kraji (dle tiskové zprávy kraje). Web organizace neotevřen."
+  },
+  {
+   "title": "Jihlava – Generel bezbariérové dopravy a bezbariérových tras",
+   "url": "https://www.jihlava.cz/generel-bezbarierove-dopravy-a-bezbarierovych-tras-na-uzemi-mesta-jihlavy/d-386706",
+   "note": "Městský dokument o bezbariérových trasách (N1 Masarykovo nám., S1 hl. nádraží, Z1 nemocnice, J1 úřad práce, V1 Březinova); samotný dokument již není na webu zveřejněn. Licence neuvedena."
+  }
+ ]
+}

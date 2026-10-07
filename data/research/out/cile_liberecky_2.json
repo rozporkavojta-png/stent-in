@@ -1,0 +1,132 @@
+{
+ "task": "cile_liberecky_2",
+ "kraj": "Liberecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n10971475381",
+   "name": "Obrněná vozidla (Technické muzeum Liberec)",
+   "obec": "Liberec",
+   "address": "Masarykova 424/5, 460 01 Liberec",
+   "lat": 50.774329,
+   "lng": 15.06497,
+   "category": "muzea",
+   "source_url": "https://www.tmliberec.cz/kde-nas-najdete/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle webu je muzeum veskrze bezbariérové; exponát je součástí areálu Technického muzea Liberec.",
+    "jine": "Muzeum uvádí, že je veskrze bezbariérové a všechny pavilony jsou bezbariérově průchozí (https://www.tmliberec.cz/o-muzeu/). Vstupné ZTP 120 Kč, ZTP/P zdarma (https://www.tmliberec.cz/cenik-a-oteviraci-doba/)."
+   },
+   "evidence_quote": "Naše muzeum je veskrze bezbariérové."
+  },
+  {
+   "osm_id": "n10971475380",
+   "name": "Parní lokomotiva (Technické muzeum Liberec)",
+   "obec": "Liberec",
+   "address": "Masarykova 424/5, 460 01 Liberec",
+   "lat": 50.773816,
+   "lng": 15.066195,
+   "category": "muzea",
+   "source_url": "https://www.tmliberec.cz/kde-nas-najdete/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle webu je muzeum veskrze bezbariérové; exponát je součástí areálu Technického muzea Liberec.",
+    "jine": "Muzeum uvádí, že je veskrze bezbariérové a všechny pavilony jsou bezbariérově průchozí (https://www.tmliberec.cz/o-muzeu/). Vstupné ZTP 120 Kč, ZTP/P zdarma (https://www.tmliberec.cz/cenik-a-oteviraci-doba/)."
+   },
+   "evidence_quote": "Naše muzeum je veskrze bezbariérové."
+  },
+  {
+   "osm_id": "n1769230987",
+   "name": "Bozkovské dolomitové jeskyně",
+   "obec": "Bozkov",
+   "lat": 50.647403,
+   "lng": 15.338405,
+   "category": "pamatky",
+   "source_url": "https://bozkovske.caves.cz/navstevni-rad",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Web o bezbariérovosti nic neuvádí; návštěvní řád upozorňuje na schodiště a prostory se zúženým nebo sníženým profilem na prohlídkové trase, popis trasy (https://bozkovske.caves.cz/prohlidka) zmiňuje schody mezi jeskyněmi."
+   },
+   "evidence_quote": "zvláště na schodištích a v prostorách se zúženým nebo sníženým profilem"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n6514736521",
+   "name": "Ski museum (Harrachov)",
+   "url": "https://www.skimuzeum.cz/",
+   "reason": "oficiální web (odkaz z harrachovcard.cz) ani popis na https://www.harrachovcard.cz/leto/muzeum nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w102834397",
+   "name": "Knihovna a spolkové centrum IGI VRATISLAVICE",
+   "url": "https://www.igivratislavice.cz/",
+   "reason": "web (úvod, knihovna, kontakty, náš příběh, kino) nic o bezbariérovosti neuvádí"
+  },
+  {
+   "osm_id": "w470025078",
+   "name": "rozhledna Slovanka",
+   "url": "https://www.lucany.cz/turistika/rozhledna-slovanka/",
+   "reason": "web města uvádí jen přístup po značených turistických trasách, o bezbariérovosti nic"
+  },
+  {
+   "osm_id": "n2075339464",
+   "name": "Obecní knihovna Jenišovice",
+   "url": "https://www.jenisovice.cz/knihovna",
+   "reason": "web obce uvádí jen umístění v budově OÚ a otevírací dobu, o přístupnosti nic"
+  },
+  {
+   "osm_id": "n442644909",
+   "name": "Hlavatice",
+   "url": "",
+   "reason": "oficiální stránku se nepodařilo najít (cesky-raj.info bez stránky cíle, infocentrum-turnov.cz nedostupné)"
+  },
+  {
+   "osm_id": "w168919203",
+   "name": "Kozlov (Chlum)",
+   "url": "",
+   "reason": "oficiální stránku se nepodařilo najít (cesky-raj.info bez stránky cíle)"
+  },
+  {
+   "osm_id": "n305068314",
+   "name": "protržená přehrada Bílá Desná",
+   "url": "https://www.albrechtice-jh.cz/turista/jizerske-hory-a-okoli/zajimavosti/",
+   "reason": "web obce nemá stránku o tomto cíli"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Technické muzeum Liberec – Kde nás najdete",
+   "url": "https://www.tmliberec.cz/kde-nas-najdete/",
+   "note": "„veskrze bezbariérové“, adresa Masarykova 424/5"
+  },
+  {
+   "title": "Technické muzeum Liberec – O muzeu",
+   "url": "https://www.tmliberec.cz/o-muzeu/",
+   "note": "pavilony bezbariérově průchozí"
+  },
+  {
+   "title": "Technické muzeum Liberec – Ceník a otevírací doba",
+   "url": "https://www.tmliberec.cz/cenik-a-oteviraci-doba/",
+   "note": "vstupné ZTP, ZTP/P"
+  },
+  {
+   "title": "Bozkovské dolomitové jeskyně – návštěvní řád",
+   "url": "https://bozkovske.caves.cz/navstevni-rad",
+   "note": "schodiště a zúžené prostory na trase"
+  },
+  {
+   "title": "Bozkovské dolomitové jeskyně – prohlídka",
+   "url": "https://bozkovske.caves.cz/prohlidka",
+   "note": ""
+  },
+  {
+   "title": "Poznámka",
+   "url": "",
+   "note": "Zrychlené doplnění bez webového vyhledávání (vyčerpaný limit); oficiální weby dohledány přes weby obcí a turistických portálů. Ostatní vyhlídky (Na Čihadle, Smrk, Na Bezděz, Tanvald, Muchov), Bývalý vodní náhon Cvikov a Knihovna na nádraží Turnov nemají ve vstupu web a oficiální stránku se rychle dohledat nepodařilo; technickemuzeumliberec.cz je cizí (nesouvisející) web."
+  }
+ ]
+}

@@ -1,0 +1,184 @@
+{
+  "task": "ubytovani",
+  "kraj": "Kraj Vysočina",
+  "checked_date": "2026-10-05",
+  "places": [
+    {
+      "osm_id": "n3414003893",
+      "name": "Hotel U černého orla",
+      "obec": "Třebíč",
+      "address": "Karlovo nám. 17/11",
+      "lat": 49.216759,
+      "lng": 15.88001,
+      "category": "ubytovani",
+      "source_url": "https://www.hotelcernyorel.cz/rooms/3-luzkovy-pokoj-handicap/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "pokoj": "Web nabízí třílůžkový pokoj označený jako „handicap“ (1 790 Kč/noc); bližší popis vybavení ani rozměry neuvádí."
+      },
+      "evidence_quote": "3-lůžkový pokoj handicap"
+    },
+    {
+      "osm_id": "w724711139",
+      "name": "Camp Velkopařezitý",
+      "obec": "Řásná",
+      "lat": 49.228721,
+      "lng": 15.385003,
+      "category": "ubytovani",
+      "source_url": "https://www.campvelkoparezity.cz/penzion-pod-borovici/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Penzion pod Borovicí v kempu má podle webu bezbariérový přístup; leží ve spodní části kempu mezi karavanovou a stanovou plochou.",
+        "jine": "Údaj se týká jen penzionu v kempu (26 lůžek); o pokojích a koupelnách web bezbariérovost neuvádí. OSM má u kempu wheelchair=no."
+      },
+      "evidence_quote": "Penzion má bezbariérový přístup"
+    },
+    {
+      "osm_id": "n363825716",
+      "name": "Atom Hotel",
+      "obec": "Třebíč",
+      "lat": 49.218888,
+      "lng": 15.891032,
+      "category": "ubytovani",
+      "source_url": "https://hotelatom.cz/firemni-a-spolecenske-akce/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "jine": "Web uvádí, že všechny konferenční prostory a prostory pro akce (sály, učebny) jsou bezbariérové. O pokojích, koupelnách ani výtahu bezbariérovost na prošlých stránkách neuvádí."
+      },
+      "evidence_quote": "Veškeré konferenční prostory a prostory pro pořádání akcí jsou bezbariérové"
+    }
+  ],
+  "not_found": [
+    {
+      "osm_id": "n3392691047",
+      "name": "Penzion Starr",
+      "url": "https://www.starr.cz",
+      "reason": "web (25 stránek) bezbariérovost neuvádí; zmiňuje jen slevu 100 Kč/osoba pro držitele TP, ZTP a ZTP/P a 4 poschodí"
+    },
+    {
+      "osm_id": "n4883705955",
+      "name": "Vila Markéta",
+      "url": "https://vilamarketa.cz/",
+      "reason": "web (25 stránek) nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n320996940",
+      "name": "OREA resort Devět skal",
+      "url": "https://www.orea.cz/resort-devet-skal",
+      "reason": "web resortu (úvod, pokoje, kontakty, wellness, restaurace, konference) nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1670619481",
+      "name": "Hotel Kocour",
+      "url": "https://www.hotelkocour.cz",
+      "reason": "web (25 stránek) nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12924103730",
+      "name": "Beachwell",
+      "url": "https://www.beachwell.cz",
+      "reason": "web (18 stránek) nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n8522662095",
+      "name": "Gerstein",
+      "url": "https://www.gerstein.cz",
+      "reason": "web Usedlost Gerstein (Zálesí 21, Havlíčkův Brod; 15 stránek) nic o přístupnosti neuvádí; shoda s OSM záznamem v Horní Krupé neověřena"
+    },
+    {
+      "osm_id": "w102592142",
+      "name": "Motel Velký Rybník",
+      "reason": "web nenalezen (velkyrybnik.cz je web obce, motelvelkyrybnik.cz cizí obsah)"
+    },
+    {
+      "osm_id": "n1356224125",
+      "name": "Motel Farma",
+      "reason": "web nenalezen"
+    },
+    {
+      "osm_id": "n5792781376",
+      "name": "Roubenka v Modletíně",
+      "reason": "web nenalezen"
+    },
+    {
+      "osm_id": "n451798342",
+      "name": "Grand hotel",
+      "reason": "web nenalezen"
+    },
+    {
+      "osm_id": "n452494349",
+      "name": "Hotel Winkler",
+      "reason": "web nenalezen (winkler.cz a hotelwinkler.com bez ověřitelného obsahu)"
+    },
+    {
+      "osm_id": "n451798307",
+      "name": "Zlatý kříž",
+      "reason": "web nenalezen (zlatykriz.com je hotel v Teplicích, zlatykriz.cz bez obsahu)"
+    },
+    {
+      "osm_id": "w264168981",
+      "name": "Kratochvílův Mlýn",
+      "reason": "web nenalezen"
+    },
+    {
+      "osm_id": "n3197918306",
+      "name": "Penzion Atrium",
+      "reason": "web nenalezen (penzionatrium.cz bez obsahu)"
+    },
+    {
+      "osm_id": "n3392494146",
+      "name": "Zlatá hvězda",
+      "reason": "web nenalezen (hotelzlatahvezda.cz = Vimperk, zlatahvezda.cz = Třeboň)"
+    },
+    {
+      "osm_id": "n483776484",
+      "name": "Alfa",
+      "reason": "web nenalezen (hotel-alfa.cz blokuje přístup ověřením prohlížeče)"
+    },
+    {
+      "osm_id": "n21357494",
+      "name": "Pension Kopl",
+      "reason": "web nenalezen (kopl.cz blokuje přístup ověřením prohlížeče)"
+    },
+    {
+      "osm_id": "n364376597",
+      "name": "Penzion u synagogy",
+      "reason": "web nenalezen (usynagogy.cz prázdná stránka)"
+    },
+    {
+      "osm_id": "w271115943",
+      "name": "Rekreační středisko FSi Vříšť",
+      "reason": "web nenalezen"
+    },
+    {
+      "osm_id": "n12533905945",
+      "name": "Restaurace Jirmásek",
+      "reason": "web nenalezen (jirmasek.cz prázdná odpověď)"
+    }
+  ],
+  "sources": [
+    {
+      "title": "OSM záznamy ubytování (vstup ubytovani_vysocina.json)",
+      "url": "data/research/inputs/ubytovani_vysocina.json",
+      "note": "zrychlené doplnění: 23 zařízení bez webu v OSM, weby dohledány odhadem domén a ověřeny podle adresy na stránce (web search nebyl k dispozici); prohledáno skriptem podle klíčových slov"
+    },
+    {
+      "title": "Hotel U Černého orla Třebíč – 3-lůžkový pokoj handicap",
+      "url": "https://www.hotelcernyorel.cz/rooms/3-luzkovy-pokoj-handicap/",
+      "note": "pokoj označený handicap, bez detailů"
+    },
+    {
+      "title": "Camp Velkopařezitý – Penzion pod Borovicí",
+      "url": "https://www.campvelkoparezity.cz/penzion-pod-borovici/",
+      "note": "penzion s bezbariérovým přístupem"
+    },
+    {
+      "title": "Hotel ATOM Třebíč – Firemní a společenské akce",
+      "url": "https://hotelatom.cz/firemni-a-spolecenske-akce/",
+      "note": "bezbariérové konferenční prostory"
+    }
+  ]
+}

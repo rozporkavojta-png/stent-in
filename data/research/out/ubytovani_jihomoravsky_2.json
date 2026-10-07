@@ -1,0 +1,142 @@
+{
+ "task": "ubytovani_jihomoravsky_2",
+ "kraj": "Jihomoravský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w549294221",
+   "name": "Apartmány Kras",
+   "obec": "Ostrov u Macochy",
+   "lat": 49.381728,
+   "lng": 16.766572,
+   "category": "ubytovani",
+   "source_url": "https://apartmanykras.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Každý ze dvou apartmánů má podle webu samostatný vchod a bezbariérový přístup."
+   },
+   "evidence_quote": "Každý z nich má samostatný vchod a bezbariérový přístup."
+  },
+  {
+   "osm_id": "n3253689327",
+   "name": "Penzion Luna",
+   "obec": "Brno",
+   "address": "Štefánikova 12",
+   "lat": 49.208624,
+   "lng": 16.604045,
+   "category": "ubytovani",
+   "source_url": "https://www.penzion-luna.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Penzion uvádí výtah mezi standardním vybavením.",
+    "parkovani": "Parkování v areálu penzionu za poplatek 100 Kč/den; o místech pro ZTP nic neuvádí."
+   },
+   "evidence_quote": "Samozřejmostí je Wi-Fi připojení, televize na pokoji, klimatizace i výtah."
+  },
+  {
+   "osm_id": "n3414265597",
+   "name": "Grandezza Hotel",
+   "obec": "Brno",
+   "address": "Zelný trh 2",
+   "lat": 49.192605,
+   "lng": 16.609621,
+   "category": "ubytovani",
+   "source_url": "https://www.grandezzahotel.com/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Vlastní výtah je uveden jen u jednoho třípatrového apartmá; o bezbariérovosti hotelu web nic neuvádí."
+   },
+   "evidence_quote": "třípatrové apartmá svého druhu v Brně, které disponuje vlastním výtahem"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n4045576696",
+   "name": "Levandule",
+   "url": "https://www.penzionlevandule.com/",
+   "reason": "web nic o přístupnosti neuvádí; stránka Pokoje se načítá skriptem a bez prohlížeče je téměř prázdná"
+  },
+  {
+   "osm_id": "n7075801151",
+   "name": "U Tomana",
+   "url": "https://www.utomana.cz/index.php/cz/u-tomana",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 8 podstránek)"
+  },
+  {
+   "osm_id": "w50690795",
+   "name": "Venia",
+   "url": "http://www.pensionvenia.cz/",
+   "reason": "doména neexistuje (DNS chyba)"
+  },
+  {
+   "osm_id": "n12500515885",
+   "name": "Autokemp Adéla",
+   "url": "https://www.autokemp-adela.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 8 podstránek)"
+  },
+  {
+   "osm_id": "n13923557953",
+   "name": "Hostel Králíkarna",
+   "url": "https://hostelkralikarna.cz",
+   "reason": "web nic o přístupnosti neuvádí (jen přístupnostní lišta webu, ne údaje o budově)"
+  },
+  {
+   "osm_id": "n1778425134",
+   "name": "Penzion Moravia",
+   "url": "http://www.moravia.penzion.com",
+   "reason": "web neodpovídá (timeout)"
+  },
+  {
+   "osm_id": "w877811858",
+   "name": "Zahrada",
+   "url": "https://ubytovani-zahrada.cz/",
+   "reason": "web nic o přístupnosti neuvádí (jednostránkový web)"
+  },
+  {
+   "osm_id": "w243687130",
+   "name": "Hotel Háj",
+   "url": "https://www.hotelhaj.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 8 podstránek)"
+  },
+  {
+   "osm_id": "w504585660",
+   "name": "Penzion pod hradem Cornštejn",
+   "url": "http://www.cornstejn.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 8 podstránek)"
+  },
+  {
+   "osm_id": "n4026663540",
+   "name": "Vinařství s ubytováním U Osičků",
+   "url": "https://www.sklepuosicku.cz/vinny-sklep-penzion",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 8 podstránek)"
+  },
+  {
+   "osm_id": "w98745735",
+   "name": "DJ-penzion",
+   "url": "https://www.djpenzion.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 8 podstránek)"
+  },
+  {
+   "osm_id": "n3936148091",
+   "name": "penzion Sirius",
+   "url": "https://penzionsirius.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 8 podstránek)"
+  },
+  {
+   "osm_id": "n13106387871",
+   "name": "PENZION ZNOJMO",
+   "url": "https://www.penzion-znojmo.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 8 podstránek)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů ubytování z OSM (vstup ubytovani_jihomoravsky.json) – 2. kolo",
+   "url": "data/research/inputs/ubytovani_jihomoravsky.json",
+   "note": "zbylých 16 záznamů s webem (mimo ty v ubytovani_jihomoravsky.json); prohledáno skriptem podle klíčových slov, úvodní stránka + až 8 podstránek; obecní web Velké Opatovice a záznamy bez webu vynechány"
+  }
+ ]
+}

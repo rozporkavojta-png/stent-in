@@ -1,0 +1,411 @@
+[
+{
+"i": "w102592142",
+"n": "Motel Velký Rybník",
+"s": "Motel",
+"o": "Dehtáře",
+"w": "yes",
+"la": 49.491794,
+"lo": 15.299691
+},
+{
+"i": "n3392691047",
+"n": "Penzion Starr",
+"s": "Penzion",
+"o": "Havlíčkův Brod",
+"a": "Žižkova 3070",
+"w": "yes",
+"la": 49.604408,
+"lo": 15.587675
+},
+{
+"i": "w1081206298",
+"n": "Chadimův mlýn",
+"s": "Kemp",
+"o": "Horní Dubenky",
+"web": "https://www.chadimmlyn.cz/cs/kemp/",
+"w": "limited",
+"t": "no",
+"la": 49.253676,
+"lo": 15.305053
+},
+{
+"i": "n8522662095",
+"n": "Gerstein",
+"s": "Penzion",
+"o": "Horní Krupá",
+"w": "no",
+"la": 49.682693,
+"lo": 15.61
+},
+{
+"i": "w128723168",
+"n": "Samota Sturpik",
+"s": "Penzion",
+"o": "Hubenov",
+"web": "http://www.e-chalupy.cz/vysocina/ubytovani-hubenov-chalupa-pronajmuti-samota-sturpik-2740.php",
+"w": "no",
+"la": 49.396099,
+"lo": 15.473833
+},
+{
+"i": "n5558655378",
+"n": "Fabrika hotel",
+"s": "Hotel",
+"o": "Humpolec",
+"a": "Školní 511",
+"web": "https://www.fabrikahotel.cz/",
+"w": "yes",
+"la": 49.540409,
+"lo": 15.355992
+},
+{
+"i": "n1518220598",
+"n": "Hotel Kotyza",
+"s": "Hotel",
+"o": "Humpolec",
+"a": "Horní náměstí 5",
+"web": "http://hotelkotyza.cz",
+"w": "no",
+"la": 49.540891,
+"lo": 15.359161
+},
+{
+"i": "n12533905945",
+"n": "Restaurace Jirmásek",
+"s": "Hotel",
+"o": "Humpolec",
+"a": "Dolní náměstí 31",
+"w": "no",
+"la": 49.541849,
+"lo": 15.357893
+},
+{
+"i": "n3197918306",
+"n": "Penzion Atrium",
+"s": "Hotel",
+"o": "Jihlava",
+"w": "no",
+"la": 49.396936,
+"lo": 15.587029
+},
+{
+"i": "n3392494146",
+"n": "Zlatá hvězda",
+"s": "Hotel",
+"o": "Jihlava",
+"a": "Masarykovo náměstí 32",
+"w": "no",
+"la": 49.394148,
+"lo": 15.590828
+},
+{
+"i": "n4883705955",
+"n": "Vila Markéta",
+"s": "Penzion",
+"o": "Ledeč nad Sázavou",
+"w": "yes",
+"la": 49.693828,
+"lo": 15.284854
+},
+{
+"i": "w262549183",
+"n": "Hotel Skalský dvůr",
+"s": "Hotel",
+"o": "Lísek",
+"web": "https://www.skalskydvur.cz/",
+"w": "yes",
+"la": 49.564966,
+"lo": 16.179406
+},
+{
+"i": "w47421483",
+"n": "Hotel Křemešník",
+"s": "Hotel",
+"o": "Nový Rychnov",
+"a": "Křemešník 4",
+"web": "https://www.hotelkremesnik.cz/",
+"w": "yes",
+"t": "yes",
+"la": 49.403305,
+"lo": 15.325002
+},
+{
+"i": "n6647785185",
+"n": "Okříšky",
+"s": "Hotel",
+"o": "Okříšky",
+"w": "no",
+"la": 49.247563,
+"lo": 15.772107
+},
+{
+"i": "n12924103730",
+"n": "Beachwell",
+"s": "Penzion",
+"o": "Pelhřimov",
+"w": "no",
+"la": 49.435191,
+"lo": 15.20775
+},
+{
+"i": "n1356224125",
+"n": "Motel Farma",
+"s": "Motel",
+"o": "Pelhřimov",
+"w": "yes",
+"la": 49.460928,
+"lo": 15.243165
+},
+{
+"i": "n1069921383",
+"n": "Penzion Polnička",
+"s": "Penzion",
+"o": "Polnička",
+"a": "Polnička 84",
+"web": "https://www.restauracepolnicka.cz/",
+"w": "no",
+"la": 49.605848,
+"lo": 15.919832
+},
+{
+"i": "w382100353",
+"n": "KEMP Rouchovany",
+"s": "Kemp",
+"o": "Rouchovany",
+"web": "https://www.rouchovany.cz/kemp/",
+"w": "yes",
+"la": 49.063625,
+"lo": 16.09425
+},
+{
+"i": "n5792781376",
+"n": "Roubenka v Modletíně",
+"s": "Apartmány",
+"o": "Rušinov",
+"w": "limited",
+"la": 49.792718,
+"lo": 15.711132
+},
+{
+"i": "n320996940",
+"n": "OREA resort Devět skal",
+"s": "Hotel",
+"o": "Sněžné",
+"w": "yes",
+"la": 49.668005,
+"lo": 16.089644
+},
+{
+"i": "w271115943",
+"n": "Rekreační středisko FSi Vříšť",
+"s": "Chata",
+"o": "Sněžné",
+"w": "no",
+"la": 49.636744,
+"lo": 16.134952
+},
+{
+"i": "n2378220503",
+"n": "Stvořidla",
+"s": "Kemp",
+"o": "Trpišovice",
+"web": "https://www.trpisovice.cz/verejne-taboriste-stvoridla",
+"w": "yes",
+"la": 49.671499,
+"lo": 15.316545
+},
+{
+"i": "n483776484",
+"n": "Alfa",
+"s": "Hotel",
+"o": "Třebíč",
+"w": "no",
+"la": 49.206431,
+"lo": 15.886678
+},
+{
+"i": "n363825716",
+"n": "Atom Hotel",
+"s": "Hotel",
+"o": "Třebíč",
+"w": "yes",
+"la": 49.218888,
+"lo": 15.891032
+},
+{
+"i": "n451798342",
+"n": "Grand hotel",
+"s": "Hotel",
+"o": "Třebíč",
+"w": "limited",
+"la": 49.216487,
+"lo": 15.878621
+},
+{
+"i": "n2743827443",
+"n": "Hotel Joseph 1699",
+"s": "Hotel",
+"o": "Třebíč",
+"a": "Skalní 85",
+"web": "https://www.joseph1699.cz/",
+"w": "yes",
+"la": 49.21817,
+"lo": 15.877964
+},
+{
+"i": "n1670619481",
+"n": "Hotel Kocour",
+"s": "Hostel",
+"o": "Třebíč",
+"a": "Žerotínovo nám. 19/17",
+"w": "limited",
+"la": 49.216835,
+"lo": 15.876511
+},
+{
+"i": "n3414003893",
+"n": "Hotel U černého orla",
+"s": "Hotel",
+"o": "Třebíč",
+"a": "Karlovo nám. 17/11",
+"w": "yes",
+"la": 49.216759,
+"lo": 15.88001
+},
+{
+"i": "n452494349",
+"n": "Hotel Winkler",
+"s": "Hotel",
+"o": "Třebíč",
+"w": "limited",
+"la": 49.215582,
+"lo": 15.876077
+},
+{
+"i": "w1308554871",
+"n": "Kemp Poušov",
+"s": "Kemp",
+"o": "Třebíč",
+"web": "https://www.kemppousov.cz/",
+"w": "yes",
+"la": 49.21669,
+"lo": 15.859423
+},
+{
+"i": "n21357494",
+"n": "Pension Kopl",
+"s": "Penzion",
+"o": "Třebíč",
+"w": "no",
+"la": 49.220181,
+"lo": 15.862461
+},
+{
+"i": "n491500380",
+"n": "Penzion Benz",
+"s": "Hotel",
+"o": "Třebíč",
+"w": "no",
+"la": 49.208351,
+"lo": 15.885476
+},
+{
+"i": "n451845886",
+"n": "Penzion Vis á Vis",
+"s": "Hotel",
+"o": "Třebíč",
+"w": "no",
+"la": 49.21515,
+"lo": 15.88472
+},
+{
+"i": "n360975904",
+"n": "Penzion u Elišky",
+"s": "Hotel",
+"o": "Třebíč",
+"w": "no",
+"la": 49.211961,
+"lo": 15.885624
+},
+{
+"i": "n364376597",
+"n": "Penzion u synagogy",
+"s": "Hotel",
+"o": "Třebíč",
+"w": "no",
+"la": 49.217664,
+"lo": 15.87975
+},
+{
+"i": "n360975982",
+"n": "Podlipný",
+"s": "Hotel",
+"o": "Třebíč",
+"w": "no",
+"la": 49.21185,
+"lo": 15.884508
+},
+{
+"i": "n451798307",
+"n": "Zlatý kříž",
+"s": "Hotel",
+"o": "Třebíč",
+"a": "Karlovo nám. 19/13",
+"w": "limited",
+"la": 49.216336,
+"lo": 15.880496
+},
+{
+"i": "n3071979442",
+"n": "Harmony",
+"s": "Hotel",
+"o": "Třešť",
+"web": "https://www.wellness-hotel-harmony.cz/",
+"w": "limited",
+"t": "yes",
+"la": 49.292922,
+"lo": 15.484012
+},
+{
+"i": "n1075284706",
+"n": "Hotel U Raušů",
+"s": "Hotel",
+"o": "Velká Bíteš",
+"a": "Masarykovo náměstí 13",
+"web": "https://www.urausu.cz/",
+"w": "yes",
+"la": 49.288095,
+"lo": 16.22597
+},
+{
+"i": "w53218601",
+"n": "Hotel u Raušů",
+"s": "Hotel",
+"o": "Velká Bíteš",
+"web": "https://www.urausu.cz/",
+"w": "yes",
+"t": "yes",
+"la": 49.288053,
+"lo": 16.22591
+},
+{
+"i": "w264168981",
+"n": "Kratochvílův Mlýn",
+"s": "Penzion",
+"o": "Červená Lhota",
+"w": "yes",
+"la": 49.27421,
+"lo": 15.779174
+},
+{
+"i": "w724711139",
+"n": "Camp Velkopařezitý",
+"s": "Kemp",
+"o": "Řásná",
+"w": "no",
+"t": "no",
+"la": 49.228721,
+"lo": 15.385003
+}
+]

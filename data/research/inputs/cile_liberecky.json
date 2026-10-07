@@ -1,0 +1,186 @@
+[
+{
+"i": "n305068314",
+"n": "protržená přehrada Bílá Desná",
+"s": "Turistický cíl",
+"o": "Albrechtice v Jizerských horách",
+"w": "no",
+"la": 50.800889,
+"lo": 15.277087
+},
+{
+"i": "n1769230987",
+"n": "Bozkovské dolomitové jeskyně",
+"s": "Turistický cíl",
+"o": "Bozkov",
+"w": "no",
+"la": 50.647403,
+"lo": 15.338405
+},
+{
+"i": "n6514981485",
+"n": "Bývalý vodní náhon",
+"s": "Turistický cíl",
+"o": "Cvikov",
+"w": "no",
+"la": 50.81582,
+"lo": 14.655436
+},
+{
+"i": "n6514736521",
+"n": "Ski museum",
+"s": "Muzeum",
+"o": "Harrachov",
+"w": "no",
+"la": 50.769699,
+"lo": 15.435506
+},
+{
+"i": "n1355509559",
+"n": "Na Čihadle",
+"s": "Vyhlídka",
+"o": "Hejnice",
+"w": "no",
+"la": 50.833013,
+"lo": 15.231597
+},
+{
+"i": "n2075339464",
+"n": "Obecní knihovna",
+"s": "Knihovna",
+"o": "Jenišovice",
+"w": "no",
+"la": 50.629204,
+"lo": 15.134082
+},
+{
+"i": "w326863485",
+"n": "Sklářské muzeum",
+"s": "Muzeum",
+"o": "Kamenický Šenov",
+"web": "https://www.muzeumskla.cz/",
+"w": "no",
+"la": 50.775968,
+"lo": 14.469887
+},
+{
+"i": "w102834397",
+"n": "Knihovna a spolkové centrum IGI VRATISLAVICE",
+"s": "Knihovna",
+"o": "Liberec",
+"a": "Nad Školou 342",
+"w": "yes",
+"la": 50.744154,
+"lo": 15.093049
+},
+{
+"i": "n10971475381",
+"n": "Obrněná vozidla",
+"s": "Turistický cíl",
+"o": "Liberec",
+"w": "yes",
+"la": 50.774329,
+"lo": 15.06497
+},
+{
+"i": "n10971475380",
+"n": "Parní lokomotiva",
+"s": "Turistický cíl",
+"o": "Liberec",
+"w": "yes",
+"la": 50.773816,
+"lo": 15.066195
+},
+{
+"i": "w102834348",
+"n": "Rodný dům Ferdinanda Porsche",
+"s": "Muzeum",
+"o": "Liberec",
+"a": "Tanvaldská 38",
+"web": "https://museum.skoda-auto.cz/porsche-house",
+"w": "no",
+"la": 50.745385,
+"lo": 15.086586
+},
+{
+"i": "w470025078",
+"n": "rozhledna Slovanka",
+"s": "Vyhlídka",
+"o": "Lučany nad Nisou",
+"w": "no",
+"la": 50.773274,
+"lo": 15.196268
+},
+{
+"i": "n1431292046",
+"n": "Rozhledna na Smrku",
+"s": "Vyhlídka",
+"o": "Lázně Libverda",
+"w": "no",
+"la": 50.889318,
+"lo": 15.271821
+},
+{
+"i": "w168919203",
+"n": "Kozlov (Chlum)",
+"s": "Turistický cíl",
+"o": "Olešnice",
+"w": "no",
+"la": 50.561027,
+"lo": 15.125751
+},
+{
+"i": "n3116139435",
+"n": "Vyhlídka Na Bezděz",
+"s": "Vyhlídka",
+"o": "Olešnice",
+"w": "no",
+"la": 50.55305,
+"lo": 15.120533
+},
+{
+"i": "n1329787385",
+"n": "Skalní vyhlídka",
+"s": "Vyhlídka",
+"o": "Tanvald",
+"w": "yes",
+"la": 50.751683,
+"lo": 15.281289
+},
+{
+"i": "n5822661177",
+"n": "Vyhlídka k Jizerkám",
+"s": "Vyhlídka",
+"o": "Tanvald",
+"w": "yes",
+"la": 50.751445,
+"lo": 15.282734
+},
+{
+"i": "n442644909",
+"n": "Hlavatice",
+"s": "Vyhlídka",
+"o": "Turnov",
+"w": "no",
+"la": 50.56959,
+"lo": 15.155508
+},
+{
+"i": "n7033872260",
+"n": "Knihovna na nádraži",
+"s": "Knihovna",
+"o": "Turnov",
+"w": "yes",
+"la": 50.587111,
+"lo": 15.139643
+},
+{
+"i": "n1397291326",
+"n": "Muchov",
+"s": "Vyhlídka",
+"o": "Velké Hamry",
+"w": "no",
+"la": 50.724733,
+"lo": 15.293371
+}
+]

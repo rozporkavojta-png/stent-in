@@ -1,0 +1,162 @@
+{
+ "task": "ubytovani_zlinsky",
+ "kraj": "Zlínský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n3817851062",
+   "name": "Hotel Duo",
+   "obec": "Horní Bečva",
+   "address": "",
+   "lat": 49.414553,
+   "lng": 18.323317,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-duo.cz/bez-barier/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Všechny společné prostory hlavní budovy (restaurace, bar, wellness, toalety) jsou dostupné výtahem.",
+    "pokoj": "Vybrané pokoje jsou upravené pro imobilní hosty.",
+    "koupelna": "Ve vybraných pokojích jsou koupelny upravené pro imobilní hosty.",
+    "parkovani": "Web uvádí bezbariérové parkování.",
+    "jine": "Vnitřní bazén má hydraulický zvedák Handi-Move HM 3200."
+   },
+   "measurements": [
+    {
+     "co": "nosnost zvedáku do bazénu",
+     "hodnota": 135,
+     "jednotka": "kg"
+    },
+    {
+     "co": "max. výška osoby pro zvedák",
+     "hodnota": 170,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Všechny společné prostory hlavní budovy Lux jsou bezbariérově přístupné výtahem"
+  },
+  {
+   "osm_id": "n12168399386",
+   "name": "Apartmány Kolonáda",
+   "obec": "Luhačovice",
+   "address": "",
+   "lat": 49.102862,
+   "lng": 17.759563,
+   "category": "ubytovani",
+   "source_url": "https://www.ubytovaniluhacovice.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "Bezbariérový přístup zajišťuje výtah v každém z domů."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup pomocí výtahu v každém z domů."
+  },
+  {
+   "osm_id": "n8984992973",
+   "name": "Hotel Mlýnská",
+   "obec": "Uherské Hradiště",
+   "address": "",
+   "lat": 49.069829,
+   "lng": 17.460419,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelmlynska.cz",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Hotel nabízí bezbariérový pokoj STANDARD pro 2 osoby s přístupem pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "Pokoj, který umožňuje bezproblémový přístup pro vozíčkáře."
+  },
+  {
+   "osm_id": "n5013670193",
+   "name": "Hotel U hejtmana Šarovce",
+   "obec": "Uherské Hradiště",
+   "address": "",
+   "lat": 49.067611,
+   "lng": 17.4661,
+   "category": "ubytovani",
+   "source_url": "https://hotelsarovec.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Hotel má jeden dvoulůžkový pokoj s bezbariérovou úpravou; podrobnosti web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "1 dvoulůžkový pokoj s bezbariérovou úpravou"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w201402067",
+   "name": "Hotel Alexandria",
+   "url": "https://www.hotelalexandria.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w92305812",
+   "name": "Penzion Stella",
+   "url": "https://www.penzionstella.luhacovice.cz/",
+   "reason": "web nešel načíst přes HTTPS (zastaralé SSL); HTTP verze nic o přístupnosti neobsahuje"
+  },
+  {
+   "osm_id": "n14206240841",
+   "name": "Adamantino",
+   "url": "https://www.adamantino.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w329453055",
+   "name": "Wellness hotel POHODA",
+   "url": "http://www.pohoda-luhacovice.cz/cs/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w48294332",
+   "name": "Lesní penzion Bunč",
+   "url": "https://bunc.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n5013670186",
+   "name": "Hotel Grand",
+   "url": "https://granduh.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3168513240",
+   "name": "Slunce",
+   "url": "https://www.hotelslunce.cz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1498538591",
+   "name": "Rajka",
+   "url": "https://www.hotelrajka.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Hotel Duo",
+   "url": "https://www.hotel-duo.cz/bez-barier/",
+   "note": "zdroj informací o přístupnosti"
+  },
+  {
+   "title": "Apartmány Kolonáda",
+   "url": "https://www.ubytovaniluhacovice.cz/",
+   "note": "zdroj informací o přístupnosti"
+  },
+  {
+   "title": "Hotel Mlýnská",
+   "url": "https://www.hotelmlynska.cz",
+   "note": "zdroj informací o přístupnosti"
+  },
+  {
+   "title": "Hotel U hejtmana Šarovce",
+   "url": "https://hotelsarovec.cz/",
+   "note": "zdroj informací o přístupnosti"
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "task": "obce_jihomoravsky",
+ "kraj": "Jihomoravský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": null,
+   "name": "Veřejné WC Dobrovského",
+   "obec": "Vyškov",
+   "address": "Dobrovského 437, 682 01 Vyškov",
+   "lat": 49.2770022,
+   "lng": 16.9996091,
+   "category": "wc",
+   "source_url": "https://www.vyskov-mesto.cz/verejne-wc-v-dobrovskeho-ulici/os-102625",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Veřejné WC má podle webu města i WC pro invalidní občany; po rekonstrukci (2018) je bezbariérový záchod přístupný ze vstupní haly. Euroklíč web neuvádí.",
+    "vstup": "Vstup přes automat – lístek z mincovního automatu se přiloží ke čtečce u hlavních dveří (https://www.vyskov-mesto.cz/verejne-toalety-jsou-zrekonstruovane-petikoruna-zustava/d-1124083).",
+    "jine": "Otevřeno po–pá 7:00–18:00, so 7:00–12:00, ne a svátky zavřeno; poplatek 10 Kč; samostatná přebalovací místnost. Provozuje Správa majetku města Vyškova."
+   },
+   "evidence_quote": "Zájemci najdou WC muži, WC ženy, WC pro invalidní občany a místnost s přebalovacím stolem."
+  },
+  {
+   "osm_id": null,
+   "name": "Městský úřad Břeclav (radnice)",
+   "obec": "Břeclav",
+   "address": "Náměstí T. G. Masaryka 42/3, 690 02 Břeclav",
+   "lat": 48.7597322,
+   "lng": 16.881722,
+   "category": "urad",
+   "source_url": "https://breclav.eu/bezbarierovy-vstup-na-radnici",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup z Náměstí T. G. Masaryka jen po zavolání na vrátnici – vrátný otevře průchod mezi radnicí a bistrem U Michala (průchod není trvale otevřen). Doporučený bezbariérový vstup je přes dvůr z ulice U Stadionu.",
+    "jine": "Informace z aktuality ze dne 10. 6. 2020. Odbor sociálních věcí MěÚ vydává Euroklíče (https://breclav.eu/urad-sluzby-euroklic)."
+   },
+   "evidence_quote": "vstupujte bezbariérově do areálu městského úřadu přes dvůr z ulice U Stadionu"
+  },
+  {
+   "osm_id": null,
+   "name": "Městský úřad Tišnov (radnice)",
+   "obec": "Tišnov",
+   "address": "nám. Míru 111, 666 01 Tišnov",
+   "lat": 49.348776,
+   "lng": 16.4229093,
+   "category": "urad",
+   "source_url": "https://www.tisnov.cz/bezbarierovy-pristup-gt-gt-na-radnici-nove-hlavnim-vchodem/d-25089",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Kvůli rekonstrukci náměstí Míru je zadní bezbariérový vstup uzavřen; u hlavního vstupu jsou na schodech nájezdové ližiny pro vozíčkáře a kočárky, na místě jsou uvedena telefonní čísla pro asistenci (stav k 15. 7. 2025, dočasné řešení)."
+   },
+   "evidence_quote": "při hlavním vstupu umístěny na schody nájezdové ližiny"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": null,
+   "name": "Bezbariérové WC v železniční zastávce Blansko-město",
+   "url": "https://www.blansko.cz/toalety-doplnily-navody-na-obsluhu-alarmu",
+   "reason": "Web města zmiňuje toalety pro invalidy s alarmem v zastávce (provozuje Správa železnic), ale bez adresy – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC Masarykovo náměstí (průchod vedle kostela), Kyjov",
+   "url": "https://www.mestokyjov.cz/mestsky-urad-odbor-majetkopravni-usek-majetkovy-komunalni-sluzby/zelen-verejne-osvetleni-verejna-prostranstvi-detska-hriste-mestsky-mobiliar-trznice-verejne-wc",
+   "reason": "Web neuvádí bezbariérovost ani Euroklíč – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné toalety Znojmo (Horní náměstí, ul. Radniční, nádraží ul. Milady Horákové)",
+   "url": "https://www.znojmocity.cz/verejne-toalety-ve-znojme-nove-bez-obsluhy-platba-pres-automat-hotove-i-kartou-otevrene-nonstop/d-104019",
+   "reason": "Samoobslužná WC s automatem (10 Kč, nonstop), ale web bezbariérovost ani Euroklíč neuvádí – nepřidáno. Euroklíče vydává odbor sociální MěÚ Znojmo (https://www.znojmocity.cz/euroklice/d-62626)."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC za Regionálním centrem (Masarykovo nám.), Hodonín",
+   "url": "https://www.hodonin.eu/verejne-wc-za-regionalnim-centrem-je-opet-v-provozu/d-1113108",
+   "reason": "Web neuvádí bezbariérovost ani adresu s číslem – nepřidáno. Bezbariérově upravená budova Kasárenská 4 (výtah, plošina; https://www.hodonin.eu/dalsi-z-mestskych-budov-disponuje-bezbarierovym-pristupem/d-1121161) je budova s nájemci, ne úřad – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC u kostela sv. Jakuba, Boskovice",
+   "url": "https://www.boskovice.cz/verejne-wc-opet-v-provozu",
+   "reason": "Web uvádí jen přebalovací stůl, bezbariérovost neuvádí. Reportáž o bezbariérovém úřadu (https://www.boskovice.cz/urad-se-stal-bezbarierovym) je jen video bez textu – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné toalety Brněnská 1710, Tišnov",
+   "url": "https://www.tisnov.cz/verejne-toalety-gt-gt-nove-v-centru-mesta/d-25412",
+   "reason": "Nově zrekonstruované (po–pá 7–18), ale web bezbariérovost neuvádí – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Krajský plán vyrovnávání příležitostí pro OZP – Jihomoravský kraj",
+   "url": "https://www.jmk.cz/",
+   "reason": "Web kraje (jmk.cz) vrací při automatickém přístupu chybu 401 / přihlašovací stránku BIG-IP a webové vyhledávání nebylo k dispozici – plán ani jeho opatření nebyly ověřeny."
+  },
+  {
+   "osm_id": null,
+   "name": "Bezbariérová WC / radnice: Brno, Kuřim, Ivančice, Veselí nad Moravou",
+   "url": "https://www.brno.cz",
+   "reason": "Prohledány sitemapy webů podle klíčových slov; stránka s bezbariérovým WC nebo vstupem na radnici s adresou nenalezena (Brno má data v městském atlasu přístupnosti – viz sources, nepřebíráme)."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Mapa přístupnosti – Budovy (Brno, otevřená data)",
+   "url": "https://data.brno.cz/datasets/cca344ea2fb24eecb4e449c5970fd401",
+   "note": "Městský atlas přístupnosti Brna (Odbor zdraví MMB), 287 objektů vč. úřadů, zdravotnictví, kultury a veřejných toalet; pole adresa, pristupnost_budovy, wc, popis. Licence CC-BY-4.0. FeatureServer: https://services6.arcgis.com/fUWVlHWZNxUvTUh8/arcgis/rest/services/mapa_pristupnosti_budovy/FeatureServer. Data podle zadání nepřebírána."
+  },
+  {
+   "title": "Mapa přístupnosti – Vstupy do budov (Brno, otevřená data)",
+   "url": "https://data.brno.cz/datasets/498389369edb41a1b5cba5d5c2129626",
+   "note": "Vstupy do budov k atlasu přístupnosti Brna (Odbor zdraví). Licence CC-BY-4.0. FeatureServer: https://services6.arcgis.com/fUWVlHWZNxUvTUh8/arcgis/rest/services/vstupy_budov/FeatureServer."
+  },
+  {
+   "title": "Průvodce přístupnosti (projekt CE-Spaces4All, Jihomoravský kraj)",
+   "url": "https://www.vozejkmap.cz/page/pruvodce-pristupnosti",
+   "note": "Podle znojmocity.cz (https://www.znojmocity.cz/bezbarierovost-jako-obchodni-prilezitost-i-znojmo-ukazuje-cestu-s-pruvodcem-pristupnosti/d-105135) je Znojmo asociovaným partnerem projektu CE-Spaces4All a zařízení v JMK zveřejňují Průvodce přístupnosti (např. Vila Löw-Beer). Licence neuvedena."
+  },
+  {
+   "title": "Liga vozíčkářů, z. ú.",
+   "url": "https://www.ligavozickaru.cz/",
+   "note": "Organizace vozíčkářů se sídlem Bzenecká 23, 628 00 Brno (https://www.ligavozickaru.cz/kontakty/). Web Znojma zmiňuje Poradnu Ligy vozíčkářů ve Znojmě."
+  },
+  {
+   "title": "Tišnovský vozíčkář",
+   "url": "http://tvozik.sweb.cz/",
+   "note": "Nezisková organizace (od 2007) sdružující vozíčkáře a imobilní občany, Květnická 1611, Tišnov – podle https://www.tisnov.cz/tisnovsky-vozickar/os-1046."
+  },
+  {
+   "title": "Občanské sdružení zdravotně postižených, Veselská oblast",
+   "url": "http://oszpv.estranky.cz",
+   "note": "Za Poštou 110, Veselí nad Moravou – podle https://www.veseli-nad-moravou.cz/obcanske-sdruzeni-zdravotne-postizenych-veselska-oblast-o-s-oszp/os-31499. Není výhradně organizace vozíčkářů."
+  },
+  {
+   "title": "Koncepce bezbariérových tras města Hodonín",
+   "url": "https://www.hodonin.eu/koncepce-bezbarierovych-tras-mesta-hodonin/ds-50509",
+   "note": "Dokončený koncepční dokument (bezbariérovost komunikací pro chodce, dostupnost úřadů a služeb). Licence neuvedena."
+  },
+  {
+   "title": "Výdej Euroklíčů na městských úřadech JMK",
+   "url": "https://www.hodonin.eu/euroklic-pristup-k-bezbarierovym-toaletam/d-1111437",
+   "note": "Euroklíč zdarma vydávají MěÚ Hodonín (Národní třída 25), Břeclav (https://breclav.eu/urad-sluzby-euroklic), Znojmo (https://www.znojmocity.cz/euroklice/d-62626), Vyškov (https://www.vyskov-mesto.cz/euroklic-ziskate-i-na-vyskovskem-mestskem-urade/d-1114673), Kyjov (Masarykovo nám. 30/1, https://www.mestokyjov.cz/potrebuji-vyridit-socialni-oblast/euroklic). Seznamy eurozámků weby měst neuvádějí, odkazují na euroklic.cz."
+  }
+ ]
+}

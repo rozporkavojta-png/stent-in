@@ -1,0 +1,810 @@
+{
+ "task": "ubytovani_hlavni-mesto-praha",
+ "kraj": "Hlavní město Praha",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "r161469",
+   "name": "Hotel Atlantic",
+   "obec": "Praha",
+   "address": "Na Poříčí 9",
+   "lat": 50.089835,
+   "lng": 14.431639,
+   "category": "ubytovani",
+   "source_url": "https://hotel-atlantic.cz/sluzby/bezbarierovy-pristup",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup do hotelu bezbariérový, bezbariérové jsou i všechny prostory kromě kongresového sálu.",
+    "pokoj": "3 prostorné 2–3lůžkové bezbariérové pokoje (24 m²) s certifikátem způsobilosti.",
+    "koupelna": "Bezbariérový přístup do koupelny, sprchový kout se sedátkem, toaleta pro invalidy.",
+    "vytah": "Hotel má prostorný výtah.",
+    "jine": "Uveden certifikát bezbariérovosti E3. Velikost pokoje 24 m² uvádí stránka https://hotel-atlantic.cz/pokoje"
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří do koupelny",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "velikost bezbariérového pokoje",
+     "hodnota": 24,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Přístup do hotelu Atlantic je bezbariérový, stejně tak jako všechny prostory hotelu"
+  },
+  {
+   "osm_id": "n4816399495",
+   "name": "Cosmopolitan Hotel",
+   "obec": "Praha",
+   "address": "Zlatnická 3",
+   "lat": 50.089968,
+   "lng": 14.432078,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-cosmopolitan.cz/cz/pokoje-apartmany/bezbarierovy-pokoj-deluxe",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup s vozíkem hlavním vchodem.",
+    "pokoj": "Bezbariérový pokoj Deluxe; nízké umyvadlo.",
+    "koupelna": "Bezbariérová sprcha se sedátkem; zvýšené WC s madlem a zvýšeným sedátkem.",
+    "vytah": "Na patro bezbariérově výtahem.",
+    "wc": "Bezbariérové veřejné toalety.",
+    "jine": "Bezbariérové veřejné prostory (recepce, konferenční prostory, restaurace, wellness); možnost zapůjčit invalidní vozík."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří výtahu",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří pro vozík",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška nízkého umyvadla",
+     "hodnota": 84,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka sprchy",
+     "hodnota": 138,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Šířka dveří pro invalidní vozíky: 80 cm"
+  },
+  {
+   "osm_id": null,
+   "name": "Diplomat Hotel Prague",
+   "obec": "Praha",
+   "address": "Evropská 370/15, Praha 6",
+   "lat": 50.0995562,
+   "lng": 14.3898596,
+   "category": "ubytovani",
+   "source_url": "https://www.hoteldiplomat.cz/pokoje/bezbarierovy-pokoj/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový hlavní vchod a bezbariérová trasa k recepci.",
+    "pokoj": "Bezbariérový pokoj pro hosty s omezenou pohyblivostí; dostupnost a rezervaci je třeba domluvit s hotelem.",
+    "koupelna": "Upravená koupelna se sprchou bez bariér.",
+    "vytah": "Bezbariérové výtahy.",
+    "jine": "Bezbariérové fitness, zasedací sály/ballroom a prostory s občerstvením; bezbariérovou dopravu lze zajistit přes externího poskytovatele; servisní zvířata vítána."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří do pokojů (min.)",
+     "hodnota": 81,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Bezbariérové vstupy do pokojů (šířka dveří min. 81 cm)"
+  },
+  {
+   "osm_id": null,
+   "name": "Top Hotel Praha & Congress Centre",
+   "obec": "Praha",
+   "address": "Blažimská 1781/4, Praha 4",
+   "lat": 50.0419513,
+   "lng": 14.4962108,
+   "category": "ubytovani",
+   "source_url": "https://www.tophotel.cz/cs/ubytovani/bezbarierovy-pokoj/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Bezbariérový pokoj (manželská nebo oddělená lůžka), kapacita 2 dospělí.",
+    "koupelna": "Bezbariérová koupelna a WC."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérová koupelna a WC"
+  },
+  {
+   "osm_id": null,
+   "name": "Dvůr Čertousy",
+   "obec": "Praha",
+   "address": "Bártlova 35/10, Praha 9 – Horní Počernice",
+   "lat": 50.1194744,
+   "lng": 14.6346279,
+   "category": "ubytovani",
+   "source_url": "https://www.dvur-certousy.cz/ubytovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Uveden bezbariérový přístup.",
+    "pokoj": "2 speciálně vybavené pokoje.",
+    "parkovani": "Parkování zdarma v uzavřeném areálu.",
+    "jine": "Prague City Tourism (https://prague.eu/cs/prahou-bez-barier-ubytovani/) uvádí 2 bezbariérově zařízené dvoulůžkové pokoje s vlastním sociálním zařízením."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup 2 speciálně vybavené pokoje"
+  },
+  {
+   "osm_id": null,
+   "name": "Courtyard by Marriott Prague Airport",
+   "obec": "Praha",
+   "address": "Aviatická 1092/8, Praha 6",
+   "lat": 50.1065492,
+   "lng": 14.2696326,
+   "category": "ubytovani",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-ubytovani/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Bezbariérově zařízené pokoje.",
+    "jine": "Podle Prague City Tourism je pro vozíky přizpůsobena i restaurace, zasedací prostory a vstup do fitness; ubytování s vodicím psem možné. Web provozovatele nebyl v tomto běhu ověřen (marriott.com blokuje automatický přístup)."
+   },
+   "measurements": [],
+   "evidence_quote": "Kromě bezbariérově zařízených pokojů je pro pohyb vozíků přizpůsobena také restaurace"
+  },
+  {
+   "osm_id": null,
+   "name": "Holiday Inn Prague Airport",
+   "obec": "Praha",
+   "address": "K Letišti 1074/32, Praha 6",
+   "lat": 50.1085523,
+   "lng": 14.2768643,
+   "category": "ubytovani",
+   "source_url": "https://www.hipragueairport.com/en/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístupný veřejný vstup; uveden nájezd (ramp access).",
+    "pokoj": "Pokoje (Guest Rooms) uvedeny v seznamu přístupných prostor.",
+    "vytah": "Výtahy uvedeny mezi přístupnými prostory.",
+    "wc": "Veřejné toalety uvedeny mezi přístupnými prostory.",
+    "parkovani": "Hotelové parkoviště uvedeno mezi přístupnými prostory.",
+    "jine": "Přístupná restaurace a zasedací místnosti; TV se skrytými titulky, vizuální alarmy v pokojích i veřejných prostorách."
+   },
+   "measurements": [],
+   "evidence_quote": "Accessible Hotel Areas Public Entrance Guest Rooms Elevators Public Restrooms"
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel Monastery",
+   "obec": "Praha",
+   "address": "Strahovské nádvoří 134/13, Praha 1 – Hradčany",
+   "lat": 50.0871993,
+   "lng": 14.3894965,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelmonastery.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "Web provozovatele: kvůli památkové ochraně v budově není výtah, pokoje jsou přístupné jen po schodech.",
+    "jine": "Prague City Tourism (https://prague.eu/cs/prahou-bez-barier-ubytovani/, s odkazem na zdroj booking.com) naopak uvádí bezbariérový dvoulůžkový pokoj s vyvýšenou toaletou a vanou s madly a schodišťovou plošinu s nosností 225 kg. Údaje si odporují – nutno ověřit u hotelu."
+   },
+   "measurements": [
+    {
+     "co": "nosnost schodišťové plošiny (dle prague.eu)",
+     "hodnota": 225,
+     "jednotka": "kg"
+    }
+   ],
+   "evidence_quote": "there is no lift in the building. All rooms are accessible only by stairs"
+  },
+  {
+   "osm_id": "w32062527",
+   "name": "Novotel Praha Wenceslas Square",
+   "obec": "Praha",
+   "address": "Kateřinská 38",
+   "lat": 50.075037,
+   "lng": 14.428096,
+   "category": "ubytovani",
+   "source_url": "https://all.accor.com/hotel/3194/index.en.shtml",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Přístupný pokoj: Superior s manželskou postelí, „wheelchair access“, 24 m².",
+    "jine": "Mezi službami „Wheelchair accessible“. Prague City Tourism (https://prague.eu/cs/prahou-bez-barier-ubytovani/) uvádí 2 bezbariérové pokoje, toaletu s madly, sprchový kout se spádovou podlahou a sedačkou a plošinu do bazénu."
+   },
+   "measurements": [
+    {
+     "co": "velikost přístupného pokoje",
+     "hodnota": 24,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Superior room with 1 double bed, wheelchair access"
+  },
+  {
+   "osm_id": "n9694909190",
+   "name": "Ibis Praha Wenceslas Square",
+   "obec": "Praha",
+   "address": "Kateřinská 36",
+   "lat": 50.074881,
+   "lng": 14.427385,
+   "category": "ubytovani",
+   "source_url": "https://all.accor.com/hotel/3195/index.en.shtml",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Přístupný pokoj „Superior Handicap Room“ s manželskou postelí, 16 m², pro 2 osoby."
+   },
+   "measurements": [
+    {
+     "co": "velikost přístupného pokoje",
+     "hodnota": 16,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Superior Handicap Room with 1 double bed"
+  },
+  {
+   "osm_id": "w30632448",
+   "name": "ibis Praha Mala Strana",
+   "obec": "Praha",
+   "address": "Plzenska 14",
+   "lat": 50.072223,
+   "lng": 14.400604,
+   "category": "ubytovani",
+   "source_url": "https://all.accor.com/hotel/5211/index.en.shtml",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "1 typ přístupného pokoje: Standard s queen-size postelí a pohovkou, 22 m², označen „Accessible room“."
+   },
+   "measurements": [
+    {
+     "co": "velikost přístupného pokoje",
+     "hodnota": 22,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Accessible accommodation (1)"
+  },
+  {
+   "osm_id": "n1948155850",
+   "name": "ibis Praha Old Town",
+   "obec": "Praha",
+   "address": "Na Poříčí 5",
+   "lat": 50.089383,
+   "lng": 14.430843,
+   "category": "ubytovani",
+   "source_url": "https://all.accor.com/hotel/5477/index.en.shtml",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "1 typ přístupného pokoje: Premium pokoj pro rodiny (až 4 osoby), 36 m², označen „Accessible room“.",
+    "jine": "Mezi službami hotelu „Wheelchair accessible“."
+   },
+   "measurements": [
+    {
+     "co": "velikost přístupného pokoje",
+     "hodnota": 36,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Accessible accommodation (1)"
+  },
+  {
+   "osm_id": "n3538093408",
+   "name": "Century Old Town Prague",
+   "obec": "Praha",
+   "address": "Na Poříčí 7",
+   "lat": 50.089528,
+   "lng": 14.431291,
+   "category": "ubytovani",
+   "source_url": "https://all.accor.com/hotel/3440/index.en.shtml",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Mezi službami hotelu uvedeno „Wheelchair accessible“; podrobnosti web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "On site Pets welcome Restaurant Wheelchair accessible"
+  },
+  {
+   "osm_id": "n2532190119",
+   "name": "B&B Prague-City Hotel",
+   "obec": "Praha",
+   "address": "Prvního pluku 29",
+   "lat": 50.092512,
+   "lng": 14.441638,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-bb.com/en/hotel/prague-city",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Typ pokoje „Accessible Double Room“ (francouzská postel 140×200 cm, koupelna se sprchou); hotel uvádí přístupné pokoje pro hosty se speciálními potřebami."
+   },
+   "measurements": [],
+   "evidence_quote": "For guests with special needs, we provide accessible rooms"
+  },
+  {
+   "osm_id": "n2899877793",
+   "name": "Ramada Prague City Centre",
+   "obec": "Praha",
+   "address": "Václavské náměstí 41",
+   "lat": 50.081478,
+   "lng": 14.428157,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelramadapraguecity.cz/en/ramada-prague-city-centre/rooms",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hotel se označuje jako bezbariérový (barrier-free hotel) – https://www.hotelramadapraguecity.cz/en/ramada-prague-city-centre/about-the-hotel",
+    "pokoj": "1 bezbariérový jednolůžkový pokoj (17 m² vč. příslušenství); na webu fotky bezbariérového pokoje a koupelny."
+   },
+   "measurements": [
+    {
+     "co": "velikost bezbariérového pokoje",
+     "hodnota": 17,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "1x Barrier-free single room (17 sq. m. including accessories)"
+  },
+  {
+   "osm_id": "w27917157",
+   "name": "Juliš",
+   "obec": "Praha",
+   "address": "Václavské náměstí 22",
+   "lat": 50.082616,
+   "lng": 14.42462,
+   "category": "ubytovani",
+   "source_url": "https://www.hoteljulis.cz/cz/ea-hotel-julis/pokoje",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Ze 42 dvoulůžkových studií Standard (25 m² vč. příslušenství) je 1 bezbariérové."
+   },
+   "measurements": [
+    {
+     "co": "velikost studia",
+     "hodnota": 25,
+     "jednotka": "m²"
+    }
+   ],
+   "evidence_quote": "Dvoulůžkové studio Standard (25 m² vč. příslušenství) ... (1x bezbariérový)"
+  },
+  {
+   "osm_id": "n2502105302",
+   "name": "Centrum Mariapoli",
+   "obec": "Praha",
+   "address": "Mladoboleslavská 667",
+   "lat": 50.145718,
+   "lng": 14.580407,
+   "category": "ubytovani",
+   "source_url": "https://centrummariapoli.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "2 bezbariérové pokoje vybavené pro vozíčkáře a osoby se sníženou možností pohybu.",
+    "jine": "Možnost zapůjčení zvedáku. Prague City Tourism (https://prague.eu/cs/prahou-bez-barier-ubytovani/) uvádí přístup pro vozíky do všech prostor a uzavřené parkoviště."
+   },
+   "measurements": [],
+   "evidence_quote": "2 bezbariérové pokoje vybavené pro vozíčkáře a osoby se sníženou možností pohybu"
+  },
+  {
+   "osm_id": "w1257234896",
+   "name": "Hotel Duo",
+   "obec": "Praha",
+   "address": "Teplická 492/19",
+   "lat": 50.126595,
+   "lng": 14.486199,
+   "category": "ubytovani",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-ubytovani/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Několik pokojů speciálně vybavených pro osoby s hendikepem, s vlastním sociálním zařízením a tísňovými tlačítky.",
+    "jine": "Web provozovatele hotelduo.cz v tomto běhu nešel načíst (ochrana proti robotům)."
+   },
+   "measurements": [],
+   "evidence_quote": "několik z nich speciálně vybavených pro osoby s hendikepem"
+  },
+  {
+   "osm_id": "w36746180",
+   "name": "Hilton Prague Old Town",
+   "obec": "Praha",
+   "address": "V Celnici 2079/7",
+   "lat": 50.088773,
+   "lng": 14.431757,
+   "category": "ubytovani",
+   "source_url": "https://prague.eu/cs/prahou-bez-barier-ubytovani/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Bezbariérové pokoje.",
+    "jine": "Přístupné zasedací prostory; vodicí psi vítáni. Web hilton.com v tomto běhu blokoval automatický přístup."
+   },
+   "measurements": [],
+   "evidence_quote": "Kromě bezbariérových pokojů se v hotelu nachází také přístupné zasedací prostory"
+  },
+  {
+   "osm_id": "n1487327463",
+   "name": "Aron",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.088213,
+   "lng": 14.463467,
+   "category": "ubytovani",
+   "source_url": "https://www.aronhotel.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Mezi službami uveden bezbariérový přístup.",
+    "vytah": "Hotelový výtah."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "n4785961583",
+   "name": "Salvator Boutique Hotel",
+   "obec": "Praha",
+   "address": "Žitná 1656/45",
+   "lat": 50.077415,
+   "lng": 14.428627,
+   "category": "ubytovani",
+   "source_url": "https://www.salvatorboutique.cz/boutique-hotel/overview-services/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Výtah (Elevator).",
+    "jine": "Mezi službami uvedeno „Wheelchair accessible“; podrobnosti neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Reception open 24hrs Elevator Wheelchair accessible"
+  },
+  {
+   "osm_id": "n2881470271",
+   "name": "Nyx",
+   "obec": "Praha",
+   "address": "Panská 9",
+   "lat": 50.084011,
+   "lng": 14.428022,
+   "category": "ubytovani",
+   "source_url": "https://www.nyx-hotels.com/prague/nyx-hotel-prague",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "V části „Good to Know“ uvedeno „Disabled-friendly hotel“; podrobnosti neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Disabled-friendly hotel"
+  },
+  {
+   "osm_id": "n11757519499",
+   "name": "Residence Trafick",
+   "obec": "Praha",
+   "address": "Bohdalecká 1576/23c",
+   "lat": 50.060013,
+   "lng": 14.469441,
+   "category": "ubytovani",
+   "source_url": "https://residence-trafick.com/services-2/?lang=en",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "parkovani": "V podzemní garáži (26 míst) je 1 parkovací místo pro handicapované."
+   },
+   "measurements": [],
+   "evidence_quote": "26 parking spaces , including a handicapped parking space"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w1375964205",
+   "name": "2night",
+   "url": "https://citypop.com/2night/",
+   "reason": "web nefunguje pro automatický přístup (HTTP 403)"
+  },
+  {
+   "osm_id": "n1569812138",
+   "name": "987 Hotel",
+   "url": "https://www.987praguehotel.com/faq",
+   "reason": "web (úvod, FAQ) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w7653078",
+   "name": "A&O Hotel and Hostel Prague Rhea",
+   "url": "https://www.aohostels.com/en/services/faq/",
+   "reason": "jen obecné FAQ řetězce (bezbariérové pokoje 'téměř ve všech' hotelech), nic konkrétního k Praze Rhea"
+  },
+  {
+   "osm_id": "n2507935278",
+   "name": "Absolutum Wellness Hotel",
+   "url": "https://www.absolutumhotel.cz/pokoje/standard/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w31064714",
+   "name": "Adalbert",
+   "url": "http://www.hoteladalbert.cz/cs/sluzby/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1332744793",
+   "name": "Amarilis Hotel",
+   "url": "http://www.hotelamarilisjerome.com/",
+   "reason": "web nefunguje (doména nenalezena)"
+  },
+  {
+   "osm_id": "r7351688",
+   "name": "Andaz Prague, by Hyatt",
+   "url": "https://www.hyatt.com/andaz/en-US/prgaz-andaz-prague",
+   "reason": "web blokuje automatický přístup (HTTP 429)"
+  },
+  {
+   "osm_id": "n370364610",
+   "name": "Ankora",
+   "url": "https://www.hotelankora.cz/cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3421166130",
+   "name": "Archibald City",
+   "url": "http://www.archibald.cz",
+   "reason": "web nefunguje (parkovaná doména)"
+  },
+  {
+   "osm_id": "n1260632308",
+   "name": "Arkada",
+   "url": "https://www.arkadahotel.cz/",
+   "reason": "web nefunguje (prázdná stránka)"
+  },
+  {
+   "osm_id": "n3557794198",
+   "name": "Bily Lev",
+   "url": "http://www.hotelbilylev.cz",
+   "reason": "web nefunguje (jen výpis adresáře)"
+  },
+  {
+   "osm_id": "w548174907",
+   "name": "Botel Racek",
+   "url": "https://www.botelracek.eu/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2089324493",
+   "name": "Clarion Congress Hotel Prague",
+   "url": "https://www.clarioncongresshotelprague.com/cs/sluzby",
+   "reason": "web (úvod, služby, pokoje) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3312091093",
+   "name": "Design Metropol",
+   "url": "https://www.metropolhotel.cz/cz/services/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3837921300",
+   "name": "Designhotel Elephant",
+   "url": "https://www.hotel-elephant.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1594676129",
+   "name": "Eurostars Thalia",
+   "url": "https://www.eurostarshotels.com/eurostars-thalia.html",
+   "reason": "web nic konkrétního o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4214864881",
+   "name": "Four Seasons Hotel Prague",
+   "url": "https://www.fourseasons.com/prague/",
+   "reason": "web uvádí jen obecnou 'Accessibility Policy' řetězce, nic konkrétního k hotelu"
+  },
+  {
+   "osm_id": "n1275832509",
+   "name": "Friday",
+   "url": "https://www.fridayhotel.cz/services/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w43188170",
+   "name": "Galerie Royale",
+   "url": "http://www.hotelroyale.cz",
+   "reason": "web přesměrovává na jiný web (czechinn.cz)"
+  },
+  {
+   "osm_id": "n5053279899",
+   "name": "Golden Key",
+   "url": "https://goldenkey.astenhotels.com/pokoje-a-suity",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1117508092",
+   "name": "Hermitage Hotel Prague",
+   "url": "https://www.hermitageprague.com/rooms",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3819787057",
+   "name": "Hostel Ananas",
+   "url": "http://hostelananas.com/",
+   "reason": "web nefunguje (doména nenalezena)"
+  },
+  {
+   "osm_id": "w33088341",
+   "name": "Hilton Prague Atrium",
+   "url": "https://www.hilton.com/en/hotels/prghitw-hilton-prague/",
+   "reason": "web blokuje automatický přístup (HTTP 403)"
+  },
+  {
+   "osm_id": "n3445105953",
+   "name": "Hotel Adeba",
+   "url": "https://www.adeba.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w31776845",
+   "name": "Hotel Ambassador - Zlatá Husa",
+   "url": "https://www.ambassador.cz/ostatni-sluzby",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3341976495",
+   "name": "Hotel Belvedere",
+   "url": "https://www.hotelbelvedereprague.cz/cz/sluzby/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1667164355",
+   "name": "Hotel Bridge",
+   "url": "http://www.hotelbridge.cz/",
+   "reason": "web nefunguje (přesměrování na cizí doménu)"
+  },
+  {
+   "osm_id": "w116862397",
+   "name": "Hotel Galaxie",
+   "url": "https://hotelgalaxie.cz/",
+   "reason": "doména obsahuje nesouvisející obsah"
+  },
+  {
+   "osm_id": "n1822104779",
+   "name": "Hotel Gloria",
+   "url": "https://www.hotel-gloria.cz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3813709628",
+   "name": "Hotel Grand Majestic Plaza",
+   "url": "https://www.hotel-grandmajestic.cz/cs/hotel-sluzby/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w25550853",
+   "name": "Hotel International",
+   "url": "https://internationalprague.cz/hotel/facilities",
+   "reason": "web (vybavení, FAQ) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2504036066",
+   "name": "Hotel Karlin",
+   "url": "https://hotelkarlin.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1332744787",
+   "name": "Hotel Majestic Plaza Prague",
+   "url": "https://www.hotel-majestic.cz/cs/o-nas/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w401345793",
+   "name": "Hotel Pivovar",
+   "url": "https://www.hotel-pivovar.cz/pokoje/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4467559425",
+   "name": "K+K Hotel Fenix",
+   "url": "https://www.kkhotels.com/hotel/kk-hotel-fenix-prague/",
+   "reason": "web nic konkrétního o přístupnosti neuvádí (původní URL z OSM vrací 404)"
+  },
+  {
+   "osm_id": "n3470869212",
+   "name": "Liberty",
+   "url": "https://hotelliberty.cz/hotel/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n804656642",
+   "name": "Miss Sophie's New Town",
+   "url": "https://miss-sophies.com/hotel/prague-new-town/faq/",
+   "reason": "web (FAQ, služby) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w22908304",
+   "name": "NH Prague City",
+   "url": "https://www.nh-hotels.com/en/hotel/nh-prague-city",
+   "reason": "web uvádí jen slovo 'Accessibility' v seznamu služeb bez podrobností"
+  },
+  {
+   "osm_id": "n653876864",
+   "name": "OREA Hotel Andel's",
+   "url": "https://www.orea.cz/en/hotel-andels/rooms",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w48278756",
+   "name": "Ostrůvek",
+   "url": "https://www.ostruvek.cz/",
+   "reason": "web nešel načíst (ochrana proti robotům, přesměrování)"
+  },
+  {
+   "osm_id": "w30029791",
+   "name": "Pyramida",
+   "url": "https://www.orea.cz/hotel-pyramida/pokoje",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3779868858",
+   "name": "Residence 44",
+   "url": "https://residence44.com",
+   "reason": "web uvádí jen walk-in sprchový kout, bez údajů o přístupnosti"
+  },
+  {
+   "osm_id": "n305075235",
+   "name": "Roma",
+   "url": "https://www.hotelromaprague.com/cz/sluzby/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w421231655",
+   "name": "Sokol Praha",
+   "url": "https://www.campingsokol.cz/sluzby/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n366265046",
+   "name": "W",
+   "url": "https://www.marriott.com/en-gb/hotels/prgwh-w-prague/",
+   "reason": "web blokuje automatický přístup (HTTP 403)"
+  },
+  {
+   "osm_id": "n4939764152",
+   "name": "Three Crowns hotel",
+   "url": "https://www.3korunky.cz/",
+   "reason": "web blokuje automatický přístup (HTTP 403)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Prague City Tourism – prahou bez bariér: ubytování",
+   "url": "https://prague.eu/cs/prahou-bez-barier-ubytovani/",
+   "note": "oficiální turistický portál Prahy; výběr bezbariérových hotelů s popisem (Monastery, Hilton Old Town, Novotel, Atlantic, Courtyard Airport, Čertousy, Duo, Mariapoli)"
+  },
+  {
+   "title": "Prague City Tourism – kategorie bezbariérové ubytování",
+   "url": "https://prague.eu/cs/ubytovani-kategorie/bezbarierove-ubytovani/",
+   "note": "seznam ~75 zařízení; detailní stránky neobsahují popis přístupnosti, proto nepřebíráno bez ověření na webu provozovatele"
+  },
+  {
+   "title": "Accor – stránky hotelů ibis/Novotel/MGallery",
+   "url": "https://all.accor.com/",
+   "note": "typy přístupných pokojů a služba 'Wheelchair accessible'"
+  },
+  {
+   "title": "Flyabout Prague – průvodce bezbariérovou Prahou",
+   "url": "https://www.flyabout.cz/",
+   "note": "existující nezávislý zdroj s měřením pokojů; data nepřebírána (není web provozovatele ani oficiální portál)"
+  }
+ ]
+}

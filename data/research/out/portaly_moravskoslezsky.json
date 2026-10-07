@@ -1,0 +1,818 @@
+{
+ "task": "portaly_moravskoslezsky",
+ "kraj": "Moravskoslezský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n4861614208",
+   "name": "Hotel Garni VŠB",
+   "obec": "Ostrava",
+   "address": "Studentská 1770/1, 70800 Ostrava",
+   "lat": 49.836439,
+   "lng": 18.159318,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hotel-garni-vsb",
+   "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel nabízí bezbariérové pokoje (bez bližšího popisu).",
+    "parkovani": "Bezplatné parkování na hotelovém parkovišti (bez údaje o vyhrazeném stání)."
+   },
+   "evidence_quote": "Možnost využití bezbarierévých pokojů."
+  }
+ ],
+ "not_found": [
+  {
+   "name": "Hotel Ameryka",
+   "url": "https://www.kudyznudy.cz/aktivity/hotel-stara-ameryka-v-jablunkove",
+   "address": "Jablunkov 901, 739 91 Jablunkov",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Hotel Ameryka",
+    "obec": "Jablunkov",
+    "address": "Jablunkov 901, 739 91 Jablunkov",
+    "category": "ubytovani",
+    "source_url": "https://www.kudyznudy.cz/aktivity/hotel-stara-ameryka-v-jablunkove",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "vstup": "Hotel je podle portálu bezbariérový; stravování, ubytování i ostatní služby jsou přístupné osobám se zdravotním postižením.",
+     "pokoj": "Jeden dvoulůžkový pokoj je řešen jako plně bezbariérový.",
+     "vytah": "Všechna podlaží jsou bezbariérově přístupná díky výtahu."
+    },
+    "evidence_quote": "Jako plně bezbariérový je řešen jeden dvoulůžkový pokoj."
+   }
+  },
+  {
+   "name": "Penzion Praděd",
+   "url": "https://www.kudyznudy.cz/aktivity/penzion-praded",
+   "address": "Karlov pod Pradědem 72, 793 36 Malá Morávka",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Penzion Praděd",
+    "obec": "Malá Morávka",
+    "address": "Karlov pod Pradědem 72, 793 36 Malá Morávka",
+    "category": "ubytovani",
+    "source_url": "https://www.kudyznudy.cz/aktivity/penzion-praded",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "vstup": "Celé přízemí penzionu je bezbariérové.",
+     "pokoj": "V přízemí je jeden pokoj vhodný pro osoby se zdravotním omezením.",
+     "parkovani": "Parkoviště zdarma (bez údaje o vyhrazeném stání)."
+    },
+    "evidence_quote": "Celé přízemí penzionu je bezbariérové včetně pokoje pro osoby se zdravotním omezením."
+   }
+  },
+  {
+   "name": "Davidův mlýn",
+   "url": "https://www.kudyznudy.cz/aktivity/lanove-centrum-daviduv-mlyn-kruzberk",
+   "address": "Staré Těchanovice 46, 749 01 Staré Těchanovice",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Davidův mlýn",
+    "obec": "Staré Těchanovice",
+    "address": "Staré Těchanovice 46, 749 01 Staré Těchanovice",
+    "category": "ubytovani",
+    "source_url": "https://www.kudyznudy.cz/aktivity/lanove-centrum-daviduv-mlyn-kruzberk",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "pokoj": "Dva pokoje jsou zcela bezbariérové.",
+     "vytah": "Do všech pokojů ve vyšších patrech vede výtah."
+    },
+    "evidence_quote": "Dva pokoje jsou pak zcela bezbariérové."
+   }
+  },
+  {
+   "name": "Hotel Vitality",
+   "url": "https://www.kudyznudy.cz/aktivity/hotel-vitality-novy-hotel-ve-vendryni-na-trineck",
+   "address": "Vendryně 1217, 739 94 Vendryně",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Hotel Vitality",
+    "obec": "Vendryně",
+    "address": "Vendryně 1217, 739 94 Vendryně",
+    "category": "ubytovani",
+    "source_url": "https://www.kudyznudy.cz/aktivity/hotel-vitality-novy-hotel-ve-vendryni-na-trineck",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "vstup": "Veškeré hotelové prostory jsou podle portálu bezbariérové.",
+     "parkovani": "Podzemní garáže a parkoviště přímo před hotelem (bez údaje o vyhrazeném stání)."
+    },
+    "evidence_quote": "veškeré hotelové prostory jsou bezbariérové a nekuřácké"
+   }
+  },
+  {
+   "name": "Hotel Grůň",
+   "url": "https://www.kudyznudy.cz/aktivity/hotel-grun",
+   "address": "Mosty u Jablunkova 1112, 739 98 Mosty u Jablunkova",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Hotel Grůň",
+    "obec": "Mosty u Jablunkova",
+    "address": "Mosty u Jablunkova 1112, 739 98 Mosty u Jablunkova",
+    "category": "ubytovani",
+    "source_url": "https://www.kudyznudy.cz/aktivity/hotel-grun",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "vstup": "Hotel je podle portálu plně bezbariérový (bez podrobností).",
+     "parkovani": "U hotelu jsou dvě parkoviště s kapacitou 170 aut (bez údaje o vyhrazeném stání)."
+    },
+    "evidence_quote": "Hotel je plně bezbariérový."
+   }
+  },
+  {
+   "name": "Trasa pro vozíčkáře Bělský les",
+   "url": "https://www.kudyznudy.cz/aktivity/trasa-pro-vozickare-belsky-les-v-ostrave",
+   "address": "Plzeňská 221/333, 724 00 Ostrava",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Trasa pro vozíčkáře Bělský les",
+    "obec": "Ostrava",
+    "address": "Plzeňská 221/333, 724 00 Ostrava",
+    "category": "priroda",
+    "source_url": "https://www.kudyznudy.cz/aktivity/trasa-pro-vozickare-belsky-les-v-ostrave",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "limited",
+    "accessibility": {
+     "jine": "Značená vozíčkářská trasa (piktogram vozíku) určená pro zkušené vozíčkáře bez doprovodu; okruh 5,5 km, spojka 0,8 km a odbočka do Staré Bělé 1,5 km, celkem 7,8 km. V zimě a po vydatných deštích mohou být trasy nesjízdné. Na okruhu je několik restaurací.",
+     "parkovani": "V okolí lesa je několik možností parkování."
+    },
+    "measurements": [
+     {
+      "co": "délka hlavního okruhu",
+      "hodnota": 5.5,
+      "jednotka": "km"
+     },
+     {
+      "co": "celková délka značených tras",
+      "hodnota": 7.8,
+      "jednotka": "km"
+     }
+    ],
+    "evidence_quote": "určena pro zkušené vozíčkáře bez doprovodu"
+   }
+  },
+  {
+   "name": "Bezbariérová turistická trasa pro vozíčkáře Hrabyně",
+   "url": "https://www.kudyznudy.cz/aktivity/bezbarierova-turisticka-trasa-pro-vozickare-v-hrab",
+   "address": "Hrabyně č. 204, 747 67 Hrabyně",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Bezbariérová turistická trasa pro vozíčkáře Hrabyně",
+    "obec": "Hrabyně",
+    "address": "Hrabyně č. 204, 747 67 Hrabyně",
+    "category": "priroda",
+    "source_url": "https://www.kudyznudy.cz/aktivity/bezbarierova-turisticka-trasa-pro-vozickare-v-hrab",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Bezbariérová stezka modré obtížnosti dlouhá 2,5 km u Ústavu sociální péče, vede k Památníku II. světové války. Rehabilitační centrum v obci je podle portálu zcela bezbariérové; plánuje se prodloužení trasy."
+    },
+    "measurements": [
+     {
+      "co": "délka stezky",
+      "hodnota": 2.5,
+      "jednotka": "km"
+     }
+    ],
+    "evidence_quote": "Bezbariérová stezka modré obtížnosti v Hrabyni"
+   }
+  },
+  {
+   "name": "Trasa pro vozíčkáře Okolo Klimkovic",
+   "url": "https://www.kudyznudy.cz/aktivity/trasa-pro-vozickare-okolo-klimkovic",
+   "address": "Hýlov 24, 742 83 Klimkovice",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Trasa pro vozíčkáře Okolo Klimkovic",
+    "obec": "Klimkovice",
+    "address": "Hýlov 24, 742 83 Klimkovice",
+    "category": "priroda",
+    "source_url": "https://www.kudyznudy.cz/aktivity/trasa-pro-vozickare-okolo-klimkovic",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "limited",
+    "accessibility": {
+     "jine": "Okruh 4,8 km pro zdatné vozíčkáře s doprovodem, doporučený směr po směru hodinových ručiček; zkratkou 3 km, odbočka k restauraci Mexiko +1,4 km s převýšením cca 65 m.",
+     "parkovani": "Start na parkovišti u zastávky MHD u Sanatoria Klimkovice."
+    },
+    "measurements": [
+     {
+      "co": "délka okruhu",
+      "hodnota": 4.8,
+      "jednotka": "km"
+     },
+     {
+      "co": "převýšení v úseku k restauraci Mexiko",
+      "hodnota": 65,
+      "jednotka": "m"
+     }
+    ],
+    "evidence_quote": "Celá trasa je určena pro zdatné vozíčkáře s doprovodem."
+   }
+  },
+  {
+   "name": "Vodní svět Sareza – Čapkárna",
+   "url": "https://www.kudyznudy.cz/aktivity/vodni-svet-sareza-v-ostrave",
+   "address": "Sokolská třída 2590/44, 702 00 Ostrava",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Vodní svět Sareza – Čapkárna",
+    "obec": "Ostrava",
+    "address": "Sokolská třída 2590/44, 702 00 Ostrava",
+    "category": "sport",
+    "source_url": "https://www.kudyznudy.cz/aktivity/vodni-svet-sareza-v-ostrave",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "limited",
+    "accessibility": {
+     "jine": "Venkovní areál je podle portálu kompletně bezbariérový; o vnitřních prostorách údaj chybí."
+    },
+    "evidence_quote": "venkovní areál je kompletně bezbariérový"
+   }
+  },
+  {
+   "name": "Zoo Ostrava",
+   "url": "https://www.kudyznudy.cz/aktivity/zoologicka-zahrada-ostrava-priroda-na-dosah",
+   "address": "Michálkovická 2081/197, 710 00 Ostrava",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Zoo Ostrava",
+    "obec": "Ostrava",
+    "address": "Michálkovická 2081/197, 710 00 Ostrava",
+    "category": "priroda",
+    "source_url": "https://www.kudyznudy.cz/aktivity/zoologicka-zahrada-ostrava-priroda-na-dosah",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "vstup": "Bezbariérový vstup do pavilonů.",
+     "wc": "WC pro handicapované.",
+     "jine": "Možnost zapůjčení invalidního vozíku zdarma; prvky pro nevidomé."
+    },
+    "evidence_quote": "bezbariérový vstup do pavilonů, WC pro handicapované"
+   }
+  },
+  {
+   "name": "Národní památník II. světové války",
+   "url": "https://www.kudyznudy.cz/aktivity/slezske-zemske-muzeum-pamatnik-ii-svetove-valky",
+   "address": "Hrabyně 192, 747 63 Hrabyně",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Národní památník II. světové války",
+    "obec": "Hrabyně",
+    "address": "Hrabyně 192, 747 63 Hrabyně",
+    "category": "kultura",
+    "source_url": "https://www.kudyznudy.cz/aktivity/slezske-zemske-muzeum-pamatnik-ii-svetove-valky",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "limited",
+    "accessibility": {
+     "vstup": "Objekt je označen jako částečně přístupný: před vstupem šest schodů, vlevo přímá dvouramenná rampa; dvoukřídlé dveře se otevírají ručně ven.",
+     "jine": "Návštěvnické centrum je plně přístupné."
+    },
+    "evidence_quote": "Národní památník II. světové války je označen za částečně přístupný objekt."
+   }
+  },
+  {
+   "name": "Janáčkova filharmonie Ostrava",
+   "url": "https://www.kudyznudy.cz/aktivity/janackova-filharmonie-ostrava",
+   "address": "28. října 124, 702 00 Ostrava",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Janáčkova filharmonie Ostrava",
+    "obec": "Ostrava",
+    "address": "28. října 124, 702 00 Ostrava",
+    "category": "kultura",
+    "source_url": "https://www.kudyznudy.cz/aktivity/janackova-filharmonie-ostrava",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Krnovská synagoga",
+   "url": "https://www.kudyznudy.cz/aktivity/krnovska-synagoga",
+   "address": "Soukenická 83/28, 794 01 Krnov",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Krnovská synagoga",
+    "obec": "Krnov",
+    "address": "Soukenická 83/28, 794 01 Krnov",
+    "category": "pamatky",
+    "source_url": "https://www.kudyznudy.cz/aktivity/krnovska-synagoga",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Hasičské muzeum města Ostravy",
+   "url": "https://www.kudyznudy.cz/aktivity/hasicske-muzeum-v-ostrave",
+   "address": "Zákrejsova 53/3, 702 00 Ostrava",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Hasičské muzeum města Ostravy",
+    "obec": "Ostrava",
+    "address": "Zákrejsova 53/3, 702 00 Ostrava",
+    "category": "kultura",
+    "source_url": "https://www.kudyznudy.cz/aktivity/hasicske-muzeum-v-ostrave",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Dětské zábavní centrum JoJo park",
+   "url": "https://www.kudyznudy.cz/aktivity/detske-zabavni-centrum-jojo-park-ostrava",
+   "address": "Výškovická 3086/44, 700 30 Ostrava-Jih",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Dětské zábavní centrum JoJo park",
+    "obec": "Ostrava-Jih",
+    "address": "Výškovická 3086/44, 700 30 Ostrava-Jih",
+    "category": "sport",
+    "source_url": "https://www.kudyznudy.cz/aktivity/detske-zabavni-centrum-jojo-park-ostrava",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "vstup": "Centrum má bezbariérový vstup a přístup."
+    },
+    "evidence_quote": "Dětské zábavní centrum má bezbariérový přístup."
+   }
+  },
+  {
+   "name": "Gong – Dolní Vítkovice",
+   "url": "https://www.kudyznudy.cz/aktivity/galerie-gong-v-dolnich-vitkovicich",
+   "address": "Ruská 2993, 70300 Ostrava",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Gong – Dolní Vítkovice",
+    "obec": "Ostrava",
+    "address": "Ruská 2993, 70300 Ostrava",
+    "category": "kultura",
+    "source_url": "https://www.kudyznudy.cz/aktivity/galerie-gong-v-dolnich-vitkovicich",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Muzeum hraček Ostrava",
+   "url": "https://www.kudyznudy.cz/aktivity/muzeum-hracek-ostrava",
+   "address": "Vítkovická 3083/1, 702 00 Ostrava",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Muzeum hraček Ostrava",
+    "obec": "Ostrava",
+    "address": "Vítkovická 3083/1, 702 00 Ostrava",
+    "category": "kultura",
+    "source_url": "https://www.kudyznudy.cz/aktivity/muzeum-hracek-ostrava",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "PLATO Ostrava",
+   "url": "https://www.kudyznudy.cz/aktivity/galerie-plato-ostrava",
+   "address": "Porážková 26, 702 00 Ostrava",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "PLATO Ostrava",
+    "obec": "Ostrava",
+    "address": "Porážková 26, 702 00 Ostrava",
+    "category": "kultura",
+    "source_url": "https://www.kudyznudy.cz/aktivity/galerie-plato-ostrava",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Muzeum meteoritů Frýdek-Místek",
+   "url": "https://www.kudyznudy.cz/aktivity/muzeum-meteoritu-frydek-mistek",
+   "address": "Hlavní třída 106, 73801 Frýdek-Místek",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Muzeum meteoritů Frýdek-Místek",
+    "obec": "Frýdek-Místek",
+    "address": "Hlavní třída 106, 73801 Frýdek-Místek",
+    "category": "kultura",
+    "source_url": "https://www.kudyznudy.cz/aktivity/muzeum-meteoritu-frydek-mistek",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Šustalova vila – Lašské muzeum",
+   "url": "https://www.kudyznudy.cz/aktivity/lasske-muzeum-sustalova-vila-v-koprivnici",
+   "address": "Štefánikova 226/8, 742 21 Kopřivnice",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Šustalova vila – Lašské muzeum",
+    "obec": "Kopřivnice",
+    "address": "Štefánikova 226/8, 742 21 Kopřivnice",
+    "category": "kultura",
+    "source_url": "https://www.kudyznudy.cz/aktivity/lasske-muzeum-sustalova-vila-v-koprivnici",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Zámek a muzeum Bruntál",
+   "url": "https://www.kudyznudy.cz/aktivity/zamek-a-muzeum-v-bruntale",
+   "address": "Zámecké náměstí 7, 792 01 Bruntál",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Zámek a muzeum Bruntál",
+    "obec": "Bruntál",
+    "address": "Zámecké náměstí 7, 792 01 Bruntál",
+    "category": "pamatky",
+    "source_url": "https://www.kudyznudy.cz/aktivity/zamek-a-muzeum-v-bruntale",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "limited",
+    "accessibility": {
+     "jine": "Bezbariérově přístupná je jen výstavní síň a kaple v přízemí, zámecké nádvoří a parky."
+    },
+    "evidence_quote": "Bezbariérový přístup je jen do výstavní síně a kaple v přízemí objektu"
+   }
+  },
+  {
+   "name": "Kavárna Avion",
+   "url": "https://www.kudyznudy.cz/aktivity/kavarna-avion-cesky-tesin",
+   "address": "Hlavní 2061, 737 01 Český Těšín",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Kavárna Avion",
+    "obec": "Český Těšín",
+    "address": "Hlavní 2061, 737 01 Český Těšín",
+    "category": "restaurace",
+    "source_url": "https://www.kudyznudy.cz/aktivity/kavarna-avion-cesky-tesin",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "vstup": "Kavárna je podle portálu bezbariérová (bez podrobností)."
+    },
+    "evidence_quote": "Kavárna je bezbariérová."
+   }
+  },
+  {
+   "name": "Caffe 113",
+   "url": "https://www.kudyznudy.cz/aktivity/dialog-cafe",
+   "address": "Bezručova 113, 79326 Vrbno pod Pradědem",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Caffe 113",
+    "obec": "Vrbno pod Pradědem",
+    "address": "Bezručova 113, 79326 Vrbno pod Pradědem",
+    "category": "restaurace",
+    "source_url": "https://www.kudyznudy.cz/aktivity/dialog-cafe",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "vstup": "Kavárna je bezbariérová a přístupná osobám s omezenou pohyblivostí (bez podrobností).",
+     "parkovani": "Parkoviště u kavárny (bez údaje o vyhrazeném stání)."
+    },
+    "evidence_quote": "Kavárna je také family friendly, bezbariérová, klimatizovaná"
+   }
+  },
+  {
+   "name": "Návštěvnické centrum Marlenka",
+   "url": "https://www.kudyznudy.cz/aktivity/za-tajemstvim-marlenky",
+   "address": "Marlenka 434, 738 01 Frýdek-Místek",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Návštěvnické centrum Marlenka",
+    "obec": "Frýdek-Místek",
+    "address": "Marlenka 434, 738 01 Frýdek-Místek",
+    "category": "kultura",
+    "source_url": "https://www.kudyznudy.cz/aktivity/za-tajemstvim-marlenky",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Zámek Kunín",
+   "url": "https://www.kudyznudy.cz/aktivity/zamilujte-si-barokni-zamek-kunin",
+   "address": "Kunín čp. 1, 742 53 Kunín",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Zámek Kunín",
+    "obec": "Kunín",
+    "address": "Kunín čp. 1, 742 53 Kunín",
+    "category": "pamatky",
+    "source_url": "https://www.kudyznudy.cz/aktivity/zamilujte-si-barokni-zamek-kunin",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Krytý bazén Ještěrka",
+   "url": "https://www.kudyznudy.cz/aktivity/kryty-bazen-jesterka",
+   "address": "Za Ještěrkou 629/1, Bartovice, 717 00 Ostrava, 71700 Ostrava",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Krytý bazén Ještěrka",
+    "obec": "Ostrava",
+    "address": "Za Ještěrkou 629/1, Bartovice, 717 00 Ostrava, 71700 Ostrava",
+    "category": "sport",
+    "source_url": "https://www.kudyznudy.cz/aktivity/kryty-bazen-jesterka",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "vstup": "Do bazénu je bezbariérový přístup (bez podrobností).",
+     "jine": "Snížené vstupné pro ZTP."
+    },
+    "evidence_quote": "Do bazénu je bezbariérový přístup."
+   }
+  },
+  {
+   "name": "Návštěvnické centrum Nový Jičín – Laudonův dům",
+   "url": "https://www.kudyznudy.cz/aktivity/expozice-vyroby-klobouku-v-novem-jicine",
+   "address": "Masarykovo nám. 45, 741 01 Nový Jičín",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Návštěvnické centrum Nový Jičín – Laudonův dům",
+    "obec": "Nový Jičín",
+    "address": "Masarykovo nám. 45, 741 01 Nový Jičín",
+    "category": "kultura",
+    "source_url": "https://www.kudyznudy.cz/aktivity/expozice-vyroby-klobouku-v-novem-jicine",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Muzeum Beskyd – zámek Frýdek",
+   "url": "https://www.kudyznudy.cz/aktivity/muzeum-beskyd-ve-frydku-mistku",
+   "address": "Hluboká 66, 738 01 Frýdek-Místek",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Muzeum Beskyd – zámek Frýdek",
+    "obec": "Frýdek-Místek",
+    "address": "Hluboká 66, 738 01 Frýdek-Místek",
+    "category": "pamatky",
+    "source_url": "https://www.kudyznudy.cz/aktivity/muzeum-beskyd-ve-frydku-mistku",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Levandule de Žermanické moře",
+   "url": "https://www.kudyznudy.cz/aktivity/levandulova-farma-levandulove-pole-levandule-de-ze",
+   "address": "134, 73939 Lučina",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Levandule de Žermanické moře",
+    "obec": "Lučina",
+    "address": "134, 73939 Lučina",
+    "category": "priroda",
+    "source_url": "https://www.kudyznudy.cz/aktivity/levandulova-farma-levandulove-pole-levandule-de-ze",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "limited",
+    "accessibility": {
+     "parkovani": "Imobilní a starší návštěvníci mohou parkovat přímo u levandulového pole na vyznačené ploše.",
+     "jine": "Od kavárny na pole vede cca 350 m rovným travnatým terénem, vhodným i pro kočárky."
+    },
+    "measurements": [
+     {
+      "co": "vzdálenost od kavárny k poli (travnatý terén)",
+      "hodnota": 350,
+      "jednotka": "m"
+     }
+    ],
+    "evidence_quote": "Imobilní a starší návštěvníci mohou zaparkovat přímo u samotného pole"
+   }
+  },
+  {
+   "name": "Slezskoostravský hrad",
+   "url": "https://www.kudyznudy.cz/aktivity/slezskoostravsky-hrad",
+   "address": "Hradní 1/10, 710 00 Slezská Ostrava",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Slezskoostravský hrad",
+    "obec": "Slezská Ostrava",
+    "address": "Hradní 1/10, 710 00 Slezská Ostrava",
+    "category": "pamatky",
+    "source_url": "https://www.kudyznudy.cz/aktivity/slezskoostravsky-hrad",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Arboretum Nový Dvůr",
+   "url": "https://www.kudyznudy.cz/aktivity/arboretum-novy-dvur-ve-steboricich",
+   "address": "Stěbořice 27, 746 01 Stěbořice",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Arboretum Nový Dvůr",
+    "obec": "Stěbořice",
+    "address": "Stěbořice 27, 746 01 Stěbořice",
+    "category": "priroda",
+    "source_url": "https://www.kudyznudy.cz/aktivity/arboretum-novy-dvur-ve-steboricich",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "limited",
+    "accessibility": {
+     "jine": "Skleníková expozice a výstavní budova jsou plně přístupné pro handicapované; dendrologická (venkovní) expozice jen částečně."
+    },
+    "evidence_quote": "dendrologická expozice pouze částečně"
+   }
+  },
+  {
+   "name": "Zámek Raduň",
+   "url": "https://www.kudyznudy.cz/aktivity/zamek-radun",
+   "address": "Zámecká 67, 747 61 Raduň",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Zámek Raduň",
+    "obec": "Raduň",
+    "address": "Zámecká 67, 747 61 Raduň",
+    "category": "pamatky",
+    "source_url": "https://www.kudyznudy.cz/aktivity/zamek-radun",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "limited",
+    "accessibility": {
+     "vstup": "Bezbariérový vstup do přízemí návštěvního centra v sýpce a do okrasné zahrady u oranžerie.",
+     "jine": "Pro návštěvu oranžerie lze využít mobilní nájezdní plošiny. Snížené vstupné pro ZTP a ZTP/P."
+    },
+    "evidence_quote": "pro návštěvu oranžérie je možné využít mobilní nájezdní plošiny"
+   }
+  },
+  {
+   "name": "Letní koupaliště Ostrava-Poruba",
+   "url": "https://www.kudyznudy.cz/aktivity/koupaliste-ostrava-poruba",
+   "address": "Rekreační 236/74, 708 00 Poruba",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Letní koupaliště Ostrava-Poruba",
+    "obec": "Poruba",
+    "address": "Rekreační 236/74, 708 00 Poruba",
+    "category": "sport",
+    "source_url": "https://www.kudyznudy.cz/aktivity/koupaliste-ostrava-poruba",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "vstup": "Areál podle portálu poskytuje bezbariérový přístup (bez podrobností).",
+     "parkovani": "Parkoviště s kapacitou téměř 600 míst (bez údaje o vyhrazeném stání)."
+    },
+    "evidence_quote": "Samozřejmostí je bezbariérový přístup."
+   }
+  },
+  {
+   "name": "Lázně Klimkovice – Lesní park",
+   "url": "https://www.kudyznudy.cz/aktivity/relaxacni-lazenske-a-wellness-pobyty-a-procedury",
+   "address": "Hýlov 24, 742 84 Klimkovice",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Lázně Klimkovice – Lesní park",
+    "obec": "Klimkovice",
+    "address": "Hýlov 24, 742 84 Klimkovice",
+    "category": "zdravi",
+    "source_url": "https://www.kudyznudy.cz/aktivity/relaxacni-lazenske-a-wellness-pobyty-a-procedury",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "limited",
+    "accessibility": {
+     "jine": "Přilehlý Lesní park s naučnou stezkou a herními prvky je podle portálu bezbariérový; o budovách lázní údaj chybí."
+    },
+    "evidence_quote": "Přilehlý bezbariérový Lesní park s naučnou stezkou a herními prvky"
+   }
+  },
+  {
+   "name": "Zámek Hradec nad Moravicí",
+   "url": "https://www.kudyznudy.cz/aktivity/zamek-hradec-nad-moravici-zamek-ktery-hral-po-7",
+   "address": "Městečko čp.2, 747 41 Hradec nad Moravicí",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Zámek Hradec nad Moravicí",
+    "obec": "Hradec nad Moravicí",
+    "address": "Městečko čp.2, 747 41 Hradec nad Moravicí",
+    "category": "pamatky",
+    "source_url": "https://www.kudyznudy.cz/aktivity/zamek-hradec-nad-moravici-zamek-ktery-hral-po-7",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "limited",
+    "accessibility": {
+     "vstup": "V přízemí Bílého zámku je bez bariér část okruhu (od vesnického apartmá po Hubertovu světnici), včetně hostinského apartmá a kaple; z Hubertovy světnice bezbariérový výstup na nádvoří.",
+     "wc": "Bezbariérová toaleta ve vstupní chodbě jižního křídla Bílého zámku; klíč vydá průvodce."
+    },
+    "evidence_quote": "Ve vstupní chodbě v jižním křídle Bílého zámku naleznete bezbariérovou toaletu."
+   }
+  },
+  {
+   "name": "Divadlo loutek Ostrava",
+   "url": "https://www.kudyznudy.cz/aktivity/divadlo-loutek-ostrava",
+   "address": "Pivovarská 3164/15, 728 32 Ostrava",
+   "reason": "nezapsáno: místo není v places.json a Nominatim byl celou dobu nedostupný (HTTP 429/503, ~1,5 h opakování) – údaje z portálu připraveny v poli pripraveno, po geokódování lze přesunout do places",
+   "pripraveno": {
+    "name": "Divadlo loutek Ostrava",
+    "obec": "Ostrava",
+    "address": "Pivovarská 3164/15, 728 32 Ostrava",
+    "category": "kultura",
+    "source_url": "https://www.kudyznudy.cz/aktivity/divadlo-loutek-ostrava",
+    "source_type": "turistický portál (Kudy z nudy / CzechTourism)",
+    "wheelchair_claim": "yes",
+    "accessibility": {
+     "jine": "Portál uvádí u místa jen štítek „Bezbariérový přístup“ v sekci Certifikace a další informace, bez dalších podrobností."
+    },
+    "evidence_quote": "Certifikace a další informace – Bezbariérový přístup"
+   }
+  },
+  {
+   "name": "Slezské zemské muzeum – historická výstavní budova (Opava)",
+   "url": "https://www.kudyznudy.cz/aktivity/slezske-zemske-muzeum",
+   "reason": "bezbariérový přístup jen v automaticky generovaném seznamu štítků, bez popisu"
+  },
+  {
+   "name": "Zámecký park v Bruntále",
+   "url": "https://www.kudyznudy.cz/aktivity/zamecky-park-v-bruntale",
+   "reason": "„bezbariérový okruh“ zmíněn jen v AI shrnutí portálu, v textu stránky ne"
+  },
+  {
+   "name": "Sanatoria Klimkovice, Záchranná stanice Poodří, DinoPark Ostrava, Planetárium Ostrava, Hlučínské jezero, Hornické muzeum OKD, Malenovická vyhlídka, Minimuzeum kočárků, Mlýn vodníka Slámy",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier",
+   "reason": "v kampani Bez bariér, ale stránka uvádí jen slevu ZTP nebo nic konkrétního o přístupnosti"
+  },
+  {
+   "name": "~106 dalších míst v kraji se štítkem Bezbariérový přístup",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier",
+   "reason": "nezapsáno kvůli limitu ~40 míst; jen štítek bez podrobností"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Kudy z nudy – kampaň Bez bariér (+ podstránky bezbariérové ubytování, zážitky, restaurace)",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier",
+   "note": "z mapových bodů kampaně (3397) vybrány body v okolí kraje, detail stránek ověřen; 159 má region Moravskoslezský kraj; 23 s konkrétním popisem přístupnosti + 14 vybraných cílů jen se štítkem"
+  },
+  {
+   "title": "msregion.cz",
+   "url": "https://www.msregion.cz",
+   "note": "nefunkční – přesměrování na cizí doménu (regbu.com), nepoužito"
+  },
+  {
+   "title": "ostravainfo.cz",
+   "url": "https://www.ostravainfo.cz",
+   "note": "úvodní stránka a mapy/brožury bez sekce o bezbariérovosti; vyhledávání a sitemap 404"
+  },
+  {
+   "title": "beskydy-valassko.eu",
+   "url": "https://www.beskydy-valassko.eu",
+   "note": "nenačte se (spojení selhalo)"
+  },
+  {
+   "title": "severnimorava.travel",
+   "url": "https://www.severnimorava.travel",
+   "note": "vrací HTTP 466 (blokace robotů)"
+  },
+  {
+   "title": "Nominatim / data/places.json",
+   "url": "https://nominatim.openstreetmap.org",
+   "note": "souřadnice z Nominatim; Hotel Garni VŠB z places.json"
+  }
+ ]
+}

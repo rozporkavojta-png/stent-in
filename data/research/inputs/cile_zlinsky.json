@@ -1,0 +1,273 @@
+[
+{
+"i": "n2926967896",
+"n": "Na Skalce",
+"s": "Vyhlídka",
+"o": "Bojkovice",
+"w": "no",
+"la": 49.02512,
+"lo": 17.844448
+},
+{
+"i": "w256755075",
+"n": "Společenský dům Sušil",
+"s": "Komunitní centrum",
+"o": "Bystřice pod Hostýnem",
+"w": "yes",
+"la": 49.401903,
+"lo": 17.670828
+},
+{
+"i": "n3049350072",
+"n": "Knihovna v Kašavě",
+"s": "Knihovna",
+"o": "Kašava",
+"web": "http://www.knihovnakasava.webzdarma.cz",
+"w": "no",
+"la": 49.297777,
+"lo": 17.787954
+},
+{
+"i": "w276960871",
+"n": "Korytňanská rozhledna",
+"s": "Vyhlídka",
+"o": "Korytná",
+"w": "no",
+"la": 48.914107,
+"lo": 17.670222
+},
+{
+"i": "n4264552011",
+"n": "Rozhledna Obecnice",
+"s": "Vyhlídka",
+"o": "Korytná",
+"w": "no",
+"la": 48.91411,
+"lo": 17.670224
+},
+{
+"i": "w224275486",
+"n": "Živá voda",
+"s": "Muzeum",
+"o": "Modrá",
+"web": "https://www.zivavodamodra.cz/",
+"w": "limited",
+"la": 49.103331,
+"lo": 17.409176
+},
+{
+"i": "w1524871977",
+"n": "Rozhledna Floriánka",
+"s": "Vyhlídka",
+"o": "Polešovice",
+"w": "no",
+"la": 49.037798,
+"lo": 17.32637
+},
+{
+"i": "w844020662",
+"n": "starý lis",
+"s": "Turistický cíl",
+"o": "Polešovice",
+"w": "limited",
+"la": 49.033546,
+"lo": 17.346688
+},
+{
+"i": "n2029962354",
+"n": "Obecní knihovna Rokytnice",
+"s": "Knihovna",
+"o": "Rokytnice",
+"web": "https://rokytnicez.knihovna.info/",
+"w": "limited",
+"la": 49.065095,
+"lo": 17.911326
+},
+{
+"i": "w82717360",
+"n": "Rozhledna Brdo",
+"s": "Vyhlídka",
+"o": "Roštín",
+"w": "no",
+"la": 49.170682,
+"lo": 17.30822
+},
+{
+"i": "w520489310",
+"n": "Vartovna",
+"s": "Vyhlídka",
+"o": "Seninka",
+"w": "no",
+"la": 49.269996,
+"lo": 17.938783
+},
+{
+"i": "w680733462",
+"n": "Pivečkův lesopark",
+"s": "Zábavní park",
+"o": "Slavičín",
+"w": "limited",
+"la": 49.09559,
+"lo": 17.868477
+},
+{
+"i": "w82555501",
+"n": "Památník Velké Moravy",
+"s": "Muzeum",
+"o": "Staré Město",
+"web": "https://www.slovackemuzeum.cz/doc/8/",
+"w": "yes",
+"t": "yes",
+"la": 49.078458,
+"lo": 17.443797
+},
+{
+"i": "w40545754",
+"n": "Centrum slovanské archeologie",
+"s": "Muzeum",
+"o": "Uherské Hradiště",
+"web": "https://www.mzm.cz/centrum-slovanske-archeologie/",
+"w": "no",
+"la": 49.071333,
+"lo": 17.46455
+},
+{
+"i": "n5112543114",
+"n": "Galerie Zeman",
+"s": "Galerie",
+"o": "Uherské Hradiště",
+"w": "no",
+"la": 49.068394,
+"lo": 17.459325
+},
+{
+"i": "n822897593",
+"n": "Rozhledna Rovnina",
+"s": "Vyhlídka",
+"o": "Uherské Hradiště",
+"web": "https://www.uherske-hradiste.cz/misto/rozhledna-rovnina/",
+"w": "no",
+"la": 49.0715,
+"lo": 17.513163
+},
+{
+"i": "n932006899",
+"n": "Slovácké divadlo",
+"s": "Divadlo",
+"o": "Uherské Hradiště",
+"a": "Tyršovo náměstí 480",
+"web": "https://www.slovackedivadlo.cz/",
+"w": "yes",
+"la": 49.071579,
+"lo": 17.460465
+},
+{
+"i": "n4347979164",
+"n": "podzemí baziliky",
+"s": "Turistický cíl",
+"o": "Velehrad",
+"web": "https://www.velehradinfo.cz/muzejni-expozice/",
+"w": "no",
+"la": 49.103219,
+"lo": 17.395826
+},
+{
+"i": "n2933247886",
+"n": "rozhledna Doubí",
+"s": "Vyhlídka",
+"o": "Vážany",
+"web": "https://www.obecvazany.cz/obec/zajimavosti/rozhledna/rozhledna-13cs.html",
+"w": "no",
+"la": 49.039138,
+"lo": 17.303703
+},
+{
+"i": "n11618871014",
+"n": "Start zážitkové geolokační hry: Příběh trinitáře - cena za svobodu",
+"s": "Turistický cíl",
+"o": "Zašová",
+"a": "Zašová 809",
+"web": "https://klasterzasova.cz/geohra/",
+"w": "yes",
+"la": 49.476329,
+"lo": 18.04399
+},
+{
+"i": "w258244009",
+"n": "Rozhledna Zdenička",
+"s": "Vyhlídka",
+"o": "Zdounky",
+"w": "no",
+"la": 49.217061,
+"lo": 17.282498
+},
+{
+"i": "w134395799",
+"n": "14-15 Baťův institut",
+"s": "Komunitní centrum",
+"o": "Zlín",
+"web": "https://www.14-15.cz/",
+"w": "yes",
+"la": 49.225115,
+"lo": 17.658779
+},
+{
+"i": "n2668168160",
+"n": "Knihovna Univerzity Tomáše Bati ve Zlíně",
+"s": "Knihovna",
+"o": "Zlín",
+"web": "https://knihovna.utb.cz/",
+"w": "yes",
+"la": 49.22252,
+"lo": 17.66484
+},
+{
+"i": "w40671845",
+"n": "Kongresové centrum",
+"s": "Kulturní centrum",
+"o": "Zlín",
+"a": "nám. T. G. Masaryka 5556",
+"w": "yes",
+"la": 49.223088,
+"lo": 17.664449
+},
+{
+"i": "n7006000608",
+"n": "Muzeum jihovýchodní moravy ve Zlíně",
+"s": "Muzeum",
+"o": "Zlín",
+"a": "Vavrečkova 7040",
+"web": "https://www.muzeum-zlin.cz/cs/",
+"w": "yes",
+"la": 49.224795,
+"lo": 17.658564
+},
+{
+"i": "w33893999",
+"n": "Městské divadlo Zlín",
+"s": "Divadlo",
+"o": "Zlín",
+"w": "limited",
+"la": 49.22495,
+"lo": 17.669695
+},
+{
+"i": "n11694656304",
+"n": "Sál Evy Jiřičné",
+"s": "Divadlo",
+"o": "Zlín",
+"w": "yes",
+"la": 49.223121,
+"lo": 17.664243
+},
+{
+"i": "w56023044",
+"n": "ZOO Zlín - Lešná",
+"s": "Zoo",
+"o": "Zlín",
+"web": "https://www.zoozlin.eu/",
+"w": "yes",
+"la": 49.276341,
+"lo": 17.716684
+}
+]

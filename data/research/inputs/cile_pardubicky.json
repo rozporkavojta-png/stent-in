@@ -1,0 +1,228 @@
+[
+{
+"i": "w614526670",
+"n": "Findejsův lom",
+"s": "Turistický cíl",
+"o": "Bystré",
+"w": "no",
+"la": 49.620445,
+"lo": 16.332171
+},
+{
+"i": "n540203737",
+"n": "Rozhledna Bára",
+"s": "Vyhlídka",
+"o": "Chrudim",
+"web": "https://lesychrudim.cz/rozhledna-bara-ii/o-rozhledne/",
+"w": "no",
+"la": 49.91629,
+"lo": 15.780657
+},
+{
+"i": "n2535214905",
+"n": "Kalvárie",
+"s": "Vyhlídka",
+"o": "Dlouhoňovice",
+"w": "no",
+"la": 50.065627,
+"lo": 16.439409
+},
+{
+"i": "n2834662231",
+"n": "rozhledna Lanšperk",
+"s": "Vyhlídka",
+"o": "Dolní Dobrouč",
+"w": "no",
+"la": 49.994951,
+"lo": 16.454082
+},
+{
+"i": "n14063492945",
+"n": "Zmenšenina rozhledny na Sněžníku",
+"s": "Turistický cíl",
+"o": "Králíky",
+"w": "no",
+"la": 50.080898,
+"lo": 16.756355
+},
+{
+"i": "n804131424",
+"n": "Kino Lanškroun",
+"s": "Kino",
+"o": "Lanškroun",
+"w": "no",
+"la": 49.911222,
+"lo": 16.60887
+},
+{
+"i": "n11073172223",
+"n": "Westernové městečko \"Hill Valley\"",
+"s": "Turistický cíl",
+"o": "Luže",
+"w": "no",
+"la": 49.865127,
+"lo": 16.058514
+},
+{
+"i": "w291482703",
+"n": "Průmyslové muzeum Mladějov",
+"s": "Muzeum",
+"o": "Mladějov na Moravě",
+"web": "https://www.mladejov.cz/",
+"w": "limited",
+"la": 49.824744,
+"lo": 16.586326
+},
+{
+"i": "n12799648734",
+"n": "Galerie města Pardubic",
+"s": "Galerie",
+"o": "Pardubice",
+"web": "https://www.otevrenakultura.cz/cs/gampa",
+"w": "yes",
+"la": 50.042187,
+"lo": 15.782105
+},
+{
+"i": "n1260801271",
+"n": "Knihovna městského obvodu Pardubice 2",
+"s": "Knihovna",
+"o": "Pardubice",
+"w": "yes",
+"la": 50.045681,
+"lo": 15.755613
+},
+{
+"i": "n12505164623",
+"n": "Krajské asistenční centrum pomoci Ukrajině",
+"s": "Komunitní centrum",
+"o": "Pardubice",
+"web": "https://ipc.gov.cz/docasna-ochrana/navstivte-krajske-asistencni-centrum-pomoci-kacpu/",
+"w": "yes",
+"la": 50.03877,
+"lo": 15.770953
+},
+{
+"i": "w1246112524",
+"n": "Loď Otava",
+"s": "Turistický cíl",
+"o": "Pardubice",
+"w": "limited",
+"la": 50.040781,
+"lo": 15.781154
+},
+{
+"i": "n12211503540",
+"n": "Malá scéna ve dvoře",
+"s": "Divadlo",
+"o": "Pardubice",
+"web": "https://www.vcd.cz/o-divadle/mala-scena",
+"w": "yes",
+"la": 50.035824,
+"lo": 15.777958
+},
+{
+"i": "n296612991",
+"n": "Muzeum Historie železniční dopravy a městské hromadné dopravy",
+"s": "Muzeum",
+"o": "Pardubice",
+"a": "Nádražní 53",
+"web": "https://www.motoracek.cz/;http://www.pshzd.cz/",
+"w": "limited",
+"la": 50.044759,
+"lo": 15.743406
+},
+{
+"i": "n12148113519",
+"n": "Petrklíč",
+"s": "Komunitní centrum",
+"o": "Pardubice",
+"w": "no",
+"la": 50.041169,
+"lo": 15.753578
+},
+{
+"i": "n296708916",
+"n": "Univerzitní knihovna",
+"s": "Knihovna",
+"o": "Pardubice",
+"a": "Studentská 519",
+"w": "yes",
+"la": 50.049306,
+"lo": 15.766628
+},
+{
+"i": "n4921983662",
+"n": "Muzeum dýmek Proseč",
+"s": "Muzeum",
+"o": "Proseč",
+"a": "náměstí Dr. Tošovského 61",
+"web": "https://www.muzeumdymek.cz/",
+"w": "yes",
+"la": 49.805872,
+"lo": 16.116027
+},
+{
+"i": "w802557407",
+"n": "Rozhledna U Marešů",
+"s": "Turistický cíl",
+"o": "Proseč",
+"w": "no",
+"la": 49.778756,
+"lo": 16.106407
+},
+{
+"i": "n6782646820",
+"n": "Lesní posilovna",
+"s": "Turistický cíl",
+"o": "Svitavy",
+"w": "yes",
+"la": 49.746881,
+"lo": 16.457485
+},
+{
+"i": "w1135683716",
+"n": "Zuberský kopec",
+"s": "Vyhlídka",
+"o": "Trhová Kamenice",
+"w": "no",
+"la": 49.781491,
+"lo": 15.80179
+},
+{
+"i": "n2651592789",
+"n": "rozhledna Křížová hora",
+"s": "Vyhlídka",
+"o": "Červená Voda",
+"w": "no",
+"la": 50.037974,
+"lo": 16.757313
+},
+{
+"i": "n829529480",
+"n": "Boiika",
+"s": "Vyhlídka",
+"o": "České Lhotice",
+"w": "limited",
+"la": 49.846518,
+"lo": 15.78408
+},
+{
+"i": "n656071368",
+"n": "Stříbrná krasavice",
+"s": "Vyhlídka",
+"o": "Řetová",
+"w": "no",
+"la": 49.960175,
+"lo": 16.373951
+},
+{
+"i": "w60910423",
+"n": "Tyršova rozhledna",
+"s": "Vyhlídka",
+"o": "Žamberk",
+"w": "no",
+"la": 50.08498,
+"lo": 16.457066
+}
+]

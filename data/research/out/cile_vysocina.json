@@ -1,0 +1,99 @@
+{
+ "task": "cile_vysocina",
+ "kraj": "Kraj Vysočina",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w111741036",
+   "name": "Muzeum dr. Aleše Hrdličky",
+   "obec": "Humpolec",
+   "address": "Horní náměstí 273",
+   "lat": 49.54139,
+   "lng": 15.359663,
+   "category": "muzeum",
+   "source_url": "https://humpolec.cz/misto/muzeum-dr-alese-hrdlicky/",
+   "source_type": "web města",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Muzeum má podle stránky města od roku 2011 bezbariérový přístup."
+   },
+   "measurements": [],
+   "evidence_quote": "Od roku 2011 má Muzeum dr. A. Hrdličky bezbariérový přístup."
+  },
+  {
+   "osm_id": "w40617967",
+   "name": "Horácké divadlo",
+   "obec": "Jihlava",
+   "address": "",
+   "lat": 49.398245,
+   "lng": 15.589599,
+   "category": "divadlo",
+   "source_url": "https://www.hdj.cz/prakticke-informace/do-divadla-s-handicapem",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Velká scéna je bezbariérová, bezbariérová cesta vede i do pokladny a kavárny; bezbariérový vstup do výtahu z pasáže v přízemí.",
+    "wc": "Foyer i kavárna mají bezbariérové sociální zařízení.",
+    "vytah": "Výtah vede na Malou scénu (2. patro), Zkušebnu (1. patro) a Divadelní klub (suterén).",
+    "jine": "V sále vyhrazená místa pro vozíky; tři bezbariérové lóže pro 9 vozíčkářů v 1. patře Velké scény; indukční smyčka v hledišti Velké scény."
+   },
+   "measurements": [
+    {
+     "co": "bezbariérové lóže – počet míst pro vozíčkáře",
+     "hodnota": 9,
+     "jednotka": "míst"
+    }
+   ],
+   "evidence_quote": "Velká scéna Horáckého divadla je bezbariérová, v sále jsou vyhrazená místa pro invalidní vozíky"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n11655725347",
+   "name": "Muzeum Vysočiny Roštejn",
+   "url": "https://mvji.cz/pobocky/hrad-rostejn",
+   "reason": "uvádí jen slevy pro držitele ZTP a ZTP/P, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n3398336459",
+   "name": "HLINÍKárium",
+   "url": "https://hlinik3.webnode.cz/hlinikarium/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n12295940732",
+   "name": "Muzeum Tesla",
+   "url": "https://muzeumtesla.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1781929307",
+   "name": "Muzeum Vysočiny Jihlava - pobočka Třešť",
+   "url": "http://muzeum.ji.cz/str.php?id=139&&parent_id=148&&lang=cz&&show=1&&active=1",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n9979423702",
+   "name": "Modelové království",
+   "url": "https://www.mkzdar.cz/informace-o-navsteve",
+   "reason": "uvádí jen vstupné pro ZTP, o fyzické přístupnosti nic"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby cílů z OSM (vstup cile_vysocina.json)",
+   "url": "data/research/inputs/cile_vysocina.json",
+   "note": "9 záznamů s webem; prošlo se 7 (muzea + divadlo), kina vynechána"
+  },
+  {
+   "title": "Humpolec – Muzeum dr. Aleše Hrdličky",
+   "url": "https://humpolec.cz/misto/muzeum-dr-alese-hrdlicky/",
+   "note": "bezbariérový přístup od 2011"
+  },
+  {
+   "title": "Horácké divadlo – Do divadla s handicapem",
+   "url": "https://www.hdj.cz/prakticke-informace/do-divadla-s-handicapem",
+   "note": "podrobný popis přístupnosti scén"
+  }
+ ]
+}

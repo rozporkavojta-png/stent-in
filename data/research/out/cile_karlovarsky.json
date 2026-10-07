@@ -1,0 +1,619 @@
+{
+ "task": "cile_karlovarsky",
+ "kraj": "Karlovarský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": null,
+   "name": "Státní zámek Kynžvart",
+   "obec": "Lázně Kynžvart",
+   "address": "",
+   "lat": 50.0043072,
+   "lng": 12.6050897,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-kynzvart.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Zámek je podle správce plně bezbariérový.",
+    "vytah": "K dispozici je výtah.",
+    "wc": "WC pro tělesně postižené, odemykatelné euroklíčem.",
+    "parkovani": "Placené parkoviště cca 100 m od budovy zámku."
+   },
+   "measurements": [],
+   "evidence_quote": "Státní zámek Kynžvart je plně bezbariérový."
+  },
+  {
+   "osm_id": null,
+   "name": "Státní hrad a zámek Bečov nad Teplou",
+   "obec": "Bečov nad Teplou",
+   "address": "nám. 5. května 13",
+   "lat": 50.0850081,
+   "lng": 12.8395703,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-becov.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Prohlídky relikviáře sv. Maura a zámeckých interiérů nejsou bezbariérové, hradní nádvoří je obtížně přístupné; po předchozí domluvě se správa pokusí zajistit vstup. U vstupu do areálu je zvonek pro vozíčkáře.",
+    "wc": "Bezbariérové WC v horní části areálu vedle pokladny.",
+    "parkovani": "Placená parkoviště v okolí, městské parkoviště přímo na náměstí.",
+    "jine": "Správa uvádí, že areál zatím není bezbariérový a je hůře přístupný pro lidi se sníženou pohyblivostí; návštěvu je nutné předem konzultovat (https://www.zamek-becov.cz/cs/informace-pro-navstevniky/informace-o-dostupnosti-objektu-pro-hendikepovane). Pro nevidomé speciální prohlídka s dotykovým modelem relikviáře."
+   },
+   "measurements": [],
+   "evidence_quote": "Prohlídky relikviáře sv. Maura a zámeckých interiérů bohužel nejsou bezbariérové."
+  },
+  {
+   "osm_id": null,
+   "name": "Becherova vila (Galerie umění Karlovy Vary)",
+   "obec": "Karlovy Vary",
+   "address": "Krále Jiřího",
+   "lat": 50.2261776,
+   "lng": 12.8746747,
+   "category": "kultura",
+   "source_url": "https://www.galeriekvary.cz/o-becherove-vile/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup do budovy je zajištěn – výstavní sály, koncertní sál, ateliéry.",
+    "wc": "Bezbariérové WC (uvedeno ve výčtu bezbariérových prostor)."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup do budovy je zajištěn (výstavní sály, koncertní sál, ateliéry, wc)"
+  },
+  {
+   "osm_id": null,
+   "name": "Galerie umění Karlovy Vary",
+   "obec": "Karlovy Vary",
+   "address": "Goethova stezka",
+   "lat": 50.2171762,
+   "lng": 12.8870134,
+   "category": "kultura",
+   "source_url": "https://www.galeriekvary.cz/o-galeri-umeni/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Galerie není bezbariérová; přízemní sály jsou dostupné po domluvě a instalaci přenosné nájezdové plošiny na venkovní schůdky. Sály a koncerty v 1. patře po včasné předchozí dohodě s asistencí personálu.",
+    "parkovani": "Placená parkoviště v ulici Slovenská."
+   },
+   "measurements": [],
+   "evidence_quote": "Galerie není bezbariérovým objektem."
+  },
+  {
+   "osm_id": null,
+   "name": "Letohrádek Ostrov (Galerie umění Karlovy Vary)",
+   "obec": "Ostrov",
+   "address": "Zámecký park",
+   "lat": 50.3030673,
+   "lng": 12.9379975,
+   "category": "kultura",
+   "source_url": "https://www.galeriekvary.cz/o-letohradku-ostrov/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Galerie není bezbariérová; návštěva přízemí je po dohodě možná s asistencí personálu galerie."
+   },
+   "measurements": [],
+   "evidence_quote": "Galerie není bezbariérovým objektem."
+  },
+  {
+   "osm_id": null,
+   "name": "Návštěvnické centrum The Home of Becherovka",
+   "obec": "Karlovy Vary",
+   "address": "T. G. Masaryka 282/57",
+   "lat": 50.230224,
+   "lng": 12.8670408,
+   "category": "kultura",
+   "source_url": "https://www.becherovka.com/navstevni-rad/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle návštěvního řádu je v návštěvnickém centru v případě potřeby zajištěn bezbariérový přístup.",
+    "jine": "Jedné prohlídky se může účastnit nejvýše 1 osoba na invalidním vozíku (kvůli evakuaci ze sklepních prostor); prohlídky jen s průvodcem."
+   },
+   "measurements": [],
+   "evidence_quote": "V NCB je pro případ potřeby zajištěn bezbariérový přístup."
+  },
+  {
+   "osm_id": null,
+   "name": "Císařské lázně",
+   "obec": "Karlovy Vary",
+   "address": "Mariánskolázeňská 306/2",
+   "lat": 50.2188895,
+   "lng": 12.881525,
+   "category": "pamatky",
+   "source_url": "https://www.cisarskelazne.cz/pro-navstevniky/cisarske-lazne-bez-barier",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Budova je bezbariérově přístupná, vjezd do dveří bez prahu, za vstupem nájezdová plošina pro vozíčkáře. Návštěvní řád uvádí bezbariérový přístup hlavním vstupem.",
+    "vytah": "Patra propojena výtahem; do sálu Atrium vede schodišťová plošina, kterou lze ovládat bez obsluhy.",
+    "jine": "Základní značení pro návštěvníky s poruchami zraku; personál je k dispozici."
+   },
+   "measurements": [],
+   "evidence_quote": "Vjezd do dveří není limitován žádným prahem."
+  },
+  {
+   "osm_id": null,
+   "name": "Mattoni Arena (KV Arena)",
+   "obec": "Karlovy Vary",
+   "address": "Západní",
+   "lat": 50.2245956,
+   "lng": 12.8445452,
+   "category": "sport",
+   "source_url": "https://kvarena.cz/multifunkcni-hala-kv-arena/technicke-informace-kv-arena/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Celý komplex je podle provozovatele bezbariérově přístupný.",
+    "vytah": "V multifunkční a tréninkové hale 6 výtahů pro osoby.",
+    "jine": "Jedna tribuna je vyhrazena pro hendikepované."
+   },
+   "measurements": [],
+   "evidence_quote": "Celý komplex Mattoni Areny je bezbariérově přístupný"
+  },
+  {
+   "osm_id": null,
+   "name": "Městské muzeum Mariánské Lázně",
+   "obec": "Mariánské Lázně",
+   "address": "Goethovo náměstí",
+   "lat": 49.9770009,
+   "lng": 12.7084873,
+   "category": "kultura",
+   "source_url": "https://muzeum-ml.cz/o-muzeu/historie-muzea/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "V rámci úprav od roku 2004 byl do budovy muzea zbudován bezbariérový přístup (bez dalších podrobností)."
+   },
+   "measurements": [],
+   "evidence_quote": "Do budovy muzea byl zbudován bezbariérový přístup"
+  },
+  {
+   "osm_id": null,
+   "name": "Krajské muzeum Cheb",
+   "obec": "Cheb",
+   "address": "náměstí Krále Jiřího z Poděbrad 3",
+   "lat": 50.0800983,
+   "lng": 12.37002,
+   "category": "kultura",
+   "source_url": "https://muzeumcheb.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Muzeum podle svého webu nemá bezbariérový přístup."
+   },
+   "measurements": [],
+   "evidence_quote": "MUZEUM NEMÁ BEZBARIÉROVÝ PŘÍSTUP"
+  },
+  {
+   "osm_id": "n8251639554",
+   "name": "Hrázděný statek Milíkov (Muzeum Cheb)",
+   "obec": "Milíkov",
+   "address": "Milíkov č.p. 18",
+   "lat": 50.057872,
+   "lng": 12.547851,
+   "category": "pamatky",
+   "source_url": "https://muzeumcheb.cz/statek/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Statek podle webu muzea nemá bezbariérový přístup."
+   },
+   "measurements": [],
+   "evidence_quote": "STATEK NEMÁ BEZBARIÉROVÝ PŘÍSTUP"
+  },
+  {
+   "osm_id": null,
+   "name": "Městské divadlo Mariánské Lázně",
+   "obec": "Mariánské Lázně",
+   "address": "Třebízského 106/1",
+   "lat": 49.9778883,
+   "lng": 12.7024441,
+   "category": "kultura",
+   "source_url": "https://divadloml.cz/o-divadle/navstevni-rad",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup pro vozíčkáře, max. 2 osoby na vozíku; vchod pro vozík určí personál – příchod je třeba nahlásit předem.",
+    "wc": "Toalety pro vozíčkáře vyčleněny v přízemí.",
+    "jine": "Místa pro vozíčkáře v přízemí; osoba s omezenou pohyblivostí musí mít doprovod se vstupenkou na místo vedle; doporučen příchod 30 min před začátkem."
+   },
+   "measurements": [],
+   "evidence_quote": "Do MD je zřízen bezbariérový přístup pro vozíčkáře"
+  },
+  {
+   "osm_id": null,
+   "name": "Karlovarské městské divadlo",
+   "obec": "Karlovy Vary",
+   "address": "Divadelní náměstí 21",
+   "lat": 50.2209691,
+   "lng": 12.8816886,
+   "category": "kultura",
+   "source_url": "https://www.karlovarske-divadlo.cz/vstupenky/slevy-na-vstupnem/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "V ceníku slev je vstupenka „Vozíčkář“ do přízemí za 100 Kč (dostupné od 24. 6. 2026); podrobnosti o přístupu web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Vozíčkář * Cena do přízemí 100 Kč"
+  },
+  {
+   "osm_id": "w73108678",
+   "name": "Západočeské divadlo v Chebu",
+   "obec": "Cheb",
+   "address": "",
+   "lat": 50.076637,
+   "lng": 12.367255,
+   "category": "kultura",
+   "source_url": "https://divadlocheb.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Divadlo nabízí zapůjčení zesilovače zvuku pro diváky se sluchovým postižením. O bezbariérovém vstupu web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Využijte možnost zapůjčit si zesilovač zvuku"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Valeč",
+   "obec": "Valeč",
+   "address": "Zámecká",
+   "lat": 50.1747566,
+   "lng": 13.2518577,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-valec.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérově je přístupný pouze zámecký park, oběma vstupními branami. Po domluvě lze bezbariérově zpřístupnit zázemí společenských prostor ve správní budově.",
+    "parkovani": "Parkování u zámeckého kostela Nejsvětější Trojice."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérově se dostanete pouze do zámeckého parku oběma vstupními branami."
+  },
+  {
+   "osm_id": "w62154070",
+   "name": "Rozhledna Diana",
+   "obec": "Karlovy Vary",
+   "address": "Výšina přátelství",
+   "lat": 50.218979,
+   "lng": 12.872264,
+   "category": "pamatky",
+   "source_url": "https://www.dpkv.cz/cz/diana/rozhledna/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "K vyhlídkovému ochozu (35 m) vede 150 schodů nebo výtah.",
+    "jine": "K rozhledně jezdí lanová dráha Diana ze stanice Stará louka. Web neuvádí, zda jsou výtah a lanovka vhodné pro vozík."
+   },
+   "measurements": [],
+   "evidence_quote": "je vám zde k dispozici i výtah"
+  },
+  {
+   "osm_id": null,
+   "name": "Hlavní kolonáda (Kolonáda Maxima Gorkého)",
+   "obec": "Mariánské Lázně",
+   "address": "Masarykova",
+   "lat": 49.9773552,
+   "lng": 12.7066247,
+   "category": "pamatky",
+   "source_url": "https://zivykraj.cz/zajimave-vylety/karlovarsky-kraj-bez-prekazek-bezbarierovy-trip-s-petrem-burdou-alias-stounman29/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Kolonáda je podle portálu přístupná i návštěvníkům na vozíku; ve středu kolonády je nájezdová rampa.",
+    "wc": "Bezbariérové toalety.",
+    "jine": "Terén v Mariánských Lázních je kopcovitější, ale většina míst je podle hodnotitele na vozíku dostupná."
+   },
+   "measurements": [],
+   "evidence_quote": "Ve středu kolonády je nájezdová rampa a samozřejmostí jsou i bezbariérové toalety."
+  },
+  {
+   "osm_id": null,
+   "name": "Kladská – naučná stezka NPR Kladské rašeliny",
+   "obec": "Kladská (Mariánské Lázně)",
+   "address": "",
+   "lat": 50.0256248,
+   "lng": 12.6678963,
+   "category": "priroda",
+   "source_url": "https://zivykraj.cz/zajimave-vylety/karlovarsky-kraj-bez-prekazek-bezbarierovy-trip-s-petrem-burdou-alias-stounman29/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "parkovani": "Parkovací místa pro vozíčkáře.",
+    "jine": "Dřevěné chodníčky; trasa je sjízdná, ale některé výjezdy jsou ostřejší a bez asistenta je hodnotitel na vozíku nezvládl; za deště nevhodné."
+   },
+   "measurements": [],
+   "evidence_quote": "Parkovací místa pro vozejčkáře tu maj. Sjízdný to tu je"
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel Thermal (termální bazény)",
+   "obec": "Karlovy Vary",
+   "address": "I. P. Pavlova 2001/11",
+   "lat": 50.2287903,
+   "lng": 12.8765042,
+   "category": "ubytovani",
+   "source_url": "https://zivykraj.cz/zajimave-vylety/karlovarsky-kraj-bez-prekazek-bezbarierovy-trip-s-petrem-burdou-alias-stounman29/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Speciálně upravené dvoulůžkové pokoje s madly.",
+    "koupelna": "Sprchový kout bez prahu.",
+    "vytah": "Po celém hotelu jezdí výtahy.",
+    "jine": "Přístup k venkovním termálním bazénům. Saunový svět Saunia Thermal Resort je zčásti dostupný jen po schodech – doporučeno předem ověřit asistenci."
+   },
+   "measurements": [],
+   "evidence_quote": "dvoulůžkové pokoje s madly a sprchovým koutem bez prahu"
+  },
+  {
+   "osm_id": null,
+   "name": "Mlýnská kolonáda",
+   "obec": "Karlovy Vary",
+   "address": "Mlýnské nábřeží",
+   "lat": 50.2252883,
+   "lng": 12.881785,
+   "category": "pamatky",
+   "source_url": "https://zivykraj.cz/zajimave-vylety/karlovarsky-kraj-bez-prekazek-bezbarierovy-trip-s-petrem-burdou-alias-stounman29/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Na Mlýnskou kolonádu je nájezd jen od Vřídla.",
+    "jine": "K většině pramenů se na vozíku dostanete, ale ne ke všem pohodlně dosáhnete (hodnocení vozíčkáře na portálu kraje)."
+   },
+   "measurements": [],
+   "evidence_quote": "Na Mlýnské kolonádě nájezd jenom od Vřídla."
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum Karlovy Vary",
+   "obec": "Karlovy Vary",
+   "address": "Nová louka 578/23",
+   "lat": 50.2202523,
+   "lng": 12.8797022,
+   "category": "kultura",
+   "source_url": "https://zivykraj.cz/zajimave-vylety/karlovarsky-kraj-bez-prekazek-bezbarierovy-trip-s-petrem-burdou-alias-stounman29/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Rampa a ochotný personál.",
+    "vytah": "Výtah."
+   },
+   "measurements": [],
+   "evidence_quote": "Rampa, výtah, ochotný personál – žádné drama ani improvizace."
+  },
+  {
+   "osm_id": null,
+   "name": "Bečovská botanická zahrada",
+   "obec": "Bečov nad Teplou",
+   "address": "",
+   "lat": 50.080618,
+   "lng": 12.82604,
+   "category": "priroda",
+   "source_url": "https://zivykraj.cz/zajimave-vylety/karlovarsky-kraj-bez-prekazek-bezbarierovy-trip-s-petrem-burdou-alias-stounman29/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Bezbariérové toalety.",
+    "parkovani": "Vyhrazená parkovací místa.",
+    "jine": "Možnost objednat prohlídku přizpůsobenou na míru; terén je místy náročnější a některé úseky vyžadují doprovod."
+   },
+   "measurements": [],
+   "evidence_quote": "K dispozici jsou bezbariérové toalety, vyhrazená parkovací místa"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": null,
+   "name": "Hrad Loket",
+   "url": "https://www.hradloket.cz/kontakt/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": null,
+   "name": "Chebský hrad",
+   "url": "https://www.hrad-cheb.cz/cz/informace-pro-navstevu-hradu",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w90707927",
+   "name": "Boheminium",
+   "url": "https://www.boheminium.cz/marianske-lazne/vstupenky/",
+   "reason": "web uvádí jen slevu pro ZTP, o přístupnosti nic"
+  },
+  {
+   "osm_id": "w86210615",
+   "name": "Soos",
+   "url": "https://www.soos.cz/",
+   "reason": "web nešel načíst (ověřování prohlížeče)"
+  },
+  {
+   "osm_id": "n5269709010",
+   "name": "Centrální kompresorovna (Turbo)",
+   "url": "https://www.palfi.cz/clanky/pamatky-a-zajimavosti-jachymova/dulni-pamatky/centralni-kompresorovna--turbo-.html",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w62153505",
+   "name": "Sadová kolonáda",
+   "url": "https://www.karlovyvary.cz/en/park-colonnade-0",
+   "reason": "web uvádí jen „Freely accessible“ (volně přístupné), nic o vozíku"
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum Sokolov",
+   "url": "http://www.omks.cz/main.php",
+   "reason": "web jen odkazuje na telefonický dotaz ohledně přístupnosti (zpráva z roku 2020), konkrétní údaje neuvádí"
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum Karlovy Vary – pobočka Jáchymov",
+   "url": "https://kvmuz.cz/pobocky/muzeum-jachymov/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum Aš",
+   "url": "https://www.muzeum-as.cz/o-muzeu",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": null,
+   "name": "Hrad Seeberg",
+   "url": "https://www.seeberg.cz/cs/default",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": null,
+   "name": "Moser (muzeum a sklárna)",
+   "url": "https://www.moser.com/cs",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w122994771",
+   "name": "Muzeum Abertamy",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "w769009799",
+   "name": "Papírna Doubrava",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "n5269434300",
+   "name": "Replika historického žentouru dolu Johannes",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "n370278550",
+   "name": "Komorní hůrka",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "n5254741392",
+   "name": "Meteorologická budka",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "n3385901376",
+   "name": "Městská knihovna Jáchymov",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "n2384259271",
+   "name": "Mayerův gloriet",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "n9901393921",
+   "name": "Originál Karlovarské Oplatky",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "w62153995",
+   "name": "Zámecká kolonáda",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "n3040677240",
+   "name": "rozhledna Cibulka",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "w507332525",
+   "name": "Rozhledna Krásenský vrch",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "n14156703786",
+   "name": "Historický zeleninový sklep a studna",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "n4840542426",
+   "name": "Mattoniho vodopád",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "n11076785192",
+   "name": "Medvědí kameny",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "w101358034",
+   "name": "Hamelika",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  },
+  {
+   "osm_id": "w1220362473",
+   "name": "Kartarena Cheb",
+   "url": "",
+   "reason": "v OSM není web a oficiální web s údaji o přístupnosti nebyl nalezen"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Živý kraj – Karlovarský kraj bez překážek: Bezbariérový trip s Petrem Burdou",
+   "url": "https://zivykraj.cz/zajimave-vylety/karlovarsky-kraj-bez-prekazek-bezbarierovy-trip-s-petrem-burdou-alias-stounman29/",
+   "note": "oficiální turistický portál Karlovarského kraje (článek z 29. 9. 2025); hodnocení přístupnosti vozíčkářem: ML kolonáda, Kladská, Hotel Thermal, KV kolonády, Muzeum KV, BZ Bečov"
+  },
+  {
+   "title": "Živý kraj – vyhledávání „bezbari“",
+   "url": "https://zivykraj.cz/wp-json/wp/v2/search?search=bezbari",
+   "note": "jiný samostatný přehled bezbariérových výletů na portálu nalezen nebyl; článek doporučuje Vozejkmap.cz"
+  },
+  {
+   "title": "NPÚ – Státní zámek Kynžvart, informace pro návštěvníky",
+   "url": "https://www.zamek-kynzvart.cz/cs/informace-pro-navstevniky",
+   "note": ""
+  },
+  {
+   "title": "NPÚ – SHZ Bečov, dostupnost pro hendikepované",
+   "url": "https://www.zamek-becov.cz/cs/informace-pro-navstevniky/informace-o-dostupnosti-objektu-pro-hendikepovane",
+   "note": ""
+  },
+  {
+   "title": "NPÚ – Zámek Valeč, informace pro návštěvníky",
+   "url": "https://www.zamek-valec.cz/cs/informace-pro-navstevniky",
+   "note": ""
+  },
+  {
+   "title": "Císařské lázně bez bariér",
+   "url": "https://www.cisarskelazne.cz/pro-navstevniky/cisarske-lazne-bez-barier",
+   "note": ""
+  },
+  {
+   "title": "Galerie umění Karlovy Vary",
+   "url": "https://www.galeriekvary.cz/",
+   "note": "Becherova vila, Galerie umění, Letohrádek Ostrov"
+  },
+  {
+   "title": "Karlovy Vary – oficiální turistický web města",
+   "url": "https://www.karlovyvary.cz/",
+   "note": "stránky kolonád uvádějí jen „Freely accessible“; robots.txt omezuje automatické stahování, proto nevytěžováno hromadně"
+  },
+  {
+   "title": "Vozejkmap.cz",
+   "url": "https://www.vozejkmap.cz/",
+   "note": "portál kraje ho doporučuje pro plánování bezbariérových výletů; data nepřebírána"
+  }
+ ]
+}

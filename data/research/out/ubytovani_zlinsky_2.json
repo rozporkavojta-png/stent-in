@@ -1,0 +1,110 @@
+{
+  "task": "ubytovani_zlinsky_2",
+  "kraj": "Zlínský kraj",
+  "checked_date": "2026-10-05",
+  "places": [
+    {
+      "osm_id": "w76083314",
+      "name": "Penzion Bobule",
+      "obec": "Staré Město",
+      "address": "Tovární 497",
+      "lat": 49.07601,
+      "lng": 17.423838,
+      "category": "ubytovani",
+      "source_url": "https://www.penzionbobule.com/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "no",
+      "accessibility": {
+        "jine": "Web výslovně uvádí, že penzion není bezbariérový; má 6 vlastních parkovacích míst (o místech pro ZTP se nezmiňuje)."
+      },
+      "evidence_quote": "Penzion není bezbariérový."
+    },
+    {
+      "osm_id": "n9994201263",
+      "name": "Hospůdka na Haldě",
+      "obec": "Boršice",
+      "lat": 49.056826,
+      "lng": 17.360292,
+      "category": "ubytovani",
+      "source_url": "https://www.haldaborsice.cz/restaurace/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Bezbariérový přístup má spodní patro restaurace, venkovní krytá zahrádka a farma.",
+        "wc": "Sociální zařízení restaurace má podle webu bezbariérový přístup.",
+        "jine": "Web o bezbariérovosti uvádí jen restauraci; o pokojích penzionu nic neuvádí."
+      },
+      "evidence_quote": "Spodní patro restaurace, sociální zařízení, venkovní krytá zahrádka a farma mají bezbariérový přístup."
+    }
+  ],
+  "not_found": [
+    {
+      "osm_id": "w694478677",
+      "name": "Chata Lopeník",
+      "url": "https://lopenik.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13039362916",
+      "name": "Hedvika",
+      "url": "http://www.hedvika.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2386358404",
+      "name": "Ubytovaní v soukromí",
+      "url": "http://semeloviluhacovice.cz/",
+      "reason": "web nejde načíst"
+    },
+    {
+      "osm_id": "n13057009585",
+      "name": "Hotel zámek Wichterle",
+      "url": "https://zamekwichterle.cz/hotel/",
+      "reason": "web nic o přístupnosti hotelu neuvádí (zmínky o schodišti jen v historii zámku)"
+    },
+    {
+      "osm_id": "w89569644",
+      "name": "hotel U Brány",
+      "url": "https://www.hotelubrany.com/",
+      "reason": "web (Wix) nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w70087378",
+      "name": "AfricaHouse",
+      "url": "https://www.africahouse.cz/",
+      "reason": "web (Wix) nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w1308589840",
+      "name": "Lázně Luhačovice",
+      "reason": "ve vstupu bez webu, neprocházeno"
+    },
+    {
+      "osm_id": "w287436064",
+      "name": "Hotel a restaurace Cherry",
+      "reason": "ve vstupu bez webu, neprocházeno"
+    },
+    {
+      "osm_id": "n14067701236",
+      "name": "Polosamota",
+      "reason": "ve vstupu bez webu, neprocházeno"
+    },
+    {
+      "osm_id": "n11503373249",
+      "name": "Penzion Era",
+      "reason": "ve vstupu bez webu, neprocházeno"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Penzion Bobule",
+      "url": "https://www.penzionbobule.com/",
+      "note": "zdroj informací o přístupnosti"
+    },
+    {
+      "title": "Hospůdka na Haldě",
+      "url": "https://www.haldaborsice.cz/restaurace/",
+      "note": "zdroj informací o přístupnosti"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+/* Stránky Trasy a Komunita */
+
+/* ---------- Trasy: panel vlevo a mapa vpravo, na mobilu panel zespodu. Verze 3: linky, ostré hrany, žlutá jen pro aktivní stav ---------- */
+.page-trasy .site-footer { display: none; }
+.tr-app { position: relative; display: grid; grid-template-columns: 400px minmax(0, 1fr); height: calc(100dvh - var(--tr-top, 94px)); min-height: 480px; }
+.tr-panel { position: relative; z-index: 2; display: flex; flex-direction: column; min-width: 0; min-height: 0; background: var(--surface); border-right: 1px solid var(--rule); }
+.tr-grip-row { display: none; }
+.tr-scroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 24px 20px 24px; display: flex; flex-direction: column; gap: 18px; }
+.tr-map { position: relative; min-width: 0; }
+.tr-map .map-canvas { position: absolute; inset: 0; }
+
+.tr-head h1 { font-size: clamp(1.9rem, 2.6vw, 2.4rem); margin: 0 0 8px; }
+.tr-head p { margin: 0; color: var(--ink-2); }
+.tr-find { display: flex; gap: 8px; align-items: center; }
+.tr-find .search-field { flex: 1; min-width: 0; }
+.tr-find .btn { flex: none; min-height: 48px; }
+.tr-locate { flex: none; width: 48px; height: 48px; background: var(--surface); border: 1.5px solid var(--ink); }
+.tr-locate:hover { background: var(--signal); color: var(--on-signal); }
+
+/* záložky: podtržení jako v hlavní navigaci */
+.tr-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-bottom: 1px solid var(--rule); }
+.tr-tabs button { min-height: 48px; border: 0; border-radius: 0; background: transparent; color: var(--ink-2); font: 600 .95rem var(--f-body); cursor: pointer; padding: 6px 4px; }
+.tr-tabs button:hover { color: var(--ink); text-decoration: underline; text-decoration-color: var(--signal); text-decoration-thickness: 3px; text-underline-offset: 6px; }
+.tr-tabs button[aria-selected="true"] { color: var(--ink); font-weight: 700; box-shadow: inset 0 -4px 0 var(--signal); text-decoration: none; }
+.tr-pane { display: flex; flex-direction: column; gap: 16px; }
+.tr-pane[hidden] { display: none; }
+.tr-h2 { font-size: 1.5rem; margin: 0; }
+.tr-pane p { margin: 0; }
+
+.tr-status { font-size: .93rem; color: var(--ink); border-left: 4px solid var(--rule); padding: 4px 0 4px 14px; }
+.tr-summary { border-top: 3px solid var(--rule); padding-top: 12px; }
+.tr-summary p { margin: 0; }
+.tr-summary b.num { font: 800 1.35rem/1 var(--f-display); letter-spacing: -.03em; }
+
+/* legenda a vrstvy: řádky s linkou */
+.tr-layers { border: 0; padding: 0; margin: 0; min-width: 0; }
+.tr-layers legend { font: 700 1.2rem var(--f-display); letter-spacing: -.02em; padding: 0; margin-bottom: 4px; }
+.tr-layers-hint { margin: 0 0 4px !important; }
+.tr-group { font: 700 .75rem/1.2 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--ink); margin: 16px 0 0 !important; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
+.tr-layers .check { align-items: center; padding: 6px 0; min-height: 44px; font-size: .97rem; border-bottom: 1px solid var(--line); }
+.tr-place-toggle { border-top: 1px solid var(--rule); margin-top: 12px; border-bottom: 0 !important; }
+
+.tr-nearest { border-top: 3px solid var(--rule); padding-top: 12px; }
+.tr-nearest h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.tr-nearest ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid var(--rule); }
+.tr-item { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: start; width: 100%; min-height: 48px; text-align: left; background: none; border: 0; border-bottom: 1px solid var(--line); padding: 10px 0; font: inherit; font-size: .93rem; color: var(--ink); cursor: pointer; }
+.tr-item:hover b { text-decoration: underline; text-decoration-color: var(--signal); text-decoration-thickness: 3px; }
+.tr-dist { white-space: nowrap; }
+
+/* vybrané místo z mapy */
+.tr-picked { border-top: 3px solid var(--rule); padding-top: 10px; display: flex; flex-direction: column; gap: 12px; }
+.tr-picked-head { display: flex; gap: 8px; align-items: flex-start; justify-content: space-between; }
+.tr-picked-head h3 { font-size: 1.3rem; margin: 4px 0 4px; }
+.tr-picked-head p { margin: 0; }
+.tr-picked-head .icon-btn { margin: -2px -8px 0 0; flex: none; }
+.tr-ph img { aspect-ratio: 3 / 2; }
+.tr-picked-st { margin: 0; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.tr-picked-act { display: flex; flex-wrap: wrap; gap: 8px; }
+.tr-picked-act .btn { min-height: 44px; }
+
+/* vzorek v legendě: stejný tvar a vzor čáry jako na mapě */
+.tr-sw { display: inline-flex; align-items: center; justify-content: center; flex: none; width: 30px; height: 20px; margin-right: 8px; vertical-align: middle; }
+.tr-sw svg { display: block; }
+.tr-mk { background: none; border: 0; }
+.tr-mk svg { filter: drop-shadow(0 0 1px rgba(0,0,0,.6)); }
+
+/* legenda na mapě: ostrý rámeček, bez stínu */
+.tr-legend { position: absolute; top: 12px; right: 12px; z-index: 500; background: var(--surface); border: 1.5px solid var(--rule); border-radius: 0; max-width: min(300px, calc(100% - 24px)); font-size: .85rem; }
+.tr-legend summary { min-height: 44px; display: flex; align-items: center; gap: 8px; padding: 0 14px; font: 700 .75rem var(--f-body); letter-spacing: .12em; text-transform: uppercase; cursor: pointer; list-style: none; }
+.tr-legend summary::-webkit-details-marker { display: none; }
+.tr-legend summary::before { content: ""; width: 10px; height: 10px; background: var(--signal); outline: 1.5px solid var(--rule); flex: none; }
+.tr-legend summary::after { content: ""; width: 8px; height: 8px; border-right: 2px solid var(--ink); border-bottom: 2px solid var(--ink); transform: rotate(45deg); margin: -3px 0 0 auto; }
+.tr-legend[open] summary { border-bottom: 1px solid var(--rule); }
+.tr-legend[open] summary::after { transform: rotate(-135deg); margin-top: 3px; }
+.tr-legend #legend { padding: 0 14px 12px; max-height: 60vh; overflow: auto; }
+.tr-legend ul { list-style: none; margin: 0; padding: 0; display: grid; }
+.tr-legend li { display: flex; align-items: center; min-height: 30px; border-bottom: 1px solid var(--line); }
+.tr-legend li:last-child { border-bottom: 0; }
+.tr-legend .tr-group { margin-top: 12px !important; padding-bottom: 6px; }
+.tr-legend .tr-sw { width: 26px; height: 18px; }
+
+/* plánovač */
+.tr-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.tr-steps label { display: flex; align-items: center; gap: 10px; }
+.tr-pin { width: 28px; height: 28px; border-radius: 50%; display: inline-grid; place-items: center; font: 700 .85rem var(--f-mono); background: var(--ink); color: var(--surface); border: 1.5px solid var(--ink); flex: none; }
+.tr-pin.b { background: var(--signal); color: var(--on-signal); border-color: var(--rule); }
+.tr-plan-out { border-top: 3px solid var(--rule); padding-top: 12px; display: flex; flex-direction: column; gap: 10px; }
+.tr-plan-out ul { list-style: none; padding-left: 0; margin: 0; border-top: 1px solid var(--rule); }
+.tr-plan-out li { display: flex; align-items: flex-start; gap: 4px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.tr-plan-out .row .btn { flex: 1 1 auto; }
+
+/* moje trasy */
+.tr-saved { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.tr-saved .tr-group { margin-top: 4px !important; }
+.tr-route { display: flex; gap: 8px; align-items: flex-start; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.tr-route-txt { min-width: 0; overflow-wrap: anywhere; }
+.tr-community { border-top: 1px solid var(--rule); padding-top: 14px; }
+.tr-community h3 { font-size: 1.15rem; margin-bottom: 6px; }
+.tr-community p { margin: 0 0 8px !important; color: var(--ink-2); }
+.tr-attr { margin: auto 0 0; padding-top: 16px; border-top: 1px solid var(--rule); }
+
+@media (max-width: 899px) {
+  .tr-app { display: block; height: calc(100dvh - var(--tr-top, 86px) - var(--tabbar-h) - env(safe-area-inset-bottom, 0px)); min-height: 420px; overflow: hidden; }
+  .tr-map { position: absolute; inset: 0; }
+  .tr-panel { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1100; border-right: 0; border-top: 2px solid var(--rule); border-radius: 0; height: 50%; transition: height .25s ease; }
+  .tr-app[data-sheet="peek"] .tr-panel { height: 156px; }
+  .tr-app[data-sheet="half"] .tr-panel { height: 50%; }
+  .tr-app[data-sheet="full"] .tr-panel { height: 94%; }
+  .tr-grip-row { display: flex; justify-content: center; flex: none; touch-action: none; cursor: grab; padding-top: 4px; }
+  .tr-grip { width: 100%; min-height: 28px; border: 0; background: none; cursor: grab; display: grid; place-items: center; padding: 8px 0; }
+  .tr-grip span { width: 44px; height: 4px; border-radius: 0; background: var(--ink); }
+  .tr-scroll { padding: 4px 16px 20px; gap: 14px; }
+  .tr-head h1 { font-size: 1.5rem; margin-bottom: 0; }
+  .tr-head p { display: none; }
+  .tr-find .btn { padding-inline: 14px; }
+  .tr-legend { top: 10px; right: 10px; }
+}
+
+/* ---------- Komunita (hlavička, .split-grid, .rule-grid a .form-block z pages-a.css). Verze 3: linky místo karet, bez ikon ---------- */
+.ko-features { counter-reset: ko; }
+.ko-features > li { counter-increment: ko; }
+.ko-features > li::before { content: counter(ko, decimal-leading-zero); display: block; font: 700 .9rem var(--f-mono); color: var(--ink-2); margin-bottom: 6px; }
+
+.ko-trust { display: grid; gap: 0; align-content: start; border-top: 1px solid var(--rule); }
+.ko-trust-row { display: grid; grid-template-columns: 150px 1fr; gap: 16px; align-items: start; padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.ko-trust-row p { color: var(--ink-2); }
+.ko-trust .text, .split-h .muted { max-width: 40ch; }
+
+.ko-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px clamp(24px, 4vw, 48px); }
+.ko-two > div { border-top: 3px solid var(--ink); padding-top: 14px; min-width: 0; }
+.ko-h { font-size: 1.25rem; }
+.ko-principles { list-style: none; margin: 0; padding: 0; color: var(--ink-2); }
+.ko-principles li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.ko-principles li:last-child { border-bottom: 0; }
+
+.ko-steps { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); max-width: 900px; }
+.ko-steps li { display: grid; grid-template-columns: 140px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.ko-steps li.now { box-shadow: inset 6px 0 0 var(--signal); padding-left: 20px; }
+.ko-steps .when { font: 800 1.3rem/1.1 var(--f-display); letter-spacing: -.03em; color: var(--ink); }
+.ko-form { display: flex; flex-direction: column; gap: 16px; }
+
+@media (max-width: 760px) { .ko-two { grid-template-columns: 1fr; } }
+@media (max-width: 640px) {
+  .ko-trust-row { grid-template-columns: 1fr; gap: 6px; }
+  .ko-steps li { grid-template-columns: 1fr; gap: 4px; }
+}

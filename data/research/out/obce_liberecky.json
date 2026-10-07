@@ -1,0 +1,79 @@
+{
+ "task": "obce_liberecky",
+ "kraj": "Liberecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [],
+ "not_found": [
+  {
+   "osm_id": null,
+   "name": "Statutární město Liberec",
+   "url": "https://www.liberec.cz/",
+   "reason": "Na webu města (úvodní stránka + sitemap.xml) jsme nenašli stránku o bezbariérových veřejných WC, Euroklíči ani o bezbariérovosti radnice; fulltext webu se nedá použít bez JavaScriptu."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Turnov",
+   "url": "https://www.turnov.cz/cs/aktuality/koronavirus/uprava-provozni-doby-verejnych-wc.html",
+   "reason": "Web uvádí veřejná WC ve Skálově ulici a na autobusovém nádraží Na Lukách jen s provozní dobou; o bezbariérovosti nic. Ani v sitemap.xml jsme nenašli nic o Euroklíči nebo bezbariérovosti radnice."
+  },
+  {
+   "osm_id": null,
+   "name": "Bezbariérové toalety na Lesním hřbitově, Nový Bor",
+   "url": "https://www.novy-bor.cz/vismo/dokumenty2.asp?id_org=10715&id=11457",
+   "reason": "Článek z 10. 3. 2025 uvádí nové bezbariérové toalety na Lesním hřbitově (od 12. 3. 2025, denně 7–20 h, 10 Kč, platba hotově nebo kartou), ale bez adresy. Nová místa se v tomto zrychleném běhu nepřidávají."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Semily",
+   "url": "https://www.semily.cz/vismo/dokumenty2.asp?id_org=14724&id=11296",
+   "reason": "Fulltext webu nenašel nic o bezbariérových WC ani o radnici. Jediná zmínka: Turistické informační centrum v Husově ulici má podle článku z 2. 8. 2019 plně bezbariérový přístup (bez adresy; nová místa se nepřidávají)."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením 2021–2024 (Liberecký kraj)",
+   "url": "https://www.kraj-lbc.cz/getFile/id:473371/",
+   "note": "PDF, 58 stran; schválilo zastupitelstvo usnesením č. 274/20/ZK z 25. 8. 2020; zpracoval KÚ LK s krajskou pobočkou NRZP ČR. Novější plán (2025+) jsme ve vyhledávání na kraj-lbc.cz nenašli. Opatření k přístupnosti: 3.2 průběžně zveřejňovat na webu kraje informace o bezbariérovosti budov krajských příspěvkových organizací (odbor investic; původní odkaz investice-sprava.kraj-lbc.cz/Bezbarierovost-objektu-prispevkovych-organizaci-LK dnes jen přesměruje na stránku odboru); 6.1 identifikovat bariéry v expozičních objektech, informovat na liberecky-kraj.cz a v aplikaci Průvodce Libereckým krajem o kulturních zařízeních, památkách a trasách s bezbariérovým přístupem a průběžně aktualizovat nabídku bezbariérových turistických cílů; dále podpora projektu Euroklíč (NRZP jednou ročně předkládá seznam míst s Euroklíčem a návrh nových míst) a bezbariérové úpravy zastávek."
+  },
+  {
+   "title": "Liberecký kraj – Zdravotně postižení lidé najdou v kraji celou řadu přívětivých míst a služeb (5. 11. 2021)",
+   "url": "https://www.kraj-lbc.cz/aktuality/zdravotne-postizeni-lide-najdou-v-kraji-celou-radu-privetivych-mist-a-sluzeb-n544847.htm",
+   "note": "Monitoring KPVP 2021–2024; v roce 2020 s dotací kraje osazeno 6 eurozámků v Krajské vědecké knihovně v Liberci a 1 eurozámek na parkovišti Horní Mísečky (Špindlerův Mlýn)."
+  },
+  {
+   "title": "Liberecký kraj nabídne více míst osazených eurozámky (17. 6. 2015)",
+   "url": "https://www.kraj-lbc.cz/aktuality/liberecky-kraj-nabidne-vice-mist-osazenych-eurozamky-n514039.htm",
+   "note": "Dotace 80 000 Kč pro NRZP ČR na projekt Euroklíč v Libereckém kraji 2015; centrálním výdejním místem Euroklíčů pro kraj je Regionální pracoviště NRZP ČR, Voroněžská 144, Liberec. Stav z roku 2015 – starší údaje."
+  },
+  {
+   "title": "Jablonec nad Nisou – Euroklíč (seznam míst s eurozámky)",
+   "url": "https://www.mestojablonec.cz/euroklic-6214",
+   "note": "Oficiální web města uvádí WC s eurozámkem: autobusové nádraží (Luční 379/3), ČS Benzina (Březová 4525/33), OBI (Želivského 5231/2a), konečná tramvaje Tyršův park, ZŠ Mozartova 24, železniční stanice (Nádražní 1090/32), Kaufland (Jateční 5156/4), Kaufland (U Kostela 4754/37), OC Central (Komenského 18). Euroklíč vydává pobočka CZP LK, Emilie Floriánové 8. Datum aktualizace a licence neuvedeny. Kandidáti na pozdější přidání do mapy (v tomto zrychleném běhu jsme je negeokódovali)."
+  },
+  {
+   "title": "Česká Lípa myslí na hendikepované (mucl.cz, 9. 9. 2019)",
+   "url": "https://www.mucl.cz/vismo/dokumenty2.asp?id_org=2138&id=35692",
+   "note": "Radnice: u hlavního vchodu je zvonek přesunutý níž, aby na něj vozíčkář dosáhl; za pomoci zaměstnance se jede po strmé nájezdové plošině k výtahu; město plánovalo plošinu upravit (stav dnes neověřen). Eurozámky jsou na veřejných WC pro hendikepované v Panské ulici a U Vodního hradu (bez čísla popisného). Euroklíč vydává NRZP, CZP LK nebo Sdružení tělesně postižených Česká Lípa; rezervní klíč lze půjčit v Regionálním turistickém informačním centru."
+  },
+  {
+   "title": "Nový Bor – Bezbariérové úpravy WC v Městské knihovně",
+   "url": "https://www.novy-bor.cz/vismo/dokumenty2.asp?id_org=10715&id=2977",
+   "note": "V roce 2012 vzniklo v Městské knihovně (budova má výtah) bezbariérové WC; jde o veřejnou instituci, nikoli o veřejné WC."
+  },
+  {
+   "title": "Centrum pro zdravotně postižené Libereckého kraje, o.p.s. (CZP LK)",
+   "url": "https://www.czplk.cz/",
+   "note": "Organizace OZP v kraji (pobočky Liberec, Česká Lípa, Semily, Jablonec n. N., Frýdlant); vydává Euroklíče (https://www.czplk.cz/cs/nase-dalsi-aktivity/euroklic-v-libereckem-kraji.html – stránka aktualizovaná 12. 5. 2026 uvádí, že Euroklíče teď dočasně nejsou k dispozici kvůli výpadku distribuce v celé ČR); půjčovna kompenzačních pomůcek."
+  },
+  {
+   "title": "Národní rada osob se zdravotním postižením ČR – Regionální pracoviště pro Liberecký kraj",
+   "url": "https://www.kraj-lbc.cz/aktuality/liberecky-kraj-nabidne-vice-mist-osazenych-eurozamky-n514039.htm",
+   "note": "Podle webu kraje sídlí ve Voroněžské 144 v Liberci; spolupracuje na KPVP. Vlastní web pobočky jsme neověřovali."
+  },
+  {
+   "title": "Sdružení tělesně postižených Česká Lípa",
+   "url": "https://www.mucl.cz/vismo/dokumenty2.asp?id_org=2138&id=35692",
+   "note": "Web města ho uvádí jako výdejní místo Euroklíčů; vlastní web jsme neověřovali. Samostatnou organizaci vozíčkářů pro celý kraj jsme na oficiálních webech nenašli."
+  }
+ ]
+}

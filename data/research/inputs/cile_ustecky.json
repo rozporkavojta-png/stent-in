@@ -1,0 +1,311 @@
+[
+{
+"i": "n1372911058",
+"n": "Labska vyhlidka",
+"s": "Vyhlídka",
+"o": "Děčín",
+"w": "no",
+"la": 50.828553,
+"lo": 14.219238
+},
+{
+"i": "n2314526524",
+"n": "Městská knihovna Děčín",
+"s": "Knihovna",
+"o": "Děčín",
+"a": "Karla Čapka 1441/3",
+"w": "yes",
+"la": 50.781272,
+"lo": 14.209839
+},
+{
+"i": "n807144851",
+"n": "Stoličná hora",
+"s": "Vyhlídka",
+"o": "Děčín",
+"w": "no",
+"la": 50.785153,
+"lo": 14.227597
+},
+{
+"i": "n63736496",
+"n": "Horní vyhlídka Edmundova kamene",
+"s": "Vyhlídka",
+"o": "Hřensko",
+"w": "no",
+"la": 50.8852,
+"lo": 14.280761
+},
+{
+"i": "n63736450",
+"n": "Křížový kámen",
+"s": "Vyhlídka",
+"o": "Hřensko",
+"w": "no",
+"la": 50.884143,
+"lo": 14.280223
+},
+{
+"i": "n251874927",
+"n": "Pravčická brána",
+"s": "Turistický cíl",
+"o": "Hřensko",
+"w": "no",
+"la": 50.88371,
+"lo": 14.281252
+},
+{
+"i": "n11003276678",
+"n": "Treppenstein",
+"s": "Vyhlídka",
+"o": "Jetřichovice",
+"w": "no",
+"la": 50.85978,
+"lo": 14.393619
+},
+{
+"i": "n508818990",
+"n": "Šaunštejn",
+"s": "Zřícenina",
+"o": "Jetřichovice",
+"w": "no",
+"la": 50.868658,
+"lo": 14.352095
+},
+{
+"i": "n282099807",
+"n": "Drážďanská vyhlídka",
+"s": "Vyhlídka",
+"o": "Jílové",
+"w": "yes",
+"la": 50.794767,
+"lo": 14.098072
+},
+{
+"i": "n2975338055",
+"n": "Ledopády u kapličky ševce Kocha",
+"s": "Turistický cíl",
+"o": "Krásná Lípa",
+"w": "no",
+"la": 50.924892,
+"lo": 14.440247
+},
+{
+"i": "n343699637",
+"n": "ledopád Vlčí stěnka",
+"s": "Turistický cíl",
+"o": "Krásná Lípa",
+"w": "no",
+"la": 50.929203,
+"lo": 14.431271
+},
+{
+"i": "n1031812017",
+"n": "rozhl. Vlčí hora",
+"s": "Vyhlídka",
+"o": "Krásná Lípa",
+"w": "no",
+"la": 50.939676,
+"lo": 14.465437
+},
+{
+"i": "n13710779926",
+"n": "Galerie marionet",
+"s": "Muzeum",
+"o": "Litoměřice",
+"w": "no",
+"la": 50.535726,
+"lo": 14.128567
+},
+{
+"i": "w92142614",
+"n": "Kamenná Hláska",
+"s": "Vyhlídka",
+"o": "Roudnice nad Labem",
+"a": "Husovo náměstí 59",
+"w": "no",
+"la": 50.425619,
+"lo": 14.259275
+},
+{
+"i": "n5357642829",
+"n": "křížová cesta",
+"s": "Turistický cíl",
+"o": "Staré Křečany",
+"w": "no",
+"la": 50.948334,
+"lo": 14.445792
+},
+{
+"i": "n2702513393",
+"n": "Galerie ústeckého kraje",
+"s": "Galerie",
+"o": "Teplice",
+"w": "no",
+"la": 50.64452,
+"lo": 13.827719
+},
+{
+"i": "n2308591151",
+"n": "Kino Květen",
+"s": "Kino",
+"o": "Teplice",
+"w": "yes",
+"la": 50.639821,
+"lo": 13.826053
+},
+{
+"i": "n1445498933",
+"n": "Regionální knihovna Teplice - Šanov",
+"s": "Knihovna",
+"o": "Teplice",
+"w": "yes",
+"la": 50.64398,
+"lo": 13.851617
+},
+{
+"i": "w156449754",
+"n": "Krematorium",
+"s": "Muzeum",
+"o": "Terezín",
+"w": "no",
+"la": 50.502395,
+"lo": 14.151864
+},
+{
+"i": "n911034229",
+"n": "Magdeburská kasárna",
+"s": "Muzeum",
+"o": "Terezín",
+"w": "yes",
+"la": 50.508618,
+"lo": 14.15196
+},
+{
+"i": "n305801113",
+"n": "Ostrý",
+"s": "Zřícenina",
+"o": "Velemín",
+"w": "no",
+"la": 50.531534,
+"lo": 13.951514
+},
+{
+"i": "n2686830801",
+"n": "Humboldtova vyhlídka",
+"s": "Vyhlídka",
+"o": "Verneřice",
+"w": "no",
+"la": 50.671796,
+"lo": 14.227062
+},
+{
+"i": "n2364427693",
+"n": "Cinema City",
+"s": "Kino",
+"o": "Ústí nad Labem",
+"a": "Bílinská 3490/6",
+"w": "yes",
+"t": "yes",
+"la": 50.65876,
+"lo": 14.038461
+},
+{
+"i": "n2995502264",
+"n": "Dům dětí a mládeže",
+"s": "Komunitní centrum",
+"o": "Ústí nad Labem",
+"web": "https://www.ddmul.cz/",
+"w": "yes",
+"la": 50.662932,
+"lo": 14.03923
+},
+{
+"i": "n2993643397",
+"n": "Dům kultury",
+"s": "Komunitní centrum",
+"o": "Ústí nad Labem",
+"web": "https://www.ksul.cz/",
+"w": "yes",
+"la": 50.662314,
+"lo": 14.039475
+},
+{
+"i": "n5440472946",
+"n": "Muzeum civilní obrany",
+"s": "Turistický cíl",
+"o": "Ústí nad Labem",
+"w": "no",
+"la": 50.655501,
+"lo": 14.032481
+},
+{
+"i": "n663165731",
+"n": "Muzeum města Ústí nad Labem",
+"s": "Muzeum",
+"o": "Ústí nad Labem",
+"w": "limited",
+"t": "yes",
+"la": 50.660875,
+"lo": 14.034364
+},
+{
+"i": "n7416293275",
+"n": "Veřejný sál Hraničář",
+"s": "Kulturní centrum",
+"o": "Ústí nad Labem",
+"a": "Prokopa Diviše 1812",
+"web": "https://hranicar-usti.cz/",
+"w": "yes",
+"la": 50.663347,
+"lo": 14.032748
+},
+{
+"i": "n937698444",
+"n": "Vysoký Ostrý",
+"s": "Vyhlídka",
+"o": "Ústí nad Labem",
+"w": "no",
+"la": 50.6364,
+"lo": 14.080227
+},
+{
+"i": "w95065023",
+"n": "ZOO Ústí nad Labem",
+"s": "Zoo",
+"o": "Ústí nad Labem",
+"web": "https://www.zoousti.cz/",
+"w": "limited",
+"la": 50.66617,
+"lo": 14.058219
+},
+{
+"i": "n1289293691",
+"n": "Čínoherní studio",
+"s": "Divadlo",
+"o": "Ústí nad Labem",
+"w": "yes",
+"t": "no",
+"la": 50.656305,
+"lo": 14.048057
+},
+{
+"i": "n5040258817",
+"n": "Mravenečník",
+"s": "Vyhlídka",
+"o": "Český Jiřetín",
+"w": "no",
+"la": 50.700303,
+"lo": 13.564622
+},
+{
+"i": "n7967395322",
+"n": "Simson Museum",
+"s": "Muzeum",
+"o": "Žabovřesky nad Ohří",
+"web": "http://simsonmuzeum.cz/",
+"w": "yes",
+"la": 50.41362,
+"lo": 14.089408
+}
+]

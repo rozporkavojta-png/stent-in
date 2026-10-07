@@ -1,0 +1,471 @@
+[
+{
+"i": "n2918023550",
+"n": "Amphone",
+"s": "Hotel",
+"o": "Brno",
+"a": "třída Kpt. Jaroše 1942/29",
+"w": "yes",
+"la": 49.202891,
+"lo": 16.610383
+},
+{
+"i": "n3098401873",
+"n": "Antik apartments",
+"s": "Hostel",
+"o": "Brno",
+"a": "Jana Uhra 12",
+"w": "no",
+"la": 49.202425,
+"lo": 16.595557
+},
+{
+"i": "w260249826",
+"n": "Chata Pohoda",
+"s": "Chata",
+"o": "Brno",
+"w": "limited",
+"la": 49.235344,
+"lo": 16.495486
+},
+{
+"i": "w1480413826",
+"n": "Clarion Congress Hotel Brno",
+"s": "Hotel",
+"o": "Brno",
+"a": "Dornych 552/3",
+"web": "https://www.clarioncongresshotelbrno.com/",
+"w": "yes",
+"la": 49.190562,
+"lo": 16.615142
+},
+{
+"i": "n544178783",
+"n": "Cosmopolitan Bobycentrum",
+"s": "Hotel",
+"o": "Brno",
+"a": "Sportovní 2a",
+"web": "http://hotelbobycentrum.cz/",
+"w": "yes",
+"la": 49.212175,
+"lo": 16.608013
+},
+{
+"i": "n13461148301",
+"n": "Dům U pikové desítky",
+"s": "Hotel",
+"o": "Brno",
+"a": "Jakubská 7",
+"w": "no",
+"la": 49.196456,
+"lo": 16.60716
+},
+{
+"i": "n1514446596",
+"n": "Europa",
+"s": "Hotel",
+"o": "Brno",
+"a": "třída Kpt. Jaroše 1941/27",
+"w": "no",
+"la": 49.202702,
+"lo": 16.610397
+},
+{
+"i": "n2308110495",
+"n": "Grand Palace Brno",
+"s": "Hotel",
+"o": "Brno",
+"a": "Šilingrovo náměstí 2",
+"web": "https://www.grandpalace.cz/",
+"w": "yes",
+"la": 49.19213,
+"lo": 16.605566
+},
+{
+"i": "n3414265597",
+"n": "Grandezza Hotel",
+"s": "Hotel",
+"o": "Brno",
+"a": "Zelný trh 2",
+"web": "https://www.grandezzahotel.com/",
+"w": "no",
+"la": 49.192605,
+"lo": 16.609621
+},
+{
+"i": "w46162604",
+"n": "Hotel JeštěBrno",
+"s": "Hotel",
+"o": "Brno",
+"a": "Majdalenky 10",
+"w": "no",
+"la": 49.235101,
+"lo": 16.624296
+},
+{
+"i": "n3391010863",
+"n": "Hotel Pegas",
+"s": "Hotel",
+"o": "Brno",
+"a": "Jakubská 4",
+"web": "https://hotelpegas.com",
+"w": "yes",
+"la": 49.196136,
+"lo": 16.607256
+},
+{
+"i": "n3028486913",
+"n": "Juventus Club",
+"s": "Penzion",
+"o": "Brno",
+"a": "Pionýrská 7",
+"w": "no",
+"la": 49.208102,
+"lo": 16.605204
+},
+{
+"i": "n4045576696",
+"n": "Levandule",
+"s": "Penzion",
+"o": "Brno",
+"a": "Rybnická 29",
+"web": "https://www.penzionlevandule.com/",
+"w": "yes",
+"la": 49.183348,
+"lo": 16.563699
+},
+{
+"i": "n3101676449",
+"n": "Penzion Derivia",
+"s": "Penzion",
+"o": "Brno",
+"a": "Vranovská 68",
+"w": "no",
+"la": 49.208793,
+"lo": 16.628072
+},
+{
+"i": "n3253689327",
+"n": "Penzion Luna",
+"s": "Penzion",
+"o": "Brno",
+"a": "Štefánikova 12",
+"web": "https://www.penzion-luna.cz/",
+"w": "no",
+"la": 49.208624,
+"lo": 16.604045
+},
+{
+"i": "n3157738559",
+"n": "Penzion Černá",
+"s": "Penzion",
+"o": "Brno",
+"a": "Minská 23",
+"w": "no",
+"la": 49.210594,
+"lo": 16.585114
+},
+{
+"i": "n296540326",
+"n": "Quality Hotel Brno Exhibition Centre",
+"s": "Hotel",
+"o": "Brno",
+"a": "Křížkovského 496/20",
+"web": "https://www.qualityhotelbrnoexhibitioncentre.com/",
+"w": "yes",
+"la": 49.184319,
+"lo": 16.580593
+},
+{
+"i": "n3601994344",
+"n": "SONO Centrum",
+"s": "Hotel",
+"o": "Brno",
+"web": "https://www.sono.cz/",
+"w": "yes",
+"la": 49.20944,
+"lo": 16.588576
+},
+{
+"i": "n7075801151",
+"n": "U Tomana",
+"s": "Apartmány",
+"o": "Brno",
+"a": "náměstí Svobody 93/22",
+"web": "https://www.utomana.cz/index.php/cz/u-tomana",
+"w": "limited",
+"la": 49.195178,
+"lo": 16.607088
+},
+{
+"i": "w50690795",
+"n": "Venia",
+"s": "Penzion",
+"o": "Brno",
+"web": "http://www.pensionvenia.cz/",
+"w": "no",
+"la": 49.22674,
+"lo": 16.589693
+},
+{
+"i": "n3719788551",
+"n": "eFi Hotel",
+"s": "Hotel",
+"o": "Brno",
+"a": "Bratislavská 52",
+"web": "https://www.efihotel.cz/",
+"w": "yes",
+"la": 49.199622,
+"lo": 16.620515
+},
+{
+"i": "n5975721401",
+"n": "mija",
+"s": "Penzion",
+"o": "Brno",
+"w": "no",
+"la": 49.228673,
+"lo": 16.588849
+},
+{
+"i": "n12500515885",
+"n": "Autokemp Adéla",
+"s": "Kemp",
+"o": "Brod nad Dyjí",
+"a": "Brod nad Dyjí",
+"web": "https://www.autokemp-adela.cz/",
+"w": "no",
+"la": 48.879566,
+"lo": 16.53858
+},
+{
+"i": "n687527274",
+"n": "Hotel Celnice",
+"s": "Hotel",
+"o": "Břeclav",
+"w": "yes",
+"t": "yes",
+"la": 48.717858,
+"lo": 16.837112
+},
+{
+"i": "n9805617310",
+"n": "Hotel Krystal",
+"s": "Hotel",
+"o": "Hodonín",
+"web": "https://www.hotel-krystal.cz/",
+"w": "yes",
+"la": 48.850272,
+"lo": 17.121574
+},
+{
+"i": "n6388055795",
+"n": "Chocohotel Fikar",
+"s": "Hotel",
+"o": "Kuřim",
+"web": "https://www.chocohotel.cz/",
+"w": "yes",
+"la": 49.299215,
+"lo": 16.531146
+},
+{
+"i": "n13923557953",
+"n": "Hostel Králíkarna",
+"s": "Hostel",
+"o": "Mikulov",
+"web": "https://hostelkralikarna.cz",
+"w": "no",
+"la": 48.806943,
+"lo": 16.638745
+},
+{
+"i": "n1511528422",
+"n": "Hotel Galant",
+"s": "Hotel",
+"o": "Mikulov",
+"web": "https://www.galant.cz/",
+"w": "yes",
+"la": 48.807937,
+"lo": 16.640911
+},
+{
+"i": "n1778425134",
+"n": "Penzion Moravia",
+"s": "Hotel",
+"o": "Mikulov",
+"web": "www.moravia.penzion.com",
+"w": "no",
+"la": 48.808028,
+"lo": 16.639647
+},
+{
+"i": "n449750473",
+"n": "Penzion Růže",
+"s": "Penzion",
+"o": "Mikulov",
+"a": "Lidická 1270/10",
+"w": "no",
+"la": 48.811483,
+"lo": 16.640471
+},
+{
+"i": "n6689807104",
+"n": "Ubytovani Lila",
+"s": "Apartmány",
+"o": "Mikulov",
+"w": "yes",
+"la": 48.808369,
+"lo": 16.642016
+},
+{
+"i": "w877811858",
+"n": "Zahrada",
+"s": "Penzion",
+"o": "Mutěnice",
+"web": "https://ubytovani-zahrada.cz/",
+"w": "yes",
+"la": 48.904792,
+"lo": 17.035569
+},
+{
+"i": "w243687130",
+"n": "Hotel Háj",
+"s": "Hotel",
+"o": "Nová Lhota",
+"web": "https://www.hotelhaj.cz/",
+"w": "limited",
+"la": 48.858354,
+"lo": 17.593156
+},
+{
+"i": "w504585660",
+"n": "Penzion pod hradem Cornštejn",
+"s": "Penzion",
+"o": "Oslnovice",
+"a": "54",
+"web": "http://www.cornstejn.cz",
+"w": "no",
+"la": 48.933015,
+"lo": 15.711291
+},
+{
+"i": "w549294221",
+"n": "Apartmány Kras",
+"s": "Penzion",
+"o": "Ostrov u Macochy",
+"web": "https://www.apartmanykras.cz/",
+"w": "no",
+"la": 49.381728,
+"lo": 16.766572
+},
+{
+"i": "n7750293809",
+"n": "Penzion Sloup",
+"s": "Penzion",
+"o": "Sloup",
+"a": "Sloup 291",
+"w": "limited",
+"la": 49.419095,
+"lo": 16.734923
+},
+{
+"i": "n4317287239",
+"n": "Relaxa",
+"s": "Kemp",
+"o": "Sloup",
+"w": "limited",
+"la": 49.422807,
+"lo": 16.735519
+},
+{
+"i": "n13100290631",
+"n": "Čech",
+"s": "Penzion",
+"o": "Valtice",
+"w": "no",
+"la": 48.741583,
+"lo": 16.751074
+},
+{
+"i": "n6967027712",
+"n": "Hotel Mádl",
+"s": "Hotel",
+"o": "Velké Bílovice",
+"a": "Sadová 656",
+"web": "https://vasvinar.cz/hotelmadl_cz/index.php",
+"w": "yes",
+"la": 48.855993,
+"lo": 16.907728
+},
+{
+"i": "n4026663540",
+"n": "Vinařství s ubytováním U Osičků",
+"s": "Penzion",
+"o": "Velké Bílovice",
+"a": "Sadová 605",
+"web": "https://www.sklepuosicku.cz/",
+"w": "yes",
+"la": 48.855812,
+"lo": 16.908376
+},
+{
+"i": "n3024293276",
+"n": "Ubytování",
+"s": "Motel",
+"o": "Velké Opatovice",
+"web": "https://www.velkeopatovice.cz/",
+"w": "no",
+"la": 49.611436,
+"lo": 16.681808
+},
+{
+"i": "w98745735",
+"n": "DJ-penzion",
+"s": "Penzion",
+"o": "Vracov",
+"web": "https://www.djpenzion.cz/",
+"w": "no",
+"la": 48.97995,
+"lo": 17.220714
+},
+{
+"i": "n3936148091",
+"n": "penzion Sirius",
+"s": "Penzion",
+"o": "Vyškov",
+"web": "https://penzionsirius.cz/",
+"w": "yes",
+"la": 49.277721,
+"lo": 16.992141
+},
+{
+"i": "n11001132886",
+"n": "Hotel Ryšavý",
+"s": "Hotel",
+"o": "Vémyslice",
+"web": "https://www.hotelrysavy.cz/",
+"w": "yes",
+"la": 49.020901,
+"lo": 16.258865
+},
+{
+"i": "n13106387871",
+"n": "PENZION ZNOJMO",
+"s": "Penzion",
+"o": "Znojmo",
+"web": "https://www.penzion-znojmo.cz/",
+"w": "no",
+"la": 48.846928,
+"lo": 16.059204
+},
+{
+"i": "n393217289",
+"n": "Masarykova Univerzita",
+"s": "Hotel",
+"o": "Šlapanice",
+"a": "Nádražní 465/58",
+"w": "yes",
+"la": 49.163418,
+"lo": 16.726758
+}
+]

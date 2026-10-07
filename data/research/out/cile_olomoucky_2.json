@@ -1,0 +1,83 @@
+{
+  "task": "cile_olomoucky_2",
+  "kraj": "Olomoucký kraj",
+  "checked_date": "2026-10-05",
+  "places": [
+    {
+      "osm_id": "n4032937700",
+      "name": "Multikino - Premiere Cinemas",
+      "obec": "Olomouc",
+      "lat": 49.586796,
+      "lng": 17.257744,
+      "category": "cil",
+      "source_url": "https://olomouc.premierecinemas.cz/kino/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Web uvádí, že všechny kinosály jsou přístupné pro imobilní návštěvníky.",
+        "parkovani": "Web uvádí venkovní i kryté parkoviště pro návštěvníky; vyhrazená místa pro ZTP nezmiňuje."
+      },
+      "evidence_quote": "Všechny kinosály jsou plně klimatizované a přístupné pro imobilní návštěvníky."
+    },
+    {
+      "osm_id": "n10576411528",
+      "name": "Cinemax",
+      "obec": "Velký Týnec",
+      "lat": 49.558925,
+      "lng": 17.304371,
+      "category": "cil",
+      "source_url": "https://www.cine-max.cz/nabidka-cinemax/casto-kladene-otazky",
+      "source_type": "web provozovatele (FAQ celé sítě)",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Časté dotazy sítě Cinemax uvádějí bezbariérový přístup ve všech kinech sítě i ve všech sálech (obecné tvrzení pro celou síť, ne konkrétně pro tuto pobočku).",
+        "jine": "S prosbou o pomoc lze při příchodu kontaktovat manažera kina; sleva na vstupné pro držitele průkazu ZTP."
+      },
+      "evidence_quote": "Všechna naše kina mají bezbariérový přístup, stejně tak i všechny sály."
+    }
+  ],
+  "not_found": [
+    {
+      "osm_id": "n4032937701",
+      "name": "Divadlo na Šantovce, o.p.s.",
+      "url": "https://www.divadlonasantovce.cz/",
+      "reason": "web vrací 403 Forbidden"
+    },
+    {
+      "osm_id": "n671366946",
+      "name": "Orloj",
+      "url": "https://tourism.olomouc.eu/mista/orloj/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w52928901",
+      "name": "Horní náměstí",
+      "url": "https://tourism.olomouc.eu/mista/radnice/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2304228329",
+      "name": "Svatý Kopeček",
+      "url": "https://tourism.olomouc.eu/mista/svaty-kopecek-u-olomouce/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12099009998",
+      "name": "Městská knihovna",
+      "url": "https://www.knihovnalipnik.cz/kontaktni-udaje/",
+      "reason": "web (úvod, kontakty, TIC) nic o přístupnosti neuvádí"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Premiere Cinemas Olomouc – O kině",
+      "url": "https://olomouc.premierecinemas.cz/kino/",
+      "note": "zdroj informací o přístupnosti"
+    },
+    {
+      "title": "Cinemax – Často kladené otázky",
+      "url": "https://www.cine-max.cz/nabidka-cinemax/casto-kladene-otazky",
+      "note": "zdroj informací o přístupnosti (celá síť)"
+    }
+  ]
+}

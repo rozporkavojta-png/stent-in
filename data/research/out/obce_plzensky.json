@@ -1,0 +1,948 @@
+{
+ "task": "obce_plzensky",
+ "kraj": "Plzeňský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": null,
+   "name": "Krajský úřad Plzeňského kraje",
+   "obec": "Plzeň",
+   "address": "Škroupova 1760/18, Plzeň",
+   "lat": 49.7415581,
+   "lng": 13.3749467,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "vytah": "Interiér bezbariérový (výtah).",
+    "wc": "WC upravené pro vozíčkáře.",
+    "jine": "Údaje ze seznamu Plzeň bez bariér na webu města Plzně (kapitola zveřejněna 4. 8. 2023)."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér … úprava WC pro vozíčkáře: ano"
+  },
+  {
+   "osm_id": null,
+   "name": "Úřad práce ČR – Plzeň (zprostředkování zaměstnání, dávky pro OZP)",
+   "obec": "Plzeň",
+   "address": "Kaplířova 2731/7, Plzeň",
+   "lat": 49.7264375,
+   "lng": 13.362933,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "vytah": "Interiér bezbariérový (výtah).",
+    "wc": "WC pro vozíčkáře, na Euroklíč."
+   },
+   "measurements": [],
+   "evidence_quote": "úprava WC pro vozíčkáře: ano (euroklíč)"
+  },
+  {
+   "osm_id": null,
+   "name": "Úřad práce ČR – Plzeň (státní sociální podpora, hmotná nouze)",
+   "obec": "Plzeň",
+   "address": "Klatovská třída 2848/200e, Plzeň",
+   "lat": 49.7260479,
+   "lng": 13.3640101,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "vytah": "Interiér bezbariérový (výtah).",
+    "wc": "WC pro vozíčkáře, na Euroklíč."
+   },
+   "measurements": [],
+   "evidence_quote": "úprava WC pro vozíčkáře: ano (euroklíč)"
+  },
+  {
+   "osm_id": null,
+   "name": "Krajský soud v Plzni",
+   "obec": "Plzeň",
+   "address": "Veleslavínova 40, Plzeň",
+   "lat": 49.7493337,
+   "lng": 13.3765931,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bočním vchodem ze Sedláčkovy ulice; zvonkem se přivolá justiční stráž, která doprovodí k výtahu ve dvoře. Doporučeno předem zavolat justiční stráži (377 868 888) a příslušnému soudci.",
+    "vytah": "Interiér částečně bezbariérový (výtah).",
+    "wc": "WC upravené pro vozíčkáře není."
+   },
+   "measurements": [],
+   "evidence_quote": "interiér: částečně bezbariérový (výtah)"
+  },
+  {
+   "osm_id": null,
+   "name": "Okresní soud Plzeň-město",
+   "obec": "Plzeň",
+   "address": "Nádražní 325/7, Plzeň",
+   "lat": 49.7449034,
+   "lng": 13.3874079,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bez bariér označenými dveřmi vedle hlavního vstupu; doporučeno předem se telefonicky ohlásit justiční stráži (377 868 888).",
+    "vytah": "Interiér bezbariérový (dva výtahy).",
+    "wc": "WC pro vozíčkáře v přízemí traktu B."
+   },
+   "measurements": [],
+   "evidence_quote": "úprava WC pro vozíčkáře: ano (v přízemí traktu B)"
+  },
+  {
+   "osm_id": null,
+   "name": "Okresní správa sociálního zabezpečení Plzeň-město",
+   "obec": "Plzeň",
+   "address": "Americká 767/28, Plzeň",
+   "lat": 49.7432699,
+   "lng": 13.3764644,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bez bariér z parkoviště ve dvoře.",
+    "vytah": "Interiér bezbariérový (výtah).",
+    "wc": "WC pro vozíčkáře, na Euroklíč."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér z parkoviště ve dvoře"
+  },
+  {
+   "osm_id": null,
+   "name": "Finanční úřad v Plzni",
+   "obec": "Plzeň",
+   "address": "náměstí Českých bratří 2490/8, Plzeň",
+   "lat": 49.7381926,
+   "lng": 13.3656038,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bez bariér bočním vchodem od parkovacího místa pro vozíčkáře.",
+    "vytah": "Interiér bezbariérový díky výtahu.",
+    "wc": "WC upravené pro vozíčkáře není.",
+    "parkovani": "U bočního vchodu je parkovací místo pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "bez bariér bočním vchodem od parkovacího místa pro vozíčkáře"
+  },
+  {
+   "osm_id": null,
+   "name": "Katastrální úřad pro Plzeňský kraj – KP Plzeň-město",
+   "obec": "Plzeň",
+   "address": "Radobyčická 2465/12, Plzeň",
+   "lat": 49.7392338,
+   "lng": 13.377162,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bez bariér pomocí plošiny.",
+    "vytah": "Interiér bezbariérový díky výtahu.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér (plošina)"
+  },
+  {
+   "osm_id": "w45195273",
+   "name": "Magistrát města Plzně – historická radnice",
+   "obec": "Plzeň",
+   "address": "náměstí Republiky 1, Plzeň",
+   "lat": 49.748358,
+   "lng": 13.377748,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-magistratu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "vytah": "Interiér bezbariérový, v přízemí je ale 1 schod před výtahem (lze použít přenosnou nájezdovou rampu).",
+    "wc": "WC upravené pro vozíčkáře. Mimo úřední hodiny je WC v přízemí radnice nonstop k dispozici jen vozíčkářům: tlačítkem s logem vozíčkáře na vstupní bráně se přivolá ostraha (bez Euroklíče; na přístupu schod 10 cm, přenosná rampa) – podle stránky Plzeň bez bariér – WC."
+   },
+   "measurements": [
+    {
+     "co": "schod na vstupu k WC v přízemí radnice",
+     "hodnota": 10,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "nejde o veřejné WC, ale o službu určenou výhradně pro vozíčkáře"
+  },
+  {
+   "osm_id": null,
+   "name": "Magistrát města Plzně – Odbor správních činností (OP, pasy, ověřování)",
+   "obec": "Plzeň",
+   "address": "náměstí Republiky 130/16, Plzeň",
+   "lat": 49.7463045,
+   "lng": 13.3779167,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-magistratu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Bezbariérové je pouze přízemí budovy.",
+    "wc": "WC pro vozíčkáře, na Euroklíč."
+   },
+   "measurements": [],
+   "evidence_quote": "interiér: bezbariérový pouze v přízemí budovy"
+  },
+  {
+   "osm_id": null,
+   "name": "Magistrát města Plzně – Odbor sociálních služeb",
+   "obec": "Plzeň",
+   "address": "Martinská 141/2, Plzeň",
+   "lat": 49.7444105,
+   "lng": 13.377491,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-magistratu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Z Martinské ulice schodišťová plošina (malá nosnost, špatný technický stav – bezpečná jen pro mechanické vozíky). Ze dvora (Kopeckého sady 11): u 1. a 3. dveří schod (přenosná rampa), u 2. dveří rampa.",
+    "vytah": "Výtah; větší elektrické vozíky mohou mít kvůli rozměrům problém.",
+    "wc": "WC pro vozíčkáře, na Euroklíč."
+   },
+   "measurements": [],
+   "evidence_quote": "bezpečná pouze pro mechanické vozíky"
+  },
+  {
+   "osm_id": null,
+   "name": "Magistrát města Plzně – Odbor dostupného bydlení a sociálního začleňování",
+   "obec": "Plzeň",
+   "address": "Jagellonská 563/8, Plzeň",
+   "lat": 49.7421151,
+   "lng": 13.3765884,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-magistratu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bez bariér ze dvora pomocí svislé zdvihací plošiny.",
+    "parkovani": "Parkovací místa pro vozíčkáře ve dvoře u plošiny.",
+    "jine": "Bezbariérové je pouze přízemí budovy.",
+    "wc": "WC pro vozíčkáře, na Euroklíč."
+   },
+   "measurements": [],
+   "evidence_quote": "svislé zdvihací plošiny vedle parkovacích míst pro vozíčkáře"
+  },
+  {
+   "osm_id": null,
+   "name": "Magistrát města Plzně – Odbor stavebně správní",
+   "obec": "Plzeň",
+   "address": "Škroupova 246/4, Plzeň",
+   "lat": 49.7431519,
+   "lng": 13.3752866,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-magistratu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "vytah": "Interiér bezbariérový díky výtahu s přístupem ze dvora.",
+    "wc": "WC pro vozíčkáře, na Euroklíč."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbariérový (díky výtahu, který má přístup ze dvora)"
+  },
+  {
+   "osm_id": null,
+   "name": "Magistrát města Plzně – Škroupova 5 (odbor bytový, odbor dopravy, odbor rozvoje a plánování, Ekonomický úřad)",
+   "obec": "Plzeň",
+   "address": "Škroupova 1900/5, Plzeň",
+   "lat": 49.7425816,
+   "lng": 13.3758237,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-magistratu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Schodišťová plošina. (Ekonomický úřad sídlí i ve Škroupově 7 – tam nízký schod 35 mm.)",
+    "vytah": "Interiér bezbariérový (výtah).",
+    "wc": "WC pro vozíčkáře, na Euroklíč."
+   },
+   "measurements": [
+    {
+     "co": "schod na vstupu Škroupova 7",
+     "hodnota": 35,
+     "jednotka": "mm"
+    }
+   ],
+   "evidence_quote": "vstup do objektu: schodišťová plošina"
+  },
+  {
+   "osm_id": null,
+   "name": "Magistrát města Plzně – Odbor správy infrastruktury",
+   "obec": "Plzeň",
+   "address": "Palackého náměstí 30/6, Plzeň",
+   "lat": 49.748253,
+   "lng": 13.3700114,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-magistratu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "vytah": "Interiér bezbariérový (výtah).",
+    "wc": "WC pro vozíčkáře, na Euroklíč."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "Magistrát města Plzně – Odbor registru vozidel a řidičů",
+   "obec": "Plzeň",
+   "address": "Koterovská 462/162, Plzeň",
+   "lat": 49.7240583,
+   "lng": 13.4146617,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-magistratu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "vytah": "Interiér bezbariérový (výtah).",
+    "wc": "WC pro vozíčkáře, na Euroklíč."
+   },
+   "measurements": [],
+   "evidence_quote": "úprava WC pro vozíčkáře: ano (euroklíč)"
+  },
+  {
+   "osm_id": null,
+   "name": "Magistrát města Plzně – Živnostenský úřad",
+   "obec": "Plzeň",
+   "address": "Tylova 485/36, Plzeň",
+   "lat": 49.7449237,
+   "lng": 13.3674079,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-magistratu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Krátký strmý nájezd ve vchodu.",
+    "vytah": "Interiér bezbariérový (výtah s přístupem ze dvora).",
+    "wc": "WC pro vozíčkáře v 1. patře, na Euroklíč."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: krátký strmý nájezd ve vchodu"
+  },
+  {
+   "osm_id": null,
+   "name": "Správa veřejného statku města Plzně – podatelna, pokladna, informační kancelář",
+   "obec": "Plzeň",
+   "address": "Klatovská třída 455/12, Plzeň",
+   "lat": 49.7437672,
+   "lng": 13.3719453,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-magistratu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Bezbariérové je přízemí.",
+    "wc": "WC upravené pro vozíčkáře není."
+   },
+   "measurements": [],
+   "evidence_quote": "interiér: v přízemí bezbariérový"
+  },
+  {
+   "osm_id": null,
+   "name": "ÚMO Plzeň 1 – Severní Předměstí",
+   "obec": "Plzeň",
+   "address": "alej Svobody 882/60, Plzeň",
+   "lat": 49.7667574,
+   "lng": 13.3706792,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-mestskych-obvodu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Výtahem; rozměrné elektrické vozíky mohou mít při nástupu problém.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře není."
+   },
+   "measurements": [],
+   "evidence_quote": "rozměrné el. vozíky tu však mohou při nástupu mít problém"
+  },
+  {
+   "osm_id": null,
+   "name": "ÚMO Plzeň 2 – Slovany",
+   "obec": "Plzeň",
+   "address": "Koterovská 1172/83, Plzeň",
+   "lat": 49.7320404,
+   "lng": 13.4034864,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-mestskych-obvodu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC pro vozíčkáře, na Euroklíč."
+   },
+   "measurements": [],
+   "evidence_quote": "úprava WC pro vozíčkáře: ano (euroklíč)"
+  },
+  {
+   "osm_id": null,
+   "name": "ÚMO Plzeň 3 – Vnitřní město a Jižní Předměstí",
+   "obec": "Plzeň",
+   "address": "sady Pětatřicátníků 7 a 9, Plzeň",
+   "lat": 49.7463435,
+   "lng": 13.3728671,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-mestskych-obvodu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bez bariér zadním vchodem z Divadelní ulice.",
+    "vytah": "Interiér bezbariérový (výtah).",
+    "wc": "WC pro vozíčkáře, na Euroklíč."
+   },
+   "measurements": [],
+   "evidence_quote": "bez bariér zadním vchodem z Divadelní ulice"
+  },
+  {
+   "osm_id": "w55038582",
+   "name": "ÚMO Plzeň 4 – Doubravka",
+   "obec": "Plzeň",
+   "address": "Mohylova 55, Plzeň",
+   "lat": 49.756523,
+   "lng": 13.420507,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-mestskych-obvodu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "vytah": "Interiér bezbariérový (výtah).",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "ÚMO Plzeň 5 – Křimice",
+   "obec": "Plzeň",
+   "address": "Prvomájová 100/21, Plzeň-Křimice",
+   "lat": 49.7559536,
+   "lng": 13.3045872,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-mestskych-obvodu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "ÚMO Plzeň 6 – Litice",
+   "obec": "Plzeň",
+   "address": "Klatovská 96/243, Plzeň-Litice",
+   "lat": 49.6960231,
+   "lng": 13.3530955,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-mestskych-obvodu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bez bariér pouze do přízemí.",
+    "jine": "Na požádání (tel. 378 036 824) sejde do přízemí pracovník sociálního odboru.",
+    "wc": "WC upravené pro vozíčkáře není."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér pouze do přízemí"
+  },
+  {
+   "osm_id": null,
+   "name": "ÚMO Plzeň 7 – Radčice",
+   "obec": "Plzeň",
+   "address": "V Radčicích 9, Plzeň-Radčice",
+   "lat": 49.7624689,
+   "lng": 13.3258019,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-mestskych-obvodu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Schodišťová plošina.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře není."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: schodišťová plošina"
+  },
+  {
+   "osm_id": null,
+   "name": "ÚMO Plzeň 8 – Černice",
+   "obec": "Plzeň",
+   "address": "Veská 139/11, Plzeň-Černice",
+   "lat": 49.6970374,
+   "lng": 13.41549,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-mestskych-obvodu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bez bariér jen do přízemí.",
+    "jine": "V přízemí sídlí mj. sociální odbor úřadu.",
+    "wc": "WC upravené pro vozíčkáře není."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér jen do přízemí"
+  },
+  {
+   "osm_id": null,
+   "name": "ÚMO Plzeň 9 – Malesice",
+   "obec": "Plzeň",
+   "address": "Chotíkovská 72/14, Plzeň-Malesice",
+   "lat": 49.772219,
+   "lng": 13.2979955,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-mestskych-obvodu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Jen po schodech.",
+    "jine": "Interiér bariérový.",
+    "wc": "WC upravené pro vozíčkáře není."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: jen po schodech"
+  },
+  {
+   "osm_id": null,
+   "name": "ÚMO Plzeň 10 – Lhota",
+   "obec": "Plzeň",
+   "address": "K Sinoru 62/51, Plzeň-Lhota",
+   "lat": 49.6919684,
+   "lng": 13.3213575,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/urady/urady-mestskych-obvodu/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Po rampě, pouze do přízemí.",
+    "jine": "V přízemí sídlí mj. sociální odbor úřadu.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: po rampě – pouze do přízemí"
+  },
+  {
+   "osm_id": "n497058277",
+   "name": "Turistické informační centrum města Plzně",
+   "obec": "Plzeň",
+   "address": "náměstí Republiky 41, Plzeň",
+   "lat": 49.748139,
+   "lng": 13.377437,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/rady-informace-pomoc/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře není."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér"
+  },
+  {
+   "osm_id": "w966413717",
+   "name": "Turistické informační centrum u hlavního nádraží (Paluba Hamburk)",
+   "obec": "Plzeň",
+   "address": "Šumavská, Plzeň",
+   "lat": 49.744147,
+   "lng": 13.387165,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/rady-informace-pomoc/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Interiér bezbariérový, centrum je v přízemí.",
+    "wc": "WC upravené pro vozíčkáře není."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbariérový – nachází se v přízemí objektu"
+  },
+  {
+   "osm_id": null,
+   "name": "Informační centrum Bavorsko – Čechy",
+   "obec": "Plzeň",
+   "address": "náměstí Republiky 131/17, Plzeň",
+   "lat": 49.7462591,
+   "lng": 13.3776975,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/rady-informace-pomoc/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře není."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "Poradna Národní rady osob se zdravotním postižením pro Plzeňský kraj",
+   "obec": "Plzeň",
+   "address": "náměstí Republiky 202/28, Plzeň (pasáž Slávie)",
+   "lat": 49.7467999,
+   "lng": 13.3763815,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/rady-informace-pomoc/poradny-pro-osoby-se-zdravotnim-postizenim/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bez bariér, výtahem; větší elektrické vozíky mohou mít kvůli rozměrům výtahu problém.",
+    "jine": "Interiér bezbariérový. Sociálně-právní poradenství, výdej Euroklíčů.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "rady v sociálně právních otázkách, pomoc s řešením životních situací, distribuce euroklíčů"
+  },
+  {
+   "osm_id": null,
+   "name": "Centrum pro zdravotně postižené Plzeňského kraje",
+   "obec": "Plzeň",
+   "address": "Koterovská 2061/134, Plzeň",
+   "lat": 49.7305945,
+   "lng": 13.4057913,
+   "category": "urady",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/rady-informace-pomoc/poradny-pro-osoby-se-zdravotnim-postizenim/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Interiér bezbariérový. Poradna, půjčovna pomůcek, tlumočení znakové řeči, konzultace bezbariérových úprav.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "poradna, půjčovna pomůcek, tlumočení znakové řeči, konzultace bezbariérových úprav"
+  },
+  {
+   "osm_id": null,
+   "name": "WC v restauraci McDonald's Americká (zpřístupněné veřejnosti)",
+   "obec": "Plzeň",
+   "address": "Americká 46, Plzeň",
+   "lat": 49.7432464,
+   "lng": 13.3791543,
+   "category": "wc",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/wc/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "wc": "Město ho uvádí mezi veřejnosti zpřístupněnými bezbariérovými WC v centru. Bez Euroklíče. Otevřeno po–čt 7–01, pá–so 7–05, ne 7–01 h."
+   },
+   "measurements": [],
+   "evidence_quote": "Veřejné a veřejnosti zpřístupněné bezbariérové WC v centru města"
+  },
+  {
+   "osm_id": "n3039895959",
+   "name": "Veřejné WC v Cykloúschovně pod Černou věží",
+   "obec": "Klatovy",
+   "address": "pod Černou věží (u náměstí Míru), Klatovy",
+   "lat": 49.394286,
+   "lng": 13.292523,
+   "category": "wc",
+   "source_url": "https://www.klatovy.cz/klatovy/cyklouschovna.asp",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Samostatně přístupná část objektu s veřejnými toaletami a sprchami, přebalovací pult. Vybavení je podle webu navržené v bezbariérovém standardu. WC 10 Kč, sprcha 20 Kč (hotově i kartou). Otevřeno leden–červen a září–prosinec denně 9–17 h, červenec–srpen 9–18 h (podle stránky Veřejné WC: https://www.klatovy.cz/klatovy/fr.asp?tab=icklatovy&id=74&burl=)."
+   },
+   "measurements": [],
+   "evidence_quote": "Veškeré vybavení je navrženo v bezbariérovém standardu"
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné toalety v budově Městské policie",
+   "obec": "Domažlice",
+   "address": "Boženy Němcové 118, Domažlice",
+   "lat": 49.4408958,
+   "lng": 12.927435,
+   "category": "wc",
+   "source_url": "https://www.domazlice.eu/zpravodajstvi/nove-verejne-toalety-v-centru-domazlic-5497cs.html",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup.",
+    "wc": "Zdarma. Duben–září denně 7–19 h, říjen–březen po–pá 7–19 h; při Chodských slavnostech a velkých městských akcích nonstop. Dva přebalovací pulty.",
+    "jine": "Údaje z článků města z července 2022; novější informace o provozní době web neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Přístup na veřejné toalety je bezbariérový, použití sociálního zařízení je zdarma."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné toalety na náměstí Republiky",
+   "obec": "Horšovský Týn",
+   "address": "náměstí Republiky, Horšovský Týn",
+   "lat": 49.5292191,
+   "lng": 12.9438226,
+   "category": "wc",
+   "source_url": "https://www.horsovskytyn.cz/aktualne/aktuality/verejne-toalety-jsou-nyni-osazeny-eurozamkem-1339cs.html",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Prostřední kabinka veřejných toalet na náměstí Republiky má od února 2026 Eurozámek (otevírá se Euroklíčem).",
+    "jine": "Euroklíč zdarma vydává odbor sociálních věcí a zdravotnictví MěÚ Horšovský Týn (nám. Republiky 52) nebo NRZP v Plzni. Otevírací dobu článek neuvádí. Souřadnice = uzel veřejných toalet v OSM (přes Nominatim) na jižním okraji náměstí."
+   },
+   "measurements": [],
+   "evidence_quote": "osadit prostřední kabinku veřejných toalet na náměstí Republiky speciálním Eurozámkem"
+  },
+  {
+   "osm_id": null,
+   "name": "Městská knihovna Nepomuk",
+   "obec": "Nepomuk",
+   "address": "Nádražní 476, Nepomuk",
+   "lat": 49.4854924,
+   "lng": 13.5864365,
+   "category": "kultura",
+   "source_url": "https://www.nepomuk.cz/mesto/o-meste/instituce-a-firmy/urady-a-instituce/mestska-knihovna-nepomuk-652cs.html",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup do budovy i v prostorách knihovny.",
+    "jine": "Otevřeno po a st 7–11 a 12–17 h, pá 7–11 a 12–13 h."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbariérový přístup do budovy i v prostorách knihovny"
+  },
+  {
+   "osm_id": null,
+   "name": "Letní kino Domažlice",
+   "obec": "Domažlice",
+   "address": "Kozinova, Domažlice",
+   "lat": 49.4390138,
+   "lng": 12.9199924,
+   "category": "kultura",
+   "source_url": "https://www.domazlice.eu/organizace-mesta/mestske-kulturni-stredisko-v-domazlicich/kino-/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup (bez podrobností).",
+    "parkovani": "Možnost parkování u letního kina."
+   },
+   "measurements": [],
+   "evidence_quote": "BEZBARIÉROVÝ PŘÍSTUP"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": null,
+   "name": "Veřejné toalety Rokycany (průchod Masarykovo nám. – ul. Svazu bojovníků za svobodu)",
+   "url": "https://www.rokycany.cz/vismo/dokumenty2.asp?id_org=14069&id=915594",
+   "reason": "Web (duben 2025) uvádí bezbariérový přístup a samostatné WC pro osoby se zdravotním postižením, 20 Kč, denně 8–17 h; v květnu 2025 prodloužená doba bez upřesnění (id=915861). Místo ale nejde jednoznačně geokódovat (průchod; v OSM není jistá shoda), proto nepřidáno do places."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Sušice",
+   "url": "https://www.mestosusice.cz/mususice/",
+   "reason": "Na webu města ani v turistické části jsme nenašli nic o bezbariérových WC ani úřadech (fulltext nejde použít; susice.cz přesměrovává)."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Horažďovice",
+   "url": "https://www.mesto-horazdovice.cz/",
+   "reason": "Úvodní stránka ani sekce Informační centrum nic o přístupnosti nebo WC neuvádí (horazdovice.cz nefunguje kvůli TLS)."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Kaznějov",
+   "url": "https://www.kaznejov.cz/",
+   "reason": "Fulltext (bezbariérový, veřejné WC, toalety, euroklíč, vozíčkáře) nic relevantního nenašel."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Tachov",
+   "url": "https://www.tachov-mesto.cz/",
+   "reason": "Sitemap ani menu nic o bezbariérových WC/úřadech; jen veřejná vyhláška ke stavbě WC na autobusovém nádraží v Plané."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Dobřany",
+   "url": "https://www.dobrany.cz/",
+   "reason": "Fulltext našel jen projekty a akce, žádné údaje o přístupnosti WC či úřadu."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Přeštice",
+   "url": "https://www.prestice-mesto.cz/",
+   "reason": "Fulltext nic relevantního nenašel."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Třemošná",
+   "url": "https://www.tremosna.cz/",
+   "reason": "Fulltext nic relevantního nenašel."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Nýřany",
+   "url": "https://www.nyrany.cz/",
+   "reason": "Fulltext nic relevantního nenašel."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Holýšov",
+   "url": "https://www.mestoholysov.cz/",
+   "reason": "holysov.cz vrací 403; na webu mestoholysov.cz běží vyhledávání jen přes JavaScript, nic jsme nenašli."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Kašperské Hory",
+   "url": "http://kasperskehory.cz/",
+   "reason": "Úvodní stránka nic o přístupnosti; vyhledávání nevrací výsledky."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Planá",
+   "url": "https://www.plana.cz/",
+   "reason": "Fulltext našel jen pozvánky na akce, žádné konkrétní místo s údaji o přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Obec Chotíkov",
+   "url": "https://www.chotikov.cz/",
+   "reason": "Web nic o přístupnosti neuvádí."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Železná Ruda",
+   "url": "https://www.zelezna-ruda.cz/muruda/",
+   "reason": "Web města ani turistická část nic o bezbariérových WC či úřadu neuvádí."
+  },
+  {
+   "osm_id": null,
+   "name": "Obec Chotěšov",
+   "url": "https://www.chotesov.cz/",
+   "reason": "Web nic o přístupnosti neuvádí."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Kdyně",
+   "url": "https://www.kdyne.cz/aktualni-informace/na-cem-nyni-pracujeme/rekonstrukce-cp-9-dum-sluzeb-na-namesti-2759cs.html",
+   "reason": "Jen probíhající rekonstrukce Domu služeb čp. 9 (Náměstí 1) s budoucím výtahem; zatím nehotové, proto nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Nýrsko",
+   "url": "https://www.nyrsko.cz/",
+   "reason": "Starý web (frameset), nic o přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Blovice",
+   "url": "https://www.blovice-mesto.cz/",
+   "reason": "Jen výtah v bytovém domě Americká 88 (není veřejné místo); o WC a úřadu nic (blovice.cz nefunguje)."
+  },
+  {
+   "osm_id": null,
+   "name": "Obec Ejpovice",
+   "url": "https://www.ejpovice.cz/",
+   "reason": "Fulltext nic relevantního nenašel."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Stod",
+   "url": "https://www.mestostod.cz/",
+   "reason": "Fulltext našel jen projekt bezbariérovosti ZŠ a MŠ a dotaz občana, žádné konkrétní údaje."
+  },
+  {
+   "osm_id": null,
+   "name": "Městský úřad Klatovy",
+   "url": "https://www.klatovy.cz/mukt/",
+   "reason": "O bezbariérovosti městského úřadu web nic neuvádí (našli jsme jen WC pod Černou věží)."
+  },
+  {
+   "osm_id": null,
+   "name": "Městský úřad Rokycany",
+   "url": "https://www.rokycany.cz/",
+   "reason": "Fulltext k bezbariérovosti úřadu nic konkrétního nevrátil."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Plzeň bez bariér (plzen.eu)",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/",
+   "note": "Oficiální seznam města Plzně: úřady, zdravotnictví, školy, knihovny, poradny, doprava a mobilita, kultura, sport, finance, obchody, restaurace a WC s údaji o přístupnosti (vstup, interiér, WC pro vozíčkáře, Euroklíč). Připraveno s PhDr. Miroslavem Valinou (předseda NRZP Plzeňského kraje). Podle webu se aktualizuje alespoň jednou ročně; doplnění na bezbarier@plzen.eu. Licence neuvedena – převzali jsme jen úřady, informační centra, poradny a WC (úkol obce/WC/úřady)."
+  },
+  {
+   "title": "Plzeň bez bariér – WC",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/wc/",
+   "note": "Veřejná a veřejnosti zpřístupněná bezbariérová WC v centru (radnice, McDonald's Americká). Zveřejněno 16. 10. 2024."
+  },
+  {
+   "title": "Plzeň bez bariér – Úřady",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/urady/",
+   "note": "Státní a krajské úřady, úřady magistrátu (…/urady-magistratu/), úřady městských obvodů (…/urady-mestskych-obvodu/); zveřejněno 4. 8. 2023."
+  },
+  {
+   "title": "Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením na období 2024–2028 (Plzeňský kraj)",
+   "url": "https://socialnisluzby.plzensky-kraj.cz/Uploads/Files/zqxzuhnt.cqf.pdf",
+   "note": "PDF, 20 stran (stránka: https://socialnisluzby.plzensky-kraj.cz/Article/Details/616). Kap. 2 Zpřístupňování staveb: informovat obce o dotacích z programu Mobilita pro všechny (2.1.1), metodika pro stavební úřady (2.1.2), stanoviska NIPI k projektům financovaným krajem (2.1.3), záštita nad dobrovolnickým projektem „Schod nás nezastaví“ (2.1.4). Doprava: priorita bezbariérových nástupišť Třemošná, Blovice a Plasy (3.1.2), označovat nízkopodlažní spoje a bezbariérové zastávky v jízdních řádech (3.2.1). Opatření 7.1.1: doplňovat do databází kraje (kultura, sport, cestovní ruch) údaje o přístupnosti objektů, 20–25 tis. Kč ročně. Ve vzdělávání: aktualizovat na webu kraje seznam bezbariérových škol. Samostatné mapování přístupnosti jako opatření plán nemá."
+  },
+  {
+   "title": "Krajský plán vyrovnávání příležitostí 2019–2023 (předchozí)",
+   "url": "https://www.plzensky-kraj.cz/clanek/vznikl-druhy-krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim",
+   "note": "Článek z 26. 11. 2018 o předchozím plánu, PDF na stránce."
+  },
+  {
+   "title": "Národní rada osob se zdravotním postižením ČR – krajské pracoviště Plzeňský kraj",
+   "url": "https://nrzp.cz/",
+   "note": "Poradna: nám. Republiky 202/28, Plzeň (pasáž Slávie, vchod A, 2. patro), tel. 377 224 879; sociálně-právní poradenství, výdej Euroklíčů. NRZP PK spolupracuje na opatřeních krajského plánu."
+  },
+  {
+   "title": "Centrum pro zdravotně postižené Plzeňského kraje",
+   "url": "https://czppk.cz/",
+   "note": "Koterovská 134, Plzeň, tel. 377 440 854; poradna, půjčovna pomůcek, tlumočení znakové řeči, konzultace bezbariérových úprav (podle plzen.eu)."
+  },
+  {
+   "title": "Cestovní klub KID",
+   "url": "http://ckkid.4fan.cz/index_sub.html",
+   "note": "Poradenství v cestování a mobilitě osob se zdravotním postižením, zájezdy (podle plzen.eu). Web vrátil chybu 403."
+  },
+  {
+   "title": "Klatovy – Veřejné WC (infocentrum)",
+   "url": "https://www.klatovy.cz/klatovy/fr.asp?tab=icklatovy&id=74&burl=",
+   "note": "Ceník a otevírací doba WC pod Černou věží a seznam provozoven zapojených do FREE WC (mapa na mapotic.com). O bezbariérovosti FREE WC stránka nic neuvádí."
+  },
+  {
+   "title": "Domažlice – stezka pro vozíčkáře na Zelenově (zprávy města)",
+   "url": "https://www.domazlice.eu/zpravodajstvi/otevreni-nove-stezky-pro-vozickare-na-zelenove-8283cs.html",
+   "note": "Nalezeno fulltextem na webu města. Článek jsme neotevřeli, údaje jsme nepřevzali – tip na další kontrolu (kategorie příroda)."
+  },
+  {
+   "title": "Atlas přístupnosti pro Plzeňský kraj",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/",
+   "note": "Samostatný mapový atlas přístupnosti (jako presbariery.cz v Praze) jsme pro Plzeňský kraj ani pro tyto obce nenašli; nejbližší je textový seznam Plzeň bez bariér. presbariery.cz, bezbarier.c-budejovice.cz a ostrava-bezbarier.cz jen zmiňujeme, data jsme nepřebírali."
+  }
+ ]
+}

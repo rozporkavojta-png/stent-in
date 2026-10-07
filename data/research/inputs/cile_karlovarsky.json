@@ -1,0 +1,215 @@
+[
+{
+"i": "w122994771",
+"n": "Muzeum Abertamy",
+"s": "Muzeum",
+"o": "Abertamy",
+"w": "no",
+"la": 50.368911,
+"lo": 12.818263
+},
+{
+"i": "w769009799",
+"n": "Papírna Doubrava",
+"s": "Turistický cíl",
+"o": "Aš",
+"w": "limited",
+"la": 50.259624,
+"lo": 12.239688
+},
+{
+"i": "n5269434300",
+"n": "Replika historického žentouru dolu Johannes",
+"s": "Turistický cíl",
+"o": "Boží Dar",
+"w": "no",
+"la": 50.435817,
+"lo": 12.867762
+},
+{
+"i": "w73108678",
+"n": "Západočeské divadlo v Chebu",
+"s": "Divadlo",
+"o": "Cheb",
+"web": "https://divadlocheb.cz/",
+"w": "yes",
+"la": 50.076637,
+"lo": 12.367255
+},
+{
+"i": "n370278550",
+"n": "Komorní hůrka",
+"s": "Turistický cíl",
+"o": "Františkovy Lázně",
+"w": "no",
+"la": 50.100938,
+"lo": 12.336674
+},
+{
+"i": "n5269709010",
+"n": "Centrální kompresorovna (Turbo)",
+"s": "Turistický cíl",
+"o": "Jáchymov",
+"web": "https://www.palfi.cz/clanky/pamatky-a-zajimavosti-jachymova/dulni-pamatky/centralni-kompresorovna--turbo-.html",
+"w": "no",
+"la": 50.373077,
+"lo": 12.885099
+},
+{
+"i": "n5254741392",
+"n": "Meteorologická budka",
+"s": "Turistický cíl",
+"o": "Jáchymov",
+"w": "yes",
+"la": 50.360475,
+"lo": 12.933708
+},
+{
+"i": "n3385901376",
+"n": "Městská knihovna Jáchymov",
+"s": "Knihovna",
+"o": "Jáchymov",
+"a": "náměstí Republiky 1",
+"w": "no",
+"la": 50.371151,
+"lo": 12.913628
+},
+{
+"i": "n2384259271",
+"n": "Mayerův gloriet",
+"s": "Vyhlídka",
+"o": "Karlovy Vary",
+"w": "no",
+"la": 50.222706,
+"lo": 12.879931
+},
+{
+"i": "n9901393921",
+"n": "Originál Karlovarské Oplatky",
+"s": "Turistický cíl",
+"o": "Karlovy Vary",
+"w": "no",
+"la": 50.229397,
+"lo": 12.872332
+},
+{
+"i": "w62154070",
+"n": "Rozhledna Diana",
+"s": "Vyhlídka",
+"o": "Karlovy Vary",
+"web": "https://www.karlovyvary.cz/en/diana-observation-tower",
+"w": "yes",
+"la": 50.218979,
+"lo": 12.872264
+},
+{
+"i": "w62153505",
+"n": "Sadová kolonáda",
+"s": "Turistický cíl",
+"o": "Karlovy Vary",
+"web": "https://www.karlovyvary.cz/en/park-colonnade-0",
+"w": "yes",
+"la": 50.227282,
+"lo": 12.878983
+},
+{
+"i": "w62153995",
+"n": "Zámecká kolonáda",
+"s": "Turistický cíl",
+"o": "Karlovy Vary",
+"w": "yes",
+"la": 50.223791,
+"lo": 12.882782
+},
+{
+"i": "n3040677240",
+"n": "rozhledna Cibulka",
+"s": "Vyhlídka",
+"o": "Krajková",
+"w": "no",
+"la": 50.236899,
+"lo": 12.557816
+},
+{
+"i": "w507332525",
+"n": "Rozhledna Krásenský vrch",
+"s": "Turistický cíl",
+"o": "Krásno",
+"w": "no",
+"la": 50.101554,
+"lo": 12.786414
+},
+{
+"i": "n14156703786",
+"n": "Historický zeleninový sklep a studna",
+"s": "Turistický cíl",
+"o": "Krásná",
+"w": "no",
+"la": 50.24275,
+"lo": 12.149418
+},
+{
+"i": "n4840542426",
+"n": "Mattoniho vodopád",
+"s": "Turistický cíl",
+"o": "Kyselka",
+"w": "no",
+"la": 50.258611,
+"lo": 12.999219
+},
+{
+"i": "n11076785192",
+"n": "Medvědí kameny",
+"s": "Turistický cíl",
+"o": "Lázně Kynžvart",
+"w": "no",
+"la": 49.999146,
+"lo": 12.6198
+},
+{
+"i": "w90707927",
+"n": "Boheminium",
+"s": "Zábavní park",
+"o": "Mariánské Lázně",
+"w": "limited",
+"la": 49.971188,
+"lo": 12.720045
+},
+{
+"i": "w101358034",
+"n": "Hamelika",
+"s": "Vyhlídka",
+"o": "Mariánské Lázně",
+"w": "no",
+"la": 49.972106,
+"lo": 12.709532
+},
+{
+"i": "n8251639554",
+"n": "Hrázděný statek Milíkov",
+"s": "Muzeum",
+"o": "Milíkov",
+"w": "limited",
+"la": 50.057872,
+"lo": 12.547851
+},
+{
+"i": "w1220362473",
+"n": "Kartarena Cheb",
+"s": "Sportovní centrum",
+"o": "Odrava",
+"w": "yes",
+"t": "yes",
+"la": 50.086414,
+"lo": 12.452646
+},
+{
+"i": "w86210615",
+"n": "Soos",
+"s": "Muzeum",
+"o": "Skalná",
+"w": "yes",
+"la": 50.145981,
+"lo": 12.401984
+}
+]

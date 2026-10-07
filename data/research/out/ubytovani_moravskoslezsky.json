@@ -1,0 +1,127 @@
+{
+ "task": "ubytovani_moravskoslezsky",
+ "kraj": "Moravskoslezský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w103707424",
+   "name": "Pod Zeleným dubem",
+   "obec": "Bohumín",
+   "address": "nám. Svobody 37",
+   "lat": 49.919593,
+   "lng": 18.328264,
+   "category": "ubytovani",
+   "source_url": "https://www.podzelenym.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Web uvádí bezbariérovou restauraci; o pokojích, koupelně ani výtahu nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Naše bezbariérová restaurace"
+  },
+  {
+   "osm_id": "w54413177",
+   "name": "Hotel Petr Bezruč",
+   "obec": "Malenovice",
+   "address": "",
+   "lat": 49.566544,
+   "lng": 18.425743,
+   "category": "ubytovani",
+   "source_url": "https://hotelpetrbezruc.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup, bez dalších podrobností (pokoj, koupelna neuvedeny)."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbarierový přístup"
+  },
+  {
+   "osm_id": "n805167928",
+   "name": "STEELHOUSE",
+   "obec": "Třinec",
+   "address": "",
+   "lat": 49.669369,
+   "lng": 18.674894,
+   "category": "ubytovani",
+   "source_url": "https://www.steelhouse.cz",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup do hotelu.",
+    "vytah": "Výtah do všech pater."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup, výtah do všech pater"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n2274972389",
+   "name": "Penzion ve věži",
+   "url": "https://www.bospor.info/cz/penzion-ve-vezi/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3514880220",
+   "name": "Hotel Afrika",
+   "url": "https://www.hotel-afrika.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2244707303",
+   "name": "Svatý Florian",
+   "url": "http://www.pension-florian.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3635252341",
+   "name": "Dvůr Olšiny",
+   "url": "https://www.dvurolsiny.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n289093530",
+   "name": "Grúň",
+   "url": "https://www.hotelgrun.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4069011363",
+   "name": "Na Skalkách",
+   "url": "https://www.hotelnaskalkach.cz/",
+   "reason": "web nefunguje (doména neexistuje)"
+  },
+  {
+   "osm_id": "n4861614208",
+   "name": "Hotel Garni VŠB",
+   "url": "https://www.hotelvsb.cz/",
+   "reason": "web nefunguje (doména neexistuje)"
+  },
+  {
+   "osm_id": "n898869886",
+   "name": "Quality Hotel Ostrava City",
+   "url": "https://www.qualityhotelostravacity.com",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n5758694221",
+   "name": "Grunt No 135",
+   "url": "http://www.hotelgrunt.com",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů (12 zařízení ze vstupu)",
+   "url": "",
+   "note": "3 s údajem o bezbariérovosti, 7 bez údaje, 2 nefunkční weby"
+  },
+  {
+   "title": "Vstupní seznam (OSM)",
+   "url": "",
+   "note": "souřadnice ze vstupu data/research/inputs/ubytovani_moravskoslezsky.json"
+  }
+ ]
+}

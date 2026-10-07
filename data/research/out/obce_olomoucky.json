@@ -1,0 +1,96 @@
+{
+ "task": "obce_olomoucky",
+ "kraj": "Olomoucký kraj",
+ "checked_date": "2026-10-05",
+ "places": [],
+ "not_found": [
+  {
+   "osm_id": null,
+   "name": "Plně automatické veřejné toalety – Smetanovy sady (u autobusové zastávky), Šumperk",
+   "url": "https://www.sumperk.cz/cs/zivot-ve-meste/mistrovstvi-sveta-ctif/verejne-toalety-behem-mistrovstvi-sveta-ctif-2026-kde-je-v-sumperku-najdete.html",
+   "reason": "Web města (článek k MS CTIF 2026) uvádí, že tyto toalety jsou bezbariérové, otevřené denně 6–20 h, vstup zdarma; Euroklíč ani přesnou adresu neuvádí. Hledání nových míst zrušeno (zrychlený režim), nepřidáno. Další WC v článku (suterén radnice nám. Míru, průchod u Domu kultury ul. Fialova) bez údaje o bezbariérovosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejná WC v Přerově",
+   "url": "https://www.prerov.eu/cs/turista/informace-pro-turisty/sluzby-pro-turisty/verejna-wc-v-prerove.html",
+   "reason": "Stránka neobsahuje žádné z klíčových slov (bezbariér, vozík, Euroklíč) – bezbariérovost WC neuvedena."
+  },
+  {
+   "osm_id": null,
+   "name": "Hranice – veřejné toalety",
+   "url": "https://www.mesto-hranice.cz/clanky/mesto-pred-sezonou-posiluje-verejne-toalety",
+   "reason": "Článek neuvádí bezbariérovost ani Euroklíč; jiné relevantní stránky v sitemapě webu nenalezeny."
+  },
+  {
+   "osm_id": null,
+   "name": "Krajský plán vyrovnávání příležitostí pro OZP – Olomoucký kraj",
+   "url": "https://www.olkraj.cz/pro-osoby-se-zdravotnim-postizenim/strategicke-dokumenty",
+   "reason": "Na stránce Strategické dokumenty jsou jen celostátní dokumenty (Úmluva OSN, Střednědobá koncepce státní politiky, memorandum AKČR–NRZP, plán mobility pro všechny); krajský plán vyrovnávání příležitostí v sitemapě olkraj.cz nenalezen."
+  },
+  {
+   "osm_id": null,
+   "name": "Bezbariérovost radnic (Olomouc, Přerov, Prostějov, Šumperk, Hranice, Jeseník)",
+   "url": "",
+   "reason": "Na prošlých stránkách měst není popis bezbariérového přístupu do budov radnic/úřadů. Jen: Olomouc – vyhrazená parkovací místa pro ZTP u odboru sociálních věcí ve Štursově ulici (https://www.olomouc.eu/obcan/socialni-sluzby/projekt-bezbarierova-olomouc/27142); Jeseník – článek o nové bezbariérové služebně městské policie (https://jesenik.cz/cz/informace/2423-mestska-policie-jesenik-ma-novou-bezbarierovou-sluzebnu.html, neotevřen)."
+  },
+  {
+   "osm_id": null,
+   "name": "Obce mimo zkrácený výběr (Zábřeh, Uničov, Litovel, Mohelnice, Lipník n. B., Velký Týnec a další)",
+   "url": "",
+   "reason": "Zrychlený režim: limit snížen zhruba na polovinu; prošly se jen Olomouc, Přerov, Prostějov, Šumperk, Hranice, Jeseník + krajský úřad (olkraj.cz)."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Bezbariérová přístupnost objektů – mapová aplikace města Olomouce",
+   "url": "https://mapy.olomouc.eu/#layerbbo",
+   "note": "Městský atlas přístupnosti (vrstva bbo na mapy.olomouc.eu), vložen na https://prorodinu.olomouc.eu/pristupnost/pristupnost-objektu; stránka k 5. 10. 2026 uvádí, že probíhá aktualizace mapové aplikace a je nedostupná. Licence neuvedena."
+  },
+  {
+   "title": "Bezbariérová mapa Olomouce (PDF)",
+   "url": "https://olomouc.eu/administrace/repository/gallery/articles/10_/10120/olomouc-bezbarierova-mapa.cs.pdf",
+   "note": "Odkaz ze stránky projektu Bezbariérová Olomouc; obsah PDF neprověřen. Licence neuvedena."
+  },
+  {
+   "title": "Projekt Bezbariérová Olomouc (Magistrát města Olomouce)",
+   "url": "https://www.olomouc.eu/obcan/socialni-sluzby/projekt-bezbarierova-olomouc",
+   "note": "Projekt města od r. 2001 (doprava, stavební úpravy, sociální služby, školství, cestovní ruch), koordinátor projektu, podpora z rozpočtu, sekce Pro volný čas (ZOO Olomouc podle webu plně bezbariérová pro osoby na vozíčku; Vlastivědné muzeum bezbariérově přístupné). Euroklíč vydává odbor sociálních věcí MMOl, Štursova 1 (https://www.olomouc.eu/obcan/socialni-sluzby/projekt-bezbarierova-olomouc/18928). Licence neuvedena."
+  },
+  {
+   "title": "Olomoucký kraj – Pro osoby se zdravotním postižením (rozcestník)",
+   "url": "https://www.olkraj.cz/pro-osoby-se-zdravotnim-postizenim",
+   "note": "Sekce krajského úřadu: Kraj bez bariér, Euroklíč, půjčovny kompenzačních pomůcek a zdravotnická zařízení s bezbariérovým přístupem, katalog poskytovatelů sociálních služeb, chytré odkazy (odkazuje i na bezbariérovou mapu Olomouce). Krajský plán vyrovnávání příležitostí zde nenalezen. Licence neuvedena."
+  },
+  {
+   "title": "Kraj bez bariér – Olomoucký kraj",
+   "url": "https://www.olkraj.cz/pro-osoby-se-zdravotnim-postizenim/kraj-bez-barier",
+   "note": "Víceúčelový autobus kraje pro přepravu až 5 osob na vozíku (od 1. 5. 2017, bezplatně, rezervace přes KIDSOK, www.kidsok.cz); v oblasti kultury odkazy na starší přehled přístupných objektů Olomouce (http://www.olomouc.eu/bbo/pristupne_objekty.php). Konkrétní opatření k mapování přístupnosti neuvedena."
+  },
+  {
+   "title": "Euroklíč v Olomouckém kraji (krajský úřad)",
+   "url": "https://www.olkraj.cz/pro-osoby-se-zdravotnim-postizenim/euroklic-v-olomouckem-kraji",
+   "note": "Podle kraje 122 eurozámků a 5 942 euroklíčů; klíče distribuují úřady práce a odbory sociální péče pověřených obcí, centrální místo NRZP Olomouc; seznam eurozámků odkazem na www.euroklic.cz. Výdej Euroklíčů uvádějí i Přerov (https://www.prerov.eu/cs/magistrat/socialni-oblast-a-zdravotnictvi/zdravotne-postizeni-obcane/euroklic-informace.html), Prostějov (https://www.prostejov.eu/cs/obcan/magistrat/informace-z-odboru/odbor-socialnich-veci/informace-k-projektu-euroklic-v-olomouckem-kraji.html), Šumperk (https://www.sumperk.cz/cs/obcan/periodicky-tisk/tiskove-zpravy/euroklic-v-sumperku-zdarma.html) a Jeseník (https://jesenik.cz/cz/informace-odboru/102-euroklic-jako-dalsi-nastroj-pro-odstranovani-barier.html)."
+  },
+  {
+   "title": "Jeseník – Bezbariérově (trasy pro kočárky a bezbariérové trasy, PDF)",
+   "url": "https://jesenik.cz/cz/volny-cas-v-jeseniku/457-bezbarierove.html",
+   "note": "Leták tras pro kočárky, které město doporučuje i jako bezbariérové výlety (PDF z 23. 6. 2022, obsah neprověřen); rady v IC v budově Katovny. Licence neuvedena."
+  },
+  {
+   "title": "NRZP ČR – Regionální pracoviště a poradna pro Olomoucký kraj (organizace)",
+   "url": "https://www.olkraj.cz/pro-osoby-se-zdravotnim-postizenim/euroklic-v-olomouckem-kraji",
+   "note": "Slovenská 5 (bývalý KD Žerotín), 779 00 Olomouc, přízemí, vstup podle kraje bezbariérový; olomouc@nrzp.cz; centrální distribuce Euroklíčů v kraji; web www.nrzp.cz."
+  },
+  {
+   "title": "Prostějovští vozíčkáři, spolek (organizace)",
+   "url": "https://www.prostejov.eu/cs/aktuality-archiv/dotaci-obdrzi-take-prostejovsti-vozickari.html",
+   "note": "Spolek vozíčkářů v Prostějově, kterému město poskytlo dotaci 25 tis. Kč na činnost a zájezd bezbariérovým autobusem; vlastní web spolku na stránce neuveden."
+  },
+  {
+   "title": "Unie neziskových organizací Olomouckého kraje (organizace)",
+   "url": "http://www.uno-ok.cz/",
+   "note": "Uvedena v Chytrých odkazech kraje (https://www.olkraj.cz/pro-osoby-se-zdravotnim-postizenim/chytre-odkazy) spolu s Ligou za práva vozíčkářů a NIPI; web neotevřen."
+  }
+ ]
+}

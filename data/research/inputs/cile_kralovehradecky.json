@@ -1,0 +1,359 @@
+[
+{
+"i": "n1977585629",
+"n": "Křížový Vrch",
+"s": "Vyhlídka",
+"o": "Adršpach",
+"w": "no",
+"la": 50.624422,
+"lo": 16.126446
+},
+{
+"i": "n11232729279",
+"n": "Starosta a Starostová",
+"s": "Vyhlídka",
+"o": "Adršpach",
+"w": "no",
+"la": 50.612299,
+"lo": 16.113167
+},
+{
+"i": "n1354665304",
+"n": "Velká Panoráma",
+"s": "Vyhlídka",
+"o": "Adršpach",
+"w": "no",
+"la": 50.611708,
+"lo": 16.113162
+},
+{
+"i": "n1292002888",
+"n": "Rozhledna Annenský vrch",
+"s": "Vyhlídka",
+"o": "Bartošovice v Orlických horách",
+"w": "no",
+"la": 50.216157,
+"lo": 16.512664
+},
+{
+"i": "n2388972546",
+"n": "Božanovský Špičák",
+"s": "Vyhlídka",
+"o": "Božanov",
+"w": "no",
+"la": 50.514387,
+"lo": 16.317561
+},
+{
+"i": "n437344047",
+"n": "Koruna",
+"s": "Vyhlídka",
+"o": "Božanov",
+"w": "no",
+"la": 50.521865,
+"lo": 16.325388
+},
+{
+"i": "n317935068",
+"n": "Bajkazyl HK",
+"s": "Komunitní centrum",
+"o": "Hradec Králové",
+"web": "https://bajkazylhk.cz/",
+"w": "yes",
+"la": 50.212324,
+"lo": 15.833596
+},
+{
+"i": "n13030426905",
+"n": "Lodivadlo",
+"s": "Divadlo",
+"o": "Hradec Králové",
+"w": "no",
+"la": 50.210895,
+"lo": 15.837396
+},
+{
+"i": "n3464333551",
+"n": "Městská knihovna",
+"s": "Knihovna",
+"o": "Hradec Králové",
+"web": "https://www.knihovnahk.cz/",
+"w": "yes",
+"la": 50.216201,
+"lo": 15.821773
+},
+{
+"i": "n618807756",
+"n": "Radnice",
+"s": "Turistický cíl",
+"o": "Hradec Králové",
+"w": "yes",
+"la": 50.209275,
+"lo": 15.831443
+},
+{
+"i": "n8151682329",
+"n": "Šrámkův statek",
+"s": "Turistický cíl",
+"o": "Hradec Králové",
+"web": "https://www.sramkuvstatek.cz/",
+"w": "limited",
+"la": 50.23773,
+"lo": 15.865367
+},
+{
+"i": "w125508571",
+"n": "Rozhledna Panorama",
+"s": "Vyhlídka",
+"o": "Janské Lázně",
+"w": "no",
+"la": 50.648926,
+"lo": 15.751988
+},
+{
+"i": "n5034630508",
+"n": "Stezka korunami stromů Krkonoše",
+"s": "Vyhlídka",
+"o": "Janské Lázně",
+"web": "https://www.stezkakrkonose.cz/",
+"w": "yes",
+"la": 50.631095,
+"lo": 15.757643
+},
+{
+"i": "w45107919",
+"n": "Biograf Český Ráj",
+"s": "Kino",
+"o": "Jičín",
+"web": "https://www.kzmj.cz/biograf/",
+"w": "yes",
+"t": "yes",
+"la": 50.434614,
+"lo": 15.35146
+},
+{
+"i": "w172306148",
+"n": "Poustevník",
+"s": "Turistický cíl",
+"o": "Jičín",
+"w": "no",
+"la": 50.450513,
+"lo": 15.380042
+},
+{
+"i": "n3754842772",
+"n": "rozhledna Čeřovka (Milohlídka)",
+"s": "Vyhlídka",
+"o": "Jičín",
+"w": "no",
+"la": 50.444823,
+"lo": 15.360352
+},
+{
+"i": "w55828366",
+"n": "hospitál Kuks",
+"s": "Turistický cíl",
+"o": "Kuks",
+"web": "https://www.hospital-kuks.cz/",
+"w": "limited",
+"t": "yes",
+"la": 50.397763,
+"lo": 15.889357
+},
+{
+"i": "n358092954",
+"n": "Skanzen Villa Nova - středověká vesnice",
+"s": "Turistický cíl",
+"o": "Liberk",
+"w": "yes",
+"la": 50.249603,
+"lo": 16.341125
+},
+{
+"i": "n2388972545",
+"n": "Junácká vyhlídka",
+"s": "Vyhlídka",
+"o": "Machov",
+"w": "no",
+"la": 50.514669,
+"lo": 16.309123
+},
+{
+"i": "n437343997",
+"n": "Kamenná brána",
+"s": "Vyhlídka",
+"o": "Martínkovice",
+"w": "no",
+"la": 50.531061,
+"lo": 16.31067
+},
+{
+"i": "w840922651",
+"n": "Ruprechtický Špičák",
+"s": "Vyhlídka",
+"o": "Meziměstí",
+"w": "no",
+"la": 50.661054,
+"lo": 16.281358
+},
+{
+"i": "n12459293003",
+"n": "Vesnický mini skanzen",
+"s": "Muzeum",
+"o": "Nechanice",
+"w": "limited",
+"t": "no",
+"la": 50.241402,
+"lo": 15.656308
+},
+{
+"i": "n1457692662",
+"n": "Městská knihovna Náchod",
+"s": "Knihovna",
+"o": "Náchod",
+"a": "Kamenice 105",
+"web": "https://www.mknachod.cz/",
+"w": "yes",
+"la": 50.41723,
+"lo": 16.165883
+},
+{
+"i": "n3411838582",
+"n": "rozhledna Hnědý vrch",
+"s": "Vyhlídka",
+"o": "Pec pod Sněžkou",
+"w": "no",
+"la": 50.688326,
+"lo": 15.70707
+},
+{
+"i": "n1488516823",
+"n": "Muzeum stavebnice MERKUR",
+"s": "Muzeum",
+"o": "Police nad Metují",
+"a": "Tyršova 341",
+"web": "https://www.merkurpolice.cz/",
+"w": "no",
+"la": 50.535249,
+"lo": 16.232309
+},
+{
+"i": "n13108376187",
+"n": "Knihovna Předměřice nad Labem",
+"s": "Knihovna",
+"o": "Předměřice nad Labem",
+"w": "yes",
+"la": 50.255874,
+"lo": 15.812532
+},
+{
+"i": "n855347593",
+"n": "Žaltman",
+"s": "Vyhlídka",
+"o": "Radvanice",
+"w": "no",
+"la": 50.552581,
+"lo": 16.052101
+},
+{
+"i": "w71947563",
+"n": "Sýpka - muzeum Orlických hor",
+"s": "Muzeum",
+"o": "Rokytnice v Orlických horách",
+"web": "http://www.sypka-moh.cz/",
+"w": "yes",
+"la": 50.166157,
+"lo": 16.466205
+},
+{
+"i": "n5953148383",
+"n": "Skuhrov",
+"s": "Vyhlídka",
+"o": "Skuhrov nad Bělou",
+"w": "no",
+"la": 50.227301,
+"lo": 16.288659
+},
+{
+"i": "n2353257969",
+"n": "Skalní divadlo",
+"s": "Vyhlídka",
+"o": "Suchý Důl",
+"w": "no",
+"la": 50.564914,
+"lo": 16.273176
+},
+{
+"i": "n2398702948",
+"n": "Slavenská vyhlídka",
+"s": "Vyhlídka",
+"o": "Suchý Důl",
+"w": "no",
+"la": 50.53643,
+"lo": 16.298408
+},
+{
+"i": "n2468801782",
+"n": "Slavenské hřiby",
+"s": "Turistický cíl",
+"o": "Suchý Důl",
+"w": "no",
+"la": 50.543464,
+"lo": 16.298444
+},
+{
+"i": "n2353257968",
+"n": "Supí hnízdo",
+"s": "Vyhlídka",
+"o": "Suchý Důl",
+"w": "no",
+"la": 50.564006,
+"lo": 16.27608
+},
+{
+"i": "n2353257875",
+"n": "Vyhlídka na Čertovu tchyni",
+"s": "Vyhlídka",
+"o": "Suchý Důl",
+"w": "no",
+"la": 50.543965,
+"lo": 16.298578
+},
+{
+"i": "n2451168666",
+"n": "Lokomotiva",
+"s": "Vyhlídka",
+"o": "Teplice nad Metují",
+"w": "no",
+"la": 50.591909,
+"lo": 16.146237
+},
+{
+"i": "n10936529161",
+"n": "EPO1",
+"s": "Galerie",
+"o": "Trutnov",
+"web": "https://www.epo1.cz/",
+"w": "yes",
+"la": 50.577269,
+"lo": 15.958449
+},
+{
+"i": "n466398542",
+"n": "Pančavský vodopád",
+"s": "Vyhlídka",
+"o": "Špindlerův Mlýn",
+"w": "limited",
+"la": 50.761215,
+"lo": 15.545205
+},
+{
+"i": "n496265630",
+"n": "Frýdlantská skála",
+"s": "Vyhlídka",
+"o": "Žďár nad Metují",
+"w": "no",
+"la": 50.56111,
+"lo": 16.205685
+}
+]

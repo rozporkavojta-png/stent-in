@@ -1,0 +1,187 @@
+{
+ "task": "cile_zlinsky_2",
+ "kraj": "Zlínský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w33893999",
+   "name": "Městské divadlo Zlín",
+   "obec": "Zlín",
+   "lat": 49.22495,
+   "lng": 17.669695,
+   "category": "cil",
+   "source_url": "https://divadlozlin.cz/divadlo-bez-barier/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Budova je podle divadla plně přizpůsobena lidem se sníženou pohyblivostí; bezbariérový přístup ke všem scénám od vstupu až do hlediště, vstupy vybaveny nájezdovými plošinami.",
+    "vytah": "V budově jsou výtahy.",
+    "wc": "Bezbariérové toalety, otevírají se euroklíčem.",
+    "jine": "V hledišti vyhrazená místa pro vozíčkáře; uvaděčky poskytnou asistenci, speciální pomoc doporučeno domluvit předem. Pro nedoslýchavé indukční smyčka (sluchátka zapůjčí uvaděčky oproti OP)."
+   },
+   "evidence_quote": "Bezbariérový přístup ke všem scénám je zajištěn od vstupu do budovy až po přístup do hlediště"
+  },
+  {
+   "osm_id": "w40671845",
+   "name": "Kongresové centrum",
+   "obec": "Zlín",
+   "address": "nám. T. G. Masaryka 5556",
+   "lat": 49.223088,
+   "lng": 17.664449,
+   "category": "cil",
+   "source_url": "https://kc-zlin.cz/24846-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle webu je přístup do všech prostor bezbariérový. Hlavní vstup je v úrovni 1. NP mezi budovami kongresového a univerzitního centra.",
+    "vytah": "Ve vstupní hale jsou výtahy do spodních i vyšších podlaží (zdroj: https://kc-zlin.cz/24857-o-budove).",
+    "parkovani": "Podzemní parkoviště přímo pod budovou, 90 míst, z toho 6 pro držitele průkazu ZTP; placené, otevřeno 6–24 h a během akcí."
+   },
+   "measurements": [
+    {
+     "co": "vyhrazená parkovací místa ZTP",
+     "hodnota": 6,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "přístup do všech prostor je bezbariérový"
+  },
+  {
+   "osm_id": "n11694656304",
+   "name": "Sál Evy Jiřičné",
+   "obec": "Zlín",
+   "address": "nám. T. G. Masaryka 5556",
+   "lat": 49.223121,
+   "lng": 17.664243,
+   "category": "cil",
+   "source_url": "https://kc-zlin.cz/24846-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Sál Evy Jiřičné je Velký sál Kongresového centra Zlín; web centra uvádí, že přístup do všech prostor je bezbariérový.",
+    "vytah": "Ve vstupní hale centra jsou výtahy do spodních i vyšších podlaží (zdroj: https://kc-zlin.cz/24857-o-budove).",
+    "parkovani": "Podzemní parkoviště pod Kongresovým centrem, 90 míst, z toho 6 pro držitele průkazu ZTP."
+   },
+   "measurements": [
+    {
+     "co": "vyhrazená parkovací místa ZTP",
+     "hodnota": 6,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "přístup do všech prostor je bezbariérový"
+  },
+  {
+   "osm_id": "n2668168160",
+   "name": "Knihovna Univerzity Tomáše Bati ve Zlíně",
+   "obec": "Zlín",
+   "lat": 49.22252,
+   "lng": 17.66484,
+   "category": "cil",
+   "source_url": "https://knihovna.utb.cz/knihovna/poprve-v-knihovne/prodlouzena-oteviraci-doba/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Knihovna je ve 4. patře budovy U13; web uvádí, že se tam lze dostat schodištěm nebo výtahem (v kontextu prodloužené otevírací doby). Bezbariérovost web výslovně neuvádí."
+   },
+   "evidence_quote": "schodištěm nebo výtahem se dostanete do 4. patra"
+  },
+  {
+   "osm_id": "n2933247886",
+   "name": "rozhledna Doubí",
+   "obec": "Vážany",
+   "lat": 49.039138,
+   "lng": 17.303703,
+   "category": "cil",
+   "source_url": "https://www.obecvazany.cz/obec/zajimavosti/rozhledna/rozhledna-13cs.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Trámová rozhledna (358 m n. m.) s kovovým schodištěm a krytým ochozem 8 m nad zemí. O přístupnosti pro vozík web nic neuvádí."
+   },
+   "measurements": [
+    {
+     "co": "výška ochozu nad zemí",
+     "hodnota": 8,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "jednoduchou trámovou konstrukci s kovovým schodištěm"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n932006899",
+   "name": "Slovácké divadlo",
+   "url": "https://www.slovackedivadlo.cz/",
+   "reason": "web (prohledáno ~30 podstránek) uvádí jen slevy pro držitele ZTP a ZTP/P, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "w520489310",
+   "name": "Vartovna",
+   "url": "https://www.seninka.cz/volny-cas",
+   "reason": "web obce uvádí jen rozhlednu 37 m s vyhlídkovou plošinou ve 35 m, o přístupnosti nic"
+  },
+  {
+   "osm_id": "n3049350072",
+   "name": "Knihovna v Kašavě",
+   "url": "http://www.knihovnakasava.webzdarma.cz",
+   "reason": "web nefunguje (404); web obce kasava.cz nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2029962354",
+   "name": "Obecní knihovna Rokytnice",
+   "url": "https://rokytnicez.knihovna.info/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w680733462",
+   "name": "Pivečkův lesopark",
+   "url": "https://www.mesto-slavicin.cz/",
+   "reason": "na webu města nenalezena stránka s informacemi o přístupnosti"
+  },
+  {
+   "osm_id": "w256755075",
+   "name": "Společenský dům Sušil",
+   "url": "",
+   "reason": "oficiální web se nepodařilo dohledat (web města Bystřice p. H. nedostupný)"
+  },
+  {
+   "osm_id": "w276960871",
+   "name": "Korytňanská rozhledna",
+   "url": "https://www.korytna.cz/",
+   "reason": "web obce nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w258244009",
+   "name": "Rozhledna Zdenička",
+   "url": "https://www.zdounky.cz/",
+   "reason": "web obce nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w82717360",
+   "name": "Rozhledna Brdo",
+   "url": "https://www.rostin.cz/",
+   "reason": "web obce nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1524871977",
+   "name": "Rozhledna Floriánka",
+   "url": "https://www.polesovice.cz/",
+   "reason": "web městyse nic o přístupnosti rozhledny neuvádí"
+  },
+  {
+   "osm_id": "n2926967896",
+   "name": "Na Skalce",
+   "url": "https://www.bojkovice.cz/",
+   "reason": "web města nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  "https://divadlozlin.cz/divadlo-bez-barier/",
+  "https://kc-zlin.cz/24846-pro-navstevniky",
+  "https://kc-zlin.cz/24857-o-budove",
+  "https://knihovna.utb.cz/knihovna/poprve-v-knihovne/prodlouzena-oteviraci-doba/",
+  "https://www.obecvazany.cz/obec/zajimavosti/rozhledna/rozhledna-13cs.html"
+ ]
+}

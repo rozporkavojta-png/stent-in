@@ -1,0 +1,970 @@
+{
+ "task": "obce_dalsi",
+ "kraj": "Ústecký, Liberecký, Královéhradecký, Pardubický, Vysočina, Jihomoravský, Olomoucký, Moravskoslezský, Zlínský, Karlovarský",
+ "checked_date": "2026-10-06",
+ "checked_obce": [
+  {
+   "kraj": "Ústecký",
+   "pozice": 13,
+   "obec": "Kadaň",
+   "web": "https://www.mesto-kadan.cz"
+  },
+  {
+   "kraj": "Ústecký",
+   "pozice": 14,
+   "obec": "Varnsdorf",
+   "web": "https://www.varnsdorf.cz/cz/"
+  },
+  {
+   "kraj": "Ústecký",
+   "pozice": 15,
+   "obec": "Šluknov",
+   "web": "https://www.mestosluknov.cz/"
+  },
+  {
+   "kraj": "Ústecký",
+   "pozice": 16,
+   "obec": "Podbořany",
+   "web": "https://www.podborany.net/"
+  },
+  {
+   "kraj": "Ústecký",
+   "pozice": 17,
+   "obec": "Rumburk",
+   "web": "https://www.rumburk.cz/"
+  },
+  {
+   "kraj": "Ústecký",
+   "pozice": 18,
+   "obec": "Bílina",
+   "web": "https://www.bilina.cz/"
+  },
+  {
+   "kraj": "Ústecký",
+   "pozice": 19,
+   "obec": "Hřensko",
+   "web": "https://www.hrensko.cz/"
+  },
+  {
+   "kraj": "Liberecký",
+   "pozice": 13,
+   "obec": "Jilemnice",
+   "web": "https://www.mestojilemnice.cz/"
+  },
+  {
+   "kraj": "Liberecký",
+   "pozice": 14,
+   "obec": "Cvikov",
+   "web": "https://www.cvikov.cz/"
+  },
+  {
+   "kraj": "Liberecký",
+   "pozice": 15,
+   "obec": "Hrádek nad Nisou",
+   "web": "https://www.hradek.eu/index4.aspx?rub=1"
+  },
+  {
+   "kraj": "Liberecký",
+   "pozice": 16,
+   "obec": "Smržovka",
+   "web": "https://www.smrzovka.cz/"
+  },
+  {
+   "kraj": "Liberecký",
+   "pozice": 17,
+   "obec": "Železný Brod",
+   "web": "https://www.zeleznybrod.cz/cz/"
+  },
+  {
+   "kraj": "Liberecký",
+   "pozice": 18,
+   "obec": "Jablonec nad Jizerou",
+   "web": "https://www.jablonec-krkonose.cz/"
+  },
+  {
+   "kraj": "Liberecký",
+   "pozice": 19,
+   "obec": "Albrechtice v Jizerských horách",
+   "web": "https://www.albrechtice-jh.cz/"
+  },
+  {
+   "kraj": "Královéhradecký",
+   "pozice": 13,
+   "obec": "Kostelec nad Orlicí",
+   "web": "https://www.kostelecno.cz/"
+  },
+  {
+   "kraj": "Královéhradecký",
+   "pozice": 14,
+   "obec": "Lázně Bělohrad",
+   "web": "https://www.lazne-belohrad.cz/"
+  },
+  {
+   "kraj": "Královéhradecký",
+   "pozice": 15,
+   "obec": "Špindlerův Mlýn",
+   "web": "https://www.spindleruvmlyn.org/"
+  },
+  {
+   "kraj": "Královéhradecký",
+   "pozice": 16,
+   "obec": "Třebechovice pod Orebem",
+   "web": "https://www.trebechovice.cz/"
+  },
+  {
+   "kraj": "Královéhradecký",
+   "pozice": 17,
+   "obec": "Vrchlabí",
+   "web": "https://www.muvrchlabi.cz/"
+  },
+  {
+   "kraj": "Královéhradecký",
+   "pozice": 19,
+   "obec": "Dvůr Králové nad Labem",
+   "web": "https://www.mudk.cz/"
+  },
+  {
+   "kraj": "Královéhradecký",
+   "pozice": 20,
+   "obec": "Janské Lázně",
+   "web": "https://www.janske-lazne.cz/"
+  },
+  {
+   "kraj": "Pardubický",
+   "pozice": 13,
+   "obec": "Chvaletice",
+   "web": "https://www.chvaletice.cz/"
+  },
+  {
+   "kraj": "Pardubický",
+   "pozice": 14,
+   "obec": "Jevíčko",
+   "web": "https://www.jevicko.cz/"
+  },
+  {
+   "kraj": "Pardubický",
+   "pozice": 15,
+   "obec": "Lanškroun",
+   "web": "https://www.lanskroun.eu/"
+  },
+  {
+   "kraj": "Pardubický",
+   "pozice": 16,
+   "obec": "Žamberk",
+   "web": "https://www.zamberk.cz/"
+  },
+  {
+   "kraj": "Pardubický",
+   "pozice": 17,
+   "obec": "Choceň",
+   "web": "https://www.chocen.cz"
+  },
+  {
+   "kraj": "Pardubický",
+   "pozice": 18,
+   "obec": "Dolní Morava",
+   "web": "https://www.obecdolnimorava.cz/"
+  },
+  {
+   "kraj": "Pardubický",
+   "pozice": 19,
+   "obec": "Lázně Bohdaneč",
+   "web": "https://lazne.bohdanec.cz/"
+  },
+  {
+   "kraj": "Vysočina",
+   "pozice": 13,
+   "obec": "Náměšť nad Oslavou",
+   "web": "https://www.namestnosl.cz/"
+  },
+  {
+   "kraj": "Vysočina",
+   "pozice": 14,
+   "obec": "Žirovnice",
+   "web": "https://www.zirovnice.cz/"
+  },
+  {
+   "kraj": "Vysočina",
+   "pozice": 16,
+   "obec": "Bystřice nad Pernštejnem",
+   "web": "https://www.bystricenp.cz/"
+  },
+  {
+   "kraj": "Vysočina",
+   "pozice": 17,
+   "obec": "Golčův Jeníkov",
+   "web": "https://www.golcuv-jenikov.cz/"
+  },
+  {
+   "kraj": "Vysočina",
+   "pozice": 18,
+   "obec": "Herálec",
+   "web": "https://www.obecheralec.cz/"
+  },
+  {
+   "kraj": "Vysočina",
+   "pozice": 19,
+   "obec": "Počátky",
+   "web": "https://www.pocatky.cz/"
+  },
+  {
+   "kraj": "Vysočina",
+   "pozice": 20,
+   "obec": "Jiřice",
+   "web": "https://www.obec-jirice.cz/"
+  },
+  {
+   "kraj": "Jihomoravský",
+   "pozice": 14,
+   "obec": "Rajhrad",
+   "web": "https://www.rajhrad.cz/"
+  },
+  {
+   "kraj": "Jihomoravský",
+   "pozice": 15,
+   "obec": "Bučovice",
+   "web": "https://www.bucovice.cz"
+  },
+  {
+   "kraj": "Jihomoravský",
+   "pozice": 16,
+   "obec": "Hustopeče",
+   "web": "https://www.hustopece.cz/"
+  },
+  {
+   "kraj": "Jihomoravský",
+   "pozice": 17,
+   "obec": "Lednice",
+   "web": "https://www.lednice.cz/"
+  },
+  {
+   "kraj": "Jihomoravský",
+   "pozice": 19,
+   "obec": "Bílovice nad Svitavou",
+   "web": "https://www.bilovicens.cz/"
+  },
+  {
+   "kraj": "Jihomoravský",
+   "pozice": 20,
+   "obec": "Ivančice",
+   "web": "https://ivancice.cz"
+  },
+  {
+   "kraj": "Jihomoravský",
+   "pozice": 21,
+   "obec": "Kuřim",
+   "web": "https://www.kurim.cz"
+  },
+  {
+   "kraj": "Olomoucký",
+   "pozice": 13,
+   "obec": "Plumlov",
+   "web": "http://www.mestoplumlov.cz/"
+  },
+  {
+   "kraj": "Olomoucký",
+   "pozice": 14,
+   "obec": "Troubky",
+   "web": "https://www.troubky.cz/"
+  },
+  {
+   "kraj": "Olomoucký",
+   "pozice": 15,
+   "obec": "Mohelnice",
+   "web": "https://www.mohelnice.cz/"
+  },
+  {
+   "kraj": "Olomoucký",
+   "pozice": 16,
+   "obec": "Týn nad Bečvou",
+   "web": "https://www.tynnadbecvou.cz/uvod"
+  },
+  {
+   "kraj": "Olomoucký",
+   "pozice": 17,
+   "obec": "Velké Losiny",
+   "web": "https://www.losiny.cz/"
+  },
+  {
+   "kraj": "Olomoucký",
+   "pozice": 18,
+   "obec": "Bouzov",
+   "web": "https://www.obec-bouzov.cz/"
+  },
+  {
+   "kraj": "Olomoucký",
+   "pozice": 19,
+   "obec": "Javorník",
+   "web": "https://www.mestojavornik.cz/"
+  },
+  {
+   "kraj": "Moravskoslezský",
+   "pozice": 14,
+   "obec": "Kravaře",
+   "web": "https://www.kravare.cz/"
+  },
+  {
+   "kraj": "Moravskoslezský",
+   "pozice": 15,
+   "obec": "Nový Jičín",
+   "web": "https://www.novyjicin.cz/"
+  },
+  {
+   "kraj": "Moravskoslezský",
+   "pozice": 16,
+   "obec": "Nošovice",
+   "web": "https://www.nosovice.cz/"
+  },
+  {
+   "kraj": "Moravskoslezský",
+   "pozice": 17,
+   "obec": "Frenštát pod Radhoštěm",
+   "web": "https://www.mufrenstat.cz"
+  },
+  {
+   "kraj": "Moravskoslezský",
+   "pozice": 18,
+   "obec": "Hradec nad Moravicí",
+   "web": "https://www.muhradec.cz/"
+  },
+  {
+   "kraj": "Moravskoslezský",
+   "pozice": 19,
+   "obec": "Hukvaldy",
+   "web": "https://www.hukvaldy.eu/"
+  },
+  {
+   "kraj": "Moravskoslezský",
+   "pozice": 20,
+   "obec": "Bolatice",
+   "web": "https://www.bolatice.cz/"
+  },
+  {
+   "kraj": "Zlínský",
+   "pozice": 13,
+   "obec": "Holešov",
+   "web": "https://www.holesov.cz/"
+  },
+  {
+   "kraj": "Zlínský",
+   "pozice": 14,
+   "obec": "Horní Bečva",
+   "web": "https://www.hornibecva.cz/"
+  },
+  {
+   "kraj": "Zlínský",
+   "pozice": 15,
+   "obec": "Hulín",
+   "web": "https://www.hulin.cz/"
+  },
+  {
+   "kraj": "Zlínský",
+   "pozice": 16,
+   "obec": "Valašská Bystřice",
+   "web": "https://www.valasskabystrice.cz/"
+  },
+  {
+   "kraj": "Zlínský",
+   "pozice": 17,
+   "obec": "Velehrad",
+   "web": "https://www.velehrad.cz/"
+  },
+  {
+   "kraj": "Zlínský",
+   "pozice": 18,
+   "obec": "Buchlovice",
+   "web": "https://www.buchlovice.cz/"
+  },
+  {
+   "kraj": "Zlínský",
+   "pozice": 19,
+   "obec": "Fryšták",
+   "web": "https://www.frystak.cz/"
+  },
+  {
+   "kraj": "Karlovarský",
+   "pozice": 13,
+   "obec": "Horní Slavkov",
+   "web": "https://www.hornislavkov.cz/"
+  },
+  {
+   "kraj": "Karlovarský",
+   "pozice": 14,
+   "obec": "Nejdek",
+   "web": "https://www.nejdek.cz/"
+  },
+  {
+   "kraj": "Karlovarský",
+   "pozice": 15,
+   "obec": "Teplá",
+   "web": "https://www.tepla.cz/"
+  },
+  {
+   "kraj": "Karlovarský",
+   "pozice": 16,
+   "obec": "Boží Dar",
+   "web": "https://www.bozi-dar.cz/"
+  },
+  {
+   "kraj": "Karlovarský",
+   "pozice": 17,
+   "obec": "Bečov nad Teplou",
+   "web": "https://www.becov.cz/"
+  },
+  {
+   "kraj": "Karlovarský",
+   "pozice": 18,
+   "obec": "Loket",
+   "web": "https://www.loket.cz/"
+  },
+  {
+   "kraj": "Karlovarský",
+   "pozice": 19,
+   "obec": "Kraslice",
+   "web": "https://www.kraslice.cz/"
+  }
+ ],
+ "places": [
+  {
+   "osm_id": null,
+   "name": "Veřejné WC ve dvoře městského úřadu Jevíčko",
+   "obec": "Jevíčko",
+   "address": "Palackého nám. 1, 569 43 Jevíčko (dvorní trakt budovy MěÚ)",
+   "lat": 49.6330885,
+   "lng": 16.7112429,
+   "category": "wc",
+   "source_url": "https://www.jevicko.cz/obcan/verejne-wc/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup přes mincovní automat (10 Kč); toalety jsou ve dvorním traktu budovy městského úřadu na Palackého náměstí.",
+    "wc": "Web uvádí, že toalety jsou bezbariérové a mají přebalovací pult; o Euroklíči nic neuvádí.",
+    "jine": "Otevřeno denně 5:00–19:00. Souřadnice z Nominatim pro adresu MěÚ (Palackého nám. 1), ne přímo pro WC ve dvoře."
+   },
+   "measurements": [],
+   "evidence_quote": "Toalety jsou bezbariérové a vybaveny i přebalovacím pultem."
+  },
+  {
+   "osm_id": null,
+   "name": "Městský úřad Nový Jičín – budova Divadelní 1",
+   "obec": "Nový Jičín",
+   "address": "Divadelní 1, 741 01 Nový Jičín",
+   "lat": 49.5931451,
+   "lng": 18.009015,
+   "category": "urad",
+   "source_url": "https://www.novyjicin.cz/mestsky-urad/uredni-hodiny-a-kontakt/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "V sekci Plán budov úřadu je u budovy Divadelní 1 kromě předního vchodu uveden „Nový bezbariérový vchod“; podrobnosti web v textu neuvádí.",
+    "jine": "Úřad má i budovu radnice (Masarykovo nám. 1/1) a Divadelní 8 – u nich bezbariérový vchod uveden není. Nominatim adresu přiřadil k domu Divadelní 139/1."
+   },
+   "measurements": [],
+   "evidence_quote": "Plány budovy Divadelní 1 Přední vchod Nový bezbariérový vchod"
+  },
+  {
+   "osm_id": null,
+   "name": "Radnice / Městský úřad Bílina",
+   "obec": "Bílina",
+   "address": "Břežánská 50/4, 418 01 Bílina",
+   "lat": 50.5489169,
+   "lng": 13.7742885,
+   "category": "urad",
+   "source_url": "https://www.bilina.cz/cs/mestsky-urad/odbory-meu/odbor-dotaci-a-projektu/aktualni-projekty/projekt-bilina-bezbarierova-trasa-od-nadrazi-cd-k-zelenemu-domu-i-etapa.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle stránky projektu bezbariérové trasy byl v roce 2013 výstavbou výtahu vyřešen bezbariérový přístup do budovy radnice.",
+    "vytah": "Výtah (postaven 2013); rozměry neuvedeny.",
+    "jine": "Adresa převzata z patičky webu města (sídlo MěÚ); že jde o tutéž budovu jako „radnice“, web výslovně neuvádí. Navazuje projekt „Bezbariérová trasa od nádraží ČD k Zelenému domu – I. etapa“ (chodníky, přechody)."
+   },
+   "measurements": [],
+   "evidence_quote": "výstavbou výtahu vyřešen bezbariérový přístup do budovy radnice"
+  },
+  {
+   "osm_id": null,
+   "name": "Městský úřad Horní Slavkov (radnice)",
+   "obec": "Horní Slavkov",
+   "address": "Dlouhá 634/12, 357 31 Horní Slavkov",
+   "lat": 50.1387322,
+   "lng": 12.800252,
+   "category": "urad",
+   "source_url": "https://www.hornislavkov.cz/cs/projekty-mesta/ukoncene-projekty/bezbarierove-upravy-mestskeho-uradu/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "Projekt (zařazený mezi ukončené projekty) měl zkvalitnit bezbariérový přístup do budovy radnice a pohyb po budově; v přízemí nová recepce pro klienty se zdravotním postižením.",
+    "jine": "Vybraná pracoviště v 1. a 2. patře měla dostat nábytek umožňující přístup na invalidním vozíku, indukční smyčky a orientační systém pro zrakově postižené. II. etapa probíhala od 2. 10. 2023 do února 2024 (https://www.hornislavkov.cz/cs/projekty-mesta/ukoncene-projekty/bezbarierove-upravy-meu-horni-slavkov-iietapa/). Text je psán jako záměr – konkrétní výsledný stav (výtah, WC) web neuvádí. Adresa z patičky webu."
+   },
+   "measurements": [],
+   "evidence_quote": "Cílem projektu je zkvalitnění bezbariérového přístupu do budovy radnice, pohybu po budově"
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC v Revoluční ulici",
+   "obec": "Dvůr Králové nad Labem",
+   "address": "Revoluční ulice, Dvůr Králové nad Labem (číslo domu web neuvádí)",
+   "lat": 50.4312926,
+   "lng": 15.813327,
+   "category": "wc",
+   "source_url": "https://www.mudk.cz/cs/radnice/zpravy-z-odboru/rozvoj-investice-a-sprava-majetku/v-centru-mesta-opet-zprovozni-verejne-toalety.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "Bezobslužný provoz, platba mincovními automaty na vstupních dveřích.",
+    "wc": "Rekonstrukce (duben–červen 2016) podle webu počítala s rozšířením WC pro vozíčkáře a bezbariérovým přístupem; výsledný stav ani Euroklíč web nepotvrzuje.",
+    "jine": "Zpráva z roku 2016 o plánované rekonstrukci. Souřadnice z Nominatim jen pro ulici Revoluční (ne přesná poloha WC)."
+   },
+   "measurements": [],
+   "evidence_quote": "kvůli rozšíření WC pro vozíčkáře a bezbariérový přístup"
+  },
+  {
+   "osm_id": null,
+   "name": "Podchod železniční stanice Kuřim – severní bezbariérové vyústění",
+   "obec": "Kuřim",
+   "address": "ulice Dr. Vališe, 664 34 Kuřim (vyústění podchodu ŽST Kuřim)",
+   "lat": 49.3012564,
+   "lng": 16.5337851,
+   "category": "doprava",
+   "source_url": "https://www.kurim.cz/cs/zajima-me/co-ve-meste-stavime/investicni-akce-2015/bezbarierove-zpristupneni-podchodu-zst-kurim.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podchod železniční stanice byl prodloužen s bezbariérovým vyústěním do ulice Dr. Vališe; vede k němu zalomená rampa s opěrnými zdmi a zastřešením.",
+    "jine": "Web uvádí, že akce je dokončena (ROP Jihovýchod, stránka aktualizována 2016). Sklon ani šířka rampy neuvedeny. Souřadnice z Nominatim pro ulici Dr. Vališe (ne přesné místo vyústění)."
+   },
+   "measurements": [],
+   "evidence_quote": "prodloužení stávajícího podchodu železniční stanice s bezbariérovým vyústěním do ulice Dr. Vališe"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": null,
+   "name": "Veřejné toalety v Kadani",
+   "url": "https://www.mesto-kadan.cz/cs/aktuality/verejne-toalety-v-kadani.html",
+   "reason": "Stránka (15.7.2026) se ve skriptu načetla bez textu o bezbariérovosti (obsah možná načítán skriptem – vhodné ověřit v prohlížeči); jinde na webu nic o přístupnosti WC/úřadu nenalezeno."
+  },
+  {
+   "osm_id": null,
+   "name": "Varnsdorf",
+   "url": "https://www.varnsdorf.cz/cz/",
+   "reason": "Úvodní stránka + 7 podstránek (výběr i ze sitemap, 1646 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti. Jen informace o parkovacích průkazech pro ZTP."
+  },
+  {
+   "osm_id": null,
+   "name": "Šluknov",
+   "url": "https://www.mestosluknov.cz/",
+   "reason": "Úvodní stránka + 4 podstránek (výběr i ze sitemap, 128 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Podbořany",
+   "url": "https://www.podborany.net/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 357 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Rumburk",
+   "url": "https://www.rumburk.cz/",
+   "reason": "Úvodní stránka + 5 podstránek (výběr i ze sitemap, 144 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Hřensko",
+   "url": "https://www.hrensko.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 75 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC Jilemnice",
+   "url": "https://www.mestojilemnice.cz/prakticke-info/verejne-toalety-wc/",
+   "reason": "Veřejné WC Masarykovo nám. 82 – web uvádí jen adresu a provozní dobu, nic o bezbariérovosti. Web má stránku Bezbariérové Krkonoše (viz sources)."
+  },
+  {
+   "osm_id": null,
+   "name": "Cvikov",
+   "url": "https://www.cvikov.cz/",
+   "reason": "Úvodní stránka + 3 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Hrádek nad Nisou",
+   "url": "https://www.hradek.eu/index4.aspx?rub=1",
+   "reason": "Úvodní stránka + 2 podstránek (výběr i ze sitemap, 9 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC Smržovka",
+   "url": "https://www.smrzovka.cz/verejne-toalety",
+   "reason": "Veřejné WC v suterénu budovy č. p. 638 (knihovna a infocentrum, nám. T. G. Masaryka) – o bezbariérovosti nic. Zakázky na výtah do budovy MěÚ (VZ 2025-11, -12, -15) jsou vedeny jako zrušené."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Železný Brod",
+   "url": "https://www.zeleznybrod.cz/cz/obcan/dokumenty/rozvoj-mesta/analyza-bezbarierovosti-mesta.html",
+   "reason": "Web má jen Analýzu bezbariérovosti města z roku 2013 (PDF, viz sources); konkrétní WC/úřad s popisem přístupnosti nenalezen."
+  },
+  {
+   "osm_id": null,
+   "name": "Jablonec nad Jizerou",
+   "url": "https://www.jablonec-krkonose.cz/",
+   "reason": "Úvodní stránka + 3 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Albrechtice v Jizerských horách",
+   "url": "https://www.albrechtice-jh.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 52 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Kostelec nad Orlicí",
+   "url": "https://www.kostelecno.cz/",
+   "reason": "Úvodní stránka + 6 podstránek (výběr i ze sitemap, 4498 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Lázně Bělohrad",
+   "url": "https://www.lazne-belohrad.cz/",
+   "reason": "Úvodní stránka + 4 podstránek (výběr i ze sitemap, 314 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Špindlerův Mlýn",
+   "url": "https://www.spindleruvmlyn.org/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 174 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Třebechovice pod Orebem",
+   "url": "https://www.trebechovice.cz/",
+   "reason": "Úvodní stránka + 4 podstránek (výběr i ze sitemap, 234 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Vrchlabí",
+   "url": "https://www.muvrchlabi.cz/",
+   "reason": "Úvodní stránka + 4 podstránek (výběr i ze sitemap, 258 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC v Tylově ulici (Dvůr Králové n. L.)",
+   "url": "https://www.mudk.cz/cs/mesto/aktualne/mesto/verejne-wc-v-tylove-ulici-opet-v-provozu.html",
+   "reason": "Zpráva o obnovení provozu, o bezbariérovosti nic."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC Janské Lázně",
+   "url": "https://www.janske-lazne.cz/prakticke-info/verejne-wc/",
+   "reason": "Veřejné WC na nám. Svobody (od 2022, mincovní automat) – provozní řád o bezbariérovosti ani Euroklíči nic neuvádí."
+  },
+  {
+   "osm_id": null,
+   "name": "Chvaletice",
+   "url": "https://www.chvaletice.cz/",
+   "reason": "Úvodní stránka + 2 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Lanškroun",
+   "url": "https://www.lanskroun.eu/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 1 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Žamberk",
+   "url": "https://www.zamberk.cz/",
+   "reason": "Úvodní stránka + 3 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Choceň",
+   "url": "https://www.chocen.cz",
+   "reason": "Úvodní stránka + 6 podstránek (výběr i ze sitemap, 1288 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Dolní Morava",
+   "url": "https://www.obecdolnimorava.cz/",
+   "reason": "Úvodní stránka + 5 podstránek (výběr i ze sitemap, 687 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Lázně Bohdaneč",
+   "url": "https://lazne.bohdanec.cz/",
+   "reason": "Úvodní stránka + 3 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Náměšť nad Oslavou",
+   "url": "https://www.namestnosl.cz/",
+   "reason": "Úvodní stránka + 3 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Žirovnice",
+   "url": "https://www.zirovnice.cz/",
+   "reason": "Úvodní stránka + 3 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Bystřice nad Pernštejnem",
+   "url": "https://www.bystricenp.cz/",
+   "reason": "Úvodní stránka + 4 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Golčův Jeníkov",
+   "url": "https://www.golcuv-jenikov.cz/",
+   "reason": "Úvodní stránka + 4 podstránek (výběr i ze sitemap, 336 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Herálec",
+   "url": "https://www.obecheralec.cz/",
+   "reason": "Úvodní stránka + 4 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti. Pozn.: na Vysočině jsou dvě obce Herálec; zkontrolován web obecheralec.cz (okres Žďár n. S.), druhá má heralec.cz (okres Havlíčkův Brod)."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC Počátky",
+   "url": "https://www.pocatky.cz/volny-cas/turisticke-informace/kam-na-wc/",
+   "reason": "Veřejné WC na autobusovém nádraží vedle Bistra Akord – o bezbariérovosti nic."
+  },
+  {
+   "osm_id": null,
+   "name": "Jiřice",
+   "url": "https://www.obec-jirice.cz/",
+   "reason": "Úvodní stránka + 1 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Rajhrad",
+   "url": "https://www.rajhrad.cz/",
+   "reason": "Úvodní stránka + 7 podstránek (výběr i ze sitemap, 3475 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti. Jen životní situace „Vyhrazené parkování ZTP/P“."
+  },
+  {
+   "osm_id": null,
+   "name": "Bučovice",
+   "url": "https://www.bucovice.cz",
+   "reason": "Úvodní stránka + 3 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Hustopeče",
+   "url": "https://www.hustopece.cz/",
+   "reason": "Úvodní stránka + 4 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Lednice",
+   "url": "https://www.lednice.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 156 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Bílovice nad Svitavou",
+   "url": "https://www.bilovicens.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 3867 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti. Jen osvobození od poplatků pro ZTP-P."
+  },
+  {
+   "osm_id": null,
+   "name": "Ivančice",
+   "url": "https://ivancice.cz",
+   "reason": "Úvodní stránka + 4 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Plumlov",
+   "url": "http://www.mestoplumlov.cz/",
+   "reason": "Úvodní stránka + 4 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Troubky",
+   "url": "https://www.troubky.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 99 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Mohelnice",
+   "url": "https://www.mohelnice.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 1 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum Bedřicha Smetany Týn nad Bečvou",
+   "url": "https://www.tynnadbecvou.cz/muzeum-bedricha-smetany",
+   "reason": "Muzeum provozuje obec a web uvádí bezbariérový vstup, ale neuvádí adresu muzea (jen budova bývalého panského pivovaru), proto nepřidáno do places. Veřejné WC ani bezbariérovost obecního úřadu web neuvádí."
+  },
+  {
+   "osm_id": null,
+   "name": "Velké Losiny",
+   "url": "https://www.losiny.cz/",
+   "reason": "Úvodní stránka + 3 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Bouzov",
+   "url": "https://www.obec-bouzov.cz/",
+   "reason": "Úvodní stránka + 7 podstránek (výběr i ze sitemap, 4826 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Javorník",
+   "url": "https://www.mestojavornik.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 169 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Kravaře",
+   "url": "https://www.kravare.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 323 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC v amfiteátru na Skalkách (Nový Jičín)",
+   "url": "https://www.novyjicin.cz/tiskovezpravy/socialni-zazemi-v-amfiteatru-na-skalkach-je-nove-bezbarierove-a-v-nerezu/",
+   "reason": "Tisková zpráva 2.7.2026: po rekonstrukci nová bezbariérová kabina přístupná přes eurozámek, sklopný přebalovací pult; bezbariérový přístup po rampě (z druhé strany 3 schody). Web neuvádí adresu, jen „amfiteátr na Skalkách“, proto nepřidáno do places – vhodné doplnit ručně."
+  },
+  {
+   "osm_id": null,
+   "name": "Nošovice",
+   "url": "https://www.nosovice.cz/",
+   "reason": "Úvodní stránka + 4 podstránek (výběr i ze sitemap, 527 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Frenštát pod Radhoštěm",
+   "url": "https://www.mufrenstat.cz",
+   "reason": "Úvodní stránka + 3 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Hradec nad Moravicí",
+   "url": "https://www.muhradec.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 104 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Hukvaldy",
+   "url": "https://www.hukvaldy.eu/",
+   "reason": "Úvodní stránka + 4 podstránek (výběr i ze sitemap, 782 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Bolatice",
+   "url": "https://www.bolatice.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 266 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Holešov",
+   "url": "https://www.holesov.cz/",
+   "reason": "Úvodní stránka + 4 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Horní Bečva",
+   "url": "https://www.hornibecva.cz/",
+   "reason": "Úvodní stránka + 2 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Hulín",
+   "url": "https://www.hulin.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 139 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Valašská Bystřice",
+   "url": "https://www.valasskabystrice.cz/",
+   "reason": "Úvodní stránka + 3 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Velehrad",
+   "url": "https://www.velehrad.cz/",
+   "reason": "Úvodní stránka + 5 podstránek (výběr i ze sitemap, 612 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Buchlovice",
+   "url": "https://www.buchlovice.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 134 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Fryšták",
+   "url": "https://www.frystak.cz/",
+   "reason": "Úvodní stránka + 4 podstránek (výběr i ze sitemap, 109 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC Nejdek",
+   "url": "https://www.nejdek.cz/mesto/prakticke-informace/servis-pro-nejdecko/verejne-wc/",
+   "reason": "Stránka Veřejné WC (provozuje město) – o bezbariérovosti nic."
+  },
+  {
+   "osm_id": null,
+   "name": "Teplá",
+   "url": "https://www.tepla.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 79 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Boží Dar",
+   "url": "https://www.bozi-dar.cz/",
+   "reason": "Úvodní stránka + 3 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Bečov nad Teplou",
+   "url": "https://www.becov.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 261 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Loket",
+   "url": "https://www.loket.cz/",
+   "reason": "Úvodní stránka + 3 podstránek: nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  },
+  {
+   "osm_id": null,
+   "name": "Kraslice",
+   "url": "https://www.kraslice.cz/",
+   "reason": "Úvodní stránka + 3 podstránek (výběr i ze sitemap, 154 URL): nenalezena informace o bezbariérovém veřejném WC, Euroklíči, bezbariérovosti radnice/úřadu ani mapa přístupnosti."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Bezbariérové Krkonoše – 10 tipů na bezbariérové trasy (web města Jilemnice)",
+   "url": "https://www.mestojilemnice.cz/zivot-ve-meste/informacni-centrum/tipy-na-vylety/bezbarierove-krkonose/",
+   "type": "tipy na trasy",
+   "note": "Seznam 10 bezbariérových tras po Krkonoších (např. Benecko – přes Rovinku). Bez měřených parametrů; licence neuvedena."
+  },
+  {
+   "title": "Analýza bezbariérovosti města Železný Brod (2013)",
+   "url": "https://www.zeleznybrod.cz/cz/obcan/dokumenty/rozvoj-mesta/analyza-bezbarierovosti-mesta.html",
+   "type": "analyza",
+   "note": "Zpracovala HaskoningDHV Czech Republic podle metodiky Národního rozvojového programu mobility pro všechny, předáno 08/2013; PDF + přílohy. Může být zastaralé."
+  },
+  {
+   "title": "Bílina – bezbariérová trasa od nádraží ČD k Zelenému domu (I. etapa)",
+   "url": "https://www.bilina.cz/cs/mestsky-urad/odbory-meu/odbor-dotaci-a-projektu/aktualni-projekty/projekt-bilina-bezbarierova-trasa-od-nadrazi-cd-k-zelenemu-domu-i-etapa.html",
+   "type": "projekt",
+   "note": "Rekonstrukce chodníků a přechodů ze Žižkova náměstí ulicí Želivského (IROP, cca 5 mil. Kč)."
+  },
+  {
+   "title": "Horní Slavkov – ukončené projekty bezbariérových úprav",
+   "url": "https://www.hornislavkov.cz/cs/projekty-mesta/ukoncene-projekty/",
+   "type": "projekt",
+   "note": "Mezi ukončenými projekty: bezbariérové úpravy MěÚ (2 etapy), ZŠ Školní, ordinace dětské lékařky, chodník ve Větrné ulici, chodník k MŠ ve Sportovní ulici; připravují se úpravy Pluhova domu č. p. 497 a muzea č. p. 211."
+  },
+  {
+   "title": "Wikidata – oficiální weby obcí (vlastnost P856)",
+   "url": "https://query.wikidata.org/",
+   "type": "pomocny",
+   "note": "Použito jen k dohledání URL oficiálních webů obcí."
+  }
+ ]
+}

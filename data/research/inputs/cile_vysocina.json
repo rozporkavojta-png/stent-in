@@ -1,0 +1,444 @@
+[
+{
+"i": "w374796759",
+"n": "Kašna Cyrila a Metoděje",
+"s": "Turistický cíl",
+"o": "Bystřice nad Pernštejnem",
+"w": "yes",
+"la": 49.523145,
+"lo": 16.260653
+},
+{
+"i": "n5744220073",
+"n": "Sokolohrady",
+"s": "Vyhlídka",
+"o": "Dolní Sokolovec",
+"w": "no",
+"la": 49.714761,
+"lo": 15.713717
+},
+{
+"i": "n11655725347",
+"n": "Muzeum Vysočiny Roštejn",
+"s": "Muzeum",
+"o": "Doupě",
+"web": "https://mvji.cz/pobocky/hrad-rostejn",
+"w": "limited",
+"la": 49.252171,
+"lo": 15.425894
+},
+{
+"i": "n1414713603",
+"n": "Roštejnská obora",
+"s": "Turistický cíl",
+"o": "Doupě",
+"w": "no",
+"la": 49.251713,
+"lo": 15.426831
+},
+{
+"i": "n4799301713",
+"n": "Replika středověké sklářské pece",
+"s": "Turistický cíl",
+"o": "Havlíčkův Brod",
+"w": "limited",
+"la": 49.621803,
+"lo": 15.581864
+},
+{
+"i": "n4839772147",
+"n": "Tři kříže na Kalvárii",
+"s": "Turistický cíl",
+"o": "Havlíčkův Brod",
+"w": "limited",
+"la": 49.609244,
+"lo": 15.585091
+},
+{
+"i": "n3398336459",
+"n": "HLINÍKárium",
+"s": "Muzeum",
+"o": "Humpolec",
+"web": "https://hlinik3.webnode.cz/hlinikarium/",
+"w": "no",
+"la": 49.540928,
+"lo": 15.355667
+},
+{
+"i": "n1518216654",
+"n": "Kino Humpolec",
+"s": "Kino",
+"o": "Humpolec",
+"a": "Havlíčkovo náměstí 91",
+"web": "https://kino.humpolec.cz",
+"w": "yes",
+"la": 49.540942,
+"lo": 15.35575
+},
+{
+"i": "w111741036",
+"n": "Muzeum dr. Aleše Hrdličky",
+"s": "Muzeum",
+"o": "Humpolec",
+"a": "Horní náměstí 273",
+"web": "https://muzeum.humpolec.cz",
+"w": "yes",
+"la": 49.54139,
+"lo": 15.359663
+},
+{
+"i": "n10223198876",
+"n": "Polyfunkční komunitní centrum Mikádo",
+"s": "Kulturní centrum",
+"o": "Humpolec",
+"a": "Havlíčkovo náměstí 91",
+"w": "yes",
+"la": 49.540815,
+"lo": 15.356011
+},
+{
+"i": "n12197641831",
+"n": "Vyhlídková věž kostela sv. Mikuláše",
+"s": "Vyhlídka",
+"o": "Humpolec",
+"w": "no",
+"la": 49.541471,
+"lo": 15.359187
+},
+{
+"i": "n598204143",
+"n": "CineStar",
+"s": "Kino",
+"o": "Jihlava",
+"web": "https://www.cinestar.cz/jihlava/",
+"w": "yes",
+"la": 49.392493,
+"lo": 15.594663
+},
+{
+"i": "n670504535",
+"n": "Dům Gustava Mahlera",
+"s": "Turistický cíl",
+"o": "Jihlava",
+"w": "no",
+"la": 49.39361,
+"lo": 15.591217
+},
+{
+"i": "w40617967",
+"n": "Horácké divadlo",
+"s": "Divadlo",
+"o": "Jihlava",
+"web": "https://www.hdj.cz",
+"w": "yes",
+"la": 49.398245,
+"lo": 15.589599
+},
+{
+"i": "n295452039",
+"n": "Jihlavské podzemí",
+"s": "Turistický cíl",
+"o": "Jihlava",
+"w": "no",
+"la": 49.396931,
+"lo": 15.591359
+},
+{
+"i": "n448166730",
+"n": "Městská knihovna",
+"s": "Knihovna",
+"o": "Jihlava",
+"w": "yes",
+"la": 49.396774,
+"lo": 15.591409
+},
+{
+"i": "n375583675",
+"n": "Devět skal",
+"s": "Vyhlídka",
+"o": "Křižánky",
+"w": "no",
+"la": 49.670733,
+"lo": 16.032237
+},
+{
+"i": "w47421489",
+"n": "Pípalka",
+"s": "Vyhlídka",
+"o": "Nový Rychnov",
+"w": "no",
+"t": "no",
+"la": 49.40359,
+"lo": 15.32703
+},
+{
+"i": "w263555326",
+"n": "Alternátor",
+"s": "Muzeum",
+"o": "Třebíč",
+"w": "yes",
+"t": "yes",
+"la": 49.20708,
+"lo": 15.861703
+},
+{
+"i": "n2780236058",
+"n": "Apartmány U synagogy",
+"s": "Turistický cíl",
+"o": "Třebíč",
+"a": "L. Pokorného 9/5",
+"w": "limited",
+"la": 49.216906,
+"lo": 15.876898
+},
+{
+"i": "n2286443739",
+"n": "Astronomical observatory",
+"s": "Vyhlídka",
+"o": "Třebíč",
+"w": "no",
+"la": 49.207055,
+"lo": 15.875861
+},
+{
+"i": "n2796549369",
+"n": "Depozitář Muzeum Vysočiny",
+"s": "Muzeum",
+"o": "Třebíč",
+"a": "Březinova",
+"w": "yes",
+"la": 49.208624,
+"lo": 15.885884
+},
+{
+"i": "n3335243578",
+"n": "Dům dětí a mládeže",
+"s": "Komunitní centrum",
+"o": "Třebíč",
+"a": "Tomáše Bati 1084",
+"w": "yes",
+"t": "yes",
+"la": 49.207109,
+"lo": 15.861379
+},
+{
+"i": "w263555573",
+"n": "Dům dětí a mládeže",
+"s": "Komunitní centrum",
+"o": "Třebíč",
+"w": "yes",
+"la": 49.207068,
+"lo": 15.863109
+},
+{
+"i": "w39674822",
+"n": "Fórum",
+"s": "Kulturní centrum",
+"o": "Třebíč",
+"w": "yes",
+"la": 49.213777,
+"lo": 15.878878
+},
+{
+"i": "w441832148",
+"n": "Hrubínka",
+"s": "Komunitní centrum",
+"o": "Třebíč",
+"w": "yes",
+"la": 49.221396,
+"lo": 15.881586
+},
+{
+"i": "w32708894",
+"n": "Krankenhaus",
+"s": "Turistický cíl",
+"o": "Třebíč",
+"w": "no",
+"la": 49.218145,
+"lo": 15.87723
+},
+{
+"i": "n3156697204",
+"n": "Masarykova vyhlídka",
+"s": "Vyhlídka",
+"o": "Třebíč",
+"w": "no",
+"la": 49.216818,
+"lo": 15.884595
+},
+{
+"i": "n21315877",
+"n": "Muzeum Vysočiny",
+"s": "Muzeum",
+"o": "Třebíč",
+"w": "yes",
+"t": "yes",
+"la": 49.216689,
+"lo": 15.873055
+},
+{
+"i": "w31858186",
+"n": "Městská knihovna",
+"s": "Knihovna",
+"o": "Třebíč",
+"w": "yes",
+"t": "yes",
+"la": 49.218718,
+"lo": 15.89446
+},
+{
+"i": "w75228694",
+"n": "Městská knihovna",
+"s": "Knihovna",
+"o": "Třebíč",
+"w": "no",
+"la": 49.205789,
+"lo": 15.847036
+},
+{
+"i": "n376081346",
+"n": "Městská knihovna Třebíč",
+"s": "Knihovna",
+"o": "Třebíč",
+"w": "yes",
+"t": "yes",
+"la": 49.215276,
+"lo": 15.878453
+},
+{
+"i": "n2754813395",
+"n": "Národní Dům",
+"s": "Divadlo",
+"o": "Třebíč",
+"a": "Karlovo nám. 47",
+"w": "yes",
+"t": "yes",
+"la": 49.21564,
+"lo": 15.879946
+},
+{
+"i": "n475601974",
+"n": "Pasáž",
+"s": "Kino",
+"o": "Třebíč",
+"w": "yes",
+"la": 49.213585,
+"lo": 15.880279
+},
+{
+"i": "w39674831",
+"n": "Pasáž",
+"s": "Divadlo",
+"o": "Třebíč",
+"w": "yes",
+"la": 49.213315,
+"lo": 15.880308
+},
+{
+"i": "w301748702",
+"n": "Pasáž",
+"s": "Kino",
+"o": "Třebíč",
+"w": "yes",
+"la": 49.21361,
+"lo": 15.87972
+},
+{
+"i": "n2286662735",
+"n": "Strážná hora",
+"s": "Vyhlídka",
+"o": "Třebíč",
+"w": "no",
+"la": 49.2099,
+"lo": 15.873694
+},
+{
+"i": "n364374202",
+"n": "Subakova koželužna",
+"s": "Turistický cíl",
+"o": "Třebíč",
+"w": "no",
+"la": 49.217622,
+"lo": 15.881231
+},
+{
+"i": "w263565768",
+"n": "dům Seligmanna Bauera",
+"s": "Turistický cíl",
+"o": "Třebíč",
+"w": "yes",
+"la": 49.21778,
+"lo": 15.879138
+},
+{
+"i": "w362952620",
+"n": "rodný dům Bohumíra Šmerala",
+"s": "Muzeum",
+"o": "Třebíč",
+"w": "limited",
+"la": 49.214733,
+"lo": 15.889452
+},
+{
+"i": "n364376592",
+"n": "Židovské muzeum",
+"s": "Muzeum",
+"o": "Třebíč",
+"w": "yes",
+"la": 49.217747,
+"lo": 15.87916
+},
+{
+"i": "n3923578749",
+"n": "Knihovna",
+"s": "Knihovna",
+"o": "Třešť",
+"w": "limited",
+"t": "no",
+"la": 49.290575,
+"lo": 15.48288
+},
+{
+"i": "n12295940732",
+"n": "Muzeum Tesla",
+"s": "Muzeum",
+"o": "Třešť",
+"web": "https://muzeumtesla.cz/",
+"w": "limited",
+"t": "limited",
+"la": 49.297987,
+"lo": 15.476724
+},
+{
+"i": "n1781929307",
+"n": "Muzeum Vysočiny Jihlava - pobočka Třešť",
+"s": "Muzeum",
+"o": "Třešť",
+"a": "Rooseweltova 462",
+"web": "http://muzeum.ji.cz/str.php?id=139&&parent_id=148&&lang=cz&&show=1&&active=1",
+"w": "yes",
+"la": 49.293094,
+"lo": 15.482871
+},
+{
+"i": "n1150915627",
+"n": "Máj",
+"s": "Kino",
+"o": "Třešť",
+"w": "limited",
+"t": "no",
+"la": 49.290537,
+"lo": 15.482615
+},
+{
+"i": "n9979423702",
+"n": "Modelové království",
+"s": "Muzeum",
+"o": "Žďár nad Sázavou",
+"a": "Dolní 30",
+"web": "https://www.mkzdar.cz/",
+"w": "limited",
+"la": 49.565997,
+"lo": 15.938196
+}
+]

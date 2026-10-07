@@ -1,0 +1,252 @@
+/* Úvod, Pro podniky a obce, O projektu, Zdroje a trh. Verze 3 „městský průvodce“ (DESIGN.md).
+   Sdílené prvky obsahových stránek (.page-head, .crumbs, .split-grid, .num-list, .text, .prose) používají i Kraje a Komunita. */
+
+/* ---------- Hlavička obsahové stránky ---------- */
+.page-head { padding-block: clamp(36px, 7vw, 88px) clamp(28px, 4vw, 48px); border-bottom: 1px solid var(--rule); }
+.page-head h1 { margin: 0 0 .3em; max-width: 18ch; font-size: clamp(2.5rem, 7vw, 4.75rem); }
+.page-head .lede { margin: 0; max-width: 60ch; }
+.page-head .row { margin-top: 28px; }
+.crumbs { font-size: .9rem; color: var(--ink-2); margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 4px 8px; }
+.crumbs a { color: var(--ink); }
+.head-note { margin: 6px 0 0; max-width: 62ch; }
+.section-head p { margin-bottom: 0; }
+.head-row { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+.head-row h2 { margin: 0; }
+
+/* Čitelná šířka textu */
+.text, .prose { max-width: 68ch; }
+.prose p, .prose li { color: var(--ink-2); }
+.prose ul, .prose ol { padding-left: 1.2em; margin: 0 0 1em; }
+.prose li { margin-bottom: .35em; }
+.cite { font-size: .86rem; color: var(--ink-3); }
+
+/* ---------- Asymetrické rozvržení: nadpis vlevo (4/12), obsah vpravo (8/12) ---------- */
+/* Sekce za sebou dělí tenká linka zarovnaná s obsahem, ne šedé pozadí */
+main > .section + .section { padding-top: 0; }
+main > .section + .section > .wrap::before { content: ""; display: block; grid-column: 1 / -1; border-top: 1px solid var(--rule); margin-bottom: clamp(40px, 6vw, 72px); }
+.split-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px clamp(24px, 3vw, 40px); align-items: start; }
+.split-h { grid-column: 1 / span 4; }
+.split-h h2 { margin: 0 0 .4em; }
+.split-h p { max-width: 40ch; }
+.split-h .btn-quiet { padding-inline: 0; }
+.split-b { grid-column: 5 / -1; min-width: 0; }
+@media (min-width: 900px) { .split-h { position: sticky; top: calc(var(--header-h) + 24px); } }
+@media (max-width: 899px) { .split-h, .split-b { grid-column: 1 / -1; } }
+
+/* Číslovaný textový seznam s linkami */
+.num-list { list-style: none; margin: 0; padding: 0; counter-reset: n; border-top: 1px solid var(--rule); }
+.num-list > li { counter-increment: n; display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 4px 16px; padding: 20px 0; border-bottom: 1px solid var(--rule); }
+.num-list > li::before { content: counter(n, decimal-leading-zero); grid-row: 1 / span 9; font: 700 1.5rem/1.1 var(--f-mono); color: var(--ink); }
+.num-list > li > * { grid-column: 2; }
+.num-list h3 { margin: 0 0 .25em; }
+.num-list p { margin: 0; color: var(--ink-2); max-width: 60ch; }
+.num-list ul { margin: 6px 0 0; padding-left: 1.1em; color: var(--ink-2); }
+.num-list ul li { margin: .2em 0; }
+@media (max-width: 520px) { .num-list > li { grid-template-columns: 3rem minmax(0, 1fr); } .num-list > li::before { font-size: 1.2rem; } }
+
+/* Výpis s linkami v mřížce (bez ikon a krabic) */
+.rule-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(24px, 3vw, 40px); }
+.rule-grid > li { border-top: 1px solid var(--rule); padding: 18px 0 22px; }
+.rule-grid h3 { margin: 0 0 .3em; }
+.rule-grid p { margin: 0; color: var(--ink-2); }
+@media (max-width: 640px) { .rule-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Úvod: hero ---------- */
+.home-hero { padding-block: clamp(32px, 7vw, 96px) clamp(32px, 5vw, 64px); }
+.home-hero h1 { margin: 0 0 20px; }
+.hero-word { display: block; font-size: clamp(3.4rem, 13vw, 9.5rem); line-height: .9; letter-spacing: -.055em; }
+.hero-sub { display: block; margin-top: .45em; font-size: clamp(1.5rem, 3.4vw, 2.5rem); line-height: 1.08; letter-spacing: -.03em; max-width: 22ch; }
+.home-hero .lede { margin: 0 0 28px; max-width: 56ch; }
+.home-search { position: relative; display: flex; align-items: center; gap: 8px; max-width: 760px; padding: 6px; border: 2px solid var(--ink); border-radius: var(--r-pill); background: var(--surface); }
+.home-search:focus-within { box-shadow: 0 0 0 4px var(--signal); }
+.home-search > svg { flex: none; width: 24px; height: 24px; margin-left: 14px; color: var(--ink); }
+.home-search input[type="search"] { flex: 1; min-width: 0; min-height: 56px; border: 0; border-radius: var(--r-pill); background: transparent; font-size: 1.15rem; padding: 8px 6px; }
+.home-search input[type="search"]:focus { box-shadow: none; outline: none; }
+.home-search .btn { flex: none; min-height: 56px; padding-inline: 32px; font-size: 1.08rem; }
+.home-chips { flex-wrap: wrap; margin-top: 20px; max-width: 920px; }
+.home-chips .chip { text-decoration: none; min-height: 44px; }
+.home-chips .chip:hover { color: var(--on-signal); }
+@media (max-width: 520px) {
+  .home-search > svg { display: none; }
+  .home-search input[type="search"] { padding-left: 14px; font-size: 1rem; }
+  .home-search .btn { padding-inline: 20px; }
+  .home-chips { flex-wrap: nowrap; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); }
+}
+
+/* ---------- Úvod: žlutý pás s čísly ---------- */
+.home-band { padding-block: clamp(32px, 5vw, 56px); }
+.home-band .kicker { margin: 0; }
+.home-band .kicker::before { background: var(--on-signal); }
+.band-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px 24px; flex-wrap: wrap; padding-bottom: 16px; border-bottom: 1.5px solid var(--on-signal); }
+.band-note { margin: 0; font-size: .95rem; }
+.band-stats { display: grid; grid-template-columns: minmax(0, 2fr) repeat(4, minmax(0, 1fr)); gap: 24px clamp(16px, 2.5vw, 32px); padding-top: 24px; }
+.band-stats .stat { margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.band-stats .stat .n { font-size: clamp(1.9rem, 3vw, 2.5rem); }
+.band-stats .stat .l { color: var(--on-signal); }
+.band-stats .stat-main .n { font-size: clamp(3rem, 6vw, 4.5rem); }
+@media (max-width: 1000px) { .band-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .band-stats .stat-main { grid-column: 1 / -1; } }
+@media (max-width: 380px) { .band-stats .stat .n { font-size: 2rem; } .band-stats .stat-main .n { font-size: 3rem; } }
+
+/* ---------- Úvod: místa s fotkou ---------- */
+.photo-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px clamp(16px, 2vw, 28px); }
+.ph-item { min-width: 0; border-top: 1px solid var(--rule); padding-top: 12px; }
+.ph-item .photo { margin-bottom: 12px; }
+.ph-item .photo > a { display: block; }
+.ph-item .photo img { height: auto; }
+.ph-item h3 { margin: 0; font-size: 1.2rem; overflow-wrap: anywhere; }
+.ph-item h3 a { display: block; padding-block: 6px; min-height: 44px; text-decoration: none; }
+.ph-item h3 a:hover { text-decoration: underline; text-decoration-color: var(--signal); text-decoration-thickness: 3px; }
+.ph-meta { margin: 0 0 4px; font-size: .93rem; color: var(--ink-2); }
+.ph-meta .status { font-size: .88rem; margin-right: 6px; }
+.photo-note { margin: 28px 0 0; max-width: 72ch; }
+@media (max-width: 1000px) { .photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .photo-grid { gap: 28px 14px; } .ph-item h3 { font-size: 1.02rem; } .ph-meta { font-size: .85rem; } }
+
+/* ---------- Úvod: kategorie jako výpis ---------- */
+.cat-list { list-style: none; margin: 0; padding: 0; columns: 2 280px; column-gap: clamp(24px, 3vw, 40px); border-top: 0; }
+.cat-list > li { break-inside: avoid; border-top: 1px solid var(--rule); }
+.cat-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; min-height: 56px; padding: 14px 0; border-bottom: 0; color: var(--ink); text-decoration: none; }
+.cat-row b { font: 700 1.15rem/1.2 var(--f-display); letter-spacing: -.02em; }
+.cat-n { color: var(--ink-2); font-size: .93rem; white-space: nowrap; }
+.cat-n .num { font-weight: 700; color: var(--ink); word-spacing: -.25em; }
+a.cat-row:hover { background: var(--signal); color: var(--on-signal); box-shadow: -8px 0 0 var(--signal), 8px 0 0 var(--signal); }
+a.cat-row:hover .cat-n, a.cat-row:hover .cat-n .num { color: var(--on-signal); }
+
+/* ---------- Pruh podílu stavů (stavové barvy jen tady) ---------- */
+.split-bar { display: flex; gap: 2px; height: 28px; overflow: hidden; margin: 0 0 20px; background: var(--surface-3); }
+.split-bar span { display: block; height: 100%; }
+.split-bar .ok { background: var(--ok); } .split-bar .part { background: var(--part); } .split-bar .no { background: var(--no); }
+.split-legend { list-style: none; margin: 0; padding: 0; }
+.split-legend .rule-row { display: grid; grid-template-columns: minmax(0, 1fr) auto 4.5rem; gap: 12px; align-items: baseline; padding: 12px 0; }
+.split-legend .num { text-align: right; font-weight: 700; word-spacing: -.25em; }
+.split-legend .split-none .num { font-weight: 600; }
+
+/* ---------- Úvod: kraje jako řádky s čísly ---------- */
+.kraj-links { list-style: none; margin: 0; padding: 0; columns: 2 280px; column-gap: clamp(24px, 3vw, 40px); border-top: 0; }
+.kraj-links > li { break-inside: avoid; border-top: 1px solid var(--rule); }
+.kraj-links .rule-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; align-items: baseline; min-height: 52px; padding: 12px 0 14px; border-bottom: 0; color: var(--ink); text-decoration: none; }
+.kraj-links b { font-weight: 700; }
+.kraj-links .num { font-weight: 700; word-spacing: -.25em; }
+.kr-line { grid-column: 1 / -1; height: 4px; background: var(--surface-3); }
+.kr-line i { display: block; height: 100%; background: var(--ink); }
+.kraj-links a:hover .kr-line i { background: var(--signal); }
+
+/* ---------- Úvod: výzva – černý blok ---------- */
+.home-cta { background: var(--ink); color: var(--surface); padding-block: clamp(48px, 7vw, 96px); }
+.home-cta h2 { color: var(--surface); font-size: clamp(1.8rem, 3.6vw, 2.8rem); max-width: 16ch; }
+.home-cta .kicker { color: var(--surface); }
+.home-cta p { color: color-mix(in srgb, var(--surface) 82%, var(--ink)); max-width: 46ch; }
+.home-cta a:not(.btn) { color: var(--surface); }
+.home-cta .btn-ghost { color: var(--surface); border-color: var(--surface); }
+.home-cta .btn-ghost:hover { color: var(--on-signal); border-color: var(--signal); }
+.home-cta .btn-quiet { color: var(--surface); }
+.home-cta .btn-signal:hover { background: var(--surface); color: var(--ink); border-color: var(--surface); }
+.cta-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px clamp(32px, 5vw, 72px); }
+.cta-col + .cta-col { border-left: 1px solid color-mix(in srgb, var(--surface) 30%, var(--ink)); padding-left: clamp(32px, 5vw, 72px); }
+.cta-col .row { margin-top: 20px; }
+@media (max-width: 800px) {
+  .cta-grid { grid-template-columns: 1fr; }
+  .cta-col + .cta-col { border-left: 0; padding-left: 0; border-top: 1px solid color-mix(in srgb, var(--surface) 30%, var(--ink)); padding-top: 32px; }
+}
+
+/* ---------- Pro podniky ---------- */
+.head-split { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: end; }
+@media (max-width: 860px) { .head-split { grid-template-columns: 1fr; } }
+/* Ukázka štítku na dveře: ostrý rám, žlutá hlavička jako dopravní značka */
+.sticker-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; margin: 0; }
+.sticker-wrap figcaption { font-size: .86rem; color: var(--ink-2); max-width: 34ch; }
+.door-sticker { width: 230px; max-width: 100%; aspect-ratio: 3 / 4; border: 2px solid var(--ink); background: var(--surface); display: flex; flex-direction: column; gap: 10px; align-items: flex-start; justify-content: space-between; padding: 0 0 16px; }
+.door-sticker b { display: block; width: 100%; background: var(--signal); color: var(--on-signal); padding: 12px 16px; font: 800 1.1rem var(--f-display); letter-spacing: -.03em; }
+.door-sticker > span, .door-sticker small { padding-inline: 16px; }
+.door-sticker .qr { display: grid; place-items: start; width: 120px; height: 120px; }
+.door-sticker .qr svg { width: 110px; height: 110px; }
+.door-sticker small { font: 600 .78rem var(--f-mono); color: var(--ink-2); text-transform: uppercase; letter-spacing: .08em; }
+
+/* Ceník: sloupce s linkou nahoře, bez krabic */
+.plans { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px clamp(16px, 2vw, 28px); align-items: stretch; }
+.plan { display: flex; flex-direction: column; gap: 14px; padding-top: 16px; border-top: 3px solid var(--ink); min-width: 0; }
+.plan.featured { border-top: 8px solid var(--signal); padding-top: 11px; }
+.plan h3 { margin: 0; }
+.plan .price { font: 800 clamp(1.8rem, 3vw, 2.4rem)/1 var(--f-display); letter-spacing: -.04em; }
+.plan .price small { font: 600 .9rem var(--f-body); color: var(--ink-2); letter-spacing: 0; }
+.plan ul { list-style: none; padding: 0; margin: 0; font-size: .95rem; border-top: 1px solid var(--rule); }
+.plan li { padding: 9px 0; border-bottom: 1px solid var(--line); color: var(--ink-2); }
+.plan .btn { margin-top: auto; }
+.price-note { font-size: .9rem; color: var(--ink-2); margin-top: 24px; max-width: 68ch; }
+@media (max-width: 1000px) { .plans { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .plans { grid-template-columns: 1fr; } }
+
+/* Formulář převzetí profilu a zájmu */
+.claim form, .form-block { display: grid; gap: 16px; border-top: 3px solid var(--ink); padding-top: 20px; }
+.claim .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 760px) { .claim .two { grid-template-columns: 1fr; } }
+
+/* Tabulka label / hodnota */
+.kv-table td:first-child { white-space: nowrap; font-weight: 700; width: 1%; }
+@media (max-width: 600px) {
+  .kv-table td:first-child { white-space: normal; }
+  .facts-table thead { display: none; }
+  .facts-table, .facts-table tbody, .facts-table tr, table.facts-table td { display: block; width: 100%; }
+  .facts-table tr { border-bottom: 1px solid var(--rule); padding: 4px 0; }
+  table.facts-table td { border-bottom: 0 !important; padding: 6px 0; }
+  table.facts-table td:first-child { padding-top: 12px; }
+  table.facts-table td:last-child { padding-bottom: 12px; }
+  .facts-table tr:last-child { border-bottom: 0; }
+}
+.table-wrap { background: transparent; }
+.split-b .table-wrap table.data th:first-child, .split-b .table-wrap table.data td:first-child { padding-left: 0; }
+
+/* ---------- O projektu: plán rozvoje ---------- */
+.timeline { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.timeline > li { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 8px 32px; padding: 24px 0; border-bottom: 1px solid var(--rule); }
+.timeline > li.now { box-shadow: inset 6px 0 0 var(--signal); padding-left: 20px; }
+.timeline .when { font: 800 1.6rem/1 var(--f-display); letter-spacing: -.03em; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.timeline h3 { margin-bottom: .3em; }
+.timeline p { margin: 0 0 .5em; color: var(--ink-2); }
+.timeline ul { margin: 0; padding-left: 1.1em; color: var(--ink-2); }
+.timeline ul li { margin: .2em 0; }
+@media (max-width: 640px) { .timeline > li { grid-template-columns: 1fr; } .timeline .when { flex-direction: row; align-items: center; } }
+
+/* ---------- Zdroje a trh: obsah vlevo, text vpravo ---------- */
+.doc-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 56px; padding-block: 40px 96px; }
+.toc { position: sticky; top: calc(var(--header-h) + 24px); align-self: start; display: flex; flex-direction: column; border-top: 3px solid var(--ink); }
+.toc-title { font: 700 .78rem/1.2 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--ink); margin: 12px 0 8px; }
+.toc a { color: var(--ink); text-decoration: none; padding: 10px 0; border-bottom: 1px solid var(--line); font-weight: 600; font-size: .95rem; min-height: 44px; display: flex; align-items: center; }
+.toc a:hover { text-decoration: underline; text-decoration-color: var(--signal); text-decoration-thickness: 3px; }
+.doc { min-width: 0; max-width: 820px; }
+.doc > section { padding-bottom: 56px; margin-bottom: 56px; border-bottom: 1px solid var(--rule); }
+.doc > section:last-child { border-bottom: 0; margin-bottom: 0; }
+.doc h2 { scroll-margin-top: calc(var(--header-h) + 16px); }
+.doc h3 { margin-top: 1.4em; }
+.doc > section > p, .doc > section > ul, .doc > section > ol { max-width: 68ch; }
+.doc ul, .doc ol { padding-left: 1.3em; margin: 0 0 1em; }
+.doc li { margin-bottom: .4em; }
+.doc .table-wrap { margin: 16px 0; }
+.doc .callout { margin: 16px 0 0; }
+.stat-band { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); margin: 16px 0 24px; }
+.stat-band .stat { display: flex; flex-direction: column; gap: 6px; border-top: 3px solid var(--ink); padding-top: 12px; min-width: 0; }
+.stat-v { font: 800 clamp(1.9rem, 3.6vw, 2.6rem)/1 var(--f-display); letter-spacing: -.04em; word-spacing: -.2em; }
+.stat-l { color: var(--ink-2); font-size: .95rem; }
+.stat-l a { white-space: nowrap; }
+.sources-list { font-size: .92rem; columns: 2 320px; column-gap: 40px; padding-left: 2.2em !important; }
+.sources-list li { break-inside: avoid; }
+.sources-list a { overflow-wrap: anywhere; }
+.sources-list li:target { background: var(--signal); color: var(--on-signal); }
+@media (max-width: 860px) {
+  .doc-layout { grid-template-columns: 1fr; gap: 24px; padding-block: 24px 56px; }
+  .toc { position: static; flex-direction: row; overflow-x: auto; scrollbar-width: none; gap: 8px; border-top: 0; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); }
+  .toc::-webkit-scrollbar { display: none; }
+  .toc-title { display: none; }
+  .toc a { flex: none; border: 1.5px solid var(--ink); border-radius: var(--r-pill); padding: 8px 14px; font-size: .9rem; white-space: nowrap; }
+  .toc a:hover { background: var(--signal); color: var(--on-signal); text-decoration: none; }
+}
+
+/* ---------- Drobnosti obsahových stránek ---------- */
+.pf-sub, .op-h3 { margin: 32px 0 12px; }
+.op-facts { margin-top: 32px; }
+.op-list { list-style: none; margin: 0; padding: 0; color: var(--ink-2); }
+.op-list li { padding: 8px 0; border-bottom: 1px solid var(--line); }
+.op-list li:last-child { border-bottom: 0; }
+.op-team { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 760px) { .op-team { grid-template-columns: 1fr; } }
+.split-h .callout { margin-top: 20px; }

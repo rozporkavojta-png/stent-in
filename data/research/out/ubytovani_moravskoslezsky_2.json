@@ -1,0 +1,188 @@
+{
+  "task": "ubytovani_moravskoslezsky_2",
+  "kraj": "Moravskoslezský kraj",
+  "checked_date": "2026-10-05",
+  "places": [
+    {
+      "osm_id": "w290770343",
+      "name": "A&B Bungalovy",
+      "obec": "Morávka",
+      "lat": 49.596278,
+      "lng": 18.526261,
+      "category": "ubytovani",
+      "source_url": "https://www.abbungalovy.com/ubytovani/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Velké chaty mají podle webu bezbariérový vchod i vstup na terasu.",
+        "pokoj": "Přízemí obou velkých chat (osmilůžková a desetilůžková) je bezbariérové, vždy nejvýš pro 2 vozíčkáře; ložnice v patře nejsou uvedeny jako bezbariérové.",
+        "koupelna": "Sprchový kout; web uvádí nezbytné pomůcky v koupelně, bez upřesnění.",
+        "parkovani": "Parkovací místa vedle každého objektu (vyhrazené ZTP místo neuvedeno).",
+        "jine": "Úvodní stránka uvádí, že obě velké chaty jsou uzpůsobeny pro invalidní vozík i psího asistenta. Malé bungalovy jako bezbariérové uvedeny nejsou."
+      },
+      "evidence_quote": "Velké chaty jsou v přízemí bezbariérové (vždy maximálně pro 2 vozíčkáře)"
+    },
+    {
+      "osm_id": "w254542311",
+      "name": "Ovečka",
+      "obec": "Nýdek",
+      "lat": 49.666071,
+      "lng": 18.766551,
+      "category": "ubytovani",
+      "source_url": "https://www.penzionovecka.cz/penzion-ovecka",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Mezi službami uveden bezbariérový přístup.",
+        "pokoj": "Web uvádí bezbariérové ubytování a bezbariérové vnitřní prostory; úvodní stránka zmiňuje bezbariérový pokoj.",
+        "vytah": "Výtah pro pohyb mezi patry penzionu.",
+        "parkovani": "Parkoviště přímo před penzionem, zdarma (vyhrazené ZTP místo neuvedeno).",
+        "jine": "Penzion se podle webu zapojil do projektu Vitální pohyb bez bariér. Koupelna ani rozměry nejsou popsány."
+      },
+      "evidence_quote": "výtah, díky kterému je možné se pohybovat mezi jednotlivými patry penzionu"
+    },
+    {
+      "osm_id": "n13764787236",
+      "name": "Penzion U Popelků",
+      "obec": "Těrlicko",
+      "lat": 49.765893,
+      "lng": 18.493139,
+      "category": "ubytovani",
+      "source_url": "https://www.penzionupopelku.cz",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Mezi vlastnostmi penzionu uveden bezbariérový přístup, bez dalších podrobností.",
+        "parkovani": "Hlídané parkoviště (vyhrazené ZTP místo neuvedeno).",
+        "jine": "O pokoji, koupelně ani výtahu web nic neuvádí."
+      },
+      "evidence_quote": "Hlídané parkoviště Bezbariérový přístup"
+    },
+    {
+      "osm_id": "w115277550",
+      "name": "Autokemp Frenštát p. R.",
+      "obec": "Frenštát pod Radhoštěm",
+      "address": "Dolní 1807, 744 01 Frenštát pod Radhoštěm",
+      "lat": 49.552419,
+      "lng": 18.203192,
+      "category": "ubytovani",
+      "source_url": "https://www.autokemp-frenstat.cz/chata-ctyrluzkova-ztp/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "pokoj": "Kemp má na webu stránku „Chata čtyřlůžková ZTP“, ale stránka kromě názvu a kontaktu (a fotogalerie) žádný popis vybavení ani rozměry neuvádí."
+      },
+      "evidence_quote": "Chata čtyřlůžková ZTP"
+    }
+  ],
+  "not_found": [
+    {
+      "osm_id": "n3643417465",
+      "name": "Chata Bílá",
+      "url": "http://www.chatabila.cz",
+      "reason": "web nefunkční (doména se nepřeložila)"
+    },
+    {
+      "osm_id": "w200890850",
+      "name": "Autokemp Olešná",
+      "url": "https://www.tsfm.cz/autokemp-olesna/",
+      "reason": "stránka vrací 404, na webu tsfm.cz odkaz na autokemp nenalezen"
+    },
+    {
+      "osm_id": "n2108523315",
+      "name": "Hotel Terasa",
+      "url": "http://hotelterasa.eu/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12556584272",
+      "name": "Oáza klidu v Beskydech",
+      "url": "https://www.chataoazaklidu.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3377649954",
+      "name": "Rodinný turistický hotel Säntis",
+      "url": "https://www.santishotel.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w254645712",
+      "name": "Horská chata Ostrý",
+      "url": "https://www.chataostry.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6815660559",
+      "name": "Pod Žorem",
+      "url": "https://ubytovani-beskydy.net/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n904230947",
+      "name": "Minikemp Harta",
+      "url": "https://www.minikempharta.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w309945211",
+      "name": "Roubenka pod Lysou",
+      "url": "https://www.roubenkapodlysou.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n5198631821",
+      "name": "Neptun",
+      "url": "https://www.hotel-neptun.cz/cenik-ubytovani",
+      "reason": "web o přístupnosti nic neuvádí; ZTP zmíněno jen u osvobození od rekreačního poplatku"
+    },
+    {
+      "osm_id": "w204922425",
+      "name": "Penzion Jízdárna",
+      "url": "https://www.pensionjizdarna.cz/",
+      "reason": "web o bezbariérovosti nic neuvádí; jen zmiňuje, že podkroví dvoupodlažního apartmá je přístupné po schodech"
+    },
+    {
+      "osm_id": "n2942720583",
+      "name": "Ubytování Partizán",
+      "url": "https://www.partyzanmoravka.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w404618370",
+      "name": "Srub U Medvěda",
+      "url": "https://www.srubumedveda.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w254541172",
+      "name": "Veranda pod Čantoryjí",
+      "url": "http://www.sensipece.cz/",
+      "reason": "web nefunkční (doména se nepřeložila)"
+    },
+    {
+      "osm_id": "n4477993463",
+      "name": "Penzion Magda",
+      "url": "http://www.penzionmagda.eu",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w74214457",
+      "name": "Villa u arény",
+      "url": "https://www.villauareny.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Weby provozovatelů (20 dalších zařízení ze vstupu)",
+      "url": "data/research/inputs/ubytovani_moravskoslezsky.json",
+      "note": "úvodní stránka + až 12 podstránek, hledání klíčových slov; 4 s údajem, 13 bez údaje, 2 nefunkční weby, 1 stránka vrací 404. Nová místa se nehledala."
+    },
+    {
+      "title": "Vstupní seznam (OSM)",
+      "url": "data/research/inputs/ubytovani_moravskoslezsky.json",
+      "note": "souřadnice ze vstupu"
+    }
+  ]
+}

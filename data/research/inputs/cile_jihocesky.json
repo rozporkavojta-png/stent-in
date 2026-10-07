@@ -1,0 +1,600 @@
+[
+{
+"i": "n1316507099",
+"n": "Slabošovka",
+"s": "Vyhlídka",
+"o": "Besednice",
+"w": "no",
+"la": 48.790408,
+"lo": 14.538433
+},
+{
+"i": "w363765523",
+"n": "Soví voliéry",
+"s": "Zoo",
+"o": "Borová Lada",
+"web": "https://www.npsumava.cz/navstivte-sumavu/navstevnicka-centra/sovi-voliery/",
+"w": "yes",
+"la": 48.992146,
+"lo": 13.663422
+},
+{
+"i": "w464309863",
+"n": "rozhledna Boubín",
+"s": "Vyhlídka",
+"o": "Buk",
+"w": "no",
+"la": 48.991201,
+"lo": 13.817446
+},
+{
+"i": "n5800465823",
+"n": "Centrum Šelmberk",
+"s": "Turistický cíl",
+"o": "Běleč",
+"a": "Hrad Šelmberk 3",
+"web": "http://www.centrumselmberk.cz",
+"w": "no",
+"t": "no",
+"la": 49.54842,
+"lo": 14.825736
+},
+{
+"i": "w1562067543",
+"n": "Svět obrů",
+"s": "Zábavní park",
+"o": "Chlum u Třeboně",
+"web": "https://svetobru.cz/",
+"w": "yes",
+"la": 48.959198,
+"lo": 14.93058
+},
+{
+"i": "n6224345556",
+"n": "Městské muzeum a galerie Dačice",
+"s": "Muzeum",
+"o": "Dačice",
+"web": "https://muzeumdacice.cz/",
+"w": "no",
+"t": "limited",
+"la": 49.079288,
+"lo": 15.431278
+},
+{
+"i": "n413632914",
+"n": "Provaznické muzeum",
+"s": "Muzeum",
+"o": "Deštná",
+"w": "no",
+"la": 49.264546,
+"lo": 14.922347
+},
+{
+"i": "w697224294",
+"n": "Obludiště",
+"s": "Turistický cíl",
+"o": "Dolní Pěna",
+"web": "https://www.obludiste.cz/",
+"w": "no",
+"la": 49.113854,
+"lo": 15.025612
+},
+{
+"i": "n4709940321",
+"n": "Lidová knihovna",
+"s": "Knihovna",
+"o": "Hluboká nad Vltavou",
+"w": "yes",
+"la": 49.025675,
+"lo": 14.441939
+},
+{
+"i": "n1407817981",
+"n": "Adalbert Stifter",
+"s": "Turistický cíl",
+"o": "Horní Planá",
+"w": "limited",
+"la": 48.769741,
+"lo": 14.030774
+},
+{
+"i": "n6534314189",
+"n": "Vyhlídka nad Fedlem",
+"s": "Vyhlídka",
+"o": "Horní Planá",
+"w": "no",
+"la": 48.765772,
+"lo": 14.054738
+},
+{
+"i": "n12856302196",
+"n": "betlém",
+"s": "Turistický cíl",
+"o": "Jílovice",
+"w": "yes",
+"la": 48.891196,
+"lo": 14.725468
+},
+{
+"i": "n406601722",
+"n": "Milenec",
+"s": "Turistický cíl",
+"o": "Klec",
+"w": "yes",
+"la": 49.113502,
+"lo": 14.754425
+},
+{
+"i": "w1064413872",
+"n": "Království lesa",
+"s": "Zábavní park",
+"o": "Lipno nad Vltavou",
+"a": "307",
+"web": "https://www.kralovstvilesa.cz/",
+"w": "yes",
+"la": 48.649885,
+"lo": 14.233062
+},
+{
+"i": "n1839615001",
+"n": "Stezka korunami stromů Lipno",
+"s": "Vyhlídka",
+"o": "Lipno nad Vltavou",
+"web": "https://www.stezkakorunamistromu.cz/",
+"w": "yes",
+"la": 48.652673,
+"lo": 14.230653
+},
+{
+"i": "n3773107225",
+"n": "Kulturní dům Lišov",
+"s": "Divadlo",
+"o": "Lišov",
+"w": "yes",
+"la": 49.016016,
+"lo": 14.609451
+},
+{
+"i": "n799270300",
+"n": "Kučerova vyhlídka",
+"s": "Vyhlídka",
+"o": "Nová Pec",
+"w": "no",
+"la": 48.774682,
+"lo": 13.855401
+},
+{
+"i": "n799270297",
+"n": "Výhled na Plešné jezero",
+"s": "Vyhlídka",
+"o": "Nová Pec",
+"w": "no",
+"la": 48.776503,
+"lo": 13.857523
+},
+{
+"i": "n11494780911",
+"n": "Království času",
+"s": "Muzeum",
+"o": "Protivín",
+"web": "https://kralovstvicasu.cz/",
+"w": "no",
+"la": 49.200533,
+"lo": 14.214551
+},
+{
+"i": "w28373782",
+"n": "Kamenný most",
+"s": "Turistický cíl",
+"o": "Písek",
+"w": "yes",
+"la": 49.309844,
+"lo": 14.145614
+},
+{
+"i": "w834627976",
+"n": "Kamenný most",
+"s": "Turistický cíl",
+"o": "Písek",
+"w": "yes",
+"la": 49.309888,
+"lo": 14.146381
+},
+{
+"i": "n13746705761",
+"n": "Matějčkova vyhlídka",
+"s": "Vyhlídka",
+"o": "Rožmitál na Šumavě",
+"w": "no",
+"la": 48.740283,
+"lo": 14.421991
+},
+{
+"i": "n9129069634",
+"n": "Přírodní bludiště „U Lípy“",
+"s": "Turistický cíl",
+"o": "Strmilov",
+"w": "no",
+"la": 49.154415,
+"lo": 15.202046
+},
+{
+"i": "n3583651003",
+"n": "Vyhlídka Oldřicha Fencla",
+"s": "Vyhlídka",
+"o": "Trhové Sviny",
+"w": "limited",
+"la": 48.843633,
+"lo": 14.557183
+},
+{
+"i": "w29350561",
+"n": "Divadlo Oskara Nedbala",
+"s": "Divadlo",
+"o": "Tábor",
+"w": "no",
+"la": 49.413107,
+"lo": 14.662003
+},
+{
+"i": "n4111375339",
+"n": "Galerie čokolády",
+"s": "Muzeum",
+"o": "Tábor",
+"a": "Špitálská 289",
+"web": "http://www.galeriecokolady.cz/",
+"w": "no",
+"la": 49.415068,
+"lo": 14.658864
+},
+{
+"i": "w422171458",
+"n": "rozhledna Semenec",
+"s": "Vyhlídka",
+"o": "Týn nad Vltavou",
+"w": "no",
+"la": 49.230595,
+"lo": 14.410077
+},
+{
+"i": "n3865330782",
+"n": "Dům dětí a mládeže",
+"s": "Komunitní centrum",
+"o": "Třeboň",
+"w": "yes",
+"la": 49.006878,
+"lo": 14.766584
+},
+{
+"i": "n3811108413",
+"n": "Třeboňské seníky",
+"s": "Turistický cíl",
+"o": "Třeboň",
+"w": "no",
+"la": 49.016188,
+"lo": 14.7681
+},
+{
+"i": "n3634917342",
+"n": "klášter Augustiniánů",
+"s": "Turistický cíl",
+"o": "Třeboň",
+"w": "no",
+"la": 49.005364,
+"lo": 14.768986
+},
+{
+"i": "n10996134416",
+"n": "Místní lidová knihovna",
+"s": "Knihovna",
+"o": "Vlkov",
+"w": "no",
+"la": 49.151158,
+"lo": 14.725122
+},
+{
+"i": "n3729657712",
+"n": "Poštovní muzeum",
+"s": "Muzeum",
+"o": "Vyšší Brod",
+"a": "Klášter 136",
+"web": "https://www.postovnimuzeum.cz/",
+"w": "no",
+"la": 48.620696,
+"lo": 14.307614
+},
+{
+"i": "w31661935",
+"n": "Čertova stěna",
+"s": "Turistický cíl",
+"o": "Vyšší Brod",
+"w": "no",
+"la": 48.630844,
+"lo": 14.277662
+},
+{
+"i": "n5342663945",
+"n": "Minimodel jihočeské vesnice",
+"s": "Turistický cíl",
+"o": "Zlatá Koruna",
+"web": "https://www.kudyznudy.cz/aktivity/minimodel-jihoceske-vesnice-v-plesovicich",
+"w": "limited",
+"la": 48.862062,
+"lo": 14.35629
+},
+{
+"i": "n573383990",
+"n": "Lipno Panorama",
+"s": "Vyhlídka",
+"o": "Černá v Pošumaví",
+"w": "yes",
+"la": 48.716394,
+"lo": 14.079317
+},
+{
+"i": "n7630141308",
+"n": "Alšova Jihočeská galerie – Wortnerův dům",
+"s": "Galerie",
+"o": "České Budějovice",
+"web": "https://ajg.cz",
+"w": "yes",
+"la": 48.97657,
+"lo": 14.476018
+},
+{
+"i": "n2166977065",
+"n": "ArtIgy",
+"s": "Kulturní centrum",
+"o": "České Budějovice",
+"w": "yes",
+"la": 48.983778,
+"lo": 14.471862
+},
+{
+"i": "n3254381661",
+"n": "Bludný kámen",
+"s": "Turistický cíl",
+"o": "České Budějovice",
+"web": "https://encyklopedie.c-budejovice.cz/clanek/bludny-kamen",
+"w": "yes",
+"la": 48.974454,
+"lo": 14.474516
+},
+{
+"i": "n3292690709",
+"n": "Dům umění",
+"s": "Kulturní centrum",
+"o": "České Budějovice",
+"a": "nám. Přemysla Otakara II. 38",
+"web": "https://dumumenicb.cz",
+"w": "yes",
+"la": 48.973837,
+"lo": 14.473726
+},
+{
+"i": "n9884821881",
+"n": "Galerie 1",
+"s": "Galerie",
+"o": "České Budějovice",
+"web": "https://www.popartshop.cz/",
+"w": "no",
+"la": 48.97768,
+"lo": 14.472504
+},
+{
+"i": "n7553275634",
+"n": "Galerie U Schellů",
+"s": "Galerie",
+"o": "České Budějovice",
+"a": "Panská 174/7",
+"w": "no",
+"la": 48.977413,
+"lo": 14.471876
+},
+{
+"i": "n7941194818",
+"n": "Jihočeská vědecká knihovna",
+"s": "Knihovna",
+"o": "České Budějovice",
+"a": "Fr. Ondříčka 46 (Kulturní dům Vltava) 1243/46",
+"web": "https://www.cbvk.cz/pobocky.html?pg=vltava",
+"w": "yes",
+"la": 48.990691,
+"lo": 14.455153
+},
+{
+"i": "n10939571292",
+"n": "Luxor",
+"s": "Knihovna",
+"o": "České Budějovice",
+"w": "yes",
+"la": 48.983111,
+"lo": 14.441938
+},
+{
+"i": "w50452397",
+"n": "Muzeum koňspřežky",
+"s": "Muzeum",
+"o": "České Budějovice",
+"web": "https://www.muzeumcb.cz/navstivte-nas/pobocky/muzeum-konesprezky/",
+"w": "no",
+"la": 48.968366,
+"lo": 14.471797
+},
+{
+"i": "w50452534",
+"n": "Vědecká knihovna",
+"s": "Knihovna",
+"o": "České Budějovice",
+"w": "yes",
+"la": 48.970475,
+"lo": 14.475528
+},
+{
+"i": "w60575277",
+"n": "Budějovická brána",
+"s": "Turistický cíl",
+"o": "Český Krumlov",
+"w": "yes",
+"la": 48.8148,
+"lo": 14.317106
+},
+{
+"i": "n6996189692",
+"n": "Galerie Mlýn",
+"s": "Galerie",
+"o": "Český Krumlov",
+"a": "Široká",
+"w": "limited",
+"la": 48.8115,
+"lo": 14.313333
+},
+{
+"i": "n4198796603",
+"n": "Galerie české kultury",
+"s": "Muzeum",
+"o": "Český Krumlov",
+"a": "Zámek",
+"w": "no",
+"la": 48.813073,
+"lo": 14.314758
+},
+{
+"i": "n3755394730",
+"n": "Grafitový důl",
+"s": "Muzeum",
+"o": "Český Krumlov",
+"a": "Chvalšinská 243",
+"web": "http://www.grafitovydul.cz/",
+"w": "no",
+"la": 48.816972,
+"lo": 14.304771
+},
+{
+"i": "n12286446444",
+"n": "Interaktivní expozice s historickou hernou",
+"s": "Muzeum",
+"o": "Český Krumlov",
+"a": "Klášterní dvůr",
+"web": "https://www.klasteryck.cz/cz/akce-16732-interaktivni-expozice-s-historickou-hernou/",
+"w": "no",
+"la": 48.813496,
+"lo": 14.318165
+},
+{
+"i": "n12286446446",
+"n": "Klášterní galerie",
+"s": "Galerie",
+"o": "Český Krumlov",
+"a": "Klášterní dvůr",
+"web": "https://www.klasteryck.cz/cz/galerie/",
+"w": "limited",
+"la": 48.813507,
+"lo": 14.318519
+},
+{
+"i": "n12286446445",
+"n": "Klášterní muzeum",
+"s": "Muzeum",
+"o": "Český Krumlov",
+"a": "Klášterní dvůr",
+"web": "https://www.klasteryck.cz/cz/klasterni-muzeum/",
+"w": "limited",
+"la": 48.813312,
+"lo": 14.318299
+},
+{
+"i": "n12292345182",
+"n": "Kvítkův Dvůr",
+"s": "Muzeum",
+"o": "Český Krumlov",
+"a": "Kvítkův dvůr 211",
+"web": "https://www.npu.cz/cs/hrady-a-zamky/tipy-na-vylet/92928-statek-kvitkuv-dvur",
+"w": "no",
+"la": 48.809448,
+"lo": 14.294079
+},
+{
+"i": "w60779351",
+"n": "Letní kino",
+"s": "Kino",
+"o": "Český Krumlov",
+"a": "Chvalšinská 235",
+"w": "yes",
+"la": 48.815688,
+"lo": 14.310786
+},
+{
+"i": "n7033784746",
+"n": "Midnight gallery",
+"s": "Galerie",
+"o": "Český Krumlov",
+"web": "http://www.paral.cz/uk/index.htm",
+"w": "no",
+"la": 48.811616,
+"lo": 14.31722
+},
+{
+"i": "n1574133943",
+"n": "Muzeum marionet",
+"s": "Muzeum",
+"o": "Český Krumlov",
+"a": "Latrán 6",
+"web": "https://marionettemuseum.cz/",
+"w": "no",
+"la": 48.811921,
+"lo": 14.316344
+},
+{
+"i": "n455553842",
+"n": "Městská knihovna",
+"s": "Knihovna",
+"o": "Český Krumlov",
+"web": "https://www.knih-ck.cz/",
+"w": "no",
+"la": 48.810381,
+"lo": 14.316715
+},
+{
+"i": "n7019703422",
+"n": "Prádelna Žije",
+"s": "Komunitní centrum",
+"o": "Český Krumlov",
+"a": "Hradební",
+"web": "http://pradelnazije.cz/",
+"w": "yes",
+"la": 48.810012,
+"lo": 14.313614
+},
+{
+"i": "n10970681483",
+"n": "Regionální muzeum v Českém Krumlově",
+"s": "Muzeum",
+"o": "Český Krumlov",
+"web": "https://muzeumck.cz/",
+"w": "no",
+"la": 48.810687,
+"lo": 14.317792
+},
+{
+"i": "n7147434794",
+"n": "Rodinné centrum Krumlík",
+"s": "Komunitní centrum",
+"o": "Český Krumlov",
+"a": "Urbinská 184",
+"web": "http://krumlik.krumlov.cz",
+"w": "yes",
+"la": 48.824165,
+"lo": 14.329891
+},
+{
+"i": "n7004460101",
+"n": "Červená brána",
+"s": "Turistický cíl",
+"o": "Český Krumlov",
+"a": "Zámek",
+"w": "yes",
+"la": 48.81269,
+"lo": 14.317377
+}
+]

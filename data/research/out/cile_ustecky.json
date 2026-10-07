@@ -1,0 +1,120 @@
+{
+ "task": "cile_ustecky",
+ "kraj": "Ústecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n911034229",
+   "name": "Magdeburská kasárna",
+   "obec": "Terezín",
+   "address": "",
+   "lat": 50.508618,
+   "lng": 14.15196,
+   "category": "pamatky",
+   "source_url": "https://www.pamatnik-terezin.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "U expozice v Magdeburských kasárnách (Tyršova 204) Památník Terezín uvádí, že objekt je plně bezbariérový."
+   },
+   "measurements": [],
+   "evidence_quote": "Přístupnost pro osoby se zdravotním postižením - objekt je plně bezbariérový"
+  },
+  {
+   "osm_id": "w156449754",
+   "name": "Krematorium",
+   "obec": "Terezín",
+   "address": "",
+   "lat": 50.502395,
+   "lng": 14.151864,
+   "category": "pamatky",
+   "source_url": "https://www.pamatnik-terezin.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "U krematoria (Městský hřbitov 325) Památník uvádí, že objekty jsou přístupné s lehkou pomocí."
+   },
+   "measurements": [],
+   "evidence_quote": "objekty jsou přístupné s lehkou pomocí"
+  },
+  {
+   "osm_id": "n663165731",
+   "name": "Muzeum města Ústí nad Labem",
+   "obec": "Ústí nad Labem",
+   "address": "",
+   "lat": 50.660875,
+   "lng": 14.034364,
+   "category": "pamatky",
+   "source_url": "https://www.muzeumusti.cz/muzeum/vstupne/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Muzeum uvádí plný přístup do objektu pro fyzicky hendikepované návštěvníky.",
+    "jine": "Po předchozí telefonické dohodě lze domluvit osobního průvodce; držitelé ZTP/P mají vstup zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Muzeum nabízí fyzicky hendikepovaným spoluobčanům plný přístup do objektu."
+  },
+  {
+   "osm_id": "n7416293275",
+   "name": "Veřejný sál Hraničář",
+   "obec": "Ústí nad Labem",
+   "address": "Prokopa Diviše 1812",
+   "lat": 50.663347,
+   "lng": 14.032748,
+   "category": "kultura",
+   "source_url": "https://hranicar-usti.cz/kontakty/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup do velkého sálu není bezbariérový; provozovatel nabízí asistenci po předchozím ohlášení (e-mail, telefon, poznámka v rezervaci)."
+   },
+   "measurements": [],
+   "evidence_quote": "Vstup do velkého sálu sice není bezbariérový, avšak rádi Vám nabídneme asistenci."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w95065023",
+   "name": "ZOO Ústí nad Labem",
+   "url": "https://www.zoousti.cz/planujete-navstevu/oteviraci-doba-a-vstupne",
+   "reason": "web uvádí jen zvýhodněné vstupné pro vozíčkáře a ZTP, o přístupnosti areálu nic"
+  },
+  {
+   "osm_id": "n2993643397",
+   "name": "Dům kultury",
+   "url": "https://www.ksul.cz/kontakty/",
+   "reason": "web uvádí jen slevu pro ZTP, o přístupnosti nic"
+  },
+  {
+   "osm_id": "n2995502264",
+   "name": "Dům dětí a mládeže",
+   "url": "https://www.ddmul.cz/",
+   "reason": "o přístupnosti budovy nic (jen prohlášení o přístupnosti webu)"
+  },
+  {
+   "osm_id": "n7967395322",
+   "name": "Simson Museum",
+   "url": "http://simsonmuzeum.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n251874927",
+   "name": "Pravčická brána",
+   "url": "https://www.pravcickabrana.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Památník Terezín – přehled expozic",
+   "url": "https://www.pamatnik-terezin.cz/",
+   "note": "u každého objektu uvádí řádek o přístupnosti pro osoby se zdravotním postižením"
+  },
+  {
+   "title": "Muzeum města Ústí nad Labem – vstupné",
+   "url": "https://www.muzeumusti.cz/muzeum/vstupne/",
+   "note": ""
+  }
+ ]
+}

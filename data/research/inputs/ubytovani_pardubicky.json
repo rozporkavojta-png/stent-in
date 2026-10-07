@@ -1,0 +1,184 @@
+[
+{
+"i": "n5079107094",
+"n": "Penzion na Vysočině",
+"s": "Penzion",
+"o": "Hartmanice",
+"w": "yes",
+"la": 49.624026,
+"lo": 16.376369
+},
+{
+"i": "n5268404721",
+"n": "Taboriste pod stan pro vodaky",
+"s": "Kemp",
+"o": "Helvíkovice",
+"web": "http://emobile.cz",
+"w": "no",
+"la": 50.093072,
+"lo": 16.445408
+},
+{
+"i": "n3803733946",
+"n": "Marina",
+"s": "Hotel",
+"o": "Heřmanův Městec",
+"web": "https://www.marinahotel.cz",
+"w": "yes",
+"la": 49.93994,
+"lo": 15.659197
+},
+{
+"i": "n3497672025",
+"n": "Farma pod kopcem",
+"s": "Chata",
+"o": "Krouna",
+"w": "no",
+"la": 49.772393,
+"lo": 16.074884
+},
+{
+"i": "w71044715",
+"n": "Rubyk",
+"s": "Hotel",
+"o": "Lanškroun",
+"a": "Krátká 193",
+"web": "https://www.rubyk.cz/",
+"w": "yes",
+"la": 49.906358,
+"lo": 16.603866
+},
+{
+"i": "n1817938544",
+"n": "Petrův palouk",
+"s": "Kemp",
+"o": "Nekoř",
+"w": "limited",
+"la": 50.077583,
+"lo": 16.560971
+},
+{
+"i": "n2465275178",
+"n": "Hotel Atrium",
+"s": "Penzion",
+"o": "Pardubice",
+"a": "Smilova 343",
+"w": "yes",
+"la": 50.034494,
+"lo": 15.773359
+},
+{
+"i": "n296806960",
+"n": "Hotelový Dům Pardubice",
+"s": "Hotel",
+"o": "Pardubice",
+"a": "Bělehradská 458",
+"web": "https://www.hotelovydumpardubice.cz/",
+"w": "yes",
+"la": 50.047362,
+"lo": 15.763678
+},
+{
+"i": "n5030523625",
+"n": "Pension Austria",
+"s": "Hotel",
+"o": "Pardubice",
+"a": "Smilova 312",
+"web": "https://www.pensionaustria.cz/",
+"w": "no",
+"la": 50.034937,
+"lo": 15.775297
+},
+{
+"i": "n2882870701",
+"n": "Pension Podkova",
+"s": "Hotel",
+"o": "Pardubice",
+"a": "Smilova 335",
+"web": "http://www.pension-podkova.cz/",
+"w": "yes",
+"la": 50.034293,
+"lo": 15.771505
+},
+{
+"i": "n2407672027",
+"n": "Zlatá štika",
+"s": "Hotel",
+"o": "Pardubice",
+"web": "http://www.zlatastika.cz/",
+"w": "yes",
+"la": 50.039481,
+"lo": 15.78429
+},
+{
+"i": "w30786381",
+"n": "Autocamp Semín",
+"s": "Kemp",
+"o": "Semín",
+"web": "https://www.autokempsemin.cz/",
+"w": "no",
+"la": 50.055514,
+"lo": 15.533895
+},
+{
+"i": "n4213164332",
+"n": "AK Seč Pláž, recepce",
+"s": "Kemp",
+"o": "Seč",
+"a": "Čs. pionýrů 384",
+"w": "limited",
+"la": 49.8428,
+"lo": 15.647633
+},
+{
+"i": "n8991336972",
+"n": "Apartmán U Louky",
+"s": "Apartmány",
+"o": "Seč",
+"a": "náměstí Míru 333",
+"web": "https://www.apartmanulouky.cz",
+"w": "no",
+"la": 49.852709,
+"lo": 15.656159
+},
+{
+"i": "n887157415",
+"n": "Autokemp U Letadla - recepce",
+"s": "Kemp",
+"o": "Seč",
+"w": "limited",
+"la": 49.839168,
+"lo": 15.663324
+},
+{
+"i": "w423024365",
+"n": "U Letadla",
+"s": "Kemp",
+"o": "Seč",
+"a": "K Přehradě 325",
+"w": "yes",
+"la": 49.838416,
+"lo": 15.662084
+},
+{
+"i": "n10989770613",
+"n": "Pension Fontána Svitavy",
+"s": "Penzion",
+"o": "Svitavy",
+"a": "U stadionu 708/6",
+"web": "https://www.pension-fontana.cz/",
+"w": "no",
+"la": 49.752676,
+"lo": 16.471849
+},
+{
+"i": "n842112593",
+"n": "Autocamping Pod Černým lesem",
+"s": "Kemp",
+"o": "Žamberk",
+"web": "https://www.autocamping.cz/",
+"w": "yes",
+"la": 50.08642,
+"lo": 16.47693
+}
+]

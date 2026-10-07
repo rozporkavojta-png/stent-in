@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Můj profil · kudyprojedu.cz</title>
+<meta name="description" content="Vaše potřeby, uložená místa a rozepsané příspěvky. Vše zůstává jen ve vašem prohlížeči.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=13">
+<link rel="stylesheet" href="assets/css/pages-b.css?v=11">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+  <header class="page-hero page-hero-sm">
+    <div class="wrap">
+      <span class="kicker">Jen v tomto prohlížeči</span>
+      <h1>Můj profil</h1>
+      <p class="lede">Potřeby, uložená místa a vaše příspěvky. Bez registrace, vše zůstává jen v tomto prohlížeči.</p>
+    </div>
+  </header>
+
+  <div class="wrap pf-layout">
+    <section class="pf-needs" aria-labelledby="needs-h">
+      <div class="pf-head">
+        <h2 id="needs-h">Moje potřeby</h2>
+        <span id="needs-state"></span>
+      </div>
+      <div id="needs"></div>
+      <button class="btn btn-primary btn-block" type="button" data-open-needs><span data-icon="sliders"></span>Upravit potřeby</button>
+    </section>
+
+    <div class="pf-main">
+      <section class="pf-sec" id="ulozena" aria-labelledby="saved-h">
+        <div class="pf-head">
+          <h2 id="saved-h">Uložená místa</h2>
+          <span class="pf-count" id="saved-n" hidden></span>
+        </div>
+        <div id="saved"><p class="muted">Načítám…</p></div>
+      </section>
+
+      <section class="pf-sec" id="prispevky" aria-labelledby="drafts-h">
+        <div class="pf-head">
+          <h2 id="drafts-h">Moje příspěvky</h2>
+          <span class="pf-count" id="drafts-n" hidden></span>
+        </div>
+        <div id="drafts"></div>
+      </section>
+    </div>
+
+    <aside class="pf-aside">
+      <section class="card pf-note" aria-labelledby="priv-h">
+        <h3 id="priv-h">Soukromí</h3>
+        <p class="small muted">Profil je jen v tomto prohlížeči. Když vymažete data prohlížeče nebo otevřete web jinde, profil tu nebude. <a href="metodika.html#soukromi">Proč to tak je</a></p>
+      </section>
+      <section class="card pf-note" aria-labelledby="comm-h">
+        <h3 id="comm-h">Komunita <span class="badge badge-soon">Připravujeme</span></h3>
+        <p class="small muted">Veřejné profily pod přezdívkou a sdílení tras přibudou v další fázi.</p>
+        <a class="btn btn-ghost btn-sm" href="komunita.html">Co chystáme</a>
+      </section>
+    </aside>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/config.js?v=11"></script>
+<script src="assets/js/core.js?v=11"></script>
+<script src="assets/js/profil.js?v=11"></script>
+</body>
+</html>

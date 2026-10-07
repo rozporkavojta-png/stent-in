@@ -1,0 +1,140 @@
+{
+ "task": "obce_zlinsky",
+ "kraj": "Zlínský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w30139815",
+   "name": "Kaufland Kroměříž – veřejné toalety",
+   "obec": "Kroměříž",
+   "lat": 49.291903,
+   "lng": 17.405382,
+   "category": "wc",
+   "source_url": "https://www.mesto-kromeriz.cz/aktuality/detail/kromerizske-socialni-sluzby-vydavaji-handicapovanym-euroklice",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Tisková zpráva města (6. 12. 2024) řadí veřejné toalety v hypermarketu Kaufland mezi tři místa v Kroměříži přístupná s Euroklíčem.",
+    "jine": "Euroklíče vydávají Sociální služby města Kroměříže v budově ředitelství na Riegrově náměstí po telefonickém objednání (573 500 760)."
+   },
+   "evidence_quote": "veřejné toalety v hypermarketu Kaufland"
+  },
+  {
+   "osm_id": "n3307230745",
+   "name": "Kroměříž – výpravní budova nádraží (WC s Eurozámkem)",
+   "obec": "Kroměříž",
+   "lat": 49.302153,
+   "lng": 17.403779,
+   "category": "wc",
+   "source_url": "https://www.mesto-kromeriz.cz/aktuality/detail/kromerizske-socialni-sluzby-vydavaji-handicapovanym-euroklice",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Podle tiskové zprávy města (6. 12. 2024) jsou toalety ve výpravní budově kroměřížského vlakového nádraží přístupné majitelům Euroklíče."
+   },
+   "evidence_quote": "ve výpravní budově kroměřížského vlakového nádraží"
+  },
+  {
+   "osm_id": "n330723518",
+   "name": "Městský úřad Kroměříž (radnice)",
+   "obec": "Kroměříž",
+   "address": "Velké náměstí 115, 767 01 Kroměříž",
+   "lat": 49.297885,
+   "lng": 17.392966,
+   "category": "urady",
+   "source_url": "https://www.mesto-kromeriz.cz/urad/dokumenty-a-informace/granty-dotace-a-projekty/ostatni-projekty/probihajici-projekty/2025-zajisteni-bezbarierovosti-radnice-meu-kromeriz",
+   "source_type": "web obce",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Projekt města „Zajištění bezbariérovosti radnice MěÚ Kroměříž“ (realizace září – březen 2026) má přistavět výtah v dvorní jihozápadní části objektu.",
+    "wc": "Projekt počítá s rekonstrukcí sociálních zařízení a novým zařízením pro osoby se zdravotním postižením.",
+    "parkovani": "Projekt zahrnuje výstavbu parkovacího místa pro osoby se zdravotním postižením.",
+    "jine": "Stránka je vedena mezi probíhajícími projekty; dokončení nepotvrzuje. Celkové výdaje 10 917 056 Kč, dotace MMR."
+   },
+   "evidence_quote": "realizace přístavby výtahu s rozsáhlým prosklením na fasádě radnice"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": null,
+   "name": "Magistrát města Zlína – radnice (bezbariérový vchod, WC s Eurozámkem)",
+   "url": "https://www.zlin.eu/tiskove-zpravy/bezbarierovy-vchod-do-radnice-je-opet-v-provozu-6238",
+   "reason": "Tisková zpráva 19. 12. 2016: bezbariérový vchod do radnice s automatickým otvíráním dveří (objekt č. p. 10) je opět průchozí. Tisková zpráva 12. 6. 2017 (https://www.zlin.eu/tiskove-zpravy/euroklic-pomuze-potrebnym-lidem-uz-i-ve-zline-6238): WC s Eurozámkem na radnici, v budově na Zarámí a na pracovišti v ulici L. Váchy; klíče vydává Odbor sociálních věcí MMZ. Radnice ani pracoviště nejsou v places.json; hledání nových míst zrušeno (zrychlený režim) – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné toalety u vstupu do Panské zahrady (od Tyršovy ulice), Vsetín",
+   "url": "https://www.mestovsetin.cz/vismo/dokumenty2.asp?id_org=18676&id=548148",
+   "reason": "Článek města (15. 1. 2026): nové veřejné toalety v provozu od 1. února, společné WC pro ženy a vozíčkáře, poplatek 10 Kč (mince i bezkontaktní karta). Euroklíč neuveden. Místo není v places.json; hledání nových míst zrušeno – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Euroklíč – Vsetín (odbor sociálních věcí MěÚ, kancelář č. 227)",
+   "url": "https://www.mestovsetin.cz/vismo/dokumenty2.asp?id_org=18676&id=566522",
+   "reason": "Článek (31. 1. 2022) uvádí výdej Euroklíčů na odboru sociálních věcí vsetínské radnice, kancelář č. 227. Článek z 24. 9. 2026 (https://www.mestovsetin.cz/vismo/dokumenty2.asp?id_org=18676&id=570464) uvádí, že vydávání je do odvolání pozastaveno kvůli nedodání klíčů výrobcem. Konkrétní WC s Eurozámkem neuvedena."
+  },
+  {
+   "osm_id": null,
+   "name": "Euroklíč – Valašské Meziříčí: městská knihovna (WC), nádraží ČD (WC a plošiny), OD Kaufland (WC)",
+   "url": "https://www.valasskemezirici.cz/vismo/dokumenty2.asp?id_org=17636&id=46377",
+   "reason": "Článek města (6. 5. 2021) jmenuje tři místa s Eurozámkem bez adres; klíč vydává MěÚ, Zašovská 784, 4. patro, kanc. 413. Místa nejsou v places.json; hledání nových míst zrušeno – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Bezbariérové toalety v městských budovách Valašského Meziříčí (mapování 2019)",
+   "url": "https://www.valasskemezirici.cz/vismo/dokumenty2.asp?id_org=17636&id=41124",
+   "reason": "Článek (1. 11. 2019): s vozíčkářem a projektanty Národního institutu pro integraci osob s omezenou schopností pohybu a orientace ČR prošli toalety v budovách MěÚ (Soudní, Zašovská), Komunitního centra, Kulturního zařízení, krytého bazénu, koupaliště a veřejná WC na ul. Mostní a v parku zámku Kinských; drobné nedostatky měly téměř všechny. Výsledky po jednotlivých WC web neuvádí – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC v rekreační oblasti Štěrkoviště, Otrokovice",
+   "url": "https://www.otrokovice.cz/vybudovani-verejneho-wc-v-rekreacni-oblasti-sterkoviste",
+   "reason": "Projekt ve stavbě (realizace 1. 9. – 30. 11. 2026): 4 unisex toalety, z toho jedna pro osoby se sníženou schopností pohybu a orientace. Zatím není v provozu – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Uherské Hradiště – veřejná WC a radnice",
+   "url": "https://www.mesto-uh.cz/o-meste/tiskove-zpravy/2017/mesto-uherske-hradiste-pokrocilo-dal-v-bezbarierovosti",
+   "reason": "V sitemapě mesto-uh.cz nenalezena stránka o bezbariérových veřejných WC, Euroklíči ani bezbariérovosti radnice; jen článek (31. 8. 2017) o bezbariérové trase chodníků od autobusového nádraží k ul. Františkánská."
+  },
+  {
+   "osm_id": null,
+   "name": "Krajský plán vyrovnávání příležitostí pro OZP – Zlínský kraj",
+   "url": "https://zlinskykraj.cz/sitemap.xml",
+   "reason": "V sitemapě zlinskykraj.cz (3029 URL) ani ve vyhledávání webu kraje dokument KPVP nenalezen; jsou zde jen akční plány rozvoje sociálních služeb a komise Rady ZK pro zdravotně postižené (období 2012–2016)."
+  },
+  {
+   "osm_id": null,
+   "name": "Organizace vozíčkářů ve Zlínském kraji",
+   "url": "https://zlinskykraj.cz/aktuality/na-krajskem-urade-se-uskutecnila-konference-venovana-potrebam-rodin-ktere-se-staraji-o-sve-zdravotne-postizene-6686",
+   "reason": "Na prověřených webech obcí a kraje nenalezena organizace vozíčkářů s názvem a webem; kraj uvádí jen spolupráci s NRZP ČR na konferenci o rovných příležitostech. Hledání omezeno (zrychlený režim, nedostupný webový vyhledávač)."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Bezbariérový Zlín – digitální mapa přístupnosti institucí",
+   "url": "http://www.bezbarierzlin.cz",
+   "note": "Podle tiskové zprávy Zlína (25. 8. 2016, https://www.zlin.eu/tiskove-zpravy/digitalni-mapa-poradi-ktera-instituce-je-ve-zline-bezbarierova-6238) převedl Odbor sociálních věcí MMZ s Fakultou aplikované informatiky UTB brožuru o přístupnosti institucí do digitální mapy, umístěné na zlin.eu (Mapy) a na bezbarierzlin.cz. Web odpovídá (HTTP 200), obsah a aktuálnost neověřeny. Licence neuvedena."
+  },
+  {
+   "title": "Otrokovice – Mapa bezbariérových přístupů (TWIST)",
+   "url": "https://twist.otrokovice.cz/mapa/bezbarierove-pristupy/",
+   "note": "Mapová služba města, odkaz v hlavní nabídce otrokovice.cz (Mapové služby). Obsah vrstev neověřován. Licence neuvedena."
+  },
+  {
+   "title": "Kroměříž – Zajištění bezbariérovosti radnice MěÚ (projekt 2025)",
+   "url": "https://www.mesto-kromeriz.cz/urad/dokumenty-a-informace/granty-dotace-a-projekty/ostatni-projekty/probihajici-projekty/2025-zajisteni-bezbarierovosti-radnice-meu-kromeriz",
+   "note": "Výtah, WC pro OZP a parkovací místo pro OZP; realizace září – březen 2026."
+  },
+  {
+   "title": "Euroklíč – výdejní místa v Kroměříži, Zlíně, Vsetíně a Valašském Meziříčí",
+   "url": "https://www.mesto-kromeriz.cz/aktuality/detail/kromerizske-socialni-sluzby-vydavaji-handicapovanym-euroklice",
+   "note": "Kroměříž: SSKM, Riegrovo nám. (www.sskm.cz/euroklice); Zlín: Odbor sociálních věcí MMZ (https://www.zlin.eu/tiskove-zpravy/euroklic-pomuze-potrebnym-lidem-uz-i-ve-zline-6238); Vsetín: OSV MěÚ, kanc. 227, výdej nyní pozastaven (https://www.mestovsetin.cz/vismo/dokumenty2.asp?id_org=18676&id=570464); Valašské Meziříčí: MěÚ Zašovská 784, kanc. 413 (https://www.valasskemezirici.cz/vismo/dokumenty2.asp?id_org=17636&id=46377)."
+  },
+  {
+   "title": "Zlínský kraj – krajský plán vyrovnávání příležitostí pro OZP",
+   "url": "https://zlinskykraj.cz/",
+   "note": "Na webu kraje nenalezen (sitemap i vyhledávání). Nalezena jen komise Rady ZK pro zdravotně postižené (2012–2016): https://zlinskykraj.cz/komise-rady-zlinskeho-kraje-pro-zdravotne-postizene. Opatření k mapování přístupnosti proto nelze uvést."
+  }
+ ]
+}

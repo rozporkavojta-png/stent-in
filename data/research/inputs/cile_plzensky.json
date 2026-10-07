@@ -1,0 +1,595 @@
+[
+{
+"i": "w277053318",
+"n": "Rozhledna Na Vrších",
+"s": "Vyhlídka",
+"o": "Břasy",
+"w": "no",
+"la": 49.84608,
+"lo": 13.575721
+},
+{
+"i": "n14235289732",
+"n": "Vyhlídka na Berounku",
+"s": "Vyhlídka",
+"o": "Břasy",
+"w": "no",
+"la": 49.815516,
+"lo": 13.530492
+},
+{
+"i": "n897146178",
+"n": "Na Plazu",
+"s": "Vyhlídka",
+"o": "Chlum",
+"w": "no",
+"la": 49.938501,
+"lo": 13.655771
+},
+{
+"i": "n10245219442",
+"n": "Vyhlídka na Plzeň",
+"s": "Vyhlídka",
+"o": "Chotíkov",
+"w": "no",
+"la": 49.791876,
+"lo": 13.344182
+},
+{
+"i": "w872387359",
+"n": "kamenný most",
+"s": "Turistický cíl",
+"o": "Dobřany",
+"w": "limited",
+"la": 49.656216,
+"lo": 13.287408
+},
+{
+"i": "w37894284",
+"n": "Švédský most",
+"s": "Turistický cíl",
+"o": "Dobřív",
+"w": "limited",
+"la": 49.716636,
+"lo": 13.687386
+},
+{
+"i": "w244508357",
+"n": "Gloriet",
+"s": "Turistický cíl",
+"o": "Horažďovice",
+"web": "https://www.bbkult.net/barock-addresses/ruine-gloriet-horaschdowitz-horazdovice/",
+"w": "limited",
+"la": 49.336105,
+"lo": 13.668993
+},
+{
+"i": "n12590074473",
+"n": "Výhled na Kamenec",
+"s": "Vyhlídka",
+"o": "Kamenec",
+"w": "no",
+"la": 49.882462,
+"lo": 13.597428
+},
+{
+"i": "n1932437939",
+"n": "Knihovna Kařez",
+"s": "Knihovna",
+"o": "Kařez",
+"w": "no",
+"la": 49.821387,
+"lo": 13.782599
+},
+{
+"i": "n4678056344",
+"n": "Muzeum hraček",
+"s": "Muzeum",
+"o": "Kašperské Hory",
+"w": "no",
+"la": 49.144548,
+"lo": 13.556872
+},
+{
+"i": "w27272468",
+"n": "svatá Markéta",
+"s": "Turistický cíl",
+"o": "Kašperské Hory",
+"w": "no",
+"la": 49.143846,
+"lo": 13.55572
+},
+{
+"i": "n8112101347",
+"n": "PASK",
+"s": "Muzeum",
+"o": "Klatovy",
+"web": "https://www.pask-klatovy.cz",
+"w": "yes",
+"la": 49.39334,
+"lo": 13.297352
+},
+{
+"i": "n2149616402",
+"n": "Šumavská vyhlídka",
+"s": "Vyhlídka",
+"o": "Klatovy",
+"w": "yes",
+"la": 49.429159,
+"lo": 13.296729
+},
+{
+"i": "n13937893327",
+"n": "Srdce Plzeňského kraje",
+"s": "Turistický cíl",
+"o": "Klenčí pod Čerchovem",
+"w": "limited",
+"la": 49.412041,
+"lo": 12.804573
+},
+{
+"i": "n11331866725",
+"n": "Nová Knížecí Huť",
+"s": "Turistický cíl",
+"o": "Lesná",
+"web": "https://ceskymlesem.eu/nova-knizeci-hut.html",
+"w": "yes",
+"la": 49.734128,
+"lo": 12.457477
+},
+{
+"i": "w1187895037",
+"n": "Památník Železné opony",
+"s": "Turistický cíl",
+"o": "Lesná",
+"w": "no",
+"la": 49.742422,
+"lo": 12.410138
+},
+{
+"i": "w123008339",
+"n": "Rozhledna Havran",
+"s": "Vyhlídka",
+"o": "Lesná",
+"web": "http://www.rozhlednahavran.cz/web/",
+"w": "no",
+"la": 49.743156,
+"lo": 12.409223
+},
+{
+"i": "n9315162381",
+"n": "Hraběcí kříž",
+"s": "Vyhlídka",
+"o": "Manětín",
+"w": "no",
+"la": 50.039946,
+"lo": 13.296139
+},
+{
+"i": "n3336675613",
+"n": "vyhlídkový altán Mariina skála",
+"s": "Vyhlídka",
+"o": "Milínov",
+"w": "no",
+"la": 49.655222,
+"lo": 13.565296
+},
+{
+"i": "n9219880850",
+"n": "Andělíček \"ošahánek\"",
+"s": "Turistický cíl",
+"o": "Plzeň",
+"w": "yes",
+"la": 49.747369,
+"lo": 13.377971
+},
+{
+"i": "n537641629",
+"n": "CineStar",
+"s": "Kino",
+"o": "Plzeň",
+"a": "Písecká",
+"web": "http://www.cinestar.cz/cz/",
+"w": "yes",
+"la": 49.701507,
+"lo": 13.427985
+},
+{
+"i": "w1153774180",
+"n": "Cinema City",
+"s": "Kino",
+"o": "Plzeň",
+"web": "http://cinemacity.cz/",
+"w": "yes",
+"la": 49.749343,
+"lo": 13.368846
+},
+{
+"i": "n3955585462",
+"n": "Galerie Jiřího Trnky",
+"s": "Galerie",
+"o": "Plzeň",
+"a": "náměstí Republiky 40",
+"web": "http://www.uvu-plzen.cz/galerie.php",
+"w": "no",
+"la": 49.748187,
+"lo": 13.377266
+},
+{
+"i": "n3955585463",
+"n": "Galerie města Plzně",
+"s": "Galerie",
+"o": "Plzeň",
+"web": "http://www.galerie-plzen.cz/",
+"w": "no",
+"la": 49.748199,
+"lo": 13.377097
+},
+{
+"i": "w1168319083",
+"n": "Geologická expozice Západočeské univerzity",
+"s": "Galerie",
+"o": "Plzeň",
+"w": "yes",
+"la": 49.724465,
+"lo": 13.352951
+},
+{
+"i": "n14023734860",
+"n": "Historický nápis na budově",
+"s": "Turistický cíl",
+"o": "Plzeň",
+"w": "yes",
+"la": 49.758303,
+"lo": 13.417796
+},
+{
+"i": "n516536404",
+"n": "Holý vrch",
+"s": "Vyhlídka",
+"o": "Plzeň",
+"w": "no",
+"la": 49.772104,
+"lo": 13.445811
+},
+{
+"i": "w45064214",
+"n": "Knihovna města Plzně",
+"s": "Knihovna",
+"o": "Plzeň",
+"w": "limited",
+"la": 49.745331,
+"lo": 13.376296
+},
+{
+"i": "n3955559673",
+"n": "Knihovna města Plzně - Obvodní knihovna Doubravka",
+"s": "Knihovna",
+"o": "Plzeň",
+"web": "https://knihovna.plzen.eu/knihovny-a-kulturni-zarizeni/knihovny/doubravka/",
+"w": "limited",
+"la": 49.751754,
+"lo": 13.415181
+},
+{
+"i": "w45195273",
+"n": "Magistrát města Plzně",
+"s": "Památka",
+"o": "Plzeň",
+"a": "náměstí Republiky 1/1",
+"w": "limited",
+"la": 49.748358,
+"lo": 13.377748
+},
+{
+"i": "n4450829401",
+"n": "Malá scéna DJKT",
+"s": "Divadlo",
+"o": "Plzeň",
+"a": "Smetanovy sady 16",
+"web": "https://www.djkt.eu/mala-scena",
+"w": "yes",
+"la": 49.749355,
+"lo": 13.372312
+},
+{
+"i": "w1125877638",
+"n": "Mars",
+"s": "Turistický cíl",
+"o": "Plzeň",
+"web": "http://edu.techmania.cz/cs/katalog/pout-k-planetam/1557/mars",
+"w": "yes",
+"la": 49.746625,
+"lo": 13.379624
+},
+{
+"i": "w1125877634",
+"n": "Merkur",
+"s": "Turistický cíl",
+"o": "Plzeň",
+"web": "http://edu.techmania.cz/cs/katalog/pout-k-planetam/1554/merkur",
+"w": "yes",
+"la": 49.744398,
+"lo": 13.379561
+},
+{
+"i": "n296845980",
+"n": "Muzeum strašidel",
+"s": "Muzeum",
+"o": "Plzeň",
+"a": "náměstí Republiky 358/33",
+"web": "https://muzeumstrasidel.cz/",
+"w": "no",
+"la": 49.747462,
+"lo": 13.376549
+},
+{
+"i": "w344243312",
+"n": "Nové divadlo",
+"s": "Divadlo",
+"o": "Plzeň",
+"w": "yes",
+"la": 49.749138,
+"lo": 13.372082
+},
+{
+"i": "r6646816",
+"n": "Nové divadlo",
+"s": "Divadlo",
+"o": "Plzeň",
+"w": "yes",
+"la": 49.749138,
+"lo": 13.372082
+},
+{
+"i": "n3147502028",
+"n": "Pluto",
+"s": "Divadlo",
+"o": "Plzeň",
+"w": "limited",
+"la": 49.751752,
+"lo": 13.415252
+},
+{
+"i": "w1241044131",
+"n": "Pražský most",
+"s": "Turistický cíl",
+"o": "Plzeň",
+"w": "yes",
+"la": 49.747384,
+"lo": 13.380706
+},
+{
+"i": "w1125877635",
+"n": "Slunce",
+"s": "Turistický cíl",
+"o": "Plzeň",
+"web": "http://edu.techmania.cz/cs/katalog/pout-k-planetam/1552/slunce",
+"w": "yes",
+"la": 49.744839,
+"lo": 13.379573
+},
+{
+"i": "n538074592",
+"n": "Sylván",
+"s": "Vyhlídka",
+"o": "Plzeň",
+"w": "no",
+"la": 49.769711,
+"lo": 13.347496
+},
+{
+"i": "w1237521748",
+"n": "Tatra 15/52",
+"s": "Turistický cíl",
+"o": "Plzeň",
+"w": "yes",
+"la": 49.743172,
+"lo": 13.387895
+},
+{
+"i": "w225133264",
+"n": "Univerzitní knihovna",
+"s": "Knihovna",
+"o": "Plzeň",
+"w": "yes",
+"la": 49.725423,
+"lo": 13.353147
+},
+{
+"i": "w1125877641",
+"n": "Uran",
+"s": "Turistický cíl",
+"o": "Plzeň",
+"web": "http://edu.techmania.cz/cs/katalog/pout-k-planetam/1560/uran",
+"w": "yes",
+"la": 49.752586,
+"lo": 13.41553
+},
+{
+"i": "w1360076116",
+"n": "Venkovní divadlo Habrmannovo nám.",
+"s": "Divadlo",
+"o": "Plzeň",
+"w": "yes",
+"la": 49.757275,
+"lo": 13.419323
+},
+{
+"i": "w1125877636",
+"n": "Venuše",
+"s": "Turistický cíl",
+"o": "Plzeň",
+"web": "http://edu.techmania.cz/cs/katalog/pout-k-planetam/1555/venuse",
+"w": "yes",
+"la": 49.744851,
+"lo": 13.378053
+},
+{
+"i": "n12543293134",
+"n": "Vyhlídka na řeku Berounku",
+"s": "Vyhlídka",
+"o": "Plzeň",
+"w": "no",
+"la": 49.769629,
+"lo": 13.419847
+},
+{
+"i": "n9377450057",
+"n": "Zaniklý lyžařský skokanský můstek",
+"s": "Turistický cíl",
+"o": "Plzeň",
+"w": "no",
+"la": 49.769623,
+"lo": 13.427141
+},
+{
+"i": "w1125877637",
+"n": "Země",
+"s": "Turistický cíl",
+"o": "Plzeň",
+"web": "http://edu.techmania.cz/cs/katalog/pout-k-planetam/1556/zeme",
+"w": "yes",
+"la": 49.744968,
+"lo": 13.376779
+},
+{
+"i": "w81991411",
+"n": "Masné krámy",
+"s": "Turistický cíl",
+"o": "Rokycany",
+"w": "limited",
+"la": 49.743462,
+"lo": 13.595509
+},
+{
+"i": "n2447106998",
+"n": "Pumpa U Fitzů",
+"s": "Turistický cíl",
+"o": "Rokycany",
+"w": "yes",
+"la": 49.741233,
+"lo": 13.59218
+},
+{
+"i": "w81990919",
+"n": "zájezdní hostinec Na Železné",
+"s": "Turistický cíl",
+"o": "Rokycany",
+"w": "yes",
+"la": 49.742671,
+"lo": 13.601633
+},
+{
+"i": "n14235290610",
+"n": "Bývalý Telínský mlýn",
+"s": "Turistický cíl",
+"o": "Smědčice",
+"w": "no",
+"la": 49.814367,
+"lo": 13.517237
+},
+{
+"i": "w1086253212",
+"n": "Svatobor - rozhledna",
+"s": "Vyhlídka",
+"o": "Sušice",
+"web": "http://www.rozhlednasvatobor.cz/",
+"w": "no",
+"la": 49.235536,
+"lo": 13.487546
+},
+{
+"i": "n5237283763",
+"n": "Vysoká",
+"s": "Vyhlídka",
+"o": "Tachov",
+"w": "no",
+"la": 49.796338,
+"lo": 12.61223
+},
+{
+"i": "w1309538052",
+"n": "Želví zahrada",
+"s": "Zoo",
+"o": "Třemešné",
+"web": "https://www.zelvizahrada.cz/",
+"w": "yes",
+"la": 49.631735,
+"lo": 12.724169
+},
+{
+"i": "n13048354052",
+"n": "Jarčina vyhlídka",
+"s": "Vyhlídka",
+"o": "Zahořany",
+"w": "no",
+"la": 49.417155,
+"lo": 13.038214
+},
+{
+"i": "w161119531",
+"n": "Expozice požární ochrany Zbiroh",
+"s": "Muzeum",
+"o": "Zbiroh",
+"web": "https://www.hzscr.cz/expozice-pozarni-ochrany-ve-zbirohu.aspx",
+"w": "yes",
+"la": 49.85795,
+"lo": 13.752795
+},
+{
+"i": "n5350751840",
+"n": "Goethova vyhlídka",
+"s": "Vyhlídka",
+"o": "Černošín",
+"w": "no",
+"la": 49.812418,
+"lo": 12.852277
+},
+{
+"i": "n14158005151",
+"n": "Zaniklý hrad Velký Kouřim",
+"s": "Turistický cíl",
+"o": "Černíkov",
+"w": "no",
+"la": 49.434553,
+"lo": 13.115332
+},
+{
+"i": "n13928862086",
+"n": "Naleziště lesních jahod",
+"s": "Turistický cíl",
+"o": "Česká Kubice",
+"w": "no",
+"la": 49.360152,
+"lo": 12.827041
+},
+{
+"i": "w1030743973",
+"n": "Ždírecká zoo",
+"s": "Zábavní park",
+"o": "Ždírec",
+"web": "https://www.zdireckazoo.cz/",
+"w": "yes",
+"la": 49.545067,
+"lo": 13.571639
+},
+{
+"i": "n13957678714",
+"n": "Rozhledna Pancíř",
+"s": "Vyhlídka",
+"o": "Železná Ruda",
+"w": "no",
+"la": 49.177921,
+"lo": 13.25385
+},
+{
+"i": "n3151679847",
+"n": "Rozhledna Špičák",
+"s": "Vyhlídka",
+"o": "Železná Ruda",
+"w": "no",
+"la": 49.172975,
+"lo": 13.20844
+}
+]

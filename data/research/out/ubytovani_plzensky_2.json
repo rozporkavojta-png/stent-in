@@ -1,0 +1,587 @@
+{
+ "task": "ubytovani_plzensky_2",
+ "kraj": "Plzeňský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n1388674688",
+   "name": "Ibis Hotel Plzeň",
+   "obec": "Plzeň",
+   "lat": 49.725011,
+   "lng": 13.327152,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelibisplzen.cz/cz/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup po celém hotelu.",
+    "pokoj": "Ze 130 pokojů jsou podle webu 3 určené pro osoby se sníženou pohyblivostí (typ Double s manželskou postelí).",
+    "koupelna": "Bezbariérový pokoj má podle webu prostornou koupelnu bez bariér; pokoje mají sprchový kout."
+   },
+   "evidence_quote": "Celý hotel disponuje bezbariérovým přístupem a ze 130 pokojů jsou 3 určené"
+  },
+  {
+   "osm_id": "w171256320",
+   "name": "Rozvoj",
+   "obec": "Klatovy",
+   "lat": 49.396185,
+   "lng": 13.302947,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-rozvoj.cz/rozvoj/ubytovani.asp",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup k hotelu; o pokojích a koupelnách z hlediska přístupnosti nic neuvádí."
+   },
+   "evidence_quote": "K dispozici je bezbarierový přístup k hotelu."
+  },
+  {
+   "osm_id": "w301278281",
+   "name": "Country Saloon",
+   "obec": "Klatovy",
+   "address": "Beňovy 8",
+   "lat": 49.390798,
+   "lng": 13.261947,
+   "category": "ubytovani",
+   "source_url": "https://www.restauraceklatovy.cz/saloonbenovy/ubytovani.asp",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Imobilní hosté se podle webu mohou ubytovat v jednom z pokojů v přízemí.",
+    "koupelna": "Sociální zařízení tohoto pokoje podle webu odpovídá potřebám tělesně postižených."
+   },
+   "evidence_quote": "Imobilní občané se mohou ubytovat v jednom z pokojů v přízemí."
+  },
+  {
+   "osm_id": "n13391100743",
+   "name": "Apartmány A.Ša",
+   "obec": "Kašperské Hory",
+   "lat": 49.142842,
+   "lng": 13.553686,
+   "category": "ubytovani",
+   "source_url": "https://www.penzionasa.cz/ubytovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Apartmán AP 2 (1+1) je podle webu prostorný bezbariérový apartmán v přízemí.",
+    "koupelna": "Bezbariérové sociální zařízení s WC a sprchou (AP 2).",
+    "jine": "Kuchyň v AP 2 je podle webu uzpůsobená pro vozíčkáře a méně pohyblivé klienty."
+   },
+   "evidence_quote": "Prostorný bezbariérový apartmán je v přízemí."
+  },
+  {
+   "osm_id": "w253492699",
+   "name": "Orea Resort Horizont",
+   "obec": "Železná Ruda",
+   "address": "Pancíř 126",
+   "lat": 49.167345,
+   "lng": 13.244777,
+   "category": "ubytovani",
+   "source_url": "https://www.orea.cz/resort-horizont/faq",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Ve FAQ hotel uvádí, že je bezbariérový.",
+    "pokoj": "Hotel má podle FAQ 2 bezbariérové pokoje."
+   },
+   "evidence_quote": "Ano, hotel je bezbariérový a disponuje 2 bezbariérovými pokoji."
+  },
+  {
+   "osm_id": "n6235964957",
+   "name": "Hotel Rango",
+   "obec": "Plzeň",
+   "address": "Pražská 89/10",
+   "lat": 49.747844,
+   "lng": 13.3796,
+   "category": "ubytovani",
+   "source_url": "https://www.rango.cz/hotel/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Hotel je podle FAQ v prvním patře historické budovy, pokoje jsou přístupné pouze po schodech.",
+    "vytah": "Budova je podle webu bez výtahu."
+   },
+   "evidence_quote": "Budova je bez výtahu a pokoje jsou přístupné pouze po schodech."
+  },
+  {
+   "osm_id": "n4349769678",
+   "name": "Lázeňský hotel Jirásek",
+   "obec": "Konstantinovy Lázně",
+   "address": "Plzeňská 79, 349 52 Konstantinovy Lázně",
+   "lat": 49.883855,
+   "lng": 12.976753,
+   "category": "ubytovani",
+   "source_url": "https://www.konstantinovylazne.cz/cz/ubytovani/lazensky-hotel-jirasek/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web lázní uvádí bezbariérový přístup (stejný štítek má i Kudy z nudy).",
+    "vytah": "V sekci Přístup je uveden výtah.",
+    "pokoj": "Dvoulůžkový pokoj Standard TEP je označen jako bezbariérový (21 m², sprcha, 2 jednolůžka).",
+    "parkovani": "Parkování u hotelu za poplatek; o místech pro ZTP web nic neuvádí."
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérového pokoje Standard TEP",
+     "hodnota": 21,
+     "jednotka": "m2"
+    }
+   ],
+   "evidence_quote": "Přístup bezbariérový přístup výtah"
+  },
+  {
+   "osm_id": "n2527159350",
+   "name": "Lázeňský hotel Löwenstein garni",
+   "obec": "Konstantinovy Lázně",
+   "address": "Plzeňská 47, 349 52 Konstantinovy Lázně",
+   "lat": 49.879674,
+   "lng": 12.974723,
+   "category": "ubytovani",
+   "source_url": "https://www.konstantinovylazne.cz/cz/ubytovani/lazensky-hotel-loewenstein-garni/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web lázní uvádí bezbariérový přístup (štítek i na Kudy z nudy).",
+    "vytah": "V sekci Přístup je uveden výtah.",
+    "pokoj": "Apartmá Standard TP (50 m², 4 osoby, sprcha) je označeno jako bezbariérové.",
+    "parkovani": "Parkování zdarma u hotelu; o místech pro ZTP web nic neuvádí."
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérového apartmá Standard TP",
+     "hodnota": 50,
+     "jednotka": "m2"
+    }
+   ],
+   "evidence_quote": "Přístup bezbariérový přístup výtah Parkování zdarma u hotelu"
+  },
+  {
+   "osm_id": "n443894747",
+   "name": "Lázeňský hotel Prusík",
+   "obec": "Konstantinovy Lázně",
+   "lat": 49.881222,
+   "lng": 12.977447,
+   "category": "ubytovani",
+   "source_url": "https://www.konstantinovylazne.cz/cz/ubytovani/lazensky-hotel-prusik/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Web lázní uvádí u hotelu bezbariérový přístup.",
+    "vytah": "V sekci Přístup je uveden výtah.",
+    "jine": "Konkrétní bezbariérový pokoj se na prohledaných stránkách neuvádí."
+   },
+   "evidence_quote": "Přístup bezbariérový přístup výtah"
+  },
+  {
+   "osm_id": "w1052832265",
+   "name": "Hotel Zlatá včela",
+   "obec": "Domažlice",
+   "address": "nám. Míru 131, 344 01 Domažlice",
+   "lat": 49.440505,
+   "lng": 12.92946,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hotel-zlata-vcela-v-domazlicich",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Podle popisu na Kudy z nudy mají pokoje bezbariérový přístup; objekt má štítek Bezbariérový přístup.",
+    "jine": "Na webu hotelu (zlatavcela.eu) skript klíčová slova nenašel."
+   },
+   "evidence_quote": "Pokoje hotelu jsou vybaveny ... a mají bezbariérový přístup."
+  },
+  {
+   "osm_id": "w253650675",
+   "name": "OREA Hotel Špičák Šumava",
+   "obec": "Železná Ruda",
+   "address": "Špičák 5, 340 04 Železná Ruda",
+   "lat": 49.170278,
+   "lng": 13.235771,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/orea-hotel-spicak",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Kudy z nudy uvádí u hotelu jen štítek Bezbariérový přístup v kategorii bezbariérové ubytování; podrobnosti chybí, na webu hotelu (hotelspicak.cz) skript nic nenašel."
+   },
+   "evidence_quote": "Certifikace a další informace ... Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n1448230996",
+   "name": "Penzion U svaté Barbory",
+   "obec": "Manětín",
+   "address": "Manětín 214, 331 62 Manětín",
+   "lat": 49.993325,
+   "lng": 13.243494,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/penzion-u-svate-barbory-manetin",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Jeden z 9 dvoulůžkových pokojů je podle popisu uzpůsobený pro handicapované osoby (s možností přistýlek)."
+   },
+   "evidence_quote": "Jeden pokoj je uzpůsobený pro handicapované osoby s možností přistýlek."
+  },
+  {
+   "osm_id": "n2511368036",
+   "name": "Sport Centrum Žinkovy (Tělovýchovné středisko)",
+   "obec": "Žinkovy",
+   "address": "Žinkovy čp. 135, 335 54 Žinkovy",
+   "lat": 49.482684,
+   "lng": 13.505084,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/telovychovne-stredisko",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Kudy z nudy uvádí u objektu jen štítek Bezbariérový přístup v kategorii bezbariérové ubytování; na webu sportcentrumzinkovy.cz skript nic nenašel."
+   },
+   "evidence_quote": "Certifikace a další informace Za každého počasí Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n275255493",
+   "name": "Astory Hotel",
+   "obec": "Plzeň",
+   "address": "Nádražní 26, 301 00 Plzeň",
+   "lat": 49.744779,
+   "lng": 13.386728,
+   "category": "ubytovani",
+   "source_url": "https://astory.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel nabízí typ pokoje Jednolůžkový hendikep – bezbariérový jednolůžkový pokoj."
+   },
+   "evidence_quote": "Bezbarierový jednolůžkový pokoj navržený s ohledem na maximální pohodlí a snadnou dostupnost."
+  },
+  {
+   "osm_id": "n1448400937",
+   "name": "Penzion Barvička",
+   "obec": "Třemošná",
+   "address": "Ledecká 135, Záluží, 330 11 Třemošná",
+   "lat": 49.816984,
+   "lng": 13.35618,
+   "category": "ubytovani",
+   "source_url": "https://www.barvicka.eu/pokoj1.php",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "U pokoje 1 web uvádí, že celá jednotka je v přízemí a je vhodná pro vozíčkáře.",
+    "jine": "V přehledu vybavení na stránce kontaktů je uvedeno Bezbariérové."
+   },
+   "evidence_quote": "Celá jednotka se nachází v přízemí Celá jednotka je vhodná pro vozíčkáře"
+  },
+  {
+   "osm_id": "w84792792",
+   "name": "PRIMAVERA Hotel & Congress centre",
+   "obec": "Plzeň",
+   "address": "Nepomucká 1058/128, 326 00 Plzeň",
+   "lat": 49.710441,
+   "lng": 13.412646,
+   "category": "ubytovani",
+   "source_url": "https://www.primaverahotel.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Pro hendikepované hosty má hotel podle webu 2 speciálně upravené jedno- nebo dvoulůžkové pokoje (kategorie Standard i Superior First Class)."
+   },
+   "evidence_quote": "Handicapovaným hostům jsme připraveni poskytnout ubytování ve 2 speciálně upravených"
+  },
+  {
+   "osm_id": "n13970695318",
+   "name": "Hotel Purkmistr",
+   "obec": "Plzeň",
+   "address": "Selská náves 21/2, 326 00 Plzeň-Černice",
+   "lat": 49.698518,
+   "lng": 13.414082,
+   "category": "ubytovani",
+   "source_url": "https://www.purkmistr.cz/hotel/rooms",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel nabízí jednolůžkový bezbariérový pokoj (24 m², max. 1 osoba)."
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérového pokoje",
+     "hodnota": 24,
+     "jednotka": "m2"
+    }
+   ],
+   "evidence_quote": "Jednolůžkový bezbariérový pokoj Rozloha pokoje: 24 m2"
+  },
+  {
+   "osm_id": "w55925394",
+   "name": "Parkhotel Congress Center Plzeň",
+   "obec": "Plzeň",
+   "address": "U Borského parku 31, 301 00 Plzeň",
+   "lat": 49.720921,
+   "lng": 13.370468,
+   "category": "ubytovani",
+   "source_url": "https://parkhotel-czech.eu/handicap-room",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel má typ pokoje Handicap room – dvoulůžkový (manželská nebo oddělené postele), klimatizovaný.",
+    "koupelna": "Vlastní sociální zařízení se sprchovým koutem přizpůsobené pro fyzicky hendikepované."
+   },
+   "evidence_quote": "s vlastním sociálním zařízením a sprchovým koutem přizpůsobený pro fyzicky hendikepované"
+  },
+  {
+   "osm_id": "w992548134",
+   "name": "Hotel Prokopávka",
+   "obec": "Plzeň",
+   "address": "K Prokopávce 45/1473, 323 00 Plzeň",
+   "lat": 49.7816,
+   "lng": 13.388078,
+   "category": "ubytovani",
+   "source_url": "https://www.prokopavkaplzen.cz/cz/hotel/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel nabízí dvoulůžkový a třílůžkový bezbariérový pokoj uzpůsobený osobám se sníženou pohyblivostí; ubytovací řád zmiňuje bezbariérové pokoje mezi 46 pokoji."
+   },
+   "evidence_quote": "Bezbariérový pokoj uzpůsobený osobám se sníženou pohyblivostí. Plně vybavený a prostorný."
+  },
+  {
+   "osm_id": "w47661574",
+   "name": "Hotel Trend",
+   "obec": "Plzeň",
+   "address": "Kovářská 13a, 301 00 Plzeň",
+   "lat": 49.747192,
+   "lng": 13.3694,
+   "category": "ubytovani",
+   "source_url": "https://www.trend-hotel.cz/cs/pokoje",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hotel je podle webu vybaven bezbariérovým přístupem.",
+    "pokoj": "Hotel má dvoulůžkový pokoj pro handicapované osoby."
+   },
+   "evidence_quote": "Hotel je vybaven bezbariérovým přístupem a disponuje dvoulůžkovým pokojem pro handicapované osoby."
+  },
+  {
+   "osm_id": "n5581089430",
+   "name": "Hotel U Pramenů",
+   "obec": "Plzeň",
+   "lat": 49.759594,
+   "lng": 13.38239,
+   "category": "ubytovani",
+   "source_url": "https://www.upramenu.cz/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Jeden ze 16 standardních dvoulůžkových pokojů je podle webu bezbariérový."
+   },
+   "evidence_quote": "Jeden ze standardních pokojů je bezbariérový."
+  },
+  {
+   "osm_id": "n12171360129",
+   "name": "Penzion Hradecký dvůr",
+   "obec": "Plzeň",
+   "lat": 49.757665,
+   "lng": 13.458555,
+   "category": "ubytovani",
+   "source_url": "https://www.hradecky-dvur.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "koupelna": "Podle webu jsou všechny koupelny řešeny jako bezbariérové.",
+    "parkovani": "Parkování v areálu penzionu; o místech pro ZTP web nic neuvádí.",
+    "jine": "O vstupu a pokojích z hlediska přístupnosti web nic dalšího neuvádí."
+   },
+   "evidence_quote": "Všechny koupelny jsou řešeny jako bezbariérové."
+  },
+  {
+   "osm_id": "n296768468",
+   "name": "Penzion Úslavská 22",
+   "obec": "Plzeň",
+   "address": "Úslavská 22, Plzeň",
+   "lat": 49.741566,
+   "lng": 13.391547,
+   "category": "ubytovani",
+   "source_url": "https://www.uslavska.cz/o-nas",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Penzion podle webu není bezbariérový.",
+    "vytah": "V domě není výtah."
+   },
+   "evidence_quote": "Penzion není bezbariérový , v domě není výtah."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w1317061712",
+   "name": "Autokemp Babylon",
+   "url": "https://www.autokempbabylon.cz/",
+   "reason": "web o přístupnosti nic neuvádí (v ceníku jen snížená cena pro držitele ZTP/TP)"
+  },
+  {
+   "osm_id": "w1052840702",
+   "name": "U Chodského Hradu",
+   "reason": "bez webu ve vstupu"
+  },
+  {
+   "osm_id": "w1052840704",
+   "name": "U Chodského Hradu",
+   "reason": "bez webu ve vstupu"
+  },
+  {
+   "osm_id": "w529613552",
+   "name": "Diana Autokemp Ejpovice",
+   "url": "http://www.autokemp-ejpovice.cz/index.html",
+   "reason": "doména se nepřekládá (web nefunguje)"
+  },
+  {
+   "osm_id": "w290229595",
+   "name": "Penzion Starý mlýn",
+   "url": "http://starymlyn.cz",
+   "reason": "web (přesměrován na stitarskymlyn.cz) uvádí bezbariérový vstup jen u doporučeného fitness-wellness aquacentra, o penzionu nic"
+  },
+  {
+   "osm_id": "n12568238941",
+   "name": "Pension Janka",
+   "url": "https://www.pensionjanka.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w395731294",
+   "name": "Rozvoj",
+   "url": "https://www.hotel-rozvoj.cz/rozvoj/",
+   "reason": "druhý OSM objekt se stejným webem; údaje zapsány u w171256320"
+  },
+  {
+   "osm_id": "n4362067163",
+   "name": "Autokemp Nýrsko",
+   "url": "https://www.autokemp-nyrsko.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1985373020",
+   "name": "Hotel Zach",
+   "reason": "bez webu ve vstupu"
+  },
+  {
+   "osm_id": "w1529933496",
+   "name": "Stellplatz Němčovice",
+   "url": "https://www.nemcovice.cz/aktualne/aktuality/stellplatz-nemcovice-193cs.html",
+   "reason": "stránka obce nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1327710150",
+   "name": "Hotel Rango",
+   "reason": "bez webu ve vstupu; stejný název jako n6235964957 (údaje zapsány tam)"
+  },
+  {
+   "osm_id": "w40808299",
+   "name": "Vienna House Easy by Wyndham Pilsen",
+   "url": "https://www.wyndhamhotels.com/vienna-house/pilsen-czech-republic/vienna-house-easy-pilsen/overview/",
+   "reason": "web se načítá dynamicky; v textu jen obecný filtr bezbariérových pokojů rezervačního systému, konkrétní údaj o hotelu nenalezen"
+  },
+  {
+   "osm_id": "w178495719",
+   "name": "Chata U Jakuba",
+   "url": "http://www.sumavanet.cz/",
+   "reason": "odkaz vede na obecný portál sumavanet.cz, objekt ani údaje o přístupnosti nenalezeny"
+  },
+  {
+   "osm_id": "n4392724288",
+   "name": "Penzion U Michala",
+   "url": "https://www.prasilskyraj.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3710587199",
+   "name": "No. 1",
+   "url": "http://no-1.cz/",
+   "reason": "doména se nepřekládá (web nefunguje)"
+  },
+  {
+   "osm_id": "w1502923346",
+   "name": "Chata Liščí Hora",
+   "reason": "bez webu ve vstupu"
+  },
+  {
+   "osm_id": "w209274588",
+   "name": "Apartmánový dům Americká",
+   "url": "https://hofman-hotels.cz/apartmany-stankov/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3834656257",
+   "name": "Na Mlýnské",
+   "url": "https://www.namlynske.cz/",
+   "reason": "web neodpovídá (timeout, 2 pokusy)"
+  },
+  {
+   "osm_id": "n11466742345",
+   "name": "Pension Kalista",
+   "url": "http://www.pensionkalista.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3412991096",
+   "name": "Hotel Magnetit",
+   "url": "https://www.magnetithotel.cz/",
+   "reason": "prošlo se 16 stránek (pokoje, FAQ), nic o přístupnosti"
+  },
+  {
+   "osm_id": "n2517746764",
+   "name": "Hotel Ostrý",
+   "reason": "bez webu ve vstupu"
+  },
+  {
+   "osm_id": "n10606720703",
+   "name": "Restaurant Javor",
+   "url": "https://www.restaurantjavor.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "name": "Hotel York Plzeň",
+   "url": "http://www.hotel-york.cz/",
+   "reason": "nový kandidát: web uvádí bezbariérový přístup jen do restaurace a salonku, o pokojích nic – nezapsáno"
+  },
+  {
+   "name": "Hotel Victoria Plzeň",
+   "url": "https://www.hotel-victoria.cz/cs/ubytovani-v-hotelu",
+   "reason": "nový kandidát: web uvádí jen výtah v objektu – nezapsáno"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů ubytování z OSM (vstup ubytovani_plzensky.json)",
+   "url": "data/research/inputs/ubytovani_plzensky.json",
+   "note": "28 záznamů, 21 s webem (20 unikátních); u každého webu úvodní stránka + 8–15 podstránek, prohledáno skriptem podle klíčových slov"
+  },
+  {
+   "title": "Kudy z nudy – Bezbariérové ubytování, Plzeňský kraj (CzechTourism)",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-ubytovani?region=plzensky-kraj",
+   "note": "6 objektů, prošly se všechny detaily"
+  },
+  {
+   "title": "Plzeň TURISMUS – přehled ubytování (visitplzen.eu)",
+   "url": "https://www.visitplzen.eu/prakticke-informace/ubytovani/",
+   "note": "oficiální městský turistický portál; prošlo se ~60 webů ubytování, na které odkazuje"
+  },
+  {
+   "title": "Konstantinovy Lázně – stránky lázeňských hotelů",
+   "url": "https://www.konstantinovylazne.cz/cz/ubytovani/",
+   "note": "Jirásek, Löwenstein, Prusík"
+  },
+  {
+   "title": "OREA Resort Horizont – FAQ",
+   "url": "https://www.orea.cz/resort-horizont/faq",
+   "note": "resorthorizont.cz přesměrovává na orea.cz"
+  },
+  {
+   "title": "Nominatim (OpenStreetMap)",
+   "url": "https://nominatim.openstreetmap.org/",
+   "note": "geokódování 17 nových míst"
+  },
+  {
+   "title": "Turistů ráj / visitplzenskykraj.eu (turistický portál Plzeňského kraje)",
+   "url": "https://www.visitplzenskykraj.eu/",
+   "note": "zkontrolováno; přehled ubytování s údaji o bezbariérovosti nenalezen"
+  }
+ ]
+}

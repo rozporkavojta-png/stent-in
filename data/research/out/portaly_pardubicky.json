@@ -1,0 +1,476 @@
+{
+  "task": "portaly_pardubicky",
+  "kraj": "Pardubický kraj",
+  "checked_date": "2026-10-05",
+  "places": [
+    {
+      "osm_id": null,
+      "name": "Okružní trasa pro vozíčkáře Podhůra (od rozhledny Bára)",
+      "obec": "Chrudim",
+      "address": "Podhůra, 538 21 Chrudim",
+      "lat": 49.91629,
+      "lng": 15.780657,
+      "category": "priroda",
+      "source_url": "https://www.kudyznudy.cz/aktivity/trasa-pro-vozickare-na-podhure-u-chrudimi",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "wc": "U rozhledny Bára je bezbariérové WC v obslužném domku, opatřené eurozámkem; klíč má obsluha občerstvení.",
+        "parkovani": "Parkoviště u Komety (úvodní tabule); auta s označením ZTP smějí vjet k rozhledně Bára a parkovat v zázemí obslužného domku, max. 5 vozidel.",
+        "jine": "Značený okruh 4,2 km (s propojkou 5 km) po zpevněných lesních a asfaltových cestách, převýšení 105 m; středně těžký, doporučen zdatným vozíčkářům s doprovodem; první úsek je strmý; odpočívadla s lavičkami; jízda po směru hodinových ručiček, na vlastní nebezpečí. Stejný okruh popisuje i vychodni-cechy.info."
+      },
+      "measurements": [
+        {
+          "co": "délka značeného okruhu",
+          "hodnota": 4200,
+          "jednotka": "m"
+        },
+        {
+          "co": "převýšení na trase",
+          "hodnota": 105,
+          "jednotka": "m"
+        },
+        {
+          "co": "max. počet vozidel ZTP u rozhledny",
+          "hodnota": 5,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "Trasa se počítá mezi středně těžké a doporučuje se zdatným vozíčkářům s doprovodem."
+    },
+    {
+      "osm_id": null,
+      "name": "Bezbariérová trasa kolem lanškrounských rybníků",
+      "obec": "Lanškroun",
+      "address": "start u restaurace Koupák, T. G. Masaryka 416, Lanškroun",
+      "lat": 49.91954,
+      "lng": 16.589172,
+      "category": "priroda",
+      "source_url": "https://www.vychodni-cechy.info/tipy-na-vylet/902_1053167_bezbarierova-trasa-kolem-lanskrounskych-rybniku",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "wc": "Bezbariérové WC je v budově restaurace Koupák na začátku trasy.",
+        "parkovani": "U restaurace Koupák je parkoviště.",
+        "jine": "Vozíčkářská trasa s minimálním převýšením, střední obtížnost; vede podél Dlouhého a Olšového rybníka k Eduardovu prameni a zpět; pozor na cyklisty."
+      },
+      "evidence_quote": "Trasa s minimálním převýšení střední obtížnosti."
+    },
+    {
+      "osm_id": null,
+      "name": "Regionální muzeum v Chrudimi",
+      "obec": "Chrudim",
+      "address": "Široká 86, Chrudim",
+      "lat": 49.952794,
+      "lng": 15.791932,
+      "category": "kultura",
+      "source_url": "https://www.vychodni-cechy.info/tipy-na-vylet/902_148_chrudim-i-pro-handicapovane-den-straveny-v-chrudimi",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Ke vstupu slouží plošina ve druhém vchodě do muzea.",
+        "vytah": "Výtah vede až do 2. patra.",
+        "jine": "Pro handicapované jsou přístupné aktuální výstavy i všechny stálé expozice."
+      },
+      "evidence_quote": "Ke vstupu slouží plošina umístěná ve druhém vchodě do Muzea"
+    },
+    {
+      "osm_id": null,
+      "name": "Muzeum loutkářských kultur v Chrudimi",
+      "obec": "Chrudim",
+      "address": "Břetislavova 74, Chrudim",
+      "lat": 49.950518,
+      "lng": 15.795208,
+      "category": "kultura",
+      "source_url": "https://www.vychodni-cechy.info/tipy-na-vylet/902_148_chrudim-i-pro-handicapovane-den-straveny-v-chrudimi",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vytah": "Koncem roku 2009 byl vybudován výtah.",
+        "jine": "Výtah umožňuje bezbariérový přístup do celého objektu muzea."
+      },
+      "evidence_quote": "výtah a umožnil tak bezbariérový přístup do celého objektu muzea"
+    },
+    {
+      "osm_id": null,
+      "name": "Muzeum barokních soch (kostel sv. Josefa, kapucínský klášter)",
+      "obec": "Chrudim",
+      "address": "Školní náměstí, Chrudim",
+      "lat": 49.950979,
+      "lng": 15.797555,
+      "category": "kultura",
+      "source_url": "https://www.vychodni-cechy.info/chrudim/13_42107_kapucinsky-klaster-s-kostelem-sv-josefa-muzeum-baroknich-soch/",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "wc": "Mezi službami objektu portál uvádí bezbariérové WC.",
+        "jine": "Zařazeno do programu „Chrudim i pro handicapované“ na vychodni-cechy.info; přístupnost vstupu a expozice portál nepopisuje."
+      },
+      "evidence_quote": "Služby akce na objednávku, bezbariérové WC"
+    },
+    {
+      "osm_id": null,
+      "name": "Trasa pro vozíčkáře k Černému Nadýmači (start u restaurace Cikánka)",
+      "obec": "Břehy",
+      "address": "Obránců míru 53, Břehy",
+      "lat": 50.058168,
+      "lng": 15.59038,
+      "category": "priroda",
+      "source_url": "https://www.vychodni-cechy.info/tipy-na-vylet/902_1006293_k-cernemu-nadymaci",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "parkovani": "Trasa začíná na parkovišti u restaurace Cikánka.",
+        "jine": "Červeně značená vozíčkářská trasa (cca 6–6,5 km) po zpevněných lesních cestách a hrázi; odpočívadlo u rozcestí Černý Nadýmač; od rozcestí Na Hořičkách těžší úsek se zpevněným povrchem místy prorostlým trávou. Stejnou trasu popisuje i kudyznudy.cz."
+      },
+      "measurements": [
+        {
+          "co": "délka okruhu (kudyznudy.cz)",
+          "hodnota": 6.5,
+          "jednotka": "km"
+        }
+      ],
+      "evidence_quote": "Zde začíná těžší úsek trasy se zpevněným povrchem, ale místy prorostlým trávou."
+    },
+    {
+      "osm_id": null,
+      "name": "Prohlídkový okruh historickým centrem Litomyšle (od domu U Rytířů)",
+      "obec": "Litomyšl",
+      "address": "Smetanovo náměstí 110, Litomyšl",
+      "lat": 49.870526,
+      "lng": 16.311484,
+      "category": "pamatky",
+      "source_url": "https://www.vychodni-cechy.info/tipy-na-vylet/902_150_poznejte-litomysl",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "parkovani": "Parkování s nálepkou ZTP je v oblasti města včetně náměstí zdarma.",
+        "jine": "Program pro vozíčkáře; kvůli rozličnému terénu se doporučuje doprovod; v Jiráskově ulici je prudší stoupání cca 250 m. Kudy z nudy uvádí okruh cca 1,5 km pod hlavičkou „Cestování bez bariér“, mapka je v letáku infocentra."
+      },
+      "measurements": [
+        {
+          "co": "úsek s prudším stoupáním (Jiráskova ul.)",
+          "hodnota": 250,
+          "jednotka": "m"
+        }
+      ],
+      "evidence_quote": "Vzhledem k rozličnosti terénu doporučujeme doprovod."
+    },
+    {
+      "osm_id": null,
+      "name": "Zámek Litomyšl",
+      "obec": "Litomyšl",
+      "address": "Jiráskova 93, Litomyšl",
+      "lat": 49.873447,
+      "lng": 16.312614,
+      "category": "pamatky",
+      "source_url": "https://www.kudyznudy.cz/aktivity/zamek-litomysl-renesancni-zamek-s-unikatni-sgraf",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Pokladna je bezbariérová; areál, exteriéry, krajinářský park a arkádové nádvoří jsou přístupné s doporučenou asistencí.",
+        "wc": "Toalety bezbariérové nejsou.",
+        "vytah": "Po ohlášení aspoň 2 dny předem lze vozík s vlastním asistentem vyvézt plošinou po východním schodišti do patra; pokoje jsou pak bez bariér."
+      },
+      "measurements": [
+        {
+          "co": "nutné ohlášení plošiny předem",
+          "hodnota": 2,
+          "jednotka": "dny"
+        }
+      ],
+      "evidence_quote": "Pokladna zámku je bezbariérová, toalety bezbariérové nejsou."
+    },
+    {
+      "osm_id": null,
+      "name": "Trasa pro vozíčkáře ve svitavském lese Brand (od Plechárny)",
+      "obec": "Svitavy",
+      "address": "U Plechárny, 568 02 Svitavy",
+      "lat": 49.770925,
+      "lng": 16.455082,
+      "category": "priroda",
+      "source_url": "https://www.vychodni-cechy.info/tipy-na-vylet/902_580589_brand-za-svitavskym-rybnikem-rosnicka",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "jine": "Středně náročná (červená) trasa 12 km, lze zkrátit na 7 nebo 2,5 km (kudyznudy.cz uvádí 2,6 km); určena zdatným vozíčkářům, vozíčkářům s doprovodem, handbikům a elektrickým vozíkům; lavičky a informační panely."
+      },
+      "measurements": [
+        {
+          "co": "max. podélné stoupání",
+          "hodnota": 6,
+          "jednotka": "%"
+        },
+        {
+          "co": "stoupání v krátkých úsecích",
+          "hodnota": 12,
+          "jednotka": "%"
+        },
+        {
+          "co": "max. příčný sklon",
+          "hodnota": 4,
+          "jednotka": "%"
+        },
+        {
+          "co": "max. výška stupně",
+          "hodnota": 5,
+          "jednotka": "cm"
+        },
+        {
+          "co": "délka trasy",
+          "hodnota": 12,
+          "jednotka": "km"
+        }
+      ],
+      "evidence_quote": "Stoupání tras je do 6 %, v krátkých úsecích až 12 %"
+    },
+    {
+      "osm_id": null,
+      "name": "Výlet na Severomoravskou chatu (start Horní Orlice)",
+      "obec": "Červená Voda",
+      "address": "Horní Orlice",
+      "lat": 50.064599,
+      "lng": 16.79777,
+      "category": "priroda",
+      "source_url": "https://www.vychodni-cechy.info/tipy-na-vylet/902_764074_vylet-na-severomoravskou-chatu",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "jine": "Portál trasu uvádí jako nenáročnou procházku vhodnou i pro vozíčkáře; vede po cyklostezce č. 4077, poslední úsek po zpevněné cestě; podle výškového profilu je však 15,5 km a 838 m stoupání. Severomoravská chata sama leží v Olomouckém kraji."
+      },
+      "measurements": [
+        {
+          "co": "délka trasy",
+          "hodnota": 15.5,
+          "jednotka": "km"
+        },
+        {
+          "co": "celkové stoupání (údaj portálu)",
+          "hodnota": 838,
+          "jednotka": "m"
+        }
+      ],
+      "evidence_quote": "Nenáročná procházka přírodou vhodná pro rodiny i vozíčkáře."
+    },
+    {
+      "osm_id": null,
+      "name": "Arboretum a zámek Žampach",
+      "obec": "Žampach",
+      "address": "Žampach 1",
+      "lat": 50.039441,
+      "lng": 16.431068,
+      "category": "priroda",
+      "source_url": "https://www.vychodni-cechy.info/tipy-na-vylet/902_988836_arboretum-zampach",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Bezbariérové informační centrum; u vchodu zvonek na personál; kaple a zimní zahrada přístupné po domluvě v infocentru.",
+        "wc": "Bezbariérové WC po cestě do zimní zahrady, označené, dveře s madlem otevírané ven.",
+        "parkovani": "Vyhrazené stání ZTP není; po domluvě lze parkovat uvnitř objektu na neoznačeném, ale uzpůsobeném místě.",
+        "jine": "Cesty v dolním parku bezbariérové (zámková dlažba, asfalt, dost široké); horní park hůře sjízdný; doporučen doprovod asistenta."
+      },
+      "evidence_quote": "Cesty v dolním parku jsou bezbariérové, terén je pokryt zámkovou dlažbou nebo asfaltovou cestou"
+    },
+    {
+      "osm_id": null,
+      "name": "Památník Zámeček Pardubice",
+      "obec": "Pardubice",
+      "address": "Průmyslová 558, Pardubice",
+      "lat": 50.027515,
+      "lng": 15.808187,
+      "category": "pamatky",
+      "source_url": "https://www.kudyznudy.cz/aktivity/pamatnik-zamecek-v-pardubicich",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Vstup do památníku i vnitřní expozice jsou bezbariérové už od parkoviště; venku bezbariérový přístup k pomníku.",
+        "wc": "Bezbariérová toaleta a přebalovací pult."
+      },
+      "evidence_quote": "Vstup do památníku i vnitřní část expozice jsou bezbariérové, a to už od parkoviště."
+    },
+    {
+      "osm_id": null,
+      "name": "Vzdělávací centrum Planeta Hlinsko",
+      "obec": "Hlinsko",
+      "address": "Prošvicova 1811, Hlinsko",
+      "lat": 49.767121,
+      "lng": 15.91876,
+      "category": "kultura",
+      "source_url": "https://www.kudyznudy.cz/aktivity/planeta-hlinsko",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Expozice je ve 3. a 4. nadzemním podlaží.",
+        "vytah": "Výtah pro imobilní osoby; přivolává se telefonátem na recepci.",
+        "jine": "Bezbariérově jsou přístupné téměř všechny expozice."
+      },
+      "evidence_quote": "Součástí budovy je i výtah pro imobilní osoby"
+    },
+    {
+      "osm_id": null,
+      "name": "Muzeum starých strojů a technologií Žamberk",
+      "obec": "Žamberk",
+      "address": "Betlém 506, Žamberk",
+      "lat": 50.095794,
+      "lng": 16.458655,
+      "category": "kultura",
+      "source_url": "https://www.kudyznudy.cz/aktivity/muzeum-starych-stroju-zamberk",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "jine": "Kudy z nudy uvádí u místa značku „Bezbariérový přístup“ a je zařazeno do článku Cestování bez bariér; podrobnosti neuvádí. Expozice přístupné při akcích nebo po telefonické domluvě."
+      },
+      "evidence_quote": "Certifikace a další informace Vhodné pro děti Vhodné pro dospělé Bezbariérový přístup"
+    },
+    {
+      "osm_id": null,
+      "name": "Švýcárna – Muzeum starokladrubského koně",
+      "obec": "Slatiňany",
+      "address": "Švýcárna, Slatiňany",
+      "lat": 49.913577,
+      "lng": 15.800539,
+      "category": "kultura",
+      "source_url": "https://www.kudyznudy.cz/aktivity/muzeum-starokladrubskeho-kone-ve-slatinanech",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Celý objekt muzea je bezbariérový.",
+        "wc": "WC je bezbariérové.",
+        "parkovani": "Parkoviště u zámku, kde jsou pro vozíčkáře vyhrazena 2–3 místa.",
+        "jine": "Švýcárna je součástí bezbariérové trasy KČT v lesích Podhůra u Slatiňan (4,5 km, ↑40 m)."
+      },
+      "measurements": [
+        {
+          "co": "vyhrazená místa pro vozíčkáře u zámku",
+          "hodnota": 3,
+          "jednotka": "ks (uvedeno 2–3)"
+        }
+      ],
+      "evidence_quote": "Celý objekt muzea je zcela bezbariérový, včetně WC."
+    },
+    {
+      "osm_id": null,
+      "name": "Naučná stezka Viléma z Pernštejna",
+      "obec": "Pardubice",
+      "address": "centrum Pardubic",
+      "lat": 50.03848,
+      "lng": 15.779275,
+      "category": "pamatky",
+      "source_url": "https://www.kudyznudy.cz/aktivity/stezka-vilema-z-pernstejna-v-pardubicich",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "jine": "Průchod stezkou je bez bariér, vhodný pro osoby s tělesným postižením i kočárky; tabule mají základní informace v Braillově písmu. Souřadnice = Pernštýnské náměstí (stezka vede centrem)."
+      },
+      "evidence_quote": "Průchod stezkou je bez bariér"
+    },
+    {
+      "osm_id": null,
+      "name": "Zámek Slatiňany (Hipologické muzeum)",
+      "obec": "Slatiňany",
+      "address": "Zámecký park 1, Slatiňany",
+      "lat": 49.919277,
+      "lng": 15.810909,
+      "category": "pamatky",
+      "source_url": "https://www.kudyznudy.cz/aktivity/hippologicke-muzeum-ve-slatinanech",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Bezbariérová pokladna; areál zámku a zahrada přístupné s dopomocí.",
+        "wc": "Bezbariérové toalety.",
+        "parkovani": "Vlastní parkoviště zámek nemá; na městském parkovišti jsou vyhrazená stání; od parkoviště stoupá stezka, může být nutná asistence."
+      },
+      "evidence_quote": "Od parkoviště vede stoupající stezka, kde může být nutná asistence."
+    },
+    {
+      "osm_id": null,
+      "name": "Hrad Svojanov",
+      "obec": "Svojanov",
+      "address": "Svojanov 1",
+      "lat": 49.628,
+      "lng": 16.409694,
+      "category": "pamatky",
+      "source_url": "https://www.kudyznudy.cz/aktivity/hrad-svojanov",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Pro návštěvníky s omezením pohybu je schodolez na trasu A, nutno domluvit předem; vstup do restaurace je bezbariérový.",
+        "wc": "Bezbariérové WC.",
+        "parkovani": "Zdravotně postiženým lze rezervovat místo na parkovišti v předhradí u hradu.",
+        "jine": "Služby jsou zdarma, doporučeno objednat předem."
+      },
+      "evidence_quote": "hrad k dispozici schodolez , který umožňuje absolvovat trasu A"
+    }
+  ],
+  "not_found": [
+    {
+      "name": "Rozhledna Bára na Čertově skalce",
+      "url": "https://www.vychodni-cechy.info/chrudim/13_10154_rozhledna-bara-na-certove-skalce/",
+      "reason": "už prošlé v cile_pardubicky.json (not_found); portál nově uvádí bezbariérové WC – údaj převzat do záznamu Okružní trasa Podhůra"
+    },
+    {
+      "name": "Buňkov (autokemp, Břehy)",
+      "url": "https://www.vychodni-cechy.info/brehy/3_22025_bunkov/",
+      "reason": "už prošlé v ubytovani_pardubicky_2.json (not_found); portál uvádí 8 bezbariérových pokojů, bezbariérové WC a vozík pro koupání – nezdvojeno, doporučuji doplnit do ubytovani_pardubicky_2"
+    },
+    {
+      "name": "Kočičí hrádek, Venkovní tělocvična Podhůra, Černý Nadýmač, Lanškrounské rybníky NS, Semínský akvadukt, objekty Litomyšle a Svitav z tipů",
+      "url": "https://www.vychodni-cechy.info/dovolena-vozickari/",
+      "reason": "jen zastávky na trasách; detail na portálu o přístupnosti nic neuvádí"
+    },
+    {
+      "name": "Koupák Lanškroun (restaurace)",
+      "url": "https://www.vychodni-cechy.info/tipy-na-vylet/902_1053167_bezbarierova-trasa-kolem-lanskrounskych-rybniku",
+      "reason": "portál uvádí bezbariérové WC v budově, ale Nominatim místo nenašel (prázdný výsledek) – nepřidáno; údaj je u záznamu trasy"
+    },
+    {
+      "name": "Půjčovny kompenzačních pomůcek (9 v kraji)",
+      "url": "https://www.vychodni-cechy.info/pujcovny-kompenzacnich-pomucek/",
+      "reason": "jen seznam služeb s adresou, žádné údaje o přístupnosti míst"
+    },
+    {
+      "name": "Turistické cíle s filtrem pohybové postižení",
+      "url": "https://www.vychodni-cechy.info/turisticke-cile/?formular/postizeni_pohyb=1&formular/AdOb_Sent=1",
+      "reason": "filtr funguje jen u ubytování; u cílů vrací všech 6064 objektů"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Východní Čechy – Dovolená pro vozíčkáře (8 tipů na výlet)",
+      "url": "https://www.vychodni-cechy.info/dovolena-vozickari/"
+    },
+    {
+      "title": "Východní Čechy – Tipy na výlet (vozíčkářské trasy, Chrudim i pro handicapované, Poznejte Litomyšl, Brand, Arboretum Žampach)",
+      "url": "https://www.vychodni-cechy.info/tipy-na-vylet/"
+    },
+    {
+      "title": "Kudy z nudy – Bezbariérová místa (kampaň)",
+      "url": "https://www.kudyznudy.cz/kampane/bezbarier"
+    },
+    {
+      "title": "Kudy z nudy – Cestování bez bariér: nejlepší tipy ze všech regionů ČR",
+      "url": "https://www.kudyznudy.cz/aktuality/cestovani-bez-barier-nejlepsi-tipy-z-regionu"
+    },
+    {
+      "title": "Kudy z nudy – Cestování bez bariér: přehled vozíčkářských tras",
+      "url": "https://www.kudyznudy.cz/aktuality/cestovani-bez-barier-prehled-vozickarskych-tras-po"
+    },
+    {
+      "title": "Kudy z nudy – Cestování bez bariér: hrady a zámky",
+      "url": "https://www.kudyznudy.cz/aktuality/cestovani-bez-barier-navstivte-hrady-a-zamky-i-s-h"
+    },
+    {
+      "title": "Kudy z nudy – Turistika beze stop: bezbariérová trasa v okolí Slatiňan",
+      "url": "https://www.kudyznudy.cz/aktivity/turistika-beze-stop-bezbarierova-trasa-v-okoli-sla"
+    },
+    {
+      "title": "Pardubický kraj – web kraje",
+      "url": "https://www.pardubickykraj.cz",
+      "note": "načten, bez stránky o bezbariérovém cestování; turistiku odkazuje na vychodni-cechy.info"
+    },
+    {
+      "title": "Nominatim (geokódování)",
+      "url": "https://nominatim.openstreetmap.org"
+    }
+  ]
+}

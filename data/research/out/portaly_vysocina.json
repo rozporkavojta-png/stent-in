@@ -1,0 +1,667 @@
+{
+ "task": "portaly_vysocina",
+ "kraj": "Kraj Vysočina",
+ "checked_date": "2026-10-06",
+ "places": [
+  {
+   "osm_id": "n1073787895",
+   "name": "Sporthotel Bystřice nad Pernštejnem",
+   "obec": "Bystřice nad Pernštejnem",
+   "address": "Dr. Veselého 268",
+   "lat": 49.521969,
+   "lng": 16.253354,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/sporthotel",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Popis uvádí bezbariérový přístup do hotelu."
+   },
+   "evidence_quote": "Bezbariérový přístup. Ideální pro sportovní soustředění"
+  },
+  {
+   "osm_id": "n11042353075",
+   "name": "Motorest U Nováků",
+   "obec": "Litohoř",
+   "address": "Litohoř",
+   "lat": 49.064478,
+   "lng": 15.772098,
+   "category": "restaurace",
+   "source_url": "https://www.kudyznudy.cz/aktivity/motorest-u-novaku",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Restaurace a pivnice (120 míst) má podle popisu bezbariérový přístup.",
+    "jine": "Motorest nabízí i ubytování."
+   },
+   "evidence_quote": "Restaurace a pivnice s kapacitou 120 míst s bezbarierovým přístupem."
+  },
+  {
+   "osm_id": "n2743827443",
+   "name": "Hotel Joseph 1699",
+   "obec": "Třebíč",
+   "address": "Skalní 85/8",
+   "lat": 49.21817,
+   "lng": 15.877964,
+   "category": "ubytovani",
+   "source_url": "https://www.vysocina.eu/ubytovaci-zarizeni/hotel-joseph",
+   "source_type": "portál Vysočina Tourism (vysocina.eu)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel má 1 bezbariérový pokoj (vysocina.eu uvádí 23 pokojů celkem, Kudy z nudy 16 pokojů).",
+    "jine": "Oba portály uvádějí štítek bezbariérový přístup; Kudy z nudy: https://www.kudyznudy.cz/aktivity/hotel-joseph-1699-novinka-v-trebici"
+   },
+   "evidence_quote": "luxusní ubytování v 23 pokojích včetně 1 bezbariérového"
+  },
+  {
+   "osm_id": "n1072772608",
+   "name": "Chalupa pod Smrkem",
+   "obec": "Fryšava pod Žákovou horou",
+   "address": "Fryšava pod Žákovou horou 170",
+   "lat": 49.630406,
+   "lng": 16.048346,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/chalupa-pod-smrkem",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Chalupa je vybavena bezbariérovou plošinou.",
+    "jine": "Pokoje jsou v 1. a 2. nadzemním podlaží; v přízemí garáž."
+   },
+   "evidence_quote": "ubytování apartmánového typu pro 15 osob, s bezbariérovou plošinou"
+  },
+  {
+   "osm_id": "n1072772613",
+   "name": "Penzion U Peňázů",
+   "obec": "Fryšava pod Žákovou horou",
+   "address": "Fryšava pod Žákovou horou 11",
+   "lat": 49.630515,
+   "lng": 16.049047,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/penzion-u-penazu-na-vysocine",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Do penzionu je podle popisu bezbariérový přístup.",
+    "parkovani": "Uvedena možnost parkování (bez upřesnění vyhrazených míst)."
+   },
+   "evidence_quote": "Do penzionu je bezbariérový přístup"
+  },
+  {
+   "osm_id": "n2860874082",
+   "name": "Hotel Farma Služátky",
+   "obec": "Služátky",
+   "address": "Služátky 25",
+   "lat": 49.686023,
+   "lng": 15.433211,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hotel-farma-sluzatky-u-pelhrimova",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Devatenáct pokojů (z 24 jednotek) má bezbariérový přístup."
+   },
+   "evidence_quote": "Devatenáct pokojů je s bezbariérovým přístupem."
+  },
+  {
+   "osm_id": "w87540313",
+   "name": "Stará radnice Havlíčkův Brod",
+   "obec": "Havlíčkův Brod",
+   "address": "Havlíčkovo náměstí 87",
+   "lat": 49.60617,
+   "lng": 15.578793,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/stara-radnice-v-havlickove-brode-s-kostrou-hnata",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Celý objekt (sídlo turistického informačního centra, sály, sklepení s restaurací) je podle popisu bezbariérový; rekonstrukce dokončena 2024."
+   },
+   "evidence_quote": "Celý objekt je také bezbariérový."
+  },
+  {
+   "osm_id": "w1372709764",
+   "name": "Za Hliníkem do Humpolce – naučná stezka pro vozíčkáře",
+   "obec": "Humpolec",
+   "address": "Máchova 320",
+   "lat": 49.551355,
+   "lng": 15.366979,
+   "category": "priroda",
+   "source_url": "https://www.kudyznudy.cz/aktivity/turisticka-trasa-pro-vozickare-v-humpolci",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Okruh začíná a končí u restaurace Salon Zlatá podkova u závodiště; zpočátku asfalt, dál zpevněná cesta s přírodním povrchem, mírné stoupání k židovskému hřbitovu; obtížnost uvedena jako středně náročná.",
+    "wc": "Na startu je bezbariérové WC.",
+    "parkovani": "Na startu je několik parkovacích míst.",
+    "jine": "Na startu bezbariérová restaurace; u stanoviště Mlýn odpočívadlo se stolem a lavicemi; trasa značena směrovkami s piktogramem vozíčkáře; 3 informační tabule."
+   },
+   "measurements": [
+    {
+     "co": "délka okruhu",
+     "hodnota": 3,
+     "jednotka": "km"
+    },
+    {
+     "co": "převýšení",
+     "hodnota": 72,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Na startu je několik parkovacích míst, bezbariérová restaurace a WC."
+  },
+  {
+   "osm_id": "w513322029",
+   "name": "Zámek Telč",
+   "obec": "Telč",
+   "address": "nám. Zachariáše z Hradce 1",
+   "lat": 49.185379,
+   "lng": 15.451492,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamek-telc",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérově přístupná je jen zámecká zahrada, nádvoří, zámecký park a expozice v zámecké galerii; na prohlídku interiérů jen s pomocí doprovodu.",
+    "wc": "V areálu jsou veřejné záchody pro handicapované, klíče v pokladně zámku."
+   },
+   "evidence_quote": "Lidem handicapovaným je vstup na prohlídku umožněn za současné pomoci osob"
+  },
+  {
+   "osm_id": "w31891677",
+   "name": "Aquapark Laguna Třebíč",
+   "obec": "Třebíč",
+   "address": "Mládežnická 1096",
+   "lat": 49.220828,
+   "lng": 15.886523,
+   "category": "sport",
+   "source_url": "https://www.kudyznudy.cz/aktivity/aquapark-laguna-trebic",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "K dispozici je bateriový vozík pro přesun tělesně postižených a osob se sníženou pohyblivostí až do bazénu."
+   },
+   "evidence_quote": "nabízí bateriový vozík, kterým lze bezpečně přepravit tělesně postižené"
+  },
+  {
+   "osm_id": "w92440227",
+   "name": "Zámek Jaroměřice nad Rokytnou",
+   "obec": "Jaroměřice nad Rokytnou",
+   "address": "Náměstí Míru 1",
+   "lat": 49.093669,
+   "lng": 15.892111,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamek-jaromerice-nad-rokytnou",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérová je trasa Kuchyně a hostinské pokoje a areál zámku a parku (vstup ze západní strany kolem zámecké budovy).",
+    "wc": "Bezbariérová toaleta upravená pro vozíčkáře."
+   },
+   "evidence_quote": "Bezbariérová toaleta upravená pro vozíčkáře."
+  },
+  {
+   "osm_id": "n9207686540",
+   "name": "Vymazlená kavárna",
+   "obec": "Havlíčkův Brod",
+   "address": "U Sv. Jána 3609",
+   "lat": 49.602871,
+   "lng": 15.597275,
+   "category": "restaurace",
+   "source_url": "https://www.kudyznudy.cz/aktivity/vymazlena-kavarna",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Kavárna uvádí dostatek prostoru pro kočárky i invalidní vozíky."
+   },
+   "evidence_quote": "dost prostoru i na kočárky nebo invalidní vozíky"
+  },
+  {
+   "osm_id": "n1093607407",
+   "name": "Balónový hotel Radešín",
+   "obec": "Radešín",
+   "address": "Radešín 11",
+   "lat": 49.468263,
+   "lng": 16.089743,
+   "category": "ubytovani",
+   "source_url": "https://www.vysocina.eu/ubytovaci-zarizeni/balonovy-hotel-radesin",
+   "source_type": "portál Vysočina Tourism (vysocina.eu)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "V poznámce uvedeno, že je bezbariérový jen částečně.",
+    "vytah": "Pokoje jsou ve dvou patrech bez výtahu.",
+    "parkovani": "Parkoviště ihned u hotelu."
+   },
+   "evidence_quote": "bezbariérový jen částečně"
+  },
+  {
+   "osm_id": "w175638864",
+   "name": "Huť Jakub Tasice",
+   "obec": "Ledeč nad Sázavou",
+   "address": "Tasice 1",
+   "lat": 49.75976,
+   "lng": 15.252701,
+   "category": "kultura",
+   "source_url": "https://www.vysocina.eu/turisticke-cile/hut-jakub-tasice",
+   "source_type": "portál Vysočina Tourism (vysocina.eu)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Prostory sklárny jsou podle popisu bezbariérové a pro vozíčkáře pohodlně přístupné."
+   },
+   "evidence_quote": "Prostory sklárny jsou bezbariérové a pro vozíčkáře pohodlně přístupné."
+  },
+  {
+   "osm_id": "r1278656",
+   "name": "Premonstrátský klášter Želiv",
+   "obec": "Želiv",
+   "address": "Želiv 122",
+   "lat": 49.529636,
+   "lng": 15.214836,
+   "category": "pamatky",
+   "source_url": "https://www.vysocina.eu/turisticke-cile/premonstratsky-klaster-v-zelive",
+   "source_type": "portál Vysočina Tourism (vysocina.eu)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Klášter je podle popisu bezbariérově přístupný (bez podrobností o trasách)."
+   },
+   "evidence_quote": "Klášter je bezbariérově přístupný"
+  },
+  {
+   "osm_id": "w117353733",
+   "name": "Koupaliště Luka nad Jihlavou",
+   "obec": "Luka nad Jihlavou",
+   "address": "U Koupaliště 788",
+   "lat": 49.379871,
+   "lng": 15.700725,
+   "category": "sport",
+   "source_url": "https://www.vysocina.eu/turisticke-cile/koupaliste-luka-nad-jihlavou",
+   "source_type": "portál Vysočina Tourism (vysocina.eu)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Po rekonstrukci je k dispozici nová budova s bezbariérovým sociálním zázemím."
+   },
+   "evidence_quote": "nová budova s pokladnou, turnikety a bezbariérové sociální zázemí"
+  },
+  {
+   "osm_id": "r5538984",
+   "name": "Informační centrum Jaderné elektrárny Dukovany",
+   "obec": "Dukovany",
+   "lat": 49.084033,
+   "lng": 16.150442,
+   "category": "kultura",
+   "source_url": "https://www.vysocina.eu/turisticke-cile/informacni-centrum-jaderne-elektrarny-dukovany",
+   "source_type": "portál Vysočina Tourism (vysocina.eu)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Celé infocentrum je podle popisu bezbariérové.",
+    "parkovani": "Parkování je zdarma (bez upřesnění vyhrazených stání).",
+    "jine": "Prohlídku je nutné objednat předem."
+   },
+   "evidence_quote": "Celé infocentrum je bezbariérové."
+  },
+  {
+   "osm_id": "n1073776629",
+   "name": "Chalupa u Kamnáře",
+   "obec": "Bystřice nad Pernštejnem",
+   "address": "Na Příkopech 305",
+   "lat": 49.52134,
+   "lng": 16.266043,
+   "category": "ubytovani",
+   "source_url": "https://www.vysocina.eu/ubytovaci-zarizeni/chalupa-u-kamnare",
+   "source_type": "portál Vysočina Tourism (vysocina.eu)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérové je přízemí chalupy.",
+    "parkovani": "Parkování na ulici před objektem."
+   },
+   "evidence_quote": "Přízemí chalupy je bezbariérové."
+  },
+  {
+   "osm_id": "n8972342671",
+   "name": "Rezidence Bílý lev",
+   "obec": "Žďár nad Sázavou",
+   "address": "Náměstí Republiky 12",
+   "lat": 49.562224,
+   "lng": 15.939614,
+   "category": "ubytovani",
+   "source_url": "https://www.vysocina.eu/ubytovaci-zarizeni/rezidence-bily-lev",
+   "source_type": "portál Vysočina Tourism (vysocina.eu)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup do celého objektu z parkoviště.",
+    "parkovani": "Parkování přímo u objektu, uvedeno jako plně bezbariérové."
+   },
+   "evidence_quote": "Bezbariérový přístup do celého objektu z parkoviště."
+  },
+  {
+   "osm_id": "r6479408",
+   "name": "Zámek Kamenice nad Lipou",
+   "obec": "Kamenice nad Lipou",
+   "address": "nám. Československé armády 1",
+   "lat": 49.302518,
+   "lng": 15.079714,
+   "category": "pamatky",
+   "source_url": "https://www.vysocina.eu/turisticke-cile/mestske-muzeum-a-zamek-kamenice-nad-lipou",
+   "source_type": "portál Vysočina Tourism (vysocina.eu)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Zámek je bezbariérově přístupný pouze s pomocí doprovodu."
+   },
+   "evidence_quote": "Zámek je bezbariérově přístupný za pomoci doprovodu."
+  },
+  {
+   "osm_id": "n275751366",
+   "name": "Hotel Svratka",
+   "obec": "Svratka",
+   "address": "Na Vyhlídce 41",
+   "lat": 49.713328,
+   "lng": 16.052356,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hotel-svratka-v-srdci-vysociny",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n320996940",
+   "name": "Resort Devět Skal Vysočina",
+   "obec": "Svratka",
+   "address": "Milovy 11",
+   "lat": 49.668005,
+   "lng": 16.089644,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/orea-resort-devet-skal-vysocina",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n5018113500",
+   "name": "Penzion Panský dvůr Telč",
+   "obec": "Telč",
+   "address": "Slavatovská 86",
+   "lat": 49.187381,
+   "lng": 15.449728,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/penzion-pansky-dvur-telc",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n432819282",
+   "name": "Hotel Medlov",
+   "obec": "Fryšava pod Žákovou horou",
+   "address": "Fryšava pod Žákovou horou 143",
+   "lat": 49.616036,
+   "lng": 16.05449,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hotel-medlov",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n5558655378",
+   "name": "Fabrika hotel",
+   "obec": "Humpolec",
+   "address": "Školní 511",
+   "lat": 49.540409,
+   "lng": 15.355992,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/fabrika-hotel",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n1209320652",
+   "name": "Penzion Najdek",
+   "obec": "Hamry nad Sázavou",
+   "address": "Hamry nad Sázavou 159",
+   "lat": 49.568024,
+   "lng": 15.887868,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/penzion-najdek",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n11313843574",
+   "name": "Hortus Vita Wellness Apartments",
+   "obec": "Lipnice nad Sázavou",
+   "address": "Lipnice nad Sázavou 317",
+   "lat": 49.609682,
+   "lng": 15.41461,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hortus-vita-wellness-apartments",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n4329815391",
+   "name": "Zámek Žďár nad Sázavou – Muzeum nové generace",
+   "obec": "Žďár nad Sázavou",
+   "address": "Zámek 8/8",
+   "lat": 49.581596,
+   "lng": 15.936653,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/muzeum-nove-generace",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "w85702526",
+   "name": "Rodinný pivovar Bernard – návštěvnické centrum",
+   "obec": "Humpolec",
+   "address": "5. května 1",
+   "lat": 49.539794,
+   "lng": 15.359253,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/rodinny-pivovar-bernard",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností). Snížené vstupné platí mj. pro držitele ZTP a ZTP/P."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "w263555326",
+   "name": "Ekotechnické centrum Alternátor",
+   "obec": "Třebíč",
+   "address": "Tomáše Bati 1083",
+   "lat": 49.207075,
+   "lng": 15.861703,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/ekotechnicke-centrum-alternator-trebic",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n2780231500",
+   "name": "Wellness centrum Niagara",
+   "obec": "Třebíč",
+   "address": "Račerovická 826",
+   "lat": 49.219826,
+   "lng": 15.867443,
+   "category": "sport",
+   "source_url": "https://www.kudyznudy.cz/aktivity/wellness-centrum-niagara-trebic",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n3197808154",
+   "name": "Hotel Zámek Valeč",
+   "obec": "Valeč",
+   "address": "Valeč 1",
+   "lat": 49.147532,
+   "lng": 16.036043,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hotel-zamek-valec-u-hrotovic",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n10961259376",
+   "name": "Muzeum Vysočiny – pobočka Telč",
+   "obec": "Telč",
+   "address": "Špitální 44",
+   "lat": 49.176246,
+   "lng": 15.458569,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/muzeum-vysociny-telc",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n296471257",
+   "name": "Stříbrný dům",
+   "obec": "Jihlava",
+   "address": "Masarykovo náměstí 21",
+   "lat": 49.393959,
+   "lng": 15.592496,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/stribrny-dum-v-jihlave",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n2916721667",
+   "name": "Galerie Sirkárna",
+   "obec": "Žďár nad Sázavou",
+   "address": "Santiniho 20/26",
+   "lat": 49.586272,
+   "lng": 15.932646,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/galerie-sirkarna",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností). Snížené vstupné 50 Kč pro držitele ZTP, ZTP/P a osoby na invalidním vozíku."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "w556970468",
+   "name": "Geografický střed České republiky",
+   "obec": "Číhošť",
+   "address": "Číhošť 44",
+   "lat": 49.743672,
+   "lng": 15.338643,
+   "category": "priroda",
+   "source_url": "https://www.kudyznudy.cz/aktivity/geograficky-stred-ceske-republiky-v-cihosti",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n296519654",
+   "name": "Vojenská kaple Jihlava",
+   "obec": "Jihlava",
+   "address": "Věžní 4785/1",
+   "lat": 49.39486,
+   "lng": 15.586998,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/vojenska-kaple-jihlava",
+   "source_type": "portál Kudy z nudy (CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Na portálu Kudy z nudy uveden štítek „Bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "Certifikace a další informace … Bezbariérový přístup"
+  }
+ ],
+ "not_found": [
+  "Penzion U Svatého Jakuba (Jihlava) – nepodařilo se geokódovat přes Nominatim (bez výsledku), nepřidáno; zdroj: https://www.vysocina.eu/ubytovaci-zarizeni/penzion-u-sv-jakuba",
+  "Kostel sv. Markéty (Jaroměřice nad Rokytnou) – nepodařilo se geokódovat přes Nominatim (bez výsledku), nepřidáno; zdroj: https://www.vysocina.eu/turisticke-cile/kostel-sv-markety-jaromerice-nad-rokytnou",
+  "Chalupa pod Zubštejnem (Bystřice nad Pernštejnem) – nepodařilo se geokódovat přes Nominatim (bez výsledku), nepřidáno; zdroj: https://www.vysocina.eu/ubytovaci-zarizeni/chalupa-pod-zubstejnem",
+  "Portál region-vysocina.cz: adresa se nenačetla (http 301 na https, https bez odpovědi); turistický portál kraje je vysocina.eu (odkaz z kr-vysocina.cz).",
+  "vysocina-news.cz: zpravodajský web, vyhledávání „bezbariérový“ vrací jen zprávy (bezbariérové zastávky, DDM Chotěboř), žádný turistický přehled míst.",
+  "Kudy z nudy, kategorie bezbariérové akce (Vysočina): jen časově omezené akce, nezapsáno.",
+  "Kudy z nudy štítek „Bezbariérový přístup“ mají i další místa v kraji (cca 50 dalších), nezapsána kvůli limitu ~40 míst; seznam: https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-zazitky/?region=kraj-vysocina",
+  "Vynecháno jako duplicita hotových souborů: Hotel U Raušů, Hotel Atom, Hotel U Černého orla (ubytovani_vysocina*), Muzeum Vysočiny Třebíč, Hrad Roštejn (cile_vysocina*)."
+ ],
+ "sources": [
+  {
+   "title": "Kudy z nudy – Bezbariérové ubytování, Kraj Vysočina",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-ubytovani/?region=kraj-vysocina",
+   "note": "27 subjektů se štítkem Bezbariérový přístup"
+  },
+  {
+   "title": "Kudy z nudy – Bezbariérové zážitky, Kraj Vysočina",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-zazitky/?region=kraj-vysocina",
+   "note": "48 subjektů"
+  },
+  {
+   "title": "Kudy z nudy – Bezbariérové restaurace, Kraj Vysočina",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-restaurace-a-gurmanske-zazitky/?region=kraj-vysocina",
+   "note": "16 subjektů"
+  },
+  {
+   "title": "Kudy z nudy – Cestování bez bariér: nejlepší tipy z regionů",
+   "url": "https://www.kudyznudy.cz/aktuality/cestovani-bez-barier-nejlepsi-tipy-z-regionu",
+   "note": "za Vysočinu stezka Za Hliníkem do Humpolce"
+  },
+  {
+   "title": "Vysočina Tourism – vyhledávání „bezbariérové“",
+   "url": "https://www.vysocina.eu/vyhledavani?q=bezbari%C3%A9rov%C3%A9",
+   "note": "17 výsledků, prošly detaily"
+  },
+  {
+   "title": "vysocina-news.cz – vyhledávání",
+   "url": "https://vysocina-news.cz/?s=bezbari%C3%A9rov%C3%BD",
+   "note": "jen zprávy, bez turistických míst"
+  }
+ ]
+}

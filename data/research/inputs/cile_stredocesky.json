@@ -1,0 +1,642 @@
+[
+{
+"i": "n4264726780",
+"n": "Geopark Barrandien",
+"s": "Turistický cíl",
+"o": "Beroun",
+"a": "Slapská",
+"web": "http://muzeum-beroun.cz/09/2010/geopark/",
+"w": "no",
+"la": 49.963065,
+"lo": 14.072968
+},
+{
+"i": "n4264726781",
+"n": "Muzeum Českého krasu v Berouně",
+"s": "Muzeum",
+"o": "Beroun",
+"a": "Husovo nám.",
+"web": "http://muzeum-beroun.cz",
+"w": "no",
+"la": 49.963454,
+"lo": 14.07263
+},
+{
+"i": "w136609641",
+"n": "Plzeňská brána",
+"s": "Turistický cíl",
+"o": "Beroun",
+"web": "http://muzeum-beroun.cz/05/2011/brana/",
+"w": "no",
+"la": 49.963159,
+"lo": 14.071048
+},
+{
+"i": "n6841157149",
+"n": "Polabská geostezka",
+"s": "Turistický cíl",
+"o": "Brandýs nad Labem-Stará Boleslav",
+"w": "yes",
+"la": 50.189934,
+"lo": 14.664074
+},
+{
+"i": "n2090996839",
+"n": "Pamětní síň Oty Pavla",
+"s": "Muzeum",
+"o": "Branov",
+"web": "http://otapavel.cz/",
+"w": "yes",
+"t": "no",
+"la": 50.011844,
+"lo": 13.834106
+},
+{
+"i": "n3094130280",
+"n": "Kámen",
+"s": "Vyhlídka",
+"o": "Březová-Oleško",
+"w": "no",
+"la": 49.893128,
+"lo": 14.406684
+},
+{
+"i": "w259373850",
+"n": "Muzeum balónového létání",
+"s": "Muzeum",
+"o": "Chotilsko",
+"w": "yes",
+"la": 49.770068,
+"lo": 14.352679
+},
+{
+"i": "w259373732",
+"n": "TEPfactor",
+"s": "Zábavní park",
+"o": "Chotilsko",
+"a": "Chotilsko 1",
+"web": "https://www.tepfactor.cz/",
+"w": "no",
+"la": 49.768378,
+"lo": 14.34874
+},
+{
+"i": "w1300548045",
+"n": "Cesta mramoru",
+"s": "Galerie",
+"o": "Dobřichovice",
+"web": "https://www.cestamramoru.cz/",
+"w": "yes",
+"la": 49.931713,
+"lo": 14.266356
+},
+{
+"i": "w1016659823",
+"n": "rozhledna Hradiště - Závist",
+"s": "Vyhlídka",
+"o": "Dolní Břežany",
+"w": "no",
+"la": 49.962293,
+"lo": 14.40796
+},
+{
+"i": "n1996318194",
+"n": "Fabiánovo lože",
+"s": "Turistický cíl",
+"o": "Hostomice",
+"w": "no",
+"la": 49.794262,
+"lo": 14.056209
+},
+{
+"i": "n4769964237",
+"n": "Muzeum Hořovicka",
+"s": "Muzeum",
+"o": "Hořovice",
+"w": "no",
+"la": 49.838314,
+"lo": 13.906581
+},
+{
+"i": "n10916056203",
+"n": "Duševní zahrádka",
+"s": "Turistický cíl",
+"o": "Hudlice",
+"w": "no",
+"la": 49.964084,
+"lo": 13.932083
+},
+{
+"i": "n4267628675",
+"n": "Rozhledna Máminka",
+"s": "Vyhlídka",
+"o": "Hudlice",
+"w": "limited",
+"la": 49.963334,
+"lo": 13.930046
+},
+{
+"i": "n6944416281",
+"n": "Knihovna a občanské centrum",
+"s": "Knihovna",
+"o": "Jesenice",
+"w": "yes",
+"la": 49.967939,
+"lo": 14.51389
+},
+{
+"i": "w199047146",
+"n": "Týřov",
+"s": "Turistický cíl",
+"o": "Karlova Ves",
+"w": "no",
+"la": 49.973492,
+"lo": 13.790291
+},
+{
+"i": "n4686572163",
+"n": "Vyhlídka na Karlík",
+"s": "Vyhlídka",
+"o": "Karlík",
+"w": "no",
+"la": 49.938333,
+"lo": 14.261782
+},
+{
+"i": "n1415205899",
+"n": "Knihovna Klecany",
+"s": "Knihovna",
+"o": "Klecany",
+"w": "no",
+"la": 50.175196,
+"lo": 14.41428
+},
+{
+"i": "w27389477",
+"n": "Kokořín",
+"s": "Turistický cíl",
+"o": "Kokořín",
+"web": "https://hrad-kokorin.cz/",
+"w": "no",
+"la": 50.440359,
+"lo": 14.576714
+},
+{
+"i": "n2082532543",
+"n": "Koněpruské jeskyně",
+"s": "Turistický cíl",
+"o": "Koněprusy",
+"web": "https://www.caves.cz/jeskyne/konepruske-jeskyne",
+"w": "no",
+"la": 49.916127,
+"lo": 14.068779
+},
+{
+"i": "n11283202168",
+"n": "Zlatý kůň",
+"s": "Vyhlídka",
+"o": "Koněprusy",
+"w": "no",
+"la": 49.916289,
+"lo": 14.065971
+},
+{
+"i": "w25663422",
+"n": "Skanzen Kouřim",
+"s": "Turistický cíl",
+"o": "Kouřim",
+"w": "limited",
+"la": 49.994752,
+"lo": 14.972641
+},
+{
+"i": "w161888753",
+"n": "Kamenný dům",
+"s": "Muzeum",
+"o": "Kutná Hora",
+"web": "https://www.cms-kh.cz/",
+"w": "no",
+"la": 49.949995,
+"lo": 15.26524
+},
+{
+"i": "w339015229",
+"n": "Kaňk",
+"s": "Vyhlídka",
+"o": "Kutná Hora",
+"w": "yes",
+"la": 49.970745,
+"lo": 15.284949
+},
+{
+"i": "w161891251",
+"n": "Tylův dům",
+"s": "Muzeum",
+"o": "Kutná Hora",
+"web": "https://www.cms-kh.cz/",
+"w": "no",
+"la": 49.949322,
+"lo": 15.26993
+},
+{
+"i": "n4801197106",
+"n": "důl Osel",
+"s": "Turistický cíl",
+"o": "Kutná Hora",
+"w": "no",
+"la": 49.947066,
+"lo": 15.26281
+},
+{
+"i": "w161888749",
+"n": "svatý Jan Nepomucký",
+"s": "Turistický cíl",
+"o": "Kutná Hora",
+"a": "Husova 121",
+"web": "https://destinace.kutnahora.cz/d/kostel-sv-jana-nepomuckeho",
+"w": "limited",
+"la": 49.949211,
+"lo": 15.264487
+},
+{
+"i": "n1786225129",
+"n": "České muzeum stříbra",
+"s": "Muzeum",
+"o": "Kutná Hora",
+"web": "https://www.cms-kh.cz/",
+"w": "no",
+"la": 49.947626,
+"lo": 15.26547
+},
+{
+"i": "n10784423478",
+"n": "Nakřivo",
+"s": "Galerie",
+"o": "Křivoklát",
+"w": "no",
+"la": 50.0379,
+"lo": 13.872369
+},
+{
+"i": "n1421091825",
+"n": "Vojenské technické muzeum Lešany",
+"s": "Muzeum",
+"o": "Lešany",
+"web": "https://www.vhu.cz/muzea/zakladni-informace-o-vtm-lesany/",
+"w": "yes",
+"la": 49.85507,
+"lo": 14.543703
+},
+{
+"i": "n1675772560",
+"n": "Obecní Knihovna Libiš",
+"s": "Knihovna",
+"o": "Libiš",
+"w": "yes",
+"la": 50.273714,
+"lo": 14.503186
+},
+{
+"i": "w406554739",
+"n": "Rozhledna Velký Blaník",
+"s": "Vyhlídka",
+"o": "Louňovice pod Blaníkem",
+"w": "no",
+"la": 49.641871,
+"lo": 14.873247
+},
+{
+"i": "n2716871146",
+"n": "Kino Lysá nad Labem",
+"s": "Kino",
+"o": "Lysá nad Labem",
+"w": "yes",
+"la": 50.202463,
+"lo": 14.842632
+},
+{
+"i": "n2114219419",
+"n": "Městská knihovna Lysá nad Labem",
+"s": "Knihovna",
+"o": "Lysá nad Labem",
+"w": "yes",
+"t": "yes",
+"la": 50.202415,
+"lo": 14.84154
+},
+{
+"i": "n2716861493",
+"n": "Polabské muzeum - Muzeum Bedřicha Hrozného",
+"s": "Muzeum",
+"o": "Lysá nad Labem",
+"web": "https://www.polabskemuzeum.cz/lysa-nad-labem/kontakty",
+"w": "no",
+"la": 50.201351,
+"lo": 14.838327
+},
+{
+"i": "n2494884018",
+"n": "T. G. Masaryka",
+"s": "Muzeum",
+"o": "Lány",
+"w": "yes",
+"la": 50.12605,
+"lo": 13.955147
+},
+{
+"i": "w355675884",
+"n": "Ukázková část Lánské obory s vyhlídkou",
+"s": "Zoo",
+"o": "Lány",
+"w": "yes",
+"la": 50.106435,
+"lo": 13.931905
+},
+{
+"i": "w621837289",
+"n": "Slatinné lázně",
+"s": "Turistický cíl",
+"o": "Lázně Toušeň",
+"w": "limited",
+"la": 50.170257,
+"lo": 14.711568
+},
+{
+"i": "n1409029649",
+"n": "Muzeum Mladoboleslavska",
+"s": "Muzeum",
+"o": "Mladá Boleslav",
+"w": "yes",
+"la": 50.408724,
+"lo": 14.900854
+},
+{
+"i": "w77495530",
+"n": "Škoda Muzeum",
+"s": "Muzeum",
+"o": "Mladá Boleslav",
+"a": "tř. Václava Klementa 294",
+"web": "https://museum.skoda-auto.cz/",
+"w": "yes",
+"t": "yes",
+"la": 50.418537,
+"lo": 14.914004
+},
+{
+"i": "n4407840679",
+"n": "Kazatelna",
+"s": "Vyhlídka",
+"o": "Obecnice",
+"w": "no",
+"la": 49.692512,
+"lo": 13.943144
+},
+{
+"i": "n7172813508",
+"n": "Památník Bedřicha Smetany",
+"s": "Muzeum",
+"o": "Obříství",
+"web": "no",
+"w": "no",
+"la": 50.29562,
+"lo": 14.468261
+},
+{
+"i": "n7079707512",
+"n": "Farní vyhlídka",
+"s": "Vyhlídka",
+"o": "Odolena Voda",
+"w": "yes",
+"la": 50.232429,
+"lo": 14.409768
+},
+{
+"i": "w59996732",
+"n": "Astronomické muzeum Vojtěcha Šafaříka",
+"s": "Muzeum",
+"o": "Ondřejov",
+"w": "no",
+"la": 49.909005,
+"lo": 14.781241
+},
+{
+"i": "w72137511",
+"n": "Svatohorské schody",
+"s": "Turistický cíl",
+"o": "Příbram",
+"w": "no",
+"la": 49.686433,
+"lo": 14.014722
+},
+{
+"i": "n638426540",
+"n": "Středočeské muzeum v Roztokách u Prahy",
+"s": "Muzeum",
+"o": "Roztoky",
+"a": "Zámek 1",
+"web": "https://www.muzeum-roztoky.cz/",
+"w": "yes",
+"la": 50.158198,
+"lo": 14.399411
+},
+{
+"i": "n13570772653",
+"n": "Sosákov",
+"s": "Komunitní centrum",
+"o": "Sibřina",
+"w": "limited",
+"la": 50.057242,
+"lo": 14.669461
+},
+{
+"i": "n13161980399",
+"n": "Oskarova vyhlídka",
+"s": "Vyhlídka",
+"o": "Skryje",
+"w": "no",
+"la": 49.968874,
+"lo": 13.78116
+},
+{
+"i": "n12828906101",
+"n": "Místní lidová knihovna",
+"s": "Knihovna",
+"o": "Stranný",
+"w": "no",
+"la": 49.752903,
+"lo": 14.493463
+},
+{
+"i": "n2751854035",
+"n": "Acanthopygový lůmek",
+"s": "Turistický cíl",
+"o": "Suchomasty",
+"w": "no",
+"la": 49.913685,
+"lo": 14.075758
+},
+{
+"i": "n759849792",
+"n": "Vraní skála",
+"s": "Vyhlídka",
+"o": "Svatá",
+"w": "no",
+"la": 49.927676,
+"lo": 13.941099
+},
+{
+"i": "n9144761075",
+"n": "Dinosauria",
+"s": "Muzeum",
+"o": "Tuchoměřice",
+"a": "Ke Kopanině 421",
+"web": "https://www.dinosauria.cz/",
+"w": "yes",
+"la": 50.126279,
+"lo": 14.279412
+},
+{
+"i": "w134517806",
+"n": "Komunitní centrum U Havrana",
+"s": "Komunitní centrum",
+"o": "Veltrusy",
+"w": "yes",
+"la": 50.272084,
+"lo": 14.328042
+},
+{
+"i": "n10701750212",
+"n": "Místní knihovna Veltrusy",
+"s": "Knihovna",
+"o": "Veltrusy",
+"web": "http://knihovnaveltrusy.wz.cz",
+"w": "yes",
+"la": 50.272081,
+"lo": 14.328016
+},
+{
+"i": "n11130199867",
+"n": "MUZEUM TECHNICKÝCH HRAČEK",
+"s": "Muzeum",
+"o": "Velvary",
+"w": "yes",
+"la": 50.281786,
+"lo": 14.236636
+},
+{
+"i": "w177340701",
+"n": "Památník Antonína Dvořáka",
+"s": "Muzeum",
+"o": "Vysoká u Příbramě",
+"web": "https://www.antonindvorak.cz/",
+"w": "no",
+"la": 49.636878,
+"lo": 13.940178
+},
+{
+"i": "n6881201550",
+"n": "Památník Jana Palacha",
+"s": "Muzeum",
+"o": "Všetaty",
+"a": "Smetanova 386",
+"web": "https://www.nm.cz/navstivte-nas/objekty/pamatnik-jana-palacha-ve-vsetatech",
+"w": "yes",
+"t": "yes",
+"la": 50.284713,
+"lo": 14.591442
+},
+{
+"i": "n903685237",
+"n": "Homole",
+"s": "Vyhlídka",
+"o": "Zvole",
+"w": "no",
+"la": 49.944265,
+"lo": 14.398194
+},
+{
+"i": "n5352440425",
+"n": "Rozhledna Vinice",
+"s": "Vyhlídka",
+"o": "Úvaly",
+"w": "no",
+"la": 50.0777,
+"lo": 14.730397
+},
+{
+"i": "n2113504405",
+"n": "Městská knihovna Čelákovice - Pobočka",
+"s": "Knihovna",
+"o": "Čelákovice",
+"web": "https://knihovna.celakovice.cz/cs/pobocky/v-prokope/",
+"w": "limited",
+"la": 50.161888,
+"lo": 14.734687
+},
+{
+"i": "w642585320",
+"n": "Městský kulturní dům",
+"s": "Divadlo",
+"o": "Čelákovice",
+"w": "yes",
+"la": 50.160575,
+"lo": 14.750148
+},
+{
+"i": "n12821058181",
+"n": "Knihovna Červené Pečky",
+"s": "Knihovna",
+"o": "Červené Pečky",
+"web": "https://knihovna.cervenepecky.cz",
+"w": "no",
+"la": 49.979249,
+"lo": 15.210685
+},
+{
+"i": "w331353895",
+"n": "Národní zemědělské muzeum",
+"s": "Muzeum",
+"o": "Čáslav",
+"w": "yes",
+"la": 49.898972,
+"lo": 15.411392
+},
+{
+"i": "r19980583",
+"n": "Japonská zahrada",
+"s": "Turistický cíl",
+"o": "Říčany",
+"w": "yes",
+"t": "yes",
+"la": 49.982052,
+"lo": 14.673131
+},
+{
+"i": "n2974359462",
+"n": "Na Fialce",
+"s": "Kino",
+"o": "Říčany",
+"web": "https://www.nafialce.cz/",
+"w": "yes",
+"la": 49.995163,
+"lo": 14.661892
+},
+{
+"i": "n9798488453",
+"n": "Svíčkárna Rodas",
+"s": "Kulturní centrum",
+"o": "Šestajovice",
+"w": "limited",
+"la": 50.105612,
+"lo": 14.678072
+},
+{
+"i": "n537028676",
+"n": "Čertovy hlavy",
+"s": "Turistický cíl",
+"o": "Želízy",
+"w": "no",
+"la": 50.420345,
+"lo": 14.464614
+}
+]

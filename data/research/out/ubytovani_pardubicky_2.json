@@ -1,0 +1,409 @@
+{
+  "task": "ubytování – Pardubický kraj (doplnění)",
+  "kraj": "Pardubický",
+  "checked_date": "2026-10-05",
+  "places": [
+    {
+      "osm_id": "n4213164332",
+      "name": "AK Seč Pláž, recepce",
+      "obec": "Seč",
+      "address": "Čs. pionýrů 384",
+      "lat": 49.8428,
+      "lng": 15.647633,
+      "category": "ubytovani",
+      "source_url": "https://autokempsec.cz/kontakt/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Na dotaz, zda má kemp bezbariérové přístupy, web odpovídá „částečně – zpravidla s dopomocí“; kemp leží ve svahu.",
+        "jine": "Dostupnost konkrétních míst pro tělesně hendikepované doporučují předem konzultovat s personálem."
+      },
+      "evidence_quote": "Částečně – zpravidla s dopomocí apod."
+    },
+    {
+      "osm_id": "n2465275178",
+      "name": "Hotel Atrium",
+      "obec": "Pardubice",
+      "address": "Smilova 343, 530 02 Pardubice",
+      "lat": 50.034494,
+      "lng": 15.773359,
+      "category": "ubytovani",
+      "source_url": "https://www.vychodni-cechy.info/pardubice/3_6132_hotel-atrium/",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "no",
+      "accessibility": {
+        "vstup": "Společné prostory (vstup, recepce) jsou pro pohybově postižené označeny jako nevyhovující.",
+        "pokoj": "0 bezbariérových pokojů; dvoulůžkové pokoje i apartmány nevyhovují.",
+        "parkovani": "Parkovací místa pro vozíčkáře: 0.",
+        "jine": "Rozpor s OSM (wheelchair=yes). Kavárna Café Atrium nevyhovuje. Web hotelatrium.cz o přístupnosti nic neuvádí. Údaj z turistického portálu Pardubického kraje (vychodni-cechy.info), podle prohlášení provozovatele."
+      },
+      "measurements": [
+        {
+          "co": "bezbariérové pokoje",
+          "hodnota": 0,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "k dispozici 0 bezbariérových pokojů"
+    },
+    {
+      "osm_id": null,
+      "name": "Táborová základna Domino",
+      "obec": "Hluboká",
+      "address": "Hluboká u Skutče (Březiny)",
+      "lat": 49.8455813,
+      "lng": 16.0715447,
+      "category": "ubytovani",
+      "source_url": "https://www.vychodni-cechy.info/hluboka/3_25098_taborova-zakladna-domino/",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Společné prostory podle portálu pro pohybově postižené vyhovují; web provozovatele uvádí, že základna je částečně bezbariérová (bezbariérový přístup do ubytovacího domečku, klubovny, jídelny a kuchyně).",
+        "pokoj": "Bezbariérový je domeček o 3 místnostech pro 12 osob s kuchyňkou; portál uvádí 3 bezbariérové pokoje s 12 lůžky.",
+        "wc": "U ubytování i klubovny portál uvádí bezbariérové WC; sociální zařízení domečku je bezbariérové.",
+        "parkovani": "5 parkovacích míst pro vozíčkáře.",
+        "jine": "V létě rezervováno pro tábory (min. 100 osob), na jaře a na podzim i pro jednotlivce. Údaj z turistického portálu Pardubického kraje (vychodni-cechy.info), podle prohlášení provozovatele. Souřadnice z Nominatim jen přibližné (Hluboká). Doplněno z webu provozovatele: https://www.dominohluboka.cz/"
+      },
+      "measurements": [
+        {
+          "co": "bezbariérové pokoje",
+          "hodnota": 3,
+          "jednotka": "ks"
+        },
+        {
+          "co": "bezbariérová lůžka",
+          "hodnota": 12,
+          "jednotka": "ks"
+        },
+        {
+          "co": "parkovací místa pro vozíčkáře",
+          "hodnota": 5,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "Základna je částečně bezbariérová"
+    },
+    {
+      "osm_id": null,
+      "name": "Hotel Chateau Orlice",
+      "obec": "Letohrad",
+      "address": "Orlice 1, 561 51 Letohrad",
+      "lat": 50.0219751,
+      "lng": 16.5323725,
+      "category": "ubytovani",
+      "source_url": "https://www.vychodni-cechy.info/letohrad/3_23997_hotel-chateau-orlice/",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Společné prostory (vstup, recepce) pro pohybově postižené vyhovují.",
+        "pokoj": "K dispozici je dvoulůžkový pokoj pro ZTP; jako vyhovující jsou uvedeny i apartmán a čtyřlůžkové pokoje Standard. Web hotelu: některé pokoje jsou bezbariérové a přizpůsobené hostům se zdravotním omezením.",
+        "jine": "Údaj z turistického portálu Pardubického kraje (vychodni-cechy.info), podle prohlášení provozovatele. Doplněno z webu provozovatele: https://www.chateau-orlice.cz/cs/pokoje/"
+      },
+      "measurements": [
+        {
+          "co": "bezbariérové pokoje",
+          "hodnota": 1,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "Některé pokoje jsou bezbariérové a přizpůsobené pro hosty se zdravotním omezením."
+    },
+    {
+      "osm_id": "n6025465310",
+      "name": "Kramářova chata na Suchém vrchu",
+      "obec": "Orličky",
+      "address": "Orličky 186, 561 55 Orličky",
+      "lat": 50.052048,
+      "lng": 16.689763,
+      "category": "ubytovani",
+      "source_url": "https://www.vychodni-cechy.info/orlicky/3_26242_kramarova-chata-na-suchem-vrchu/",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Společné prostory ubytování pro pohybově postižené vyhovují; portál uvádí 12 bezbariérových pokojů (ale 0 bezbariérových lůžek).",
+        "parkovani": "Parkovací místa pro vozíčkáře: 0.",
+        "jine": "Restaurace je na portálu označena jako nevyhovující pro pohybově postižené. Údaj z turistického portálu Pardubického kraje (vychodni-cechy.info), podle prohlášení provozovatele."
+      },
+      "measurements": [
+        {
+          "co": "bezbariérové pokoje",
+          "hodnota": 12,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "k dispozici 12 bezbariérových pokojů"
+    },
+    {
+      "osm_id": null,
+      "name": "Hotel Uno",
+      "obec": "Ústí nad Orlicí",
+      "address": "T. G. Masaryka 897, 562 01 Ústí nad Orlicí",
+      "lat": 49.9694669,
+      "lng": 16.3960222,
+      "category": "ubytovani",
+      "source_url": "https://www.vychodni-cechy.info/usti-nad-orlici/3_4972_hotel-uno/",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Společné prostory pro pohybově postižené vyhovují.",
+        "pokoj": "1 bezbariérový pokoj (1 lůžko); web hotelu uvádí možnost bezbariérového ubytování a v rezervaci typ „Bezbariérový pokoj“.",
+        "wc": "U sportovního zařízení (fitness, sauna) portál uvádí bezbariérové WC.",
+        "jine": "Údaj z turistického portálu Pardubického kraje (vychodni-cechy.info), podle prohlášení provozovatele. Doplněno z webu provozovatele: https://hoteluno.cz/"
+      },
+      "measurements": [
+        {
+          "co": "bezbariérové pokoje",
+          "hodnota": 1,
+          "jednotka": "ks"
+        },
+        {
+          "co": "bezbariérová lůžka",
+          "hodnota": 1,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "možnost bezbariérového ubytování"
+    },
+    {
+      "osm_id": null,
+      "name": "Lázeňský pavilon Veselý Plus",
+      "obec": "Lázně Bohdaneč",
+      "address": "Masarykovo nám. 6, 533 41 Lázně Bohdaneč",
+      "lat": 50.0761651,
+      "lng": 15.6798915,
+      "category": "ubytovani",
+      "source_url": "https://www.vychodni-cechy.info/lazne-bohdanec/3_9967_lazensky-pavilon-vesely-plus/",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Společné prostory ubytování i lázeňského zařízení pro pohybově postižené vyhovují.",
+        "pokoj": "1 bezbariérový pokoj.",
+        "wc": "Lázeňské ubytovací zařízení má bezbariérové WC.",
+        "parkovani": "Web lázní: parkoviště se 180 místy, z toho 8 pro imobilní; klienti ZTP/P parkují zdarma.",
+        "jine": "Údaj z turistického portálu Pardubického kraje (vychodni-cechy.info), podle prohlášení provozovatele. Souřadnice z Nominatim jen přibližné (Masarykovo náměstí). Doplněno z webu provozovatele: https://llb.cz/prakticke-informace-k-pobytu/"
+      },
+      "measurements": [
+        {
+          "co": "bezbariérové pokoje",
+          "hodnota": 1,
+          "jednotka": "ks"
+        },
+        {
+          "co": "parkovací místa pro imobilní",
+          "hodnota": 8,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "z toho 8 parkovacích míst pro imobilní občany"
+    },
+    {
+      "osm_id": null,
+      "name": "Golf & Spa Resort Kunětická Hora",
+      "obec": "Dříteč",
+      "address": "Dříteč 155, 533 05 Dříteč",
+      "lat": 50.1110094,
+      "lng": 15.819899,
+      "category": "ubytovani",
+      "source_url": "https://www.vychodni-cechy.info/dritec/3_13401_golf-spa-resort-kuneticka-hora/",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Společné prostory pro pohybově postižené vyhovují.",
+        "pokoj": "2 bezbariérové pokoje (celkem 4 lůžka).",
+        "parkovani": "2 parkovací místa pro vozíčkáře.",
+        "jine": "Wellness centrum je označeno jako nevyhovující. Údaj z turistického portálu Pardubického kraje (vychodni-cechy.info), podle prohlášení provozovatele."
+      },
+      "measurements": [
+        {
+          "co": "bezbariérové pokoje",
+          "hodnota": 2,
+          "jednotka": "ks"
+        },
+        {
+          "co": "bezbariérová lůžka",
+          "hodnota": 4,
+          "jednotka": "ks"
+        },
+        {
+          "co": "parkovací místa pro vozíčkáře",
+          "hodnota": 2,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "k dispozici 2 bezbariérové pokoje (celkem 4 lůžka)"
+    }
+  ],
+  "not_found": [
+    {
+      "osm_id": "n5268404721",
+      "name": "Taboriste pod stan pro vodaky",
+      "url": "http://emobile.cz",
+      "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=no)"
+    },
+    {
+      "osm_id": "n3497672025",
+      "name": "Farma pod kopcem",
+      "url": "https://farmapodkopcem.cz/",
+      "reason": "web (dohledán podle názvu, adresa Rychnov 34 – část obce Krouna) nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n887157415",
+      "name": "Autokemp U Letadla - recepce",
+      "url": "https://www.vychodni-cechy.info/sec/3_12407_u-letadla/",
+      "reason": "portál uvádí bezbariérovost jako „neznámo“, web autocamp.estranky.cz nic neuvádí (OSM uvádí limited)"
+    },
+    {
+      "osm_id": "w423024365",
+      "name": "U Letadla",
+      "url": "https://www.vychodni-cechy.info/sec/3_12407_u-letadla/",
+      "reason": "portál uvádí bezbariérovost jako „neznámo“, web autocamp.estranky.cz nic neuvádí (OSM uvádí yes)"
+    },
+    {
+      "osm_id": "n1817938544",
+      "name": "Petrův palouk",
+      "url": "https://www.vychodni-cechy.info/nekor/3_25222_petruv-palouk/",
+      "reason": "vlastní web nenalezen; portál uvádí bezbariérovost jako „neznámo“ (OSM uvádí limited)"
+    },
+    {
+      "osm_id": "n5079107094",
+      "name": "Penzion na Vysočině",
+      "reason": "bez webu v OSM; web ani záznam na portálu vychodni-cechy.info se nepodařilo dohledat (OSM uvádí yes)"
+    },
+    {
+      "osm_id": null,
+      "name": "Hotel Arnošt",
+      "url": "https://www.vychodni-cechy.info/pardubice/3_6075_hotel-arnost/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Hotel Erwin Junker",
+      "url": "https://www.vychodni-cechy.info/holice/3_30425_hotel-erwin-junker/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Hotel Euro",
+      "url": "https://www.vychodni-cechy.info/pardubice/3_12298_hotel-euro/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Wellness hotel Vista",
+      "url": "https://www.vychodni-cechy.info/dolni-morava/3_25882_wellness-hotel-vista/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Buňkov – ubytovací zařízení",
+      "url": "https://www.vychodni-cechy.info/brehy/3_22025_bunkov/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Farma Slunečný Dvůr",
+      "url": "https://www.vychodni-cechy.info/morasice-u-hermanova-mestce/3_13176_farma-slunecny-dvur/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Penzion Bakara",
+      "url": "https://www.vychodni-cechy.info/libchavy/3_12069_penzion-bakara/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Penzion Senha",
+      "url": "https://www.vychodni-cechy.info/lanskroun/3_10482_penzion-senha/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Penzion Otakar",
+      "url": "https://www.vychodni-cechy.info/policka/3_27399_penzion-otakar/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Penzion Patriot",
+      "url": "https://www.vychodni-cechy.info/vyprachtice/3_26833_penzion-patriot/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Penzion Tillerova vila",
+      "url": "https://www.vychodni-cechy.info/lazne-bohdanec/3_12314_penzion-tillerova-vila/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Penzion Žlebská Lhotka",
+      "url": "https://www.vychodni-cechy.info/zlebske-chvalovice/3_24060_penzion-zlebska-lhotka/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Penzion Mandl",
+      "url": "https://www.vychodni-cechy.info/retova/3_26580_penzion-mandl/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Oáza srdce",
+      "url": "https://www.vychodni-cechy.info/horni-bradlo/3_5915_oaza-srdce/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Penzion a hostinec Na Křížovce",
+      "url": "https://www.vychodni-cechy.info/tremosnice/3_28222_penzion-a-hostinec-na-krizovce/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Penzion Bonet",
+      "url": "https://www.vychodni-cechy.info/slatinany/3_12869_penzion-bonet/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Penzion Ječmínek",
+      "url": "https://www.vychodni-cechy.info/cervena-voda/3_27477_penzion-jecminek/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "Domov mládeže pedagogické školy",
+      "url": "https://www.vychodni-cechy.info/litomysl/3_10248_domov-mladeze-pedagogicke-skoly/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    },
+    {
+      "osm_id": null,
+      "name": "SOU včelařské – Včelařské vzdělávací centrum (ubytovna)",
+      "url": "https://www.vychodni-cechy.info/nasavrky/3_9467_stredni-odborne-uciliste-vcelarske-vcelarske-vzdelavaci-centrum-o-p-s/",
+      "reason": "portál uvádí bezbariérovost, ale adresu se nepodařilo geokódovat přes Nominatim – nepřidáno"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Weby provozovatelů ubytování z OSM – zbývající záznamy (vstup ubytovani_pardubicky.json)",
+      "url": "data/research/inputs/ubytovani_pardubicky.json",
+      "note": "doplněno 8 záznamů, které v ubytovani_pardubicky.json chyběly; chybějící weby dohledány podle názvu nebo přes portál vychodni-cechy.info"
+    },
+    {
+      "title": "Východní Čechy – oficiální turistický portál Pardubického kraje, ubytování s filtrem pohybové postižení",
+      "url": "https://www.vychodni-cechy.info/ubytovani/?formular/postizeni_pohyb=1&formular/AdOb_Sent=1",
+      "note": "filtr „vyhovuje plně“ vrátil 59 objektů (včetně Královéhradeckého kraje); převzaty objekty z Pardubického kraje, podrobnosti z panelu Bezbariérový přístup u každého objektu; údaje jsou prohlášením provozovatele"
+    },
+    {
+      "title": "Autokemp Seč Pláž – kontakt a časté dotazy",
+      "url": "https://autokempsec.cz/kontakt/",
+      "note": "odpověď na dotaz k bezbariérovým přístupům"
+    },
+    {
+      "title": "Weby provozovatelů nově přidaných zařízení",
+      "url": "https://www.vychodni-cechy.info/ubytovani/",
+      "note": "skriptem podle klíčových slov prošlo 26 webů (úvodní stránka + až 12 podstránek); doplňující údaje jsou u Domino, Chateau Orlice, Uno, Veselý Plus (llb.cz), Arnošt, Buňkov, Slunečný Dvůr, Žlebská Lhotka, Na Křížovce, Bonet a Ječmínek"
+    }
+  ]
+}

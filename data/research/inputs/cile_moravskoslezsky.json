@@ -1,0 +1,486 @@
+[
+{
+"i": "w222682960",
+"n": "Archeopark Chotěbuz",
+"s": "Muzeum",
+"o": "Chotěbuz",
+"a": "Karvinská 455",
+"w": "yes",
+"la": 49.787652,
+"lo": 18.590148
+},
+{
+"i": "n3650215061",
+"n": "Knihovna Dolní Lhota",
+"s": "Knihovna",
+"o": "Dolní Lhota",
+"web": "http://www.dolnilhota.cz/knihovna-obce-dolni-lhota/knihovna/",
+"w": "no",
+"la": 49.840179,
+"lo": 18.091986
+},
+{
+"i": "w68462431",
+"n": "Kotulova dřevěnka",
+"s": "Turistický cíl",
+"o": "Havířov",
+"web": "http://www.muzeumct.cz/kotulova_drevenka/",
+"w": "no",
+"la": 49.770511,
+"lo": 18.442094
+},
+{
+"i": "n1396128624",
+"n": "Bezručova vyhlídka",
+"s": "Vyhlídka",
+"o": "Hradec nad Moravicí",
+"w": "no",
+"la": 49.855998,
+"lo": 17.8682
+},
+{
+"i": "w52381110",
+"n": "Šance",
+"s": "Vyhlídka",
+"o": "Hradec nad Moravicí",
+"w": "no",
+"la": 49.850451,
+"lo": 17.915935
+},
+{
+"i": "w40306193",
+"n": "Hukvaldy",
+"s": "Turistický cíl",
+"o": "Hukvaldy",
+"w": "limited",
+"la": 49.620506,
+"lo": 18.228394
+},
+{
+"i": "n1755405669",
+"n": "Muzeum trojmezí",
+"s": "Muzeum",
+"o": "Jablunkov",
+"web": "https://www.muzeumct.cz/muzeum-tesinska/pobocky/jablunkov",
+"w": "yes",
+"la": 49.576265,
+"lo": 18.763203
+},
+{
+"i": "n4975768172",
+"n": "Světové muzeum a knihovna Bible",
+"s": "Muzeum",
+"o": "Jablunkov",
+"web": "https://www.muzeumbible.cz/",
+"t": "yes",
+"la": 49.577894,
+"lo": 18.76596
+},
+{
+"i": "w921007809",
+"n": "Depozitář Slovenské strely",
+"s": "Muzeum",
+"o": "Kopřivnice",
+"w": "yes",
+"la": 49.594448,
+"lo": 18.147525
+},
+{
+"i": "w123494025",
+"n": "Muzeum Fojtství",
+"s": "Muzeum",
+"o": "Kopřivnice",
+"w": "no",
+"la": 49.59005,
+"lo": 18.13837
+},
+{
+"i": "w123614408",
+"n": "Muzeum nákladních automobilů Tatra",
+"s": "Muzeum",
+"o": "Kopřivnice",
+"a": "Husova 1326/13",
+"web": "https://www.muzeumtatra.cz/",
+"w": "yes",
+"la": 49.594143,
+"lo": 18.148617
+},
+{
+"i": "w168516880",
+"n": "Muzeum osobních automobilů Tatra",
+"s": "Muzeum",
+"o": "Kopřivnice",
+"a": "Záhumenní 367/1",
+"web": "https://www.muzeumtatra.cz",
+"w": "yes",
+"la": 49.599515,
+"lo": 18.143798
+},
+{
+"i": "n11778767808",
+"n": "Sluneční hodiny",
+"s": "Turistický cíl",
+"o": "Kopřivnice",
+"w": "no",
+"t": "no",
+"la": 49.623224,
+"lo": 18.176852
+},
+{
+"i": "w1191915169",
+"n": "Výstavní pavilon",
+"s": "Turistický cíl",
+"o": "Kopřivnice",
+"w": "yes",
+"la": 49.5987,
+"lo": 18.145053
+},
+{
+"i": "n13789538982",
+"n": "Soukromé muzeum Kapličkový vrch",
+"s": "Muzeum",
+"o": "Malá Morávka",
+"web": "https://www.muzejnik.cz/",
+"w": "limited",
+"t": "no",
+"la": 50.019588,
+"lo": 17.311516
+},
+{
+"i": "n12604252443",
+"n": "Obecní knihovna Mořkov",
+"s": "Knihovna",
+"o": "Mořkov",
+"web": "http://naseknihovna.cz/morkov/",
+"w": "no",
+"la": 49.537678,
+"lo": 18.057982
+},
+{
+"i": "n3125890526",
+"n": "Obecní knihovna Nýdek",
+"s": "Knihovna",
+"o": "Nýdek",
+"a": "251",
+"web": "https://nydek.knihovna.info/",
+"w": "yes",
+"t": "no",
+"la": 49.65912,
+"lo": 18.764011
+},
+{
+"i": "r5995065",
+"n": "Dům umění",
+"s": "Galerie",
+"o": "Opava",
+"a": "Pekařská 417/12",
+"web": "https://oko-opava.cz/",
+"w": "yes",
+"la": 49.940422,
+"lo": 17.903623
+},
+{
+"i": "n2852225130",
+"n": "Cinema City",
+"s": "Kino",
+"o": "Ostrava",
+"w": "yes",
+"la": 49.830137,
+"lo": 18.284488
+},
+{
+"i": "n4583690236",
+"n": "Divadlo Jiřího Myrona",
+"s": "Divadlo",
+"o": "Ostrava",
+"w": "yes",
+"la": 49.836396,
+"lo": 18.288236
+},
+{
+"i": "w551301412",
+"n": "Geologická expozice VSB-TUO",
+"s": "Turistický cíl",
+"o": "Ostrava",
+"w": "no",
+"la": 49.831755,
+"lo": 18.163571
+},
+{
+"i": "n493904059",
+"n": "Hornické muzeum",
+"s": "Muzeum",
+"o": "Ostrava",
+"web": "http://www.landekpark.cz/",
+"w": "yes",
+"t": "yes",
+"la": 49.868667,
+"lo": 18.26535
+},
+{
+"i": "w34653020",
+"n": "KMO Opavská",
+"s": "Knihovna",
+"o": "Ostrava",
+"a": "Opavská 6111/64",
+"w": "yes",
+"la": 49.833722,
+"lo": 18.173727
+},
+{
+"i": "w78540806",
+"n": "Malý Svět techniky U6",
+"s": "Muzeum",
+"o": "Ostrava",
+"w": "limited",
+"la": 49.819,
+"lo": 18.281364
+},
+{
+"i": "n2429564017",
+"n": "Moravskoslezská vědecká knihovna",
+"s": "Knihovna",
+"o": "Ostrava",
+"w": "limited",
+"la": 49.841059,
+"lo": 18.290809
+},
+{
+"i": "n10314515115",
+"n": "Nová Radnice",
+"s": "Vyhlídka",
+"o": "Ostrava",
+"w": "yes",
+"la": 49.841729,
+"lo": 18.291693
+},
+{
+"i": "n4583688739",
+"n": "Ostravské muzeum",
+"s": "Muzeum",
+"o": "Ostrava",
+"web": "http://www.ostrmuz.cz/",
+"w": "yes",
+"la": 49.835099,
+"lo": 18.293008
+},
+{
+"i": "n2815328523",
+"n": "Železniční muzeum moravskoslezské",
+"s": "Muzeum",
+"o": "Ostrava",
+"web": "http://www.zmms.cz/index.php",
+"w": "yes",
+"la": 49.828934,
+"lo": 18.282485
+},
+{
+"i": "w506101902",
+"n": "Ráj dřevěných soch",
+"s": "Turistický cíl",
+"o": "Ostravice",
+"w": "yes",
+"la": 49.539831,
+"lo": 18.3906
+},
+{
+"i": "n792014862",
+"n": "Srub Petra Bezruče",
+"s": "Muzeum",
+"o": "Ostravice",
+"web": "https://www.szm.cz/rubrika/49/expozicni-arealy/srub-p-bezruce-ostravice.html",
+"w": "limited",
+"la": 49.554977,
+"lo": 18.38155
+},
+{
+"i": "n3917099901",
+"n": "Knihovna Pstruží",
+"s": "Knihovna",
+"o": "Pstruží",
+"web": "http://pstruzi.knihovna.cz",
+"w": "yes",
+"la": 49.564778,
+"lo": 18.335595
+},
+{
+"i": "n4264507697",
+"n": "Kulturní dům",
+"s": "Komunitní centrum",
+"o": "Příbor",
+"w": "limited",
+"la": 49.641788,
+"lo": 18.141928
+},
+{
+"i": "n2431342303",
+"n": "MiG 15",
+"s": "Turistický cíl",
+"o": "Příbor",
+"w": "yes",
+"la": 49.638833,
+"lo": 18.140076
+},
+{
+"i": "w70398722",
+"n": "Kaple sv. Petra a Pavla",
+"s": "Turistický cíl",
+"o": "Rohov",
+"a": "Hlavní 23",
+"w": "no",
+"la": 50.014717,
+"lo": 18.073158
+},
+{
+"i": "n5046401053",
+"n": "Kulturní dům Spálov",
+"s": "Komunitní centrum",
+"o": "Spálov",
+"w": "yes",
+"la": 49.703715,
+"lo": 17.722532
+},
+{
+"i": "n2439712911",
+"n": "Okrouhlá",
+"s": "Vyhlídka",
+"o": "Staříč",
+"web": "https://www.obec-staric.cz/turisticke-info-staric-menu/rozhledna-okrouhla/",
+"w": "no",
+"la": 49.680616,
+"lo": 18.277475
+},
+{
+"i": "w144596590",
+"n": "Cyrilka",
+"s": "Vyhlídka",
+"o": "Trojanovice",
+"w": "no",
+"la": 49.484938,
+"lo": 18.26123
+},
+{
+"i": "n4578037305",
+"n": "Obecní knihovna Těrlicko",
+"s": "Knihovna",
+"o": "Těrlicko",
+"web": "https://terlicko.knihovna.info/",
+"w": "yes",
+"la": 49.751578,
+"lo": 18.483271
+},
+{
+"i": "n805167943",
+"n": "Kino Kosmos",
+"s": "Kino",
+"o": "Třinec",
+"web": "https://www.kinokosmos.cz/",
+"w": "yes",
+"t": "yes",
+"la": 49.668524,
+"lo": 18.677444
+},
+{
+"i": "n4319249938",
+"n": "Místní knihovna Velká Polom",
+"s": "Knihovna",
+"o": "Velká Polom",
+"web": "http://www.knihovnavelkapolom.webk.cz",
+"w": "yes",
+"la": 49.863959,
+"lo": 18.093598
+},
+{
+"i": "n5019357069",
+"n": "Statek \"Dafesta\"",
+"s": "Turistický cíl",
+"o": "Velké Hoštice",
+"w": "no",
+"la": 49.932262,
+"lo": 17.971452
+},
+{
+"i": "n705402892",
+"n": "Brdlice",
+"s": "Vyhlídka",
+"o": "Vršovice",
+"w": "no",
+"la": 49.880993,
+"lo": 17.935795
+},
+{
+"i": "w53892674",
+"n": "Panna Marie Sedmibolestná (kaple)",
+"s": "Turistický cíl",
+"o": "Vršovice",
+"w": "no",
+"la": 49.88123,
+"lo": 17.936027
+},
+{
+"i": "n5125314020",
+"n": "Překážková dráha",
+"s": "Turistický cíl",
+"o": "Vřesina",
+"w": "no",
+"la": 49.811581,
+"lo": 18.094187
+},
+{
+"i": "n5131041049",
+"n": "Průhledy do lesa",
+"s": "Turistický cíl",
+"o": "Čavisov",
+"w": "yes",
+"la": 49.808037,
+"lo": 18.094731
+},
+{
+"i": "w539903669",
+"n": "Lázeňské Zoo",
+"s": "Turistický cíl",
+"o": "Čeladná",
+"w": "no",
+"la": 49.538324,
+"lo": 18.305747
+},
+{
+"i": "w219363542",
+"n": "Bývalá židovská synagoga;Klub PZKO",
+"s": "Turistický cíl",
+"o": "Český Těšín",
+"a": "Božkova 154/16",
+"w": "no",
+"la": 49.747101,
+"lo": 18.626549
+},
+{
+"i": "n8814490261",
+"n": "Knihovna na Havlíčkové",
+"s": "Knihovna",
+"o": "Český Těšín",
+"w": "no",
+"la": 49.744761,
+"lo": 18.625373
+},
+{
+"i": "n2431922246",
+"n": "Kaple sv. Huberta",
+"s": "Turistický cíl",
+"o": "Šilheřovice",
+"w": "yes",
+"la": 49.917927,
+"lo": 18.280283
+},
+{
+"i": "n5873184487",
+"n": "Obecní knihovna",
+"s": "Knihovna",
+"o": "Šilheřovice",
+"a": "Střední 19",
+"web": "https://knihovnasilherovice.webk.cz/",
+"w": "no",
+"la": 49.92608,
+"lo": 18.269658
+}
+]

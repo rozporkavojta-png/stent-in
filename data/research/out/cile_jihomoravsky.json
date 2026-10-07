@@ -1,0 +1,171 @@
+{
+ "task": "cile_jihomoravsky",
+ "kraj": "Jihomoravský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n13016769665",
+   "name": "Památník holokaustu Romů a Sintů na Moravě",
+   "obec": "Hodonín",
+   "address": "",
+   "lat": 49.507557,
+   "lng": 16.420729,
+   "category": "muzeum",
+   "source_url": "https://www.rommuz.cz/cs/hodonin-u-kunstatu/navstevnici/pristup-ozp/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Infocentrum s expozicí zcela bezbariérové, vstupní dveře dvoukřídlé (jedno křídlo 84 cm); do baráků dozorců a vězňů vede štěrková cesta, dveře 90 cm a jeden schod, přes který lze přistavit rampu.",
+    "wc": "Samostatná bezbariérová toaleta v infocentru (dveře 90 cm, kabina 180 x 212,5 cm), jedno pevné a jedno sklopné madlo.",
+    "parkovani": "Parkoviště pod areálem (24 aut), k památníku asfaltová cesta; držitelé ZTP/P mohou vyjednat vjezd do areálu.",
+    "vytah": "Všechny budovy jsou přízemní, výtah ani plošina nejsou."
+   },
+   "measurements": [
+    {
+     "co": "šířka křídla vstupních dveří infocentra",
+     "hodnota": 84,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří bezbariérové toalety",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny bezbariérové toalety",
+     "hodnota": 180,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny bezbariérové toalety",
+     "hodnota": 212.5,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří baráku dozorců a vězňů",
+     "hodnota": 90,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "V infocentru se nachází hlavní část expozice a multifunkční sál, přístup je zcela bezbariérový."
+  },
+  {
+   "osm_id": "n463552817",
+   "name": "Anthropos",
+   "obec": "Brno",
+   "address": "Pisárecká 5",
+   "lat": 49.192115,
+   "lng": 16.567164,
+   "category": "muzeum",
+   "source_url": "https://www.mzm.cz/pavilon-anthropos",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Téměř celý objekt Pavilonu Anthropos je podle webu bezbariérový.",
+    "jine": "Na stránce uvedeno, že pavilon je ZAVŘENO."
+   },
+   "measurements": [],
+   "evidence_quote": "Téměř celý objekt Pavilon Anthropos je bezbariérový."
+  },
+  {
+   "osm_id": "n88978151",
+   "name": "Hvězdárna a planetárium Brno",
+   "obec": "Brno",
+   "address": "Kraví 2",
+   "lat": 49.204766,
+   "lng": 16.583642,
+   "category": "muzeum",
+   "source_url": "https://www.hvezdarna.cz/prakticke-informace/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Prakticky celá budova je bezbariérová kromě astronomické pozorovatelny; v případě potřeby lze požádat o asistenci v pokladně."
+   },
+   "measurements": [],
+   "evidence_quote": "Prakticky celá budova je bezbariérová (s výjimkou astronomické pozorovatelny)"
+  },
+  {
+   "osm_id": "w50555386",
+   "name": "Vila Tugendhat",
+   "obec": "Brno",
+   "address": "Černopolní 237/45",
+   "lat": 49.207171,
+   "lng": 16.616084,
+   "category": "muzeum",
+   "source_url": "https://www.vilatugendhat.cz/prohlidky-a-vstupenky/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup z Lužáneckého parku přes zahradu vily Löw-Beer do zahrady vily Tugendhat není bezbariérový."
+   },
+   "measurements": [],
+   "evidence_quote": "tento vstup není bezbariérový"
+  },
+  {
+   "osm_id": "n4295036108",
+   "name": "Archeopark Pavlov",
+   "obec": "Pavlov",
+   "address": "23. dubna 264",
+   "lat": 48.877196,
+   "lng": 16.674734,
+   "category": "muzeum",
+   "source_url": "https://www.archeoparkpavlov.cz/navstevni-rad-archeoparku-pavlov/t1173",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Návštěvní řád: návštěvníkům na vozíku se návštěva umožňuje podle podmínek výstavních prostor."
+   },
+   "measurements": [],
+   "evidence_quote": "Invalidním návštěvníkům s vozíkem nebo s holemi se návštěva umožňuje dle podmínek výstavních prostor."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n7503974466",
+   "name": "Papilonia - Motýlí dům Brno",
+   "url": "https://www.papilonia.cz/",
+   "reason": "uvádí jen slevy pro ZTP, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n5263659321",
+   "name": "Vila Löw-Beer v Brně",
+   "url": "https://www.vilalowbeer.cz/cz/pro-navstevniky",
+   "reason": "uvádí jen vstupné zdarma pro ZTP; stránka accessibility se týká jen přístupnosti webu"
+  },
+  {
+   "osm_id": "n10185240284",
+   "name": "Vodojemy na Žlutém kopci",
+   "url": "https://podzemibrno.cz/mista/vodojemy-zluty-kopec/",
+   "reason": "uvádí jen zlevněné vstupné pro ZTP"
+  },
+  {
+   "osm_id": "n3858998077",
+   "name": "Brněnská kostnice",
+   "url": "https://ticbrno.cz/cs/podzemi/kostnice-u-sv-jakuba",
+   "reason": "stránka vrací 404"
+  },
+  {
+   "osm_id": "n11345087114",
+   "name": "Znojemské podzemí",
+   "url": "https://www.znojemskabeseda.cz/turismus/znojemske-podzemi",
+   "reason": "stránka vrací 404"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby cílů z OSM (vstup cile_jihomoravsky.json)",
+   "url": "data/research/inputs/cile_jihomoravsky.json",
+   "note": "42 záznamů s webem; prošlo se 10 nejvýznamnějších muzeí/památek (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "title": "Památník holokaustu Romů a Sintů – přístup OZP",
+   "url": "https://www.rommuz.cz/cs/hodonin-u-kunstatu/navstevnici/pristup-ozp/",
+   "note": "podrobný popis s rozměry"
+  },
+  {
+   "title": "Moravské zemské muzeum – Pavilon Anthropos",
+   "url": "https://www.mzm.cz/pavilon-anthropos",
+   "note": "sekce Bezbariérovost objektu"
+  }
+ ]
+}

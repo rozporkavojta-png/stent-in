@@ -1,0 +1,759 @@
+{
+ "task": "portaly_liberecky",
+ "kraj": "Liberecký kraj",
+ "checked_date": "2026-10-06",
+ "places": [
+  {
+   "osm_id": "n296843315",
+   "name": "Apartmá SunGarden Liberec",
+   "obec": "Liberec",
+   "address": "Venušina 897/5, 460 01 Liberec",
+   "lat": 50.77422,
+   "lng": 15.047641,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=16314",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "n296651017",
+   "name": "Apartmány Terasy Vila",
+   "obec": "Liberec",
+   "address": "Ruprechtická 1180/10, 460 01 Liberec",
+   "lat": 50.77406,
+   "lng": 15.057064,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=31361",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "n12629866564",
+   "name": "Apartmány U Buku",
+   "obec": "Bedřichov",
+   "address": "Bedřichov 401, 468 12 Bedřichov",
+   "lat": 50.780225,
+   "lng": 15.165039,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=31224",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "n1300615867",
+   "name": "Aquapark Babylon",
+   "obec": "Liberec",
+   "address": "Nitranská 1, 460 12 Liberec",
+   "lat": 50.759186,
+   "lng": 15.051311,
+   "category": "sport",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=sport&detail=2",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Ikona „bezbariérový přístup“; podle dotazníku pro vozíčkáře (PDF příloha https://liberec.severni-cechy.com/filemanager/files/file.php?file=23003) zcela přístupné i bez doprovodu, rovný terén, vstup po nájezdu, dveře 80 cm a více.",
+    "vytah": "Výtah se zasouvacími dveřmi, šíře dveří 100 cm, hloubka kabiny 200 cm.",
+    "wc": "Toaleta s dveřmi 80 cm otevíranými ven, madla ano, výška mísy 50 cm.",
+    "parkovani": "Vyhrazené parkovací místo pro vozíčkáře."
+   },
+   "measurements": [
+    {
+     "co": "šířka vstupních dveří (min.)",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří výtahu",
+     "hodnota": 100,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka výtahu",
+     "hodnota": 200,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška WC mísy",
+     "hodnota": 50,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Informace pro vozíčkáře"
+  },
+  {
+   "osm_id": "w51788827",
+   "name": "Botanická zahrada Liberec",
+   "obec": "Liberec",
+   "address": "Purkyňova 630/1, 460 01 Liberec",
+   "lat": 50.778755,
+   "lng": 15.074699,
+   "category": "priroda",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=zajimavosti_a_cile&detail=1009",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Visit Liberec uvádí ikonu „bezbariérový přístup“; Kudy z nudy má u zahrady štítek „Bezbariérový přístup“ (https://www.kudyznudy.cz/aktivity/botanicka-zahrada-liberec-je-nejstarsi-v-ceske-rep).",
+    "jine": "Vstupné ZTP 80 Kč, ZTP-P zdarma."
+   },
+   "evidence_quote": "ZTP 80 Kč, ZTP-P zdarma"
+  },
+  {
+   "osm_id": "w102900195",
+   "name": "Galerie Lázně Liberec",
+   "obec": "Liberec",
+   "address": "Masarykova 723/14, 460 01 Liberec",
+   "lat": 50.773637,
+   "lng": 15.067732,
+   "category": "kultura",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=zajimavosti_a_cile&detail=14647",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí.",
+    "jine": "Podle portálu je galerie 13. 7.–16. 10. 2026 kvůli rekonstrukci uzavřena."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "w47625367",
+   "name": "Home Credit Arena a Sport Park Liberec",
+   "obec": "Liberec",
+   "address": "Jeronýmova 570/22, 460 07 Liberec",
+   "lat": 50.752508,
+   "lng": 15.050036,
+   "category": "sport",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=kultura_a_zabava&detail=324",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Bowling má speciální dráhy pro handicapované; střelnice má bezbariérový přístup a vybavení pro handicapované střelce."
+   },
+   "evidence_quote": "speciální dráhy pro handicapované"
+  },
+  {
+   "osm_id": "n2080175903",
+   "name": "Hotel Arena",
+   "obec": "Liberec",
+   "address": "Jeronýmova 570/22, 460 07 Liberec",
+   "lat": 50.753955,
+   "lng": 15.04812,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=1304",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "w51782859",
+   "name": "Hotel PRAHA",
+   "obec": "Liberec",
+   "address": "Železná 2/1, 460 01 Liberec",
+   "lat": 50.769686,
+   "lng": 15.057431,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=6125",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "r8450202",
+   "name": "Hrad Valdštejn",
+   "obec": "Turnov",
+   "address": "Kadeřavec 18, 511 22 Turnov",
+   "lat": 50.562291,
+   "lng": 15.168227,
+   "category": "pamatky",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=zajimavosti_a_cile&detail=1232",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí.",
+    "jine": "Průvodce držitele ZTP/P má vstup zdarma."
+   },
+   "evidence_quote": "průvodcům držitelů průkazů ZTP/P"
+  },
+  {
+   "osm_id": "w1175710377",
+   "name": "Ještěd – televizní vysílač a hotel",
+   "obec": "Liberec",
+   "address": "Horní Hanychov 153, 460 08 Liberec",
+   "lat": 50.732682,
+   "lng": 14.984626,
+   "category": "pamatky",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=zajimavosti_a_cile&detail=1013",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí.",
+    "jine": "Jizerky.cz uvádí, že autobusová linka na Ještěd je bezbariérová (https://www.jizerky.cz/aktuality/na-jested-pohodlne-tramvaji-autobusem-i-pesky)."
+   },
+   "evidence_quote": "Autobus je bezbariérový, není však určen pro přepravu jízdních kol."
+  },
+  {
+   "osm_id": "w55500079",
+   "name": "Kemp Kristýna",
+   "obec": "Hrádek nad Nisou",
+   "address": "Žitavská 745, 463 34 Hrádek nad Nisou",
+   "lat": 50.859646,
+   "lng": 14.824933,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=13882",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Mezi vybavením kempu uvedena ikona „bezbariérový přístup“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "n2068123191",
+   "name": "Lidové sady Liberec",
+   "obec": "Liberec",
+   "address": "Lidové sady 425/1, 460 01 Liberec",
+   "lat": 50.77721,
+   "lng": 15.08125,
+   "category": "kultura",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=kultura_a_zabava&detail=5177",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Po rekonstrukci je v objektu bezbariérový výtah.",
+    "wc": "Upraveny mj. prostory toalet (bez bližších údajů)."
+   },
+   "evidence_quote": "bezbariérový výtah a kompletně upravené prostory přísálí, balkonu, galerie, šaten"
+  },
+  {
+   "osm_id": "n2082664889",
+   "name": "Motokáry Liberec",
+   "obec": "Liberec",
+   "address": "Blažkova 654/1, 460 01 Liberec",
+   "lat": 50.764889,
+   "lng": 15.055515,
+   "category": "sport",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=sport&detail=11166",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "n681307230",
+   "name": "Multikino CineStar Liberec",
+   "obec": "Liberec",
+   "address": "České mládeže 456, 463 12 Liberec",
+   "lat": 50.741547,
+   "lng": 15.048499,
+   "category": "kultura",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=kultura_a_zabava&detail=5178",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Plně bezbariérový přístup do všech osmi sálů (kino v OC Nisa).",
+    "parkovani": "Parkoviště zdarma."
+   },
+   "evidence_quote": "Plně bezbariérový přístup na všechny sály."
+  },
+  {
+   "osm_id": "n659835535",
+   "name": "Pension Jitka",
+   "obec": "Liberec",
+   "address": "Šimonovická 74, 463 12 Liberec",
+   "lat": 50.71086,
+   "lng": 15.05989,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=1758",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup k budově po nájezdu, šíře vstupu 90 cm (dotazník pro vozíčkáře, PDF https://liberec.severni-cechy.com/filemanager/files/file.php?file=18541).",
+    "pokoj": "Speciálně upravený pokoj pro vozíčkáře.",
+    "wc": "Dveře 90 cm otevírané dovnitř, prostor po stranách mísy 90 a 90 cm, před mísou 150 cm, výška mísy 48 cm, madla ano.",
+    "koupelna": "Sprchový prostor bez vaničky, dveře 90 cm, sedačka ve sprše a madla ano.",
+    "vytah": "Výtah není.",
+    "parkovani": "Nevyhrazené přístupné parkování.",
+    "jine": "Nejbližší bezbariérová restaurace je asi 2 km."
+   },
+   "measurements": [
+    {
+     "co": "šířka vstupu",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "prostor vedle WC mísy (každá strana)",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "prostor před WC mísou",
+     "hodnota": 150,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška WC mísy",
+     "hodnota": 48,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří koupelny",
+     "hodnota": 90,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "speciálně upravený pokoj pro vozíčkáře, včetně bezbariérového přístupu"
+  },
+  {
+   "osm_id": "n2088564950",
+   "name": "Penzion York",
+   "obec": "Liberec",
+   "address": "Kunratická 1503, 463 11 Liberec",
+   "lat": 50.760398,
+   "lng": 15.089357,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=1964",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "n2320601545",
+   "name": "Pytloun Grand Hotel Imperial",
+   "obec": "Liberec",
+   "address": "1. máje 757/29, 460 07 Liberec",
+   "lat": 50.764018,
+   "lng": 15.050315,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=15354",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "n2080175903",
+   "name": "Střelnice – Sport Park Liberec",
+   "obec": "Liberec",
+   "address": "Jeronýmova 570/22, 460 07 Liberec",
+   "lat": 50.753955,
+   "lng": 15.04812,
+   "category": "sport",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=sport&detail=301",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup s vybavením pro handicapované střelce."
+   },
+   "evidence_quote": "Bezbariérový přístup s patřičným vybavením pro handicapované střelce."
+  },
+  {
+   "osm_id": "n3692568118",
+   "name": "Wellness Hotel Babylon",
+   "obec": "Liberec",
+   "address": "Nitranská 1, 460 07 Liberec",
+   "lat": 50.758733,
+   "lng": 15.051101,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=1276",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup v rovině, šíře 80 cm (dotazník pro vozíčkáře, PDF https://liberec.severni-cechy.com/filemanager/files/file.php?file=23005).",
+    "vytah": "Výtah se zasouvacími dveřmi 90 cm, hloubka 240 cm.",
+    "wc": "Dveře 80 cm otevírané dovnitř, prostor vedle mísy 170 a 30 cm, před mísou 110 cm, výška mísy 50 cm, madla ano.",
+    "pokoj": "K dispozici bezbariérové pokoje; dveře 80 cm, prostor vedle lůžka 160 cm, výška lůžka 40 cm.",
+    "koupelna": "Vana, dveře 80 cm, madla ano, sedačka ve sprše ne.",
+    "parkovani": "Vyhrazené parkování.",
+    "jine": "Restaurace: vstup v rovině, dveře 100 cm, prostor pod stolem 70 cm."
+   },
+   "measurements": [
+    {
+     "co": "šířka vstupu",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří výtahu",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka výtahu",
+     "hodnota": 240,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "prostor vedle WC mísy",
+     "hodnota": 170,
+     "jednotka": "cm"
+    },
+    {
+     "co": "prostor před WC mísou",
+     "hodnota": 110,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška WC mísy",
+     "hodnota": 50,
+     "jednotka": "cm"
+    },
+    {
+     "co": "prostor vedle lůžka",
+     "hodnota": 160,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška lůžka",
+     "hodnota": 40,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří pokoje",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří restaurace",
+     "hodnota": 100,
+     "jednotka": "cm"
+    },
+    {
+     "co": "volný prostor pod stolem",
+     "hodnota": 70,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "K dispozici jsou také bezbariérové a antialergenní pokoje"
+  },
+  {
+   "osm_id": "n2061456331",
+   "name": "Wellness Hotel Fénix",
+   "obec": "Liberec",
+   "address": "Ještědská 279, 460 08 Liberec",
+   "lat": 50.73918,
+   "lng": 15.017117,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=4566",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "n296686648",
+   "name": "Wellness Penzion U Muzea",
+   "obec": "Liberec",
+   "address": "Vítězná 713/24, 460 01 Liberec",
+   "lat": 50.775612,
+   "lng": 15.067032,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=5104",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Nový bezbariérový zahradní apartmán s ložnicí, koupelnou se sprchou a kuchyňskou linkou."
+   },
+   "evidence_quote": "zcela nový bezbarierový apartmán propojený se zahradou"
+  },
+  {
+   "osm_id": "n968223447",
+   "name": "Skalní hrad Sloup",
+   "obec": "Sloup v Čechách",
+   "address": "Ke Hradu 125, 471 52 Sloup v Čechách",
+   "lat": 50.735529,
+   "lng": 14.583764,
+   "category": "pamatky",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=zajimavosti_a_cile&detail=1339",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Objekt nemá bezbariérový přístup."
+   },
+   "evidence_quote": "Objekt nemá bezbariérový přístup."
+  },
+  {
+   "osm_id": "n1587332560",
+   "name": "Státní zámek Hrubý Rohozec",
+   "obec": "Turnov",
+   "address": "Hrubý Rohozec 1, 511 01 Turnov",
+   "lat": 50.598955,
+   "lng": 15.157224,
+   "category": "pamatky",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=zajimavosti_a_cile&detail=1192",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": "r8756144",
+   "name": "Státní zámek Sychrov",
+   "obec": "Sychrov",
+   "address": "Sychrov 1, 463 44 Sychrov",
+   "lat": 50.626235,
+   "lng": 15.089092,
+   "category": "pamatky",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=zajimavosti_a_cile&detail=1046",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Ikona „bezbariérový přístup“; dle dotazníku „S vozíkem na cestách“ (PDF https://liberec.severni-cechy.com/filemanager/files/file.php?file=18543) zcela přístupný pouze s doprovodem, rovný terén, vstup v rovině.",
+    "wc": "Dveře toalety 60 cm, madla ne.",
+    "parkovani": "Vyhrazené parkování.",
+    "jine": "Průvodce držitele ZTP/P má vstup zdarma."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 60,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Dotazník pro vozíčkáře"
+  },
+  {
+   "osm_id": "n659828591",
+   "name": "Zámek Lemberk",
+   "obec": "Jablonné v Podještědí",
+   "address": "Lvová 1, 471 25 Jablonné v Podještědí",
+   "lat": 50.78185,
+   "lng": 14.78659,
+   "category": "pamatky",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=zajimavosti_a_cile&detail=1224",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Ikona „bezbariérový přístup“; dle dotazníku (PDF https://liberec.severni-cechy.com/filemanager/files/file.php?file=18544) dlážděná přístupová cesta, vstup v rovině, dveře 80 cm.",
+    "wc": "Dveře 80 cm otevírané dovnitř, madla ano.",
+    "parkovani": "Nevyhrazené přístupné; označená vozidla mohou vyjet před zámek."
+   },
+   "measurements": [
+    {
+     "co": "šířka vstupních dveří",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 80,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "označená vozidla mohou vyjet před zámek"
+  },
+  {
+   "osm_id": "w208047475",
+   "name": "Zoologická zahrada Liberec",
+   "obec": "Liberec",
+   "address": "Lidové sady 425/1, 460 01 Liberec",
+   "lat": 50.778215,
+   "lng": 15.078755,
+   "category": "priroda",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=zajimavosti_a_cile&detail=1008",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Visit Liberec uvádí ikonu „bezbariérový přístup“; Kudy z nudy má štítek „Bezbariérový přístup“ (https://www.kudyznudy.cz/aktivity/zoo-liberec-dobrodruzstvi-z-poznani).",
+    "jine": "ZTP/P vstup zdarma včetně 1 průvodce."
+   },
+   "evidence_quote": "ZTP/P (po předložení průkazu) zdarma vč. 1 průvodce"
+  },
+  {
+   "osm_id": "n664100980",
+   "name": "Automoto Museum Lučany",
+   "obec": "Lučany nad Nisou",
+   "address": "Lučany nad Nisou 568, 468 71 Lučany nad Nisou",
+   "lat": 50.741171,
+   "lng": 15.22789,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/auto-museum-lucany",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Kudy z nudy uvádí u muzea štítek „Bezbariérový přístup“; bez podrobností.",
+    "jine": "Snížené vstupné pro ZTP 150 Kč."
+   },
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "osm_id": "w101330464",
+   "name": "Hrad Grabštejn",
+   "obec": "Hrádek nad Nisou",
+   "address": "Grabštejn 21, 463 34 Hrádek nad Nisou",
+   "lat": 50.846051,
+   "lng": 14.876253,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hrad-grabstejn-v-srdci-trojzemi-cr-nemecka-a-po",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Cesta na hrad není bezbariérová; lze domluvit průjezd autem přes pozemek AČR až k hradní bráně, návštěvu nutno předem ohlásit (tel. 482 724 301).",
+    "vytah": "Do 1. patra expozice vede zdvihací plošina, 2. patro jen po schodech.",
+    "jine": "Prohlídky nejsou plně bezbariérové; nutný vlastní doprovod."
+   },
+   "evidence_quote": "Do 1. patra expozice vede zdvihací plošina, 2. patro je přístupné pouze po schodech."
+  },
+  {
+   "osm_id": "n3880273565",
+   "name": "Mumlavský vodopád",
+   "obec": "Harrachov",
+   "lat": 50.770625,
+   "lng": 15.453183,
+   "category": "priroda",
+   "source_url": "https://www.kudyznudy.cz/aktivity/mumlavsky-vodopad-v-krkonosich",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Kudy z nudy má u místa štítek „Bezbariérový přístup“ a uvádí ho v článku s bezbariérovými tipy; text popisuje jen nenáročnou cestu od Harrachova po modré značce, bez údajů o povrchu či sklonu."
+   },
+   "evidence_quote": "Cesta od Harrachova je nenáročná a dobře značená"
+  },
+  {
+   "osm_id": "n973890276",
+   "name": "Hotel Kleis",
+   "obec": "Cvikov",
+   "address": "Pivovarská 405, 471 54 Cvikov",
+   "lat": 50.777056,
+   "lng": 14.642705,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/nove-otevreny-hotel-kleis-v-arealu-pivovaru-cvikov",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Třílůžkový bezbariérový pokoj."
+   },
+   "evidence_quote": "k dispozici je třílůžkový bezbariérový pokoj"
+  },
+  {
+   "osm_id": "n1825422941",
+   "name": "Zámek Doksy",
+   "obec": "Doksy",
+   "address": "Valdštejnská 183, 472 01 Doksy",
+   "lat": 50.564804,
+   "lng": 14.652616,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamek-doksy",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Zařazen v článku Kudy z nudy s bezbariérovými tipy z regionů (https://www.kudyznudy.cz/aktuality/cestovani-bez-barier-nejlepsi-tipy-z-regionu), samotná stránka zámku ale údaje o přístupnosti neuvádí."
+   },
+   "evidence_quote": "Výběr bezbariérových tipů z jednotlivých krajů"
+  },
+  {
+   "osm_id": "w170635150",
+   "name": "Cyklostezka Varhany",
+   "obec": "Česká Lípa",
+   "address": "Českokamenická, 470 36 Česká Lípa",
+   "lat": 50.721074,
+   "lng": 14.503697,
+   "category": "sport",
+   "source_url": "https://www.kudyznudy.cz/aktivity/cyklostezka-varhany-v-ceske-lipe",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Uvedena v článku Kudy z nudy s bezbariérovými tipy. Stezka měří téměř 17 km (Česká Lípa – Kamenický Šenov), asfaltobetonový povrch, šíře 3 m, stoupání max. 2,9 %, bez automobilového provozu."
+   },
+   "measurements": [
+    {
+     "co": "šířka stezky",
+     "hodnota": 3,
+     "jednotka": "m"
+    },
+    {
+     "co": "max. stoupání",
+     "hodnota": 2.9,
+     "jednotka": "%"
+    },
+    {
+     "co": "délka",
+     "hodnota": 17,
+     "jednotka": "km"
+    }
+   ],
+   "evidence_quote": "Stoupání na cyklostezce nepřesahuje 2,9 %."
+  },
+  {
+   "osm_id": "n2080175903",
+   "name": "Hostel Hotelu Arena",
+   "obec": "Liberec",
+   "address": "Jeronýmova 570/22, 460 07 Liberec",
+   "lat": 50.753955,
+   "lng": 15.04812,
+   "category": "ubytovani",
+   "source_url": "https://www.visitliberec.eu/vyhledavani/?cat=ubytovani&detail=2421",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na portálu Visit Liberec má objekt mezi vybavením uvedenou ikonu „bezbariérový přístup“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup"
+  }
+ ],
+ "not_found": [
+  "Fotbalový stadion U Nisy – nepodařilo se geokódovat přes Nominatim, nezařazeno",
+  "Hotel Můstek – nepodařilo se geokódovat přes Nominatim, nezařazeno",
+  "Krkonose.eu – „Další bezbariérové trasy“: jediná trasa v Libereckém kraji (Z Harrachova přes Jakuszyce na Orle) vede převážně v Polsku, vhodná pro vozíky s doprovodem; nezařazeno jako místo (https://www.krkonose.eu/z-harrachova-pres-jakuszyce-na-orle).",
+  "Koupaliště Vápenka Liberec – na Visit Liberec s ikonou bezbariérového přístupu, ale „mimo provoz“; nezařazeno.",
+  "Stolní tenis – Sport Park Liberec – stejný objekt jako Home Credit Arena / Střelnice; nezařazeno zvlášť.",
+  "Apartmány Friday, Apartmány Terasy Café, Hotel Petra, Hotel Obří sud Javorník (+ Karavan kemp Obří sud) – na Visit Liberec s bezbariérovou informací, ale už v ubytovani_liberecky*.json; nezdvojeno.",
+  "www.ceskyraj.cz – nenačetl se (spojení selhalo); www.liberecky-kraj.cz přesměrovává na northernbohemia.com, kde vyhledávání ani menu stránky o bezbariérovosti nenabízí.",
+  "www.jizerky.cz – sitemapa ani vyhledávání neobsahují stránku o bezbariérových výletech/ubytování (jen zmínka o bezbariérovém autobusu na Ještěd).",
+  "kudyznudy.cz – filtr „bezbariérové“ + kraj ve vyhledávání nejde použít bez JS; prošlo se 152 stránek se štítky bezbariérové místo / bezbariérový přístup a kampaň Bezbariérová místa, z Libereckého kraje 6 + 2 z článku s tipy."
+ ],
+ "sources": [
+  "https://www.visitliberec.eu/?s=bezbari%C3%A9rov%C3%BD",
+  "https://www.kudyznudy.cz/kampane/bezbarier",
+  "https://www.kudyznudy.cz/vyhledavani?tag=bezbari%C3%A9rov%C3%A9%20m%C3%ADsto",
+  "https://www.kudyznudy.cz/aktuality/cestovani-bez-barier-nejlepsi-tipy-z-regionu",
+  "https://www.kudyznudy.cz/aktuality/cestovani-bez-barier-prehled-vozickarskych-tras-po",
+  "https://www.krkonose.eu/dalsi-bezbarierove-trasy",
+  "https://www.jizerky.cz/search?query=bezbari%C3%A9rov%C3%BD",
+  "https://northernbohemia.com/cs/",
+  "https://nominatim.openstreetmap.org/"
+ ]
+}

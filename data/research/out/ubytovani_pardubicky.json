@@ -1,0 +1,92 @@
+{
+ "task": "ubytovani_pardubicky",
+ "kraj": "Pardubický kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n842112593",
+   "name": "Autocamping Pod Černým lesem",
+   "obec": "Žamberk",
+   "address": "",
+   "lat": 50.08642,
+   "lng": 16.47693,
+   "category": "ubytovani",
+   "source_url": "https://autocamping.cz/restaurace-a-penzion/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "V seznamu vybavení restaurace a penzionu je uveden bezbariérový přístup (bez dalších podrobností)."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbariérový přístup"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n3803733946",
+   "name": "Marina",
+   "url": "https://www.marinahotel.cz",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "w71044715",
+   "name": "Rubyk",
+   "url": "https://www.rubyk.cz/",
+   "reason": "doména přesměrovává na turistický portál lanskrounsko.cz, o přístupnosti hotelu nic (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "n296806960",
+   "name": "Hotelový Dům Pardubice",
+   "url": "https://www.hotelovydumpardubice.cz/",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "n5030523625",
+   "name": "Pension Austria",
+   "url": "https://www.pensionaustria.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2882870701",
+   "name": "Pension Podkova",
+   "url": "https://www.penzionpodkova.cz/",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "n2407672027",
+   "name": "Zlatá štika",
+   "url": "http://www.zlatastika.cz/",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "w30786381",
+   "name": "Autocamp Semín",
+   "url": "https://www.autokempsemin.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n8991336972",
+   "name": "Apartmán U Louky",
+   "url": "https://www.apartmanulouky.cz",
+   "reason": "doména neexistuje (chyba DNS)"
+  },
+  {
+   "osm_id": "n10989770613",
+   "name": "Pension Fontána Svitavy",
+   "url": "https://pension-fontana.cz/sluzby/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů ubytování z OSM (vstup ubytovani_pardubicky.json)",
+   "url": "data/research/inputs/ubytovani_pardubicky.json",
+   "note": "11 záznamů s webem; prošlo se 10 webů (emobile.cz u tábořiště vynechán, obecná doména)"
+  },
+  {
+   "title": "Autocamping Pod Černým lesem – restaurace a penzion",
+   "url": "https://autocamping.cz/restaurace-a-penzion/",
+   "note": "bezbariérový přístup v seznamu vybavení"
+  }
+ ]
+}

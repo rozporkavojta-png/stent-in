@@ -1,0 +1,732 @@
+{
+ "task": "portaly_ustecky",
+ "kraj": "Ústecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n1196819046",
+   "name": "Penzion Kamzík",
+   "obec": "Česká Kamenice",
+   "address": "Studený 35, 407 21 Česká Kamenice",
+   "lat": 50.844111,
+   "lng": 14.438143,
+   "category": "ubytovani",
+   "source_url": "https://www.ceskesvycarsko.cz/doporucujeme/penzion-kamzik/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Portál uvádí ve vybavení štítek „Bezbariérový přístup“ a v cílových skupinách „Bezbariérové“.",
+    "jine": "Bez dalších podrobností (pokoj, koupelna, WC neuvedeny)."
+   },
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "name": "Penzion Balnika",
+   "obec": "Mikulášovice",
+   "address": "Mikulášovice 876, 407 79 Mikulášovice",
+   "lat": 50.977118,
+   "lng": 14.347238,
+   "category": "ubytovani",
+   "source_url": "https://www.ceskesvycarsko.cz/doporucujeme/penzion-balnika/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Portál uvádí ve vybavení štítek „Bezbariérový přístup“ a v cílových skupinách „Bezbariérové“.",
+    "jine": "Bez dalších podrobností."
+   },
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "name": "Kemp Děčín",
+   "obec": "Děčín",
+   "address": "Polabí, 405 02 Děčín – Staré Město",
+   "lat": 50.7743,
+   "lng": 14.209515,
+   "category": "ubytovani",
+   "source_url": "https://www.ceskesvycarsko.cz/doporucujeme/kemp-decin/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Portál řadí kemp do cílové skupiny „Bezbariérové“; podrobnosti neuvádí."
+   },
+   "evidence_quote": "Bezbariérové"
+  },
+  {
+   "name": "Hotel Praha Hřensko",
+   "obec": "Hřensko",
+   "address": "Hřensko 37, 407 17 Hřensko",
+   "lat": 50.875458,
+   "lng": 14.247409,
+   "category": "ubytovani",
+   "source_url": "https://www.ceskesvycarsko.cz/doporucujeme/hotel-praha/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "V základních informacích o vybavení hotelu je uveden bezbariérový přístup.",
+    "vytah": "Hotel má výtah."
+   },
+   "evidence_quote": "Základní informace o vybavení v hotelu: výtah, bezbariérový přístup"
+  },
+  {
+   "name": "Sportlife Rumburk",
+   "obec": "Rumburk",
+   "address": "Lesní 1302/12, 408 01 Rumburk",
+   "lat": 50.94919,
+   "lng": 14.540989,
+   "category": "ubytovani",
+   "source_url": "https://www.ceskesvycarsko.cz/doporucujeme/sportlife-rumburk/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Ve vybavení i cílových skupinách portál uvádí „Bezbariérový přístup“.",
+    "jine": "Bez dalších podrobností."
+   },
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "name": "Penzion Lípa (Lípa Resort)",
+   "obec": "Krásná Lípa",
+   "address": "Pražská 278/4, 407 46 Krásná Lípa",
+   "lat": 50.912781,
+   "lng": 14.507578,
+   "category": "ubytovani",
+   "source_url": "https://www.ceskesvycarsko.cz/doporucujeme/penzion-lipa-resort/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Portál uvádí bezbariérovou dostupnost penzionu.",
+    "pokoj": "Z 13 pokojů je jeden speciálně upravený pro osoby s těžším pohybovým omezením.",
+    "jine": "Všechny pokoje mají vlastní sociální zařízení se sprchou (přizpůsobení koupelny neuvedeno). Ve stejném komplexu je Hostel Lípa (Pražská 506/6), který portál také řadí mezi „Bezbariérové“."
+   },
+   "evidence_quote": "speciálně upravený pokoj pro osoby s těžším pohybovým omezením"
+  },
+  {
+   "name": "Lípa Resort – Aparthotel Lípa",
+   "obec": "Krásná Lípa",
+   "address": "Křinické náměstí 1180/7, 407 46 Krásná Lípa",
+   "lat": 50.913522,
+   "lng": 14.508126,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/lipa-resort-v-krasne-lipe",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle portálu jsou všechny objekty resortu bezbariérově přístupné a přizpůsobené osobám se sníženou schopností pohybu a orientace.",
+    "jine": "Mezi služby aparthotelu (33 apartmánů) je uveden bezbariérový přístup. Souřadnice odpovídají Křinickému náměstí (bez čísla domu)."
+   },
+   "evidence_quote": "Všechny objekty jsou bezbariérově přístupné a přizpůsobené osobám se sníženou schopností orientace a pohybu."
+  },
+  {
+   "name": "Hotel Varnsdorf",
+   "obec": "Varnsdorf",
+   "address": "5. května 2427, 407 47 Varnsdorf",
+   "lat": 50.920141,
+   "lng": 14.608309,
+   "category": "ubytovani",
+   "source_url": "https://www.ceskesvycarsko.cz/doporucujeme/hotel-varnsdorf/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Portál zmiňuje bezbariérové řešení hotelu a ve vybavení uvádí „Bezbariérový přístup“.",
+    "parkovani": "Ve vybavení uvedeno parkoviště (vyhrazená místa neuvedena)."
+   },
+   "evidence_quote": "Díky svému vybavení, bezbariérovému řešení a ochotnému personálu"
+  },
+  {
+   "name": "Resort Mezná – restaurace",
+   "obec": "Hřensko",
+   "address": "Mezná 80, 407 17 Hřensko",
+   "lat": 50.868592,
+   "lng": 14.296337,
+   "category": "restaurace",
+   "source_url": "https://www.ceskesvycarsko.cz/doporucujeme/resort-mezna/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Restaurace resortu je podle portálu bezbariérová (40 míst uvnitř, letní terasa).",
+    "jine": "O přístupnosti ubytování portál nic neuvádí."
+   },
+   "evidence_quote": "stylová a bezbariérová restaurace tohoto zařízení je ideálním místem k zastavení"
+  },
+  {
+   "name": "Naučná stezka Česká silnice",
+   "obec": "Jetřichovice (Vysoká Lípa)",
+   "address": "Vysoká Lípa, Jetřichovice",
+   "lat": 50.867218,
+   "lng": 14.353708,
+   "category": "priroda",
+   "source_url": "https://www.ceskesvycarsko.cz/tip-na-vylet/rodinny-vylet-po-ceske-silnici-pohadky-priroda-a-poklad-na-konci-cesty/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Asfaltový povrch, vhodný pro kočárky a s pomocí i pro vozíčkáře; 12 zastavení s panely; cesta tam zhruba 1,5 h. FAQ portálu ji popisuje jako zpevněnou asfaltovou cestu u Vysoké Lípy."
+   },
+   "evidence_quote": "Asfaltový, vhodný pro kočárky a s pomocí i pro vozíčkáře."
+  },
+  {
+   "name": "Vozíčkářská trasa Krásnolipskem (start Dům Českého Švýcarska)",
+   "obec": "Krásná Lípa",
+   "address": "Křinické náměstí 1161/10, 407 46 Krásná Lípa",
+   "lat": 50.913559,
+   "lng": 14.507397,
+   "category": "priroda",
+   "source_url": "https://www.kudyznudy.cz/aktivity/vozickarska-trasa-v-ceskosaskem-svycarsku",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Na trase jsou bezbariérové nájezdy na chodníky.",
+    "wc": "Bezbariérové toalety v Domě Českého Švýcarska v Krásné Lípě a v Jiřetíně pod Jedlovou.",
+    "jine": "Okruh 9 km certifikovaný KČT, začíná i končí u Domu Českého Švýcarska; ve vozíčkářském značení červená = středně obtížná; vede PR Velký rybník (Krásná Lípa – Rybniště – Horní Podluží). Na stránce je 1 uživatelská recenze tvrdící, že trasa je pro vozíčkáře nevhodná."
+   },
+   "measurements": [
+    {
+     "co": "délka okruhu",
+     "hodnota": 9,
+     "jednotka": "km"
+    }
+   ],
+   "evidence_quote": "Bezbariérová turistická trasa pro vozíčkáře je certifikovaná Klubem českých turistů."
+  },
+  {
+   "name": "Naučná stezka „Všemi smysly“ (Kyjovské údolí)",
+   "obec": "Krásná Lípa",
+   "address": "Kyjov, Krásná Lípa",
+   "lat": 50.913132,
+   "lng": 14.4567,
+   "category": "priroda",
+   "source_url": "https://www.ceskesvycarsko.cz/tip-na-vylet/rodinny-den-v-krasne-lipe-tajemne-stezky-zabava-a-vune-bylin/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Portál uvádí, že trasa je bezbariérová a vhodná pro kočárky i dětská kola. Kudy z nudy má u 7 km dlouhé NS Kyjovské údolí jen štítek „Bezbariérový přístup“ bez podrobností."
+   },
+   "evidence_quote": "Trasa je bezbariérová a vhodná pro kočárky i dětská kola."
+  },
+  {
+   "name": "Dům porcelánu s modrou krví a Městské IC Dubí",
+   "obec": "Dubí",
+   "address": "Tovární 620/15a, 417 01 Dubí",
+   "lat": 50.674627,
+   "lng": 13.796692,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/dum-porcelanu-s-modrou-krvi",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Dům je podle portálu bezbariérový; Krušnohoří portál popisuje budovu (včetně infocentra) jako moderní bezbariérové turistické centrum."
+   },
+   "evidence_quote": "Dům je bezbariérový."
+  },
+  {
+   "name": "Galerie Benedikta Rejta",
+   "obec": "Louny",
+   "address": "Pivovarská 34, 440 01 Louny",
+   "lat": 50.358097,
+   "lng": 13.796181,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/galerie-benedikta-rejta-v-lounech",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Galerie je bezbariérová kromě sklepních prostor, které se podle výstavy využívají jako výstavní prostor.",
+    "jine": "Držitelé průkazů ZTP mají vstup zdarma."
+   },
+   "evidence_quote": "Galerie je bezbariérová (kromě sklepních prostor"
+  },
+  {
+   "name": "Tereziny lázně Dubí",
+   "obec": "Dubí",
+   "address": "Lázeňská 21/3, 417 01 Dubí",
+   "lat": 50.686031,
+   "lng": 13.783706,
+   "category": "zdravi",
+   "source_url": "https://www.kudyznudy.cz/aktivity/tereziny-lazne-dubi-plne-bezbarierove-zarizeni-v",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Zařízení je podle portálu kompletně bezbariérové a plně uzpůsobené pro vozíčkáře; služby jsou pod jednou střechou.",
+    "jine": "Vodoléčba a bazén jsou vybaveny zvedacími zařízeními; lesopark (cca 3 ha) s nenáročným bezbariérovým terénem. Také krusnehory.cz/cs/sport-a-relax/tereziny-lazne-dubi-3344.html uvádí plně bezbariérové zařízení."
+   },
+   "evidence_quote": "Zařízení je plně uzpůsobeno pro vozíčkáře – je kompletně bezbariérové"
+  },
+  {
+   "name": "Kostel Nanebevzetí Panny Marie (přesunutý kostel)",
+   "obec": "Most",
+   "address": "Kostelní 289, 434 01 Most",
+   "lat": 50.51781,
+   "lng": 13.648824,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/chram-nanebevzeti-panny-marie-v-moste",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Prohlídka je pro vozíčkáře vhodná, ale přístup do spodních prostor kostela je omezený.",
+    "wc": "Bezbariérové toalety jsou v restauraci U Ducha, u jejího vstupu je nájezdová rampa.",
+    "jine": "Pro nevidomé asi 20 haptických exponátů; snížené vstupné pro ZTP a ZTP/P."
+   },
+   "evidence_quote": "Návštěvníci na vozíku mají omezený přístup do spodních prostor kostela"
+  },
+  {
+   "name": "Zámek Duchcov",
+   "obec": "Duchcov",
+   "address": "nám. Republiky 202/9, 419 01 Duchcov",
+   "lat": 50.602091,
+   "lng": 13.744587,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/jako-casanova-na-zamku-v-duchcove",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérově lze na nádvoří a do expozice v přízemí (Okouzleni antikou); oba hlavní okruhy jsou v 1. patře po schodech.",
+    "wc": "Bezbariérové WC je přístupné z vestibulu naproti pokladně.",
+    "jine": "Pomoc (např. s vynesením vozíku) si musí návštěvník zajistit předem sám a kontaktovat správu; lze půjčit skládací židličku."
+   },
+   "evidence_quote": "Bezbariérové WC je přístupné z vestibulu, naproti pokladně."
+  },
+  {
+   "name": "Zámek Stekník",
+   "obec": "Zálužice (Stekník)",
+   "address": "Stekník 1, Žatec",
+   "lat": 50.323333,
+   "lng": 13.623498,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamek-steknik-na-zatecku",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérově přístupná je zámecká kaple, výstavní prostor v přízemí, horní terasa zahrady a nádvoří; pokladna (jeden schod) je s přidaným nájezdem relativně snadno dostupná.",
+    "wc": "K dispozici je bezbariérové WC."
+   },
+   "evidence_quote": "K dispozici je bezbariérové WC."
+  },
+  {
+   "osm_id": "r6786652",
+   "name": "Zámek Libochovice",
+   "obec": "Libochovice",
+   "address": "nám. 5. května 1, 411 17 Libochovice",
+   "lat": 50.405131,
+   "lng": 14.043745,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamek-v-libochovicich-s-expozici-j-e-purkyne",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bez asistence lze navštívit jen nádvoří, pamětní síň J. E. Purkyně a park; další interiéry jen s doprovodem, který vozík vynese do 1. patra.",
+    "vytah": "Zámek nemá výtah ani schodolez.",
+    "jine": "Podlahy interiérů hladké (parkety), schody poměrně mírné se zábradlím."
+   },
+   "evidence_quote": "Zámek nemá žádný výtah ani \"schodolez\"."
+  },
+  {
+   "name": "Zámek Krásný Dvůr",
+   "obec": "Krásný Dvůr",
+   "address": "Krásný Dvůr",
+   "lat": 50.251833,
+   "lng": 13.369596,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamek-krasny-dvur",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Park a nádvoří jsou bezbariérové; prohlídka zámku pro vozíčkáře je možná jen po předchozí rezervaci."
+   },
+   "evidence_quote": "Možnost prohlídky pro vozíčkáře jen po předešlé rezervaci"
+  },
+  {
+   "name": "Galerie Špejchar",
+   "obec": "Chomutov",
+   "address": "Palackého 4995/85, 430 01 Chomutov",
+   "lat": 50.459925,
+   "lng": 13.419254,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/galerie-spejchar-v-chomutove",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vchod do galerie je z atria Chomutovské knihovny a je bezbariérový díky pojezdové plošině."
+   },
+   "evidence_quote": "je bezbariérový pomocí pojezdové plošiny"
+  },
+  {
+   "name": "Kamencové jezero",
+   "obec": "Chomutov",
+   "address": "Tomáše ze Štítného, Chomutov",
+   "lat": 50.472364,
+   "lng": 13.425032,
+   "category": "sport",
+   "source_url": "https://www.kudyznudy.cz/aktivity/kamencove-jezero",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "U pokladny z ulice Přemyslova je opravený nájezd pro kočárky a vozíčkáře.",
+    "jine": "U dvou bočních mol jsou schody s madlem pro vstup do vody (bezbariérový vstup do vody neuveden)."
+   },
+   "evidence_quote": "nájezd pro kočárky a vozíčkáře u pokladny z ulice Přemyslova"
+  },
+  {
+   "name": "Aquadrom Most",
+   "obec": "Most",
+   "address": "Topolová 801, 434 01 Most",
+   "lat": 50.495361,
+   "lng": 13.64609,
+   "category": "sport",
+   "source_url": "https://www.kudyznudy.cz/aktivity/za-vodnimi-hratkami-do-aquadromu-v-mostu",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup do vodního parku je podle portálu bezbariérový.",
+    "jine": "Podrobnosti (zvedák do bazénu, šatny) neuvedeny; Krušnohoří portál zmiňuje slevy pro ZTP."
+   },
+   "evidence_quote": "Jeho přístup je bezbariérový"
+  },
+  {
+   "name": "Hotel Clochard",
+   "obec": "Chomutov",
+   "address": "Blatenská 1099, 430 01 Chomutov",
+   "lat": 50.464672,
+   "lng": 13.411434,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hotel-clochard-v-chomutove",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "V hotelu je podle portálu bezbariérový přístup.",
+    "parkovani": "Hlídané parkoviště (vyhrazená místa neuvedena).",
+    "jine": "Bezbariérový pokoj ani koupelna výslovně uvedeny nejsou."
+   },
+   "evidence_quote": "V hotelu je také bezbariérový přístup."
+  },
+  {
+   "name": "Lovo Café a recepce Centra kultury",
+   "obec": "Lovosice",
+   "address": "8. května 13, 410 02 Lovosice",
+   "lat": 50.512213,
+   "lng": 14.053082,
+   "category": "restaurace",
+   "source_url": "https://www.kudyznudy.cz/aktivity/kavarna-lovo-cafe",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Recepce Centra kultury, která je součástí Lovo Café, je bezbariérově přístupná."
+   },
+   "evidence_quote": "recepce Centra kultury, která je součástí Lovo Café, je bezbariérově přístupná"
+  },
+  {
+   "name": "Hotel a restaurace Emeran",
+   "obec": "Klíny",
+   "address": "Rašov 210, 436 01 Klíny",
+   "lat": 50.628656,
+   "lng": 13.564881,
+   "category": "ubytovani",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/ubytovani/hotel-emeran-610.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel má kromě 22 dvoulůžkových pokojů 1 jednolůžkový bezbariérový pokoj s vlastním sociálním zařízením.",
+    "jine": "Restauraci Emeran popisuje portál jako stylovou, bezbariérovou a nekuřáckou (krusnehory.cz/cs/sluzby/gastronomie/restaurace-emeran-1389.html)."
+   },
+   "evidence_quote": "1 jednolůžkovém bezbariérovém pokoji s vlastním sociálním zařízením"
+  },
+  {
+   "name": "Koupaliště města Duchcov",
+   "obec": "Duchcov",
+   "address": "Osecká, 419 01 Duchcov",
+   "lat": 50.61532,
+   "lng": 13.735787,
+   "category": "sport",
+   "source_url": "https://www.krusnehory.cz/cs/sport-a-relax/koupaliste-mesta-duchcov-1833.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Návštěvníci mohou využít novou bezbariérovou převlékárnu; o přístupu k bazénům a WC portál bezbariérovost neuvádí."
+   },
+   "evidence_quote": "Návštěvníci koupaliště můžou využívat i novou bezbariérovou převlékárnu."
+  },
+  {
+   "name": "Výstava o historii Chemparku Záluží",
+   "obec": "Litvínov",
+   "address": "Záluží 1, 436 70 Litvínov",
+   "lat": 50.561647,
+   "lng": 13.60206,
+   "category": "kultura",
+   "source_url": "https://www.krusnehory.cz/cs/turisticke-cile/vystava-o-historii-chemparku-zaluzi-18950.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Výstava je ve 2. a 3. patře budovy, která není bezbariérová.",
+    "vytah": "Budova není vybavena výtahem."
+   },
+   "evidence_quote": "není bezbariérová a není vybavena výtahem"
+  },
+  {
+   "name": "Zámek Jezeří",
+   "obec": "Horní Jiřetín",
+   "address": "Černice, Horní Jiřetín",
+   "lat": 50.55437,
+   "lng": 13.504754,
+   "category": "pamatky",
+   "source_url": "https://www.krusnehory.cz/cs/pesi-vylety/na-zamek-jezeri-a-jeste-dal-2702.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Portál (tip na pěší výlet) uvádí, že zámek je částečně přístupný i pro handicapované; podrobnosti neuvádí."
+   },
+   "evidence_quote": "Přístupný je z části i pro handicapované"
+  },
+  {
+   "name": "Hotel Nádraží",
+   "obec": "Horní Jiřetín",
+   "address": "Černická 25/20, 435 43 Horní Jiřetín",
+   "lat": 50.571686,
+   "lng": 13.544722,
+   "category": "ubytovani",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/ubytovani/hotel-nadrazi-16103.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Z 11 pokojů je 1 bezbariérový dvoulůžkový s přistýlkou.",
+    "vytah": "Ve vybavení uveden výtah."
+   },
+   "evidence_quote": "11 pokojů z toho 1 pokoj bezbariérový dvoulůžkový s přistýlkou."
+  },
+  {
+   "name": "Selský dvůr Braňany",
+   "obec": "Braňany",
+   "address": "Bílinská 16, 435 22 Braňany",
+   "lat": 50.542283,
+   "lng": 13.703412,
+   "category": "ubytovani",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/ubytovani/selsky-dvur-branany-1429.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "pokoj": "Všechny pokoje jsou v 1. patře; bezbariérový přístup provozovatel nyní zajistit nedokáže."
+   },
+   "evidence_quote": "bezbariérový přístup bohužel v současnosti nejsme schopni zajistit"
+  },
+  {
+   "name": "Penzion U Pohody",
+   "obec": "Kovářská",
+   "address": "Dlouhá 481/1, 431 86 Kovářská",
+   "lat": 50.443856,
+   "lng": 13.056833,
+   "category": "ubytovani",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/ubytovani/penzion-u-pohody-kovarska-1061.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "pokoj": "Ubytování je v patře, bezbariérový přístup není."
+   },
+   "evidence_quote": "Ubytování je v patře, není zde bezbariérový přístup."
+  },
+  {
+   "name": "Hotel a restaurace Pod Kaštany",
+   "obec": "Krupka",
+   "address": "Revoluční 133, 417 42 Krupka – Maršov",
+   "lat": 50.68455,
+   "lng": 13.881663,
+   "category": "ubytovani",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/ubytovani/hotel-pod-kastany-763.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Provozovatel uvádí vybudované bezbariérové přístupy.",
+    "wc": "Bezbariérové přístupy zahrnují i sociální zařízení.",
+    "parkovani": "Privátní parkoviště s kamerovým systémem (vyhrazená místa neuvedena)."
+   },
+   "evidence_quote": "vybudovali bezbarierové přístupy včetně sociálních zařízení"
+  },
+  {
+   "name": "Hotel Almond",
+   "obec": "Teplice",
+   "address": "Stará Duchcovská 28/94, 415 03 Teplice – Řetenice",
+   "lat": 50.638772,
+   "lng": 13.803296,
+   "category": "ubytovani",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/ubytovani/hotel-almond-684.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel má jeden bezbariérový dvoulůžkový pokoj.",
+    "parkovani": "Uzamčené oplocené parkoviště přímo u hotelu."
+   },
+   "evidence_quote": "jeden bezbariérový dvoulůžkový pokoj"
+  },
+  {
+   "name": "Rybářská bašta",
+   "obec": "Chbany (Vikletice)",
+   "address": "Vikletice 2, 438 01 Chbany",
+   "lat": 50.34859,
+   "lng": 13.403152,
+   "category": "ubytovani",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/ubytovani/rybarska-basta-473.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Z deseti chatek je jedna pětilůžková bezbariérová."
+   },
+   "evidence_quote": "deseti chatičkách (jedna pětilůžková bezbariérová)"
+  },
+  {
+   "name": "Kemp U Lesa",
+   "obec": "Rokle (Hradec u Kadaně)",
+   "address": "Hradec u Kadaně, 432 01 Rokle",
+   "lat": 50.370433,
+   "lng": 13.308059,
+   "category": "ubytovani",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/ubytovani/kemp-u-lesa-469.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Do restaurace je bezbariérový vstup.",
+    "wc": "Sociální zařízení má bezbariérové WC.",
+    "parkovani": "Parkování u chat, parkoviště hlídané kamerami."
+   },
+   "evidence_quote": "bezbariérovým WC a bezbariérovým vstupem do restaurace"
+  },
+  {
+   "name": "Apartmány a ubytovna REKO Kadaň",
+   "obec": "Kadaň",
+   "address": "Topolová 1825, 432 01 Kadaň",
+   "lat": 50.373403,
+   "lng": 13.282381,
+   "category": "ubytovani",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/ubytovani/apartmany-a-ubytovna-reko-kadan-465.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Objekt je podle portálu bezbariérový.",
+    "vytah": "Budova je vybavena výtahem."
+   },
+   "evidence_quote": "Objekt je bezbariérový."
+  },
+  {
+   "name": "Penzion U Karla IV.",
+   "obec": "Kadaň",
+   "address": "Jana Švermy 13, 432 01 Kadaň",
+   "lat": 50.377112,
+   "lng": 13.268911,
+   "category": "ubytovani",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/ubytovani/penzion-u-karla-iv-450.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Všechny pokoje jsou bezbariérové.",
+    "koupelna": "Pokoje mají samostatnou koupelnu (úprava pro vozík neuvedena)."
+   },
+   "evidence_quote": "Všechny pokoje jsou bezbariérové."
+  },
+  {
+   "name": "Chalupa Pohoda u Klínovce",
+   "obec": "Vejprty (České Hamry)",
+   "address": "České Hamry ev. č. 11, 431 91 Vejprty",
+   "lat": 50.43963,
+   "lng": 13.013128,
+   "category": "ubytovani",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/ubytovani/chalupa-pohoda-u-klinovce-366.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Ze 3 WC je jedno bezbariérové.",
+    "jine": "O přístupnosti vstupu a pokojů portál nic neuvádí."
+   },
+   "evidence_quote": "3x WC, jedno bezbarierové, 2x sprcha."
+  },
+  {
+   "name": "Restaurace a penzion Chlumec",
+   "obec": "Chlumec",
+   "address": "Ústecká 55, 403 39 Chlumec",
+   "lat": 50.698585,
+   "lng": 13.942625,
+   "category": "ubytovani",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/gastronomie/restaurace-a-penzion-chlumec-1556.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "V patrové budově je jeden bezbariérový pokoj v přízemí.",
+    "koupelna": "Pokoj má bezbariérové sociální zařízení."
+   },
+   "evidence_quote": "jeden bezbariérový pokoj je v přízemí, včetně bezbariérového soc. zařízení"
+  },
+  {
+   "name": "Après restaurant",
+   "obec": "Loučná pod Klínovcem",
+   "address": "Háj 219, 431 91 Loučná pod Klínovcem",
+   "lat": 50.404656,
+   "lng": 12.98433,
+   "category": "restaurace",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/gastronomie/apr%C3%A8s-restaurant-1046.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup je podle provozovatele samozřejmostí.",
+    "wc": "K dispozici je WC pro invalidy."
+   },
+   "evidence_quote": "Samozřejmostí je bezbariérový přístup a WC pro invalidy."
+  },
+  {
+   "name": "Volnočasové a informační centrum Hrob",
+   "obec": "Hrob",
+   "address": "Komenského 17, 417 04 Hrob",
+   "lat": 50.656089,
+   "lng": 13.722107,
+   "category": "urady",
+   "source_url": "https://www.krusnehory.cz/cs/region/infocentra/volnocasove-a-informacni-centrum-hrob-2000.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Městské informační a volnočasové centrum má bezbariérový přístup."
+   },
+   "evidence_quote": "informační a volnočasové centrum s bezbariérovým přístupem"
+  }
+ ],
+ "not_found": [
+  {
+   "name": "Brána do Čech (branadocech.cz)",
+   "source_url": "https://www.branadocech.cz/cs/",
+   "reason": "Prošlo se 254 stránek webu (menu, regiony, články, top místa); žádná zmínka o bezbariérovosti či vozíčkářích nenalezena."
+  },
+  {
+   "name": "Kudy z nudy – položky jen se štítkem „Bezbariérový přístup“ bez popisu",
+   "source_url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-ubytovani/?region=ustecky-kraj",
+   "reason": "Nezapsány pro limit ~40 míst a chybějící podrobnosti, např. Penzion Laura Chřibská, Stará Hospoda Doubice, Turistická ubytovna Porta Bohemica, Apartmán Kvítnice Zubrnice, Hotel Magnolia Roudnice, Hotel Širák Most, Wellness Hotel Lužan Rumburk, Resort U Fořta Mezná, Restaurace Beseda a Kaachle Lovosice, Arrigo Děčín, JV Ranch Rybniště, Café Dvořák a syn Teplice, Vinařský klub Velké Žernoseky, Aquacentrum Teplice, Malá pevnost Terezín aj."
+  },
+  {
+   "name": "Krušnohoří – podniky se štítkem „Bezbariérové“ bez popisu",
+   "source_url": "https://www.krusnehory.cz/cs/sluzby/gastronomie.html",
+   "reason": "Nezapsány pro limit: Restaurace Fénix Měděnec, Hostinec U Lípy Jeníkov, Vegetariánská bageterie U Květušky Kadaň, Cukrárna Pod Lesem Dubí, Cukrárna-kavárna U Zlaté konvice Kadaň."
+  },
+  {
+   "name": "Místa mimo Ústecký kraj na portálech",
+   "source_url": "https://www.krusnehory.cz/cs/",
+   "reason": "Vyřazeno: Jáchymov (Radium Palace, Běhounek, Curie, Horská chata Pod lanovkou), Boží Dar (Apartmány Jurica), Chodov (Honey Bunny Club), Královské Poříčí (Statek Bernard) – Karlovarský kraj; Rozhledna Rathmannsdorf a Zoopark Osterzgebirge – Německo."
+  }
+ ],
+ "sources": [
+  {
+   "title": "České Švýcarsko o.p.s. – turistický portál (zážitky, top místa, tipy na výlet, doporučujeme)",
+   "url": "https://www.ceskesvycarsko.cz/",
+   "note": "Ze sitemap prohledáno 782 stránek podle klíčových slov; Hotel Česká Koruna vynechán (už v ubytovani_ustecky.json), Rozhledna Vlčí hora už v cile_ustecky_2.json."
+  },
+  {
+   "title": "Kudy z nudy – Bezbariérová místa, Ústecký kraj (zážitky, ubytování, restaurace)",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-zazitky/?region=ustecky-kraj",
+   "note": "Seznamy rozbaleny přes „Další tipy“ (47 zážitků, 14 ubytování, 19 restaurací); Clarion Congress Hotel vynechán (už v ubytovani_ustecky.json). Většina položek má jen štítek bez popisu."
+  },
+  {
+   "title": "Kudy z nudy – Cestování bez bariér: navštivte hrady a zámky i s handicapem",
+   "url": "https://www.kudyznudy.cz/aktuality/cestovani-bez-barier-navstivte-hrady-a-zamky-i-s-h",
+   "note": "Zdroj odkazů na zámky Duchcov, Stekník, Libochovice, Krásný Dvůr a kostel v Mostě."
+  },
+  {
+   "title": "Krušnohoří (Destinační agentura Krušnohoří)",
+   "url": "https://www.krusnehory.cz/cs/",
+   "note": "Ze sitemapy prohledáno 2363 stránek (služby, turistické cíle, sport, výlety, region); portál pokrývá i Karlovarský kraj – ty položky vyřazeny."
+  },
+  {
+   "title": "Brána do Čech",
+   "url": "https://www.branadocech.cz/cs/",
+   "note": "Bez relevantních zmínek."
+  }
+ ]
+}

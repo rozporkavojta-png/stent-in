@@ -1,0 +1,145 @@
+{
+ "task": "cile_moravskoslezsky",
+ "kraj": "Moravskoslezský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w123614408",
+   "name": "Muzeum nákladních automobilů Tatra",
+   "obec": "Kopřivnice",
+   "address": "Husova 1326/13",
+   "lat": 49.594143,
+   "lng": 18.148617,
+   "category": "kultura",
+   "source_url": "https://www.muzeumtatra.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web u Muzea nákladních automobilů uvádí bezbariérový vstup.",
+    "wc": "WC v objektu (bez údaje o bezbariérovosti WC)."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový vstup: Ano"
+  },
+  {
+   "osm_id": "w168516880",
+   "name": "Muzeum osobních automobilů Tatra",
+   "obec": "Kopřivnice",
+   "address": "Záhumenní 367/1",
+   "lat": 49.599515,
+   "lng": 18.143798,
+   "category": "kultura",
+   "source_url": "https://www.muzeumtatra.cz",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web u Muzea osobních automobilů uvádí bezbariérový vstup.",
+    "wc": "WC v objektu (bez údaje o bezbariérovosti WC)."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový vstup: Ano"
+  },
+  {
+   "osm_id": "n4583688739",
+   "name": "Ostravské muzeum",
+   "obec": "Ostrava",
+   "address": "",
+   "lat": 49.835099,
+   "lng": 18.293008,
+   "category": "kultura",
+   "source_url": "https://www.ostrmuz.cz/website/mainmenu/kontakt/otevirackaen/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Muzeum je bezbariérově přístupné kromě vyhlídkové věže a podkrovních výstavních prostor.",
+    "vytah": "Výtah do 3. NP a zvedací plošina."
+   },
+   "measurements": [],
+   "evidence_quote": "Muzeum je bezbariérově přístupné kromě vyhlídkové věžě a podkrovních výstavních prostor."
+  },
+  {
+   "osm_id": "n1755405669",
+   "name": "Muzeum trojmezí",
+   "obec": "Jablunkov",
+   "address": "",
+   "lat": 49.576265,
+   "lng": 18.763203,
+   "category": "kultura",
+   "source_url": "https://www.muzeumct.cz/muzeum-tesinska/pobocky/jablunkov",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že objekt je bezbariérový; podrobnosti neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt je bezbariérový"
+  },
+  {
+   "osm_id": "n792014862",
+   "name": "Srub Petra Bezruče",
+   "obec": "Ostravice",
+   "address": "",
+   "lat": 49.554977,
+   "lng": 18.38155,
+   "category": "kultura",
+   "source_url": "https://www.szm.cz/rubrika/371/pro-navstevniky/pristupnost-objektu.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Exteriér areálu i samotný srub jsou podle muzea obtížně přístupné pro osoby s tělesným postižením."
+   },
+   "measurements": [],
+   "evidence_quote": "objekt jsou obtížně přístupné pro osoby s tělesným postižením"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n493904059",
+   "name": "Hornické muzeum",
+   "url": "http://www.landekpark.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "r5995065",
+   "name": "Dům umění",
+   "url": "https://oko-opava.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2815328523",
+   "name": "Železniční muzeum moravskoslezské",
+   "url": "http://www.zmms.cz/index.php",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w68462431",
+   "name": "Kotulova dřevěnka",
+   "url": "http://www.muzeumct.cz/kotulova_drevenka/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4975768172",
+   "name": "Světové muzeum a knihovna Bible",
+   "url": "https://www.muzeumbible.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n13789538982",
+   "name": "Soukromé muzeum Kapličkový vrch",
+   "url": "https://www.muzejnik.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů (11 cílů ze vstupu, 2 objekty Tatra na jednom webu)",
+   "url": "",
+   "note": "Hukvaldy a Malý svět techniky U6 nemají ve vstupu web, neověřováno"
+  },
+  {
+   "title": "Slezské zemské muzeum – Přístupnost objektů",
+   "url": "https://www.szm.cz/rubrika/371/pro-navstevniky/pristupnost-objektu.html",
+   "note": "Srub Petra Bezruče"
+  }
+ ]
+}

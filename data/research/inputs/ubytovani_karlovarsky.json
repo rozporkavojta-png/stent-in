@@ -1,0 +1,559 @@
+[
+{
+"i": "w134947683",
+"n": "Na hranici",
+"s": "Penzion",
+"o": "Boží Dar",
+"a": "Boží Dar 190",
+"web": "http://www.nahranici.unas.cz/",
+"t": "yes",
+"la": 50.41035,
+"lo": 12.934993
+},
+{
+"i": "w831967742",
+"n": "Autokemp Rybářská Bašta",
+"s": "Kemp",
+"o": "Cheb",
+"web": "https://www.rb-camping.cz",
+"w": "yes",
+"la": 50.08344,
+"lo": 12.468593
+},
+{
+"i": "w151572561",
+"n": "Hotel Monika",
+"s": "Hotel",
+"o": "Cheb",
+"a": "Svobody 533/9",
+"web": "https://www.hotel-monika.com/",
+"w": "no",
+"la": 50.076883,
+"lo": 12.37245
+},
+{
+"i": "n3687642786",
+"n": "Hotel Slávie",
+"s": "Hotel",
+"o": "Cheb",
+"a": "Svobody 75/32",
+"web": "http://www.hotel-slavie.cz",
+"w": "yes",
+"la": 50.075289,
+"lo": 12.373484
+},
+{
+"i": "w177713199",
+"n": "SK Delfín Jesenice - Cheb",
+"s": "Hotel",
+"o": "Cheb",
+"web": "https://sk-delfin.org/",
+"w": "yes",
+"la": 50.083989,
+"lo": 12.464346
+},
+{
+"i": "n12110574318",
+"n": "Zámecký penzion Chyše",
+"s": "Penzion",
+"o": "Chyše",
+"a": "Chyše 54",
+"web": "https://chyse.com/ubytovani/",
+"w": "no",
+"la": 50.105584,
+"lo": 13.247528
+},
+{
+"i": "n2536310329",
+"n": "ATC JADRAN KEMP NOVOTNÝ",
+"s": "Karavanové stání",
+"o": "Františkovy Lázně",
+"a": "Jezerní 499/12a",
+"web": "https://atcjadran.cz",
+"w": "yes",
+"la": 50.117072,
+"lo": 12.331262
+},
+{
+"i": "w94533556",
+"n": "Francis Palace",
+"s": "Hotel",
+"o": "Františkovy Lázně",
+"a": "Jezerní 15/2",
+"web": "https://www.francispalace.cz/cs/",
+"w": "yes",
+"la": 50.112634,
+"lo": 12.34842
+},
+{
+"i": "n2536287516",
+"n": "HD Apartmán",
+"s": "Apartmány",
+"o": "Františkovy Lázně",
+"a": "Americká 149/31",
+"w": "no",
+"la": 50.124618,
+"lo": 12.347001
+},
+{
+"i": "w94542878",
+"n": "Palace I",
+"s": "Hotel",
+"o": "Františkovy Lázně",
+"web": "https://www.kurhauspalace.cz/",
+"w": "no",
+"la": 50.119184,
+"lo": 12.352016
+},
+{
+"i": "w94532937",
+"n": "Reza",
+"s": "Hotel",
+"o": "Františkovy Lázně",
+"web": "https://www.hotelreza.cz/de/",
+"w": "yes",
+"la": 50.121638,
+"lo": 12.348364
+},
+{
+"i": "n9684424862",
+"n": "Restaurace a penzion Na Výhledech",
+"s": "Penzion",
+"o": "Hazlov",
+"web": "http://www.penzion-navyhledech.cz",
+"w": "yes",
+"la": 50.188675,
+"lo": 12.26939
+},
+{
+"i": "n5254741385",
+"n": "Akademik Běhounek",
+"s": "Hotel",
+"o": "Jáchymov",
+"a": "Lidická 1015",
+"web": "https://www.laznejachymov.cz/ubytovaci-sluzby/detail/akademik-behounek-ubytovani/",
+"w": "yes",
+"la": 50.360945,
+"lo": 12.931554
+},
+{
+"i": "n5254741386",
+"n": "Curie",
+"s": "Hotel",
+"o": "Jáchymov",
+"a": "Agrikolovo náměstí 1036",
+"web": "https://www.laznejachymov.cz/ubytovaci-sluzby/detail/curie-ubytovani/",
+"w": "yes",
+"la": 50.362119,
+"lo": 12.933158
+},
+{
+"i": "n1435619797",
+"n": "Hydroprojekt",
+"s": "Hotel",
+"o": "Jáchymov",
+"w": "limited",
+"la": 50.354563,
+"lo": 12.893788
+},
+{
+"i": "n5254741387",
+"n": "Radium Palace",
+"s": "Hotel",
+"o": "Jáchymov",
+"a": "T. G. Masaryka 413",
+"web": "https://www.laznejachymov.cz/ubytovaci-sluzby/detail/radium-palace.hotel/",
+"w": "yes",
+"la": 50.358509,
+"lo": 12.934132
+},
+{
+"i": "n1364470576",
+"n": "U Karla",
+"s": "Penzion",
+"o": "Jáchymov",
+"w": "no",
+"la": 50.367385,
+"lo": 12.857894
+},
+{
+"i": "w216681978",
+"n": "Villa Thomayer",
+"s": "Penzion",
+"o": "Jáchymov",
+"w": "no",
+"la": 50.35818,
+"lo": 12.938859
+},
+{
+"i": "n3842598514",
+"n": "EA Hotel Elefant",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"a": "Stará Louka 30",
+"web": "https://www.hotelelefant.cz/",
+"w": "yes",
+"la": 50.221627,
+"lo": 12.881032
+},
+{
+"i": "n3842598515",
+"n": "EA Hotel Jessenius",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"a": "Stará Louka 36",
+"web": "https://www.hoteljessenius.cz/",
+"w": "yes",
+"la": 50.221482,
+"lo": 12.880652
+},
+{
+"i": "w258772547",
+"n": "Grandhotel Pupp",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"a": "Mírové náměstí 310/8",
+"web": "https://www.pupp.cz/",
+"w": "yes",
+"la": 50.219144,
+"lo": 12.878772
+},
+{
+"i": "n3088935786",
+"n": "Hotel Boston",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"a": "Luční vrch 9",
+"web": "https://www.boston.cz/",
+"w": "yes",
+"la": 50.221928,
+"lo": 12.880972
+},
+{
+"i": "n296533326",
+"n": "Hotel Bristol",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"a": "Sadová 2026/19",
+"w": "yes",
+"la": 50.225934,
+"lo": 12.878014
+},
+{
+"i": "w62201511",
+"n": "Hotel Imperial",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"a": "Libušina 1212/18",
+"web": "https://www.spa-hotel-imperial.cz/",
+"w": "yes",
+"la": 50.219585,
+"lo": 12.88635
+},
+{
+"i": "n296556647",
+"n": "Hotel Kolonada - Bristol Group",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"a": "I. P. Pavlova 77/6",
+"w": "yes",
+"t": "yes",
+"la": 50.226774,
+"lo": 12.881167
+},
+{
+"i": "n2536688589",
+"n": "Karlsbad Grande Madonna",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"a": "Moravská 2093/2a",
+"web": "https://hotel-kgm.cz",
+"w": "yes",
+"la": 50.222344,
+"lo": 12.884681
+},
+{
+"i": "n470593805",
+"n": "Kemp Liapor sport centrum",
+"s": "Kemp",
+"o": "Karlovy Vary",
+"w": "limited",
+"la": 50.211904,
+"lo": 12.817738
+},
+{
+"i": "n795055204",
+"n": "Klub vodáků Karlovy Vary",
+"s": "Kemp",
+"o": "Karlovy Vary",
+"w": "yes",
+"la": 50.231464,
+"lo": 12.862082
+},
+{
+"i": "n292943516",
+"n": "Parkhotel Richmond",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"a": "Slovenská 567/3",
+"web": "https://www.richmond.cz/",
+"w": "yes",
+"la": 50.217306,
+"lo": 12.891315
+},
+{
+"i": "w244746346",
+"n": "Pension Rainbow",
+"s": "Penzion",
+"o": "Karlovy Vary",
+"web": "https://www.pensionrainbow.cz/cs/",
+"w": "no",
+"la": 50.244034,
+"lo": 12.863313
+},
+{
+"i": "n12628104903",
+"n": "Residence Sadová",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"w": "no",
+"la": 50.225553,
+"lo": 12.876348
+},
+{
+"i": "n6426230585",
+"n": "SPA Hotel Iris",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"w": "yes",
+"la": 50.225508,
+"lo": 12.876486
+},
+{
+"i": "w62201470",
+"n": "Spa Resort Sanssouci - Blue House",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"web": "https://www.spa-resort-sanssouci.cz/cz/",
+"w": "yes",
+"la": 50.219456,
+"lo": 12.891469
+},
+{
+"i": "w62201477",
+"n": "Spa Resort Sanssouci - Green House",
+"s": "Hotel",
+"o": "Karlovy Vary",
+"a": "U Imperiálu 198/11",
+"web": "https://www.spa-resort-sanssouci.cz/cz/",
+"w": "yes",
+"la": 50.219296,
+"lo": 12.88973
+},
+{
+"i": "n11035140277",
+"n": "Na Špici",
+"s": "Hotel",
+"o": "Kyselka",
+"a": "Radosov 78",
+"web": "https://naspici.net",
+"w": "no",
+"la": 50.270176,
+"lo": 12.994499
+},
+{
+"i": "n9684424861",
+"n": "Liebenstein",
+"s": "Penzion",
+"o": "Libá",
+"web": "https://www.liebenstein.cz/",
+"w": "limited",
+"la": 50.128562,
+"lo": 12.230508
+},
+{
+"i": "n3476375142",
+"n": "Císař Ferdinand",
+"s": "Hotel",
+"o": "Loket",
+"a": "T. G. Masaryka 136/81",
+"web": "https://www.hotelcisarferdinand.cz/",
+"w": "no",
+"la": 50.186801,
+"lo": 12.752746
+},
+{
+"i": "w93686915",
+"n": "Akropolis",
+"s": "Penzion",
+"o": "Mariánské Lázně",
+"a": "Goethovo náměstí 385/19",
+"w": "no",
+"la": 49.976363,
+"lo": 12.710153
+},
+{
+"i": "r5572331",
+"n": "Centrální lázně",
+"s": "Hotel",
+"o": "Mariánské Lázně",
+"a": "Goethovo náměstí 1",
+"web": "https://ensanahotels.com/cs/hotely/centralni-lazne",
+"w": "yes",
+"la": 49.974736,
+"lo": 12.70893
+},
+{
+"i": "w140929646",
+"n": "Golf Hotel Morris",
+"s": "Hotel",
+"o": "Mariánské Lázně",
+"w": "yes",
+"la": 49.976394,
+"lo": 12.73871
+},
+{
+"i": "w471952862",
+"n": "Golf Hotel Morris",
+"s": "Hotel",
+"o": "Mariánské Lázně",
+"w": "yes",
+"la": 49.976242,
+"lo": 12.738903
+},
+{
+"i": "w96043621",
+"n": "Hotel Agricola",
+"s": "Hotel",
+"o": "Mariánské Lázně",
+"a": "Tyršova 31",
+"web": "https://www.hotel-agricola.cz/",
+"w": "yes",
+"la": 49.966536,
+"lo": 12.695472
+},
+{
+"i": "w93686916",
+"n": "Hvězda",
+"s": "Hotel",
+"o": "Mariánské Lázně",
+"a": "Goethovo náměstí 7",
+"web": "https://ensanahotels.com/cs/hotely/hvezda",
+"w": "yes",
+"la": 49.976056,
+"lo": 12.709983
+},
+{
+"i": "w93686937",
+"n": "Hvězda Imperial",
+"s": "Hotel",
+"o": "Mariánské Lázně",
+"web": "http://www.danubiushotels.de/unsere-hotels-marienbad/danubius-health-spa-resort-hvezda-skalnik",
+"w": "yes",
+"la": 49.975802,
+"lo": 12.709606
+},
+{
+"i": "n5109655878",
+"n": "ML Suites",
+"s": "Penzion",
+"o": "Mariánské Lázně",
+"a": "Mladějovského 378/1",
+"w": "limited",
+"la": 49.975812,
+"lo": 12.700719
+},
+{
+"i": "w93687092",
+"n": "Maria Spa",
+"s": "Hotel",
+"o": "Mariánské Lázně",
+"a": "Goethovo náměstí 1",
+"web": "http://www.danubiushotels.de/unsere-hotels-marienbad/maria-spa-courtyard",
+"w": "yes",
+"la": 49.975197,
+"lo": 12.709905
+},
+{
+"i": "w93687093",
+"n": "Neapol",
+"s": "Hotel",
+"o": "Mariánské Lázně",
+"web": "http://www.danubiushotels.de/unsere-hotels-marienbad/danubius-health-spa-resort-hvezda-skalnik",
+"w": "yes",
+"la": 49.975324,
+"lo": 12.710283
+},
+{
+"i": "w95542428",
+"n": "Nové lázně",
+"s": "Hotel",
+"o": "Mariánské Lázně",
+"a": "Reitenbergerova 53",
+"web": "https://ensanahotels.com/cs/hotely/nove-lazne",
+"w": "yes",
+"la": 49.97438,
+"lo": 12.705714
+},
+{
+"i": "w140927572",
+"n": "Parkhotel Golf Mariánské Lázně",
+"s": "Hotel",
+"o": "Mariánské Lázně",
+"w": "no",
+"la": 49.975458,
+"lo": 12.736086
+},
+{
+"i": "n5109656125",
+"n": "Penzion U Pramene",
+"s": "Penzion",
+"o": "Mariánské Lázně",
+"a": "Třebízského 693",
+"w": "limited",
+"la": 49.980462,
+"lo": 12.701072
+},
+{
+"i": "n14115933044",
+"n": "Swissôtel",
+"s": "Hotel",
+"o": "Mariánské Lázně",
+"a": "Fibichova 112",
+"w": "yes",
+"la": 49.978628,
+"lo": 12.702559
+},
+{
+"i": "w516770820",
+"n": "Camping Baldi",
+"s": "Kemp",
+"o": "Okrouhlá",
+"a": "Jesenice",
+"web": "https://www.baldi.cz",
+"w": "limited",
+"t": "no",
+"la": 50.072079,
+"lo": 12.474002
+},
+{
+"i": "w973088247",
+"n": "tábořiště Hubertus",
+"s": "Kemp",
+"o": "Sadov",
+"web": "https://www.taboristehubertus.cz/",
+"w": "no",
+"la": 50.238072,
+"lo": 12.929695
+},
+{
+"i": "n1843773675",
+"n": "Penzion Selský dvůr",
+"s": "Penzion",
+"o": "Třebeň",
+"web": "http://www.bauernhof.cz/?page=home&lang=cz",
+"w": "yes",
+"la": 50.138922,
+"lo": 12.393062
+}
+]

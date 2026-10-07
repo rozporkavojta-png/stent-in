@@ -1,0 +1,157 @@
+{
+ "task": "cile_zlinsky",
+ "kraj": "Zlínský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w56023044",
+   "name": "ZOO Zlín - Lešná",
+   "obec": "Zlín",
+   "address": "",
+   "lat": 49.276341,
+   "lng": 17.716684,
+   "category": "cil",
+   "source_url": "https://www.zoozlin.eu/dobre-vedet/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup do všech pavilonů; do zámku pomocí plošiny.",
+    "wc": "V areálu jsou upravené toalety.",
+    "jine": "Cesty v celém areálu jsou schůdné a vyznačené; půjčení mechanického vozíku za vratnou zálohu."
+   },
+   "measurements": [
+    {
+     "co": "záloha za zapůjčení vozíku",
+     "hodnota": 500,
+     "jednotka": "Kč"
+    }
+   ],
+   "evidence_quote": "V celém areálu jsou schůdné a řádně vyznačené cesty pro hendikepované občany."
+  },
+  {
+   "osm_id": "w82555501",
+   "name": "Památník Velké Moravy",
+   "obec": "Staré Město",
+   "address": "",
+   "lat": 49.078458,
+   "lng": 17.443797,
+   "category": "cil",
+   "source_url": "https://www.slovackemuzeum.cz/doc/8/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Objekt je bezbariérově přístupný.",
+    "vytah": "Objekt má výtah.",
+    "wc": "K dispozici je WC pro tělesně postižené."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt je bezbariérově přístupný, výtah. WC pro tělesně postižené."
+  },
+  {
+   "osm_id": "n7006000608",
+   "name": "Muzeum jihovýchodní moravy ve Zlíně",
+   "obec": "Zlín",
+   "address": "",
+   "lat": 49.224795,
+   "lng": 17.658564,
+   "category": "cil",
+   "source_url": "http://www.muzeum-zlin.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup u objektů muzea ve 14. a 21. budově a v NKP Ploština.",
+    "wc": "U těchto objektů jsou uvedeny toalety.",
+    "parkovani": "U těchto objektů je uvedeno parkování."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "osm_id": "w224275486",
+   "name": "Živá voda",
+   "obec": "Modrá",
+   "address": "",
+   "lat": 49.103331,
+   "lng": 17.409176,
+   "category": "cil",
+   "source_url": "https://www.zivavodamodra.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Areál je podle webu bezbariérový, přístupný pro vozíčkáře i kočárky; o tunelu a WC nic konkrétního."
+   },
+   "measurements": [],
+   "evidence_quote": "Areál je bezbariérový – Přístupné pro vozíčkáře i kočárky"
+  },
+  {
+   "osm_id": "n11618871014",
+   "name": "Start zážitkové geolokační hry: Příběh trinitáře - cena za svobodu",
+   "obec": "Zašová",
+   "address": "",
+   "lat": 49.476329,
+   "lng": 18.04399,
+   "category": "cil",
+   "source_url": "https://klasterzasova.cz/geohra/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Hru lze podle webu odehrát s kočárkem jen s omezením; o vozíčkářích nic."
+   },
+   "measurements": [],
+   "evidence_quote": "s omezením i s kočárkem"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w40545754",
+   "name": "Centrum slovanské archeologie",
+   "url": "https://www.mzm.cz/centrum-slovanske-archeologie/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4347979164",
+   "name": "podzemí baziliky",
+   "url": "https://www.velehradinfo.cz/muzejni-expozice/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w134395799",
+   "name": "14-15 Baťův institut",
+   "url": "https://www.14-15.cz/24865-pro-navstevniky",
+   "reason": "web nic o přístupnosti neuvádí (k muzeu ve 14. budově viz Muzeum jihovýchodní Moravy)"
+  },
+  {
+   "osm_id": "n822897593",
+   "name": "Rozhledna Rovnina",
+   "url": "https://www.uherske-hradiste.cz/misto/rozhledna-rovnina/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "ZOO Zlín - Lešná",
+   "url": "https://www.zoozlin.eu/dobre-vedet/",
+   "note": "zdroj informací o přístupnosti"
+  },
+  {
+   "title": "Památník Velké Moravy",
+   "url": "https://www.slovackemuzeum.cz/doc/8/",
+   "note": "zdroj informací o přístupnosti"
+  },
+  {
+   "title": "Muzeum jihovýchodní moravy ve Zlíně",
+   "url": "http://www.muzeum-zlin.cz/",
+   "note": "zdroj informací o přístupnosti"
+  },
+  {
+   "title": "Živá voda",
+   "url": "https://www.zivavodamodra.cz/",
+   "note": "zdroj informací o přístupnosti"
+  },
+  {
+   "title": "Start zážitkové geolokační hry: Příběh trinitáře - cena za svobodu",
+   "url": "https://klasterzasova.cz/geohra/",
+   "note": "zdroj informací o přístupnosti"
+  }
+ ]
+}

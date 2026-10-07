@@ -1,0 +1,238 @@
+{
+ "task": "cile_moravskoslezsky_2",
+ "kraj": "Moravskoslezský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n4583690236",
+   "name": "Divadlo Jiřího Myrona",
+   "obec": "Ostrava",
+   "lat": 49.836396,
+   "lng": 18.288236,
+   "category": "kultura",
+   "source_url": "https://www.ndm.cz/cz/stranka/24-divadlo-jiriho-myrona.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web Národního divadla moravskoslezského uvádí, že hlediště Divadla Jiřího Myrona je uzpůsobeno i pro vozíčkáře."
+   },
+   "evidence_quote": "Hlediště Divadla Jiřího Myrona je uzpůsobeno i pro vozíčkáře!"
+  },
+  {
+   "osm_id": "n2429564017",
+   "name": "Moravskoslezská vědecká knihovna",
+   "obec": "Ostrava",
+   "lat": 49.841059,
+   "lng": 18.290809,
+   "category": "kultura",
+   "source_url": "https://www.msvk.cz/sluzby/pro-handicapovane/telesne-handicapovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Knihovna podle vlastního webu není bezbariérová; vlevo od vstupních dveří hlavní budovy je zvonek pro přivolání knihovnice.",
+    "jine": "Tělesně handicapovaným nabízí individuální pomoc knihovníků (registrace, katalog, objednávky), návštěvu lze předem domluvit telefonicky; registrace a služby zdarma s průkazem ZTP/ZTP-P."
+   },
+   "evidence_quote": "Naše knihovna bohužel není bezbariérová."
+  },
+  {
+   "osm_id": "w34653020",
+   "name": "Knihovna města Ostravy – pobočka Opavská",
+   "obec": "Ostrava",
+   "address": "Opavská 6111, Ostrava-Poruba",
+   "lat": 49.833722,
+   "lng": 18.173727,
+   "category": "kultura",
+   "source_url": "https://www.kmo.cz/pobocky/opavska/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Stránka pobočky Opavská Knihovny města Ostravy uvádí v rámečku Bezbariérovost: přístupný objekt."
+   },
+   "evidence_quote": "Bezbariérovost: přístupný objekt"
+  },
+  {
+   "osm_id": "w222682960",
+   "name": "Archeopark Chotěbuz",
+   "obec": "Chotěbuz",
+   "address": "Karvinská 455",
+   "lat": 49.787652,
+   "lng": 18.590148,
+   "category": "kultura",
+   "source_url": "https://www.muzeumct.cz/kontakty",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Muzeum Těšínska (provozovatel) u Archeoparku Chotěbuz-Podobora v kontaktech uvádí, že objekt je bezbariérový."
+   },
+   "evidence_quote": "Objekt je bezbariérový"
+  },
+  {
+   "osm_id": "n5873184487",
+   "name": "Obecní knihovna Šilheřovice",
+   "obec": "Šilheřovice",
+   "address": "Střední 19",
+   "lat": 49.92608,
+   "lng": 18.269658,
+   "category": "kultura",
+   "source_url": "https://knihovnasilherovice.webk.cz/pages/o-knihovne.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Knihovna se v prosinci 2024 přestěhovala do nových prostor (bývalá vinárna), kde je podle webu bezbariérový vstup."
+   },
+   "evidence_quote": "Je zde bezbarierový vstup a více prostoru."
+  },
+  {
+   "osm_id": "n10314515115",
+   "name": "Vyhlídková věž Nové radnice",
+   "obec": "Ostrava",
+   "lat": 49.841729,
+   "lng": 18.291693,
+   "category": "kultura",
+   "source_url": "https://www.vyhlidkovavez.cz/cz/kudy-na-vez/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vyhlídková věž je podle webu přístupná i bezbariérově. Označený bezbariérový vstup je napravo od hlavního vchodu do radnice vedle průchodu do parku a má zvonek.",
+    "vytah": "Vstup na věž je z informačního centra v 6. patře Nové radnice, kam se dá dostat jen výtahem z vstupní haly; odtud další výtah vede až na vyhlídku (rychlovýtah).",
+    "jine": "Vstupné ZTP a ZTP/P 40 Kč, doprovod ZTP/P zdarma."
+   },
+   "evidence_quote": "Označený bezbariérový vstup se nachází napravo od hlavního vchodu do budovy"
+  },
+  {
+   "osm_id": "w78540806",
+   "name": "Malý Svět techniky U6",
+   "obec": "Ostrava",
+   "lat": 49.819,
+   "lng": 18.281364,
+   "category": "kultura",
+   "source_url": "https://www.dolnivitkovice.cz/o-dolnich-vitkovicich/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "V přehledu historie areálu Dolní Vítkovice je u roku 2024 uvedeno, že v U6 (Malý svět techniky) přibyla nová plošina pro vozíčkáře a zkvalitnil se vstup. Další podrobnosti o přístupnosti expozice web neuvádí (web svettechniky.cz byl pro skript blokován ochranou proti botům)."
+   },
+   "evidence_quote": "U6 - nová plošina pro vozíčkáře, zkvalitnění vstupu, úpravy"
+  },
+  {
+   "osm_id": "w921007809",
+   "name": "Depozitář Slovenské strely",
+   "obec": "Kopřivnice",
+   "lat": 49.594448,
+   "lng": 18.147525,
+   "category": "kultura",
+   "source_url": "https://www.muzeumtatra.cz/objekty-a-expozice/depozitar-slovenske-strely",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Web Regionálního muzea Tatra uvádí, že do interiéru exponátu (vlaku Slovenská strela) není zajištěn bezbariérový přístup; o přístupnosti samotného depozitáře nic neuvádí. Osoby ZTP/P a jejich doprovod mají vstup zdarma."
+   },
+   "evidence_quote": "Do interiéru exponátu není zajištěn bezbariérový přístup."
+  },
+  {
+   "osm_id": "n2852225130",
+   "name": "Cinema City",
+   "obec": "Ostrava",
+   "lat": 49.830137,
+   "lng": 18.284488,
+   "category": "kultura",
+   "source_url": "https://www.cinemacity.cz/static/cs/cz/faq",
+   "source_type": "web provozovatele (FAQ celé sítě)",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Časté dotazy sítě Cinema City uvádějí, že rezervaci pro vozíčkáře lze vytvořit e-mailem nebo přes infolinku (obecně pro celou síť, ne konkrétně pro ostravskou pobočku; bez popisu přístupnosti)."
+   },
+   "evidence_quote": "Jak lze vytvořit rezervaci pro vozíčkáře? Na emailové adrese ... nebo na naší infolince."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w123494025",
+   "name": "Muzeum Fojtství",
+   "url": "https://www.muzeumkoprivnice.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w40306193",
+   "name": "Hukvaldy",
+   "url": "https://www.hrad-hukvaldy.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3650215061",
+   "name": "Knihovna Dolní Lhota",
+   "url": "http://www.dolnilhota.cz/knihovna-obce-dolni-lhota/knihovna/",
+   "reason": "stránka ze vstupu vrací chybu 404"
+  },
+  {
+   "osm_id": "n2439712911",
+   "name": "Okrouhlá",
+   "url": "https://www.obec-staric.cz/turisticke-info-staric-menu/rozhledna-okrouhla/",
+   "reason": "stránka ze vstupu vrací chybu 404"
+  },
+  {
+   "osm_id": "n12604252443",
+   "name": "Obecní knihovna Mořkov",
+   "url": "http://naseknihovna.cz/morkov/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3125890526",
+   "name": "Obecní knihovna Nýdek",
+   "url": "https://nydek.knihovna.info/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3917099901",
+   "name": "Knihovna Pstruží",
+   "url": "http://pstruzi.knihovna.cz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4578037305",
+   "name": "Obecní knihovna Těrlicko",
+   "url": "https://terlicko.knihovna.info/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4319249938",
+   "name": "Místní knihovna Velká Polom",
+   "url": "http://www.knihovnavelkapolom.webk.cz",
+   "reason": "web nic o přístupnosti neuvádí (zmínka o ZTP jen v knihovním řádu)"
+  },
+  {
+   "osm_id": "n8814490261",
+   "name": "Knihovna na Havlíčkové",
+   "url": "https://www.knihovnatesin.cz/",
+   "reason": "web má jen obecný symbol bezbariérového přístupu, u pobočky Havlíčkova ul. nic konkrétního"
+  },
+  {
+   "osm_id": "n805167943",
+   "name": "Kino Kosmos",
+   "url": "https://www.kinokosmos.cz/",
+   "reason": "web nelze skriptem načíst (ochrana Vercel Security Checkpoint)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů (zrychlené doplnění, 20 dalších cílů ze vstupu cile_moravskoslezsky.json)",
+   "url": "data/research/inputs/cile_moravskoslezsky.json",
+   "note": "prohledáno skriptem podle klíčových slov (úvodní stránka + až ~30 podstránek); u cílů bez webu ve vstupu dohledán oficiální web; nová místa nehledána; souřadnice ze vstupu"
+  },
+  {
+   "title": "Muzeum Těšínska – Kontakty",
+   "url": "https://www.muzeumct.cz/kontakty",
+   "note": "Archeopark Chotěbuz; tamtéž u Kotulovy dřevěnky (už v not_found prvního souboru): areál není bezbariérový, není WC pro veřejnost"
+  },
+  {
+   "title": "Vyhlídková věž Nová radnice Ostrava",
+   "url": "https://www.vyhlidkovavez.cz/cz/kontakt/",
+   "note": "bezbariérový vstup, výtahy"
+  },
+  {
+   "title": "Regionální muzeum Tatra",
+   "url": "https://www.muzeumtatra.cz/",
+   "note": "Depozitář Slovenské strely"
+  }
+ ]
+}

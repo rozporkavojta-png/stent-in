@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trasy a bariéry · kudyprojedu.cz</title>
+<meta name="description" content="Schody, vysoké obrubníky, dlažba z kočičích hlav a výtahy v ulicích, živě z OpenStreetMap. Naplánujte si cestu mezi přístupnými místy.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=13">
+<link rel="stylesheet" href="assets/css/pages-c.css?v=11">
+</head>
+<body class="page-trasy">
+<div id="site-header"></div>
+<main id="main" class="tr-app" data-sheet="half">
+  <section class="tr-panel" id="tr-panel" aria-label="Trasy a bariéry">
+    <div class="tr-grip-row">
+      <button class="tr-grip" type="button" id="grip" aria-label="Zvětšit nebo zmenšit panel" aria-controls="tr-panel"><span></span></button>
+    </div>
+    <div class="tr-scroll" id="tr-scroll">
+      <header class="tr-head">
+        <h1>Trasy a bariéry</h1>
+        <p class="muted small">Schody, obrubníky, dlažba, stoupání i výtahy v ulicích. Živě z OpenStreetMap pro oblast na mapě.</p>
+      </header>
+
+      <form class="tr-find" id="find-form" role="search">
+        <label class="sr-only" for="town">Obec nebo město</label>
+        <div class="search-field">
+          <span data-icon="search"></span>
+          <input id="town" type="search" list="towns" placeholder="Obec nebo město" autocomplete="off">
+        </div>
+        <datalist id="towns"></datalist>
+        <button class="btn btn-primary" type="submit">Najít</button>
+        <button class="icon-btn tr-locate" type="button" id="locate" aria-label="Moje poloha" title="Moje poloha"><span data-icon="locate"></span></button>
+      </form>
+
+      <div class="tr-tabs" role="tablist" aria-label="Části panelu">
+        <button type="button" role="tab" id="tab-bariery" aria-controls="pane-bariery" aria-selected="true">Bariéry</button>
+        <button type="button" role="tab" id="tab-plan" aria-controls="pane-plan" aria-selected="false" tabindex="-1">Naplánovat</button>
+        <button type="button" role="tab" id="tab-moje" aria-controls="pane-moje" aria-selected="false" tabindex="-1">Moje trasy</button>
+      </div>
+
+      <div id="picked" class="tr-picked" hidden></div>
+
+      <div class="tr-pane" id="pane-bariery" role="tabpanel" aria-labelledby="tab-bariery">
+        <div class="tr-status" id="status" aria-live="polite">Přibližte mapu na ulice (měřítko asi 1 : 10 000) a bariéry se načtou samy.</div>
+        <button class="btn btn-ghost btn-block" type="button" id="load" disabled>Načíst bariéry v této oblasti</button>
+        <div id="summary" class="tr-summary" hidden></div>
+
+        <fieldset class="tr-layers">
+          <legend>Legenda a vrstvy</legend>
+          <p class="small muted tr-layers-hint">Vypnutím skryjete vrstvu na mapě.</p>
+          <div id="layer-toggles"></div>
+          <label class="check tr-place-toggle"><input type="checkbox" id="show-places" checked><span class="tr-sw" aria-hidden="true" id="place-sw"></span>Přístupná místa z naší databáze</label>
+        </fieldset>
+
+        <div id="nearest" class="tr-nearest" hidden></div>
+      </div>
+
+      <div class="tr-pane" id="pane-plan" role="tabpanel" aria-labelledby="tab-plan" hidden>
+        <h2 class="tr-h2" id="plan-h">Naplánovat trasu mezi místy</h2>
+        <p class="small muted">Vyberte dvě místa v oblasti na mapě. Trasu otevřeme v Google Maps a tady ukážeme bariéry z OpenStreetMap do 25 m od přímé spojnice. Je to <b>orientační kontrola</b>, skutečná trasa může vést jinudy.</p>
+        <ol class="tr-steps">
+          <li class="field"><label for="from"><span class="tr-pin a" aria-hidden="true">A</span>Odkud</label><select id="from"><option value="">Nejdřív přibližte mapu na obec</option></select></li>
+          <li class="field"><label for="to"><span class="tr-pin b" aria-hidden="true">B</span>Kam</label><select id="to"><option value="">Nejdřív přibližte mapu na obec</option></select></li>
+        </ol>
+        <p class="small muted" id="plan-hint">Výběr se plní místy v aktuálním výřezu mapy. Místo můžete vybrat i kliknutím na mapě.</p>
+        <button class="btn btn-primary btn-block" type="button" id="plan" disabled><span data-icon="route"></span>Zkontrolovat a otevřít v Google Maps</button>
+        <div id="plan-result" hidden></div>
+      </div>
+
+      <div class="tr-pane" id="pane-moje" role="tabpanel" aria-labelledby="tab-moje" hidden>
+        <form class="stack" id="my-route">
+          <h2 class="tr-h2">Uložit vlastní trasu</h2>
+          <p class="small muted">Trasa zůstane jen v tomto prohlížeči a nikam se neposílá.</p>
+          <div class="field"><label for="r-name">Název trasy</label><input id="r-name" type="text" required placeholder="Např. Z nádraží na náměstí"></div>
+          <div class="field"><label for="r-note">Poznámky k úsekům</label><textarea id="r-note" placeholder="Kde je schod, kde objet, kde se dá zastavit"></textarea></div>
+          <label class="check"><input type="checkbox" id="r-plan"> Přiložit místa A a B z plánovače</label>
+          <button class="btn btn-ghost" type="submit">Uložit do prohlížeče</button>
+        </form>
+        <ul class="tr-saved" id="saved-routes"></ul>
+        <div class="tr-community" id="komunitni">
+          <h3>Sdílené trasy komunity</h3>
+          <p class="small">Zatím tu žádné nejsou. Sdílení tras přijde ve fázi 3: lidé na vozíku si uloží trasu, kterou opravdu projeli, popíšou úseky s pomocí a doporučí objížďku.</p>
+          <a class="btn btn-quiet btn-sm" href="komunita.html">Jak bude komunita fungovat</a>
+        </div>
+      </div>
+
+      <p class="small muted tr-attr">Data o bariérách: © přispěvatelé <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> (ODbL), živě z Overpass API. Nezakreslený schod neznamená, že tam schod není. <a href="metodika.html#zdroje">Odkud data jsou</a></p>
+    </div>
+  </section>
+
+  <section class="tr-map" aria-label="Mapa">
+    <div id="map" class="map-canvas" role="application" aria-label="Mapa bariér a přístupných míst"></div>
+    <details class="tr-legend" id="legend-box">
+      <summary>Legenda</summary>
+      <div id="legend" aria-label="Legenda"></div>
+    </details>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/config.js?v=11"></script>
+<script src="assets/js/core.js?v=11"></script>
+<script src="assets/js/map-engine.js?v=11"></script>
+<script src="assets/js/trasy.js?v=11"></script>
+</body>
+</html>

@@ -1,0 +1,1795 @@
+{
+ "task": "web_rest_praha_a",
+ "kraj": "Hlavní město Praha",
+ "checked_date": "2026-10-06",
+ "places": [
+  {
+   "osm_id": "n9621043870",
+   "name": "AIA polévkárna",
+   "obec": "Praha",
+   "address": "Sokolovská 2288/117",
+   "lat": 50.099543,
+   "lng": 14.469207,
+   "category": "restaurace",
+   "source_url": "https://aiapolevkarna.cz/?lang=cs",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "V seznamu služeb na webu je uvedeno „Bezbariérové“ (bez dalších podrobností).",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Mezi službami uvedeno parkoviště bez obsluhy (bez zmínky o místech ZTP).",
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Naše služby Bezbariérové Bufet Catering Rozvoz"
+  },
+  {
+   "osm_id": "n4184471419",
+   "name": "Café Therapy",
+   "obec": "Praha",
+   "address": "Školská 30",
+   "lat": 50.0796,
+   "lng": 14.424062,
+   "category": "restaurace",
+   "source_url": "https://cafe-therapy.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že prostor je plně bezbariérový.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Součástí je konferenční sál pro cca 40 osob; podrobnosti o WC ani rozměrech neuvedeny."
+   },
+   "measurements": [],
+   "evidence_quote": "Je plně bezbariérový a mají sem přístup mazlíčci."
+  },
+  {
+   "osm_id": "n13401653743",
+   "name": "Fly Vista",
+   "obec": "Praha",
+   "address": "Národní 63/26",
+   "lat": 50.082243,
+   "lng": 14.419475,
+   "category": "restaurace",
+   "source_url": "https://flyvista.cz/cs/kontakt/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "Vstup do budovy (obchodní dům Máj) je na rohu ulic Spálená a Národní.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": "Restaurace je v 8. patře, web doporučuje použít výtah.",
+    "jine": "Web výslovně neuvádí, zda je provoz bezbariérový."
+   },
+   "measurements": [],
+   "evidence_quote": "využijte výtah do 8.patra, kde se nachází naše restaurace"
+  },
+  {
+   "osm_id": "n1947148280",
+   "name": "James Dean",
+   "obec": "Praha",
+   "address": "V Kolkovně 1",
+   "lat": 50.089489,
+   "lng": 14.422226,
+   "category": "restaurace",
+   "source_url": "https://jamesdean.cz/en/faq",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Podle FAQ je diner (restaurace) přístupný pro vozík; hudební klub v suterénu přístupný není.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Is it wheelchair accessible? The diner is. The Music Club is downstairs and isn’t"
+  },
+  {
+   "osm_id": "n4765022615",
+   "name": "Kavárna Ponrepo",
+   "obec": "Praha",
+   "address": "Bartolomějská 291/11",
+   "lat": 50.083035,
+   "lng": 14.417469,
+   "category": "restaurace",
+   "source_url": "https://www.nfa.cz/cs/kino-ponrepo/navsteva-kina/kontakty",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Údaje se týkají kina Ponrepo (stejná adresa). Pro bezbariérový vstup se zazvoní na zvonek vpravo před hlavním vchodem; pokladní či dobrovolník doprovodí bezbariérovou cestou přes dvůr.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": "Vyhrazené místo pro OZP v ulici Národní, asi 230 m.",
+    "vytah": null,
+    "jine": "Zastávka tramvaje Národní třída částečně bezbariérová (asi 250 m); metro Národní třída s výtahem z Lazarské (asi 650 m); doprovod osob s hendikepem zdarma; indukční smyčka."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost vyhrazeného místa OZP",
+     "hodnota": 230,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Pro bezbariérový vstup zazvoňte na zvonek umístěný vpravo před hlavním vchodem."
+  },
+  {
+   "osm_id": "n355008175",
+   "name": "Krčma U Parašutistů",
+   "obec": "Praha",
+   "address": "Resslova 1939/7",
+   "lat": 50.075879,
+   "lng": 14.416396,
+   "category": "restaurace",
+   "source_url": "https://uparasutistu.cz/?lang=cs",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "V seznamu služeb na webu je uvedeno „Bezbariérový“ (bez podrobností).",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Naše služby Bezbariérový Klimatizace Venkovní posezení"
+  },
+  {
+   "osm_id": "n1117933112",
+   "name": "Kyvadlo",
+   "obec": "Praha",
+   "address": "V Jámě 699/5",
+   "lat": 50.080129,
+   "lng": 14.425094,
+   "category": "restaurace",
+   "source_url": "https://kyvadlo.com/?lang=cs",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že jde o bezbariérovou restauraci; v seznamu služeb též „Bezbariérový“.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": null
+   },
+   "measurements": [],
+   "evidence_quote": "Jsme bezbariérová restaurace."
+  },
+  {
+   "osm_id": "n3768859268",
+   "name": "Maňána",
+   "obec": "Praha",
+   "address": "Maňákova 745",
+   "lat": 50.107598,
+   "lng": 14.575926,
+   "category": "restaurace",
+   "source_url": "https://slun.cz",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup i vnitřní prostor kavárny jsou podle webu bezbariérové.",
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Kavárna je sociální podnik; asi 100 m od konečné metra B Černý Most."
+   },
+   "measurements": [],
+   "evidence_quote": "Vstup i vnitřní prostor je bezbariérový."
+  },
+  {
+   "osm_id": "n2980960788",
+   "name": "Cafedu",
+   "obec": "Praha",
+   "address": "Škrétova 490/12",
+   "lat": 50.078733,
+   "lng": 14.43259,
+   "category": "restaurace",
+   "source_url": "https://www.cafedu.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": null,
+    "wc": null,
+    "pokoj": null,
+    "koupelna": null,
+    "parkovani": null,
+    "vytah": null,
+    "jine": "Prostor je ve dvou patrech spojených točitým schodištěm; o výtahu ani bezbariérovosti web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Prostor se nachází ve dvou patrech spojených točitým schodištěm"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n3976247017",
+   "name": "AC Burgers",
+   "url": "https://acburgers.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11002] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n1813797282",
+   "name": "ART&FOOD Had",
+   "url": "http://www.zlatyhad.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11480627843",
+   "name": "Acai Poke",
+   "url": "https://www.acaipoke.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3722734869",
+   "name": "Agave",
+   "url": "https://agaverestaurant.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2601149573",
+   "name": "Alambre",
+   "url": "https://alambre.cz/menu",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4417604749",
+   "name": "Alebrijes",
+   "url": "https://www.alebrijescocinamexicana.com/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2015148540",
+   "name": "Alforno Trattoria Italiana",
+   "url": "https://alforno.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3621828331",
+   "name": "Alriso Risotteria Italiana",
+   "url": "https://www.al-riso.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3671789746",
+   "name": "Altán",
+   "url": "https://www.restauracealtan.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3392270461",
+   "name": "Amore more",
+   "url": "http://www.amoremore.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n3721417016",
+   "name": "Ananta",
+   "url": "http://www.anantasesa.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3620482766",
+   "name": "Angelato Café",
+   "url": "https://angelato.eu/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3688009384",
+   "name": "Angelato Café",
+   "url": "https://angelato.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4223445634",
+   "name": "Apetit",
+   "url": "https://www.apetitpraha.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3722751363",
+   "name": "Au Gourmand",
+   "url": "https://augourmand.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11297780483",
+   "name": "Automat Matuška",
+   "url": "https://www.automatmatuska.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n6757947785",
+   "name": "BEERTIME",
+   "url": "https://www.beertime.pub/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3391168799",
+   "name": "BONCO Asian Fusion Restaurant",
+   "url": "https://bonco.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3974223617",
+   "name": "Baldrian",
+   "url": "https://restaurantbaldrian.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2606229679",
+   "name": "Bar U Hřebíka",
+   "url": "http://www.bar-uhrebika.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4844267821",
+   "name": "Bar na větvi",
+   "url": "https://bar-na-vetvi3.webnode.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1319826500",
+   "name": "Baretta Café",
+   "url": "https://www.baretta.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1319826508",
+   "name": "Baretta Pizza & pasta",
+   "url": "https://www.baretta.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "w33580145",
+   "name": "Baštova zmrzlina",
+   "url": "https://bastovazmrzlina.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3530983954",
+   "name": "BeerGeek Bar",
+   "url": "https://beergeek.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1054002290",
+   "name": "Bertoldi",
+   "url": "https://www.pizzabertoldi.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n5188010993",
+   "name": "Bertíkova cukrárna",
+   "url": "http://www.bertikovacukrarna.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n338607935",
+   "name": "Bibimbap",
+   "url": "https://www.bibimbap.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3837932627",
+   "name": "Bistro & Café U Hájků",
+   "url": "https://www.uhajku.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n6115358402",
+   "name": "Bistro Deli & Bakery",
+   "url": "https://bistrodeli.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n12645270685",
+   "name": "Bistro Hala",
+   "url": "https://www.perfectcanteen.cz/podniky/bistro-hala",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n10816695605",
+   "name": "Bistro Mezi řádky",
+   "url": "https://www.etincelle.cz/kavarny-a-bistra",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4826096920",
+   "name": "Bistro Noodle Pankrác",
+   "url": "http://www.noodlepankrac.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n1472923323",
+   "name": "Bistro Prosek",
+   "url": "https://bistroprosek.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n12946817922",
+   "name": "Bitcoin Bar",
+   "url": "https://www.btcbar.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n296809088",
+   "name": "Boháč a chuďas",
+   "url": "https://www.bohacachudas.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11009912110",
+   "name": "Božská Lahvice",
+   "url": "https://www.bozskalahvice.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n9484230089",
+   "name": "Brambory na Pankráci",
+   "url": "https://www.bramborynapankraci.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3372830198",
+   "name": "Bruxx",
+   "url": "https://www.bruxx.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n296723381",
+   "name": "Budvarka",
+   "url": "https://www.budvarkadejvice.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "w173596214",
+   "name": "Bukanýr",
+   "url": "https://www.bukanyr.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2149675650",
+   "name": "Bulldog’s dart pub",
+   "url": "http://www.bulldogspub.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3724867255",
+   "name": "Burger Empire",
+   "url": "https://www.burger-empire.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11038136622",
+   "name": "Burger King",
+   "url": "https://www.burgerking.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3183501711",
+   "name": "Burger King",
+   "url": "http://www.myburgerking.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n13970696920",
+   "name": "Bystro Café",
+   "url": "https://www.bystrocafe.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n10883964961",
+   "name": "CHỊ HAI - Street Food",
+   "url": "https://chihaistreetfood.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n528435770",
+   "name": "CP1 Café",
+   "url": "https://cp1cafe.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3720339957",
+   "name": "Cafe - Pub Atmosphere",
+   "url": "http://www.atmoska.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4640716889",
+   "name": "Cafe-Pub Atmosphere",
+   "url": "https://www.atmoska.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1948155696",
+   "name": "Caffrey's Irish Bar",
+   "url": "https://www.caffreys.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11670081653",
+   "name": "Café Alegre",
+   "url": "http://www.alegrecafe.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n7250831633",
+   "name": "Café Bazar",
+   "url": "https://www.bazarklanovice.cz/bistro",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n3538093404",
+   "name": "Café Imperial",
+   "url": "https://www.cafeimperial.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4441826353",
+   "name": "Café Jen",
+   "url": "https://www.cafejen.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n296838208",
+   "name": "Café MARTIN",
+   "url": "http://www.a-mano.cz/cafe-martin/cafe-martin-zizkov.html",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1268311863",
+   "name": "Café Modi",
+   "url": "https://www.cafemodi.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3278391834",
+   "name": "Café Montmartre",
+   "url": "http://www.cafemontmartre.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "w49733410",
+   "name": "Café Na půl cesty",
+   "url": "https://www.greendoors.cz/cs/landing_page/cafe-na-pul-cesty-3/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n296504185",
+   "name": "Café Nezisk (mamacoffee Pohořelec)",
+   "url": "https://www.mamacoffee.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3050923331",
+   "name": "Café Palanda",
+   "url": "http://www.cafepalanda.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n13435950416",
+   "name": "Café Perón",
+   "url": "https://www.cafeperon.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4535139890",
+   "name": "Café Platýz",
+   "url": "http://www.cafebarplatyz.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "w1115304600",
+   "name": "Café Prostoru_",
+   "url": "https://cafe.prostoru.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n296636665",
+   "name": "Café Sladkovský",
+   "url": "http://cafesladkovsky.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2742912673",
+   "name": "Café U Týna",
+   "url": "https://restaurantutyna.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n2740467179",
+   "name": "Café v lese",
+   "url": "https://cafevlese.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n334363006",
+   "name": "Cantina",
+   "url": "https://www.restauracecantina.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1977833999",
+   "name": "Cash Only Bar",
+   "url": "https://cashonlybar.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3845809158",
+   "name": "Champa",
+   "url": "https://champa.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3724788092",
+   "name": "Chiaki",
+   "url": "http://chiaki.cz/",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n296718629",
+   "name": "Chilli and Lime",
+   "url": "http://www.chilliandlime.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1977833998",
+   "name": "Choco-Café U Červené židle",
+   "url": "https://www.choco-cafe.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11053534408",
+   "name": "Cibo da Dio (Restaurant by Peperoncino)",
+   "url": "https://www.cibodadio.cz",
+   "reason": "web nedostupný (The read operation timed out)"
+  },
+  {
+   "osm_id": "n1726496166",
+   "name": "Cobra",
+   "url": "https://barcobra.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n282741157",
+   "name": "Corleone",
+   "url": "https://www.corleone.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n296680006",
+   "name": "Craft Beer Spot",
+   "url": "https://beerspotprague.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1324031994",
+   "name": "Crazy Cow",
+   "url": "https://www.crazycow.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n6841096585",
+   "name": "Crème de la Crème",
+   "url": "https://www.cremedelacreme.cz/cs/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n8664418483",
+   "name": "Crème de la Crème",
+   "url": "https://www.cremedelacreme.cz/cs/zmrzlinarny/pod-kastany",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n564625834",
+   "name": "Cukrárna Alchymista",
+   "url": "http://www.alchymista.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3504373523",
+   "name": "Cukrárna Merlot",
+   "url": "http://www.cukrarna-merlot.unas.cz/",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n3530819196",
+   "name": "Cukrárna Na nádvoří",
+   "url": "https://www.cukrarna-na-nadvori.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n3345139907",
+   "name": "Curry House",
+   "url": "https://www.currypalace.cz/",
+   "reason": "web nedostupný (HTTP Error 503: Service Unavailable)"
+  },
+  {
+   "osm_id": "n6018041655",
+   "name": "Curry and Tandoor",
+   "url": "https://www.currytandoor.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3818622072",
+   "name": "CzecHouse Grill & Rotisserie",
+   "url": "https://www3.hilton.com/en/hotels/czech-republic/hilton-prague-PRGHITW/dining/index.html?WT.mc_id=zELWAKN0EMEA1HI2DMH3LocalSearch4DGGenericx6PRGHITW",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n6463638085",
+   "name": "Cà phê",
+   "url": "https://ca-phe.cz/",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n3051766529",
+   "name": "Deco",
+   "url": "https://www.decorestaurace.cz/",
+   "reason": "web nedostupný (<urlopen error [WinError 10061] Nemohlo být vytvoř)"
+  },
+  {
+   "osm_id": "n3832546175",
+   "name": "Delicates Pizzeria&Café",
+   "url": "http://pizzadelicates.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n5437107629",
+   "name": "Delice Cafe",
+   "url": "https://www.delicecafe.cz/",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n359898911",
+   "name": "Demínka",
+   "url": "https://www.deminka.com",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n5053279900",
+   "name": "Designum",
+   "url": "https://klarov.astenhotels.com/designum-cafe",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n300712776",
+   "name": "Dhaba Beas",
+   "url": "https://www.beas-dhaba.cz/belehradska/?l=cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1702407020",
+   "name": "Dhaba Beas",
+   "url": "https://www.beas-dhaba.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2352440355",
+   "name": "Dhaba Beas",
+   "url": "https://www.beas-dhaba.cz/cz/dhaba-tynska",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3346737424",
+   "name": "Dharmasala",
+   "url": "https://www.dharmasala.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n13369640681",
+   "name": "Diego pivní bar",
+   "url": "http://www.diegopivnibar.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n339049781",
+   "name": "District 3 Bar",
+   "url": "https://facebook.com/zizkov3",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n12149687964",
+   "name": "DoKao Japanese & Korean Kitchen",
+   "url": "https://www.dokao.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n668979791",
+   "name": "Dobrá trafika",
+   "url": "http://www.dobratrafika.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3470882762",
+   "name": "Dobrá čajovna",
+   "url": "https://www.tea.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3423138563",
+   "name": "Dock House",
+   "url": "http://www.dockhouse.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n317919203",
+   "name": "Domažlická jizba",
+   "url": "https://www.domazlicka-jizba.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n12770424159",
+   "name": "Don Kitchen",
+   "url": "https://www.donkitchen.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1123909061",
+   "name": "Dong Hai",
+   "url": "https://www.donghai.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n5153853623",
+   "name": "Dos Mundos",
+   "url": "https://www.dos-mundos.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n6251237585",
+   "name": "Dva Kohouti",
+   "url": "https://www.dvakohouti.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3740682020",
+   "name": "Döner Kebab Žižkov",
+   "url": "http://www.kebabzizkov.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n10049078218",
+   "name": "Eaternia",
+   "url": "https://www.eterniasmichov.com/eaternia-jidelna",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n12623350458",
+   "name": "Elias Coffee Shop",
+   "url": "https://www.alcronprague.cz/elias-coffee-shop/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n361729237",
+   "name": "Escobaras",
+   "url": "https://www.escobaras.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n4031606646",
+   "name": "Eska",
+   "url": "https://eska.ambi.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3183031193",
+   "name": "Everest",
+   "url": "https://restauraceeverest.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n667211737",
+   "name": "Fastgood",
+   "url": "https://www.fastgood.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n450566320",
+   "name": "Fatal Music Club",
+   "url": "https://fatalclub.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n344975536",
+   "name": "Ferdinanda",
+   "url": "http://ferdinanda.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1813797276",
+   "name": "Ferdinanda",
+   "url": "http://www.ferdinanda.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3538093406",
+   "name": "Fiesta",
+   "url": "https://www.restaurace-fiesta.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3336194611",
+   "name": "Five Rivers",
+   "url": "https://www.fiverivers.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4278549113",
+   "name": "Fresh roasted coffee",
+   "url": "https://www.cerstve-prazena-kava.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3815608981",
+   "name": "Frida",
+   "url": "https://www.cafefrida.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4590442832",
+   "name": "Friesies",
+   "url": "https://www.friesies.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n10553960113",
+   "name": "Fæncy Fries",
+   "url": "https://www.faencyfries.cz/pobocky/faency-praha-kaprova",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11036755661",
+   "name": "Garden's Restaurant",
+   "url": "https://gardensrestaurant.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4805855105",
+   "name": "Geekárna",
+   "url": "http://www.geekarna.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n821161544",
+   "name": "George and Dragon Prague",
+   "url": "https://www.georgeanddragon.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n4869327746",
+   "name": "Gidos",
+   "url": "www.gidos.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3621828327",
+   "name": "Golden Tikka",
+   "url": "https://www.tikka.cz/",
+   "reason": "jen popis cesty od tramvaje po schodech, o provozovně nic"
+  },
+  {
+   "osm_id": "n1456123956",
+   "name": "Gotika",
+   "url": "http://www.restauracegotika.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n585182691",
+   "name": "Govinda",
+   "url": "https://www.govinda-vegclub.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2486520771",
+   "name": "Grand Café Orient",
+   "url": "https://www.grandcafeorient.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4813278873",
+   "name": "Grande vita - restaurace a obchod",
+   "url": "https://grandevita.webnode.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3526798924",
+   "name": "Gusto Giusto",
+   "url": "https://www.gustopizza.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3726625338",
+   "name": "Guston",
+   "url": "https://www.guston.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1024623610",
+   "name": "HAMR Záběhlice",
+   "url": "https://www.hamrsport.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n12685105810",
+   "name": "Habato",
+   "url": "https://www.habato.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n625826252",
+   "name": "Hajnovka",
+   "url": "https://www.hajnovka.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "w28701169",
+   "name": "Hanavský pavilon",
+   "url": "https://hanavsky-pavilon.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1695234819",
+   "name": "Hangar",
+   "url": "https://kolibka.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4393342897",
+   "name": "Hany Bany",
+   "url": "https://www.hanybany.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n7045320485",
+   "name": "Happy Bean bistro & café",
+   "url": "http://happybean.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4223405693",
+   "name": "Havlíčkova restaurace",
+   "url": "https://www.restauracehavlickova.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n449773083",
+   "name": "Hell SMOKE BBQ",
+   "url": "https://www.hellsmoke.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3722044212",
+   "name": "Hells Bells",
+   "url": "https://www.hellsbells.cz",
+   "reason": "jen historický text o sejití po schodech do hospody, bez údaje o přístupnosti"
+  },
+  {
+   "osm_id": "n1590585704",
+   "name": "Hlučná samota",
+   "url": "http://www.hlucna-samota.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4531576138",
+   "name": "Hnízdo - humanitní komunitní prostor",
+   "url": "https://prostorhnizdo.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n9008695949",
+   "name": "Hospoda V parku",
+   "url": "https://praha9vparku.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n1117379014",
+   "name": "Hospoda v Lucerně",
+   "url": "https://www.hospodalucerna.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n920066899",
+   "name": "Hospůdka Nad Viktorkou",
+   "url": "https://www.nadviktorkou.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3455327809",
+   "name": "Hospůdka u dvou dubů",
+   "url": "https://u2dubu.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3338568720",
+   "name": "Hostinec U Tunelu",
+   "url": "http://www.utunelu.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3470917450",
+   "name": "Husinec",
+   "url": "https://www.husinecrestaurace.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n907947500",
+   "name": "Hvězda Bar",
+   "url": "https://www.bullerbyn.cz/hvezda",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n3070004759",
+   "name": "IF café",
+   "url": "https://ivetafabesova.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n7635926602",
+   "name": "ILF",
+   "url": "https://www.hotel-ilf.cz/restaurace/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4214263333",
+   "name": "Il Mulino",
+   "url": "https://www.ilmulino.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n4398945089",
+   "name": "Il Palazzo",
+   "url": "http://www.ilpalazzo.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1766052599",
+   "name": "Il Pinnochio",
+   "url": "https://www.ilpinocchio.cz/index.php",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3772609577",
+   "name": "Indian by Nature",
+   "url": "https://ibn.delivery/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4565030489",
+   "name": "Inspirace",
+   "url": "https://www.bistroinspirace.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4223416956",
+   "name": "Istanbul Kebab",
+   "url": "https://www.istanbulkebab.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n6351996812",
+   "name": "Jam and Co.",
+   "url": "http://jamandco.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3978266809",
+   "name": "Jiná krajina",
+   "url": "https://www.jinakrajina.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n12215943723",
+   "name": "Jídlovice",
+   "url": "https://www.jidlovice.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n5801749555",
+   "name": "KFC",
+   "url": "http://www.kfc.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n13970697424",
+   "name": "KFC",
+   "url": "https://www.kfc.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n6677969755",
+   "name": "KM pizza",
+   "url": "https://www.kmpizza.com/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "w546320987",
+   "name": "KM pizza",
+   "url": "https://kmpizza.com/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11868795589",
+   "name": "Kafe Atrium",
+   "url": "https://www.kafeatrium.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2374771419",
+   "name": "Kafe Bar Jablonecká",
+   "url": "http://www.kafe-bar.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n4335075814",
+   "name": "Kafe Damu",
+   "url": "https://www.damu.cz/",
+   "reason": "web DAMU zmiňuje bezbariérovost jen u koleje, ne u kavárny"
+  },
+  {
+   "osm_id": "n354984765",
+   "name": "Kafemat",
+   "url": "https://www.yelp.com/biz_photos/kafemat-praha",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n1760413362",
+   "name": "Kafárna Na kus řeči",
+   "url": "https://www.kafarna.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n9586308238",
+   "name": "KanTýna",
+   "url": "https://www.prague-catering.cz/provozovny/kantyna-ceska-sporitelna-antal/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n296802288",
+   "name": "Kandelábr",
+   "url": "https://www.restaurantkandelabr.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n10966013773",
+   "name": "Kantýna Libeň – Jidlapodnos.cz",
+   "url": "https://jidlapodnos.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n12657282190",
+   "name": "Kantýna Metrostav",
+   "url": "https://www.manihi.cz/kantyna-metrostav/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1702862718",
+   "name": "Kastrol",
+   "url": "https://www.restauracekastrol.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n5010970674",
+   "name": "Kasárna Karlín",
+   "url": "https://kasarnakarlin.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4619030989",
+   "name": "Kavárna Kočičí",
+   "url": "http://kavarnakocici.com/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2563931218",
+   "name": "Kavárna Muzeum",
+   "url": "https://kavarnamuzeum.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1412851100",
+   "name": "Kavárna Obecní dům",
+   "url": "https://www.kavarnaod.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n7858512734",
+   "name": "Kavárna Plechárna",
+   "url": "http://www.plecharnacernymost.cz/cz/kavarna",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n305282765",
+   "name": "Kavárna Slavia",
+   "url": "https://www.cafeslavia.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1512478512",
+   "name": "Kavárna a cukrárna Lilly",
+   "url": "https://cukrarnalilly.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n4228680596",
+   "name": "Kavárna co hledá jméno",
+   "url": "https://kavarnacohledajmeno.cz/",
+   "reason": "jen titulek příspěvku „nahoře po schodech“, nejasné vůči přístupu"
+  },
+  {
+   "osm_id": "n626575494",
+   "name": "Kavárna klubu Cross",
+   "url": "https://www.crossclub.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n330094295",
+   "name": "Kaštan",
+   "url": "https://kastanvkruhu.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n10143155720",
+   "name": "Kebab Ječna",
+   "url": "https://canbeyberlin.webnode.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n6307708023",
+   "name": "Khomfi",
+   "url": "https://khomfi.com",
+   "reason": "web nedostupný (<urlopen error timed out>)"
+  },
+  {
+   "osm_id": "n4781068524",
+   "name": "Kino Aero",
+   "url": "https://www.kinoaero.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n13970693474",
+   "name": "Klid po práci",
+   "url": "https://www.klidpopraci.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n493878004",
+   "name": "Klub deskových her Paluba",
+   "url": "http://www.paluba.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11653233093",
+   "name": "Knoflík",
+   "url": "https://www.centrumknoflik.cz/kavarna/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4535597391",
+   "name": "Kofarna Café",
+   "url": "https://www.kofarnacafe.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n2178089912",
+   "name": "Kofein Restaurant",
+   "url": "https://ikofein.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1235588447",
+   "name": "Konvikt",
+   "url": "http://www.konviktpub.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2217367035",
+   "name": "Kozel u Bohemky",
+   "url": "https://kozelubohemky.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n331956702",
+   "name": "Kozlovna Apropos",
+   "url": "https://www.kozlovna-apropos.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n315017360",
+   "name": "Kozlovna Na Ráně",
+   "url": "http://www.stararana.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4985371022",
+   "name": "Kočár z Vídně",
+   "url": "http://kocarzvidne.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n360039727",
+   "name": "Krkonošská hospůdka",
+   "url": "https://www.krkonosskahospudka.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n364699349",
+   "name": "Krušovická restaurace Na Michelské",
+   "url": "https://michelska.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n13277135264",
+   "name": "Krámek",
+   "url": "https://nakacabce.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1374418173",
+   "name": "Kulaťák",
+   "url": "https://www.kulatak.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1315100343",
+   "name": "Kumbál Mléčný Bar",
+   "url": "http://www.kumbal.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n13970696029",
+   "name": "Kuželkárna",
+   "url": "http://kuzelkarna.net",
+   "reason": "na webu jen citovaná Google recenze zákazníka, nikoli údaj provozovatele"
+  },
+  {
+   "osm_id": "n3722711155",
+   "name": "LT Café",
+   "url": "https://ltcafe.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n4316654126",
+   "name": "La Boca",
+   "url": "https://www.laboca.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3243798663",
+   "name": "La Bottega Bistroteka",
+   "url": "https://bistroteka.labottega.cz/",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n3394024949",
+   "name": "La Degustation Bohême Bourgeoise",
+   "url": "https://www.ladegustation.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3336194610",
+   "name": "La Finestra in Cucina",
+   "url": "https://www.lafinestra.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n9920715959",
+   "name": "La Mouka",
+   "url": "https://www.lamouka.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n529132088",
+   "name": "La Republica",
+   "url": "https://www.larepublica.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3281003786",
+   "name": "La Terra Coffee",
+   "url": "http://www.laterracoffee.cz/",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n5773708021",
+   "name": "La Zmrzka",
+   "url": "https://www.lazmrzka.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11009887652",
+   "name": "La Zmrzka",
+   "url": "https://www.lazmrzka.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11815101295",
+   "name": "Labonetta",
+   "url": "https://prosek.labonetta.cz/pizza-prosek",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n359910186",
+   "name": "Ladronka",
+   "url": "https://www.ladronka.com/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2249429535",
+   "name": "Lao Tea House",
+   "url": "https://www.udzoudyho.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3722050233",
+   "name": "Las Adelitas",
+   "url": "https://www.lasadelitas.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n344482920",
+   "name": "Lavička",
+   "url": "https://www.restaurace-lavicka.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n299408175",
+   "name": "Lehká hlava",
+   "url": "https://www.lehkahlava.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n9847733054",
+   "name": "Linh's vegan corner",
+   "url": "https://linhsvegancorner.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3278391835",
+   "name": "Literární kavárna Řetězová",
+   "url": "http://www.kavarnaretezova.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n434518183",
+   "name": "Locál",
+   "url": "https://local-praha.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3936679460",
+   "name": "Lokál Hamburk",
+   "url": "https://lokal-hamburk.ambi.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1509382553",
+   "name": "Lokál U Zavadilů",
+   "url": "https://lokal-uzavadilu.ambi.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n355011255",
+   "name": "Louvre",
+   "url": "https://www.cafelouvre.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1813813074",
+   "name": "Luka Lu",
+   "url": "https://www.lukalu.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4111466817",
+   "name": "Léta Páně",
+   "url": "http://www.pddp.cz/pddp_restaurace/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n3722751368",
+   "name": "M1 Lounge",
+   "url": "https://www.m1lounge.com/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11539657210",
+   "name": "MOOD cafe – bar – restaurant",
+   "url": "http://www.restaurantmood.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n6873241113",
+   "name": "Mad runner",
+   "url": "https://www.madrunner.eu",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11172558838",
+   "name": "Madrunner",
+   "url": "https://madrunner.eu/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2407915349",
+   "name": "Makakiko",
+   "url": "https://www.makakiko.cz",
+   "reason": "web nedostupný (<urlopen error [WinError 10061] Nemohlo být vytvoř)"
+  },
+  {
+   "osm_id": "n9408441817",
+   "name": "Mala India",
+   "url": "https://malaindia.cz/",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n4451906439",
+   "name": "Malostranská beseda",
+   "url": "https://www.malostranska-beseda.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4451906437",
+   "name": "Malostranská beseda",
+   "url": "https://www.malostranska-beseda.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4451906438",
+   "name": "Malostranská beseda",
+   "url": "https://www.malostranska-beseda.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n5469482521",
+   "name": "Malostranský Hostinec",
+   "url": "https://malostranskyhostinec.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11088751039",
+   "name": "Malá Argenta - Argentinské Empanadas",
+   "url": "https://malaargenta.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1129280680",
+   "name": "Maranatha",
+   "url": "https://www.restauracemaranatha.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4112328489",
+   "name": "Marthy's kitchen",
+   "url": "https://www.marthyskitchen.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11342818258",
+   "name": "Masala I.P. Pavlova",
+   "url": "https://masalaippavlova.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n12748651706",
+   "name": "Masala Národní Třída",
+   "url": "https://masalanarodnitrida.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n5363252421",
+   "name": "Masala Vodičkova",
+   "url": "https://masalavodickova.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4176637292",
+   "name": "Masi-co veřejná jídelna",
+   "url": "https://www.masi-co.com/jidelna-antala-staska/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n1400750757",
+   "name": "Matylda",
+   "url": "https://www.restaurant-matylda.cz/",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n9999240495",
+   "name": "Matzip",
+   "url": "https://www.prahamatzip.com/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n10062732412",
+   "name": "Mezi řádky",
+   "url": "https://meziradky.com",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n13970693967",
+   "name": "Miminoo",
+   "url": "http://towerpark.cz/miminoo-garden-restaurant+11",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n3530819200",
+   "name": "Mimosa",
+   "url": "https://ristorantemimosa.cz/",
+   "reason": "web nedostupný (The read operation timed out)"
+  },
+  {
+   "osm_id": "n12747837832",
+   "name": "Miners Churchill",
+   "url": "https://www.theminers.eu/the-miners-churchill/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4175774626",
+   "name": "Miska Ramen bar",
+   "url": "https://www.miskaramen.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n2335332793",
+   "name": "Mlejnice",
+   "url": "https://restaurace-mlejnice.cz/en/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n941177533",
+   "name": "Mlsná kavka",
+   "url": "https://www.mlsnakavka.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n296694928",
+   "name": "Moment Cafe",
+   "url": "http://cafemoment.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n4460816466",
+   "name": "Monarch Gastrobar",
+   "url": "https://monarch.cz/",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  },
+  {
+   "osm_id": "n11835374449",
+   "name": "Monkey Sushi",
+   "url": "https://monkeysushi.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n2194917098",
+   "name": "Muc Dong",
+   "url": "http://www.mucdong.cz",
+   "reason": "web nic o přístupnosti neuvádí (staženo úvodní + max. 6 podstránek; obsah generovaný JS nemusel být zachycen)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů restaurací a kaváren v Praze (vstup rest_praha.json, položky 0–269)",
+   "url": "viz source_url u jednotlivých míst",
+   "note": "Automatické prohledání úvodní stránky a až 6 podstránek na klíčová slova o přístupnosti, nálezy ručně ověřeny."
+  }
+ ]
+}

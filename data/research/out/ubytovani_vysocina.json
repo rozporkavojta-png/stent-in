@@ -1,0 +1,130 @@
+{
+ "task": "ubytovani_vysocina",
+ "kraj": "Kraj Vysočina",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n1075284706",
+   "name": "Hotel U Raušů",
+   "obec": "Velká Bíteš",
+   "address": "Masarykovo náměstí 13",
+   "lat": 49.288095,
+   "lng": 16.22597,
+   "category": "ubytovani",
+   "source_url": "https://urausu.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Hotel má podle webu jeden pokoj s bezbariérovým přístupem.",
+    "vytah": "Uveden výtah.",
+    "parkovani": "Parkování přímo u hotelu."
+   },
+   "measurements": [],
+   "evidence_quote": "jeden pokoj s bezbariérovým přístupem a výtahem"
+  },
+  {
+   "osm_id": "w1081206298",
+   "name": "Chadimův mlýn",
+   "obec": "Horní Dubenky",
+   "address": "",
+   "lat": 49.253676,
+   "lng": 15.305053,
+   "category": "ubytovani",
+   "source_url": "https://www.chadimmlyn.cz/ubytovani.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Vstup do ubytování ze dvora po schodech.",
+    "parkovani": "Parkování u objektu.",
+    "jine": "Web výslovně uvádí, že ubytování je nevhodné pro hendikepované osoby."
+   },
+   "measurements": [],
+   "evidence_quote": "Vstup: Ze dvora (po schodech) ... Nevhodné pro: Hendikepované osoby"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n5558655378",
+   "name": "Fabrika hotel",
+   "url": "https://www.fabrikahotel.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1518220598",
+   "name": "Hotel Kotyza",
+   "url": "http://hotelkotyza.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w262549183",
+   "name": "Hotel Skalský dvůr",
+   "url": "https://www.skalskydvur.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w47421483",
+   "name": "Hotel Křemešník",
+   "url": "https://www.hotelkremesnik.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1069921383",
+   "name": "Penzion Polnička",
+   "url": "https://www.restauracepolnicka.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w382100353",
+   "name": "KEMP Rouchovany",
+   "url": "https://www.rouchovany.cz/kemp/",
+   "reason": "stránka vrací 404"
+  },
+  {
+   "osm_id": "n2378220503",
+   "name": "Stvořidla",
+   "url": "https://www.trpisovice.cz/verejne-taboriste-stvoridla",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n2743827443",
+   "name": "Hotel Joseph 1699",
+   "url": "https://www.joseph1699.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w1308554871",
+   "name": "Kemp Poušov",
+   "url": "https://www.kemppousov.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3071979442",
+   "name": "Harmony",
+   "url": "https://www.wellness-hotel-harmony.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w128723168",
+   "name": "Samota Sturpik",
+   "url": "http://www.e-chalupy.cz/vysocina/ubytovani-hubenov-chalupa-pronajmuti-samota-sturpik-2740.php",
+   "reason": "jen inzertní portál; slovo \"Bezbariérový\" je tam pouze jako filtr vyhledávání, ne údaj o objektu"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů ubytování z OSM (vstup ubytovani_vysocina.json)",
+   "url": "data/research/inputs/ubytovani_vysocina.json",
+   "note": "14 záznamů s webem (13 unikátních webů, Hotel U Raušů 2x v OSM); prošlo se 13 webů (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "title": "Hotel U Raušů – úvodní stránka",
+   "url": "https://urausu.cz/",
+   "note": "jeden bezbariérový pokoj, výtah, parkování u hotelu"
+  },
+  {
+   "title": "Chadimův mlýn – ubytování",
+   "url": "https://www.chadimmlyn.cz/ubytovani.html",
+   "note": "vstup po schodech, nevhodné pro hendikepované"
+  }
+ ]
+}

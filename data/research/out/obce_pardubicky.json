@@ -1,0 +1,86 @@
+{
+ "task": "obce_pardubicky",
+ "kraj": "Pardubický kraj",
+ "checked_date": "2026-10-05",
+ "places": [],
+ "not_found": [
+  {
+   "osm_id": null,
+   "name": "Euroklíč – výdejní místo, Magistrát města Pardubic (odbor sociálních věcí)",
+   "url": "https://pardubice.eu/euroklice",
+   "reason": "Web uvádí výdej Euroklíče zdarma na OSV MmP, U Divadla 828, 2. patro, kanc. 202; konkrétní WC s eurozámkem a adresou neuvádí. Hledání nových míst zrušeno (zrychlený režim) – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC Mírové náměstí, Ústí nad Orlicí",
+   "url": "https://ustinadorlici.cz/cs/udalosti/11125-rozsireni-provozni-doby-verejneho-wc",
+   "reason": "Článek (3. 12. 2025) uvádí jen provozní dobu veřejného WC na Mírovém náměstí, o bezbariérovosti ani Euroklíči nic – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Městský úřad Svitavy, T. G. Masaryka 5/35",
+   "url": "https://www.svitavy.cz/o-meste/aktualne/novinky/pristupnost-mestskeho-uradu-uredni-hodiny-jak-s-nimi-je",
+   "reason": "Článek z 1. 3. 2021 řeší jen covidová omezení vstupu, bezbariérovost úřadu neuvádí."
+  },
+  {
+   "osm_id": null,
+   "name": "Česká Třebová – veřejné WC a investice do bezbariérovosti",
+   "url": "https://www.ceska-trebova.cz/investicni-akce-vybudovani-verejneho-wc/d-15406",
+   "reason": "Stránky uvedené v sitemapě (i d-8647 o bezbariérových investicích) vrací 404; jediný funkční údaj je starý leták Euroklíč v Pk 2012 (viz sources)."
+  },
+  {
+   "osm_id": null,
+   "name": "Chrudim, Litomyšl – bezbariérová WC / radnice",
+   "url": "https://www.chrudim.eu/",
+   "reason": "Na úvodních stránkách chrudim.eu a litomysl.cz žádný odkaz s klíčovými slovy; sitemapa nedostupná a web search vyčerpán – nedohledáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Obce mimo zkrácený výběr (Přelouč, Hlinsko, Lanškroun, Žamberk, Choceň, Moravská Třebová, Holice ad.)",
+   "url": "",
+   "reason": "Zrychlený režim: limit snížen zhruba na polovinu, prošly se jen Pardubice, Svitavy, Ústí n. O., Česká Třebová, Chrudim, Litomyšl + krajský úřad."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením 2022–2026 (Pardubický kraj)",
+   "url": "https://www.pardubickykraj.cz/krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim",
+   "note": "Schválen ZPk usn. Z/152/21 (14. 12. 2021); PDF: https://www.pardubickykraj.cz/viewDocument.aspx?document=65288; na stránce i souhrnná vyhodnocení za 2022–2025. Opatření k mapování: 3.1.1 podporovat organizace mapující přístupnost objektů a měst a výsledky zveřejňovat na webech kraje; 3.1.4 pokračovat v projektu Euroklíč (místa pro eurozámky, s NRZP Pk a obcemi); spolupráce s Dopravní fakultou Univerzity Pardubice na mapování bezbariérovosti zastávek v ORP; 7.3.1 mapování bezbariérových tras a turistických cílů a zveřejnění na www.vychodnicechy.info; 7.3.3 podpora bezbariérových hygienických zařízení u turistických míst. Plán uvádí, že výsledky mapování (školy, zdravotnictví, úřady) podle Metodiky kategorizace přístupnosti jsou na webu České abilympijské asociace. Licence neuvedena."
+  },
+  {
+   "title": "Pardubický kraj – stránka Pro osoby se zdravotním postižením",
+   "url": "https://www.pardubickykraj.cz/pro-osoby-se-zdravotnim-postizenim",
+   "note": "Rozcestník kraje: KPVP, odkaz na poradenské středisko bezbariérovosti (Centrum Kosatec), poradna NRZP Pardubice, brožura KČT pro vozíčkáře (https://kct.cz/files/_news/134792/vozickari_brozura.pdf). Licence neuvedena."
+  },
+  {
+   "title": "Bezbariérovost města Pardubic (Komise pro bezbariérovost, Program podpory bezbariérovosti)",
+   "url": "https://pardubice.eu/bezbarierovost",
+   "note": "Prezentace a konferenční materiály, výsledky projektu TAČR o bezbariérovém prostoru města, kontakt bezbarierovost@mmp.cz; program podpory od r. 2014 (https://pardubice.eu/pardubice-jsou-v-ramci-republiky-centrem-reseni-bezbarierovosti-mest). Městský atlas přístupnosti s daty na webu nenalezen. Licence neuvedena."
+  },
+  {
+   "title": "Euroklíče – Magistrát města Pardubic",
+   "url": "https://pardubice.eu/euroklice",
+   "note": "Výdej Euroklíče zdarma na OSV MmP (U Divadla 828, 2. patro, kanc. 202); evidence u regionálního pracoviště NRZP ČR v Pardubicích. Seznam WC neuvádí."
+  },
+  {
+   "title": "Euroklíč v Pardubickém kraji 2012 (leták, web Česká Třebová)",
+   "url": "https://www.ceska-trebova.cz/aktualizovana-informace-euroklic-v-pardubickem-kraji/d-11385",
+   "note": "PDF příloha z 7. 2. 2013 – zastaralé, obsah PDF neprověřen."
+  },
+  {
+   "title": "Bezbariérové Svitavy – generel bezbariérovosti",
+   "url": "https://www.svitavy.cz/o-meste/aktualne/novinky/bezbarierove-svitavy",
+   "note": "Generel bezbariérovosti od 2011, aktualizace 2022 s výzvou k podnětům občanů; bezbariérový přechod na 2. nástupiště nádraží Svitavy s doprovodem zaměstnance ČD (cca 100 m). Data/atlas nezveřejněny. Licence neuvedena."
+  },
+  {
+   "title": "Centrum Kosatec, z.s. – Středisko bezbariérovosti (organizace)",
+   "url": "https://www.centrumkosatec.cz/index.php/konzultace-bezbarierovosti/",
+   "note": "Konzultace, posudky a mapování objektů podle jednotné metodiky v Pardubickém kraji (Pardubice, Chrudim, Svitavy, Litomyšl ad.); územní působnost: https://www.centrumkosatec.cz/data/pristupnost/%C3%9Azemn%C3%AD%20p%C5%AFsobnost%20st%C5%99ediska%20CK%202025.pdf. Kraj ho na svém webu uvádí pod názvem Česká abilympijská asociace (KPVP odkazuje na caaos.cz). Potenciální zdroj dat o přístupnosti – licence neuvedena, nutno domluvit."
+  },
+  {
+   "title": "NRZP ČR – regionální pracoviště / poradna Pardubice (organizace)",
+   "url": "http://www.nrzp.cz/",
+   "note": "Kraj uvádí kontakt poradnapardubice@nrzp.cz; partner kraje pro projekt Euroklíč (opatření 3.1.4 KPVP)."
+  }
+ ]
+}

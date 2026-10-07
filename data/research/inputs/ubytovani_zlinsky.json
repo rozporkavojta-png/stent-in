@@ -1,0 +1,249 @@
+[
+{
+"i": "n9994201263",
+"n": "Hospůdka na Haldě",
+"s": "Penzion",
+"o": "Boršice",
+"web": "https://www.haldaborsice.cz/",
+"w": "limited",
+"la": 49.056826,
+"lo": 17.360292
+},
+{
+"i": "n3817851062",
+"n": "Hotel Duo",
+"s": "Hotel",
+"o": "Horní Bečva",
+"web": "https://www.hotel-duo.cz/",
+"w": "yes",
+"la": 49.414553,
+"lo": 18.323317
+},
+{
+"i": "w287436064",
+"n": "Hotel a restaurace Cherry",
+"s": "Hotel",
+"o": "Horní Bečva",
+"a": "Horní Bečva 470",
+"w": "no",
+"la": 49.419119,
+"lo": 18.318173
+},
+{
+"i": "w694478677",
+"n": "Chata Lopeník",
+"s": "Penzion",
+"o": "Lopeník",
+"web": "https://lopenik.cz",
+"w": "no",
+"la": 48.938246,
+"lo": 17.758828
+},
+{
+"i": "n12168399386",
+"n": "Apartmány Kolonáda",
+"s": "Apartmány",
+"o": "Luhačovice",
+"a": "Dr. Veselého 1042",
+"web": "https://www.ubytovaniluhacovice.cz/",
+"w": "yes",
+"la": 49.102862,
+"lo": 17.759563
+},
+{
+"i": "n13039362916",
+"n": "Hedvika",
+"s": "Penzion",
+"o": "Luhačovice",
+"a": "Dr. Veselého 182",
+"web": "http://www.hedvika.cz/",
+"w": "no",
+"la": 49.103557,
+"lo": 17.759649
+},
+{
+"i": "w201402067",
+"n": "Hotel Alexandria",
+"s": "Hotel",
+"o": "Luhačovice",
+"a": "Masarykova 567",
+"web": "https://www.hotelalexandria.cz/",
+"w": "yes",
+"la": 49.100629,
+"lo": 17.759853
+},
+{
+"i": "w1308589840",
+"n": "Lázně Luhačovice",
+"s": "Hotel",
+"o": "Luhačovice",
+"w": "yes",
+"la": 49.100396,
+"lo": 17.759979
+},
+{
+"i": "w92305812",
+"n": "Penzion Stella",
+"s": "Penzion",
+"o": "Luhačovice",
+"a": "Solné 1010",
+"web": "https://www.penzionstella.luhacovice.cz/",
+"w": "yes",
+"la": 49.099924,
+"lo": 17.765726
+},
+{
+"i": "n2386358404",
+"n": "Ubytovaní v soukromí",
+"s": "Penzion",
+"o": "Luhačovice",
+"web": "http://semeloviluhacovice.cz/",
+"w": "no",
+"la": 49.099457,
+"lo": 17.754544
+},
+{
+"i": "n14206240841",
+"n": "Adamantino",
+"s": "Hotel",
+"o": "Pozlovice",
+"web": "https://www.adamantino.cz/",
+"w": "limited",
+"la": 49.125275,
+"lo": 17.776684
+},
+{
+"i": "w329453055",
+"n": "Wellness hotel POHODA",
+"s": "Hotel",
+"o": "Pozlovice",
+"web": "https://www.pohoda-luhacovice.cz/",
+"w": "yes",
+"la": 49.119851,
+"lo": 17.769389
+},
+{
+"i": "w48294332",
+"n": "Lesní penzion Bunč",
+"s": "Penzion",
+"o": "Roštín",
+"a": "Roštín 287",
+"web": "https://bunc.cz/",
+"w": "limited",
+"t": "no",
+"la": 49.182187,
+"lo": 17.346572
+},
+{
+"i": "n13057009585",
+"n": "Hotel zámek Wichterle",
+"s": "Hotel",
+"o": "Slavičín",
+"web": "https://zamekwichterle.cz/hotel/",
+"w": "no",
+"la": 49.089538,
+"lo": 17.876323
+},
+{
+"i": "w76083314",
+"n": "Penzion Bobule",
+"s": "Penzion",
+"o": "Staré Město",
+"a": "Tovární 497",
+"web": "https://www.penzionbobule.com/",
+"w": "no",
+"la": 49.07601,
+"lo": 17.423838
+},
+{
+"i": "n5013670186",
+"n": "Hotel Grand",
+"s": "Hotel",
+"o": "Uherské Hradiště",
+"a": "Palackého náměstí 349",
+"web": "https://granduh.cz/",
+"w": "yes",
+"la": 49.067715,
+"lo": 17.463592
+},
+{
+"i": "n8984992973",
+"n": "Hotel Mlýnská",
+"s": "Hotel",
+"o": "Uherské Hradiště",
+"web": "https://www.hotelmlynska.cz",
+"w": "yes",
+"la": 49.069829,
+"lo": 17.460419
+},
+{
+"i": "n5013670193",
+"n": "Hotel U hejtmana Šarovce",
+"s": "Hotel",
+"o": "Uherské Hradiště",
+"a": "Dvořákova 595",
+"web": "https://hotelsarovec.cz/",
+"w": "yes",
+"la": 49.067611,
+"lo": 17.4661
+},
+{
+"i": "n3168513240",
+"n": "Slunce",
+"s": "Hotel",
+"o": "Uherské Hradiště",
+"web": "https://www.hotelslunce.cz",
+"w": "yes",
+"la": 49.06886,
+"lo": 17.461332
+},
+{
+"i": "w89569644",
+"n": "hotel U Brány",
+"s": "Hotel",
+"o": "Uherský Brod",
+"web": "https://www.hotelubrany.com/",
+"w": "no",
+"la": 49.02178,
+"lo": 17.647753
+},
+{
+"i": "n1498538591",
+"n": "Rajka",
+"s": "Hotel",
+"o": "Valašské Meziříčí",
+"a": "Boženy Němcové 162",
+"web": "https://www.hotelrajka.cz/",
+"w": "yes",
+"la": 49.47534,
+"lo": 17.974751
+},
+{
+"i": "n14067701236",
+"n": "Polosamota",
+"s": "Chata",
+"o": "Velké Karlovice",
+"w": "no",
+"la": 49.38039,
+"lo": 18.364786
+},
+{
+"i": "w70087378",
+"n": "AfricaHouse",
+"s": "Penzion",
+"o": "Zlín",
+"web": "https://www.africahouse.cz/",
+"w": "no",
+"la": 49.257242,
+"lo": 17.725319
+},
+{
+"i": "n11503373249",
+"n": "Penzion Era",
+"s": "Penzion",
+"o": "Zlín",
+"w": "no",
+"la": 49.205542,
+"lo": 17.682598
+}
+]

@@ -1,0 +1,613 @@
+{
+ "task": "ubytovani_jihocesky",
+ "kraj": "Jihočeský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n13238106413",
+   "name": "Penzion Hastrman",
+   "obec": "Doudleby",
+   "address": "",
+   "lat": 48.900774,
+   "lng": 14.504803,
+   "category": "ubytovani",
+   "source_url": "https://hastrman.net/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Přízemí apartmánu je podle webu zcela bezbariérové a vhodné i pro handicapované hosty (kapacita 2 lůžka)."
+   },
+   "measurements": [],
+   "evidence_quote": "Přízemí je zcela bezbarierové vhodné i pro handicapované návštevníky"
+  },
+  {
+   "osm_id": "w1077616314",
+   "name": "Caravan Camping Horní Planá",
+   "obec": "Horní Planá",
+   "address": "",
+   "lat": 48.760638,
+   "lng": 14.024885,
+   "category": "ubytovani",
+   "source_url": "https://caravancamping-hp.cz/cs/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Kemp byl v roce 2001 zrekonstruován včetně bezbariérového sociálního zařízení."
+   },
+   "measurements": [],
+   "evidence_quote": "kompletně zrekonstruován, včetně bezbarierového sociálního zařízení"
+  },
+  {
+   "osm_id": "w962660766",
+   "name": "Hotel Element",
+   "obec": "Lipno nad Vltavou",
+   "address": "",
+   "lat": 48.643286,
+   "lng": 14.220885,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelelement.cz/cz/zabava-a-sport/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "U bazénu je vodní zvedák Delfín pro handicapované osoby. O pokojích web bezbariérovost neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Vodní zvedák Delfín pro handicapované osoby"
+  },
+  {
+   "osm_id": "w1078163503",
+   "name": "Camp Jestřábí",
+   "obec": "Černá v Pošumaví",
+   "address": "",
+   "lat": 48.734306,
+   "lng": 14.097428,
+   "category": "ubytovani",
+   "source_url": "https://www.kemplipno.cz/ubytovani-v-kempu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Ve vybavení kempu je uvedeno sociální zařízení pro handicapované."
+   },
+   "measurements": [],
+   "evidence_quote": "Sociální zařízení pro handicapované"
+  },
+  {
+   "osm_id": "n2408614238",
+   "name": "Villa Bohemia",
+   "obec": "Černá v Pošumaví",
+   "address": "",
+   "lat": 48.729455,
+   "lng": 14.088391,
+   "category": "ubytovani",
+   "source_url": "https://www.villabohemia.cz/informace/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Kemp uvádí moderní sprchy a sociální zařízení, i bezbariérové (sociální zařízení s bezbariérovým přístupem)."
+   },
+   "measurements": [],
+   "evidence_quote": "sociální zařízení s bezbariérovým přístupem"
+  },
+  {
+   "osm_id": "n634582415",
+   "name": "Grandhotel Zvon",
+   "obec": "České Budějovice",
+   "address": "nám. Přemysla Otakara II. 28",
+   "lat": 48.974205,
+   "lng": 14.475262,
+   "category": "ubytovani",
+   "source_url": "https://www.hotel-zvon.cz/pokoje",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Dvoulůžkové pokoje kategorie Superior jsou k dispozici i v bezbariérové variantě; v další kategorii (pokoje do vnitrobloku u recepce a garáží) je jeden bezbariérový pokoj."
+   },
+   "measurements": [],
+   "evidence_quote": "Jsou k dispozice dvoulůžkové pokoje (i v bezbariérové variantě)"
+  },
+  {
+   "osm_id": "n2974092930",
+   "name": "Hotel Klika",
+   "obec": "České Budějovice",
+   "address": "Hroznová 25",
+   "lat": 48.976258,
+   "lng": 14.47147,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelklika.cz/cs/hotel.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Pokoje v části hotelu z roku 2002 jsou přístupné vlastním výtahem. O bezbariérových pokojích web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Tyto pokoje jsou přístupné vlastním výtahem."
+  },
+  {
+   "osm_id": "n409687299",
+   "name": "Kemp České Vrbné",
+   "obec": "České Budějovice",
+   "address": "",
+   "lat": 49.01464,
+   "lng": 14.451791,
+   "category": "ubytovani",
+   "source_url": "https://raftingcb.cz/kemp-ceske-vrbne/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "V zázemí kempu je uvedeno bezbariérové WC."
+   },
+   "measurements": [],
+   "evidence_quote": "moderní sprchy a toalety, bezbarierové WC"
+  },
+  {
+   "osm_id": "w38507343",
+   "name": "Hotel Krčínův dům",
+   "obec": "Český Krumlov",
+   "address": "",
+   "lat": 48.810474,
+   "lng": 14.31383,
+   "category": "ubytovani",
+   "source_url": "https://www.hotely-krumlov.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Na webu skupiny Hotely Český Krumlov je u hotelu uveden bezbariérový pokoj.",
+    "vytah": "Hotel má výtah."
+   },
+   "measurements": [],
+   "evidence_quote": "Výtah, bezbariérový pokoj"
+  },
+  {
+   "osm_id": "w60575287",
+   "name": "Hotel Latrán",
+   "obec": "Český Krumlov",
+   "address": "Latrán 75",
+   "lat": 48.813676,
+   "lng": 14.316938,
+   "category": "ubytovani",
+   "source_url": "https://www.hotely-krumlov.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Na webu skupiny Hotely Český Krumlov je u hotelu uveden bezbariérový pokoj.",
+    "vytah": "Hotel má výtah."
+   },
+   "measurements": [],
+   "evidence_quote": "Výtah, bezbariérový pokoj"
+  },
+  {
+   "osm_id": "w38506743",
+   "name": "Hotel Mlýn",
+   "obec": "Český Krumlov",
+   "address": "",
+   "lat": 48.810884,
+   "lng": 14.318065,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelmlyn.eu/lokalita",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Všechna podlaží hotelu jsou podle webu dostupná výtahem. O bezbariérových pokojích web nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "všechna podlaží jsou pohodlně dostupná výtahem"
+  },
+  {
+   "osm_id": null,
+   "name": "Penzion Vyhlídka",
+   "obec": "Chlum u Třeboně (Lutová)",
+   "address": "Lutová 45, Chlum u Třeboně",
+   "lat": 48.9908837,
+   "lng": 14.9082698,
+   "category": "ubytovani",
+   "source_url": "https://penzion-lutova.cz/bezbarierove-ubytovani-pro-vozickare-jizni-cechy.html",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Celý objekt včetně zahrady a přilehlých prostor je plně bezbariérový, nájezd pro vozík; nikde nejsou prahy.",
+    "pokoj": "Devět bezbariérových 3–5lůžkových pokojů a 8lůžkový apartmán; místo i pro více vozíčkářů, snadný přístup k lůžkům z vozíku, nízko umístěné vypínače, snížená kuchyňská linka a lednice.",
+    "koupelna": "Bezprahový přístup do koupelny, sprchový kout bez prahu se sedátkem, nízko umístěné umyvadlo, sprcha a zrcadlo.",
+    "wc": "Toaleta vybavená madly pro vozíčkáře.",
+    "vytah": "Do pater se jezdí samoobslužnou plošinou.",
+    "jine": "Penzion přestavěl majitel-vozíčkář; široké chodby; dveře s madlem pro snadné otevírání; sleva pro držitele průkazu ZTP a doprovod; v okolí vozíčkářské turistické trasy."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří",
+     "hodnota": 80,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Všechny dveře jsou 80 cm pro bezproblémový průjezd na vozíku"
+  },
+  {
+   "osm_id": "w49943792",
+   "name": "Hotel Budweis",
+   "obec": "České Budějovice",
+   "address": "Mlýnská 6, 370 01 České Budějovice",
+   "lat": 48.976742,
+   "lng": 14.471222,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelbudweis.cz/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel uvádí celkem 60 bezbariérových pokojů, z toho tři pokoje jsou uzpůsobeny pro handicapované.",
+    "vstup": "Mezi službami uveden bezbariérový přístup (https://www.hotelbudweis.cz/)."
+   },
+   "measurements": [],
+   "evidence_quote": "Tři pokoje jsou uzpůsobeny pro handicapované."
+  },
+  {
+   "osm_id": null,
+   "name": "Clarion Congress Hotel České Budějovice",
+   "obec": "České Budějovice",
+   "address": "Pražská třída 2306/14, 370 04 České Budějovice",
+   "lat": 48.9816855,
+   "lng": 14.4726822,
+   "category": "ubytovani",
+   "source_url": "https://www.clarioncongresshotelceskebudejovice.com/cs/pokoje",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel na požádání zajistí bezbariérový pokoj."
+   },
+   "measurements": [],
+   "evidence_quote": "Zajistíme bezbariérový pokoj nebo rodinné propojitelné pokoje"
+  },
+  {
+   "osm_id": null,
+   "name": "Penzion V Podzámčí",
+   "obec": "Třeboň",
+   "address": "Havlíčkova 1359, 379 01 Třeboň",
+   "lat": 49.0028775,
+   "lng": 14.7656296,
+   "category": "ubytovani",
+   "source_url": "https://www.penzionvpodzamci.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Penzion se označuje jako kompletně bezbariérový, vhodný i pro hosty s omezenou pohyblivostí.",
+    "vytah": "Hostům je k dispozici výtah.",
+    "parkovani": "Soukromé parkování v areálu penzionu (bez údaje o vyhrazeném stání ZTP).",
+    "jine": "Turistický portál Třeboně uvádí: plně bezbariérové, vhodné i pro vozíčkáře, s výtahem (https://www.itrebon.cz/ubytovani/penzion-v-podzamci-s-r-o-_1420.html)."
+   },
+   "measurements": [],
+   "evidence_quote": "moderním a kompletně bezbariérovém ubytování v klidné části Třeboně"
+  },
+  {
+   "osm_id": null,
+   "name": "Penzion Marcipánka",
+   "obec": "Třeboň",
+   "address": "Husova 16, Třeboň",
+   "lat": 49.0048949,
+   "lng": 14.7717386,
+   "category": "ubytovani",
+   "source_url": "https://penzionmarcipanka.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Oříškový apartmán je bezbariérový přízemní pokoj až pro 4 osoby s vlastní koupelnou a kuchyňkou; Kávový apartmán v přízemí má bezbariérový přístup (https://penzionmarcipanka.cz/dvouluzkovy-pokoj/)."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přízemní pokoj až pro 4 osoby"
+  },
+  {
+   "osm_id": null,
+   "name": "Lázně Aurora (Slatinné lázně Třeboň)",
+   "obec": "Třeboň",
+   "address": "Lázeňská 1001, 379 01 Třeboň",
+   "lat": 49.0023776,
+   "lng": 14.751246,
+   "category": "ubytovani",
+   "source_url": "https://www.laznetrebon.cz/ubytovani-v-laznich",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "V kategorii DeLuxe (přízemí hlavní budovy A) jsou čtyři pokoje bez balkonu bezbariérové.",
+    "vstup": "Turistický portál Třeboně uvádí, že oba lázeňské domy (Berta a Aurora) mají bezbariérový přístup (https://www.itrebon.cz/ubytovani/slatinne-lazne-trebon-s-r-o-lazensky-dum-berta-a-lazensky-dum-aurora_1407.html)."
+   },
+   "measurements": [],
+   "evidence_quote": "Čtyři pokoje bez balkonu jsou bezbariérové."
+  },
+  {
+   "osm_id": null,
+   "name": "Apartmán Vendula",
+   "obec": "Třeboň",
+   "address": "Veslařská 1268, 379 01 Třeboň",
+   "lat": 49.003996,
+   "lng": 14.7479122,
+   "category": "ubytovani",
+   "source_url": "https://www.itrebon.cz/ubytovani/apartman-vendula-trebon_1419.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "V seznamu vybavení na turistickém portálu Třeboně je uveden bezbariérový přístup (bez podrobností)."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "osm_id": null,
+   "name": "Autokemp Karvánky",
+   "obec": "Soběslav",
+   "address": "Na Švadlačkách 460/4, 392 01 Soběslav",
+   "lat": 49.2300344,
+   "lng": 14.7197305,
+   "category": "ubytovani",
+   "source_url": "https://www.itrebon.cz/ubytovani/autokemp-karvanky_1421.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "V seznamu vybavení na turistickém portálu Třeboně je uveden bezbariérový přístup (bez podrobností)."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "osm_id": null,
+   "name": "Statek Skalice",
+   "obec": "Štěpánovice",
+   "address": "Štěpánovice 263, 373 73 Štěpánovice",
+   "lat": 48.9855936,
+   "lng": 14.6504547,
+   "category": "ubytovani",
+   "source_url": "https://www.itrebon.cz/ubytovani/statek-skalice_1393.html",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "V seznamu vybavení na turistickém portálu Třeboně je uveden bezbariérový přístup (bez podrobností)."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "osm_id": null,
+   "name": "Chalupa Vojtíšek",
+   "obec": "Sviny (Kundratice)",
+   "address": "Kundratice 36",
+   "lat": 49.1777977,
+   "lng": 14.643888,
+   "category": "ubytovani",
+   "source_url": "https://chalupa-vojtisek.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Chalupa má 4 apartmány, z toho 1 apartmán je bezbariérový.",
+    "jine": "Turistický portál Třeboně uvádí u objektu bezbariérový přístup (https://www.itrebon.cz/ubytovani/penzion-vojtisek_1402.html). Souřadnice z Nominatim jen na úrovni osady Kundratice (č. p. 36 v OSM není)."
+   },
+   "measurements": [],
+   "evidence_quote": "1 apartmán je bezbariérový."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n1231069283",
+   "name": "Pštrossova vila",
+   "url": "https://uklasternizahrady.cz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9077440190",
+   "name": "Penzion Kravín",
+   "url": "https://penzionkravin.cz/",
+   "reason": "web nefunguje (doména přesměrovává na cizí nesouvisející web)"
+  },
+  {
+   "osm_id": "n2734045907",
+   "name": "Chalupa Ve Stráni",
+   "url": "http://www.chalupavestrani.cz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9929271677",
+   "name": "Apartmán 23",
+   "url": "http://www.apartman23.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2538746112",
+   "name": "Hotel Restaurant Admiral",
+   "url": "https://www.hotel-admiral.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1268577107",
+   "name": "Amenity Česká Kanada",
+   "url": "https://kanada.amenity.cz/en/",
+   "reason": "web nic o přístupnosti neuvádí (procházeny stránky hotelu, domů, FAQ, služeb)"
+  },
+  {
+   "osm_id": "w1177088867",
+   "name": "Chalupa na Měruši",
+   "url": "https://www.e-chalupy.cz/jizni_cechy/ubytovani-meruse-chalupa-pronajem-5321.php",
+   "reason": "odkaz vede na komerční portál e-chalupy.cz, detail objektu o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w1177088866",
+   "name": "Mobilní dům - Vlkovské pískovny",
+   "url": "https://www.e-chalupy.cz/jizni_cechy/ubytovani-vlkovske-piskovny-mobilheim-8525.php",
+   "reason": "odkaz vede na komerční portál e-chalupy.cz, detail objektu o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w1179951136",
+   "name": "Měruše",
+   "url": "https://www.kemp-meruse.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2298890071",
+   "name": "Hotel Villa Conti",
+   "url": "https://www.villaconti.cz/pisek/",
+   "reason": "web vrací chyby PHP, o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w701939371",
+   "name": "Nouzové nocoviště Strážný",
+   "url": "https://www.npsumava.cz/cz/1336/sekce/nouzova-nocoviste/",
+   "reason": "stránka nouzových nocovišť NP Šumava o přístupnosti nocoviště nic neuvádí"
+  },
+  {
+   "osm_id": "n2742948342",
+   "name": "Bílý jednorožec",
+   "url": "https://www.bilyjednorozec.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2834912036",
+   "name": "Krásná vyhlídka",
+   "url": "https://www.hotel-vyhlidka.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n11010964806",
+   "name": "Hotel Vlkov",
+   "url": "https://www.vlkovskahospoda.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n6418232492",
+   "name": "Pension U Kuboňů",
+   "url": "https://www.penzionukubonu.cz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3822550688",
+   "name": "Pension Inge 2",
+   "url": "http://www.pensioninge.cz/",
+   "reason": "web je téměř bez textu, o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n886043825",
+   "name": "Ubytování Štěrbová",
+   "url": "https://www.lipensko.org/sterbova/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w49944026",
+   "name": "Residence U Černé věže",
+   "url": "https://www.ucerneveze.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w49944029",
+   "name": "Residence U Černé věže",
+   "url": "https://www.ucerneveze.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7873812993",
+   "name": "Apartmány Domestika",
+   "url": "https://domestika.eu/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n7106731982",
+   "name": "Barbakan",
+   "url": "https://pension-barbakan.hotel.cz/",
+   "reason": "odkaz vede na rezervační portál hotel.cz (přesměrování na výpis Hotely.cz), vlastní web provozovatele nenalezen"
+  },
+  {
+   "osm_id": "n12374633590",
+   "name": "Hotel Peregrin",
+   "url": "https://www.hotelperegrin.cz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n13076695675",
+   "name": "Leylaria",
+   "url": "https://www.leylaria.cz",
+   "reason": "web nic o přístupnosti neuvádí (procházeny pokoje a kontakt)"
+  },
+  {
+   "osm_id": "n4401670490",
+   "name": "Linden",
+   "url": "http://www.pensionubrany.cz/",
+   "reason": "web nefunguje (doména neexistuje)"
+  },
+  {
+   "osm_id": "n7123162299",
+   "name": "Pension U Hamru",
+   "url": "https://www.penzionuhamru.cz/",
+   "reason": "web nic o přístupnosti neuvádí (procházeny pokoje a služby)"
+  },
+  {
+   "osm_id": "n470006708",
+   "name": "Pension U Zámku",
+   "url": "http://www.pensionuzamku.cz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w60575288",
+   "name": "Wellness Pension Ametyst",
+   "url": "https://www.pension-ametyst.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12596272003",
+   "name": "Švamberský dům",
+   "url": "https://www.svamberskydum.cz/",
+   "reason": "web nic o přístupnosti neuvádí (procházeny pokoje v přízemí i v patře)"
+  },
+  {
+   "osm_id": "n4196033560",
+   "name": "Penzion Podskalí",
+   "url": "https://podskali.proweb.cz/",
+   "reason": "web nefunguje (chyba SSL / 404)"
+  },
+  {
+   "osm_id": "n11516293878",
+   "name": "Ubytování Ve věži a Na hradbách",
+   "url": "http://www.zumberk.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3513116001",
+   "name": "chata Červená nad Vltavou",
+   "url": "https://cs-cz.facebook.com/pages/Chata-%C4%8Cerven%C3%A1-nad-Vltavou/516103041775906",
+   "reason": "odkaz vede jen na Facebook, neprocházeno"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů ubytování z OSM (vstup ubytovani_jihocesky.json)",
+   "url": "data/research/inputs/ubytovani_jihocesky.json",
+   "note": "42 záznamů s webem; prošlo se 41 webů (úvodní stránka + až 6 podstránek), odkaz na Facebook vynechán"
+  },
+  {
+   "title": "Hotely Český Krumlov – přehled hotelů skupiny",
+   "url": "https://www.hotely-krumlov.cz/",
+   "note": "u hotelů Latrán a Krčínův dům uvedeno 'Výtah, bezbariérový pokoj'"
+  },
+  {
+   "title": "Informační centrum Třeboň – ubytování",
+   "url": "https://www.itrebon.cz/ubytovani.html",
+   "note": "městský turistický portál; u objektů položka vybavení 'Bezbariérový přístup'; prošlo se 26 detailů"
+  },
+  {
+   "title": "Penzion Vyhlídka Lutová – bezbariérové ubytování",
+   "url": "https://penzion-lutova.cz/bezbarierove-ubytovani-pro-vozickare-jizni-cechy.html",
+   "note": "nejpodrobnější popis, včetně šířky dveří 80 cm"
+  },
+  {
+   "title": "Slatinné lázně Třeboň – ubytování v LD Aurora",
+   "url": "https://www.laznetrebon.cz/ubytovani-v-laznich",
+   "note": "4 bezbariérové pokoje"
+  },
+  {
+   "title": "Jižní Čechy – oficiální turistický portál (JCCR)",
+   "url": "https://www.jiznicechy.cz/",
+   "note": "kategorie 'Bezbariérové' je jen u tipů na výlet, ne u ubytování"
+  },
+  {
+   "title": "e-chalupy.cz – bezbariérové ubytování",
+   "url": "https://www.e-chalupy.cz/bezbarierovy",
+   "note": "komerční portál s filtrem bezbariérovosti; data nepřebírána"
+  },
+  {
+   "title": "Nominatim (OpenStreetMap)",
+   "url": "https://nominatim.openstreetmap.org/",
+   "note": "geokódování nových míst (Hotel Budweis má souřadnice z data/places.json)"
+  }
+ ]
+}

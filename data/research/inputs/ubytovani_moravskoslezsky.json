@@ -1,0 +1,486 @@
+[
+{
+"i": "n2274972389",
+"n": "Penzion ve věži",
+"s": "Penzion",
+"o": "Bohumín",
+"web": "https://www.bospor.info/cz/penzion-ve-vezi/",
+"w": "yes",
+"la": 49.90924,
+"lo": 18.365677
+},
+{
+"i": "w103707424",
+"n": "Pod Zeleným dubem",
+"s": "Hotel",
+"o": "Bohumín",
+"a": "nám. Svobody 37",
+"web": "https://www.podzelenym.cz/",
+"w": "yes",
+"la": 49.919593,
+"lo": 18.328264
+},
+{
+"i": "n3643417465",
+"n": "Chata Bílá",
+"s": "Horská chata",
+"o": "Bílá",
+"web": "http://www.chatabila.cz",
+"w": "yes",
+"la": 49.442115,
+"lo": 18.451178
+},
+{
+"i": "w120029762",
+"n": "Horský hotel Sůkenická",
+"s": "Hotel",
+"o": "Bílá",
+"w": "no",
+"la": 49.400176,
+"lo": 18.39144
+},
+{
+"i": "w225984735",
+"n": "Horská chata Kamenitý",
+"s": "Horská chata",
+"o": "Dolní Lomná",
+"w": "no",
+"la": 49.562305,
+"lo": 18.646708
+},
+{
+"i": "w115277550",
+"n": "Autokemp Frenštát p. R.",
+"s": "Karavanové stání",
+"o": "Frenštát pod Radhoštěm",
+"web": "https://www.autokemp-frenstat.cz/",
+"w": "yes",
+"la": 49.552419,
+"lo": 18.203192
+},
+{
+"i": "w200890850",
+"n": "Autokemp Olešná",
+"s": "Karavanové stání",
+"o": "Frýdek-Místek",
+"web": "https://www.tsfm.cz/autokemp-olesna/",
+"w": "yes",
+"la": 49.664289,
+"lo": 18.312661
+},
+{
+"i": "n2116671371",
+"n": "Family Park Olešná",
+"s": "Penzion",
+"o": "Frýdek-Místek",
+"w": "yes",
+"la": 49.650996,
+"lo": 18.320634
+},
+{
+"i": "n3514880220",
+"n": "Hotel Afrika",
+"s": "Hotel",
+"o": "Frýdek-Místek",
+"web": "https://www.hotel-afrika.cz/",
+"w": "yes",
+"la": 49.686182,
+"lo": 18.352078
+},
+{
+"i": "n2108523315",
+"n": "Hotel Terasa",
+"s": "Hotel",
+"o": "Frýdek-Místek",
+"web": "http://hotelterasa.eu/",
+"w": "limited",
+"la": 49.665209,
+"lo": 18.314085
+},
+{
+"i": "n928938407",
+"n": "Domov U Jezera pro seniory",
+"s": "Penzion",
+"o": "Hlučín",
+"w": "yes",
+"la": 49.891588,
+"lo": 18.180005
+},
+{
+"i": "n2244707303",
+"n": "Svatý Florian",
+"s": "Penzion",
+"o": "Hlučín",
+"a": "Gen. Svobody 273/2",
+"web": "http://www.pension-florian.cz/",
+"w": "yes",
+"la": 49.897289,
+"lo": 18.189213
+},
+{
+"i": "n13105226079",
+"n": "Penzion Kuželna",
+"s": "Penzion",
+"o": "Hodslavice",
+"w": "limited",
+"la": 49.536447,
+"lo": 18.029122
+},
+{
+"i": "n12556584272",
+"n": "Oáza klidu v Beskydech",
+"s": "Penzion",
+"o": "Hrádek",
+"a": "Hrádek ev. č. 13",
+"web": "https://www.chataoazaklidu.cz/",
+"w": "no",
+"la": 49.614095,
+"lo": 18.763365
+},
+{
+"i": "w51390212",
+"n": "Hotel Bullawa",
+"s": "Hotel",
+"o": "Jablunkov",
+"w": "no",
+"la": 49.576154,
+"lo": 18.764331
+},
+{
+"i": "n3635252341",
+"n": "Dvůr Olšiny",
+"s": "Hotel",
+"o": "Karviná",
+"web": "https://www.dvurolsiny.cz/",
+"w": "yes",
+"la": 49.876797,
+"lo": 18.516682
+},
+{
+"i": "n3260496270",
+"n": "Koliba",
+"s": "Penzion",
+"o": "Komorní Lhotka",
+"web": "http://www.restauracekoliba.cz",
+"w": "no",
+"la": 49.651766,
+"lo": 18.516676
+},
+{
+"i": "n3377649954",
+"n": "Rodinný turistický hotel Säntis",
+"s": "Hotel",
+"o": "Komorní Lhotka",
+"web": "https://www.santishotel.cz/",
+"w": "no",
+"la": 49.644622,
+"lo": 18.535223
+},
+{
+"i": "w254645712",
+"n": "Horská chata Ostrý",
+"s": "Horská chata",
+"o": "Košařiska",
+"web": "https://www.chataostry.cz/",
+"w": "no",
+"la": 49.593204,
+"lo": 18.64624
+},
+{
+"i": "n6815660559",
+"n": "Pod Žorem",
+"s": "Penzion",
+"o": "Krásná",
+"web": "https://ubytovani-beskydy.net/",
+"w": "yes",
+"la": 49.588802,
+"lo": 18.47604
+},
+{
+"i": "n904230947",
+"n": "Minikemp Harta",
+"s": "Kemp",
+"o": "Leskovec nad Moravicí",
+"a": "Leskovec nad Moravicí 243",
+"web": "https://www.minikempharta.cz/",
+"w": "limited",
+"la": 49.905475,
+"lo": 17.577464
+},
+{
+"i": "n12066353917",
+"n": "VEŘEJNÉ TÁBOŘIŠTĚ LESKOVEC NAD MORAVICÍ",
+"s": "Kemp",
+"o": "Leskovec nad Moravicí",
+"w": "no",
+"la": 49.905127,
+"lo": 17.565028
+},
+{
+"i": "w54413177",
+"n": "Hotel Petr Bezruč",
+"s": "Hotel",
+"o": "Malenovice",
+"web": "https://hotelpetrbezruc.cz/",
+"w": "yes",
+"la": 49.566544,
+"lo": 18.425743
+},
+{
+"i": "w309945211",
+"n": "Roubenka pod Lysou",
+"s": "Chata",
+"o": "Malenovice",
+"web": "https://www.roubenkapodlysou.cz",
+"w": "no",
+"la": 49.570565,
+"lo": 18.407738
+},
+{
+"i": "n5198631821",
+"n": "Neptun",
+"s": "Hotel",
+"o": "Malá Morávka",
+"web": "https://www.hotel-neptun.cz/",
+"w": "no",
+"la": 50.027349,
+"lo": 17.312467
+},
+{
+"i": "w254649686",
+"n": "Chata Kozubová",
+"s": "Horská chata",
+"o": "Milíkov",
+"w": "no",
+"la": 49.570287,
+"lo": 18.674641
+},
+{
+"i": "w290770343",
+"n": "A&B Bungalovy",
+"s": "Chata",
+"o": "Morávka",
+"web": "https://www.abbungalovy.com/",
+"w": "yes",
+"la": 49.596278,
+"lo": 18.526261
+},
+{
+"i": "w204922425",
+"n": "Penzion Jízdárna",
+"s": "Penzion",
+"o": "Morávka",
+"web": "https://www.pensionjizdarna.cz/",
+"w": "no",
+"la": 49.602763,
+"lo": 18.527373
+},
+{
+"i": "n2942720583",
+"n": "Ubytování Partizán",
+"s": "Penzion",
+"o": "Morávka",
+"web": "https://www.partyzanmoravka.cz/",
+"w": "no",
+"la": 49.59084,
+"lo": 18.527986
+},
+{
+"i": "n289093530",
+"n": "Grúň",
+"s": "Hotel",
+"o": "Mosty u Jablunkova",
+"web": "https://www.hotelgrun.cz/",
+"w": "yes",
+"la": 49.526451,
+"lo": 18.759604
+},
+{
+"i": "n4069011363",
+"n": "Na Skalkách",
+"s": "Hotel",
+"o": "Nový Jičín",
+"web": "https://www.hotelnaskalkach.cz/",
+"w": "yes",
+"la": 49.579535,
+"lo": 18.0084
+},
+{
+"i": "w404618370",
+"n": "Srub U Medvěda",
+"s": "Hotel",
+"o": "Nový Jičín",
+"web": "https://www.srubumedveda.cz/",
+"w": "no",
+"la": 49.579979,
+"lo": 18.009096
+},
+{
+"i": "w254542311",
+"n": "Ovečka",
+"s": "Penzion",
+"o": "Nýdek",
+"web": "https://www.penzionovecka.cz/",
+"w": "yes",
+"la": 49.666071,
+"lo": 18.766551
+},
+{
+"i": "w254541172",
+"n": "Veranda pod Čantoryjí",
+"s": "Penzion",
+"o": "Nýdek",
+"web": "http://www.sensipece.cz/",
+"w": "no",
+"la": 49.658834,
+"lo": 18.764567
+},
+{
+"i": "n4861614208",
+"n": "Hotel Garni VŠB",
+"s": "Hotel",
+"o": "Ostrava",
+"web": "https://www.hotelvsb.cz/",
+"w": "yes",
+"la": 49.836439,
+"lo": 18.159318
+},
+{
+"i": "w55987609",
+"n": "Hotel Mercure Ostrava Center",
+"s": "Hotel",
+"o": "Ostrava",
+"w": "limited",
+"la": 49.839303,
+"lo": 18.288106
+},
+{
+"i": "n4477993463",
+"n": "Penzion Magda",
+"s": "Penzion",
+"o": "Ostrava",
+"web": "http://www.penzionmagda.eu",
+"w": "no",
+"la": 49.814101,
+"lo": 18.341145
+},
+{
+"i": "n898869886",
+"n": "Quality Hotel Ostrava City",
+"s": "Hotel",
+"o": "Ostrava",
+"web": "https://www.qualityhotelostravacity.com",
+"w": "yes",
+"t": "yes",
+"la": 49.842219,
+"lo": 18.268574
+},
+{
+"i": "n4356073195",
+"n": "Ubytovací středisko Výstavní",
+"s": "Hostel",
+"o": "Ostrava",
+"w": "no",
+"la": 49.825863,
+"lo": 18.265214
+},
+{
+"i": "n4603899571",
+"n": "Ubytovna Domov sester",
+"s": "Hostel",
+"o": "Ostrava",
+"a": "17. listopadu 1790/5",
+"w": "yes",
+"la": 49.826737,
+"lo": 18.161122
+},
+{
+"i": "w74214457",
+"n": "Villa u arény",
+"s": "Penzion",
+"o": "Ostrava",
+"web": "https://www.villauareny.cz/",
+"w": "no",
+"la": 49.798762,
+"lo": 18.260107
+},
+{
+"i": "n3633218343",
+"n": "Horský hotel Liptov",
+"s": "Hotel",
+"o": "Ostravice",
+"web": "http://www.hotelliptov.wz.cz/",
+"w": "no",
+"la": 49.533578,
+"lo": 18.402887
+},
+{
+"i": "n2391683668",
+"n": "Autocamp RICCO",
+"s": "Karavanové stání",
+"o": "Příbor",
+"web": "http://www.koupaliste.cz",
+"w": "no",
+"la": 49.637168,
+"lo": 18.151031
+},
+{
+"i": "n3991005948",
+"n": "Villa 603",
+"s": "Chata",
+"o": "Příbor",
+"w": "no",
+"la": 49.622341,
+"lo": 18.132508
+},
+{
+"i": "n5758694221",
+"n": "Grunt No 135",
+"s": "Hotel",
+"o": "Těrlicko",
+"web": "http://www.hotelgrunt.com",
+"w": "yes",
+"la": 49.731899,
+"lo": 18.510989
+},
+{
+"i": "n13764787236",
+"n": "Penzion U Popelků",
+"s": "Penzion",
+"o": "Těrlicko",
+"web": "https://www.penzionupopelku.cz",
+"w": "yes",
+"la": 49.765893,
+"lo": 18.493139
+},
+{
+"i": "n805167928",
+"n": "STEELHOUSE",
+"s": "Hotel",
+"o": "Třinec",
+"web": "https://www.steelhouse.cz",
+"w": "yes",
+"la": 49.669369,
+"lo": 18.674894
+},
+{
+"i": "n11896290912",
+"n": "U Šípků",
+"s": "Apartmány",
+"o": "Vřesina",
+"a": "Ve Dvoře 226",
+"web": "https://www.booking.com/hotel/cz/apartmenty-u-sipku-ostrava.it.html?label=gog235jc-1FCAsoOkIaYXBhcnRtZW50eS11LXNpcGt1LW9zdHJhdmFIBVgDaMsBiAEBmAEFuAEXyAEM2AEB6AEB-AECiAIBqAIDuAK8jf6xBsACAdICJDY0MDk2MzU2LTM2NGItNDI0ZC1iODFkLWY0OGYyZGYyZWEyY9gCBeACAQ&sid=7ef",
+"w": "no",
+"la": 49.824278,
+"lo": 18.124015
+},
+{
+"i": "w1074730317",
+"n": "Cesta nikam",
+"s": "Chata",
+"o": "Úvalno",
+"w": "no",
+"la": 50.049358,
+"lo": 17.754819
+}
+]

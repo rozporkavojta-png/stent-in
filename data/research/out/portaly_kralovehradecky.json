@@ -1,0 +1,1469 @@
+{
+ "task": "portaly_kralovehradecky",
+ "kraj": "Královéhradecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n1767478381",
+   "name": "Městské muzeum Nová Paka – Klenotnice drahých kamenů",
+   "obec": "Nová Paka",
+   "address": "ul. F. F. Procházky 70, Nová Paka, 509 01",
+   "lat": 50.495524,
+   "lng": 15.513625,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/1151-mestske-muzeum-nova-paka-klenotnice-drahych-kamenu.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Ke vchodu chodník z drobných kostek se sklonem do 7 %; před dvoukřídlými dveřmi schůdek 5,5 cm, lze přiložit nájezdové prkénko; zvonek vpravo od dveří.",
+    "wc": "Bezbariérová toaleta není v Klenotnici, ale v Suchardově domě naproti.",
+    "parkovani": "Před budovou zákaz stání (jen vysazení); parkoviště v ul. Stanislava Suchardy, vyhrazené stání není.",
+    "vytah": "Volně přístupný výtah u pokladny spojuje 1.–3. NP, s madlem, zrcadlem a sklopným sedátkem.",
+    "jine": "Interiéry uvedeny jako kompletně bezbariérové, bez prahů. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "výška schůdku před vstupem",
+     "hodnota": 5.5,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka hlavního křídla vstupních dveří",
+     "hodnota": 67,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka vedlejšího křídla vstupních dveří",
+     "hodnota": 72,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří výtahu",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny výtahu",
+     "hodnota": 110,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny výtahu",
+     "hodnota": 138,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška ovladače výtahu v kabině",
+     "hodnota": 112,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Interiéry muzea jsou kompletně bezbariérové."
+  },
+  {
+   "osm_id": "n1173985195",
+   "name": "Muzeum přírody Český ráj",
+   "obec": "Jičín (Prachov)",
+   "address": "Prachov 37, Jičín, 506 01",
+   "lat": 50.4648,
+   "lng": 15.306345,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/1185-muzeum-prirody-cesky-raj.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Od parkoviště štěrková a nerovná cesta; u vstupních dveří (90 cm) práh 4 cm spolu se schodem 20 cm, který je součástí dveří.",
+    "wc": "Samostatné bezbariérové WC v budově u placeného parkoviště asi 150 m od muzea; před kabinou rampa se sklonem 12 %, sklopné madlo jen vpravo.",
+    "parkovani": "Dvě placená parkoviště s povrchem z kamínků, vyhrazená stání nejsou.",
+    "jine": "Přízemní budova bez schodů; do poslední místnosti posuvné dveře s průjezdem 64 cm; venkovní expozice na štěrkových uličkách min. 70 cm širokých, místy s větším sklonem. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "šířka vstupních dveří",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška prahu u vstupu",
+     "hodnota": 4,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška schodu u vstupních dveří",
+     "hodnota": 20,
+     "jednotka": "cm"
+    },
+    {
+     "co": "průjezdná šířka posuvných dveří",
+     "hodnota": 64,
+     "jednotka": "cm"
+    },
+    {
+     "co": "sklon rampy před WC",
+     "hodnota": 12,
+     "jednotka": "%"
+    },
+    {
+     "co": "šířka kabiny WC",
+     "hodnota": 159,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny WC",
+     "hodnota": 241,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška mísy WC",
+     "hodnota": 46,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Samostatné, bezbariérově upravené WC, je v malé budově u placeného parkoviště"
+  },
+  {
+   "osm_id": "r406059",
+   "name": "Regionální muzeum a galerie Jičín – Muzeum hry",
+   "obec": "Jičín",
+   "address": "Valdštejnovo nám. 1, Jičín, 506 11",
+   "lat": 50.436232,
+   "lng": 15.352263,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/1203-regionalni-muzeum-a-galerie-jicin-muzeum-hry.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Průjezd na 1. nádvoří má sklon 15 % na cca 18 m (doporučeno domluvit vjezd); před galerií schod 19 cm s mobilními ližinami; vstup do muzea přes dva schody (12 a 19 cm).",
+    "wc": "Bezbariérové WC v objektu není; lze využít veřejné WC v ulici Smiřických vedle průchodu na nádvoří (obě madla sklopná).",
+    "parkovani": "2 vyhrazená stání v Lindnerově ulici; po telefonické domluvě parkování na nádvoří zámku.",
+    "jine": "Expozice muzea ve 2. NP jen po schodišti; galerie v přízemí bez překážek; haptická skříň s Braillovým písmem. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "sklon průjezdu na nádvoří",
+     "hodnota": 15,
+     "jednotka": "%"
+    },
+    {
+     "co": "výška schodu před galerií",
+     "hodnota": 19,
+     "jednotka": "cm"
+    },
+    {
+     "co": "délka mobilních ližin",
+     "hodnota": 200,
+     "jednotka": "cm"
+    },
+    {
+     "co": "sklon ližin po instalaci",
+     "hodnota": 14,
+     "jednotka": "%"
+    },
+    {
+     "co": "šířka křídla dveří do muzea",
+     "hodnota": 75,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny veřejného WC",
+     "hodnota": 162,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny veřejného WC",
+     "hodnota": 183,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Bezbariérové toalety v objektu nejsou, ale lze využít veřejné záchody v ulici Smiřických"
+  },
+  {
+   "osm_id": "n349213218",
+   "name": "Zámek Častolovice",
+   "obec": "Častolovice",
+   "address": "Masarykova 1, Častolovice, 517 50",
+   "lat": 50.130768,
+   "lng": 16.187012,
+   "category": "pamatky",
+   "source_url": "https://www.hkregion.cz/dr-cs/100006-zamek-castolovice.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Od parkoviště rovný štěrkový chodník, nádvoří hladce dlážděné; u vstupu schůdek 10 cm s dřevěným nájezdem (sklon 25 %); vedlejší vstup k plošině otevírají průvodci.",
+    "wc": "Bezbariérové WC vpravo od hlavního vstupu; kabina přes 250 × 200 cm, vpravo sklopné madlo, vlevo pevné, umyvadlo s podjezdem.",
+    "parkovani": "Placené parkoviště u zámku, vyhrazené stání není.",
+    "jine": "Prohlídka v patře, schodiště překonává šikmá plošina obsluhovaná průvodci; v patře prahy do 7 cm. Článek kraje uvádí přístup pomocí schodišťové plošiny a mlatové cesty. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "výška schůdku u vstupu",
+     "hodnota": 10,
+     "jednotka": "cm"
+    },
+    {
+     "co": "sklon dřevěného nájezdu",
+     "hodnota": 25,
+     "jednotka": "%"
+    },
+    {
+     "co": "průchozí šířka hlavních dveří",
+     "hodnota": 105,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka plošiny",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka plošiny",
+     "hodnota": 195,
+     "jednotka": "cm"
+    },
+    {
+     "co": "nosnost plošiny",
+     "hodnota": 300,
+     "jednotka": "kg"
+    },
+    {
+     "co": "šířka dveří do kabiny WC",
+     "hodnota": 89,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška sedátka WC",
+     "hodnota": 51,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Toto schodiště je možné překonat pomocí plošiny."
+  },
+  {
+   "osm_id": "w211659632",
+   "name": "Muzeum východních Čech v Hradci Králové",
+   "obec": "Hradec Králové",
+   "address": "Eliščino nábřeží 465, Hradec Králové, 500 01",
+   "lat": 50.2117,
+   "lng": 15.829011,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/100075-muzeum-vychodnich-cech-v-hradci-kralove.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hlavní vstup po 9 schodech; bezbariérově vedlejším vstupem z nádvoří přes šikmou plošinu (14 schodů), otevírá recepce.",
+    "wc": "Volně přístupné bezbariérové WC v přízemí, kabina 250 × 197 cm, obě madla sklopná.",
+    "parkovani": "Před budovou bez vyhrazeného stání; po telefonické domluvě vjezd na nádvoří k vedlejšímu vstupu.",
+    "vytah": "Výtah ze suterénu do 3. NP s automatickými dveřmi 90 cm; do 4. NP nejezdí.",
+    "jine": "Interiér díky výtahu z velké části bezbariérový, prahy většinou do 3 cm. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "počet schodů před hlavním vstupem",
+     "hodnota": 9,
+     "jednotka": "ks"
+    },
+    {
+     "co": "šířka dveří vedlejšího vstupu",
+     "hodnota": 102,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka plošiny",
+     "hodnota": 78,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka plošiny",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří výtahu",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny výtahu",
+     "hodnota": 107,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny výtahu",
+     "hodnota": 140,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška sedátka WC",
+     "hodnota": 52,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Interiér muzea je díky výtahu z velké části bezbariérový."
+  },
+  {
+   "osm_id": "w31043713",
+   "name": "Podorlický skanzen Krňovice",
+   "obec": "Třebechovice pod Orebem",
+   "address": "Krňovice 33, Třebechovice pod Orebem, 503 46",
+   "lat": 50.18934,
+   "lng": 15.981254,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/100122-podorlicky-skanzen-krnovice.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "V areálu je bezbariérové WC.",
+    "jine": "Areál skanzenu přístupný na vozíku; interiéry historických staveb bezbariérové nejsou, většinu expozic lze ale vidět ze dveří."
+   },
+   "evidence_quote": "Celý areál je bezbariérový a přístupný na kolečkovém křesle."
+  },
+  {
+   "osm_id": "w39703078",
+   "name": "Zámek Karlova Koruna",
+   "obec": "Chlumec nad Cidlinou",
+   "address": "Pražská 1, Chlumec nad Cidlinou, 503 51",
+   "lat": 50.158902,
+   "lng": 15.451364,
+   "category": "pamatky",
+   "source_url": "https://www.hkregion.cz/dr-cs/100145-zamek-karlova-koruna-chlumec-nad-cidlinou.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Chodník z kamínků se sklonem 15 %; dvoukřídlé dveře 86 cm.",
+    "wc": "Tři bezbariérová WC (2 v 1. NP zámku, 1 ve vedlejší budově s mobilní rampou 22,5 %).",
+    "parkovani": "Zámecké parkoviště u silnice Pražská; vozíčkáři mohou po domluvě parkovat přímo v areálu na kopci.",
+    "jine": "Prohlídkový okruh ve 2.–3. NP je přístupný jen po schodištích. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "sklon přístupového chodníku",
+     "hodnota": 15,
+     "jednotka": "%"
+    },
+    {
+     "co": "šířka křídla vstupních dveří",
+     "hodnota": 86,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny WC v zámku",
+     "hodnota": 198,
+     "jednotka": "cm"
+    },
+    {
+     "co": "sklon mobilní rampy k WC ve vedlejší budově",
+     "hodnota": 22.5,
+     "jednotka": "%"
+    }
+   ],
+   "evidence_quote": "V objektu zámku se vyskytují 3 bezbariérové WC."
+  },
+  {
+   "osm_id": "n3778987520",
+   "name": "Třebechovické muzeum betlémů",
+   "obec": "Třebechovice pod Orebem",
+   "address": "Masarykovo náměstí 1426, Třebechovice pod Orebem, 503 46",
+   "lat": 50.201362,
+   "lng": 15.993994,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/100158-trebechovicke-muzeum-betlemu.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Dvoukřídlé dveře (křídla po 80 cm), zádveří bez prahů.",
+    "wc": "V obou podlažích bezbariérové WC v dámském oddělení, kabiny 162 × 180 cm, sklopná madla.",
+    "parkovani": "1 vyhrazené stání na Masarykově náměstí před městským úřadem, přechod s nájezdy.",
+    "vytah": "Volně přístupný výtah do 2. NP, dveře 90 cm, kabina 110 × 140 cm, sklopné sedátko.",
+    "jine": "Muzeum uvedeno jako kompletně bezbariérové; pevné rampy v interiéru (sklony 9–12,5 %, jedna alternativní 18 %). údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "šířka křídla vstupních dveří",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří výtahu",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny výtahu",
+     "hodnota": 110,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny výtahu",
+     "hodnota": 140,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny WC",
+     "hodnota": 162,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny WC",
+     "hodnota": 180,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška sedátka WC",
+     "hodnota": 48,
+     "jednotka": "cm"
+    },
+    {
+     "co": "sklon rampy u Proboštova betlému",
+     "hodnota": 12.5,
+     "jednotka": "%"
+    }
+   ],
+   "evidence_quote": "Muzeum je kompletně bezbariérové."
+  },
+  {
+   "osm_id": "w28783792",
+   "name": "Zámek Ratibořice",
+   "obec": "Česká Skalice",
+   "address": "Ratibořice 1, Česká Skalice, 552 03",
+   "lat": 50.415014,
+   "lng": 16.052581,
+   "category": "pamatky",
+   "source_url": "https://www.hkregion.cz/dr-cs/100202-zamek-ratiborice.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Od brány štěrková cesta s průměrným sklonem 7 %; dvoukřídlé dveře (68 + 71 cm).",
+    "wc": "Bezbariérové WC v odděleném služebním křídle, zamčené, klíč na pokladně; obě madla sklopná.",
+    "parkovani": "Před vstupní bránou 6 vyhrazených míst pro vozíčkáře.",
+    "jine": "Podlaží zámku bez bariér, ale propojená schodištěm; Ludrův mlýn a Staré Bělidlo vhodné s doprovodem. Článek kraje uvádí pro vozík dostupné přízemí a naučnou stezku Babiččiným údolím s asistencí. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "průměrný sklon přístupové cesty",
+     "hodnota": 7,
+     "jednotka": "%"
+    },
+    {
+     "co": "šířka hlavního křídla vstupních dveří",
+     "hodnota": 68,
+     "jednotka": "cm"
+    },
+    {
+     "co": "počet vyhrazených parkovacích míst",
+     "hodnota": 6,
+     "jednotka": "ks"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny WC",
+     "hodnota": 181,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny WC",
+     "hodnota": 168,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Vyhrazené parkoviště pro vozíčkáře se nachází před vstupní bránou do areálu zámku."
+  },
+  {
+   "osm_id": "w28050839",
+   "name": "Zámek Hrádek u Nechanic",
+   "obec": "Nechanice",
+   "address": "Lubno 66, Nechanice, 503 15",
+   "lat": 50.223633,
+   "lng": 15.667605,
+   "category": "pamatky",
+   "source_url": "https://www.hkregion.cz/dr-cs/100255-zamek-hradek-u-nechanic.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Návštěvu je třeba předem nahlásit na pokladně; hlavní vstup 4 schody; vedlejší vstup u boku budovy s 1 schodem (10 cm), k němuž lze přiložit rampu, a prahem 4 cm.",
+    "wc": "Bezbariérové WC ve vedlejší budově (dámské oddělení), zamčené, klíč na pokladně; kabina 213 × 177 cm, obě madla sklopná.",
+    "parkovani": "Veřejné parkoviště cca 250 m; pro vozíčkáře vhodnější vyhrazené parkoviště přímo u nádvoří.",
+    "jine": "1. okruh jen v přízemí bez schodů a prahů; 2. okruh vyžaduje schodiště. Článek kraje uvádí okruh „Lesk a sláva Harrachů“ jako bezbariérový s bočním vchodem. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "výška schodu u vedlejšího vstupu",
+     "hodnota": 10,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka hlavního křídla vedlejšího vstupu",
+     "hodnota": 59,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška prahu u vedlejšího vstupu",
+     "hodnota": 4,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří do kabiny WC",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny WC",
+     "hodnota": 213,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny WC",
+     "hodnota": 177,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška sedátka WC",
+     "hodnota": 54,
+     "jednotka": "cm"
+    },
+    {
+     "co": "sklon rampy na zahradě",
+     "hodnota": 16,
+     "jednotka": "%"
+    }
+   ],
+   "evidence_quote": "1. okruh se provádí pouze po 1. NP."
+  },
+  {
+   "osm_id": "n296653232",
+   "name": "Galerie moderního umění v Hradci Králové",
+   "obec": "Hradec Králové",
+   "address": "Velké náměstí 139-140/16 A, Hradec Králové, 500 03",
+   "lat": 50.209815,
+   "lng": 15.834342,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/100265-galerie-moderniho-umeni-v-hradci-kralove.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup z Úzké ulice, vpravo od hlavního vchodu (článek kraje: bočním vchodem).",
+    "jine": "Bezbariérově přístupné všechny veřejné prostory."
+   },
+   "evidence_quote": "Bezbariérový přístup je možný do všech prostor, které jsou přístupné veřejnosti."
+  },
+  {
+   "osm_id": "w60761321",
+   "name": "Zámek Opočno",
+   "obec": "Opočno",
+   "address": "Trčkovo náměstí 1, Opočno, 517 73",
+   "lat": 50.264861,
+   "lng": 16.115328,
+   "category": "pamatky",
+   "source_url": "https://www.hkregion.cz/dr-cs/100464-zamek-opocno.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Od brány štěrk a dlažba, u brány sklon 5 %; před vstupem na prohlídky schod 8 cm.",
+    "wc": "Volně přístupné samostatné bezbariérové WC u pokladny na 1. nádvoří.",
+    "parkovani": "Vyhrazené stání na náměstí 300 m od areálu; po domluvě s infocentrem lze zajet k bráně zámku.",
+    "jine": "Všechny prohlídkové okruhy začínají schodištěm do 2. NP. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "výška schodu před vstupem na prohlídky",
+     "hodnota": 8,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka hlavního křídla dveří",
+     "hodnota": 74,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny WC",
+     "hodnota": 176,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny WC",
+     "hodnota": 197,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Na nádvoří s pokladnou se nachází také bezbariérové WC."
+  },
+  {
+   "osm_id": "n656498290",
+   "name": "Františkánský klášter Hostinné",
+   "obec": "Hostinné",
+   "address": "Nádražní 119, Hostinné, 543 71",
+   "lat": 50.539979,
+   "lng": 15.727713,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/100579-frantiskansky-klaster-hostinne.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hlavní vstup dveřmi 87 + 44 cm; bezbariérový vedlejší vstup do Galerie antického umění (krátký sklon 10,5 %, práh 6 cm), otevírá pokladna.",
+    "wc": "Volně přístupné samostatné bezbariérové WC v ambitu, kabina 162 × 260 cm, obě madla sklopná.",
+    "parkovani": "2 vyhrazená stání přímo u kláštera.",
+    "vytah": "Plošina mezi 1. a 2. NP (25 schodů), uzamčená, obsluhuje personál.",
+    "jine": "V přízemí i v patře bez schodů, prahy do 3 cm; v galerii mobilní rampa (17,3 %). údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "počet vyhrazených parkovacích stání",
+     "hodnota": 2,
+     "jednotka": "ks"
+    },
+    {
+     "co": "šířka plošiny",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka plošiny",
+     "hodnota": 100,
+     "jednotka": "cm"
+    },
+    {
+     "co": "nosnost plošiny",
+     "hodnota": 250,
+     "jednotka": "kg"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 94,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny WC",
+     "hodnota": 162,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny WC",
+     "hodnota": 260,
+     "jednotka": "cm"
+    },
+    {
+     "co": "sklon mobilní rampy v kostele",
+     "hodnota": 17.3,
+     "jednotka": "%"
+    }
+   ],
+   "evidence_quote": "Tyto schody lze překonat za pomoci plošiny."
+  },
+  {
+   "osm_id": "n915453120",
+   "name": "Galerie výtvarného umění v Náchodě",
+   "obec": "Náchod",
+   "address": "Smiřických 272, Náchod, 547 01",
+   "lat": 50.41986,
+   "lng": 16.160843,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/100620-galerie-vytvarneho-umeni-v-nachode.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Před vstupem štěrk a kostky se sklonem 8 %; dvoukřídlé dveře (104 + 111 cm), práh 4 cm, zvonek ve výšce 96 cm.",
+    "wc": "Volně přístupné samostatné bezbariérové WC v 1. NP, kabina 170 × 173 cm, obě madla sklopná.",
+    "parkovani": "Po telefonické domluvě přímo u galerie; veřejné parkoviště cca 100 m.",
+    "jine": "Uvnitř bez schodů a prahů; 1. a 2. NP spojuje pevná zalomená rampa (sklon 16 %). údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "šířka hlavního křídla vstupních dveří",
+     "hodnota": 104,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška prahu",
+     "hodnota": 4,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška zvonku",
+     "hodnota": 96,
+     "jednotka": "cm"
+    },
+    {
+     "co": "sklon rampy mezi podlažími",
+     "hodnota": 16,
+     "jednotka": "%"
+    },
+    {
+     "co": "šířka rampy",
+     "hodnota": 154,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny WC",
+     "hodnota": 170,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny WC",
+     "hodnota": 173,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "V interiéru galerie se nenachází schody ani prahy."
+  },
+  {
+   "osm_id": "n656327997",
+   "name": "Broučkův dům (Muzeum Náchodska)",
+   "obec": "Náchod",
+   "address": "Masarykovo náměstí 18, Náchod, 547 01",
+   "lat": 50.417258,
+   "lng": 16.163267,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/100621-brouckuv-dum.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Krátký nájezd 21 % (50 cm) a dvoukřídlé dveře 93 + 99 cm.",
+    "wc": "Volně přístupné bezbariérové WC v 1. NP (dámské oddělení), kabina 148 × 208 cm.",
+    "parkovani": "1 vyhrazené stání před Komerční bankou vedle muzea.",
+    "vytah": "Volně přístupná plošina mezi 1. a 2. NP vedle WC.",
+    "jine": "V přízemí prahy do 2 cm, ve 2. NP bez schodů a prahů. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "sklon nájezdu u vstupu",
+     "hodnota": 21,
+     "jednotka": "%"
+    },
+    {
+     "co": "délka nájezdu",
+     "hodnota": 50,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka hlavního křídla dveří",
+     "hodnota": 93,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka plošiny",
+     "hodnota": 76,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka plošiny",
+     "hodnota": 142,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny WC",
+     "hodnota": 148,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny WC",
+     "hodnota": 208,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Ve 2. NP se schody a prahy nevyskytují."
+  },
+  {
+   "osm_id": "n1313849411",
+   "name": "Městské muzeum Dvůr Králové nad Labem",
+   "obec": "Dvůr Králové nad Labem",
+   "address": "Sladkovského 530, Dvůr Králové nad Labem, 544 01",
+   "lat": 50.435198,
+   "lng": 15.816141,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/100630-mestske-muzeum-dvur-kralove-nad-labem.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Přístup náročný: hrubá dlažba, chodník se sklonem 11 %, před vstupem schod 15 cm a práh 4 cm, úzké dveře 56 + 59 cm.",
+    "wc": "Bezbariérové WC ve vedlejším Špýcharu, zpřístupní pokladna.",
+    "parkovani": "Vyhrazené stání v blízkosti není.",
+    "vytah": "Plošina mezi 1. a 2. NP (obsluha); ve Špýcharu výtah do 1.–3. NP, k němu nerovná cesta se sklonem 8–14 %.",
+    "jine": "3. NP hlavní budovy jen po schodišti. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "sklon přístupového chodníku",
+     "hodnota": 11,
+     "jednotka": "%"
+    },
+    {
+     "co": "výška schodu před vstupem",
+     "hodnota": 15,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka hlavního křídla dveří",
+     "hodnota": 56,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka plošiny",
+     "hodnota": 79,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka plošiny",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka klece výtahu ve Špýcharu",
+     "hodnota": 102,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka klece výtahu ve Špýcharu",
+     "hodnota": 125,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Hrubá dlažba v objektu představuje především pro vozíčkáře poměrně obtížnou překážku."
+  },
+  {
+   "osm_id": "n11557664115",
+   "name": "Klicperovo divadlo",
+   "obec": "Hradec Králové",
+   "address": "Dlouhá 99, Hradec Králové, 500 03",
+   "lat": 50.210665,
+   "lng": 15.833882,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/100695-klicperovo-divadlo-hradec-kralove.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Před vstupem pevná rampa (sklon 7,3 %) a 2 schody; dvoukřídlé dveře 71 + 75 cm.",
+    "wc": "Dvě volně přístupná bezbariérová WC v 1. PP (ženy i muži), dostupná výtahem.",
+    "parkovani": "1 vyhrazené stání v Klicperově ulici cca 50 m od vstupu.",
+    "vytah": "Volně přístupný výtah 1. PP – 2. NP, dveře 90 cm, klec 140 × 110 cm.",
+    "jine": "Pro vozíčkáře 2 místa v přízemí sálu vlevo v prvních řadách; do hlediště chodba se sklonem 6,8 %; balkon pro vozík nevhodný; návštěvu je vhodné nahlásit. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "sklon rampy u vstupu",
+     "hodnota": 7.3,
+     "jednotka": "%"
+    },
+    {
+     "co": "délka rampy",
+     "hodnota": 296,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka rampy",
+     "hodnota": 147,
+     "jednotka": "cm"
+    },
+    {
+     "co": "počet míst pro vozíčkáře v sále",
+     "hodnota": 2,
+     "jednotka": "ks"
+    },
+    {
+     "co": "šířka dveří výtahu",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka klece výtahu",
+     "hodnota": 140,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka klece výtahu",
+     "hodnota": 110,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 80,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Pro vozíčkáře jsou vyhrazena 2 místa v přízemí divadelního sálu"
+  },
+  {
+   "osm_id": "n2638562199",
+   "name": "Obří akvárium",
+   "obec": "Hradec Králové",
+   "address": "Baarova 1663/10, Hradec Králové, 500 02",
+   "lat": 50.204141,
+   "lng": 15.820556,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/101919-obri-akvarium.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup bezbariérový.",
+    "wc": "WC je bezbariérové.",
+    "vytah": "Výtahem do projekce U rejnoka a do kavárny.",
+    "jine": "Tunel pod hladinou přístupný; na lávku tropického pralesa vedou úzké schody; odhadem lze projít 2/3 prohlídky."
+   },
+   "evidence_quote": "Odhadem tak můžete absolvovat 2/3 rozsahu prohlídky."
+  },
+  {
+   "osm_id": "n658530661",
+   "name": "Muzeum války 1866 na Chlumu",
+   "obec": "Všestary",
+   "address": "Chlum 66, Všestary, 503 12",
+   "lat": 50.278331,
+   "lng": 15.740776,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/101922-muzeum-valky-1866-na-chlumu.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Rovný chodník ze zámkové dlažby; automatické dveře šířky 254 cm.",
+    "wc": "Samostatné volně přístupné bezbariérové WC za expozicí, kabina 180 × 156 cm.",
+    "parkovani": "1 vyhrazené stání hned vedle muzea.",
+    "jine": "Bez prahů a schodů; mezi místnostmi pevná rampa, první rameno má velký sklon 14 %. údaje přebírá portál z www.mapybezbarier.cz."
+   },
+   "measurements": [
+    {
+     "co": "šířka automatických dveří",
+     "hodnota": 254,
+     "jednotka": "cm"
+    },
+    {
+     "co": "sklon 1. ramene rampy",
+     "hodnota": 14,
+     "jednotka": "%"
+    },
+    {
+     "co": "délka 1. ramene rampy",
+     "hodnota": 490,
+     "jednotka": "cm"
+    },
+    {
+     "co": "sklon 2. ramene rampy",
+     "hodnota": 10.7,
+     "jednotka": "%"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka kabiny WC",
+     "hodnota": 180,
+     "jednotka": "cm"
+    },
+    {
+     "co": "hloubka kabiny WC",
+     "hodnota": 156,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Pohyb návštěvníků po muzeu je bezbariérový, nejsou zde žádné prahy ani schodiště."
+  },
+  {
+   "osm_id": "n10589537828",
+   "name": "Galerie minerálů",
+   "obec": "Dvůr Králové nad Labem",
+   "lat": 50.416446,
+   "lng": 15.815763,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/111578-podkrkonosi-vas-okouzli-kam-vyrazit-s-omezenou-mobilitou.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "V budově je výtah (obložený českými granáty).",
+    "jine": "Muzeum uvedeno jako plně bezbariérové."
+   },
+   "evidence_quote": "největší soukromé muzeum minerálů v Evropě a navíc je plně bezbariérové"
+  },
+  {
+   "osm_id": "w27354498",
+   "name": "Safari Park Dvůr Králové",
+   "obec": "Dvůr Králové nad Labem",
+   "lat": 50.43297,
+   "lng": 15.784565,
+   "category": "priroda",
+   "source_url": "https://www.hkregion.cz/dr-cs/111578-podkrkonosi-vas-okouzli-kam-vyrazit-s-omezenou-mobilitou.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Podle článku je celý areál bezbariérový."
+   },
+   "evidence_quote": "Celý areál je navíc bezbariérový"
+  },
+  {
+   "osm_id": "n3162780065",
+   "name": "Paleopark Balka",
+   "obec": "Nová Paka",
+   "lat": 50.502277,
+   "lng": 15.519972,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/111626-dve-cesty-jeden-zazitek-bezbarierove-vylety-za-krasami-ceskeho-raje.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Areál uveden jako plně bezbariérový; vede k němu naučná stezka od Klenotnice. Souřadnice podle rozcestníku „Nová Paka – Balka“ (Nominatim), objekt parku se nenašel."
+   },
+   "evidence_quote": "Areál je plně bezbariérový."
+  },
+  {
+   "osm_id": "w246862832",
+   "name": "Archeopark Všestary",
+   "obec": "Všestary",
+   "lat": 50.259063,
+   "lng": 15.761738,
+   "category": "kultura",
+   "source_url": "https://www.hkregion.cz/dr-cs/111638-pohodove-hradecko-pro-vsechny-vylety-bez-barier-s-dotekem-historie-a-prirody.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Vnitřní expozice plně bezbariérová; venkovní prostory travnaté a mírně nerovné."
+   },
+   "evidence_quote": "Vnitřní expozice je plně bezbariérová, venkovní prostory jsou travnaté a mírně nerovné."
+  },
+  {
+   "osm_id": "w216090182",
+   "name": "Centrum Walzel",
+   "obec": "Meziměstí",
+   "lat": 50.625287,
+   "lng": 16.23903,
+   "category": "sport",
+   "source_url": "https://www.hkregion.cz/dr-cs/111581-krajina-klidu-a-dostupnosti-objevte-broumovsko-bez-barier.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Bývalá továrna s restaurací, lezeckou stěnou a bowlingem; objekt uzpůsoben osobám s omezenou pohyblivostí."
+   },
+   "evidence_quote": "Objekt je uzpůsoben i pro osoby s omezenou pohyblivostí."
+  },
+  {
+   "osm_id": "w110403203",
+   "name": "Jiráskova chata na Dobrošově",
+   "obec": "Náchod (Dobrošov)",
+   "lat": 50.400785,
+   "lng": 16.19107,
+   "category": "restaurace",
+   "source_url": "https://www.hkregion.cz/dr-cs/111645-cesta-bez-prekazek-objevte-krasy-kladskeho-pomezi-vsemi-smysly.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Toalety jsou bezbariérové.",
+    "jine": "Restaurace bezbariérová; výhled z okolí chaty i bez výstupu na věž."
+   },
+   "evidence_quote": "Restaurace a toalety jsou bezbariérové"
+  },
+  {
+   "osm_id": "n349215435",
+   "name": "Nový zámek Kostelec nad Orlicí",
+   "obec": "Kostelec nad Orlicí",
+   "lat": 50.122632,
+   "lng": 16.199747,
+   "category": "pamatky",
+   "source_url": "https://www.hkregion.cz/dr-cs/111647-elegantni-krajka-tiche-hory-a-bezbarierove-dobrodruzstvi-v-srdci-orlickych-hor.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup nájezdovou rampou.",
+    "vytah": "Zámek je přístupný výtahem.",
+    "jine": "Doporučeno předem rezervovat prohlídku u pokladny."
+   },
+   "evidence_quote": "Zámek je přístupný výtahem i nájezdovou rampou"
+  },
+  {
+   "osm_id": "n656205661",
+   "name": "Hotel Praha",
+   "obec": "Broumov",
+   "address": "Mírové náměstí 49, Broumov, 550 01",
+   "lat": 50.585928,
+   "lng": 16.33238,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/100077-hotel-praha.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Jeden bezbariérový pokoj pro vozíčkáře.",
+    "vytah": "Hotel má výtah (3 nadzemní podlaží)."
+   },
+   "evidence_quote": "K dispozici je i jeden bezbariérový pokoj pro vozíčkáře."
+  },
+  {
+   "osm_id": "n656333598",
+   "name": "A-HOTEL TOMMY & SPA",
+   "obec": "Náchod",
+   "address": "Kaštanová 205, Náchod, 547 01",
+   "lat": 50.429725,
+   "lng": 16.174753,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/100121-a-hotel-tommy-spa-s-r-o.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Hotel má výtah.",
+    "jine": "Hotel je uveden jako bezbariérový."
+   },
+   "evidence_quote": "Hotel je řešen jako bezbariérový s výtahem."
+  },
+  {
+   "osm_id": "n656209434",
+   "name": "Hotel K-Triumf Velichovky",
+   "obec": "Velichovky",
+   "address": "Hustířanská 209, Velichovky, 552 11",
+   "lat": 50.35614,
+   "lng": 15.833636,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/106484-hotel-k-triumf-velichovky.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup pro vozíčkáře.",
+    "pokoj": "Bezbariérové pokoje.",
+    "koupelna": "Bezbariérové koupelny."
+   },
+   "evidence_quote": "Hotel nabízí bezbariérový přístup pro vozíčkáře, bezbariérové pokoje a koupelny."
+  },
+  {
+   "osm_id": "n656501698",
+   "name": "Hotel TTC",
+   "obec": "Vrchlabí",
+   "address": "Tkalcovská 357, Vrchlabí, 543 01",
+   "lat": 50.632106,
+   "lng": 15.607294,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/101133-hotel-ttc.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Jeden pokoj je bezbariérový."
+   },
+   "evidence_quote": "Jeden z pokojů je vybudován jako bezbariérový."
+  },
+  {
+   "osm_id": "n656504362",
+   "name": "Apartmány Cihlářka",
+   "obec": "Černý Důl",
+   "address": "Černý Důl 200, 543 44",
+   "lat": 50.665345,
+   "lng": 15.716791,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/101110-apartmany-cihlarka.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Prosklený výtah.",
+    "jine": "Celý objekt uveden jako bezbariérový."
+   },
+   "evidence_quote": "Celý objekt je bezbariérový, k dispozici je prosklený výtah."
+  },
+  {
+   "osm_id": "w196655596",
+   "name": "Horský hotel Hanička",
+   "obec": "Špindlerův Mlýn",
+   "address": "Stříbrná 30, Špindlerův Mlýn, 543 51",
+   "lat": 50.726534,
+   "lng": 15.617244,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/101249-horsky-hotel-hanicka.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Dva bezbariérové pokoje."
+   },
+   "evidence_quote": "Hotel má i dva bezbariérové pokoje."
+  },
+  {
+   "osm_id": "n2793513432",
+   "name": "Hotel a restaurace Central",
+   "obec": "Dvůr Králové nad Labem",
+   "address": "náměstí T. G. Masaryka 6, Dvůr Králové nad Labem, 544 01",
+   "lat": 50.432364,
+   "lng": 15.814552,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/101504-hotel-a-restaurace-central.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "1 imobilní pokoj.",
+    "jine": "Restaurace je bezbariérová."
+   },
+   "evidence_quote": "Restaurace je bezbariérová"
+  },
+  {
+   "osm_id": "w88758988",
+   "name": "Hotel Arnika",
+   "obec": "Janské Lázně",
+   "address": "Obchodní 275, Janské Lázně, 542 25",
+   "lat": 50.631021,
+   "lng": 15.778865,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/101731-hotel-arnika.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup.",
+    "vytah": "Osobní výtah."
+   },
+   "evidence_quote": "Rekonstruovaný hotel s bezbariérovým přístupem a osobním výtahem."
+  },
+  {
+   "osm_id": "n296659185",
+   "name": "Penzion u svatého Jana",
+   "obec": "Hradec Králové (Svobodné Dvory)",
+   "address": "Spojovací 72, Hradec Králové, 503 11",
+   "lat": 50.223967,
+   "lng": 15.779465,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/101764-penzion-u-svateho-jana.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup.",
+    "pokoj": "1 bezbariérový dvoulůžkový pokoj.",
+    "parkovani": "Vyhrazené parkoviště."
+   },
+   "evidence_quote": "Bezbariérovost: Vyhrazené parkoviště, vstup, 1x dvoulůžkový pokoj"
+  },
+  {
+   "osm_id": "n2822806465",
+   "name": "Penzion Villa Pavlína",
+   "obec": "Hradec Králové",
+   "address": "Lhotecká 191, Hradec Králové, 500 09",
+   "lat": 50.206567,
+   "lng": 15.87763,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/101778-penzion-villa-pavlina.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup.",
+    "pokoj": "Přízemní apartmán s příslušenstvím, 4 lůžka.",
+    "parkovani": "Vyhrazené parkoviště."
+   },
+   "evidence_quote": "Bezbariérovost: Vyhrazené parkoviště, vstup, přízemní apartmán s příslušenstvím, 4x lůžko."
+  },
+  {
+   "osm_id": "n317937119",
+   "name": "Hotel Alessandria",
+   "obec": "Hradec Králové",
+   "address": "třída SNP 733, Hradec Králové, 500 03",
+   "lat": 50.21709,
+   "lng": 15.851528,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/101883-hotel-alessandria.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup.",
+    "pokoj": "2 bezbariérové dvoulůžkové pokoje.",
+    "parkovani": "Vyhrazené parkoviště.",
+    "vytah": "Výtah.",
+    "jine": "Bezbariérová i restaurace."
+   },
+   "evidence_quote": "Bezbariérovost: vyhrazené parkoviště, vstup, výtah, 2x dvoulůžkový pokoj, restaurace"
+  },
+  {
+   "osm_id": "n435406777",
+   "name": "Hotel Nové Adalbertinum",
+   "obec": "Hradec Králové",
+   "address": "Velké náměstí 32, Hradec Králové, 500 03",
+   "lat": 50.20903,
+   "lng": 15.833448,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/101885-hotel-nove-adalbertinum.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup.",
+    "pokoj": "1 bezbariérový třílůžkový pokoj.",
+    "vytah": "Výtah."
+   },
+   "evidence_quote": "Bezbariérovost: vstup, výtah, 1x třílůžkový pokoj"
+  },
+  {
+   "osm_id": "n4233351440",
+   "name": "Hotel Okresní dům",
+   "obec": "Hradec Králové",
+   "address": "Palackého 409/6, Hradec Králové, 500 03",
+   "lat": 50.210747,
+   "lng": 15.829461,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/101886-hotel-okresni-dum.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup přes dvůr.",
+    "pokoj": "1 bezbariérový dvoulůžkový pokoj.",
+    "parkovani": "Vyhrazené parkoviště na dvoře hotelu.",
+    "vytah": "Výtah."
+   },
+   "evidence_quote": "vyhrazené parkoviště na dvoře hotelu, vstup přes dvůr, výtah, 1x dvoulůžkový pokoj"
+  },
+  {
+   "osm_id": "n435406766",
+   "name": "Hotel Vacek Pod věží",
+   "obec": "Hradec Králové",
+   "address": "Velké náměstí 165/2, Hradec Králové, 500 03",
+   "lat": 50.20913,
+   "lng": 15.831268,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/101887-hotel-vacek-pod-vezi.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "U vstupu 1 schod, personál na vyžádání pomůže.",
+    "pokoj": "1 dvoulůžkový pokoj s přistýlkou uveden jako bezbariérový.",
+    "parkovani": "Vyhrazené parkoviště.",
+    "vytah": "Výtah."
+   },
+   "measurements": [
+    {
+     "co": "počet schodů u vstupu",
+     "hodnota": 1,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Poznámka: 1 schod u vstupu, pomoc personálu na vyžádání."
+  },
+  {
+   "osm_id": "w50564990",
+   "name": "Hotel Tereziánský dvůr",
+   "obec": "Hradec Králové",
+   "address": "Jana Koziny 336, Hradec Králové, 500 03",
+   "lat": 50.2084,
+   "lng": 15.837324,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/101889-hotel-tereziansky-dvur.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup.",
+    "pokoj": "1 bezbariérový dvoulůžkový pokoj.",
+    "parkovani": "Vyhrazené parkoviště."
+   },
+   "evidence_quote": "Bezbariérovost: vyhrazené parkoviště, vstup,1x dvoulůžkový pokoj"
+  },
+  {
+   "osm_id": "n673534510",
+   "name": "Penzion Podhorní mlýn",
+   "obec": "Kostelec nad Orlicí",
+   "address": "Podhorná 478, Kostelec nad Orlicí, 517 41",
+   "lat": 50.106764,
+   "lng": 16.229453,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/102379-penzion-podhorni-mlyn.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Penzion nabízí i bezbariérové ubytování."
+   },
+   "evidence_quote": "K dispozici je i bezbariérové ubytování."
+  },
+  {
+   "osm_id": "n5077316907",
+   "name": "Jakubův Nový Dvůr",
+   "obec": "Velká Jesenice",
+   "address": "Volovka 38, Velká Jesenice, 551 01",
+   "lat": 50.356903,
+   "lng": 16.020737,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/103651-jakubuv-novy-dvur.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "2 bezbariérové dvoulůžkové pokoje v hotelu areálu."
+   },
+   "evidence_quote": "Hotel nabízí 10 dvoulůžkových pokojů, 2 dvoulůžkové bezbariérové pokoje"
+  },
+  {
+   "osm_id": "n656501826",
+   "name": "Wellness hotel Gendorf",
+   "obec": "Vrchlabí",
+   "address": "Krkonošská 153, Vrchlabí, 543 01",
+   "lat": 50.625885,
+   "lng": 15.612497,
+   "category": "ubytovani",
+   "source_url": "https://www.hkregion.cz/dr-cs/1263-wellness-hotel-gendorf.html",
+   "source_type": "turistický portál kraje (hkregion.cz – Bez bariér)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "1 bezbariérový pokoj.",
+    "jine": "Prostory v přízemí hotelu jsou bezbariérové."
+   },
+   "evidence_quote": "1 pokoj a prostory v přízemí hotelu jsou bezbariérové."
+  }
+ ],
+ "not_found": [],
+ "sources": [
+  {
+   "title": "hkregion.cz – sekce Bez bariér (Královéhradecká krajská centrála cestovního ruchu)",
+   "url": "https://www.hkregion.cz/dr-cs/k-bez-barier/",
+   "note": "148 záznamů (13 stran, staženo přes stránkování portálu); u muzeí, zámků a galerií je blok „Bezbariérový přístup“ s měřenými údaji převzatými z www.mapybezbarier.cz; u ubytování řádek „Bezbariérovost“. Do výstupu vybráno 44 míst (limit ~40); nezpracovány zůstaly mj. hlavně bariérové objekty (Valdická brána, Bílá věž HK, hrad Pecka, zřícenina Potštejn, tvrz Hanička, zámky Náchod a Nové Město n. M., muzea Žacléř, Broumov, Česká Skalice, Malé Svatoňovice, Jaroměř, Železnice, Miletín, Šrámkův statek, Výtopna Jaroměř, Krkonošské muzeum Vrchlabí, Augustiniánský klášter Vrchlabí, Loreta Chlumec n. C.), další ubytování (Tx Sport Hotel Hostinné, Hotel Arnika Rudník, Motel Charlie Kovač, Camp Vejsplachy, Hostinec U Hubálků, Penzion Nad Oborou), bezbariérové trasy KRNAP a Českého ráje a služby (hlavní nádraží HK, terminál HD HK, letní kino Širák)."
+  },
+  {
+   "title": "hkregion.cz – Otevřené hory, otevřená města: Zažijte Krkonoše bez bariér",
+   "url": "https://www.hkregion.cz/dr-cs/111649-otevrene-hory-otevrena-mesta-zazijte-krkonose-bez-barier.html"
+  },
+  {
+   "title": "hkregion.cz – Bezbariérové dobrodružství v srdci Orlických hor",
+   "url": "https://www.hkregion.cz/dr-cs/111647-elegantni-krajka-tiche-hory-a-bezbarierove-dobrodruzstvi-v-srdci-orlickych-hor.html"
+  },
+  {
+   "title": "hkregion.cz – Cesta bez překážek: Kladské pomezí",
+   "url": "https://www.hkregion.cz/dr-cs/111645-cesta-bez-prekazek-objevte-krasy-kladskeho-pomezi-vsemi-smysly.html"
+  },
+  {
+   "title": "hkregion.cz – Bezbariérové výlety za krásami Českého ráje",
+   "url": "https://www.hkregion.cz/dr-cs/111626-dve-cesty-jeden-zazitek-bezbarierove-vylety-za-krasami-ceskeho-raje.html"
+  },
+  {
+   "title": "hkregion.cz – Pohodové Hradecko pro všechny",
+   "url": "https://www.hkregion.cz/dr-cs/111638-pohodove-hradecko-pro-vsechny-vylety-bez-barier-s-dotekem-historie-a-prirody.html"
+  },
+  {
+   "title": "hkregion.cz – Podkrkonoší: kam vyrazit s omezenou mobilitou",
+   "url": "https://www.hkregion.cz/dr-cs/111578-podkrkonosi-vas-okouzli-kam-vyrazit-s-omezenou-mobilitou.html"
+  },
+  {
+   "title": "hkregion.cz – Objevte Broumovsko bez bariér",
+   "url": "https://www.hkregion.cz/dr-cs/111581-krajina-klidu-a-dostupnosti-objevte-broumovsko-bez-barier.html"
+  },
+  {
+   "title": "kudyznudy.cz – kampaň Bez bariér",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier",
+   "note": "načte se; odkazované tipy jsou mimo Královéhradecký kraj (Praha, Plzeň aj.), pro kraj nic nevytěženo"
+  },
+  {
+   "title": "krkonose.eu",
+   "url": "https://www.krkonose.eu",
+   "note": "načte se, na úvodní stránce bez odkazu na bezbariérové téma; nevytěženo (limit míst naplněn z hkregion.cz)"
+  },
+  {
+   "title": "orlickehory.cz, ceskyraj.cz",
+   "url": "https://www.orlickehory.cz",
+   "note": "dne 5. 10. 2026 se nenačetly (bez odpovědi serveru); https://www.ceskyraj.cz stejně"
+  }
+ ]
+}

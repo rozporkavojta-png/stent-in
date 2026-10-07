@@ -1,0 +1,247 @@
+{
+ "task": "obce_hlavni-mesto-praha",
+ "kraj": "Hlavní město Praha",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w31615298",
+   "name": "Úřad městské části Praha 2",
+   "obec": "Praha (MČ Praha 2)",
+   "address": "náměstí Míru 600/20, 120 39 Praha 2",
+   "lat": 50.075083,
+   "lng": 14.434802,
+   "category": "urady",
+   "source_url": "https://www.praha2.cz/pro-osoby-s-omezenou-schopnosti-pohybu-pohyb-bez-barier",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Dva vstupy (nám. Míru a Jugoslávská), trakty propojené průchozími výtahy. Vchod z nám. Míru: dvoukřídlé dveře 2× 110 cm, zvonek ve výšce 152 cm. Vchod z Jugoslávské: dveře 2× 98 cm, ovládání obtížnější, zvonek chybí. Ve 2., 4. a 5. patře svislé schodišťové plošiny, ve 3. patře rampa se sklonem 14 %.",
+    "vytah": "Tři výtahy s automatickými dveřmi šířky 90 cm (klec 110×140 cm, resp. 109×218 cm), se sedátkem a madlem.",
+    "wc": "Částečně přístupné toalety v přízemí (u vchodu z Jugoslávské) a ve 2., 3., 4. a 6. patře. Dveře 81–91 cm, ve 3. patře je prostor vedle mísy omezený (78 cm).",
+    "parkovani": "U budovy 2 vyhrazená stání pro osoby s omezenou schopností pohybu. Cesta k oběma vchodům je bezbariérová.",
+    "jine": "Úřední hodiny většiny pracovišť po a st 8:00–12:00, 13:00–17:30. Na webu je i virtuální prohlídka budovy."
+   },
+   "measurements": [
+    { "co": "šířka vstupních dveří z nám. Míru", "hodnota": "2x110", "jednotka": "cm" },
+    { "co": "šířka dveří výtahu", "hodnota": 90, "jednotka": "cm" },
+    { "co": "klec průchozího výtahu u vstupu z nám. Míru (š × h)", "hodnota": "110x140", "jednotka": "cm" },
+    { "co": "svislá schodišťová plošina (š × h)", "hodnota": "93x147", "jednotka": "cm" },
+    { "co": "sklon rampy ve 3. patře", "hodnota": 14, "jednotka": "%" },
+    { "co": "WC v přízemí – šířka dveří", "hodnota": 90, "jednotka": "cm" },
+    { "co": "WC v přízemí – kabina (š × h)", "hodnota": "145x142", "jednotka": "cm" },
+    { "co": "WC v přízemí – prostor pro vozík vedle mísy", "hodnota": 82, "jednotka": "cm" }
+   ],
+   "evidence_quote": "sjízdnost trasy je k oběma vchodům do budovy bezbariérová"
+  },
+  {
+   "osm_id": "n7379144521",
+   "name": "Veřejné WC Nové náměstí (Uhříněves)",
+   "obec": "Praha (MČ Praha 22)",
+   "address": "Nové náměstí 1629, Praha-Uhříněves",
+   "lat": 50.032185,
+   "lng": 14.599777,
+   "category": "wc",
+   "source_url": "https://www.praha22.cz/mestska-cast/zdravotni-a-socialni-zarizeni/verejne-toalety/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Samostatný vchod pro tělesně znevýhodněné, otevírá se Euroklíčem.",
+    "wc": "Provoz nonstop, cena 20 Kč, přebalovací pult.",
+    "jine": "Euroklíč dostanou zdarma mimo jiné držitelé průkazů TP, ZTP a ZTP/P s bydlištěm v Praze."
+   },
+   "measurements": [],
+   "evidence_quote": "samostatný vchod pro tělesně znevýhodněné"
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné WC v budově Magistrátu hl. m. Prahy (U Radnice)",
+   "obec": "Praha (MČ Praha 1)",
+   "address": "U Radnice 2/1, 110 00 Praha 1",
+   "lat": 50.0872941,
+   "lng": 14.4190154,
+   "category": "wc",
+   "source_url": "https://www.praha1.cz/seznam-verejnych-toalet/",
+   "source_type": "web obce",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "wc": "Toaleta v budově magistrátu, cena 20 Kč. Euroklíč je k dispozici na vrátnici. Otevírací doba v seznamu chybí.",
+    "jine": "Seznam neříká výslovně, že je toaleta bezbariérová, uvádí jen Euroklíč. Souřadnice jsou z geokódování adresy U Radnice 2/1 (Nominatim)."
+   },
+   "measurements": [],
+   "evidence_quote": "budova magistrátu hl. města Prahy – EURO klíč – na vrátnici"
+  },
+  {
+   "osm_id": null,
+   "name": "Nová radnice – Magistrát hl. m. Prahy",
+   "obec": "Praha (MČ Praha 1)",
+   "address": "Mariánské náměstí 2/2, 110 00 Praha 1",
+   "lat": 50.0872141,
+   "lng": 14.4184455,
+   "category": "urady",
+   "source_url": "https://praha.eu/w/omezeni-vstupu-do-budovy-nove-radnice-",
+   "source_type": "web kraje",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup vede zadním vstupem z ulice U Radnice. Hlavní vchod z Mariánského náměstí má schody.",
+    "jine": "Zpráva ze 4. 2. 2025 o dočasném uzavření bezbariérového vstupu (7.–26. 2. 2025). Kdo musí jít hlavním vchodem, má si asistenci domluvit s recepcí (tel. 236 002 111). Úřední hodiny Magistrátu po a st 8:00–18:00 (https://praha.eu/magistrat-kontakt)."
+   },
+   "measurements": [],
+   "evidence_quote": "uzavření zadního vstupu do Nové radnice z ulice U Radnice"
+  },
+  {
+   "osm_id": null,
+   "name": "Úřad městské části Praha 7",
+   "obec": "Praha (MČ Praha 7)",
+   "address": "U Průhonu 1338/38, 170 00 Praha 7",
+   "lat": 50.1049281,
+   "lng": 14.4512939,
+   "category": "urady",
+   "source_url": "https://www.praha7.cz/nove-sidlo-pro-sedmicku/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle článku MČ je celá budova bezbariérová.",
+    "vytah": "Do pater vedou dva výtahy.",
+    "wc": "Na veřejných toaletách je přebalovací pult. Bezbariérové WC článek výslovně nezmiňuje.",
+    "jine": "Archivní článek z roku 2020; web upozorňuje, že informace nemusí být aktuální."
+   },
+   "measurements": [],
+   "evidence_quote": "Celá budova je bezbariérová a nezapomíná ani na rodiče s dětmi."
+  },
+  {
+   "osm_id": null,
+   "name": "Úřad městské části Praha 9",
+   "obec": "Praha (MČ Praha 9)",
+   "address": "Sokolovská 14/324, 190 00 Praha 9 – Vysočany",
+   "lat": 50.1103378,
+   "lng": 14.5000816,
+   "category": "urady",
+   "source_url": "https://www.praha9.cz/cesta-na-urad-pro-hendikepovane",
+   "source_type": "web obce",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "MČ zveřejňuje podrobný popis cesty z metra Vysočanská. Popsaná trasa je podle webu bezbariérová (výtahy z nástupiště na povrch). Hned za vchodem je recepce, kde nabídnou pomoc.",
+    "vytah": "Do 3. patra (sociální pracovníci) vede výtah.",
+    "jine": "Popis je psaný hlavně pro lidi se zrakovým postižením. O bezbariérovém WC ani parkování stránka nic neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "Navíc je to i bezbariérová cesta."
+  },
+  {
+   "osm_id": null,
+   "name": "Radnice Prahy 13 (Úřad MČ Praha 13)",
+   "obec": "Praha (MČ Praha 13)",
+   "address": "Sluneční náměstí 2580/13, 158 00 Praha 5",
+   "lat": 50.0505316,
+   "lng": 14.3444764,
+   "category": "urady",
+   "source_url": "https://www.praha13.cz/mestska-cast/o-praze-13/krizem-krazem-prahou-13/13-slunecni-namesti-radnice-komunitni-centrum-sv-prokopa-historie-jihozapadniho-mesta/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Celá budova radnice je podle webu MČ bezbariérová.",
+    "wc": "Toalety pro zdravotně postižené jsou ve všech nadzemních podlažích kromě 1. NP (návštěvní řád: https://www.praha13.cz/wp-content/uploads/2026/04/navstevni-rad.pdf).",
+    "parkovani": "Před radnicí je venkovní parkoviště TSK v oranžové zóně, první hodina zdarma (návštěvní řád). Vyhrazená stání pro ZTP řád nezmiňuje.",
+    "jine": "Radnice je výdejním místem Euroklíče (tisková zpráva ze 17. 12. 2020: https://www.praha13.cz/praha-13-se-stala-vydejnim-mistem-euroklice/)."
+   },
+   "measurements": [],
+   "evidence_quote": "Celá budova je bezbariérová."
+  },
+  {
+   "osm_id": null,
+   "name": "Radnice Prahy 12 (Úřad MČ Praha 12)",
+   "obec": "Praha (MČ Praha 12)",
+   "address": "Generála Šišky 2375/6, 143 00 Praha 4 – Modřany",
+   "lat": 50.0022282,
+   "lng": 14.4138641,
+   "category": "urady",
+   "source_url": "https://www.praha12.cz/nova-radnice-vyvolava-kladne-i-zaporne-emoce/d-68441",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Podle projektanta má celá budova bezbariérový přístup.",
+    "wc": "V každém podlaží mají být záchody pro vozíčkáře.",
+    "jine": "Pozor: jde o rozhovor z 29. 3. 2019, tedy z doby před dokončením stavby. Popisuje projekt, ne ověřený skutečný stav."
+   },
+   "measurements": [],
+   "evidence_quote": "Celá budova má bezbariérový přístup – je tak navržena."
+  },
+  {
+   "osm_id": null,
+   "name": "Úřad městské části Praha 14 (budova radnice)",
+   "obec": "Praha (MČ Praha 14)",
+   "address": "Bratří Venclíků 1072/6, 198 00 Praha 9",
+   "lat": 50.1056445,
+   "lng": 14.560433,
+   "category": "urady",
+   "source_url": "https://www.praha14.cz/zivot-na-praze-14/uvod-o-praze-14/budova-radnice-mc-praha-14/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Při rekonstrukci budovy (dokončené v roce 2002) byl vybudován bezbariérový přístup do objektu.",
+    "jine": "Údaj je historický (popis rekonstrukce). Na adrese Bratří Venclíků 1072, 4. patro, vydává odbor sociálních věcí Euroklíče (po a st 7:30–12:00, 13:00–18:00; zpráva z 2. 3. 2023: https://www.praha14.cz/zivot-na-praze-14/praha-14-se-stala-novym-distribucnim-mistem-euroklice/)."
+   },
+   "measurements": [],
+   "evidence_quote": "vybudování bezbariérového přístupu do objektu"
+  },
+  {
+   "osm_id": null,
+   "name": "Úřad městské části Praha 22",
+   "obec": "Praha (MČ Praha 22)",
+   "address": "Nové náměstí 1250/10, 104 00 Praha 22 – Uhříněves",
+   "lat": 50.0318725,
+   "lng": 14.5992822,
+   "category": "urady",
+   "source_url": "https://www.praha22.cz/seniori/mestska-cast/zdravotni-a-socialni-zarizeni/p22-bez-barier/urad-mc-praha-22-994cs.html",
+   "source_type": "web obce",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "Tři schody před hlavním vchodem jdou obejít šikmou cestou vpravo (sklon 6 %, délka 3 m). Těžké dvoukřídlé dveře 2× 81 cm se otevírají ručně ven. Zvonek s obousměrnou komunikací ve výšce 118 cm.",
+    "vytah": "Výtah (dveře 90 cm, klec 107×139 cm) jezdí z přízemí do 2. patra. Do 3. patra (jen zasedací místnost) vede pouze schodiště.",
+    "wc": "V přízemí jedna přístupná a jedna částečně přístupná toaleta (dveře 90 cm, prostor vedle mísy 88–89 cm).",
+    "parkovani": "Jedno vyhrazené parkovací stání na parkovišti u objektu.",
+    "jine": "Popis z webu MČ (vložen 21. 1. 2016, aktualizován 11. 7. 2016). Pokladny mají dveře jen 2× 76 cm a pult ve výšce 116 cm."
+   },
+   "measurements": [
+    { "co": "sklon šikmé cesty u vstupu", "hodnota": 6, "jednotka": "%" },
+    { "co": "šířka vstupních dveří", "hodnota": "2x81", "jednotka": "cm" },
+    { "co": "šířka dveří výtahu", "hodnota": 90, "jednotka": "cm" },
+    { "co": "klec výtahu (š × h)", "hodnota": "107x139", "jednotka": "cm" },
+    { "co": "přístupné WC – šířka dveří", "hodnota": 90, "jednotka": "cm" },
+    { "co": "přístupné WC – kabina (š × h)", "hodnota": "166x178", "jednotka": "cm" }
+   ],
+   "evidence_quote": "Krátké schodiště (+3 schody) před hlavním vstupem lze obejít svažitou komunikací"
+  }
+ ],
+ "not_found": [
+  { "osm_id": "n1814663811", "name": "Úřad MČ Praha 4 (Antala Staška 2059/80b)", "url": "https://praha4.cz/Informacni-centra-Uradu-mestske-casti-Praha-4/", "reason": "web praha4.cz vrací automatickému přístupu CAPTCHA, přístupnost se nepodařilo ověřit" },
+  { "osm_id": "w31556384", "name": "Úřad MČ Praha 5 (nám. 14. října 1381/4)", "url": "https://www.praha5.cz/kontakty-a-uredni-hodiny/", "reason": "web o přístupnosti budovy nic neuvádí" },
+  { "osm_id": "", "name": "Úřad MČ Praha 3 (Seifertova 559/51)", "url": "https://www.praha3.cz/getFile/id:1202979/3%20-%20M%C3%ADstn%C3%AD%20a%20%C4%8Dasov%C3%A1%20dostupnost.pdf", "reason": "dokument o dostupnosti nejde stáhnout (HTTP 500); stránky https://www.praha3.cz/urad a /kontakty o přístupnosti nic neuvádějí" },
+  { "osm_id": "", "name": "Úřad MČ Praha 6 (Čs. armády 601/23)", "url": "https://www.bezbarierova6.cz/pristupnost-objektu/urad-mestske-casti-praha-6/1/", "reason": "podrobný popis je jen v atlasu přístupnosti MČ Praha 6 bez uvedené licence, data proto nepřebíráme (atlas je v sources)" },
+  { "osm_id": "", "name": "Úřad MČ Praha 8 (Zenklova 1/35)", "url": "https://www.praha8.cz/Orientacni-mapa-objektu-UMC-Praha-8.html", "reason": "web odkazuje na externí mapu přístupnosti http://praha8.vyzkumysoukup.cz/pristupnost, ta nefunguje" },
+  { "osm_id": "", "name": "Úřad MČ Praha 10 (Vršovická 68)", "url": "https://praha10.cz/urad-mc/kontakty-a-uredni-hodiny/", "reason": "web o přístupnosti pro vozíčkáře nic neuvádí (je tam jen stránka o úpravách pro zrakově postižené)" },
+  { "osm_id": "", "name": "Úřad MČ Praha 11 (Vidimova 1324/4)", "url": "https://www.praha11.cz/cs/urad/kontakty-uredni-hodiny/", "reason": "oficiální web o přístupnosti nic neuvádí; údaje jsou jen na presbariery.cz, odkud je nepřebíráme" },
+  { "osm_id": "", "name": "Úřad MČ Praha 15 (Boloňská 478/1)", "url": "https://www.praha15.cz/urad/ms-1334", "reason": "web o přístupnosti nic neuvádí" },
+  { "osm_id": "", "name": "Úřad MČ Praha 20 – Horní Počernice (Jívanská 647)", "url": "https://www.pocernice.cz/urad/", "reason": "oficiální web o přístupnosti nic neuvádí; údaje jsou jen na presbariery.cz, odkud je nepřebíráme" },
+  { "osm_id": "", "name": "Veřejná WC ve stanicích metra (DPP)", "url": "https://www.dpp.cz/cestovani/wc-v-metru", "reason": "seznam uvádí jen umístění a provozní dobu, o bezbariérovosti ani Euroklíči nic" },
+  { "osm_id": "", "name": "Ostatní veřejné toalety v seznamu Prahy 1", "url": "https://www.praha1.cz/seznam-verejnych-toalet/", "reason": "seznam (adresa, popis, otevírací doba, cena) přístupnost neuvádí; Euroklíč je zmíněný jen u WC U Radnice 2/1" }
+ ],
+ "sources": [
+  { "title": "Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením v hl. m. Praze do roku 2030", "url": "https://praha.eu/w/krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim-v-hl-m-praze-do-roku-2030", "note": "Zveřejněno 24. 4. 2026, PDF: https://praha.eu/documents/d/bezbarierova/kpvp-ozp-hmp-2030-final-aktualizovany (59 stran). Opatření 2.4: udržovat a rozvíjet webovou aplikaci mapapristupnosti.cz a využít data z mapování přístupnosti od externích subjektů. Do Mapy přístupnosti se mají vkládat data o dopravní infrastruktuře, školských, sportovních a zdravotnických zařízeních a turistické trase. Opatření 3.2 a 4.1: Praha podporuje městské části v mapování a odstraňování bariér. Opatření 4.4: vybavit veřejný prostor bezbariérovými veřejnými toaletami; Koncepce přístupnosti veřejných toalet byla předložena RHMP." },
+  { "title": "Praha bezbariérová (rozcestník MHMP)", "url": "https://praha.eu/praha-bezbarierova", "note": "Portál MHMP k přístupnosti. Přepážka Praha bezbariérová: Jungmannova 35/29, přízemí, kancelář č. 26, po dohodě, tel. +420 236 004 304. Odkazy na Mapu přístupnosti, dopravu bez bariér a zvýhodněné parkování." },
+  { "title": "Mapa přístupnosti (IPR Praha / MHMP)", "url": "https://app.iprpraha.cz/apl/app/bezbariery/", "note": "Mapa přístupnosti budov a veřejných prostor v Praze (také www.mapapristupnosti.cz). Kategorie přístupné, částečně přístupné a nepřístupné (https://app.iprpraha.cz/apl/app/bezbariery/kategorizace_pristupnosti.html). Podle Prahy 12 (článek z 27. 6. 2016) dodala metodiku POV a mapu vytvořil IPR. Licence k datům mapy na těchto stránkách není uvedená, data nepřebíráme. Doména mapapristupnosti.cz měla při kontrole prošlý certifikát." },
+  { "title": "Koncepce přístupnosti veřejných toalet (IPR Praha)", "url": "https://iprpraha.cz/page/4473", "note": "Zpráva ze 4. 11. 2025: Rada HMP schválila zpracování koncepce dostupných veřejných toalet. Analytická fáze je hotová, ve druhé fázi se určí místa, počet a standardy toalet. Seznam konkrétních bezbariérových WC zatím není." },
+  { "title": "Atlas přístupnosti Praha 1 (bezbarierova1.cz)", "url": "https://www.praha1.cz/atlas-pristupnosti-bezbarierova-praha-1/", "note": "Webová aplikace www.bezbarierova1.cz, přes 500 objektů, zahrad a parků v Praze 1. Mapovali odborníci Pražské organizace vozíčkářů, každý rok se aktualizuje (článek z 21. 1. 2025). Licence není uvedená, data nepřebíráme. Starší tištěný Bezbariérový atlas objektů: https://www.praha1.cz/mestska-cast/pro-seniory/bezbarierovy-atlas-objektu/" },
+  { "title": "Atlas přístupnosti objektů na území MČ Praha 6", "url": "https://www.bezbarierova6.cz/", "note": "Atlas MČ Praha 6 se 115 objekty (úřady, školy, zdravotnictví, pošty, obchody, banky, divadla, památky), u objektů piktogramy a měřené rozměry. Licence není uvedená, data nepřebíráme." },
+  { "title": "Mapa přístupnosti objektů MČ Praha 8", "url": "http://praha8.vyzkumysoukup.cz/pristupnost", "note": "Odkaz ze stránky https://www.praha8.cz/Orientacni-mapa-objektu-UMC-Praha-8.html. Při kontrole 5. 10. 2026 nefungovala (chyba certifikátu, prázdná odpověď)." },
+  { "title": "Koncepce bezbariérovosti MČ Praha 13 2020–2030", "url": "https://www.praha13.cz/wp-content/uploads/2023/04/Koncepce-bezbarierovosti-FINAL-2020-2030.pdf", "note": "Koncepční dokument MČ Praha 13, nalezený přes vyhledávání. Obsah jsme podrobně neprocházeli." },
+  { "title": "Seznam veřejných toalet Prahy 1", "url": "https://www.praha1.cz/seznam-verejnych-toalet/", "note": "Asi 60 toalet s adresou, popisem místa, otevírací dobou a cenou. Bezbariérovost seznam neuvádí, Euroklíč jen u U Radnice 2/1." },
+  { "title": "Veřejné WC v metru (DPP)", "url": "https://www.dpp.cz/cestovani/wc-v-metru", "note": "Seznam WC ve stanicích metra A, B a C s umístěním a provozní dobou, bez údajů o přístupnosti. Stav výtahů a plošin: https://www.dpp.cz/cestovani/bezbarierove-cestovani/stav-vytahu-a-plosin" },
+  { "title": "Euroklíč – distribuční místa Kraj Praha (NRZP ČR)", "url": "https://www.euroklic.cz/kraj-praha", "note": "Seznam výdejních míst Euroklíče v Praze (např. ÚMČ Praha 1, Vodičkova 18, 3. patro; NRZP ČR, Partyzánská 1/7, Praha 7). NRZP je výhradní distributor Eurozámků a Euroklíčů v ČR. Data hromadně nepřebíráme." },
+  { "title": "Pražská organizace vozíčkářů, z.s. (POV)", "url": "https://www.pov.cz/", "note": "Spolek lidí s tělesným postižením, sídlo Benediktská 688/6, Praha 1. Provozuje databázi presbariery.cz, z té podle pravidel data nepřebíráme." },
+  { "title": "Centrum Paraple, o.p.s.", "url": "https://www.paraple.cz/", "note": "Obecně prospěšná společnost pro lidi po poškození míchy, založená v roce 1994 (Zdeněk Svěrák a Svaz paraplegiků)." },
+  { "title": "Česká asociace paraplegiků – CZEPA", "url": "https://www.czepa.cz/", "note": "Nezisková organizace pro lidi s poraněním míchy (služby, prosazování práv)." },
+  { "title": "Asistence o.p.s.", "url": "https://www.asistence.org/", "note": "Osobní asistence pro lidi s postižením." },
+  { "title": "Národní rada osob se zdravotním postižením ČR", "url": "https://nrzp.cz/", "note": "Střešní organizace OZP, sídlo Partyzánská 1/7, Praha 7. Distributor Euroklíčů." }
+ ]
+}

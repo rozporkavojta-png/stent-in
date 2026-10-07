@@ -1,0 +1,1009 @@
+[
+{
+"i": "w113496917",
+"n": "Huť Františka",
+"s": "Turistický cíl",
+"o": "Adamov",
+"w": "no",
+"la": 49.306817,
+"lo": 16.678013
+},
+{
+"i": "n9992090736",
+"n": "Okrsek starých řemesel",
+"s": "Turistický cíl",
+"o": "Adamov",
+"w": "no",
+"la": 49.307041,
+"lo": 16.677223
+},
+{
+"i": "w113496923",
+"n": "Stará huť u Adamova",
+"s": "Muzeum",
+"o": "Adamov",
+"w": "no",
+"la": 49.306682,
+"lo": 16.67859
+},
+{
+"i": "n343339297",
+"n": "Divadlo Boleradice",
+"s": "Divadlo",
+"o": "Boleradice",
+"web": "http://boleradice-divadlo.cz",
+"w": "yes",
+"la": 48.967989,
+"lo": 16.814821
+},
+{
+"i": "n603670990",
+"n": "rozhledna Nedánov",
+"s": "Vyhlídka",
+"o": "Boleradice",
+"w": "no",
+"la": 48.98057,
+"lo": 16.819464
+},
+{
+"i": "w1158761255",
+"n": "Papouščí zoologická zahrada",
+"s": "Zoo",
+"o": "Bošovice",
+"w": "yes",
+"la": 49.055709,
+"lo": 16.836714
+},
+{
+"i": "n12093113760",
+"n": "1. vodojem",
+"s": "Turistický cíl",
+"o": "Brno",
+"w": "yes",
+"la": 49.195934,
+"lo": 16.591272
+},
+{
+"i": "n12093113754",
+"n": "2. vodojem",
+"s": "Turistický cíl",
+"o": "Brno",
+"w": "no",
+"la": 49.195085,
+"lo": 16.591238
+},
+{
+"i": "n12093275732",
+"n": "3. vodojem",
+"s": "Turistický cíl",
+"o": "Brno",
+"w": "yes",
+"la": 49.195664,
+"lo": 16.590487
+},
+{
+"i": "n463552817",
+"n": "Anthropos",
+"s": "Muzeum",
+"o": "Brno",
+"a": "Pisárecká 5",
+"web": "https://www.mzm.cz/pavilon-anthropos",
+"w": "yes",
+"la": 49.192115,
+"lo": 16.567164
+},
+{
+"i": "n418143966",
+"n": "Barka",
+"s": "Divadlo",
+"o": "Brno",
+"w": "yes",
+"la": 49.221505,
+"lo": 16.591439
+},
+{
+"i": "n4260724137",
+"n": "Bike Kitchen Brno",
+"s": "Komunitní centrum",
+"o": "Brno",
+"web": "https://bikekitchenbrno.cz/",
+"w": "no",
+"la": 49.190505,
+"lo": 16.616329
+},
+{
+"i": "n3858998077",
+"n": "Brněnská kostnice",
+"s": "Muzeum",
+"o": "Brno",
+"web": "https://ticbrno.cz/cs/podzemi/kostnice-u-sv-jakuba",
+"w": "no",
+"la": 49.196345,
+"lo": 16.607959
+},
+{
+"i": "n4178908901",
+"n": "Brněnské podzemí",
+"s": "Turistický cíl",
+"o": "Brno",
+"web": "http://ticbrno.cz/cs/podzemi/labyrint-pod-zelnym-trhem",
+"w": "no",
+"la": 49.192912,
+"lo": 16.609377
+},
+{
+"i": "n5107853016",
+"n": "Bulharský pastevecký pes - Karakachan",
+"s": "Turistický cíl",
+"o": "Brno",
+"w": "no",
+"la": 49.202603,
+"lo": 16.601899
+},
+{
+"i": "n7774207347",
+"n": "CVČ Botanka",
+"s": "Komunitní centrum",
+"o": "Brno",
+"w": "limited",
+"la": 49.205803,
+"lo": 16.600629
+},
+{
+"i": "w655162375",
+"n": "Divadlo Bolka Polívky",
+"s": "Divadlo",
+"o": "Brno",
+"a": "Jakubské náměstí 127/5",
+"w": "no",
+"la": 49.196973,
+"lo": 16.608345
+},
+{
+"i": "n3157724316",
+"n": "Divadlo V",
+"s": "Divadlo",
+"o": "Brno",
+"a": "Veveří 133",
+"w": "no",
+"la": 49.210134,
+"lo": 16.587008
+},
+{
+"i": "n4502277593",
+"n": "Dům s tykadly",
+"s": "Turistický cíl",
+"o": "Brno",
+"a": "Orlí",
+"w": "no",
+"la": 49.193502,
+"lo": 16.611478
+},
+{
+"i": "n3467326710",
+"n": "Galerie M.K.",
+"s": "Galerie",
+"o": "Brno",
+"a": "Orlí 27",
+"w": "limited",
+"la": 49.194581,
+"lo": 16.612952
+},
+{
+"i": "n5314009650",
+"n": "Galerie Zahrada",
+"s": "Galerie",
+"o": "Brno",
+"a": "Drobného 22",
+"w": "yes",
+"la": 49.206278,
+"lo": 16.614923
+},
+{
+"i": "n10222310647",
+"n": "Galerie v IBC",
+"s": "Galerie",
+"o": "Brno",
+"web": "https://www.galerievibc.cz/",
+"w": "yes",
+"la": 49.199894,
+"lo": 16.613848
+},
+{
+"i": "w168249510",
+"n": "Helgoland",
+"s": "Turistický cíl",
+"o": "Brno",
+"w": "no",
+"la": 49.194062,
+"lo": 16.586813
+},
+{
+"i": "n88978151",
+"n": "Hvězdárna a planetárium Brno",
+"s": "Muzeum",
+"o": "Brno",
+"a": "Kraví 2",
+"web": "https://www.hvezdarna.cz/",
+"w": "yes",
+"la": 49.204766,
+"lo": 16.583642
+},
+{
+"i": "n3714711988",
+"n": "KJM pobočka Starý Lískovec",
+"s": "Knihovna",
+"o": "Brno",
+"web": "https://www.kjm.cz/provoz/stary-liskovec-kurska-1",
+"w": "yes",
+"la": 49.168229,
+"lo": 16.555721
+},
+{
+"i": "n5107853017",
+"n": "Kamerunská koza",
+"s": "Turistický cíl",
+"o": "Brno",
+"w": "yes",
+"la": 49.202848,
+"lo": 16.602383
+},
+{
+"i": "n6352951731",
+"n": "Kapucínská hrobka",
+"s": "Muzeum",
+"o": "Brno",
+"web": "http://hrobka.kapucini.cz",
+"w": "no",
+"la": 49.191114,
+"lo": 16.609861
+},
+{
+"i": "n295657862",
+"n": "Kino Art",
+"s": "Kino",
+"o": "Brno",
+"a": "Cihlářská 783/19",
+"web": "https://www.kinoart.cz/",
+"w": "yes",
+"la": 49.204216,
+"lo": 16.603366
+},
+{
+"i": "n4689652297",
+"n": "Klub modelářů železnic Brno I",
+"s": "Muzeum",
+"o": "Brno",
+"web": "https://www.kmz-brno.cz/",
+"w": "no",
+"la": 49.211224,
+"lo": 16.634105
+},
+{
+"i": "n83365417",
+"n": "Knihovna Jiřího Mahena",
+"s": "Knihovna",
+"o": "Brno",
+"a": "Kobližná 4",
+"web": "https://www.kjm.cz/",
+"w": "yes",
+"la": 49.19517,
+"lo": 16.609624
+},
+{
+"i": "n7091334794",
+"n": "Knihovna Jiřího Mahena",
+"s": "Knihovna",
+"o": "Brno",
+"a": "Musilova 1540/2a",
+"web": "https://www.kjm.cz/pobocky/husovice",
+"w": "yes",
+"la": 49.209677,
+"lo": 16.629727
+},
+{
+"i": "n7126935815",
+"n": "Knihovna Jiřího Mahena Brno Komín",
+"s": "Knihovna",
+"o": "Brno",
+"a": "Vavřinecká 13",
+"web": "https://www.kjm.cz/",
+"w": "yes",
+"la": 49.222013,
+"lo": 16.552256
+},
+{
+"i": "n3978656833",
+"n": "Knihovna Jiřího Mahena v Brně",
+"s": "Knihovna",
+"o": "Brno",
+"w": "no",
+"la": 49.254526,
+"lo": 16.623019
+},
+{
+"i": "n4821243658",
+"n": "Knihovna Jiřího Mahena v Brně",
+"s": "Knihovna",
+"o": "Brno",
+"a": "Mozolky 2562",
+"web": "https://www.kjm.cz/",
+"w": "no",
+"la": 49.216501,
+"lo": 16.576034
+},
+{
+"i": "n5453363759",
+"n": "Knihovna Jiřího Mahena v Brně",
+"s": "Knihovna",
+"o": "Brno",
+"w": "no",
+"la": 49.232834,
+"lo": 16.623858
+},
+{
+"i": "n1677978618",
+"n": "Loosova - Kaplického blob",
+"s": "Turistický cíl",
+"o": "Brno",
+"w": "yes",
+"la": 49.231663,
+"lo": 16.618835
+},
+{
+"i": "n2324032363",
+"n": "Loď Kometa",
+"s": "Turistický cíl",
+"o": "Brno",
+"w": "no",
+"la": 49.168642,
+"lo": 16.623136
+},
+{
+"i": "n296572192",
+"n": "Lucerna",
+"s": "Kino",
+"o": "Brno",
+"a": "Minská 565/19",
+"w": "yes",
+"la": 49.210439,
+"lo": 16.585401
+},
+{
+"i": "n296635499",
+"n": "Lužánky – středisko volného času, pracoviště Lata",
+"s": "Komunitní centrum",
+"o": "Brno",
+"a": "Plovdivská 2572/8",
+"w": "no",
+"la": 49.217819,
+"lo": 16.581421
+},
+{
+"i": "w16371581",
+"n": "Mahenovo divadlo",
+"s": "Historická budova",
+"o": "Brno",
+"w": "yes",
+"la": 49.196162,
+"lo": 16.613423
+},
+{
+"i": "n1676776014",
+"n": "Mahenův Památník",
+"s": "Knihovna",
+"o": "Brno",
+"w": "no",
+"la": 49.196272,
+"lo": 16.586839
+},
+{
+"i": "r91437",
+"n": "Moravská zemská knihovna",
+"s": "Knihovna",
+"o": "Brno",
+"a": "Kounicova 65a",
+"web": "https://www.mzk.cz/",
+"w": "yes",
+"la": 49.208645,
+"lo": 16.594057
+},
+{
+"i": "n7503974466",
+"n": "Papilonia - Motýlí dům Brno",
+"s": "Zoo",
+"o": "Brno",
+"a": "Panská 393/6",
+"web": "https://www.papilonia.cz/",
+"w": "limited",
+"la": 49.193867,
+"lo": 16.608257
+},
+{
+"i": "n4502324592",
+"n": "Ptačí kašna",
+"s": "Turistický cíl",
+"o": "Brno",
+"a": "Kozí",
+"w": "yes",
+"la": 49.196651,
+"lo": 16.609195
+},
+{
+"i": "w49999068",
+"n": "Reduta",
+"s": "Divadlo",
+"o": "Brno",
+"web": "https://www.ndbrno.cz/",
+"w": "yes",
+"la": 49.192039,
+"lo": 16.6097
+},
+{
+"i": "w50026696",
+"n": "Rubínek",
+"s": "Komunitní centrum",
+"o": "Brno",
+"w": "yes",
+"la": 49.218188,
+"lo": 16.578894
+},
+{
+"i": "n3367622635",
+"n": "SONO Centrum",
+"s": "Divadlo",
+"o": "Brno",
+"web": "https://www.sono.cz/",
+"w": "yes",
+"la": 49.209561,
+"lo": 16.588721
+},
+{
+"i": "n295657863",
+"n": "Scala",
+"s": "Kino",
+"o": "Brno",
+"a": "Moravské náměstí 127/3",
+"web": "https://www.kinoscala.cz",
+"w": "no",
+"la": 49.197341,
+"lo": 16.608146
+},
+{
+"i": "w95164867",
+"n": "Společenské centrum Karas",
+"s": "Kulturní centrum",
+"o": "Brno",
+"w": "yes",
+"la": 49.198081,
+"lo": 16.640312
+},
+{
+"i": "n1478808605",
+"n": "Velký medlánecký kopec",
+"s": "Vyhlídka",
+"o": "Brno",
+"w": "no",
+"la": 49.234397,
+"lo": 16.567892
+},
+{
+"i": "n1473369199",
+"n": "Velký Špalíček",
+"s": "Kino",
+"o": "Brno",
+"web": "https://www.cinemacity.cz/",
+"w": "no",
+"la": 49.193195,
+"lo": 16.60737
+},
+{
+"i": "n5263659321",
+"n": "Vila Löw-Beer v Brně",
+"s": "Muzeum",
+"o": "Brno",
+"a": "Drobného 22",
+"web": "https://www.vilalowbeer.cz/",
+"w": "yes",
+"la": 49.206094,
+"lo": 16.613722
+},
+{
+"i": "w50555386",
+"n": "Vila Tugendhat",
+"s": "Muzeum",
+"o": "Brno",
+"a": "Černopolní 237/45",
+"web": "https://www.tugendhat.eu/",
+"w": "yes",
+"la": 49.207171,
+"lo": 16.616084
+},
+{
+"i": "n10185240284",
+"n": "Vodojemy na Žlutém kopci",
+"s": "Muzeum",
+"o": "Brno",
+"a": "Tvrdého 15",
+"web": "https://podzemibrno.cz/mista-v-podzemi/vodojemy-na-zlutem-kopci/",
+"w": "yes",
+"la": 49.195672,
+"lo": 16.591322
+},
+{
+"i": "n3222835685",
+"n": "Věž architektů",
+"s": "Turistický cíl",
+"o": "Brno",
+"w": "no",
+"la": 49.194918,
+"lo": 16.585835
+},
+{
+"i": "n4833255717",
+"n": "Základna Tři ocásci",
+"s": "Komunitní centrum",
+"o": "Brno",
+"a": "třída Kpt. Jaroše 18",
+"web": "https://triocasci.cz/",
+"w": "no",
+"la": 49.202732,
+"lo": 16.611043
+},
+{
+"i": "w50004695",
+"n": "Ústřední knihovna FF MU",
+"s": "Knihovna",
+"o": "Brno",
+"web": "https://knihovna.phil.muni.cz/",
+"w": "yes",
+"la": 49.200485,
+"lo": 16.597446
+},
+{
+"i": "n11002241463",
+"n": "Obecní knihovna Bílovice nad Svitavou",
+"s": "Knihovna",
+"o": "Bílovice nad Svitavou",
+"web": "https://knihovnabilovice.cz/",
+"w": "yes",
+"la": 49.246905,
+"lo": 16.672978
+},
+{
+"i": "w164248345",
+"n": "Jet Restaurant",
+"s": "Turistický cíl",
+"o": "Chvalovice",
+"w": "yes",
+"la": 48.764301,
+"lo": 16.06529
+},
+{
+"i": "n8191674111",
+"n": "Diváky",
+"s": "Knihovna",
+"o": "Diváky",
+"w": "no",
+"la": 48.989366,
+"lo": 16.78781
+},
+{
+"i": "n2142222152",
+"n": "Knihovna",
+"s": "Knihovna",
+"o": "Doubravice nad Svitavou",
+"w": "yes",
+"la": 49.440155,
+"lo": 16.624397
+},
+{
+"i": "n8066512483",
+"n": "Hrabůvka",
+"s": "Knihovna",
+"o": "Habrůvka",
+"w": "no",
+"la": 49.304055,
+"lo": 16.72299
+},
+{
+"i": "n3652889512",
+"n": "vyhlídka Devět mlýnů",
+"s": "Vyhlídka",
+"o": "Hnanice",
+"w": "no",
+"la": 48.810892,
+"lo": 15.980889
+},
+{
+"i": "n13016769665",
+"n": "Památník holokaustu Romů a Sintů na Moravě",
+"s": "Muzeum",
+"o": "Hodonín",
+"web": "https://www.rommuz.cz/cs/hodonin-u-kunstatu/",
+"w": "yes",
+"la": 49.507557,
+"lo": 16.420729
+},
+{
+"i": "w164425698",
+"n": "Hardegger Warte",
+"s": "Vyhlídka",
+"o": "Horní Břečkov",
+"w": "no",
+"la": 48.857428,
+"lo": 15.860988
+},
+{
+"i": "n2137019352",
+"n": "Rozhledna Hustopeče",
+"s": "Vyhlídka",
+"o": "Hustopeče",
+"w": "no",
+"la": 48.953472,
+"lo": 16.742622
+},
+{
+"i": "r20363038",
+"n": "Súsedská",
+"s": "Vyhlídka",
+"o": "Hýsly",
+"a": "Hýsly",
+"web": "https://www.susedska.cz/",
+"w": "no",
+"la": 49.026446,
+"lo": 17.191917
+},
+{
+"i": "n7474062443",
+"n": "Galerie Stříbský mlýn",
+"s": "Galerie",
+"o": "Ivančice",
+"web": "https://www.stribskymlyn.cz",
+"w": "no",
+"la": 49.092698,
+"lo": 16.401128
+},
+{
+"i": "n772470203",
+"n": "Malý Chlum",
+"s": "Vyhlídka",
+"o": "Krhov",
+"w": "no",
+"la": 49.451355,
+"lo": 16.585836
+},
+{
+"i": "n4938578133",
+"n": "Vyhlídková věž Lednická kolonáda",
+"s": "Vyhlídka",
+"o": "Lednice",
+"w": "no",
+"la": 48.792575,
+"lo": 16.818526
+},
+{
+"i": "n4324949387",
+"n": "Obecní knihovna",
+"s": "Knihovna",
+"o": "Lelekovice",
+"w": "no",
+"la": 49.291102,
+"lo": 16.57744
+},
+{
+"i": "w35431711",
+"n": "Kozí hrádek",
+"s": "Zřícenina",
+"o": "Mikulov",
+"w": "no",
+"la": 48.809539,
+"lo": 16.63805
+},
+{
+"i": "w34630659",
+"n": "Obecní knihovna Mokrá-Horákov",
+"s": "Knihovna",
+"o": "Mokrá-Horákov",
+"w": "yes",
+"la": 49.218007,
+"lo": 16.755282
+},
+{
+"i": "w461210370",
+"n": "Sokolovna",
+"s": "Komunitní centrum",
+"o": "Nedvědice",
+"w": "yes",
+"la": 49.455388,
+"lo": 16.337893
+},
+{
+"i": "n5358878710",
+"n": "Místní lidová knihovna",
+"s": "Knihovna",
+"o": "Nemotice",
+"w": "no",
+"la": 49.130791,
+"lo": 17.122025
+},
+{
+"i": "n7830509437",
+"n": "Obecní knihovna",
+"s": "Knihovna",
+"o": "Olomučany",
+"w": "no",
+"la": 49.331094,
+"lo": 16.670964
+},
+{
+"i": "n4295036108",
+"n": "Archeopark Pavlov",
+"s": "Muzeum",
+"o": "Pavlov",
+"a": "23. dubna 264",
+"web": "https://www.archeoparkpavlov.cz/",
+"w": "yes",
+"la": 48.877196,
+"lo": 16.674734
+},
+{
+"i": "n6037677098",
+"n": "Obecní knihovna",
+"s": "Knihovna",
+"o": "Pozořice",
+"w": "limited",
+"la": 49.208513,
+"lo": 16.788528
+},
+{
+"i": "w106904616",
+"n": "Mohyla míru",
+"s": "Muzeum",
+"o": "Prace",
+"a": "Prace 200",
+"w": "yes",
+"la": 49.128041,
+"lo": 16.762955
+},
+{
+"i": "n6074421258",
+"n": "Podhorácké muzeum Předklášteří",
+"s": "Muzeum",
+"o": "Předklášteří",
+"w": "limited",
+"la": 49.353101,
+"lo": 16.40001
+},
+{
+"i": "n9590549414",
+"n": "Knihovna",
+"s": "Knihovna",
+"o": "Rozdrojovice",
+"w": "yes",
+"la": 49.254868,
+"lo": 16.510957
+},
+{
+"i": "w681312809",
+"n": "Klucanina rozhledna",
+"s": "Vyhlídka",
+"o": "Tišnov",
+"w": "no",
+"la": 49.346725,
+"lo": 16.440495
+},
+{
+"i": "n4742612344",
+"n": "Muzeum včelařství Moravského krasu",
+"s": "Muzeum",
+"o": "Vavřinec",
+"web": "https://www.vavrinec.cz/muzeum-vcelarstvi/",
+"w": "yes",
+"la": 49.393515,
+"lo": 16.706733
+},
+{
+"i": "n6942758685",
+"n": "Divadlo Prkno",
+"s": "Divadlo",
+"o": "Veverská Bítýška",
+"a": "Pavla Perky 390",
+"web": "https://www.prkno.net/",
+"w": "limited",
+"la": 49.276785,
+"lo": 16.438817
+},
+{
+"i": "n388230163",
+"n": "Dolní můstek",
+"s": "Vyhlídka",
+"o": "Vilémovice",
+"w": "no",
+"la": 49.373656,
+"lo": 16.729199
+},
+{
+"i": "n918306251",
+"n": "Horní můstek",
+"s": "Vyhlídka",
+"o": "Vilémovice",
+"w": "yes",
+"la": 49.373142,
+"lo": 16.729316
+},
+{
+"i": "n593915715",
+"n": "Kino",
+"s": "Kino",
+"o": "Vracov",
+"w": "limited",
+"la": 48.979621,
+"lo": 17.214643
+},
+{
+"i": "n593915716",
+"n": "Knihovna",
+"s": "Knihovna",
+"o": "Vracov",
+"web": "https://www.mestovracov.cz/104-mestska-knihovna-vracov",
+"w": "limited",
+"la": 48.979347,
+"lo": 17.217878
+},
+{
+"i": "n593915718",
+"n": "Kulturní dům",
+"s": "Komunitní centrum",
+"o": "Vracov",
+"web": "https://www.kulturavracov.cz/",
+"w": "limited",
+"la": 48.979767,
+"lo": 17.21471
+},
+{
+"i": "n12438778232",
+"n": "Muzeum Železnic Vracov",
+"s": "Muzeum",
+"o": "Vracov",
+"web": "https://www.mestovracov.cz/en/410-railway-museum",
+"w": "no",
+"la": 48.979593,
+"lo": 17.217507
+},
+{
+"i": "n12463253340",
+"n": "Vracovské letní kino",
+"s": "Kino",
+"o": "Vracov",
+"web": "https://www.mestovracov.cz/103-kino-vracov",
+"w": "yes",
+"la": 48.979342,
+"lo": 17.218018
+},
+{
+"i": "w818859681",
+"n": "Železnice 600",
+"s": "Zábavní park",
+"o": "Vracov",
+"web": "https://www.zeleznice600.cz",
+"w": "limited",
+"la": 48.970871,
+"lo": 17.216224
+},
+{
+"i": "n6898265457",
+"n": "Vlčí jáma",
+"s": "Turistický cíl",
+"o": "Znojmo",
+"w": "limited",
+"t": "no",
+"la": 48.85677,
+"lo": 16.011857
+},
+{
+"i": "n11345087114",
+"n": "Znojemské podzemí",
+"s": "Muzeum",
+"o": "Znojmo",
+"web": "https://www.znojemskabeseda.cz/turismus/znojemske-podzemi",
+"w": "no",
+"t": "limited",
+"la": 48.855838,
+"lo": 16.049229
+},
+{
+"i": "w71804348",
+"n": "rotunda sv. Kateřiny",
+"s": "Turistický cíl",
+"o": "Znojmo",
+"w": "no",
+"la": 48.855414,
+"lo": 16.043534
+},
+{
+"i": "n6288171120",
+"n": "SHM Klub Újezd u Brna, z. s.",
+"s": "Komunitní centrum",
+"o": "Újezd u Brna",
+"a": "Masarykova 38",
+"web": "https://ujezd.shm.cz/",
+"w": "limited",
+"la": 49.103981,
+"lo": 16.756791
+},
+{
+"i": "n6496302786",
+"n": "Obecní knihovna Čebín",
+"s": "Knihovna",
+"o": "Čebín",
+"w": "yes",
+"la": 49.312426,
+"lo": 16.478542
+},
+{
+"i": "w1484115600",
+"n": "Čebínka",
+"s": "Vyhlídka",
+"o": "Čebín",
+"w": "no",
+"la": 49.319899,
+"lo": 16.484703
+},
+{
+"i": "n10652476935",
+"n": "Pohádková výstava",
+"s": "Muzeum",
+"o": "Šakvice",
+"web": "https://www.pohadkoveloutky.cz",
+"w": "no",
+"la": 48.896872,
+"lo": 16.711826
+},
+{
+"i": "n6205757276",
+"n": "Malovaný sklep",
+"s": "Turistický cíl",
+"o": "Šatov",
+"w": "no",
+"la": 48.795507,
+"lo": 16.009549
+},
+{
+"i": "w94121682",
+"n": "Muzeum Brněnska",
+"s": "Muzeum",
+"o": "Šlapanice",
+"w": "no",
+"la": 49.169272,
+"lo": 16.727121
+},
+{
+"i": "n9400059673",
+"n": "Městská knihovna Šlapanice",
+"s": "Knihovna",
+"o": "Šlapanice",
+"web": "https://mestskaknihovna.slapanice.cz",
+"w": "yes",
+"la": 49.168934,
+"lo": 16.724379
+},
+{
+"i": "n11432989240",
+"n": "Obecní knihovna",
+"s": "Knihovna",
+"o": "Želešice",
+"w": "no",
+"la": 49.117435,
+"lo": 16.584152
+},
+{
+"i": "w319983942",
+"n": "Rozhledna Žernovník",
+"s": "Vyhlídka",
+"o": "Žernovník",
+"w": "no",
+"la": 49.405157,
+"lo": 16.540488
+}
+]

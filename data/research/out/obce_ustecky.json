@@ -1,0 +1,112 @@
+{
+ "task": "obce_ustecky",
+ "kraj": "Ústecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [],
+ "not_found": [
+  {
+   "osm_id": null,
+   "name": "Statutární město Ústí nad Labem",
+   "url": "https://www.usti.cz/cz/",
+   "reason": "Zrychlený režim (bez hledání nových míst). Sitemap webu (899 URL) neobsahuje stránku o veřejných WC ani o bezbariérovosti magistrátu; našel se jen Portál pro imobilní občany (viz sources)."
+  },
+  {
+   "osm_id": null,
+   "name": "Statutární město Most – veřejné WC „U Lva“",
+   "url": "https://www.mesto-most.cz/10572026-stavebni-upravy-wc-pod-pasazi-u-lva-v-moste/ds-8337",
+   "reason": "Web uvádí jen zakázky na správu, hydroizolaci a stavební úpravy veřejného WC pod pasáží U Lva; o bezbariérovosti ani Euroklíči nic neuvádí, proto nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Magistrát města Mostu",
+   "url": "https://www.mesto-most.cz/magistrat-bez-barier/ms-66692",
+   "reason": "Sekce Magistrát bez bariér uvádí jen služby (zapůjčení invalidního vozíku, venkovní digitální úřední deska, Tichá linka, 3D prohlídka magistrátu na Matterportu), ne parametry vstupu/WC; nová místa se v zrychleném režimu nepřidávají."
+  },
+  {
+   "osm_id": null,
+   "name": "Statutární město Děčín",
+   "url": "https://www.mmdecin.cz/pro-osoby-zdravotne-postizene",
+   "reason": "Web nemá funkční sitemap; stránka Pro osoby zdravotně postižené obsahuje jen adresář organizací (viz sources), nic o veřejných WC ani bezbariérovosti magistrátu."
+  },
+  {
+   "osm_id": null,
+   "name": "Statutární město Teplice",
+   "url": "https://www.teplice.cz/",
+   "reason": "V sitemap (5864 URL) nic o bezbariérových veřejných WC ani radnici; jen článek o připravované mapě Teplice bez bariér (viz sources)."
+  },
+  {
+   "osm_id": null,
+   "name": "Statutární město Chomutov",
+   "url": "https://www.chomutov.cz/",
+   "reason": "Web nemá dostupnou sitemap a úvodní stránka nemá odkazy k přístupnosti, WC ani OZP; hledání běží jen přes JavaScript."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Litvínov – veřejné toalety Valdštejnská",
+   "url": "https://www.mulitvinov.cz/verejne-toalety-zari-cistotou/d-445930",
+   "reason": "Tisková zpráva (30. 4. 2014) uvádí jen opravu toalet v ul. Valdštejnská a poplatek 5 Kč; o bezbariérovosti nic. Stránka „Městský úřad bude bezbariérový“ (d-472458) z sitemap vrací 404."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Ústecký krajský plán vyrovnávání příležitostí pro OZP 2026–2030",
+   "url": "https://www.kr-ustecky.cz/ustecky-krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim-2026-2030",
+   "note": "PDF https://www.kr-ustecky.cz/file/2840216 (aktualizace 16. 12. 2025). Oblast 2 Přístupnost staveb, dopravy a komunikací: opatření 2.1.1 spolupráce s odbornými organizacemi na přístupnosti staveb financovaných krajem a obcemi; 2.1.3 obnovit soutěž „Bezbariérová stavba Ústeckého kraje“; 2.2.4 dotačně podporovat rozšiřování eurozámků a euroklíčů; 2.4.2 označování nízkopodlažních vozidel a bezbariérových zastávek v jízdních řádech; 8.3.1 přehled bezbariérových středních škol na webu kraje; 13.1.1 vyžadovat bezbariérové toalety i na venkovních kulturních akcích a eurozámky. Samostatné opatření na mapování přístupnosti (atlas) v plánu není."
+  },
+  {
+   "title": "Euroklíč v Ústeckém kraji (leták)",
+   "url": "https://www.kr-ustecky.cz/euroklic-v-usteckem-kraji",
+   "note": "PDF https://www.kr-ustecky.cz/file/2385407 (aktualizace 22. 8. 2024). Projekt realizuje NRZP ČR s podporou kraje a MMR; databáze míst s eurozámkem odkazuje na www.euroklic.cz. Seznam konkrétních míst v letáku není."
+  },
+  {
+   "title": "Krajský úřad – Bezbariérovost / Bezbariérovost měst, zařízení",
+   "url": "https://www.kr-ustecky.cz/bezbarierovost-mest-zarizeni",
+   "note": "Rozcestník kraje: Brožura vozíčkářských tras (https://www.kr-ustecky.cz/brozura-vozickarskych-tras), Vozíčkářské trasy KČT, bezbariérové úpravy bytů, dotační program NRZP – mobilita. Licence neuvedena."
+  },
+  {
+   "title": "Ústí nad Labem – Portál pro imobilní občany",
+   "url": "https://www.usti.cz/cz/dopravni-portal/portal-pro-imobilni-obcany/",
+   "note": "Městský webový portál s mapou bezbariérových přístupů a tras a překážek na nich; vznikl v projektu CIVITAS Archimedes; leták /files/civitas/bezbari-letak-4.pdf. Licence neuvedena."
+  },
+  {
+   "title": "Teplice bez bariér – připravovaný mapový portál",
+   "url": "https://www.teplice.cz/teplice-bez-barier-interaktivni-mapa-usnadni-pohyb-po-meste-vozickarum-seniorum-i-rodicum",
+   "note": "Město podle článku připravuje interaktivní mapu (bezbariérové trasy, zastávky MHD, úřady, školy, zdravotnictví, lázně, s fotkami), mapuje ji vozíčkář s odborem dopravy. Odkaz na hotový portál ani licence uvedeny nejsou."
+  },
+  {
+   "title": "Most – Magistrát bez bariér",
+   "url": "https://www.mesto-most.cz/magistrat-bez-barier/ms-66692",
+   "note": "Služby magistrátu pro OZP (zapůjčení invalidního vozíku, Tichá linka, akustický majáček, Pojízdný úřad) a 3D prohlídka budovy https://my.matterport.com/show/?m=DSZjARMikPX. Licence neuvedena."
+  },
+  {
+   "title": "Most – Koncepce pěší dopravy a řešení bezbariérové prostupnosti území",
+   "url": "https://www.mesto-most.cz/koncepce-pesi-dopravy-a-reseni-bezbarierove-prostupnosti-uzemi-statutarniho-mesta-mostu/ms-93507",
+   "note": "Nalezeno v sitemap webu města; obsah neotevřen (zrychlený režim)."
+  },
+  {
+   "title": "Sportovní sdružení vozíčkářů v Mostě, z.s.",
+   "url": "http://www.ssvm.cz/",
+   "note": "Organizace vozíčkářů (florbal, handbike, stolní tenis); uvedeno na https://www.mesto-most.cz/sportovni-sdruzeni-vozickaru-v-moste-z-s/os-1733."
+  },
+  {
+   "title": "Asociace vozíčkářů a zdravotně i mentálně postižených v ČR, z. s. (Děčín)",
+   "url": "http://www.avaz.wz.cz",
+   "note": "Dvořákova 1331/20, Děčín II; uvedeno na https://www.mmdecin.cz/pro-osoby-zdravotne-postizene."
+  },
+  {
+   "title": "NIPI bezbariérové prostředí, o.p.s. (Děčín)",
+   "url": "https://www.nipi-bp.cz",
+   "note": "Mírové náměstí 1175/5, Děčín IV; uvedeno na https://www.mmdecin.cz/pro-osoby-zdravotne-postizene."
+  },
+  {
+   "title": "Centrum pro zdravotně postižené Ústeckého kraje o.p.s.",
+   "url": "https://www.mesto-most.cz/centrum-pro-zdravotne-postizene-usteckeho-kraje-o-p-s/os-1516",
+   "note": "Uvedeno v adresáři organizací města Most (stránka neotevřena, vlastní web nezjištěn)."
+  },
+  {
+   "title": "NRZP ČR – krajská rada Ústeckého kraje (NRZP ÚK)",
+   "url": "https://www.kr-ustecky.cz/ustecky-krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim-2026-2030",
+   "note": "Krajský plán (opatření 12.1.2) počítá s jednáními NRZP ÚK v budově kraje; vlastní web neuveden."
+  }
+ ]
+}

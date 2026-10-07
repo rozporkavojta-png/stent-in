@@ -1,0 +1,1133 @@
+{
+ "task": "cile_stredocesky",
+ "kraj": "Středočeský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n6881201550",
+   "name": "Památník Jana Palacha",
+   "obec": "Všetaty",
+   "address": "Smetanova 337",
+   "lat": 50.284713,
+   "lng": 14.591442,
+   "category": "pamatky",
+   "source_url": "https://www.nm.cz/navstivte-nas/objekty/pamatnik-jana-palacha-ve-vsetatech",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Objekt je podle Národního muzea bezbariérově přístupný; vstup s kočárkem je možný.",
+    "parkovani": "Parkování v přilehlých ulicích."
+   },
+   "measurements": [],
+   "evidence_quote": "Objekt je bezbariérově přístupný."
+  },
+  {
+   "osm_id": "n638426540",
+   "name": "Středočeské muzeum v Roztokách u Prahy",
+   "obec": "Roztoky",
+   "address": "Zámek 1",
+   "lat": 50.158198,
+   "lng": 14.399411,
+   "category": "pamatky",
+   "source_url": "https://www.muzeum-roztoky.cz/prakticke-informace",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup jen do části areálu; specifické potřeby doporučují ohlásit předem (individuální domluva).",
+    "wc": "Bezbariérové toalety na nádvoří zámku a v muzejní kavárně."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbariérový vstup do části areálu"
+  },
+  {
+   "osm_id": "w331353895",
+   "name": "Národní zemědělské muzeum Čáslav",
+   "obec": "Čáslav",
+   "address": "Jeníkovská 1762",
+   "lat": 49.898972,
+   "lng": 15.411392,
+   "category": "pamatky",
+   "source_url": "https://www.nzm.cz/caslav",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Uvedeno jako bezbariérově přístupný objekt; vstup s kočárkem.",
+    "parkovani": "Parkování pro návštěvníky ZTP a ZTP/P."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérově přístupný objekt"
+  },
+  {
+   "osm_id": "n2082532543",
+   "name": "Koněpruské jeskyně",
+   "obec": "Koněprusy",
+   "address": "",
+   "lat": 49.916127,
+   "lng": 14.068779,
+   "category": "pamatky",
+   "source_url": "https://konepruske.caves.cz/prohlidka",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Ke vchodu do jeskyně se jde po schodišti ve skalní stěně (od pokladny cca 200 m).",
+    "jine": "Jeskyně není bezbariérová, prohlídka se nedoporučuje lidem s pohybovými problémy; na trase mj. 83 stupňů točitého schodiště."
+   },
+   "measurements": [
+    {
+     "co": "točité schodiště do Mincovny",
+     "hodnota": 83,
+     "jednotka": "schodů"
+    }
+   ],
+   "evidence_quote": "Jeskyně není bezbariérová"
+  },
+  {
+   "osm_id": "w136609641",
+   "name": "Plzeňská brána",
+   "obec": "Beroun",
+   "address": "Husovo náměstí",
+   "lat": 49.963159,
+   "lng": 14.071048,
+   "category": "pamatky",
+   "source_url": "http://muzeum-beroun.cz/05/2011/brana/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "Do expozice v 1. patře se vystupuje točitým schodištěm (tzv. šnek); do horních pater vede středověké schodiště ve zdi."
+   },
+   "measurements": [],
+   "evidence_quote": "točité schodiště tzv. šnek, kterým se dnes vystupuje do 1. patra"
+  },
+  {
+   "osm_id": "n2974359462",
+   "name": "Centrum Na Fialce (kino)",
+   "obec": "Říčany",
+   "address": "",
+   "lat": 49.995163,
+   "lng": 14.661892,
+   "category": "kultura",
+   "source_url": "https://www.nafialce.cz/informace",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "parkovani": "Řádně označené auto ZTP parkuje na parkovišti centra zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "pokud máte řádně označené auto, je pro vás parkování zdarma"
+  },
+  {
+   "osm_id": null,
+   "name": "Hrad Karlštejn",
+   "obec": "Karlštejn",
+   "address": "",
+   "lat": 49.9400973,
+   "lng": 14.1874266,
+   "category": "pamatky",
+   "source_url": "https://www.hrad-karlstejn.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bez asistence lze navštívit jen hlavní nádvoří; expozice jen s doprovodem, který vozík vynese/snese mezi patry; prohlídku domluvit předem. Cesta k nádvoří mírně stoupá, vystupuje skála.",
+    "vytah": "Hrad nemá žádný výtah.",
+    "wc": "Bezbariérová toaleta u vstupu do Purkrabství na úrovni hlavního nádvoří; je zamčená, klíč na pokladně/u personálu.",
+    "parkovani": "Vyhrazené parkoviště pro osoby s tělesným znevýhodněním cca 300 m od hlavní brány (asfalt, téměř rovina); označené vozy smí projet pěší zónou.",
+    "jine": "I. okruh 192 schodů, II. okruh 459 schodů, ke studni 73 schodů; schody velmi vysoké. Souřadnice = rozcestník Karlštejn (hrad) z Nominatim."
+   },
+   "measurements": [
+    {
+     "co": "schody na I. okruhu",
+     "hodnota": 192,
+     "jednotka": "schodů"
+    },
+    {
+     "co": "schody na II. okruhu",
+     "hodnota": 459,
+     "jednotka": "schodů"
+    },
+    {
+     "co": "vzdálenost vyhrazeného parkoviště od brány",
+     "hodnota": 300,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "možno navštívit bohužel pouze hlavní nádvoří"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Konopiště",
+   "obec": "Benešov",
+   "address": "",
+   "lat": 49.7795753,
+   "lng": 14.6561034,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-konopiste.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "1. okruh: široké schodiště cca 40 stupňů, trasa v 1. patře; 2. okruh po úzkých schodištích, nevhodný pro vozíčkáře; 3. okruh výstup do 3. patra; 4. okruh s mnoha schodišti.",
+    "wc": "WC s bezbariérovým přístupem halou před prodejnou vstupenek."
+   },
+   "measurements": [
+    {
+     "co": "schodiště na 1. okruh",
+     "hodnota": 40,
+     "jednotka": "stupňů (cca)"
+    }
+   ],
+   "evidence_quote": "není vhodné pro vozíčkáře"
+  },
+  {
+   "osm_id": null,
+   "name": "Hrad Křivoklát",
+   "obec": "Křivoklát",
+   "address": "",
+   "lat": 50.0377742,
+   "lng": 13.8723141,
+   "category": "pamatky",
+   "source_url": "https://www.hrad-krivoklat.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup jen na I. nádvoří, doporučena asistence další osoby. Prostory u II. nádvoří jsou 2–8 schodů pod jeho úrovní, do 1. patra úzké schodiště s 21 schody, schodiště bez zábradlí.",
+    "parkovani": "Hlavní parkoviště 400 m od hradního areálu."
+   },
+   "measurements": [
+    {
+     "co": "schodiště do 1. patra",
+     "hodnota": 21,
+     "jednotka": "schodů"
+    },
+    {
+     "co": "vzdálenost hlavního parkoviště",
+     "hodnota": 400,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Bezbariérový přístup je možný bohužel pouze na I. nádvoří"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Veltrusy",
+   "obec": "Veltrusy",
+   "address": "",
+   "lat": 50.2775379,
+   "lng": 14.329793,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-veltrusy.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Cesta od hlavní brány nerovná a nezpevněná; lepší je vjezd od autokempu Obora. Výstava Laboratorium bezbariérová; Rudolfův sál a přízemí SZ křídla s kaplí bezbariérové; zámecká restaurace bezbariérová.",
+    "wc": "Pokladna a WC s bezbariérovým přístupem; dámské i pánské toalety mají upravenou kabinu.",
+    "parkovani": "Vyhrazené parkoviště pro vozíčkáře uvnitř areálu cca 100 m od nádvoří (vjezd po domluvě se správou, nutné doklady).",
+    "vytah": "Okruh v 1. patře jen se schodolezem po předchozí domluvě (jen ruční vozík, max. 130 kg, rozchod kol max. 60 cm); na místě lze přesednout na jejich vozík."
+   },
+   "measurements": [
+    {
+     "co": "max. šířka vozíku pro schodolez (rozchod)",
+     "hodnota": 60,
+     "jednotka": "cm"
+    },
+    {
+     "co": "max. hmotnost osoby s vozíkem na schodolezu",
+     "hodnota": 130,
+     "jednotka": "kg"
+    },
+    {
+     "co": "vzdálenost vyhrazeného parkoviště od nádvoří",
+     "hodnota": 100,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Schodiště je možné překonat pomocí schodolezu"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Žleby",
+   "obec": "Žleby",
+   "address": "Zámecká",
+   "lat": 49.8876997,
+   "lng": 15.4833697,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-zleby.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Zámek nemá bezbariérový přístup; vybrané části jen po předchozí dohodě (povinná rezervace).",
+    "wc": "Bezbariérové WC v zámecké kavárně."
+   },
+   "measurements": [],
+   "evidence_quote": "Zámek Žleby nemá bezbariérový přístup."
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Mnichovo Hradiště",
+   "obec": "Mnichovo Hradiště",
+   "address": "",
+   "lat": 50.5275857,
+   "lng": 14.9707736,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-mnichovohradiste.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Pro vozíčkáře přístupný jen s doprovodem (vynesení do 1. patra); vozíkem samostatně jen zámecký park. 1. a 2. okruh 25 schodů s madly, 3. okruh 3 schody; prahy 2–9 cm. Do parku vedou 2 bezbariérové brány (Orlí, Vozová).",
+    "wc": "Bezbariérová toaleta v přízemí, přístupná během prohlídek; dveře kabinky 85 cm, madla, sedátko 45 cm.",
+    "parkovani": "Vyhrazená místa pro řidiče s omezenou schopností pohybu; od parkoviště není nutný doprovod.",
+    "vytah": "Výtah není."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří kabinky WC",
+     "hodnota": 85,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří předsíně WC",
+     "hodnota": 110,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška sedátka WC",
+     "hodnota": 45,
+     "jednotka": "cm"
+    },
+    {
+     "co": "nejvyšší práh v interiéru",
+     "hodnota": 9,
+     "jednotka": "cm"
+    },
+    {
+     "co": "schody 1. a 2. okruhu",
+     "hodnota": 25,
+     "jednotka": "schodů"
+    }
+   ],
+   "evidence_quote": "zcela přístupná pouze s doprovodem"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Březnice",
+   "obec": "Březnice",
+   "address": "",
+   "lat": 49.557568,
+   "lng": 13.9558059,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-breznice.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Interiéry nejsou bezbariérově přístupné (schody nelze obejít, nutné vynesení); venkovní areál (parkánová a bylinková zahrada, anglický park) je bezbariérový.",
+    "wc": "Upravená toaleta pro vozíčkáře není, ke standardní vedou 4 schody; kabina 130 × 90 cm, dveře 60 cm.",
+    "jine": "Podrobný dotazník na webu je podepsán datem 13. 12. 2007 – může být zastaralý."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří kabiny WC",
+     "hodnota": 60,
+     "jednotka": "cm"
+    },
+    {
+     "co": "schody u vstupu do objektu",
+     "hodnota": 14,
+     "jednotka": "schodů"
+    }
+   ],
+   "evidence_quote": "Venkovní areál zámku (parkánová zahrada, bylinková zahrada a anglický park) jsou bezbariérově přístupné."
+  },
+  {
+   "osm_id": null,
+   "name": "Hrad Točník",
+   "obec": "Točník",
+   "address": "",
+   "lat": 49.8907176,
+   "lng": 13.8873905,
+   "category": "pamatky",
+   "source_url": "https://www.hrad-tocnik.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "wc": "Na hradě je upravený záchod pro vozíčkáře.",
+    "vstup": "Královský palác je přístupný jen po schodišti; celkově náročný terén.",
+    "parkovani": "Pro osoby tělesně postižené je povolen vjezd k hradu."
+   },
+   "measurements": [],
+   "evidence_quote": "na hradě je upravený záchod pro vozíčkáře"
+  },
+  {
+   "osm_id": null,
+   "name": "Sázavský klášter",
+   "obec": "Sázava",
+   "address": "",
+   "lat": 49.8777466,
+   "lng": 14.8973214,
+   "category": "pamatky",
+   "source_url": "https://www.klaster-sazava.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Nádvoří a severní zahrada přístupné, s mírnými nerovnostmi a kamínky; v interiérech občas 2–3 schůdky (zvládnutelné s drobnou pomocí).",
+    "wc": "WC NPÚ na nádvoří nejsou bezbariérová; bezbariérová WC farnosti v areálu (v otevírací době chrámu sv. Prokopa a při bohoslužbách)."
+   },
+   "measurements": [],
+   "evidence_quote": "v interiérech občas 2–3 schůdky"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Hořovice",
+   "obec": "Hořovice",
+   "address": "Vrbnovská 22",
+   "lat": 49.8376141,
+   "lng": 13.9096547,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-horovice.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Zámecké interiéry v 1. patře nejsou bezbariérové; výstava her a hraček v přízemí přístupná s dopomocí přes jeden schod; park bez omezení (mlatové cesty).",
+    "wc": "Na zámku není bezbariérové WC."
+   },
+   "measurements": [],
+   "evidence_quote": "Zámecké interiéry se nacházejí v prvním patře a nejsou bezbariérové."
+  },
+  {
+   "osm_id": null,
+   "name": "GASK – Galerie Středočeského kraje (Jezuitská kolej)",
+   "obec": "Kutná Hora",
+   "address": "Barborská 51–53",
+   "lat": 49.9464002,
+   "lng": 15.2635138,
+   "category": "kultura",
+   "source_url": "https://gask.cz/navsteva/bezbarierovost/pristupnost-galerie/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérově přístupná kromě Severní věže a konferenčního sálu v podkroví Jižní věže; bezbariérový vstup ze Smíškovy ulice a z nádvoří (zvonek pro vozíčkáře); vstup z Barborské má dva schody.",
+    "vytah": "Bezbariérové výtahy ve všech patrech obou křídel.",
+    "wc": "Bezbariérové toalety po celé budově.",
+    "parkovani": "Místa pro ZTP a ZTP/P před budovou a na nádvoří (dlažba) – https://gask.cz/navsteva/bezbarierovost/parkovani-a-doprava/",
+    "jine": "V šatně zdarma zapůjčení invalidního vozíku."
+   },
+   "measurements": [],
+   "evidence_quote": "Ve všech patrech v obou křídlech budovy fungují bezbariérové výtahy."
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum Památníku Lidice",
+   "obec": "Lidice",
+   "address": "",
+   "lat": 50.1445031,
+   "lng": 14.2008476,
+   "category": "pamatky",
+   "source_url": "https://www.lidice-memorial.cz/fileadmin/user_upload/doku/pristupna_kultura/Pristupnost_budov_komplet.pdf",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hlavní vchod bezbariérový (po značené objízdné trase pro ZTP), za dveřmi bez schodů; expozice a veřejné prostory přízemní.",
+    "wc": "Bezbariérové WC, v otevírací době odemčené.",
+    "parkovani": "U objektu vyhrazené parkovací místo; cesta ke vstupu sjízdná.",
+    "jine": "Turistický portál uvádí na cestě od parkoviště (cca 150 m) krátký prudší nájezd a úsek se sklonem přes 10 % – pomoc může být potřeba (https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/)."
+   },
+   "measurements": [
+    {
+     "co": "délka cesty od parkoviště k muzeu (dle strednicechy.cz)",
+     "hodnota": 150,
+     "jednotka": "m"
+    },
+    {
+     "co": "sklon úseku cesty (dle strednicechy.cz)",
+     "hodnota": 10,
+     "jednotka": "% (přes)"
+    }
+   ],
+   "evidence_quote": "hlavní vchod je bezbariérový"
+  },
+  {
+   "osm_id": null,
+   "name": "Lidická galerie",
+   "obec": "Lidice",
+   "address": "Tokajická",
+   "lat": 50.1431505,
+   "lng": 14.1892333,
+   "category": "kultura",
+   "source_url": "https://www.lidice-memorial.cz/fileadmin/user_upload/doku/pristupna_kultura/Pristupnost_budov_komplet.pdf",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "K hlavnímu vchodu vedou schody; označený postranní bezbariérový vchod se zvonkem dosažitelným z vozíku.",
+    "vytah": "Všechny schody lze zdolat výtahem či plošinou; do výtahu se vejde vozík.",
+    "wc": "Bezbariérové WC, není uzamčeno.",
+    "parkovani": "PDF Památníku uvádí vyhrazené místo u objektu; turistický portál naopak uvádí, že vyhrazené stání naproti galerii chybí a cesta vede po kostkách (https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/)."
+   },
+   "measurements": [],
+   "evidence_quote": "Budova disponuje postranním bezbariérovým vchodem: ANO"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Zruč nad Sázavou",
+   "obec": "Zruč nad Sázavou",
+   "address": "",
+   "lat": 49.744363,
+   "lng": 15.1016205,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-zruc.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Od parkoviště ve Zručském dvoře (cca 200 m) bezbariérový přístup do zámku i infocentra.",
+    "jine": "Turistický portál: zámek i hlavní expozice dostupné výtahem, upravená toaleta v areálu, park se zpevněnými cestami, 1 vyhrazené stání (https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/)."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbarierový přístup do zámku i infocentra"
+  },
+  {
+   "osm_id": "w77495530",
+   "name": "Škoda Muzeum",
+   "obec": "Mladá Boleslav",
+   "address": "",
+   "lat": 50.418537,
+   "lng": 14.914004,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hlavní expozice rozlehlý prostor bez převýšení; vyhlídková lávka (schody) a mezipatro nejsou bezbariérové; průchody většinou dost široké.",
+    "vytah": "Do části prostor v 1. patře výtah, jen v doprovodu zaměstnance.",
+    "wc": "Dvě upravené toalety."
+   },
+   "measurements": [],
+   "evidence_quote": "Do části výstavních prostor v prvním patře vede výtah"
+  },
+  {
+   "osm_id": null,
+   "name": "Letecké muzeum Metoděje Vlacha",
+   "obec": "Mladá Boleslav",
+   "address": "Regnerova 114",
+   "lat": 50.4018138,
+   "lng": 14.8995997,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Větší část interiéru dobře přístupná; turniket u pokladny lze objet po otevření vedlejšího křídla dveří. Restaurace Hangár Café přístupná z muzea nebo bočním vstupem přes terasu."
+   },
+   "measurements": [],
+   "evidence_quote": "Větší část interiéru je dobře přístupná"
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum hraček a zámecká zahrada Benátky nad Jizerou",
+   "obec": "Benátky nad Jizerou",
+   "address": "Zámek",
+   "lat": 50.2907828,
+   "lng": 14.8229818,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hlavní část Muzea hraček dobře dostupná; menší druhá část přes nádvoří má vysoký práh a dva schody. Zahrada převážně rovinatá s mlatem, ale kostky a cca 15m prudší stoupání od parkoviště – vhodná pomoc.",
+    "wc": "Upravená toaleta na nádvoří na euroklíč."
+   },
+   "measurements": [
+    {
+     "co": "prudší stoupání od parkoviště",
+     "hodnota": 15,
+     "jednotka": "m (délka, přibližně)"
+    }
+   ],
+   "evidence_quote": "upravená toaleta přístupná na euroklíč"
+  },
+  {
+   "osm_id": null,
+   "name": "Libenského kolonáda a lázeňský park",
+   "obec": "Poděbrady",
+   "address": "nám. T. G. Masaryka",
+   "lat": 50.1468195,
+   "lng": 15.120931,
+   "category": "priroda",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Kolonáda, sloupová promenáda i lázeňský park dobře přístupné, bez zásadních převýšení."
+   },
+   "measurements": [],
+   "evidence_quote": "dobře přístupné a bez zásadních převýšení"
+  },
+  {
+   "osm_id": null,
+   "name": "Slavníkovské hradiště Libice nad Cidlinou",
+   "obec": "Libice nad Cidlinou",
+   "address": "Ke Hradišti",
+   "lat": 50.1270453,
+   "lng": 15.1726398,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Asfaltová cesta vede až k základům paláce, kostela a brány."
+   },
+   "measurements": [],
+   "evidence_quote": "vede asfaltová cesta až k zachovaným základům paláce"
+  },
+  {
+   "osm_id": null,
+   "name": "Polabské národopisné muzeum (skanzen)",
+   "obec": "Přerov nad Labem",
+   "address": "Pod Skanzenem",
+   "lat": 50.1611087,
+   "lng": 14.8243903,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Povrchy štěrk, trávník, kamenná dlažba; do některých staveb bez schodu, do jiných přes jedno převýšení; k zadní části a toaletě výraznější sklony – vhodný doprovod.",
+    "wc": "Upravená toaleta v zadní části areálu."
+   },
+   "measurements": [],
+   "evidence_quote": "pro člověka na mechanickém vozíku je vhodný doprovod"
+  },
+  {
+   "osm_id": null,
+   "name": "Regionální muzeum Mělník (expozice kočárků)",
+   "obec": "Mělník",
+   "address": "náměstí Míru 54/20",
+   "lat": 50.3526688,
+   "lng": 14.4745905,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hlavní historická budova není plně přístupná; expozice kočárků v Ostrůhově ulici – po ohlášení doprovod zaměstnanců, u vstupu k pokladně mobilní nájezd.",
+    "wc": "Menší upravená toaleta na euroklíč v muzejní kavárně."
+   },
+   "measurements": [],
+   "evidence_quote": "Hlavní historická budova není plně přístupná"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Mělník",
+   "obec": "Mělník",
+   "address": "Svatováclavská",
+   "lat": 50.350831,
+   "lng": 14.4730617,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Přístupná část prohlídky, nutné se ohlásit předem; vyšší prahy a jednotlivé schody – nutná pomoc doprovodu.",
+    "vytah": "Výtah k hlavní části expozice ve 3. patře.",
+    "wc": "Zázemí u kavárny není plnohodnotná bezbariérová toaleta."
+   },
+   "measurements": [
+    {
+     "co": "nejužší dveře (pracovna)",
+     "hodnota": 75,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Nejužší dveře vedou do pracovny a mají šířku 75 centimetrů."
+  },
+  {
+   "osm_id": null,
+   "name": "Areál Sletiště Kladno",
+   "obec": "Kladno",
+   "address": "",
+   "lat": 50.1348668,
+   "lng": 14.0894549,
+   "category": "sport",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hlavní plochy přístupné po betonové dlažbě.",
+    "wc": "V areálu upravená toaleta."
+   },
+   "measurements": [],
+   "evidence_quote": "Hlavní plochy jsou přístupné po betonové dlažbě"
+  },
+  {
+   "osm_id": null,
+   "name": "Vlastivědné muzeum ve Slaném",
+   "obec": "Slaný",
+   "address": "Vinařického",
+   "lat": 50.230437,
+   "lng": 14.088027,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Budova dostala výtah, který zpřístupňuje expozice i sezónní výstavy."
+   },
+   "measurements": [],
+   "evidence_quote": "Historická budova dostala výtah"
+  },
+  {
+   "osm_id": null,
+   "name": "Kumpánova zahrada",
+   "obec": "Slaný",
+   "address": "",
+   "lat": 50.2249244,
+   "lng": 14.0792059,
+   "category": "priroda",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Rovinatý terén a pohodlné cesty.",
+    "wc": "V parku chybí toaleta upravená pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "chybí toaleta upravená pro návštěvníky na vozíku"
+  },
+  {
+   "osm_id": "n2494884018",
+   "name": "Muzeum T. G. Masaryka Lány",
+   "obec": "Lány",
+   "address": "",
+   "lat": 50.12605,
+   "lng": 13.955147,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Plně bezbariérové, pohodlně průjezdné.",
+    "wc": "Upravená toaleta."
+   },
+   "measurements": [],
+   "evidence_quote": "Muzeum T. G. Masaryka je plně bezbariérové"
+  },
+  {
+   "osm_id": null,
+   "name": "Pamětní síň Alice G. Masarykové a Českého červeného kříže",
+   "obec": "Lány",
+   "address": "U Špýcharu",
+   "lat": 50.126553,
+   "lng": 13.9527179,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Do přízemí vede plošina; přístupná zahrada s posezením. Vyšší podlaží ověřit předem."
+   },
+   "measurements": [],
+   "evidence_quote": "Do přízemí vede plošina"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámecký park a zámek Lány",
+   "obec": "Lány",
+   "address": "Zámecká",
+   "lat": 50.1239136,
+   "lng": 13.9540389,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Do parku po zpevněných cestách. Prohlídka zámku jen po rezervaci s upozorněním na omezenou mobilitu a s doprovodem; přístupná jen část reprezentačního patra.",
+    "vytah": "Výtah jen pro mechanický vozík.",
+    "wc": "V areálu parku upravené toalety."
+   },
+   "measurements": [],
+   "evidence_quote": "Výtah je určen pouze pro mechanický vozík"
+  },
+  {
+   "osm_id": null,
+   "name": "Průhonický park",
+   "obec": "Průhonice",
+   "address": "",
+   "lat": 49.9859888,
+   "lng": 14.5440223,
+   "category": "priroda",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Pokladna jen po schodech (vstupenku koupit online nebo ve vstupenkomatu); u vstupu krátký prudký kamenný nájezd. Nejpohodlnější je pravá mlatová cesta u zámku k rybníku; jinde hlína, kořeny, žlaby a sklony – vhodný doprovod."
+   },
+   "measurements": [],
+   "evidence_quote": "Pokladna je přístupná pouze po schodech"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Berchtold",
+   "obec": "Kunice (Vidovice)",
+   "address": "Hlavní",
+   "lat": 49.9288582,
+   "lng": 14.6674707,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Historická dlažba s mírnou nájezdovou rampou; v restauraci i muzeu dost místa; kvůli dlažbě vhodný doprovod.",
+    "vytah": "V budově výtah.",
+    "wc": "Upravená toaleta.",
+    "parkovani": "Jedno vyhrazené stání u hlavní silnice, parkování blíž zámku lze rezervovat.",
+    "pokoj": "Přizpůsobený hotelový pokoj."
+   },
+   "measurements": [],
+   "evidence_quote": "v budově funguje výtah a nechybí upravená toaleta"
+  },
+  {
+   "osm_id": null,
+   "name": "Svatá Hora",
+   "obec": "Příbram",
+   "address": "Svatohorské schody",
+   "lat": 49.6855415,
+   "lng": 14.0177484,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "Výškové úrovně pomáhají překonat dvě svislé plošiny.",
+    "wc": "V areálu upravená toaleta.",
+    "vstup": "Nerovné povrchy, ne vše dosažitelné bez pomoci."
+   },
+   "measurements": [],
+   "evidence_quote": "částečně dostupný objekt"
+  },
+  {
+   "osm_id": null,
+   "name": "Hornický skanzen Březové Hory – Ševčinský důl",
+   "obec": "Příbram",
+   "address": "Pod Kovárnami",
+   "lat": 49.6832701,
+   "lng": 13.9868346,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Lze navštívit venkovní areál, šachetní budovu, strojovnu a další vybrané expozice."
+   },
+   "measurements": [],
+   "evidence_quote": "venkovní areál, šachetní budovu, strojovnu i další vybrané expozice"
+  },
+  {
+   "osm_id": null,
+   "name": "Hornické muzeum Důl Anna",
+   "obec": "Příbram",
+   "address": "U Dolu Anna",
+   "lat": 49.687627,
+   "lng": 13.9941765,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Areál pro vozíčkáře poměrně dobře přístupný; v podzemí koleje a nerovný povrch – s mechanickým vozíkem vhodný zdatný doprovod.",
+    "wc": "Upravená toaleta.",
+    "jine": "Důlní vláček přizpůsobený pro nájezd vozíku."
+   },
+   "measurements": [],
+   "evidence_quote": "důlní vláček přizpůsobený pro nájezd vozíku"
+  },
+  {
+   "osm_id": null,
+   "name": "Vodácké muzeum",
+   "obec": "Zruč nad Sázavou",
+   "address": "Zámek",
+   "lat": 49.7448219,
+   "lng": 15.0993995,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Expozice v přízemí, široké uličky a místo pro otočení vozíku; nerovné kamenné dlaždice – vhodný doprovod.",
+    "wc": "Upravená toaleta poblíž zámku."
+   },
+   "measurements": [],
+   "evidence_quote": "nechybí prostor pro otočení vozíku"
+  },
+  {
+   "osm_id": null,
+   "name": "Vodní dům",
+   "obec": "Hulice",
+   "address": "",
+   "lat": 49.7185339,
+   "lng": 15.0862515,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vnitřní expozice i venkovní atrium bezbariérové.",
+    "parkovani": "Parkoviště přímo u objektu.",
+    "wc": "Upravená toaleta."
+   },
+   "measurements": [],
+   "evidence_quote": "Vnitřní expozice i venkovní atrium jsou bezbariérové"
+  },
+  {
+   "osm_id": null,
+   "name": "Včelí svět",
+   "obec": "Hulice",
+   "address": "",
+   "lat": 49.7094712,
+   "lng": 15.0858375,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vnitřní prostory navržené pro průjezd vozíkem.",
+    "vytah": "Do horního podlaží plošinový výtah – v době mapování nefungoval, ověřit před cestou."
+   },
+   "measurements": [],
+   "evidence_quote": "v době mapování nebyl funkční"
+  },
+  {
+   "osm_id": null,
+   "name": "Klášter sv. Františka z Assisi Votice",
+   "obec": "Votice",
+   "address": "Klášterní",
+   "lat": 49.6368911,
+   "lng": 14.6404108,
+   "category": "pamatky",
+   "source_url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Klášter bezbariérový, místnosti průjezdné bez prahů; cesta od parkoviště svažitá po kostkách – vhodný doprovod.",
+    "vytah": "Do patra vede výtah.",
+    "wc": "Prostorná upravená toaleta."
+   },
+   "measurements": [],
+   "evidence_quote": "Samotný klášter je bezbariérový, do patra vede výtah"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n4264726781",
+   "name": "Muzeum Českého krasu v Berouně",
+   "url": "http://muzeum-beroun.cz/info/",
+   "reason": "web nic o fyzické přístupnosti neuvádí (jen slevy ZTP)"
+  },
+  {
+   "osm_id": "n4264726780",
+   "name": "Geopark Barrandien",
+   "url": "http://muzeum-beroun.cz/09/2010/geopark/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2090996839",
+   "name": "Pamětní síň Oty Pavla",
+   "url": "http://otapavel.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w259373732",
+   "name": "TEPfactor",
+   "url": "https://www.tepfactor.cz/cze/faq/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1300548045",
+   "name": "Cesta mramoru",
+   "url": "https://www.cestamramoru.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w27389477",
+   "name": "Kokořín",
+   "url": "https://hrad-kokorin.cz/",
+   "reason": "web (úvod, ceník, kontakt) nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w161888753",
+   "name": "Kamenný dům (České muzeum stříbra)",
+   "url": "https://www.cms-kh.cz/informace-pro-navstevniky",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w161891251",
+   "name": "Tylův dům (České muzeum stříbra)",
+   "url": "https://www.cms-kh.cz/informace-pro-navstevniky",
+   "reason": "web nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1786225129",
+   "name": "České muzeum stříbra",
+   "url": "https://www.cms-kh.cz/oteviraci-doba-a-vstupne",
+   "reason": "web uvádí jen volný vstup ZTP, nic o přístupnosti"
+  },
+  {
+   "osm_id": "w161888749",
+   "name": "Kostel sv. Jana Nepomuckého, Kutná Hora",
+   "url": "https://destinace.kutnahora.cz/d/kostel-sv-jana-nepomuckeho",
+   "reason": "web nefunguje (doména se nepřeložila / prázdná odpověď)"
+  },
+  {
+   "osm_id": "n1421091825",
+   "name": "Vojenské technické muzeum Lešany",
+   "url": "https://www.vhu.cz/muzea/zakladni-informace-o-vtm-lesany/",
+   "reason": "web uvádí jen, že kompenzační pomůcky jsou povoleny; nic konkrétního o přístupnosti"
+  },
+  {
+   "osm_id": "n2716861493",
+   "name": "Polabské muzeum – Muzeum Bedřicha Hrozného",
+   "url": "https://www.polabskemuzeum.cz/lysa-nad-labem/kontakty",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9144761075",
+   "name": "Dinosauria",
+   "url": "https://www.dinosauria.cz/",
+   "reason": "web přesměrovává na pop.cz/dinosauria, obsah se nenačetl"
+  },
+  {
+   "osm_id": "w177340701",
+   "name": "Památník Antonína Dvořáka",
+   "url": "https://www.antonindvorak.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2113504405",
+   "name": "Městská knihovna Čelákovice – pobočka",
+   "url": "https://knihovna.celakovice.cz/cs/pobocky/v-prokope/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12821058181",
+   "name": "Knihovna Červené Pečky",
+   "url": "https://knihovna.cervenepecky.cz",
+   "reason": "web nefunguje (prázdná odpověď)"
+  },
+  {
+   "osm_id": "n1409029649",
+   "name": "Muzeum Mladoboleslavska",
+   "url": "https://www.muzeum-mb.cz/navstivte-nas/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w77495530",
+   "name": "Škoda Muzeum (web provozovatele)",
+   "url": "https://museum.skoda-auto.cz/zakladni_informace",
+   "reason": "web provozovatele uvádí jen volný vstup ZTP; údaje o přístupnosti převzaty z turistického portálu"
+  },
+  {
+   "osm_id": null,
+   "name": "Hornické muzeum Příbram",
+   "url": "https://www.muzeum-pribram.cz/",
+   "reason": "web provozovatele nic o přístupnosti neuvádí (údaje převzaty z turistického portálu)"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Kačina (NZM)",
+   "url": "https://www.nzm.cz/kacina",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n2494884018",
+   "name": "Muzeum T. G. Masaryka Lány (web provozovatele)",
+   "url": "https://www.muzeum-tgm.cz/",
+   "reason": "web provozovatele nefunguje (prázdná odpověď / DNS); údaje z turistického portálu"
+  },
+  {
+   "osm_id": null,
+   "name": "Hrad Krakovec",
+   "url": "https://www.hrad-krakovec.cz/cs/informace-pro-navstevniky",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": null,
+   "name": "Kostnice Sedlec",
+   "url": "https://www.sedlec.info/cs/",
+   "reason": "web vrátil prázdný obsah (JS), neověřeno"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Nelahozeves",
+   "url": "https://www.nelahozeves.cz/",
+   "reason": "web nic o přístupnosti neuvádí / prázdný obsah"
+  },
+  {
+   "osm_id": null,
+   "name": "Hrad Český Šternberk",
+   "url": "https://www.hrad-sternberk.cz/",
+   "reason": "web nic o přístupnosti neuvádí / prázdný obsah"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Loučeň",
+   "url": "https://www.zamek-loucen.cz/",
+   "reason": "web vrátil prázdný obsah, neověřeno"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Poděbrady",
+   "url": "https://www.zamek-podebrady.cz/",
+   "reason": "web vrátil prázdný obsah, neověřeno"
+  },
+  {
+   "osm_id": null,
+   "name": "Chocotopia (Průhonice)",
+   "url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "reason": "portál uvádí přístupnost (výtah, upravené WC), ale místo se nepodařilo geokódovat přes Nominatim"
+  },
+  {
+   "osm_id": null,
+   "name": "Koupací biotop Pilák (Votice)",
+   "url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "reason": "portál uvádí rampy, zvedák HANDI MOVE a upravené WC, ale místo se nepodařilo geokódovat"
+  },
+  {
+   "osm_id": null,
+   "name": "Zoopark Zelčín",
+   "url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "reason": "portál uvádí mlatové cesty; Nominatim vrátil jen informační tabuli naučné stezky, ne samotný zoopark – nepřidáno"
+  },
+  {
+   "osm_id": null,
+   "name": "Bezbariérový výlet kolem Zvířetic",
+   "url": "https://www.centralbohemia.cz/dr-cs/13597-bezbarierovy-vylet-kolem-zviretic.html",
+   "reason": "starý portál centralbohemia.cz nejde otevřít (www se nepřeloží, bez www Cloudflare 403)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Střední Čechy bez bariér: místa, kde jsou vítáni vozíčkáři i rodiče s kočárky (strednicechy.cz, 20. 7. 2026)",
+   "url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "note": "Oficiální turistický portál kraje; tipy vycházejí z mapování organizace Disway (metodika MMR), podrobnosti v aplikaci Disway Trails. Restaurace a hotely z článku nebyly do tohoto úkolu (cíle) převzaty."
+  },
+  {
+   "title": "strednicechy.cz – turistický portál Středočeského kraje",
+   "url": "https://www.strednicechy.cz/",
+   "note": "Nahradil centralbohemia.cz, který z této sítě nejde otevřít."
+  },
+  {
+   "title": "NPÚ – informace pro návštěvníky (Karlštejn, Konopiště, Křivoklát, Veltrusy, Žleby, Mnichovo Hradiště, Březnice, Točník, Sázava, Hořovice)",
+   "url": "https://www.hrad-karlstejn.cz/cs/informace-pro-navstevniky",
+   "note": "Každý objekt NPÚ má sekci Přístupnost na /cs/informace-pro-navstevniky."
+  },
+  {
+   "title": "Památník Lidice – Přístupnost budov (PDF)",
+   "url": "https://www.lidice-memorial.cz/fileadmin/user_upload/doku/pristupna_kultura/Pristupnost_budov_komplet.pdf",
+   "note": "Dotazník přístupnosti muzea, Lidické galerie a dalších budov."
+  },
+  {
+   "title": "GASK – Bezbariérovost",
+   "url": "https://gask.cz/navsteva/bezbarierovost/pristupnost-galerie/",
+   "note": "Samostatná sekce o přístupnosti a parkování."
+  },
+  {
+   "title": "Disway Trails",
+   "url": "https://www.strednicechy.cz/stredni-cechy-bez-barier-mista-kde-jsou-vitani-vozickari-i-rodice-s-kocarky/",
+   "note": "Aplikace s podrobnými údaji (povrchy, sklony, WC) – zmíněna jako zdroj, data z ní nepřebírána."
+  }
+ ]
+}

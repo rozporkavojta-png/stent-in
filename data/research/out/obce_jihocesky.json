@@ -1,0 +1,564 @@
+{
+  "task": "obce_jihocesky",
+  "kraj": "Jihočeský",
+  "checked_date": "2026-10-05",
+  "places": [
+    {
+      "osm_id": null,
+      "name": "Veřejné WC Pod Poštou (parkoviště P2)",
+      "obec": "Český Krumlov",
+      "address": "Pivovarská ulice, parkoviště P2",
+      "lat": 48.8141407,
+      "lng": 14.3180975,
+      "category": "wc",
+      "source_url": "https://www.ckrumlov.info/cz/casto-kladene-dotazy/",
+      "source_type": "web obce",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "wc": "Bezbariérové WC na parkovišti P2, zdarma; podle ckrumlov.cz osazeno eurozámkem (Euroklíč).",
+        "jine": "Provoz 8:00–18:00 (květen–říjen) dle https://www.ckrumlov.info/cz/parkovani-pro-osobni-automobily/ . Euroklíč lze krátkodobě zapůjčit v Infocentru za vratnou zálohu 500 Kč."
+      },
+      "evidence_quote": "Bezbariérové toalety: ... na parkovištích P1, P2 a P3 (zdarma)."
+    },
+    {
+      "osm_id": null,
+      "name": "Veřejné WC Městský park (parkoviště P3)",
+      "obec": "Český Krumlov",
+      "address": "Linecká ulice, parkoviště P3",
+      "lat": 48.8074896,
+      "lng": 14.318838,
+      "category": "wc",
+      "source_url": "https://www.ckrumlov.info/cz/casto-kladene-dotazy/",
+      "source_type": "web obce",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "wc": "Bezbariérové WC na parkovišti P3, zdarma; podle ckrumlov.cz osazeno eurozámkem (Euroklíč).",
+        "jine": "Provoz 8:00–19:00 (květen–říjen) dle https://www.ckrumlov.info/cz/parkovani-pro-osobni-automobily/ ."
+      },
+      "evidence_quote": "Bezbariérové toalety: ... na parkovištích P1, P2 a P3 (zdarma)."
+    },
+    {
+      "osm_id": null,
+      "name": "Veřejné WC Vlakové nádraží",
+      "obec": "Český Krumlov",
+      "address": "Třída Míru 1",
+      "lat": 48.8222316,
+      "lng": 14.317052,
+      "category": "wc",
+      "source_url": "https://www.ckrumlov.cz/cz/euroklice-pro-zdravotne-postizene-v-ceskem-krumlove/",
+      "source_type": "web obce",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "wc": "Veřejné WC osazené eurozámkem (Euroklíč)."
+      },
+      "evidence_quote": "„Vlakové nádraží“ – ulice Třída Míru 1"
+    },
+    {
+      "osm_id": "n6961707170",
+      "name": "Veřejné WC Rybník na Horní Bráně",
+      "obec": "Český Krumlov",
+      "address": "Kaplická 439",
+      "lat": 48.809678,
+      "lng": 14.325462,
+      "category": "wc",
+      "source_url": "https://www.ckrumlov.cz/cz/euroklice-pro-zdravotne-postizene-v-ceskem-krumlove/",
+      "source_type": "web obce",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "wc": "Veřejné WC osazené eurozámkem (Euroklíč)."
+      },
+      "evidence_quote": "„Rybník na Horní Bráně“ – ulice Kaplická 439"
+    },
+    {
+      "osm_id": "n9903509826",
+      "name": "Veřejné WC na přestupním terminálu",
+      "obec": "Veselí nad Lužnicí",
+      "address": "Nádražní 153, Veselí nad Lužnicí II",
+      "lat": 49.193743,
+      "lng": 14.716425,
+      "category": "wc",
+      "source_url": "https://www.veseli.cz/verejne%2Dtoalety/ms-49552/p1=49552",
+      "source_type": "web obce",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "wc": "WC vybavené euroklíčem (eurozámkem); poplatek 10 Kč."
+      },
+      "evidence_quote": "poplatek 10 Kč, WC je vybaveno euroklíčem."
+    },
+    {
+      "osm_id": "n13039430725",
+      "name": "Veřejné toalety Pivovarské terasy",
+      "obec": "Vimperk",
+      "address": "budova čp. 81 vedle Pivovarských teras",
+      "lat": 49.052953,
+      "lng": 13.772276,
+      "category": "wc",
+      "source_url": "https://www.vimperk.cz/verejne%2Dtoalety/ms-10986/p1=10986",
+      "source_type": "web obce",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Bezbariérový přístup (toalety ve sklepních prostorách budovy čp. 81).",
+        "jine": "Provoz denně; v letní sezóně 8–18 h, v zimní 8–17 h; zdarma."
+      },
+      "evidence_quote": "Ve sklepních prostorách budovy čp. 81 vedle teras. Bezbariérový přístup."
+    },
+    {
+      "osm_id": "n3786018902",
+      "name": "Veřejné WC Žižkovo náměstí 11",
+      "obec": "Tábor",
+      "address": "Žižkovo náměstí č. p. 11",
+      "lat": 49.41416,
+      "lng": 14.659625,
+      "category": "wc",
+      "source_url": "https://www.visittabor.eu/tabor-s-handicapem",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "wc": "Veřejné WC uvedené jako bezbariérové."
+      },
+      "evidence_quote": "Veřejné WC na Žižkově náměstí č. p. 11 – bezbariérové"
+    },
+    {
+      "osm_id": null,
+      "name": "Husitské muzeum – expozice Husité",
+      "obec": "Tábor",
+      "address": "",
+      "lat": 49.4139369,
+      "lng": 14.6578487,
+      "category": "kultura",
+      "source_url": "https://www.visittabor.eu/tabor-s-handicapem",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Prostory expozice Husité jsou bezbariérové.",
+        "jine": "Haptická linka a stěžejní popisky v Braillově písmu, texty i v české znakové řeči."
+      },
+      "evidence_quote": "Prostory expozice Husité jsou bezbariérové."
+    },
+    {
+      "osm_id": null,
+      "name": "Muzeum iluzí Tábor",
+      "obec": "Tábor",
+      "address": "9. května 640/22",
+      "lat": 49.4127424,
+      "lng": 14.6710025,
+      "category": "kultura",
+      "source_url": "https://www.visittabor.eu/tabor-s-handicapem",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vytah": "Do patra lze vyjet výtahem; u výtahu je telefon pro přivolání personálu a odemknutí."
+      },
+      "evidence_quote": "možnost vyjet do patra výtahem"
+    },
+    {
+      "osm_id": null,
+      "name": "ZOO Tábor",
+      "obec": "Tábor",
+      "address": "",
+      "lat": 49.3878246,
+      "lng": 14.6513674,
+      "category": "priroda",
+      "source_url": "https://www.visittabor.eu/tabor-s-handicapem",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "jine": "Areál mírně ve svahu, cesty místy nezpevněné a místy prkenné, část do prudkého svahu – doporučen asistent."
+      },
+      "evidence_quote": "lepší návštěva s pomocí asistenta"
+    },
+    {
+      "osm_id": null,
+      "name": "Housův mlýn",
+      "obec": "Tábor",
+      "address": "",
+      "lat": 49.4152655,
+      "lng": 14.6544599,
+      "category": "pamatky",
+      "source_url": "https://www.visittabor.eu/tabor-s-handicapem",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Přístupné jen přízemí s husitskou krčmou; zbrojnice je ve druhém patře."
+      },
+      "evidence_quote": "Housův mlýn – pouze přízemí s husitskou krčmou"
+    },
+    {
+      "osm_id": null,
+      "name": "Městská knihovna Tábor",
+      "obec": "Tábor",
+      "address": "",
+      "lat": 49.4134069,
+      "lng": 14.6675648,
+      "category": "kultura",
+      "source_url": "https://www.visittabor.eu/tabor-s-handicapem",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "jine": "Uvedena v přehledu bezbariérových muzeí a kulturních zařízení."
+      },
+      "evidence_quote": "Galerie U Radnice, městská knihovna, botanická zahrada, Divadlo Oskara Nedbala a Kino Svět."
+    },
+    {
+      "osm_id": null,
+      "name": "Botanická zahrada Tábor",
+      "obec": "Tábor",
+      "address": "",
+      "lat": 49.4142421,
+      "lng": 14.6681848,
+      "category": "priroda",
+      "source_url": "https://www.visittabor.eu/tabor-s-handicapem",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "jine": "Uvedena v přehledu bezbariérových muzeí a kulturních zařízení."
+      },
+      "evidence_quote": "Galerie U Radnice, městská knihovna, botanická zahrada, Divadlo Oskara Nedbala a Kino Svět."
+    },
+    {
+      "osm_id": "w29350561",
+      "name": "Divadlo Oskara Nedbala",
+      "obec": "Tábor",
+      "address": "",
+      "lat": 49.413107,
+      "lng": 14.662003,
+      "category": "kultura",
+      "source_url": "https://www.visittabor.eu/tabor-s-handicapem",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "jine": "Uvedeno v přehledu bezbariérových muzeí a kulturních zařízení."
+      },
+      "evidence_quote": "Galerie U Radnice, městská knihovna, botanická zahrada, Divadlo Oskara Nedbala a Kino Svět."
+    },
+    {
+      "osm_id": null,
+      "name": "Kino Svět",
+      "obec": "Tábor",
+      "address": "",
+      "lat": 49.4134603,
+      "lng": 14.6646551,
+      "category": "kultura",
+      "source_url": "https://www.visittabor.eu/tabor-s-handicapem",
+      "source_type": "turistický portál",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "jine": "Uvedeno v přehledu bezbariérových muzeí a kulturních zařízení."
+      },
+      "evidence_quote": "Galerie U Radnice, městská knihovna, botanická zahrada, Divadlo Oskara Nedbala a Kino Svět."
+    },
+    {
+      "osm_id": null,
+      "name": "Veřejné WC nádvoří muzea a radnice",
+      "obec": "Písek",
+      "address": "nádvoří muzea a radnice, Velké náměstí",
+      "lat": 49.3088535,
+      "lng": 14.1465376,
+      "category": "wc",
+      "source_url": "https://ms-pisek.cz/strediska/verejna-wc/",
+      "source_type": "jiný oficiální zdroj",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "wc": "Bezbariérové WC s obsluhou; poplatek 10 Kč.",
+        "jine": "Provoz po–ne 8:00–18:00. Provozovatel: městská společnost Veřejné/Městské služby Písek s.r.o."
+      },
+      "evidence_quote": "Všechny tyto WC jsou bezbariérové a s obsluhou."
+    },
+    {
+      "osm_id": "n5009848723",
+      "name": "Veřejné WC Bakaláře",
+      "obec": "Písek",
+      "address": "Bakaláře",
+      "lat": 49.305881,
+      "lng": 14.147974,
+      "category": "wc",
+      "source_url": "https://ms-pisek.cz/strediska/verejna-wc/",
+      "source_type": "jiný oficiální zdroj",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "wc": "Bezbariérové WC s obsluhou; poplatek 10 Kč.",
+        "jine": "Provoz po–pá 7:00–13:00, so–ne zavřeno."
+      },
+      "evidence_quote": "Všechny tyto WC jsou bezbariérové a s obsluhou."
+    },
+    {
+      "osm_id": null,
+      "name": "Městský úřad Písek – budova Budovcova",
+      "obec": "Písek",
+      "address": "Budovcova 207/6",
+      "lat": 49.3056041,
+      "lng": 14.1504429,
+      "category": "urady",
+      "source_url": "https://www.mesto-pisek.cz/vismo/dokumenty2.asp?id_org=12075&id=17985",
+      "source_type": "web obce",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Bezbariérový přístup z boční strany.",
+        "vytah": "Budova má výtah."
+      },
+      "evidence_quote": "nabízí bezbariérový přístup z boční strany včetně výtahu"
+    },
+    {
+      "osm_id": null,
+      "name": "Radnice Písek (Městský úřad)",
+      "obec": "Písek",
+      "address": "Velké náměstí 114/3",
+      "lat": 49.3087338,
+      "lng": 14.1474009,
+      "category": "urady",
+      "source_url": "https://www.mesto-pisek.cz/vismo/dokumenty2.asp?id_org=12075&id=17985",
+      "source_type": "web obce",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Památková budova není bezbariérově řešena; k recepci se lze dostat zadním vchodem ze dvora, je třeba zazvonit, recepce agendu vyřídí nebo přivolá pracovníka."
+      },
+      "evidence_quote": "Bezbariérově se dá k recepci dostat zadním vchodem ze dvora."
+    },
+    {
+      "osm_id": null,
+      "name": "Městský úřad Slavonice",
+      "obec": "Slavonice",
+      "address": "Horní náměstí 525",
+      "lat": 48.9976733,
+      "lng": 15.3523236,
+      "category": "urady",
+      "source_url": "https://www.slavonice-mesto.cz/mesto/aktualni-informace-obcanum/novy-bezbarierovy-vstup-na-radnici-606cs.html",
+      "source_type": "web obce",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Bezbariérový vstup k výtahu z průchodu mezi náměstím Míru a autobusovým nádražím, otevřen v provozní době úřadu (od 14. 9. 2026).",
+        "vytah": "Úřad je zpřístupněn výtahem."
+      },
+      "evidence_quote": "Městský úřad je ode dneška bezbariérový."
+    },
+    {
+      "osm_id": null,
+      "name": "Městský úřad Prachatice (Nová radnice)",
+      "obec": "Prachatice",
+      "address": "Velké náměstí 3",
+      "lat": 49.0128313,
+      "lng": 13.9971746,
+      "category": "urady",
+      "source_url": "https://www.prachatice.eu/assets/File.ashx?id_org=13263&id_dokumenty=43316",
+      "source_type": "web obce",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Hlavní vchod se schody; bezbariérový je boční vchod, vozíčkář si ale musí sám otevřít dveře (stav podle auditu v Plánu bezbariérových tras, projekt 2023).",
+        "vytah": "Výtah o rozměrech 110 × 120 cm – podle dokumentu nevyhovuje pro elektrický vozík.",
+        "wc": "Bezbariérová toaleta byla v době auditu ve výstavbě."
+      },
+      "measurements": [
+        {
+          "co": "výtah – rozměr klece (první údaj z 110x120)",
+          "hodnota": 110,
+          "jednotka": "cm"
+        },
+        {
+          "co": "výtah – rozměr klece (druhý údaj z 110x120)",
+          "hodnota": 120,
+          "jednotka": "cm"
+        }
+      ],
+      "evidence_quote": "Vchod bočním vchodem je řešen bezbariérový přístup."
+    },
+    {
+      "osm_id": "n1260942417",
+      "name": "Veřejné WC u Galerie Dolní brána",
+      "obec": "Prachatice",
+      "address": "u Galerie Dolní brána",
+      "lat": 49.013479,
+      "lng": 13.999618,
+      "category": "wc",
+      "source_url": "https://www.prachatice.eu/assets/File.ashx?id_org=13263&id_dokumenty=43316",
+      "source_type": "web obce",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "wc": "Místnost bezbariérové toalety je prostorná, ale při kontrole (audit 2023) byla mimo provoz a sloužila jako sklad; chybí úchyty pro madla, papír mimo dosah."
+      },
+      "evidence_quote": "Při kontrole mimo provoz."
+    }
+  ],
+  "not_found": [
+    {
+      "osm_id": null,
+      "name": "Veřejné WC Jelení zahrada (parkoviště P1)",
+      "url": "https://www.ckrumlov.cz/cz/euroklice-pro-zdravotne-postizene-v-ceskem-krumlove/",
+      "reason": "Web uvádí bezbariérové WC s eurozámkem (Chvalšinská, P1; provoz 7:30–20:00 květen–říjen, 7:30–18:00 listopad–duben), ale místo nešlo přesně geokódovat přes Nominatim – nepřidáno."
+    },
+    {
+      "osm_id": null,
+      "name": "Bezbariérové WC Horní ulice a IV. zámecké nádvoří, Český Krumlov",
+      "url": "https://www.ckrumlov.info/cz/casto-kladene-dotazy/",
+      "reason": "Web uvádí bezbariérové toalety (za poplatek), ale bez přesné adresy – nelze přesně lokalizovat, nepřidáno."
+    },
+    {
+      "osm_id": null,
+      "name": "Veřejné WC autobusová zastávka Špičák, Český Krumlov",
+      "url": "https://www.ckrumlov.cz/cz/euroklice-pro-zdravotne-postizene-v-ceskem-krumlove/",
+      "reason": "WC s eurozámkem, ale bez čísla popisného – geokódování vrací jen ulici, nepřidáno."
+    },
+    {
+      "osm_id": null,
+      "name": "Veřejné WC Palackého sady, Písek",
+      "url": "https://ms-pisek.cz/strediska/verejna-wc/",
+      "reason": "Web uvádí bezbariérové WC s obsluhou (po–so 8–18, ne zavřeno, 10 Kč), ale přesnou polohu v parku nelze geokódovat – nepřidáno."
+    },
+    {
+      "osm_id": null,
+      "name": "Veřejné WC Pietní síň na hřbitově, Vimperk",
+      "url": "https://www.vimperk.cz/verejne%2Dtoalety/ms-10986/p1=10986",
+      "reason": "Web uvádí bezbariérový přístup, ale hřbitov nešel geokódovat přes Nominatim – nepřidáno."
+    },
+    {
+      "osm_id": null,
+      "name": "Galerie U Radnice, Tábor",
+      "url": "https://www.visittabor.eu/tabor-s-handicapem",
+      "reason": "Uvedena mezi bezbariérovými zařízeními, ale Nominatim ji nenašel – nepřidáno."
+    },
+    {
+      "osm_id": null,
+      "name": "Veřejné WC na náměstí, Soběslav",
+      "url": "https://www.musobeslav.cz/mesto/projekty-mesta/pripravovane-projekty/stavebni-upravy-verejnych-wc-v-sobeslavi-5160cs.html",
+      "reason": "Jen připravovaná rekonstrukce (bezbariérový vstup s euroklíčem je plánovaný, ne existující) – nepřidáno."
+    },
+    {
+      "osm_id": null,
+      "name": "Veřejné toalety Jiráskovo nábřeží, Písek",
+      "url": "https://www.mesto-pisek.cz/vismo/dokumenty2.asp?id_org=12075&id=70747",
+      "reason": "Nové bezobslužné WC (od 16. 7. 2026), web nic o bezbariérovosti neuvádí."
+    },
+    {
+      "osm_id": null,
+      "name": "Veřejné toalety u pošty, Veselí nad Lužnicí",
+      "url": "https://www.veseli.cz/verejne%2Dtoalety/ms-49552/p1=49552",
+      "reason": "Web nic o přístupnosti neuvádí (cesta strmě dolů k řece)."
+    },
+    {
+      "osm_id": null,
+      "name": "Pošta Partner, Slavonice",
+      "url": "https://www.slavonice-mesto.cz/mesto/aktualni-informace-obcanum/posta-partner-bezbarierova-558cs.html",
+      "reason": "Bezbariérový vstup se teprve upravuje (zpráva z 18. 5. 2026) – nepřidáno."
+    },
+    {
+      "osm_id": null,
+      "name": "Magistrát města České Budějovice a veřejná WC v ČB",
+      "url": "https://bezbarier.c-budejovice.cz/mapa/",
+      "reason": "Podrobné údaje jsou jen v městském atlasu přístupnosti, z něhož podle zadání data nepřebíráme; na www.c-budejovice.cz samostatný seznam bezbariérových WC nenalezen."
+    },
+    {
+      "osm_id": null,
+      "name": "Strakonice – veřejná WC / úřad",
+      "url": "https://www.strakonice.eu/content/minuty-z-radnice-nove-toalety-pod-pivovarem",
+      "reason": "Web obce nic o přístupnosti veřejných WC ani úřadu neuvádí (jen zpráva o stavbě nových toalet pod pivovarem, 2023)."
+    },
+    {
+      "osm_id": null,
+      "name": "Jindřichův Hradec – veřejná WC / úřad",
+      "url": "https://www.jh.cz/",
+      "reason": "Na webu města ani infocentra (infocentrum.jh.cz) nenalezeny údaje o bezbariérových WC či přístupnosti úřadu."
+    },
+    {
+      "osm_id": null,
+      "name": "Milevsko – veřejná WC / úřad",
+      "url": "https://www.milevsko-mesto.cz/",
+      "reason": "Na webu města ani milevskem.cz nenalezeny údaje o přístupnosti."
+    },
+    {
+      "osm_id": null,
+      "name": "Třeboň – web města",
+      "url": "https://www.trebon.cz/",
+      "reason": "Web nefunguje (HTTP 500 dne 5. 10. 2026)."
+    },
+    {
+      "osm_id": null,
+      "name": "Volary – web města",
+      "url": "https://www.volary.cz/",
+      "reason": "Web nefunguje (vypršení spojení dne 5. 10. 2026)."
+    },
+    {
+      "osm_id": null,
+      "name": "Protivín – web města",
+      "url": "https://www.protivin.cz/",
+      "reason": "Doména přesměrovává na nesouvisející web (zahradnisvetmelo.cz) – oficiální web nenalezen."
+    },
+    {
+      "osm_id": null,
+      "name": "Horní Planá – web obce",
+      "url": "https://www.horniplana.cz/",
+      "reason": "Web vrací HTTP 466 / bez údajů o přístupnosti WC či úřadu."
+    },
+    {
+      "osm_id": null,
+      "name": "Dačice, Blatná, Soběslav, České Velenice, Lipno nad Vltavou, Volyně, Černá v Pošumaví, Hluboká nad Vltavou, Sezimovo Ústí, Bechyně",
+      "url": "",
+      "reason": "Prohledán web obce (vyhledávání / mapa stránek / stránky infocentra): web nic o bezbariérových WC ani přístupnosti úřadu neuvádí (Hluboká zmiňuje jen historii otevření bezbariérového infocentra v r. 2005 – nepřevzato jako aktuální)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením 2026–2029 (Jihočeský kraj)",
+      "url": "https://socialniportal.kraj-jihocesky.cz/planujeme/koncepce-plany-reformy-projekty/krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se",
+      "note": "Schválen ZK usn. č. 29/2025/ZK-4 (27. 2. 2025). Text ke stažení jako DOCX: https://socialniportal.kraj-jihocesky.cz/sites/default/files/inline-files/KPVP/KPVP-26-29_ZK-310325_oprava-posledni-list.docx (odkaz na PDF 2026–2029 na stránce vede omylem na soubor KPVP 22–25). Oblast 3 'Přístupnost staveb a turistických cílů': pokračovat v mapování přístupnosti kulturních institucí kraje a zveřejňovat info na jejich webech; 1× ročně aktualizovat seznam přístupnosti krajských škol; vyhodnocovat přístupnost krajských zdravotnických zařízení; doplňovat info o bezbariérovosti turistických cílů na webu Jihočeské centrály cestovního ruchu; síť místních konzultačních středisek pro bezbariérovost v okresech; databáze přístupnosti sportovišť (Česká unie sportu); sekce 'Bezbariérová doprava' na webu JIKORD. Licence neuvedena."
+    },
+    {
+      "title": "Krajský plán vyrovnávání příležitostí 2022–2025 (Jihočeský kraj, předchozí verze)",
+      "url": "https://socialniportal.kraj-jihocesky.cz/sites/default/files/inline-files/KPVP/KPVP22-25_oprava_final_020222.pdf",
+      "note": "Schválen usn. č. 329/2021/ZK-11 (20. 10. 2021). Licence neuvedena."
+    },
+    {
+      "title": "Euroklíč v Jihočeském kraji – leták (web kraje, verze 2021)",
+      "url": "https://www.kraj-jihocesky.cz/sites/default/files/inline-files/2020/Eurokl%C3%AD%C4%8D%20v%20Jiho%C4%8Desk%C3%A9m%20kraji%20-%202021.pdf",
+      "note": "Distribuční místa Euroklíčů v kraji (NRZP ČR ČB, MěÚ Blatná, pracoviště JCZPS); uvádí 90 Eurozámků v kraji. Starší dokument (2021), seznam míst odkazuje na euroklic.cz / aplikaci Euroklíčenka. Licence neuvedena."
+    },
+    {
+      "title": "Atlas přístupnosti objektů na území města České Budějovice",
+      "url": "https://bezbarier.c-budejovice.cz/mapa/",
+      "note": "Městský atlas přístupnosti (úřady, zdravotnictví, veřejná WC, volný čas); mapováno podle Metodiky mapování přístupnosti. Data z něj podle zadání NEpřebíráme; stejný obsah je i na bezbarier.visitceskebudejovice.cz. Otevřená licence neuvedena."
+    },
+    {
+      "title": "Generel bezbariérovosti města Tábor (2017)",
+      "url": "https://www.taborcz.eu/generel%2Dbezbarierovosti%2Dmesta/d-53909/p1=71782",
+      "note": "Analýza bezbariérových pěších tras a veřejně přístupných objektů (školy, úřady, obchody); PDF textová část + výkresy Tábor jih/sever. Licence neuvedena."
+    },
+    {
+      "title": "Informace pro handicapované návštěvníky – Tábor (visittabor.eu)",
+      "url": "https://www.visittabor.eu/tabor-s-handicapem",
+      "note": "Parkování ZTP, bezbariérové WC, bezbariérová kulturní zařízení; odkazuje na Mapy bez bariér (https://mapybezbarier.cz/cs) a mapu míst ZTP https://www.parkovistetabor.cz/mapa-ops/ . © město Tábor."
+    },
+    {
+      "title": "Plán bezbariérových tras města Prachatice (projekt Bezbariérová trasa města Prachatice 2023)",
+      "url": "https://www.prachatice.eu/assets/File.ashx?id_org=13263&id_dokumenty=43316",
+      "note": "Audit bariér na trase (MěÚ, veřejná WC, úřad práce aj.) s návrhy řešení; zpracováno s TyfloServisem a CZEPA. Související 'Mapa bezbariérových tras': https://www.prachatice.eu/assets/File.ashx?id_org=13263&id_dokumenty=43377 . Licence neuvedena."
+    },
+    {
+      "title": "Euroklíče v Českém Krumlově (Městský úřad Český Krumlov)",
+      "url": "https://www.ckrumlov.cz/cz/euroklice-pro-zdravotne-postizene-v-ceskem-krumlove/",
+      "note": "Seznam 6 veřejných WC s eurozámkem v ČK a podmínky zapůjčení Euroklíče (ZTP/P s trvalým bydlištěm v ČK; návštěvníci v Infocentru proti záloze)."
+    },
+    {
+      "title": "Veřejná WC – Městské služby Písek s.r.o.",
+      "url": "https://ms-pisek.cz/strediska/verejna-wc/",
+      "note": "3 bezbariérová WC s obsluhou a provozní doby (nádvoří muzea/radnice, Bakaláře, Palackého sady)."
+    },
+    {
+      "title": "Mapy bez bariér",
+      "url": "https://mapybezbarier.cz/cs",
+      "note": "Celostátní mapa přístupnosti, na kterou odkazuje Tábor; data nepřebírána, licence neověřena."
+    },
+    {
+      "title": "Národní rada osob se zdravotním postižením ČR – poradna České Budějovice",
+      "url": "https://nrzp.cz/poradna/poradna-nrzp-cr-v-ceskych-budejovicich/",
+      "note": "Organizace OZP; podle krajského letáku centrální distribuční místo Euroklíčů pro Jihočeský kraj (Staroměstská 2608, ČB – údaj z letáku 2021)."
+    },
+    {
+      "title": "Jihočeské centrum pro zdravotně postižené a seniory o.p.s. (JCZPS)",
+      "url": "https://www.jczps.cz/",
+      "note": "Organizace OZP se 6 pracovišti (Č. Krumlov, J. Hradec, Písek, Prachatice, Strakonice, Tábor); distribuuje Euroklíče (dle webu Tábora a krajského letáku)."
+    },
+    {
+      "title": "Česká asociace paraplegiků – CZEPA (Vozejkov, VozejkMap)",
+      "url": "https://www.czepa.cz/",
+      "note": "Celostátní organizace vozíčkářů; spolupracovala na Plánu bezbariérových tras Prachatice. Sídlo Praha 9; regionální pobočka v Jihočeském kraji nenalezena."
+    }
+  ]
+}

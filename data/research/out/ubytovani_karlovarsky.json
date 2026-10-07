@@ -1,0 +1,658 @@
+{
+ "task": "ubytovani_karlovarsky",
+ "kraj": "Karlovarský",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n3687642786",
+   "name": "Hotel Slávie",
+   "obec": "Cheb",
+   "address": "Svobody 75/32",
+   "lat": 50.075289,
+   "lng": 12.373484,
+   "source_url": "http://www.hotel-slavie.cz/index.php/cs/hotel-xm-hotelove-pokoje-xm",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Popis pokojů uvádí bezbariérový přístup do hotelu.",
+    "vytah": "Hotel má výtah.",
+    "parkovani": "Parkoviště zdarma (bez zmínky o místech pro ZTP)."
+   },
+   "evidence_quote": "Bezbariérový přístup do hotelu, výtah.",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "n2536310329",
+   "name": "ATC JADRAN KEMP NOVOTNÝ",
+   "obec": "Františkovy Lázně",
+   "address": "Jezerní 499/12a",
+   "lat": 50.117072,
+   "lng": 12.331262,
+   "source_url": "https://www.atcjadran.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "koupelna": "Kemp uvádí bezbariérovou koupelnu pro kempové hosty.",
+    "pokoj": "Nabízí bezbariérový Luxusní Mobil Home."
+   },
+   "evidence_quote": "máme bezbariérovou koupelnu pro kempové hosty nebo bezbariérový Luxusní Mobil Home",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "w94533556",
+   "name": "Francis Palace",
+   "obec": "Františkovy Lázně",
+   "address": "Jezerní 15/2",
+   "lat": 50.112634,
+   "lng": 12.34842,
+   "source_url": "https://francispalace.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Hotel uvádí výtah mezi součástmi hotelu; o bezbariérovosti web nic neříká.",
+    "jine": "Původní URL z OSM (https://www.francispalace.cz/cs/) vrací 404, použita hlavní stránka."
+   },
+   "evidence_quote": "společenská místnost, výtah, parkoviště hlídané kamerovým systémem",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "w94542878",
+   "name": "Palace I",
+   "obec": "Františkovy Lázně",
+   "address": "",
+   "lat": 50.119184,
+   "lng": 12.352016,
+   "source_url": "https://www.palace-spa.cz/ubytovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Budova Palace I má podle přehledu vybavení 2 výtahy; web uvádí, že ve všech objektech jsou výtahy.",
+    "jine": "Bezbariérový pokoj je v přehledu uveden jen u budovy Palace Bellaria (zapsána zvlášť). Web z OSM (kurhauspalace.cz) přesměrovává na palace-spa.cz."
+   },
+   "evidence_quote": "Ve všech objektech jsou výtahy.",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": null,
+   "name": "Palace Bellaria",
+   "obec": "Františkovy Lázně",
+   "address": "Dr. Pohoreckého (dle Nominatim); provozovatel uvádí společnou adresu Boženy Němcové 153/6",
+   "lat": 50.1193761,
+   "lng": 12.3533672,
+   "source_url": "https://www.palace-spa.cz/ubytovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "V přehledu vybavení budovy Palace Bellaria je uveden bezbariérový pokoj.",
+    "vytah": "Budova má výtah."
+   },
+   "evidence_quote": "Exkluzivní apartmány* Dvoulůžkové pokoje Bezbariérový pokoj Jídelna Výtah",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "n9684424862",
+   "name": "Restaurace a penzion Na Výhledech",
+   "obec": "Hazlov",
+   "address": "",
+   "lat": 50.188675,
+   "lng": 12.26939,
+   "source_url": "http://www.penzion-navyhledech.cz",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup do restaurace; o ubytovací části nic neuvádí."
+   },
+   "evidence_quote": "bezbariérový přístup restaurace",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "n5254741385",
+   "name": "Akademik Běhounek (Hotel Běhounek)",
+   "obec": "Jáchymov",
+   "address": "Lidická 1015",
+   "lat": 50.360945,
+   "lng": 12.931554,
+   "source_url": "https://www.kudyznudy.cz/aktivity/hotel-behounek-superior",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Kudy z nudy (CzechTourism) uvádí u Hotelu Běhounek Superior štítek Bezbariérový přístup (bez podrobností).",
+    "jine": "Web provozovatele (https://www.axxoshotels.com/cs/pokoje-ubytovani-behounek) uvádí u jedné depandance výtah a krytý koridor do hlavní budovy, u vily propojené přes Vilu Dalibor naopak „Bez výtahu“ a společné sociální zařízení. Adresa Lidická 1015 ověřena na https://www.axxoshotels.com/cs/lazne-behounek."
+   },
+   "evidence_quote": "Certifikace a další informace Bezbariérový přístup",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "n5254741386",
+   "name": "Curie",
+   "obec": "Jáchymov",
+   "address": "Agrikolovo náměstí 1036",
+   "lat": 50.362119,
+   "lng": 12.933158,
+   "source_url": "https://www.axxoshotels.com/cs/curie-spa-wellness",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Komplex Curie tvoří lázeňské domy Praha, Curie a Elektra; budovy jsou podle webu bezbariérově propojeny. Jiné údaje (pokoje, WC) web neuvádí."
+   },
+   "evidence_quote": "Budovy jsou bezbariérově propojeny pro pohodlí našich návštěvníků.",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "n3842598514",
+   "name": "EA Hotel Elefant",
+   "obec": "Karlovy Vary",
+   "address": "Stará Louka 30",
+   "lat": 50.221627,
+   "lng": 12.881032,
+   "source_url": "https://www.hotelelefant.cz/cz/ea-hotel-elefant/o-hotelu",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Hotel má výtah.",
+    "koupelna": "V koupelnách jsou sprchové kouty nebo vany (bez údaje o úpravách)."
+   },
+   "evidence_quote": "Samozřejmostí je hotelový výtah.",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "w258772547",
+   "name": "Grandhotel Pupp",
+   "obec": "Karlovy Vary",
+   "address": "Mírové náměstí 310/8",
+   "lat": 50.219144,
+   "lng": 12.878772,
+   "source_url": "https://www.kudyznudy.cz/aktivity/grandhotel-pupp-komfort-ktery-si-zaslouzite",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Kudy z nudy (CzechTourism) uvádí štítek Bezbariérový přístup (bez podrobností).",
+    "vytah": "Web hotelu (https://www.pupp.cz/pokoje-a-apartma) uvádí výtah mezi službami.",
+    "parkovani": "Web hotelu uvádí hlídané parkoviště (zpoplatněno), bez zmínky o místech pro ZTP."
+   },
+   "evidence_quote": "Za každého počasí Bezbariérový přístup",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "n296533326",
+   "name": "Hotel Bristol",
+   "obec": "Karlovy Vary",
+   "address": "Sadová 2026/19",
+   "lat": 50.225934,
+   "lng": 12.878014,
+   "source_url": "https://bristolgroup.cz/cs/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Ve FAQ resort Bristol uvádí, že se skládá ze šesti historických budov propojených chodbami a nemusí být pro hosty s omezenou pohyblivostí nejkomfortnější; prosí o sdělení potřeb předem."
+   },
+   "evidence_quote": "nemusí být pro hosty s omezenou pohyblivostí nejkomfortnější variantou",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "n2536688589",
+   "name": "Karlsbad Grande Madonna",
+   "obec": "Karlovy Vary",
+   "address": "Moravská 2093/2a",
+   "lat": 50.222344,
+   "lng": 12.884681,
+   "source_url": "https://hotel-kgm.cz/pokoje/bezbarierovy-dvouluzkovy-pokoj/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel nabízí kategorii Bezbariérový dvoulůžkový pokoj (23 m², oddělitelná lůžka 2× 90×200 cm); přistýlku do něj nelze přidat.",
+    "koupelna": "Koupelna se sprchou a WC (bez podrobností o madlech apod.).",
+    "vstup": "Na https://hotel-kgm.cz/o-hotelu/ uvádí bezbariérový přístup s výtahem.",
+    "vytah": "Hotel má výtah.",
+    "parkovani": "Vlastní parkoviště před hotelem a za hotelem (bez zmínky o místech pro ZTP)."
+   },
+   "measurements": [
+    {
+     "co": "plocha bezbariérového pokoje",
+     "hodnota": 23,
+     "jednotka": "m²"
+    },
+    {
+     "co": "rozměr lůžka (2×)",
+     "hodnota": "90×200",
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Do bezbariérového dvojlůžkového pokoje není možné přidat přistýlku.",
+   "category": "ubytovani"
+  },
+  {
+   "osm_id": "n11035140277",
+   "name": "Na Špici",
+   "obec": "Kyselka",
+   "address": "Radošov 87 (dle webu; OSM uvádí Radosov 78)",
+   "lat": 50.270176,
+   "lng": 12.994499,
+   "source_url": "https://radosovbeach.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Ve vybavení areálu kempu uvádí bezbariérové ubytování.",
+    "wc": "Bezbariérové toalety.",
+    "koupelna": "Bezbariérové sprchy.",
+    "jine": "Web z OSM (naspici.net) přesměrovává na radosovbeach.cz – Sportovně-rekreační areál Na Špici. OSM má wheelchair=no."
+   },
+   "evidence_quote": "Bezbariérové ubytování Bezbariérové toalety Bezbariérové sprchy",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "r5572331",
+   "name": "Centrální lázně",
+   "obec": "Mariánské Lázně",
+   "address": "Goethovo náměstí 1",
+   "lat": 49.974736,
+   "lng": 12.70893,
+   "source_url": "https://ensanahotels.com/cs/hotely/centralni-lazne",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Mezi vybavením hotelu uvádí bezbariérový přístup (bez podrobností)."
+   },
+   "evidence_quote": "Fitness Bezbariérový přístup Zdravotní služby",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "w93686916",
+   "name": "Hvězda",
+   "obec": "Mariánské Lázně",
+   "address": "Goethovo náměstí 7",
+   "lat": 49.976056,
+   "lng": 12.709983,
+   "source_url": "https://ensanahotels.com/cs/hotely/hvezda",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Mezi vybavením hotelu uvádí bezbariérový přístup (bez podrobností).",
+    "parkovani": "Garážové parkování a parkoviště (bez zmínky o místech pro ZTP)."
+   },
+   "evidence_quote": "Fitness Bezbariérový přístup Zdravotní služby",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "w95542428",
+   "name": "Nové lázně",
+   "obec": "Mariánské Lázně",
+   "address": "Reitenbergerova 53",
+   "lat": 49.97438,
+   "lng": 12.705714,
+   "source_url": "https://ensanahotels.com/cs/hotely/nove-lazne",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Mezi vybavením hotelu uvádí bezbariérový přístup (bez podrobností)."
+   },
+   "evidence_quote": "Fitness Bezbariérový přístup Zdravotní služby",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": "w140927572",
+   "name": "Parkhotel Golf Mariánské Lázně",
+   "obec": "Mariánské Lázně",
+   "address": "",
+   "lat": 49.975458,
+   "lng": 12.736086,
+   "source_url": "https://www.parkhotel-golf.cz/cz/ubytovani-nabidky/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel má 1 bezbariérový dvoulůžkový pokoj upravený pro hosty se sníženou pohyblivostí, oddělená lůžka.",
+    "koupelna": "Koupelna se sprchou.",
+    "wc": "Bezbariérové WC.",
+    "jine": "Místo v OSM bez webu a s wheelchair=no; web provozovatele uvádí bezbariérový pokoj."
+   },
+   "evidence_quote": "1 bezbariérový dvoulůžkový pokoj Upravený pro hosty se sníženou pohyblivostí",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel Malta",
+   "obec": "Karlovy Vary",
+   "address": "I. P. Pavlova 16, 360 01 Karlovy Vary",
+   "lat": 50.2276183,
+   "lng": 12.88065,
+   "source_url": "https://www.hotel-malta.cz/cz/hotelove-sluzby/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup do budovy.",
+    "pokoj": "1× bezbariérový pokoj.",
+    "vytah": "Výtah.",
+    "jine": "Uvedeno i na Kudy z nudy se štítkem Bezbariérový přístup (https://www.kudyznudy.cz/aktivity/hotel-malta)."
+   },
+   "evidence_quote": "Výtah Bezbariérový přístup do budovy 1x bezbariérový pokoj",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": null,
+   "name": "Wellness hotel Jean de Carro",
+   "obec": "Karlovy Vary",
+   "address": "Stezka Jeana de Carro 4-6 (č.p. 153 a 154), 360 01 Karlovy Vary",
+   "lat": 50.2233839,
+   "lng": 12.8850936,
+   "source_url": "https://www.kudyznudy.cz/aktivity/wellness-hotel-jean-de-carro",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Kudy z nudy (CzechTourism) uvádí štítek Bezbariérový přístup; web hotelu (https://www.jeandecarro.com/cs/) o přístupnosti nic neuvádí."
+   },
+   "evidence_quote": "Vhodné pro firemní akce Vstup se psy Bezbariérový přístup",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel – depandance Concordia",
+   "obec": "Karlovy Vary",
+   "address": "Zahradní 437/9, 360 01 Karlovy Vary",
+   "lat": 50.2270519,
+   "lng": 12.8777701,
+   "source_url": "https://www.kudyznudy.cz/aktivity/hotel-depandance-concordia",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Kudy z nudy (CzechTourism) uvádí štítek Bezbariérový přístup; stránka provozovatele (https://www.bohemia-lazne.cz/hotel/concordia) podrobnosti neuvádí."
+   },
+   "evidence_quote": "Za každého počasí Vstup se psy Bezbariérový přístup",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": null,
+   "name": "Hotel Kriváň",
+   "obec": "Karlovy Vary",
+   "address": "Sadová, Karlovy Vary",
+   "lat": 50.2266709,
+   "lng": 12.8790034,
+   "source_url": "https://www.bohemia-lazne.cz/hotel/krivan",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vytah": "V každé části hotelu jsou výtahy.",
+    "jine": "Původní budovy jsou propojeny schodišti; web výslovně uvádí, že hotel není zcela bezbariérový."
+   },
+   "evidence_quote": "Lázeňský hotel není zcela bezberiérový.",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": null,
+   "name": "Spa Hotel Thermal",
+   "obec": "Karlovy Vary",
+   "address": "I. P. Pavlova 2001/11, 360 01 Karlovy Vary",
+   "lat": 50.2287903,
+   "lng": 12.8765042,
+   "source_url": "https://www.thermal.cz/cz/pokoje",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "U typů pokojů Superior, Suite Superior, Dvoulůžkový pokoj a Family Suite uvádí ve vybavení „bezbariérový přístup“ (bez dalších podrobností)."
+   },
+   "evidence_quote": "pracovní stůl 100% nekuřácké bezbariérový přístup",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": null,
+   "name": "Ensana Butterfly",
+   "obec": "Mariánské Lázně",
+   "address": "Hlavní třída 655, 353 01 Mariánské Lázně",
+   "lat": 49.9689776,
+   "lng": 12.7019442,
+   "source_url": "https://ensanahotels.com/cs/hotely/butterfly",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Mezi vybavením hotelu uvádí bezbariérový přístup (bez podrobností).",
+    "parkovani": "Garážové parkování a parkoviště (bez zmínky o místech pro ZTP)."
+   },
+   "evidence_quote": "Bar Bezbariérový přístup Konferenční místnosti",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": null,
+   "name": "Ensana Pacifik",
+   "obec": "Mariánské Lázně",
+   "address": "Mírové náměstí 84, 353 01 Mariánské Lázně",
+   "lat": 49.9784138,
+   "lng": 12.7032758,
+   "source_url": "https://ensanahotels.com/cs/hotely/pacifik",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Mezi vybavením hotelu uvádí bezbariérový přístup (bez podrobností).",
+    "jine": "Web uvádí polohu na konci hlavní třídy s mírným stoupáním."
+   },
+   "evidence_quote": "Fitness Bezbariérový přístup Zdravotní služby",
+   "category": "ubytovani",
+   "measurements": []
+  },
+  {
+   "osm_id": null,
+   "name": "Schlosshotel Marienbad",
+   "obec": "Velká Hleďsebe",
+   "address": "Klimentov 132, 353 01 Velká Hleďsebe",
+   "lat": 49.9645067,
+   "lng": 12.6714691,
+   "source_url": "https://www.kudyznudy.cz/aktivity/aurora-wellness-na-4-noci-5-procedur-polopenze",
+   "source_type": "turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Kudy z nudy (CzechTourism) uvádí u nabídky hotelu štítek Bezbariérový přístup (bez podrobností)."
+   },
+   "evidence_quote": "Vhodné pro děti Vstup se psy Bezbariérový přístup",
+   "category": "ubytovani",
+   "measurements": []
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "w134947683",
+   "name": "Na hranici",
+   "url": "http://www.nahranici.unas.cz/",
+   "reason": "web nefunguje (HTTP 404)"
+  },
+  {
+   "osm_id": "w831967742",
+   "name": "Autokemp Rybářská Bašta",
+   "url": "https://www.rb-camping.cz",
+   "reason": "web nefunguje (vypršel časový limit)"
+  },
+  {
+   "osm_id": "w151572561",
+   "name": "Hotel Monika",
+   "url": "https://www.hotel-monika.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w177713199",
+   "name": "SK Delfín Jesenice - Cheb",
+   "url": "https://sk-delfin.org/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12110574318",
+   "name": "Zámecký penzion Chyše",
+   "url": "https://chyse.com/ubytovani/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w94532937",
+   "name": "Reza",
+   "url": "https://www.hotelreza.cz/de/",
+   "reason": "web nefunguje (HTTP 401)"
+  },
+  {
+   "osm_id": "n5254741387",
+   "name": "Radium Palace",
+   "url": "https://www.laznejachymov.cz/ubytovaci-sluzby/detail/radium-palace.hotel/",
+   "reason": "původní URL 404; nová stránka provozovatele https://www.axxoshotels.com/cs/radium-palace-spa-wellness nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3842598515",
+   "name": "EA Hotel Jessenius",
+   "url": "https://www.hoteljessenius.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3088935786",
+   "name": "Hotel Boston",
+   "url": "https://www.boston.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w62201511",
+   "name": "Hotel Imperial",
+   "url": "https://www.spa-hotel-imperial.cz/",
+   "reason": "web nic o přístupnosti neuvádí (procházeny i FAQ a služby)"
+  },
+  {
+   "osm_id": "n292943516",
+   "name": "Parkhotel Richmond",
+   "url": "https://www.richmond.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w244746346",
+   "name": "Pension Rainbow",
+   "url": "https://www.pensionrainbow.cz/cs/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w62201470",
+   "name": "Spa Resort Sanssouci - Blue House",
+   "url": "https://www.spa-resort-sanssouci.cz/cz/",
+   "reason": "web nic o přístupnosti neuvádí (procházeny i stránky pokojů)"
+  },
+  {
+   "osm_id": "w62201477",
+   "name": "Spa Resort Sanssouci - Green House",
+   "url": "https://www.spa-resort-sanssouci.cz/cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9684424861",
+   "name": "Liebenstein",
+   "url": "https://www.liebenstein.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3476375142",
+   "name": "Císař Ferdinand",
+   "url": "https://www.hotelcisarferdinand.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w96043621",
+   "name": "Hotel Agricola",
+   "url": "https://www.hotel-agricola.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w93686937",
+   "name": "Hvězda Imperial",
+   "url": "http://www.danubiushotels.de/unsere-hotels-marienbad/danubius-health-spa-resort-hvezda-skalnik",
+   "reason": "odkaz přesměrovává na stránku hotelu Hvězda, která budovu Imperial nezmiňuje – údaj nelze přiřadit"
+  },
+  {
+   "osm_id": "w93687093",
+   "name": "Neapol",
+   "url": "http://www.danubiushotels.de/unsere-hotels-marienbad/danubius-health-spa-resort-hvezda-skalnik",
+   "reason": "odkaz přesměrovává na stránku hotelu Hvězda, která budovu Neapol nezmiňuje – údaj nelze přiřadit"
+  },
+  {
+   "osm_id": "w93687092",
+   "name": "Maria Spa",
+   "url": "http://www.danubiushotels.de/unsere-hotels-marienbad/maria-spa-courtyard",
+   "reason": "web nefunguje (HTTP 404); Ensana zmiňuje Maria Spa jen jako křídlo Centrálních lázní bez vlastních údajů o přístupnosti"
+  },
+  {
+   "osm_id": "w516770820",
+   "name": "Camping Baldi",
+   "url": "https://www.baldi.cz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w973088247",
+   "name": "tábořiště Hubertus",
+   "url": "https://www.taboristehubertus.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1843773675",
+   "name": "Penzion Selský dvůr",
+   "url": "http://www.bauernhof.cz/?page=home&lang=cz",
+   "reason": "web nefunguje (HTTP 404 / nedostupný)"
+  },
+  {
+   "osm_id": "w140929646",
+   "name": "Golf Hotel Morris",
+   "url": "https://www.morrisgolfhotel.cz/",
+   "reason": "místo v OSM bez webu; nalezený web hotelu nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Kudy z nudy – Bezbariérové ubytování, Karlovarský kraj (CzechTourism)",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-ubytovani?region=karlovarsky-kraj",
+   "note": "6 ubytování se štítkem Bezbariérový přístup (Jean de Carro, Malta, Concordia, Grandhotel Pupp, Schlosshotel Marienbad, Hotel Běhounek); štítek bez podrobností"
+  },
+  {
+   "title": "Ensana Health Spa Hotels – stránky hotelů v Mariánských Lázních",
+   "url": "https://ensanahotels.com/cs/hotely/centralni-lazne",
+   "note": "ikona Bezbariérový přístup u hotelů Centrální Lázně, Hvězda, Nové Lázně, Butterfly, Pacifik; u Svoboda, Vltava, Esplanade neuvedena"
+  },
+  {
+   "title": "AXXOS Hotels – Léčebné lázně Jáchymov",
+   "url": "https://www.axxoshotels.com/cs/lazne-jachymov",
+   "note": "nové stránky hotelů Běhounek, Curie, Radium Palace (staré URL laznejachymov.cz vrací 404); u hotelů Dvořák, Astoria, Olympia, Belvedere, Agricola, Cihelny nic o přístupnosti"
+  },
+  {
+   "title": "Františkovy Lázně – stránky lázeňských hotelů",
+   "url": "https://www.frantiskovylazne.cz/cs/hotely",
+   "note": "u hotelů uveden jen výtah (Imperial, Tři lilie, Belvedere, Dr. Adler, Luisa, Metropol – výtah jen do 2. patra); bezbariérovost neuvádějí, proto nezapsáno"
+  },
+  {
+   "title": "Bristol Group – FAQ",
+   "url": "https://bristolgroup.cz/cs/",
+   "note": "odpověď k hostům s omezenou pohyblivostí"
+  },
+  {
+   "title": "Živý kraj (turistický portál Karlovarského kraje)",
+   "url": "https://zivykraj.cz/",
+   "note": "prohledána úvodní stránka, sekce s bezbariérovým ubytováním nenalezena"
+  },
+  {
+   "title": "Nominatim (OpenStreetMap)",
+   "url": "https://nominatim.openstreetmap.org/",
+   "note": "geokódování nových míst"
+  },
+  {
+   "title": "Pražská organizace vozíčkářů, Booking.com, TripAdvisor",
+   "url": "",
+   "note": "existující zdroje, podle zadání nevytěžovány"
+  }
+ ]
+}

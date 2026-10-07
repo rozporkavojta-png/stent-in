@@ -1,0 +1,151 @@
+{
+ "task": "cile_kralovehradecky",
+ "kraj": "Královéhradecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n5034630508",
+   "name": "Stezka korunami stromů Krkonoše",
+   "obec": "Janské Lázně",
+   "address": "",
+   "lat": 50.631095,
+   "lng": 15.757643,
+   "category": "cil",
+   "source_url": "https://treetop-walks.com/krkonose/o-stezce/faq/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Stezka je podle FAQ v celé délce kompletně bezbariérová, vstup je možný i s elektrickým vozíkem.",
+    "wc": "Na samotné stezce toaleta není; doporučují toaletu v hlavní budově před návštěvou.",
+    "parkovani": "Přímo u stezky je velké parkoviště s bezbariérovým přístupem.",
+    "jine": "Na pokladnách lze zdarma zapůjčit 2 invalidní vozíky."
+   },
+   "measurements": [],
+   "evidence_quote": "Stezka je v celé své délce kompletně bezbariérová."
+  },
+  {
+   "osm_id": "w55828366",
+   "name": "hospitál Kuks",
+   "obec": "Kuks",
+   "address": "",
+   "lat": 50.397763,
+   "lng": 15.889357,
+   "category": "cil",
+   "source_url": "https://www.hospital-kuks.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Interiéry hospitálu jsou bezbariérové kromě Šporkovské hrobky; s vozíkem lze projet i zahradu a okolí.",
+    "wc": "Vedle vstupu do pokladny je volně přístupná bezbariérová toaleta.",
+    "parkovani": "Pro imobilní je parkování přímo u hospitálu (příjezd přes Brod n. L. a Slotov).",
+    "jine": "Snížené vstupné pro ZTP, ZTP/P; průvodce držitele ZTP/P zdarma."
+   },
+   "measurements": [],
+   "evidence_quote": "Interiéry hospitálu jsou vyjma Šporkovské hrobky bezbariérové."
+  },
+  {
+   "osm_id": "w45107919",
+   "name": "Biograf Český Ráj",
+   "obec": "Jičín",
+   "address": "",
+   "lat": 50.434614,
+   "lng": 15.35146,
+   "category": "cil",
+   "source_url": "https://kzmj.cz/biograf/kontakty-informace/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Biograf je bezbariérový, balkon ne (přístup jen po schodišti).",
+    "wc": "Bezbariérové WC je ve foyer vlevo.",
+    "jine": "5 míst pro vozíčkáře v 7. řadě (mezi sedadly 1-3 a 4-6), rezervace mailem nebo telefonem; indukční smyčka v přízemí."
+   },
+   "measurements": [
+    {
+     "co": "místa pro vozíčkáře v sále",
+     "hodnota": 5,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Biograf je bezbariérový (balkon není bezbariérový"
+  },
+  {
+   "osm_id": "w71947563",
+   "name": "Sýpka - muzeum Orlických hor",
+   "obec": "Rokytnice v Orlických horách",
+   "address": "",
+   "lat": 50.166157,
+   "lng": 16.466205,
+   "category": "cil",
+   "source_url": "http://www.sypka-moh.cz/cz/index.php?option=com_content&view=article&id=3&Itemid=3",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup do budovy i interiéry jsou podle webu plně bezbariérové.",
+    "parkovani": "U budovy je velké odstavné parkoviště (bez zmínky o vyhrazených místech)."
+   },
+   "measurements": [],
+   "evidence_quote": "Přístup do budovy i její interiéry jsou plně bezbariérové."
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n8151682329",
+   "name": "Šrámkův statek",
+   "url": "https://www.sramkuvstatek.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1488516823",
+   "name": "Muzeum stavebnice MERKUR",
+   "url": "https://www.merkurpolice.cz/",
+   "reason": "web nic o přístupnosti neuvádí (jen snížené vstupné ZTP)"
+  },
+  {
+   "osm_id": "n10936529161",
+   "name": "EPO1",
+   "url": "https://www.epo1.cz/navsteva",
+   "reason": "web nic o přístupnosti neuvádí (jen vstupné ZTP, doprovod ZTP/P zdarma) (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "n3464333551",
+   "name": "Městská knihovna",
+   "url": "https://www.knihovnahk.cz/",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "n1457692662",
+   "name": "Městská knihovna Náchod",
+   "url": "https://www.knihovnanachod.cz/",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  },
+  {
+   "osm_id": "n317935068",
+   "name": "Bajkazyl HK",
+   "url": "https://bajkazylhk.cz/",
+   "reason": "web nic o přístupnosti neuvádí (OSM uvádí wheelchair=yes)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby cílů z OSM (vstup cile_kralovehradecky.json)",
+   "url": "data/research/inputs/cile_kralovehradecky.json",
+   "note": "10 cílů s webem, všechny prošly (úvod + až 10 podstránek)"
+  },
+  {
+   "title": "Stezka korunami stromů Krkonoše – FAQ",
+   "url": "https://treetop-walks.com/krkonose/o-stezce/faq/"
+  },
+  {
+   "title": "Hospitál Kuks – informace pro návštěvníky",
+   "url": "https://www.hospital-kuks.cz/cs/informace-pro-navstevniky"
+  },
+  {
+   "title": "Biograf Český ráj – kontakty a informace",
+   "url": "https://kzmj.cz/biograf/kontakty-informace/"
+  },
+  {
+   "title": "Sýpka – muzeum Orlických hor",
+   "url": "http://www.sypka-moh.cz/cz/index.php?option=com_content&view=article&id=3&Itemid=3"
+  }
+ ]
+}

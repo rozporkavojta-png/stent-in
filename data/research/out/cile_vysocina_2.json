@@ -1,0 +1,190 @@
+{
+ "task": "cile_vysocina_2",
+ "kraj": "Kraj Vysočina",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n670504535",
+   "name": "Dům Gustava Mahlera",
+   "obec": "Jihlava",
+   "address": "Znojemská 4",
+   "lat": 49.39361,
+   "lng": 15.591217,
+   "category": "muzeum",
+   "source_url": "https://www.vysocina.eu/turisticke-cile/dum-gustava-mahlera",
+   "source_type": "krajský turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Podle krajského portálu je dům přístupný jen částečně bezbariérově.",
+    "vytah": "Do pater vede bezbariérový výtah.",
+    "wc": "K dispozici jsou toalety pro hendikepované návštěvníky.",
+    "jine": "Je zde přebalovací koutek pro děti."
+   },
+   "evidence_quote": "Přístup do Domu Gustava Mahlera je částečně bezbariérový"
+  },
+  {
+   "osm_id": "n295452039",
+   "name": "Jihlavské podzemí",
+   "obec": "Jihlava",
+   "address": "Hluboká 109/1",
+   "lat": 49.396931,
+   "lng": 15.591359,
+   "category": "turistický cíl",
+   "source_url": "https://www.dojihlavy.cz/mista/jihlavske-podzemi",
+   "source_type": "městský turistický portál",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "jine": "Prohlídkové okruhy podle městského turistického portálu nejsou bezbariérové."
+   },
+   "evidence_quote": "Prohlídkové okruhy nejsou bezbariérové."
+  },
+  {
+   "osm_id": "n598204143",
+   "name": "CineStar",
+   "obec": "Jihlava",
+   "address": "Hradební 5440/1",
+   "lat": 49.392493,
+   "lng": 15.594663,
+   "category": "kino",
+   "source_url": "https://www.dojihlavy.cz/mista/cinestar",
+   "source_type": "městský turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Portál DoJihlavy.cz kino označuje štítkem Bezbariér, bez dalších podrobností."
+   },
+   "evidence_quote": "Cinestar Bezbariér Kina a divadla"
+  },
+  {
+   "osm_id": "n21315877",
+   "name": "Muzeum Vysočiny",
+   "obec": "Třebíč",
+   "address": "Zámek 1",
+   "lat": 49.216689,
+   "lng": 15.873055,
+   "category": "muzeum",
+   "source_url": "https://www.vysocina.eu/turisticke-cile/muzeum-vysociny-trebic",
+   "source_type": "krajský turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Krajský portál uvádí bezbariérový přístup; všechny prostory muzea mají být zcela bezbariérové."
+   },
+   "evidence_quote": "Veškeré prostory muzea jsou zcela bezbariérové."
+  },
+  {
+   "osm_id": "n11655725347",
+   "name": "Muzeum Vysočiny Roštejn",
+   "obec": "Doupě",
+   "address": "Doupě 1",
+   "lat": 49.252171,
+   "lng": 15.425894,
+   "category": "muzeum",
+   "source_url": "https://www.vysocina.eu/turisticke-cile/hrad-rostejn",
+   "source_type": "krajský turistický portál",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérové je jen nádvoří a prostory přístupné přímo z něj, např. expozice černé kuchyně u pokladny.",
+    "wc": "Hrad má bezbariérové sociální zařízení."
+   },
+   "evidence_quote": "Bezbariérové je pouze nádvoří a prostory přístupné přímo z něj"
+  },
+  {
+   "osm_id": "n3398336459",
+   "name": "HLINÍKárium",
+   "obec": "Humpolec",
+   "lat": 49.540928,
+   "lng": 15.355667,
+   "category": "muzeum",
+   "source_url": "https://www.vysocina.eu/turisticke-cile/hlinikarium-humpolec",
+   "source_type": "krajský turistický portál",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Krajský portál u místa uvádí bezbariérový přístup (jen jako štítek, bez podrobností)."
+   },
+   "evidence_quote": "Bezbariérový přístup"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n1518216654",
+   "name": "Kino Humpolec",
+   "url": "https://humpolec.cz/misto/kino/",
+   "reason": "stránka „Přístupnost na filmy“ řeší jen věkové kategorie filmů, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "w263555326",
+   "name": "Alternátor",
+   "url": "https://www.alternator.cz/",
+   "reason": "web (úvod, o nás, kontakty, FAQ, vstup) ani https://www.vysocina.eu/turisticke-cile/alternator-ekotechnicke-centrum-trebic nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w263565768",
+   "name": "dům Seligmanna Bauera",
+   "url": "https://www.vysocina.eu/turisticke-cile/dum-seligmanna-bauera-trebic",
+   "reason": "stránka nic o přístupnosti neuvádí; visittrebic.eu také ne"
+  },
+  {
+   "osm_id": "n364376592",
+   "name": "Židovské muzeum",
+   "url": "https://www.vysocina.eu/turisticke-cile/zadni-synagoga-trebic",
+   "reason": "stránka Zadní synagogy ani https://www.visittrebic.eu/pamatky/zadni-synagoga/ nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w31858186",
+   "name": "Městská knihovna Třebíč",
+   "url": "https://www.knihovnatr.cz/cze/služby/pro-zdravotně-postižené/",
+   "reason": "uvádí jen donáškovou službu pro imobilní a zvukovou knihovnu, o přístupnosti budovy nic"
+  },
+  {
+   "osm_id": "n475601974",
+   "name": "Kino Pasáž Třebíč",
+   "url": "https://www.mkstrebic.cz/kino-pasaz-trebic/",
+   "reason": "web MKS Třebíč (kino, provozní řád, pronájmy sálů) nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w39674831",
+   "name": "Divadlo Pasáž Třebíč",
+   "url": "https://www.mkstrebic.cz/divadlo/",
+   "reason": "web MKS Třebíč nic o fyzické přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12197641831",
+   "name": "Vyhlídková věž kostela sv. Mikuláše",
+   "url": "https://humpolec.cz/misto/vyhlidkova-vez-kostela-sv-mikulase/",
+   "reason": "stránka nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n1781929307",
+   "name": "Muzeum Vysočiny Jihlava - pobočka Třešť",
+   "url": "https://www.vysocina.eu/turisticke-cile/muzeum-vysociny-jihlava-pobocka-trest",
+   "reason": "ani krajský portál nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12295940732",
+   "name": "Muzeum Tesla",
+   "url": "https://www.vysocina.eu/turisticke-cile/muzeum-tesla",
+   "reason": "ani krajský portál nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9979423702",
+   "name": "Modelové království",
+   "url": "https://www.vysocina.eu/turisticke-cile/modelove-kralovstvi-zdar-nad-sazavou",
+   "reason": "ani krajský portál nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n448166730",
+   "name": "Městská knihovna Jihlava",
+   "url": "https://www.mkjihlava.cz/",
+   "reason": "web (úvod + podstránky) nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  "https://www.dojihlavy.cz/mista/cinestar",
+  "https://www.dojihlavy.cz/mista/dum-gustava-mahlera",
+  "https://www.dojihlavy.cz/mista/jihlavske-podzemi",
+  "https://www.vysocina.eu/turisticke-cile/dum-gustava-mahlera",
+  "https://www.vysocina.eu/turisticke-cile/hlinikarium-humpolec",
+  "https://www.vysocina.eu/turisticke-cile/hrad-rostejn",
+  "https://www.vysocina.eu/turisticke-cile/kultura-a-poznani",
+  "https://www.vysocina.eu/turisticke-cile/muzeum-vysociny-trebic"
+ ]
+}

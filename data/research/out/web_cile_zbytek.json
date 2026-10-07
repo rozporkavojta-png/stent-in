@@ -1,0 +1,1956 @@
+{
+ "task": "web_cile_zbytek",
+ "kraj": "více krajů (hlavně Praha a Jihomoravský)",
+ "checked_date": "2026-10-06",
+ "places": [
+  {
+   "osm_id": "n10730198805",
+   "name": "Central Gallery",
+   "obec": "Praha",
+   "address": "Staroměstské náměstí 15",
+   "lat": 50.087458,
+   "lng": 14.422162,
+   "category": "pamatky",
+   "source_url": "https://www.centralgallery.cz/novinky/faqs",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup, ve FAQ ale upřesňuje, že galerie není zcela bezbariérová: k výtahu vedou tři schody.",
+    "vytah": "Výtah v historické budově je malý; vnitřní rozměry mohou omezit větší elektrické vozíky i kočárky."
+   },
+   "measurements": [
+    {
+     "co": "vnitřní rozměry výtahu",
+     "hodnota": "70 x 80",
+     "jednotka": "cm"
+    },
+    {
+     "co": "schody před výtahem",
+     "hodnota": 3,
+     "jednotka": "schod"
+    }
+   ],
+   "evidence_quote": "Naše galerie není zcela bezbariérová. K výtahu vedou tři schody."
+  },
+  {
+   "osm_id": "n1269744968",
+   "name": "Cinema City",
+   "obec": "Praha",
+   "lat": 50.054177,
+   "lng": 14.287453,
+   "category": "kultura",
+   "source_url": "https://www.cinemacity.cz/cinemas/zlicin/1051",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "V sekci Dostupnost uvedeno: bezbariérový přístup.",
+    "parkovani": "Uvedeno bezbariérové parkoviště.",
+    "jine": "Vstup s asistenčním psem povolen."
+   },
+   "measurements": [],
+   "evidence_quote": "Dostupnost Bezbariérový přístup Bezbariérové parkoviště"
+  },
+  {
+   "osm_id": "n656405949",
+   "name": "Cinema City Slovanský dům",
+   "obec": "Praha",
+   "lat": 50.086257,
+   "lng": 14.427833,
+   "category": "kultura",
+   "source_url": "https://www.cinemacity.cz/cinemas/slovanskydum/1033",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "V sekci Dostupnost uvedeno: bezbariérový přístup.",
+    "parkovani": "Parkování u kina není k dispozici."
+   },
+   "measurements": [],
+   "evidence_quote": "Parkování není k dispozici ... Dostupnost Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n529127928",
+   "name": "Clarion Hotel Prague",
+   "obec": "Praha",
+   "lat": 50.092248,
+   "lng": 14.426459,
+   "category": "ubytovani",
+   "source_url": "https://www.clarionhotelpragueoldtown.com/cs/hotel",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel uvádí možnost bezbariérového pokoje (bez bližšího popisu)."
+   },
+   "measurements": [],
+   "evidence_quote": "Můžete mít bezbariérový pokoj"
+  },
+  {
+   "osm_id": "n296507713",
+   "name": "Czech Beer Museum",
+   "obec": "Praha",
+   "address": "Husova 156/21",
+   "lat": 50.086039,
+   "lng": 14.41795,
+   "category": "pamatky",
+   "source_url": "https://beermuseum.cz/cs/visit",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Muzeum není bezbariérové kvůli historickým sklepním prostorám ze 13. století."
+   },
+   "measurements": [],
+   "evidence_quote": "Muzeum není bezbariérové kvůli historickým sklepním prostorům."
+  },
+  {
+   "osm_id": "n1252317575",
+   "name": "Divadlo Disk",
+   "obec": "Praha",
+   "address": "Karlova 223/26",
+   "lat": 50.085939,
+   "lng": 14.417291,
+   "category": "kultura",
+   "source_url": "https://www.divadlodisk.cz/FAQ",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Divadlo je bezbariérové jen částečně; do sálu vede několik schodů.",
+    "jine": "Diváky na vozíku či o berlích lze usadit do lóží s omezenou kapacitou."
+   },
+   "measurements": [],
+   "evidence_quote": "Částečně, diváky na vozíčku či o berlích můžeme usadit do lóží"
+  },
+  {
+   "osm_id": "n1283258370",
+   "name": "Divadlo U Hasičů",
+   "obec": "Praha",
+   "address": "Římská 2135/45",
+   "lat": 50.076664,
+   "lng": 14.438498,
+   "category": "kultura",
+   "source_url": "https://divadlouhasicu.net/kontakt/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Divadlo (342 míst) uvádí bezbariérový přístup, bez dalších podrobností."
+   },
+   "measurements": [],
+   "evidence_quote": "má bezbariérový přístup"
+  },
+  {
+   "osm_id": "n1302064019",
+   "name": "Galerie Hollar",
+   "obec": "Praha",
+   "lat": 50.082237,
+   "lng": 14.413318,
+   "category": "pamatky",
+   "source_url": "https://hollar.cz/kontakt/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Přístup není primárně bezbariérový; lze ho zajistit vchodem z Divadelní ulice po předchozí telefonické domluvě (737 288 310)."
+   },
+   "measurements": [],
+   "evidence_quote": "Přístup není primárně bezbariérový, ale lze zajistit vchodem z Divadelní ulice"
+  },
+  {
+   "osm_id": "w386496838",
+   "name": "Letní scéna",
+   "obec": "Praha",
+   "address": "Vyšehrad",
+   "lat": 50.066385,
+   "lng": 14.416687,
+   "category": "kultura",
+   "source_url": "https://praha-vysehrad.cz/cs/navsteva/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Areál Vyšehradu je podle správce bezbariérově přístupný, kvůli historickému charakteru je nutná zvýšená opatrnost; některé objekty a prohlídkové trasy bezbariérové nejsou.",
+    "wc": "Veřejné toalety (u infocentra, placené 20 Kč) jsou bezbariérově přístupné.",
+    "jine": "Informace platí pro celý areál Vyšehradu, ne konkrétně pro Letní scénu."
+   },
+   "measurements": [],
+   "evidence_quote": "Areál Vyšehradu je bezbariérově přístupný."
+  },
+  {
+   "osm_id": "n13086700598",
+   "name": "Národní pedagogická knihovna J. A. Komenského",
+   "obec": "Praha",
+   "lat": 50.084005,
+   "lng": 14.432503,
+   "category": "kultura",
+   "source_url": "https://npmk.gov.cz/knihovna/kontakty",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Pedagogická knihovna (Jeruzalémská 957/12) má bezbariérový přístup.",
+    "jine": "Historická budova Pedagogického muzea (Valdštejnská 20) bezbariérový přístup nemá."
+   },
+   "measurements": [],
+   "evidence_quote": "Knihovna má bezbariérový přístup."
+  },
+  {
+   "osm_id": "n3621828328",
+   "name": "Residence Bologna",
+   "obec": "Praha",
+   "address": "Konviktská 263/5",
+   "lat": 50.083415,
+   "lng": 14.415833,
+   "category": "ubytovani",
+   "source_url": "https://www.pragueresidencebologna.com/official-faq",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Hotel má výtah do všech pater."
+   },
+   "measurements": [],
+   "evidence_quote": "Hotel Bologna has a lift providing access to the hotel's floors."
+  },
+  {
+   "osm_id": "w50111544",
+   "name": "Restaurace a pension Školička",
+   "obec": "Praha",
+   "address": "Klíčovská 11",
+   "lat": 50.117626,
+   "lng": 14.507138,
+   "category": "ubytovani",
+   "source_url": "https://skolicka.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Mezi vybavením uveden bezbariérový přístup (bez podrobností)."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n5176043364",
+   "name": "Sklep",
+   "obec": "Praha",
+   "address": "Seifertova 53",
+   "lat": 50.085025,
+   "lng": 14.446346,
+   "category": "ubytovani",
+   "source_url": "https://www.apartman-praha.com/cs/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Apartmány jsou ve 2.–4. patře činžovního domu s výtahem, vchod z ulice Seifertova.",
+    "koupelna": "Koupelny se sprchovým koutem nebo vanou; o bezbariérovosti nic."
+   },
+   "measurements": [],
+   "evidence_quote": "Apartmány jsou ve 2. a 3.patře činžovního domu (s výtahem)"
+  },
+  {
+   "osm_id": "w97233690",
+   "name": "Sportovní hala Radotín",
+   "obec": "Praha",
+   "lat": 49.981589,
+   "lng": 14.35723,
+   "category": "sport",
+   "source_url": "https://halaradotin.cz/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Jeden dvoulůžkový pokoj v ubytovně haly je uzpůsobený pro handicapované."
+   },
+   "measurements": [],
+   "evidence_quote": "Jeden dvoulůžkový pokoj je uzpůsobený pro handicapované."
+  },
+  {
+   "osm_id": "w211776888",
+   "name": "Stadion Ďolíček",
+   "obec": "Praha",
+   "address": "Vršovická 31",
+   "lat": 50.066995,
+   "lng": 14.454128,
+   "category": "sport",
+   "source_url": "https://bohemians.cz/info-hoste",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Vstupenky pro ZTP a vozíčkáře je třeba předem objednat přes SLO (styčného důstojníka) Bohemians e-mailem."
+   },
+   "measurements": [],
+   "evidence_quote": "Pro vstupenky pro ZTP a vozíčkáře kontaktujte v dostatečném předstihu SLO Bohemians"
+  },
+  {
+   "osm_id": "n370365825",
+   "name": "William",
+   "obec": "Praha",
+   "address": "Hellichova 455/5",
+   "lat": 50.084238,
+   "lng": 14.404692,
+   "category": "ubytovani",
+   "source_url": "https://www.hotelwilliam.cz/en/Hotel/Accommodation/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vytah": "Pokoje jsou v pěti patrech, výtah je až z mezipatra."
+   },
+   "measurements": [],
+   "evidence_quote": "rooms are located on five floors with a lift on the mezzanine floor"
+  },
+  {
+   "osm_id": "mbb5773281",
+   "name": "A-Austerlitz Hotel",
+   "obec": "Brno",
+   "address": "Táborského nábřeží 3",
+   "lat": 49.186098,
+   "lng": 16.594409,
+   "category": "ubytovani",
+   "source_url": "https://www.austerlitzhotel.cz/hotel/poloha-a-prijezd/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "parkovani": "Placené hotelové parkoviště; od něj vede dlážděný chodník ke vchodu do suterénu.",
+    "vytah": "Ze suterénu jezdí výtah pro hosty, recepce je v přízemí (ve výtahu úroveň 0)."
+   },
+   "measurements": [],
+   "evidence_quote": "dlážděný chodník Vás přivede ke vchodu do suterénu hotelu k výtahu"
+  },
+  {
+   "osm_id": "brno346",
+   "name": "Arnoldova vila",
+   "obec": "Brno",
+   "address": "Drobného 26",
+   "lat": 49.207143,
+   "lng": 16.614441,
+   "category": "pamatky",
+   "source_url": "https://www.muzeumbrna.cz/arnoldova-vila/t1515",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Pro bezbariérový přístup se používá vstup z ulice Schodová 16a."
+   },
+   "measurements": [],
+   "evidence_quote": "Pro bezbariérový přístup použijte vstup z ulice Schodová 16a."
+  },
+  {
+   "osm_id": "w44368231",
+   "name": "Botanická zahrada a arboretum Mendelu",
+   "obec": "Brno",
+   "lat": 49.213585,
+   "lng": 16.613241,
+   "category": "priroda",
+   "source_url": "https://zahrada.mendelu.cz/pro-navstevniky/oteviraci-doba-vstupne-pronajmy/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup do budovy je možný po předchozí dohodě (telefon/e-mail) nebo u pokladny. Cesta do zahrady není úplně bezbariérová, samotná zahrada ano.",
+    "wc": "Bezbariérové WC po předchozí dohodě."
+   },
+   "measurements": [],
+   "evidence_quote": "cesta do zahrady není úplně bezbariérová, v zahradě již ano"
+  },
+  {
+   "osm_id": "w655162375",
+   "name": "Divadlo Bolka Polívky",
+   "obec": "Brno",
+   "address": "Jakubské náměstí 127/5",
+   "lat": 49.196973,
+   "lng": 16.608345,
+   "category": "kultura",
+   "source_url": "https://divadlobolkapolivky.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Divadlo nabízí videoprůvodce pro osoby se sníženou mobilitou a na vozíku (obsah videa nebyl ověřen)."
+   },
+   "measurements": [],
+   "evidence_quote": "Videoprůvodce pro osoby se sníženou mobilitou a na vozíku"
+  },
+  {
+   "osm_id": "mbb5773524",
+   "name": "Divadlo Husa na provázku",
+   "obec": "Brno",
+   "address": "Zelný trh 9",
+   "lat": 49.191986,
+   "lng": 16.607856,
+   "category": "kultura",
+   "source_url": "https://www.provazek.cz/prakticke-informace",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Provázek.sál je bezbariérový; do foyer hlavním vchodem nebo přes provázek.dvůr, kde jsou schody i rampa. Provázek.dvůr je bezbariérový kromě ochozů. Provázek.sklep je jen po schodech (technici mechanický vozík snesou).",
+    "vytah": "Z foyer vede do sálu výtah, obsluhují ho uvaděči.",
+    "wc": "Ve foyer je bezbariérová toaleta.",
+    "jine": "Vyhrazená místa je třeba rezervovat e-mailem; v sále je indukční smyčka."
+   },
+   "measurements": [],
+   "evidence_quote": "provázek.sál je bezbariérový"
+  },
+  {
+   "osm_id": "mbb5773451",
+   "name": "Janáčkovo divadlo (Národní divadlo Brno)",
+   "obec": "Brno",
+   "address": "Rooseveltova 7",
+   "lat": 49.198418,
+   "lng": 16.610595,
+   "category": "kultura",
+   "source_url": "https://www.ndbrno.cz/info-pro-handicapovane/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup u Zákaznického centra (Rooseveltova 1–7) na zazvonění; personál zajistí plošinu na vnitřním bočním schodišti.",
+    "parkovani": "Z podzemní garáže JD Parking vede výtah do přízemí divadla (v provozu nejdříve hodinu před představením).",
+    "wc": "WC pro vozíčkáře v přízemí vlevo od šaten a v suterénu v průchodu z parkoviště.",
+    "jine": "Místa pro vozíky v přízemí u řady 6 (po dvou z každé strany); počet je omezen, nutno sdělit požadavek při nákupu. Pro nedoslýchavé UHF systém."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup se nachází u Zákaznického centra, Rooseveltova 1–7."
+  },
+  {
+   "osm_id": "mbb5773521",
+   "name": "Mendelovo muzeum – Masarykova univerzita, Opatství Staré Brno Řádu sv. Augustina",
+   "obec": "Brno",
+   "address": "Mendlovo náměstí/1a",
+   "lat": 49.191255,
+   "lng": 16.593796,
+   "category": "pamatky",
+   "source_url": "https://mendelmuseum.muni.cz/pro-navstevniky/navstevni-rad",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup do expozice Mendelova muzea je bezbariérový (i s kočárkem). Web má stránku Do muzea bezbariérově s videem."
+   },
+   "measurements": [],
+   "evidence_quote": "Vstup do expozice Mendelova muzea je bezbariérový"
+  },
+  {
+   "osm_id": "mbb5773452",
+   "name": "Pražákův palác (Moravská galerie v Brně)",
+   "obec": "Brno",
+   "address": "Husova 18",
+   "lat": 49.195458,
+   "lng": 16.604232,
+   "category": "pamatky",
+   "source_url": "https://moravska-galerie.cz/kontakt/prazakuv-palac/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup z ulice Besední, zvonek ve výšce 1,5 m.",
+    "vytah": "Všechna patra jsou dostupná výtahem.",
+    "wc": "Bezbariérové WC ve 4. patře.",
+    "parkovani": "Placené parkoviště u ulice Besední (vyhrazená stání neuvedena)."
+   },
+   "measurements": [
+    {
+     "co": "výška zvonku u bezbariérového vstupu",
+     "hodnota": 1.5,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Z této ulice je také bezbariérový vstup."
+  },
+  {
+   "osm_id": "mbb5773447",
+   "name": "Uměleckoprůmyslové muzeum (Moravská galerie v Brně)",
+   "obec": "Brno",
+   "address": "Husova 14",
+   "lat": 49.194312,
+   "lng": 16.604624,
+   "category": "pamatky",
+   "source_url": "https://moravska-galerie.cz/kontakt/umeleckoprumyslove-muzeum/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Jako bezbariérový vstup slouží služební vchod z boku budovy od Magistrátu, se zvonkem.",
+    "vytah": "Všechna patra jsou dostupná výtahem.",
+    "wc": "Bezbariérové WC v přízemí.",
+    "parkovani": "Placené parkování před sousedním hotelem."
+   },
+   "measurements": [],
+   "evidence_quote": "Jako bezbariérový vstup slouží služební vchod z boku budovy"
+  },
+  {
+   "osm_id": "mbb5773470",
+   "name": "Palác šlechtičen (Moravské zemské muzeum)",
+   "obec": "Brno",
+   "address": "Kobližná 1",
+   "lat": 49.195503,
+   "lng": 16.60918,
+   "category": "pamatky",
+   "source_url": "https://www.mzm.cz/palac-slechticen",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Stránka objektu uvádí bezbariérový přístup do objektu (odkaz na MZM bez bariér, podrobnosti se tam načítají až skriptem a nebyly ověřeny)."
+   },
+   "measurements": [],
+   "evidence_quote": "Využijte bezbariérového přístupu do tohoto objektu."
+  },
+  {
+   "osm_id": "mbb5773355",
+   "name": "Pavilon Antropos",
+   "obec": "Brno",
+   "address": "Pisárecká 5",
+   "lat": 49.192078,
+   "lng": 16.567264,
+   "category": "pamatky",
+   "source_url": "https://www.mzm.cz/pavilon-anthropos/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Téměř celý objekt Pavilonu Anthropos je bezbariérový.",
+    "jine": "Podrobná prezentace pro vozíčkáře je na webu mapotic.com; video-průvodce pro neslyšící."
+   },
+   "measurements": [],
+   "evidence_quote": "Téměř celý objekt Pavilon Anthropos je bezbariérový."
+  },
+  {
+   "osm_id": "mbb5773291",
+   "name": "Penzion Zahrada",
+   "obec": "Brno",
+   "address": "Lipová 26",
+   "lat": 49.194015,
+   "lng": 16.576508,
+   "category": "ubytovani",
+   "source_url": "https://penzion-zahrada.cz/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Dva pokoje jsou zcela bezbariérové.",
+    "koupelna": "Bezbariérové je u těchto pokojů i sociální zařízení."
+   },
+   "measurements": [],
+   "evidence_quote": "Dva pokoje jsou zcela bezbariérové, včetně sociálního zařízení."
+  },
+  {
+   "osm_id": "n1473369199",
+   "name": "Velký Špalíček",
+   "obec": "Brno",
+   "address": "Mečová 2",
+   "lat": 49.193195,
+   "lng": 16.60737,
+   "category": "kultura",
+   "source_url": "https://www.cinemacity.cz/static/cs/cz/faq",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Rezervaci pro vozíčkáře lze vytvořit e-mailem nebo přes infolinku Cinema City (obecné FAQ sítě, ne konkrétně Velký Špalíček)."
+   },
+   "measurements": [],
+   "evidence_quote": "Jak lze vytvořit rezervaci pro vozíčkáře?"
+  },
+  {
+   "osm_id": "mbb5773482",
+   "name": "katedrála sv. Petra a Pavla",
+   "obec": "Brno",
+   "address": "Petrov",
+   "lat": 49.191031,
+   "lng": 16.607133,
+   "category": "pamatky",
+   "source_url": "https://www.katedrala-petrov.cz",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Do katedrály je bezbariérový přístup hlavním vchodem; do krypty a věží vedou schody a nejsou přizpůsobeny.",
+    "wc": "Nejbližší veřejné toalety jsou na Baštách (bezbariérovost neuvedena)."
+   },
+   "measurements": [],
+   "evidence_quote": "Do katedrály je bezbariérový přístup hlavním vchodem."
+  },
+  {
+   "osm_id": "r20363038",
+   "name": "Súsedská",
+   "obec": "Hýsly",
+   "address": "Hýsly",
+   "lat": 49.026446,
+   "lng": 17.191917,
+   "category": "priroda",
+   "source_url": "https://www.susedska.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "Rozhledna je vysoká 21 m a má celkem 99 schodů; výtah se neuvádí."
+   },
+   "measurements": [
+    {
+     "co": "výška rozhledny",
+     "hodnota": 21,
+     "jednotka": "m"
+    },
+    {
+     "co": "počet schodů",
+     "hodnota": 99,
+     "jednotka": "schod"
+    }
+   ],
+   "evidence_quote": "má výšku 21 m a celkově 99 schodů"
+  },
+  {
+   "osm_id": "w524023754",
+   "name": "Schwarzenberská hrobka",
+   "obec": "Domanín",
+   "lat": 48.993944,
+   "lng": 14.765618,
+   "category": "pamatky",
+   "source_url": "https://schwarzenberska-hrobka.cz/informace-pro-navstevniky/zakladni-a-dulezite-informace/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Přístup do hrobky není bezbariérový, vede na ni široké schodiště.",
+    "parkovani": "U hrobky se parkovat nedoporučuje; nejbližší parkoviště pod hrází rybníka Svět asi 300 m."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště",
+     "hodnota": 300,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Přístup do Schwarzenberské hrobky není bezbariérový."
+  },
+  {
+   "osm_id": "w528345767",
+   "name": "Městská letní plovárna",
+   "obec": "Týn nad Vltavou",
+   "lat": 49.220793,
+   "lng": 14.417392,
+   "category": "sport",
+   "source_url": "https://www.plovarnatyn.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Celý areál plovárny je řešen jako bezbariérový."
+   },
+   "measurements": [],
+   "evidence_quote": "Celý areál je řešen jako bezbarierový"
+  },
+  {
+   "osm_id": "w73908194",
+   "name": "zámek Bečov nad Teplou",
+   "obec": "Bečov nad Teplou",
+   "lat": 50.085597,
+   "lng": 12.839721,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-becov.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Prohlídky relikviáře a zámeckých interiérů nejsou bezbariérové, hradní nádvoří je obtížně přístupné; po domluvě se správa pokusí zajistit vstup. U vstupu do areálu je zvonek pro vozíčkáře.",
+    "wc": "Bezbariérové WC v horní části areálu vedle pokladny."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérové WC se nachází v horní části areálu vedle pokladny."
+  },
+  {
+   "osm_id": "w26040638",
+   "name": "Hrad Bezděz",
+   "obec": "Bezděz",
+   "lat": 50.539115,
+   "lng": 14.719931,
+   "category": "pamatky",
+   "source_url": "https://www.hrad-bezdez.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "K hradu vede náročnější výstup, část cesty po kamenných schodech a skále; 1,5 km od parkoviště v obci, 2,5 km od parkoviště pod obcí.",
+    "jine": "Návštěvní řád povoluje vjezd vozíků pro tělesně postižené do areálu po dohodě."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost od parkoviště v obci",
+     "hodnota": 1.5,
+     "jednotka": "km"
+    }
+   ],
+   "evidence_quote": "část cesty se jde po kamenných schodech"
+  },
+  {
+   "osm_id": "n1435919799",
+   "name": "Rotštejn",
+   "obec": "Mírová pod Kozákovem",
+   "lat": 50.594288,
+   "lng": 15.224272,
+   "category": "pamatky",
+   "source_url": "https://www.hradrotstejn.info/cs/pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "Cesta vede pískovcovými skalami po schodech (asi 2,5 km); s kočárkem jen pro fyzicky zdatné."
+   },
+   "measurements": [
+    {
+     "co": "úsek po schodech mezi skalami",
+     "hodnota": 2.5,
+     "jednotka": "km"
+    }
+   ],
+   "evidence_quote": "2,5km přenášení mezi pískovcovými skalami po schodech"
+  },
+  {
+   "osm_id": "w1051397915",
+   "name": "Zahrada Archeologického muzea - Šatlavy",
+   "obec": "Česká Lípa",
+   "lat": 50.687382,
+   "lng": 14.537618,
+   "category": "priroda",
+   "source_url": "https://www.muzeumcl.cz/pobocky/archeologicke-muzeum-satlava",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Muzeum má bezbariérový přístup, expozice jsou v přízemí."
+   },
+   "measurements": [],
+   "evidence_quote": "muzeum má bezbariérový přístup, expozice se nacházejí v přízemí budovy"
+  },
+  {
+   "osm_id": "w277364942",
+   "name": "Relaxcentrum Sepetná",
+   "obec": "Ostravice",
+   "lat": 49.549281,
+   "lng": 18.40535,
+   "category": "sport",
+   "source_url": "https://sepetna.cz/hotel-sepetna/ubytovani/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Apartmá 301 je přizpůsobeno pro imobilní hosty.",
+    "koupelna": "Apartmá má imobilní WC.",
+    "vytah": "Pokoje standard, classic, s balkonem i apartmá jsou přístupné výtahem; pokoje LUX výtahem přístupné nejsou."
+   },
+   "measurements": [],
+   "evidence_quote": "Apartmá 301 je přizpůsobeno pro imobilního"
+  },
+  {
+   "osm_id": "n12505164623",
+   "name": "Krajské asistenční centrum pomoci Ukrajině",
+   "obec": "Pardubice",
+   "lat": 50.03877,
+   "lng": 15.770953,
+   "category": "kultura",
+   "source_url": "https://ipc.gov.cz/docasna-ochrana/navstivte-krajske-asistencni-centrum-pomoci-kacpu/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Pracoviště v Pardubicích (Pernerova 168, přízemí) je přístupné pro imobilní osoby; plošina pro vozíčkáře je u vchodu z vnitrobloku."
+   },
+   "measurements": [],
+   "evidence_quote": "plošina pro vozíčkáře vchodem z vnitrobloku budovy"
+  },
+  {
+   "osm_id": "w57960173",
+   "name": "Krytý bazén Valašské Meziříčí",
+   "obec": "Valašské Meziříčí",
+   "lat": 49.470593,
+   "lng": 17.988107,
+   "category": "sport",
+   "source_url": "https://www.bazenvm.cz/informace/navstevni-rad",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "Kromě turniketů je u vstupu mechanická branka pro imobilní návštěvníky, odemyká ji pokladna."
+   },
+   "measurements": [],
+   "evidence_quote": "mechanickou brankou pro imobilní návštěvníky"
+  },
+  {
+   "osm_id": "w689893122",
+   "name": "Hazmburk",
+   "obec": "Klapý",
+   "lat": 50.43415,
+   "lng": 14.014727,
+   "category": "pamatky",
+   "source_url": "https://www.hrad-hazmburk.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Od parkoviště je k hradu 2,5 km; cesta přes sad a pak kamenitou lesní cestou, pro invalidní vozíky s větší náročností.",
+    "parkovani": "Centrální parkoviště pod hradem s automatem."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště od hradu",
+     "hodnota": 2.5,
+     "jednotka": "km"
+    }
+   ],
+   "evidence_quote": "S větší náročností i pro invalidní vozíky a kočárky."
+  },
+  {
+   "osm_id": "r1589899",
+   "name": "Zámek Kostelec nad Černými lesy",
+   "obec": "Kostelec nad Černými lesy",
+   "address": "náměstí Smiřických 1",
+   "lat": 49.995784,
+   "lng": 14.862518,
+   "category": "pamatky",
+   "source_url": "https://lesy.czu.cz/cs/r-11201-strediska/r-11362-zamek-a-sluzby",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "vstup": "Prohlídka zámku vede od přízemí do střešních prostor s přesuny po schodištích."
+   },
+   "measurements": [],
+   "evidence_quote": "prohlídka vede od přízemí do střešných prostor, přesuny po schodištích"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n4281070240",
+   "name": "Ahoy! Hostel",
+   "url": "https://www.ahoyhostel.com/",
+   "reason": "web nedostupný (<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 al)"
+  },
+  {
+   "osm_id": "n2047259008",
+   "name": "Arena",
+   "url": "https://www.hotel-arena.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n5968465810",
+   "name": "Baby Club Juklík",
+   "url": "https://www.juklik.cz/",
+   "reason": "web zmiňuje jen výtah pro kočárky ve stanici metra Luka, o budově nic"
+  },
+  {
+   "osm_id": "w286675665",
+   "name": "Botanická zahrada Malešice",
+   "url": "http://www.skolajarov.cz/botzahr.php",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w270463983",
+   "name": "Botel Admirál",
+   "url": "https://www.admiral-botel.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n1346673301",
+   "name": "Bruncvík",
+   "url": "http://www.kralovskacesta.cz/cs/prohlidka/objekty/socha-bruncvika.html",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n12407242360",
+   "name": "Centrum Třešňovka",
+   "url": "https://www.centrumtresnovka.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n1269712364",
+   "name": "CineStar Praha – Černý most",
+   "url": "https://www.cinestar.cz/praha-cerny-most/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4346559855",
+   "name": "City Crown",
+   "url": "http://www.citycrownprague.com/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n7276491021",
+   "name": "DDM Praha 5",
+   "url": "https://www.ddmpraha5.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3393796273",
+   "name": "Design Hotel Neruda",
+   "url": "https://www.designhotelneruda.com",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n1237556564",
+   "name": "Divadlo Kámen",
+   "url": "http://studiodk.cz/;https://divadlokamen.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n7258176016",
+   "name": "Divadlo Orfeus",
+   "url": "https://www.orfeus.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n1991104740",
+   "name": "Downtown",
+   "url": "https://www.hosteldowntown.cz/",
+   "reason": "web nedostupný (HTTP Error 500: Internal Server Error)"
+  },
+  {
+   "osm_id": "n2260242083",
+   "name": "Galerie Deset - Waldesovo muzeum",
+   "url": "https://www.galeriedeset.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n4676940692",
+   "name": "Galerie Leica",
+   "url": "https://www.lgp.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n1302296817",
+   "name": "Galerie Smečky",
+   "url": "https://www.galeriesmecky.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n355003395",
+   "name": "Galerie VIA ART",
+   "url": "https://www.galerieviaart.com/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3393593689",
+   "name": "Gingerbread Museum",
+   "url": "https://www.gingerbreadbakery.cz/en/home/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3620539873",
+   "name": "Grand hotel Praha",
+   "url": "https://www.grandhotelpraha.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n2213334775",
+   "name": "HASA",
+   "url": "https://hotelhasa.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n296653514",
+   "name": "Henrietta",
+   "url": "https://www.henrietta.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n11476620239",
+   "name": "Honest Apartments",
+   "url": "https://honestprague.com/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n12620894294",
+   "name": "Hostel Emma",
+   "url": "http://www.hostel-emma.com/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n1562520976",
+   "name": "Hostel Santini Prague",
+   "url": "https://www.hostelsantiniprague.com/",
+   "reason": "web nedostupný (<urlopen error timed out>)"
+  },
+  {
+   "osm_id": "n3393796278",
+   "name": "Hotel Golden Star",
+   "url": "https://www.hotelgoldenstar.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3621362834",
+   "name": "Hotel Liliová",
+   "url": "https://www.hotelliliova.com",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4450210907",
+   "name": "Hotel Merkur",
+   "url": "https://www.merkur-hotel.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3530819193",
+   "name": "Hotel Perla",
+   "url": "https://www.perlahotel.cz/en/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n352852584",
+   "name": "Hotel Union Praha",
+   "url": "https://www.hotelunion.cz/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "w27851381",
+   "name": "Jalta",
+   "url": "https://www.hoteljalta.com/cs/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n9377475599",
+   "name": "Jungle",
+   "url": "https://www.jungleletnany.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3621362832",
+   "name": "King George",
+   "url": "https://www.arcadira.eu",
+   "reason": "web je zprostředkovatel (arcadira.eu), uvádí jen Elevator; nepoužito"
+  },
+  {
+   "osm_id": "n12512931763",
+   "name": "Kino Panská",
+   "url": "https://kino.panska.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n5684405850",
+   "name": "Knihovna Akademie věd ČR",
+   "url": "https://www.lib.cas.cz/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "w113513694",
+   "name": "Komunitní centrum Hrubého",
+   "url": "https://zemelidi.cz/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n8958310253",
+   "name": "Kulturní a rodinné centrum",
+   "url": "https://zahorskeho.webnode.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w51850426",
+   "name": "Kulturní dům Barikádníků (Barča)",
+   "url": "https://kdbarikadniku.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w1445358119",
+   "name": "Lindner Hotel Prague Castle",
+   "url": "https://www.hyatt.com/jdv-by-hyatt/en-US/prgjp-lindner-hotel-prague-castle",
+   "reason": "web nedostupný (HTTP Error 429: Too Many Requests)"
+  },
+  {
+   "osm_id": "n3393598655",
+   "name": "Little Quarter",
+   "url": "https://www.littlequarter.com/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4169533911",
+   "name": "Mediatéka",
+   "url": "https://www.ifp.cz/cz/mediateka/#/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n3138559580",
+   "name": "Meran",
+   "url": "https://www.hotelmeran.cz/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n11643262061",
+   "name": "MiniGym",
+   "url": "https://www.mini-gym.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n284733214",
+   "name": "Modřanský biograf",
+   "url": "https://www.modranskybiograf.cz/",
+   "reason": "web nedostupný (HTTP Error 429: Too Many Requests)"
+  },
+  {
+   "osm_id": "n12408812349",
+   "name": "Mozartovo interaktivní muzeum",
+   "url": "https://www.mozartmuseum.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n9694881679",
+   "name": "Muzeum Legií",
+   "url": "https://www.csol.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3393564852",
+   "name": "Muzeum pražských pověstí a strašidel",
+   "url": "http://www.muzeumpovesti.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n296491079",
+   "name": "Old Prague Hotel",
+   "url": "https://www.oldpraguehotel.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n1462546062",
+   "name": "Pension Berta",
+   "url": "https://www.pension-berta.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n2528585236",
+   "name": "Pension Florenc",
+   "url": "https://www.pensionflorenc.com",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w502933457",
+   "name": "Plavecký areál Podolí",
+   "url": "https://pspodoli.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w72056744",
+   "name": "Plechárna",
+   "url": "https://plecharnacm.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n6358332985",
+   "name": "Prague Dream Hostel",
+   "url": "https://dream-hostels.com/en/prague/",
+   "reason": "web nedostupný (HTTP Error 502: Bad Gateway)"
+  },
+  {
+   "osm_id": "n486741798",
+   "name": "Premiere Cinemas",
+   "url": "https://www.premierecinemas.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w49674536",
+   "name": "Prokopka",
+   "url": "http://www.prokopka.cz",
+   "reason": "web nedostupný (HTTP Error 301: The HTTP server returned a redirect error th)"
+  },
+  {
+   "osm_id": "w319062309",
+   "name": "Psychiatrická nemocnice Bohnice",
+   "url": "http://www.plbohnice.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n2291607737",
+   "name": "RockOpera Praha",
+   "url": "https://www.rockopera.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4007179370",
+   "name": "Rumunský kulturní institut v Praze",
+   "url": "https://www.icr.ro/praga/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4214305898",
+   "name": "Squash Haštal",
+   "url": "https://www.squash-hastal.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w430713909",
+   "name": "Studio Dobeška",
+   "url": "https://www.divadlodobeska.cz/studio/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w89970444",
+   "name": "Tenis Centrum Lužiny",
+   "url": "https://www.tenis-luziny.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "r19436465",
+   "name": "The President",
+   "url": "https://www.axxoshotels.com/the-president",
+   "reason": "web axxoshotels.com uvádí výtah jen u lázeňských budov v Jáchymově, ne u tohoto hotelu"
+  },
+  {
+   "osm_id": "n5335234821",
+   "name": "The RoadHouse Prague",
+   "url": "https://www.theroadhouseprague.com/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n296494094",
+   "name": "Theatrino",
+   "url": "https://www.hoteltheatrino.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4939764151",
+   "name": "Three Crowns hotel",
+   "url": "https://www.3korunky.cz/",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "w465305856",
+   "name": "Trampolínové centrum",
+   "url": "https://www.letnanylagoon.cz/ostatni-sluzby_trampolinove-centrum",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n2641510172",
+   "name": "U Medvídků",
+   "url": "https://www.umedvidku.cz/i",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3461510161",
+   "name": "Unitas Residence",
+   "url": "https://www.unitas.cz",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n10924990486",
+   "name": "Vinohradský dům",
+   "url": "https://vinohradskydum.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4949811274",
+   "name": "Věda a umění",
+   "url": "https://www.avcr.cz/cs/pro-verejnost/vystavy/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4705591153",
+   "name": "hunt kastner",
+   "url": "https://huntkastner.com/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n2905214912",
+   "name": "Ústřední knihovna VŠCHT",
+   "url": "https://knihovna.vscht.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n514426283",
+   "name": "Ústřední knihovna ČVUT",
+   "url": "https://knihovna.cvut.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n343339297",
+   "name": "Divadlo Boleradice",
+   "url": "http://boleradice-divadlo.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w81687288",
+   "name": "Aquapark Kohoutovice",
+   "url": "https://aquapark.starez.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773534",
+   "name": "Besední dům",
+   "url": "www.filharmonie-brno.cz",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "mbb5773444",
+   "name": "Betlémský kostel",
+   "url": "www.brno1.evangnet.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4260724137",
+   "name": "Bike Kitchen Brno",
+   "url": "https://bikekitchenbrno.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773533",
+   "name": "Biskupský dvůr (Moravské zemské muzeum)",
+   "url": "www.mzm.cz/biskupsky-dvur",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "w16146614",
+   "name": "Botanická zahrada",
+   "url": "https://www.sci.muni.cz/bot_zahr/index.php/cs-CZ/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "mbb5773528",
+   "name": "Diecézní muzeum s informačním centrem",
+   "url": "www.dieceznimuzeum.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773492",
+   "name": "Dietrichsteinský palác (Moravské zemské muzeum)",
+   "url": "www.mzm.cz/dietrichsteinsky-palac",
+   "reason": "web nedostupný (The read operation timed out)"
+  },
+  {
+   "osm_id": "mbb5773469",
+   "name": "Divadlo Radost",
+   "url": "www.divadlo-radost.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "brno285",
+   "name": "Divadlo na Orlí",
+   "url": "http://divadlonaorli.jamu.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n2833719460",
+   "name": "Duro Salewa",
+   "url": "https://www.klajda.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773369",
+   "name": "Dům Pánů z Kunštátu (Dům umění města Brna)",
+   "url": "www.dum-umeni.cz/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n4502277593",
+   "name": "Dům s tykadly",
+   "url": "www.klasterbrno.cz",
+   "reason": "web nedostupný (<urlopen error [WinError 10061] Nemohlo být vytvořeno žádné )"
+  },
+  {
+   "osm_id": "mbb5773278",
+   "name": "Dům umění města Brna",
+   "url": "www.dum-umeni.cz",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "mbb5773519",
+   "name": "Fait Gallery",
+   "url": "www.faitgallery.com",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "brno345",
+   "name": "Galerie TIC",
+   "url": "https://info@ticbrno.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11003] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "mbb5773448",
+   "name": "HaDivadlo",
+   "url": "www.hadivadlo.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773350",
+   "name": "Hotel Brno",
+   "url": "www.hotelbrno.cz",
+   "reason": "web nedostupný (<urlopen error timed out>)"
+  },
+  {
+   "osm_id": "mbb5773346",
+   "name": "Hotel Continental",
+   "url": "www.continentalbrno.cz",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "mbb5773476",
+   "name": "Hotel International",
+   "url": "www.hotelinternational.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773279",
+   "name": "Hotel Slavia",
+   "url": "www.slaviabrno.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773347",
+   "name": "Hotel Vista",
+   "url": "www.vista-hotel.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4769733581",
+   "name": "Junglepark",
+   "url": "https://www.junglepark.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773287",
+   "name": "Jurkovičova vila",
+   "url": "www.moravska-galerie.cz/jurkovicova-vila",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "mbb5773501",
+   "name": "Kapucínský kostel Nalezení sv. Kříže",
+   "url": "www.kapucini.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4689652297",
+   "name": "Klub modelářů železnic Brno I",
+   "url": "https://www.kmz-brno.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w32513547",
+   "name": "Kluziště Za Lužánkami",
+   "url": "https://www.bruslenizaluzankami.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11002] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n4821243658",
+   "name": "Knihovna Jiřího Mahena v Brně",
+   "url": "https://www.kjm.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773483",
+   "name": "Labyrint pod Zelným trhem",
+   "url": "www.ticbrno.cz/podzemi/labyrint-pod-zelnym-trhem",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n3216608124",
+   "name": "Ladie's Gym",
+   "url": "https://ladiesgym.cz",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "mbb5773471",
+   "name": "Loretánská kaple",
+   "url": "www.minorite.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "r930178",
+   "name": "Lázně Brno-Zábrdovice",
+   "url": "https://zabrdovice.starez.cz/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "mbb5773280",
+   "name": "Mincmistrovský sklep",
+   "url": "www.ticbrno.cz/podzemi/mincmistrovsky-sklep",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "mbb5773371",
+   "name": "Minoritský kostel sv. Janů",
+   "url": "www.minorite.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773445",
+   "name": "Muzeum romské kultury",
+   "url": "www.rommuz.cz",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "mbb5773385",
+   "name": "Místodržitelský palác (Moravská galerie v Brně)",
+   "url": "www.moravska-galerie.cz",
+   "reason": "stránka paláce o přístupnosti nic neuvádí (údaje jsou jen u Pražákova paláce a UPM)"
+  },
+  {
+   "osm_id": "mbb5773348",
+   "name": "Městské divadlo Brno",
+   "url": "www.mdb.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773296",
+   "name": "Městský plavecký stadion Lužánky",
+   "url": "www.bazenzaluzankami.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11002] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "mbb5773415",
+   "name": "Plavecký bazén Ponávka",
+   "url": "www.bazen-ponava.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "w59753494",
+   "name": "Sportovní a rekreační areál Kraví hora",
+   "url": "https://www.kravihora-brno.cz/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "mbb5773361",
+   "name": "Stará radnice",
+   "url": "www.ticbrno.cz/stara-radnice",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773365",
+   "name": "Tyršův sad",
+   "url": "https://www.vzmb.cz",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "w391806356",
+   "name": "Zimní kluziště Za Lužánkami",
+   "url": "https://www.bruslenizaluzankami.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11002] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n4833255717",
+   "name": "Základna Tři ocásci",
+   "url": "https://triocasci.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773522",
+   "name": "bazilika Nanebevzetí Panny Marie (bazilika minor)",
+   "url": "www.opatbrno.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w419864793",
+   "name": "co.labs_park",
+   "url": "https://www.colabs.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773420",
+   "name": "kostel Jana Amose Komenského (Červený kostel)",
+   "url": "www.brno1.evangnet.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773332",
+   "name": "kostel Nanebevzetí Panny Marie",
+   "url": "www.jesuit.cz/brno",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "mbb5773465",
+   "name": "kostel sv. Jakuba",
+   "url": "www.svatyjakubbrno.wz.cz",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "mbb5773309",
+   "name": "kostel sv. Michala",
+   "url": "www.svatymichalbrno.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773493",
+   "name": "kostel sv. Máří Magdalény",
+   "url": "www.mari-magdalena.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773377",
+   "name": "kostel sv. Tomáše",
+   "url": "www.svtomas.net",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb5773399",
+   "name": "koupaliště Kraví hora",
+   "url": "www.kravihora-brno.cz",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "mbb5773285",
+   "name": "plavecký bazén Řečkovice",
+   "url": "www.druzstevni.cz/plavecky-bazen",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "mbb5773341",
+   "name": "pravoslavný chrám sv. Václava",
+   "url": "www.pravoslavbrno.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n11002241463",
+   "name": "Obecní knihovna Bílovice nad Svitavou",
+   "url": "https://knihovnabilovice.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n7474062443",
+   "name": "Galerie Stříbský mlýn",
+   "url": "https://www.stribskymlyn.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w336330367",
+   "name": "Wellness Kuřim",
+   "url": "https://www.wellnesskurim.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w793770400",
+   "name": "Mikve",
+   "url": "https://www.zidovskyhrbitovmikulov.cz/obradni-zidovska-lazen-mikve/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w120173580",
+   "name": "Orel jednota Telnice",
+   "url": "http://www.oreltelnice.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4742612344",
+   "name": "Muzeum včelařství Moravského krasu",
+   "url": "https://www.vavrinec.cz/muzeum-vcelarstvi/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n3024293276",
+   "name": "Ubytování",
+   "url": "https://www.velkeopatovice.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n6942758685",
+   "name": "Divadlo Prkno",
+   "url": "https://www.prkno.net/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n593915718",
+   "name": "Kulturní dům",
+   "url": "https://www.kulturavracov.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w114769454",
+   "name": "Aquapark Vyškov",
+   "url": "http://www.aquaparkvyskov.cz",
+   "reason": "web nedostupný (HTTP Error 429: Too Many Requests)"
+  },
+  {
+   "osm_id": "n6288171120",
+   "name": "SHM Klub Újezd u Brna, z. s.",
+   "url": "https://ujezd.shm.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n10652476935",
+   "name": "Pohádková výstava",
+   "url": "https://www.pohadkoveloutky.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n393217282",
+   "name": "Sokolovna",
+   "url": "https://www.sokec.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n12067530834",
+   "name": "Koupaliště",
+   "url": "https://www.obeczeletice.cz/jsem-obcan/koupaliste/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3937814554",
+   "name": "9/1315/A-140",
+   "url": "https://ropiky.net/dbase_objekt.php?id=1075726720",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w372935053",
+   "name": "Jump aréna Tábor",
+   "url": "https://www.jumparenatabor.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n4947681565",
+   "name": "lezecka stena Crux",
+   "url": "http://stenacrux.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w1338709276",
+   "name": "sv. Vavřinec",
+   "url": "www.farnostnechanice.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "mbb793",
+   "name": "Stálá historická expozice Josefov",
+   "url": "www.muzeumjaromer.cz",
+   "reason": "web muzea Jaroměř popisuje přístupnost Wenkova domu, ne expozice Josefov"
+  },
+  {
+   "osm_id": "n11332885880",
+   "name": "Zaniklé hradiště Malý Vřešťov",
+   "url": "https://www.stredovek.com/list_photo.php?category=hradiste&object=Velky%20Vrestov",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w1134116211",
+   "name": "Akvapark Vrchlabí",
+   "url": "http://aquacentrum-vrchlabi.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n12554529847",
+   "name": "Mercuria Laser",
+   "url": "https://mercurialaser.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3260496270",
+   "name": "Koliba",
+   "url": "http://www.restauracekoliba.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w1305467251",
+   "name": "Mustang Aréna",
+   "url": "https://www.arena-vitkovice.cz/ostravar-arena",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3633218343",
+   "name": "Horský hotel Liptov",
+   "url": "http://www.hotelliptov.wz.cz/",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n3634502481",
+   "name": "Horský lanový park Opičárna",
+   "url": "http://www.opicarna.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n2391683668",
+   "name": "Autocamp RICCO",
+   "url": "http://www.koupaliste.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w42935793",
+   "name": "Sportovní hala STARS Třinec",
+   "url": "https://www.starstrinec.cz/hala",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n11896290912",
+   "name": "U Šípků",
+   "url": "https://www.booking.com/hotel/cz/apartmenty-u-sipku-ostrava.it.html?label=gog235jc-1FCAsoOkIaYXBhcnRtZW50eS11LXNpcGt1LW9zdHJhdmFIBVgDaMsBiAEBmAEFuAEXyAEM2AEB6AEB-AECiAIBqAIDuAK8jf6xBsACAdICJDY0MDk2MzU2LTM2NGItNDI0ZC1iODFkLWY0OGYyZGYyZWEyY9gCBeACAQ&sid=7ef",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n12052913929",
+   "name": "Koupaliště Lipník nad Bečvou",
+   "url": "https://www.ts-lipnik.cz/mestske-koupaliste",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w621902797",
+   "name": "Sportovní Hala Lipník nad Bečvou",
+   "url": "https://sportovni-hala-lipnik-nad-becvou.reenio.cz/cs/terms",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w23344425",
+   "name": "sv. Mořic",
+   "url": "https://www.moric-olomouc.cz/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "w52957335",
+   "name": "sv. Václav",
+   "url": "https://www.katedralaolomouc.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w397092392",
+   "name": "sv. Václav",
+   "url": "https://www.katedralaolomouc.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w422783549",
+   "name": "Městské lázně",
+   "url": "https://www.dsp-pv.cz/cz/m/mestske-lazne/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n2701686664",
+   "name": "Automotoklub Zlatá přiba Pardubice",
+   "url": "https://zlataprilba.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w1381992464",
+   "name": "JK Plzeň",
+   "url": "https://www.jkplzen.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w306644651",
+   "name": "Zimní stadion",
+   "url": "https://www.sportoviste-susice.cz/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "w353660860",
+   "name": "Tipsport Laguna",
+   "url": "https://www.tipsportlaguna.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "r1168242",
+   "name": "zámek Brandýs nad Labem",
+   "url": "http://www.brandyszamek.cz/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n4340777060",
+   "name": "TJ Hostivice",
+   "url": "http://tjhostivice.sweb.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n3261821982",
+   "name": "Svatopluk Čech",
+   "url": "https://www.karlstejnsko.info/e_download.php?file=data/editor/138cs_4.pdf&original=A2+cech+tisk.pdf",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "mbb670",
+   "name": "ŠKODA Muzeum",
+   "url": "http://museum.skoda-auto.cz/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n7172813508",
+   "name": "Památník Bedřicha Smetany",
+   "url": "no",
+   "reason": "bez platného webu"
+  },
+  {
+   "osm_id": "w1388180329",
+   "name": "Sportovní hala Háje",
+   "url": "https://hala-slany.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n1444875824",
+   "name": "Sportovní hala Stochov",
+   "url": "https://www.sportstochov.cz/",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "n10701750212",
+   "name": "Místní knihovna Veltrusy",
+   "url": "http://knihovnaveltrusy.wz.cz",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n1564021513",
+   "name": "Olympia Fitness & Wellness",
+   "url": "https://www.olympia-wellness.net",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w39400939",
+   "name": "Říčanský hrad",
+   "url": "https://info.ricany.cz/mesto/ricansky-hrad",
+   "reason": "nalezena jen bezbariérovost budovy městského úřadu, ne hradu"
+  },
+  {
+   "osm_id": "w103348032",
+   "name": "Medova vila",
+   "url": "https://humpolec.cz/misto/medova-vila/",
+   "reason": "jen architektonický popis schodiště, nic o přístupnosti pro návštěvníky"
+  },
+  {
+   "osm_id": "n5072192409",
+   "name": "Pinecklub",
+   "url": "http://pinecklub.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "w53218601",
+   "name": "Hotel u Raušů",
+   "url": "https://www.urausu.cz/",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n11309043591",
+   "name": "Zřícenina hradu Štamberk",
+   "url": "https://www.pamatkovykatalog.cz/zricenina-hradu-stamberk-20283572",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3173684410",
+   "name": "Lanové centrum",
+   "url": "https://www.cestakorunami.cz/",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w56427692",
+   "name": "Zámek Lešná",
+   "url": "https://www.zoozlin.eu/zamek-lesna",
+   "reason": "web (úvod + až 6 podstránek) uvádí jen slevy ZTP nebo nesouvisející zmínky, o fyzické přístupnosti nic"
+  },
+  {
+   "osm_id": "w388647625",
+   "name": "Zámek Děčín",
+   "url": "https://www.zamekdecin.cz",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n13413892577",
+   "name": "Svatého Mikuláše",
+   "url": "https://www.znicenekostely.cz/objekt/detail/13887",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n13415261780",
+   "name": "Svatý Martin (starý)",
+   "url": "https://www.znicenekostely.cz/objekt/detail/13900",
+   "reason": "web (úvod + až 6 podstránek) o přístupnosti nic neuvádí"
+  }
+ ],
+ "sources": [
+  "https://beermuseum.cz/cs/visit",
+  "https://bohemians.cz/info-hoste",
+  "https://divadlobolkapolivky.cz/",
+  "https://divadlouhasicu.net/kontakt/",
+  "https://halaradotin.cz/ubytovani/",
+  "https://hollar.cz/kontakt/",
+  "https://ipc.gov.cz/docasna-ochrana/navstivte-krajske-asistencni-centrum-pomoci-kacpu/",
+  "https://lesy.czu.cz/cs/r-11201-strediska/r-11362-zamek-a-sluzby",
+  "https://mendelmuseum.muni.cz/pro-navstevniky/navstevni-rad",
+  "https://moravska-galerie.cz/kontakt/prazakuv-palac/",
+  "https://moravska-galerie.cz/kontakt/umeleckoprumyslove-muzeum/",
+  "https://npmk.gov.cz/knihovna/kontakty",
+  "https://penzion-zahrada.cz/ubytovani/",
+  "https://praha-vysehrad.cz/cs/navsteva/",
+  "https://schwarzenberska-hrobka.cz/informace-pro-navstevniky/zakladni-a-dulezite-informace/",
+  "https://sepetna.cz/hotel-sepetna/ubytovani/",
+  "https://skolicka.cz/",
+  "https://www.apartman-praha.com/cs/ubytovani/",
+  "https://www.austerlitzhotel.cz/hotel/poloha-a-prijezd/",
+  "https://www.bazenvm.cz/informace/navstevni-rad",
+  "https://www.centralgallery.cz/novinky/faqs",
+  "https://www.cinemacity.cz/cinemas/slovanskydum/1033",
+  "https://www.cinemacity.cz/cinemas/zlicin/1051",
+  "https://www.cinemacity.cz/static/cs/cz/faq",
+  "https://www.clarionhotelpragueoldtown.com/cs/hotel",
+  "https://www.divadlodisk.cz/FAQ",
+  "https://www.hotelwilliam.cz/en/Hotel/Accommodation/",
+  "https://www.hrad-bezdez.cz/cs/informace-pro-navstevniky",
+  "https://www.hrad-hazmburk.cz/cs/informace-pro-navstevniky",
+  "https://www.hradrotstejn.info/cs/pro-navstevniky",
+  "https://www.katedrala-petrov.cz",
+  "https://www.muzeumbrna.cz/arnoldova-vila/t1515",
+  "https://www.muzeumcl.cz/pobocky/archeologicke-muzeum-satlava",
+  "https://www.mzm.cz/palac-slechticen",
+  "https://www.mzm.cz/pavilon-anthropos/",
+  "https://www.ndbrno.cz/info-pro-handicapovane/",
+  "https://www.plovarnatyn.cz/",
+  "https://www.pragueresidencebologna.com/official-faq",
+  "https://www.provazek.cz/prakticke-informace",
+  "https://www.susedska.cz/",
+  "https://www.zamek-becov.cz/cs/informace-pro-navstevniky",
+  "https://zahrada.mendelu.cz/pro-navstevniky/oteviraci-doba-vstupne-pronajmy/"
+ ]
+}

@@ -1,0 +1,477 @@
+{
+ "task": "portaly_zlinsky",
+ "kraj": "Zlínský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n9312204230",
+   "name": "Rekreační areál Pahrbek – bungalovy",
+   "obec": "Napajedla",
+   "address": "Pahrbek 735, 763 61 Napajedla",
+   "lat": 49.158041,
+   "lng": 17.511852,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/rekreacni-areal-pahrbek-napajedla",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "koupelna": "Mezi typy bungalovů je i bungalov s bezbariérovým přístupem a sprchovým koutem.",
+    "jine": "Kudy z nudy u místa uvádí štítek „Bezbariérový přístup“."
+   },
+   "evidence_quote": "s bezbariérovým přístupem (sprchový kout)"
+  },
+  {
+   "osm_id": "w56214963",
+   "name": "Hotel Baltaci U Náhonu",
+   "obec": "Zlín",
+   "address": "Podvesná IV 3946, 760 01 Zlín",
+   "lat": 49.228654,
+   "lng": 17.678663,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hotel-baltaci-u-nahonu",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Podle popisu je celý hotel bezbariérový. Kudy z nudy u místa uvádí štítek „Bezbariérový přístup“."
+   },
+   "evidence_quote": "Celý hotel je bezbariérový"
+  },
+  {
+   "osm_id": "n2762917489",
+   "name": "Chalupa Rajnochovice",
+   "obec": "Rajnochovice",
+   "address": "Rajnochovice č.103, 768 71 Rajnochovice",
+   "lat": 49.404241,
+   "lng": 17.810182,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/chalupa-rajnochovice-dovolena-v-pravem-raji-na-va",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Chalupa je přízemní s bezbariérovým přístupem do všech místností.",
+    "jine": "Kudy z nudy u místa uvádí štítek „Bezbariérový přístup“."
+   },
+   "evidence_quote": "přízemní, bezbariérový přístup do všech místností"
+  },
+  {
+   "osm_id": "n1187804329",
+   "name": "Penzion Morava (Ubytovací komplex Morava)",
+   "obec": "Otrokovice",
+   "address": "Moravní 958, 765 02 Otrokovice",
+   "lat": 49.213635,
+   "lng": 17.515201,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/penzion-morava",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "K dispozici je jednolůžkový pokoj pro tělesně postižené osoby.",
+    "jine": "Stejné místo je na Kudy z nudy i jako „Ubytovací komplex Morava“ (https://www.kudyznudy.cz/aktivity/hotel-morava). Kudy z nudy u místa uvádí štítek „Bezbariérový přístup“."
+   },
+   "evidence_quote": "K dispozici je také jednolůžkový pokoj pro tělesně postižené osoby."
+  },
+  {
+   "osm_id": "n1508815328",
+   "name": "Ubytování Ve dvoře",
+   "obec": "Velké Karlovice",
+   "address": "Malé Karlovice 762, 756 06 Velké Karlovice",
+   "lat": 49.350806,
+   "lng": 18.297235,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/ubytovani-ve-dvore",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Rekreační chalupa (tři apartmány) má bezbariérový vstup.",
+    "jine": "Kudy z nudy u místa uvádí štítek „Bezbariérový přístup“."
+   },
+   "evidence_quote": "Nová rekreační chalupa s bezbariérovým vstupem"
+  },
+  {
+   "osm_id": "n1498539026",
+   "name": "Hotel Apollo",
+   "obec": "Valašské Meziříčí",
+   "address": "Křižná 184, 757 01 Valašské Meziříčí",
+   "lat": 49.47325,
+   "lng": 17.965195,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hotel-apollo-valasske-mezirici",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel uvádí jedno- a dvoulůžkové pokoje a apartmány s bezbariérovým přístupem.",
+    "jine": "Kudy z nudy u místa uvádí štítek „Bezbariérový přístup“."
+   },
+   "evidence_quote": "v jedno a dvoulůžkových pokojích a apartmánech s bezbariérovým přístupem"
+  },
+  {
+   "osm_id": "n7710235341",
+   "name": "Hotel Aréna",
+   "obec": "Brumov-Bylnice",
+   "address": "Družba 1223, 763 31 Brumov-Bylnice",
+   "lat": 49.082692,
+   "lng": 18.021774,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/hotel-arena",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "pokoj": "Hotel má mimo jiné jeden bezbariérový pokoj.",
+    "jine": "Kudy z nudy u místa uvádí štítek „Bezbariérový přístup“."
+   },
+   "evidence_quote": "jednom apartmánu a v bezbariérovém pokoji"
+  },
+  {
+   "osm_id": "n2762946361",
+   "name": "Dvůr Honětice",
+   "obec": "Honětice",
+   "address": "Honětice 16, 768 13 Honětice",
+   "lat": 49.204946,
+   "lng": 17.249226,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/dvur-honetice",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "jine": "Zázemí přírodního koupacího biotopu je bezbariérově přístupné; o pokojích text nic konkrétního neuvádí. Kudy z nudy u místa uvádí štítek „Bezbariérový přístup“."
+   },
+   "evidence_quote": "Zázemí biotopu je bezbariérově přístupné."
+  },
+  {
+   "osm_id": "n3378353886",
+   "name": "Zámek Kinských",
+   "obec": "Valašské Meziříčí",
+   "address": "Zámecká 3, 757 01 Valašské Meziříčí",
+   "lat": 49.477831,
+   "lng": 17.968407,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamek-kinskych-ve-valasskem-mezirici-1",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Bezbariérový přístup do všech návštěvnických prostor zajišťuje výtah.",
+    "jine": "Kudy z nudy u místa uvádí štítek „Bezbariérový přístup“."
+   },
+   "evidence_quote": "Přístup do všech návštěvnických prostor je bezbariérový."
+  },
+  {
+   "osm_id": "r33992",
+   "name": "Arcibiskupský zámek Kroměříž",
+   "obec": "Kroměříž",
+   "address": "Sněmovní náměstí 1, 767 01 Kroměříž",
+   "lat": 49.300218,
+   "lng": 17.393757,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/arcibiskupsky-zamek-v-kromerizi",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Prohlídková trasa je pro vozíčkáře přístupná jen s dopomocí – je nutné zdolat schodiště do 1. a 2. patra.",
+    "jine": "Pohyb po expozicích je dále bezbariérový; výstup na věž vede po 206 schodech."
+   },
+   "measurements": [
+    {
+     "co": "počet schodů na zámeckou věž",
+     "hodnota": 206,
+     "jednotka": "schodů"
+    }
+   ],
+   "evidence_quote": "přístupná s dopomocí – je nutné zdolat schodiště do 1. a 2. patra"
+  },
+  {
+   "osm_id": "n2066148344",
+   "name": "Rejda Spytihněv na Baťově kanále",
+   "obec": "Spytihněv",
+   "address": "Spytihněv 352, 763 64 Spytihněv",
+   "lat": 49.135878,
+   "lng": 17.501555,
+   "category": "sport",
+   "source_url": "https://www.kudyznudy.cz/aktivity/rejda-spytihnev-na-batove-kanale",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Přístaviště je podle popisu plně bezbariérové; tělesně postižení se dostanou až na nejvyšší stupeň přístavního mola."
+   },
+   "evidence_quote": "Přístaviště je plně bezbariérové"
+  },
+  {
+   "osm_id": "n2066024874",
+   "name": "Přístaviště Napajedla na Baťově kanále",
+   "obec": "Napajedla",
+   "address": "Na Kapli 387, 763 61 Napajedla",
+   "lat": 49.173994,
+   "lng": 17.512016,
+   "category": "sport",
+   "source_url": "https://www.kudyznudy.cz/aktivity/pristaviste-napajedla-na-batove-kanale",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Přístaviště je podle popisu plně bezbariérové a přístupné tělesně postiženým."
+   },
+   "evidence_quote": "Přístaviště je plně bezbariérové a umožňuje přístup tělesně postiženým."
+  },
+  {
+   "osm_id": "w95741538",
+   "name": "Zámek Buchlovice",
+   "obec": "Buchlovice",
+   "address": "Náměstí Svobody 13, 687 08 Buchlovice",
+   "lat": 49.083753,
+   "lng": 17.335859,
+   "category": "pamatky",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamek-buchlovice",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup do zámku i parku; celý areál je označen jako bezbariérový.",
+    "wc": "Bezbariérové toalety jsou v pavilonu Flóra.",
+    "jine": "V zámku je jedinou bariérou jeden schod, který vozíčkáři zvládají sami nebo s lehkou dopomocí; zahradnictví v parku je bezbariérově dostupné."
+   },
+   "measurements": [
+    {
+     "co": "schody v prohlídkové trase zámku",
+     "hodnota": 1,
+     "jednotka": "schod"
+    }
+   ],
+   "evidence_quote": "Bezbariérové toalety se nachází v pavilónu Flóra."
+  },
+  {
+   "osm_id": "r8359703",
+   "name": "Kino Hvězda",
+   "obec": "Uherské Hradiště",
+   "address": "Náměstí Míru 951, 686 01 Uherské Hradiště",
+   "lat": 49.067474,
+   "lng": 17.469144,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/kino-hvezda-uherske-hradiste",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Kino je podle popisu plně bezbariérové; má i technologie pro nevidomé, slabozraké a neslyšící diváky."
+   },
+   "evidence_quote": "Hvězda je plně bezbariérová"
+  },
+  {
+   "osm_id": "w89116730",
+   "name": "Planetárium Uherský Brod",
+   "obec": "Uherský Brod",
+   "address": "Mariánské náměstí 2187, 688 01 Uherský Brod",
+   "lat": 49.026224,
+   "lng": 17.646778,
+   "category": "kultura",
+   "source_url": "https://www.kudyznudy.cz/aktivity/planetarium-uhersky-brod",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Kudy z nudy uvádí štítek „Bezbariérový přístup“, ale v textu stojí, že vstup s kočárkem není možný – přístupnost pro vozík je nejasná."
+   },
+   "evidence_quote": "Vstup s kočárkem není možný."
+  },
+  {
+   "osm_id": "n1906946087",
+   "name": "Zámecká čokoládovna Chocolaterie Chapeau",
+   "obec": "Vizovice",
+   "address": "Palackého náměstí 373, 763 12 Vizovice",
+   "lat": 49.220132,
+   "lng": 17.851379,
+   "category": "obchody",
+   "source_url": "https://www.kudyznudy.cz/aktivity/zamecka-cokoladovna-chocolaterie-chapeau-ve-vizovi",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Prodejna je uzpůsobená pro vozíčkáře.",
+    "wc": "Jsou zde toalety pro handicapované."
+   },
+   "evidence_quote": "Prodejna je uzpůsobená pro vozíčkáře"
+  },
+  {
+   "osm_id": "n870952959",
+   "name": "Penzion a restaurace Staré časy",
+   "obec": "Horní Bečva",
+   "address": "Horní Bečva 367, 756 57 Horní Bečva",
+   "lat": 49.432594,
+   "lng": 18.287157,
+   "category": "ubytovani",
+   "source_url": "https://www.kudyznudy.cz/aktivity/wellness-pobyty-beskydy",
+   "source_type": "turistický portál (Kudy z nudy, CzechTourism)",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "jine": "Kudy z nudy u místa uvádí štítek „Bezbariérový přístup“ (sekce Certifikace a další informace); podrobnosti neuvádí."
+   }
+  }
+ ],
+ "not_found": [
+  {
+   "name": "Kolej UTB, nám. T. G. Masaryka 3050",
+   "url": "https://www.kudyznudy.cz/aktivity/ubytovani-ve-vs-koleji-nam-t-g-m-3050-zlin",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Trasa pro vozíčkáře Vizovická černá",
+   "url": "https://www.kudyznudy.cz/aktivity/trasa-pro-vozickare-vizovicka-cerna",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Přístav Uherský Ostroh",
+   "url": "https://www.kudyznudy.cz/aktivity/pristav-uhersky-ostroh",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Hotel Galaxie",
+   "url": "https://www.kudyznudy.cz/aktivity/hotel-galaxie",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Hotel Baltaci Atrium",
+   "url": "https://www.kudyznudy.cz/aktivity/baltaci-hotel-zlin-klid-pohoda-a-relaxace-blizko",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Apartmány Ludmila",
+   "url": "https://www.kudyznudy.cz/aktivity/apartmany-ludmila-ubytovani",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Penzion s wellness Uherské Hradiště",
+   "url": "https://www.kudyznudy.cz/aktivity/wellness-pobyt-v-srdci-slovacka",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Hotel Vila Viola",
+   "url": "https://www.kudyznudy.cz/aktivity/hotel-vila-viola",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Vila Bystrica",
+   "url": "https://www.kudyznudy.cz/aktivity/vila-bystrica",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Horský hotel Soláň",
+   "url": "https://www.kudyznudy.cz/aktivity/wellness-pobyty-v-novem-spa-solan",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Hotel Tanečnica",
+   "url": "https://www.kudyznudy.cz/aktivity/hotel-tanecnica",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Hotel a hostel U Zlatého kohouta",
+   "url": "https://www.kudyznudy.cz/aktivity/hotel-a-hostel-u-zlateho-kohouta",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Hotel Skanzen",
+   "url": "https://www.kudyznudy.cz/aktivity/hotel-skanzen",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Hotel Smetanova",
+   "url": "https://www.kudyznudy.cz/aktivity/hotel-smetanova",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Hotel Harmonie",
+   "url": "https://www.kudyznudy.cz/aktivity/hotel-harmonie",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Spa hotel Lanterna",
+   "url": "https://www.kudyznudy.cz/aktivity/jedinecna-relaxace-v-l-spa-v-hotelu-lanterna",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Slovácké muzeum",
+   "url": "https://www.kudyznudy.cz/aktivity/slovacke-muzeum-v-uherskem-hradisti",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Archeoskanzen Modrá",
+   "url": "https://www.kudyznudy.cz/aktivity/archeologicky-skanzen-modra",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Památník Tomáše Bati",
+   "url": "https://www.kudyznudy.cz/aktivity/pamatnik-tomase-bati-v-byvalem-dome-umeni-ve-zline",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Zámek Vsetín – Muzeum regionu Valašsko",
+   "url": "https://www.kudyznudy.cz/aktivity/zamek-vsetin",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Kovozoo Staré Město",
+   "url": "https://www.kudyznudy.cz/aktivity/kovozoo-stare-mesto",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Hvězdárna Vsetín",
+   "url": "https://www.kudyznudy.cz/aktivity/hvezdarna-vsetin",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Zámek Bystřice pod Hostýnem",
+   "url": "https://www.kudyznudy.cz/aktivity/zamek-bystrice-pod-hostynem-sidlo-rodiny-laudonu",
+   "reason": "portál uvádí bezbariérovost (viz URL), ale místo nebylo geokódováno: Nominatim vracel HTTP 429 (limit dotazů) nebo nenašel adresu; doplnit později"
+  },
+  {
+   "name": "Bistro Vintrovka",
+   "url": "https://www.kudyznudy.cz/aktivity/bistro-vintrovka",
+   "reason": "v kontaktu je pražská adresa, místo nelze spolehlivě zařadit do kraje"
+  },
+  {
+   "name": "portál Východní Morava – vyhledání „bezbariér“",
+   "url": "https://www.vychodni-morava.cz/wp-json/wp/v2/search?search=bezbari%C3%A9r",
+   "reason": "web se načetl, ale hledání nevrátilo žádnou stránku o bezbariérovosti; jen obecná zmínka, že Cyklostezku Bečva mohou využít i vozíčkáři (trasa, ne bod)"
+  },
+  {
+   "name": "portál Beskydy-Valašsko",
+   "url": "https://www.beskydy-valassko.eu",
+   "reason": "doména se nepřeložila (DNS), web se nenačetl"
+  },
+  {
+   "name": "další místa ze seznamů Kudy z nudy (Zlínský kraj)",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-zazitky/?region=zlinsky-kraj",
+   "reason": "dalších cca 60 míst v kraji má jen štítek „Bezbariérový přístup“ bez popisu – nezapsána kvůli limitu ~40 míst; Hospůdka na Haldě, Muzeum jihovýchodní Moravy a Kongresové centrum Zlín vynechány jako duplicity s hotovými soubory"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Kudy z nudy – Bezbariérové ubytování, Zlínský kraj",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-ubytovani/?region=zlinsky-kraj",
+   "note": "seznam a mapa míst se štítkem bezbariérovosti"
+  },
+  {
+   "title": "Kudy z nudy – Bezbariérové zážitky, Zlínský kraj",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-zazitky/?region=zlinsky-kraj",
+   "note": "seznam a mapa míst"
+  },
+  {
+   "title": "Kudy z nudy – Bezbariérové restaurace a gurmánské zážitky, Zlínský kraj",
+   "url": "https://www.kudyznudy.cz/kampane/bezbarier/bezbarierove-restaurace-a-gurmanske-zazitky/?region=zlinsky-kraj",
+   "note": "seznam a mapa míst"
+  },
+  {
+   "title": "Kudy z nudy – Cestování bez bariér: nejlepší tipy z regionů",
+   "url": "https://www.kudyznudy.cz/aktuality/cestovani-bez-barier-nejlepsi-tipy-z-regionu",
+   "note": "článek; Zámek Kinských, Kovozoo, Slovácké muzeum"
+  },
+  {
+   "title": "Kudy z nudy – Přehled vozíčkářských tras",
+   "url": "https://www.kudyznudy.cz/aktuality/cestovani-bez-barier-prehled-vozickarskych-tras-po",
+   "note": "článek; Vizovická černá"
+  },
+  {
+   "title": "Východní Morava – Pohodová cykloturistika",
+   "url": "https://www.vychodni-morava.cz/pohodova-cykloturistika/",
+   "note": "jediná zmínka o vozíčkářích (Cyklostezka Bečva)"
+  },
+  {
+   "title": "Nominatim (OpenStreetMap)",
+   "url": "https://nominatim.openstreetmap.org/",
+   "note": "geokódování nových míst"
+  }
+ ]
+}

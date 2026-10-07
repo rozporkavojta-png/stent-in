@@ -1,0 +1,82 @@
+{
+ "task": "obce_moravskoslezsky",
+ "kraj": "Moravskoslezský kraj",
+ "checked_date": "2026-10-05",
+ "places": [],
+ "not_found": [
+  {
+   "osm_id": null,
+   "name": "Veřejná WC ve správě města Frýdek-Místek (parkoviště pod magistrátem, Malý podchod Místek, Centrální hřbitov)",
+   "url": "https://www.frydekmistek.cz/o-meste/verejna-wc/",
+   "reason": "Stránka uvádí seznam veřejných WC, provozní dobu a stálou obsluhu, ale nic o bezbariérovosti ani Euroklíči. Zrychlený režim – nová místa se nepřidávají."
+  },
+  {
+   "osm_id": null,
+   "name": "Mapa „Dostupná WC“ – Karviná (25 bodů vč. budov A–D magistrátu)",
+   "url": "https://www.karvina.cz/mesto-karvina/dostupna-wc",
+   "reason": "Vložená mapa Google (KML: https://www.google.com/maps/d/kml?mid=1DjkZ9lDbDZQwGqw18uWLlwkgPrpHhDEc&forcekml=1) uvádí popis, provozní dobu a poplatek; žádný záznam nezmiňuje bezbariérovost, vozík ani Euroklíč. Nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Magistrát města Havířova – registr vozidel",
+   "url": "https://www.havirov-city.cz/aktuality/rekonstrukce-na-magistratu-omezi-bezbarierovy-pristup-na-registr-vozidel",
+   "reason": "Aktualita z 21. 5. 2026 zmiňuje bezbariérový přístup na registr vozidel, dočasně (cca 14 dní) neprůchodný kvůli rekonstrukci; imobilní žadatele řeší pracovníci individuálně. Adresa ani podrobnosti neuvedeny, zrychlený režim – nepřidáno."
+  },
+  {
+   "osm_id": null,
+   "name": "Veřejné toalety na náměstí Republiky, Havířov",
+   "url": "https://www.havirov-city.cz/aktuality/verejne-toalety-na-namesti-republiky-jsou-neustalym-tercem-vandalu",
+   "reason": "Aktualita (26. 4. 2024) řeší jen vandalismus a výpadky provozu; o bezbariérovosti nic. Navrhované WC s kabinou pro ZTP v parku pod soudem (Podlesí, participativní rozpočet 2024) bylo podle webu vyřazeno z realizace (usnesení RM 10. 11. 2025)."
+  },
+  {
+   "osm_id": null,
+   "name": "Statutární město Ostrava – veřejná WC a bezbariérovost úřadů",
+   "url": "https://ostrava.cz/cs/sitemap",
+   "reason": "Web ostrava.cz nemá veřejně čitelný sitemap.xml a vyhledávání běží přes Google Programmable Search; v mapě portálu nic o veřejných WC. Informace o přístupnosti budov odkazuje město na Mapu přístupnosti (viz sources)."
+  },
+  {
+   "osm_id": null,
+   "name": "Statutární město Třinec",
+   "url": "https://www.trinecko.cz/sitemap.xml",
+   "reason": "Sitemap (7 252 URL) obsahuje jen stránky o vyhrazeném parkování ZTP, bezbariérových úpravách škol a senior taxi pro vozíčkáře; nic o veřejných WC ani přístupnosti radnice."
+  },
+  {
+   "osm_id": null,
+   "name": "Statutární město Opava – veřejná WC a radnice",
+   "url": "https://www.opava-city.cz/sitemap.xml",
+   "reason": "Sitemap (13 603 URL) neobsahuje stránku o bezbariérových WC ani o přístupnosti radnice; město odkazuje na Mapu přístupnosti Opavy (viz sources)."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Moravskoslezský krajský plán vyrovnávání příležitostí pro občany se zdravotním postižením na léta 2021–2026",
+   "url": "https://www.msk.cz/assets/temata/strategicke_dokumenty/kp_vyrovnani-prilezitosti_ztp_2020_mail.pdf",
+   "note": "Odkaz ze seznamu strategických dokumentů kraje (https://www.msk.cz/cs/temata/strategicke_dokumenty/seznam-strategickych-dokumentu-4291/). Opatření k přístupnosti: 3.1 odstraňování bariér při akcích reprodukce majetku kraje dle vyhl. 398/2009 Sb.; 3.2 postupné zpřístupnění staveb občanské vybavenosti kraje (5 mil. Kč/rok); 3.3 aktualizovat šetření přístupnosti budovy krajského úřadu (do 31. 12. 2025, s NRZP ČR a organizacemi OZP); 3.4 návrhy na odstranění zjištěných nedostatků; 3.5 podpora Národního rozvojového programu mobility pro všechny; 3.6 zvyšování bezbariérovosti v příspěvkových organizacích kraje; 4.4–4.6 bezbariérové zastávky, přestupní místa (15 mil. Kč/rok) a informace o bezbariérových spojích v jízdních řádech; 2.8 bezbariérovost rezervačního systému úřadu. Specifické opatření na mapování přístupnosti pro veřejnost (atlas) plán neobsahuje."
+  },
+  {
+   "title": "Mapa přístupnosti města Ostravy",
+   "url": "https://mapy.ostrava.cz/mapa-pristupnosti/mapa/",
+   "note": "Podle článku Sociopoint Ostrava (8. 7. 2026, https://sociopoint.ostrava.cz/ostravska-mapa-pristupnosti-pomaha-orientaci-handicapovanych-ve-meste/) téměř 1000 objektů, barevná kategorizace podle jednotné metodiky, piktogramy (rampa, výtah, plošina, úzké dveře, parkování, přístupná/nepřístupná toaleta); mapování od 2016 iniciuje odbor ÚPaSŘ magistrátu, v terénu spolupracuje Ostravská organizace vozíčkářů. Zveřejněno i na webu Bez bariér Ostravsko (ostrava-bezbarier.cz – nevytěžováno). Licence na stránce neuvedena."
+  },
+  {
+   "title": "Mapa přístupnosti Opavy (mapový portál města)",
+   "url": "https://map.opava-city.cz/waportal/apps/webappviewer/index.html?id=b7aa7a19a73241ab84ff866dc713f4a6",
+   "note": "Podle webu města (https://www.opava-city.cz/cz/nabidka-temat/mapovy-portal/aktuality/seznam-zprav/mapa-pristupnosti-opavy.html, upraveno 5. 3. 2020) mapa obsahuje vybrané veřejné budovy hodnocené správcem projektu Opava bez bariér podle platné metodiky a vrstvu zastávek MHD s informací o bezbariérovosti. Licence neuvedena."
+  },
+  {
+   "title": "Bezbariérová Opava (bbopava.cz, dříve opavabezbarier.cz)",
+   "url": "https://www.bbopava.cz/",
+   "note": "Projekt s podporou Statutárního města Opava: mapa přístupných míst, seznam zmapovaných objektů (úřady, služby, lékárny), hlášení bariér. Patička: „Všechna práva vyhrazena“ – data nepřebírat bez souhlasu."
+  },
+  {
+   "title": "Ostravská organizace vozíčkářů",
+   "url": "https://www.vozickari-ostrava.cz/",
+   "note": "Organizace vozíčkářů v kraji: alternativní doprava imobilních osob, magazín pro čtenáře na vozíku, bezplatné poradenství a mapování bezbariérovosti objektů v Ostravě a okolí; spolupracuje s magistrátem na Mapě přístupnosti města Ostravy."
+  },
+  {
+   "title": "Národní rada osob se zdravotním postižením ČR (krajská spolupráce)",
+   "url": "https://www.msk.cz/assets/temata/strategicke_dokumenty/kp_vyrovnani-prilezitosti_ztp_2020_mail.pdf",
+   "note": "Krajský plán uvádí NRZP ČR jako partnera kraje (mj. šetření přístupnosti budovy KÚ, aktivity 3.3–3.5); web organizace v tomto běhu neověřován."
+  }
+ ]
+}

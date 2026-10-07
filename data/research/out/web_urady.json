@@ -1,0 +1,1207 @@
+{
+ "task": "web_urady",
+ "kraj": "více krajů (celá ČR)",
+ "checked_date": "2026-10-06",
+ "places": [
+  {
+   "osm_id": "w53204642",
+   "name": "Katastrální pracoviště Brno-venkov",
+   "obec": "Brno",
+   "address": "Úzká 6",
+   "lat": 49.188351,
+   "lng": 16.611838,
+   "category": "urady",
+   "source_url": "https://cuzk.gov.cz/kp/brnovenkov",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup do budovy hlavním vchodem z ulice Úzká.",
+    "jine": "Podatelna je v přízemí a je bezbariérově přístupná."
+   },
+   "measurements": [],
+   "evidence_quote": "Podatelna se nachází v přízemí budovy a je bezbariérově přístupná."
+  },
+  {
+   "osm_id": "mbb5773379",
+   "name": "Katastrální úřad pro Jihomoravský kraj",
+   "obec": "Brno",
+   "address": "Moravské náměstí 1",
+   "lat": 49.198304,
+   "lng": 16.608132,
+   "category": "urady",
+   "source_url": "https://cuzk.gov.cz/kp/brnomesto",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup hlavním vchodem z Moravského náměstí; recepce je hned u vstupu.",
+    "vytah": "Prostory v 1. a 2. patře jsou dostupné osobním výtahem.",
+    "jine": "Podatelna v přízemí NENÍ bezbariérově přístupná; podání imobilních klientů zprostředkují zaměstnanci recepce. Údaje ze stránky Katastrálního pracoviště Brno-město (KÚ pro JMK, Moravské náměstí); vstupní odkaz vedl jen na obecný web cuzk.cz."
+   },
+   "measurements": [],
+   "evidence_quote": "Podatelna se nachází v přízemí budovy a není bezbariérově přístupná."
+  },
+  {
+   "osm_id": "w48430386",
+   "name": "Katastrální pracoviště Jindřichův Hradec",
+   "obec": "Jindřichův Hradec",
+   "address": "Scheinerova 1114",
+   "lat": 49.14806,
+   "lng": 15.008892,
+   "category": "urady",
+   "source_url": "https://cuzk.gov.cz/urady/katastralni-urady/katastralni-urady/katastralni-urad-pro-jihocesky-kraj/katastralni-pracoviste/kp-jindrichuv-hradec/katastralni-pracoviste-jindrichuv-hradec.aspx",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup do přízemí (prostory pro veřejnost) výtahovou plošinou; vstup k ní je vedle hlavního vchodu z ulice Scheinerova.",
+    "wc": "V přízemí je bezbariérové WC.",
+    "vytah": "Výtahová plošina do úrovně přízemí."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup je umožněn do úrovně přízemí budovy"
+  },
+  {
+   "osm_id": "w27756596",
+   "name": "Metropolitní univerzita Praha",
+   "obec": "Praha",
+   "address": null,
+   "lat": 50.068835,
+   "lng": 14.498379,
+   "category": "urady",
+   "source_url": "https://www.mup.cz/o-studiu/sluzby-pro-studenty/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Škola uvádí kompletně bezbariérové budovy v Praze; má program Škola bez bariér pro studenty s pohybovým postižením."
+   },
+   "measurements": [],
+   "evidence_quote": "kompletně bezbariérové budovy v Praze"
+  },
+  {
+   "osm_id": "r414072",
+   "name": "Ústavní soud České republiky",
+   "obec": "Brno",
+   "address": "Joštova 8",
+   "lat": 49.197837,
+   "lng": 16.604359,
+   "category": "urady",
+   "source_url": "https://www.usoud.cz/ustavni-soud-bez-barier",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Hlavní vstup je jen po schodech; nově vybudován bezbariérový vstup z Žerotínova náměstí, dál zvedací plošina na vyrovnávacím schodišti.",
+    "wc": "Na každém podlaží je samostatné sociální zázemí pro osoby s omezenou možností pohybu.",
+    "vytah": "Nový výtah (2021) propojuje všechna podlaží včetně suterénu.",
+    "jine": "Jednací síně, sněmovní sál, spisovny, archiv a knihovna jsou podle webu přístupné bez bariér a bez doprovodu; rampy a schodiště doplněny madly; v budově je indukční smyčka."
+   },
+   "measurements": [],
+   "evidence_quote": "Výtah nově propojuje všechna podlaží v budově."
+  },
+  {
+   "osm_id": "mbb5773340",
+   "name": "Veřejný ochránce práv – ombudsman",
+   "obec": "Brno",
+   "address": "Údolní 39",
+   "lat": 49.197953,
+   "lng": 16.596066,
+   "category": "urady",
+   "source_url": "https://www.ochrance.cz/kontakt/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérový přístup do budovy je zajištěn, pokud návštěvník při příjezdu ohlásí potřebu na recepci; případně i asistence.",
+    "parkovani": "Na parkovišti u budovy jsou vyhrazená místa pro návštěvníky se zdravotním postižením."
+   },
+   "measurements": [],
+   "evidence_quote": "je jim zajištěn bezbariérový přístup do budovy a případná asistence"
+  },
+  {
+   "osm_id": "mbb5773456",
+   "name": "Raiffeisen stavební spořitelna",
+   "obec": "Brno",
+   "address": "Křížová 18",
+   "lat": 49.188124,
+   "lng": 16.593941,
+   "category": "urady",
+   "source_url": "https://www.rsts.cz/brno-poradenske-misto-372/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "V detailu poradenského místa je u položky Přístupnost uvedeno: Bezbariérová (bez dalších podrobností)."
+   },
+   "measurements": [],
+   "evidence_quote": "Přístupnost Bezbariérová"
+  },
+  {
+   "osm_id": "n8880830817",
+   "name": "Praha 600",
+   "obec": "Praha",
+   "address": "Fajtlova 1090/1",
+   "lat": 50.093074,
+   "lng": 14.291625,
+   "category": "urady",
+   "source_url": "https://www.oc-sestka.cz/bezbarierovy-pristup/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vchody do OC Šestka jsou buď přímé, nebo s použitím výtahu; všechny vstupy uvedeny jako zcela bezbariérové.",
+    "parkovani": "Vyhrazená místa pro osoby se zdravotním postižením u hlavních vstupů (střecha i krytá garáž), široké boxy (zdroj: https://www.oc-sestka.cz/parkovaci-mista-pro-invalidy/).",
+    "vytah": "Mezi patry travelátory; ke vstupům výtahy.",
+    "jine": "Údaje platí pro celé obchodní centrum, o samotné poště web nic zvláštního neuvádí. Bezplatné zapůjčení invalidního vozíku u bezpečnostní služby."
+   },
+   "measurements": [],
+   "evidence_quote": "Vchody do našeho centra jsou buď přímou cestou nebo s použitím výtahu"
+  },
+  {
+   "osm_id": "w178614353",
+   "name": "GOTIC",
+   "obec": "Mosty u Jablunkova",
+   "address": "Mosty u Jablunkova 381",
+   "lat": 49.526558,
+   "lng": 18.753221,
+   "category": "urady",
+   "source_url": "https://www.gotic.cz/cs/info",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Hlavní vchod není bezbariérový; u něj je tabulka s telefonem na pracovníka IC, který vozíčkáře nasměruje k přístupnému zadnímu vchodu.",
+    "parkovani": "Parkování je možné přímo u budovy (vyhrazené stání neuvedeno).",
+    "jine": "Přístupné je celé přízemí (hlavní místnost, propagační materiály, IC s prodejnou); 1. patro vozíčkářům přístupné není."
+   },
+   "measurements": [],
+   "evidence_quote": "Vozíčkářům není přístupné první patro."
+  },
+  {
+   "osm_id": "n11366336345",
+   "name": "Klub kultury Napajedla - Informační centrum",
+   "obec": "Napajedla",
+   "address": null,
+   "lat": 49.172203,
+   "lng": 17.515187,
+   "category": "urady",
+   "source_url": "https://ic.napajedla.cz/o-nas/predprodej-vstupenek/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bezbariérový vstup do prostor Klubu kultury Napajedla z nádvoří Nového Kláštera.",
+    "jine": "Areál Muzea Napajedla je podle webu plně bezbariérově přístupný z nádvoří a má parkovací místa pro osoby s omezenou pohyblivostí (https://ic.napajedla.cz/o-nas/pokladna-muzea/)."
+   },
+   "measurements": [],
+   "evidence_quote": "BEZBARIÉROVÝ VSTUP Z NÁDVOŘÍ NOVÉHO KLÁŠTERA"
+  },
+  {
+   "osm_id": "n6634331296",
+   "name": "Turistické informační centrum",
+   "obec": "Slavkov u Brna",
+   "address": null,
+   "lat": 49.15468,
+   "lng": 16.875338,
+   "category": "urady",
+   "source_url": "https://www.zamek-slavkov.cz/pro-navstevniky/pro-handicapovane/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "parkovani": "Parkovací místa vyhrazená pro handicapované jsou pod zámkem poblíž Informačního centra (příjezd ulicí Fügnerova).",
+    "jine": "O vstupu do samotného IC stránka nic neuvádí; zámek je částečně bezbariérový, výtah v severním křídle jen s asistencí."
+   },
+   "measurements": [
+    {
+     "co": "výtah zámku – šířka dveří",
+     "hodnota": 97,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výtah zámku – hloubka",
+     "hodnota": 120,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výtah zámku – výška",
+     "hodnota": 210,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Parkovací místa, vyhrazená pro handicapované, se nachází pod zámkem poblíž Informačního centra."
+  },
+  {
+   "osm_id": "n473594118",
+   "name": "Informační středisko Svinná Lada",
+   "obec": "Borová Lada",
+   "address": "Svinná Lada 21",
+   "lat": 48.997381,
+   "lng": 13.653092,
+   "category": "urady",
+   "source_url": "https://www.npsumava.cz/navstivte-sumavu/navstevnicka-centra/informacni-stredisko-svinna-lada/zakladni-informace-o-pristupnosti-budovy-pro-osoby-se-zdravotnim-postizenim-is-svinna-lada/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Před hlavním vchodem rampa, bez schodů; za dveřmi schody nejsou; trasa od zastávky bezbariérová.",
+    "wc": "Přístupná toaleta přímo z chodby, označená, kabina min. 160×160 cm, dveře min. 80 cm, pevné i sklopné madlo, dveře se neotevírají ven.",
+    "parkovani": "Vyhrazené stání pro OZP u objektu NENÍ.",
+    "vytah": "Objekt je jednopodlažní, výtah není třeba.",
+    "jine": "Lze požádat o doprovod po budově."
+   },
+   "measurements": [
+    {
+     "co": "šířka vstupních dveří (min.)",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "kabina přístupné toalety (min.)",
+     "hodnota": "160×160",
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří toalety (min.)",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška sedátka WC",
+     "hodnota": 47,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "Vstup do střediska i toaleta jsou bezbariérové."
+  },
+  {
+   "osm_id": "n8943829918",
+   "name": "Návštěvnické Centrum Kvilda - jeleni, rys",
+   "obec": "Kvilda",
+   "address": null,
+   "lat": 49.031169,
+   "lng": 13.580526,
+   "category": "urady",
+   "source_url": "https://www.npsumava.cz/navstivte-sumavu/navstevnicka-centra/navstevnicke-centrum-kvilda/zakladni-informace-o-pristupnosti-budovy-pro-osoby-se-zdravotnim-postizenim-nc-kvilda/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Bez schodů, rampy či plošiny; vstupní dveře dvoukřídlé (160 cm); existuje alternativní bezbariérový vchod. Trasa od zastávky bezbariérová NENÍ (zastávka v blízkosti není).",
+    "wc": "Přístupná toaleta z chodby, kabina min. 160×160 cm, dveře min. 80 cm, pevné i sklopné madlo, velké umyvadlo, přebalovací pult. Hlavní stránka NC uvádí, že WC je venku z budovy hlavním východem a doleva.",
+    "parkovani": "U objektu je vyhrazené parkovací stání pro OZP.",
+    "vytah": "Objekt je jednopodlažní, výtah není.",
+    "jine": "Lze požádat o doprovod po budově."
+   },
+   "measurements": [
+    {
+     "co": "šířka vstupních dveří (dvoukřídlé)",
+     "hodnota": 160,
+     "jednotka": "cm"
+    },
+    {
+     "co": "kabina přístupné toalety (min.)",
+     "hodnota": "160×160",
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří toalety (min.)",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška sedátka WC",
+     "hodnota": 47,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "V objektu se nachází přístupná (bezbariérová) toaleta: ANO"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n296486543",
+   "name": "Agentura ochrany přírody a krajiny České republiky",
+   "url": "https://www.ochranaprirody.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n308726262",
+   "name": "Fakulta elektrotechnická ČVUT",
+   "url": "https://www.fel.cvut.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n6198024385",
+   "name": "Fio banka",
+   "url": "https://fio.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n7123184400",
+   "name": "Infocentrum PID",
+   "url": "https://pid.cz",
+   "reason": "web PID popisuje jen bezbariérovost dopravy, ne infocentrum"
+  },
+  {
+   "osm_id": "n4456038205",
+   "name": "MINT: Weekend Market",
+   "url": "https://www.mintmarket.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w30122967",
+   "name": "Ministerstvo vnitra",
+   "url": "https://www.mvcr.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n856638002",
+   "name": "Moneta Bank",
+   "url": "https://moneta.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n889343772",
+   "name": "Moneta Bank",
+   "url": "https://moneta.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w50110001",
+   "name": "Městská policie Praha 9 – obvodní ředitelství",
+   "url": "https://www.mppraha.cz/utvary-mp/or-praha-9",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1247728462",
+   "name": "Policie ČR - místní oddělení Bartolomějská",
+   "url": "https://www.policie.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n171483008",
+   "name": "Policie České republiky - OŘ Praha III - MOP Kyje",
+   "url": "https://www.policie.cz/clanek/or-praha-iii-mop-kyje.aspx",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3218518884",
+   "name": "Prague City Tourism",
+   "url": "https://www.prague.eu/",
+   "reason": "web má sekci Praha bez bariér, ale o samotném infocentru nic"
+  },
+  {
+   "osm_id": "n295168426",
+   "name": "Pražský hrad",
+   "url": "https://www.hrad.cz/",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "n12522813422",
+   "name": "Regionální organizátor Pražské integrované dopravy",
+   "url": "https://ropid.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w220808057",
+   "name": "SSOUK",
+   "url": "www.ssouk.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w28911652",
+   "name": "Smíchovská radnice",
+   "url": "https://www.praha5.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w1070759505",
+   "name": "Vysoká škola finanční a správní",
+   "url": "https://www.vsfs.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n9542943944",
+   "name": "Zásilkovna",
+   "url": "https://www.zasilkovna.cz/pobocky/praha-15-hostivar-svehlova-1391-32-zasilkovna-vivo-hostivar",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n432429276",
+   "name": "Úřad městské části Praha - Újezd",
+   "url": "https://www.praha-ujezd.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w1010695249",
+   "name": "ČAO Dr. E. Beneše, SOŠ",
+   "url": "https://www.cao8.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n4916159980",
+   "name": "Obecní úřad Borač",
+   "url": "https://www.borac.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1481475738",
+   "name": "Turistické informační centrum Boskovice",
+   "url": "https://www.kulturaboskovice.cz/tic",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773430",
+   "name": "Alianz",
+   "url": "https://www.banky.cz/pojistovny/allianz-pojistovna/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773509",
+   "name": "Dopravní podnik města Brna",
+   "url": "www.dpmb.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w27410497",
+   "name": "Fakulta informačních technologií VUT",
+   "url": "https://www.fit.vut.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w54169938",
+   "name": "Fakulta informačních technologií VUT",
+   "url": "http://www.fit.vutbr.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773390",
+   "name": "Hello Bank",
+   "url": "https://www.hellobank.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "mbb5773477",
+   "name": "Informační centrum TO JE Brno",
+   "url": "https://ticbrno.cz/informacni-centra/informacni-centrum-to-je-brno",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w155271438",
+   "name": "Informační kancelář",
+   "url": "www.dpmb.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3159165874",
+   "name": "Komerční banka",
+   "url": "www.kb.cz/cs/pobocky-a-bankomaty/pobocky/brno-nam-svobody",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "mbb5773491",
+   "name": "Kooperativa",
+   "url": "www.koop.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773310",
+   "name": "Krajské státní zastupitelství",
+   "url": "https://www.statnisprava.cz/rstsp/adresar.nsf/i/11096",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773497",
+   "name": "Krajský / Městský soud",
+   "url": "https://www.justice.cz/web/krajsky-soud-v-brne",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773356",
+   "name": "Krajský úřad Jihomoravského kraje",
+   "url": "www.kr-jihomoravsky.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773374",
+   "name": "Krajský úřad Jihomoravského kraje - Administrativní a školicí centrum",
+   "url": "www.kr-jihomoravsky.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773330",
+   "name": "Městská správa sociálního zabezpečení",
+   "url": "www.cssz.cz/cz/kontakty/krajska-a-okresni-pracoviste/brno",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773327",
+   "name": "Nejvyšší správní soud",
+   "url": "/www.nssoud.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773396",
+   "name": "Nejvyšší státní zastupitelství",
+   "url": "http://www.nsz.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773475",
+   "name": "Národní památkový ústav - územní odborné pracoviště v Brně",
+   "url": "www.npu.cz",
+   "reason": "web NPÚ uvádí přístupnost jen u hradů a zámků, ne u územního pracoviště"
+  },
+  {
+   "osm_id": "w904694205",
+   "name": "Obchodní akademie a vyšší odborná škola Brno, Kotlářská",
+   "url": "https://www.oabrno.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773496",
+   "name": "Oberbank AG",
+   "url": "https://www.oberbank.cz/oberbank-ag",
+   "reason": "stránka Přístupnost odkazuje na popisy poboček ve vyhledávači; pro tuto pobočku nedohledáno"
+  },
+  {
+   "osm_id": "mbb5773373",
+   "name": "Oblastní inspektorát práce JMK a ZK",
+   "url": "www.suip.cz/oip09/",
+   "reason": "zadaný odkaz nefunkční; úvodní stránka webu + podstránky o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w16146612",
+   "name": "Přírodovědecká fakulta Masarykovy univerzity",
+   "url": "https://sci.muni.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w213400989",
+   "name": "Střední průmyslová škola a Vyšší odborná škola Brno, Sokolská, příspěvková organizace",
+   "url": "https://www.sokolska.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w155269619",
+   "name": "Střední škola F. D. Roosevelta",
+   "url": "http://www.sstpm.qmail.cz/",
+   "reason": "web nedostupný (<urlopen error timed out>)"
+  },
+  {
+   "osm_id": "mbb5773322",
+   "name": "Turistické informační centrum - Jižní Morava (centrála cestovního ruchu)",
+   "url": "www.ccrjm.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773510",
+   "name": "Všeobecná zdravotní pojišťovna",
+   "url": "www.vzp.cz/kontakty/pobocky/brno-mesto",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773512",
+   "name": "bankomat Moneta Bank",
+   "url": "www.moneta.cz/pobocky/brno-krizova-9-S1DS2079_995",
+   "reason": "odkaz na bankomat Křížová 9 přesměrovává na jiný bankomat (Pekařská); o tomto místě nic"
+  },
+  {
+   "osm_id": "mbb5773418",
+   "name": "bankomat Poštovní spořitelna",
+   "url": "www.postovnisporitelna.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "mbb5773486",
+   "name": "bankomat Poštovní spořitelna",
+   "url": "www.postovnisporitelna.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "mbb5773518",
+   "name": "bankomat Sberbank",
+   "url": "https://www.sberbankcz.cz/pobocky-a-bankomaty",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "mbb5773386",
+   "name": "ÚMČ Brno-střed",
+   "url": "www.brno-stred.cz",
+   "reason": "web má jen odkaz na videonávod (2018) pro lidi s pohybovým postižením k budovám úřadu; konkrétní údaje v textu nejsou"
+  },
+  {
+   "osm_id": "n8341100476",
+   "name": "Úřad městské části Brno-Komín",
+   "url": "https://www.brno-komin.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n6289608998",
+   "name": "Úřad městské části Brno-Žebětín",
+   "url": "https://www.zebetin.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773382",
+   "name": "Úřad práce",
+   "url": "www.podatelna.bm@uradprace.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11003] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "r17800622",
+   "name": "Úřad práce Brno-město",
+   "url": "https://www.uradprace.cz/web/cz/brno-mesto",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w50005456",
+   "name": "ČSOB",
+   "url": "www.csobleasing.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773410",
+   "name": "ČSOB Pojišťovna",
+   "url": "www.csobpoj.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n2815481515",
+   "name": "Česká Národní Banka",
+   "url": "https://www.cnb.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "mbb5773366",
+   "name": "Česká pojišťovna",
+   "url": "www.ceskapojistovna.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "mbb5773333",
+   "name": "Česká pošta",
+   "url": "www.postaonline.cz/detail-pobocky/-/pobocky/detail/60300",
+   "reason": "detail pobočky uvádí jen obecný odkaz Žádost o obsluhu imobilní osoby, nic o budově"
+  },
+  {
+   "osm_id": "mbb5773329",
+   "name": "Český statistický úřad",
+   "url": "www.czso.cz/csu/xb",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w142543900",
+   "name": "Obecní úřad Březina",
+   "url": "https://www.brezina-tisnovsko.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n8191674112",
+   "name": "Obecní úřad Diváky",
+   "url": "https://www.divaky.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n10904445435",
+   "name": "Obecní úřad Katov",
+   "url": "https://www.katov.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n7295435130",
+   "name": "Obecní úřad",
+   "url": "https://kobericeubrna.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w51405075",
+   "name": "Obecní úřad",
+   "url": "http://www.lelekovice.cz/",
+   "reason": "zadaný odkaz nefunkční; úvodní stránka webu + podstránky o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n957285682",
+   "name": "Obecní úřad Lukovany",
+   "url": "https://www.lukovany.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1778425130",
+   "name": "Městský úřad Mikulov",
+   "url": "http://www.mikulov.cz/mesto-mikulov/mestsky-urad/",
+   "reason": "zadaná stránka 404; web města uvádí bezbariérovost jen u hotelů a služeb, ne u úřadu"
+  },
+  {
+   "osm_id": "n12402065154",
+   "name": "mBank",
+   "url": "https://www.mbank.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n5414624784",
+   "name": "Obecní úřad Nevojice",
+   "url": "https://www.nevojice.cz/urad/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n7482888099",
+   "name": "Obecní úřad Nížkovice",
+   "url": "https://nizkovice.cz/obecni-urad/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n10777860460",
+   "name": "Skalice - Obecní Úřad",
+   "url": "https://www.skaliceuznojma.cz/urad/uredni-deska/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n4312278666",
+   "name": "Obecní úřad Skalička",
+   "url": "https://www.obec-skalicka.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n7529910205",
+   "name": "Obecní úřad Uhřice",
+   "url": "https://obec-uhrice.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n10780194201",
+   "name": "Úřad městyse Višňové",
+   "url": "https://www.visnove.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w254585983",
+   "name": "Obecní úřad Závist",
+   "url": "https://www.obec-zavist.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n7317101140",
+   "name": "Obecní úřad Štěpánovice",
+   "url": "https://www.stepanovice.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3768131507",
+   "name": "Kulturní a informační centrum Horní Planá",
+   "url": "https://www.horniplana.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3012429799",
+   "name": "Turistické informační centrum Milevsko",
+   "url": "https://www.milevsko-mesto.cz/infocentrum/d-92955/p1=51219",
+   "reason": "zadaný odkaz nefunkční; úvodní stránka webu + podstránky o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "w331870852",
+   "name": "Informační centrum Jaderné elektrárny Temelín",
+   "url": "https://www.cez.cz/cs/vyroba-elektriny/jaderna-energetika/jaderne-elektrarny-cez/ete/informacni-centrum.html",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1865483279",
+   "name": "Městský úřad Velešín",
+   "url": "http://www.valesin.cz//",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n3922206113",
+   "name": "Obecní úřad",
+   "url": "https://www.cernavposumavi.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w171903691",
+   "name": "Jihočeská univerzita",
+   "url": "https://www.jcu.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n360023701",
+   "name": "Infocentrum Český Krumlov",
+   "url": "https://www.ckrumlov.info/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n9518194948",
+   "name": "Městská policie",
+   "url": "http://www.mpckrumlov.eu/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w60562108",
+   "name": "Městský úřad Český Krumlov",
+   "url": "http://obcan.ckrumlov.info/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w89652103",
+   "name": "Městský úřad Cheb",
+   "url": "https://www.mestocheb.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3687639876",
+   "name": "Turistické Infocentrum Cheb",
+   "url": "https://www.tic.mestocheb.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3680912299",
+   "name": "Turistické infocentrum Františkovy Lázně",
+   "url": "https://www.frantiskovy-lazne.info/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n4424957570",
+   "name": "Informační a kulturní centrum Jáchymov",
+   "url": "https://www.mestojachymov.cz/informacni-a-kulturni-centrum/ds-1052",
+   "reason": "zadaný odkaz nefunkční; úvodní stránka webu + podstránky o přístupnosti nic neuvádí"
+  },
+  {
+   "osm_id": "n3393590654",
+   "name": "Městský úřad Jáchymov",
+   "url": "https://www.palfi.cz/clanky/pamatky-a-zajimavosti-jachymova/vyznamne-stavby/radnice.html",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n5969279697",
+   "name": "Volksbank Raiffeisenbank Nordoberpfalz eG",
+   "url": "https://www.vr-nordoberpfalz.de/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n4424957572",
+   "name": "Informační centrum Kraslice",
+   "url": "https://www.kraslice.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n5969203285",
+   "name": "Volksbank Raiffeisenbank Nordoberpflaz eG",
+   "url": "https://vr-nopf.de",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n9947928046",
+   "name": "Obecní úřad Dolní Přím",
+   "url": "https://www.dolni-prim.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n5116684250",
+   "name": "Informační centrum Hradec Králové",
+   "url": "https://www.hkinfo.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1925188321",
+   "name": "Regionální turistické informační centrum Krkonoše",
+   "url": "https://www.krkonose.eu/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n8448792729",
+   "name": "Obecní úřad Říčky v Orlických horách",
+   "url": "https://www.obecricky.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1826545904",
+   "name": "Infocentrum Doksy",
+   "url": "http://www.doksy.com/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n7193095208",
+   "name": "Městský úřad Kamenický Šenov",
+   "url": "https://www.kamenicky-senov.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w130141371",
+   "name": "Obecní úřad Lichnov",
+   "url": "https://www.lichnov.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3125844302",
+   "name": "Obecní úřad Nýdek",
+   "url": "https://www.nydek.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3424534721",
+   "name": "OSTRAVAINFO!!!",
+   "url": "https://www.ostravainfo.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1336863694",
+   "name": "Policie ČR - obvodní oddělení Ostrava-Hrabůvka",
+   "url": "https://policie.gov.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3917099897",
+   "name": "BIC Pstruží",
+   "url": "http://pstruzi.knihovna.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3223910455",
+   "name": "Městský úřad Rýmařov",
+   "url": "https://www.rymarov.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n5249452484",
+   "name": "Obecní úřad Úvalno",
+   "url": "https://www.uvalno.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3919302260",
+   "name": "Informační centrum Čeladná",
+   "url": "https://www.info-celadna.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n2617050395",
+   "name": "Obecní úřad Lipová",
+   "url": "https://www.obec-lipova.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n12497646853",
+   "name": "Raiffeisenbank",
+   "url": "https://rb.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n12438400659",
+   "name": "Správa železnic",
+   "url": "https://www.spravazeleznic.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n12526665845",
+   "name": "mBank",
+   "url": "https://www.mbank.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n11059278185",
+   "name": "Obecní úřad",
+   "url": "https://www.obecchrastavec.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n8660305826",
+   "name": "obecní úřad Korouhev",
+   "url": "https://www.obeckorouhev.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n430328616",
+   "name": "Turistické informační centrum Pardubice",
+   "url": "https://pardubice.eu/turisticke-informacni-centrum/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n357861000",
+   "name": "IC Horská Kvilda",
+   "url": "http://www.horskakvilda.eu/informa%C4%8Dn%C3%AD-st%C5%99edisko.aspx",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n2870974566",
+   "name": "Centrum Caolinum Nevřeň",
+   "url": "https://www.centrumcaolinum.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n5969186385",
+   "name": "Volksbank Raiffeisenbank Nordoberpfalz eG",
+   "url": "https://www.vr-nopf.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n5969174285",
+   "name": "Volksbank Raiffeisenbank Nordoberpfalz eG",
+   "url": "https://www.vr-nopf.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n4431642882",
+   "name": "Obecní úřad Vísky",
+   "url": "https://www.obec-visky.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1392259350",
+   "name": "Obecní úřad Bašť",
+   "url": "https://www.obecbast.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n5081030088",
+   "name": "Finanční úřad pro Středočeský kraj",
+   "url": "https://financnisprava.gov.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w165210152",
+   "name": "Úřad městyse Karlštejn",
+   "url": "https://www.mestys-karlstejn.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n429943039",
+   "name": "Městský úřad Klecany",
+   "url": "https://www.mu-klecany.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n7775919209",
+   "name": "Obecní úřad",
+   "url": "https://www.klukymb.eu/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3587811403",
+   "name": "Městský úřad Lysá nad Labem",
+   "url": "https://mestolysa.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3016913970",
+   "name": "TIC",
+   "url": "https://ticmelnik.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n2134853126",
+   "name": "Městský úřad Týnec nad Labem",
+   "url": "https://www.tynecnadlabem.cz",
+   "reason": "bezbariérové prostory web uvádí jen u Turistického informačního střediska, ne u městského úřadu"
+  },
+  {
+   "osm_id": "n12837566733",
+   "name": "Obecní úřad Všenory",
+   "url": "https://www.vsenory.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1434670845",
+   "name": "Městský úřad Čelákovice",
+   "url": "https://www.celakovice.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n10691766676",
+   "name": "Turistické informační centrum Humpolec",
+   "url": "https://tic.humpolec.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n2600301672",
+   "name": "Obecní úřad Prosetín",
+   "url": "https://www.prosetin.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n475658744",
+   "name": "Generali Česká pojišťovna",
+   "url": "https://www.generaliceska.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n4307755543",
+   "name": "Turistické informační centrum Velké Meziříčí",
+   "url": "https://www.velkemezirici.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3618170336",
+   "name": "TIC Buchlovice",
+   "url": "http://tic.buchlovice.cz/",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "w290686926",
+   "name": "Obecní úřad Chomýž",
+   "url": "https://www.chomyz.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3814562073",
+   "name": "Informační centrum Zvonice Soláň",
+   "url": "https://www.zvonice.eu/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n6801723551",
+   "name": "Městské turistické a informační centrum Luhačovice",
+   "url": "https://www.kkcelektra.cz/24742-mestske-turisticke-a-informacni-centrum",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w160210882",
+   "name": "Obecní úřad Nedachlebice",
+   "url": "https://www.nedachlebice.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w137400764",
+   "name": "Obecní úřad Podhradní Lhota",
+   "url": "https://www.podhradnilhota.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "w261380302",
+   "name": "Obecní úřad Rusava",
+   "url": "https://www.rusava.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n5112543108",
+   "name": "Městské informační centrum Uherské Hradiště",
+   "url": "https://www.uherske-hradiste.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n3355700071",
+   "name": "ČMSS - Liška - stavební spoření, hypotéky",
+   "url": "https://www.cmss-oz.cz/petr.barinka",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n13162540628",
+   "name": "Energetická agentura Zlínského kraje, o.p.s.",
+   "url": "https://www.eazk.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1264117959",
+   "name": "Městský úřad Hoštka",
+   "url": "https://www.hostka.cz",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n2443474770",
+   "name": "Infocentrum",
+   "url": "https://obecjiretin.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (úvodní stránka + až 6 podstránek)"
+  },
+  {
+   "osm_id": "n1757606146",
+   "name": "Městské informační centrum",
+   "url": "http://www.icrumburk.cz/cs/kontakt",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů ze vstupu inputs2/urady.json",
+   "url": "(viz source_url u míst)",
+   "note": "Prohledáno skriptem: úvodní stránka + max. 6 podstránek, hledání klíčových slov o bezbariérovosti."
+  }
+ ]
+}

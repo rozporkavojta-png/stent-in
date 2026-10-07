@@ -1,0 +1,101 @@
+{
+ "task": "ubytovani_olomoucky",
+ "kraj": "Olomoucký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "w437969197",
+   "name": "MoravaCamp",
+   "obec": "Mohelnice",
+   "address": "",
+   "lat": 49.783397,
+   "lng": 16.909856,
+   "category": "ubytovani",
+   "source_url": "https://moravacamp.cz/motel/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "pokoj": "Motel kempu nabízí speciálně zařízený dvoulůžkový pokoj pro tělesně postižené hosty.",
+    "vstup": "Pokoj má podle webu bezbariérový přístup.",
+    "koupelna": "Pokoj má vlastní sociální zařízení; o jeho úpravě web podrobnosti neuvádí."
+   },
+   "measurements": [],
+   "evidence_quote": "pokoj přizpůsobený potřebám tělesně postižených klientů bezbariérový přístup"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n2434367110",
+   "name": "Penzion Laguna",
+   "url": "http://www.laguna.jeseniky.com/",
+   "reason": "web nedostupný (spojení odmítnuto)"
+  },
+  {
+   "osm_id": "w116931298",
+   "name": "Autocamping Bobrovník, Lipová-lázně",
+   "url": "https://www.bobrovnik.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n4833291700",
+   "name": "Chata Červenohorské sedlo",
+   "url": "https://www.chatacervenohorskesedlo.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12095461149",
+   "name": "Mezi pařezy",
+   "url": "https://www.meziparezy.cz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n12095537917",
+   "name": "Na samotě u lesa",
+   "url": "https://www.jesenikyresort.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1164438160",
+   "name": "ABA Apartments",
+   "url": "https://en.abaapartments.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n9595230478",
+   "name": "Miss Sophie's Olomouc",
+   "url": "https://www.miss-sophies.com/hotel/olomouc/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1101692660",
+   "name": "STPL Olomouc",
+   "url": "https://www.stpl-olomouc.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w53227239",
+   "name": "Smarthotel Nezvalova Archa",
+   "url": "https://nezvalovaarcha.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w345596636",
+   "name": "Penzion Svatý Martin",
+   "url": "https://www.skipetrikov.cz/penzion-svaty-martin",
+   "reason": "web nedostupný (spojení přerušeno)"
+  },
+  {
+   "osm_id": "n796172640",
+   "name": "Hotel Koruna",
+   "url": "https://www.hotel-koruna.com/",
+   "reason": "web nic o přístupnosti neuvádí"
+  }
+ ],
+ "sources": [
+  {
+   "title": "MoravaCamp",
+   "url": "https://moravacamp.cz/motel/",
+   "note": "zdroj informací o přístupnosti"
+  }
+ ]
+}

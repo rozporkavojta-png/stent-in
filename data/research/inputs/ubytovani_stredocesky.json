@@ -1,0 +1,320 @@
+[
+{
+"i": "w62191929",
+"n": "Na Krásné vyhlídce",
+"s": "Penzion",
+"o": "Boseň",
+"w": "limited",
+"la": 50.532867,
+"lo": 15.049782
+},
+{
+"i": "n2373237304",
+"n": "Kemp Branov",
+"s": "Kemp",
+"o": "Branov",
+"web": "https://www.kempbranov.cz/",
+"w": "limited",
+"t": "no",
+"la": 50.020084,
+"lo": 13.834613
+},
+{
+"i": "n4882138963",
+"n": "Relax",
+"s": "Hotel",
+"o": "Bělá pod Bezdězem",
+"web": "http://www.hotelrelax-vrchbela.cz/cz/ubytovani/ubytovani/",
+"w": "yes",
+"la": 50.524952,
+"lo": 14.773124
+},
+{
+"i": "n5173953764",
+"n": "Resort Green Valley",
+"s": "Hotel",
+"o": "Chotýšany",
+"a": "Chotýšany 16",
+"web": "https://www.green-valley.cz/",
+"w": "yes",
+"la": 49.748993,
+"lo": 14.839958
+},
+{
+"i": "n11530200661",
+"n": "Vajíčko",
+"s": "Kemp",
+"o": "Dobřeň",
+"w": "no",
+"la": 50.492815,
+"lo": 14.531858
+},
+{
+"i": "n4064345508",
+"n": "Penzion Valdek",
+"s": "Penzion",
+"o": "Hořovice",
+"a": "Fügnerova 374/1",
+"w": "no",
+"la": 49.837704,
+"lo": 13.897358
+},
+{
+"i": "n6681020801",
+"n": "U Míly",
+"s": "Penzion",
+"o": "Hrusice",
+"w": "no",
+"la": 49.909414,
+"lo": 14.737993
+},
+{
+"i": "n11041550228",
+"n": "Penzion Bellevue - Vyhlídka Karlštejn",
+"s": "Penzion",
+"o": "Karlštejn",
+"a": "Budňanský potok 31",
+"web": "https://www.penzion-karlstejn.cz/",
+"w": "yes",
+"t": "yes",
+"la": 49.936067,
+"lo": 14.184233
+},
+{
+"i": "n3708437600",
+"n": "Sport Hotel Sletiště",
+"s": "Hotel",
+"o": "Kladno",
+"web": "https://www.sporthotelsletiste.cz/",
+"w": "yes",
+"la": 50.135554,
+"lo": 14.086957
+},
+{
+"i": "n4823301920",
+"n": "Romantic baroque nest",
+"s": "Chata",
+"o": "Klučov",
+"web": "https://www.airbnb.de/rooms/13431336?guests=1&adults=1&children=0&infants=0&location=Klu%C4%8Dov%20und%20%C4%8Cesk%C3%A9ho%20Brodu%2C%20Tschechien&s=A9hZ3N72",
+"w": "no",
+"la": 50.084071,
+"lo": 14.95951
+},
+{
+"i": "n4308794658",
+"n": "U báby Šubrový",
+"s": "Penzion",
+"o": "Kokořín",
+"a": "Kokořínský Důl 12",
+"web": "https://www.ubabysubrovy.cz/",
+"w": "no",
+"la": 50.427262,
+"lo": 14.576937
+},
+{
+"i": "w365337121",
+"n": "Hotel Orlik",
+"s": "Hotel",
+"o": "Kozárovice",
+"a": "Vystrkov 179",
+"web": "https://www.hotelorlik.cz/",
+"w": "no",
+"la": 49.547123,
+"lo": 14.153153
+},
+{
+"i": "n1825113957",
+"n": "Hotel Kréta",
+"s": "Hotel",
+"o": "Kutná Hora",
+"w": "no",
+"la": 49.955619,
+"lo": 15.2703
+},
+{
+"i": "n1832258980",
+"n": "Hotel U Zvonu",
+"s": "Hotel",
+"o": "Kutná Hora",
+"a": "Jiřího z Poděbrad 286",
+"web": "https://hotel-u-zvonu.webnode.cz/",
+"w": "limited",
+"la": 49.951157,
+"lo": 15.267999
+},
+{
+"i": "n5534745021",
+"n": "U Babky Bylinkářky",
+"s": "Penzion",
+"o": "Kutná Hora",
+"web": "https://www.babkabylinkarka.cz/",
+"w": "no",
+"la": 49.946866,
+"lo": 15.271426
+},
+{
+"i": "n2349990263",
+"n": "U Prejzků",
+"s": "Penzion",
+"o": "Lhotka",
+"a": "Dolní 2",
+"web": "https://www.uprejzku.cz/",
+"w": "no",
+"la": 49.833371,
+"lo": 13.997967
+},
+{
+"i": "w89087516",
+"n": "Malý mnich",
+"s": "Penzion",
+"o": "Mníšek pod Brdy",
+"a": "náměstí F. X. Svobody 54",
+"web": "https://www.malymnich.cz/",
+"w": "limited",
+"la": 49.865462,
+"lo": 14.259232
+},
+{
+"i": "n1366841116",
+"n": "Hotel Jaro",
+"s": "Hotel",
+"o": "Mělník",
+"a": "17. listopadu 174/2",
+"web": "https://www.hotel-jaro.cz/",
+"w": "no",
+"la": 50.349606,
+"lo": 14.475936
+},
+{
+"i": "n638425820",
+"n": "Academic",
+"s": "Hotel",
+"o": "Roztoky",
+"a": "Tyršovo nám. 2222",
+"web": "https://www.academic.cz",
+"w": "yes",
+"la": 50.16194,
+"lo": 14.392065
+},
+{
+"i": "w1157207949",
+"n": "Kemp Višňová Hájek",
+"s": "Kemp",
+"o": "Roztoky",
+"web": "https://www.visnova-hajek.cz/",
+"w": "limited",
+"t": "no",
+"la": 50.017326,
+"lo": 13.858499
+},
+{
+"i": "n2983514210",
+"n": "Tábořiště mezi mosty",
+"s": "Kemp",
+"o": "Roztoky",
+"w": "yes",
+"la": 50.029284,
+"lo": 13.866126
+},
+{
+"i": "n5752062059",
+"n": "Monínec",
+"s": "Hotel",
+"o": "Sedlec-Prčice",
+"web": "https://leto.moninec.cz/ubytovani/hotel",
+"w": "no",
+"la": 49.543942,
+"lo": 14.51627
+},
+{
+"i": "n7781883395",
+"n": "Chalupa Garage U Barbory",
+"s": "Apartmány",
+"o": "Slabce",
+"web": "https://ubarbory.cz/",
+"w": "limited",
+"la": 50.001006,
+"lo": 13.71504
+},
+{
+"i": "w270694970",
+"n": "Camp Srbsko",
+"s": "Kemp",
+"o": "Srbsko",
+"web": "https://www.campsrbsko.cz/",
+"w": "yes",
+"la": 49.939371,
+"lo": 14.132592
+},
+{
+"i": "w99283711",
+"n": "Penzion Stranný",
+"s": "Penzion",
+"o": "Stranný",
+"w": "no",
+"la": 49.753737,
+"lo": 14.493583
+},
+{
+"i": "n6338272099",
+"n": "Sázava",
+"s": "Hotel",
+"o": "Sázava",
+"a": "Benešovská 44",
+"web": "www.hotelsazava.cz",
+"w": "yes",
+"la": 49.871872,
+"lo": 14.896189
+},
+{
+"i": "n14059128215",
+"n": "CHÂTEAU TŘEBEŠICE",
+"s": "Apartmány",
+"o": "Třebešice",
+"w": "no",
+"la": 49.929586,
+"lo": 15.338818
+},
+{
+"i": "n13034693532",
+"n": "Hotel Pod Sluncem",
+"s": "Hotel",
+"o": "Třebíz",
+"a": "Třebíz 25",
+"web": "http://www.hotelpodsluncem.cz/",
+"w": "no",
+"la": 50.269546,
+"lo": 13.992082
+},
+{
+"i": "w151879913",
+"n": "Libuše",
+"s": "Hotel",
+"o": "Veltrusy",
+"w": "yes",
+"la": 50.275519,
+"lo": 14.315056
+},
+{
+"i": "n977900716",
+"n": "Hotel Hubert",
+"s": "Hotel",
+"o": "Zbraslavice",
+"web": "http://www.hotel-hubert.cz/",
+"w": "limited",
+"la": 49.815284,
+"lo": 15.190102
+},
+{
+"i": "w51555716",
+"n": "Aquapalace Hotel Prague",
+"s": "Hotel",
+"o": "Čestlice",
+"a": "Obchodní 137",
+"web": "https://www.aquapalacehotel.cz/",
+"w": "yes",
+"t": "yes",
+"la": 50.007466,
+"lo": 14.570349
+}
+]

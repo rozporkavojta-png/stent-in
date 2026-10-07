@@ -1,0 +1,1224 @@
+{
+ "task": "cile_plzensky",
+ "kraj": "Plzeňský kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": null,
+   "name": "Západočeské muzeum v Plzni",
+   "obec": "Plzeň",
+   "address": "Kopeckého sady 2",
+   "lat": 49.74497,
+   "lng": 13.379277,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup přes dva schůdky vysoké 5 cm.",
+    "vytah": "Interiér bezbariérový díky schodišťovým plošinám a výtahu.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [
+    {
+     "co": "výška schůdků u vstupu",
+     "hodnota": 5,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "vstup do objektu: dva schůdky vysoké 5cm"
+  },
+  {
+   "osm_id": null,
+   "name": "Národopisné muzeum Plzeňska",
+   "obec": "Plzeň",
+   "address": "náměstí Republiky 13",
+   "lat": 49.746779,
+   "lng": 13.378433,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "vytah": "Kromě přízemí je expozice v patře, výtah není.",
+    "wc": "WC pro vozíčkáře upravené není."
+   },
+   "measurements": [],
+   "evidence_quote": "kromě přízemí je expozice v patře, bez výtahu"
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum církevního umění plzeňské diecéze",
+   "obec": "Plzeň",
+   "address": "Františkánská 11",
+   "lat": 49.745126,
+   "lng": 13.37866,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér po plošině.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér (plošina)"
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum loutek",
+   "obec": "Plzeň",
+   "address": "náměstí Republiky 23",
+   "lat": 49.74638,
+   "lng": 13.376937,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér po nájezdu.",
+    "vytah": "Interiér bezbariérový, s výtahem.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér (nájezd)"
+  },
+  {
+   "osm_id": null,
+   "name": "Patton Memorial Pilsen",
+   "obec": "Plzeň",
+   "address": "Pobřežní 10",
+   "lat": 49.750075,
+   "lng": 13.373758,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "U vstupu schod 16 cm, lze použít provizorní nájezdovou rampu.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC není upravené, je pouze přístupné (dveře 70 cm)."
+   },
+   "measurements": [
+    {
+     "co": "výška schodu u vstupu",
+     "hodnota": 16,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří WC",
+     "hodnota": 70,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "schod 16 cm (lze využít provizorní nájezdovou rampu)"
+  },
+  {
+   "osm_id": null,
+   "name": "Plzeňský Prazdroj – návštěvnické centrum",
+   "obec": "Plzeň",
+   "address": "U Prazdroje 7",
+   "lat": 49.747189,
+   "lng": 13.387841,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "Techmania Science Center",
+   "obec": "Plzeň",
+   "address": "areál Škoda (vstup 5. bránou z Borské ulice)",
+   "lat": 49.740173,
+   "lng": 13.362068,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér (5. branou z Borské ulice).",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "Divadlo J. K. Tyla – Velké divadlo",
+   "obec": "Plzeň",
+   "address": "Smetanovy sady 16",
+   "lat": 49.745416,
+   "lng": 13.37329,
+   "category": "kultura",
+   "source_url": "https://www.djkt.eu/prodej-a-sluzby/informace-pro-hcp",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Výtah u bočního vchodu, použití zajistí hledištní personál. Podle webu města (plzen.eu/doprava/plzen-bez-barier/kultura/divadla/) je u vstupu schodišťová plošina, na niž vozíčkář často vyjede jen s dopomocí.",
+    "jine": "Místa pro vozík v 9.–11. řadě po obou stranách; kapacita omezená, doporučují kontaktovat předprodej. Sleva 50 % pro ZTP a ZTP/P (u ZTP/P i doprovod).",
+    "wc": "Podle webu města WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "K dispozici je výtah (u bočního vchodu do divadla)"
+  },
+  {
+   "osm_id": "w344243312",
+   "name": "Divadlo J. K. Tyla – Nové divadlo",
+   "obec": "Plzeň",
+   "address": "Palackého náměstí 30",
+   "lat": 49.749138,
+   "lng": 13.372082,
+   "category": "kultura",
+   "source_url": "https://www.djkt.eu/prodej-a-sluzby/informace-pro-hcp",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "Přístup zajištěn výtahem.",
+    "jine": "Na Nové scéně 4 vyhrazená místa pro vozíky za 22. řadou; indukční smyčka. Podle webu města (plzen.eu/doprava/plzen-bez-barier/kultura/divadla/) vstup bez bariér a WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "Na Nové scéně jsou vyhrazena pro vozíčky 4 místa za 22. řadou."
+  },
+  {
+   "osm_id": "n4450829401",
+   "name": "Malá scéna DJKT",
+   "obec": "Plzeň",
+   "address": "Smetanovy sady 16",
+   "lat": 49.749355,
+   "lng": 13.372312,
+   "category": "kultura",
+   "source_url": "https://www.djkt.eu/prodej-a-sluzby/informace-pro-hcp",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vytah": "K dispozici výtah, použití zajistí hledištní personál.",
+    "jine": "Místo pro vozík na úrovni první řady vpravo; podle stránky Malé scény (djkt.eu/mala-scena) má hlediště bezbariérový přístup."
+   },
+   "measurements": [],
+   "evidence_quote": "Na Malé scéně je místo pro vozíček na úrovni první řady vpravo."
+  },
+  {
+   "osm_id": null,
+   "name": "Divadlo Alfa",
+   "obec": "Plzeň",
+   "address": "Rokycanská 7",
+   "lat": 49.748279,
+   "lng": 13.40372,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/divadla/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup po schodišťové plošině.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře (euroklíč)."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: schodišťová plošina"
+  },
+  {
+   "osm_id": "n3147502028",
+   "name": "Divadlo Pluto",
+   "obec": "Plzeň",
+   "address": "Masarykova 75 (OD Centrum)",
+   "lat": 49.751752,
+   "lng": 13.415252,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/divadla/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup výtahem.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "Vlastní upravené WC není; do 20:00 lze použít WC v OD Centrum (CrossCafé)."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: výtah"
+  },
+  {
+   "osm_id": null,
+   "name": "Divadlo Dialog",
+   "obec": "Plzeň",
+   "address": "Smetanovy sady 9",
+   "lat": 49.744323,
+   "lng": 13.373656,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/divadla/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "Západočeská galerie – výstavní síň Masné krámy",
+   "obec": "Plzeň",
+   "address": "Pražská 18",
+   "lat": 49.747618,
+   "lng": 13.380394,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/galerie/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup bočním vchodem přes práh.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bočním vchodem přes práh"
+  },
+  {
+   "osm_id": null,
+   "name": "Západočeská galerie – výstavní síň „13“",
+   "obec": "Plzeň",
+   "address": "Pražská 13",
+   "lat": 49.747997,
+   "lng": 13.379913,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/galerie/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Jeden schod, nájezdy lze vyžádat v pokladně.",
+    "jine": "Místy stísněný prostor pro manévrování s vozíkem.",
+    "wc": "WC pouze přístupné, po strmém nájezdu."
+   },
+   "measurements": [],
+   "evidence_quote": "jeden schod (nájezdy na požádání v pokladně)"
+  },
+  {
+   "osm_id": "n3955585463",
+   "name": "Galerie města Plzně",
+   "obec": "Plzeň",
+   "address": "náměstí Republiky 40",
+   "lat": 49.748199,
+   "lng": 13.377097,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/galerie/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bočním vchodem z Dominikánské ul. přes schod 10 cm, nebo po přenosné nájezdové rampě.",
+    "jine": "Nadzemní část převážně bezbariérová.",
+    "wc": "WC pro vozíčkáře upravené není."
+   },
+   "measurements": [
+    {
+     "co": "výška schodu u bočního vchodu",
+     "hodnota": 10,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "přes schod vysoký 10 cm, nebo po přenosné nájezdové rampě"
+  },
+  {
+   "osm_id": null,
+   "name": "Galerie Evropského domu",
+   "obec": "Plzeň",
+   "address": "náměstí Republiky 12",
+   "lat": 49.746896,
+   "lng": 13.378565,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/galerie/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Krátký, strmý nájezd – bez asistence ho vozíčkář překonávat nemá.",
+    "jine": "Galerie je v přízemí ve dvoře, bezbariérová.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "krátký, nebezpečně strmý nájezd"
+  },
+  {
+   "osm_id": "w45195273",
+   "name": "Mázhaus plzeňské historické radnice",
+   "obec": "Plzeň",
+   "address": "náměstí Republiky 1",
+   "lat": 49.748358,
+   "lng": 13.377748,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/galerie/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "Galerie U Andělíčka",
+   "obec": "Plzeň",
+   "address": "Veleslavínova 30",
+   "lat": 49.749012,
+   "lng": 13.378071,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/galerie/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Bezbariérové přízemí.",
+    "wc": "WC pro vozíčkáře upravené není."
+   },
+   "measurements": [],
+   "evidence_quote": "interiér: bezbariérový (přízemí)"
+  },
+  {
+   "osm_id": null,
+   "name": "Galerie Azyl",
+   "obec": "Plzeň",
+   "address": "Veleslavínova 17",
+   "lat": 49.748793,
+   "lng": 13.378219,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/galerie/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Bezbariérové přízemí.",
+    "wc": "WC pro vozíčkáře upravené není."
+   },
+   "measurements": [],
+   "evidence_quote": "interiér: bezbariérový (přízemí)"
+  },
+  {
+   "osm_id": "w1153774180",
+   "name": "Cinema City Plzeň Plaza",
+   "obec": "Plzeň",
+   "address": "Radčická 2 (OC Plzeň Plaza)",
+   "lat": 49.749343,
+   "lng": 13.368846,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/kina/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup výtahem; s rozměrnějším vozíkem lze využít zvláštní objízdný přístup.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: výtah"
+  },
+  {
+   "osm_id": "n537641629",
+   "name": "CineStar Plzeň",
+   "obec": "Plzeň",
+   "address": "Písecká 1 (OC Olympia)",
+   "lat": 49.701507,
+   "lng": 13.427985,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/kina/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Interiér bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "Kino Beseda (Měšťanská beseda)",
+   "obec": "Plzeň",
+   "address": "Kopeckého sady 13",
+   "lat": 49.74424,
+   "lng": 13.376634,
+   "category": "kultura",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/kina/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Zadním vchodem po schodišťové plošině, dál výtahem do 1. patra.",
+    "jine": "Interiér bezbariérový, přístup z foyer v 1. patře přes Primátorský salonek.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "zadním vchodem (schodišťová plošina, dále výtah do 1. patra)"
+  },
+  {
+   "osm_id": null,
+   "name": "Katedrála sv. Bartoloměje",
+   "obec": "Plzeň",
+   "address": "náměstí Republiky",
+   "lat": 49.74748,
+   "lng": 13.377512,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/kostely-cirkevni-objekty/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup do objektu bez bariér."
+   },
+   "measurements": [],
+   "evidence_quote": "bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "Velká synagoga",
+   "obec": "Plzeň",
+   "address": "sady Pětatřicátníků",
+   "lat": 49.746673,
+   "lng": 13.372756,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/kostely-cirkevni-objekty/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup do objektu bez bariér."
+   },
+   "measurements": [],
+   "evidence_quote": "bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "Kostel sv. Jana Nepomuckého",
+   "obec": "Plzeň",
+   "address": "Chodské náměstí",
+   "lat": 49.738368,
+   "lng": 13.371362,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/kostely-cirkevni-objekty/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup bez bariér bočním vchodem."
+   },
+   "measurements": [],
+   "evidence_quote": "bez bariér bočním vchodem"
+  },
+  {
+   "osm_id": null,
+   "name": "Kostel sv. Jiří",
+   "obec": "Plzeň",
+   "address": "Plzeň-Doubravka",
+   "lat": 49.763556,
+   "lng": 13.41348,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/kostely-cirkevni-objekty/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup do objektu bez bariér."
+   },
+   "measurements": [],
+   "evidence_quote": "bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "Kostel sv. Petra a Pavla",
+   "obec": "Plzeň",
+   "address": "Plzeň-Litice",
+   "lat": 49.695222,
+   "lng": 13.352987,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/kostely-cirkevni-objekty/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "U vstupu práh 10 cm."
+   },
+   "measurements": [
+    {
+     "co": "výška prahu",
+     "hodnota": 10,
+     "jednotka": "cm"
+    }
+   ],
+   "evidence_quote": "práh 10 cm"
+  },
+  {
+   "osm_id": null,
+   "name": "Kostel Panny Marie Růžencové",
+   "obec": "Plzeň",
+   "address": "Jiráskovo náměstí",
+   "lat": 49.736204,
+   "lng": 13.393005,
+   "category": "pamatky",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/kostely-cirkevni-objekty/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup do objektu bez bariér.",
+    "wc": "Součástí areálu je toaleta upravená pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "součástí areálu je toaleta s úpravou pro vozíčkáře"
+  },
+  {
+   "osm_id": null,
+   "name": "Zoologická a botanická zahrada města Plzně",
+   "obec": "Plzeň",
+   "address": "Pod Vinicemi 9",
+   "lat": 49.758209,
+   "lng": 13.356091,
+   "category": "priroda",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/prirodni-a-odpocinkove-arealy/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér oběma branami.",
+    "jine": "Areál bezbariérový s kvalitními zpevněnými cestami, místy ale velmi svažitý terén. Podle FAQ zoo (zooplzen.cz/navstevnikum/faq/) je většina areálu přístupná s vozíky, některé úseky v horní části jsou náročnější.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "kvalitní zpevněné cesty, místy však velmi svažitý terén"
+  },
+  {
+   "osm_id": null,
+   "name": "DinoPark Plzeň",
+   "obec": "Plzeň",
+   "address": "Nad ZOO 1",
+   "lat": 49.759398,
+   "lng": 13.357499,
+   "category": "priroda",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/prirodni-a-odpocinkove-arealy/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Areál bezbariérový; rozměrnějším elektrickým vozíkům může dělat potíže manévrování ve 3D kině.",
+    "wc": "WC pro vozíčkáře upravené není."
+   },
+   "measurements": [],
+   "evidence_quote": "rozměrnějším el. vozíkům může činit potíže manévrování v prostorách 3D kina"
+  },
+  {
+   "osm_id": null,
+   "name": "Luftova zahrada",
+   "obec": "Plzeň",
+   "address": "Doudlevce, pravý břeh Radbuzy",
+   "lat": 49.713251,
+   "lng": 13.372266,
+   "category": "priroda",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/prirodni-a-odpocinkove-arealy/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Areál bezbariérový.",
+    "wc": "WC pro vozíčkáře upravené není."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "Památník obětem zla – Hrubého meditační zahrada",
+   "obec": "Plzeň",
+   "address": "Doudlevce, pravý břeh Radbuzy",
+   "lat": 49.718653,
+   "lng": 13.387951,
+   "category": "priroda",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/prirodni-a-odpocinkove-arealy/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Areál bezbariérový.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "vstup do objektu: bez bariér"
+  },
+  {
+   "osm_id": null,
+   "name": "Park Homolka",
+   "obec": "Plzeň",
+   "address": "jihozápadně od náměstí Milady Horákové",
+   "lat": 49.722175,
+   "lng": 13.396988,
+   "category": "priroda",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/prirodni-a-odpocinkove-arealy/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup do areálu bez bariér.",
+    "jine": "Areál bezbariérový se zpevněnými cestami.",
+    "wc": "Upravené WC u náměstí (euroklíč)."
+   },
+   "measurements": [],
+   "evidence_quote": "areál: bezbariérový (zpevněné cesty)"
+  },
+  {
+   "osm_id": null,
+   "name": "Mlýnská strouha",
+   "obec": "Plzeň",
+   "address": "severovýchodně od křižovatky Pražská × Pallova",
+   "lat": 49.747667,
+   "lng": 13.381258,
+   "category": "priroda",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/prirodni-a-odpocinkove-arealy/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup do areálu bez bariér.",
+    "jine": "Areál bezbariérový se zpevněnými cestami.",
+    "wc": "Upravené WC existuje, ale podle webu je aktuálně uzavřené."
+   },
+   "measurements": [],
+   "evidence_quote": "aktuálně je však WC uzavřeno"
+  },
+  {
+   "osm_id": null,
+   "name": "Arboretum Sofronka",
+   "obec": "Plzeň",
+   "address": "Plaská 877",
+   "lat": 49.788954,
+   "lng": 13.383529,
+   "category": "priroda",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/prirodni-a-odpocinkove-arealy/",
+   "source_type": "web obce",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Areál je bezbariérový v převážné části.",
+    "wc": "WC pro vozíčkáře upravené není."
+   },
+   "measurements": [],
+   "evidence_quote": "areál: v převážné části bezbariérový"
+  },
+  {
+   "osm_id": null,
+   "name": "Bezbariérové turistické trasy u Boleveckých rybníků",
+   "obec": "Plzeň",
+   "address": "Velký Bolevecký rybník, Plzeň-Bolevec",
+   "lat": 49.774521,
+   "lng": 13.396136,
+   "category": "priroda",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/sport/bezbarierove-turisticke-trasy-u-boleveckych-rybniku/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "jine": "Dvě trasy značené KČT i pro vozíčkáře: Olympijský okruh (4 km, modře, méně náročný) kolem Velkého Boleveckého rybníka a Kolem rybníků (5 km, červeně, obtížnější) od konečné tramvaje č. 1 / zastávky Plzeň-Bolevec.",
+    "parkovani": "Parkoviště u Autocampu Ostende, případně parkoviště a bezbariérová zastávka MHD u hráze.",
+    "wc": "Bezbariérová restaurace a toaleta na Ostende (euroklíč)."
+   },
+   "measurements": [
+    {
+     "co": "délka trasy Olympijský okruh",
+     "hodnota": 4,
+     "jednotka": "km"
+    },
+    {
+     "co": "délka trasy Kolem rybníků",
+     "hodnota": 5,
+     "jednotka": "km"
+    }
+   ],
+   "evidence_quote": "trasy vhodné jak pro pěší a cyklisty, tak i pro lidi na invalidních vozících"
+  },
+  {
+   "osm_id": null,
+   "name": "Fotbalový stadion FC Viktoria Plzeň (Doosan Arena)",
+   "obec": "Plzeň",
+   "address": "Štruncovy sady 3",
+   "lat": 49.749996,
+   "lng": 13.38512,
+   "category": "sport",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/sport/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "Místa pro vozíčkáře v prostoru pod hledištěm vedle střídaček.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "v prostoru pod hledištěm, vedle střídaček"
+  },
+  {
+   "osm_id": null,
+   "name": "Hokejová hala HC Škoda Plzeň",
+   "obec": "Plzeň",
+   "address": "Štefánikovo náměstí 1",
+   "lat": 49.736391,
+   "lng": 13.37731,
+   "category": "sport",
+   "source_url": "https://plzen.eu/doprava/plzen-bez-barier/sport/",
+   "source_type": "web obce",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstup bez bariér.",
+    "jine": "V hledišti jsou místa pro vozíčkáře.",
+    "wc": "WC upravené pro vozíčkáře."
+   },
+   "measurements": [],
+   "evidence_quote": "místa pro vozíčkáře v hledišti: ano"
+  },
+  {
+   "osm_id": "n3955559673",
+   "name": "Knihovna města Plzně – Obvodní knihovna Doubravka",
+   "obec": "Plzeň",
+   "address": "",
+   "lat": 49.751754,
+   "lng": 13.415181,
+   "category": "kultura",
+   "source_url": "https://knihovna.plzen.eu/knihovny-a-kulturni-zarizeni/knihovny/doubravka/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Knihovna uvádí bezbariérový přístup.",
+    "jine": "Nabízí i donáškovou službu imobilním občanům."
+   },
+   "measurements": [],
+   "evidence_quote": "bezbariérový přístup"
+  },
+  {
+   "osm_id": null,
+   "name": "Vodní hrad Švihov",
+   "obec": "Švihov",
+   "address": "Žižkova",
+   "lat": 49.478738,
+   "lng": 13.285318,
+   "category": "pamatky",
+   "source_url": "https://www.hrad-svihov.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bez pomoci je dostupné nádvoří a venkovní občerstvení; s pomocí výstavní sál, pokladna, sál ve špýcharu a část přízemí hradu.",
+    "wc": "Bezbariérové toalety nemají.",
+    "parkovani": "Parkoviště cca 100 m od hradu, cesta po rovině; placené.",
+    "jine": "Po rezervaci lze domluvit virtuální prohlídku."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště od hradu",
+     "hodnota": 100,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Bezbariérové toalety nemáme."
+  },
+  {
+   "osm_id": null,
+   "name": "Hrad Rabí",
+   "obec": "Rabí",
+   "address": "",
+   "lat": 49.279165,
+   "lng": 13.618269,
+   "category": "pamatky",
+   "source_url": "https://www.hrad-rabi.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "S pomocí se lze dostat na velké nádvoří; další části hradu jsou kvůli svažitému kamenitému terénu a schodům velmi obtížně až nemožně přístupné.",
+    "parkovani": "V červenci a srpnu parkoviště na jižním okraji obce, ke hradu mírně stoupající cesta 10–20 min; mimo sezónu na náměstí."
+   },
+   "measurements": [],
+   "evidence_quote": "nikdy nebude plně bezbariérovým objektem"
+  },
+  {
+   "osm_id": null,
+   "name": "Hrad a zámek Velhartice",
+   "obec": "Velhartice",
+   "address": "",
+   "lat": 49.265326,
+   "lng": 13.396738,
+   "category": "pamatky",
+   "source_url": "https://www.hrad-velhartice.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérové horní i spodní nádvoří a vyhlídka do údolí Ostružné.",
+    "wc": "Bezbariérové toalety v hradní restauraci na spodním nádvoří a na parkovišti.",
+    "parkovani": "Bezplatné parkoviště cca 300 m od hradu; cesta k hradu je bezbariérová."
+   },
+   "measurements": [
+    {
+     "co": "vzdálenost parkoviště od hradu",
+     "hodnota": 300,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "má bezbariérové horní i spodní nádvoří"
+  },
+  {
+   "osm_id": null,
+   "name": "Klášter Kladruby",
+   "obec": "Kladruby",
+   "address": "",
+   "lat": 49.711632,
+   "lng": 12.995551,
+   "category": "pamatky",
+   "source_url": "https://www.klaster-kladruby.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Do areálu kláštera je bezbariérový přístup.",
+    "jine": "Prohlídkový okruh „Klášter“ je bezbariérově přístupný.",
+    "parkovani": "Parkoviště před hlavním vstupem do kláštera."
+   },
+   "measurements": [],
+   "evidence_quote": "Prohlídkový okruh \"Klášter\" je bezbariérově přístupný."
+  },
+  {
+   "osm_id": null,
+   "name": "Klášter Plasy",
+   "obec": "Plasy",
+   "address": "Babinská",
+   "lat": 49.935769,
+   "lng": 13.390775,
+   "category": "pamatky",
+   "source_url": "https://www.klaster-plasy.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Kostel je bezbariérový; do patra konventu vede cca 30 nízkých schodů, dál hodinová prohlídka po rovině (pískovcová dlažba, široké dveře, nízké prahy), na konci opět schody.",
+    "parkovani": "Bezplatné nezpevněné parkoviště přímo před pokladnou.",
+    "jine": "Před návštěvou doporučují kontaktovat správu."
+   },
+   "measurements": [
+    {
+     "co": "počet schodů do patra konventu",
+     "hodnota": 30,
+     "jednotka": "schodů"
+    }
+   ],
+   "evidence_quote": "Hlavní prohlídková trasa Cisterciácký klášter je z části bezbariérová"
+  },
+  {
+   "osm_id": null,
+   "name": "Hrad a zámek Horšovský Týn",
+   "obec": "Horšovský Týn",
+   "address": "náměstí Republiky 1",
+   "lat": 49.529576,
+   "lng": 12.942007,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-horsovskytyn.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérové je pouze hlavní nádvoří; na prohlídku lze s pomocí doprovodu.",
+    "wc": "Veřejné toalety s trochou pomoci; WC pro handicapované je ve stavebním plánu.",
+    "parkovani": "Placené parkování na náměstí přímo u zámku."
+   },
+   "measurements": [],
+   "evidence_quote": "má bezbariérové pouze hlavní nádvoří"
+  },
+  {
+   "osm_id": null,
+   "name": "Státní zámek Kozel",
+   "obec": "Šťáhlavy",
+   "address": "",
+   "lat": 49.670722,
+   "lng": 13.52966,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-kozel.cz/cs/kozel-bez-barier/sluzby-pro-hendikepovane/s-omezenou-schopnosti-pohybu---vozickare",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vstupy v rovině, šířka hlavního vstupu 70–265 cm; zvýšené zápraží řeší nájezdy; uvnitř 3 prahy cca 5 cm.",
+    "jine": "Areál i návštěvnické okruhy přístupné i bez doprovodu (kromě galerie v 1. patře jízdárny); trasa v přízemí; park se sypanými a dlážděnými cestami, okraje svažité; dobíjení elektrického vozíku na požádání; sleva pro ZTP a ZTP/P.",
+    "wc": "Bezbariérová toaleta upravená pro vozíčkáře v přízemí lokajny (jen v návštěvní době).",
+    "parkovani": "Parkování na interním parkovišti přímo v areálu zámku."
+   },
+   "measurements": [
+    {
+     "co": "šířka dveří předsíně WC",
+     "hodnota": 135,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří kabiny WC",
+     "hodnota": 90,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška sedátka WC",
+     "hodnota": 40,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška horní hrany umyvadla",
+     "hodnota": 80,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška podjezdu pod umyvadlem",
+     "hodnota": 65,
+     "jednotka": "cm"
+    },
+    {
+     "co": "šířka dveří do místností prohlídky",
+     "hodnota": 120,
+     "jednotka": "cm"
+    },
+    {
+     "co": "výška prahů v interiéru",
+     "hodnota": 5,
+     "jednotka": "cm"
+    },
+    {
+     "co": "minimální šířka cest v parku",
+     "hodnota": 1.4,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "návštěvnické okruhy - přístupné i bez doprovodu vyjma galerie v 1. patře jízdárny"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Manětín",
+   "obec": "Manětín",
+   "address": "",
+   "lat": 49.991302,
+   "lng": 13.231957,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-manetin.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Areál zámku a toalety plně bezbariérové; do 1. patra vede schodiště (30 schodů), vozík musí vynést dva lidé – nutno domluvit na pokladně.",
+    "jine": "Nádvoří dlážděné kočičími hlavami, v zahradě a parku pískované cesty; prohlídka v patře převážně po rovině.",
+    "wc": "Toalety bezbariérové.",
+    "parkovani": "Bezplatné parkování v bezprostřední blízkosti areálu."
+   },
+   "measurements": [
+    {
+     "co": "počet schodů do 1. patra",
+     "hodnota": 30,
+     "jednotka": "schodů"
+    }
+   ],
+   "evidence_quote": "Přístup do zámeckého areálu, stejně tak na toalety, je plně bezbariérový."
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Nebílovy",
+   "obec": "Nebílovy",
+   "address": "",
+   "lat": 49.629695,
+   "lng": 13.430992,
+   "category": "pamatky",
+   "source_url": "https://www.zamek-nebilovy.cz/cs/informace-pro-navstevniky",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Bezbariérově jen nádvoří hlavní zámeckou branou; s menší překážkou (s pomocí personálu) zámecká galerie a kaple sv. Antonína.",
+    "parkovani": "Velké parkoviště na okraji obce ve směru od Plzně."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup pro handicapované návštěvníky je možný pouze na nádvoří zámku"
+  },
+  {
+   "osm_id": null,
+   "name": "Hrad Kašperk",
+   "obec": "Kašperské Hory",
+   "address": "",
+   "lat": 49.166086,
+   "lng": 13.565267,
+   "category": "pamatky",
+   "source_url": "https://www.kasperk.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "limited",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérové nádvoří.",
+    "parkovani": "Web uvádí nedaleké parkoviště."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérové nádvoří"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n8112101347",
+   "name": "PASK",
+   "url": "https://www.pask-klatovy.cz",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n11331866725",
+   "name": "Nová Knížecí Huť",
+   "url": "https://ceskymlesem.eu/nova-knizeci-hut.html",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w123008339",
+   "name": "Rozhledna Havran",
+   "url": "http://www.rozhlednahavran.cz/web/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1309538052",
+   "name": "Želví zahrada",
+   "url": "https://www.zelvizahrada.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w1030743973",
+   "name": "Ždírecká zoo",
+   "url": "https://www.zdireckazoo.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w161119531",
+   "name": "Expozice požární ochrany Zbiroh",
+   "url": "https://www.hzscr.cz/expozice-pozarni-ochrany-ve-zbirohu.aspx",
+   "reason": "web nefunguje (přesměrování na hzscr.gov.cz vrací 404)"
+  },
+  {
+   "osm_id": "w1086253212",
+   "name": "Svatobor - rozhledna",
+   "url": "http://www.rozhlednasvatobor.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n296845980",
+   "name": "Muzeum strašidel",
+   "url": "https://muzeumstrasidel.cz/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "w244508357",
+   "name": "Gloriet",
+   "url": "https://www.bbkult.net/barock-addresses/ruine-gloriet-horaschdowitz-horazdovice/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": "n3955585462",
+   "name": "Galerie Jiřího Trnky",
+   "url": "https://www.uvu-plzen.cz/galerie.php",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum Šumavy Sušice",
+   "url": "https://www.muzeumsumavy.cz/muzeumsumavy/pristupnost.asp",
+   "reason": "stránka 'přístupnost' se týká jen přístupnosti webu, ne budov"
+  },
+  {
+   "osm_id": null,
+   "name": "Galerie Klatovy / Klenová – hrad a zámek",
+   "url": "https://www.gkk.cz/cs/pro-navstevniky/hrad-a-zamek/",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": null,
+   "name": "Zámek Zbiroh",
+   "url": "https://www.zbiroh.com/pro-navstevniky",
+   "reason": "web nic o přístupnosti neuvádí"
+  },
+  {
+   "osm_id": null,
+   "name": "Hrad Radyně",
+   "url": "https://www.hrad-radyne.cz/",
+   "reason": "web nic o přístupnosti budovy neuvádí (jen prohlášení o přístupnosti webu)"
+  },
+  {
+   "osm_id": null,
+   "name": "Muzeum loutek (web provozovatele)",
+   "url": "https://www.muzeumloutek.cz/",
+   "reason": "web nefunguje (spojení selhalo); údaje převzaty z webu města Plzně"
+  },
+  {
+   "osm_id": null,
+   "name": "Techmania Science Center (web provozovatele)",
+   "url": "https://techmania.cz/prakticke-informace/",
+   "reason": "stránka praktických informací ani FAQ o přístupnosti nic neuvádí; údaje převzaty z webu města Plzně"
+  },
+  {
+   "osm_id": null,
+   "name": "Kostel sv. Martina a Prokopa (Plzeň-Lobzy)",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/kostely-cirkevni-objekty/",
+   "reason": "web obce uvádí přístup bez bariér, ale místo nešlo geokódovat přes Nominatim – nepřidáno"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Plzeň bez bariér – Kultura (muzea)",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/",
+   "note": "Web města Plzně, zveřejněno 14. 1. 2026; vstup, interiér, WC u muzeí."
+  },
+  {
+   "title": "Plzeň bez bariér – Divadla",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/divadla/",
+   "note": "Web města Plzně."
+  },
+  {
+   "title": "Plzeň bez bariér – Galerie",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/galerie/",
+   "note": "Web města Plzně."
+  },
+  {
+   "title": "Plzeň bez bariér – Kina",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/kina/",
+   "note": "Web města Plzně."
+  },
+  {
+   "title": "Plzeň bez bariér – Kostely, církevní objekty",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/kostely-cirkevni-objekty/",
+   "note": "Web města Plzně; některé objekty (kaple sv. M. Kolbeho, kostel sv. Mikuláše, Lochotínský pavilon, Biskupství) nezařazeny."
+  },
+  {
+   "title": "Plzeň bez bariér – Přírodní a odpočinkové areály",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/kultura/prirodni-a-odpocinkove-arealy/",
+   "note": "Web města Plzně; Westpark nezařazen."
+  },
+  {
+   "title": "Plzeň bez bariér – Sport",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/sport/",
+   "note": "Web města Plzně; zařazeny jen 2 hlavní stadiony/haly."
+  },
+  {
+   "title": "Bezbariérové turistické trasy u Boleveckých rybníků",
+   "url": "https://plzen.eu/doprava/plzen-bez-barier/sport/bezbarierove-turisticke-trasy-u-boleveckych-rybniku/",
+   "note": "Web města Plzně, zveřejněno 15. 1. 2026."
+  },
+  {
+   "title": "DJKT – Informace pro HCP",
+   "url": "https://www.djkt.eu/prodej-a-sluzby/informace-pro-hcp",
+   "note": "Místa pro vozíky a výtahy na všech scénách DJKT."
+  },
+  {
+   "title": "DJKT – Malá scéna",
+   "url": "https://www.djkt.eu/mala-scena",
+   "note": "Hlediště s bezbariérovým přístupem."
+  },
+  {
+   "title": "ZOO Plzeň – FAQ",
+   "url": "https://zooplzen.cz/navstevnikum/faq/",
+   "note": "Přístupnost areálu pro vozíky."
+  },
+  {
+   "title": "NPÚ – weby památek, sekce Přístupnost a Parkování",
+   "url": "https://www.zamek-kozel.cz/cs/informace-pro-navstevniky",
+   "note": "Stejná stránka /cs/informace-pro-navstevniky u Švihova, Rabí, Velhartic, Kladrub, Plas, Horšovského Týna, Kozla, Manětína, Nebílov."
+  },
+  {
+   "title": "Plzeňský kraj – Turistů ráj",
+   "url": "https://www.turisturaj.cz/",
+   "note": "Krajský turistický portál (i visitplzenskykraj.eu); na úvodní stránce a v menu kategorií jsme sekci typu bez bariér nenašli."
+  },
+  {
+   "title": "Mapy bez bariér",
+   "url": "https://mapybezbarier.cz",
+   "note": "Na ně odkazuje klášter Kladruby pro podrobnosti; data odtud nepřebírána."
+  }
+ ]
+}

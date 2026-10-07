@@ -1,0 +1,308 @@
+[
+{
+"i": "n7857352830",
+"n": "Andy",
+"s": "Penzion",
+"o": "Děčín",
+"a": "Teplická 346/40a",
+"web": "http://penzionandy.cz",
+"w": "no",
+"la": 50.776198,
+"lo": 14.196055
+},
+{
+"i": "w114624529",
+"n": "Hostel Děčín",
+"s": "Hostel",
+"o": "Děčín",
+"a": "Čsl. mládeže 195/21",
+"web": "https://www.hostel-decin.cz/",
+"w": "no",
+"la": 50.77429,
+"lo": 14.200587
+},
+{
+"i": "n1037786736",
+"n": "Hotel a kemp Formule",
+"s": "Kemp",
+"o": "Děčín",
+"a": "Pěší 113",
+"web": "https://www.hotelformule.cz/",
+"w": "limited",
+"la": 50.731737,
+"lo": 14.19296
+},
+{
+"i": "w114626146",
+"n": "Hotel Česká Koruna",
+"s": "Hotel",
+"o": "Děčín",
+"a": "Masarykovo náměstí 60",
+"web": "https://www.hotelceskakoruna.cz/",
+"w": "yes",
+"la": 50.780406,
+"lo": 14.213994
+},
+{
+"i": "n1203142213",
+"n": "Apartmány Petra",
+"s": "Hostel",
+"o": "Hřensko",
+"a": "Mezná 28",
+"web": "http://apartmanypetra.cz",
+"w": "no",
+"la": 50.867534,
+"lo": 14.299083
+},
+{
+"i": "n1203142038",
+"n": "Stará Plynárna",
+"s": "Penzion",
+"o": "Hřensko",
+"a": "Hřensko 119",
+"web": "https://staraplynarna.cz/",
+"w": "no",
+"la": 50.873663,
+"lo": 14.244153
+},
+{
+"i": "n570052167",
+"n": "Pension 51",
+"s": "Penzion",
+"o": "Janov",
+"w": "no",
+"la": 50.857294,
+"lo": 14.267323
+},
+{
+"i": "n3617392593",
+"n": "U Zeleného stromu",
+"s": "Hotel",
+"o": "Janov",
+"w": "no",
+"la": 50.860193,
+"lo": 14.26523
+},
+{
+"i": "w229016109",
+"n": "Ubytování Čalouníka",
+"s": "Penzion",
+"o": "Janov",
+"web": "https://ucalounika.cz",
+"w": "no",
+"la": 50.857385,
+"lo": 14.265881
+},
+{
+"i": "n2478952217",
+"n": "Starý mlýn",
+"s": "Penzion",
+"o": "Jetřichovice",
+"web": "https://www.starymlynjetrichovice.cz/cs/",
+"w": "no",
+"la": 50.852608,
+"lo": 14.375898
+},
+{
+"i": "n8909389726",
+"n": "AVe Ubytováni",
+"s": "Apartmány",
+"o": "Jiřetín pod Jedlovou",
+"a": "Dvořákova 122",
+"web": "http://www.ave-restaurant.cz/#ubytovani",
+"w": "no",
+"la": 50.875204,
+"lo": 14.575411
+},
+{
+"i": "w229015520",
+"n": "Resort LUFT Sněžník",
+"s": "Hotel",
+"o": "Jílové",
+"a": "Sněžník 106",
+"web": "https://www.resortluft.com",
+"w": "no",
+"la": 50.785559,
+"lo": 14.09733
+},
+{
+"i": "n9549364464",
+"n": "Vagóny na horách (Zelený)",
+"s": "Hotel",
+"o": "Kovářská",
+"a": "Nádražní 307",
+"web": "https://vagonynahorach.cz/",
+"w": "no",
+"la": 50.430175,
+"lo": 13.035484
+},
+{
+"i": "n9549364471",
+"n": "Vagóny na horách (Šedý)",
+"s": "Hotel",
+"o": "Kovářská",
+"a": "Nádražní 305",
+"web": "https://vagonynahorach.cz/",
+"w": "no",
+"la": 50.430088,
+"lo": 13.03456
+},
+{
+"i": "n6821057447",
+"n": "Chalupa Médium",
+"s": "Chata",
+"o": "Krásná Lípa",
+"a": "Vlčí Hora 51",
+"web": "https://www.chalupa-medium1.com/",
+"w": "no",
+"la": 50.933834,
+"lo": 14.462767
+},
+{
+"i": "n1205716008",
+"n": "Kyjovská terasa",
+"s": "Penzion",
+"o": "Krásná Lípa",
+"a": "Kyjov 39",
+"web": "https://www.kyjovskaterasa.cz/",
+"w": "limited",
+"la": 50.91594,
+"lo": 14.464464
+},
+{
+"i": "n616379507",
+"n": "Vlčárna",
+"s": "Hotel",
+"o": "Krásná Lípa",
+"w": "no",
+"t": "no",
+"la": 50.932635,
+"lo": 14.478052
+},
+{
+"i": "n1196819046",
+"n": "Pension Kamzík",
+"s": "Hotel",
+"o": "Kunratice",
+"a": "Studený 35",
+"web": "https://www.penzionkamzik.cz/",
+"w": "limited",
+"la": 50.844111,
+"lo": 14.438143
+},
+{
+"i": "n251873885",
+"n": "Belveder",
+"s": "Hotel",
+"o": "Labská Stráň",
+"a": "Labská Stráň 105",
+"web": "http://www.belvederhotel.cz/",
+"w": "limited",
+"la": 50.849293,
+"lo": 14.22213
+},
+{
+"i": "n4230713325",
+"n": "Anděl",
+"s": "Penzion",
+"o": "Litoměřice",
+"a": "Jarošova 13/43",
+"web": "https://andelpenzion.eu/",
+"w": "no",
+"la": 50.532193,
+"lo": 14.131576
+},
+{
+"i": "n4557048657",
+"n": "Horská chata Lada",
+"s": "Penzion",
+"o": "Loučná pod Klínovcem",
+"a": "Loučná 98",
+"web": "http://www.horskachata.info/",
+"w": "no",
+"la": 50.407018,
+"lo": 12.98367
+},
+{
+"i": "n2545826716",
+"n": "Chalupa U lesa",
+"s": "Chata",
+"o": "Měcholupy",
+"a": "Velká Černoc 79",
+"w": "yes",
+"la": 50.202143,
+"lo": 13.590104
+},
+{
+"i": "w156721788",
+"n": "Penzion Rozcestí",
+"s": "Hotel",
+"o": "Osek",
+"a": "Dlouhá Louka 48",
+"web": "http://www.penzionrozcesti.eu/",
+"w": "yes",
+"la": 50.649674,
+"lo": 13.646978
+},
+{
+"i": "n13032157028",
+"n": "Apartmány Caffe & Grill",
+"s": "Apartmány",
+"o": "Roudnice nad Labem",
+"w": "limited",
+"la": 50.420797,
+"lo": 14.252181
+},
+{
+"i": "n832424889",
+"n": "U Ferdinanda",
+"s": "Kemp",
+"o": "Srbská Kamenice",
+"a": "Srbská Kamenice 148",
+"web": "https://www.kemp-u-ferdinanda.cz",
+"w": "limited",
+"la": 50.837604,
+"lo": 14.356056
+},
+{
+"i": "n12941465297",
+"n": "Apartmány Olšinky",
+"s": "Apartmány",
+"o": "Ústí nad Labem",
+"a": "Olšinky 510",
+"web": "https://ubytovaniolsinky.webnode.cz/",
+"w": "no",
+"la": 50.65928,
+"lo": 14.081796
+},
+{
+"i": "n1780533512",
+"n": "Clarion Congress Hotel Ústí nad Labem",
+"s": "Hotel",
+"o": "Ústí nad Labem",
+"web": "https://www.clarioncongresshotelustinadlabem.com/",
+"w": "yes",
+"t": "yes",
+"la": 50.662497,
+"lo": 14.033627
+},
+{
+"i": "n853885969",
+"n": "Kemp Úštěk u jezera Chmelař",
+"s": "Kemp",
+"o": "Úštěk",
+"w": "limited",
+"la": 50.583585,
+"lo": 14.329368
+},
+{
+"i": "n13022321603",
+"n": "Chata U slepé kočky",
+"s": "Chata",
+"o": "Šluknov",
+"web": "https://uslepekocky.cz/",
+"w": "no",
+"la": 51.025202,
+"lo": 14.464173
+}
+]

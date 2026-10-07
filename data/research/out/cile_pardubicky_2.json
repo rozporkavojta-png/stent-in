@@ -1,0 +1,138 @@
+{
+  "task": "cile_pardubicky_2",
+  "kraj": "Pardubický kraj",
+  "checked_date": "2026-10-05",
+  "places": [
+    {
+      "osm_id": "n804131424",
+      "name": "Kino Lanškroun",
+      "obec": "Lanškroun",
+      "address": "T. G. Masaryka 3, 563 01 Lanškroun",
+      "lat": 49.911222,
+      "lng": 16.60887,
+      "category": "cil",
+      "source_url": "https://www.kinolanskroun.cz/o-nas/info/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Budova kina je podle webu bezbariérová.",
+        "jine": "V sále je místo pro hendikepované; individuální potřeby a zlevněné místo pro průvodce ZTP je třeba domluvit předem s pokladnou/prodejem (tel. +420 467 771 380, prodej@kclanskroun.cz)."
+      },
+      "evidence_quote": "Budova Kina Lanškroun je bezbariérová."
+    },
+    {
+      "osm_id": "n1260801271",
+      "name": "Knihovna městského obvodu Pardubice 2 (Knihovna Polabiny)",
+      "obec": "Pardubice",
+      "address": "Družby 334, Pardubice - Polabiny III, 530 09 (areál DDM Alfa)",
+      "lat": 50.045681,
+      "lng": 15.755613,
+      "category": "cil",
+      "source_url": "https://www.knihovna-polabiny.cz/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Web uvádí, že knihovna má bezbariérový přístup (bez dalších podrobností)."
+      },
+      "evidence_quote": "je zde bezbariérový přístup"
+    },
+    {
+      "osm_id": "n2651592789",
+      "name": "Rozhledna Křížová hora",
+      "obec": "Červená Voda",
+      "address": "",
+      "lat": 50.037974,
+      "lng": 16.757313,
+      "category": "cil",
+      "source_url": "https://www.cervenavoda.cz/rozhledna-na-krizove-hore",
+      "source_type": "web obce",
+      "wheelchair_claim": "no",
+      "accessibility": {
+        "vstup": "Přístup na rozhlednu není bezbariérový, vede se po točitém schodišti.",
+        "jine": "Web obce uvádí samostatně doporučenou trasu vhodnou pro kočárky."
+      },
+      "evidence_quote": "Přístup na rozhlednu není bezbariérový, vede po točitém schodišti."
+    }
+  ],
+  "not_found": [
+    {
+      "osm_id": "w60910423",
+      "name": "Tyršova rozhledna",
+      "url": "https://www.zamberk.cz/",
+      "reason": "na webu města nenalezena stránka rozhledny ani zmínka o přístupnosti"
+    },
+    {
+      "osm_id": "n2834662231",
+      "name": "rozhledna Lanšperk",
+      "url": "https://www.dolnidobrouc.cz/horni-dobrouc-a-lansperk",
+      "reason": "web obce nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n296708916",
+      "name": "Univerzitní knihovna",
+      "url": "https://knihovna.upce.cz/",
+      "reason": "prohledány stránky Kontaktní údaje / Jak se k nám dostanete, Výpůjční a Informační služby – nic o přístupnosti (OSM uvádí wheelchair=yes)"
+    },
+    {
+      "osm_id": "n11073172223",
+      "name": "Westernové městečko \"Hill Valley\"",
+      "url": "https://www.luze.cz/",
+      "reason": "oficiální web nenalezen (web města bez zmínky; hillvalley.cz nedostupný)"
+    },
+    {
+      "osm_id": "w1246112524",
+      "name": "Loď Otava",
+      "url": "",
+      "reason": "oficiální web nenalezen (OSM wheelchair=limited)"
+    },
+    {
+      "osm_id": "n12148113519",
+      "name": "Petrklíč",
+      "url": "",
+      "reason": "oficiální web nenalezen"
+    },
+    {
+      "osm_id": "w802557407",
+      "name": "Rozhledna U Marešů",
+      "url": "http://www.prosec.cz/",
+      "reason": "na webu města nenalezena stránka rozhledny"
+    },
+    {
+      "osm_id": "n2535214905",
+      "name": "Kalvárie",
+      "url": "https://www.dlouhonovice.cz/",
+      "reason": "na webu obce nenalezena stránka místa"
+    },
+    {
+      "osm_id": "n656071368",
+      "name": "Stříbrná krasavice",
+      "url": "https://www.retova.cz/",
+      "reason": "na webu obce nenalezena stránka místa"
+    },
+    {
+      "osm_id": "n829529480",
+      "name": "Boiika",
+      "url": "https://www.ceskelhotice.cz/",
+      "reason": "na webu obce nenalezena stránka místa"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Weby cílů z OSM (vstup cile_pardubicky.json)",
+      "url": "data/research/inputs/cile_pardubicky.json",
+      "note": "18 dosud neprošlých záznamů, žádný s vlastním webem kromě KACPU (vynecháno, není turistický cíl); oficiální weby dohledány odhadem domén (vyhledávač nedostupný), prověřeno 13 webů"
+    },
+    {
+      "title": "Kino Lanškroun – Praktické informace",
+      "url": "https://www.kinolanskroun.cz/o-nas/info/"
+    },
+    {
+      "title": "Knihovna Polabiny, MO Pardubice II",
+      "url": "https://www.knihovna-polabiny.cz/"
+    },
+    {
+      "title": "Rozhledna Křížová hora | Červená Voda",
+      "url": "https://www.cervenavoda.cz/rozhledna-na-krizove-hore"
+    }
+  ]
+}

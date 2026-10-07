@@ -1,0 +1,98 @@
+{
+ "task": "obce_karlovarsky",
+ "kraj": "Karlovarský kraj",
+ "checked_date": "2026-10-05",
+ "places": [],
+ "not_found": [
+  {
+   "osm_id": null,
+   "name": "Bezbariérová veřejná WC v Chebu (Školní ul. za radnicí, u autobusových zastávek na křižovatce, areál Krajinky pod hradem)",
+   "url": "https://www.cheb.cz/v-chebu-vyrostly-troje-moderni-bezbarierove-toalety/d-935809",
+   "reason": "Tisková zpráva města (10. 3. 2011) uvádí tři nové bezbariérové veřejné toalety na Euroklíč, zdarma pro OZP a rodiče dětí do 3 let; za radnicí tehdy ještě nebyly zprovozněné. Údaje jsou z roku 2011 a bez přesných adres; nová místa se v tomto zrychleném běhu nepřidávají (pokyn uživatele)."
+  },
+  {
+   "osm_id": null,
+   "name": "Euroklíče v Chebu – výdej",
+   "url": "https://www.cheb.cz/klice-k-novym-toaletam/d-935799",
+   "reason": "Odpověď na webu města (9. 3. 2011): klíče k novým toaletám vydává Centrum pro zdravotně postižené Karlovarského kraje, pobočka Cheb, Kamenná 40. Jen kontakt, ne místo."
+  },
+  {
+   "osm_id": null,
+   "name": "Městský úřad Sokolov – bezbariérový vstup",
+   "url": "https://www.sokolov.cz/bezbarierovy-pristup-na-mestsky-urad/d-6550",
+   "reason": "Odpověď starosty (16. 7. 2023): bezbariérový vstup z roku 2012 směrem k parkovišti u Uralu, označený symbolem vozíčkáře; komunikátor u vstupu a v suterénu naproti výtahu; občanka si stěžovala na těžké dveře a slabé značení, město slíbilo směrovou tabuli. Aktualita z 16. 3. 2021 (https://www.sokolov.cz/vytah-uz-zase-jezdi-urad-je-opet-bezbarierovy/d-8353): po opravě výtahu je úřad opět bezbariérový. Adresa na stránce není a nová místa se v tomto běhu nepřidávají."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Karlovy Vary",
+   "url": "https://www.karlovy-vary.cz/cz/",
+   "reason": "Úvodní stránka ani stránka Kontakt nic o přístupnosti neuvádí; sitemap.xml neexistuje a vyhledávání vrací 403/404, takže web nešel prohledat skriptem."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Mariánské Lázně",
+   "url": "https://www.marianskelazne.cz/",
+   "reason": "Úvodní stránka ani sitemap (3 135 URL) nemá nic o bezbariérovosti, WC ani vozíčkářích."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Chodov",
+   "url": "https://www.mestochodov.cz/",
+   "reason": "Sitemap (118 URL) nemá nic o bezbariérovosti ani WC; chodov.cz nefunguje (DNS)."
+  },
+  {
+   "osm_id": null,
+   "name": "Město Ostrov",
+   "url": "https://ostrov.cz/",
+   "reason": "Na úvodní stránce jen odkaz na Bezbariérovou mapu města (viz sources) a stránka o bezbariérových bytech; o veřejných WC ani o přístupnosti radnice nic. Sitemap nemá."
+  },
+  {
+   "osm_id": null,
+   "name": "Obce Aš, Františkovy Lázně, Jáchymov, Skalná, Kynšperk nad Ohří a další",
+   "url": "",
+   "reason": "Neprověřeno – zrychlený běh s polovičním limitem webů (pokyn uživatele)."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Krajský plán vyrovnávání příležitostí pro OZP Karlovarského kraje 2021–2026",
+   "url": "https://www.kr-karlovarsky.cz/karlovarsky-kraj/strategie-koncepce-plany/krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim",
+   "note": "Stránka s plánem (brožura PDF: https://www.kr-karlovarsky.cz/system/files/migrate/krajsky-urad/cinnosti/dokumenty/KPVP2021-2026_Brozura_definitiv.pdf), ročními zprávami 2021–2025 a starším plánem 2015–2020; aktualizace stránky 4. 9. 2026. Opatření k mapování přístupnosti: 2.1.5 analýza přístupnosti všech budov ve vlastnictví a pronájmu kraje; 2.1.6 doporučení k plánu zpřístupňování těchto budov; 2.3.1 odkaz na webu kraje s informacemi o bezbariérovosti krajských příspěvkových organizací; 2.3.2 vyzvat školy zřizované obcemi a soukromníky ke zveřejnění informací o bezbariérovosti; 4.1.1 zmapovat bariéry v krajských zdravotnických zařízeních; 7.1.1–7.1.3 údaje o bezbariérovosti (piktogramy) v materiálech a na webech kulturních organizací, podpora ramp, výtahů a eurozámků; 2.1.1 dotace pro NIPI ČR."
+  },
+  {
+   "title": "Projekt Euroklíč v Karlovarském kraji (aktualita kraje, 2009)",
+   "url": "https://www.kr-karlovarsky.cz/aktuality/v-nasem-kraji-uz-lze-otevrit-nektera-socialni-zarizeni-euroklicem",
+   "note": "Kraj pilotně zavádí Euroklíč (realizátor NRZP ČR): první toalety na Euroklíč na nádraží v Mariánských Lázních, OC Varyáda v Karlových Varech a hotel Monika v Chebu; plánováno 80 míst a databáze míst s eurozámky. Aktualizace 19. 8. 2009, údaje mohou být zastaralé."
+  },
+  {
+   "title": "Projekt Toa Point – 10 bezbariérových WC na Euroklíč (aktualita kraje, 2010)",
+   "url": "https://www.kr-karlovarsky.cz/aktuality/v-peti-mestech-kraje-najdou-postizeni-i-rodice-s-detmi-nova-socialni-zarizeni",
+   "note": "NRZP ČR s podporou kraje (ROP Severozápad) staví 10 bezbariérových veřejných WC na Euroklíč v Sokolově (u Hornického domu), Karlových Varech, Chebu, Mariánských Lázních a Skalné. Aktualita z 2. 3. 2010, bez seznamu adres."
+  },
+  {
+   "title": "Bezbariérová mapa města Ostrov (Geoportál Ostrov nad Ohří)",
+   "url": "https://ostrov-nad-ohri.obce.gepro.cz/LINK?id=7",
+   "note": "Odkaz z webu ostrov.cz („Bezbariérová mapa města“). Jde o mapovou aplikaci GEPRO v JavaScriptu, obsah ani licenci jsme skriptem nepřečetli. Licence neuvedena."
+  },
+  {
+   "title": "Cheb – Generel bezbariérových tras a bezbariérové dopravy",
+   "url": "https://www.cheb.cz/generel-bezbarier-tras-a-bezbarier-dopravy/d-859814",
+   "note": "Dokument na webu města nalezený v sitemap, neotevřeli jsme ho. Licence neuvedena."
+  },
+  {
+   "title": "NRZP Karlovarského kraje",
+   "url": "https://nrzp.cz/krajska-centra/nrzp-karlovarskeho-kraje/",
+   "note": "Krajská organizace Národní rady osob se zdravotním postižením. Členy jsou mj. Svaz tělesně postižených v ČR a NIPI ČR. Partner kraje v KPVP a realizátor projektů Euroklíč a Toa Point."
+  },
+  {
+   "title": "Poradna NRZP ČR v Karlových Varech",
+   "url": "https://nrzp.cz/poradna/poradna-nrzp-cr-v-karlovych-varech/",
+   "note": "Nám. Republiky 1, Karlovy Vary; ambulantní i terénní služba."
+  },
+  {
+   "title": "Centrum pro zdravotně postižené Karlovarského kraje",
+   "url": "https://www.cheb.cz/klice-k-novym-toaletam/d-935799",
+   "note": "Podle webu města Cheb (2011) vydává Euroklíče, pobočka Cheb, Kamenná 40. Vlastní web jsme neověřovali."
+  }
+ ]
+}

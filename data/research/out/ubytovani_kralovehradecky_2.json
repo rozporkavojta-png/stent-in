@@ -1,0 +1,121 @@
+{
+  "task": "ubytovani_kralovehradecky_2",
+  "kraj": "Královéhradecký kraj",
+  "checked_date": "2026-10-05",
+  "places": [
+    {
+      "osm_id": "w833468459",
+      "name": "Hotel TAMMEL ****",
+      "obec": "Jičín",
+      "address": "17. listopadu 58, 506 01 Jičín",
+      "lat": 50.435229,
+      "lng": 15.350028,
+      "category": "ubytovani",
+      "source_url": "https://hoteltammel.cz/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "koupelna": "Hotel podle úvodní stránky nabízí 45 dvoulůžkových pokojů s bezbariérovou koupelnou; jiné údaje o přístupnosti (vstup, výtah, parkování ZTP) web neuvádí."
+      },
+      "evidence_quote": "45 moderních dvoulůžkových pokojů s klimatizací, bezbariérovou koupelnou a televizí"
+    }
+  ],
+  "not_found": [
+    {
+      "osm_id": "n6508187345",
+      "name": "Merlin",
+      "url": "http://ubytovanimerlin.cz/",
+      "reason": "doména neexistuje (DNS chyba)"
+    },
+    {
+      "osm_id": "n656463058",
+      "name": "Hájenka Haida",
+      "url": "https://www.chatahaida.cz/",
+      "reason": "web vrací 404"
+    },
+    {
+      "osm_id": "w203630744",
+      "name": "Bouda Na Lučinách",
+      "url": "http://www.boudanalucinach.cz/",
+      "reason": "web je jen titulní stránka bez obsahu"
+    },
+    {
+      "osm_id": "w291722059",
+      "name": "Bouda Růžohorky",
+      "url": "https://www.ruzohorky.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n5072463758",
+      "name": "Hotel Atlas",
+      "url": "https://www.hotelatlas.cz/cs/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w19921110",
+      "name": "Luční bouda",
+      "url": "https://www.lucnibouda.cz/cs/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w176391103",
+      "name": "Ministerská",
+      "url": "https://ministerska.cz/",
+      "reason": "web neodpovídá (timeout / odmítnuté spojení)"
+    },
+    {
+      "osm_id": "n12468615838",
+      "name": "Apartmany Zlaty Hamr",
+      "url": "https://www.apartmanyzlatyhamr.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w221135248",
+      "name": "Camp Kamenec",
+      "url": "https://www.adrspach-ubytovani.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w27594723",
+      "name": "Martinova bouda",
+      "url": "http://www.martinovka.cz/cz/index.php",
+      "reason": "web nic o přístupnosti neuvádí (prošlé i ceník, historie, jak k nám, kontakt)"
+    },
+    {
+      "osm_id": "w221515923",
+      "name": "Penzion Selský dvůr",
+      "url": "https://www.selskydvur.cz/",
+      "reason": "web nic o přístupnosti neuvádí (web dohledán podle názvu, OSM uvádí wheelchair=limited)"
+    },
+    {
+      "osm_id": "n656284686",
+      "name": "Penzion a Kemp Wolf",
+      "url": "https://www.penzionwolf.cz/",
+      "reason": "web nic o přístupnosti neuvádí (web dohledán podle názvu)"
+    },
+    {
+      "osm_id": "n5077316907",
+      "name": "Jakubův Nový dvůr",
+      "url": "https://jakubuvnovydvur.cz/",
+      "reason": "web nic o přístupnosti neuvádí (web dohledán podle názvu, OSM uvádí wheelchair=yes)"
+    },
+    {
+      "osm_id": "n12925578325",
+      "name": "Hotel Prostřední mlýn",
+      "url": "https://www.prostrednimlyn.cz/",
+      "reason": "web odmítá přístup (HTTP 403), neověřeno"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Weby provozovatelů ubytování z OSM (vstup ubytovani_kralovehradecky.json), 2. dávka",
+      "url": "data/research/inputs/ubytovani_kralovehradecky.json",
+      "note": "15 zařízení: 10 se zadaným webem + 5 bez webu, jejichž web se podařilo najít podle názvu (úvodní stránka + až 10 podstránek, hledání klíčových slov); vyhledávání na webu nebylo k dispozici (vyčerpaný limit)"
+    },
+    {
+      "title": "Hotel TAMMEL – úvodní stránka",
+      "url": "https://hoteltammel.cz/",
+      "note": "uvádí pokoje s bezbariérovou koupelnou"
+    }
+  ]
+}

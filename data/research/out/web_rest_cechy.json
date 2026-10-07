@@ -1,0 +1,1944 @@
+{
+  "task": "web_rest_cechy",
+  "kraj": "Čechy mimo Prahu (Jihočeský, Karlovarský, Liberecký, Plzeňský, Středočeský, Ústecký)",
+  "checked_date": "2026-10-06",
+  "places": [
+    {
+      "osm_id": "n942823973",
+      "name": "Restaurace Na obci",
+      "obec": "Lišov",
+      "address": null,
+      "lat": 49.01523,
+      "lng": 14.611489,
+      "category": "restaurace",
+      "source_url": "http://restaurace-obec.cz/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Web v seznamu služeb uvádí bezbariérový přístup do restaurace.",
+        "wc": null,
+        "pokoj": null,
+        "koupelna": null,
+        "parkovani": null,
+        "vytah": null,
+        "jine": null
+      },
+      "measurements": [],
+      "evidence_quote": "dva salónky k dispozici bezbariérový přístup venkovní posezení"
+    },
+    {
+      "osm_id": "n2295030684",
+      "name": "Restaurace Ostrov",
+      "obec": "Písek",
+      "address": null,
+      "lat": 49.306079,
+      "lng": 14.142117,
+      "category": "restaurace",
+      "source_url": "https://www.restauraceostrovpisek.cz",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "no",
+      "accessibility": {
+        "vstup": null,
+        "wc": null,
+        "pokoj": "Pokoje penzionu u restaurace Ostrov jsou všechny v 1. patře.",
+        "koupelna": null,
+        "parkovani": null,
+        "vytah": "Budova nemá výtah (pokoje v 1. patře bez výtahu).",
+        "jine": null
+      },
+      "measurements": [],
+      "evidence_quote": "Všechny pokoje jsou umístěny v 1. patře bez výtahu."
+    },
+    {
+      "osm_id": "n2974096436",
+      "name": "Restaurace Klika",
+      "obec": "České Budějovice",
+      "address": "Hroznová 25",
+      "lat": 48.976189,
+      "lng": 14.471456,
+      "category": "restaurace",
+      "source_url": "https://www.hotelklika.cz/cs/restaurace.html",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": null,
+        "wc": "V restauraci je dámské invalidní WC (s přebalovacím pultem).",
+        "pokoj": null,
+        "koupelna": null,
+        "parkovani": null,
+        "vytah": null,
+        "jine": null
+      },
+      "measurements": [],
+      "evidence_quote": "Na dámském invalidním wc se nachází i přebalovací pult"
+    },
+    {
+      "osm_id": "n9885532855",
+      "name": "Zvon",
+      "obec": "České Budějovice",
+      "address": null,
+      "lat": 48.974046,
+      "lng": 14.475198,
+      "category": "restaurace",
+      "source_url": "https://www.hotel-zvon.cz/pokoje",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": null,
+        "wc": null,
+        "pokoj": "Hotel nabízí dvoulůžkové pokoje kategorie Superior i v bezbariérové variantě a jeden bezbariérový pokoj v kategorii Deluxe (u recepce a hotelových garáží).",
+        "koupelna": null,
+        "parkovani": null,
+        "vytah": null,
+        "jine": null
+      },
+      "measurements": [],
+      "evidence_quote": "dvoulůžkové pokoje (i v bezbariérové variantě)"
+    },
+    {
+      "osm_id": "n13970696199",
+      "name": "Restaurace Diana",
+      "obec": "Karlovy Vary",
+      "address": null,
+      "lat": 50.218763,
+      "lng": 12.871555,
+      "category": "restaurace",
+      "source_url": "https://dianakv.cz/cs/kontakty-prakticke-informace",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "V častých dotazech web uvádí, že restaurace Diana je bezbariérová.",
+        "wc": null,
+        "pokoj": null,
+        "koupelna": null,
+        "parkovani": null,
+        "vytah": null,
+        "jine": "Stanice lanové dráhy Diana a vstup k recepci motýlího domu vyžadují asistenci kvůli několika schodům; letová zóna motýlů je bezbariérová."
+      },
+      "measurements": [],
+      "evidence_quote": "Ano, restaurace Diana je bezbariérová."
+    },
+    {
+      "osm_id": "n8010969726",
+      "name": "U Křížovníků",
+      "obec": "Karlovy Vary",
+      "address": null,
+      "lat": 50.22246,
+      "lng": 12.884507,
+      "category": "restaurace",
+      "source_url": "https://hotel-kgm.cz/pokoje/bezbarierovy-dvouluzkovy-pokoj/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": null,
+        "wc": null,
+        "pokoj": "Hotel Karlsbad Grande Madonna (kde je restaurace U Křížovníků) nabízí bezbariérový dvoulůžkový pokoj o ploše 23 m2; další podrobnosti o úpravách web neuvádí.",
+        "koupelna": null,
+        "parkovani": null,
+        "vytah": null,
+        "jine": null
+      },
+      "measurements": [
+        {
+          "co": "plocha bezbariérového dvoulůžkového pokoje",
+          "hodnota": 23,
+          "jednotka": "m2"
+        }
+      ],
+      "evidence_quote": "Bezbariérový dvoulůžkový pokoj Celková plocha 23 m²."
+    },
+    {
+      "osm_id": "n13464707763",
+      "name": "COOP Bistro",
+      "obec": "Plzeň",
+      "address": "Masarykova 75",
+      "lat": 49.751777,
+      "lng": 13.4153,
+      "category": "restaurace",
+      "source_url": "https://centrumdoubravka.cz/kontakty-a-oteviraci-doba/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Obchodní centrum Doubravka (kde je COOP Bistro) se podle webu označuje za plně bezbariérové, prostory bez bariér.",
+        "wc": "Je zde WC pro vozíčkáře na euroklíč; bez euroklíče lze klíč zapůjčit u ostrahy (tel. 608 724 951).",
+        "pokoj": null,
+        "koupelna": null,
+        "parkovani": "Parkovací místa pro vozíčkáře v suterénu.",
+        "vytah": "Bezbariérový výtah na všechna patra.",
+        "jine": null
+      },
+      "measurements": [],
+      "evidence_quote": "Ano, náš objekt je plně bezbariérový."
+    },
+    {
+      "osm_id": "n2379885682",
+      "name": "Občerstvení letadlo",
+      "obec": "Bakov nad Jizerou",
+      "address": "Bakov nad Jizerou 1080",
+      "lat": 50.465535,
+      "lng": 14.942529,
+      "category": "restaurace",
+      "source_url": "https://obcerstveniletadlo.cz/o-nas",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": "Restaurace v letadle není bezbariérová – vede do ní schodiště; bezbariérový je celý venkovní areál.",
+        "wc": null,
+        "pokoj": null,
+        "koupelna": null,
+        "parkovani": "V areálu je parkování pro zdravotně postižené; velká bezplatná parkoviště.",
+        "vytah": null,
+        "jine": "Všechny venkovní prostory jsou podle webu přístupné pro ZTP."
+      },
+      "measurements": [],
+      "evidence_quote": "Letadlo není bezbariérové — vede do něj schodiště."
+    },
+    {
+      "osm_id": "n12367322403",
+      "name": "Eden",
+      "obec": "Beroun",
+      "address": "Pod Homolkou 1482",
+      "lat": 49.957745,
+      "lng": 14.048035,
+      "category": "restaurace",
+      "source_url": "https://www.sporteden.cz/restaurace/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Web uvádí, že restaurace je bezbariérová.",
+        "wc": null,
+        "pokoj": null,
+        "koupelna": null,
+        "parkovani": null,
+        "vytah": null,
+        "jine": null
+      },
+      "measurements": [],
+      "evidence_quote": "Restaurace je bezbariérová, plně klimatizována"
+    },
+    {
+      "osm_id": "n4938966558",
+      "name": "U Lípy",
+      "obec": "Krušovice",
+      "address": "Do Jezírek 70",
+      "lat": 50.17501,
+      "lng": 13.776503,
+      "category": "restaurace",
+      "source_url": "https://www.hotelulipykrusovice.cz/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": null,
+        "wc": null,
+        "pokoj": "Hotel U Lípy má mezi 15 pokoji i bezbariérový pokoj; podrobnosti web neuvádí.",
+        "koupelna": null,
+        "parkovani": null,
+        "vytah": null,
+        "jine": null
+      },
+      "measurements": [],
+      "evidence_quote": "včetně svatebního apartmá a bezbariérového pokoje"
+    },
+    {
+      "osm_id": "n1832287933",
+      "name": "Hindická restaurace",
+      "obec": "Kutná Hora",
+      "address": "Lierova 147",
+      "lat": 49.949614,
+      "lng": 15.265209,
+      "category": "restaurace",
+      "source_url": "https://hindicka.cz/?lang=cs",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "V přehledu služeb web uvádí „Bezbariérové“; podrobnosti neuvádí.",
+        "wc": null,
+        "pokoj": null,
+        "koupelna": null,
+        "parkovani": "Uvedeno parkoviště bez obsluhy (bez zmínky o místech pro ZTP).",
+        "vytah": null,
+        "jine": null
+      },
+      "measurements": [],
+      "evidence_quote": "Naše služby Bezbariérové Klimatizace Venkovní posezení"
+    },
+    {
+      "osm_id": "n5752062057",
+      "name": "Monínec",
+      "obec": "Sedlec-Prčice",
+      "address": "Moninec 7",
+      "lat": 49.543999,
+      "lng": 14.51633,
+      "category": "restaurace",
+      "source_url": "https://moninec.nhr.cz/cs/hotel-moninec",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "limited",
+      "accessibility": {
+        "vstup": null,
+        "wc": null,
+        "pokoj": "Pokoje hotelu Monínec jsou ve dvou patrech.",
+        "koupelna": null,
+        "parkovani": null,
+        "vytah": "V budově hotelu není výtah; hotel proto podle webu nemusí vyhovovat hostům, kteří potřebují plně bezbariérový přístup.",
+        "jine": null
+      },
+      "measurements": [],
+      "evidence_quote": "v budově není výtah"
+    },
+    {
+      "osm_id": "n6616197178",
+      "name": "Zámecká restaurace Veltrusy",
+      "obec": "Veltrusy",
+      "address": null,
+      "lat": 50.277774,
+      "lng": 14.328715,
+      "category": "restaurace",
+      "source_url": "https://www.zamek-veltrusy.cz/cs/informace-pro-navstevniky",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Přístup do zámecké restaurace je bezbariérový. Od vyhrazeného parkoviště vedou rovné, částečně asfaltové cesty; cesta parkem od hlavní brány je nerovná a nezpevněná, za mokra kluzká.",
+        "wc": "Pokladna a WC mají bezbariérový přístup; dámské i pánské toalety mají kabinu upravenou pro osoby s omezenou schopností pohybu. Bezbariérové WC je v severovýchodním křídle (vstup z čestného dvora).",
+        "pokoj": null,
+        "koupelna": null,
+        "parkovani": "Vyhrazené parkoviště pro vozíčkáře cca 100 m od nádvoří, vjezd od autokempu Obora po domluvě se správou zámku, nutné doklady.",
+        "vytah": null,
+        "jine": "Okruh v 1. patře lze zdolat schodolezem po předchozí domluvě (jen mechanické vozíky); Rudolfův sál a přízemí s kaplí jsou bezbariérové."
+      },
+      "measurements": [
+        {
+          "co": "vzdálenost vyhrazeného parkoviště od nádvoří zámku",
+          "hodnota": 100,
+          "jednotka": "m (cca)"
+        },
+        {
+          "co": "schodolez – max. hmotnost osoby vč. vozíku",
+          "hodnota": 130,
+          "jednotka": "kg"
+        },
+        {
+          "co": "schodolez – max. šíře vozíku (rozchod pneumatik)",
+          "hodnota": 60,
+          "jednotka": "cm"
+        },
+        {
+          "co": "schodolez – max. šíře horních madel vozíku",
+          "hodnota": 52,
+          "jednotka": "cm"
+        }
+      ],
+      "evidence_quote": "Přístup do zámecké restaurace je bezbariérový."
+    }
+  ],
+  "not_found": [
+    {
+      "osm_id": "n8911837782",
+      "name": "Big Pub",
+      "url": "http://www.bigpub.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n7913204429",
+      "name": "Penzion Kovářov",
+      "url": "https://penzionkovarov.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n7726224360",
+      "name": "Restaurace V Podskalí",
+      "url": "https://www.podskali-hluboka.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3768131512",
+      "name": "Cafe Kočky",
+      "url": "http://www.cafeutrikocek.cz/",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n12065248557",
+      "name": "Kynutá buchta",
+      "url": "https://www.kynutabuchtabistro.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2459904766",
+      "name": "U Sedláčků",
+      "url": "https://www.restauraceusedlacku-kaplice.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11057088650",
+      "name": "Hospoda Kačlehy",
+      "url": "https://www.e-chalupy.cz/ubytovani-kaclehy-apartman-o2618",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n4397492156",
+      "name": "Restaurace Stodola",
+      "url": "https://www.stodolalipno.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n942823976",
+      "name": "Lišovská pizerka",
+      "url": "https://www.pizzerie-lisov.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n482655918",
+      "name": "Krčma Vagon",
+      "url": "https://www.noveudoli.eu/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n664836087",
+      "name": "Hospoda Na návsi",
+      "url": "https://www.hospudka-nanavsi.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11042255824",
+      "name": "Café Mráz",
+      "url": "https://www.cafemraz.com/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n877364299",
+      "name": "Vlkovská hospoda",
+      "url": "https://vlkovskahospoda.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3025103349",
+      "name": "U potůčku",
+      "url": "https://www.restauraceupotucku.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4412947657",
+      "name": "Caffe Convento",
+      "url": "https://www.klastervyssibrod.cz/Klaster/Kavarna-Caffe-Convento",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n9424025613",
+      "name": "Amigo",
+      "url": "https://amigopizza.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n7552692938",
+      "name": "Bistro Cobliha",
+      "url": "https://www.cobliha.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4624292130",
+      "name": "Bistro Záruba",
+      "url": "https://www.zarubagastro.cz/zaruba-bistro.html",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4217109388",
+      "name": "Budvarka - Budvar",
+      "url": "https://pivnice-budvarka.cz/cs/budvarka-budvar/",
+      "reason": "web nedostupný (<urlopen error timed out>)"
+    },
+    {
+      "osm_id": "n4565810992",
+      "name": "Café Datel",
+      "url": "https://cafedatel.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4377118708",
+      "name": "Cool Cafe",
+      "url": "https://www.coolcafe.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n7844236422",
+      "name": "Cool Pizza",
+      "url": "https://www.coolpizza.eu/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2441811957",
+      "name": "Gateway to India",
+      "url": "https://indickarestaurace.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n8688191024",
+      "name": "Guty",
+      "url": "https://gutydelivery.com/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n5983058385",
+      "name": "Hospůdka Eliška",
+      "url": "https://www.hospudkaeliska.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4504415995",
+      "name": "Indická restaurace",
+      "url": "https://indickarestaurace.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2485193180",
+      "name": "Kebab House",
+      "url": "http://www.kebab-house.wz.cz/",
+      "reason": "web nedostupný (HTTP Error 404: Not Found)"
+    },
+    {
+      "osm_id": "n4783981279",
+      "name": "Naše farma",
+      "url": "https://www.nasefarma.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11469025776",
+      "name": "OKIs",
+      "url": "https://okis.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12116913184",
+      "name": "OKIs Gelato bar",
+      "url": "https://okis.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4597958290",
+      "name": "Pizza & Burger Big Poppa",
+      "url": "http://pizzeriebigpoppa.cz",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n3711575158",
+      "name": "Pizzeria Fontana",
+      "url": "https://www.pizzeriafontana.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6616918486",
+      "name": "Restaurace Solnice",
+      "url": "https://www.restauracesolnice.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n7658620825",
+      "name": "SK „U Špačka“",
+      "url": "https://skspacek.cz/obcerstveni/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n9423662004",
+      "name": "Slunce",
+      "url": "https://www.restaurantslunce.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n5210796721",
+      "name": "U Kalicha",
+      "url": "https://www.ukalichaceskebudejovice.com/",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n10905034894",
+      "name": "Vegetárna Impala",
+      "url": "https://vegetarna.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1628054027",
+      "name": "Žíznivá gumovka",
+      "url": "https://www.ziznivagumovka.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2409812815",
+      "name": "Authentic Cafe",
+      "url": "https://www.authenticcafe.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n7035584972",
+      "name": "Bolero Restaurant",
+      "url": "https://www.ckrumlov.cz/cz1250/mesto/rpphv/i_bolero.htm",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n7020796548",
+      "name": "Cafe Hrádek",
+      "url": "https://cafe-hradek-cafe.business.site/",
+      "reason": "web nedostupný (HTTP Error 404: Not Found)"
+    },
+    {
+      "osm_id": "n3755039424",
+      "name": "Cafe retro",
+      "url": "https://www.retrocafe.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13970697135",
+      "name": "Depo",
+      "url": "https://www.depokrumlov.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3754549325",
+      "name": "Dobrá čajovna",
+      "url": "http://www.cajovnack.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4401701393",
+      "name": "Don Julius",
+      "url": "https://www.hotelzlatyandel.cz/index.php?page=donjulius&lang=cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n7796448826",
+      "name": "Don Pietro",
+      "url": "http://www.donpietro.cz/cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6994626251",
+      "name": "Drunken Coffee",
+      "url": "https://drunkencoffee.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4379669590",
+      "name": "Jakub Restaurant",
+      "url": "https://jakubrestaurant.cz/en",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n13677392814",
+      "name": "Jídelna Krumlov",
+      "url": "https://jidelna-krumlov.cz",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n3755411257",
+      "name": "Kinokavárna Luna",
+      "url": "https://www.luna-kino.cz/",
+      "reason": "web nedostupný (HTTP Error 429: Too Many Requests)"
+    },
+    {
+      "osm_id": "n3272734097",
+      "name": "Kolektiv",
+      "url": "http://www.bistrokolektiv.cz/",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n1364297993",
+      "name": "Krčma Šatlava",
+      "url": "https://www.satlava.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3272734095",
+      "name": "Laibon",
+      "url": "https://www.laibon.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4813285021",
+      "name": "MLS Bistro",
+      "url": "http://www.mls-bistros.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6945211964",
+      "name": "Masná 130 espresso bar",
+      "url": "https://www.masna130.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6993626682",
+      "name": "Music Cocktail Bar",
+      "url": "http://www.hotelzlatyandel.cz/index.php?page=restaurace&lang=cz#music",
+      "reason": "web nedostupný (HTTP Error 404: Not Found)"
+    },
+    {
+      "osm_id": "n7034137206",
+      "name": "Nón Viet",
+      "url": "https://www.nonviet.cz/non-viet-cesky-krumlov/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1863955838",
+      "name": "Pivovar Český Krumlov",
+      "url": "https://pivovarceskykrumlov.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6993693680",
+      "name": "Pizzeria Libertà",
+      "url": "https://www.hotelarcadie.cz/cz/pizzeria-cosa-vostra/4/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1574116922",
+      "name": "Pod Radnicí",
+      "url": "https://www.podradnicick.cz/",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n7056369294",
+      "name": "Restaurace Petr Vok",
+      "url": "https://www.hotelzlatyandel.cz/index.php?page=vok&lang=cz",
+      "reason": "web nedostupný (HTTP Error 404: Not Found)"
+    },
+    {
+      "osm_id": "n6993693681",
+      "name": "Restaurant Konvice",
+      "url": "https://www.cz.stadthotel-krummau.de/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4785036930",
+      "name": "Tenis – Centrum Český Krumlov",
+      "url": "http://www.tenis-centrum.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4398664391",
+      "name": "Trdelník",
+      "url": "https://www.firmy.cz/detail/13151563-creperie-kajovska-cesky-krumlov-vnitrni-mesto.html",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n849420955",
+      "name": "U Trojice",
+      "url": "http://www.utrojice.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n7143489416",
+      "name": "Waffle",
+      "url": "http://www.mls-bistros.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6421827185",
+      "name": "Zapa Bar",
+      "url": "https://www.zapa-bar.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3759451236",
+      "name": "Zapa café",
+      "url": "https://www.zapacafe.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n10956813184",
+      "name": "Pivovar Červený vlk",
+      "url": "https://cervenyvlk.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12943639199",
+      "name": "Pivní lok",
+      "url": "https://pivnilok.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2526468541",
+      "name": "Zámecký pivovar",
+      "url": "https://chyse.com/pivovar/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2536299806",
+      "name": "Toast Bag Bistro",
+      "url": "https://www.frantiskovy-lazne.info/cs/restaurace-a-sluzby/restaurace/toast-bag-bistro_500",
+      "reason": "web nedostupný (HTTP Error 500: Internal Server Error)"
+    },
+    {
+      "osm_id": "n6956956085",
+      "name": "Goethe’s beer house",
+      "url": "https://beer-house.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n7902444586",
+      "name": "Haandi",
+      "url": "https://www.haandi.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n795058927",
+      "name": "Kalimero",
+      "url": "https://www.kalimero-kv.cz/",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n4947663562",
+      "name": "Pizza Mamma Mia",
+      "url": "http://www.pizzamammamia.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4991775767",
+      "name": "Slovanský sklípek",
+      "url": "http://bohemia-lazne.cz/de/gastronomie/slovan-slovansky-sklipek/",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n5834023322",
+      "name": "Restaurace U Pristavu",
+      "url": "https://www.upristavu.eu/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n14106266968",
+      "name": "Sokorest",
+      "url": "https://www.sokorest.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n14106266978",
+      "name": "Sokorest",
+      "url": "https://www.sokorest.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1843773673",
+      "name": "Selský dvůr",
+      "url": "http://www.bauernhof.cz/?page=home&lang=cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13970695451",
+      "name": "Jako Doma",
+      "url": "https://www.jakodoma.eu/inpage/english-menu/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n664098918",
+      "name": "Penzion Uko",
+      "url": "https://www.uko.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2384700268",
+      "name": "Motoklub Pekelné doly",
+      "url": "https://www.pekelnedoly.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3401392910",
+      "name": "Pivovar Albrecht",
+      "url": "https://pivovar-albrecht.com/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1567852281",
+      "name": "Pivovar Novosad",
+      "url": "https://www.pivovarharrachov.com/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2301130502",
+      "name": "Restaurace Krakonoš",
+      "url": "https://www.breuer.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2301142166",
+      "name": "Restaurace autokemp Zátiší",
+      "url": "https://www.autocampjablonec.com/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12066387306",
+      "name": "Q Burger bar",
+      "url": "https://www.qburgerbar.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13970694582",
+      "name": "Bowling Sedmihorky",
+      "url": "http://www.bowlingsedmihorky.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6271183380",
+      "name": "Beer warehouse restaurant",
+      "url": "https://beerwarehouse.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n10765661967",
+      "name": "Bylo, nebylo",
+      "url": "https://bylonebylo.bar",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11069099107",
+      "name": "Pizza roma",
+      "url": "https://website--6999437933903618810240-pizzarestaurant.business.site/",
+      "reason": "web nedostupný (HTTP Error 404: Not Found)"
+    },
+    {
+      "osm_id": "n12956507849",
+      "name": "Hotel Štumpovka",
+      "url": "https://www.dvoracky.cz/cs/restaurace",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n446876020",
+      "name": "Arbes",
+      "url": "https://www.restauracearbes.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1072399987",
+      "name": "Ve Skále",
+      "url": "https://www.chodovar.cz/id1072cz-restaurace-ve-skale.htm",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w586661760",
+      "name": "U hřiště",
+      "url": "http://zmrzlinadobrany.cz/",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "w556947776",
+      "name": "Sport Kemp Ejpovice",
+      "url": "https://www.kempejpovice.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1908841122",
+      "name": "Sokolovna Kařez",
+      "url": "https://restauracesokolovna.makro.rest/",
+      "reason": "web nedostupný (HTTP Error 404: Not Found)"
+    },
+    {
+      "osm_id": "n9675835214",
+      "name": "Everest",
+      "url": "https://www.indickaklatovy.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13375688889",
+      "name": "Patronka - Restaurace \"U Větráka\"",
+      "url": "https://www.uvetraka.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2394225052",
+      "name": "Četnická stanice",
+      "url": "https://www.rabstejnnadstrelou.cz/clanky/infocentrum.html",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1963077613",
+      "name": "Hospůdka U Kozlerů",
+      "url": "https://www.hospodaukozleru.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4011963594",
+      "name": "Lyer",
+      "url": "https://www.pivovarmodrava.cz",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n2527108129",
+      "name": "Mes-Amis",
+      "url": "https://www.mes-amis.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3937890889",
+      "name": "Aqua Restaurace",
+      "url": "http://www.aquarestaurace.cz/",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n2912321764",
+      "name": "Beseda 1901",
+      "url": "https://www.beseda1901.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n630425255",
+      "name": "Big Burger",
+      "url": "https://www.bigburger.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4156364104",
+      "name": "Bolevecká Sokolovna",
+      "url": "https://www.sokolovnabolevec.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12570717564",
+      "name": "Bread&Co",
+      "url": "https://www.bread-co.com/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2684010127",
+      "name": "Comix kitchen&bar",
+      "url": "https://www.comixpub.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n274615055",
+      "name": "Jazz rock café",
+      "url": "http://www.jazzrockcafe.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11339489451",
+      "name": "KAVANA – Jídelna v Divadelní",
+      "url": "https://kavana.eu",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13970692659",
+      "name": "KFC",
+      "url": "https://www.kfc.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11816972809",
+      "name": "Kavárna MANETKA",
+      "url": "https://www.manetka.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12118936959",
+      "name": "Kavárna Zašívárna",
+      "url": "https://www.skretovka.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n8491644232",
+      "name": "Korjo-saram Speciality",
+      "url": "https://www.korjosaram.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3737982408",
+      "name": "Le Frenchie café",
+      "url": "http://www.lefrenchie.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3936734566",
+      "name": "Lokál Pod Divadlem",
+      "url": "https://lokal-poddivadlem.ambi.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6235982074",
+      "name": "Lékárna",
+      "url": "https://hospodskalekarna.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13970696790",
+      "name": "Na Spilce",
+      "url": "https://www.naspilce.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13092052515",
+      "name": "Pizza FAST",
+      "url": "https://www.fastpizza.cz/#home",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w1237521752",
+      "name": "Pizza La Mia Stazione",
+      "url": "https://www.pizzalamiastazione.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n296667991",
+      "name": "Pizzerie San Marino",
+      "url": "https://www.sanmarino-pizza.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n296822365",
+      "name": "Plzeňka",
+      "url": "https://www.plzenkaplzen.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4325324769",
+      "name": "Restaurace 12",
+      "url": "https://www.restaurant-12.com/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n526812706",
+      "name": "Restaurace Lokotka",
+      "url": "http://www.tjloko-plzen.cz/cz/restaurace/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13347720467",
+      "name": "Restaurace Saloon Doubravka",
+      "url": "https://saloondoubravka.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n296705655",
+      "name": "Restaurace U Havránka",
+      "url": "https://uhavranku.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3615635677",
+      "name": "Restaurace U Krátkých",
+      "url": "http://www.penzion-emma.cz/index.php?akce=restaurace",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n9609829867",
+      "name": "Rockenrolla Café",
+      "url": "https://rockenrolla.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12198429124",
+      "name": "Rud's pizza",
+      "url": "https://rudspizza.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n5099406731",
+      "name": "Salaterie Ugo",
+      "url": "https://ugo.cz/salaterie",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4541267904",
+      "name": "Satyr",
+      "url": "http://www.bistro-satyr.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6540201477",
+      "name": "Schovaná kavárna",
+      "url": "https://schovanakavarna.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13404414201",
+      "name": "Skipie",
+      "url": "http://www.skippie.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n296827718",
+      "name": "Slunečnice",
+      "url": "https://www.slunecniceplzen.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13969671293",
+      "name": "Ta NEJlepší",
+      "url": "https://www.ta-nejlepsi.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w1355405767",
+      "name": "U Salzmannů",
+      "url": "https://www.usalzmannu.com/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11910834474",
+      "name": "U Čejků",
+      "url": "http://www.ucejku.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n296781325",
+      "name": "Uctívaný Velbloud",
+      "url": "https://www.uctivanyvelbloud.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4766964029",
+      "name": "Viktoria Soul",
+      "url": "https://viktoria-soul.eatbu.com",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n296728614",
+      "name": "ZACH'S PUB",
+      "url": "https://www.zachspub.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n296831420",
+      "name": "coffee & brunch enjoy",
+      "url": "http://www.pizza.j-gotti.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1279126158",
+      "name": "Štipec",
+      "url": "https://stipec.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4529088635",
+      "name": "Švejk restaurant „U Pětatřicátníků“",
+      "url": "http://www.svejkplzen.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1283017719",
+      "name": "Restaurace Na Železné",
+      "url": "https://www.prazdrojmenu.cz/zajezdni-hostinec-zelezna",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n4413328177",
+      "name": "Slunečná kavárna",
+      "url": "http://www.slunecnakavarna.cz/",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n1456174034",
+      "name": "Staroplzenecká restaurace",
+      "url": "https://www.staroplzenecka-restaurace.com/",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n13970692787",
+      "name": "Restaurace Stodola",
+      "url": "https://stodola-folmava.cz/cs/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n510794096",
+      "name": "Bezejmenná čajovna",
+      "url": "http://www.bezejmenna.name/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n9897461569",
+      "name": "U Kiliána",
+      "url": "https://www.penzionukiliana.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13970695500",
+      "name": "Stará myslivna",
+      "url": "https://www.staramyslivna.com/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1494138208",
+      "name": "Berounský medvěd",
+      "url": "https://www.berounskymedved.com/",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n13612758193",
+      "name": "Bistro Městká hora",
+      "url": "https://www.berounskasportovni.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13108128552",
+      "name": "NEJen Bistro",
+      "url": "https://www.sp-klubak.cz/nejen-bistro",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n3880596620",
+      "name": "Na Krásné vyhlídce",
+      "url": "https://www.nakrasnevyhlidce.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4149408614",
+      "name": "V Pivovaře",
+      "url": "https://www.vpivovare.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12145891688",
+      "name": "Branov",
+      "url": "https://www.kempbranov.cz/stanek/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1436740431",
+      "name": "U Chalupů",
+      "url": "https://www.uchalupu.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n5305496674",
+      "name": "Restaurace Rošáda",
+      "url": "http://hospoda-bubovice.cz/",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n4885164831",
+      "name": "Olivo & Co.",
+      "url": "https://olivo-dobris.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11951542192",
+      "name": "Tankovna Modrá kočka Dobříš",
+      "url": "https://www.kockadobris.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13514216526",
+      "name": "Pivovar Kokeš",
+      "url": "https://pivovarkokes.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3708479943",
+      "name": "Restaurace U Fabiána",
+      "url": "https://www.prazdrojmenu.cz/ufabiana",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n5079039538",
+      "name": "Na Krétě",
+      "url": "https://www.restauracenakrete.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11036890143",
+      "name": "Clear-point",
+      "url": "https://www.clear-point.cz/restaurace/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n927274848",
+      "name": "Na Kocandě",
+      "url": "https://www.restauracenakocande.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13970693230",
+      "name": "Presto pizza",
+      "url": "https://www.prestopizza.eu/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13970695198",
+      "name": "U Adama",
+      "url": "https://restauraceuadama.cz/",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n7198277780",
+      "name": "Cukrárna Dolce Vita",
+      "url": "https://www.nebeskepralinky.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w1228471668",
+      "name": "Kantýna Poldi",
+      "url": "https://www.kantynapoldi.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2083951650",
+      "name": "Restaurace pod Farmou",
+      "url": "https://www.podfarmou.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12710115532",
+      "name": "Kolobistro",
+      "url": "https://kolobistro.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13504410429",
+      "name": "Tank Ono",
+      "url": "https://www.tank-ono.cz/cz/index.php?page=pumpcard&pump=14",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11036061190",
+      "name": "Restaurace Vodní svět",
+      "url": "https://www.restaurace-vodni-svet.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1377818288",
+      "name": "Trilobit café",
+      "url": "https://obcerstvenipodlipou.cz/trilobit-cafe/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1278696679",
+      "name": "Hospůdka U Hradu",
+      "url": "http://www.hospudkauhradu.cz",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n12265728148",
+      "name": "Pizza Jakouben",
+      "url": "https://www.pizzajakouben.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n9726033368",
+      "name": "Dobrá čajovna",
+      "url": "https://www.cajovnakh.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1832287935",
+      "name": "Factory",
+      "url": "https://www.factorybistro.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n10214819519",
+      "name": "Piazza Navona",
+      "url": "https://www.piazzanavona.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2021065707",
+      "name": "Restaurace V Ruthardce",
+      "url": "https://www.vruthardce.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1821926931",
+      "name": "U Lávky",
+      "url": "https://www.restauracelavka.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3707983696",
+      "name": "Stará Bárka",
+      "url": "https://www.starabarka.cz/cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n82593529",
+      "name": "Špičajda",
+      "url": "https://spicajda.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1321009662",
+      "name": "Matylda",
+      "url": "https://www.pizzeria-matylda.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "mbb671",
+      "name": "Café Restaurant VÁCLAV",
+      "url": "http://museum.skoda-auto.cz/cafe-restarurant-vaclav",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n4580143189",
+      "name": "Café Restaurant Václav",
+      "url": "https://museum.skoda-auto.cz/cafe-restarurant-vaclav/",
+      "reason": "web nedostupný (HTTP Error 404: Not Found)"
+    },
+    {
+      "osm_id": "w834798459",
+      "name": "Pizzeria Trappola",
+      "url": "http://mlada-boleslav.trappola.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n4158866432",
+      "name": "Černá růže",
+      "url": "http://cernaruze.com",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "w89086399",
+      "name": "Malý mnich",
+      "url": "https://www.malymnich.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3704520108",
+      "name": "Kafe Mělník ve Věži",
+      "url": "https://kafemelnikvez.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3973326070",
+      "name": "Želví doupě",
+      "url": "http://melnicky-antikvariat.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3281146138",
+      "name": "Restaurace Bernard",
+      "url": "http://cafebarneveklov.cz",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n2830150954",
+      "name": "Zastávka Nižbor",
+      "url": "https://www.zastavkanizbor.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13970693265",
+      "name": "U Svatého Jakuba",
+      "url": "http://www.ujakuba-nucice.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n10213842730",
+      "name": "Mikro Bistro",
+      "url": "https://mikrobistro.webnode.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13426576700",
+      "name": "Petrovická zlato",
+      "url": "https://petrovickepivo.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1992300417",
+      "name": "Kožová Hora",
+      "url": "https://www.kozovahora.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13970695383",
+      "name": "U Skanzenu",
+      "url": "https://www.hostinec-uskanzenu.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n5142662296",
+      "name": "Bistro U Chameleona",
+      "url": "https://bistrouchameleona.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11203274462",
+      "name": "BlackHorse Catering",
+      "url": "http://blackhorsecatering.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11202125967",
+      "name": "Cafex",
+      "url": "https://cafex.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11173451226",
+      "name": "Delivery pizza & grill",
+      "url": "https://pizzadelivery.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13132864476",
+      "name": "Delivery pizza & grill",
+      "url": "https://deliverypizza.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11133773833",
+      "name": "Ella's Burger",
+      "url": "https://ellasburger.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12633260678",
+      "name": "Jan Vrábík",
+      "url": "https://www.reznictvivrabik.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11266799745",
+      "name": "Na Střelnici",
+      "url": "https://rezervace.strelnicerakovnik.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11173440699",
+      "name": "Palác Food",
+      "url": "https://www.palacfood.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11738524676",
+      "name": "Pivnice Na Hrádku",
+      "url": "https://pap-pivnice.cz/",
+      "reason": "web nedostupný (<urlopen error timed out>)"
+    },
+    {
+      "osm_id": "n5142662297",
+      "name": "Pizza House Rakovník",
+      "url": "https://pizzahouse.cz/rakovnik/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11226442229",
+      "name": "U Šéby",
+      "url": "http://penzion-seba.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12014895270",
+      "name": "MO’s Bistro",
+      "url": "https://mosbistro.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13584479212",
+      "name": "Serpente",
+      "url": "https://serpente-roztoky.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n638425676",
+      "name": "Čínská restaurace Hong Kong",
+      "url": "ukrby-roztoky.cz",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n3311050589",
+      "name": "Továrna",
+      "url": "http://tovarnaslany.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2907916990",
+      "name": "Za Vodou",
+      "url": "https://www.sazavahostineczavodou.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1804445317",
+      "name": "Tetínská hospoda",
+      "url": "http://www.tetinskahospoda.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2137032440",
+      "name": "Pizzerie Mates",
+      "url": "https://pizzerie-mates.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n5649730625",
+      "name": "Pizzerie Nonno",
+      "url": "https://www.pizzerie-nonno-uhlirske-janovice.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1288247498",
+      "name": "Velkopopovická Kozlovna",
+      "url": "https://www.velkopopovickakozlovna.cz/",
+      "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+    },
+    {
+      "osm_id": "n1276873493",
+      "name": "Pizza-House",
+      "url": "https://pizza-house.cz/velvary/",
+      "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+    },
+    {
+      "osm_id": "n7750489912",
+      "name": "Caffé Del Borgo",
+      "url": "https://www.dpcoffee.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2212541149",
+      "name": "Pivovarská restaurace",
+      "url": "https://www.unetickypivovar.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12254843204",
+      "name": "Kousek Lesa",
+      "url": "https://kavarnakouseklesa.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n440484302",
+      "name": "Pizzeria Antonio",
+      "url": "www.antoniopizza.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n12648903061",
+      "name": "Café Vera",
+      "url": "https://cafevera.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n6698007156",
+      "name": "Pizza Papa Cipolla",
+      "url": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-cernosice/wb/home",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n427590610",
+      "name": "U Rysů",
+      "url": "https://www.hostinecurysu.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n292550249",
+      "name": "U Anežky",
+      "url": "https://www.dnesniobed.cz/restaurace-hospoda-detail/%C5%98%C3%AD%C4%8Dany_U%20Ane%C5%BEky",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13055988827",
+      "name": "dva:jedna",
+      "url": "https://2jedna.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n8494165836",
+      "name": "Pizza Vito",
+      "url": "https://pizzavitosestajovice.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n3212861612",
+      "name": "U Skokovské báby",
+      "url": "https://www.uskokovskebaby.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n9921522217",
+      "name": "ARRIGŌ",
+      "url": "https://arrigo.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1478993384",
+      "name": "Club 333",
+      "url": "http://cs-cz.facebook.com/pages/Club-333/166961390016974",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11837658846",
+      "name": "Pivovarská Restaurace Kapitán",
+      "url": "https://www.pivovarskarestaurace.com",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "w117685210",
+      "name": "Sokolí hnízdo",
+      "url": "https://pbrana.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n9990594899",
+      "name": "Bistro Falk",
+      "url": "https://www.bistrofalk.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1207787269",
+      "name": "AVe Restaurant",
+      "url": "http://www.ave-restaurant.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2837527541",
+      "name": "Komáří vížka",
+      "url": "https://www.komarivizka.eu/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n9790520063",
+      "name": "Pivovar Falkenštejn",
+      "url": "https://www.pivofalkenstejn.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2923987559",
+      "name": "Penzion Kamzík",
+      "url": "https://www.penzionkamzik.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2419773399",
+      "name": "Café Della Porta",
+      "url": "https://www.cafedellaporta.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2322658969",
+      "name": "Pamplona",
+      "url": "https://www.pamplona.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n716849463",
+      "name": "Radniční sklípek",
+      "url": "https://radnicni-sklipek.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n11198480037",
+      "name": "Minipivovar Most",
+      "url": "https://minipivovarmost.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n14196904760",
+      "name": "Trdlobar",
+      "url": "https://trdlobar.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n2445756744",
+      "name": "Pivovar Chalupník",
+      "url": "https://www.pivochalupnik.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13970693069",
+      "name": "Gabbi",
+      "url": "http://pizzagabbi.webmium.com",
+      "reason": "web nedostupný (<urlopen error [WinError 10054] Stávající připojení bylo vyn)"
+    },
+    {
+      "osm_id": "n936944675",
+      "name": "Hospoda u Oty",
+      "url": "https://www.hospoda-u-oty.cz/",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n5171505221",
+      "name": "Monopol",
+      "url": "http://www.pivovarmonopol.cz",
+      "reason": "web o přístupnosti místa nic konkrétního neuvádí (zmínky jen v jiném kontextu, např. sleva ZTP)"
+    },
+    {
+      "osm_id": "n2729433488",
+      "name": "Restaurace 21",
+      "url": "http://www.restaurace21.cz/",
+      "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n654170045",
+      "name": "Café Dlask",
+      "url": "https://cafe.dlask.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n1685211375",
+      "name": "Hostinec U Pernekrú",
+      "url": "https://upernekru.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n251873938",
+      "name": "Cukrárna Jana Koníková",
+      "url": "https://www.cukrarnajanakonikova.cz",
+      "reason": "web nic o přístupnosti neuvádí"
+    },
+    {
+      "osm_id": "n13970693723",
+      "name": "Apartmány & Bistro Fláje",
+      "url": "https://flaje-apartments.cz/",
+      "reason": "web nic o přístupnosti neuvádí"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Restaurace Na obci – web provozovatele",
+      "url": "http://restaurace-obec.cz/",
+      "note": "zdroj údajů o přístupnosti"
+    },
+    {
+      "title": "Restaurace Ostrov – web provozovatele",
+      "url": "https://www.restauraceostrovpisek.cz",
+      "note": "zdroj údajů o přístupnosti"
+    },
+    {
+      "title": "Restaurace Klika – web provozovatele",
+      "url": "https://www.hotelklika.cz/cs/restaurace.html",
+      "note": "zdroj údajů o přístupnosti"
+    },
+    {
+      "title": "Zvon – web provozovatele",
+      "url": "https://www.hotel-zvon.cz/pokoje",
+      "note": "zdroj údajů o přístupnosti"
+    },
+    {
+      "title": "Restaurace Diana – web provozovatele",
+      "url": "https://dianakv.cz/cs/kontakty-prakticke-informace",
+      "note": "zdroj údajů o přístupnosti"
+    },
+    {
+      "title": "U Křížovníků – web provozovatele",
+      "url": "https://hotel-kgm.cz/pokoje/bezbarierovy-dvouluzkovy-pokoj/",
+      "note": "zdroj údajů o přístupnosti"
+    },
+    {
+      "title": "COOP Bistro – web provozovatele",
+      "url": "https://centrumdoubravka.cz/kontakty-a-oteviraci-doba/",
+      "note": "zdroj údajů o přístupnosti"
+    },
+    {
+      "title": "Občerstvení letadlo – web provozovatele",
+      "url": "https://obcerstveniletadlo.cz/o-nas",
+      "note": "zdroj údajů o přístupnosti"
+    },
+    {
+      "title": "Eden – web provozovatele",
+      "url": "https://www.sporteden.cz/restaurace/",
+      "note": "zdroj údajů o přístupnosti"
+    },
+    {
+      "title": "U Lípy – web provozovatele",
+      "url": "https://www.hotelulipykrusovice.cz/",
+      "note": "zdroj údajů o přístupnosti"
+    },
+    {
+      "title": "Hindická restaurace – web provozovatele",
+      "url": "https://hindicka.cz/?lang=cs",
+      "note": "zdroj údajů o přístupnosti"
+    },
+    {
+      "title": "Monínec – web provozovatele",
+      "url": "https://moninec.nhr.cz/cs/hotel-moninec",
+      "note": "zdroj údajů o přístupnosti"
+    },
+    {
+      "title": "Zámecká restaurace Veltrusy – web provozovatele",
+      "url": "https://www.zamek-veltrusy.cz/cs/informace-pro-navstevniky",
+      "note": "zdroj údajů o přístupnosti"
+    }
+  ]
+}

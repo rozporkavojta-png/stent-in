@@ -1,0 +1,679 @@
+[
+{
+"i": "n1231069283",
+"n": "Pštrossova vila",
+"s": "Penzion",
+"o": "Bechyně",
+"a": "Valtrova 33",
+"web": "https://uklasternizahrady.cz",
+"w": "no",
+"la": 49.295629,
+"lo": 14.470032
+},
+{
+"i": "n8758765384",
+"n": "Prvok",
+"s": "Apartmány",
+"o": "Borovany",
+"w": "no",
+"la": 48.891451,
+"lo": 14.672575
+},
+{
+"i": "n9077440190",
+"n": "Penzion Kravín",
+"s": "Penzion",
+"o": "Bošilec",
+"a": "Bošilec 16",
+"web": "https://penzionkravin.cz/",
+"w": "limited",
+"la": 49.149296,
+"lo": 14.646382
+},
+{
+"i": "n13238106413",
+"n": "Penzion Hastrman",
+"s": "Apartmány",
+"o": "Doudleby",
+"web": "https://hastrman.net",
+"w": "yes",
+"la": 48.900774,
+"lo": 14.504803
+},
+{
+"i": "w1077616314",
+"n": "Caravan Camping Horní Planá",
+"s": "Karavanové stání",
+"o": "Horní Planá",
+"web": "https://caravancamping-hp.cz/",
+"w": "no",
+"la": 48.760638,
+"lo": 14.024885
+},
+{
+"i": "n3513116001",
+"n": "chata Červená nad Vltavou",
+"s": "Chata",
+"o": "Jetětice",
+"web": "https://cs-cz.facebook.com/pages/Chata-%C4%8Cerven%C3%A1-nad-Vltavou/516103041775906",
+"w": "no",
+"la": 49.375061,
+"lo": 14.269464
+},
+{
+"i": "n3920885205",
+"n": "Pension U Zdichynců",
+"s": "Penzion",
+"o": "Kubova Huť",
+"a": "Kubova Huť 36",
+"w": "no",
+"la": 48.982462,
+"lo": 13.774185
+},
+{
+"i": "n2430991461",
+"n": "Autokemp Komorník",
+"s": "Kemp",
+"o": "Kunžak",
+"w": "no",
+"la": 49.134697,
+"lo": 15.192975
+},
+{
+"i": "n2734045907",
+"n": "Chalupa Ve Stráni",
+"s": "Penzion",
+"o": "Kvilda",
+"web": "http://www.chalupavestrani.cz",
+"w": "no",
+"la": 49.014194,
+"lo": 13.58123
+},
+{
+"i": "n9929271681",
+"n": "Apartmán 22",
+"s": "Apartmány",
+"o": "Lipno nad Vltavou",
+"a": "Family home Lipno Lake 25",
+"w": "limited",
+"la": 48.639404,
+"lo": 14.228892
+},
+{
+"i": "n9929271677",
+"n": "Apartmán 23",
+"s": "Apartmány",
+"o": "Lipno nad Vltavou",
+"a": "Apartmán 23 25",
+"web": "http://www.apartman23.cz/",
+"w": "limited",
+"la": 48.639233,
+"lo": 14.228846
+},
+{
+"i": "w962660766",
+"n": "Hotel Element",
+"s": "Hotel",
+"o": "Lipno nad Vltavou",
+"web": "https://www.hotelelement.cz/",
+"w": "yes",
+"la": 48.643286,
+"lo": 14.220885
+},
+{
+"i": "n2538746112",
+"n": "Hotel Restaurant Admiral",
+"s": "Hotel",
+"o": "Lipno nad Vltavou",
+"a": "92",
+"web": "https://www.hotel-admiral.cz/",
+"w": "yes",
+"la": 48.640999,
+"lo": 14.225073
+},
+{
+"i": "n11987988364",
+"n": "U Radostů",
+"s": "Penzion",
+"o": "Lužnice",
+"w": "no",
+"la": 49.062783,
+"lo": 14.755041
+},
+{
+"i": "n7272812721",
+"n": "Autocamp Podroužek",
+"s": "Kemp",
+"o": "Netolice",
+"w": "yes",
+"la": 49.037514,
+"lo": 14.185445
+},
+{
+"i": "w1268577107",
+"n": "Amenity Česká Kanada",
+"s": "Hotel",
+"o": "Nová Bystřice",
+"web": "https://kanada.amenity.cz/en/",
+"w": "yes",
+"la": 49.013878,
+"lo": 15.094723
+},
+{
+"i": "w1177088867",
+"n": "Chalupa na Měruši",
+"s": "Penzion",
+"o": "Ponědrážka",
+"a": "Ponědrážka 30",
+"web": "https://www.e-chalupy.cz/jizni_cechy/ubytovani-meruse-chalupa-pronajem-5321.php",
+"w": "no",
+"la": 49.146138,
+"lo": 14.71498
+},
+{
+"i": "w1177088866",
+"n": "Mobilní dům - Vlkovské pískovny",
+"s": "Penzion",
+"o": "Ponědrážka",
+"a": "Ponědrážka 30",
+"web": "https://www.e-chalupy.cz/jizni_cechy/ubytovani-vlkovske-piskovny-mobilheim-8525.php",
+"w": "no",
+"la": 49.14604,
+"lo": 14.715368
+},
+{
+"i": "w1179951136",
+"n": "Měruše",
+"s": "Kemp",
+"o": "Ponědrážka",
+"web": "https://www.kemp-meruse.cz/",
+"w": "yes",
+"la": 49.146116,
+"lo": 14.717487
+},
+{
+"i": "n2298890071",
+"n": "Hotel Villa Conti",
+"s": "Hotel",
+"o": "Písek",
+"a": "Lesní 1277",
+"web": "https://www.villaconti.cz/pisek/",
+"w": "no",
+"la": 49.309448,
+"lo": 14.165554
+},
+{
+"i": "n3994982372",
+"n": "Tábor",
+"s": "Kemp",
+"o": "Soběnov",
+"w": "no",
+"la": 48.752445,
+"lo": 14.546421
+},
+{
+"i": "w701939371",
+"n": "Nouzové nocoviště Strážný",
+"s": "Kemp",
+"o": "Strážný",
+"web": "https://www.npsumava.cz/cz/1336/sekce/nouzova-nocoviste/",
+"w": "limited",
+"la": 48.900642,
+"lo": 13.711427
+},
+{
+"i": "n1305632606",
+"n": "Apartmany 21 Třeboň",
+"s": "Apartmány",
+"o": "Třeboň",
+"a": "Masarykovo náměstí 21",
+"w": "no",
+"la": 49.004324,
+"lo": 14.772059
+},
+{
+"i": "n2742948342",
+"n": "Bílý jednorožec",
+"s": "Hotel",
+"o": "Třeboň",
+"web": "https://www.bilyjednorozec.cz/",
+"w": "no",
+"la": 49.002714,
+"lo": 14.771171
+},
+{
+"i": "n6554081962",
+"n": "Pelikan",
+"s": "Hotel",
+"o": "Třeboň",
+"w": "no",
+"la": 49.00362,
+"lo": 14.772401
+},
+{
+"i": "n2834912036",
+"n": "Krásná vyhlídka",
+"s": "Hotel",
+"o": "Vacov",
+"a": "Javorník 42",
+"web": "https://www.hotel-vyhlidka.cz/",
+"w": "limited",
+"la": 49.138245,
+"lo": 13.664106
+},
+{
+"i": "w58323345",
+"n": "Penzion Na Podlesí",
+"s": "Hotel",
+"o": "Vacov",
+"w": "limited",
+"la": 49.138919,
+"lo": 13.66477
+},
+{
+"i": "n12789116812",
+"n": "Chalupa Vlkov",
+"s": "Penzion",
+"o": "Vlkov",
+"w": "yes",
+"la": 49.149377,
+"lo": 14.726503
+},
+{
+"i": "n11010964806",
+"n": "Hotel Vlkov",
+"s": "Hotel",
+"o": "Vlkov",
+"a": "Vlkov 70",
+"web": "https://www.vlkovskahospoda.cz/",
+"w": "no",
+"la": 49.148504,
+"lo": 14.728654
+},
+{
+"i": "n12800794396",
+"n": "Ubytování Vlkov",
+"s": "Penzion",
+"o": "Vlkov",
+"w": "yes",
+"la": 49.150942,
+"lo": 14.725044
+},
+{
+"i": "n6418232492",
+"n": "Pension U Kuboňů",
+"s": "Apartmány",
+"o": "Volary",
+"web": "https://www.penzionukubonu.cz",
+"w": "no",
+"la": 48.910452,
+"lo": 13.883662
+},
+{
+"i": "n3822550688",
+"n": "Pension Inge 2",
+"s": "Penzion",
+"o": "Vyšší Brod",
+"a": "Hrudkov 11",
+"web": "http://www.pensioninge.cz/",
+"w": "yes",
+"t": "no",
+"la": 48.622004,
+"lo": 14.307869
+},
+{
+"i": "w1545855136",
+"n": "Sektor 1",
+"s": "Kemp",
+"o": "Záblatí",
+"w": "no",
+"la": 48.968097,
+"lo": 13.937027
+},
+{
+"i": "w1545855135",
+"n": "Sektor 2",
+"s": "Kemp",
+"o": "Záblatí",
+"w": "no",
+"la": 48.968007,
+"lo": 13.936181
+},
+{
+"i": "w126697276",
+"n": "Sektor 3",
+"s": "Kemp",
+"o": "Záblatí",
+"w": "no",
+"la": 48.96894,
+"lo": 13.937399
+},
+{
+"i": "w126697284",
+"n": "Sektor 4",
+"s": "Kemp",
+"o": "Záblatí",
+"w": "no",
+"la": 48.970035,
+"lo": 13.937644
+},
+{
+"i": "w1078163503",
+"n": "Camp Jestřábí",
+"s": "Kemp",
+"o": "Černá v Pošumaví",
+"web": "https://www.kemplipno.cz/",
+"w": "yes",
+"la": 48.734306,
+"lo": 14.097428
+},
+{
+"i": "n663245868",
+"n": "EA Hotel Lipno",
+"s": "Hotel",
+"o": "Černá v Pošumaví",
+"w": "no",
+"la": 48.715998,
+"lo": 14.076033
+},
+{
+"i": "n886043825",
+"n": "Ubytování Štěrbová",
+"s": "Penzion",
+"o": "Černá v Pošumaví",
+"a": "Černá v Pošumaví 1",
+"web": "https://www.lipensko.org/sterbova/",
+"w": "no",
+"la": 48.740352,
+"lo": 14.11577
+},
+{
+"i": "n2408614238",
+"n": "Villa Bohemia",
+"s": "Kemp",
+"o": "Černá v Pošumaví",
+"web": "https://www.villabohemia.cz/",
+"w": "limited",
+"la": 48.729455,
+"lo": 14.088391
+},
+{
+"i": "n634582415",
+"n": "Grandhotel Zvon",
+"s": "Hotel",
+"o": "České Budějovice",
+"a": "nám. Přemysla Otakara II. 28",
+"web": "https://www.hotel-zvon.cz/",
+"w": "yes",
+"t": "yes",
+"la": 48.974205,
+"lo": 14.475262
+},
+{
+"i": "n11781392362",
+"n": "Hotel Atlas",
+"s": "Hotel",
+"o": "České Budějovice",
+"w": "yes",
+"la": 48.982922,
+"lo": 14.473933
+},
+{
+"i": "w49943792",
+"n": "Hotel Budweis",
+"s": "Hotel",
+"o": "České Budějovice",
+"w": "yes",
+"la": 48.976742,
+"lo": 14.471222
+},
+{
+"i": "n2974092930",
+"n": "Hotel Klika",
+"s": "Hotel",
+"o": "České Budějovice",
+"a": "Hroznová 25",
+"web": "https://www.hotelklika.cz/",
+"w": "yes",
+"la": 48.976258,
+"lo": 14.47147
+},
+{
+"i": "n409687299",
+"n": "Kemp České Vrbné",
+"s": "Kemp",
+"o": "České Budějovice",
+"web": "https://raftingcb.cz/kemp-ceske-vrbne",
+"w": "yes",
+"la": 49.01464,
+"lo": 14.451791
+},
+{
+"i": "n4650583391",
+"n": "Kostelní 22",
+"s": "Hotel",
+"o": "České Budějovice",
+"a": "Kostelní 1221/22",
+"w": "no",
+"la": 48.98269,
+"lo": 14.4739
+},
+{
+"i": "w49944026",
+"n": "Residence U Černé věže",
+"s": "Hotel",
+"o": "České Budějovice",
+"web": "https://www.ucerneveze.cz/",
+"w": "no",
+"la": 48.976497,
+"lo": 14.475622
+},
+{
+"i": "w49944029",
+"n": "Residence U Černé věže",
+"s": "Hotel",
+"o": "České Budějovice",
+"web": "https://www.ucerneveze.cz/",
+"w": "no",
+"la": 48.97659,
+"lo": 14.475646
+},
+{
+"i": "n8998485349",
+"n": "Apartman Galerie Marie",
+"s": "Apartmány",
+"o": "Český Krumlov",
+"a": "Horní 149",
+"w": "no",
+"la": 48.810621,
+"lo": 14.316715
+},
+{
+"i": "n7873812993",
+"n": "Apartmány Domestika",
+"s": "Apartmány",
+"o": "Český Krumlov",
+"a": "Soukenická 39",
+"web": "https://domestika.eu/",
+"w": "no",
+"la": 48.810989,
+"lo": 14.314025
+},
+{
+"i": "n7106731982",
+"n": "Barbakan",
+"s": "Penzion",
+"o": "Český Krumlov",
+"a": "Horní 26",
+"web": "https://pension-barbakan.hotel.cz/",
+"w": "yes",
+"la": 48.810435,
+"lo": 14.318547
+},
+{
+"i": "n7052898751",
+"n": "Bluegrass club",
+"s": "Penzion",
+"o": "Český Krumlov",
+"a": "Skalní 171",
+"w": "yes",
+"la": 48.805296,
+"lo": 14.311174
+},
+{
+"i": "w38507343",
+"n": "Hotel Krčínův dům",
+"s": "Hotel",
+"o": "Český Krumlov",
+"web": "https://www.hotely-krumlov.cz/hotely/hotel-krcinuv-dum",
+"w": "yes",
+"la": 48.810474,
+"lo": 14.31383
+},
+{
+"i": "w60575287",
+"n": "Hotel Latrán",
+"s": "Hotel",
+"o": "Český Krumlov",
+"a": "Latrán 75",
+"web": "https://www.hotely-krumlov.cz/",
+"w": "yes",
+"la": 48.813676,
+"lo": 14.316938
+},
+{
+"i": "w38506743",
+"n": "Hotel Mlýn",
+"s": "Hotel",
+"o": "Český Krumlov",
+"web": "https://www.hotelmlyn.eu/",
+"w": "yes",
+"la": 48.810884,
+"lo": 14.318065
+},
+{
+"i": "n12374633590",
+"n": "Hotel Peregrin",
+"s": "Hotel",
+"o": "Český Krumlov",
+"web": "https://www.hotelperegrin.cz",
+"w": "no",
+"la": 48.810804,
+"lo": 14.316135
+},
+{
+"i": "n6995631887",
+"n": "Kovarna",
+"s": "Apartmány",
+"o": "Český Krumlov",
+"a": "Horní 149",
+"w": "no",
+"la": 48.810715,
+"lo": 14.316714
+},
+{
+"i": "n13076695675",
+"n": "Leylaria",
+"s": "Hotel",
+"o": "Český Krumlov",
+"a": "Dlouhá 96",
+"web": "https://www.leylaria.cz",
+"w": "yes",
+"la": 48.811755,
+"lo": 14.314702
+},
+{
+"i": "n4401670490",
+"n": "Linden",
+"s": "Penzion",
+"o": "Český Krumlov",
+"a": "Kájovská 62",
+"web": "http://www.pensionubrany.cz/",
+"w": "no",
+"la": 48.809972,
+"lo": 14.314468
+},
+{
+"i": "n7123162299",
+"n": "Pension U Hamru",
+"s": "Penzion",
+"o": "Český Krumlov",
+"a": "Chvalšinská 210",
+"web": "https://www.penzionuhamru.cz/",
+"w": "yes",
+"la": 48.816909,
+"lo": 14.293784
+},
+{
+"i": "n470006708",
+"n": "Pension U Zámku",
+"s": "Penzion",
+"o": "Český Krumlov",
+"a": "Zámecké schody 9",
+"web": "http://www.pensionuzamku.cz",
+"w": "no",
+"la": 48.81221,
+"lo": 14.316485
+},
+{
+"i": "n8860610593",
+"n": "Penzion Cortés",
+"s": "Penzion",
+"o": "Český Krumlov",
+"a": "Masná 135",
+"w": "limited",
+"la": 48.811046,
+"lo": 14.315843
+},
+{
+"i": "n4401651497",
+"n": "Penzion U Náměstí",
+"s": "Penzion",
+"o": "Český Krumlov",
+"w": "no",
+"la": 48.809981,
+"lo": 14.315201
+},
+{
+"i": "w60575288",
+"n": "Wellness Pension Ametyst",
+"s": "Penzion",
+"o": "Český Krumlov",
+"a": "Latrán 81",
+"web": "https://www.pension-ametyst.cz/",
+"w": "no",
+"la": 48.813996,
+"lo": 14.317042
+},
+{
+"i": "n12596272003",
+"n": "Švamberský dům",
+"s": "Hotel",
+"o": "Český Krumlov",
+"a": "Soukenická 35",
+"web": "https://www.svamberskydum.cz/",
+"w": "no",
+"la": 48.810673,
+"lo": 14.314051
+},
+{
+"i": "n4196033560",
+"n": "Penzion Podskalí",
+"s": "Hotel",
+"o": "Štěkeň",
+"web": "https://podskali.proweb.cz/",
+"w": "no",
+"la": 49.266164,
+"lo": 14.002631
+},
+{
+"i": "n11516293878",
+"n": "Ubytování Ve věži a Na hradbách",
+"s": "Penzion",
+"o": "Žár",
+"web": "http://www.zumberk.cz/",
+"w": "no",
+"la": 48.795833,
+"lo": 14.681121
+}
+]

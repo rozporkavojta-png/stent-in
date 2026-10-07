@@ -1,0 +1,1499 @@
+{
+ "task": "web_obchody",
+ "kraj": "Česká republika (více krajů)",
+ "checked_date": "2026-10-06",
+ "places": [
+  {
+   "osm_id": "w250416859",
+   "name": "Westfield Černý Most",
+   "obec": "Praha",
+   "address": "Chlumecká 765/6, 198 19 Praha 9",
+   "lat": 50.108106,
+   "lng": 14.583684,
+   "category": "obchody",
+   "source_url": "https://www.westfield.com/cz/czech-republic/cernymost/sluzby/invalidni-parkovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "parkovani": "Vyhrazená místa pro tělesně postižené jsou rozmístěna u vstupů do centra z parkovacího domu, ze střešního i podzemního parkoviště (stránka uvádí „100% přístup bez bariér“).",
+    "wc": "Toalety jsou na třech místech v centru, vždy spolu s toaletami pro handicapované (zdroj: /cernymost/sluzby/toalety).",
+    "jine": "Zdarma zapůjčení invalidního vozíku na infostánku nebo v šatně (zdroj: /cernymost/sluzby/invalidni-voziky). Mapa centra nabízí volbu bezbariérové trasy."
+   },
+   "measurements": [],
+   "evidence_quote": "V rámci zajištění 100% přístupu bez bariér vám naše rozsáhlé parkoviště nabízí také speciální místa"
+  },
+  {
+   "osm_id": "w27043597",
+   "name": "Šestka",
+   "obec": "Praha",
+   "address": "Fajtlova 1090/1",
+   "lat": 50.093317,
+   "lng": 14.290969,
+   "category": "obchody",
+   "source_url": "https://www.oc-sestka.cz/bezbarierovy-pristup/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Vchody do centra jsou buď přímou cestou, nebo pomocí výtahu; podle stránky o parkování jsou všechny vstupy zcela bezbariérové. Hlavní vchod z ulice Fajtlova do přízemí, přímý vstup z krytého parkoviště do 1. patra.",
+    "vytah": "Výtahy ze střešního parkoviště s výstupem v 1. patře nebo v přízemí; mezi patry travelátory; toalety na mezipatře dostupné výtahem (zdroj: /vchody-a-vytahy, /toalety).",
+    "wc": "Toalety v 1. patře u food courtu a na mezipatře; oba prostory mají i toalety pro handicapované osoby (zdroj: /toalety).",
+    "parkovani": "Vyhrazená místa pro osoby se zdravotním postižením u hlavních vstupů, na střeše i v kryté garáži; široké parkovací boxy (zdroj: /parkovaci-mista-pro-invalidy).",
+    "jine": "Bezplatné zapůjčení invalidního vozíku u bezpečnostní služby, tel. +420 724 831 180 (zdroj: /zapujceni-invalidniho-voziku)."
+   },
+   "measurements": [],
+   "evidence_quote": "Vchody do našeho centra jsou buď přímou cestou nebo s použitím výtahu"
+  },
+  {
+   "osm_id": "w546134551",
+   "name": "Palladium",
+   "obec": "Praha",
+   "address": "náměstí Republiky 1",
+   "lat": 50.089461,
+   "lng": 14.429615,
+   "category": "obchody",
+   "source_url": "https://www.palladiumpraha.cz/toalety-patro-p2/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "wc": "Toalety jsou zpoplatněné, vozíčkáři mají vstup zdarma přes turniket na Euroklíč; legenda mapy uvádí „Toalety pro invalidy“ (stránky toalet patro -2 a +2).",
+    "vstup": "Legenda mapy centra uvádí „Vstup pro invalidy (zvonek na asistenci)“.",
+    "vytah": "Legenda mapy uvádí výtahy a rychlovýtah do parkování."
+   },
+   "measurements": [],
+   "evidence_quote": "vozíčkáři zdarma (přístup přes turniket na EURO klíč)"
+  },
+  {
+   "osm_id": "w669969917",
+   "name": "Géčko",
+   "obec": "Ostrava",
+   "address": "Spojovací 396, 725 27 Ostrava-Plesná",
+   "lat": 49.84895,
+   "lng": 18.145581,
+   "category": "obchody",
+   "source_url": "https://www.geckoostrava.cz/sluzby/bezbarierovy-pristup",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup do Géčka i do Globusu.",
+    "wc": "Komfortní toaleta pro vozíčkáře, kvůli vandalismu uzamčená na Euroklíč; kdo klíč nemá, může požádat ostrahu. Stránka Toalety uvádí bezbariérové WC."
+   },
+   "measurements": [],
+   "evidence_quote": "Samozřejmostí je bezbariérový přístup do Géčka i Globusu."
+  },
+  {
+   "osm_id": "w29239083",
+   "name": "Vaňkovka",
+   "obec": "Brno",
+   "address": "Ve Vaňkovce 1, 602 00 Brno",
+   "lat": 49.187831,
+   "lng": 16.614776,
+   "category": "obchody",
+   "source_url": "https://www.galerie-vankovka.cz/sluzby/pristupne-toalety-s22345/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "wc": "Centrum má bezbariérové toalety pro lidi s tělesným postižením, umístěné ve středové části (zdroj: /sluzby/pristupne-toalety-s22345/).",
+    "vytah": "Výtahy uvedeny mezi službami; po 22:00 je parkoviště přístupné venkovním výtahem z ulice Úzká (zdroj: /o-centru/navigace-a-parkovani/parkovani/).",
+    "parkovani": "Držitelé průkazů ZTP a ZTP/P parkují zdarma po předložení průkazu v kanceláři správy parkoviště."
+   },
+   "measurements": [],
+   "evidence_quote": "Vybavili jsme naše toalety bezbariérovými toaletami pro lidi s tělesným postižením."
+  },
+  {
+   "osm_id": "mbb5773504",
+   "name": "Vaňkovka",
+   "obec": "Brno",
+   "address": "Ve Vaňkovce 1, 602 00 Brno",
+   "lat": 49.18834,
+   "lng": 16.614549,
+   "category": "obchody",
+   "source_url": "https://www.galerie-vankovka.cz/sluzby/pristupne-toalety-s22345/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "wc": "Centrum má bezbariérové toalety pro lidi s tělesným postižením, umístěné ve středové části (zdroj: /sluzby/pristupne-toalety-s22345/).",
+    "vytah": "Výtahy uvedeny mezi službami; po 22:00 je parkoviště přístupné venkovním výtahem z ulice Úzká (zdroj: /o-centru/navigace-a-parkovani/parkovani/).",
+    "parkovani": "Držitelé průkazů ZTP a ZTP/P parkují zdarma po předložení průkazu v kanceláři správy parkoviště."
+   },
+   "measurements": [],
+   "evidence_quote": "Vybavili jsme naše toalety bezbariérovými toaletami pro lidi s tělesným postižením."
+  },
+  {
+   "osm_id": "w95799339",
+   "name": "BřecLove",
+   "obec": "Břeclav",
+   "address": "",
+   "lat": 48.75639,
+   "lng": 16.889684,
+   "category": "obchody",
+   "source_url": "https://www.breclove.cz/o-centru/parkovani-pristup/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Přístup do všech pater centra je bezbariérový.",
+    "vytah": "V centru jsou 3 osobní výtahy a eskalátory.",
+    "wc": "V přízemí je bezbariérové WC s Eurozámkem na Euroklíč (zdroj: i /o-centru/prakticke-sluzby/)."
+   },
+   "measurements": [
+    {
+     "co": "počet osobních výtahů",
+     "hodnota": 3,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Přístup do všech pater centra Břeclove je bezbariérový."
+  },
+  {
+   "osm_id": "mbb5773494",
+   "name": "E-pasáž",
+   "obec": "Brno",
+   "address": "Josefská 7",
+   "lat": 49.192683,
+   "lng": 16.612374,
+   "category": "obchody",
+   "source_url": "https://www.epasaz.cz",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že E-pasáž nabízí bezbariérový přístup (bez podrobností)."
+   },
+   "measurements": [],
+   "evidence_quote": "E-PASÁŽ rovněž nabízí bezbarierový přístup."
+  },
+  {
+   "osm_id": "n12628756269",
+   "name": "Optika Optim",
+   "obec": "Praha",
+   "address": "Náměstí Junkových 2870/4",
+   "lat": 50.046231,
+   "lng": 14.304203,
+   "category": "obchody",
+   "source_url": "https://optikaoptim.cz/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí, že prodejna je bezbariérová (bez podrobností)."
+   },
+   "measurements": [],
+   "evidence_quote": "Naše prodejna je bezbariérová"
+  },
+  {
+   "osm_id": "n8355558331",
+   "name": "Florence",
+   "obec": "Praha",
+   "address": "",
+   "lat": 50.025554,
+   "lng": 14.515294,
+   "category": "obchody",
+   "source_url": "https://www.zpflorence.cz/kontakty/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Web uvádí bezbariérový přístup až do prodejny; prodejna je v přízemí supermarketu Billa vedle polikliniky Opatovská.",
+    "parkovani": "Lze využít venkovní parkoviště supermarketu; při vyšší imobilitě lze zaparkovat z Opatovské ulice na chodníku přímo před prodejnou."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup až do prodejny!!!"
+  },
+  {
+   "osm_id": "n296721691",
+   "name": "Pekařství a cukrářství Sázava",
+   "obec": "Hradec Králové",
+   "address": "Třída Karla IV. 522/19, 500 02 Hradec Králové",
+   "lat": 50.213262,
+   "lng": 15.822989,
+   "category": "obchody",
+   "source_url": "https://pekarstvisazava.cz/prodejny/hradec-kralove-ii/",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Stránka prodejny Hradec Králové II (Třída Karla IV. 522/19) uvádí ve vybavenosti „Bezbariérový přístup“; prodejna má 40 míst k sezení. Přiřazení podle shody souřadnic OSM s adresou (Nominatim)."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "osm_id": "n2274279716",
+   "name": "BARVY A LAKY DROGERIE",
+   "obec": "Rousínov",
+   "address": "Sušilovo náměstí 4/11, Rousínov",
+   "lat": 49.203651,
+   "lng": 16.881145,
+   "category": "obchody",
+   "source_url": "https://www.bal.cz/prodejny/rousinov",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Detail prodejny BAL Rousínov uvádí „Bezbariérový přístup“ (bez podrobností). Odkaz balshop.cz přesměrovává na bal.cz."
+   },
+   "measurements": [],
+   "evidence_quote": "Bezbariérový přístup"
+  },
+  {
+   "osm_id": "w1050400363",
+   "name": "OC Spektrum",
+   "obec": "Čestlice",
+   "address": "Obchodní 329",
+   "lat": 50.004925,
+   "lng": 14.57214,
+   "category": "obchody",
+   "source_url": "https://www.ocspektrum.cz/parkovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "parkovani": "Venkovní parkoviště se 136 místy zdarma; mezi službami parkoviště uvedena vyhrazená místa pro invalidy."
+   },
+   "measurements": [
+    {
+     "co": "venkovní parkovací místa celkem",
+     "hodnota": 136,
+     "jednotka": "ks"
+    }
+   ],
+   "evidence_quote": "Vyhrazená místa pro invalidy"
+  },
+  {
+   "osm_id": "w31925615",
+   "name": "City Park",
+   "obec": "Jihlava",
+   "address": "",
+   "lat": 49.392491,
+   "lng": 15.593651,
+   "category": "obchody",
+   "source_url": "https://www.citypark.cz/parkovani",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "unknown",
+   "accessibility": {
+    "parkovani": "Strukturovaná data stránky Parkování (schema.org) uvádějí vyhrazená místa pro invalidy; ve viditelném textu stránky se to nepodařilo ověřit."
+   },
+   "measurements": [],
+   "evidence_quote": "Vyhrazená místa pro invalidy"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n8441226727",
+   "name": "Roscher",
+   "url": "https://baeckerei-roscher.de",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n8840233033",
+   "name": "Bäckerei & Konditorei Helm",
+   "url": "https://www.baeckereihelm.de",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w92498712",
+   "name": "Edeka",
+   "url": "https://www.edeka.de/eh/nordbayern-sachsen-th%C3%BCringen/edeka-f%C3%A4rber-am-schulplatz-5",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n3123687810",
+   "name": "Rossmann",
+   "url": "https://www.rossmann.de",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n1757572629",
+   "name": "Landbäckerei Schmidt",
+   "url": "https://www.landbaeckerei-schmidt.de",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w125158772",
+   "name": "Netto Marken-Discount",
+   "url": "https://www.netto-online.de/filialen/Sebnitz/Dr-Steudner-Str-82/4940/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n989045390",
+   "name": "Bakeshop",
+   "url": "https://www.bakeshop.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n280948702",
+   "name": "Billa",
+   "url": "https://www.ncfenix.cz/billa",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n3820906477",
+   "name": "Billa",
+   "url": "https://www.billa-prodejny.cz/billa-praha-dolni-chabry-k-dablicum-1171-1",
+   "reason": "web třetí strany; lokátor billa.cz u prodejny Dolní Chabry neuvádí příznak „Přístupné pro vozíčkáře“"
+  },
+  {
+   "osm_id": "n5006779608",
+   "name": "Biodomov",
+   "url": "https://biodomov.cz/",
+   "reason": "web zmiňuje bezbariérový přístup jen u dřívější prodejny v OC Krakov (Troja), ne u současné"
+  },
+  {
+   "osm_id": "n13960116764",
+   "name": "Biodomov",
+   "url": "https://biodomov.cz/",
+   "reason": "web zmiňuje bezbariérový přístup jen u dřívější prodejny v OC Krakov (Troja), ne u současné"
+  },
+  {
+   "osm_id": "w179164004",
+   "name": "Bílá labuť",
+   "url": "https://www.bilalabut.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n10974220104",
+   "name": "Defidu Croissanterie",
+   "url": "https://www.defiducakes.com/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n282972129",
+   "name": "Desirred",
+   "url": "https://www.desirred.com/cs/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w651217543",
+   "name": "Eiffel Optic",
+   "url": "https://www.eiffeloptic.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n6192398037",
+   "name": "Eliška",
+   "url": "www.zpeliska.cz",
+   "reason": "web prodává pomůcky pro vozíčkáře, o přístupnosti prodejny nic neuvádí"
+  },
+  {
+   "osm_id": "n12053169643",
+   "name": "Fielmann",
+   "url": "https://www.fielmann.cz/pobocky/praha-5/150-00-plzenska-344-1/",
+   "reason": "web má jen prohlášení o přístupnosti webu (WCAG), ne o prodejně"
+  },
+  {
+   "osm_id": "w31359789",
+   "name": "Galerie Butovice",
+   "url": "https://www.galerie-butovice.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w651236955",
+   "name": "GrandOptical",
+   "url": "https://www.grandoptical.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n296707460",
+   "name": "Hana Trading",
+   "url": "https://susi.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n3772866059",
+   "name": "Hello",
+   "url": "https://www.mrbaker.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n6680321885",
+   "name": "Hello!",
+   "url": "https://pekarstvi-hello.cz/hello/",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n4680259404",
+   "name": "Ječmínek",
+   "url": "http://pekarstvijecminek.cz/",
+   "reason": "web nedostupný (HTTP Error 403: Forbidden)"
+  },
+  {
+   "osm_id": "r5140624",
+   "name": "Kotva",
+   "url": "https://www.od-kotva.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w89980559",
+   "name": "Lidl",
+   "url": "https://lidl.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w4019771",
+   "name": "Metropole Zličín",
+   "url": "https://www.westfield.com/",
+   "reason": "odkaz vede na obecný web westfield.com, ne na Metropole Zličín"
+  },
+  {
+   "osm_id": "n4790675022",
+   "name": "Minit",
+   "url": "https://www.tomsburger.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n6263881347",
+   "name": "Moravec",
+   "url": "http://www.pekarstvimoravec.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n6289156385",
+   "name": "Obchodní centrum Velká Ohrada",
+   "url": "https://www.centrumvelkaohrada.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n8834955372",
+   "name": "Oko oční optika",
+   "url": "https://www.optika-oko.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4845878609",
+   "name": "OpticLab",
+   "url": "https://opticlab.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n575682702",
+   "name": "Optika Cvikr",
+   "url": "https://www.cvikr.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n1131682901",
+   "name": "Optika Radlická",
+   "url": "https://www.optikaradlicka.cz/cs/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n13435950413",
+   "name": "Optiscont",
+   "url": "https://www.optiscont.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4147050132",
+   "name": "Oáza",
+   "url": "https://www.optikaoaza.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n2026305031",
+   "name": "Paul",
+   "url": "https://www.paul-cz.com/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n12053113534",
+   "name": "Paul",
+   "url": "https://www.paul-cz.com/obchody/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n6879102393",
+   "name": "Pec nám spadla",
+   "url": "https://www.pekarnapecnamspadla.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4590640689",
+   "name": "Pekařství v Dušní",
+   "url": "https://www.jipek.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w1036898872",
+   "name": "Pekárna Daspek",
+   "url": "https://www.daspek.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n3669604660",
+   "name": "Pekárna Kabát",
+   "url": "https://www.pekarnakabat.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n5364247592",
+   "name": "Pekárna Kabát",
+   "url": "https://www.pekarnakabat.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w915770536",
+   "name": "Pekárna a cukrárna Hořovice",
+   "url": "https://www.pekarnahorovice.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4472049019",
+   "name": "Polámaný mraveneček",
+   "url": "http://www.zdravotnicke-potreby-a-pomucky.cz/",
+   "reason": "web prodává pomůcky pro vozíčkáře, o přístupnosti prodejny nic neuvádí"
+  },
+  {
+   "osm_id": "n332224322",
+   "name": "Potraviny Dejvice",
+   "url": "https://www.esomarket.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n296608179",
+   "name": "Potten & Pannen",
+   "url": "https://www.popasta.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w651217563",
+   "name": "Profimed",
+   "url": "https://www.profimed.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n130238891",
+   "name": "Tesco",
+   "url": "http://www.iresco.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n1254092420",
+   "name": "Thuasne",
+   "url": "https://www.thuasne.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n5019780521",
+   "name": "Tradiční staropražské",
+   "url": "http://facebook.com/trdlocom",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n13026355721",
+   "name": "U Vafle",
+   "url": "https://www.uwafle.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n12012559119",
+   "name": "Zrnko zrnko",
+   "url": "https://www.zrnozrnko.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n13043838285",
+   "name": "Zrno Zrnko",
+   "url": "https://www.zrnozrnko.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n9822395949",
+   "name": "Matějovo pekařství",
+   "url": "https://www.matejovopekarstvi.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n3389141163",
+   "name": "Alensa",
+   "url": "https://www.alensa.cz/optika-alensa-brno.html",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "mbb5773479",
+   "name": "Alfa pasáž",
+   "url": "www.alfapassage.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4845789504",
+   "name": "Bílovická pekárna",
+   "url": "https://www.bilovickapekarna.cz/",
+   "reason": "web nedostupný (<urlopen error timed out>)"
+  },
+  {
+   "osm_id": "n3389764129",
+   "name": "CM Optik",
+   "url": "https://www.cmoptik.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n1219767803",
+   "name": "Crocus",
+   "url": "https://crocus.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n10548440992",
+   "name": "FOX OPTIK",
+   "url": "https://www.foxoptik.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n3649995000",
+   "name": "Fokus optik",
+   "url": "https://fokusoptik.cz/pobocky/brno-mesto-masarykova",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w28677536",
+   "name": "Futurum",
+   "url": "https://www.futurumbrno.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n11981150012",
+   "name": "GrandOptical",
+   "url": "https://www.grandoptical.cz/cs/prodejny/brno-kralovo-pole-6",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w1354892689",
+   "name": "GrandOptical",
+   "url": "https://www.grandoptical.cz/cs/prodejny/brno-campus-square-28",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w1093310829",
+   "name": "JIP Svět potravin",
+   "url": "http://www2.jip-potraviny.cz/brno/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "brno312",
+   "name": "Jalta pasáž",
+   "url": "https://www.palacjalta.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n4512324458",
+   "name": "Letinamo",
+   "url": "https://www.lentiamo.cz/optika-radnicka-brno.html",
+   "reason": "web má jen prohlášení o přístupnosti webu, ne o prodejně"
+  },
+  {
+   "osm_id": "w50315430",
+   "name": "Letmo",
+   "url": "www.ocletmo.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n9085930394",
+   "name": "Lidl",
+   "url": "https://lidl.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n10726715616",
+   "name": "Madel",
+   "url": "https://www.drogerie.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w85134437",
+   "name": "Manukyan",
+   "url": "https://pecivomanukyan.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n5264264786",
+   "name": "Matějovo pekařství",
+   "url": "https://www.matejovopekarstvi.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n7139181556",
+   "name": "Matějovo pekařství",
+   "url": "https://matejovopekarstvi.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n1597529428",
+   "name": "Minimarket",
+   "url": "http://www.brnenka.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4743342521",
+   "name": "Novotný Petr",
+   "url": "https://www.optika-novotny.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "mbb5773461",
+   "name": "Obchodní dům Vágner",
+   "url": "www.vagner.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "mbb5773441",
+   "name": "Obchodní galerie Orlí",
+   "url": "www.galerieorli.cz",
+   "reason": "web nedostupný (<urlopen error [WinError 10061] Nemohlo být vytvořeno žádné )"
+  },
+  {
+   "osm_id": "w49999799",
+   "name": "Omega",
+   "url": "www.viktoria.cz/cs/oc-omega",
+   "reason": "web nedostupný (HTTP Error 410: Gone)"
+  },
+  {
+   "osm_id": "n4233315294",
+   "name": "Optik Visuel",
+   "url": "https://optikvisuel.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4935097384",
+   "name": "Optik centrum Ždánský",
+   "url": "https://www.optika-zdansky.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n3449491870",
+   "name": "Optika Hanky Kroumanové",
+   "url": "https://www.optikavbrne.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n12075901318",
+   "name": "Optika Kocandová",
+   "url": "https://www.optikakocandova.cz/kontakt/brno-ivanovice-globus/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n846953819",
+   "name": "Oční optika Oftalmed",
+   "url": "https://oftalmed-optika.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n2816542294",
+   "name": "Potraviny.cz",
+   "url": "https://potravinycz.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n3160097463",
+   "name": "Rico",
+   "url": "http://www.ricobakery.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n7643129115",
+   "name": "Shin K-Food",
+   "url": "https://shin-k-food.business.site/",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n8652454614",
+   "name": "Svět bez lepku",
+   "url": "https://www.svetbezlepku.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n1675806654",
+   "name": "Tesco",
+   "url": "https://www.itesco.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "mbb5773495",
+   "name": "Tesco",
+   "url": "www.itesco.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n6738366203",
+   "name": "Variatec",
+   "url": "http://variatec.sweb.cz/",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n3462490860",
+   "name": "William Thomas Artisan Bakery",
+   "url": "https://www.wtbakery.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n7847668115",
+   "name": "William Thomas Artisan Bakery",
+   "url": "https://www.wtbakery.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n2866051090",
+   "name": "Zdravotnické potřeby U Sv. Jakuba",
+   "url": "https://eshop.sansimon.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "mbb5773358",
+   "name": "obchodní dům Centrum",
+   "url": "http://www.viktoria.cz/cs/od-centrum",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "mbb5773439",
+   "name": "obchodní pasáž Rozkvět",
+   "url": "www.pasazrozkvet.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n10225588546",
+   "name": "Štrúdlárna",
+   "url": "https://www.strudlarnabrno.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n2916510939",
+   "name": "Žabka",
+   "url": "https://www.izabka.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n7848827185",
+   "name": "Karlova pekárna",
+   "url": "https://www.karlova-pekarna.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4876531223",
+   "name": "Bílovická pekárna",
+   "url": "https://www.bilovickapekarna.cz/",
+   "reason": "web nedostupný (<urlopen error timed out>)"
+  },
+  {
+   "osm_id": "n2268065553",
+   "name": "Coop",
+   "url": "https://jednota-hodonin.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n5819374890",
+   "name": "TOP drogerie",
+   "url": "https://www.topdrogerie.cz/prodejny#/branch/detail/40408493-6",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n8222779947",
+   "name": "Coop",
+   "url": "https://jednota-hodonin.cz/prodejny/462",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4579420419",
+   "name": "Potraviny Hruška",
+   "url": "https://www.mohruska.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n2272622273",
+   "name": "Antonín Halouzka",
+   "url": "http://www.pekarna-halouzka.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n9910817403",
+   "name": "COOP JEDNOTA Prodejna Skalice",
+   "url": "https://www.jednotamk.cz/index.php?pg=nase-prodejny-1&cid=119",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n11103902843",
+   "name": "COOP Jednota Moravský Krumlov",
+   "url": "https://www.jednotamk.cz/index.php?pg=nase-prodejny-1&cid=139",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n6657407600",
+   "name": "Pekařství Pešák",
+   "url": "http://pekarstvipesak.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n8553732295",
+   "name": "Pekařství Pláteníková",
+   "url": "https://pekarstviplatenikova.cz/",
+   "reason": "web nedostupný (HTTP Error 500: Internal Server Error)"
+  },
+  {
+   "osm_id": "n443099826",
+   "name": "COOP Jednota",
+   "url": "https://www.jednota-hodonin.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n2784498084",
+   "name": "Coop",
+   "url": "https://jednota-hodonin.cz/prodejny/134",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n1802527295",
+   "name": "Potraviny Hruška",
+   "url": "http://www.mohruska.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n7884872525",
+   "name": "Hruška",
+   "url": "https://mojehruska.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n12677116472",
+   "name": "Hruška",
+   "url": "https://mojehruska.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w99500748",
+   "name": "Flop",
+   "url": "https://pramencz.cz/prodejny/detail/1056133421-pramen-cz-501-zdanice#",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w123562589",
+   "name": "Coop",
+   "url": "https://www.jednotakaplice.cz/prodejna/lipno-nad-vltavou-2/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w29977350",
+   "name": "Albert",
+   "url": "https://albert.cz/nase-prodejny/hypermarket-pisek",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n9918622590",
+   "name": "Alensa",
+   "url": "https://alensa.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4434498789",
+   "name": "Coop Terno",
+   "url": "https://www.terno.cz/terno-ceske-budejovice/?supermarket=ceske-budejovice",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n2485151118",
+   "name": "Doctor Optic",
+   "url": "https://doctoroptic.cz",
+   "reason": "lokátor doctoroptic.cz u pobočky České Budějovice (Lannova 20) neuvádí „Bezbariérový přístup“"
+  },
+  {
+   "osm_id": "n4365267016",
+   "name": "DéKáčko",
+   "url": "https://dkopen.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n7947391178",
+   "name": "DéKáčko",
+   "url": "https://dkopen.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w52087746",
+   "name": "OD Prior",
+   "url": "https://www.prior.cz/prodejny/prior-ceske-budejovice/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n9885035707",
+   "name": "Pries",
+   "url": "https://optikapries.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "n849464532",
+   "name": "Coop Terno",
+   "url": "https://www.terno.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4393118055",
+   "name": "Coop Tip",
+   "url": "https://www.jednotakaplice.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w232707306",
+   "name": "Pekařství Nodes",
+   "url": "http://www.nodesck.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n11449600701",
+   "name": "Pods Pure",
+   "url": "https://www.podspure.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n1122690293",
+   "name": "Albert",
+   "url": "http://dragouncheb.cz/cs/albert/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w97173591",
+   "name": "Norma",
+   "url": "https://www.norma-online.de/cz/index_cz.html",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n11912960469",
+   "name": "Pekařství Pod Věží",
+   "url": "https://www.pekarstvipodvezi.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n1165510484",
+   "name": "Supermarket Kubík",
+   "url": "https://www.kubik.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n673535427",
+   "name": "Coop",
+   "url": "https://www.konzumuo.cz",
+   "reason": "web nedostupný (<urlopen error timed out>)"
+  },
+  {
+   "osm_id": "n13344600343",
+   "name": "Doktor Klain",
+   "url": "https://www.doktorklain.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n1071385385",
+   "name": "Pekařství a cukrářství u Bláhů",
+   "url": "https://www.jidloliberec.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w253105641",
+   "name": "TUTY Dolní Lhota",
+   "url": "http://www.skupina.coop/cz/Prodejny/Moravskoslezsky/60-TEMPO-obchodni-druzstvo/2500-TUTY-Dolni-Lhota",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n3491615126",
+   "name": "Boček",
+   "url": "http://www.pekarbocek.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n3770258413",
+   "name": "Boček",
+   "url": "http://www.pekarbocek.cz/tesco.html",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "w91711180",
+   "name": "Prior",
+   "url": "https://www.prior.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w460328209",
+   "name": "OC ROTUNDA",
+   "url": "https://www.ocrotunda.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w436236846",
+   "name": "Tesco",
+   "url": "https://www.itesco.cz/prodejny/kop%C5%99ivnice/n%C3%A1dra%C5%BEn%C3%AD-228/2",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w35206642",
+   "name": "Bistro 56",
+   "url": "https://www.pekariaspol.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w98290906",
+   "name": "Forum Nová Karolina",
+   "url": "https://www.forumnovakarolina.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n6812233587",
+   "name": "minit",
+   "url": "https://www.minitbakery.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n13650594683",
+   "name": "Ferda - cukrářská výroba",
+   "url": "https://ferdacukrarskavyroba.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n5873242505",
+   "name": "Pekárna M&K",
+   "url": "http://www.svatebnikolace.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n5740966751",
+   "name": "Svoboda a Březík - Pečivo",
+   "url": "www.svobodabrezik.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4111818427",
+   "name": "Coop",
+   "url": "http://coopkonzum.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w185938976",
+   "name": "Galerie Šantovka",
+   "url": "https://www.galeriesantovka.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n13011808492",
+   "name": "Obchodní Dům Pavelčákova",
+   "url": "http://www.odpavelcakova.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w78778032",
+   "name": "Lidl",
+   "url": "https://lidl.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w216549535",
+   "name": "Penny Hlinsko",
+   "url": "https://penny.cz",
+   "reason": "lokátor prodejen penny.cz u prodejny Hlinsko (Poličská 1625) neuvádí příznak bezbariérovosti"
+  },
+  {
+   "osm_id": "n11737705136",
+   "name": "Coop Tuty",
+   "url": "https://www.jednotapce.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n12199311112",
+   "name": "Doctor optic",
+   "url": "https://doctoroptic.cz/ocni-optika/optik-pardubice-trida-miru-69/",
+   "reason": "lokátor doctoroptic.cz u pobočky Třída Míru 69 neuvádí „Bezbariérový přístup“"
+  },
+  {
+   "osm_id": "n12091707468",
+   "name": "Dr. Klain",
+   "url": "https://www.doktorklain.cz/pobocky/pardubice/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4201004690",
+   "name": "Hradecká pekárna",
+   "url": "https://www.hradeckapekarna.cz/prodejna/prodejna-trida-miru",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n12182566764",
+   "name": "Trdelníkárna",
+   "url": "https://trdelnikarna.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n11983722902",
+   "name": "Quanto market",
+   "url": "https://www.quanto.cz",
+   "reason": "web nedostupný (<urlopen error timed out>)"
+  },
+  {
+   "osm_id": "n12092827804",
+   "name": "Oční optika Mencák",
+   "url": "https://optika-mencak.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n5038517315",
+   "name": "Pekařství Jílek",
+   "url": "https://www.pekarstvijilek.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n12600141149",
+   "name": "Dobřanské pekařství",
+   "url": "https://dobrpek.cz/prodejna-chotesov/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n12107773629",
+   "name": "Elektro Němec-Němcová",
+   "url": "https://www.elektro-nemcova.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w109352366",
+   "name": "Albert",
+   "url": "https://albert.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n13410179275",
+   "name": "Coop",
+   "url": "http://www.coopplzen.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w110350278",
+   "name": "Coop Tuty",
+   "url": "https://www.coopplasy.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4312766690",
+   "name": "Flop Top",
+   "url": "https://www.flop-potraviny.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n7791481442",
+   "name": "Fokus optik",
+   "url": "https://fokusoptik.cz/pobocky/plzen-generala_piky",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n5469400190",
+   "name": "Malinová",
+   "url": "https://www.malinova.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n13289873777",
+   "name": "Mix Markt",
+   "url": "https://www.mixmarkt.eu/cs/czech",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n296658511",
+   "name": "Norma",
+   "url": "https://www.norma-online.de/cz/angebote/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4312799393",
+   "name": "Norma",
+   "url": "https://www.norma-online.de/cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w1461498858",
+   "name": "OC Úslava",
+   "url": "https://www.intercora.cz/objekt/581",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w1461498859",
+   "name": "OC Úslava",
+   "url": "https://www.intercora.cz/objekt/581",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w1461892900",
+   "name": "OC Úslava",
+   "url": "https://www.intercora.cz/objekt/581",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n13423802713",
+   "name": "Pekařství Kučera",
+   "url": "https://www.pekarstvikucera.cz/?utm_source=mapy.com&utm_medium=ppd&utm_campaign=firmy.cz-2628129",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n2175272535",
+   "name": "Pekařství N & E",
+   "url": "http://www.lahudky-pekarstvi.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n7532994682",
+   "name": "Potraviny Skrétova",
+   "url": "https://www.mujobchod.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n12553312455",
+   "name": "dioptra optik",
+   "url": "https://www.dioptraoptik.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4377793155",
+   "name": "Coop",
+   "url": "https://www.coophorovice.cz/rokycany-masarykovo-namesti/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n2444388937",
+   "name": "Oční optika Zdeněk Trnka",
+   "url": "http://www.optik-trnka.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n570590545",
+   "name": "Coop",
+   "url": "https://www.zkdsusice.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n5909724426",
+   "name": "Fajtova drogerie",
+   "url": "http://www.fajtovadrogerie.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w38330319",
+   "name": "NC Oaza Kladno",
+   "url": "https://www.oazakladno.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n9328300764",
+   "name": "Krušovická pekárna a cukrárna",
+   "url": "https://www.krusovickapekarna.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n3327980304",
+   "name": "Merhautovo pekařství",
+   "url": "https://merhautovo.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n3736911464",
+   "name": "PotravinyCZ \"U výstaviště\"",
+   "url": "http://www.potravinycz.cz/pogrr.php?cat=186",
+   "reason": "web nedostupný (HTTP Error 403: Access Forbidden)"
+  },
+  {
+   "osm_id": "n880343820",
+   "name": "Potraviny FLOP TOP Mnichovice",
+   "url": "https://www.flop-potraviny.cz/sit-prodejen/prodejna/potraviny-flop-top-mnichovice/",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "w263660832",
+   "name": "Billa",
+   "url": "https://billa.cz/",
+   "reason": "lokátor billa.cz u prodejny Vlašim (Vlasákova 1830) neuvádí příznak „Přístupné pro vozíčkáře“"
+  },
+  {
+   "osm_id": "n14092336581",
+   "name": "Flop Top",
+   "url": "https://www.flop-potraviny.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n6452780605",
+   "name": "Dobrotárna",
+   "url": "https://www.dobrotarna.cz",
+   "reason": "web nedostupný (<urlopen error [Errno 11001] getaddrinfo failed>)"
+  },
+  {
+   "osm_id": "w51556361",
+   "name": "OC Čestlice",
+   "url": "https://www.occestlice.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n8846308072",
+   "name": "Adélka",
+   "url": "https://www.adelka.cz/cz/prodejny/humpolec-515-5-kvetna%20306",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n12058917774",
+   "name": "Adélka",
+   "url": "https://www.adelka.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w91722952",
+   "name": "Coop Tip",
+   "url": "https://www.coophb.cz/prodejny/?typ=filialka&a=801",
+   "reason": "web nedostupný (The read operation timed out)"
+  },
+  {
+   "osm_id": "n11055421667",
+   "name": "Coop",
+   "url": "http://www.sdkamenice.cz",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n5996144871",
+   "name": "Coop Jednota",
+   "url": "https://www.jednotazlin.cz/jasenna",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n997984515",
+   "name": "Rojal",
+   "url": "https://www.rojal.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w34336479",
+   "name": "Centro Zlín",
+   "url": "https://www.centrozlin.cz/",
+   "reason": "web má jen prohlášení o přístupnosti webu, ne o centru"
+  },
+  {
+   "osm_id": "w34336478",
+   "name": "OC Centro Zlín",
+   "url": "https://www.centrozlin.cz/",
+   "reason": "web má jen prohlášení o přístupnosti webu, ne o centru"
+  },
+  {
+   "osm_id": "n2414186588",
+   "name": "Coop",
+   "url": "https://www.coophb.cz/prodejny/?typ=filialka&a=734",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "n4637781784",
+   "name": "U Onďase",
+   "url": "http://www.uondase.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  },
+  {
+   "osm_id": "w183017154",
+   "name": "Albert",
+   "url": "https://www.olympiateplice.cz/cs/obchody/detail/albert-hypermarket-11021",
+   "reason": "web nedostupný (HTTP Error 404: Not Found)"
+  },
+  {
+   "osm_id": "n1933446471",
+   "name": "Oko Optik",
+   "url": "https://www.oko-optik.cz/",
+   "reason": "web nic o přístupnosti neuvádí (úvodní stránka + podstránky)"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Weby provozovatelů obchodů a obchodních center (pole web ve vstupu inputs2/obchody.json)",
+   "url": "",
+   "note": "Prohledáno skriptem: úvodní stránka + podstránky (kontakt, služby, parkování, přístup); klíčová slova bezbariér, vozík, ZTP, výtah, rampa, schod aj."
+  },
+  {
+   "title": "Nominatim (OpenStreetMap)",
+   "url": "https://nominatim.openstreetmap.org/",
+   "note": "Jen pro přiřazení OSM bodu Pekařství Sázava k prodejně Hradec Králové II podle adresy."
+  }
+ ]
+}

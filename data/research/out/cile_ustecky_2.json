@@ -1,0 +1,155 @@
+{
+ "task": "cile_ustecky_2",
+ "kraj": "Ústecký kraj",
+ "checked_date": "2026-10-05",
+ "places": [
+  {
+   "osm_id": "n2364427693",
+   "name": "Cinema City",
+   "obec": "Ústí nad Labem",
+   "address": "Bílinská 3490/6",
+   "lat": 50.65876,
+   "lng": 14.038461,
+   "category": "kultura",
+   "source_url": "https://www.cinemacity.cz/cinemas/ustinadlabem",
+   "source_type": "web provozovatele",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Provozovatel v sekci Dostupnost uvádí bezbariérový přístup do kina.",
+    "parkovani": "Uveden bezbariérový parkovací prostor; kino je v OC Forum, parkování v rámci centra (podzemní parkoviště zavírá ve 22:00, parkoviště ve 3. a 4. patře nonstop).",
+    "jine": "Povolen vstup s asistenčním psem."
+   },
+   "evidence_quote": "Dostupnost Bezbariérový přístup Bezbariérové parkoviště"
+  },
+  {
+   "osm_id": "n2308591151",
+   "name": "Kino Květen",
+   "obec": "Teplice",
+   "address": "Mírové nám. 2950, 415 01 Teplice",
+   "lat": 50.639821,
+   "lng": 13.826053,
+   "category": "kultura",
+   "source_url": "https://www.teplice.cz/kino-kveten",
+   "source_type": "web města (provozovatel)",
+   "wheelchair_claim": "yes",
+   "accessibility": {
+    "vstup": "Město Teplice u kina uvádí, že je zajištěn bezbariérový přístup.",
+    "wc": "Uvedeno bezplatné WC, bez upřesnění, zda je bezbariérové."
+   },
+   "evidence_quote": "Zajištěn je i bezbariérový přístup."
+  },
+  {
+   "osm_id": "n1031812017",
+   "name": "rozhl. Vlčí hora",
+   "obec": "Krásná Lípa",
+   "lat": 50.939676,
+   "lng": 14.465437,
+   "category": "turisticke_cile",
+   "source_url": "https://www.ceskesvycarsko.cz/?zazitky=vlci-hora-rozhledna",
+   "source_type": "turistický portál destinace",
+   "wheelchair_claim": "no",
+   "accessibility": {
+    "vstup": "Zděná rozhledna; na vyhlídkovou plošinu vede 82 schodů, bez zmínky o výtahu.",
+    "jine": "Sezení jen u stolů s lavičkami na malé plošině před rozhlednou; sousední chata je soukromá."
+   },
+   "measurements": [
+    {
+     "co": "počet schodů na vyhlídku",
+     "hodnota": 82,
+     "jednotka": "schodů"
+    },
+    {
+     "co": "výška rozhledny",
+     "hodnota": 16,
+     "jednotka": "m"
+    }
+   ],
+   "evidence_quote": "Zděná rozhledna ... s 82 schody"
+  }
+ ],
+ "not_found": [
+  {
+   "osm_id": "n1289293691",
+   "name": "Činoherní studio",
+   "url": "https://cinoherak.cz/vstupenky/info/",
+   "reason": "stránky info, návštěvní řád a kontakt bez zmínky o přístupnosti"
+  },
+  {
+   "osm_id": "n2314526524",
+   "name": "Městská knihovna Děčín",
+   "url": "https://www.dcknihovna.cz/",
+   "reason": "web (kontakty, služby, historie, pro seniory) o přístupnosti budovy nic; jen sleva pro ZTP"
+  },
+  {
+   "osm_id": "n1445498933",
+   "name": "Regionální knihovna Teplice - Šanov",
+   "url": "https://www.knihovna-teplice.cz/pobocky/pobocka-sanov",
+   "reason": "stránka pobočky Šanov (v areálu ZŠ) o přístupnosti nic; výtah je zmíněn jen u hlavní budovy Lípová 13"
+  },
+  {
+   "osm_id": "n508818990",
+   "name": "Šaunštejn",
+   "url": "https://www.ceskesvycarsko.cz/?zazitky=saunstejn",
+   "reason": "o přístupnosti nic"
+  },
+  {
+   "osm_id": "n807144851",
+   "name": "Stoličná hora",
+   "url": "https://www.ceskesvycarsko.cz/?zazitky=kvadrberk-stolicna-hora",
+   "reason": "o přístupnosti nic"
+  },
+  {
+   "osm_id": "n13710779926",
+   "name": "Galerie marionet",
+   "reason": "oficiální web se nepodařilo dohledat (vyhledávání nedostupné)"
+  },
+  {
+   "osm_id": "n5440472946",
+   "name": "Muzeum civilní obrany",
+   "reason": "oficiální web se nepodařilo dohledat"
+  },
+  {
+   "osm_id": "w92142614",
+   "name": "Kamenná Hláska",
+   "url": "https://www.roudnicenl.cz/",
+   "reason": "web města blokuje automatické dotazy (HTTP 466), nepodařilo se ověřit"
+  },
+  {
+   "osm_id": "n2702513393",
+   "name": "Galerie ústeckého kraje",
+   "reason": "oficiální web se nepodařilo dohledat"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Cinema City Ústí nad Labem",
+   "url": "https://www.cinemacity.cz/cinemas/ustinadlabem",
+   "note": "sekce Dostupnost"
+  },
+  {
+   "title": "Teplice.cz – Kino Květen",
+   "url": "https://www.teplice.cz/kino-kveten",
+   "note": ""
+  },
+  {
+   "title": "České Švýcarsko – Rozhledna Vlčí hora",
+   "url": "https://www.ceskesvycarsko.cz/?zazitky=vlci-hora-rozhledna",
+   "note": ""
+  },
+  {
+   "title": "Regionální knihovna Teplice – Pobočka Šanov",
+   "url": "https://www.knihovna-teplice.cz/pobocky/pobocka-sanov",
+   "note": ""
+  },
+  {
+   "title": "Městská knihovna Děčín",
+   "url": "https://www.dcknihovna.cz/",
+   "note": ""
+  },
+  {
+   "title": "Činoherní studio – info",
+   "url": "https://cinoherak.cz/vstupenky/info/",
+   "note": ""
+  }
+ ]
+}

@@ -1,0 +1,431 @@
+{
+ "checked_date": "2026-10-05",
+ "zdroj": "data/research/out/obce_*.json",
+ "kraje": {
+  "Hlavní město Praha": {
+   "plan": [
+    {
+     "t": "Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením v hl. m. Praze do roku 2030",
+     "u": "https://praha.eu/w/krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim-v-hl-m-praze-do-roku-2030"
+    }
+   ],
+   "atlasy": [
+    {
+     "t": "Mapa přístupnosti (IPR Praha / MHMP)",
+     "u": "https://app.iprpraha.cz/apl/app/bezbariery/"
+    },
+    {
+     "t": "Atlas přístupnosti Praha 1 (bezbarierova1.cz)",
+     "u": "https://www.praha1.cz/atlas-pristupnosti-bezbarierova-praha-1/"
+    },
+    {
+     "t": "Atlas přístupnosti objektů na území MČ Praha 6",
+     "u": "https://www.bezbarierova6.cz/"
+    }
+   ],
+   "organizace": [
+    {
+     "t": "Pražská organizace vozíčkářů, z.s. (POV)",
+     "u": "https://www.pov.cz/"
+    },
+    {
+     "t": "Centrum Paraple, o.p.s.",
+     "u": "https://www.paraple.cz/"
+    },
+    {
+     "t": "Česká asociace paraplegiků – CZEPA",
+     "u": "https://www.czepa.cz/"
+    },
+    {
+     "t": "Národní rada osob se zdravotním postižením ČR",
+     "u": "https://nrzp.cz/"
+    }
+   ]
+  },
+  "Jihočeský": {
+   "plan": [
+    {
+     "t": "Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením 2026–2029 (Jihočeský kraj)",
+     "u": "https://socialniportal.kraj-jihocesky.cz/planujeme/koncepce-plany-reformy-projekty/krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se"
+    }
+   ],
+   "atlasy": [
+    {
+     "t": "Atlas přístupnosti objektů na území města České Budějovice",
+     "u": "https://bezbarier.c-budejovice.cz/mapa/"
+    }
+   ],
+   "organizace": [
+    {
+     "t": "Národní rada osob se zdravotním postižením ČR – poradna České Budějovice",
+     "u": "https://nrzp.cz/poradna/poradna-nrzp-cr-v-ceskych-budejovicich/"
+    },
+    {
+     "t": "Jihočeské centrum pro zdravotně postižené a seniory o.p.s. (JCZPS)",
+     "u": "https://www.jczps.cz/"
+    },
+    {
+     "t": "Česká asociace paraplegiků – CZEPA (Vozejkov, VozejkMap)",
+     "u": "https://www.czepa.cz/"
+    }
+   ]
+  },
+  "Jihomoravský": {
+   "plan": [],
+   "atlasy": [
+    {
+     "t": "Mapa přístupnosti – Budovy (Brno, otevřená data)",
+     "u": "https://data.brno.cz/datasets/cca344ea2fb24eecb4e449c5970fd401"
+    },
+    {
+     "t": "Průvodce přístupnosti (projekt CE-Spaces4All, Jihomoravský kraj)",
+     "u": "https://www.vozejkmap.cz/page/pruvodce-pristupnosti"
+    }
+   ],
+   "organizace": [
+    {
+     "t": "Liga vozíčkářů, z. ú.",
+     "u": "https://www.ligavozickaru.cz/"
+    },
+    {
+     "t": "Tišnovský vozíčkář",
+     "u": "http://tvozik.sweb.cz/"
+    },
+    {
+     "t": "Občanské sdružení zdravotně postižených, Veselská oblast",
+     "u": "http://oszpv.estranky.cz"
+    }
+   ],
+   "pozn": "Krajský plán vyrovnávání příležitostí pro OZP jsme na jmk.cz nenašli (6. 10. 2026: vyhledávání webu – „vyrovnávání příležitostí“, „zdravotně postižených“, „zdravotním postižením“; Strategické dokumenty odboru sociálních věcí https://www.jmk.cz/content/8568 – jen střednědobý a akční plán rozvoje sociálních služeb).",
+   "dotace": [
+    {
+     "t": "Podpora výstavby domů s byty zvláštního určení v Jihomoravském kraji pro rok 2026–2027 (dotační program kraje, byty pro osoby v nepříznivé sociální a zdravotní situaci)",
+     "u": "https://dotace.kr-jihomoravsky.cz/Grants/23578-506-Podpora+vystavby+domu+s+byty+zvlastniho+urceni+v+Jihomoravskem+kraji+pro+rok+2026+%E2%80%93+2027.aspx"
+    },
+    {
+     "t": "Pomoc seniorům a zdravotně postiženým: Kraj vypisuje dotace na speciální byty (tisková zpráva 8. 1. 2026, byty mj. bezbariérové)",
+     "u": "https://www.jmk.cz/content/31392"
+    }
+   ]
+  },
+  "Karlovarský": {
+   "plan": [
+    {
+     "t": "Krajský plán vyrovnávání příležitostí pro OZP Karlovarského kraje 2021–2026",
+     "u": "https://www.kr-karlovarsky.cz/karlovarsky-kraj/strategie-koncepce-plany/krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim"
+    }
+   ],
+   "atlasy": [
+    {
+     "t": "Bezbariérová mapa města Ostrov (Geoportál Ostrov nad Ohří)",
+     "u": "https://ostrov-nad-ohri.obce.gepro.cz/LINK?id=7"
+    }
+   ],
+   "organizace": [
+    {
+     "t": "NRZP Karlovarského kraje",
+     "u": "https://nrzp.cz/krajska-centra/nrzp-karlovarskeho-kraje/"
+    },
+    {
+     "t": "Poradna NRZP ČR v Karlových Varech",
+     "u": "https://nrzp.cz/poradna/poradna-nrzp-cr-v-karlovych-varech/"
+    },
+    {
+     "t": "Centrum pro zdravotně postižené Karlovarského kraje",
+     "u": "https://www.cheb.cz/klice-k-novym-toaletam/d-935799"
+    }
+   ]
+  },
+  "Královéhradecký": {
+   "plan": [
+    {
+     "t": "Plán podpory rovných příležitostí pro osoby se zdravotním postižením KHK 2026–2030 (pracovní verze k připomínkám)",
+     "u": "https://www.khk.cz/oblasti/socialni-oblast/strategie-koncepcni-dokumenty/vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim"
+    },
+    {
+     "t": "Plán podpory rovných příležitostí pro OZP KHK 2022–2025 (předchozí verze)",
+     "u": "https://www.khk.cz/system/files/Plan-podpory-OZP-2022---2025_FINAL_web.pdf"
+    }
+   ],
+   "atlasy": [
+    {
+     "t": "Bezbariérový Hradec – mapový portál města Hradec Králové",
+     "u": "http://geoportal.mmhk.cz/mapa/mapa-bezbariery/"
+    },
+    {
+     "t": "Mapa bezbariérových objektů Náchod (PDF)",
+     "u": "https://www.mestonachod.cz/potrebuji-zaridit/socialni-zdravotnitvi/mapa_nachod_bezbarier.pdf"
+    },
+    {
+     "t": "hkregion.cz – mapování bezbariérových turistických cílů (VozejkMap)",
+     "u": "https://www.hkregion.cz/dr-cs/108881-mapovani-bezbarierovych-turistickych-cilu-v-kralovehradeckem-kraji.html"
+    }
+   ],
+   "organizace": [
+    {
+     "t": "Spolek vozíčkářů Hradec Králové PŘESEDNI SI, z.s.",
+     "u": "https://www.presednisi.cz/o-nas/"
+    },
+    {
+     "t": "Centrum pro integraci osob se zdravotním postižením Královéhradeckého kraje, o.p.s.",
+     "u": "https://czphk.cz/"
+    }
+   ]
+  },
+  "Liberecký": {
+   "plan": [
+    {
+     "t": "Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením 2021–2024 (Liberecký kraj)",
+     "u": "https://www.kraj-lbc.cz/getFile/id:473371/"
+    }
+   ],
+   "atlasy": [],
+   "organizace": [
+    {
+     "t": "Centrum pro zdravotně postižené Libereckého kraje, o.p.s. (CZP LK)",
+     "u": "https://www.czplk.cz/"
+    },
+    {
+     "t": "Národní rada osob se zdravotním postižením ČR – Regionální pracoviště pro Liberecký kraj",
+     "u": "https://www.kraj-lbc.cz/aktuality/liberecky-kraj-nabidne-vice-mist-osazenych-eurozamky-n514039.htm"
+    },
+    {
+     "t": "Sdružení tělesně postižených Česká Lípa",
+     "u": "https://www.mucl.cz/vismo/dokumenty2.asp?id_org=2138&id=35692"
+    }
+   ]
+  },
+  "Moravskoslezský": {
+   "plan": [
+    {
+     "t": "Moravskoslezský krajský plán vyrovnávání příležitostí pro občany se zdravotním postižením na léta 2021–2026",
+     "u": "https://www.msk.cz/assets/temata/strategicke_dokumenty/kp_vyrovnani-prilezitosti_ztp_2020_mail.pdf"
+    }
+   ],
+   "atlasy": [
+    {
+     "t": "Mapa přístupnosti města Ostravy",
+     "u": "https://mapy.ostrava.cz/mapa-pristupnosti/mapa/"
+    },
+    {
+     "t": "Mapa přístupnosti Opavy (mapový portál města)",
+     "u": "https://map.opava-city.cz/waportal/apps/webappviewer/index.html?id=b7aa7a19a73241ab84ff866dc713f4a6"
+    },
+    {
+     "t": "Bezbariérová Opava (bbopava.cz, dříve opavabezbarier.cz)",
+     "u": "https://www.bbopava.cz/"
+    }
+   ],
+   "organizace": [
+    {
+     "t": "Ostravská organizace vozíčkářů",
+     "u": "https://www.vozickari-ostrava.cz/"
+    },
+    {
+     "t": "Národní rada osob se zdravotním postižením ČR (krajská spolupráce)",
+     "u": "https://www.msk.cz/assets/temata/strategicke_dokumenty/kp_vyrovnani-prilezitosti_ztp_2020_mail.pdf"
+    }
+   ],
+   "dotace": [
+    {
+     "t": "Program realizace specifických aktivit Moravskoslezského krajského plánu vyrovnávání příležitostí pro občany se zdravotním postižením na rok 2026",
+     "u": "https://www.msk.cz/cs/temata/dotace/program-realizace-specifickych-aktivit-moravskoslezskeho-krajskeho-planu-vyrovnavani-prilezitosti-pro-obcany-se-zdravotnim-postizenim-na-rok-2026-24359/"
+    }
+   ]
+  },
+  "Olomoucký": {
+   "plan": [
+    {
+     "t": "Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením (Olomoucký kraj)",
+     "u": "https://www.olkraj.cz/pro-osoby-se-zdravotnim-postizenim/krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim"
+    }
+   ],
+   "atlasy": [
+    {
+     "t": "Bezbariérová přístupnost objektů – mapová aplikace města Olomouce",
+     "u": "https://mapy.olomouc.eu/#layerbbo"
+    },
+    {
+     "t": "Bezbariérová mapa Olomouce (PDF)",
+     "u": "https://olomouc.eu/administrace/repository/gallery/articles/10_/10120/olomouc-bezbarierova-mapa.cs.pdf"
+    }
+   ],
+   "organizace": [
+    {
+     "t": "NRZP ČR – Regionální pracoviště a poradna pro Olomoucký kraj (organizace)",
+     "u": "https://www.olkraj.cz/pro-osoby-se-zdravotnim-postizenim/euroklic-v-olomouckem-kraji"
+    },
+    {
+     "t": "Prostějovští vozíčkáři, spolek (organizace)",
+     "u": "https://www.prostejov.eu/cs/aktuality-archiv/dotaci-obdrzi-take-prostejovsti-vozickari.html"
+    },
+    {
+     "t": "Unie neziskových organizací Olomouckého kraje (organizace)",
+     "u": "http://www.uno-ok.cz/"
+    }
+   ]
+  },
+  "Pardubický": {
+   "plan": [
+    {
+     "t": "Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením 2022–2026 (Pardubický kraj)",
+     "u": "https://www.pardubickykraj.cz/krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim"
+    }
+   ],
+   "atlasy": [],
+   "organizace": [
+    {
+     "t": "Centrum Kosatec, z.s. – Středisko bezbariérovosti (organizace)",
+     "u": "https://www.centrumkosatec.cz/index.php/konzultace-bezbarierovosti/"
+    },
+    {
+     "t": "NRZP ČR – regionální pracoviště / poradna Pardubice (organizace)",
+     "u": "http://www.nrzp.cz/"
+    }
+   ]
+  },
+  "Plzeňský": {
+   "plan": [
+    {
+     "t": "Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením na období 2024–2028 (Plzeňský kraj)",
+     "u": "https://socialnisluzby.plzensky-kraj.cz/Uploads/Files/zqxzuhnt.cqf.pdf"
+    }
+   ],
+   "atlasy": [
+    {
+     "t": "Plzeň bez bariér (plzen.eu)",
+     "u": "https://plzen.eu/doprava/plzen-bez-barier/"
+    }
+   ],
+   "organizace": [
+    {
+     "t": "Národní rada osob se zdravotním postižením ČR – krajské pracoviště Plzeňský kraj",
+     "u": "https://nrzp.cz/"
+    },
+    {
+     "t": "Centrum pro zdravotně postižené Plzeňského kraje",
+     "u": "https://czppk.cz/"
+    }
+   ]
+  },
+  "Středočeský": {
+   "plan": [
+    {
+     "t": "Krajský plán vyrovnávání příležitostí pro OZP Středočeského kraje 2026–2028",
+     "u": "https://stredoceskykraj.cz/web/socialni-oblast/krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim-sk-2023-2025"
+    }
+   ],
+   "atlasy": [
+    {
+     "t": "Kutná Hora – Mapa trasy pro vozíčkáře",
+     "u": "https://www.kutnahora.cz/mapa-trasy-pro-vozickare"
+    },
+    {
+     "t": "Beroun – Interaktivní mapa bezbariérových objektů (vrstva vozíčkáři)",
+     "u": "http://www.mesto-beroun.cz/modules/mapy/poi.php?lang=cs&web=beroun_&active=735#m=cesko75&z=0&x=433424&y=5535203&l=vozickari"
+    },
+    {
+     "t": "Přístupná Příbram (Město Příbram – turismus)",
+     "u": "https://www.poznejpribram.cz/bezbarierove-po-pribrami"
+    }
+   ],
+   "organizace": [
+    {
+     "t": "NRZP Středočeského kraje (Národní rada osob se zdravotním postižením ČR)",
+     "u": "https://nrzp.cz/krajska-centra/"
+    },
+    {
+     "t": "Centrum pro zdravotně postižené a seniory Středočeského kraje, o.p.s.",
+     "u": "http://www.czpstredoceskykraj.cz"
+    },
+    {
+     "t": "Centrum Amelie Rakovník, z.s.",
+     "u": "https://www.euroklic.cz/stredocesky-kraj"
+    },
+    {
+     "t": "Svaz tělesně postižených v ČR, z.s.",
+     "u": "https://www.svaztp.cz"
+    }
+   ]
+  },
+  "Ústecký": {
+   "plan": [
+    {
+     "t": "Ústecký krajský plán vyrovnávání příležitostí pro OZP 2026–2030",
+     "u": "https://www.kr-ustecky.cz/ustecky-krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim-2026-2030"
+    }
+   ],
+   "atlasy": [
+    {
+     "t": "Krajský úřad – Bezbariérovost / Bezbariérovost měst, zařízení",
+     "u": "https://www.kr-ustecky.cz/bezbarierovost-mest-zarizeni"
+    },
+    {
+     "t": "Ústí nad Labem – Portál pro imobilní občany",
+     "u": "https://www.usti.cz/cz/dopravni-portal/portal-pro-imobilni-obcany/"
+    }
+   ],
+   "organizace": [
+    {
+     "t": "Sportovní sdružení vozíčkářů v Mostě, z.s.",
+     "u": "http://www.ssvm.cz/"
+    },
+    {
+     "t": "Asociace vozíčkářů a zdravotně i mentálně postižených v ČR, z. s. (Děčín)",
+     "u": "http://www.avaz.wz.cz"
+    },
+    {
+     "t": "NIPI bezbariérové prostředí, o.p.s. (Děčín)",
+     "u": "https://www.nipi-bp.cz"
+    },
+    {
+     "t": "Centrum pro zdravotně postižené Ústeckého kraje o.p.s.",
+     "u": "https://www.mesto-most.cz/centrum-pro-zdravotne-postizene-usteckeho-kraje-o-p-s/os-1516"
+    },
+    {
+     "t": "NRZP ČR – krajská rada Ústeckého kraje (NRZP ÚK)",
+     "u": "https://www.kr-ustecky.cz/ustecky-krajsky-plan-vyrovnavani-prilezitosti-pro-osoby-se-zdravotnim-postizenim-2026-2030"
+    }
+   ]
+  },
+  "Vysočina": {
+   "plan": [
+    {
+     "t": "Krajský plán vyrovnávání příležitostí osob se zdravotním postižením na období 2023–2025 (Kraj Vysočina)",
+     "u": "https://www.kr-vysocina.cz/krajsky-plan-vyrovnavani-prilezitosti-osob-se-zdravotnim-postizenim-na-obdobi-2023-2025/d-4116653"
+    }
+   ],
+   "atlasy": [],
+   "organizace": [
+    {
+     "t": "Centrum pro zdravotně postižené kraje Vysočina, o. p. s.",
+     "u": "https://www.muhb.cz/centrum-pro-zdravotne-postizene-kraje-vysocina-o.-p.-s./"
+    },
+    {
+     "t": "Národní rada osob se zdravotním postižením ČR, z. s. – projekt Euroklíč v Kraji Vysočina",
+     "u": "https://www.kr-vysocina.cz/zdravotne-postizeni-i-rodice-malych-deti-z-vysociny-budou-moci-vyuzit-o-ctyri-eurozamky-vice/d-4135212"
+    }
+   ]
+  },
+  "Zlínský": {
+   "plan": [
+    {
+     "t": "Krajský plán podpory rovných příležitostí pro osoby se zdravotním postižením Zlínského kraje na období 2022–2026",
+     "u": "https://zlinskykraj.cz/file/63ce51d3dc7d979f130e74fa"
+    }
+   ],
+   "atlasy": [
+    {
+     "t": "Bezbariérový Zlín – digitální mapa přístupnosti institucí",
+     "u": "http://www.bezbarierzlin.cz"
+    },
+    {
+     "t": "Otrokovice – Mapa bezbariérových přístupů (TWIST)",
+     "u": "https://twist.otrokovice.cz/mapa/bezbarierove-pristupy/"
+    }
+   ],
+   "organizace": [],
+   "dotace": []
+  }
+ }
+}

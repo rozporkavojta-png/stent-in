@@ -1,0 +1,2384 @@
+{
+  "task": "web_zdravi_doprava",
+  "kraj": "více krajů (ČR + příhraničí)",
+  "checked_date": "2026-10-06",
+  "places": [
+    {
+      "osm_id": "n9275226988",
+      "name": "Lékárna Lemon",
+      "obec": "Praha",
+      "address": "Krškova 807/21, Praha 5",
+      "lat": 50.033277,
+      "lng": 14.374681,
+      "category": "lekarna",
+      "source_url": "https://www.lekarnalemon.cz/lekarny",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Pobočka Krškova 807/21 má v přehledu poboček uveden bezbariérový vstup (pobočka určena podle adresy z Nominatim)."
+      },
+      "measurements": [],
+      "evidence_quote": "Lemon lékárna Krškova 807/21 , Praha Bezbariérový vstup"
+    },
+    {
+      "osm_id": "n354686108",
+      "name": "Nemocniční lékárna",
+      "obec": "Praha",
+      "address": "",
+      "lat": 50.092788,
+      "lng": 14.421924,
+      "category": "lekarna",
+      "source_url": "https://nnfp.cz/pouze-na-jednom-miste-v-cesku-lze-kdykoliv-poridit-leky-i-rozsireny-sortiment-zdravotnickych-prostredku-a-to-v-nove-lekarne-nemocnice-na-frantisku/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Nová lékárna nemocnice je popsána jako bezbariérová a je blíž hlavnímu vstupu."
+      },
+      "measurements": [],
+      "evidence_quote": "Nová bezbariérová a přívětivá lékárna je blíž hlavnímu vstupu"
+    },
+    {
+      "osm_id": "w53575829",
+      "name": "O2 Parkovací dům",
+      "obec": "Praha",
+      "address": "",
+      "lat": 50.10331,
+      "lng": 14.497605,
+      "category": "parkoviste",
+      "source_url": "https://www.o2arena.cz/pro-navstevniky/parkovani-a-doprava/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "parkovani": "Místa vyhrazená pro TP, ZTP a ZTP/P: −2. NP 7, −1. NP 10, 1. NP 7, 2.–5. NP po 10 místech; držitelé průkazů parkují jen na nich za běžné parkovné."
+      },
+      "measurements": [
+        {
+          "co": "počet vyhrazených míst pro TP/ZTP/ZTP-P (součet podlaží)",
+          "hodnota": 64,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "místa vyhrazená pro TP, ZTP a ZTP/P jsou tyto: -2 N.P – 7 míst"
+    },
+    {
+      "osm_id": "r18073503",
+      "name": "OC Šestka parkování",
+      "obec": "Praha",
+      "address": "",
+      "lat": 50.093262,
+      "lng": 14.290132,
+      "category": "parkoviste",
+      "source_url": "https://www.oc-sestka.cz/parkovaci-mista-pro-invalidy",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Všechny vstupy do centra jsou podle webu zcela bezbariérové – přímou cestou nebo výtahem.",
+        "parkovani": "Vyhrazená místa pro osoby se zdravotním postižením jsou v těsné blízkosti hlavních vstupů; široké boxy pro nastupování a manipulaci s vozíkem.",
+        "vytah": "Z krytého parkoviště je přímý vstup do 1. patra; ze střešního parkoviště travelátory nebo výtahy do 1. patra či přízemí.",
+        "jine": "Bezplatné zapůjčení invalidního vozíku u bezpečnostní služby (tel. 724 831 180)."
+      },
+      "measurements": [],
+      "evidence_quote": "Široké parkovací boxy zajišťují dostatek prostoru pro snadné nastupování a vystupování"
+    },
+    {
+      "osm_id": "r17986152",
+      "name": "P+R Letňany",
+      "obec": "Praha",
+      "address": "",
+      "lat": 50.125754,
+      "lng": 14.514761,
+      "category": "parkoviste",
+      "source_url": "https://parking.praha.eu/cs/moznosti-parkovani-v-praze/pr-park-ride/letnany/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "parkovani": "V sekci Služby a vybavení parkoviště je uvedeno „Stání pro ZTP“ (počet neuveden)."
+      },
+      "measurements": [],
+      "evidence_quote": "Služby a vybavení ... Stání pro ZTP"
+    },
+    {
+      "osm_id": "r17163849",
+      "name": "Parkoviště",
+      "obec": "Praha",
+      "address": "",
+      "lat": 50.052684,
+      "lng": 14.288121,
+      "category": "parkoviste",
+      "source_url": "https://www.westfield.com/cz/czech-republic/metropole/sluzby",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "parkovani": "Speciální místa pro tělesně postižené rozmístěná nedaleko vstupů do centra; parkování pro handicapované je zdarma.",
+        "jine": "Mezi službami centra je uveden bezbariérový přístup, výtah a invalidní vozík (web metropole.cz přesměrovává na westfield.com)."
+      },
+      "measurements": [],
+      "evidence_quote": "speciální místa pro tělesně postižené, rozložených nedaleko vstupů do centra"
+    },
+    {
+      "osm_id": "w142820214",
+      "name": "poliklinika Vajgarská",
+      "obec": "Praha",
+      "address": "Vajgarská 1141",
+      "lat": 50.101681,
+      "lng": 14.553595,
+      "category": "lekar",
+      "source_url": "https://www.mediclinic.cz/poliklinika-vajgarska-praha",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Mezi vlastnostmi polikliniky je uveden bezbariérový vstup.",
+        "vytah": "Uvedeno „Ordinace s výtahem“ (ordinace v patře)."
+      },
+      "measurements": [],
+      "evidence_quote": "Ordinace s výtahem ... Bezbariérový vstup"
+    },
+    {
+      "osm_id": "w546140116",
+      "name": "Ústřední autobusové nádraží Florenc",
+      "obec": "Praha",
+      "address": "",
+      "lat": 50.089445,
+      "lng": 14.440608,
+      "category": "nadrazi",
+      "source_url": "https://www.florenc.cz/index.php?site=an&usite=info&sel=provoz&lan=cz",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Terminál je až na výjimky bezbariérově přístupný (pokladny, informace, úschovna, gastro); všechna nástupiště jsou bezbariérově přístupná.",
+        "wc": "V odbavovací hale H1 jsou bezbariérová WC na Euroklíč.",
+        "jine": "Hala má akustický navigační systém; personál poskytne pomoc, informace a dispečink vjezdu jsou non-stop."
+      },
+      "measurements": [],
+      "evidence_quote": "V H1 - odbavovací hale jsou umístěny bezbariérové WC (Euroklíč)"
+    },
+    {
+      "osm_id": "n7094978406",
+      "name": "Nemocniční lékárna",
+      "obec": "Blansko",
+      "address": "",
+      "lat": 49.361593,
+      "lng": 16.652359,
+      "category": "lekarna",
+      "source_url": "https://www.nemobk.cz/orientacni-plan-nemocnice/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "parkovani": "Parkoviště P2 u lékárny v areálu: 19 míst, z toho 3 vyhrazená pro invalidy; před nemocnicí (ul. K. H. Máchy) 41 míst, z toho 6 pro invalidy. Tělesně postižení parkují na vyhrazených místech v den ošetření zdarma po předložení ZTP/ZTP-P."
+      },
+      "measurements": [
+        {
+          "co": "místa pro invalidy na P2 u lékárny",
+          "hodnota": 3,
+          "jednotka": "ks"
+        },
+        {
+          "co": "místa pro invalidy před nemocnicí",
+          "hodnota": 6,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "P2 (u lékárny) 19 parkovacích míst, z toho 3x vyhrazeno pro invalidy."
+    },
+    {
+      "osm_id": "n679480701",
+      "name": "Arculum",
+      "obec": "Brno",
+      "address": "",
+      "lat": 49.208933,
+      "lng": 16.555077,
+      "category": "lekar",
+      "source_url": "https://arculum.cz/kontakt/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Na stránce kontaktů uveden bezbariérový přístup.",
+        "parkovani": "Uvedena možnost parkování (bez upřesnění pro ZTP)."
+      },
+      "measurements": [],
+      "evidence_quote": "Parkování Bezbariérový přístup"
+    },
+    {
+      "osm_id": "mbb5773334",
+      "name": "Dům zdraví Marty Hartlové",
+      "obec": "Brno",
+      "address": "Jugoslávská 13",
+      "lat": 49.204066,
+      "lng": 16.623788,
+      "category": "zdravotnicke_zarizeni",
+      "source_url": "http://www.dumzdravimh.cz",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Web uvádí, že dům zdraví je bezbariérový; jsou zde dvě invalidní plošiny.",
+        "parkovani": "Ve dvoře je 60 parkovacích míst pro pacienty, návštěvníky lékárny a personál (vyhrazená místa ZTP nezmíněna).",
+        "vytah": "V domě jsou dva výtahy."
+      },
+      "measurements": [
+        {
+          "co": "výtahy",
+          "hodnota": 2,
+          "jednotka": "ks"
+        },
+        {
+          "co": "invalidní plošiny",
+          "hodnota": 2,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "DŮM ZDRAVÍ JE BEZBARIEROVÝ V domě jsou dva výtahy a dvě invalidní plošiny."
+    },
+    {
+      "osm_id": "w88974841",
+      "name": "FN u sv. Anny - Doléčovací a rehabilitační oddělení",
+      "obec": "Brno",
+      "address": "Zoubkova 18",
+      "lat": 49.183312,
+      "lng": 16.560484,
+      "category": "nemocnice",
+      "source_url": "https://www.fnusa.cz/pro-pacienty-a-navstevy/vstupy-a-parkovani/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Hlavní vchod z přední příjezdové komunikace je bezbariérový, plošina pro invalidy zpřístupňuje přízemí; ze zadní části budovy bezbariérový přístup do dvora a zahrady.",
+        "parkovani": "Parkování na příjezdové komunikaci před budovou (vyhrazená místa neuvedena).",
+        "jine": "Budova Zoubkova 18 má 4 nadzemní podlaží."
+      },
+      "measurements": [],
+      "evidence_quote": "do budovy je bezbariérový přístup, je zde plošina pro invalidy"
+    },
+    {
+      "osm_id": "mbb5773312",
+      "name": "Fakultní nemocnice u Sv. Anny v Brně",
+      "obec": "Brno",
+      "address": "Pekařská 53",
+      "lat": 49.191353,
+      "lng": 16.598792,
+      "category": "zdravotnicke_zarizeni",
+      "source_url": "https://www.fnusa.cz/pro-pacienty-a-navstevy/vstupy-a-parkovani/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Vstup do všech budov zdravotnických pracovišť je přímo z chodníku, z nájezdové rampy nebo zvedací plošiny; schodiště u hlavního vstupu z Pekařské lze překonat zdvihací plošinou s tlačítkem pro obsluhu.",
+        "wc": "V budovách areálu jsou bezbariérové toalety, kabiny mají normové rozměry.",
+        "parkovani": "V areálu jsou vyhrazená stání pro osoby se zdravotním postižením (vjezd zdarma, bez časového omezení); trasa ke vstupům bez nerovností.",
+        "vytah": "Po budovách se lze pohybovat nákladními (lůžkovými) bezbariérovými průchozími výtahy s dostatečně velkou kabinou.",
+        "jine": "Trasy od tramvajových zastávek Nemocnice u sv. Anny, Mendlovo náměstí a Hybešova jsou bez nerovností."
+      },
+      "measurements": [],
+      "evidence_quote": "V budovách areálu jsou bezbariérové toalety, kabiny mají normové rozměry"
+    },
+    {
+      "osm_id": "mbb5773313",
+      "name": "Fakultní nemocnice u Sv. Anny, pracoviště Výstavní",
+      "obec": "Brno",
+      "address": "Výstavní 17",
+      "lat": 49.189104,
+      "lng": 16.589952,
+      "category": "zdravotnicke_zarizeni",
+      "source_url": "https://www.fnusa.cz/pro-pacienty-a-navstevy/vstupy-a-parkovani/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Přístup do budovy z ulice Výstavní je bezbariérový.",
+        "wc": "V budově C jsou na zdravotnických pracovištích 2 bezbariérová WC.",
+        "vytah": "V budovách A a C jsou bezbariérové výtahy do všech podlaží."
+      },
+      "measurements": [
+        {
+          "co": "bezbariérová WC v budově C",
+          "hodnota": 2,
+          "jednotka": "ks"
+        }
+      ],
+      "evidence_quote": "V budově C na zdravotnických pracovištích jsou 2 bezbariérová WC."
+    },
+    {
+      "osm_id": "brno300",
+      "name": "Hospic sv. Alžběty o.p.s.",
+      "obec": "Brno",
+      "address": "Kamenná 207/36, 639 00, Brno",
+      "lat": 49.185143,
+      "lng": 16.591112,
+      "category": "lekar",
+      "source_url": "https://hospicbrno.cz/odlehcovaci-sluzba/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "jine": "Odlehčovací služba sídlí v rekonstruovaném severním křídle kláštera sv. Alžběty; budova je bezbariérová s volným přístupem na dvůr, terasu a zahradu. O lůžkovém hospici web přístupnost neuvádí."
+      },
+      "measurements": [],
+      "evidence_quote": "Budova je bezbariérová s volným přístupem na vnitřní dvůr, terasu či zahradu"
+    },
+    {
+      "osm_id": "n2225783988",
+      "name": "Medea",
+      "obec": "Brno",
+      "address": "Ečerova 1148/2a",
+      "lat": 49.218734,
+      "lng": 16.510408,
+      "category": "lekarna",
+      "source_url": "https://www.medeabrno.eu/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Lékárna uvádí, že je bezbariérová – dostanou se k ní i lidé na vozíku."
+      },
+      "measurements": [],
+      "evidence_quote": "Jsme bezbariéroví - dostanou se k nám kočárky i lidé na vozíku"
+    },
+    {
+      "osm_id": "w635759219",
+      "name": "Poliklinika Viniční",
+      "obec": "Brno",
+      "address": "Viniční 235",
+      "lat": 49.198642,
+      "lng": 16.656488,
+      "category": "poliklinika",
+      "source_url": "https://www.poliklinikavinicni.cz/pracoviste/lekarna",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "jine": "Lékárna BENU v přízemí polikliniky má bezbariérový přístup; o ostatních částech polikliniky web nic neuvádí."
+      },
+      "measurements": [],
+      "evidence_quote": "Jedná s o lékárnu s bezbariérovým přístupem."
+    },
+    {
+      "osm_id": "brno332",
+      "name": "Praktický lékař Brno s.r.o. - MUDr. Vlasáková",
+      "obec": "Brno",
+      "address": "Kaminky 551/3b",
+      "lat": 49.177158,
+      "lng": 16.559475,
+      "category": "lekar",
+      "source_url": "https://www.doktorkabrno.cz",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Ordinace nabízí bezbariérový přístup.",
+        "parkovani": "Uvedeno snadné parkování (bez upřesnění pro ZTP)."
+      },
+      "measurements": [],
+      "evidence_quote": "nově zařízenou ordinaci s kvalitním přístrojovým vybavením, bezbariérový přístup"
+    },
+    {
+      "osm_id": "brno235",
+      "name": "Soukromá klinika LOGO s.r.o.",
+      "obec": "Brno",
+      "address": "Vsetínská 20",
+      "lat": 49.177463,
+      "lng": 16.598266,
+      "category": "lekar",
+      "source_url": "https://www.moje-klinika.cz/o-nas",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Sídlo kliniky na Vsetínské umožňuje přístup i handicapovaným pacientům."
+      },
+      "measurements": [],
+      "evidence_quote": "Sídlo naší kliniky na Vsetínské umožňuje přístup i handicapovaným pacientům."
+    },
+    {
+      "osm_id": "brno242",
+      "name": "Stomatologická klinika K 11, s.r.o.",
+      "obec": "Brno",
+      "address": "Karáskovo náměstí 11",
+      "lat": 49.197592,
+      "lng": 16.639156,
+      "category": "lekar",
+      "source_url": "https://k-11.cz/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Do budovy se dostane i vozíčkář.",
+        "vytah": "V budově je výtah; pohyb po jednotlivých patrech je bezbariérový."
+      },
+      "measurements": [],
+      "evidence_quote": "Do budovy se dostane i osoba se sníženou hybností (vozíčkář)"
+    },
+    {
+      "osm_id": "w1231331649",
+      "name": "Surgal Clinic",
+      "obec": "Brno",
+      "address": "Drobného 38 a 40",
+      "lat": 49.207625,
+      "lng": 16.611731,
+      "category": "poliklinika",
+      "source_url": "https://www.surgalclinic.cz/index.php?pg=oddeleni--parkoviste",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "parkovani": "Kryté placené parkoviště v areálu (60 míst ve 2 etážích), z toho 4 vyhrazená invalidní stání; vjezd z ulice Drobného."
+      },
+      "measurements": [
+        {
+          "co": "vyhrazená invalidní stání",
+          "hodnota": 4,
+          "jednotka": "ks"
+        },
+        {
+          "co": "kapacita parkoviště",
+          "hodnota": 60,
+          "jednotka": "míst"
+        }
+      ],
+      "evidence_quote": "Vyhrazena jsou 4 invalidní stání."
+    },
+    {
+      "osm_id": "mbb5773425",
+      "name": "lékárna",
+      "obec": "Brno",
+      "address": "Orlí 708/34, Brno",
+      "lat": 49.194483,
+      "lng": 16.614116,
+      "category": "lekarna",
+      "source_url": "https://www.chytralekarna.cz/lekarny/chytra-lekarna-orli",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Pobočka Orlí 708/34 má uveden bezbariérový vstup (text zmiňuje bezbariérový přístup pro maminky s kočárky)."
+      },
+      "measurements": [],
+      "evidence_quote": "Chytrá lékárna - Orlí Bezbariérový vstup"
+    },
+    {
+      "osm_id": "n2076221392",
+      "name": "Lékárna Dubňany",
+      "obec": "Dubňany",
+      "address": "",
+      "lat": 48.915982,
+      "lng": 17.100132,
+      "category": "lekarna",
+      "source_url": "https://www.lekarnadubnany.cz/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Přístup do lékárny je plně bezbariérový.",
+        "parkovani": "Parkoviště u budovy zdravotního střediska (vyhrazená místa neuvedena)."
+      },
+      "measurements": [],
+      "evidence_quote": "Přístup do lékárny je plně bezbariérový ."
+    },
+    {
+      "osm_id": "n11173418687",
+      "name": "Parkovací dům P+R Ivančice",
+      "obec": "Ivančice",
+      "address": "",
+      "lat": 49.098378,
+      "lng": 16.375836,
+      "category": "parkoviste",
+      "source_url": "https://parkoviste.ivancice.cz/parkovaci-dum/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "parkovani": "V parkovacím domě jsou vyznačena speciální místa pro ZTP/P; parkovné ale platí všichni včetně držitelů ZTP/P.",
+        "jine": "Platební terminály jsou v prostoru schodišť spojujících horní a dolní část domu."
+      },
+      "measurements": [],
+      "evidence_quote": "v parkovacím domě pro ZTP/P vyznačena speciální parkovací místa"
+    },
+    {
+      "osm_id": "n496904050",
+      "name": "DOC Mercury",
+      "obec": "České Budějovice",
+      "address": "",
+      "lat": 48.972729,
+      "lng": 14.486818,
+      "category": "parkoviste",
+      "source_url": "https://www.docmercury.cz/parkovani",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "parkovani": "Ve dvou patrech podzemních garáží je 717 míst, z toho 36 trvale vyhrazených vozíčkářům."
+      },
+      "measurements": [
+        {
+          "co": "místa vyhrazená vozíčkářům",
+          "hodnota": 36,
+          "jednotka": "ks"
+        },
+        {
+          "co": "kapacita garáží",
+          "hodnota": 717,
+          "jednotka": "míst"
+        }
+      ],
+      "evidence_quote": "717 parkovacích míst, z toho 36 je trvale vyhrazeno vozíčkářům"
+    },
+    {
+      "osm_id": "n2503089370",
+      "name": "Lékárna Frýdlant",
+      "obec": "Frýdlant nad Ostravicí",
+      "address": "Hlavní 79, Frýdlant nad Ostravicí",
+      "lat": 49.589868,
+      "lng": 18.359204,
+      "category": "lekarna",
+      "source_url": "https://www.lekarnalemon.cz/lekarny",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Pobočka Hlavní 79, Frýdlant nad Ostravicí má v přehledu poboček Lemon uveden bezbariérový vstup (původní web moraviapharm.eu přesměrovává na lekarnalemon.cz)."
+      },
+      "measurements": [],
+      "evidence_quote": "Lemon lékárna Hlavní 79 , Frýdlant nad Ostravicí Bezbariérový vstup"
+    },
+    {
+      "osm_id": "n8308772672",
+      "name": "Lékárna Lemon",
+      "obec": "Kopřivnice",
+      "address": "Štefánikova 1612/2a",
+      "lat": 49.595222,
+      "lng": 18.144997,
+      "category": "lekarna",
+      "source_url": "https://www.lekarnalemon.cz/lekarny/lemon-lekarna-koprivnice-stefanikova-1612-2a",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "U pobočky je uveden bezbariérový vstup.",
+        "parkovani": "Uvedeno pohodlné parkování (bez upřesnění pro ZTP)."
+      },
+      "measurements": [],
+      "evidence_quote": "Štefánikova 1612/2a Bezbariérový vstup"
+    },
+    {
+      "osm_id": "n806247320",
+      "name": "MUDr. Barbara Posker, MediClinic a.s.",
+      "obec": "Třinec",
+      "address": "",
+      "lat": 49.682447,
+      "lng": 18.650621,
+      "category": "lekar",
+      "source_url": "https://www.mediclinic.cz/lekar/trinec-kanada-posker",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Mezi vlastnostmi ordinace je uveden bezbariérový vstup."
+      },
+      "measurements": [],
+      "evidence_quote": "Prodloužená ordinační doba Bezbariérový vstup"
+    },
+    {
+      "osm_id": "n928042659",
+      "name": "Domovina",
+      "obec": "Olomouc",
+      "address": "",
+      "lat": 49.586885,
+      "lng": 17.255708,
+      "category": "lekarna",
+      "source_url": "https://www.vilazdravi.cz/o-nas.html",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "jine": "Lékárna nabízí zvláštní službu pro tělesně postižené: výdej léku bez vystoupení z auta (obdoba drive-in)."
+      },
+      "measurements": [],
+      "evidence_quote": "zvláštní služba pro tělesně postižené , kdy celý proces vydání léku proběhne bez vystoupení z auta"
+    },
+    {
+      "osm_id": "n11482745769",
+      "name": "Veřejné WC",
+      "obec": "Plzeň",
+      "address": "",
+      "lat": 49.749929,
+      "lng": 13.369345,
+      "category": "verejne_wc",
+      "source_url": "https://plzen-plaza.klepierre.cz/sluzby/bezbarierove-toalety",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Bezbariérový je hlavní vchod i boční vchody obchodního centra.",
+        "wc": "Toalety včetně toalet pro invalidy jsou v únikových chodbách: 1. patro u prodejny Datart, 2. patro naproti Burger King; denně 7–21 h, poplatek 10 Kč.",
+        "parkovani": "5 bezbariérových parkovacích míst na parkovišti před obchodním centrem.",
+        "vytah": "Výtahy v obchodním centru jsou uvedeny jako bezbariérové.",
+        "jine": "Na infostánku lze zapůjčit invalidní vozík (po–pá 11–18 h)."
+      },
+      "measurements": [],
+      "evidence_quote": "Bezbariérové toalety pro zákazníky včetně toalet pro invalidy najdete v únikových chodbách."
+    },
+    {
+      "osm_id": "n13789923790",
+      "name": "Veřejné WC",
+      "obec": "Plzeň",
+      "address": "",
+      "lat": 49.74949,
+      "lng": 13.369034,
+      "category": "verejne_wc",
+      "source_url": "https://plzen-plaza.klepierre.cz/sluzby/bezbarierove-toalety",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Bezbariérový je hlavní vchod i boční vchody obchodního centra.",
+        "wc": "Toalety včetně toalet pro invalidy jsou v únikových chodbách: 1. patro u prodejny Datart, 2. patro naproti Burger King; denně 7–21 h, poplatek 10 Kč.",
+        "parkovani": "5 bezbariérových parkovacích míst na parkovišti před obchodním centrem.",
+        "vytah": "Výtahy v obchodním centru jsou uvedeny jako bezbariérové.",
+        "jine": "Na infostánku lze zapůjčit invalidní vozík (po–pá 11–18 h)."
+      },
+      "measurements": [],
+      "evidence_quote": "Bezbariérové toalety pro zákazníky včetně toalet pro invalidy najdete v únikových chodbách."
+    },
+    {
+      "osm_id": "w28958465",
+      "name": "parkovací dům Rychtářka",
+      "obec": "Plzeň",
+      "address": "Truhlářská 2755/5",
+      "lat": 49.749897,
+      "lng": 13.380914,
+      "category": "parkoviste",
+      "source_url": "https://www.parkingplzen.cz/cz/parkovaci-domy/parkovaci-dum-rychtarka/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Do objektu je bezbariérový přístup; s centrem ho spojuje pěší lávka přes Tyršovu ulici."
+      },
+      "measurements": [
+        {
+          "co": "kapacita",
+          "hodnota": 447,
+          "jednotka": "míst"
+        }
+      ],
+      "evidence_quote": "Do objektu je bezbariérový přístup."
+    },
+    {
+      "osm_id": "n7112484663",
+      "name": "Bonate",
+      "obec": "Rozvadov",
+      "address": "",
+      "lat": 49.656127,
+      "lng": 12.526549,
+      "category": "lekarna",
+      "source_url": "https://www.bonate-lekarny.cz/lekarna-bonate-rozvadov",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Mezi poskytovanými službami je bezbariérový přístup.",
+        "parkovani": "Parkování u lékárny (bez upřesnění pro ZTP)."
+      },
+      "measurements": [],
+      "evidence_quote": "Poskytované služby Bezbariérový přístup Parkování u lékárny"
+    },
+    {
+      "osm_id": "n9240474660",
+      "name": "Bonate",
+      "obec": "Česká Kubice",
+      "address": "",
+      "lat": 49.342067,
+      "lng": 12.852039,
+      "category": "lekarna",
+      "source_url": "https://www.bonate-lekarny.cz/de/bonate-apotheke-vollmau",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Německá verze stránky pobočky Vollmau (Folmava) uvádí bezbariérový přístup; česká stránka pobočky ho neuvádí.",
+        "parkovani": "Parkování u lékárny (bez upřesnění pro ZTP)."
+      },
+      "measurements": [],
+      "evidence_quote": "Angebotene Dienstleistungen Barrierefreier Zugang Parken bei der Apotheke"
+    },
+    {
+      "osm_id": "w1340576083",
+      "name": "Parkoviště",
+      "obec": "Beroun",
+      "address": "",
+      "lat": 49.965035,
+      "lng": 14.095604,
+      "category": "parkoviste",
+      "source_url": "https://www.nemocnice-beroun.cz/parkovani",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "parkovani": "Držitelé ZTP a ZTP/P mohou v areálu nemocnice parkovat prvních 180 minut zdarma na k tomu určených místech; vozidlo musí mít označení č. 07 a řidič se prokáže průkazem na vrátnici."
+      },
+      "measurements": [],
+      "evidence_quote": "mohou parkovat bezplatně v areálu nemocnice prvních 180 minut na k tomu určených místech"
+    },
+    {
+      "osm_id": "w196680226",
+      "name": "Parkoviště Nemocnice Beroun",
+      "obec": "Beroun",
+      "address": "",
+      "lat": 49.963893,
+      "lng": 14.094688,
+      "category": "parkoviste",
+      "source_url": "https://www.nemocnice-beroun.cz/parkovani",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "unknown",
+      "accessibility": {
+        "parkovani": "Držitelé ZTP a ZTP/P mohou v areálu nemocnice parkovat prvních 180 minut zdarma na k tomu určených místech; vozidlo musí mít označení č. 07 a řidič se prokáže průkazem na vrátnici."
+      },
+      "measurements": [],
+      "evidence_quote": "mohou parkovat bezplatně v areálu nemocnice prvních 180 minut na k tomu určených místech"
+    },
+    {
+      "osm_id": "n11622290300",
+      "name": "Lemon",
+      "obec": "Milovice",
+      "address": "Spojovací 873, Milovice",
+      "lat": 50.228894,
+      "lng": 14.863915,
+      "category": "lekarna",
+      "source_url": "https://www.lekarnalemon.cz/lekarny",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Pobočka Spojovací 873, Milovice má v přehledu poboček uveden bezbariérový vstup.",
+        "parkovani": "Uvedeno pohodlné parkování (bez upřesnění pro ZTP)."
+      },
+      "measurements": [],
+      "evidence_quote": "Lemon lékárna Spojovací 873 , Milovice Bezbariérový vstup"
+    },
+    {
+      "osm_id": "n11284513778",
+      "name": "MUDr. Eva Mandáková",
+      "obec": "Rakovník",
+      "address": "Havlíčkova 271",
+      "lat": 50.106622,
+      "lng": 13.72766,
+      "category": "lekar",
+      "source_url": "https://mandakova.cz",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Do ordinace je pacientům umožněn bezbariérový přístup."
+      },
+      "measurements": [],
+      "evidence_quote": "Do ordinace je pacientům umožněn bezbariérový přístup."
+    },
+    {
+      "osm_id": "n365569908",
+      "name": "Lékárna nemocnice",
+      "obec": "Nové Město na Moravě",
+      "address": "",
+      "lat": 49.561348,
+      "lng": 16.066095,
+      "category": "lekarna",
+      "source_url": "https://www.nnm.cz/lekarna",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Výdejna lékárny u vrátnice v pavilonu 9 (vstupní) má bezbariérový vstup z ulice Žďárská."
+      },
+      "measurements": [],
+      "evidence_quote": "Pavilon 9 VSTUPNÍ; bezbariérový vstup z ul. Žďárská"
+    },
+    {
+      "osm_id": "n9599763074",
+      "name": "Fyzio-J Fyzioterapie",
+      "obec": "Žďár nad Sázavou",
+      "address": "Nádražní 51",
+      "lat": 49.55695,
+      "lng": 15.937993,
+      "category": "lekar",
+      "source_url": "https://fyzio-j.cz/",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Fyzioterapeutka uvádí nové bezbariérové prostředí."
+      },
+      "measurements": [],
+      "evidence_quote": "v příjemném, novém a zároveň bezbariérovém prostředí"
+    },
+    {
+      "osm_id": "n2701880087",
+      "name": "U Luny",
+      "obec": "Teplice",
+      "address": "",
+      "lat": 50.656653,
+      "lng": 13.848106,
+      "category": "lekarna",
+      "source_url": "http://www.lekarnauluny.cz",
+      "source_type": "web provozovatele",
+      "wheelchair_claim": "yes",
+      "accessibility": {
+        "vstup": "Lékárna uvádí bezbariérový přístup.",
+        "parkovani": "K dispozici prostorné parkoviště (vyhrazená místa neuvedena)."
+      },
+      "measurements": [],
+      "evidence_quote": "Zákazníkům je k dispozici prostorné parkoviště a bezbariérový přístup."
+    }
+  ],
+  "not_found": [
+    {
+      "osm_id": "n9138692955",
+      "name": "Hammerunterwiesenthal",
+      "url": "https://iris.noncd.db.de/wbt/js/index.html?bhf=DHUW",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2736597774",
+      "name": "Schöna",
+      "url": "https://www.bahnhof.de/schoena",
+      "reason": "web bahnhof.de zobrazuje vybavení pro bezbariérovost až po výběru nástupiště (načítá se skriptem); nezjištěno"
+    },
+    {
+      "osm_id": "n4007988378",
+      "name": "Cithara",
+      "url": "https://www.cithara.cz/lekarna-cithara-v-oc-harfa/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3285422060",
+      "name": "Císařská lékárna",
+      "url": "https://www.lekarnawpk.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w57373479",
+      "name": "DC Rezidence parking",
+      "url": "https://www.dcrezidence.cz/ostatni-sluzby/parkovani/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1185832164",
+      "name": "EUC",
+      "url": "https://www.medifin.eu/",
+      "reason": "web se nepodařilo načíst (<urlopen error timed out>)"
+    },
+    {
+      "osm_id": "r13062842",
+      "name": "Fakultní Nemocnice Motol a Homolka",
+      "url": "https://fnmotol.cz/",
+      "reason": "web uvádí jen bezplatné parkování pro držitele parkovacího průkazu ZTP (sleva), o přístupnosti budov nic"
+    },
+    {
+      "osm_id": "n6914417114",
+      "name": "Immuno-Flow",
+      "url": "http://evi-medic.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w14438161",
+      "name": "Indigo",
+      "url": "http://www.parkindigo.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n11415060738",
+      "name": "Inspirita",
+      "url": "https://www.inspirita.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3147041029",
+      "name": "Klánovická lékárna",
+      "url": "https://www.lekla.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3742889915",
+      "name": "Lékárna FTN",
+      "url": "http://www.ftn.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1376796079",
+      "name": "Lékárna Gemini",
+      "url": "http://www.nmlk.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n4368535238",
+      "name": "Lékárna Královka",
+      "url": "http://www.lekarny.zdravcentra.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n67374707",
+      "name": "Lékárna K Lánu",
+      "url": "http://www.lekarnaklanu.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1778798934",
+      "name": "Lékárna Novodvorská",
+      "url": "http://www.lekarnanovodvorska.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n1736241197",
+      "name": "Lékárna Osadní",
+      "url": "https://www.lekarny-ipc.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n4469958900",
+      "name": "Lékárna U Matky Boží",
+      "url": "https://www.alphega.cz/012963",
+      "reason": "stránka lékárny ani vyhledávač poboček Alphega u této lékárny bezbariérovost neuvádí"
+    },
+    {
+      "osm_id": "n1647083887",
+      "name": "Lékárna U Revmatologického ústavu",
+      "url": "https://www.revma.cz/cs/lekarna",
+      "reason": "stránka lékárny o přístupnosti nic neuvádí; bezbariérový přístup a výtah uvádí web jen u budovy Revmatologického ústavu (Na Slupi 450/4)"
+    },
+    {
+      "osm_id": "n8603078965",
+      "name": "Lékárna Vršovice",
+      "url": "https://www.lekarnavrsovice.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3285422370",
+      "name": "Lékárna Všeobecné fakultní nemocnice v Praze",
+      "url": "https://www.vfn.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n6299081886",
+      "name": "Lékárna v Dlouhé",
+      "url": "https://www.lekarnavdlouhe.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n9391196646",
+      "name": "Magistra Lékárna U polikliniky",
+      "url": "https://www.magistra.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w850446593",
+      "name": "Nemocnice Na Františku",
+      "url": "https://www.nnfp.cz/",
+      "reason": "web zmiňuje jen novou bezbariérovou lékárnu nemocnice, o vstupech a budovách nemocnice nic"
+    },
+    {
+      "osm_id": "n1491804647",
+      "name": "Nemocniční lékárna Fakultní nemocnice Motol",
+      "url": "https://www.fnmotol.cz/",
+      "reason": "web uvádí jen bezplatné parkování pro držitele parkovacího průkazu ZTP (sleva), o lékárně nic"
+    },
+    {
+      "osm_id": "w35825114",
+      "name": "Neurologická klinika",
+      "url": "https://www.neuro.lf1.cuni.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n4842531833",
+      "name": "Ordinace Flora",
+      "url": "http://www.ordinaceflora.cz/kontakty",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n10095729727",
+      "name": "Oční ordinace MUDr. Jana Smutková",
+      "url": "https://ocni-ordinace-praha.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w27043729",
+      "name": "PB Economy",
+      "url": "https://www.aeroparking.cz/en/economy-pb",
+      "reason": "web uvádí jen bezplatné parkování pro ZTP/P (sleva), o vyhrazených místech nic"
+    },
+    {
+      "osm_id": "w239926796",
+      "name": "Parkoviště",
+      "url": "https://www.rosmarina.eu/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w396544478",
+      "name": "Parkoviště",
+      "url": "https://koupalistepetynka.cz/parkoviste",
+      "reason": "web parkoviště uvádí jen ZTP/P zdarma (sleva); bezbariérovost se týká koupaliště, ne parkoviště"
+    },
+    {
+      "osm_id": "n4315748279",
+      "name": "Pediatrie Praha 8.s.r.o.",
+      "url": "https://www.pediatr-stecko.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n9079194453",
+      "name": "PharmaPoint",
+      "url": "https://lekarnyprovas.cz/pobocky/lekarna-olsanka-praha-3/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n339877426",
+      "name": "Pharmacentrum Budějovická",
+      "url": "https://www.pharmacentrum.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1912119255",
+      "name": "Pharmacy Plus",
+      "url": "http://www.pharmacyplus.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n418963464",
+      "name": "Pilulka",
+      "url": "https://www.pilulka.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w121240718",
+      "name": "Poliklinika Agel",
+      "url": "https://poliklinika.agel.cz/praha.html",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w29056614",
+      "name": "Poliklinika Parnik",
+      "url": "https://poliklinikaparnik.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n130181399",
+      "name": "Poliklinika Prosek",
+      "url": "https://poliklinikaprosek.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n355278738",
+      "name": "Psychosomatická klinika",
+      "url": "https://psychosomatika.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n8773868140",
+      "name": "Smile Time",
+      "url": "https://smiletime.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n8916087459",
+      "name": "Smile centrum",
+      "url": "https://smilecentrum.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n5948765231",
+      "name": "Tichý zubař",
+      "url": "https://www.tichy-zubar.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n359908213",
+      "name": "U Svaté Ludmily",
+      "url": "https://lekarna-u-svate-ludmily.business.site/",
+      "reason": "web se nepodařilo načíst (HTTP Error 404: Not Found)"
+    },
+    {
+      "osm_id": "n13435950410",
+      "name": "Urban Health Medical",
+      "url": "https://www.kardiologie-smichov.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n4706863276",
+      "name": "Veřejné WC",
+      "url": "https://www.dpp.cz/cestovani/wc-v-metru",
+      "reason": "stránka WC v metru uvádí jen provozní dobu a uzavírky, o bezbariérovosti WC nic"
+    },
+    {
+      "osm_id": "n7215854688",
+      "name": "Veřejné WC",
+      "url": "https://www.dpp.cz/cestovani/wc-v-metru",
+      "reason": "stránka WC v metru uvádí jen provozní dobu a uzavírky, o bezbariérovosti WC nic"
+    },
+    {
+      "osm_id": "n1794976452",
+      "name": "ZAMZAM",
+      "url": "http://lekarny.zdravcentra.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n355003392",
+      "name": "Zdravotní ústav se sídlem v Ústí nad Labem",
+      "url": "https://www.zuusti.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n296827987",
+      "name": "myDENT",
+      "url": "https://www.mydent.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n13830472501",
+      "name": "ortoneo",
+      "url": "http://ortoneo.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "r6775338",
+      "name": "parkoviště Hlavní nádraží - Terasa",
+      "url": "https://parking.praha.eu/cs/moznosti-parkovani-v-praze/verejna-parkoviste/",
+      "reason": "obecná stránka veřejných parkovišť Praha, ke konkrétnímu parkovišti nic o ZTP stáních"
+    },
+    {
+      "osm_id": "n2575867597",
+      "name": "Ústřední vojenská nemocnice",
+      "url": "https://lekarna.uvn.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n9646808029",
+      "name": "LEBO",
+      "url": "https://lebo.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n7094978407",
+      "name": "Pod Nemocnicí",
+      "url": "http://www.podnemocnici.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n7094978403",
+      "name": "Svitava",
+      "url": "http://www.moravska-lekarna.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "brno339",
+      "name": "2. MUDr. Vlasta Gregorová",
+      "url": "https://www.dsarnika.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3325029085",
+      "name": "Brno hlavní nádraží",
+      "url": "https://www.czechrails.com/brno-train-station.html",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w29239095",
+      "name": "Brno, ÚAN Zvonařka",
+      "url": "http://www.csadbrno.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2977882644",
+      "name": "Brněnská lékárna",
+      "url": "https://www.pharmapoint.cz/lekarny/239-brnenska-lekarna/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n7242933863",
+      "name": "Centrum Ambulantní gynekologie",
+      "url": "http://www.centrumdvorak.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno297",
+      "name": "Centrum prenatální diagnostiky, s.r.o.",
+      "url": "https://www.prenatal.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3388962496",
+      "name": "DaliDENT",
+      "url": "https://www.dalident.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n12734675579",
+      "name": "Dizzydent",
+      "url": "https://dizzydent.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno298",
+      "name": "Dětské logopedické centrum Synkova",
+      "url": "https://www.polza.cz/nase-zarizeni/stacionare/detske-logopedicke-centrum-synkova",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773450",
+      "name": "Dům Naděje Brno-Bohunice",
+      "url": "http://www.nadeje.cz/brno/domov_pro_seniory_bohunice",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773440",
+      "name": "Dům Naděje Brno-Vinohrady",
+      "url": "http://www.nadeje.cz/brno/domov_se_zvlastnim_rezimem3",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773277",
+      "name": "Dům Naděje Brno-Řečkovice",
+      "url": "http://www.nadeje.cz/brno/domov_pro_seniory_reckovice",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773276",
+      "name": "Dům pokojného stáří Brno-Královo Pole",
+      "url": "http://www.nadeje.cz/brno/domov_pro_seniory_kralovo_pole",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773305",
+      "name": "Fakultní nemocnice u Sv. Anny, Klinika plastické a estetické chirurgie",
+      "url": "http://www.plasticka-chirurgie-berkova.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w44849143",
+      "name": "Jandent",
+      "url": "http://www.jandent.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno238",
+      "name": "Klinika Repromeda",
+      "url": "https://www.repromeda.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n4516723190",
+      "name": "Ladislav Fildan, Ordinace biologické celostní medicíny",
+      "url": "https://fildan.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773432",
+      "name": "Lékařské centrum Lázně",
+      "url": "http://www.lclazne.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno233",
+      "name": "Lékařský dům Hlinky",
+      "url": "https://www.lekarskydumhlinky.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n12810938998",
+      "name": "Lékárna 2.0",
+      "url": "http://www.lekarnamartinkova.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1602227657",
+      "name": "Lékárna Adonis",
+      "url": "http://lekarna-adonis.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n4722140422",
+      "name": "Lékárna Eden",
+      "url": "http://www.lekarna-eden.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n6490420356",
+      "name": "Lékárna Komín",
+      "url": "https://www.lekarnakomin.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3384075883",
+      "name": "Lékárna Na Kobližné",
+      "url": "https://www.lekkoblizna.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n369643340",
+      "name": "Lékárna Na Pekařské",
+      "url": "http://www.lekarnanapekarske.cz/",
+      "reason": "web se nepodařilo načíst (HTTP Error 403: Forbidden)"
+    },
+    {
+      "osm_id": "n4928156505",
+      "name": "Lékárna Nova",
+      "url": "https://www.lekarnanova.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3838844267",
+      "name": "Lékárna Plus",
+      "url": "http://www.apatykaplus.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1596719213",
+      "name": "Lékárna U Svaté Trojice",
+      "url": "http://www.svtrojice.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1491762430",
+      "name": "Lékárna U sv. Augustina",
+      "url": "https://www.mapolekarna.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2272994682",
+      "name": "Lékárna na Horové",
+      "url": "https://www.lekarna-horova.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n527798238",
+      "name": "Lékárna u Hippokrata",
+      "url": "https://www.uhippokrata.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773299",
+      "name": "MEDISPOL, s.r.o.",
+      "url": "http://www.medispol.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n7216762360",
+      "name": "MUDr. Marie Duřpektová MUDr. Marie Poláková, PhD",
+      "url": "https://www.alergologie-durpektova.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n4844292443",
+      "name": "Magistr Tom",
+      "url": "https://www.magistrtom.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773315",
+      "name": "Masarykův onkologický ústav",
+      "url": "http://www.mou.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773342",
+      "name": "MediClinic, soukromá poliklinika",
+      "url": "http://www.quattromedica.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "mbb5773298",
+      "name": "Medicentrum Koliště",
+      "url": "http://koliste47.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "mbb5773395",
+      "name": "Medivita, poliklinika Hudcova",
+      "url": "http://www.medivita.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno243",
+      "name": "Moje ambulance",
+      "url": "https://www.mojeambulance.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773318",
+      "name": "Nemocnice Milosrdných bratří",
+      "url": "http://www.nmbbrno.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n13450031643",
+      "name": "Neurologie In Sady",
+      "url": "https://neurologie-eeg.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n8026518841",
+      "name": "OFTIA s.r.o.",
+      "url": "https://www.oftia.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n4745290221",
+      "name": "OnlineLékárna.cz",
+      "url": "http://www.onlinelekarna.cz/",
+      "reason": "web se nepodařilo načíst (The read operation timed out)"
+    },
+    {
+      "osm_id": "n7978794826",
+      "name": "OČNÍ OPTIKA Brno s oční ordinací OPTIK VISUEL",
+      "url": "https://optikvisuel.cz/prodejna-lesna",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773349",
+      "name": "Poliklinika Kuklenská",
+      "url": "http://www.avizo.cz/",
+      "reason": "web se nepodařilo načíst (HTTP Error 403: Forbidden)"
+    },
+    {
+      "osm_id": "r6989530",
+      "name": "Poliklinika Lesná",
+      "url": "http://www.poliklinikalesna.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno239",
+      "name": "Poliklinika MUDr. Rudolfa Kropáče, s.r.o.",
+      "url": "https://www.polikropac.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773381",
+      "name": "Poliklinika Starý Lískovec s.r.o.",
+      "url": "https://www.pslbrno.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773283",
+      "name": "Poliklinika Vránova, Centrum lékařské péče s.r.o.",
+      "url": "http://www.sanatoriumbrno.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773320",
+      "name": "Psychiatrická nemocnice",
+      "url": "http://www.pnbrno.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno331",
+      "name": "Rehabilitace Bystrc s.r.o.",
+      "url": "https://www.rehabilitacebystrc.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n2954784804",
+      "name": "Ridere s.r.o",
+      "url": "https://www.ridere.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno237",
+      "name": "Sanatorium Helios, s.r.o.",
+      "url": "https://www.sanatoriumhelios.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno234",
+      "name": "Sanofyto s.r.o.",
+      "url": "https://www.sanofyto.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n296582386",
+      "name": "Supradent",
+      "url": "https://www.supradent.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n5080191975",
+      "name": "Typos",
+      "url": "http://lekarnatypos.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2278254615",
+      "name": "U pošty",
+      "url": "https://www.lekarnauposty.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n972678797",
+      "name": "U černého orla",
+      "url": "http://www.lekarnaminska.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "mbb5773319",
+      "name": "Vojenská nemocnice Brno p.o.",
+      "url": "http://www.vnbrno.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773323",
+      "name": "Vojenská nemocnice Brno p.o. - budova kožního oddělení",
+      "url": "http://www.vnbrno.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773351",
+      "name": "WC Komenského náměstí / Joštova",
+      "url": "http://www.vzmb.cz/vodni-prvky/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773438",
+      "name": "WC park Špilberk (objekt organizace Veřejná zeleň města Brna, nad ul. Pellicova)",
+      "url": "http://www.vzmb.cz/vodni-prvky/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno240",
+      "name": "Zubní centrum Durďákova",
+      "url": "https://www.zubnivbrne.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno236",
+      "name": "klinika UNICA s.r.o.",
+      "url": "https://www.unica.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773511",
+      "name": "lékárenská pohotovostní služba, K.E.I. pharma, s.r.o.",
+      "url": "http://www.lekarnakoliste.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "mbb5773294",
+      "name": "lékárna",
+      "url": "http://www.lekarnabiovita.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773304",
+      "name": "lékárna",
+      "url": "http://www.lekarnanapekarske.cz/",
+      "reason": "web se nepodařilo načíst (HTTP Error 403: Forbidden)"
+    },
+    {
+      "osm_id": "mbb5773354",
+      "name": "lékárna",
+      "url": "http://www.lekarnapilulkabrno.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773370",
+      "name": "lékárna",
+      "url": "http://www.sukl.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773387",
+      "name": "lékárna",
+      "url": "http://www.lekkoblizna.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773502",
+      "name": "lékárna",
+      "url": "http://www.magistra.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773506",
+      "name": "lékárna",
+      "url": "http://www.drmax.cz/",
+      "reason": "web se nepodařilo načíst (HTTP Error 403: Forbidden)"
+    },
+    {
+      "osm_id": "mbb5773514",
+      "name": "lékárna",
+      "url": "http://www.lekarnalancier.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773523",
+      "name": "lékárna",
+      "url": "http://www.mte.cz/medical-center",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773392",
+      "name": "poliklinika Božetěchova",
+      "url": "https://www.ceskapoliklinika.cz/poliklinika-bozetechova-brno",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773388",
+      "name": "poliklinika Bystrc",
+      "url": "https://www.sdruzeneordinace.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773353",
+      "name": "poliklinika Dobrovského, Centrum zdravotnických služeb s.r.o.",
+      "url": "http://www.polido.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773407",
+      "name": "poliklinika Horníkova",
+      "url": "http://www.poliklinikahornikova.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "mbb5773321",
+      "name": "poliklinika Zahradníkova, Sdružení zdravotnických zařízení II Brno, p.o.",
+      "url": "http://www.polza.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773316",
+      "name": "poliklinika Žerotínovo náměstí (Bílý dům), Sdružení zdravotnických zařízení II Brno, p.o.",
+      "url": "http://www.polza.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773328",
+      "name": "zdravotnické zařízení",
+      "url": "http://www.detskylekar-pivonkova.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773437",
+      "name": "zdravotnické zařízení",
+      "url": "https://www.javor-bystrc.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773442",
+      "name": "zdravotnické zařízení",
+      "url": "http://www.sdruzeneordinace.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773443",
+      "name": "zdravotnické zařízení",
+      "url": "http://www.turany.cz/zivot-v-mc/zdravotnicka-zarizeni/lekari",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno304",
+      "name": "zdravotnické zařízení",
+      "url": "https://www.ordinace-rihackovi.com",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno307",
+      "name": "zdravotnické zařízení",
+      "url": "https://www.pones.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno305",
+      "name": "zdravotnické zařízení",
+      "url": "https://www.lerammed.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno249",
+      "name": "zdravotnické zařízení",
+      "url": "https://www.drsovadina.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno260",
+      "name": "zdravotnické zařízení",
+      "url": "https://www.ambulanceslatina.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno254",
+      "name": "zdravotnické zařízení",
+      "url": "https://www.komdent.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno229",
+      "name": "zdravotnické zařízení",
+      "url": "https://www.zubydoubrava.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "brno311",
+      "name": "zdravotnické zařízení",
+      "url": "https://neurologiebrnobosonohy.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773324",
+      "name": "zdravotní středisko Konstancie",
+      "url": "http://www.zskonstancie.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "brno220",
+      "name": "zdravotní středisko Konstancie",
+      "url": "https://www.zskonstancie.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "mbb5773317",
+      "name": "Úrazová nemocnice v Brně",
+      "url": "http://www.unbr.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "mbb5773300",
+      "name": "Ústavní lékarna FN Brno",
+      "url": "http://www.fnbrno.cz/lekarna-v-porodnici-na-obilnim-trhu/t3534",
+      "reason": "zmínka o „bezbariérovém přístupu“ znamená jen bez objednání u psychiatrické pomoci, ne fyzickou přístupnost"
+    },
+    {
+      "osm_id": "n512278443",
+      "name": "Břeclav",
+      "url": "https://www.idsjmk.cz",
+      "reason": "web IDS JMK uvádí jen jízdné zdarma pro ZTP, o nádraží nic"
+    },
+    {
+      "osm_id": "w1373647922",
+      "name": "MÚ Břeclav - nádvoří",
+      "url": "https://www.mpbv.cz/placene-stani",
+      "reason": "web uvádí jen formulář parkovací karty ZTP/P"
+    },
+    {
+      "osm_id": "n12810938991",
+      "name": "Lékarna Drásov",
+      "url": "https://www.lekarnakurim.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1185880520",
+      "name": "Lékárna Kuřim",
+      "url": "https://www.lekarnakurim.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2273159209",
+      "name": "Lékárna U Radnice Rousínov",
+      "url": "https://www.lekarnarousinov.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n7099380180",
+      "name": "Na městečku",
+      "url": "http://www.swisspharma-kyjov.cz/",
+      "reason": "web se nepodařilo načíst (HTTP Error 404: Not Found)"
+    },
+    {
+      "osm_id": "n7100866880",
+      "name": "Lékárna U svatého Ducha",
+      "url": "http://usvatehoducha.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1224530129",
+      "name": "Na Hvězdové",
+      "url": "https://www.lekarnaznojmo.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2464058486",
+      "name": "U Anděla",
+      "url": "https://lipenskelekarny.cz/lekarna-destna/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w666632879",
+      "name": "Parkoviště",
+      "url": "https://infocentrum.jh.cz/dr-cs/22-poliklinika.html",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w115804752",
+      "name": "Nemocnice Český Krumlov",
+      "url": "http://www.nemckr.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n6728581073",
+      "name": "Bonate",
+      "url": "https://www.bonate.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w1118881328",
+      "name": "Parkoviště",
+      "url": "https://www.chotes.cz/verejne-parkovani",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n9242652574",
+      "name": "Bonate",
+      "url": "https://www.bonate-lekarny.cz/lekarny",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n6724864162",
+      "name": "Salvus",
+      "url": "http://www.lekarny-mraz.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w767898340",
+      "name": "FN HK parkoviště 1",
+      "url": "https://www.fnhk.cz/pacient-a-jeho-blizci/jak-se-k-nam-dostanete/jak-se-k-nam-dostanete",
+      "reason": "web uvádí bezbariérovost objektů celého areálu FN HK a vjezd zdarma pro ZTP; ke konkrétnímu parkovišti nic"
+    },
+    {
+      "osm_id": "w973625328",
+      "name": "Parkoviště",
+      "url": "https://www.sobotka.cz/parkovani",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n6415193250",
+      "name": "Lékárna U Řeky",
+      "url": "https://www.lekarnaureky.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3668981273",
+      "name": "Lékárna Harrachov",
+      "url": "http://www.lekarna-harrachov.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n886450355",
+      "name": "Nemocnice Jablonec nad Nisou",
+      "url": "https://www.nemjbc.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2295272687",
+      "name": "Lékárna U Pekáren",
+      "url": "http://www.lekarnaliberec.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w841404165",
+      "name": "Parkoviště",
+      "url": "https://parking.fttech.org/parking/ChooseLocation.asp?RZ=",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w1544037021",
+      "name": "Parkoviště",
+      "url": "https://parking.liberec.cz/",
+      "reason": "web uvádí jen obecná pravidla parkování ZTP v Liberci, ke konkrétnímu parkovišti nic"
+    },
+    {
+      "osm_id": "w402650549",
+      "name": "Maškova zahrada",
+      "url": "https://maskova-zahrada.cz/",
+      "reason": "web se nepodařilo načíst (HTTP Error 403: Forbidden)"
+    },
+    {
+      "osm_id": "n1587252416",
+      "name": "Lékárna Javorník",
+      "url": "https://www.azlekarna.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2140736213",
+      "name": "Zubárna s.r.o.",
+      "url": "https://vasezubarna.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n13608174987",
+      "name": "Zdravotnické zařízení NEREST s.r.o.",
+      "url": "https://www.nerest.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n13665666465",
+      "name": "Neurologická ambulance Jablunkov",
+      "url": "https://www.neurologie-jablunkov.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2507446689",
+      "name": "Lékárna Medical",
+      "url": "https://www.mojelekarna.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w525414955",
+      "name": "Poliklinika Agel",
+      "url": "https://nemocnicenovyjicin.agel.cz/index.html",
+      "reason": "web uvádí jen parkování zdarma pro ZTP (sleva)"
+    },
+    {
+      "osm_id": "n13674851537",
+      "name": "MUDr. Irena Schreierová",
+      "url": "https://www.detsky-lekar-schreierova.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w69251194",
+      "name": "Agel Hornická poliklinika",
+      "url": "https://hornickapoliklinika.agel.cz/index.html",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2549973858",
+      "name": "Dentdelion - zubní ordinace",
+      "url": "https://www.dentdelion.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n5750186484",
+      "name": "EuroDent Ostrava",
+      "url": "https://www.euro-dent.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3964624972",
+      "name": "Poliklinika Agel",
+      "url": "https://poliklinika.agel.cz/ostrava.html",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3993267009",
+      "name": "Poliklinika Kostelní",
+      "url": "http://www.poliklinikakostelni.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n5750186485",
+      "name": "U2 Dent",
+      "url": "http://www.u2dent.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2135447245",
+      "name": "Nová Lékárna",
+      "url": "http://www.novalekarna.eu/",
+      "reason": "web se nepodařilo načíst (<urlopen error timed out>)"
+    },
+    {
+      "osm_id": "n13655214674",
+      "name": "Zdravotní středisko Loštice",
+      "url": "https://www.stredisko-lostice.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2688531340",
+      "name": "Ave",
+      "url": "https://www.lekarnaave.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n6467771027",
+      "name": "Fit Lékárna",
+      "url": "http://fitlekarna.com",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3026903939",
+      "name": "Lékárna FN Olomouc",
+      "url": "https://www.fnol.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n900951886",
+      "name": "Poliklinika Agel",
+      "url": "https://poliklinika.agel.cz/olomouc.html",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n900959145",
+      "name": "U Pötingea",
+      "url": "https://www.mujlekarnik.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w598170218",
+      "name": "Vojenská nemocnice - chirurgie",
+      "url": "https://www.vnol.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n5620418279",
+      "name": "Lékárna - PharmDr. Marie Nemcová",
+      "url": "https://www.bystre.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w1192742360",
+      "name": "Heřmanův Městec, nádraží",
+      "url": "https://www.hermanuv-mestec.cz/sluzby/autobusovy-terminal/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1251436867",
+      "name": "Magistra lékárna Na Trojce",
+      "url": "https://www.magistra.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w1226695163",
+      "name": "Parklovací dům Grand",
+      "url": "https://www.parkovacidumgrand.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n4882172009",
+      "name": "U Kostelíčka",
+      "url": "http://www.lekarnaukostelicka.cz/",
+      "reason": "web se nepodařilo načíst (HTTP Error 403: Forbidden)"
+    },
+    {
+      "osm_id": "n6923978718",
+      "name": "U Raka",
+      "url": "http://www.lekarnauraka.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w1199222106",
+      "name": "Parkoviště",
+      "url": "https://www.mestoprelouc.cz/mesto-a-samosprava/platne-obecne-zavazne-vyhlasky-a-narizeni/platne-obecne-zavazne-vyhlasky-a-narizeni/cenik-c-1-2019-2615cs.html",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w1199224337",
+      "name": "Parkoviště",
+      "url": "https://www.mestoprelouc.cz/mesto-a-samosprava/platne-obecne-zavazne-vyhlasky-a-narizeni/platne-obecne-zavazne-vyhlasky-a-narizeni/cenik-c-1-2019-2615cs.html",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n12506517941",
+      "name": "Lékárna PharmaPoint",
+      "url": "https://www.pharmapoint.cz/lekarny/274-lekarna-u-zlateho-hada-chotesov/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n12506517942",
+      "name": "Praktická lékařka pro dospělé, MUDr. Klemperová, MUDr. Jelínková",
+      "url": "https://www.jklpraktik.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2451699842",
+      "name": "Farmacum",
+      "url": "https://www.farmacum.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n7737543715",
+      "name": "Na Zlaté stezce",
+      "url": "http://www.asterpharma.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n12561278943",
+      "name": "Rescue point",
+      "url": "https://zs-rr.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n10208165359",
+      "name": "Chirurgická ambulance Remus",
+      "url": "https://chirurgieremus.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n542616584",
+      "name": "Devětsil",
+      "url": "https://www.devetsil.cz/lekarny/lekarna-devetsil-plzen/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n4614484065",
+      "name": "Devětsil",
+      "url": "https://www.devetsil.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1770335649",
+      "name": "Devětsil u Gery",
+      "url": "https://www.devetsil.cz/lekarny/lekarna-devetsil-u-gery-plzen/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n10168631302",
+      "name": "Gynekologie Kralovická 27",
+      "url": "https://www.gynekolog.cz/born",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1770335650",
+      "name": "Lipová lékárna",
+      "url": "http://www.intec.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error timed out>)"
+    },
+    {
+      "osm_id": "n6804860546",
+      "name": "Lékárna Remus",
+      "url": "https://lekarna-remus.business.site/",
+      "reason": "web se nepodařilo načíst (HTTP Error 404: Not Found)"
+    },
+    {
+      "osm_id": "n6804860568",
+      "name": "Mateřídouška",
+      "url": "https://www.lekarny-mraz.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n13653514042",
+      "name": "Moje Ambulance a.s.",
+      "url": "https://mojeambulance.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2175272528",
+      "name": "Plzeňská lékárna",
+      "url": "http://www.intec.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error timed out>)"
+    },
+    {
+      "osm_id": "r13399483",
+      "name": "Terminál Hlavní nádraží",
+      "url": "https://www.idpk.cz/",
+      "reason": "web IDPK popisuje bezbariérovou dopravu obecně, o terminálu nic konkrétního"
+    },
+    {
+      "osm_id": "w265176450",
+      "name": "Parkoviště",
+      "url": "https://www.sabaparking.com/cs/web/cz/parkovani-praha/parking-saba-penny-market-brand%C3%BDs-nad-labem?_jsfBridgeRedirect=true",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w193380752",
+      "name": "Nemocnice Hořovice",
+      "url": "https://www.nemocnice-horovice.cz/",
+      "reason": "web uvádí jen zvýhodněné parkovné pro ZTP (sleva)"
+    },
+    {
+      "osm_id": "n6956928216",
+      "name": "Medikej",
+      "url": "https://medikej.cz/",
+      "reason": "web se nepodařilo načíst (<urlopen error [Errno 11001] getaddrinfo failed>)"
+    },
+    {
+      "osm_id": "n5306969908",
+      "name": "Interní a endokrinologická ambulance s.r.o.",
+      "url": "https://intendo.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w50414542",
+      "name": "Parkoviště obchodní centrum Oáza",
+      "url": "https://www.oazakladno.cz/parkovani",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w272983469",
+      "name": "Národní ústav duševního zdraví",
+      "url": "https://www.nudz.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n12800885469",
+      "name": "LékONKa Plus",
+      "url": "https://www.nemocnicekolin.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n9366155448",
+      "name": "Lékárna nemocnice Kolín",
+      "url": "https://www.nemocnicekolin.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w946068307",
+      "name": "Oblastní nemocnice Kolín",
+      "url": "https://www.nemocnicekolin.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w1029653374",
+      "name": "Parkovací dům",
+      "url": "https://www.mestokralupy.cz/mesto/doprava/",
+      "reason": "web uvádí jen osvobození ZTP od parkovného (sleva)"
+    },
+    {
+      "osm_id": "n135843446",
+      "name": "MUDr. Henrieta Mavrogeni",
+      "url": "https://www.henrietamavrogeni.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w53858885",
+      "name": "Poliklinika",
+      "url": "https://poliklinikaokruzni.cz/o-nas",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n11432118118",
+      "name": "Echokardio.cz, s.r.o.",
+      "url": "https://www.echokardio.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n3404623213",
+      "name": "Ústavní lékárna",
+      "url": "https://www.nemorako.cz/lekarna/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n12014903469",
+      "name": "MUDr. Karolína Banghová, PhD.",
+      "url": "https://pldd.wz.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2113341630",
+      "name": "Erica",
+      "url": "https://www.mojelekarna.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n12821058190",
+      "name": "Praktický lékař Červené Pečky",
+      "url": "https://ordinacepecky.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n582542617",
+      "name": "Lékárna PNJ",
+      "url": "https://www.pnj.cz/",
+      "reason": "bezbariérovost uvádí web jen u nového Centra duševního zdraví, ne u lékárny"
+    },
+    {
+      "osm_id": "w512776619",
+      "name": "Parkoviště",
+      "url": "https://www.nemji.cz/informace-pro-pacienty-a-navstevy/aktualni-stav-parkovist/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w1396173278",
+      "name": "Parkoviště",
+      "url": "https://www.nemji.cz/informace-pro-pacienty-a-navstevy/aktualni-stav-parkovist/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w1396173283",
+      "name": "Parkoviště",
+      "url": "https://www.nemji.cz/informace-pro-pacienty-a-navstevy/aktualni-stav-parkovist/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n354652987",
+      "name": "U Hromádků",
+      "url": "https://www.lekarnauhromadku.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n6647841104",
+      "name": "Lékárna Okříšky",
+      "url": "https://www.ucerniku.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2743827453",
+      "name": "Lékárna Borovina",
+      "url": "http://www.lekarnatrebic.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n616756831",
+      "name": "Lékárna Nemocnice Třebíč",
+      "url": "http://www.nem-tr.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n488678637",
+      "name": "Lékárna Vltavínská",
+      "url": "https://www.lekarna-vltavinska.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n451845897",
+      "name": "Medicamen",
+      "url": "https://www.medicamen.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2730262635",
+      "name": "Na Hájku",
+      "url": "https://www.lekarnanahajku.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w31990951",
+      "name": "Nemocnice Třebíč",
+      "url": "https://www.nem-tr.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n451845898",
+      "name": "U Černíků",
+      "url": "http://www.ucerniku.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n1150915795",
+      "name": "Na Náměstí",
+      "url": "http://www.lekarnatrest.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n11535043199",
+      "name": "Mudr. Radmila Kučerová",
+      "url": "https://www.ordinacekucerova.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "w967811297",
+      "name": "Nemocnice Valašské Meziříčí",
+      "url": "https://nemocnicevalasskemezirici.agel.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n6473949930",
+      "name": "Lékárna Slunce v Lékařském domě",
+      "url": "https://www.lekarnaslunce.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n9496821998",
+      "name": "Veřejné WC",
+      "url": "https://www.mtsbilina.cz/redakce/index.php?clanek=288776&xuser=&lanG=cs&slozka=288090",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n4390037435",
+      "name": "ALéky.cz",
+      "url": "https://www.aleky.cz/",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2702262837",
+      "name": "Nemocniční lékárna",
+      "url": "http://www.kzcr.eu/cz/tp",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    },
+    {
+      "osm_id": "n2398385105",
+      "name": "Na náměstí",
+      "url": "http://www.lekarna-sluknov.cz",
+      "reason": "web nic o přístupnosti neuvádí (úvodní stránka + až 6 podstránek)"
+    }
+  ],
+  "sources": [
+    {
+      "title": "FN u sv. Anny v Brně – Vstupy a parkování",
+      "url": "https://www.fnusa.cz/pro-pacienty-a-navstevy/vstupy-a-parkovani/",
+      "note": "Podrobný popis přístupnosti areálu Pekařská a detašovaných pracovišť (Zoubkova, Výstavní, Berkova)."
+    },
+    {
+      "title": "Lemon lékárna – přehled poboček",
+      "url": "https://www.lekarnalemon.cz/lekarny",
+      "note": "U každé pobočky štítek „Bezbariérový vstup“ (u některých chybí)."
+    },
+    {
+      "title": "Chytrá lékárna – přehled poboček",
+      "url": "https://www.chytralekarna.cz/lekarny",
+      "note": "Štítek „Bezbariérový vstup“ u brněnských poboček."
+    },
+    {
+      "title": "DPP – Bezbariérové cestování",
+      "url": "https://www.dpp.cz/cestovani/bezbarierove-cestovani",
+      "note": "Stav výtahů a plošin v metru, seznamy bezbariérových stanic; podrobně neotevřeno."
+    },
+    {
+      "title": "Plzeň Plaza – služby Dostupnost",
+      "url": "https://plzen-plaza.klepierre.cz/sluzby",
+      "note": "Samostatné stránky: bezbariérové toalety, parkovací místa, přístup, zapůjčení vozíku."
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+[
+{
+"i": "n4692722009",
+"n": "Tara",
+"s": "Penzion",
+"o": "Albrechtice v Jizerských horách",
+"w": "no",
+"la": 50.762265,
+"lo": 15.281351
+},
+{
+"i": "w50954227",
+"n": "Bismark",
+"s": "Penzion",
+"o": "Bedřichov",
+"w": "yes",
+"la": 50.796794,
+"lo": 15.140888
+},
+{
+"i": "n664098961",
+"n": "Penzion Bílá Vrána",
+"s": "Penzion",
+"o": "Bedřichov",
+"a": "Bedřichov ev.1682",
+"web": "https://www.zivefirmy.cz/rekreacni-stredisko-bila-vrana_f341978",
+"w": "yes",
+"la": 50.787299,
+"lo": 15.150564
+},
+{
+"i": "n13627161828",
+"n": "Bergpoolhaus",
+"s": "Chata",
+"o": "Benecko",
+"web": "https://www.bergpoolhaus.eu/",
+"w": "no",
+"la": 50.661711,
+"lo": 15.548027
+},
+{
+"i": "w206868877",
+"n": "Hotel Žalý",
+"s": "Hotel",
+"o": "Benecko",
+"a": "Benecko 160",
+"web": "http://www.hotelzaly.cz/",
+"w": "no",
+"la": 50.668861,
+"lo": 15.55969
+},
+{
+"i": "w206868855",
+"n": "Pension Na Sychrově",
+"s": "Penzion",
+"o": "Benecko",
+"a": "Benecko 184",
+"web": "https://www.pensionnasychrove.cz/",
+"w": "no",
+"la": 50.666944,
+"lo": 15.556918
+},
+{
+"i": "n1765527304",
+"n": "Relax Hotel Bára",
+"s": "Hotel",
+"o": "Benecko",
+"a": "Benecko 132",
+"web": "http://www.hotelbara.cz/",
+"w": "no",
+"la": 50.672296,
+"lo": 15.561518
+},
+{
+"i": "w180990477",
+"n": "Obří sud Javorník",
+"s": "Penzion",
+"o": "Dlouhý Most",
+"web": "https://www.areal-obrisud.cz/",
+"w": "yes",
+"la": 50.691721,
+"lo": 15.07992
+},
+{
+"i": "n10967689170",
+"n": "Sýček",
+"s": "Kemp",
+"o": "Doksy",
+"w": "no",
+"la": 50.597616,
+"lo": 14.672533
+},
+{
+"i": "w326685023",
+"n": "Antonie hotel",
+"s": "Hotel",
+"o": "Frýdlant",
+"a": "Zelená 905",
+"web": "https://www.antoniehotel.cz/",
+"w": "limited",
+"la": 50.927369,
+"lo": 15.074402
+},
+{
+"i": "n1945882702",
+"n": "Apartman Puskarcikova",
+"s": "Penzion",
+"o": "Harrachov",
+"w": "no",
+"la": 50.779559,
+"lo": 15.420757
+},
+{
+"i": "n12791875905",
+"n": "Chalupa Harrachov 90",
+"s": "Chata",
+"o": "Harrachov",
+"web": "http://www.ubytovani-harrachov.eu/chalupa-harrachov-90.php",
+"w": "no",
+"la": 50.785302,
+"lo": 15.418357
+},
+{
+"i": "n12088628258",
+"n": "Hotel Fit Fun",
+"s": "Hotel",
+"o": "Harrachov",
+"web": "https://www.hotelfitfun.cz/",
+"w": "yes",
+"la": 50.75938,
+"lo": 15.446077
+},
+{
+"i": "n664125531",
+"n": "Hotýlek pod smrkem",
+"s": "Hotel",
+"o": "Harrachov",
+"a": "Harrachov 280",
+"web": "https://www.hotylekpodsmrkem.cz/",
+"w": "no",
+"la": 50.76635,
+"lo": 15.438878
+},
+{
+"i": "n3275250195",
+"n": "M+M apartmán",
+"s": "Penzion",
+"o": "Harrachov",
+"web": "https://www.mmapartman.cz/",
+"w": "no",
+"la": 50.77987,
+"lo": 15.42476
+},
+{
+"i": "n3275202268",
+"n": "Pension Klondajk",
+"s": "Penzion",
+"o": "Harrachov",
+"web": "https://klondajk.penzion.cz/",
+"w": "no",
+"la": 50.779662,
+"lo": 15.427247
+},
+{
+"i": "n3272753281",
+"n": "Privat 522",
+"s": "Penzion",
+"o": "Harrachov",
+"web": "https://harrachov.cz/kamila/",
+"w": "no",
+"la": 50.780493,
+"lo": 15.426039
+},
+{
+"i": "w159686217",
+"n": "Svornost",
+"s": "Hotel",
+"o": "Harrachov",
+"a": "Harrachov 496",
+"w": "yes",
+"la": 50.776697,
+"lo": 15.429239
+},
+{
+"i": "w159686197",
+"n": "Villa Golden",
+"s": "Hotel",
+"o": "Harrachov",
+"a": "Harrachov 176",
+"web": "https://www.harrachov.cz/golden/default_cz.html",
+"w": "no",
+"la": 50.775458,
+"lo": 15.429686
+},
+{
+"i": "n4786265238",
+"n": "U Rychtářky",
+"s": "Penzion",
+"o": "Holany",
+"a": "Loubí 1",
+"web": "http://www.penzionurychtarky.cz/",
+"w": "yes",
+"la": 50.596442,
+"lo": 14.484779
+},
+{
+"i": "n14028097350",
+"n": "V Půli kopce",
+"s": "Apartmány",
+"o": "Holenice",
+"w": "no",
+"la": 50.522683,
+"lo": 15.299416
+},
+{
+"i": "n1987721383",
+"n": "Hotel Krakonoš",
+"s": "Hotel",
+"o": "Jablonec nad Jizerou",
+"a": "Jablonec nad Jizerou 425",
+"web": "https://www.breuer.cz/",
+"w": "limited",
+"la": 50.704423,
+"lo": 15.428227
+},
+{
+"i": "n12125907862",
+"n": "Hostinec u Rudy",
+"s": "Hostel",
+"o": "Koberovy",
+"web": "https://hostinecurudy.webnode.cz/",
+"w": "no",
+"la": 50.634009,
+"lo": 15.229462
+},
+{
+"i": "n296804158",
+"n": "Apartmány Friday",
+"s": "Apartmány",
+"o": "Liberec",
+"a": "Ruprechtická 306/4a",
+"web": "https://apartmany-friday.cz/",
+"w": "limited",
+"la": 50.772979,
+"lo": 15.05584
+},
+{
+"i": "n2398774227",
+"n": "Pleštil",
+"s": "Hostel",
+"o": "Liberec",
+"w": "no",
+"la": 50.762826,
+"lo": 15.03733
+},
+{
+"i": "n1873605056",
+"n": "Pytloun Wellness Travel Hotel",
+"s": "Hotel",
+"o": "Liberec",
+"a": "Volgogradská 70",
+"web": "https://www.pytlounhotels.com/cz/pytloun-wellness-travel-hotel/",
+"w": "limited",
+"la": 50.755101,
+"lo": 15.031002
+},
+{
+"i": "n13988808726",
+"n": "U Elišky",
+"s": "Penzion",
+"o": "Liberec",
+"w": "no",
+"la": 50.78966,
+"lo": 14.993021
+},
+{
+"i": "w142872321",
+"n": "Chata Barborka",
+"s": "Penzion",
+"o": "Lučany nad Nisou",
+"web": "https://www.ubytovani-barborka.cz/",
+"w": "no",
+"la": 50.765146,
+"lo": 15.195158
+},
+{
+"i": "w1538448854",
+"n": "Roubenka Bedřiška",
+"s": "Penzion",
+"o": "Lučany nad Nisou",
+"w": "no",
+"la": 50.742374,
+"lo": 15.197582
+},
+{
+"i": "w51945910",
+"n": "Obří sud / Fassbaude",
+"s": "Chata",
+"o": "Lázně Libverda",
+"w": "limited",
+"t": "yes",
+"la": 50.893867,
+"lo": 15.194946
+},
+{
+"i": "n608582455",
+"n": "Bajkovna Na Výsluní",
+"s": "Penzion",
+"o": "Nové Město pod Smrkem",
+"a": "Na výsluní 1016",
+"web": "https://www.bajkovna.cz/",
+"w": "no",
+"la": 50.932564,
+"lo": 15.22881
+},
+{
+"i": "n3116136363",
+"n": "Penzion Na Pohoři",
+"s": "Penzion",
+"o": "Olešnice",
+"a": "Pohoří 38",
+"web": "https://www.napohori.cz/",
+"w": "yes",
+"la": 50.553046,
+"lo": 15.12353
+},
+{
+"i": "n3661337391",
+"n": "Příšovice - Malý písečák",
+"s": "Karavanové stání",
+"o": "Příšovice",
+"w": "no",
+"la": 50.567348,
+"lo": 15.084566
+},
+{
+"i": "w252520179",
+"n": "Hotel Štumpovka",
+"s": "Hotel",
+"o": "Rokytnice nad Jizerou",
+"web": "https://www.dvoracky.cz/",
+"w": "no",
+"la": 50.747497,
+"lo": 15.511525
+},
+{
+"i": "n6943200711",
+"n": "Černá Louže",
+"s": "Chata",
+"o": "Rynoltice",
+"web": "https://kempcernalouze.cz/",
+"w": "limited",
+"la": 50.800097,
+"lo": 14.823445
+},
+{
+"i": "w203319548",
+"n": "Penzion Aron",
+"s": "Chata",
+"o": "Smržovka",
+"a": "Jelení kout ev.112",
+"w": "no",
+"la": 50.718361,
+"lo": 15.244011
+},
+{
+"i": "w168593461",
+"n": "Chata Pláně pod Ještědem",
+"s": "Horská chata",
+"o": "Světlá pod Ještědem",
+"web": "http://www.plane.cz",
+"w": "no",
+"la": 50.720825,
+"lo": 15.003196
+}
+]
