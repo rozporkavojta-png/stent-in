@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Itinerář · kudyprojedu.cz</title>
+<meta name="description" content="Poskládejte si den z přístupných míst a bezbariérových tras: hotel, restaurace, muzeum, park. Navigace mezi zastávkami a shoda s vašimi potřebami.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=15">
+<link rel="stylesheet" href="assets/css/stezky.css?v=2">
+</head>
+<body class="page-itinerar">
+<div id="site-header"></div>
+<main id="main">
+  <section class="wrap it-head">
+    <p class="kicker" data-i18n>Plán dne</p>
+    <h1 data-i18n>Itinerář</h1>
+    <p class="lede" data-i18n>Poskládejte si den z míst a tras: hotel, restaurace, muzeum, park. Ke každému přesunu dáme odkaz na navigaci a ukážeme, jak celý plán sedí k vašim potřebám.</p>
+    <p class="callout small it-proto" id="it-proto"></p>
+    <div class="it-shared" id="it-shared" hidden></div>
+  </section>
+
+  <div class="wrap it-grid">
+    <section class="it-main" aria-labelledby="it-stops-h">
+      <div class="field it-namef"><label for="it-name" data-i18n>Název itineráře</label><input id="it-name" type="text" maxlength="80" placeholder="Například Sobota v Českých Budějovicích" data-i18n-attr="placeholder"></div>
+      <h2 id="it-stops-h" class="sr-only" data-i18n>Zastávky</h2>
+      <ol class="it-stops" id="it-stops" aria-live="polite"><li class="it-empty"><p data-i18n>Načítám…</p></li></ol>
+
+      <section class="it-add" aria-labelledby="it-add-h">
+        <h2 id="it-add-h" class="st-h2" data-i18n>Přidat zastávku</h2>
+        <p class="small muted" data-i18n>Místo přidáte i tlačítkem „Přidat do itineráře“ v detailu místa nebo trasy.</p>
+        <div class="it-add-tabs" role="tablist" aria-label="Odkud přidat" data-i18n-attr="aria-label">
+          <button type="button" role="tab" id="tab-saved" aria-controls="pane-saved" aria-selected="true" data-i18n>Uložená místa a trasy</button>
+          <button type="button" role="tab" id="tab-find" aria-controls="pane-find" aria-selected="false" tabindex="-1" data-i18n>Najít místo v obci</button>
+          <button type="button" role="tab" id="tab-trail" aria-controls="pane-trail" aria-selected="false" tabindex="-1" data-i18n>Trasa z katalogu</button>
+        </div>
+        <div role="tabpanel" id="pane-saved" aria-labelledby="tab-saved"><ul class="st-rows it-res" id="it-saved-res"><li><span class="muted" data-i18n>Načítám…</span></li></ul></div>
+        <div role="tabpanel" id="pane-find" aria-labelledby="tab-find" hidden>
+          <form class="it-find" id="it-find">
+            <div class="field"><label for="it-town" data-i18n>Obec nebo město</label><input id="it-town" type="text" list="it-towns" autocomplete="off" required placeholder="Např. Český Krumlov" data-i18n-attr="placeholder"></div>
+            <datalist id="it-towns"></datalist>
+            <div class="field"><label for="it-q" data-i18n>Název místa <span class="hint">(nepovinné)</span></label><input id="it-q" type="text" autocomplete="off" placeholder="Např. muzeum" data-i18n-attr="placeholder"></div>
+            <button class="btn btn-primary" type="submit" data-i18n>Hledat</button>
+          </form>
+          <ul class="st-rows it-res" id="it-find-res"></ul>
+        </div>
+        <div role="tabpanel" id="pane-trail" aria-labelledby="tab-trail" hidden>
+          <form class="it-find" id="it-trail-form">
+            <div class="field it-wide"><label for="it-trail" data-i18n>Bezbariérová trasa</label><select id="it-trail"><option value="" data-i18n>Načítám trasy…</option></select></div>
+            <button class="btn btn-primary" type="submit" data-i18n>Přidat trasu</button>
+          </form>
+          <p class="small muted" data-i18n>Trasy jsou z našeho <a href="stezky.html">katalogu bezbariérových tras</a> (OpenStreetMap).</p>
+        </div>
+      </section>
+
+      <section class="it-saved" aria-labelledby="it-list-h">
+        <h2 id="it-list-h" class="st-h2" data-i18n>Moje itineráře</h2>
+        <ul class="st-rows" id="it-list"></ul>
+      </section>
+    </section>
+
+    <aside class="it-side" aria-label="Mapa a souhrn" data-i18n-attr="aria-label">
+      <div class="it-mapbox"><div id="it-map" class="map-canvas" role="application" aria-label="Mapa zastávek itineráře" data-i18n-attr="aria-label"></div></div>
+      <p class="small muted it-mapnote" data-i18n>Čárkované čáry jsou přímé spojnice mezi zastávkami, ne skutečná cesta.</p>
+      <div id="it-score"></div>
+      <div class="it-actions">
+        <button class="btn btn-primary" type="button" id="it-save" data-i18n>Uložit do mých itinerářů</button>
+        <button class="btn btn-ghost" type="button" id="it-share" data-i18n>Sdílet odkazem</button>
+        <a class="btn btn-ghost" id="it-gm" href="#" target="_blank" rel="noopener" hidden data-i18n>Celý plán v Google Maps</a>
+        <button class="btn btn-quiet" type="button" id="it-new" data-i18n>Nový itinerář</button>
+      </div>
+      <div id="it-sharebox"></div>
+    </aside>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js?v=2"></script>
+<script src="assets/js/i18n/core.js?v=2"></script>
+<script src="assets/js/i18n/stezky.js?v=1"></script>
+<script src="assets/js/i18n/itinerar.js?v=1"></script>
+<script src="assets/js/config.js?v=12"></script>
+<script src="assets/js/core.js?v=15"></script>
+<script src="assets/js/map-engine.js?v=12"></script>
+<script src="assets/js/stezky.js?v=2"></script>
+<script src="assets/js/itinerar.js?v=3"></script>
+</body>
+</html>

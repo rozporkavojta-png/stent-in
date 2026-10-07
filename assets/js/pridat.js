@@ -1,31 +1,29 @@
-/* Přidat nebo upravit místo: 5 kroků, průběžný odhad kategorie podle metodiky POV, uložení do prohlížeče */
+/* Přidat nebo upravit místo: komunitní návrh nového místa, doplnění údajů nebo hlášení změny.
+   Krok „Přístupnost“ používá stejný standardizovaný checklist jako profil podniku (KPCheck + KP.business.CHECKLIST).
+   FUNKČNÍ PROTOTYP: vše se ukládá jen do tohoto prohlížeče (kp.drafts, kp.reports, kp.reviews). */
 (function () {
   'use strict';
-  const K = window.KP, $ = (s) => document.querySelector(s), $$ = (s) => Array.from(document.querySelectorAll(s));
-  const MAX_PHOTOS = 8;
+  const K = window.KP, KC = window.KPCheck, $ = (s) => document.querySelector(s), $$ = (s) => Array.from(document.querySelectorAll(s));
+  const MAX_PHOTOS = 6, PFX = 'pr';
   const TYPES = [
-    ['ubytovani', 'Ubytování', 'bed'], ['restaurace', 'Restaurace, kavárna', 'food'], ['wc', 'Veřejné WC', 'wc'],
-    ['pamatky', 'Památka, muzeum', 'museum'], ['kultura', 'Kultura', 'theater'], ['urady', 'Úřad, pošta', 'building'],
-    ['zdravi', 'Lékař, lékárna', 'pharmacy'], ['obchody', 'Obchod', 'bookmark'], ['parkovani', 'Parkoviště', 'parking'], ['jine', 'Jiné', 'info'],
+    ['ubytovani', KP.t('Ubytování'), 'bed'], ['restaurace', KP.t('Restaurace, kavárna'), 'food'], ['wc', KP.t('Veřejné WC'), 'wc'],
+    ['pamatky', KP.t('Památka, muzeum'), 'museum'], ['kultura', KP.t('Kultura'), 'theater'], ['urady', KP.t('Úřad, pošta'), 'building'],
+    ['zdravi', KP.t('Lékař, lékárna'), 'pharmacy'], ['obchody', KP.t('Obchod'), 'bookmark'], ['sport', KP.t('Sport, bazén'), 'star'],
+    ['priroda', KP.t('Příroda, vyhlídka'), 'tree'], ['parkovani', KP.t('Parkoviště'), 'parking'], ['jine', KP.t('Jiné'), 'info'],
   ];
-  // které části kontrolního seznamu se ukážou pro daný typ
-  const SECTIONS = {
-    vstup: t => t !== 'parkovani',
-    uvnitr: t => !['wc', 'parkovani'].includes(t),
-    wc: t => t !== 'parkovani',
-    park: t => t !== 'wc',
-    ubyt: t => t === 'ubytovani',
-  };
-  const STEP_NAMES = ['Místo', 'Typ místa', 'Přístupnost', 'Fotky', 'Souhrn'];
-  const state = { step: 1, sub: 0, place: null, places: [], photos: [], towns: [], regions: {}, wide: null };
+  const STEP_NAMES = [KP.t('Co a kde'), KP.t('Typ místa'), KP.t('Přístupnost'), KP.t('Fotky'), KP.t('Souhrn')];
+  const MODE_TXT = { doplnit: KP.t('Doplnění údajů'), zmena: KP.t('Hlášení změny'), nove: KP.t('Návrh nového místa') };
+  const state = { step: 1, sub: 0, place: null, photos: [], search: null, builtFor: null };
+
+  const mode = () => ($('#modes input:checked') || {}).value || 'doplnit';
+  const selectedType = () => { const r = $('#types input:checked'); return r ? r.value : null; };
+  const items = () => [].concat(...KC.steps(selectedType() || 'jine').map(s => s.items));
 
   // ---------- Kroky ----------
-  function toTop() {
-    const f = $('#wizard');
-    if (f.getBoundingClientRect().top < 0) f.scrollIntoView({ block: 'start', behavior: 'smooth' });
-  }
+  function toTop() { const f = $('#wizard'); if (f.getBoundingClientRect().top < 0) f.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
   function go(n, sub) {
-    if (n === 3) { applyType(); showSub(sub === 'last' ? parts().length - 1 : 0); }
+    if (n === 3) { buildChecklist(); showSub(sub === 'last' ? parts().length - 1 : 0); }
+    if (n === 4) photoNote();
     if (n === 5) renderSummary();
     state.step = n;
     $$('.step').forEach(s => { s.hidden = Number(s.dataset.step) !== n; });
@@ -35,22 +33,49 @@
       b.classList.toggle('done', k < n);
     });
     $('#step-num').textContent = n;
-    $('#step-count').textContent = 'Krok ' + n + ' z 5';
+    $('#step-count').textContent = K.t('Krok {i} z {n}', { i: n, n: 5 });
     updateName();
     $('#btn-prev').hidden = n === 1;
     $('#btn-next').hidden = n === 5;
     $('#btn-submit').hidden = n !== 5;
+    $('#btn-submit').textContent = mode() === 'zmena' ? KP.t('Uložit hlášení') : KP.t('Uložit příspěvek');
     const h = document.querySelector('.step[data-step="' + n + '"] h2');
     if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
     toTop();
   }
   function updateName() {
     let t = STEP_NAMES[state.step - 1];
-    if (state.step === 3) { const ps = parts(); t += ', část ' + (state.sub + 1) + ' z ' + ps.length; }
+    if (state.step === 3) { const ps = parts(); t += ', ' + K.t('část {i} z {n}', { i: state.sub + 1, n: ps.length }); }
     $('#step-name').textContent = t;
   }
 
-  // ---------- Krok 3: jedna část kontrolního seznamu na obrazovku ----------
+  // ---------- Krok 3: checklist po částech ----------
+  // Části se staví podle typu místa; rozepsané hodnoty se při změně typu zachovají
+  function buildChecklist() {
+    const t = selectedType() || 'jine', key = t + '|' + mode() + '|' + (state.place ? state.place.i : '');
+    if (state.builtFor === key) return;
+    const prev = $('#ck-parts').children.length ? KC.read($('#ck-parts'), PFX, KP_ALL()) : {};
+    const prevZm = $('#zm-text') ? { f: $('#zm-field').value, t: $('#zm-text').value } : null;
+    const steps = KC.steps(t), p = state.place;
+    let html = '';
+    if (mode() === 'zmena') {
+      const fs = p ? K.facilitiesScore(p) : null;
+      const opts = (fs ? fs.relevant : Object.keys(K.AREAS)).map(a => '<optgroup label="' + K.AREAS[a] + '">' +
+        K.FEATURES.filter(f => f.a === a).map(f => '<option value="' + f.k + '">' + K.esc(f.label) + '</option>').join('') + '</optgroup>').join('');
+      html += ('<fieldset class="fgroup" data-part="zmena"><legend>' + KP.t('Co se změnilo') + '</legend>') +
+        ('<div class="field full"><label for="zm-field">' + KP.t('Kterého údaje se změna týká') + '</label><select id="zm-field"><option value="">' + KP.t('Něco jiného nebo víc věcí') + '</option>') + opts + '</select></div>' +
+        ('<div class="field full"><label for="zm-text">' + KP.t('Co je teď jinak') + '</label><textarea id="zm-text" maxlength="2000" placeholder="' + KP.t('Např. od září je u vstupu rampa, schod zmizel. Nebo: výtah je dlouhodobě mimo provoz.') + '"></textarea>') +
+        ('<span class="hint">' + KP.t('Když znáte nové hodnoty, vyplňte je v dalších částech. Nic dalšího vyplňovat nemusíte.') + '</span></div></fieldset>');
+    }
+    html += steps.map(s => '<fieldset class="fgroup pr-ck" data-part="' + s.a + '"><legend>' + s.label + '</legend>' +
+      '<p class="ck-intro full">' + K.esc(s.intro) + '</p>' +
+      s.items.map(c => KC.fieldHtml(c, prev[c.key], PFX, p)).join('') + '</fieldset>').join('');
+    $('#ck-parts').innerHTML = html;
+    if (prevZm && $('#zm-text')) { $('#zm-field').value = prevZm.f; $('#zm-text').value = prevZm.t; }
+    state.builtFor = key;
+  }
+  // Všechny položky (pro čtení rozepsaných hodnot napříč typy)
+  function KP_ALL() { return K.business.CHECKLIST; }
   function parts() { return $$('.step[data-step="3"] .fgroup').filter(f => !f.hidden); }
   function showSub(i) {
     const ps = parts();
@@ -73,242 +98,174 @@
     const lg = parts()[state.sub].querySelector('legend');
     lg.setAttribute('tabindex', '-1'); lg.focus({ preventScroll: true }); toTop();
   }
-
   function canLeave(n) {
-    if (n === 1 && !state.place && !($('#is-new').checked && $('#np-name').value.trim())) {
-      K.toast('Vyberte místo ze seznamu, nebo zaškrtněte „přidám nové“ a napište název.'); return false;
+    const m = mode();
+    if (n === 1) {
+      if (m === 'nove' && !$('#np-name').value.trim()) { K.toast(KP.t('Napište název nového místa.')); $('#np-name').focus(); return false; }
+      if (m !== 'nove' && !state.place) { K.toast(KP.t('Vyberte místo ze seznamu. Když v něm není, zvolte „Navrhnout nové místo“.')); $('#find').focus(); return false; }
     }
-    if (n === 2 && !selectedType()) { K.toast('Vyberte typ místa.'); return false; }
+    if (n === 2 && !selectedType()) { K.toast(KP.t('Vyberte typ místa.')); return false; }
+    if (n === 3 && m === 'zmena' && state.sub === 0 && $('#zm-text') && !$('#zm-text').value.trim()) { K.toast(KP.t('Napište, co je teď jinak.')); $('#zm-text').focus(); return false; }
     return true;
   }
 
-  // ---------- Krok 1: hledání ----------
-  function norm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
-  // Hledá v načtených regionech; když dotaz obsahuje obec (Česko i Bavorsko), načte její region.
-  // Tlačítko „Hledat všude“ projde všechny regiony postupně a nechá si jen nalezená místa.
-  const hay = (p) => p._s || (p._s = norm(p.n + ' ' + p.o + ' ' + (p.a || '') + ' ' + p.s));
-  function townRegion(q) {
-    let best = null;
-    for (const t of state.towns) {
-      const n = norm(t[0]);
-      if (n.length >= 3 && (' ' + q + ' ').includes(' ' + n + ' ') && (!best || t[2] > best[2])) best = t;
-    }
-    return best ? best[1] : null;
+  // ---------- Krok 1: druh příspěvku a místo ----------
+  function applyMode() {
+    const m = mode();
+    $('#find-block').hidden = m === 'nove';
+    $('#new-place').hidden = m !== 'nove';
+    if (m === 'nove') { state.place = null; $$('#pick [data-id]').forEach(b => b.setAttribute('aria-pressed', 'false')); $('#osm-link').href = 'https://www.openstreetmap.org/edit'; }
+    $('#btn-submit').textContent = m === 'zmena' ? KP.t('Uložit hlášení') : KP.t('Uložit příspěvek');
+    state.builtFor = null;
   }
-  function searchPlaces() {
-    const q = norm($('#find').value.trim());
-    const list = $('#pick');
-    if (q.length < 2) { list.innerHTML = ''; return; }
-    const words = q.split(/\s+/);
-    const rid = townRegion(q);
-    if (rid && !state.regions[rid]) {
-      state.regions[rid] = 'loading';
-      K.loadRegion(rid).then(arr => { state.regions[rid] = arr; searchPlaces(); }).catch(() => { delete state.regions[rid]; });
-    }
-    const pool = [].concat(state.places, ...Object.values(state.regions).filter(Array.isArray), state.wide && state.wide.q === q ? state.wide.hits : []);
-    const hits = [], seen = new Set();
-    for (const p of pool) {
-      if (seen.has(p.i)) continue;
-      if (words.every(w => hay(p).includes(w))) { seen.add(p.i); hits.push(p); if (hits.length >= 25) break; }
-    }
-    const wideBtn = !(state.wide && state.wide.q === q) ? '<li><button type="button" class="btn btn-quiet btn-sm" data-wide>' + K.icon('search') + 'Hledat ve všech místech v Česku a v Bavorsku</button></li>' : '';
-    list.innerHTML = (hits.length ? hits.map(p => '<li><button type="button" data-id="' + p.i + '" aria-pressed="' + (state.place && state.place.i === p.i) + '">' +
-      '<span class="pp-txt"><b>' + K.esc(p.n) + '</b><small>' + K.esc(p.s) + ' · ' + K.esc([p.a, p.o, K.zemeOf(p) === 'de' ? 'Bavorsko' : ''].filter(Boolean).join(', ')) + '</small></span>' +
-      '<span class="pp-mark">' + K.icon('check') + '</span></button></li>').join('')
-      : '<li class="muted small">' + (state.regions[rid] === 'loading' ? 'Načítám místa v obci…' : 'Nic jsme nenašli. Zkuste jiný tvar názvu, přidejte obec, nebo přidejte místo jako nové.') + '</li>') +
-      (hits.length < 25 ? wideBtn : '');
-  }
-  function searchEverywhere() {
-    const q = norm($('#find').value.trim()); if (q.length < 2) return;
-    const words = q.split(/\s+/);
-    $('#find-hint').textContent = 'Prohledávám všechna místa…';
-    K.loadAll(p => words.every(w => hay(p).includes(w)), { onProgress: (d, n) => { $('#find-hint').textContent = 'Prohledávám všechna místa… ' + d + ' z ' + n + ' oblastí'; } })
-      .then(hits => { state.wide = { q, hits }; $('#find-hint').textContent = 'Prohledali jsme všechna místa v Česku a v Bavorsku.'; searchPlaces(); })
-      .catch(() => { $('#find-hint').textContent = 'Hledání se nepovedlo. Zkuste to znovu.'; });
-  }
-  function findLoaded(id) {
-    return state.places.find(p => p.i === id) || K.placeById(id) || (state.wide ? state.wide.hits.find(p => p.i === id) : null) || null;
-  }
-  function pickPlace(id) {
-    state.place = findLoaded(id);
-    $$('#pick [data-id]').forEach(b => b.setAttribute('aria-pressed', b.dataset.id === id));
-    if (state.place) {
-      $('#is-new').checked = false; $('#new-place').hidden = true;
-      $('#osm-link').href = K.osmEditUrl(state.place);
-      const t = $('#types input[value="' + state.place.c + '"]');
-      if (t) t.checked = true;
-      if (state.place.sc !== undefined) $('#v-steps').value = state.place.sc;
-      if (state.place.dw) $('#v-door').value = state.place.dw;
-      if (state.place.pk) $('#p-n').value = state.place.pk;
-      if (state.place.t === 'yes') { $('#w-has').checked = true; toggleDeps(); }
-      if (state.place.d && !$('#note').value) $('#note').value = state.place.d;
-      verdict();
-    }
+  function pickPlace(p) {
+    state.place = p;
+    $('#osm-link').href = K.osmEditUrl(p);
+    $('#biz-link').href = 'podnik.html?id=' + encodeURIComponent(p.i) + (p._r ? '&r=' + encodeURIComponent(p._r) : '');
+    const t = $('#types input[value="' + p.c + '"]');
+    if (t) t.checked = true;
+    if (p.d && !$('#note').value && mode() === 'doplnit') $('#note').placeholder = K.t('Teď v mapě') + ': ' + p.d;
+    state.builtFor = null;
+    verdict();
   }
 
-  // ---------- Krok 2: typ ----------
-  function selectedType() { const r = $('#types input:checked'); return r ? r.value : null; }
-  function applyType() {
-    const t = selectedType() || 'jine';
-    $$('[data-sec]').forEach(f => { f.hidden = !SECTIONS[f.dataset.sec](t); });
-  }
-
-  // ---------- Krok 3: závislá pole ----------
-  function toggleDeps() {
-    $$('[data-ramp]').forEach(e => { e.hidden = !$('#v-ramp').checked; });
-    $$('[data-lift]').forEach(e => { e.hidden = !$('#u-lift').checked; });
-    $$('[data-wc]').forEach(e => { e.hidden = !$('#w-has').checked; });
-  }
-  const num = (id) => { const v = $(id).value.trim(); return v === '' ? null : Number(v.replace(',', '.')); };
-
-  // ---------- Odhad kategorie podle metodiky POV ----------
+  // ---------- Odhad kategorie podle metodiky POV z hodnot checklistu ----------
   // 0 = přístupný, 1 = částečně, 2 = nepřístupný
   function evaluate() {
+    const v = $('#ck-parts').children.length ? KC.read($('#ck-parts'), PFX, KP_ALL()) : {};
+    const has = (k) => v[k] !== undefined && v[k] !== '';
     const notes = []; let worst = -1;
     const rate = (lvl, text) => { worst = Math.max(worst, lvl); notes.push([lvl, text]); };
-    const t = selectedType() || 'jine';
-    if (SECTIONS.vstup(t)) {
-      const ramp = $('#v-ramp').checked, steps = num('#v-steps'), h = num('#v-stepcm'), door = num('#v-door');
-      if (ramp) {
-        const s = num('#v-slope'), len = num('#v-rlen'), w = num('#v-rwid');
-        if (s !== null) {
-          const short = len !== null && len <= 3;
-          const [ok, part] = short ? [12.5, 16.5] : [8, 12.5];
-          if (s <= ok) rate(0, 'Rampa ' + K.fmt(s) + ' %: vyhovuje (max ' + K.fmt(ok) + ' %' + (short ? ' do 3 m' : '') + ')');
-          else if (s <= part) rate(1, 'Rampa ' + K.fmt(s) + ' %: jen částečně (max ' + K.fmt(part) + ' %)');
-          else rate(2, 'Rampa ' + K.fmt(s) + ' % je příliš strmá');
-          if (len === null) notes.push([-1, 'Doplňte délku rampy, podle ní se určuje přípustný sklon']);
-        }
-        if (w !== null) { if (w >= 110) rate(0, 'Šířka rampy ' + w + ' cm'); else rate(2, 'Rampa užší než 110 cm (' + w + ' cm)'); }
-      } else if (steps !== null) {
-        if (steps === 0) rate(0, 'Vstup bez schodu');
-        else if (steps === 1 && h !== null && h <= 2) rate(0, 'Práh ' + K.fmt(h) + ' cm');
-        else if (steps === 1 && (h === null || h <= 7)) rate(1, h === null ? 'Jeden schod: doplňte výšku' : 'Jeden schod ' + K.fmt(h) + ' cm');
-        else rate(2, steps === 1 ? 'Schod ' + K.fmt(h) + ' cm (víc než 7 cm)' : steps + ' schodů bez rampy');
-      } else if (h !== null) {
-        if (h <= 2) rate(0, 'Práh ' + K.fmt(h) + ' cm'); else if (h <= 7) rate(1, 'Schod ' + K.fmt(h) + ' cm'); else rate(2, 'Schod ' + K.fmt(h) + ' cm');
-      }
-      if (door !== null) { if (door >= 80) rate(0, 'Vstupní dveře ' + door + ' cm'); else if (door >= 70) rate(1, 'Vstupní dveře ' + door + ' cm (pod 80)'); else rate(2, 'Vstupní dveře ' + door + ' cm (pod 70)'); }
-    }
-    if (SECTIONS.uvnitr(t)) {
-      const floors = num('#u-floors');
-      if ($('#u-lift').checked) {
-        const d = num('#u-ldoor'), w = num('#u-lw'), dp = num('#u-ld');
-        if (d !== null) { if (d >= 80) rate(0, 'Dveře výtahu ' + d + ' cm'); else if (d >= 70) rate(1, 'Dveře výtahu ' + d + ' cm'); else rate(2, 'Dveře výtahu ' + d + ' cm'); }
-        if (w !== null && dp !== null) { if (w >= 100 && dp >= 125) rate(0, 'Kabina ' + w + ' × ' + dp + ' cm'); else if (w >= 100 && dp >= 110) rate(1, 'Kabina ' + w + ' × ' + dp + ' cm'); else rate(2, 'Kabina ' + w + ' × ' + dp + ' cm je malá'); }
-      } else if ($('#u-plat').checked) rate(1, 'Jen schodišťová plošina: nejvýš částečně přístupné');
-      else if (floors !== null && floors > 1) rate(1, floors + ' podlaží bez výtahu: přístupné jen přízemí');
-      const nar = num('#u-narrow');
-      if (nar !== null) { if (nar >= 80) rate(0, 'Vnitřní průchody ' + nar + ' cm'); else if (nar >= 70) rate(1, 'Nejužší průchod ' + nar + ' cm'); else rate(2, 'Nejužší průchod ' + nar + ' cm'); }
-    }
+    if (has('vstupBezSchodu')) rate({ yes: 0, part: 1, no: 2 }[v.vstupBezSchodu], { yes: KP.t('Vstup bez schodů nebo s rampou'), part: KP.t('Vstup jen částečně bez bariér'), no: KP.t('Vstup se schody') }[v.vstupBezSchodu]);
+    if (has('schodyPocet') && v.schodyPocet > 1 && v.vstupBezSchodu !== 'yes') rate(2, K.t('{n} schodů u vstupu', { n: v.schodyPocet }));
+    if (has('prahCm')) { const h = v.prahCm; rate(h <= 2 ? 0 : h <= 7 ? 1 : 2, K.t('Práh nebo schod') + ' ' + K.fmt(h) + ' cm' + (h <= 2 ? '' : ' ' + (h <= 7 ? K.t('(víc než 2 cm)') : K.t('(víc než 7 cm)')))); }
+    if (has('vstupDvereCm')) { const d = v.vstupDvereCm; rate(d >= 80 ? 0 : d >= 70 ? 1 : 2, K.t('Vstupní dveře') + ' ' + K.fmt(d) + ' cm'); }
+    if (has('rampaSklonPct')) { const s = v.rampaSklonPct; rate(s <= 8 ? 0 : s <= 12.5 ? 1 : 2, K.t('Rampa') + ' ' + K.fmt(s) + ' %' + (s <= 8 ? '' : ' ' + (s <= 12.5 ? K.t('(vyhovuje jen do 3 m délky)') : K.t('(příliš strmá pro rampu delší než 3 m)')))); }
+    if (has('prostory') && v.prostory !== 'yes') rate(v.prostory === 'part' ? 1 : 2, v.prostory === 'part' ? KP.t('Jen část prostor přístupná') : KP.t('Hlavní prostory nepřístupné'));
+    if (has('vytah') && v.vytah === 'no') rate(1, KP.t('Bez výtahu: přístupné jen přízemí'));
+    if (has('pruchodyCm')) { const d = v.pruchodyCm; rate(d >= 80 ? 0 : d >= 70 ? 1 : 2, K.t('Nejužší průchod') + ' ' + K.fmt(d) + ' cm'); }
     let wcCat = null;
-    if (SECTIONS.wc(t) && $('#w-has').checked) {
-      const d = num('#w-door'), w = num('#w-w'), dp = num('#w-d'), side = num('#w-side'), out = $('#w-out').checked;
-      if (d !== null && w !== null && dp !== null) {
-        const sideOk = (v) => side === null || side >= v;
-        if (d >= 80 && w >= 160 && dp >= 160 && sideOk(80) && out) wcCat = 'WC I: přístupná';
-        else if (d >= 70 && w >= 140 && dp >= 140 && sideOk(70) && out) wcCat = 'WC II: částečně přístupná';
-        else wcCat = 'Běžné WC: nesplňuje WC II';
-      }
-    }
+    if (has('wc')) wcCat = { yes: KP.t('Bezbariérové WC'), part: KP.t('WC částečně přístupné'), no: KP.t('WC není bezbariérové') }[v.wc] + (has('wcDvereCm') ? ', ' + K.t('dveře') + ' ' + K.fmt(v.wcDvereCm) + ' cm' : '');
     return { worst, notes, wcCat };
   }
-
-  const CAT = [['ok', 'Přístupný'], ['part', 'Částečně přístupný'], ['no', 'Nepřístupný']];
+  const CAT = [['ok', KP.t('Přístupný')], ['part', KP.t('Částečně přístupný')], ['no', KP.t('Nepřístupný')]];
   function verdict() {
-    const r = evaluate();
-    const box = $('#verdict');
-    if (r.worst < 0 && !r.wcCat) { box.innerHTML = '<p class="muted small">Vyplňte vstup a uvidíte, do které kategorie místo patří.</p>'; return r; }
-    const [st, label] = r.worst >= 0 ? CAT[r.worst] : ['unk', 'Zatím nelze určit'];
+    const r = evaluate(), box = $('#verdict');
+    if (r.worst < 0 && !r.wcCat) { box.innerHTML = ('<p class="muted small">' + KP.t('Vyplňte vstup a uvidíte, do které kategorie místo patří.') + '</p>'); return r; }
+    const [st, label] = r.worst >= 0 ? CAT[r.worst] : ['unk', KP.t('Zatím nelze určit')];
     box.innerHTML = '<div class="big">' + K.statusHtml(st, '') + label + '</div>' +
-      '<ul>' + r.notes.map(([lvl, t]) => '<li>' + (lvl >= 0 ? K.statusHtml(CAT[lvl][0], '') : '') + ' ' + K.esc(t) + '</li>').join('') + '</ul>' +
-      (r.wcCat ? '<p class="small verdict-wc"><b>Toaleta:</b> ' + r.wcCat + '</p>' : '');
+      '<ul>' + r.notes.map(([lvl, t]) => '<li>' + K.statusHtml(CAT[lvl][0], '') + ' ' + K.esc(t) + '</li>').join('') + '</ul>' +
+      (r.wcCat ? ('<p class="small verdict-wc"><b>' + KP.t('Toaleta') + ':</b> ') + K.esc(r.wcCat) + '</p>' : '');
     return r;
   }
 
-  // ---------- Krok 4: fotky ----------
+  // ---------- Krok 4: fotky se štítkem oblasti ----------
+  const PH = K.business.PHOTO_AREAS;
+  function photoNote() {
+    $('#photo-note').textContent = mode() === 'nove'
+      ? KP.t('U nového místa si fotky v prototypu neukládáme, zapíšeme jen, co na nich je. V ostré verzi se odešlou s návrhem.')
+      : KP.t('Fotky uložíme k místu jen v tomto prohlížeči a uvidíte je v jeho detailu. V ostré verzi je zkontroluje moderátor.');
+  }
   function addFiles(files) {
     Array.from(files).filter(f => /^image\//.test(f.type)).forEach(f => {
-      if (state.photos.length >= MAX_PHOTOS) { K.toast('Nejvýš ' + MAX_PHOTOS + ' fotek.'); return; }
-      const item = { name: f.name, label: 'vstup', url: '' };
-      state.photos.push(item);
-      const r = new FileReader();
-      r.onload = () => { item.url = r.result; renderPhotos(); };
-      r.readAsDataURL(f);
+      if (state.photos.length >= MAX_PHOTOS) { K.toast(K.t('Nejvýš {n} fotek.', { n: MAX_PHOTOS })); return; }
+      state.photos.push({ name: f.name, area: 'vstup', file: f, url: URL.createObjectURL(f) });
     });
+    renderPhotos();
   }
   function renderPhotos() {
-    const opts = ['vstup', 'toaleta', 'parkování', 'pokoj', 'koupelna', 'výtah', 'interiér'];
-    $('#photo-list').innerHTML = state.photos.map((p, i) => '<div class="photo-item">' + (p.url ? '<img src="' + p.url + '" alt="Náhled: ' + K.esc(p.name) + '">' : '') +
-      '<div class="ctl"><label class="sr-only" for="ph-' + i + '">Co je na fotce</label><select id="ph-' + i + '" data-i="' + i + '">' +
-      opts.map(o => '<option' + (o === p.label ? ' selected' : '') + '>' + o + '</option>').join('') + '</select>' +
-      '<button class="btn btn-quiet btn-sm" type="button" data-rm="' + i + '">Odebrat</button></div></div>').join('');
+    const t = selectedType() || 'jine';
+    const opts = PH.filter(a => t === 'ubytovani' || !a.hotel);
+    $('#photo-list').innerHTML = state.photos.map((p, i) => '<div class="photo-item"><img src="' + p.url + '" alt="' + K.t('Náhled') + ': ' + K.esc(p.name) + '">' +
+      '<div class="ctl"><label class="sr-only" for="ph-' + i + ('">' + KP.t('Co je na fotce') + '</label><select id="ph-') + i + '" data-i="' + i + '">' +
+      opts.map(o => '<option value="' + o.key + '"' + (o.key === p.area ? ' selected' : '') + '>' + o.label + '</option>').join('') + '</select>' +
+      '<button class="btn btn-quiet btn-sm" type="button" data-rm="' + i + ('">' + KP.t('Odebrat') + '<span class="sr-only"> ' + KP.t('fotku') + ' ') + (i + 1) + '</span></button></div></div>').join('');
   }
+  const phLabel = (k) => (PH.find(a => a.key === k) || {}).label || k;
 
   // ---------- Krok 5: souhrn ----------
   function collect() {
-    const vals = {};
-    $$('[data-sec]:not([hidden]) input, [data-sec]:not([hidden]) select').forEach(el => {
-      const hid = el.closest('[hidden]'); if (hid && !hid.classList.contains('step')) return; // skrytý krok 3 nevadí, skrytá pole ano
-      const lab = (document.querySelector('label[for="' + el.id + '"]') || el.closest('label') || {}).textContent;
-      if (el.type === 'checkbox') { if (el.checked) vals[el.id] = { label: (lab || '').trim(), value: 'ano' }; }
-      else if (el.value !== '') {
-        const unit = el.parentElement.classList.contains('input-unit') ? ' ' + el.parentElement.querySelector('span').textContent : '';
-        vals[el.id] = { label: (lab || '').trim(), value: el.value + unit };
-      }
-    });
-    return vals;
+    const raw = KC.read($('#ck-parts'), PFX, items()), vals = {};
+    items().forEach(c => { const t = KC.valueText(c, raw[c.key]); if (t) vals[c.key] = { label: c.label, value: t }; });
+    Object.keys(raw).forEach(k => { if (raw[k] === '') delete raw[k]; });
+    return { raw, vals };
   }
   function placeLabel() {
-    if (state.place) return state.place.n + (state.place.o ? ', ' + state.place.o : '');
+    if (mode() !== 'nove' && state.place) return state.place.n + (state.place.o ? ', ' + state.place.o : '');
     return [$('#np-name').value.trim(), $('#np-street').value.trim(), $('#np-city').value.trim()].filter(Boolean).join(', ');
   }
   function renderSummary() {
-    const vals = collect(), r = evaluate();
+    const { vals } = collect(), r = evaluate();
     const t = TYPES.find(x => x[0] === selectedType());
-    const rows = [['Místo', placeLabel()], ['Typ', t ? t[1] : '–']].concat(Object.values(vals).map(v => [v.label, v.value]));
-    if ($('#note').value.trim()) rows.push(['Poznámka', $('#note').value.trim()]);
-    rows.push(['Fotky', state.photos.length ? state.photos.map(p => p.label).join(', ') : 'žádné']);
-    if (r.worst >= 0) rows.push(['Odhad kategorie', CAT[r.worst][1]]);
+    const rows = [[KP.t('Druh příspěvku'), MODE_TXT[mode()]], [KP.t('Místo'), placeLabel()], [KP.t('Typ'), t ? t[1] : '–']];
+    if (mode() === 'zmena' && $('#zm-text')) {
+      const f = K.FEATURES.find(x => x.k === $('#zm-field').value);
+      rows.push([KP.t('Změna'), (f ? f.label + ': ' : '') + $('#zm-text').value.trim()]);
+    }
+    Object.values(vals).forEach(v => rows.push([v.label, v.value]));
+    if ($('#note').value.trim()) rows.push([KP.t('Poznámka'), $('#note').value.trim()]);
+    rows.push([KP.t('Fotky'), state.photos.length ? state.photos.map(p => phLabel(p.area)).join(', ') : KP.t('žádné')]);
+    if (r.worst >= 0) rows.push([KP.t('Odhad kategorie'), CAT[r.worst][1]]);
     $('#summary').innerHTML = '<dl>' + rows.map(([a, b]) => '<dt>' + K.esc(a) + '</dt><dd>' + K.esc(b) + '</dd>').join('') + '</dl>' +
-      (Object.keys(vals).length ? '' : '<p class="callout small summary-warn">Zatím jste nevyplnili žádný údaj o přístupnosti. Vraťte se ke kroku 3, i jedno číslo pomůže.</p>');
+      (Object.keys(vals).length || mode() === 'zmena' ? '' : ('<p class="callout small summary-warn">' + KP.t('Zatím jste nevyplnili žádný údaj o přístupnosti. Vraťte se ke kroku 3, i jedno číslo pomůže.') + '</p>'));
   }
 
-  function submit(e) {
+  async function submit(e) {
     e.preventDefault();
-    const r = evaluate();
+    const m = mode(), p = m === 'nove' ? null : state.place, r = evaluate(), { raw, vals } = collect();
+    const btn = $('#btn-submit'); btn.disabled = true;
+    const fail = (msg) => { btn.disabled = false; K.toast(msg); };
+    let report = null, photosSaved = 0;
+    if (m === 'zmena' && p) {
+      const f = $('#zm-field').value, txt = $('#zm-text').value.trim();
+      const extra = Object.values(vals).map(v => v.label + ': ' + v.value).join('; ');
+      report = K.community.report(p.i, txt + (extra ? ' (' + K.t('nové hodnoty') + ': ' + extra + ')' : ''), f);
+      if (!report) return fail(KP.t('Hlášení se nepodařilo uložit. Úložiště prohlížeče je plné nebo vypnuté.'));
+    }
+    if (p && state.photos.length) {
+      const res = await K.community.addReview(p.i, { text: $('#note').value.trim(), aid: $('#aid').value, photos: state.photos.map(x => x.file), photoAreas: state.photos.map(x => x.area) });
+      if (!res.ok) return fail(res.error);
+      photosSaved = res.review.photos.length;
+    }
     const drafts = K.store.get('drafts', []);
     drafts.unshift({
-      id: 'd' + Date.now(),
+      id: 'd' + Date.now(), kind: m,
       created: new Date().toISOString().slice(0, 10),
-      place: state.place ? { i: state.place.i, r: state.place._r || '', n: state.place.n, o: state.place.o } : { n: $('#np-name').value.trim(), a: $('#np-street').value.trim(), o: $('#np-city').value.trim() },
+      place: p ? { i: p.i, r: p._r || '', n: p.n, o: p.o } : { n: $('#np-name').value.trim(), a: $('#np-street').value.trim(), o: $('#np-city').value.trim() },
       type: selectedType(),
-      values: collect(),
+      values: vals, raw,
       note: $('#note').value.trim(),
-      photos: state.photos.map(p => p.label),
+      change: report ? { field: report.field, text: report.text, id: report.id } : null,
+      photos: state.photos.map(x => phLabel(x.area)),
       nick: $('#nick').value.trim(),
       aid: $('#aid').value,
       category: r.worst >= 0 ? CAT[r.worst][1] : null,
       wc: r.wcCat,
     });
-    K.store.set('drafts', drafts.slice(0, 50));
+    if (!K.store.set('drafts', drafts.slice(0, 50))) return fail(KP.t('Příspěvek se nepodařilo uložit. Úložiště prohlížeče je plné nebo vypnuté.'));
+    if (state.photos.length) state.photos.forEach(x => URL.revokeObjectURL(x.url));
     $$('.step').forEach(s => { s.hidden = true; });
     $('#steps').hidden = true; $('#wz-progress').hidden = true; $('#wz-nav').hidden = true;
-    const d = $('#done'); d.hidden = false; d.focus();
+    const done = $('#done');
+    $('#done-text').textContent = K.PROTOTYPE_NOTE + ' ' +
+      (m === 'zmena' ? (KP.t('Hlášení uvidíte v detailu místa a ve svém profilu.') + ' ') : m === 'nove' ? (KP.t('Návrh nového místa najdete ve svém profilu.') + ' ') : (KP.t('Příspěvek najdete ve svém profilu.') + ' ')) +
+      (photosSaved ? (KP.t('Fotky jsme přidali k místu.') + ' ') : '') + KP.t('V ostré verzi ho zkontroluje moderátor.');
+    if (p) done.querySelector('.row').insertAdjacentHTML('afterbegin', '<a class="btn btn-ghost" href="' + K.placeUrl(p) + ('">' + KP.t('Zpět na místo') + '</a>'));
+    done.hidden = false; done.focus();
   }
 
   function init() {
+    $('#pr-proto').textContent = K.PROTOTYPE_NOTE;
+    const p2 = document.querySelector('[data-proto2]'); if (p2) p2.textContent = K.PROTOTYPE_NOTE + (' ' + KP.t('Příspěvek uvidíte ve svém profilu.'));
+    $('#aid').insertAdjacentHTML('beforeend', K.AIDS.filter(a => a !== 'jiné').concat(['jsem doprovod']).map(a => '<option value="' + a + '">' + K.t(a) + '</option>').join(''));
     $('#types').innerHTML = TYPES.map(([v, l]) => '<label><input type="radio" name="type" value="' + v + '"><span>' + l + '</span></label>').join('');
     $('#steps').addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (!b) return; const n = Number(b.dataset.go); if (n <= state.step || canLeave(state.step)) go(n); });
     $('#btn-next').addEventListener('click', next);
     $('#btn-prev').addEventListener('click', prev);
     $('#sub-tabs').addEventListener('click', e => { const b = e.target.closest('[data-sub]'); if (b) { showSub(Number(b.dataset.sub)); focusPart(); } });
-    $('#is-new').addEventListener('change', () => { $('#new-place').hidden = !$('#is-new').checked; if ($('#is-new').checked) { state.place = null; $$('#pick [data-id]').forEach(b => b.setAttribute('aria-pressed', 'false')); $('#osm-link').href = 'https://www.openstreetmap.org/edit'; $('#np-name').focus(); } });
-    let t; $('#find').addEventListener('input', () => { clearTimeout(t); t = setTimeout(searchPlaces, 150); });
-    $('#pick').addEventListener('click', e => { if (e.target.closest('[data-wide]')) { searchEverywhere(); return; } const b = e.target.closest('[data-id]'); if (b) pickPlace(b.dataset.id); });
-    $('#types').addEventListener('change', () => { applyType(); verdict(); });
+    $('#modes').addEventListener('change', applyMode);
+    $('#types').addEventListener('change', () => { state.builtFor = null; buildChecklist(); verdict(); renderPhotos(); });
     $('#btn-prev').hidden = true;
-    ['#v-ramp', '#u-lift', '#w-has'].forEach(s => $(s).addEventListener('change', toggleDeps));
     $('#wizard').addEventListener('input', verdict);
     $('#wizard').addEventListener('change', verdict);
     $('#photos').addEventListener('change', e => { addFiles(e.target.files); e.target.value = ''; });
@@ -316,23 +273,27 @@
     ['dragenter', 'dragover'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add('over'); }));
     ['dragleave', 'drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove('over'); }));
     drop.addEventListener('drop', e => addFiles(e.dataTransfer.files));
-    $('#photo-list').addEventListener('change', e => { const s = e.target.closest('[data-i]'); if (s) state.photos[Number(s.dataset.i)].label = s.value; });
-    $('#photo-list').addEventListener('click', e => { const b = e.target.closest('[data-rm]'); if (b) { state.photos.splice(Number(b.dataset.rm), 1); renderPhotos(); } });
+    $('#photo-list').addEventListener('change', e => { const s = e.target.closest('[data-i]'); if (s) state.photos[Number(s.dataset.i)].area = s.value; });
+    $('#photo-list').addEventListener('click', e => { const b = e.target.closest('[data-rm]'); if (b) { const x = state.photos.splice(Number(b.dataset.rm), 1)[0]; if (x) URL.revokeObjectURL(x.url); renderPhotos(); $('#photos').focus(); } });
     $('#wizard').addEventListener('submit', submit);
     $('#wizard').addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.tagName === 'INPUT' && state.step < 5) e.preventDefault(); });
 
+    state.search = KC.placeSearch({ input: $('#find'), list: $('#pick'), hint: $('#find-hint'), onPick: pickPlace, selected: () => state.place && state.place.i,
+      emptyText: KP.t('Nic jsme nenašli. Zkuste jiný tvar názvu nebo přidejte obec. Když místo v mapě není, zvolte nahoře „Navrhnout nové místo“.') });
     const sp = new URLSearchParams(location.search);
-    Promise.all([K.loadRegionsIndex(), K.loadTowns().catch(() => [])]).then(async ([idx, towns]) => {
-      state.towns = towns;
-      const total = idx.reduce((a, r) => a + r.pocet, 0);
-      $('#find-hint').textContent = 'Napište název a obec. Hledáme mezi ' + total.toLocaleString('cs-CZ') + ' místy v Česku a v Bavorsku.';
-      const id = sp.get('id');
-      if (id) {
-        const p = await K.findPlace(id, sp.get('r')).catch(() => null);
-        if (p) { state.places = [p]; $('#find').value = p.n + (p.o ? ' ' + p.o : ''); searchPlaces(); pickPlace(id); }
-      }
-      if ($('#find').value) searchPlaces();
-    }).catch(() => { $('#find-hint').textContent = 'Seznam míst se nenačetl. Můžete přidat místo jako nové.'; });
+    if (sp.get('nahlasit')) { $('#modes input[value="zmena"]').checked = true; }
+    if (sp.get('nove')) { $('#modes input[value="nove"]').checked = true; }
+    applyMode();
+    const id = sp.get('id');
+    if (id) {
+      K.findPlace(id, sp.get('r')).then(p => {
+        if (!p) return;
+        state.search.addPlaces([p]);
+        $('#find').value = p.n + (p.o ? ' ' + p.o : '');
+        pickPlace(p);
+        state.search.ready.then(() => { state.search.run(); });
+      }).catch(() => null);
+    }
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();

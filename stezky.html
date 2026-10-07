@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bezbariérové trasy · kudyprojedu.cz</title>
+<meta name="description" content="Katalog tras v Česku a v Bavorsku, které jsou v OpenStreetMap označené jako sjízdné na vozíku. Délka, sklon z výškového modelu, povrch, lavičky, WC a parkování ZTP u startu.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=15">
+<link rel="stylesheet" href="assets/css/stezky.css?v=2">
+</head>
+<body class="page-stezky">
+<div id="site-header"></div>
+<main id="main">
+
+  <!-- Katalog -->
+  <div id="st-list-view">
+    <section class="wrap st-head">
+      <p class="kicker" data-i18n>Katalog tras</p>
+      <h1 data-i18n>Bezbariérové trasy</h1>
+      <p class="lede" id="st-lede" data-i18n>Trasy v Česku a v Bavorsku, které jsou v OpenStreetMap označené jako sjízdné na vozíku. U každé ukazujeme délku, sklon z výškového modelu, povrch a zázemí u startu.</p>
+      <div class="st-fitbar" id="st-fitbar" aria-live="polite"></div>
+    </section>
+
+    <section class="wrap st-tools" aria-label="Filtry tras" data-i18n-attr="aria-label">
+      <details class="st-filters" id="st-filters" open>
+        <summary><span data-i18n>Filtry</span><span class="st-nf num" id="st-nf" hidden></span></summary>
+        <form id="st-form" class="st-form">
+          <div class="field"><label for="f-zeme" data-i18n>Země</label>
+            <select id="f-zeme"><option value="" data-i18n>Česko i Bavorsko</option><option value="CZ" data-i18n>Česko</option><option value="DE" data-i18n>Bavorsko</option></select></div>
+          <div class="field"><label for="f-kraj" data-i18n>Kraj nebo vládní obvod</label>
+            <select id="f-kraj"><option value="" data-i18n>Všechny</option></select></div>
+          <div class="field"><label for="f-delka" data-i18n>Délka</label>
+            <select id="f-delka"><option value="" data-i18n>Jakákoli</option><option value="0-2" data-i18n>Do 2 km</option><option value="2-5" data-i18n>2 až 5 km</option><option value="5-999" data-i18n>Přes 5 km</option></select></div>
+          <div class="field"><label for="f-sklon" data-i18n>Největší sklon</label>
+            <select id="f-sklon" aria-describedby="f-sklon-h"><option value="" data-i18n>Bez omezení</option><option value="6" data-i18n>Do 6 %</option><option value="8" data-i18n>Do 8 %</option><option value="10" data-i18n>Do 10 %</option><option value="12.5" data-i18n>Do 12,5 %</option><option value="me" data-i18n>Podle mého profilu</option></select>
+            <span class="hint" id="f-sklon-h" data-i18n>Odhad z výškového modelu, krátké strmé kusy může přehlédnout.</span></div>
+          <div class="field"><label for="f-povrch" data-i18n>Povrch</label>
+            <select id="f-povrch" aria-describedby="f-povrch-h"><option value="" data-i18n>Jakýkoli</option><option value="paved" data-i18n>Zpevněný</option><option value="partly" data-i18n>Aspoň z poloviny zpevněný</option></select>
+            <span class="hint" id="f-povrch-h" data-i18n>Zpevněný = asfalt, beton nebo dlažba aspoň na 90 % délky.</span></div>
+          <div class="field"><label for="f-typ" data-i18n>Typ trasy</label>
+            <select id="f-typ"><option value="" data-i18n>Jakýkoli</option><option value="okruh" data-i18n>Okruh</option><option value="tam a zpět" data-i18n>Tam a zpět</option><option value="A→B" data-i18n>Z bodu do bodu</option></select></div>
+          <fieldset class="st-checks">
+            <legend data-i18n>Zázemí</legend>
+            <label class="check" data-i18n-text><input type="checkbox" id="f-lav"> Aspoň jedna lavička u trasy</label>
+            <label class="check" data-i18n-text><input type="checkbox" id="f-wc"> WC do 300 m od startu</label>
+            <label class="check" data-i18n-text><input type="checkbox" id="f-park"> Parkování ZTP do 300 m od startu</label>
+          </fieldset>
+          <div class="st-form-foot"><button class="btn btn-quiet btn-sm" type="reset" id="f-reset" data-i18n>Zrušit filtry</button></div>
+        </form>
+      </details>
+    </section>
+
+    <section class="wrap st-results" aria-label="Výsledky" data-i18n-attr="aria-label">
+      <div class="st-bar">
+        <p class="st-count" id="st-count" aria-live="polite" data-i18n>Načítám trasy…</p>
+        <div class="st-bar-r">
+          <label class="st-sort" for="f-sort"><span data-i18n>Řadit</span>
+            <select id="f-sort">
+              <option value="delka" data-i18n>Nejkratší</option>
+              <option value="delka-d" data-i18n>Nejdelší</option>
+              <option value="sklon" data-i18n>Nejmírnější sklon</option>
+              <option value="lavicky" data-i18n>Nejvíc laviček</option>
+              <option value="nazev" data-i18n>Podle názvu</option>
+              <option value="blizko" data-i18n>Nejblíž mně</option>
+            </select>
+          </label>
+          <button class="btn btn-ghost btn-sm st-maptoggle" type="button" id="st-maptoggle" aria-controls="st-mapbox" aria-expanded="false" data-i18n>Mapa</button>
+        </div>
+      </div>
+      <div class="st-layout">
+        <ul class="st-list" id="st-list"></ul>
+        <div class="st-mapbox" id="st-mapbox">
+          <div id="st-map" class="map-canvas" role="application" aria-label="Mapa startů tras" data-i18n-attr="aria-label"></div>
+        </div>
+      </div>
+      <button class="btn btn-ghost btn-block st-more" type="button" id="st-more" hidden data-i18n>Zobrazit další trasy</button>
+      <div class="st-source small">
+        <p data-i18n>Zdroj tras: © přispěvatelé <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> (ODbL), extrakty Geofabrik, stav 6. a 7. 10. 2026. Vybrali jsme relace a souvislé úseky cest s údajem <span class="mono">wheelchair=yes</span> nebo <span class="mono">limited</span> a trasy s „bezbariérová“ v názvu. Výšky: EU-DEM v1.1 s rozlišením 25 m (Copernicus, © Evropská unie), body po 50 m.</p>
+        <p data-i18n>Sklon z výškového modelu je odhad. Krátkou strmou rampu model nezachytí a u cesty ve svahu může ukázat sklon terénu vedle ní. Před cestou ověřte. <a href="metodika.html#zdroje">Jak s daty pracujeme</a></p>
+        <p data-i18n>Chcete spojit trasu s hotelem a restaurací? <a href="itinerar.html">Poskládejte si itinerář</a>. Bariéry v ulicích kolem najdete na stránce <a href="trasy.html">Trasy a bariéry</a>.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Detail trasy -->
+  <div id="st-detail-view" hidden>
+    <article class="wrap st-detail" id="st-detail" aria-live="polite"><p class="st-loading" data-i18n>Načítám trasu…</p></article>
+  </div>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js?v=2"></script>
+<script src="assets/js/i18n/core.js?v=2"></script>
+<script src="assets/js/i18n/stezky.js?v=1"></script>
+<script src="assets/js/config.js?v=12"></script>
+<script src="assets/js/core.js?v=15"></script>
+<script src="assets/js/map-engine.js?v=12"></script>
+<script src="assets/js/stezky.js?v=2"></script>
+</body>
+</html>

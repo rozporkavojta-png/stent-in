@@ -25,7 +25,7 @@
 
   // ---------- Google Maps ----------
   async function createGoogle(el, opts) {
-    await loadScript('https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(cfg.googleMapsApiKey) + '&language=cs&region=CZ&libraries=geometry');
+    await loadScript('https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(cfg.googleMapsApiKey) + '&language=' + ((window.KP && KP.lang) ? KP.lang() : 'cs') + '&region=CZ&libraries=geometry');
     await loadScript('https://unpkg.com/@googlemaps/markerclusterer@2.5.3/dist/index.min.js');
     const map = new google.maps.Map(el, {
       center: { lat: opts.lat, lng: opts.lng }, zoom: opts.zoom, mapTypeControl: true, streetViewControl: true, fullscreenControl: false,
@@ -74,14 +74,26 @@
     if (!window.L) await loadScript('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js');
     if (!L.markerClusterGroup) await loadScript('https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js');
     const map = L.map(el, { zoomControl: true, preferCanvas: true }).setView([opts.lat, opts.lng], opts.zoom);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">přispěvatelé OpenStreetMap</a>' }).addTo(map);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">' + (window.KP && KP.t ? KP.t('přispěvatelé OpenStreetMap') : 'přispěvatelé OpenStreetMap') + '</a>' }).addTo(map);
     const cache = {};
-    const icon = (st, a) => { const k = st + (a ? 'a' : ''); return cache[k] || (cache[k] = L.divIcon({ className: '', html: pinSvg(st, a), iconSize: a ? [42, 52] : [34, 42], iconAnchor: a ? [21, 52] : [17, 42] })); };
-    let group = null, byId = {}, active = null, colorOf = () => 'unk';
+    // Značka jako <img> s SVG v data URI – výrazně lehčí pro prohlížeč než vložené SVG v každé značce
+    const icon = (st, a) => { const k = st + (a ? 'a' : ''); return cache[k] || (cache[k] = L.icon({ iconUrl: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(pinSvg(st, a)), iconSize: a ? [42, 52] : [34, 42], iconAnchor: a ? [21, 52] : [17, 42] })); };
+    let group = null, byId = {}, active = null, colorOf = () => 'unk', onClick = () => {}, styleKey = null;
+    const mk = (p) => { const m = L.marker([p.la, p.lo], { icon: icon(colorOf(p)), title: p.n, keyboard: false }); m.on('click', () => onClick(p)); byId[p.i] = m; return m; };
     const api = {
       engine: 'leaflet', map,
       setPlaces(list, o) {
-        colorOf = o.colorOf;
+        colorOf = o.colorOf; onClick = o.onClick;
+        // S o.key (styl značek, např. potřeby uživatele) jen přidáme / odebereme rozdíl místo stavby celé vrstvy znovu
+        if (group && o.key !== undefined && o.key === styleKey) {
+          const next = new Set(list.map(p => p.i)), rem = [], add = [];
+          for (const id in byId) if (!next.has(id)) { rem.push(byId[id]); delete byId[id]; }
+          list.forEach(p => { if (!byId[p.i]) add.push(mk(p)); });
+          if (rem.length) group.removeLayers(rem);
+          if (add.length) group.addLayers(add);
+          return;
+        }
+        styleKey = o.key;
         // Stará skupina může ještě po částech (chunkedLoading) přidávat značky; po odebrání z mapy by spadla na _map = null
         if (group) {
           map.removeLayer(group);
@@ -92,7 +104,7 @@
         group = L.markerClusterGroup({ chunkedLoading: true, showCoverageOnHover: false, maxClusterRadius: 50, disableClusteringAtZoom: 17,
           iconCreateFunction: c => L.divIcon({ className: '', html: '<div class="marker-cluster-kp" style="width:' + (34 + Math.min(16, Math.log2(c.getChildCount()) * 2)) + 'px;height:' + (34 + Math.min(16, Math.log2(c.getChildCount()) * 2)) + 'px">' + c.getChildCount() + '</div>', iconSize: [40, 40] }) });
         byId = {};
-        const ms = list.map(p => { const m = L.marker([p.la, p.lo], { icon: icon(colorOf(p)), title: p.n, keyboard: false }); m.on('click', () => o.onClick(p)); byId[p.i] = m; return m; });
+        const ms = list.map(mk);
         group.addLayers(ms); map.addLayer(group);
       },
       fitTo(list) { if (!list.length) return; map.fitBounds(L.latLngBounds(list.map(p => [p.la, p.lo])), { padding: [40, 40], maxZoom: 16 }); },

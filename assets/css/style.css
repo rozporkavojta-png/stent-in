@@ -187,6 +187,8 @@ p { margin: 0 0 1em; }
 .btn-sm { min-height: 38px; padding: 6px 14px; font-size: .93rem; }
 .btn-lg { min-height: 54px; padding: 14px 24px; font-size: 1.08rem; }
 .btn-block { width: 100%; }
+/* Delší popisky v němčině a angličtině se na úzkém displeji zalomí místo přetečení */
+@media (max-width: 560px) { .btn { white-space: normal; text-align: center; max-width: 100%; } .badge { white-space: normal; max-width: 100%; } }
 
 /* ---------- Formuláře ---------- */
 label { font-weight: 600; }
@@ -456,8 +458,42 @@ table.data th { background: transparent; border-bottom: 1.5px solid var(--rule);
 
 /* Vlastní šedý podklad mapy (úkol 1): dlaždice OpenStreetMap převedené do šedi, v tmavém režimu převrácené.
    Zdroj i atribuce zůstávají OSM; mění se jen vzhled v prohlížeči. */
-.leaflet-tile-pane { filter: grayscale(1) contrast(.92) brightness(1.04); }
+.leaflet-tile-pane .leaflet-tile { filter: grayscale(1) contrast(.92) brightness(1.04); }
 iframe.gmap, iframe.pl-gmap, .gmap iframe { filter: grayscale(1) contrast(.95); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .leaflet-tile-pane { filter: grayscale(1) invert(1) brightness(.88) contrast(.9); } }
-:root[data-theme="dark"] .leaflet-tile-pane { filter: grayscale(1) invert(1) brightness(.88) contrast(.9); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .leaflet-tile-pane .leaflet-tile { filter: grayscale(1) invert(1) brightness(.88) contrast(.9); } }
+:root[data-theme="dark"] .leaflet-tile-pane .leaflet-tile { filter: grayscale(1) invert(1) brightness(.88) contrast(.9); }
 .leaflet-container { background: var(--surface-2); }
+
+/* ---------- Přepínač jazyka CZ / DE / EN (i18n.js) ---------- */
+.lang-switch { display: inline-flex; flex: none; border: 1px solid var(--rule); background: var(--surface); }
+.lang-switch a { min-width: 44px; min-height: 44px; padding: 0 8px; display: inline-flex; align-items: center; justify-content: center; font: 700 .85rem var(--f-mono); letter-spacing: .04em; color: var(--ink); text-decoration: none; }
+.lang-switch a + a { border-left: 1px solid var(--rule); }
+.lang-switch a:hover { background: var(--surface-2); text-decoration: underline; text-underline-offset: 4px; }
+.lang-switch a[aria-current] { background: var(--signal); color: var(--on-signal); box-shadow: inset 0 -3px 0 var(--on-signal); }
+.header-tools .lang-switch a { min-height: 40px; min-width: 40px; }
+.site-footer .lang-switch { background: transparent; border-color: var(--surface); }
+.site-footer .lang-switch a { color: var(--surface); }
+.site-footer .lang-switch a + a { border-left-color: var(--surface); }
+.site-footer .lang-switch a:hover { background: transparent; color: var(--signal); }
+.site-footer .lang-switch a[aria-current] { background: var(--signal); color: var(--on-signal); }
+.sheet .menu-lang { display: flex; align-items: center; gap: 14px; padding: 10px 12px; border-bottom: 1px solid var(--line); font: 600 1rem var(--f-body); }
+.sheet .menu-lang .lbl { flex: 1; }
+.sheet .menu-lang svg { width: 22px; height: 22px; color: var(--ink-3); }
+/* Hlavička na menších monitorech (900–1399 px): jazyk se přesune do menu Více, pod 1280 px zůstanou u tlačítek jen ikony.
+   Německé a anglické popisky jsou delší, bez toho by hlavička přetekla. */
+.more-menu .more-lang { display: none; align-items: center; gap: 10px; padding: 8px 12px; border-top: 1px solid var(--line); margin-top: 4px; font-weight: 600; }
+.more-menu .more-lang > span { flex: 1; }
+.more-menu .more-lang svg { width: 18px; height: 18px; color: var(--ink-3); }
+.more-menu .more-lang .lang-switch a { min-width: 40px; min-height: 40px; }
+@media (min-width: 900px) and (max-width: 1399px) {
+  .header-tools .lang-switch { display: none; }
+  .more-menu .more-lang { display: flex; }
+}
+@media (min-width: 900px) and (max-width: 1279px) {
+  .header-tools .needs-btn .lbl, .header-tools .add-btn .lbl { display: none; }
+  .header-tools .needs-btn, .header-tools .add-btn { padding-inline: 10px; min-width: 40px; justify-content: center; }
+}
+@media (min-width: 900px) and (max-width: 1099px) {
+  .main-nav a, .more-btn { padding-inline: 6px; font-size: .93rem; }
+  .site-header .inner { gap: 12px; }
+}

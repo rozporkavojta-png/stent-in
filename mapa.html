@@ -8,81 +8,81 @@
 <meta name="description" content="Mapa skutečných míst v Česku a v Bavorsku s údaji o přístupnosti pro lidi na vozíku: vstup, toaleta, parkování ZTP. Filtrujte podle svých potřeb.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=13">
+<link rel="stylesheet" href="assets/css/style.css?v=15">
 <link rel="stylesheet" href="assets/css/mapa.css?v=12">
 </head>
 <body class="page-map">
 <div id="site-header"></div>
 <main id="main" class="map-layout" data-sheet="peek">
-  <h1 class="sr-only">Mapa přístupných míst</h1>
+  <h1 class="sr-only" data-i18n>Mapa přístupných míst</h1>
 
   <!-- Hledání a rychlé filtry: na PC nahoře v levém panelu, na mobilu plovoucí nad mapou -->
   <div class="map-top">
     <form class="map-search" role="search" id="search-form">
       <div class="search-field">
         <span data-icon="search"></span>
-        <label class="sr-only" for="q">Hledat obec nebo místo</label>
-        <input id="q" type="search" placeholder="Obec nebo místo" autocomplete="off" list="obce" enterkeyhint="search">
+        <label class="sr-only" for="q" data-i18n>Hledat obec nebo místo</label>
+        <input id="q" type="search" placeholder="Obec nebo místo" autocomplete="off" list="obce" enterkeyhint="search" data-i18n-attr="placeholder">
         <datalist id="obce"></datalist>
       </div>
-      <button class="btn btn-ghost filters-btn" type="button" id="filters-open" aria-haspopup="dialog" aria-controls="filters-sheet"><span data-icon="sliders"></span>Filtry<span class="count-dot" id="filter-count" hidden>0</span></button>
+      <button class="btn btn-ghost filters-btn" type="button" id="filters-open" aria-haspopup="dialog" aria-controls="filters-sheet" data-i18n-text><span data-icon="sliders"></span>Filtry<span class="count-dot" id="filter-count" hidden>0</span></button>
     </form>
 
-    <div class="chip-row quick" role="toolbar" aria-label="Filtry">
-      <button type="button" class="chip drop" data-pop="w" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-w">Přístupnost</span><span data-icon="chevron"></span></button>
-      <button type="button" class="chip drop" data-pop="cat" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-cat">Kategorie</span><span data-icon="chevron"></span></button>
-      <button type="button" class="chip" data-toggle="wc" aria-pressed="false"><span data-icon="wc"></span>Toaleta</button>
-      <button type="button" class="chip" data-toggle="pk" aria-pressed="false"><span data-icon="parking"></span>Parkování ZTP</button>
-      <button type="button" class="chip" data-toggle="hx" aria-pressed="false"><span data-icon="ruler"></span>Naměřeno</button>
-      <button type="button" class="chip" data-toggle="hr" aria-pressed="false"><span data-icon="building"></span>Od provozovatele</button>
-      <button type="button" class="chip drop" data-pop="zeme" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-zeme">Země</span><span data-icon="chevron"></span></button>
-      <button type="button" class="chip drop" data-pop="kraj" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-kraj">Kraj / obvod</span><span data-icon="chevron"></span></button>
-      <button type="button" class="chip more-chip" id="more-filters" aria-haspopup="dialog" aria-controls="filters-sheet"><span data-icon="filter"></span>Další filtry<span class="count-dot" id="more-count" hidden>0</span></button>
+    <div class="chip-row quick" role="toolbar" aria-label="Filtry" data-i18n-attr="aria-label">
+      <button type="button" class="chip drop" data-pop="w" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-w" data-i18n>Přístupnost</span><span data-icon="chevron"></span></button>
+      <button type="button" class="chip drop" data-pop="cat" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-cat" data-i18n>Kategorie</span><span data-icon="chevron"></span></button>
+      <button type="button" class="chip" data-toggle="wc" aria-pressed="false" data-i18n-text><span data-icon="wc"></span>Toaleta</button>
+      <button type="button" class="chip" data-toggle="pk" aria-pressed="false" data-i18n-text><span data-icon="parking"></span>Parkování ZTP</button>
+      <button type="button" class="chip" data-toggle="hx" aria-pressed="false" data-i18n-text><span data-icon="ruler"></span>Naměřeno</button>
+      <button type="button" class="chip" data-toggle="hr" aria-pressed="false" data-i18n-text><span data-icon="building"></span>Od provozovatele</button>
+      <button type="button" class="chip drop" data-pop="zeme" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-zeme" data-i18n>Země</span><span data-icon="chevron"></span></button>
+      <button type="button" class="chip drop" data-pop="kraj" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-kraj" data-i18n>Kraj / obvod</span><span data-icon="chevron"></span></button>
+      <button type="button" class="chip more-chip" id="more-filters" aria-haspopup="dialog" aria-controls="filters-sheet" data-i18n-text><span data-icon="filter"></span>Další filtry<span class="count-dot" id="more-count" hidden>0</span></button>
     </div>
 
     <div class="fpop" id="fpop" role="dialog" aria-modal="false" aria-labelledby="fpop-title" hidden>
-      <h2 class="sr-only" id="fpop-title">Filtr</h2>
+      <h2 class="sr-only" id="fpop-title" data-i18n>Filtr</h2>
       <div class="fpop-body" id="fpop-body"></div>
       <div class="fpop-foot">
-        <button type="button" class="btn btn-quiet btn-sm" id="fpop-clear">Vymazat</button>
-        <button type="button" class="btn btn-primary btn-sm" id="fpop-done">Hotovo</button>
+        <button type="button" class="btn btn-quiet btn-sm" id="fpop-clear" data-i18n>Vymazat</button>
+        <button type="button" class="btn btn-primary btn-sm" id="fpop-done" data-i18n>Hotovo</button>
       </div>
     </div>
   </div>
 
   <!-- Výsledky: na PC sloupec vlevo, na mobilu vysouvací panel zespodu -->
-  <section class="map-panel" id="panel" aria-label="Výsledky">
-    <button type="button" class="sheet-grip" id="grip" aria-label="Zvětšit seznam" aria-controls="panel"><span></span></button>
+  <section class="map-panel" id="panel" aria-label="Výsledky" data-i18n-attr="aria-label">
+    <button type="button" class="sheet-grip" id="grip" aria-label="Zvětšit seznam" aria-controls="panel" data-i18n-attr="aria-label"><span></span></button>
     <div id="preview" class="preview" hidden></div>
     <div class="results-head" id="results-head">
       <div class="head-row">
-        <p id="count" aria-live="polite" class="count">Načítám místa…</p>
-        <button type="button" class="btn btn-ghost btn-sm view-btn" id="view-btn"><span data-icon="list"></span><span class="lbl">Seznam</span></button>
+        <p id="count" aria-live="polite" class="count" data-i18n>Načítám místa…</p>
+        <button type="button" class="btn btn-ghost btn-sm view-btn" id="view-btn"><span data-icon="list"></span><span class="lbl" data-i18n>Seznam</span></button>
       </div>
       <div class="head-row tools">
-        <label class="check in-view"><input type="checkbox" id="in-view" checked> Jen v oblasti mapy</label>
-        <label class="sr-only" for="sort">Řadit výsledky</label>
+        <label class="check in-view" data-i18n-text><input type="checkbox" id="in-view" checked> Jen v oblasti mapy</label>
+        <label class="sr-only" for="sort" data-i18n>Řadit výsledky</label>
         <select id="sort" class="sort">
-          <option value="complete">Nejvíc údajů</option>
-          <option value="near">Nejblíž středu mapy</option>
-          <option value="fresh">Naposledy upravené</option>
-          <option value="name">Podle názvu</option>
+          <option value="complete" data-i18n>Nejvíc údajů</option>
+          <option value="near" data-i18n>Nejblíž středu mapy</option>
+          <option value="fresh" data-i18n>Naposledy upravené</option>
+          <option value="name" data-i18n>Podle názvu</option>
         </select>
       </div>
     </div>
     <div class="panel-scroll" id="panel-scroll">
       <ol class="results" id="results"></ol>
-      <div class="more-row"><button class="btn btn-ghost" type="button" id="more" hidden>Zobrazit další</button></div>
+      <div class="more-row"><button class="btn btn-ghost" type="button" id="more" hidden data-i18n>Zobrazit další</button></div>
     </div>
   </section>
 
-  <section class="map-wrap" aria-label="Mapa">
-    <div id="map" class="map-canvas" role="application" aria-label="Mapa míst"></div>
+  <section class="map-wrap" aria-label="Mapa" data-i18n-attr="aria-label">
+    <div id="map" class="map-canvas" role="application" aria-label="Mapa míst" data-i18n-attr="aria-label"></div>
     <div class="map-tools">
-      <button class="icon-btn" type="button" id="locate" aria-label="Moje poloha" title="Moje poloha"><span data-icon="locate"></span></button>
+      <button class="icon-btn" type="button" id="locate" aria-label="Moje poloha" title="Moje poloha" data-i18n-attr="aria-label,title"><span data-icon="locate"></span></button>
     </div>
-    <div class="legend" aria-label="Legenda značek">
-      <span class="status ok"><i></i>Přístupné</span><span class="status part"><i></i>Částečně</span><span class="status no"><i></i>Nepřístupné</span><span class="status unk"><i></i>Neuvedeno</span>
+    <div class="legend" aria-label="Legenda značek" data-i18n-attr="aria-label">
+      <span class="status ok" data-i18n><i></i>Přístupné</span><span class="status part" data-i18n><i></i>Částečně</span><span class="status no" data-i18n><i></i>Nepřístupné</span><span class="status unk" data-i18n><i></i>Neuvedeno</span>
     </div>
     <p class="map-engine-note" id="engine-note" hidden></p>
   </section>
@@ -92,61 +92,64 @@
 <div class="sheet-backdrop" id="filters-backdrop" hidden></div>
 <div class="sheet filters-sheet" id="filters-sheet" role="dialog" aria-modal="true" aria-labelledby="filters-title" hidden>
   <header>
-    <h2 id="filters-title">Filtry</h2>
-    <button class="icon-btn" type="button" id="filters-close" aria-label="Zavřít filtry"><span data-icon="close"></span></button>
+    <h2 id="filters-title" data-i18n>Filtry</h2>
+    <button class="icon-btn" type="button" id="filters-close" aria-label="Zavřít filtry" data-i18n-attr="aria-label"><span data-icon="close"></span></button>
   </header>
   <div class="body">
     <fieldset id="fs-w">
-      <legend>Přístupnost vstupu</legend>
+      <legend data-i18n>Přístupnost vstupu</legend>
       <div class="opt-row" id="f-w">
-        <button type="button" class="chip" aria-pressed="true" data-w="yes"><span class="status ok"><i></i></span>Přístupné</button>
-        <button type="button" class="chip" aria-pressed="true" data-w="limited"><span class="status part"><i></i></span>Částečně</button>
-        <button type="button" class="chip" aria-pressed="false" data-w="no"><span class="status no"><i></i></span>Nepřístupné</button>
-        <button type="button" class="chip" aria-pressed="false" data-w="null"><span class="status unk"><i></i></span>Neuvedeno</button>
+        <button type="button" class="chip" aria-pressed="true" data-w="yes" data-i18n><span class="status ok"><i></i></span>Přístupné</button>
+        <button type="button" class="chip" aria-pressed="true" data-w="limited" data-i18n><span class="status part"><i></i></span>Částečně</button>
+        <button type="button" class="chip" aria-pressed="false" data-w="no" data-i18n><span class="status no"><i></i></span>Nepřístupné</button>
+        <button type="button" class="chip" aria-pressed="false" data-w="null" data-i18n><span class="status unk"><i></i></span>Neuvedeno</button>
       </div>
     </fieldset>
     <fieldset id="fs-cat">
-      <legend>Kategorie</legend>
+      <legend data-i18n>Kategorie</legend>
       <div class="cat-list" id="f-cats"></div>
     </fieldset>
     <fieldset>
-      <legend>Musí mít</legend>
+      <legend data-i18n>Musí mít</legend>
       <div class="check-list">
-        <label class="check"><input type="checkbox" id="f-wc"> Bezbariérovou toaletu</label>
-        <label class="check"><input type="checkbox" id="f-pk"> Parkování pro ZTP u objektu</label>
-        <label class="check"><input type="checkbox" id="f-hx"> Naměřené rozměry</label>
-        <label class="check"><input type="checkbox" id="f-hr"> Informace od provozovatele</label>
-        <label class="check"><input type="checkbox" id="f-desc"> Slovní popis přístupnosti</label>
-        <label class="check"><input type="checkbox" id="f-chk"> Datum kontroly na místě</label>
-        <label class="check"><input type="checkbox" id="f-img"> Fotografii</label>
-        <label class="check"><input type="checkbox" id="f-ek"> Euroklíč u WC</label>
+        <label class="check" data-i18n-text><input type="checkbox" id="f-wc"> Bezbariérovou toaletu</label>
+        <label class="check" data-i18n-text><input type="checkbox" id="f-pk"> Parkování pro ZTP u objektu</label>
+        <label class="check" data-i18n-text><input type="checkbox" id="f-hx"> Naměřené rozměry</label>
+        <label class="check" data-i18n-text><input type="checkbox" id="f-hr"> Informace od provozovatele</label>
+        <label class="check" data-i18n-text><input type="checkbox" id="f-desc"> Slovní popis přístupnosti</label>
+        <label class="check" data-i18n-text><input type="checkbox" id="f-chk"> Datum kontroly na místě</label>
+        <label class="check" data-i18n-text><input type="checkbox" id="f-img"> Fotografii</label>
+        <label class="check" data-i18n-text><input type="checkbox" id="f-ek"> Euroklíč u WC</label>
       </div>
     </fieldset>
     <fieldset id="fs-zeme">
-      <legend>Země</legend>
-      <label class="sr-only" for="f-zeme">Země</label>
-      <select id="f-zeme"><option value="">Česko i Bavorsko</option><option value="cz">Česká republika</option><option value="de">Bavorsko (Německo)</option></select>
+      <legend data-i18n>Země</legend>
+      <label class="sr-only" for="f-zeme" data-i18n>Země</label>
+      <select id="f-zeme"><option value="" data-i18n>Česko i Bavorsko</option><option value="cz" data-i18n>Česká republika</option><option value="de" data-i18n>Bavorsko (Německo)</option></select>
     </fieldset>
     <fieldset id="fs-kraj">
-      <legend>Kraj nebo vládní obvod</legend>
-      <label class="sr-only" for="f-kraj">Kraj nebo vládní obvod</label>
-      <select id="f-kraj"><option value="">Všechny kraje a obvody</option></select>
+      <legend data-i18n>Kraj nebo vládní obvod</legend>
+      <label class="sr-only" for="f-kraj" data-i18n>Kraj nebo vládní obvod</label>
+      <select id="f-kraj"><option value="" data-i18n>Všechny kraje a obvody</option></select>
     </fieldset>
     <fieldset>
-      <legend>Moje potřeby</legend>
-      <label class="check"><input type="checkbox" id="f-needs"> Ukázat jen místa, která mi vyhovují</label>
-      <button class="btn btn-quiet btn-sm" type="button" data-open-needs><span data-icon="sliders"></span>Nastavit potřeby</button>
+      <legend data-i18n>Moje potřeby</legend>
+      <label class="check" data-i18n-text><input type="checkbox" id="f-needs"> Ukázat jen místa, která mi vyhovují</label>
+      <button class="btn btn-quiet btn-sm" type="button" data-open-needs data-i18n-text><span data-icon="sliders"></span>Nastavit potřeby</button>
     </fieldset>
   </div>
   <footer class="filters-foot">
-    <button class="btn btn-ghost" type="button" id="f-reset">Zrušit filtry</button>
-    <button class="btn btn-primary" type="button" id="f-apply">Zobrazit místa</button>
+    <button class="btn btn-ghost" type="button" id="f-reset" data-i18n>Zrušit filtry</button>
+    <button class="btn btn-primary" type="button" id="f-apply" data-i18n>Zobrazit místa</button>
   </footer>
 </div>
 
+<script src="assets/js/i18n.js?v=2"></script>
+<script src="assets/js/i18n/core.js?v=2"></script>
+<script src="assets/js/i18n/mapa.js?v=1"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=12"></script>
-<script src="assets/js/map-engine.js?v=11"></script>
-<script src="assets/js/mapa.js?v=12"></script>
+<script src="assets/js/core.js?v=15"></script>
+<script src="assets/js/map-engine.js?v=12"></script>
+<script src="assets/js/mapa.js?v=14"></script>
 </body>
 </html>

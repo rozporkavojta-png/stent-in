@@ -8,7 +8,7 @@
 <meta name="description" content="Hotely, penziony a kempy v Česku a v Bavorsku s údajem o přístupnosti vstupu na vozíku. Filtry podle kraje, obce, vstupu a bezbariérového WC.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=13">
+<link rel="stylesheet" href="assets/css/style.css?v=15">
 <link rel="stylesheet" href="assets/css/pages-d.css?v=11">
 </head>
 <body>
@@ -16,75 +16,78 @@
 <main id="main">
   <section class="wrap ub-intro">
     <div class="ub-intro-h">
-      <p class="kicker">Adresář ubytování</p>
-      <h1>Ubytování na vozíku</h1>
+      <p class="kicker" data-i18n>Adresář ubytování</p>
+      <h1 data-i18n>Ubytování na vozíku</h1>
     </div>
-    <p class="lede ub-lede">Hotely, penziony a kempy v Česku a v Bavorsku, u kterých někdo zadal přístupnost vstupu. U každého ukazujeme, co víme a co ne.</p>
-    <p class="signal-band ub-tip">Údaj „přístupný vstup“ ještě neznamená bezbariérový pokoj. Před cestou si u ubytování ověřte šířku dveří, prostor u postele a koupelnu.</p>
+    <p class="lede ub-lede" data-i18n>Hotely, penziony a kempy v Česku a v Bavorsku, u kterých někdo zadal přístupnost vstupu. U každého ukazujeme, co víme a co ne.</p>
+    <p class="signal-band ub-tip" data-i18n>Údaj „přístupný vstup“ ještě neznamená bezbariérový pokoj. Před cestou si u ubytování ověřte šířku dveří, prostor u postele a koupelnu.</p>
   </section>
 
-  <section class="wrap ub-toolbar" aria-label="Hledání a filtry">
+  <section class="wrap ub-toolbar" aria-label="Hledání a filtry" data-i18n-attr="aria-label">
     <div class="ub-searchrow">
       <div class="search-field ub-search">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <label class="sr-only" for="f-q">Hledat ubytování podle názvu nebo obce</label>
-        <input id="f-q" type="search" placeholder="Hledat název nebo obec" autocomplete="off">
+        <label class="sr-only" for="f-q" data-i18n>Hledat ubytování podle názvu nebo obce</label>
+        <input id="f-q" type="search" placeholder="Hledat název nebo obec" autocomplete="off" data-i18n-attr="placeholder">
       </div>
-      <button class="btn btn-ghost ub-open" type="button" id="ub-open" aria-controls="ub-form" aria-expanded="false">
+      <button class="btn btn-ghost ub-open" type="button" id="ub-open" aria-controls="ub-form" aria-expanded="false" data-i18n-text>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg>
         Filtry<span class="ub-nbadge" id="ub-nfilters" hidden></span>
       </button>
     </div>
 
     <div class="sheet-backdrop" id="ub-backdrop" hidden></div>
-    <form class="ub-filters" id="ub-form" aria-label="Filtry ubytování">
+    <form class="ub-filters" id="ub-form" aria-label="Filtry ubytování" data-i18n-attr="aria-label">
       <div class="grip ub-sheet-only" aria-hidden="true"></div>
-      <header class="ub-sheet-only"><h2 id="ub-sheet-title">Filtry</h2><button class="icon-btn" type="button" id="ub-close" aria-label="Zavřít filtry"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
+      <header class="ub-sheet-only"><h2 id="ub-sheet-title" data-i18n>Filtry</h2><button class="icon-btn" type="button" id="ub-close" aria-label="Zavřít filtry" data-i18n-attr="aria-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
       <div class="body chip-row ub-chips">
-        <label class="ub-sel"><span class="ub-l">Kraj / obvod</span><select id="f-kraj" class="chip"><option value="">Česko i Bavorsko</option></select></label>
-        <label class="ub-sel"><span class="ub-l">Obec</span><select id="f-obec" class="chip"><option value="">Všechny obce</option></select></label>
-        <label class="ub-sel"><span class="ub-l">Vstup</span><select id="f-w" class="chip">
-          <option value="yl">Přístupný i částečně</option>
-          <option value="y">Jen přístupný</option>
-          <option value="l">Jen částečně přístupný</option>
-          <option value="u">Neuvedeno</option>
-          <option value="n">Nepřístupný</option>
-          <option value="all">Jakýkoli vstup</option>
+        <label class="ub-sel"><span class="ub-l" data-i18n>Kraj / obvod</span><select id="f-kraj" class="chip"><option value="" data-i18n>Česko i Bavorsko</option></select></label>
+        <label class="ub-sel"><span class="ub-l" data-i18n>Obec</span><select id="f-obec" class="chip"><option value="" data-i18n>Všechny obce</option></select></label>
+        <label class="ub-sel"><span class="ub-l" data-i18n>Vstup</span><select id="f-w" class="chip">
+          <option value="yl" data-i18n>Přístupný i částečně</option>
+          <option value="y" data-i18n>Jen přístupný</option>
+          <option value="l" data-i18n>Jen částečně přístupný</option>
+          <option value="u" data-i18n>Neuvedeno</option>
+          <option value="n" data-i18n>Nepřístupný</option>
+          <option value="all" data-i18n>Jakýkoli vstup</option>
         </select></label>
-        <label class="ub-sel"><span class="ub-l">Druh</span><select id="f-typ" class="chip"><option value="">Všechny druhy</option></select></label>
-        <span class="ub-l ub-sheet-only">Další údaje</span>
-        <button class="chip" type="button" id="f-wc" aria-pressed="false"><span class="status ok"><i></i></span>Bezbariérové WC</button>
-        <button class="chip" type="button" id="f-r" aria-pressed="false">Info od provozovatele</button>
-        <button class="chip" type="button" id="f-web" aria-pressed="false">Má web nebo telefon</button>
-        <button class="btn btn-quiet btn-sm ub-reset ub-desk-only" type="reset" id="f-reset" hidden>Zrušit filtry</button>
+        <label class="ub-sel"><span class="ub-l" data-i18n>Druh</span><select id="f-typ" class="chip"><option value="" data-i18n>Všechny druhy</option></select></label>
+        <span class="ub-l ub-sheet-only" data-i18n>Další údaje</span>
+        <button class="chip" type="button" id="f-wc" aria-pressed="false" data-i18n><span class="status ok"><i></i></span>Bezbariérové WC</button>
+        <button class="chip" type="button" id="f-r" aria-pressed="false" data-i18n>Info od provozovatele</button>
+        <button class="chip" type="button" id="f-web" aria-pressed="false" data-i18n>Má web nebo telefon</button>
+        <button class="btn btn-quiet btn-sm ub-reset ub-desk-only" type="reset" id="f-reset" hidden data-i18n>Zrušit filtry</button>
       </div>
       <footer class="ub-sheet-only ub-sheet-foot">
-        <button class="btn btn-ghost" type="reset">Zrušit filtry</button>
-        <button class="btn btn-primary" type="button" id="ub-apply">Zobrazit</button>
+        <button class="btn btn-ghost" type="reset" data-i18n>Zrušit filtry</button>
+        <button class="btn btn-primary" type="button" id="ub-apply" data-i18n>Zobrazit</button>
       </footer>
     </form>
   </section>
 
-  <section class="wrap ub-results" aria-label="Výsledky">
+  <section class="wrap ub-results" aria-label="Výsledky" data-i18n-attr="aria-label">
     <div class="ub-bar">
-      <p id="ub-count" class="ub-count" aria-live="polite">Načítám ubytování…</p>
-      <label class="ub-sort"><span>Řadit</span>
+      <p id="ub-count" class="ub-count" aria-live="polite" data-i18n>Načítám ubytování…</p>
+      <label class="ub-sort"><span data-i18n>Řadit</span>
         <select id="f-sort">
-          <option value="complete">Nejvíc údajů</option>
-          <option value="access">Nejlepší přístupnost</option>
-          <option value="name">Podle názvu</option>
-          <option value="obec">Podle obce</option>
+          <option value="complete" data-i18n>Nejvíc údajů</option>
+          <option value="access" data-i18n>Nejlepší přístupnost</option>
+          <option value="name" data-i18n>Podle názvu</option>
+          <option value="obec" data-i18n>Podle obce</option>
         </select>
       </label>
     </div>
     <ul id="ub-list" class="ub-list"></ul>
-    <button class="btn btn-ghost btn-block ub-more" id="ub-more" type="button" hidden>Zobrazit další</button>
-    <p class="small muted ub-source">Zdroj: OpenStreetMap (stav <span id="ub-fetched">5. 10. 2026 pro Česko a 7. 10. 2026 pro Bavorsko</span>). Bavorská ubytování mají původní německé názvy. Údaje „Podle webu provozovatele“ jsme přečetli z webu ubytování k uvedenému datu a odkazujeme na stránku, odkud pocházejí. <a href="metodika.html#zdroje">Jak s daty pracujeme</a></p>
+    <button class="btn btn-ghost btn-block ub-more" id="ub-more" type="button" hidden data-i18n>Zobrazit další</button>
+    <p class="small muted ub-source" data-i18n-text>Zdroj: OpenStreetMap (stav <span id="ub-fetched" data-i18n>5. 10. 2026 pro Česko a 7. 10. 2026 pro Bavorsko</span>). Bavorská ubytování mají původní německé názvy. Údaje „Podle webu provozovatele“ jsme přečetli z webu ubytování k uvedenému datu a odkazujeme na stránku, odkud pocházejí. <a href="metodika.html#zdroje" data-i18n>Jak s daty pracujeme</a></p>
   </section>
 </main>
 <div id="site-footer"></div>
+<script src="assets/js/i18n.js?v=2"></script>
+<script src="assets/js/i18n/core.js?v=2"></script>
+<script src="assets/js/i18n/ubytovani.js?v=1"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=12"></script>
-<script src="assets/js/ubytovani.js?v=12"></script>
+<script src="assets/js/core.js?v=15"></script>
+<script src="assets/js/ubytovani.js?v=13"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@
   const mobile = matchMedia('(max-width: 899px)');
   let ALL = [], shown = PAGE;
 
-  const nf = (n) => Number(n).toLocaleString('cs-CZ');
+  const nf = (n) => K.nf(n);
   function norm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
   function reports(p) { return Array.isArray(p.r) ? p.r.filter(r => r && typeof r === 'object') : []; }
   const pressed = (s) => $(s).getAttribute('aria-pressed') === 'true';
@@ -58,19 +58,19 @@
     const w = K.W[p.w || 'null'];
     const rs = reports(p);
     const unknown = [];
-    if (!p.t) unknown.push('toaleta');
-    if (!rs.length) unknown.push('pokoj a koupelna');
+    if (!p.t) unknown.push(K.t('toaleta'));
+    if (!rs.length) unknown.push(KP.t('pokoj a koupelna'));
     const href = K.placeUrl(p);
     const photo = p.img ? '<figure class="photo ub-photo"><a href="' + href + '" tabindex="-1" aria-hidden="true"><img src="' + K.commonsImg(p.img, 320) + '" srcset="' + K.commonsImg(p.img, 320) + ' 320w, ' + K.commonsImg(p.img, 640) + ' 640w" sizes="(min-width: 640px) 220px, 120px" width="320" height="213" alt="" loading="lazy" decoding="async"></a>' +
-      '<figcaption><a href="' + K.commonsPage(p.img) + '" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>' : '';
+      '<figcaption><a href="' + K.commonsPage(p.img) + ('" target="_blank" rel="noopener">' + KP.t('Foto: Wikimedia Commons') + '</a></figcaption></figure>') : '';
     return '<li class="ub-row' + (p.img ? ' has-photo' : '') + '"><a class="ub-card" href="' + href + '">' +
       '<span class="ub-name">' + K.esc(p.n) + '</span>' +
-      '<span class="ub-meta">' + K.esc([p.o, p.s, K.zemeOf(p) === 'de' ? 'Bavorsko' : ''].filter(Boolean).join(' · ')) + '</span>' +
-      '<span class="ub-facts">' + K.statusHtml(w.st, 'Vstup: ' + w.short.toLowerCase()) +
-      (p.t ? K.statusHtml(K.T[p.t].st, K.T[p.t].label) : K.statusHtml('unk', 'WC neuvedeno')) + '</span>' +
-      (rs.length ? '<span class="badge badge-business" title="Údaj jsme přečetli na webu ubytování, neověřili jsme ho na místě.">' + K.icon('building') + 'Podle webu provozovatele</span>' : '') +
-      '<span class="ub-foot"><span class="ub-unknown">' + (unknown.length ? 'Neznáme: ' + unknown.join(', ') : 'Údaje ' + p._c + ' %') + '</span>' +
-      '<span class="ub-go">Detail' + K.icon('arrow') + '</span></span>' +
+      '<span class="ub-meta">' + K.esc([p.o, p.s && K.t(p.s), K.zemeOf(p) === 'de' ? K.t('Bavorsko') : ''].filter(Boolean).join(' · ')) + '</span>' +
+      '<span class="ub-facts">' + K.statusHtml(w.st, K.t('Vstup') + ': ' + K.lc(w.short)) +
+      (p.t ? K.statusHtml(K.T[p.t].st, K.T[p.t].label) : K.statusHtml('unk', KP.t('WC neuvedeno'))) + '</span>' +
+      (rs.length ? ('<span class="badge badge-business" title="' + KP.t('Údaj jsme přečetli na webu ubytování, neověřili jsme ho na místě.') + '">') + K.icon('building') + (KP.t('Podle webu provozovatele') + '</span>') : '') +
+      '<span class="ub-foot"><span class="ub-unknown">' + (unknown.length ? K.t('Neznáme') + ': ' + unknown.join(', ') : K.t('Údaje {pct} %', { pct: p._c })) + '</span>' +
+      ('<span class="ub-go">' + KP.t('Detail')) + K.icon('arrow') + '</span></span>' +
       '</a>' + photo + '</li>';
   }
 
@@ -79,7 +79,7 @@
     const counts = {};
     ALL.forEach(p => { if (p.o && (!kraj || p.k === kraj)) counts[p.o] = (counts[p.o] || 0) + 1; });
     const obce = Object.keys(counts).sort((a, b) => a.localeCompare(b, 'cs'));
-    $('#f-obec').innerHTML = '<option value="">Všechny obce</option>' + obce.map(o => '<option value="' + K.esc(o) + '">' + K.esc(o) + ' (' + counts[o] + ')</option>').join('');
+    $('#f-obec').innerHTML = ('<option value="">' + KP.t('Všechny obce') + '</option>') + obce.map(o => '<option value="' + K.esc(o) + '">' + K.esc(o) + ' (' + counts[o] + ')</option>').join('');
     $('#f-obec').value = obce.includes(cur) ? cur : '';
   }
 
@@ -99,13 +99,13 @@
     const s = state();
     const list = sort(filter(s), s.sort);
     const n = list.length, withR = ALL.filter(p => reports(p).length).length;
-    $('#ub-count').innerHTML = '<b class="num">' + nf(n) + '</b> z ' + nf(ALL.length) + ' ubytování' +
-      (withR ? '<span class="muted small"> · ' + nf(withR) + ' s údaji od provozovatele</span>' : '');
+    $('#ub-count').innerHTML = K.t('<b class="num">{n}</b> z {all} ubytování', { n: nf(n), all: nf(ALL.length) }) +
+      (withR ? '<span class="muted small"> · ' + K.t('{n} s údaji od provozovatele', { n: nf(withR) }) + '</span>' : '');
     $('#ub-list').innerHTML = n ? list.slice(0, shown).map(cardHtml).join('')
-      : '<li class="empty ub-empty"><p><b>Filtrům nic neodpovídá.</b></p><p class="small">Zkuste jiný kraj nebo u vstupu zvolte i částečně přístupný.</p>' + (s.r ? '<p class="small">Údaje z webů provozovatelů teprve doplňujeme.</p>' : '') + '<p class="small"><a href="pridat.html">Znáte přístupné ubytování? Přidejte ho.</a></p></li>';
+      : ('<li class="empty ub-empty"><p><b>' + KP.t('Filtrům nic neodpovídá.') + '</b></p><p class="small">' + KP.t('Zkuste jiný kraj nebo u vstupu zvolte i částečně přístupný.') + '</p>') + (s.r ? ('<p class="small">' + KP.t('Údaje z webů provozovatelů teprve doplňujeme.') + '</p>') : '') + ('<p class="small"><a href="pridat.html">' + KP.t('Znáte přístupné ubytování? Přidejte ho.') + '</a></p></li>');
     $('#ub-more').hidden = n <= shown;
-    $('#ub-more').textContent = 'Zobrazit dalších ' + Math.min(PAGE, n - shown);
-    $('#ub-apply').textContent = n ? 'Zobrazit ' + nf(n) + ' ubytování' : 'Nic neodpovídá';
+    $('#ub-more').textContent = K.t('Zobrazit dalších {n}', { n: Math.min(PAGE, n - shown) });
+    $('#ub-apply').textContent = n ? K.t('Zobrazit {n} ubytování', { n: nf(n) }) : K.t('Nic neodpovídá');
     // Vzhled aktivních filtrů
     [['#f-kraj', s.kraj], ['#f-obec', s.obec], ['#f-typ', s.typ], ['#f-w', s.wKey !== 'yl']].forEach(([sel, on]) => $(sel).classList.toggle('on', !!on));
     const a = activeCount(s);
@@ -135,25 +135,25 @@
 
   async function init() {
     let stats = null, data;
-    $('#ub-count').textContent = 'Načítám ubytování z Česka a Bavorska…';
+    $('#ub-count').textContent = KP.t('Načítám ubytování z Česka a Bavorska…');
     try {
       [data, stats] = await Promise.all([
         // Výtah jen s ubytováním (tools/build_web_index.py, asi 1,4 MB); bez něj projde všechny regiony
         Promise.all([fetch('data/regions/ubytovani.json').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }), K.loadRegionsIndex()]).then(([d]) => d)
-          .catch(() => K.loadAll(p => p.c === 'ubytovani', { onProgress: (d, n) => { $('#ub-count').textContent = 'Načítám ubytování… ' + d + ' z ' + n + ' oblastí'; } })),
+          .catch(() => K.loadAll(p => p.c === 'ubytovani', { onProgress: (d, n) => { $('#ub-count').textContent = K.t('Načítám ubytování… {d} z {n} oblastí', { d, n }); } })),
         K.loadStats().catch(() => null)]);
     }
-    catch (e) { $('#ub-count').innerHTML = '<span class="callout">Data se nepodařilo načíst. Zkuste stránku obnovit.</span>'; return; }
+    catch (e) { $('#ub-count').innerHTML = ('<span class="callout">' + KP.t('Data se nepodařilo načíst. Zkuste stránku obnovit.') + '</span>'); return; }
     ALL = data;
     ALL.forEach(p => { p._c = K.completeness(p); });
 
     const kn = {}; ALL.forEach(p => { if (p.k) kn[p.k] = (kn[p.k] || 0) + 1; });
     const kraje = Object.keys(kn);
     const zk = (z) => kraje.filter(k => ((K.regionByName(k) || {}).zeme || 'cz') === z).sort((a, b) => a.localeCompare(b, 'cs'));
-    $('#f-kraj').innerHTML += ['cz', 'de'].map(z => zk(z).length ? '<optgroup label="' + K.ZEME[z] + (z === 'de' ? ' – vládní obvody' : ' – kraje') + '">' +
-      zk(z).map(k => '<option value="' + K.esc(k) + '">' + K.esc(k) + ' (' + kn[k] + ')</option>').join('') + '</optgroup>' : '').join('');
+    $('#f-kraj').innerHTML += ['cz', 'de'].map(z => zk(z).length ? '<optgroup label="' + K.ZEME[z] + (z === 'de' ? (' ' + KP.t('– vládní obvody')) : (' ' + KP.t('– kraje'))) + '">' +
+      zk(z).map(k => '<option value="' + K.esc(k) + '">' + K.esc(K.LANG === 'cs' ? k : K.krajName(k)) + ' (' + kn[k] + ')</option>').join('') + '</optgroup>' : '').join('');
     const typy = {}; ALL.forEach(p => { if (p.s) typy[p.s] = (typy[p.s] || 0) + 1; });
-    $('#f-typ').innerHTML += Object.entries(typy).sort((a, b) => b[1] - a[1]).map(([t, c]) => '<option value="' + K.esc(t) + '">' + K.esc(t) + ' (' + c + ')</option>').join('');
+    $('#f-typ').innerHTML += Object.entries(typy).sort((a, b) => b[1] - a[1]).map(([t, c]) => '<option value="' + K.esc(t) + '">' + K.esc(K.t(t)) + ' (' + c + ')</option>').join('');
 
     const sp = new URLSearchParams(location.search);
     if (sp.get('kraj') && kraje.includes(sp.get('kraj'))) $('#f-kraj').value = sp.get('kraj');

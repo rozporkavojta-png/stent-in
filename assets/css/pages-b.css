@@ -272,10 +272,52 @@
 .pf-note p { margin: 0 0 14px; }
 .pf-note p:last-child { margin: 0; }
 
+/* Prototyp: jedna věta s černou linkou vlevo, žádný box */
+.pf-proto { margin: 16px 0 0; padding-left: 12px; border-left: 4px solid var(--signal); max-width: 62ch; font-size: .95rem; color: var(--ink-2); }
+/* Obsah stránky: textové odkazy s linkou, na mobilu vodorovně posuvné */
+.pf-toc { display: flex; flex-wrap: wrap; gap: 4px 20px; margin-top: 24px; border-top: 1px solid var(--rule); padding-top: 8px; }
+.pf-toc a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font-weight: 600; text-decoration: none; }
+.pf-toc a:hover { text-decoration: underline; text-decoration-color: var(--signal); text-decoration-thickness: 3px; }
+
+/* Formulář potřeb přímo na stránce */
+.pf-form { display: flex; flex-direction: column; gap: 20px; }
+.pf-form #needs-fields { display: flex; flex-direction: column; gap: 24px; }
+.pf-form .nf-group { border-top: 1px solid var(--rule) !important; padding-top: 12px !important; }
+.pf-form .nf-group legend { float: left; width: 100%; font: 700 .78rem/1.2 var(--f-body); letter-spacing: .12em; text-transform: uppercase; margin-bottom: 8px; }
+.pf-form .nf-unit input { width: 7em; }
+.pf-form .nf-unit span { font-family: var(--f-mono); font-weight: 700; }
+.pf-form .check { min-height: 44px; align-items: center; }
+.pf-form-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.pf-form-actions .btn-primary { flex: 1 1 auto; }
+
+/* Shoda a vybavení u uloženého místa */
+.pf-fit { display: flex; flex-direction: column; gap: 2px; margin-top: 4px; }
+.pf-fit .status { font-size: .95rem; margin: 0; }
+
+.pf-sub { font-size: 1.15rem; margin: 32px 0 12px; }
+/* Řádek s textem vlevo a akcemi vpravo */
+.pf-line, .pf-rev, .pf-biz { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 16px; align-items: start; }
+.pf-line .pf-txt b { font-size: 1.05rem; }
+.pf-acts { display: flex; flex-wrap: wrap; gap: 4px 8px; justify-content: flex-end; }
+.pf-acts .btn, .pf-line > .btn, .pf-rev > .btn { min-height: 44px; }
+.pf-txt .badge { margin-bottom: 2px; }
+.pf-ratings { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 6px 0 0; font-size: .95rem; }
+.pf-quote { margin: 6px 0 0; max-width: 60ch; }
+.pf-photos { list-style: none; padding: 0; margin: 10px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; width: 100%; }
+.pf-photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; background: var(--surface-2); }
+/* Postup checklistu: černá linka se žlutou výplní, vedle vždy text */
+.pf-meter { width: 100%; max-width: 320px; height: 10px; border: 1.5px solid var(--ink); margin: 8px 0 2px; background: var(--surface); }
+.pf-meter span { display: block; height: 100%; background: var(--signal); }
+
 @media (max-width: 899px) {
   .pf-layout { grid-template-columns: 1fr; grid-template-areas: "needs" "main" "aside"; grid-template-rows: none; gap: 56px; padding-block: 28px 64px; }
 }
 @media (max-width: 520px) {
+  .pf-toc { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; gap: 20px; }
+  .pf-toc::-webkit-scrollbar { display: none; }
+  .pf-toc a { white-space: nowrap; }
+  .pf-line, .pf-rev, .pf-biz { grid-template-columns: minmax(0, 1fr); }
+  .pf-acts { justify-content: flex-start; }
   .pf-row.has-ph { grid-template-columns: 112px minmax(0, 1fr); gap: 14px; }
   .pf-ph figcaption { font-size: .72rem; }
   .pf-draft { grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; }

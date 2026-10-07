@@ -254,3 +254,11 @@ a.cat-row:hover .cat-n, a.cat-row:hover .cat-n .num { color: var(--on-signal); }
 .kraj-links > li.kraj-group { border-top: 0; break-after: avoid; padding: 18px 0 6px; }
 .kraj-links > li.kraj-group:first-child { padding-top: 0; }
 .kraj-links > li.kraj-group .kicker { margin: 0; }
+
+/* ---------- Pro podniky: odkaz na profil podniku a další služby ---------- */
+.pf-try { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin: 24px 0 0; }
+.pf-try .small { color: var(--ink-2); }
+.pf-claim-row { margin-top: 28px; }
+.pf-proto { margin-top: 20px; max-width: 68ch; }
+.pf-extra td:last-child { white-space: nowrap; }
+@media (max-width: 600px) { .pf-extra td:last-child { white-space: normal; } }

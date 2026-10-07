@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Profil podniku · kudyprojedu.cz</title>
+<meta name="description" content="Převezměte profil svého podniku a vyplňte přístupnost krok za krokem: vstup, parkování, výtah, WC, pokoj a koupelna. Fotky, náhled profilu a co zlepšit.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=15">
+<link rel="stylesheet" href="assets/css/pages-a.css?v=13">
+<link rel="stylesheet" href="assets/css/podnik.css?v=2">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+
+  <section class="page-head pd-head">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Drobečková navigace" data-i18n-attr="aria-label"><a href="pro-firmy.html" data-i18n>Pro podniky</a><span aria-hidden="true">/</span><span data-i18n>Profil podniku</span></nav>
+      <p class="kicker" data-i18n>Profil podniku</p>
+      <h1 data-i18n>Vyplňte přístupnost svého podniku</h1>
+      <p class="lede" data-i18n>Najděte svůj podnik, převezměte profil a projděte checklist. U každého údaje napíšeme, co a jak změřit a co vyfotit. Základní profil je zdarma.</p>
+      <p class="pd-proto" id="pd-proto" data-i18n><b>Prototyp.</b> <span data-proto></span> Převzetí, údaje, fotky ani statistiky zatím nikdo jiný neuvidí a nikam se neodesílají.</p>
+    </div>
+  </section>
+
+  <!-- Hledání podniku -->
+  <section class="section-tight pd-find" id="najit" aria-labelledby="najit-h">
+    <div class="wrap split-grid">
+      <div class="split-h">
+        <p class="kicker" data-i18n>Krok 1</p>
+        <h2 id="najit-h" data-i18n>Najděte svůj podnik</h2>
+        <p data-i18n>Hledáme v mapě míst v Česku a v Bavorsku. Když tam podnik není, přidejte ho přes <a href="pridat.html">formulář pro nové místo</a>.</p>
+      </div>
+      <div class="split-b">
+        <div class="field">
+          <label for="pd-q" data-i18n>Název podniku a obec</label>
+          <input id="pd-q" type="search" autocomplete="off" placeholder="např. Hotel Zlatá Hvězda, Třeboň" data-i18n-attr="placeholder">
+          <span class="hint" id="pd-q-hint" data-i18n>Načítám seznam míst…</span>
+        </div>
+        <ul class="place-pick pd-pick" id="pd-pick" aria-label="Nalezená místa" data-i18n-attr="aria-label"></ul>
+        <div id="pd-mine"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pracovní plocha pro vybraný podnik -->
+  <div id="pd-work" hidden>
+    <header class="pd-place" id="pd-place" tabindex="-1"></header>
+    <div class="wrap pd-work">
+      <nav class="pd-nav" aria-label="Části profilu podniku" id="pd-nav" data-i18n-attr="aria-label"></nav>
+      <div class="pd-main">
+
+        <section class="pd-sec" id="prevzeti" aria-labelledby="prevzeti-h">
+          <p class="kicker" data-i18n>Krok 2</p>
+          <h2 id="prevzeti-h" data-i18n>Převzetí profilu</h2>
+          <div id="pd-claim"></div>
+        </section>
+
+        <section class="pd-sec" id="checklist" aria-labelledby="checklist-h">
+          <p class="kicker" data-i18n>Krok 3: checklist</p>
+          <h2 id="checklist-h" data-i18n>Krok za krokem</h2>
+          <p class="pd-intro" data-i18n>Připravte si svinovací metr a mobil. Měřte vždy nejužší nebo nejvyšší místo, to rozhoduje, jestli člověk projede. <a href="metodika.html#mereni">Jak měřit, s obrázky</a> · <a href="metodika.html#prahy">Mezní hodnoty</a></p>
+          <div id="pd-check"></div>
+        </section>
+
+        <section class="pd-sec" id="nahled" aria-labelledby="nahled-h">
+          <p class="kicker" data-i18n>Náhled</p>
+          <h2 id="nahled-h" data-i18n>Jak profil uvidí návštěvníci</h2>
+          <div id="pd-preview"></div>
+        </section>
+
+        <section class="pd-sec" id="proc" aria-labelledby="proc-h">
+          <p class="kicker" data-i18n>Proč vyplnit</p>
+          <h2 id="proc-h" data-i18n>Co vám vyplněný profil přinese</h2>
+          <div id="pd-why"></div>
+        </section>
+
+        <section class="pd-sec" id="statistiky" aria-labelledby="stat-h">
+          <p class="kicker" data-i18n>Statistiky</p>
+          <h2 id="stat-h" data-i18n>Zájem o váš profil</h2>
+          <div id="pd-stats"></div>
+        </section>
+
+        <section class="pd-sec" id="zlepsit" aria-labelledby="zlepsit-h">
+          <p class="kicker" data-i18n>Co zlepšit</p>
+          <h2 id="zlepsit-h" data-i18n>Co doplnit a co upravit</h2>
+          <div id="pd-improve"></div>
+        </section>
+
+        <section class="pd-sec" id="sluzby" aria-labelledby="sluzby-h">
+          <p class="kicker" data-i18n>Služby</p>
+          <h2 id="sluzby-h" data-i18n>Základ zdarma, služby navíc</h2>
+          <ul class="pd-services rule-list">
+            <li class="rule-row"><b data-i18n>Základní profil</b><span data-i18n>0 Kč. Převzetí, checklist, fotky, úpravy kdykoli.</span></li>
+            <li class="rule-row"><b data-i18n>Ověření na místě</b><span data-i18n>Mapovač změří vstup, dveře, výtah, WC a parkování. Odznak „Ověřeno“ na 3 roky.</span></li>
+            <li class="rule-row"><b data-i18n>Rozšířený profil</b><span data-i18n>Delší popis, kontakt pro dotazy k přístupnosti, QR štítek na dveře.</span></li>
+            <li class="rule-row"><b data-i18n>Analytika</b><span data-i18n>Zobrazení profilu, výskyt ve výsledcích, žádosti o doplnění.</span></li>
+            <li class="rule-row"><b data-i18n>Propagace</b><span data-i18n>Zvýraznění ve výběrech a tematických trasách.</span></li>
+            <li class="rule-row"><b data-i18n>Poradenství</b><span data-i18n>Co upravit nejdřív a s kým to řešit.</span></li>
+          </ul>
+          <p class="small pd-svc-note" data-i18n>Placené služby zatím neběží, ceny jsou návrh. <a href="pro-firmy.html#cenik">Ceník a podrobnosti</a></p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js?v=2"></script>
+<script src="assets/js/i18n/core.js?v=2"></script>
+<script src="assets/js/i18n/checklist.js?v=1"></script>
+<script src="assets/js/i18n/podnik.js?v=1"></script>
+<script src="assets/js/config.js?v=12"></script>
+<script src="assets/js/core.js?v=15"></script>
+<script src="assets/js/checklist.js?v=3"></script>
+<script src="assets/js/podnik.js?v=3"></script>
+</body>
+</html>

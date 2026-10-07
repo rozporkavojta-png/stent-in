@@ -4,132 +4,92 @@
 <meta charset="utf-8">
 <link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Přidat místo · kudyprojedu.cz</title>
-<meta name="description" content="Přidejte nebo opravte údaje o přístupnosti místa: schody, dveře, rampa, toaleta, parkování ZTP a fotky.">
+<title>Přidat nebo upravit místo · kudyprojedu.cz</title>
+<meta name="description" content="Navrhněte nové místo, doplňte údaje o přístupnosti nebo nahlaste změnu: schody, dveře, rampa, WC, parkování ZTP, pokoj a fotky.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=13">
-<link rel="stylesheet" href="assets/css/pages-b.css?v=11">
+<link rel="stylesheet" href="assets/css/style.css?v=15">
+<link rel="stylesheet" href="assets/css/pages-b.css?v=12">
+<link rel="stylesheet" href="assets/css/podnik.css?v=2">
 </head>
 <body>
 <div id="site-header"></div>
 <main id="main">
   <header class="page-hero page-hero-sm">
     <div class="wrap">
-      <span class="kicker">Přispět do mapy</span>
-      <h1>Přidat nebo upravit místo</h1>
-      <p class="lede">Zapište, co jste na místě viděli nebo naměřili. Zabere to asi 5 minut, metr se hodí.</p>
+      <span class="kicker" data-i18n>Přispět do mapy</span>
+      <h1 data-i18n>Přidat nebo upravit místo</h1>
+      <p class="lede" data-i18n>Zapište, co jste na místě viděli nebo naměřili. Ptáme se stejně jako provozovatelů v profilu podniku, takže se údaje dají porovnat. Metr se hodí.</p>
     </div>
   </header>
 
   <div class="wrap wizard">
     <form id="wizard" novalidate>
       <div class="wz-progress" id="wz-progress">
-        <p class="wz-count" aria-live="polite"><span class="wz-num" id="step-num" aria-hidden="true">1</span><span class="wz-of" aria-hidden="true">/5</span><span class="wz-txt"><span class="sr-only" id="step-count">Krok 1 z 5</span><span class="wz-name" id="step-name">Místo</span></span></p>
+        <p class="wz-count" aria-live="polite"><span class="wz-num" id="step-num" aria-hidden="true">1</span><span class="wz-of" aria-hidden="true">/5</span><span class="wz-txt"><span class="sr-only" id="step-count" data-i18n>Krok 1 z 5</span><span class="wz-name" id="step-name" data-i18n>Místo</span></span></p>
       </div>
-      <ol class="steps" id="steps" aria-label="Kroky formuláře">
-        <li><button type="button" data-go="1" aria-current="step">Místo</button></li>
-        <li><button type="button" data-go="2">Typ</button></li>
-        <li><button type="button" data-go="3">Přístupnost</button></li>
-        <li><button type="button" data-go="4">Fotky</button></li>
-        <li><button type="button" data-go="5">Souhrn</button></li>
+      <ol class="steps" id="steps" aria-label="Kroky formuláře" data-i18n-attr="aria-label">
+        <li><button type="button" data-go="1" aria-current="step" data-i18n>Co a kde</button></li>
+        <li><button type="button" data-go="2" data-i18n>Typ</button></li>
+        <li><button type="button" data-go="3" data-i18n>Přístupnost</button></li>
+        <li><button type="button" data-go="4" data-i18n>Fotky</button></li>
+        <li><button type="button" data-go="5" data-i18n>Souhrn</button></li>
       </ol>
 
       <!-- Krok 1 -->
       <section class="step" data-step="1" aria-labelledby="h1s">
-        <h2 id="h1s">Které místo to je?</h2>
-        <div class="field">
-          <label for="find">Najděte místo podle názvu nebo obce</label>
-          <input id="find" type="search" placeholder="např. Městská knihovna, Tábor" autocomplete="off">
-          <span class="hint" id="find-hint">Načítám seznam míst…</span>
+        <h2 id="h1s" data-i18n>Co chcete udělat?</h2>
+        <p class="pr-proto" id="pr-proto"></p>
+        <fieldset class="pr-modes-f">
+          <legend class="sr-only" data-i18n>Druh příspěvku</legend>
+          <div class="pr-modes" id="modes">
+            <label><input type="radio" name="mode" value="doplnit" checked><b data-i18n>Doplnit údaje o místě</b><small data-i18n>Místo v mapě je, chybí mu rozměry, WC nebo fotky.</small></label>
+            <label><input type="radio" name="mode" value="zmena"><b data-i18n>Nahlásit změnu</b><small data-i18n>Údaj už neplatí, třeba přibyla rampa nebo zmizel výtah.</small></label>
+            <label><input type="radio" name="mode" value="nove"><b data-i18n>Navrhnout nové místo</b><small data-i18n>Místo v mapě vůbec není.</small></label>
+          </div>
+        </fieldset>
+        <div id="find-block">
+          <div class="field">
+            <label for="find" data-i18n>Najděte místo podle názvu nebo obce</label>
+            <input id="find" type="search" placeholder="např. Městská knihovna, Tábor" autocomplete="off" data-i18n-attr="placeholder">
+            <span class="hint" id="find-hint" data-i18n>Načítám seznam míst…</span>
+          </div>
+          <ul class="place-pick" id="pick" aria-label="Nalezená místa" data-i18n-attr="aria-label"></ul>
         </div>
-        <ul class="place-pick" id="pick" aria-label="Nalezená místa"></ul>
-        <label class="check"><input type="checkbox" id="is-new"> Místo v seznamu není, přidám nové</label>
         <div class="fgroup" id="new-place" hidden>
-          <div class="field full"><label for="np-name">Název místa</label><input id="np-name" type="text" autocomplete="off"></div>
-          <div class="field"><label for="np-street">Ulice a číslo</label><input id="np-street" type="text" autocomplete="street-address"></div>
-          <div class="field"><label for="np-city">Obec</label><input id="np-city" type="text"></div>
+          <div class="field full"><label for="np-name" data-i18n>Název místa</label><input id="np-name" type="text" autocomplete="off"></div>
+          <div class="field"><label for="np-street" data-i18n>Ulice a číslo</label><input id="np-street" type="text" autocomplete="street-address"></div>
+          <div class="field"><label for="np-city" data-i18n>Obec</label><input id="np-city" type="text"></div>
         </div>
       </section>
 
       <!-- Krok 2 -->
       <section class="step" data-step="2" aria-labelledby="h2s" hidden>
-        <h2 id="h2s">Jaký je to typ místa?</h2>
-        <p class="muted step-sub">Podle typu vám ukážeme jen otázky, které dávají smysl.</p>
+        <h2 id="h2s" data-i18n>Jaký je to typ místa?</h2>
+        <p class="muted step-sub" data-i18n>Podle typu vám ukážeme jen otázky, které dávají smysl. Je to stejný kontrolní seznam, jaký vyplňují provozovatelé.</p>
         <div class="type-grid" id="types"></div>
       </section>
 
       <!-- Krok 3 -->
       <section class="step" data-step="3" aria-labelledby="h3s" hidden>
-        <h2 id="h3s">Přístupnost</h2>
-        <p class="muted step-sub">Vyplňte, co víte. Prázdné pole nevadí, je lepší nevyplnit než hádat. <a href="metodika.html#mereni" target="_blank">Jak měřit</a></p>
-        <div class="chip-row sub-tabs" id="sub-tabs" role="group" aria-label="Části kontrolního seznamu"></div>
-
-        <fieldset class="fgroup" data-sec="vstup">
-          <legend>Vstup</legend>
-          <div class="field"><label for="v-steps">Počet schodů u vstupu</label><input id="v-steps" type="number" min="0" max="50" inputmode="numeric"><span class="hint">0 = vstup bez schodu</span></div>
-          <div class="field"><label for="v-stepcm">Výška nejvyššího schodu nebo prahu</label><div class="input-unit"><input id="v-stepcm" type="number" min="0" max="40" step="0.5" inputmode="decimal"><span>cm</span></div><span class="hint">Přístupný max 2 cm, částečně max 7 cm.</span></div>
-          <div class="field"><label for="v-door">Šířka vstupních dveří</label><div class="input-unit"><input id="v-door" type="number" min="40" max="300" inputmode="numeric"><span>cm</span></div><span class="hint">Přístupný min 80 cm, částečně min 70 cm.</span></div>
-          <label class="check full"><input type="checkbox" id="v-ramp"> U vstupu je rampa</label>
-          <div class="field" data-ramp hidden><label for="v-slope">Sklon rampy</label><div class="input-unit"><input id="v-slope" type="number" min="0" max="40" step="0.1" inputmode="decimal"><span>%</span></div><span class="hint">Převýšení ÷ délka × 100.</span></div>
-          <div class="field" data-ramp hidden><label for="v-rlen">Délka rampy</label><div class="input-unit"><input id="v-rlen" type="number" min="0" max="50" step="0.1" inputmode="decimal"><span>m</span></div><span class="hint">Do 3 m: max 12,5 %. Do 9 m: max 8 %.</span></div>
-          <div class="field" data-ramp hidden><label for="v-rwid">Šířka rampy</label><div class="input-unit"><input id="v-rwid" type="number" min="0" max="500" inputmode="numeric"><span>cm</span></div><span class="hint">Minimum 110 cm.</span></div>
-          <label class="check"><input type="checkbox" id="v-auto"> Dveře se otvírají automaticky</label>
-          <label class="check"><input type="checkbox" id="v-bell"> Je tu zvonek na obsluhu</label>
-        </fieldset>
-
-        <fieldset class="fgroup" data-sec="uvnitr">
-          <legend>Uvnitř</legend>
-          <div class="field"><label for="u-floors">Počet podlaží pro návštěvníky</label><input id="u-floors" type="number" min="1" max="50" inputmode="numeric"></div>
-          <label class="check"><input type="checkbox" id="u-lift"> Je tu výtah</label>
-          <label class="check"><input type="checkbox" id="u-plat"> Je tu schodišťová plošina</label>
-          <div class="field" data-lift hidden><label for="u-ldoor">Dveře výtahu</label><div class="input-unit"><input id="u-ldoor" type="number" min="40" max="200" inputmode="numeric"><span>cm</span></div><span class="hint">Přístupný min 80 cm.</span></div>
-          <div class="field" data-lift hidden><label for="u-lw">Kabina, šířka</label><div class="input-unit"><input id="u-lw" type="number" min="50" max="400" inputmode="numeric"><span>cm</span></div></div>
-          <div class="field" data-lift hidden><label for="u-ld">Kabina, hloubka</label><div class="input-unit"><input id="u-ld" type="number" min="50" max="400" inputmode="numeric"><span>cm</span></div><span class="hint">Přístupný min 100 × 125 cm.</span></div>
-          <div class="field"><label for="u-narrow">Nejužší vnitřní dveře nebo průchod</label><div class="input-unit"><input id="u-narrow" type="number" min="40" max="300" inputmode="numeric"><span>cm</span></div></div>
-        </fieldset>
-
-        <fieldset class="fgroup" data-sec="wc">
-          <legend>Toaleta</legend>
-          <label class="check full"><input type="checkbox" id="w-has"> Je tu toaleta pro vozíčkáře</label>
-          <div class="field" data-wc hidden><label for="w-door">Dveře na WC</label><div class="input-unit"><input id="w-door" type="number" min="40" max="200" inputmode="numeric"><span>cm</span></div></div>
-          <div class="field" data-wc hidden><label for="w-w">Kabina, šířka</label><div class="input-unit"><input id="w-w" type="number" min="50" max="500" inputmode="numeric"><span>cm</span></div></div>
-          <div class="field" data-wc hidden><label for="w-d">Kabina, hloubka</label><div class="input-unit"><input id="w-d" type="number" min="50" max="500" inputmode="numeric"><span>cm</span></div><span class="hint">WC I min 160 × 160, WC II min 140 × 140 cm.</span></div>
-          <div class="field" data-wc hidden><label for="w-side">Volné místo vedle mísy</label><div class="input-unit"><input id="w-side" type="number" min="0" max="300" inputmode="numeric"><span>cm</span></div><span class="hint">Boční přístup z vozíku, min 80 cm.</span></div>
-          <label class="check" data-wc hidden><input type="checkbox" id="w-out"> Dveře se otevírají ven</label>
-          <label class="check" data-wc hidden><input type="checkbox" id="w-rails"> U mísy jsou madla</label>
-          <label class="check" data-wc hidden><input type="checkbox" id="w-euro"> Odemyká se Euroklíčem</label>
-        </fieldset>
-
-        <fieldset class="fgroup" data-sec="park">
-          <legend>Parkování ZTP</legend>
-          <div class="field"><label for="p-n">Počet vyhrazených míst ZTP</label><input id="p-n" type="number" min="0" max="200" inputmode="numeric"></div>
-          <div class="field"><label for="p-dist">Vzdálenost ke vstupu</label><div class="input-unit"><input id="p-dist" type="number" min="0" max="5000" inputmode="numeric"><span>m</span></div></div>
-          <div class="field"><label for="p-surf">Povrch cesty ke vstupu</label><select id="p-surf"><option value="">Nevím</option><option>asfalt nebo beton</option><option>zámková dlažba</option><option>kočičí hlavy</option><option>štěrk nebo mlat</option><option>tráva nebo hlína</option></select></div>
-        </fieldset>
-
-        <fieldset class="fgroup" data-sec="ubyt">
-          <legend>Ubytování</legend>
-          <div class="field"><label for="h-rooms">Počet bezbariérových pokojů</label><input id="h-rooms" type="number" min="0" max="200" inputmode="numeric"></div>
-          <div class="field"><label for="h-bed">Volné místo vedle postele</label><div class="input-unit"><input id="h-bed" type="number" min="0" max="400" inputmode="numeric"><span>cm</span></div></div>
-          <label class="check"><input type="checkbox" id="h-shower"> Sprcha bez vaničky (v úrovni podlahy)</label>
-          <label class="check"><input type="checkbox" id="h-seat"> Sedátko ve sprše</label>
-          <label class="check"><input type="checkbox" id="h-rails"> Madla v koupelně</label>
-        </fieldset>
-
+        <h2 id="h3s" data-i18n>Přístupnost</h2>
+        <p class="muted step-sub" data-i18n>Vyplňte, co víte. „Nevím“ nebo prázdné pole nevadí, je lepší nevyplnit než hádat. <a href="metodika.html#mereni" target="_blank" rel="noopener">Jak měřit</a></p>
+        <div class="chip-row sub-tabs" id="sub-tabs" role="group" aria-label="Části kontrolního seznamu" data-i18n-attr="aria-label"></div>
+        <div id="ck-parts"></div>
         <fieldset class="fgroup" data-part="note">
-          <legend>Poznámka</legend>
-          <div class="field full"><label for="note">Co by měl vědět ten, kdo přijede poprvé?</label><textarea id="note" placeholder="Např. bezbariérový vstup je ze dvora, je potřeba zazvonit."></textarea></div>
+          <legend data-i18n>Poznámka</legend>
+          <div class="field full"><label for="note" data-i18n>Co by měl vědět ten, kdo přijede poprvé?</label><textarea id="note" data-i18n-attr="placeholder" placeholder="Např. bezbariérový vstup je ze dvora, je potřeba zazvonit."></textarea></div>
         </fieldset>
       </section>
 
       <!-- Krok 4 -->
       <section class="step" data-step="4" aria-labelledby="h4s" hidden>
-        <h2 id="h4s">Fotky</h2>
-        <p class="muted step-sub">Fotka vstupu a toalety řekne víc než číslo. Fotografujte prostor, ne lidi. Nejvýš 8 fotek.</p>
+        <h2 id="h4s" data-i18n>Fotky</h2>
+        <p class="muted step-sub" data-i18n>Fotka vstupu a toalety řekne víc než číslo. Fotografujte prostor, ne lidi. Nejvýš 6 fotek, ke každé vyberte, co na ní je.</p>
+        <p class="small" id="photo-note"></p>
         <div class="dropzone" id="drop">
-          <p><b>Přetáhněte fotky sem</b> nebo</p>
-          <label class="btn btn-ghost" for="photos"><span data-icon="upload"></span>Vybrat fotky</label>
+          <p data-i18n><b>Přetáhněte fotky sem</b> nebo</p>
+          <label class="btn btn-ghost" for="photos" data-i18n-text><span data-icon="upload"></span>Vybrat fotky</label>
           <input id="photos" type="file" accept="image/*" multiple class="sr-only">
         </div>
         <div class="photo-list" id="photo-list"></div>
@@ -137,46 +97,57 @@
 
       <!-- Krok 5 -->
       <section class="step" data-step="5" aria-labelledby="h5s" hidden>
-        <h2 id="h5s">Souhrn</h2>
-        <p class="muted step-sub">Zkontrolujte údaje. Opravit je můžete tlačítkem Zpět nebo kliknutím na krok nahoře.</p>
+        <h2 id="h5s" data-i18n>Souhrn</h2>
+        <p class="muted step-sub" data-i18n>Zkontrolujte údaje. Opravit je můžete tlačítkem Zpět nebo kliknutím na krok nahoře.</p>
         <div class="summary" id="summary"></div>
         <fieldset class="fgroup">
-          <legend>O vás (nepovinné)</legend>
-          <div class="field"><label for="nick">Přezdívka</label><input id="nick" type="text" autocomplete="nickname"><span class="hint">Zobrazí se u příspěvku. Skutečné jméno nepotřebujeme.</span></div>
-          <div class="field"><label for="aid">Čím se pohybuji</label><select id="aid"><option value="">Neuvádím</option><option>mechanický vozík</option><option>elektrický vozík</option><option>vozík s přídavným pohonem</option><option>chodítko</option><option>berle</option><option>kočárek</option><option>jsem doprovod</option></select><span class="hint">Dobrovolné. Ostatním pomůže pochopit vaši zkušenost: co zvládne mechanický vozík, nemusí zvládnout elektrický.</span></div>
+          <legend data-i18n>O vás (nepovinné)</legend>
+          <div class="field"><label for="nick" data-i18n>Přezdívka</label><input id="nick" type="text" autocomplete="nickname"><span class="hint" data-i18n>Zobrazí se u příspěvku. Skutečné jméno nepotřebujeme.</span></div>
+          <div class="field"><label for="aid" data-i18n>Čím se pohybuji</label><select id="aid"><option value="" data-i18n>Neuvádím</option></select><span class="hint" data-i18n>Dobrovolné. Ostatním pomůže pochopit vaši zkušenost: co zvládne mechanický vozík, nemusí zvládnout elektrický.</span></div>
         </fieldset>
+        <p class="pr-proto" data-proto2></p>
       </section>
 
       <div class="wz-nav" id="wz-nav">
-        <button class="btn btn-ghost" type="button" data-prev id="btn-prev">Zpět</button>
-        <button class="btn btn-primary" type="button" data-next id="btn-next">Pokračovat</button>
-        <button class="btn btn-primary" type="submit" id="btn-submit" hidden>Uložit příspěvek</button>
+        <button class="btn btn-ghost" type="button" data-prev id="btn-prev" data-i18n>Zpět</button>
+        <button class="btn btn-primary" type="button" data-next id="btn-next" data-i18n>Pokračovat</button>
+        <button class="btn btn-primary" type="submit" id="btn-submit" hidden data-i18n>Uložit příspěvek</button>
       </div>
 
       <section class="done-box signal-band" id="done" hidden tabindex="-1">
-        <h2>Uloženo</h2>
-        <p>Prototyp: příspěvek zůstal uložený ve vašem prohlížeči, nikam se neodeslal. V ostré verzi ho zkontroluje moderátor.</p>
-        <div class="row"><a class="btn btn-primary" href="pridat.html">Přidat další místo</a><a class="btn btn-ghost" href="profil.html">Moje příspěvky</a></div>
+        <h2 data-i18n>Uloženo</h2>
+        <p id="done-text" data-i18n>Prototyp: příspěvek zůstal uložený ve vašem prohlížeči, nikam se neodeslal. V ostré verzi ho zkontroluje moderátor.</p>
+        <div class="row"><a class="btn btn-primary" href="pridat.html" data-i18n>Přidat další místo</a><a class="btn btn-ghost" href="profil.html" data-i18n>Moje příspěvky</a></div>
       </section>
     </form>
 
-    <aside class="side" aria-label="Průběžné hodnocení">
+    <aside class="side" aria-label="Průběžné hodnocení" data-i18n-attr="aria-label">
       <div class="verdict" aria-live="polite">
-        <h3>Odhad kategorie</h3>
-        <div id="verdict"><p class="muted small">Vyplňte vstup a uvidíte, do které kategorie místo patří.</p></div>
-        <p class="small muted verdict-note">Zjednodušený odhad podle metodiky POV z vašich čísel. Konečné zařazení dělá mapovač. <a href="metodika.html#prahy">Mezní hodnoty</a></p>
+        <h3 data-i18n>Odhad kategorie</h3>
+        <div id="verdict"><p class="muted small" data-i18n>Vyplňte vstup a uvidíte, do které kategorie místo patří.</p></div>
+        <p class="small muted verdict-note" data-i18n>Zjednodušený odhad podle metodiky POV z vašich čísel. Konečné zařazení dělá mapovač. <a href="metodika.html#prahy">Mezní hodnoty</a></p>
       </div>
       <div class="side-osm">
-        <h3>Chcete, aby to všichni viděli hned?</h3>
-        <p class="small">Upravte místo přímo v OpenStreetMap. Odtud data přebírá náš web i Wheelmap a další aplikace.</p>
-        <a class="btn btn-ghost btn-sm" id="osm-link" href="https://www.openstreetmap.org/edit" target="_blank" rel="noopener"><span data-icon="external"></span>Otevřít v OpenStreetMap</a>
+        <h3 data-i18n>Chcete, aby to všichni viděli hned?</h3>
+        <p class="small" data-i18n>Upravte místo přímo v OpenStreetMap. Odtud data přebírá náš web i Wheelmap a další aplikace.</p>
+        <a class="btn btn-ghost btn-sm" id="osm-link" href="https://www.openstreetmap.org/edit" target="_blank" rel="noopener" data-i18n-text><span data-icon="external"></span>Otevřít v OpenStreetMap</a>
+      </div>
+      <div class="side-osm">
+        <h3 data-i18n>Jste provozovatel?</h3>
+        <p class="small" data-i18n>Převezměte profil svého podniku. Údaje pak budou označené jako od provozovatele a uvidíte žádosti hostů.</p>
+        <a class="btn btn-ghost btn-sm" id="biz-link" href="podnik.html" data-i18n-text><span data-icon="building"></span>Profil podniku</a>
       </div>
     </aside>
   </div>
 </main>
 <div id="site-footer"></div>
+<script src="assets/js/i18n.js?v=2"></script>
+<script src="assets/js/i18n/core.js?v=2"></script>
+<script src="assets/js/i18n/checklist.js?v=1"></script>
+<script src="assets/js/i18n/pridat.js?v=1"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=12"></script>
-<script src="assets/js/pridat.js?v=12"></script>
+<script src="assets/js/core.js?v=15"></script>
+<script src="assets/js/checklist.js?v=3"></script>
+<script src="assets/js/pridat.js?v=14"></script>
 </body>
 </html>

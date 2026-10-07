@@ -2,8 +2,8 @@
 (function () {
   'use strict';
   const K = window.KP, $ = (s) => document.querySelector(s);
-  const nf = (n) => Number(n || 0).toLocaleString('cs-CZ');
-  const plural = (n, one, few, many) => n === 1 ? one : n > 1 && n < 5 ? few : many;
+  const nf = (n) => K.nf(n || 0);
+  const t = (k, p) => K.t(k, p);
   const krajName = (k, z) => K.krajName(k, z);
 
   // Místa s fotkou: skutečné záznamy z data/places.json (stav 5. 10. 2026), vybrané pevným pravidlem, ne náhodně:
@@ -33,10 +33,10 @@
       const cat = K.CATS[p.c] ? K.CATS[p.c].label : '';
       return '<li class="ph-item">' +
         (p.img ? '<figure class="photo"><a href="' + href + '" tabindex="-1" aria-hidden="true"><img src="' + K.esc(K.commonsImg(p.img, 640)) + '" alt="" loading="lazy" decoding="async" width="640" height="480"></a>' +
-          '<figcaption>Foto: <a href="' + K.esc(K.commonsPage(p.img)) + '" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>' : '') +
+          '<figcaption>' + t('Foto:') + ' <a href="' + K.esc(K.commonsPage(p.img)) + '" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>' : '') +
         '<h3><a href="' + href + '">' + K.esc(p.n) + '</a></h3>' +
-        '<p class="ph-meta">' + K.esc(p.o) + (p.k ? ' · ' + K.esc(krajName(p.k, p.z)) : '') + (p.z === 'de' ? ' · Bavorsko' : '') + '</p>' +
-        '<p class="ph-meta">' + K.statusHtml('ok', 'Vstup přístupný') + (cat ? ' <span class="muted">' + K.esc(cat) + '</span>' : '') + '</p>' +
+        '<p class="ph-meta">' + K.esc(p.o) + (p.k ? ' · ' + K.esc(krajName(p.k, p.z)) : '') + (p.z === 'de' ? ' · ' + K.esc(K.ZEME.de) : '') + '</p>' +
+        '<p class="ph-meta">' + K.statusHtml('ok', t('Vstup přístupný')) + (cat ? ' <span class="muted">' + K.esc(cat) + '</span>' : '') + '</p>' +
         '</li>';
     }).join('');
     // Fotka, která se nenačte, zmizí; položka zůstane jako text
@@ -61,18 +61,18 @@
     document.querySelectorAll('[data-stat]').forEach(el => { el.textContent = nf(vals[el.dataset.stat]); });
     const z = st.by_zeme || {};
     const zl = $('#zeme-split');
-    if (zl && z.cz && z.de) zl.textContent = 'Česko ' + nf(z.cz.total) + ' · Bavorsko ' + nf(z.de.total) + ' míst';
+    if (zl && z.cz && z.de) zl.textContent = K.t('Česko {a} · Bavorsko {b} míst', { a: nf(z.cz.total), b: nf(z.de.total) });
 
     // Pruh: podíl stavů vstupu; čísla jsou vždy i v legendě (tvar + text)
-    const parts = [['ok', t.w_yes, 'Přístupné'], ['part', t.w_limited, 'Částečně'], ['no', t.w_no, 'Nepřístupné']];
+    const parts = [['ok', t.w_yes, K.t('Přístupné')], ['part', t.w_limited, K.t('Částečně')], ['no', t.w_no, K.t('Nepřístupné')]];
     const sum = parts.reduce((a, p) => a + (p[1] || 0), 0) || 1;
     $('#split').innerHTML = parts.map(([k, v]) => '<span class="' + k + '" style="width:' + ((v || 0) / sum * 100).toFixed(2) + '%"></span>').join('');
     $('#split-legend').innerHTML = parts.map(([k, v, l]) => '<li class="rule-row"><span class="status ' + k + '"><i></i>' + l + '</span><span class="num">' + nf(v) + '</span><span class="num muted">' + Math.round((v || 0) / sum * 100) + ' %</span></li>').join('') +
-      (t.w_None ? '<li class="rule-row split-none"><span class="muted">Bez údaje o vstupu (hlavně parkoviště a WC)</span><span class="num">' + nf(t.w_None) + '</span><span></span></li>' : '');
+      (t.w_None ? '<li class="rule-row split-none"><span class="muted">' + K.t('Bez údaje o vstupu (hlavně parkoviště a WC)') + '</span><span class="num">' + nf(t.w_None) + '</span><span></span></li>' : '');
 
     // Kategorie: textový výpis s živými počty, seřazeno od největší
     $('#tiles').innerHTML = Object.entries(K.CATS).filter(([k]) => c[k]).sort((a, b) => c[b[0]] - c[a[0]]).map(([k, cat]) =>
-      '<li><a class="rule-row cat-row" href="mapa.html?kat=' + k + '"><b>' + cat.label + '</b><span class="cat-n"><span class="num">' + nf(c[k]) + '</span> ' + plural(c[k], 'místo', 'místa', 'míst') + '</span></a></li>').join('');
+      '<li><a class="rule-row cat-row" href="mapa.html?kat=' + k + '"><b>' + cat.label + '</b><span class="cat-n"><span class="num">' + nf(c[k]) + '</span> ' + K.plural(c[k], 'místo', 'místa', 'míst') + '</span></a></li>').join('');
 
     // Kraje a vládní obvody: po zemích abecedně; tenký pruh ukazuje počet míst
     const br = st.by_region || {};
@@ -80,8 +80,8 @@
     if (!kr.length) kr = Object.entries(st.kraje || {}).filter(([k]) => k).map(([k, n]) => [k, n, 'cz']);
     const max = Math.max(1, ...kr.map(x => x[1]));
     $('#kraje').innerHTML = ['cz', 'de'].map(zz => {
-      const g = kr.filter(x => x[2] === zz).sort((a, b) => a[0].localeCompare(b[0], 'cs')); if (!g.length) return '';
-      return '<li class="kraj-group"><p class="kicker">' + K.ZEME[zz] + (zz === 'de' ? ' · vládní obvody' : ' · kraje') + '</p></li>' +
+      const g = kr.filter(x => x[2] === zz).sort((a, b) => krajName(a[0], zz).localeCompare(krajName(b[0], zz), K.LANG)); if (!g.length) return '';
+      return '<li class="kraj-group"><p class="kicker">' + K.esc(K.ZEME[zz]) + ' · ' + K.t(zz === 'de' ? 'vládní obvody' : 'kraje') + '</p></li>' +
         g.map(([k, n]) => '<li><a class="rule-row" href="kraj.html?k=' + encodeURIComponent(k) + '"><b>' + K.esc(krajName(k, zz)) + '</b><span class="num">' + nf(n) + '</span><span class="kr-line" aria-hidden="true"><i style="width:' + (n / max * 100).toFixed(1) + '%"></i></span></a></li>').join('');
     }).join('');
 
@@ -103,7 +103,7 @@
     bindTowns();
     K.loadStats().then(render).catch(() => {
       document.querySelectorAll('[data-stat]').forEach(el => { el.textContent = '–'; });
-      $('#tiles').innerHTML = '<li class="rule-row muted">Data se nepodařilo načíst. Otevřete web přes server, ne jako soubor.</li>';
+      $('#tiles').innerHTML = '<li class="rule-row muted">' + K.t('Data se nepodařilo načíst. Otevřete web přes server, ne jako soubor.') + '</li>';
     });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();

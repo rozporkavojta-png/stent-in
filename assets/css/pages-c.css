@@ -92,8 +92,48 @@
 /* moje trasy */
 .tr-saved { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .tr-saved .tr-group { margin-top: 4px !important; }
-.tr-route { display: flex; gap: 8px; align-items: flex-start; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.tr-route { display: flex; flex-direction: column; gap: 8px; padding: 12px 0; border-bottom: 1px solid var(--line); }
 .tr-route-txt { min-width: 0; overflow-wrap: anywhere; }
+.tr-route-act { display: flex; flex-wrap: wrap; gap: 6px; }
+.tr-route-act .btn, .tr-mini .btn { min-height: 44px; }
+.tr-route-more > summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; font-weight: 600; font-size: .93rem; }
+.tr-route-more[open] > summary { margin-bottom: 6px; }
+.tr-mini { display: flex; gap: 6px; margin-top: 8px; }
+.tr-mini input { min-width: 0; min-height: 44px; }
+.tr-thumbs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tr-thumbs img { width: 72px; height: 54px; object-fit: cover; border: 1px solid var(--line); }
+
+/* záznam vlastní trasy */
+.tr-rec { gap: 14px; }
+.tr-rec .callout { margin: 0; }
+.tr-rec-live { display: flex; flex-direction: column; gap: 10px; border-left: 6px solid var(--signal); padding-left: 14px; }
+.tr-rec-mode { border: 0; margin: 0; padding: 0; min-width: 0; }
+.tr-rec-mode legend { font-weight: 700; padding: 0; }
+.tr-rec-mode .check { min-height: 44px; align-items: center; padding: 2px 0; }
+.tr-rec-bar { display: flex; flex-direction: column; gap: 10px; }
+.tr-rec-place { display: flex; gap: 8px; }
+.tr-rec-place select { min-width: 0; flex: 1; }
+.tr-rec-place .btn { flex: none; min-height: 48px; }
+.tr-inline { padding: 0 !important; min-height: 44px; vertical-align: middle; }
+.tr-rec-list p { margin: 0; }
+.tr-rec-items { list-style: none; margin: 0; padding: 0; }
+.tr-rec-items li { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; font-size: .93rem; }
+.tr-rec-items li .btn { flex: none; min-height: 44px; }
+.tr-shared { border-top: 6px solid var(--signal); padding-top: 12px; display: flex; flex-direction: column; gap: 10px; }
+.tr-shared .kicker { margin: 0; }
+.tr-shared p { margin: 0; overflow-wrap: anywhere; }
+.tr-shared .row .btn { min-height: 44px; }
+.tr-personal .check { border-bottom: 1px solid var(--line); }
+.tr-personal .btn { align-self: flex-start; min-height: 44px; margin-top: 6px; }
+.tr-more-links { margin: 0; padding-top: 12px; border-top: 1px solid var(--rule); }
+
+/* lišta při kreslení trasy (nad mapou) */
+.tr-recbar { position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 600; background: var(--surface); border: 2px solid var(--rule); border-left: 8px solid var(--signal); padding: 10px 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; max-width: calc(100% - 24px); }
+.tr-recbar p { margin: 0; font-weight: 700; font-size: .95rem; }
+.tr-recbar-b { display: flex; gap: 8px; }
+.tr-recbar .btn { min-height: 44px; }
+.tr-map.is-rec .leaflet-container { cursor: crosshair; }
+@media (max-width: 899px) { .tr-recbar { top: 62px; bottom: auto; left: 10px; right: 10px; transform: none; } }
 .tr-community { border-top: 1px solid var(--rule); padding-top: 14px; }
 .tr-community h3 { font-size: 1.15rem; margin-bottom: 6px; }
 .tr-community p { margin: 0 0 8px !important; color: var(--ink-2); }
@@ -117,30 +157,119 @@
 }
 
 /* ---------- Komunita (hlavička, .split-grid, .rule-grid a .form-block z pages-a.css). Verze 3: linky místo karet, bez ikon ---------- */
+#main > .section[id], #sdilena { scroll-margin-top: calc(var(--header-h, 64px) + 12px); }
+.ko-note { margin: 18px 0 0; max-width: 62ch; }
+.ko-jump { display: flex; flex-wrap: wrap; gap: 0 24px; margin-top: 28px; border-top: 1px solid var(--rule); }
+.ko-jump a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font-weight: 700; text-decoration: underline; text-decoration-color: var(--signal); text-decoration-thickness: 3px; text-underline-offset: 5px; }
+.ko-jump a:hover { text-decoration-color: var(--ink); }
+
+/* Co už funguje: řádky s vlastním počtem vpravo */
+.ko-works > li, .ko-biz > li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 24px; align-items: start; }
+.ko-works h3, .ko-biz h3 { font-size: 1.25rem; margin: 0 0 6px; }
+.ko-works p, .ko-biz p { margin: 0 0 4px; color: var(--ink-2); max-width: 60ch; }
+.ko-works .btn-quiet, .ko-biz .btn-quiet { padding-inline: 0; min-height: 44px; }
+.ko-mine { display: grid; justify-items: end; text-align: right; min-width: 6.5rem; padding-top: 4px; }
+.ko-mine small { color: var(--ink-2); font-size: .82rem; }
+.ko-mine b { font: 700 2rem/1 var(--f-mono); background: var(--signal); color: var(--on-signal); padding: 2px 8px; margin: 2px 0; }
+.ko-more { margin: 24px 0 0; }
+
+/* Kolekce */
+.ko-new { display: flex; gap: 12px; align-items: end; flex-wrap: wrap; }
+.ko-new .field { flex: 1 1 260px; }
+#coll-msg { min-height: 1.4em; margin: 10px 0 16px; }
+.ko-empty { border-top: 1px solid var(--rule); padding: 18px 0; }
+.ko-empty p { margin: 0 0 12px; }
+.ko-coll { border-top: 3px solid var(--ink); }
+.ko-coll:last-child { border-bottom: 1px solid var(--rule); }
+.ko-coll > summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; min-height: 56px; padding: 14px 36px 14px 0; cursor: pointer; list-style: none; position: relative; }
+.ko-coll > summary::-webkit-details-marker { display: none; }
+.ko-coll > summary::after { content: "+"; position: absolute; right: 4px; top: 12px; font: 700 1.5rem/1 var(--f-mono); }
+.ko-coll[open] > summary::after { content: "−"; }
+.ko-coll-n { font: 800 1.3rem/1.15 var(--f-display); letter-spacing: -.02em; overflow-wrap: anywhere; }
+.ko-coll > summary small { color: var(--ink-2); }
+.ko-coll-b { padding: 0 0 20px; display: grid; gap: 16px; }
+.ko-coll-b > p { margin: 0; }
+.ko-places > li { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 12px 0; }
+.ko-place-t { display: grid; gap: 4px; min-width: 0; }
+.ko-place-t a { color: var(--ink); overflow-wrap: anywhere; display: inline-flex; align-items: center; min-height: 44px; }
+.ko-place-t small { color: var(--ink-2); }
+.ko-place-st { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; }
+.ko-place-st small { flex-basis: 100%; }
+.ko-places .btn-quiet { flex: none; min-height: 44px; }
+.ko-add { display: flex; gap: 12px; align-items: end; flex-wrap: wrap; }
+.ko-add .field { flex: 1 1 220px; min-width: 0; }
+.ko-add select { width: 100%; }
+.ko-coll-acts { gap: 12px; }
+.ko-coll-acts .btn-sm, .ko-coll-acts .btn { min-height: 44px; }
+.ko-share { display: grid; gap: 6px; }
+.ko-share label { font-weight: 600; }
+.ko-share input { width: 100%; font: 400 .85rem var(--f-mono); }
+.ko-share p { margin: 0; }
+.ko-shared-n { font-size: 1.5rem; margin: 0 0 4px; overflow-wrap: anywhere; }
+#sdilena { background: var(--surface-2); box-shadow: inset 0 6px 0 var(--signal); }
+
+/* Budoucí sociální síť: náhled rozhraní jako čárová skica */
+.ko-sit { display: grid; gap: 32px; }
+.ko-mock { border: 1.5px dashed var(--ink); padding: 18px; }
+.ko-mock-head { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 14px; align-items: center; padding-bottom: 16px; border-bottom: 1px solid var(--rule); }
+.ko-avatar { width: 56px; height: 56px; border: 1.5px dashed var(--ink-2); border-radius: 50%; }
+.ko-mock-id { display: grid; gap: 2px; min-width: 0; }
+.ko-mock-id b { font: 800 1.2rem/1.15 var(--f-display); overflow-wrap: anywhere; }
+.ko-mock-id small { color: var(--ink-2); }
+.ko-mock-head .btn { min-height: 44px; }
+.ko-mock-head .btn[disabled] { opacity: .55; cursor: not-allowed; }
+.ko-mock-tabs { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; }
+.ko-mock-tabs > div { padding: 12px 0; border-bottom: 1px solid var(--line); min-width: 0; }
+.ko-mock-tabs dt { font-weight: 700; }
+.ko-mock-tabs dd { margin: 2px 0 0; color: var(--ink-2); overflow-wrap: anywhere; }
+.ko-mock-foot { margin: 12px 0 0; }
+.ko-nick { display: flex; gap: 12px; align-items: end; flex-wrap: wrap; }
+.ko-nick .field { flex: 1 1 240px; }
 .ko-features { counter-reset: ko; }
 .ko-features > li { counter-increment: ko; }
 .ko-features > li::before { content: counter(ko, decimal-leading-zero); display: block; font: 700 .9rem var(--f-mono); color: var(--ink-2); margin-bottom: 6px; }
 
+/* Důvěra, pravidla, GDPR */
 .ko-trust { display: grid; gap: 0; align-content: start; border-top: 1px solid var(--rule); }
 .ko-trust-row { display: grid; grid-template-columns: 150px 1fr; gap: 16px; align-items: start; padding: 18px 0; border-bottom: 1px solid var(--rule); }
-.ko-trust-row p { color: var(--ink-2); }
+.ko-trust-row p { color: var(--ink-2); margin: 0; }
 .ko-trust .text, .split-h .muted { max-width: 40ch; }
-
+.ko-rules { margin-top: clamp(48px, 7vw, 88px); }
 .ko-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px clamp(24px, 4vw, 48px); }
 .ko-two > div { border-top: 3px solid var(--ink); padding-top: 14px; min-width: 0; }
+.ko-two > .ko-gdpr { grid-column: 1 / -1; border-top-color: var(--signal); border-top-width: 6px; }
 .ko-h { font-size: 1.25rem; }
 .ko-principles { list-style: none; margin: 0; padding: 0; color: var(--ink-2); }
 .ko-principles li { padding: 10px 0; border-bottom: 1px solid var(--line); }
 .ko-principles li:last-child { border-bottom: 0; }
+.ko-wipe { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--rule); display: grid; gap: 8px; justify-items: start; }
+.ko-wipe p { margin: 0; max-width: 60ch; }
 
-.ko-steps { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); max-width: 900px; }
-.ko-steps li { display: grid; grid-template-columns: 140px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
-.ko-steps li.now { box-shadow: inset 6px 0 0 var(--signal); padding-left: 20px; }
-.ko-steps .when { font: 800 1.3rem/1.1 var(--f-display); letter-spacing: -.03em; color: var(--ink); }
+/* Podniky */
+.ko-req { list-style: none; margin: 4px 0 0; padding: 0; }
+.ko-req li { padding: 6px 0; border-bottom: 1px solid var(--line); }
+.ko-req a { color: var(--ink); font-weight: 700; display: inline-block; min-height: 32px; padding-top: 4px; }
+.ko-req small { color: var(--ink-2); }
+
 .ko-form { display: flex; flex-direction: column; gap: 16px; }
+.ko-fs { border: 0; padding: 0; margin: 0; }
+.ko-fs legend { font-weight: 600; margin-bottom: 6px; }
 
-@media (max-width: 760px) { .ko-two { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .ko-two, .ko-mock-tabs { grid-template-columns: 1fr; } }
 @media (max-width: 640px) {
   .ko-trust-row { grid-template-columns: 1fr; gap: 6px; }
-  .ko-steps li { grid-template-columns: 1fr; gap: 4px; }
+  .ko-works > li, .ko-biz > li { grid-template-columns: 1fr; }
+  .ko-mine { justify-items: start; text-align: left; grid-auto-flow: column; justify-content: start; align-items: baseline; gap: 8px; min-width: 0; padding-top: 0; }
+  .ko-mine b { font-size: 1.3rem; }
+  .ko-mock { padding: 14px; }
+  .ko-mock-head { grid-template-columns: 44px minmax(0, 1fr); }
+  .ko-avatar { width: 44px; height: 44px; }
+  .ko-mock-head .btn { grid-column: 1 / -1; justify-self: start; }
+  .ko-places > li { flex-direction: column; gap: 4px; }
+  .ko-new .btn, .ko-add .btn, .ko-nick .btn { width: 100%; }
 }
+
+/* Trasy: dotyk aspoň 44 px i u malých tlačítek, fotky v záznamu trasy */
+.page-trasy .btn-sm { min-height: 44px; }
+.page-trasy .btn { white-space: normal; text-align: center; }
+.page-trasy input[type="file"] { min-height: 44px; padding: 8px 0; font: inherit; max-width: 100%; }

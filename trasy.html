@@ -8,101 +8,131 @@
 <meta name="description" content="Schody, vysoké obrubníky, dlažba z kočičích hlav a výtahy v ulicích, živě z OpenStreetMap. Naplánujte si cestu mezi přístupnými místy.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=13">
-<link rel="stylesheet" href="assets/css/pages-c.css?v=11">
+<link rel="stylesheet" href="assets/css/style.css?v=15">
+<link rel="stylesheet" href="assets/css/pages-c.css?v=13">
 </head>
 <body class="page-trasy">
 <div id="site-header"></div>
 <main id="main" class="tr-app" data-sheet="half">
-  <section class="tr-panel" id="tr-panel" aria-label="Trasy a bariéry">
+  <section class="tr-panel" id="tr-panel" aria-label="Trasy a bariéry" data-i18n-attr="aria-label">
     <div class="tr-grip-row">
-      <button class="tr-grip" type="button" id="grip" aria-label="Zvětšit nebo zmenšit panel" aria-controls="tr-panel"><span></span></button>
+      <button class="tr-grip" type="button" id="grip" aria-label="Zvětšit nebo zmenšit panel" aria-controls="tr-panel" data-i18n-attr="aria-label"><span></span></button>
     </div>
     <div class="tr-scroll" id="tr-scroll">
       <header class="tr-head">
-        <h1>Trasy a bariéry</h1>
-        <p class="muted small">Schody, obrubníky, dlažba, stoupání i výtahy v ulicích. Živě z OpenStreetMap pro oblast na mapě.</p>
+        <h1 data-i18n>Trasy a bariéry</h1>
+        <p class="muted small" data-i18n>Schody, obrubníky, dlažba, stoupání i výtahy v ulicích. Živě z OpenStreetMap pro oblast na mapě.</p>
       </header>
 
       <form class="tr-find" id="find-form" role="search">
-        <label class="sr-only" for="town">Obec nebo město</label>
+        <label class="sr-only" for="town" data-i18n>Obec nebo město</label>
         <div class="search-field">
           <span data-icon="search"></span>
-          <input id="town" type="search" list="towns" placeholder="Obec nebo město" autocomplete="off">
+          <input id="town" type="search" list="towns" placeholder="Obec nebo město" autocomplete="off" data-i18n-attr="placeholder">
         </div>
         <datalist id="towns"></datalist>
-        <button class="btn btn-primary" type="submit">Najít</button>
-        <button class="icon-btn tr-locate" type="button" id="locate" aria-label="Moje poloha" title="Moje poloha"><span data-icon="locate"></span></button>
+        <button class="btn btn-primary" type="submit" data-i18n>Najít</button>
+        <button class="icon-btn tr-locate" type="button" id="locate" aria-label="Moje poloha" title="Moje poloha" data-i18n-attr="aria-label,title"><span data-icon="locate"></span></button>
       </form>
 
-      <div class="tr-tabs" role="tablist" aria-label="Části panelu">
-        <button type="button" role="tab" id="tab-bariery" aria-controls="pane-bariery" aria-selected="true">Bariéry</button>
-        <button type="button" role="tab" id="tab-plan" aria-controls="pane-plan" aria-selected="false" tabindex="-1">Naplánovat</button>
-        <button type="button" role="tab" id="tab-moje" aria-controls="pane-moje" aria-selected="false" tabindex="-1">Moje trasy</button>
+      <div class="tr-tabs" role="tablist" aria-label="Části panelu" data-i18n-attr="aria-label">
+        <button type="button" role="tab" id="tab-bariery" aria-controls="pane-bariery" aria-selected="true" data-i18n>Bariéry</button>
+        <button type="button" role="tab" id="tab-plan" aria-controls="pane-plan" aria-selected="false" tabindex="-1" data-i18n>Naplánovat</button>
+        <button type="button" role="tab" id="tab-moje" aria-controls="pane-moje" aria-selected="false" tabindex="-1" data-i18n>Moje trasy</button>
       </div>
 
       <div id="picked" class="tr-picked" hidden></div>
 
       <div class="tr-pane" id="pane-bariery" role="tabpanel" aria-labelledby="tab-bariery">
-        <div class="tr-status" id="status" aria-live="polite">Přibližte mapu na ulice (měřítko asi 1 : 10 000) a bariéry se načtou samy.</div>
-        <button class="btn btn-ghost btn-block" type="button" id="load" disabled>Načíst bariéry v této oblasti</button>
+        <div class="tr-status" id="status" aria-live="polite" data-i18n>Přibližte mapu na ulice (měřítko asi 1 : 10 000) a bariéry se načtou samy.</div>
+        <button class="btn btn-ghost btn-block" type="button" id="load" disabled data-i18n>Načíst bariéry v této oblasti</button>
         <div id="summary" class="tr-summary" hidden></div>
 
         <fieldset class="tr-layers">
-          <legend>Legenda a vrstvy</legend>
-          <p class="small muted tr-layers-hint">Vypnutím skryjete vrstvu na mapě.</p>
+          <legend data-i18n>Legenda a vrstvy</legend>
+          <p class="small muted tr-layers-hint" data-i18n>Vypnutím skryjete vrstvu na mapě.</p>
           <div id="layer-toggles"></div>
-          <label class="check tr-place-toggle"><input type="checkbox" id="show-places" checked><span class="tr-sw" aria-hidden="true" id="place-sw"></span>Přístupná místa z naší databáze</label>
+          <label class="check tr-place-toggle" data-i18n-text><input type="checkbox" id="show-places" checked><span class="tr-sw" aria-hidden="true" id="place-sw"></span>Přístupná místa z naší databáze</label>
         </fieldset>
+
+        <fieldset class="tr-layers tr-personal" id="tr-personal"></fieldset>
 
         <div id="nearest" class="tr-nearest" hidden></div>
       </div>
 
       <div class="tr-pane" id="pane-plan" role="tabpanel" aria-labelledby="tab-plan" hidden>
-        <h2 class="tr-h2" id="plan-h">Naplánovat trasu mezi místy</h2>
-        <p class="small muted">Vyberte dvě místa v oblasti na mapě. Trasu otevřeme v Google Maps a tady ukážeme bariéry z OpenStreetMap do 25 m od přímé spojnice. Je to <b>orientační kontrola</b>, skutečná trasa může vést jinudy.</p>
+        <h2 class="tr-h2" id="plan-h" data-i18n>Naplánovat trasu mezi místy</h2>
+        <p class="small muted" data-i18n>Vyberte dvě místa v oblasti na mapě. Trasu otevřeme v Google Maps a tady ukážeme bariéry z OpenStreetMap do 25 m od přímé spojnice. Je to <b>orientační kontrola</b>, skutečná trasa může vést jinudy.</p>
         <ol class="tr-steps">
-          <li class="field"><label for="from"><span class="tr-pin a" aria-hidden="true">A</span>Odkud</label><select id="from"><option value="">Nejdřív přibližte mapu na obec</option></select></li>
-          <li class="field"><label for="to"><span class="tr-pin b" aria-hidden="true">B</span>Kam</label><select id="to"><option value="">Nejdřív přibližte mapu na obec</option></select></li>
+          <li class="field"><label for="from" data-i18n-text><span class="tr-pin a" aria-hidden="true">A</span>Odkud</label><select id="from"><option value="" data-i18n>Nejdřív přibližte mapu na obec</option></select></li>
+          <li class="field"><label for="to" data-i18n-text><span class="tr-pin b" aria-hidden="true">B</span>Kam</label><select id="to"><option value="" data-i18n>Nejdřív přibližte mapu na obec</option></select></li>
         </ol>
-        <p class="small muted" id="plan-hint">Výběr se plní místy v aktuálním výřezu mapy. Místo můžete vybrat i kliknutím na mapě.</p>
-        <button class="btn btn-primary btn-block" type="button" id="plan" disabled><span data-icon="route"></span>Zkontrolovat a otevřít v Google Maps</button>
+        <p class="small muted" id="plan-hint" data-i18n>Výběr se plní místy v aktuálním výřezu mapy. Místo můžete vybrat i kliknutím na mapě.</p>
+        <button class="btn btn-primary btn-block" type="button" id="plan" disabled data-i18n-text><span data-icon="route"></span>Zkontrolovat a otevřít v Google Maps</button>
         <div id="plan-result" hidden></div>
+        <p class="small tr-more-links" data-i18n>Celý den s hotelem, restaurací a trasou si poskládáte v <a href="itinerar.html">itineráři</a>. Hotové bezbariérové trasy jsou v <a href="stezky.html">katalogu tras</a>.</p>
       </div>
 
       <div class="tr-pane" id="pane-moje" role="tabpanel" aria-labelledby="tab-moje" hidden>
-        <form class="stack" id="my-route">
-          <h2 class="tr-h2">Uložit vlastní trasu</h2>
-          <p class="small muted">Trasa zůstane jen v tomto prohlížeči a nikam se neposílá.</p>
-          <div class="field"><label for="r-name">Název trasy</label><input id="r-name" type="text" required placeholder="Např. Z nádraží na náměstí"></div>
-          <div class="field"><label for="r-note">Poznámky k úsekům</label><textarea id="r-note" placeholder="Kde je schod, kde objet, kde se dá zastavit"></textarea></div>
-          <label class="check"><input type="checkbox" id="r-plan"> Přiložit místa A a B z plánovače</label>
-          <button class="btn btn-ghost" type="submit">Uložit do prohlížeče</button>
-        </form>
+        <div id="shared-route" class="tr-shared" hidden></div>
+        <section class="stack tr-rec" aria-labelledby="rec-h">
+          <h2 class="tr-h2" id="rec-h" data-i18n>Zaznamenat vlastní trasu</h2>
+          <p class="small muted" data-i18n>Zakreslete trasu, kterou jste opravdu projeli: klikáním do mapy nebo přidáním míst. Popište překážky a kudy je objet.</p>
+          <p class="callout small" id="rec-proto"></p>
+          <button class="btn btn-primary btn-block" type="button" id="rec-toggle" aria-pressed="false" data-i18n>Začít kreslit do mapy</button>
+          <div id="rec-live" class="tr-rec-live" hidden>
+            <fieldset class="tr-rec-mode"><legend data-i18n>Kliknutí do mapy přidá</legend>
+              <label class="check" data-i18n-text><input type="radio" name="rec-mode" value="point" checked> Bod trasy</label>
+              <label class="check" data-i18n-text><input type="radio" name="rec-mode" value="barrier"> Překážku na trase</label>
+            </fieldset>
+            <div class="tr-rec-bar" id="rec-bar-f" hidden>
+              <div class="field"><label for="rec-btype" data-i18n>Druh překážky</label><select id="rec-btype"></select></div>
+              <div class="field"><label for="rec-bnote" data-i18n>Popis překážky</label><input id="rec-bnote" type="text" maxlength="200" placeholder="Např. 3 schody bez rampy, objet vlevo" data-i18n-attr="placeholder"></div>
+            </div>
+          </div>
+          <div class="field"><label for="rec-place" data-i18n>Přidat místo jako zastávku</label>
+            <div class="tr-rec-place"><select id="rec-place"><option value="" data-i18n>Nejdřív přibližte mapu na obec</option></select><button class="btn btn-ghost" type="button" id="rec-place-add" data-i18n>Přidat</button></div>
+            <span class="hint" data-i18n-text>Místo přidáte i kliknutím na jeho značku v mapě. <button class="btn btn-quiet btn-sm tr-inline" type="button" id="rec-from-plan" data-i18n>Převzít A a B z plánovače</button></span></div>
+          <div id="rec-list" class="tr-rec-list"></div>
+          <form class="stack" id="my-route">
+            <div class="field"><label for="r-name" data-i18n>Název trasy</label><input id="r-name" type="text" required maxlength="80" placeholder="Např. Z nádraží na náměstí" data-i18n-attr="placeholder"></div>
+            <div class="field"><label for="r-note" data-i18n>Popis a překážky</label><textarea id="r-note" maxlength="2000" data-i18n-attr="placeholder" placeholder="Kde je schod, kde je prudké stoupání, kde se dá zastavit"></textarea></div>
+            <div class="field"><label for="r-alt" data-i18n>Objížďky a alternativy</label><textarea id="r-alt" maxlength="1000" data-i18n-attr="placeholder" placeholder="Například kudy jet, když je výtah mimo provoz"></textarea></div>
+            <div class="field"><label for="r-aid" data-i18n>Čím jste jeli</label><select id="r-aid"></select></div>
+            <div class="field"><label for="r-photos" data-i18n>Fotky <span class="hint">(nejvýš 4; zůstanou jen u vás, odkazem se nesdílejí)</span></label><input id="r-photos" type="file" accept="image/*" multiple></div>
+            <button class="btn btn-primary" type="submit" data-i18n>Uložit trasu</button>
+          </form>
+        </section>
         <ul class="tr-saved" id="saved-routes"></ul>
         <div class="tr-community" id="komunitni">
-          <h3>Sdílené trasy komunity</h3>
-          <p class="small">Zatím tu žádné nejsou. Sdílení tras přijde ve fázi 3: lidé na vozíku si uloží trasu, kterou opravdu projeli, popíšou úseky s pomocí a doporučí objížďku.</p>
-          <a class="btn btn-quiet btn-sm" href="komunita.html">Jak bude komunita fungovat</a>
+          <h3 data-i18n>Trasy od ostatních</h3>
+          <p class="small" data-i18n>Veřejný seznam tras zatím není, potřebuje server. Trasu od někoho jiného uvidíte, když vám pošle odkaz. Hotové trasy z OpenStreetMap najdete v <a href="stezky.html">katalogu bezbariérových tras</a>.</p>
         </div>
       </div>
 
-      <p class="small muted tr-attr">Data o bariérách: © přispěvatelé <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> (ODbL), živě z Overpass API. Nezakreslený schod neznamená, že tam schod není. <a href="metodika.html#zdroje">Odkud data jsou</a></p>
+      <p class="small muted tr-attr" data-i18n>Data o bariérách: © přispěvatelé <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> (ODbL), živě z Overpass API. Nezakreslený schod neznamená, že tam schod není. <a href="metodika.html#zdroje">Odkud data jsou</a></p>
     </div>
   </section>
 
-  <section class="tr-map" aria-label="Mapa">
-    <div id="map" class="map-canvas" role="application" aria-label="Mapa bariér a přístupných míst"></div>
+  <section class="tr-map" aria-label="Mapa" data-i18n-attr="aria-label">
+    <div id="map" class="map-canvas" role="application" aria-label="Mapa bariér a přístupných míst" data-i18n-attr="aria-label"></div>
+    <div class="tr-recbar" id="recbar" hidden>
+      <p id="recbar-txt" aria-live="polite" data-i18n>Klikněte do mapy</p>
+      <div class="tr-recbar-b"><button class="btn btn-ghost btn-sm" type="button" id="rec-undo" data-i18n>Zpět o bod</button><button class="btn btn-primary btn-sm" type="button" id="rec-done" data-i18n>Hotovo</button></div>
+    </div>
     <details class="tr-legend" id="legend-box">
-      <summary>Legenda</summary>
-      <div id="legend" aria-label="Legenda"></div>
+      <summary data-i18n>Legenda</summary>
+      <div id="legend" aria-label="Legenda" data-i18n-attr="aria-label"></div>
     </details>
   </section>
 </main>
 <div id="site-footer"></div>
+<script src="assets/js/i18n.js?v=2"></script>
+<script src="assets/js/i18n/core.js?v=2"></script>
+<script src="assets/js/i18n/trasy.js?v=1"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=12"></script>
-<script src="assets/js/map-engine.js?v=11"></script>
-<script src="assets/js/trasy.js?v=12"></script>
+<script src="assets/js/core.js?v=15"></script>
+<script src="assets/js/map-engine.js?v=12"></script>
+<script src="assets/js/trasy.js?v=16"></script>
 </body>
 </html>

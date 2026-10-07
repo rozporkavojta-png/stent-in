@@ -5,45 +5,89 @@
 <link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Můj profil · kudyprojedu.cz</title>
-<meta name="description" content="Vaše potřeby, uložená místa a rozepsané příspěvky. Vše zůstává jen ve vašem prohlížeči.">
+<meta name="description" content="Váš profil přístupnosti, uložená místa, hodnocení, trasy a profily podniků. Vše zůstává jen ve vašem prohlížeči.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=13">
-<link rel="stylesheet" href="assets/css/pages-b.css?v=11">
+<link rel="stylesheet" href="assets/css/style.css?v=15">
+<link rel="stylesheet" href="assets/css/pages-b.css?v=12">
 </head>
 <body>
 <div id="site-header"></div>
 <main id="main">
   <header class="page-hero page-hero-sm">
     <div class="wrap">
-      <span class="kicker">Jen v tomto prohlížeči</span>
-      <h1>Můj profil</h1>
-      <p class="lede">Potřeby, uložená místa a vaše příspěvky. Bez registrace, vše zůstává jen v tomto prohlížeči.</p>
+      <span class="kicker" data-i18n>Jen v tomto prohlížeči</span>
+      <h1 data-i18n>Můj profil</h1>
+      <p class="lede" data-i18n>Vaše potřeby, uložená místa, hodnocení, trasy a profily podniků. Bez registrace.</p>
+      <p class="pf-proto" data-i18n><b>Prototyp:</b> vše na této stránce je uložené jen ve vašem prohlížeči. V ostré verzi se hodnocení, trasy a profily podniků odešlou na server.</p>
+      <nav class="pf-toc" aria-label="Části profilu" data-i18n-attr="aria-label">
+        <a href="#potreby" data-i18n>Profil přístupnosti</a><a href="#ulozena" data-i18n>Uložená místa</a><a href="#hodnoceni" data-i18n>Hodnocení a fotky</a><a href="#trasy" data-i18n>Trasy a itineráře</a><a href="#podniky" data-i18n>Moje podniky</a><a href="#hlaseni" data-i18n>Hlášení a žádosti</a><a href="#prispevky" data-i18n>Příspěvky</a>
+      </nav>
     </div>
   </header>
 
   <div class="wrap pf-layout">
-    <section class="pf-needs" aria-labelledby="needs-h">
+    <section class="pf-needs" id="potreby" aria-labelledby="needs-h">
       <div class="pf-head">
-        <h2 id="needs-h">Moje potřeby</h2>
+        <h2 id="needs-h" data-i18n>Můj profil přístupnosti</h2>
         <span id="needs-state"></span>
       </div>
-      <div id="needs"></div>
-      <button class="btn btn-primary btn-block" type="button" data-open-needs><span data-icon="sliders"></span>Upravit potřeby</button>
+      <p class="small muted" data-i18n>Podle profilu u každého místa uvidíte shodu v procentech. Kde údaj chybí, shodu to nesnižuje, jen ukážeme menší jistotu.</p>
+      <form id="needs-form" class="pf-form" novalidate>
+        <div id="needs-fields"></div>
+        <div class="pf-form-actions">
+          <button class="btn btn-primary" type="submit" data-i18n>Uložit profil</button>
+          <button class="btn btn-ghost" type="button" id="needs-off" data-i18n>Vypnout</button>
+        </div>
+      </form>
+      <p class="small muted" data-i18n>Údaj o zdraví neposíláme na server. <a href="metodika.html#mereni">Jak změřit vozík a dveře</a></p>
     </section>
 
     <div class="pf-main">
       <section class="pf-sec" id="ulozena" aria-labelledby="saved-h">
         <div class="pf-head">
-          <h2 id="saved-h">Uložená místa</h2>
+          <h2 id="saved-h" data-i18n>Uložená místa</h2>
           <span class="pf-count" id="saved-n" hidden></span>
         </div>
-        <div id="saved"><p class="muted">Načítám…</p></div>
+        <div id="saved"><p class="muted" data-i18n>Načítám…</p></div>
+        <div id="collections"></div>
+      </section>
+
+      <section class="pf-sec" id="hodnoceni" aria-labelledby="rev-h">
+        <div class="pf-head">
+          <h2 id="rev-h" data-i18n>Moje hodnocení a fotky</h2>
+          <span class="pf-count" id="rev-n" hidden></span>
+        </div>
+        <div id="reviews"></div>
+      </section>
+
+      <section class="pf-sec" id="trasy" aria-labelledby="routes-h">
+        <div class="pf-head">
+          <h2 id="routes-h" data-i18n>Moje trasy a itineráře</h2>
+          <span class="pf-count" id="routes-n" hidden></span>
+        </div>
+        <div id="routes"></div>
+      </section>
+
+      <section class="pf-sec" id="podniky" aria-labelledby="biz-h">
+        <div class="pf-head">
+          <h2 id="biz-h" data-i18n>Moje převzaté profily podniků</h2>
+          <span class="pf-count" id="biz-n" hidden></span>
+        </div>
+        <div id="claims"></div>
+      </section>
+
+      <section class="pf-sec" id="hlaseni" aria-labelledby="rep-h">
+        <div class="pf-head">
+          <h2 id="rep-h" data-i18n>Hlášení, potvrzení a žádosti</h2>
+          <span class="pf-count" id="rep-n" hidden></span>
+        </div>
+        <div id="reports"></div>
       </section>
 
       <section class="pf-sec" id="prispevky" aria-labelledby="drafts-h">
         <div class="pf-head">
-          <h2 id="drafts-h">Moje příspěvky</h2>
+          <h2 id="drafts-h" data-i18n>Moje příspěvky</h2>
           <span class="pf-count" id="drafts-n" hidden></span>
         </div>
         <div id="drafts"></div>
@@ -52,20 +96,24 @@
 
     <aside class="pf-aside">
       <section class="card pf-note" aria-labelledby="priv-h">
-        <h3 id="priv-h">Soukromí</h3>
-        <p class="small muted">Profil je jen v tomto prohlížeči. Když vymažete data prohlížeče nebo otevřete web jinde, profil tu nebude. <a href="metodika.html#soukromi">Proč to tak je</a></p>
+        <h3 id="priv-h" data-i18n>Soukromí</h3>
+        <p class="small muted" data-i18n>Profil je jen v tomto prohlížeči. Když vymažete data prohlížeče nebo otevřete web jinde, profil tu nebude. <a href="metodika.html#soukromi">Proč to tak je</a></p>
+        <button class="btn btn-quiet btn-sm" type="button" id="wipe" data-i18n>Smazat všechna moje data</button>
       </section>
       <section class="card pf-note" aria-labelledby="comm-h">
-        <h3 id="comm-h">Komunita <span class="badge badge-soon">Připravujeme</span></h3>
-        <p class="small muted">Veřejné profily pod přezdívkou a sdílení tras přibudou v další fázi.</p>
-        <a class="btn btn-ghost btn-sm" href="komunita.html">Co chystáme</a>
+        <h3 id="comm-h" data-i18n>Komunita <span class="badge badge-soon">Připravujeme</span></h3>
+        <p class="small muted" data-i18n>Veřejné profily pod přezdívkou, sledování a sdílené kolekce míst přibudou, až web dostane účty a server.</p>
+        <a class="btn btn-ghost btn-sm" href="komunita.html" data-i18n>Co chystáme</a>
       </section>
     </aside>
   </div>
 </main>
 <div id="site-footer"></div>
+<script src="assets/js/i18n.js?v=2"></script>
+<script src="assets/js/i18n/core.js?v=2"></script>
+<script src="assets/js/i18n/profil.js?v=1"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=12"></script>
-<script src="assets/js/profil.js?v=12"></script>
+<script src="assets/js/core.js?v=15"></script>
+<script src="assets/js/profil.js?v=16"></script>
 </body>
 </html>
