@@ -101,6 +101,7 @@ html.kf-lock { overflow: hidden; }
   .kf-strip-wrap > .hs-fade { display: block !important; }
   .kf-sep { display: block !important; }
   .kf-row-cats, .kf-row-quick { grid-area: auto; }
+  .kf-row-quick { order: 1; } .kf-sep { order: 2; } .kf-row-cats { order: 3; } /* mobil: rychlé filtry přístupnosti jako první */
   .kf-row > .hs-sc { overflow: visible; }
   .kf-search { height: 46px; }
   .kf-more { padding-inline: 12px; height: 46px; }
