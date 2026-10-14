@@ -10,7 +10,7 @@
   const W_SETS = { yl: ['yes', 'limited'], y: ['yes'], l: ['limited'], u: ['null'], n: ['no'], all: ['yes', 'limited', 'null', 'no'] };
   const TOGGLES = ['#f-wc', '#f-r', '#f-web'];
   const mobile = matchMedia('(max-width: 899px)');
-  let ALL = [], shown = PAGE;
+  let ALL = [], shown = PAGE, NEEDS = null;
 
   const nf = (n) => K.nf(n);
   function norm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
@@ -67,11 +67,27 @@
       '<span class="ub-name">' + K.esc(p.n) + '</span>' +
       '<span class="ub-meta">' + K.esc([p.o, p.s && K.t(p.s), K.zemeOf(p) === 'de' ? K.t('Bavorsko') : ''].filter(Boolean).join(' · ')) + '</span>' +
       '<span class="ub-facts">' + K.statusHtml(w.st, K.t('Vstup') + ': ' + K.lc(w.short)) +
-      (p.t ? K.statusHtml(K.T[p.t].st, K.T[p.t].label) : K.statusHtml('unk', KP.t('WC neuvedeno'))) + '</span>' +
+      (p.t ? K.statusHtml(K.T[p.t].st, K.T[p.t].label) : K.statusHtml('unk', KP.t('WC neuvedeno'))) + '</span>' + matchTag(p) +
       (rs.length ? ('<span class="badge badge-business" title="' + KP.t('Údaj jsme přečetli na webu ubytování, neověřili jsme ho na místě.') + '">') + K.icon('building') + (KP.t('Podle webu provozovatele') + '</span>') : '') +
       '<span class="ub-foot"><span class="ub-unknown">' + (unknown.length ? K.t('Neznáme') + ': ' + unknown.join(', ') : K.t('Údaje {pct} %', { pct: p._c })) + '</span>' +
       ('<span class="ub-go">' + KP.t('Detail')) + K.icon('arrow') + '</span></span>' +
       '</a>' + photo + '</li>';
+  }
+
+  // Accessibility Match (PLUS): shoda s osobním profilem jen při zapnutém profilu; údaje o vstupu a WC jsou vždy zdarma
+  function matchTag(p) {
+    if (!NEEDS || !NEEDS.active) return '';
+    const m = K.matchScore(p, NEEDS);
+    return '<span class="ub-match">' + K.statusHtml(m.status, m.pct === null ? KP.t('Shoda neznámá, chybí údaje') : K.t('{pct} % shoda · známe {k} z {n}', { pct: m.pct, k: m.known, n: m.total })) + '</span>';
+  }
+  function matchNote() {
+    let el = $('#ub-match-note');
+    if (!el) { el = document.createElement('div'); el.id = 'ub-match-note'; el.className = 'ub-match-note'; el.style.cssText = 'display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin:0 0 12px;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)'; $('#ub-list').parentNode.insertBefore(el, $('#ub-list')); }
+    const locked = !K.hasTier('match');
+    const txt = locked ? KP.t('Shodu s vašimi potřebami v procentech ukazuje Accessibility Match.')
+      : NEEDS.active ? KP.t('U každého ubytování ukazujeme shodu s vaším profilem potřeb.') : KP.t('Nastavte si profil potřeb a u každého ubytování uvidíte shodu v procentech.');
+    el.innerHTML = '<p class="small" style="margin:0;flex:1 1 260px">' + K.esc(txt) + (locked ? ' ' + K.tierBadge('match') : '') + '</p>' +
+      '<button class="btn btn-quiet btn-sm" type="button" data-ub-needs>' + K.icon('sliders') + K.esc(locked ? KP.t('Zobrazit shodu') : NEEDS.active ? KP.t('Upravit potřeby') : KP.t('Nastavit potřeby')) + '</button>';
   }
 
   function fillObce() {
@@ -96,6 +112,8 @@
 
   function render(reset) {
     if (reset) shown = PAGE;
+    NEEDS = K.getNeeds();
+    matchNote();
     const s = state();
     const list = sort(filter(s), s.sort);
     const n = list.length, withR = ALL.filter(p => reports(p).length).length;
@@ -171,6 +189,8 @@
     $('#ub-form').addEventListener('submit', e => e.preventDefault());
     $('#ub-form').addEventListener('reset', () => setTimeout(() => { TOGGLES.forEach(s => setPressed(s, false)); $('#f-w').value = 'yl'; fillObce(); render(true); }, 0));
     $('#ub-more').addEventListener('click', () => { shown += PAGE; render(false); });
+    document.addEventListener('click', e => { if (e.target.closest('[data-ub-needs]')) K.needsDrawer(); });
+    document.addEventListener('kp:needs', () => render(false));
 
     $('#ub-open').addEventListener('click', openSheet);
     $('#ub-close').addEventListener('click', closeSheet);

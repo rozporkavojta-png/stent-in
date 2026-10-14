@@ -1,0 +1,144 @@
+/* Plánovače: planovac.html (jednodenní výlet), dovolena.html (vícedenní dovolená), tisk itinerar.html.
+   Navazuje na style.css (v3) a na třídy itineráře it-* ve stezky.css. Ostré hrany, linky, žlutá jako plocha. */
+
+/* ---------- Hlavička stránky ---------- */
+.pl-head { padding-block: clamp(32px, 6vw, 72px) 24px; border-bottom: 1px solid var(--rule); }
+.pl-head h1 { margin: 0 0 .25em; max-width: 16ch; }
+.pl-head .lede { margin: 0 0 16px; max-width: 62ch; }
+.pl-head .kicker .tier-tag { margin-left: 4px; }
+.pl-proto { margin: 0; max-width: 75ch; }
+.pl-links-top { margin: 14px 0 0; }
+.pl-links-top a { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* ---------- Mřížka: zadání vlevo, výsledek vpravo ---------- */
+.pl-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 0 clamp(24px, 4vw, 56px); align-items: start; padding-block: 28px clamp(48px, 7vw, 88px); }
+.pl-form { display: flex; flex-direction: column; gap: 18px; min-width: 0; position: sticky; top: calc(var(--header-h) + 16px); max-height: calc(100vh - var(--header-h) - 32px); overflow: auto; padding: 0 4px 8px 0; }
+.pl-out { min-width: 0; display: flex; flex-direction: column; gap: 22px; }
+@media (max-width: 899px) {
+  .pl-grid { grid-template-columns: 1fr; gap: 36px; }
+  .pl-form { position: static; max-height: none; overflow: visible; padding: 0; }
+}
+.pl-form .st-h2 { margin: 0; }
+.pl-two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
+@media (max-width: 360px) { .pl-two { grid-template-columns: 1fr; } }
+.pl-form input[type="date"], .pl-form input[type="time"], .pl-form input[type="number"], .dv-form input[type="date"] {
+  width: 100%; min-height: 48px; padding: 10px 12px; border: 1.5px solid var(--ink); border-radius: 2px; background: var(--surface); color: var(--ink); font: 400 1rem/1.4 var(--f-mono);
+}
+.pl-form input[type="date"]:focus, .pl-form input[type="time"]:focus { outline: none; box-shadow: 0 0 0 4px var(--signal); }
+.pl-fs { border: 0; border-top: 1px solid var(--rule); margin: 0; padding: 12px 0 0; min-width: 0; }
+.pl-fs legend { font: 700 .78rem/1.2 var(--f-body); letter-spacing: .12em; text-transform: uppercase; padding: 0 8px 0 0; float: left; width: 100%; margin-bottom: 10px; }
+.pl-fs > :not(legend) { clear: both; }
+.pl-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.pl-form .chip, .pl-out .chip, .dv-form .chip { min-height: 44px; white-space: normal; text-align: left; }
+.pl-sug { margin-top: 8px; flex-wrap: wrap; overflow: visible; }
+.pl-go { align-self: stretch; }
+.pl-fs .check { min-height: 44px; align-items: center; }
+#pl-mob p, #dv-mob p { margin: 0 0 8px; }
+
+/* ---------- Výsledek ---------- */
+.pl-status { border-top: 6px solid var(--ink); padding-top: 14px; }
+.pl-status p { margin: 0 0 10px; max-width: 65ch; }
+.pl-intro { border-top-color: var(--signal); }
+.pl-sum { border-top: 6px solid var(--ink); padding-top: 14px; }
+.pl-sum h2 { margin: 0 0 6px; }
+.pl-sum p { margin: 0 0 8px; max-width: 70ch; }
+.pl-sum-l { font-weight: 700; }
+.pl-sum .kicker .tier-tag { margin-left: 4px; }
+.pl-alts { flex-wrap: wrap; overflow: visible; margin-bottom: 10px; }
+.pl-warn { color: var(--part); font-weight: 700; display: inline-flex; gap: 6px; align-items: center; }
+.pl-warn svg { width: 18px; height: 18px; flex: none; }
+
+.pl-stops { border-top: 3px solid var(--rule); }
+.pl-stop { grid-template-columns: 72px minmax(0, 1fr); }
+.pl-leg { grid-template-columns: 72px minmax(0, 1fr); }
+.pl-time { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+.pl-time b { display: block; background: var(--signal); color: var(--on-signal); font: 800 1.15rem/1 var(--f-mono); padding: 8px 6px; letter-spacing: -.02em; }
+.pl-time span { font-size: .8rem; color: var(--ink-2); }
+.pl-k { margin: 8px 0 2px; font: 700 .74rem/1.2 var(--f-body); letter-spacing: .12em; text-transform: uppercase; }
+.pl-why { margin: 0; padding: 0; list-style: none; }
+.pl-why li { padding: 2px 0 2px 16px; position: relative; }
+.pl-why li::before { content: ""; position: absolute; left: 0; top: .62em; width: 8px; height: 8px; background: var(--ink); }
+.pl-unk { margin: 8px 0 0; padding: 8px 10px; border-left: 4px solid var(--unk); background: var(--surface-2); font-size: .93rem; }
+.pl-oh { margin: 8px 0 0; }
+.pl-svc { margin: 8px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.pl-svc li { padding: 6px 0; border-bottom: 1px solid var(--line); font-size: .93rem; overflow-wrap: anywhere; }
+.pl-svc .status { font-size: .85rem; }
+.pl-links { display: flex; flex-wrap: wrap; gap: 6px 10px; margin-top: 10px; }
+.pl-links .btn { min-height: 44px; }
+.pl-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.pl-mapbox { position: relative; height: clamp(280px, 42vh, 440px); border: 1.5px solid var(--rule); }
+.pl-mapbox .map-canvas { position: absolute; inset: 0; }
+.pl-maperr { padding: 16px; }
+.pl-share { margin-top: 4px; }
+.pl-lock { background: var(--signal); color: var(--on-signal); padding: 18px; }
+.pl-lock p { margin: 0 0 10px; max-width: 62ch; }
+.pl-lock .kicker::before { background: var(--on-signal); }
+.pl-lock .btn-primary { background: var(--on-signal); color: var(--signal); border-color: var(--on-signal); }
+.pl-lock .btn-ghost { border-color: var(--on-signal); color: var(--on-signal); }
+.pl-lock .tier-tag { border-color: var(--signal); }
+.pl-lock a { color: var(--on-signal); }
+@media (max-width: 420px) {
+  .pl-stop, .pl-leg { grid-template-columns: 58px minmax(0, 1fr); gap: 4px 10px; }
+  .pl-time b { font-size: 1rem; padding: 7px 4px; }
+}
+
+/* ---------- Dovolená ---------- */
+.dv-sec { border-top: 3px solid var(--rule); padding-top: 16px; display: flex; flex-direction: column; gap: 12px; }
+.dv-sec > h2, .dv-sec > h3 { margin: 0; }
+.dv-sec > p { margin: 0; max-width: 70ch; }
+.dv-hotels { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.dv-hotel { padding: 14px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: start; }
+.dv-hotel.is-on { box-shadow: inset 6px 0 0 var(--signal); padding-left: 16px; }
+.dv-hotel h3 { margin: 0 0 4px; overflow-wrap: anywhere; }
+.dv-hotel h3 a { text-decoration: none; }
+.dv-hotel p { margin: 4px 0; }
+.dv-hotel blockquote { margin: 8px 0; padding: 8px 12px; border-left: 4px solid var(--ink); background: var(--surface-2); font-size: .93rem; }
+.dv-hotel .dv-pick { min-height: 44px; }
+@media (max-width: 640px) { .dv-hotel { grid-template-columns: 1fr; } .dv-hotel .dv-pick { justify-self: start; } }
+.dv-items { margin: 6px 0 0; padding: 0; list-style: none; }
+.dv-items li { padding: 4px 0; border-bottom: 1px solid var(--line); font-size: .93rem; }
+.dv-items li b { font-weight: 700; }
+.dv-day { margin: 0; padding: 10px 0 8px; border-bottom: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; }
+.dv-day h3 { margin: 0; font-size: clamp(1.3rem, 2.4vw, 1.7rem); }
+.dv-day span { color: var(--ink-2); font-weight: 600; }
+.dv-days { display: flex; flex-direction: column; gap: 22px; }
+.dv-trans { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.dv-trans > li { padding: 12px 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.dv-trans p { margin: 4px 0; }
+.dv-rows { margin: 6px 0 0; padding: 0; list-style: none; font-size: .9rem; }
+.dv-rows li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; padding: 3px 0; border-bottom: 1px dotted var(--line-strong); }
+.dv-form { display: flex; flex-direction: column; gap: 12px; }
+.dv-form textarea { min-height: 110px; }
+.dv-done { background: var(--surface-2); border-left: 6px solid var(--signal); padding: 14px 16px; }
+.dv-done p, .dv-done ol { margin: 0 0 8px; }
+.dv-credit { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 16px; align-items: center; }
+.dv-credit .stat .n { font-family: var(--f-display); font-weight: 800; font-size: clamp(2.2rem, 5vw, 3.2rem); line-height: 1; }
+.dv-steps { margin: 0; padding-left: 1.4em; }
+.dv-steps li { padding: 4px 0; }
+.dv-locked { opacity: 1; }
+.dv-locked .dv-day-list { color: var(--ink-2); }
+
+/* ---------- Itinerář: dny a časy ---------- */
+.it-day { padding: 18px 0 6px; border-bottom: 1px solid var(--rule); }
+.it-day h3 { margin: 0; font-size: clamp(1.3rem, 2.4vw, 1.7rem); }
+.it-time { font: 700 .95rem var(--f-mono); background: var(--signal); color: var(--on-signal); padding: 1px 6px; margin-right: 4px; }
+.it-kind { margin: 0 0 8px; }
+.it-limit { margin: 0 0 10px; }
+
+/* ---------- Tisk (Export do PDF přes tisk prohlížeče) ---------- */
+.pl-print-only { display: none; }
+@media print {
+  :root { --bg: #fff; --surface: #fff; --surface-2: #f2f2f2; --ink: #000; --ink-2: #222; --ink-3: #444; --rule: #000; --signal: #FFD400; color-scheme: light; }
+  body { background: #fff !important; color: #000; }
+  .site-header, .site-footer, .tabbar, .toast, .pl-form, .pl-actions, .pl-mapbox, .pl-links, .pl-print-hide, .pl-intro, .pl-alts, #pl-sharebox, .pl-links-top,
+  .dv-form, .dv-pick, .dv-noprint, .it-add, .it-saved, .it-side .it-mapbox, .it-mapnote, .it-actions, .it-ctrl, .it-note, .it-leg-links, #it-sharebox, .it-shared, .skip-link { display: none !important; }
+  .pl-grid, .it-grid { display: block; padding: 0; }
+  .pl-head, .it-head { padding: 0 0 8px; }
+  .pl-head .lede, .it-head .lede { font-size: 11pt; }
+  .pl-print-only { display: block; }
+  .it-stop, .pl-stop, .it-leg { break-inside: avoid; }
+  .it-leg { background: #f2f2f2; }
+  a { color: #000; text-decoration: none; }
+  h1 { font-size: 26pt; }
+  .it-side { position: static; }
+}

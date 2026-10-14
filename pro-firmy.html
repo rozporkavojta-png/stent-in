@@ -5,12 +5,13 @@
 <link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Pro podniky a obce · kudyprojedu.cz</title>
-<meta name="description" content="Profil přístupnosti pro hotely, restaurace, památky a úřady. Checklist krok za krokem, fotky, ověření na místě, přehledy pro obce a kraje. Základní profil zdarma.">
+<meta name="description" content="Profil přístupnosti pro hotely, restaurace, památky a úřady v jižních Čechách a v Bavorsku. Základní profil a opravy zdarma, tarif Business, ověření, školení a regionální licence pro obce a destinace.">
 <script>/* Starší odkazy pro-firmy.html?id=… vedou na profil podniku */ (function () { var q = location.search; if (/[?&]id=/.test(q)) location.replace('podnik.html' + q + (location.hash === '#profil' ? '#checklist' : location.hash)); })();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=15">
+<link rel="stylesheet" href="assets/css/style.css?v=16">
 <link rel="stylesheet" href="assets/css/pages-a.css?v=13">
+<link rel="stylesheet" href="assets/css/podnik.css?v=4">
 </head>
 <body>
 <div id="site-header"></div>
@@ -19,10 +20,10 @@
   <section class="page-head">
     <div class="wrap head-split">
       <div>
-        <p class="kicker" data-i18n>Pro podniky a obce</p>
+        <p class="kicker" data-i18n>Pro podniky, obce a destinace</p>
         <h1 data-i18n>Řekněte hostům předem, jestli k&nbsp;vám projedou</h1>
-        <p class="lede" data-i18n>Lidé na vozíku a jejich blízcí si místo vybírají podle konkrétních údajů: schod u vstupu, šířka dveří, toaleta, parkování. Když je najdou u vás, nemusí volat a vy nemusíte odpovídat na stejné otázky pořád dokola.</p>
-        <div class="row"><a class="btn btn-primary btn-lg" href="podnik.html" data-i18n>Najít a převzít svůj podnik</a><a class="btn btn-ghost btn-lg" href="#cenik" data-i18n>Služby a ceník</a></div>
+        <p class="lede" data-i18n>Platforma pro bezbariérové cestování začíná v jižních Čechách a v Bavorsku. Hosté na vozíku a jejich blízcí vybírají podle konkrétních údajů: schod u vstupu, šířka dveří, toaleta, parkování. Když je najdou u vás, nemusí volat.</p>
+        <div class="row"><a class="btn btn-primary btn-lg" href="podnik.html" data-i18n>Najít a převzít svůj podnik</a><a class="btn btn-ghost btn-lg" href="#cenik" data-i18n>Tarify a služby</a><a class="btn btn-quiet btn-lg" href="#obce" data-i18n>Pro obce a destinace</a></div>
       </div>
       <figure class="sticker-wrap">
         <div class="door-sticker" aria-label="Ukázka štítku na dveře" data-i18n-attr="aria-label">
@@ -31,8 +32,23 @@
           <span data-i18n="pf.sticker">Vstup, toaleta a parkování<br>v centimetrech</span>
           <small data-i18n>naskenujte u dveří</small>
         </div>
-        <figcaption data-i18n>Ukázka štítku s QR kódem na dveře, který dostanete s rozšířeným profilem.</figcaption>
+        <figcaption data-i18n>Ukázka štítku s QR kódem na dveře. Je součástí tarifu Business.</figcaption>
       </figure>
+    </div>
+  </section>
+
+  <section class="signal-band pf-rules" aria-labelledby="pravidla-h">
+    <div class="wrap split-grid">
+      <div class="split-h">
+        <p class="kicker" data-i18n>Naše pravidla</p>
+        <h2 id="pravidla-h" data-i18n>Za přístupnost se neplatí</h2>
+      </div>
+      <ol class="split-b pf-rule-list">
+        <li><h3 data-i18n>Základní profil a opravy jsou vždy zdarma</h3><p data-i18n>Údaje o přístupnosti a jejich opravy nikdy nezávisí na platbě. Host je vidí stejně u podniku, který platí, i u toho, který neplatí.</p></li>
+        <li><h3 data-i18n>Placená viditelnost je vždy označená</h3><p data-i18n>Propagace má štítek „Propagace“ a je oddělená od hodnocení přístupnosti. Skóre, Accessibility Match ani odznak „Ověřeno“ si koupit nelze.</p></li>
+        <li><h3 data-i18n>U každého údaje je vidět zdroj</h3><p data-i18n>Provozovatel, komunita, nebo nezávislé ověření. Za ověření se platí, ale výsledek měření platba neovlivní.</p></li>
+        <li><h3 data-i18n>Členství cestovatelů nemění pořadí</h3><p data-i18n>Cestovatelé si mohou připlatit <a href="clenstvi.html">PLUS nebo PREMIUM</a> za plánování a pohodlí. Údaje o vašem podniku vidí všichni stejně, i ve FREE.</p></li>
+      </ol>
     </div>
   </section>
 
@@ -44,11 +60,11 @@
       </div>
       <ul class="split-b rule-grid">
         <li><h3 data-i18n>Kontrolní seznam místo slohu</h3><p data-i18n>Provedeme vás krok za krokem podle typu provozu: vstup, parkování, pohyb uvnitř a výtah, WC, u ubytování pokoj a koupelna. U každého údaje napíšeme, co a jak změřit a co vyfotit.</p></li>
-        <li><h3 data-i18n>Uvidí vás lidé, kteří hledají právě vás</h3><p data-i18n>Hosté si nastaví své potřeby, třeba šířku dveří nebo sprchu v úrovni podlahy. Když údaje vyplníte, uvidí u vás „vyhovuje“ a procento shody, ne „chybí údaje“.</p></li>
+        <li><h3 data-i18n>Uvidí vás lidé, kteří hledají právě vás</h3><p data-i18n>Údaje o vstupu, WC a parkování vidí každý zdarma. Hosté s členstvím PLUS si navíc uloží své potřeby, třeba šířku dveří nebo sprchu v úrovni podlahy. Když údaje vyplníte, Accessibility Match u vás ukáže „vyhovuje“ a procento shody, ne „chybí údaje“.</p></li>
         <li><h3 data-i18n>Označení „Kompletní profil“</h3><p data-i18n>Když vyplníte všechny údaje a fotky z checklistu, profil dostane označení, které host vidí hned ve výsledcích.</p></li>
         <li><h3 data-i18n>Žádosti a hlášení přijdou vám</h3><p data-i18n>Host může u místa bez údajů požádat o informace o přístupnosti nebo nahlásit, že je něco jinak. Dozvíte se to a údaj doplníte nebo opravíte.</p></li>
         <li><h3 data-i18n>Co zlepšit nejdřív</h3><p data-i18n>Podle chybějících prvků ukážeme, co upravit: madla, rampu se sklonem do 8 %, stání ZTP. Přidáme odkazy na programy podpory a organizace ve vašem kraji.</p></li>
-        <li><h3 data-i18n>Odznak „Ověřeno“</h3><p data-i18n>Mapovač změří vstup, dveře a toaletu podle české metodiky kategorizace přístupnosti. Ověření platí 3 roky, stejně jako u německé značky Reisen für Alle.</p></li>
+        <li><h3 data-i18n>Česky, německy a anglicky</h3><p data-i18n>Údaje z checklistu se zobrazí ve všech třech jazycích. Hosté z Bavorska i z Česka čtou totéž.</p></li>
       </ul>
       <p class="split-b pf-try"><a class="btn btn-primary" href="podnik.html" data-i18n>Vyzkoušet profil podniku</a><span class="small" data-i18n>Prototyp: údaje se ukládají jen ve vašem prohlížeči.</span></p>
     </div>
@@ -56,95 +72,119 @@
 
   <section class="section pf-sec" id="cenik" aria-labelledby="cenik-h">
     <div class="wrap">
-      <div class="head-row"><div><p class="kicker" data-i18n>Služby a ceník</p><h2 id="cenik-h" data-i18n>Základ zdarma, za víc si připlatíte</h2><p class="muted head-note" data-i18n>Pro návštěvníky je web vždy zdarma. Pro provozovatele je zdarma základní profil, placené jsou služby navíc.</p></div><span class="badge badge-soon" data-i18n>ceny jsou návrh, služby zatím neběží</span></div>
-      <div class="plans">
+      <div class="head-row"><div><p class="kicker" data-i18n>Tarify a služby</p><h2 id="cenik-h" data-i18n>Profil zdarma, nástroje navíc za poplatek</h2><p class="muted head-note" data-i18n>Pro návštěvníky je vyhledávání vždy zdarma. Podnik dostane zdarma základní profil a opravy údajů. Platí se jen za nástroje a služby navíc.</p></div><span class="badge badge-soon" data-i18n>ceny jsou návrh, služby zatím neběží</span></div>
+
+      <div class="plans pf-plans">
         <article class="plan">
+          <p class="pf-plan-k" data-i18n>Pro každý podnik</p>
           <h3 data-i18n>Základní profil</h3>
-          <div class="price" data-i18n>0 Kč</div>
+          <div class="price" data-i18n>0 € <small>natrvalo</small></div>
           <ul>
             <li data-i18n>Převzetí místa, které už v mapě je</li>
             <li data-i18n>Checklist přístupnosti podle typu provozu</li>
             <li data-i18n>Fotky vstupu, WC, výtahu, parkování, pokoje a koupelny</li>
-            <li data-i18n>Úpravy údajů kdykoli</li>
-            <li data-i18n>Údaje označené jako „Uvedl provozovatel“</li>
+            <li data-i18n>Opravy a úpravy údajů kdykoli</li>
+            <li data-i18n>Žádosti o doplnění a hlášení změn od hostů</li>
+            <li data-i18n>Ve výsledcích a v Accessibility Match stejně jako placené profily</li>
           </ul>
           <a class="btn btn-ghost btn-block" href="podnik.html" data-i18n>Převzít profil</a>
         </article>
         <article class="plan featured">
-          <h3 data-i18n>Rozšířený profil</h3>
-          <div class="price" data-i18n>290 Kč <small>měsíčně, návrh</small></div>
+          <p class="pf-plan-k" data-i18n>Business předplatné</p>
+          <h3 data-i18n>Business</h3>
+          <div class="price" data-i18n>12 € <small>měsíčně, návrh ceny</small></div>
           <ul>
-            <li data-i18n>Delší popis a kontakt pro dotazy k přístupnosti</li>
-            <li data-i18n>Analytika: zobrazení profilu, výskyt ve výsledcích, žádosti o doplnění</li>
-            <li data-i18n>Odpovědi na hlášení změn od návštěvníků</li>
+            <li data-i18n>Vše ze základního profilu</li>
+            <li data-i18n>Pokročilá správa profilu: delší popis česky, německy a anglicky, kontakt pro dotazy k přístupnosti, víc provozoven pod jednou správou</li>
+            <li data-i18n>Analytika: zobrazení profilu, výskyt ve výsledcích, žádosti o doplnění a oblasti, o které se hosté zajímají</li>
+            <li data-i18n>Odpovědi na hlášení změn a na zkušenosti hostů</li>
             <li data-i18n>QR štítek na dveře a odkaz pro váš web</li>
+            <li data-i18n>Připomenutí, když jsou údaje starší než rok</li>
           </ul>
-          <a class="btn btn-primary btn-block" href="#zajem" data-i18n>Mám zájem</a>
-        </article>
-        <article class="plan">
-          <h3 data-i18n>Ověření na místě</h3>
-          <div class="price" data-i18n>2 900 Kč <small>jednorázově, návrh</small></div>
-          <ul>
-            <li data-i18n>Mapovač změří vstup, dveře, výtah, toaletu a parkování</li>
-            <li data-i18n>Měření podle metodiky kategorizace přístupnosti</li>
-            <li data-i18n>Odznak „Ověřeno“ s platností 3 roky</li>
-            <li data-i18n>Zpráva s doporučením úprav</li>
-          </ul>
-          <a class="btn btn-ghost btn-block" href="#zajem" data-i18n>Mám zájem</a>
-        </article>
-        <article class="plan">
-          <h3 data-i18n>Obce a kraje</h3>
-          <div class="price" data-i18n>individuálně</div>
-          <ul>
-            <li data-i18n>Zmapování úřadů, škol, WC a památek v obci</li>
-            <li data-i18n>Přehled míst bez přístupnosti a s chybějícími údaji</li>
-            <li data-i18n>Export dat v A11yJSON a CSV</li>
-            <li data-i18n>Podklad pro plán odstraňování bariér</li>
-          </ul>
-          <a class="btn btn-ghost btn-block" href="#obce" data-i18n>Více pro obce</a>
+          <p class="small pf-plan-note" data-i18n>Business nemění pořadí podle přístupnosti, skóre ani shodu s potřebami hosta.</p>
+          <div class="pf-plan-btns"><a class="btn btn-primary btn-block" href="#zajem" data-i18n>Mám zájem</a><a class="btn btn-quiet btn-block" href="podnik.html#tarify" data-i18n>Vyzkoušet v profilu podniku</a></div>
         </article>
       </div>
-      <h3 class="pf-sub" data-i18n>Další služby</h3>
+
+      <h3 class="pf-sub" data-i18n>Služby navíc</h3>
       <div class="table-wrap">
         <table class="data pf-extra">
-          <thead><tr><th data-i18n>Služba</th><th data-i18n>Co obsahuje</th><th data-i18n>Cena</th></tr></thead>
+          <thead><tr><th scope="col" data-i18n>Služba</th><th scope="col" data-i18n>Co obsahuje</th><th scope="col" data-i18n>Návrh ceny</th></tr></thead>
           <tbody>
-            <tr><td><b data-i18n>Analytika</b></td><td data-i18n>Kolikrát si lidé profil prohlédli, kolikrát se objevil ve výsledcích a kolik lidí požádalo o doplnění údajů. V prototypu jen to, co se stalo v jednom prohlížeči.</td><td data-i18n>součást rozšířeného profilu</td></tr>
-            <tr><td><b data-i18n>Propagace</b></td><td data-i18n>Zvýraznění ve výběrech míst a v tematických trasách. Vždy označené jako propagace, nikdy nemění údaje o přístupnosti.</td><td data-i18n>zatím neurčena</td></tr>
-            <tr><td><b data-i18n>Poradenství</b></td><td data-i18n>Co upravit nejdřív, aby to pomohlo nejvíc hostům za nejmenší peníze. Na podkladu checklistu nebo ověření.</td><td data-i18n>zatím neurčena</td></tr>
+            <tr><th scope="row" data-i18n>Ověření a dokumentace přístupnosti</th><td data-i18n>Mapovač změří vstup, dveře, výtah, WC a parkování podle metodiky kategorizace přístupnosti. Zpráva s fotkami a doporučením úprav, odznak „Ověřeno“ s platností 3 roky.</td><td data-i18n>119 € jednorázově</td></tr>
+            <tr><th scope="row" data-i18n>Školení personálu</th><td data-i18n>Jak pomoci hostovi na vozíku, jak měřit a jak udržovat profil aktuální.</td><td data-i18n>zatím neurčena</td></tr>
+            <tr><th scope="row" data-i18n>Poradenství k úpravám</th><td data-i18n>Co upravit nejdřív, aby to pomohlo nejvíc hostům za nejmenší peníze. Na podkladu checklistu nebo ověření.</td><td data-i18n>podle rozsahu</td></tr>
+            <tr><th scope="row" data-i18n>Propagace</th><td data-i18n>Zvýraznění ve výběrech míst a v tematických trasách. Vždy se štítkem „Propagace“, nikdy nemění údaje ani hodnocení přístupnosti.</td><td data-i18n>zatím neurčena</td></tr>
+            <tr><th scope="row" data-i18n>Akce a itineráře</th><td data-i18n>Bezbariérové workshopy, výlety a hotové itineráře chceme připravovat s provozovateli v regionu. Do itineráře se místo dostane podle údajů o přístupnosti, ne za poplatek.</td><td data-i18n>zatím neurčena</td></tr>
+            <tr><th scope="row" data-i18n>Provize z rezervací</th><td data-i18n>Později, až půjde rezervovat přes platformu. Jen tam, kde to hostům pomůže a nenaruší to nezávislost doporučení.</td><td data-i18n>později, zatím nic</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="price-note" data-i18n>Ceny jsou návrh studentského týmu pro podnikatelský plán. Ověříme je rozhovory s provozovateli a obcemi. Nic se zatím neprodává. Srovnání s cenami podobných služeb je v části <a href="zdroje.html#ceny">Zdroje a trh: ceny</a>.</p>
+      <p class="pf-promo-demo"><span class="badge pf-promo" data-i18n>Propagace</span> <span class="small" data-i18n>Takto bude propagace označená ve výsledcích. Stojí vždy mimo pořadí podle přístupnosti.</span></p>
+      <p class="price-note" data-i18n>Ceny jsou návrh studentského týmu pro podnikatelský plán (verze 1.1, říjen 2026). Ověříme je rozhovory s provozovateli, obcemi a destinačními společnostmi. Nic se zatím neprodává a nic se neplatí. Srovnání s cenami podobných služeb je v části <a href="zdroje.html#ceny">Zdroje a trh: ceny</a>.</p>
     </div>
   </section>
 
   <section class="section pf-sec" id="obce" aria-labelledby="obce-h">
     <div class="wrap split-grid">
       <div class="split-h">
-        <p class="kicker" data-i18n>Obce a kraje</p>
-        <h2 id="obce-h" data-i18n>Víte, kde ve vaší obci bariéry jsou?</h2>
+        <p class="kicker" data-i18n>Obce, kraje a destinace</p>
+        <h2 id="obce-h" data-i18n>Víte, kde ve vašem území bariéry jsou?</h2>
+        <p data-i18n>Regionální licence a reporting pro obce, kraje a destinační společnosti.</p>
       </div>
       <div class="split-b">
         <div class="text">
           <p data-i18n>Obec má na odstraňování bariér omezené peníze a musí vybrat, co upravit nejdřív, aby to pomohlo co nejvíc lidem. K tomu potřebuje vědět, kde přístupnost chybí a které údaje vůbec nemá.</p>
-          <p data-i18n>Data v mapě ukazují i to, co chybí. U každé obce spočítáme, kolik veřejných budov má zadaný vstup, kolik je nepřístupných a kde chybí bezbariérová toaleta nebo parkování ZTP.</p>
+          <p data-i18n>Destinační společnost potřebuje totéž pro návštěvníky: které cíle, ubytování a restaurace v regionu host na vozíku zvládne a kde údaje chybí.</p>
         </div>
-        <h3 class="pf-sub" data-i18n>Co obec dostane</h3>
+        <h3 class="pf-sub" data-i18n>Co regionální licence obsahuje</h3>
         <table class="data kv-table">
           <tbody>
+            <tr><td data-i18n>Mapa na míru</td><td data-i18n>Mapa přístupných míst vašeho území k vložení na web obce nebo destinace, česky, německy a anglicky, s vybranými kategoriemi.</td></tr>
+            <tr><td data-i18n>Přehled chybějící přístupnosti</td><td data-i18n>Po obcích: kde chybí údaj o vstupu, o toaletě, měření a fotky. Ukázku ze skutečných dat najdete níže.</td></tr>
+            <tr><td data-i18n>Reporting</td><td data-i18n>Pravidelný přehled: co přibylo, co se zlepšilo a co hlásí obyvatelé a návštěvníci.</td></tr>
             <tr><td data-i18n>Mapování</td><td data-i18n>Proškolení mapovači změří úřad, školy, zdravotnická zařízení, veřejná WC a turistické cíle.</td></tr>
-            <tr><td data-i18n>Přehled</td><td data-i18n>Seznam míst podle kategorie přístupnosti a seznam chybějících údajů.</td></tr>
             <tr><td data-i18n>Export</td><td data-i18n>Data v otevřeném formátu A11yJSON a CSV, použitelná i na webu obce a ve Wheelmap.</td></tr>
             <tr><td data-i18n>Priority</td><td data-i18n>Návrh, které úpravy pomohou nejvíc lidem za nejmenší peníze.</td></tr>
-            <tr><td data-i18n>Aktualizace</td><td data-i18n>Hlášení změn od obyvatel a návštěvníků půjdou obci.</td></tr>
           </tbody>
         </table>
-        <p class="small muted" style="margin:14px 0 0" data-i18n>Data o tom, kde přístupnost chybí, se dají použít i jako podklad k žádostem o dotace na odstraňování bariér.</p>
-        <div class="callout" style="margin-top:28px">
-          <p style="margin:0 0 8px"><b data-i18n>Jihočeský kraj</b></p>
-          <p style="margin:0" class="small" data-i18n>Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením na roky 2026 až 2029 ukládá kraji přístupnost mapovat a zveřejňovat. Na seznamu mapujících organizací na presbariery.cz přitom není žádná jihočeská. České Budějovice mají vlastní atlas přístupnosti, většina menších obcí ne.</p>
+        <p class="small pf-lic-price"><b data-i18n>Návrh ceny:</b> <span data-i18n>podle velikosti území. Určíme ji v pilotu s jednou obcí nebo destinací.</span></p>
+        <p class="small muted" data-i18n>Data o tom, kde přístupnost chybí, se dají použít i jako podklad k žádostem o dotace na odstraňování bariér.</p>
+        <div class="callout pf-jck">
+          <p><b data-i18n>Jihočeský kraj</b></p>
+          <p class="small" data-i18n>Krajský plán vyrovnávání příležitostí pro osoby se zdravotním postižením na roky 2026 až 2029 ukládá kraji přístupnost mapovat a zveřejňovat. Na seznamu mapujících organizací na presbariery.cz přitom není žádná jihočeská. České Budějovice mají vlastní atlas přístupnosti, většina menších obcí ne.</p>
         </div>
+        <div class="row pf-obce-row"><a class="btn btn-primary" href="#report" data-i18n>Ukázka reportu</a><a class="btn btn-ghost" href="#zajem" data-i18n>Mám zájem o licenci</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pf-sec" id="report" aria-labelledby="report-h">
+    <div class="wrap">
+      <div class="head-row"><div><p class="kicker" data-i18n>Ukázka reportu</p><h2 id="report-h" data-i18n>Kde v území chybí údaje o přístupnosti</h2><p class="muted head-note" data-i18n>Spočítáno teď ve vašem prohlížeči ze skutečných dat v databázi. Nic jsme nedoplnili ani neodhadli.</p></div></div>
+      <div class="rp-controls">
+        <div class="field"><label for="rp-region" data-i18n>Kraj nebo vládní obvod</label><select id="rp-region"></select></div>
+        <div class="field"><label for="rp-sort" data-i18n>Seřadit obce</label><select id="rp-sort">
+          <option value="n" data-i18n>podle počtu míst</option>
+          <option value="wc" data-i18n>podle podílu bez údaje o WC</option>
+          <option value="detail" data-i18n>podle podílu bez popisu, měření a fotky</option>
+          <option value="no" data-i18n>podle počtu nepřístupných vstupů</option>
+        </select></div>
+        <div class="field"><label for="rp-min" data-i18n>Obce s aspoň</label><select id="rp-min">
+          <option value="1" data-i18n>1 místem</option>
+          <option value="5" selected data-i18n>5 místy</option>
+          <option value="10" data-i18n>10 místy</option>
+        </select></div>
+      </div>
+      <div id="rp-out" aria-live="polite"><p class="muted" data-i18n>Načítám data…</p></div>
+      <div class="rp-notes text">
+        <h3 class="pf-sub" data-i18n>Jak čísla číst</h3>
+        <ul class="rp-note-list">
+          <li data-i18n>Počítáme jen místa, která v databázi jsou. Místa, o jejichž přístupnosti nikdo nic nezadal, v mapě nejsou vůbec. Údaj o vstupu proto chybí málokde, ale skutečná mezera je větší.</li>
+          <li data-i18n>Proto report ukazuje i podrobnější údaje: jestli víme, zda má místo bezbariérovou toaletu, a jestli má slovní popis, měření nebo fotku.</li>
+          <li data-i18n>Parkoviště ZTP do počtu míst nezahrnujeme. U parkovišť a přírody nepočítáme ani toaletu.</li>
+          <li id="rp-src" data-i18n>Zdroj: OpenStreetMap (ODbL) a další otevřená data, která uvádíme v části Zdroje a trh.</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -188,24 +228,25 @@
   <section class="section pf-sec" id="zajem" aria-labelledby="zajem-h">
     <div class="wrap split-grid claim">
       <div class="split-h">
-        <p class="kicker" data-i18n>Placené služby a obce</p>
-        <h2 id="zajem-h" data-i18n>Zájem o ověření, rozšířený profil nebo mapování</h2>
-        <p data-i18n>Služby zatím neběží. Zájem nám pomůže rozhodnout, co spustit první.</p>
+        <p class="kicker" data-i18n>Placené služby a licence</p>
+        <h2 id="zajem-h" data-i18n>Zájem o Business, ověření, školení nebo licenci</h2>
+        <p data-i18n>Služby zatím neběží a nic se neplatí. Zájem nám pomůže rozhodnout, co spustit první.</p>
         <p class="callout info small" id="z-proto" data-i18n>Prototyp: uloženo jen ve vašem prohlížeči, v ostré verzi se to odešle na server.</p>
       </div>
       <form id="claim-form" class="split-b" novalidate>
         <div class="field"><label for="c-name" data-i18n>Název podniku, obce nebo organizace</label><input id="c-name" type="text" required autocomplete="organization" placeholder="Hotel, restaurace, úřad…" data-i18n-attr="placeholder"></div>
         <div class="two">
           <div class="field"><label for="c-city" data-i18n>Obec</label><input id="c-city" type="text" required autocomplete="address-level2"></div>
-          <div class="field"><label for="c-type" data-i18n>Typ provozu</label><select id="c-type"><option data-i18n>Ubytování</option><option data-i18n>Restaurace nebo kavárna</option><option data-i18n>Památka nebo muzeum</option><option data-i18n>Kultura</option><option data-i18n>Úřad nebo veřejná budova</option><option data-i18n>Zdravotnictví</option><option data-i18n>Obec nebo kraj</option><option data-i18n>Jiné</option></select></div>
+          <div class="field"><label for="c-type" data-i18n>Typ provozu</label><select id="c-type"><option data-i18n>Ubytování</option><option data-i18n>Restaurace nebo kavárna</option><option data-i18n>Památka nebo muzeum</option><option data-i18n>Kultura</option><option data-i18n>Úřad nebo veřejná budova</option><option data-i18n>Zdravotnictví</option><option data-i18n>Obec nebo kraj</option><option data-i18n>Destinační společnost</option><option data-i18n>Jiné</option></select></div>
         </div>
         <div class="two">
           <div class="field"><label for="c-person" data-i18n>Kontaktní osoba</label><input id="c-person" type="text" autocomplete="name"></div>
           <div class="field"><label for="c-email" data-i18n>E-mail</label><input id="c-email" type="email" required autocomplete="email"></div>
         </div>
-        <div class="field"><label for="c-plan" data-i18n>Zajímá mě</label><select id="c-plan"><option data-i18n>Ověření na místě</option><option data-i18n>Rozšířený profil s analytikou</option><option data-i18n>Propagace</option><option data-i18n>Poradenství k úpravám</option><option data-i18n>Mapování pro obec nebo kraj</option></select></div>
+        <div class="field"><label for="c-plan" data-i18n>Zajímá mě</label><select id="c-plan"><option data-i18n>Business: správa profilu a analytika</option><option data-i18n>Ověření a dokumentace přístupnosti</option><option data-i18n>Školení personálu</option><option data-i18n>Poradenství k úpravám</option><option data-i18n>Propagace</option><option data-i18n>Akce a itineráře</option><option data-i18n>Regionální licence a reporting</option><option data-i18n>Mapování pro obec nebo kraj</option></select></div>
         <label class="check" data-i18n><input type="checkbox" id="c-ok" required> Jsem oprávněn(a) jednat za tento podnik nebo organizaci.</label>
         <p class="small" id="c-err" role="alert" style="color:var(--no);margin:0" hidden></p>
+        <p class="small muted" data-i18n>Ptáme se jen na kontakt. Platební údaje nikde nesbíráme.</p>
         <button class="btn btn-primary btn-lg" type="submit" data-i18n>Uložit zájem</button>
       </form>
     </div>
@@ -214,33 +255,10 @@
 </main>
 <div id="site-footer"></div>
 <script src="assets/js/i18n.js?v=2"></script>
-<script src="assets/js/i18n/core.js?v=2"></script>
-<script src="assets/js/i18n/pro-firmy.js?v=1"></script>
+<script src="assets/js/i18n/core.js?v=3"></script>
+<script src="assets/js/i18n/pro-firmy.js?v=4"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=15"></script>
-<script>
-(function () {
-  function init() {
-    var K = window.KP, f = document.getElementById('claim-form'), err = document.getElementById('c-err');
-    document.getElementById('z-proto').textContent = K.PROTOTYPE_NOTE + ' ' + K.t('Nikdo vás zatím nebude kontaktovat.');
-    f.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var miss = [], v = function (id) { return f.querySelector('#' + id).value.trim(); };
-      if (!v('c-name')) miss.push(K.t('název'));
-      if (!v('c-city')) miss.push(K.t('obec'));
-      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v('c-email'))) miss.push(K.t('platný e-mail'));
-      if (!f.querySelector('#c-ok').checked) miss.push(K.t('potvrzení oprávnění'));
-      if (miss.length) { err.hidden = false; err.textContent = K.t('Doplňte prosím: {list}.', { list: miss.join(', ') }); return; }
-      var list = K.store.get('interest', []);
-      list.unshift({ name: v('c-name'), city: v('c-city'), type: v('c-type'), person: v('c-person'), email: v('c-email'), plan: v('c-plan'), date: new Date().toISOString().slice(0, 10) });
-      if (!K.store.set('interest', list.slice(0, 20))) { err.hidden = false; err.textContent = K.t('Uložení se nepovedlo. Úložiště prohlížeče je plné nebo vypnuté.'); return; }
-      err.hidden = true;
-      K.toast(K.t('Zájem uložen jen v tomto prohlížeči. Nic jsme neodeslali.'));
-      f.reset();
-    });
-  }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
-})();
-</script>
+<script src="assets/js/core.js?v=16"></script>
+<script src="assets/js/pro-firmy.js?v=3"></script>
 </body>
 </html>

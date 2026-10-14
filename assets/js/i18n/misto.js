@@ -272,3 +272,17 @@ KP.i18n.add({
   "místa": ["Plätze", "spaces"],
   "míst": ["Plätze", "spaces"],
 });
+
+/* Členství (prototyp): shoda, sledování změn a plán v detailu místa */
+KP.i18n.add({
+  "Údaje o vstupu, WC a parkování zůstávají zdarma.": ["Angaben zu Eingang, WC und Parken bleiben kostenlos.", "Information on entrances, toilets and parking stays free."],
+  "Zobrazit shodu": ["Übereinstimmung anzeigen", "Show match"],
+  "Sledovat změny": ["Änderungen verfolgen", "Follow changes"],
+  "Sledujete změny": ["Änderungen werden verfolgt", "Following changes"],
+  "Toto místo sledujete. Upozornění na změny jsou součást členství PLUS.": ["Sie verfolgen diesen Ort. Hinweise auf Änderungen sind Teil der Mitgliedschaft PLUS.", "You follow this place. Change alerts are part of the PLUS membership."],
+  "Sledujete od {d}. Od té doby se údaje o přístupnosti nezměnily.": ["Verfolgt seit {d}. Seitdem haben sich die Angaben zur Barrierefreiheit nicht geändert.", "Following since {d}. The accessibility data has not changed since then."],
+  "Změny od {d}": ["Änderungen seit {d}", "Changes since {d}"],
+  "Přidat do plánu": ["Zum Plan hinzufügen", "Add to plan"],
+  "Naplánovat výlet do okolí": ["Tagesausflug in die Umgebung planen", "Plan a day trip nearby"],
+  "Sledujete změny. Při další návštěvě uvidíte, co se změnilo.": ["Sie verfolgen Änderungen. Beim nächsten Besuch sehen Sie, was sich geändert hat.", "You are following changes. On your next visit you will see what has changed."],
+});

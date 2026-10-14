@@ -1,6 +1,8 @@
 /* Stránka Komunita: přehled funkcí prototypu, kolekce míst (sdílení odkazem v URL), náhled budoucího profilu,
    smazání komunitních dat, žádosti o informace a formulář zájmu. Vše jen v localStorage, nic se neodesílá.
-   Čísla na stránce jsou jen záznamy uživatele z tohoto prohlížeče. */
+   Čísla na stránce jsou jen záznamy uživatele z tohoto prohlížeče.
+   Členství (prototyp): vlastní seznamy a jejich sdílení patří do PLUS (KP.requireTier('customLists')). Prohlížení
+   sdílené kolekce, odebírání míst a mazání vlastních dat je zdarma vždy. Návrhy akcí jsou v kp.eventProposals (akce.js). */
 (function () {
   'use strict';
   const K = window.KP, C = K.community, $ = (s, r) => (r || document).querySelector(s);
@@ -101,32 +103,41 @@
       e.preventDefault();
       const name = $('#coll-name').value.trim();
       if (!name) { msg.textContent = t('Napište název kolekce.'); $('#coll-name').focus(); return; }
-      const c = C.saveCollection({ name: name.slice(0, 80), ids: [] });
-      if (!c) { msg.textContent = t('Kolekci se nepodařilo uložit. Úložiště prohlížeče je plné nebo vypnuté.'); return; }
-      OPEN.add(c.id); $('#coll-name').value = '';
-      msg.textContent = t('Kolekce „{name}“ vytvořena.', { name: c.name }) + ' ' + K.PROTOTYPE_NOTE;
-      renderCollections('[data-id="' + c.id + '"] summary');
+      K.requireTier('customLists', () => {
+        const c = C.saveCollection({ name: name.slice(0, 80), ids: [] });
+        if (!c) { msg.textContent = t('Kolekci se nepodařilo uložit. Úložiště prohlížeče je plné nebo vypnuté.'); return; }
+        OPEN.add(c.id); $('#coll-name').value = '';
+        msg.textContent = t('Kolekce „{name}“ vytvořena.', { name: c.name }) + ' ' + K.PROTOTYPE_NOTE;
+        renderCollections('[data-id="' + c.id + '"] summary');
+      });
     });
     const box = $('#coll-list');
     box.addEventListener('submit', e => {
       const f = e.target.closest('[data-add]'); if (!f) return;
       e.preventDefault();
-      const id = f.dataset.add, sel = $('select', f);
-      if (!sel.value) return;
-      if (!C.addToCollection(id, sel.value)) { msg.textContent = t('Místo se nepodařilo přidat. Úložiště prohlížeče je plné nebo vypnuté.'); return; }
-      OPEN.add(id); msg.textContent = t('Místo přidáno do kolekce.');
-      renderCollections('#add-' + id);
+      const id = f.dataset.add, val = $('select', f).value;
+      if (!val) return;
+      K.requireTier('customLists', () => {
+        if (!C.addToCollection(id, val)) { msg.textContent = t('Místo se nepodařilo přidat. Úložiště prohlížeče je plné nebo vypnuté.'); return; }
+        OPEN.add(id); msg.textContent = t('Místo přidáno do kolekce.');
+        renderCollections('#add-' + id);
+      });
     });
     box.addEventListener('click', e => {
       const rm = e.target.closest('[data-rm]'), del = e.target.closest('[data-del]'), sh = e.target.closest('[data-share]');
       if (rm) { C.removeFromCollection(rm.dataset.coll, rm.dataset.rm); OPEN.add(rm.dataset.coll); msg.textContent = t('Místo odebráno z kolekce.'); renderCollections('[data-id="' + rm.dataset.coll + '"] summary'); }
       else if (del) confirmClick(del, t('Opravdu smazat? Klikněte znovu'), () => { C.deleteCollection(del.dataset.del); OPEN.delete(del.dataset.del); msg.textContent = t('Kolekce smazána.'); renderCollections(); $('#coll-name').focus(); });
       else if (sh) {
-        const c = C.collections().find(x => x.id === sh.dataset.share); if (!c) return;
-        const url = shareUrl(c), wrap = sh.closest('.ko-coll-b').querySelector('.ko-share'), inp = $('input', wrap);
-        wrap.hidden = false; inp.value = url; inp.select();
-        if (navigator.share) { navigator.share({ title: c.name, url }).catch(() => {}); return; }
-        (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(() => K.toast(t('Odkaz zkopírován.'))).catch(() => K.toast(t('Odkaz zkopírujte z políčka pod kolekcí.')));
+        const cid = sh.dataset.share;
+        K.requireTier('customLists', () => {
+          const c = C.collections().find(x => x.id === cid); if (!c) return;
+          // Po přepnutí úrovně se seznam překreslí, tlačítko proto hledáme znovu
+          const btn = box.querySelector('[data-share="' + CSS.escape(cid) + '"]'); if (!btn) return;
+          const url = shareUrl(c), wrap = btn.closest('.ko-coll-b').querySelector('.ko-share'), inp = $('input', wrap);
+          wrap.hidden = false; inp.value = url; inp.select();
+          if (navigator.share) { navigator.share({ title: c.name, url }).catch(() => {}); return; }
+          (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(() => K.toast(t('Odkaz zkopírován.'))).catch(() => K.toast(t('Odkaz zkopírujte z políčka pod kolekcí.')));
+        });
       }
     });
   }
@@ -143,12 +154,13 @@
     box.innerHTML = '<h3 class="ko-shared-n">' + esc(s.name) + '</h3><p class="small muted">' + plural(s.pairs.length, 'místo', 'místa', 'míst') + '</p>' +
       '<ul class="rule-list ko-places">' + s.pairs.map(([i]) => placeRow(i)).join('') + '</ul>' +
       '<div class="row ko-coll-acts"><button class="btn btn-primary" type="button" id="shared-save"' + (found.length ? '' : ' disabled') + '>' + t('Uložit kolekci k sobě') + '</button><span class="small muted" id="shared-msg" role="status" aria-live="polite"></span></div>';
-    $('#shared-save').addEventListener('click', () => {
+    $('#shared-save').addEventListener('click', () => K.requireTier('customLists', () => {
       found.forEach(([i]) => K.rememberRegion(PLACES.get(i)));
       const c = C.saveCollection({ name: s.name, ids: found.map(([i]) => i) });
       $('#shared-msg').textContent = c ? t('Uloženo do Mých kolekcí.') + ' ' + K.PROTOTYPE_NOTE : t('Nepodařilo se uložit. Úložiště prohlížeče je plné nebo vypnuté.');
       if (c) { $('#shared-save').disabled = true; OPEN.add(c.id); renderCollections(); }
-    });
+    }));
+    $('#shared-save').insertAdjacentHTML('beforeend', ' ' + K.tierBadge('customLists', { onlyLocked: true }));
     sec.scrollIntoView({ block: 'start' });
   }
 
@@ -163,6 +175,7 @@
       routes: [C.routes().length, 'trasa', 'trasy', 'tras'],
       itineraries: [C.itineraries().length, 'itinerář', 'itineráře', 'itinerářů'],
       collections: [C.collections().length, 'ko.coll1', 'ko.coll2', 'ko.coll5'],
+      events: [(a => Array.isArray(a) ? a.length : 0)(K.store.get('eventProposals', [])), 'ko.ev1', 'ko.ev2', 'ko.ev5'],
     };
     document.querySelectorAll('[data-count]').forEach(el => {
       const x = n[el.dataset.count]; if (!x) return;
@@ -196,7 +209,7 @@
   }
 
   // ---------- Smazání komunitních dat (GDPR) ----------
-  const WIPE_KEYS = ['reviews', 'exp', 'confirm', 'reports', 'requests', 'routes', 'itineraries', 'collections', 'me', 'interest'];
+  const WIPE_KEYS = ['reviews', 'exp', 'confirm', 'reports', 'requests', 'routes', 'itineraries', 'collections', 'me', 'interest', 'eventProposals'];
   function bindWipe() {
     const btn = $('#wipe');
     btn.addEventListener('click', () => confirmClick(btn, t('Opravdu smazat vše? Klikněte znovu'), () => {
@@ -228,8 +241,19 @@
     });
   }
 
+  // ---------- Štítky členství (prototyp) ----------
+  function renderTier() {
+    document.querySelectorAll('[data-tier-badge]').forEach(el => { el.innerHTML = K.tierBadge(el.dataset.tierBadge); });
+    const has = K.hasTier('customLists');
+    document.querySelectorAll('.ko-tier-note').forEach(el => el.classList.toggle('is-on', has));
+    const b = $('#coll-form button[type="submit"]');
+    if (b) b.innerHTML = esc(t('Vytvořit kolekci')) + (has ? '' : ' ' + K.tierBadge('customLists'));
+  }
+
   function init() {
     $('#ko-note').textContent = K.PROTOTYPE_NOTE;
+    renderTier();
+    document.addEventListener('kp:tier', () => { renderTier(); renderCollections(); });
     renderCounts(); renderMock(); renderRequests();
     bindCollections(); bindNick(); bindWipe(); bindInterest();
     renderCollections();

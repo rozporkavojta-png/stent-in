@@ -213,3 +213,29 @@ KP.i18n.add({
   "Zaškrtněte souhlas s uložením v prohlížeči.": ["Bitte bestätigen Sie die Speicherung im Browser.", "Tick the box to agree to saving in the browser."],
   "Uloženo v tomto prohlížeči. Nic jsme neodeslali. Až spustíme seznam zájemců, oznámíme to na této stránce.": ["In diesem Browser gespeichert. Wir haben nichts gesendet. Sobald wir eine Interessentenliste starten, geben wir es auf dieser Seite bekannt.", "Saved in this browser. Nothing was sent. When we launch a sign-up list, we will announce it on this page."]
 });
+
+/* Doplněk: akce, průvodci a sdílené seznamy (nová vize, verze 1.1). */
+KP.i18n.add({
+  "Akce a průvodci": ["Veranstaltungen und Reiseführer", "Events and guides"],
+  "Návrhy akcí": ["Veranstaltungsvorschläge", "Event proposals"],
+  "Navrhněte setkání, workshop nebo výlet. Zatím se návrh uloží jen u vás.": ["Schlagen Sie ein Treffen, einen Workshop oder einen Ausflug vor. Vorerst wird der Vorschlag nur bei Ihnen gespeichert.", "Suggest a meetup, workshop or trip. For now the proposal is saved only on your device."],
+  "Navrhnout akci": ["Veranstaltung vorschlagen", "Suggest an event"],
+  "Třeba „Kavárny v Českém Krumlově, kam se vejdu“ nebo „Víkend v Pasově“. Místa do kolekce přidáváte z uložených míst.": ["Etwa „Cafés in Český Krumlov, in die ich hineinpasse“ oder „Wochenende in Passau“. Orte fügen Sie aus Ihren gespeicherten Orten hinzu.", "For example “Cafés in Český Krumlov I can get into” or “A weekend in Passau”. You add places to a collection from your saved places."],
+  "Vlastní seznamy a sdílené cestovní plány patří do členství PLUS. Sdílenou kolekci, kterou vám někdo pošle, si prohlédnete zdarma. Prototyp, nic se neplatí.": ["Eigene Listen und geteilte Reisepläne gehören zur Mitgliedschaft PLUS. Eine geteilte Sammlung, die Ihnen jemand schickt, sehen Sie kostenlos an. Prototyp, es wird nichts bezahlt.", "Custom lists and shared travel plans are part of PLUS membership. You can view a shared collection someone sends you for free. Prototype, nothing is paid."],
+  "Potkat se a vyrazit spolu": ["Sich treffen und gemeinsam losziehen", "Meet up and head out together"],
+  "Komunita nemusí zůstat jen na mapě. Chystáme setkání, workshopy a bezbariérové výlety po jižních Čechách a Bavorsku.": ["Die Community muss nicht auf der Karte bleiben. Wir planen Treffen, Workshops und barrierefreie Ausflüge durch Südböhmen und Bayern.", "The community does not have to stay on the map. We are planning meetups, workshops and step-free trips around South Bohemia and Bavaria."],
+  "Akce, workshopy a výlety": ["Veranstaltungen, Workshops und Ausflüge", "Events, workshops and trips"],
+  "Zatím nejsou naplánované žádné akce. Můžete navrhnout vlastní setkání. Akce od uživatelů vždy odlišíme od akcí, které pořádá platforma.": ["Noch sind keine Veranstaltungen geplant. Sie können ein eigenes Treffen vorschlagen. Veranstaltungen von Nutzern unterscheiden wir immer von denen der Plattform.", "No events are scheduled yet. You can suggest your own meetup. We always distinguish events by users from events run by the platform."],
+  "Otevřít akce": ["Veranstaltungen öffnen", "Open events"],
+  "Hotoví průvodci": ["Fertige Reiseführer", "Ready-made guides"],
+  "Výlety na jeden až tři dny sestavené jen ze skutečných míst. U každé zastávky je vidět, co víme a odkud.": ["Ausflüge für einen bis drei Tage, nur aus echten Orten. Bei jeder Station sehen Sie, was wir wissen und woher.", "Trips of one to three days built only from real places. Each stop shows what we know and where it comes from."],
+  "Otevřít průvodce": ["Reiseführer öffnen", "Open guides"],
+  "Sdílené seznamy a plány": ["Geteilte Listen und Pläne", "Shared lists and plans"],
+  "Kolekci míst nebo plán výletu pošlete odkazem kamarádům nebo asistentovi. Kdo odkaz otevře, uvidí stejná místa.": ["Eine Ortssammlung oder einen Ausflugsplan schicken Sie per Link an Freunde oder Ihre Assistenz. Wer den Link öffnet, sieht dieselben Orte.", "Send a collection of places or a trip plan by link to friends or your assistant. Whoever opens the link sees the same places."],
+  "Smaže z tohoto prohlížeče hodnocení, fotky, potvrzení, hlášení, žádosti, trasy, itineráře, kolekce, návrhy akcí a přezdívku. Uložená místa a profil přístupnosti zůstanou.": ["Löscht aus diesem Browser Bewertungen, Fotos, Bestätigungen, Meldungen, Anfragen, Routen, Reisepläne, Sammlungen, Veranstaltungsvorschläge und den Spitznamen. Gespeicherte Orte und das Barrierefreiheitsprofil bleiben.", "Deletes reviews, photos, confirmations, reports, requests, routes, itineraries, collections, event proposals and your nickname from this browser. Saved places and your accessibility profile stay."],
+  "ko.ev1": ["návrh akce", "Veranstaltungsvorschlag", "event proposal"],
+  "ko.ev2": ["návrhy akcí", "Veranstaltungsvorschläge", "event proposals"],
+  "ko.ev5": ["návrhů akcí", "Veranstaltungsvorschläge", "event proposals"],
+  // Titulek a popis stránky (V7)
+  "Komunita kudyprojedu.cz: hodnocení přístupnosti po oblastech, potvrzování údajů, fotky, hlášení změn, sdílené trasy, kolekce míst, akce a průvodci. Funkční prototyp, který ukládá jen ve vašem prohlížeči.": ["Die Community von kudyprojedu.cz: Bewertungen der Barrierefreiheit nach Gebieten, Bestätigung von Angaben, Fotos, Meldungen von Änderungen, geteilte Wege, Ortssammlungen, Veranstaltungen und Reiseführer. Ein funktionierender Prototyp, der nur in Ihrem Browser speichert.", "The kudyprojedu.cz community: accessibility ratings by area, confirming data, photos, change reports, shared routes, place collections, events and guides. A working prototype that saves only in your browser."],
+});

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plánovač dovolené · kudyprojedu.cz</title>
+<meta name="description" content="Vícedenní dovolená bez bariér v jižních Čechách a Bavorsku: ubytování s nejlepší shodou, program na každý den, doprava, nádraží a parkování ZTP. Sestaveno ze skutečných dat. Prototyp členství PREMIUM.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=16">
+<link rel="stylesheet" href="assets/css/stezky.css?v=2">
+<link rel="stylesheet" href="assets/css/planovac.css?v=2">
+</head>
+<body class="page-dovolena">
+<div id="site-header"></div>
+<main id="main">
+  <section class="wrap pl-head">
+    <p class="kicker"><span data-i18n>Plánovač vícedenní dovolené</span> <span id="dv-tier"></span></p>
+    <h1 data-i18n>Dovolená bez zbytečného stresu</h1>
+    <p class="lede" data-i18n>Zadejte oblast, termín a počet dní. Vybereme ubytování, které nejlépe sedí k vašim potřebám, a na každý den sestavíme program s přesuny, bezbariérovými WC a parkováním ZTP. U všeho uvidíte zdroj údajů a co nevíme.</p>
+    <p class="callout small pl-proto" id="dv-proto"></p>
+    <p class="small pl-links-top"><a href="planovac.html" data-i18n>Jednodenní výlet</a> · <a href="itinerar.html" data-i18n>Moje itineráře</a> · <a href="clenstvi.html" data-i18n>Členství FREE, PLUS a PREMIUM</a></p>
+  </section>
+
+  <div class="wrap pl-grid">
+    <form class="pl-form" id="dv-form" novalidate aria-labelledby="dv-form-h">
+      <h2 id="dv-form-h" class="st-h2" data-i18n>Zadání</h2>
+      <div class="field">
+        <label for="dv-area" data-i18n>Obec nebo oblast</label>
+        <input id="dv-area" type="text" list="dv-towns" autocomplete="off" maxlength="80">
+        <datalist id="dv-towns"></datalist>
+        <span class="hint" data-i18n>Výchozí je oblast Jižní Čechy a Bavorsko. Data máme pro celé Česko a Bavorsko.</span>
+        <div class="chip-row pl-sug" id="dv-sug" aria-label="Rychlá volba" data-i18n-attr="aria-label"></div>
+      </div>
+      <div class="pl-two">
+        <div class="field"><label for="dv-date" data-i18n>Příjezd</label><input id="dv-date" type="date" required></div>
+        <div class="field"><label for="dv-days" data-i18n>Počet dní</label><select id="dv-days"></select></div>
+      </div>
+      <fieldset class="pl-fs">
+        <legend data-i18n>Co vás baví</legend>
+        <div class="pl-chips" id="dv-int"></div>
+        <label class="check"><input type="checkbox" id="dv-lunch" checked> <span data-i18n>Oběd v restauraci s přístupným vstupem</span></label>
+      </fieldset>
+      <fieldset class="pl-fs">
+        <legend data-i18n>Doprava na místě</legend>
+        <div class="pl-chips" id="dv-mode"></div>
+      </fieldset>
+      <fieldset class="pl-fs">
+        <legend data-i18n>Tempo</legend>
+        <div class="pl-chips" id="dv-pace"></div>
+      </fieldset>
+      <div class="field">
+        <label for="dv-budget" data-i18n>Rozpočet</label>
+        <select id="dv-budget"></select>
+        <span class="hint" data-i18n>Orientační. Ceny ubytování ani vstupů neznáme, víme jen, kde OpenStreetMap uvádí vstup zdarma nebo placený.</span>
+      </div>
+      <fieldset class="pl-fs">
+        <legend data-i18n>Mobilita</legend>
+        <div id="dv-mob"></div>
+      </fieldset>
+      <button class="btn btn-primary btn-lg pl-go" type="submit" data-i18n>Navrhnout dovolenou</button>
+    </form>
+
+    <section class="pl-out" id="dv-out" aria-live="polite" aria-label="Návrh dovolené" data-i18n-attr="aria-label">
+      <div class="pl-status pl-intro">
+        <p class="kicker" data-i18n>Jak plán vzniká</p>
+        <p data-i18n>Nejdřív vybereme ubytování: přednost má shoda s vaším profilem potřeb, údaje z webu provozovatele a známé vybavení. Pak na každý den skládáme program z míst v dosahu ubytování tak, aby se místa neopakovala. K ubytování přidáme nejbližší nádraží s údaji o bezbariérovosti a parkování ZTP.</p>
+        <p class="small muted" data-i18n>Bez PREMIUM uvidíte náhled: ubytování a první den.</p>
+      </div>
+    </section>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js?v=2"></script>
+<script src="assets/js/i18n/core.js?v=3"></script>
+<script src="assets/js/i18n/xrows.js?v=1"></script>
+<script src="assets/js/i18n/stezky.js?v=1"></script>
+<script src="assets/js/i18n/itinerar.js?v=2"></script>
+<script src="assets/js/i18n/planovac.js?v=4"></script>
+<script src="assets/js/i18n/dovolena.js?v=2"></script>
+<script src="assets/js/config.js?v=12"></script>
+<script src="assets/js/core.js?v=16"></script>
+<script src="assets/js/map-engine.js?v=12"></script>
+<script src="assets/js/stezky.js?v=3"></script>
+<script src="assets/js/planovac.js?v=3"></script>
+<script src="assets/js/dovolena.js?v=1"></script>
+</body>
+</html>

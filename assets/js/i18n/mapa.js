@@ -91,3 +91,16 @@ KP.i18n.add({
   "Podklad: OpenStreetMap. U každého místa vede odkaz do Google Maps (navigace, Street View).": ["Kartengrundlage: OpenStreetMap. Jeder Ort hat einen Link zu Google Maps (Navigation, Street View).", "Base map: OpenStreetMap. Every place links to Google Maps (directions, Street View)."],
   "přispěvatelé OpenStreetMap": ["OpenStreetMap-Mitwirkende", "OpenStreetMap contributors"],
 });
+
+/* Členství (prototyp): pokročilé filtry a Accessibility Match na mapě */
+KP.i18n.add({
+  "Rozměry a vybavení": ["Maße und Ausstattung", "Dimensions and facilities"],
+  "Ukáže jen místa, kde údaj opravdu známe. Kde rozměr chybí, místo se skryje.": ["Zeigt nur Orte, bei denen die Angabe wirklich bekannt ist. Fehlt ein Maß, wird der Ort ausgeblendet.", "Shows only places where we really know the value. If a dimension is missing, the place is hidden."],
+  "Vstupní dveře alespoň": ["Eingangstür mindestens", "Entrance door at least"],
+  "bez požadavku": ["keine Anforderung", "no requirement"],
+  "Výtah nebo plošina, případně jen jedno podlaží": ["Aufzug oder Plattformlift, oder nur ein Geschoss", "Lift or platform lift, or a single floor only"],
+  "Sprcha v úrovni podlahy": ["Bodengleiche Dusche", "Level-access shower"],
+  "Madla u WC nebo v koupelně": ["Haltegriffe am WC oder im Bad", "Grab bars at the toilet or in the bathroom"],
+  "Shoda s mými potřebami": ["Übereinstimmung mit meinen Bedürfnissen", "Match with my needs"],
+  "Accessibility Match je součást členství PLUS. Údaje o vstupu, WC a parkování zůstávají zdarma.": ["Accessibility Match ist Teil der Mitgliedschaft PLUS. Angaben zu Eingang, WC und Parken bleiben kostenlos.", "Accessibility Match is part of the PLUS membership. Information on entrances, toilets and parking stays free."],
+});

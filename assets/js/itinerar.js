@@ -1,14 +1,17 @@
 /* Itinerář: řetěz míst a tras (hotel → restaurace → muzeum → park). PROTOTYP bez serveru:
-   rozpracovaný itinerář je v kp.itDraft, uložené v kp.itineraries (KP.community), otevřený v kp.itCurrent.
-   Sdílení bez serveru: itinerar.html#it=<base64 JSON {n, s:[[id, region, poznámka]]}>.
+   rozpracovaný itinerář je v kp.itDraft, uložené v kp.itineraries, otevřený v kp.itCurrent.
+   Formát, ukládání, limit FREE a sdílení jsou společné s plánovači (window.KPPlan z planovac.js):
+   { id, name, kind: 'manual'|'day'|'trip', meta, stops: [{ i, r, n, note, t, dur, day }] }.
+   Sdílení bez serveru: itinerar.html#it=<base64 JSON> (KPPlan.encode/decode, čte i starší odkazy).
    Přidání z jiných stránek: itinerar.html?add=<id místa>&r=<region> nebo itinerar.html?trasa=<id trasy>.
    Zastávka-trasa má id „t:<id trasy>“. */
 (function () {
   'use strict';
-  const K = window.KP, T = window.KPTrails, C = K.community, esc = K.esc, fmt = K.fmt;
+  const K = window.KP, T = window.KPTrails, PL = window.KPPlan, esc = K.esc, fmt = K.fmt;
   const $ = (s, r) => (r || document).querySelector(s);
-  const DRAFT = 'itDraft', CURID = 'itCurrent', MAX_STOPS = 25;
-  const empty = () => ({ id: null, name: '', note: '', stops: [] });
+  const DRAFT = 'itDraft', CURID = 'itCurrent', MAX_STOPS = PL.MAX_STOPS;
+  const empty = () => ({ id: null, name: '', note: '', kind: 'manual', meta: {}, stops: [] });
+  const C = { itineraries: () => PL.all(), deleteItinerary: (id) => PL.remove(id) };
   let cur = empty(), shared = null, map = null, layers = [], TOWNS = [];
   const RES = new Map();
 
@@ -16,13 +19,12 @@
   function clone(o) { return JSON.parse(JSON.stringify(o)); }
   function loadCurrent() {
     const id = K.store.get(CURID, null), it = id ? C.itineraries().find(x => x.id === id) : null;
-    if (it) cur = Object.assign(empty(), clone(it));
-    else { cur = Object.assign(empty(), K.store.get(DRAFT, {}) || {}); cur.id = null; }
-    cur.stops = (cur.stops || []).filter(s => s && s.i).slice(0, MAX_STOPS);
+    if (it) cur = Object.assign(empty(), PL.norm(clone(it)), { id: it.id, date: it.date });
+    else { cur = Object.assign(empty(), PL.norm(K.store.get(DRAFT, {}) || {})); cur.id = null; }
   }
   function persist() {
     if (shared) return; // sdílený itinerář se ukládá až tlačítkem
-    if (cur.id) { if (!C.saveItinerary(cur)) K.toast(KP.t('Úložiště prohlížeče je plné.')); }
+    if (cur.id) { if (!PL.save(cur)) K.toast(KP.t('Úložiště prohlížeče je plné.')); }
     else if (!K.store.set(DRAFT, cur)) K.toast(KP.t('Úložiště prohlížeče je plné.'));
   }
 
@@ -56,7 +58,8 @@
 
   function addStop(s, quiet) {
     if (cur.stops.length >= MAX_STOPS) { K.toast(K.t('Itinerář má nejvýš {n} zastávek.', { n: MAX_STOPS })); return false; }
-    cur.stops.push({ i: s.i, r: s.r || '', n: s.n || '', note: '' });
+    const last = cur.stops[cur.stops.length - 1];
+    cur.stops.push({ i: s.i, r: s.r || '', n: s.n || '', note: '', t: '', dur: 0, day: last ? last.day || 0 : 0 });
     persist(); render();
     if (!quiet) K.toast(K.t('Přidáno do itineráře') + ': ' + (s.n || K.t('zastávka')));
     return true;
@@ -106,8 +109,18 @@
     if (!list.length) {
       box.innerHTML = ('<li class="it-empty"><p><b>' + KP.t('Itinerář je prázdný.') + '</b> ' + KP.t('Přidejte první zastávku níže, například hotel, ve kterém bydlíte. Pak restauraci, muzeum nebo bezbariérovou trasu.') + '</p></li>');
     } else {
+      const multi = cur.kind === 'trip' || list.some(({ s }) => s.day > 0);
+      const d0 = PL.parseIso(cur.meta && cur.meta.date);
+      const dayHead = (d) => {
+        let lbl = K.t('Den {n}', { n: d + 1 });
+        if (d0) { const x = new Date(d0); x.setDate(x.getDate() + d); lbl += ' · ' + PL.weekday(x); }
+        return '<li class="it-day"><h3>' + esc(lbl) + '</h3></li>';
+      };
       box.innerHTML = list.map(({ s, v }, i) => {
         const last = i === list.length - 1;
+        const nextDay = !last && multi && list[i + 1].s.day !== s.day;
+        const dh = multi && (i === 0 || list[i - 1].s.day !== s.day) ? dayHead(s.day || 0) : '';
+        const tm = s.t ? '<span class="it-time num">' + esc(s.t) + '</span> ' + (s.dur ? '<span class="small muted">' + s.dur + ' min</span>' : '') : '';
         let head = '', st = '', link = '#';
         if (v.kind === 'place') {
           const p = v.p, w = K.W[p.w || 'null'];
@@ -127,7 +140,7 @@
         const mt = r ? K.statusHtml(r.status, (r.pct === null ? K.t('Chybí údaje') : K.t('{pct} % shoda', { pct: r.pct })) + ', ' + K.t('známe {k} z {n}', { k: r.known, n: r.total })) : '';
         const name = label(v, s);
         let leg = '';
-        if (!last) {
+        if (!last && !nextDay) {
           const e1 = ends(v), v2 = list[i + 1].v, e2 = ends(v2);
           if (e1 && e2) {
             const d = K.distanceKm({ la: e1.b[0], lo: e1.b[1] }, { la: e2.a[0], lo: e2.a[1] }) * 1000;
@@ -141,7 +154,7 @@
               '</div></div></li>';
           }
         }
-        return '<li class="it-stop"><span class="it-no num" aria-hidden="true">' + (i + 1) + '</span><div class="it-stop-b">' + head +
+        return dh + '<li class="it-stop"><span class="it-no num" aria-hidden="true">' + (i + 1) + '</span><div class="it-stop-b">' + (tm ? '<p class="it-kind">' + tm + '</p>' : '') + head +
           '<h3><span class="sr-only">' + K.t('Zastávka') + ' ' + (i + 1) + ': </span>' + (v.kind === 'missing' ? esc(name) : '<a href="' + link + '">' + esc(name) + '</a>') + '</h3>' +
           '<p class="it-stop-st">' + st + (mt ? ' ' + mt : '') + '</p>' +
           '<div class="field it-note"><label class="sr-only" for="note-' + i + ('">' + KP.t('Poznámka k zastávce') + ' ') + (i + 1) + '</label><input type="text" id="note-' + i + '" data-note="' + i + ('" maxlength="200" placeholder="' + KP.t('Poznámka, třeba čas nebo rezervace') + '" value="') + esc(s.note || '') + '"></div>' +
@@ -153,6 +166,10 @@
       }).join('');
     }
     $('#it-score').innerHTML = scoreBlock(list);
+    const m = cur.meta || {};
+    $('#it-kind').innerHTML = cur.kind && cur.kind !== 'manual'
+      ? '<span class="badge">' + esc(PL.kindLabel(cur)) + '</span> ' + esc([m.area, m.date ? K.fmtDate(m.date) : ''].filter(Boolean).join(' · ')) + ' <span class="small muted">' + K.t('Časy jsou odhad z plánovače.') + '</span>'
+      : '';
     // celý plán v Google Maps (nejvýš 9 průjezdních bodů)
     const pts = [];
     list.forEach(({ v }) => { const e = ends(v); if (!e) return; pts.push(e.a); if (e.b !== e.a) pts.push(e.b); });
@@ -185,10 +202,14 @@
 
   function renderList() {
     const its = C.itineraries().slice().sort((a, b) => String(b.date).localeCompare(String(a.date)));
-    $('#it-list').innerHTML = its.length ? its.map(it => '<li' + (it.id === cur.id && !shared ? ' class="is-current"' : '') + '><span><b>' + esc(it.name || KP.t('Bez názvu')) + '</b><br><span class="small muted">' + pl((it.stops || []).length) + ' · ' + K.fmtDate(it.date) + (it.id === cur.id && !shared ? ' · ' + K.t('otevřený') : '') + '</span></span>' +
+    $('#it-list').innerHTML = its.length ? its.map(it => '<li' + (it.id === cur.id && !shared ? ' class="is-current"' : '') + '><span><b>' + esc(it.name || KP.t('Bez názvu')) + '</b><br><span class="small muted">' + esc(PL.kindLabel(it)) + ' · ' + pl((it.stops || []).length) + ' · ' + K.fmtDate(it.date) + (it.id === cur.id && !shared ? ' · ' + K.t('otevřený') : '') + '</span></span>' +
       '<span class="it-btns">' + (it.id === cur.id && !shared ? '' : '<button class="btn btn-ghost btn-sm" type="button" data-open="' + esc(it.id) + ('">' + KP.t('Otevřít') + '</button>')) +
       '<button class="btn btn-quiet btn-sm" type="button" data-remove="' + esc(it.id) + ('">' + KP.t('Smazat') + '</button></span></li>')).join('')
       : ('<li><span class="muted">' + KP.t('Zatím žádný uložený itinerář. Rozpracovaný plán se ale v tomto prohlížeči drží i bez uložení.') + '</span></li>');
+    const lim = PL.limit();
+    $('#it-limit').innerHTML = lim === Infinity
+      ? K.t('Ukládáte bez omezení') + ' ' + K.tierTag(K.tier())
+      : K.t('Ve FREE si uložíte {n} itinerář. Uloženo {k} z {n}.', { n: lim, k: its.length }) + ' ' + K.t('PLUS ukládá bez omezení.');
   }
 
   // ---------- Přidávání ----------
@@ -235,17 +256,8 @@
   }
 
   // ---------- Sdílení odkazem ----------
-  function encode(it) { const o = { n: it.name || '', s: it.stops.map(s => [s.i, s.r || '', s.note || '']) }; return btoa(unescape(encodeURIComponent(JSON.stringify(o)))); }
-  function decode(h) {
-    try {
-      const m = String(h || '').match(/(?:^|[#&])it=([^&]+)/); if (!m) return null;
-      const o = JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(m[1])))));
-      const stops = (Array.isArray(o.s) ? o.s : []).filter(x => Array.isArray(x) && typeof x[0] === 'string' && x[0].length < 80)
-        .slice(0, MAX_STOPS).map(x => ({ i: x[0], r: String(x[1] || '').slice(0, 60), n: '', note: String(x[2] || '').slice(0, 200) }));
-      return { id: null, name: String(o.n || KP.t('Sdílený itinerář')).slice(0, 80), note: '', stops };
-    } catch (e) { return null; }
-  }
-  function shareUrl() { return location.href.replace(/[?#].*$/, '') + '#it=' + encodeURIComponent(encode(cur)); }
+  const decode = (h) => { const it = PL.decode(h); if (it) it.name = it.name || KP.t('Sdílený itinerář'); return it; };
+  function shareUrl() { return PL.shareUrl(cur); }
   async function doShare() {
     if (!cur.stops.length) { K.toast(KP.t('Itinerář je prázdný.')); return; }
     const url = shareUrl();
@@ -261,23 +273,30 @@
     b.innerHTML = '<p><b>' + K.t('Díváte se na itinerář z odkazu') + '</b> (' + K.t('„{n}“', { n: esc(shared.name) }) + ', ' + pl(shared.stops.length) + '). ' + K.t('Kdo ho sestavil, nevíme. Úpravy se uloží, až si ho uložíte k sobě.') + '</p>' +
       ('<div class="row"><button class="btn btn-primary" type="button" id="it-keep">' + KP.t('Uložit k sobě') + '</button><button class="btn btn-ghost" type="button" id="it-back">' + KP.t('Zpět na můj itinerář') + '</button></div>');
     $('#it-keep').addEventListener('click', () => {
-      const s = C.saveItinerary(Object.assign({}, cur, { id: null }));
-      if (!s) { K.toast(KP.t('Úložiště prohlížeče je plné.')); return; }
-      shared = null; cur = Object.assign(empty(), clone(s)); K.store.set(CURID, s.id);
-      history.replaceState(null, '', location.pathname); showSharedBanner(); render(); K.toast(KP.t('Itinerář uložen v tomto prohlížeči.'));
+      PL.saveGuarded(Object.assign({}, cur, { id: null }), s => {
+        shared = null; cur = Object.assign(empty(), clone(s)); K.store.set(CURID, s.id);
+        history.replaceState(null, '', location.pathname); showSharedBanner(); render(); K.toast(KP.t('Itinerář uložen v tomto prohlížeči.'));
+      });
     });
     $('#it-back').addEventListener('click', () => { shared = null; history.replaceState(null, '', location.pathname); loadCurrent(); showSharedBanner(); render(); });
   }
 
   // ---------- Události ----------
+  // Prohození zastávek: den a čas zůstávají na pozici (časový slot), mění se jen místo
+  function swap(s, a, b) {
+    const keep = (x) => ({ t: x.t, dur: x.dur, day: x.day });
+    const ka = keep(s[a]), kb = keep(s[b]);
+    [s[a], s[b]] = [s[b], s[a]];
+    Object.assign(s[a], ka); Object.assign(s[b], kb);
+  }
   function bind() {
     $('#it-name').addEventListener('input', () => { cur.name = $('#it-name').value.slice(0, 80); persist(); renderList(); });
     $('#it-stops').addEventListener('change', e => { const i = e.target.dataset.note; if (i === undefined) return; cur.stops[+i].note = e.target.value.slice(0, 200); persist(); });
     $('#it-stops').addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;
       const s = cur.stops;
-      if (b.dataset.up !== undefined) { const i = +b.dataset.up; if (i > 0) { [s[i - 1], s[i]] = [s[i], s[i - 1]]; persist(); render().then(() => { const x = document.querySelector('[data-up="' + (i - 1) + '"]'); (x && !x.disabled ? x : document.querySelector('[data-down="' + (i - 1) + '"]')).focus(); }); } }
-      else if (b.dataset.down !== undefined) { const i = +b.dataset.down; if (i < s.length - 1) { [s[i + 1], s[i]] = [s[i], s[i + 1]]; persist(); render().then(() => { const x = document.querySelector('[data-down="' + (i + 1) + '"]'); (x && !x.disabled ? x : document.querySelector('[data-up="' + (i + 1) + '"]')).focus(); }); } }
+      if (b.dataset.up !== undefined) { const i = +b.dataset.up; if (i > 0) { swap(s, i - 1, i); persist(); render().then(() => { const x = document.querySelector('[data-up="' + (i - 1) + '"]'); (x && !x.disabled ? x : document.querySelector('[data-down="' + (i - 1) + '"]')).focus(); }); } }
+      else if (b.dataset.down !== undefined) { const i = +b.dataset.down; if (i < s.length - 1) { swap(s, i + 1, i); persist(); render().then(() => { const x = document.querySelector('[data-down="' + (i + 1) + '"]'); (x && !x.disabled ? x : document.querySelector('[data-up="' + (i + 1) + '"]')).focus(); }); } }
       else if (b.dataset.del !== undefined) { const gone = s.splice(+b.dataset.del, 1)[0]; persist(); render(); K.toast(K.t('Odebráno') + ': ' + (gone.n || K.t('zastávka'))); }
     });
     document.querySelector('.it-add').addEventListener('click', e => {
@@ -297,11 +316,11 @@
     });
     $('#it-save').addEventListener('click', () => {
       if (!cur.stops.length) { K.toast(KP.t('Nejdřív přidejte aspoň jednu zastávku.')); return; }
-      const s = C.saveItinerary(Object.assign({}, cur, { name: cur.name || KP.t('Můj itinerář'), id: shared ? null : cur.id }));
-      if (!s) { K.toast(KP.t('Úložiště prohlížeče je plné.')); return; }
-      if (shared) { shared = null; history.replaceState(null, '', location.pathname); showSharedBanner(); }
-      cur = Object.assign(empty(), clone(s)); K.store.set(CURID, s.id); K.store.set(DRAFT, empty());
-      render(); K.toast(KP.t('Itinerář uložen v tomto prohlížeči.'));
+      PL.saveGuarded(Object.assign({}, cur, { name: cur.name || KP.t('Můj itinerář'), id: shared ? null : cur.id }), s => {
+        if (shared) { shared = null; history.replaceState(null, '', location.pathname); showSharedBanner(); }
+        cur = Object.assign(empty(), clone(s)); K.store.set(CURID, s.id); K.store.set(DRAFT, empty());
+        render(); K.toast(KP.t('Itinerář uložen v tomto prohlížeči.'));
+      });
     });
     $('#it-share').addEventListener('click', doShare);
     $('#it-new').addEventListener('click', () => {
@@ -314,7 +333,7 @@
       if (b.dataset.open) {
         const it = C.itineraries().find(x => x.id === b.dataset.open); if (!it) return;
         if (shared) { shared = null; history.replaceState(null, '', location.pathname); showSharedBanner(); }
-        cur = Object.assign(empty(), clone(it)); K.store.set(CURID, it.id); $('#it-sharebox').innerHTML = ''; render();
+        cur = Object.assign(empty(), PL.norm(clone(it)), { id: it.id, date: it.date }); K.store.set(CURID, it.id); $('#it-sharebox').innerHTML = ''; render();
         window.scrollTo({ top: $('.it-grid').offsetTop - 70, behavior: 'smooth' });
       } else if (b.dataset.remove) {
         const it = C.itineraries().find(x => x.id === b.dataset.remove);
@@ -325,6 +344,11 @@
     });
     document.addEventListener('click', e => { if (e.target.closest('[data-needs]')) K.needsDrawer(); });
     document.addEventListener('kp:needs', () => render());
+    document.addEventListener('kp:tier', () => renderList());
+    $('#it-pdf').addEventListener('click', () => {
+      if (!cur.stops.length) { K.toast(KP.t('Itinerář je prázdný.')); return; }
+      K.requireTier('pdfExport', () => setTimeout(() => window.print(), 50));
+    });
   }
 
   // ---------- Start ----------
@@ -332,7 +356,7 @@
     $('#it-proto').textContent = K.PROTOTYPE_NOTE + (' ' + KP.t('Sdílet jde i teď: odkaz nese celý itinerář v sobě.'));
     loadCurrent();
     const sh = decode(location.hash);
-    if (sh) { shared = sh; cur = clone(sh); }
+    if (sh) { shared = sh; cur = Object.assign(empty(), clone(sh)); }
     const sp = new URLSearchParams(location.search), add = sp.get('add'), tr = sp.get('trasa');
     bind();
     if (!shared && (add || tr)) {

@@ -105,4 +105,14 @@ KP.i18n.add({
   "Mapu se nepodařilo načíst. Itinerář funguje dál.": ["Die Karte konnte nicht geladen werden. Der Reiseplan funktioniert weiter.", "The map could not be loaded. The itinerary still works."],
   "MHD": ["ÖPNV", "Public transport"],
   "„{n}“": ["„{n}“", "“{n}”"],
+  // Plánovače a jednotný itinerář (V3)
+  "Den {n}": ["Tag {n}", "Day {n}"],
+  "Časy jsou odhad z plánovače.": ["Die Zeiten sind Schätzungen des Planers.", "Times are the planner's estimates."],
+  "Ukládáte bez omezení": ["Sie speichern ohne Begrenzung", "You can save without limits"],
+  "Ve FREE si uložíte {n} itinerář. Uloženo {k} z {n}.": ["In FREE speichern Sie {n} Reiseplan. Gespeichert: {k} von {n}.", "In FREE you can save {n} itinerary. Saved: {k} of {n}."],
+  "PLUS ukládá bez omezení.": ["PLUS speichert ohne Begrenzung.", "PLUS saves without limits."],
+  "Navrhnout jednodenní výlet": ["Tagesausflug vorschlagen lassen", "Suggest a day trip"],
+  "Navrhnout vícedenní dovolenou": ["Mehrtägigen Urlaub vorschlagen lassen", "Suggest a multi-day holiday"],
+  "Export do PDF": ["Als PDF exportieren", "Export to PDF"],
+  "Členství FREE, PLUS a PREMIUM": ["Mitgliedschaft FREE, PLUS und PREMIUM", "FREE, PLUS and PREMIUM membership"],
 });

@@ -10,8 +10,14 @@
   const state = {
     q: '', cats: new Set(), w: new Set(DEFAULT_W), wc: false, pk: false, desc: false, chk: false, img: false, ek: false, hx: false, hr: false,
     kraj: '', zeme: '', needsOnly: false, inView: true, sort: 'complete', shown: PAGE, active: null,
+    door: '', lift: false, shower: false, bars: false,
   };
-  const CHECKS = [['#f-wc', 'wc'], ['#f-pk', 'pk'], ['#f-desc', 'desc'], ['#f-chk', 'chk'], ['#f-img', 'img'], ['#f-ek', 'ek'], ['#f-hx', 'hx'], ['#f-hr', 'hr'], ['#f-needs', 'needsOnly']];
+  const CHECKS = [['#f-wc', 'wc'], ['#f-pk', 'pk'], ['#f-desc', 'desc'], ['#f-chk', 'chk'], ['#f-img', 'img'], ['#f-ek', 'ek'], ['#f-hx', 'hx'], ['#f-hr', 'hr'], ['#f-needs', 'needsOnly'],
+    ['#f-lift', 'lift'], ['#f-shower', 'shower'], ['#f-bars', 'bars']];
+  // Členství (prototyp): pokročilé filtry podle rozměrů a vybavení a filtr „jen vyhovující“ patří do PLUS.
+  // Základní filtry přístupnosti (vstup, WC, parkování, zdroje) zůstávají zdarma.
+  const ADV = ['hx', 'lift', 'shower', 'bars'];
+  const TIER_OF = { hx: 'advancedFilters', lift: 'advancedFilters', shower: 'advancedFilters', bars: 'advancedFilters', door: 'advancedFilters', needsOnly: 'match' };
   const mqDesk = matchMedia('(min-width: 900px)');
   let ALL = [], map = null, bounds = null, filtered = [], CAT_COUNTS = {}, W_COUNTS = {}, IDX = [], overview = false, loadingIds = null, TOWNS = [];
   const LOADED = {}; // id regionu → pole míst
@@ -27,6 +33,7 @@
     if (h && K.CATS[h]) state.cats.add(h);
     if (sp.get('wc') === '1') state.wc = true;
     if (sp.get('namereno') === '1') state.hx = true;
+    if (['70', '80', '90'].includes(sp.get('dvere'))) state.door = sp.get('dvere');
     if (sp.get('provozovatel') === '1') state.hr = true;
     if (sp.get('potreby') === '1') state.needsOnly = true;
     if (K.ZEME[sp.get('zeme')]) state.zeme = sp.get('zeme');
@@ -48,9 +55,22 @@
 
   function norm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
 
+  // Pokročilé filtry: jen údaje, které opravdu známe (KP.facts); neznámý údaj = místo filtru nevyhovuje
+  const isYes = (c) => !!c && c.v === true;
+  function advOk(p) {
+    const fx = K.facts(p);
+    if (state.door) { const d = fx.m.dvereCm || fx.m.pruchodyCm; if (!d || d.v < Number(state.door)) return false; }
+    if (state.lift) { const c = fx.f.vytah; if (!c || !(c.v === true || c.v === 'na')) return false; }
+    if (state.shower && !isYes(fx.f.sprcha)) return false;
+    if (state.bars && !(isYes(fx.f.wcMadla) || isYes(fx.f.koupelnaMadla))) return false;
+    return true;
+  }
+
   function applyFilters() {
     const q = norm(state.q.trim());
     const needs = K.getNeeds();
+    const adv = K.hasTier('advancedFilters'), advOn = adv && !!(state.door || state.lift || state.shower || state.bars);
+    const needsOn = state.needsOnly && needs.active && K.hasTier('match');
     return ALL.filter(p => {
       if (state.cats.size && !state.cats.has(p.c)) return false;
       if (p.c !== 'parkovani' && !state.w.has(String(p.w || 'null'))) return false;
@@ -60,11 +80,12 @@
       if (state.chk && !p.cd) return false;
       if (state.img && !p.img) return false;
       if (state.ek && p.ek !== 'yes') return false;
-      if (state.hx && !hasX(p)) return false;
+      if (adv && state.hx && !hasX(p)) return false;
       if (state.hr && !hasR(p)) return false;
       if (state.kraj && p.k !== state.kraj) return false;
       if (state.zeme && K.zemeOf(p) !== state.zeme) return false;
-      if (state.needsOnly && needs.active && K.match(p, needs).status !== 'ok') return false;
+      if (needsOn && K.match(p, needs).status !== 'ok') return false;
+      if (advOn && !advOk(p)) return false;
       if (q && !(p._s || (p._s = norm(p.n + ' ' + p.o + ' ' + (p.a || '') + ' ' + p.s))).includes(q)) return false;
       return true;
     });
@@ -121,7 +142,7 @@
 
   function activeCount() {
     const wDefault = state.w.size === DEFAULT_W.length && DEFAULT_W.every(x => state.w.has(x));
-    const extra = state.desc + state.chk + state.img + state.ek + state.needsOnly;
+    const extra = state.desc + state.chk + state.img + state.ek + state.needsOnly + state.lift + state.shower + state.bars + (state.door ? 1 : 0);
     const all = (state.cats.size ? 1 : 0) + (wDefault ? 0 : 1) + state.wc + state.pk + state.hx + state.hr + (state.kraj ? 1 : 0) + (state.zeme ? 1 : 0) + extra;
     return { all, extra, wDefault };
   }
@@ -173,6 +194,7 @@
     CHECKS.forEach(([s, k]) => { $(s).checked = !!state[k]; });
     $('#f-kraj').value = state.kraj;
     $('#f-zeme').value = state.zeme;
+    $('#f-door').value = state.door;
     // popisky rozbalovacích čipů
     const wl = $('#lbl-w'), wc = wl.closest('.chip');
     if (state.w.size === 4) wl.textContent = KP.t('Přístupnost: vše');
@@ -208,11 +230,19 @@
       ('<button class="icon-btn" type="button" data-close aria-label="' + KP.t('Zavřít náhled') + '">') + K.icon('close') + '</button></header>' + photo +
       '<div class="states">' + statesHtml(p, true) + '</div>' +
       (p.d ? '<p class="desc">' + K.esc(p.d) + '</p>' : '') +
+      (m ? '' : pvNeedsCta()) +
       (m ? '<p class="match">' + K.statusHtml(m.status, (ms.pct === null ? '' : K.t('{pct} % shoda', { pct: ms.pct }) + ', ') + K.lc(K.STATUS_LABEL[m.status]) + ' (' + K.t('známe {k} z {n}', { k: ms.known, n: ms.total }) + ')') + (m.status !== 'ok' && m.fails.concat(m.unknown).length ? '<span class="muted">: ' + K.esc(m.fails.concat(m.unknown).join(', ')) + '</span>' : '') + '</p>' : '') +
       '<p class="meta">' + srcBadges(p) + (operator ? '' : K.sourceBadge('komunita')) + (p.u ? ('<span>' + KP.t('Upraveno') + ' ') + K.fmtDate(p.u) + '</span>' : '') + (p.cd ? ('<span>' + KP.t('Kontrola na místě') + ' ') + K.fmtDate(p.cd) + '</span>' : '') + '</p>' +
       '<div class="fill"><div class="tape-meter" style="--v:' + c + '" aria-hidden="true"></div><span>' + K.t('Vyplněno <b class="num">{pct} %</b> údajů', { pct: c }) + '</span></div>' +
       '<div class="actions"><a class="btn btn-primary" href="' + K.placeUrl(p) + ('">' + KP.t('Detail') + ' ') + K.icon('arrow') + '</a>' +
       '<a class="btn btn-ghost" href="' + K.gmaps.directions(p) + '" target="_blank" rel="noopener">' + K.icon('nav') + (KP.t('Navigovat') + '</a></div>');
+  }
+
+  // Náhled bez osobní shody: nabídka Accessibility Match (PLUS); základní údaje nad tím zůstávají zdarma
+  function pvNeedsCta() {
+    const locked = !K.hasTier('match');
+    return '<p class="pv-match-cta"><button class="btn btn-quiet btn-sm" type="button" data-pv-needs>' + K.icon('sliders') +
+      K.esc(locked ? KP.t('Shoda s mými potřebami') : KP.t('Nastavit potřeby')) + '</button>' + (locked ? K.tierBadge('match') : '') + '</p>';
   }
 
   function select(p, fromMap) {
@@ -223,6 +253,7 @@
     if (!p) { box.hidden = true; box.innerHTML = ''; if (map) map.focus(null); return; }
     box.hidden = false;
     box.innerHTML = previewHtml(p);
+    const pn = box.querySelector('[data-pv-needs]'); if (pn) pn.addEventListener('click', () => K.needsDrawer());
     box.querySelector('[data-close]').addEventListener('click', () => { const id = state.active; select(null); const r = id && document.querySelector('.res[data-id="' + CSS.escape(id) + '"]'); if (r && mqDesk.matches) r.focus(); });
     if (map) map.focus(p);
     if (mqDesk.matches) {
@@ -438,8 +469,34 @@
     } else if (filtered.length && filtered.length < 300) map.fitTo(filtered);
   }
 
+  // Zapnutí filtru; u funkce PLUS bez dané úrovně se otevře panel s vysvětlením (prototyp, nic se neplatí)
+  function setFilter(k, val) {
+    const after = () => { if (k === 'needsOnly' && state.needsOnly && !K.getNeeds().active) K.needsDrawer(); };
+    const feat = TIER_OF[k];
+    if (val && feat && !K.hasTier(feat)) {
+      syncControls();
+      K.requireTier(feat, () => { state[k] = val; update(); after(); });
+      return;
+    }
+    state[k] = val; update(); after();
+  }
+  // Štítky PLUS u zamčených filtrů; po přechodu na nižší úroveň se placené filtry vypnou
+  function tierUi() {
+    $$('[data-tier-badge]').forEach(el => { el.innerHTML = K.tierBadge(el.dataset.tierBadge, { onlyLocked: true }); });
+    const note = $('#needs-tier-note');
+    if (note) { const locked = !K.hasTier('match'); note.hidden = !locked; note.textContent = locked ? KP.t('Accessibility Match je součást členství PLUS. Údaje o vstupu, WC a parkování zůstávají zdarma.') : ''; }
+  }
+  function dropLocked() {
+    if (!K.hasTier('advancedFilters')) { ADV.forEach(k => { state[k] = false; }); state.door = ''; }
+    if (!K.hasTier('match')) state.needsOnly = false;
+  }
+  function onTier() {
+    dropLocked(); tierUi(); update();
+    if (state.active) select(K.placeById(state.active), true);
+  }
+
   function resetAll() {
-    Object.assign(state, { cats: new Set(), w: new Set(DEFAULT_W), wc: false, pk: false, desc: false, chk: false, img: false, ek: false, hx: false, hr: false, kraj: '', zeme: '', needsOnly: false, q: '' });
+    Object.assign(state, { cats: new Set(), w: new Set(DEFAULT_W), wc: false, pk: false, desc: false, chk: false, img: false, ek: false, hx: false, hr: false, kraj: '', zeme: '', needsOnly: false, q: '', door: '', lift: false, shower: false, bars: false });
     $('#q').value = ''; buildCounts(); update(); ensureData();
   }
 
@@ -453,7 +510,7 @@
     // čipy
     $('.chip-row.quick').addEventListener('click', e => {
       const tg = e.target.closest('[data-toggle]');
-      if (tg) { const k = tg.dataset.toggle; state[k] = !state[k]; update(); return; }
+      if (tg) { const k = tg.dataset.toggle; setFilter(k, !state[k]); return; }
       const pop = e.target.closest('[data-pop]');
       if (pop) { e.stopPropagation(); openPop(pop.dataset.pop, pop); }
     });
@@ -488,8 +545,9 @@
     $('#f-w').addEventListener('click', e => { const b = e.target.closest('[data-w]'); if (!b) return; const k = b.dataset.w; state.w.has(k) ? state.w.delete(k) : state.w.add(k); update(); });
     $('#f-cats').addEventListener('change', e => { const i = e.target; i.checked ? state.cats.add(i.value) : state.cats.delete(i.value); update(); });
     CHECKS.forEach(([s, k]) => {
-      $(s).addEventListener('change', () => { state[k] = $(s).checked; if (k === 'needsOnly' && state[k] && !K.getNeeds().active) K.needsDrawer(); update(); });
+      $(s).addEventListener('change', () => setFilter(k, $(s).checked));
     });
+    $('#f-door').addEventListener('change', () => setFilter('door', $('#f-door').value));
     $('#f-kraj').addEventListener('change', () => setKraj($('#f-kraj').value));
     $('#f-zeme').addEventListener('change', () => setZeme($('#f-zeme').value));
     $('#f-reset').addEventListener('click', resetAll);
@@ -505,6 +563,8 @@
     $('#results').addEventListener('dblclick', e => { const b = e.target.closest('.res[data-id]'); const p = b && K.placeById(b.dataset.id); if (p) location.href = K.placeUrl(p); });
     $('#locate').addEventListener('click', () => map && map.locate().catch(() => K.toast(KP.t('Polohu se nepodařilo zjistit. Povolte ji v prohlížeči.'))));
     document.addEventListener('kp:needs', () => { update(); if (state.active) select(K.placeById(state.active), true); });
+    document.addEventListener('kp:tier', onTier);
+    dropLocked(); tierUi();
     // Fotka z Commons se nenačetla: miniaturu i náhledovou fotku odebrat, rozvržení funguje i bez ní
     document.addEventListener('error', e => {
       const img = e.target; if (!(img instanceof HTMLImageElement)) return;

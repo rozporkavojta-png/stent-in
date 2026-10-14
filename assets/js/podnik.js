@@ -1,5 +1,6 @@
 /* Profil podniku: hledání, převzetí, checklist krok za krokem s fotkami, náhled veřejného profilu, motivace,
-   statistiky jen z tohoto prohlížeče a doporučení, co zlepšit. FUNKČNÍ PROTOTYP: vše jen v localStorage (KP.business). */
+   analytika jen z tohoto prohlížeče, doporučení, co zlepšit, a tarify Zdarma / Business.
+   FUNKČNÍ PROTOTYP: vše jen v localStorage (KP.business, tarif v kp.bizplan); nic se neplatí, platby ani účty neexistují. */
 (function () {
   'use strict';
   const K = window.KP, KC = window.KPCheck, B = K.business, C = K.community, esc = K.esc;
@@ -48,7 +49,8 @@
     const items = [
       ['prevzeti', KP.t('Převzetí'), c ? KP.t('hotovo') : KP.t('nezačato'), c ? 'ok' : 'unk'],
       ['checklist', KP.t('Checklist'), pr.pct + ' %', pr.complete ? 'ok' : pr.pct ? 'part' : 'unk'],
-      ['nahled', KP.t('Náhled profilu')], ['proc', KP.t('Proč vyplnit')], ['statistiky', KP.t('Statistiky')], ['zlepsit', KP.t('Co zlepšit')], ['sluzby', KP.t('Služby a ceník')],
+      ['nahled', KP.t('Náhled profilu')], ['proc', KP.t('Proč vyplnit')], ['statistiky', KP.t('Analytika')], ['zlepsit', KP.t('Co zlepšit')],
+      ['tarify', KP.t('Tarify'), isBiz() ? 'Business' : KP.t('Zdarma'), isBiz() ? 'ok' : 'unk'],
     ];
     $('#pd-nav').innerHTML = ('<p class="pd-nav-t">' + KP.t('Profil podniku') + '</p><ul>') + items.map(([id, l, s, st]) =>
       '<li><a href="#' + id + '"><span>' + l + '</span>' + (s ? '<small>' + K.statusHtml(st, s) + '</small>' : '') + '</a></li>').join('') + '</ul>';
@@ -253,7 +255,7 @@
     const ms = K.matchScore(p, needs), reqs = C.requests(p.i);
     const who = hasWc ? K.t('Návštěvník na mechanickém vozíku, který potřebuje bezbariérové WC,') : K.t('Návštěvník na mechanickém vozíku');
     $('#pd-why').innerHTML = '<ul class="rule-grid pd-why">' +
-      ('<li><h3>' + KP.t('Uvidí vás ti, kdo hledají') + '</h3><p>' + KP.t('Lidé si v mapě nastaví své potřeby a filtrují. Místo s vyplněnými údaji se jim ukáže jako „vyhovuje“, místo bez údajů jako „chybí údaje“.') + '</p>') +
+      ('<li><h3>' + KP.t('Uvidí vás ti, kdo hledají') + '</h3><p>' + KP.t('Základní údaje vidí každý zdarma. Hosté s členstvím PLUS si uloží své potřeby a Accessibility Match jim místo s vyplněnými údaji ukáže jako „vyhovuje“, místo bez údajů jako „chybí údaje“.') + '</p>') +
         '<p class="pd-live">' + who + ' ' + K.t('u vás teď uvidí') + ': ' + K.statusHtml(ms.status, K.STATUS_LABEL[ms.status]) + '<small>' + (ms.pct !== null ? K.t('{pct} % shoda', { pct: ms.pct }) + ', ' : '') + K.t('známe {k} z {n} údajů. Spočítáno z dat, která o místě máme.', { k: ms.known, n: ms.total }) + '</small></p></li>' +
       ('<li><h3>' + KP.t('Označení „Kompletní profil“') + '</h3><p>' + KP.t('Když vyplníte všechny údaje a fotky z checklistu, profil dostane označení, které návštěvník vidí hned ve výsledcích.') + '</p>') +
         '<p class="pd-live">' + (pr.complete ? K.statusHtml('ok', KP.t('Váš profil je kompletní')) : K.statusHtml('part', K.t('Chybí {n}', { n: plural(pr.missing.length, KP.t('položka'), KP.t('položky'), KP.t('položek')) }))) + '</p></li>' +
@@ -263,23 +265,94 @@
       '</ul>';
   }
 
-  // ---------- 5. Statistiky (jen tento prohlížeč) ----------
-  function renderStats() {
-    const p = state.p, st = B.stats(p.i), reqs = C.requests(p.i), reps = C.reports(p.i);
+  // ---------- Tarif podniku: Zdarma / Business (PROTOTYP: jen přepínač v tomto prohlížeči, nic se neplatí) ----------
+  const isBiz = () => K.store.get('bizplan', 'free') === 'business';
+  function setBiz(on) {
+    K.store.set('bizplan', on ? 'business' : 'free');
+    renderTiers();
+    if (state.p) { renderStats(); renderNav(); }
+    K.toast(on ? KP.t('Business zapnutý jen v tomto prohlížeči. Nic se neplatí.') : KP.t('Tarif vrácen na Zdarma.'));
+  }
+  const yes = () => '<span class="pd-yes">' + K.icon('check') + '<span>' + KP.t('ano') + '</span></span>';
+  const no = () => '<span class="pd-no"><i aria-hidden="true"></i><span>' + KP.t('ne') + '</span></span>';
+  function tierTag(biz) { return '<span class="pd-tier-tag' + (biz ? ' is-biz' : '') + '">' + (biz ? 'Business' : KP.t('Zdarma')) + '</span>'; }
+  function renderTiers() {
+    const box = $('#pd-tiers'); if (!box) return;
+    const biz = isBiz();
     const rows = [
-      [st.views, KP.t('Zobrazení detailu místa'), 'eye'], [st.impressions, KP.t('Výskyt ve výsledcích hledání a v mapě'), 'search'],
+      [KP.t('Převzetí profilu a checklist'), 1], [KP.t('Fotky vstupu, WC, parkování, pokoje a koupelny'), 1], [KP.t('Opravy a úpravy údajů kdykoli'), 1],
+      [KP.t('Žádosti o doplnění a hlášení změn od hostů'), 1], [KP.t('Stejné místo ve výsledcích a v Accessibility Match'), 1],
+      [KP.t('Delší popis česky, německy a anglicky'), 0], [KP.t('Kontakt pro dotazy k přístupnosti'), 0], [KP.t('Analytika: zobrazení a výskyt ve výsledcích'), 0],
+      [KP.t('Oblasti, o které se hosté zajímají'), 0], [KP.t('Export analytiky do CSV'), 0], [KP.t('QR štítek na dveře a odkaz pro web'), 0],
+    ];
+    box.innerHTML =
+      '<div class="pd-tier-now"><p>' + KP.t('Tarif v tomto prohlížeči') + ': ' + tierTag(biz) + '</p>' +
+        (biz ? '<button type="button" class="btn btn-ghost" data-biz="free">' + KP.t('Vrátit na Zdarma') + '</button>'
+          : '<button type="button" class="btn btn-primary" data-biz="business">' + KP.t('Vyzkoušet Business (prototyp, nic se neplatí)') + '</button>') + '</div>' +
+      '<p class="small pd-note">' + KP.t('Prototyp: platby ani účty zatím neexistují. Tarif se jen přepne v tomto prohlížeči, nic se neplatí.') + '</p>' +
+      '<div class="table-wrap"><table class="data pd-cmp"><caption class="sr-only">' + KP.t('Srovnání tarifů Zdarma a Business') + '</caption><thead><tr><th scope="col">' + KP.t('Co dostanete') + '</th>' +
+        '<th scope="col">' + KP.t('Zdarma') + '<br><small>0 €</small></th><th scope="col">Business<br><small>' + KP.t('12 € měsíčně (návrh ceny)') + '</small></th></tr></thead><tbody>' +
+        rows.map(([l, free]) => '<tr><th scope="row">' + l + '</th><td>' + (free ? yes() : no()) + '</td><td>' + yes() + '</td></tr>').join('') +
+      '</tbody></table></div>' +
+      '<p class="small">' + KP.t('Business nemění pořadí podle přístupnosti, skóre ani shodu s potřebami hosta.') + ' <a href="pro-firmy.html#zajem">' + KP.t('Mám zájem o Business') + '</a></p>' +
+      '<p class="small muted">' + KP.t('Ověření, školení, poradenství a propagaci lze objednat zvlášť, k tarifu Zdarma i Business. Ceny jsou návrh.') + '</p>';
+  }
+
+  // ---------- 5. Analytika (jen tento prohlížeč) ----------
+  // Oblasti zájmu: ze žádostí o informace (pole areas) a z hlášení změn (prvek → oblast)
+  function interestAreas(reqs, reps) {
+    const n = {}, FA = {}; K.FEATURES.forEach(f => { FA[f.k] = f.a; });
+    reqs.forEach(r => (r.areas || []).forEach(a => { n[a] = (n[a] || 0) + 1; }));
+    reps.forEach(r => { const a = FA[r.field]; if (a) n[a] = (n[a] || 0) + 1; });
+    return Object.keys(n).map(a => [a, n[a]]).sort((x, y) => y[1] - x[1]);
+  }
+  const FUTURE = [
+    'Zobrazení profilu a výskyt ve výsledcích ze všech návštěv, po týdnech.',
+    'Kolik hostů s nastaveným profilem potřeb u vás vidělo „vyhovuje“, „částečně“ nebo „chybí údaje“. Jen souhrnně, bez osobních údajů.',
+    'Které údaje hosté žádají nejčastěji a které oblasti je zajímají.',
+    'Úplnost vašeho profilu proti podobným místům v obci.',
+  ];
+  function renderStats() {
+    const p = state.p, st = B.stats(p.i), reqs = C.requests(p.i), reps = C.reports(p.i), biz = isBiz();
+    // Žádosti a hlášení jsou zdarma: slouží k opravám údajů, a ty nikdy nezávisí na platbě
+    const free = [
       [st.requests, KP.t('Žádosti o informace o přístupnosti'), 'message'], [st.reports, KP.t('Nahlášené změny'), 'flag'],
       [st.reviews, KP.t('Hodnocení a zkušenosti'), 'star'], [st.photos, KP.t('Fotky od návštěvníků'), 'camera'], [st.confirmations, KP.t('Potvrzené nebo zpochybněné údaje'), 'check'],
     ];
-    const any = rows.some(r => r[0] > 0);
+    const paid = [[st.views, KP.t('Zobrazení detailu místa'), 'eye'], [st.impressions, KP.t('Výskyt ve výsledcích hledání a v mapě'), 'search']];
+    const any = free.concat(paid).some(r => r[0] > 0);
     const FL = {}; K.FEATURES.forEach(f => { FL[f.k] = f.label; });
+    const row = ([n, l, ic], locked) => '<li class="pd-stat-row' + (locked ? ' is-locked' : '') + '">' + K.icon(ic) + '<span>' + l + '</span>' +
+      (locked ? '<span class="pd-lock">' + KP.t('součást Business') + '</span>' : '<b class="num">' + n + '</b>') + '</li>';
+    const ia = interestAreas(reqs, reps), iaMax = ia.length ? ia[0][1] : 1;
+    const iaHtml = ia.length ? '<ul class="pd-int">' + ia.map(([a, n]) => '<li><span>' + esc(K.AREAS[a] || a) + '</span><span class="rp-bar" aria-hidden="true"><i style="width:' + Math.round(n / iaMax * 100) + '%"></i></span><b>' + n + '</b></li>').join('') + '</ul>'
+      : '<p class="pd-empty">' + KP.t('Zatím nikdo nežádal o konkrétní oblast ani nenahlásil změnu.') + '</p>';
     $('#pd-stats').innerHTML =
       ('<p class="callout pd-stat-note"><b>' + KP.t('Jen tento prohlížeč.') + '</b> ' + KP.t('Počítáme jen to, co se stalo v tomto prohlížeči, třeba když jste si sami otevřeli detail místa nebo zadali žádost. Nejsou to skutečné návštěvy. V ostré verzi tu budou skutečné statistiky ze všech návštěv.') + '</p>') +
       (any ? '' : ('<p class="pd-empty">' + KP.t('Zatím žádná událost. Otevřete') + ' <a href="') + K.placeUrl(p) + ('">' + KP.t('detail místa') + '</a> ' + KP.t('nebo ho najděte v') + ' <a href="mapa.html">' + KP.t('mapě') + '</a> ' + KP.t('a čísla se tu změní.') + '</p>')) +
-      '<ul class="rule-list pd-stat-list">' + rows.map(([n, l, ic]) => '<li class="pd-stat-row">' + K.icon(ic) + '<span>' + l + '</span><b class="num">' + n + '</b></li>').join('') + '</ul>' +
+      '<p class="pd-stat-grp">' + KP.t('Zdarma pro každý profil') + '</p>' +
+      '<ul class="rule-list pd-stat-list">' + free.map(r => row(r, false)).join('') + '</ul>' +
+      '<p class="pd-stat-grp">' + KP.t('Analytika') + ' ' + tierTag(true) + '</p>' +
+      '<ul class="rule-list pd-stat-list">' + paid.map(r => row(r, !biz)).join('') + '</ul>' +
+      (biz ? ('<h3 class="pv-h">' + KP.t('Oblasti, o které se hosté zajímají') + '</h3><p class="small muted">' + KP.t('Ze žádostí o informace a z hlášení změn v tomto prohlížeči.') + '</p>') + iaHtml +
+          '<div class="row pd-csv-row"><button type="button" class="btn btn-ghost" data-stats-csv>' + KP.t('Stáhnout analytiku jako CSV') + '</button></div>'
+        : '<div class="pd-tier-now pd-stat-up"><p>' + KP.t('Zobrazení, výskyt ve výsledcích, oblasti zájmu a export jsou v tarifu Business. Žádosti a hlášení vidíte vždy zdarma, abyste mohli údaje opravit.') + '</p><button type="button" class="btn btn-primary" data-biz="business">' + KP.t('Vyzkoušet Business (prototyp, nic se neplatí)') + '</button></div>') +
       (st.first ? '<p class="small muted">' + K.t('První událost {a}, poslední {b}.', { a: K.fmtDate(st.first), b: K.fmtDate(st.last) }) + '</p>' : '') +
       (reqs.length ? ('<h3 class="pv-h">' + KP.t('Žádosti o informace') + '</h3><ul class="rule-list pd-req">') + reqs.map(r => '<li class="rule-row"><span class="num">' + K.fmtDate(r.date) + '</span><span>' + (r.areas && r.areas.length ? (KP.t('Zajímá') + ': ') + r.areas.map(a => K.AREAS[a] || a).join(', ') : KP.t('Bez upřesnění oblasti')) + (r.note ? '<small>' + esc(r.note) + '</small>' : '') + '</span></li>').join('') + '</ul>' : '') +
-      (reps.length ? ('<h3 class="pv-h">' + KP.t('Nahlášené změny') + '</h3><ul class="rule-list pd-req">') + reps.map(r => '<li class="rule-row"><span class="num">' + K.fmtDate(r.date) + '</span><span>' + (r.field ? '<b>' + esc(FL[r.field] || r.field) + ':</b> ' : '') + esc(r.text || '') + '</span></li>').join('') + '</ul>' : '');
+      (reps.length ? ('<h3 class="pv-h">' + KP.t('Nahlášené změny') + '</h3><ul class="rule-list pd-req">') + reps.map(r => '<li class="rule-row"><span class="num">' + K.fmtDate(r.date) + '</span><span>' + (r.field ? '<b>' + esc(FL[r.field] || r.field) + ':</b> ' : '') + esc(r.text || '') + '</span></li>').join('') + '</ul>' : '') +
+      ('<h3 class="pv-h">' + KP.t('Co analytika ukáže v ostré verzi') + '</h3><ul class="pd-future">') + FUTURE.map(x => '<li>' + KP.t(x) + '</li>').join('') + '</ul>';
+  }
+  function statsCsv() {
+    const p = state.p, st = B.stats(p.i), q = (v) => '"' + String(v).replace(/"/g, '""') + '"';
+    const rows = [[KP.t('Jen události z tohoto prohlížeče, ne skutečné návštěvy'), p.n], [KP.t('Údaj'), KP.t('Počet')],
+      [KP.t('Zobrazení detailu místa'), st.views], [KP.t('Výskyt ve výsledcích hledání a v mapě'), st.impressions],
+      [KP.t('Žádosti o informace o přístupnosti'), st.requests], [KP.t('Nahlášené změny'), st.reports], [KP.t('Hodnocení a zkušenosti'), st.reviews],
+      [KP.t('Fotky od návštěvníků'), st.photos], [KP.t('Potvrzené nebo zpochybněné údaje'), st.confirmations]]
+      .concat(interestAreas(C.requests(p.i), C.reports(p.i)).map(([a, n]) => [KP.t('Zájem o oblast') + ': ' + (K.AREAS[a] || a), n]));
+    const blob = new Blob(['﻿' + rows.map(r => r.map(q).join(';')).join('\r\n')], { type: 'text/csv;charset=utf-8' });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'analytika-' + p.i + '.csv';
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    K.toast(KP.t('Analytika uložena jako CSV. Jsou v ní jen události z tohoto prohlížeče.'));
   }
 
   // ---------- 6. Co zlepšit ----------
@@ -352,7 +425,7 @@
         if ((kr.organizace || []).length) html += ('<div class="pd-sup-block"><h4>' + KP.t('Kdo poradí') + '</h4><p class="small">' + KP.t('Organizace lidí s postižením ve vašem kraji. Mohou poradit s úpravou nebo zprostředkovat mapovače.') + '</p><ul class="pd-links">') + kr.organizace.map(link).join('') + '</ul></div>';
         if (d.checked_date) html += '<p class="small muted">' + K.t('Odkazy jsme zkontrolovali {d}.', { d: K.fmtDate(d.checked_date) }) + '</p>';
       } else if (d === false) html += ('<p class="small muted">' + KP.t('Přehled pro kraj se nepodařilo načíst.') + '</p>');
-      html += ('<p class="small">' + KP.t('Seznam dodavatelů ramp, madel a plošin zatím nemáme. Pomoc s výběrem úprav nabízíme jako službu') + ' <a href="#sluzby">' + KP.t('poradenství') + '</a> ' + KP.t('(návrh).') + '</p>');
+      html += ('<p class="small">' + KP.t('Seznam dodavatelů ramp, madel a plošin zatím nemáme. Pomoc s výběrem úprav nabízíme jako službu') + ' <a href="#tarify">' + KP.t('poradenství') + '</a> ' + KP.t('(návrh).') + '</p>');
     }
     box.innerHTML = html;
   }
@@ -385,6 +458,11 @@
       const gs = t.closest('[data-goto-step]');
       if (gs) { state.step = Number(gs.dataset.gotoStep); renderCheck(); renderNav(); goSection('checklist'); setTimeout(() => { const h = $('#pd-check .ck-h'); if (h) h.focus({ preventScroll: true }); }, 400); }
     });
+    document.addEventListener('click', e => {
+      const bz = e.target.closest('[data-biz]');
+      if (bz) { const inTiers = !!bz.closest('#pd-tiers'); setBiz(bz.dataset.biz === 'business'); const nb = $('#pd-tiers [data-biz]'); if (inTiers && nb) nb.focus(); return; }
+      if (e.target.closest('[data-stats-csv]') && state.p) statsCsv();
+    });
     $('#pd-mine').addEventListener('click', e => {
       const a = e.target.closest('[data-mine]'); if (!a) return;
       e.preventDefault();
@@ -392,12 +470,13 @@
       K.findPlace(id, c && c.place && c.place.r).then(p => { if (p) open(p); else K.toast(KP.t('Místo se nepodařilo načíst.')); }).catch(() => K.toast(KP.t('Místo se nepodařilo načíst.')));
     });
     // Data se mohla změnit v jiné záložce (detail místa, mapa)
-    addEventListener('storage', () => { if (state.p) { renderStats(); renderWhy(); renderNav(); renderMine(); } });
+    addEventListener('storage', () => { renderTiers(); if (state.p) { renderStats(); renderWhy(); renderNav(); renderMine(); } });
   }
 
   function init() {
     $$('[data-proto]').forEach(el => { el.textContent = K.PROTOTYPE_NOTE.replace(/^Prototyp:\s*/, '').replace(/^./, c => c.toUpperCase()); });
     bind();
+    renderTiers();
     renderMineOnly();
     state.search = KC.placeSearch({ input: $('#pd-q'), list: $('#pd-pick'), hint: $('#pd-q-hint'), onPick: open, selected: () => state.p && state.p.i,
       emptyText: KP.t('Nic jsme nenašli. Zkuste jiný tvar názvu nebo přidejte obec. Když podnik v mapě není, přidejte ho přes formulář Přidat místo.') });

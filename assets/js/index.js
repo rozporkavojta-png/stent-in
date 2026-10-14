@@ -6,24 +6,21 @@
   const t = (k, p) => K.t(k, p);
   const krajName = (k, z) => K.krajName(k, z);
 
-  // Místa s fotkou: skutečné záznamy z data/places.json (stav 5. 10. 2026), vybrané pevným pravidlem, ne náhodně:
-  // vstup přístupný (w=yes), fotka na Commons (img), známá obec a kraj; z každého z 8 krajů s nejvíce místy
-  // místo s nejvíce úpravami v OSM (v), každá kategorie nejvýš 2×, nádraží nejvýš 1×.
-  // Bavorsko stejným pravidlem: ze 4 vládních obvodů s nejvíce místy (stav 7. 10. 2026), kategorie nejvýš 2×, nádraží 1×.
+  // Místa s fotkou: skutečné záznamy z data/regions (stav 5. 10. 2026 Česko, 7. 10. 2026 Bavorsko), vybrané pevným
+  // pravidlem, ne náhodně: vstup přístupný (w=yes), fotka na Commons (img), známá obec; seřazeno podle počtu úprav
+  // v OSM (v), každá kategorie nejvýš 2×, nádraží nejvýš 1×. Počáteční zaměření platformy: 4 místa z Jihočeského kraje,
+  // 2 z Dolního Bavorska a 2 z Horní Falce (bavorské obvody u hranice s jižními Čechami). Z Dolního Bavorska je
+  // vynechaná Universität Passau, protože má v datech jako obec jen část města (Bergkeller).
   // Data se na úvodu kvůli fotkám nenačítají. Když stats.json začne nést pole „featured“, použije se to.
   const FEATURED = [
-    { i: 'w4053134', _r: 'cz-hlavni-mesto-praha', n: 'Karlův most', o: 'Praha', k: 'Hlavní město Praha', c: 'pamatky', img: 'File:Prague 07-2016 View from Petrinska Tower img2.jpg' },
-    { i: 'w98290906', _r: 'cz-moravskoslezsky', n: 'Forum Nová Karolina', o: 'Ostrava', k: 'Moravskoslezský', c: 'obchody', img: 'File:Nova Karolina 2012.jpg' },
-    { i: 'w29239083', _r: 'cz-jihomoravsky', n: 'Vaňkovka', o: 'Brno', k: 'Jihomoravský', c: 'obchody', img: 'File:Brno Galerie Vaňkovka.jpg' },
-    { i: 'n24593605', _r: 'cz-stredocesky', n: 'Říčany', o: 'Říčany', k: 'Středočeský', c: 'doprava', img: 'File:Nádraží Říčany, budova, pohled z kolejiště.jpg' },
-    { i: 'n5542528696', _r: 'cz-plzensky', n: 'CrossCafe', o: 'Plzeň', k: 'Plzeňský', c: 'restaurace', img: 'File:Kateřinská (032).jpg' },
     { i: 'w28373782', _r: 'cz-jihocesky', n: 'Kamenný most', o: 'Písek', k: 'Jihočeský', c: 'pamatky', img: 'File:Písek, Kamenný most a nábřeží.JPG' },
-    { i: 'n1289293691', _r: 'cz-ustecky', n: 'Čínoherní studio', o: 'Ústí nad Labem', k: 'Ústecký', c: 'kultura', img: 'File:Ústí nad Labem - ulice Varšavská, Činoherní studio obr03.jpg' },
-    { i: 'n3617604789', _r: 'cz-olomoucky', n: 'Wiener Kaffeehaus', o: 'Jeseník', k: 'Olomoucký', c: 'restaurace', img: 'File:Wiener Kaffeehaus, Priessnitz, Jeseník.jpg' },
-    { i: 'w15804929', _r: 'de-horni-bavorsko', z: 'de', n: 'BMW Welt', o: 'München', k: 'Horní Bavorsko', c: 'pamatky', img: 'File:File:Bmwwelt2.jpg' },
-    { i: 'w122811589', _r: 'de-stredni-franky', z: 'de', n: 'Universitätsklinikum Erlangen', o: 'Erlangen', k: 'Střední Franky', c: 'zdravi', img: 'File:Unikrankenhaus erlangen1.jpg' },
-    { i: 'w152803329', _r: 'de-svabsko', z: 'de', n: 'Glacis-Galerie', o: 'Neu-Ulm', k: 'Švábsko', c: 'obchody', img: 'File:Glacis-Galerie Heiner-Metzger-Platz.jpg' },
-    { i: 'n27453687', _r: 'de-dolni-franky', z: 'de', n: 'Würzburg Hauptbahnhof', o: 'Würzburg', k: 'Dolní Franky', c: 'doprava', img: 'File:Würzburg Hauptbahnhof Empfangsgebäude 0516.jpg' },
+    { i: 'n5673497189', _r: 'cz-jihocesky', n: 'Strakonice', o: 'Strakonice', k: 'Jihočeský', c: 'doprava', img: 'File:Bahnhof Strakonice 2008-07-11.jpg' },
+    { i: 'w49939104', _r: 'cz-jihocesky', n: 'Galerie Dvořák', o: 'České Budějovice', k: 'Jihočeský', c: 'obchody', img: 'File:ČB, nám PO II, domy 36 a 37.jpg' },
+    { i: 'n3254381661', _r: 'cz-jihocesky', n: 'Bludný kámen', o: 'České Budějovice', k: 'Jihočeský', c: 'pamatky', img: 'File:Bludny kamen - The devious stone, kdo na tenhle kamen slapne vecer, bude celou noc bloudit -) moc mile - panoramio.jpg' },
+    { i: 'w24771505', _r: 'de-dolni-bavorsko', z: 'de', n: 'Dom St. Stephan', o: 'Passau', k: 'Dolní Bavorsko', c: 'pamatky', img: 'File:Passauer Dom.jpg' },
+    { i: 'w38325155', _r: 'de-dolni-bavorsko', z: 'de', n: 'Neues Rathaus', o: 'Passau', k: 'Dolní Bavorsko', c: 'urady', img: 'File:Passau Neues Rathaus 01.jpg' },
+    { i: 'w39962246', _r: 'de-horni-falc', z: 'de', n: 'Dom Sankt Peter', o: 'Regensburg', k: 'Horní Falc', c: 'pamatky', img: 'File:Regensburg Dom 160910.jpg' },
+    { i: 'w93576146', _r: 'de-horni-falc', z: 'de', n: 'Historische Wurstkuchl', o: 'Regensburg', k: 'Horní Falc', c: 'restaurace', img: 'File:Wurstlkueche in Regensburg.JPG' },
   ];
 
   function renderPhotos(list) {
@@ -57,8 +54,10 @@
 
   function render(st) {
     const t = totals(st), c = t.cats || {};
-    const vals = { total: t.total, w_yes: t.w_yes, w_limited: t.w_limited, x: t.x, parkovani: c.parkovani };
-    document.querySelectorAll('[data-stat]').forEach(el => { el.textContent = nf(vals[el.dataset.stat]); });
+    const br0 = st.by_region || {}, z0 = st.by_zeme || {};
+    const vals = { total: t.total, w_yes: t.w_yes, w_limited: t.w_limited, x: t.x, img: t.img, parkovani: c.parkovani,
+      jc: (br0['cz-jihocesky'] || {}).total, de: (z0.de || {}).total };
+    document.querySelectorAll('[data-stat]').forEach(el => { const v = vals[el.dataset.stat]; el.textContent = v == null ? '–' : nf(v); });
     const z = st.by_zeme || {};
     const zl = $('#zeme-split');
     if (zl && z.cz && z.de) zl.textContent = K.t('Česko {a} · Bavorsko {b} míst', { a: nf(z.cz.total), b: nf(z.de.total) });
@@ -66,8 +65,8 @@
     // Pruh: podíl stavů vstupu; čísla jsou vždy i v legendě (tvar + text)
     const parts = [['ok', t.w_yes, K.t('Přístupné')], ['part', t.w_limited, K.t('Částečně')], ['no', t.w_no, K.t('Nepřístupné')]];
     const sum = parts.reduce((a, p) => a + (p[1] || 0), 0) || 1;
-    $('#split').innerHTML = parts.map(([k, v]) => '<span class="' + k + '" style="width:' + ((v || 0) / sum * 100).toFixed(2) + '%"></span>').join('');
-    $('#split-legend').innerHTML = parts.map(([k, v, l]) => '<li class="rule-row"><span class="status ' + k + '"><i></i>' + l + '</span><span class="num">' + nf(v) + '</span><span class="num muted">' + Math.round((v || 0) / sum * 100) + ' %</span></li>').join('') +
+    if ($('#split')) $('#split').innerHTML = parts.map(([k, v]) => '<span class="' + k + '" style="width:' + ((v || 0) / sum * 100).toFixed(2) + '%"></span>').join('');
+    if ($('#split-legend')) $('#split-legend').innerHTML = parts.map(([k, v, l]) => '<li class="rule-row"><span class="status ' + k + '"><i></i>' + l + '</span><span class="num">' + nf(v) + '</span><span class="num muted">' + Math.round((v || 0) / sum * 100) + ' %</span></li>').join('') +
       (t.w_None ? '<li class="rule-row split-none"><span class="muted">' + K.t('Bez údaje o vstupu (hlavně parkoviště a WC)') + '</span><span class="num">' + nf(t.w_None) + '</span><span></span></li>' : '');
 
     // Kategorie: textový výpis s živými počty, seřazeno od největší
@@ -98,7 +97,11 @@
     }, { once: true });
   }
 
+  // Ceny členství podle jazyka (KP.tierPrice); úroveň se přepíná v core.js
+  function renderTierPrices() { document.querySelectorAll('[data-tier-price]').forEach(el => { el.textContent = K.tierPrice(el.dataset.tierPrice); }); }
+
   function init() {
+    renderTierPrices();
     renderPhotos(FEATURED);
     bindTowns();
     K.loadStats().then(render).catch(() => {

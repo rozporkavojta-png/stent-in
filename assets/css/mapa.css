@@ -186,3 +186,13 @@ body.page-map { height: 100vh; height: 100dvh; display: flex; flex-direction: co
 .res.reg-row { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
 .res.reg-row .reg-n { font: 800 1.25rem/1 var(--f-display); letter-spacing: -.03em; }
 .results > li.reg-note { padding-bottom: 8px; }
+
+/* Členství (prototyp): štítky PLUS u pokročilých filtrů a osobní shody */
+.filters-sheet legend .tier-tag { letter-spacing: .06em; }
+.filters-sheet .fs-note { margin: 0 0 10px; }
+.filters-sheet .adv-door { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 0 0 8px; }
+.filters-sheet .adv-door label { font-weight: 600; }
+.filters-sheet .adv-door select { min-height: 44px; min-width: 10em; }
+.chip .tier-tag { margin-left: 4px; padding: 1px 5px; font-size: .66rem; }
+.preview .pv-match-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0; }
+.preview .pv-match-cta .btn { min-height: 44px; }

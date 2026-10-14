@@ -45,3 +45,15 @@ KP.i18n.add({
   "Načítám ubytování… {d} z {n} oblastí": ["Unterkünfte werden geladen… {d} von {n} Gebieten", "Loading accommodation… {d} of {n} areas"],
   "Data se nepodařilo načíst. Zkuste stránku obnovit.": ["Die Daten konnten nicht geladen werden. Laden Sie die Seite neu.", "The data could not be loaded. Try reloading the page."],
 });
+
+/* Členství (prototyp): Accessibility Match u ubytování */
+KP.i18n.add({
+  "Shoda neznámá, chybí údaje": ["Übereinstimmung unbekannt, Angaben fehlen", "Match unknown, data missing"],
+  "{pct} % shoda · známe {k} z {n}": ["{pct} % Übereinstimmung · {k} von {n} bekannt", "{pct} % match · {k} of {n} known"],
+  "Shodu s vašimi potřebami v procentech ukazuje Accessibility Match.": ["Die Übereinstimmung mit Ihren Bedürfnissen in Prozent zeigt Accessibility Match.", "Accessibility Match shows the percentage match with your needs."],
+  "U každého ubytování ukazujeme shodu s vaším profilem potřeb.": ["Bei jeder Unterkunft zeigen wir die Übereinstimmung mit Ihrem Bedürfnisprofil.", "For every accommodation we show the match with your needs profile."],
+  "Nastavte si profil potřeb a u každého ubytování uvidíte shodu v procentech.": ["Legen Sie Ihr Bedürfnisprofil fest, dann sehen Sie bei jeder Unterkunft die Übereinstimmung in Prozent.", "Set up your needs profile and you will see a percentage match for every accommodation."],
+  "Zobrazit shodu": ["Übereinstimmung anzeigen", "Show match"],
+  "Upravit potřeby": ["Bedürfnisse ändern", "Edit needs"],
+  "Nastavit potřeby": ["Bedürfnisse einstellen", "Set your needs"],
+});

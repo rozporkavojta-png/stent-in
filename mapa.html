@@ -8,8 +8,8 @@
 <meta name="description" content="Mapa skutečných míst v Česku a v Bavorsku s údaji o přístupnosti pro lidi na vozíku: vstup, toaleta, parkování ZTP. Filtrujte podle svých potřeb.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=15">
-<link rel="stylesheet" href="assets/css/mapa.css?v=12">
+<link rel="stylesheet" href="assets/css/style.css?v=16">
+<link rel="stylesheet" href="assets/css/mapa.css?v=13">
 </head>
 <body class="page-map">
 <div id="site-header"></div>
@@ -33,7 +33,7 @@
       <button type="button" class="chip drop" data-pop="cat" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-cat" data-i18n>Kategorie</span><span data-icon="chevron"></span></button>
       <button type="button" class="chip" data-toggle="wc" aria-pressed="false" data-i18n-text><span data-icon="wc"></span>Toaleta</button>
       <button type="button" class="chip" data-toggle="pk" aria-pressed="false" data-i18n-text><span data-icon="parking"></span>Parkování ZTP</button>
-      <button type="button" class="chip" data-toggle="hx" aria-pressed="false" data-i18n-text><span data-icon="ruler"></span>Naměřeno</button>
+      <button type="button" class="chip" data-toggle="hx" aria-pressed="false" data-i18n-text><span data-icon="ruler"></span>Naměřeno<span data-tier-badge="advancedFilters"></span></button>
       <button type="button" class="chip" data-toggle="hr" aria-pressed="false" data-i18n-text><span data-icon="building"></span>Od provozovatele</button>
       <button type="button" class="chip drop" data-pop="zeme" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-zeme" data-i18n>Země</span><span data-icon="chevron"></span></button>
       <button type="button" class="chip drop" data-pop="kraj" aria-haspopup="true" aria-expanded="false"><span class="lbl" id="lbl-kraj" data-i18n>Kraj / obvod</span><span data-icon="chevron"></span></button>
@@ -114,7 +114,6 @@
       <div class="check-list">
         <label class="check" data-i18n-text><input type="checkbox" id="f-wc"> Bezbariérovou toaletu</label>
         <label class="check" data-i18n-text><input type="checkbox" id="f-pk"> Parkování pro ZTP u objektu</label>
-        <label class="check" data-i18n-text><input type="checkbox" id="f-hx"> Naměřené rozměry</label>
         <label class="check" data-i18n-text><input type="checkbox" id="f-hr"> Informace od provozovatele</label>
         <label class="check" data-i18n-text><input type="checkbox" id="f-desc"> Slovní popis přístupnosti</label>
         <label class="check" data-i18n-text><input type="checkbox" id="f-chk"> Datum kontroly na místě</label>
@@ -132,10 +131,25 @@
       <label class="sr-only" for="f-kraj" data-i18n>Kraj nebo vládní obvod</label>
       <select id="f-kraj"><option value="" data-i18n>Všechny kraje a obvody</option></select>
     </fieldset>
-    <fieldset>
-      <legend data-i18n>Moje potřeby</legend>
+    <fieldset id="fs-adv" class="fs-tier">
+      <legend><span data-i18n>Rozměry a vybavení</span> <span data-tier-badge="advancedFilters"></span></legend>
+      <p class="small muted fs-note" data-i18n>Ukáže jen místa, kde údaj opravdu známe. Kde rozměr chybí, místo se skryje.</p>
+      <div class="adv-door">
+        <label for="f-door" data-i18n>Vstupní dveře alespoň</label>
+        <select id="f-door"><option value="" data-i18n>bez požadavku</option><option value="70">70 cm</option><option value="80">80 cm</option><option value="90">90 cm</option></select>
+      </div>
+      <div class="check-list">
+        <label class="check" data-i18n-text><input type="checkbox" id="f-lift"> Výtah nebo plošina, případně jen jedno podlaží</label>
+        <label class="check" data-i18n-text><input type="checkbox" id="f-shower"> Sprcha v úrovni podlahy</label>
+        <label class="check" data-i18n-text><input type="checkbox" id="f-bars"> Madla u WC nebo v koupelně</label>
+        <label class="check" data-i18n-text><input type="checkbox" id="f-hx"> Naměřené rozměry</label>
+      </div>
+    </fieldset>
+    <fieldset id="fs-needs" class="fs-tier">
+      <legend><span data-i18n>Moje potřeby</span> <span data-tier-badge="match"></span></legend>
       <label class="check" data-i18n-text><input type="checkbox" id="f-needs"> Ukázat jen místa, která mi vyhovují</label>
       <button class="btn btn-quiet btn-sm" type="button" data-open-needs data-i18n-text><span data-icon="sliders"></span>Nastavit potřeby</button>
+      <p class="small muted fs-note" id="needs-tier-note" hidden></p>
     </fieldset>
   </div>
   <footer class="filters-foot">
@@ -145,11 +159,11 @@
 </div>
 
 <script src="assets/js/i18n.js?v=2"></script>
-<script src="assets/js/i18n/core.js?v=2"></script>
-<script src="assets/js/i18n/mapa.js?v=1"></script>
+<script src="assets/js/i18n/core.js?v=3"></script>
+<script src="assets/js/i18n/mapa.js?v=2"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=15"></script>
+<script src="assets/js/core.js?v=16"></script>
 <script src="assets/js/map-engine.js?v=12"></script>
-<script src="assets/js/mapa.js?v=14"></script>
+<script src="assets/js/mapa.js?v=15"></script>
 </body>
 </html>

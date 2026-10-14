@@ -489,6 +489,11 @@ iframe.gmap, iframe.pl-gmap, .gmap iframe { filter: grayscale(1) contrast(.95); 
   .header-tools .lang-switch { display: none; }
   .more-menu .more-lang { display: flex; }
 }
+/* Němčina má nejdelší popisky: se štítkem úrovně (FREE/PLUS/PREMIUM) se nevejde do hlavičky (max. 1320 px) ani na širokém monitoru. */
+@media (min-width: 1400px) {
+  html[lang="de"] .header-tools .lang-switch { display: none; }
+  html[lang="de"] .more-menu .more-lang { display: flex; }
+}
 @media (min-width: 900px) and (max-width: 1279px) {
   .header-tools .needs-btn .lbl, .header-tools .add-btn .lbl { display: none; }
   .header-tools .needs-btn, .header-tools .add-btn { padding-inline: 10px; min-width: 40px; justify-content: center; }

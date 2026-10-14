@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Průvodci · kudyprojedu.cz</title>
+<meta name="description" content="Hotoví průvodci po jižních Čechách a Bavorsku sestavení jen ze skutečných míst a zdrojů. U každé zastávky je vidět, co o přístupnosti víme, odkud a co chybí. Prototyp, nic se neprodává.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=16">
+<link rel="stylesheet" href="assets/css/pages-a.css?v=13">
+<link rel="stylesheet" href="assets/css/pruvodci.css?v=3">
+</head>
+<body class="page-pruvodci">
+<div id="site-header"></div>
+<main id="main">
+
+  <!-- Katalog -->
+  <div id="pv-catalog">
+    <section class="page-head">
+      <div class="wrap head-split">
+        <div>
+          <p class="kicker" data-i18n>Hotoví průvodci · prototyp</p>
+          <h1 data-i18n>Výlety sestavené ze skutečných dat</h1>
+          <p class="lede" data-i18n>Jižní Čechy a Bavorsko na jeden až tři dny. Každá zastávka je místo z naší mapy. U každé vidíte, co o přístupnosti víme, odkud to je a co zatím nevíme.</p>
+        </div>
+        <div class="pv-head-note">
+          <p class="kicker" data-i18n>Návrh nabídky</p>
+          <p class="small" data-i18n>V ostré verzi se průvodci budou prodávat jednotlivě, ceny u nich jsou jen návrh. V členství PREMIUM budou ke stažení pro offline použití.</p>
+          <p class="small muted" data-i18n>Prototyp: nic se neprodává a nic neplatíte. Údaje o přístupnosti každého místa jsou vždy zdarma v detailu místa.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="pv-list-h">
+      <div class="wrap">
+        <div class="head-row">
+          <h2 id="pv-list-h" data-i18n>Katalog průvodců</h2>
+          <div class="pv-filters" role="group" aria-label="Filtr podle oblasti" data-i18n-attr="aria-label">
+            <button class="chip" type="button" data-f="all" aria-pressed="true" data-i18n>Vše</button>
+            <button class="chip" type="button" data-f="cz" aria-pressed="false" data-i18n>Jižní Čechy</button>
+            <button class="chip" type="button" data-f="de" aria-pressed="false" data-i18n>Bavorsko</button>
+          </div>
+        </div>
+        <p class="small muted" id="pv-count" role="status" aria-live="polite"></p>
+        <ul class="pv-list" id="pv-list"><li class="pv-loading muted" data-i18n>Načítám průvodce…</li></ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="pv-how-h">
+      <div class="wrap split-grid">
+        <div class="split-h">
+          <p class="kicker" data-i18n>Jak vznikají</p>
+          <h2 id="pv-how-h" data-i18n>Nic si nedomýšlíme</h2>
+        </div>
+        <ol class="split-b num-list">
+          <li><h3 data-i18n>Jen místa z dat</h3><p data-i18n>Zastávky, WC, parkování ZTP a nádraží jsou skutečná místa z OpenStreetMap, otevřených dat a webů provozovatelů. Žádné vymyšlené recenze ani fotky.</p></li>
+          <li><h3 data-i18n>Zdroj u každého údaje</h3><p data-i18n>U každé zastávky je odkaz na zdroj a datum. Údaje od provozovatele, z otevřených dat a od komunity od sebe odlišujeme.</p></li>
+          <li><h3 data-i18n>Co nevíme, píšeme</h3><p data-i18n>Když u zastávky chybí údaj o WC, parkování nebo výtahu, uvidíte to. Před cestou je dobré si ho ověřit u provozovatele.</p></li>
+          <li><h3 data-i18n>Přegenerovatelné</h3><p data-i18n>Průvodce skládá skript nad daty webu. Když se data zlepší, průvodce se s nimi aktualizuje.</p></li>
+        </ol>
+      </div>
+    </section>
+  </div>
+
+  <!-- Detail -->
+  <div id="pv-detail" hidden></div>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js?v=2"></script>
+<script src="assets/js/i18n/core.js?v=3"></script>
+<script src="assets/js/i18n/xrows.js?v=1"></script>
+<script src="assets/js/i18n/pruvodci.js?v=2"></script>
+<script src="assets/js/config.js?v=12"></script>
+<script src="assets/js/core.js?v=16"></script>
+<script src="assets/js/pruvodci.js?v=2"></script>
+</body>
+</html>

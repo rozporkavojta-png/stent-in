@@ -252,3 +252,91 @@ table.ck-sum td:first-child { width: 55%; color: var(--ink-2); padding-left: 0; 
 .fgroup .ck-item legend { font: 700 1.08rem/1.25 var(--f-body); letter-spacing: 0; border-bottom: 0; padding: 0; margin: 0 0 8px; }
 .fgroup .ck-intro { margin: 0; }
 .pd-mine { list-style: none; margin: 0; padding: 0; }
+
+/* ---------- Pro podniky, obce a destinace (pro-firmy.html) ---------- */
+/* Pravidla: žlutý pás, text vždy černý */
+.pf-rules { padding-block: clamp(40px, 6vw, 72px); border-bottom: 1px solid var(--rule); }
+.pf-rules h2 { color: var(--on-signal); }
+.pf-rule-list { list-style: none; margin: 0; padding: 0; counter-reset: r; border-top: 2px solid var(--on-signal); }
+.pf-rule-list > li { counter-increment: r; display: grid; grid-template-columns: 3.5rem minmax(0, 1fr); gap: 2px 16px; padding: 18px 0; border-bottom: 1px solid var(--on-signal); }
+.pf-rule-list > li::before { content: counter(r, decimal-leading-zero); grid-row: 1 / span 2; font: 700 1.4rem/1.1 var(--f-mono); }
+.pf-rule-list h3 { margin: 0; color: var(--on-signal); font-size: clamp(1.1rem, 2vw, 1.3rem); }
+.pf-rule-list p { margin: 4px 0 0; max-width: 62ch; }
+.pf-rules .split-b { grid-column: 5 / -1; }
+@media (max-width: 899px) { .pf-rules .split-b { grid-column: 1 / -1; } }
+
+/* Tarify podniku: dva sloupce, Business zvýrazněný žlutou linkou */
+.plans.pf-plans { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 980px; }
+@media (max-width: 760px) { .plans.pf-plans { grid-template-columns: 1fr; } }
+.pf-plan-k { margin: 0; font: 700 .78rem/1.2 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
+.pf-plan-note { margin: 0; padding: 10px 0 0; border-top: 1px dashed var(--line-strong); color: var(--ink-2); }
+.pf-plan-btns { margin-top: auto; display: flex; flex-direction: column; gap: 8px; }
+.pf-plan-btns .btn { margin-top: 0; }
+.pf-extra th[scope="row"] { font: 700 .95rem/1.3 var(--f-body); color: var(--ink); }
+.pf-promo-demo { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 20px 0 0; }
+.badge.pf-promo { background: transparent; color: var(--ink); border: 1.5px dashed var(--ink); font-weight: 700; }
+.pf-lic-price { margin: 16px 0 8px; max-width: 68ch; }
+.pf-jck { margin-top: 28px; }
+.pf-jck p { margin: 0 0 8px; }
+.pf-jck p:last-child { margin: 0; }
+.pf-obce-row { margin-top: 24px; }
+
+/* Ukázka reportu pro obce a destinace */
+.rp-controls { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr) minmax(0, 1fr); gap: 0 20px; max-width: 900px; margin-bottom: 8px; }
+.rp-controls select { min-height: 48px; }
+@media (max-width: 760px) { .rp-controls { grid-template-columns: 1fr; } }
+.rp-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 clamp(16px, 2.5vw, 32px); margin: 16px 0 28px; }
+.rp-stat { display: flex; flex-direction: column; gap: 4px; padding-top: 12px; border-top: 3px solid var(--ink); min-width: 0; }
+.rp-stat:nth-child(3) { border-top-color: var(--signal); }
+.rp-n { font: 800 clamp(2rem, 4.5vw, 3rem)/1 var(--f-display); letter-spacing: -.045em; }
+.rp-l { font-weight: 700; }
+.rp-stat small { color: var(--ink-2); font-size: .86rem; }
+@media (max-width: 900px) { .rp-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 20px; } }
+.rp-table caption { text-align: left; font-weight: 700; padding: 10px 0; caption-side: top; }
+.rp-table th[scope="row"] { font: 600 .95rem/1.3 var(--f-body); color: var(--ink); background: transparent; border-bottom: 1px solid var(--line); }
+.rp-table td.num { font-family: var(--f-mono); white-space: nowrap; }
+.rp-cell { display: grid; grid-template-columns: minmax(48px, 1fr) 3.4rem; gap: 10px; align-items: center; min-width: 9rem; }
+.rp-cell b { font: 700 .95rem var(--f-mono); text-align: right; }
+.rp-bar { height: 10px; background: var(--surface-3); }
+.rp-bar i { display: block; height: 100%; background: var(--ink); }
+.table-wrap > table.data.rp-table { min-width: 46rem; }
+.rp-table-wrap { overflow-x: auto; }
+.rp-count { margin: 10px 0 0; }
+.rp-actions { margin-top: 16px; }
+.rp-actions .btn svg { width: 18px; height: 18px; transform: rotate(180deg); }
+.rp-notes { margin-top: 32px; }
+.rp-note-list { margin: 0; padding-left: 1.1em; color: var(--ink-2); }
+.rp-note-list li { margin: 0 0 8px; }
+
+/* ---------- Profil podniku: tarify a analytika ---------- */
+.pd-tier-now { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin: 0 0 20px; padding: 14px 16px; border-left: 6px solid var(--signal); background: var(--surface-2); }
+.pd-tier-now p { margin: 0; flex: 1 1 260px; }
+.pd-tier-tag { display: inline-block; font: 700 .8rem/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; padding: 5px 8px; border: 1.5px solid var(--ink); }
+.pd-tier-tag.is-biz { background: var(--signal); color: var(--on-signal); border-color: var(--ink); }
+.pd-cmp th[scope="row"] { font: 600 .95rem/1.3 var(--f-body); color: var(--ink); background: transparent; border-bottom: 1px solid var(--line); }
+.pd-cmp thead th:not(:first-child), .pd-cmp td { text-align: center; width: 22%; }
+.table-wrap > table.data.pd-cmp { min-width: 0; }
+.pd-yes, .pd-no { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; }
+.pd-yes svg { width: 18px; height: 18px; padding: 2px; background: var(--signal); color: var(--on-signal); }
+.pd-no { color: var(--ink-3); font-weight: 600; }
+.pd-no i { display: inline-block; width: 14px; height: 2px; background: currentColor; }
+@media (max-width: 480px) { .pd-cmp th, .pd-cmp td { padding: 10px 4px !important; } .pd-yes span, .pd-no span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } }
+.pd-stat-row .pd-lock { font: 600 .85rem var(--f-body); color: var(--ink-2); text-align: right; }
+.pd-stat-row.is-locked span { color: var(--ink-2); }
+.pd-stat-grp { margin: 24px 0 4px; font: 700 .78rem/1.2 var(--f-body); letter-spacing: .12em; text-transform: uppercase; }
+.pd-stat-grp .pd-tier-tag { margin-left: 8px; vertical-align: middle; }
+.pd-int { list-style: none; margin: 0; padding: 0; }
+.pd-int li { display: grid; grid-template-columns: 9rem minmax(0, 1fr) 2.5rem; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.pd-int b { font: 700 .95rem var(--f-mono); text-align: right; }
+@media (max-width: 480px) { .pd-int li { grid-template-columns: minmax(0, 1fr) 2.5rem; } .pd-int .rp-bar { grid-column: 1 / -1; grid-row: 2; } }
+.pd-future { margin: 8px 0 0; padding-left: 1.1em; color: var(--ink-2); }
+.pd-future li { margin: 0 0 6px; }
+.pd-tarify { border-top: 1px solid var(--rule); scroll-margin-top: var(--header-h); }
+.pd-tarify .pd-services { margin-top: 0; }
+.pd-csv-row { margin-top: 16px; }
+.pd-stat-up { margin-top: 16px; }
+
+/* Odkaz uvnitř pravidel na žlutém pásu a report podle typu místa */
+.pf-rule-list a { color: var(--on-signal); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 2px; }
+.rp-cat-h { margin-top: 40px; }
+.rp-cat-note { margin: 0 0 4px; max-width: 70ch; }

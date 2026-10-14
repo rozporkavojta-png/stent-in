@@ -8,9 +8,9 @@
 <meta name="description" content="Převezměte profil svého podniku a vyplňte přístupnost krok za krokem: vstup, parkování, výtah, WC, pokoj a koupelna. Fotky, náhled profilu a co zlepšit.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=15">
+<link rel="stylesheet" href="assets/css/style.css?v=16">
 <link rel="stylesheet" href="assets/css/pages-a.css?v=13">
-<link rel="stylesheet" href="assets/css/podnik.css?v=2">
+<link rel="stylesheet" href="assets/css/podnik.css?v=4">
 </head>
 <body>
 <div id="site-header"></div>
@@ -79,7 +79,7 @@
         </section>
 
         <section class="pd-sec" id="statistiky" aria-labelledby="stat-h">
-          <p class="kicker" data-i18n>Statistiky</p>
+          <p class="kicker" data-i18n>Analytika</p>
           <h2 id="stat-h" data-i18n>Zájem o váš profil</h2>
           <div id="pd-stats"></div>
         </section>
@@ -89,34 +89,41 @@
           <h2 id="zlepsit-h" data-i18n>Co doplnit a co upravit</h2>
           <div id="pd-improve"></div>
         </section>
-
-        <section class="pd-sec" id="sluzby" aria-labelledby="sluzby-h">
-          <p class="kicker" data-i18n>Služby</p>
-          <h2 id="sluzby-h" data-i18n>Základ zdarma, služby navíc</h2>
-          <ul class="pd-services rule-list">
-            <li class="rule-row"><b data-i18n>Základní profil</b><span data-i18n>0 Kč. Převzetí, checklist, fotky, úpravy kdykoli.</span></li>
-            <li class="rule-row"><b data-i18n>Ověření na místě</b><span data-i18n>Mapovač změří vstup, dveře, výtah, WC a parkování. Odznak „Ověřeno“ na 3 roky.</span></li>
-            <li class="rule-row"><b data-i18n>Rozšířený profil</b><span data-i18n>Delší popis, kontakt pro dotazy k přístupnosti, QR štítek na dveře.</span></li>
-            <li class="rule-row"><b data-i18n>Analytika</b><span data-i18n>Zobrazení profilu, výskyt ve výsledcích, žádosti o doplnění.</span></li>
-            <li class="rule-row"><b data-i18n>Propagace</b><span data-i18n>Zvýraznění ve výběrech a tematických trasách.</span></li>
-            <li class="rule-row"><b data-i18n>Poradenství</b><span data-i18n>Co upravit nejdřív a s kým to řešit.</span></li>
-          </ul>
-          <p class="small pd-svc-note" data-i18n>Placené služby zatím neběží, ceny jsou návrh. <a href="pro-firmy.html#cenik">Ceník a podrobnosti</a></p>
-        </section>
-
       </div>
     </div>
   </div>
 
+  <!-- Tarify podniku: viditelné i bez vybraného podniku -->
+  <section class="section pd-tarify" id="tarify" aria-labelledby="tarify-h">
+    <div class="wrap split-grid">
+      <div class="split-h">
+        <p class="kicker" data-i18n>Tarify podniku</p>
+        <h2 id="tarify-h" data-i18n>Zdarma, nebo Business</h2>
+        <p data-i18n>Údaje o přístupnosti a jejich opravy jsou vždy zdarma. Business přidává nástroje pro správu a analytiku.</p>
+      </div>
+      <div class="split-b">
+        <div id="pd-tiers"></div>
+        <h3 class="pv-h" data-i18n>Služby navíc</h3>
+        <ul class="pd-services rule-list">
+          <li class="rule-row"><b data-i18n>Ověření a dokumentace</b><span data-i18n>Mapovač změří vstup, dveře, výtah, WC a parkování. Zpráva s fotkami, odznak „Ověřeno“ na 3 roky. Výsledek měření platba neovlivní.</span></li>
+          <li class="rule-row"><b data-i18n>Školení personálu</b><span data-i18n>Jak pomoci hostovi na vozíku a jak udržovat profil aktuální.</span></li>
+          <li class="rule-row"><b data-i18n>Poradenství</b><span data-i18n>Co upravit nejdřív a s kým to řešit.</span></li>
+          <li class="rule-row"><b data-i18n>Propagace</b><span data-i18n>Zvýraznění ve výběrech a tematických trasách, vždy se štítkem „Propagace“. Nemění skóre, shodu ani pořadí podle přístupnosti.</span></li>
+        </ul>
+        <p class="small pd-svc-note" data-i18n>Placené služby zatím neběží, ceny jsou návrh. <a href="pro-firmy.html#cenik">Tarify a služby</a></p>
+      </div>
+    </div>
+  </section>
+
 </main>
 <div id="site-footer"></div>
 <script src="assets/js/i18n.js?v=2"></script>
-<script src="assets/js/i18n/core.js?v=2"></script>
+<script src="assets/js/i18n/core.js?v=3"></script>
 <script src="assets/js/i18n/checklist.js?v=1"></script>
-<script src="assets/js/i18n/podnik.js?v=1"></script>
+<script src="assets/js/i18n/podnik.js?v=3"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=15"></script>
+<script src="assets/js/core.js?v=16"></script>
 <script src="assets/js/checklist.js?v=3"></script>
-<script src="assets/js/podnik.js?v=3"></script>
+<script src="assets/js/podnik.js?v=5"></script>
 </body>
 </html>

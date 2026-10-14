@@ -57,3 +57,57 @@ KP.i18n.add({
   "kraje": ["Regionen", "regions"],
   "vládní obvody": ["Regierungsbezirke", "administrative districts"]
 });
+
+/* Úvod podle nové vize: cestovní platforma, start jižní Čechy a Bavorsko. */
+KP.i18n.add({
+  "Platforma pro bezbariérové cestování. Začínáme v jižních Čechách a v Bavorsku. Konkrétní údaje o přístupnosti, fotky a zdroj každého údaje, plánování výletů a průvodci.": ["Plattform für barrierefreies Reisen. Wir beginnen in Südböhmen und Bayern. Konkrete Angaben zur Barrierefreiheit, Fotos und die Quelle jeder Angabe, Ausflugsplanung und Reiseführer.", "A platform for accessible travel. We start in South Bohemia and Bavaria. Specific accessibility data, photos and the source of every data point, trip planning and guides."],
+  "Bezbariérové cestování · jižní Čechy a Bavorsko": ["Barrierefrei reisen · Südböhmen und Bayern", "Accessible travel · South Bohemia and Bavaria"],
+  "Cestujte bez bariér po jižních Čechách a Bavorsku.": ["Reisen Sie ohne Barrieren durch Südböhmen und Bayern.", "Travel without barriers in South Bohemia and Bavaria."],
+  "Platforma pro lidi na vozíku a s omezenou pohyblivostí. U každého místa vidíte vstup, toaletu a parkování v konkrétních údajích, fotky a odkud údaj pochází. Mapa už pokrývá celé Česko i Bavorsko.": ["Eine Plattform für Menschen im Rollstuhl und mit eingeschränkter Mobilität. Bei jedem Ort sehen Sie Eingang, Toilette und Parkplatz in konkreten Angaben, Fotos und woher die Angabe stammt. Die Karte deckt bereits ganz Tschechien und Bayern ab.", "A platform for wheelchair users and people with reduced mobility. For each place you see the entrance, toilet and parking as specific data, photos and where the data comes from. The map already covers all of Czechia and Bavaria."],
+  "Hlavní cesty": ["Hauptwege", "Main paths"],
+  "Najít místo": ["Ort finden", "Find a place"],
+  "Mapa míst s údaji o přístupnosti, fotkami a zdrojem každého údaje. Zdarma.": ["Karte mit Angaben zur Barrierefreiheit, Fotos und der Quelle jeder Angabe. Kostenlos.", "A map of places with accessibility data, photos and the source of every data point. Free."],
+  "Naplánovat výlet": ["Ausflug planen", "Plan a trip"],
+  "Jednodenní výlet ze skutečných míst podle vašich potřeb. V prototypu podle pravidel, v ostré verzi s AI.": ["Tagesausflug aus echten Orten nach Ihren Bedürfnissen. Im Prototyp nach Regeln, in der fertigen Version mit KI.", "A day trip from real places that fits your needs. In the prototype by rules, in the full version with AI."],
+  "Itineráře po jižních Čechách a Bavorsku sestavené ze skutečných míst.": ["Reisepläne für Südböhmen und Bayern aus echten Orten.", "Itineraries for South Bohemia and Bavaria built from real places."],
+  "míst s údajem o přístupnosti v Česku a v Bavorsku": ["Orte mit Angabe zur Barrierefreiheit in Tschechien und Bayern", "places with accessibility data in Czechia and Bavaria"],
+  "míst v Jihočeském kraji": ["Orte in der Südböhmischen Region", "places in the South Bohemian Region"],
+  "míst v Bavorsku": ["Orte in Bayern", "places in Bavaria"],
+  "se vstupem přístupným na vozíku": ["mit rollstuhlgerechtem Eingang", "with a wheelchair accessible entrance"],
+  "míst s fotkou z Wikimedia Commons": ["Orte mit Foto von Wikimedia Commons", "places with a photo from Wikimedia Commons"],
+  "Co platforma nabízí": ["Was die Plattform bietet", "What the platform offers"],
+  "Údaje, podle kterých se dá rozhodnout": ["Angaben, nach denen man entscheiden kann", "Data you can decide by"],
+  "Žádná nálepka „bezbariérové“. Rozměry, fotky a zdroj, abyste sami posoudili, jestli místo vyhovuje právě vám.": ["Kein Aufkleber „barrierefrei“. Maße, Fotos und Quelle, damit Sie selbst beurteilen, ob ein Ort zu Ihnen passt.", "No “accessible” sticker. Dimensions, photos and the source, so you can judge for yourself whether a place suits you."],
+  "Detailní údaje o přístupnosti": ["Ausführliche Angaben zur Barrierefreiheit", "Detailed accessibility data"],
+  "Vstup, schody, šířka dveří, toaleta, parkování a u ubytování pokoj a koupelna. Kde údaj chybí, napíšeme to.": ["Eingang, Stufen, Türbreite, Toilette, Parkplatz und bei Unterkünften Zimmer und Bad. Wo eine Angabe fehlt, sagen wir es.", "Entrance, steps, door width, toilet, parking and, for accommodation, room and bathroom. Where data is missing, we say so."],
+  "Fotky a transparentní zdroje": ["Fotos und transparente Quellen", "Photos and transparent sources"],
+  "U každého údaje vidíte, jestli pochází z otevřených dat, od komunity, nebo od provozovatele, a kdy byl naposledy upraven.": ["Bei jeder Angabe sehen Sie, ob sie aus offenen Daten, von der Community oder vom Betreiber stammt und wann sie zuletzt geändert wurde.", "For each data point you see whether it comes from open data, the community or the operator, and when it was last changed."],
+  "Vyhledávání, recenze a komunita": ["Suche, Bewertungen und Community", "Search, reviews and community"],
+  "Hledání, filtry, zkušenosti ostatních a přidávání míst jsou zdarma. Opravy údajů nikdy nezávisí na platbě.": ["Suche, Filter, Erfahrungen anderer und das Hinzufügen von Orten sind kostenlos. Korrekturen hängen nie von einer Zahlung ab.", "Search, filters, other people's experiences and adding places are free. Corrections never depend on payment."],
+  "Nastavíte, co zvládnete, a u každého místa uvidíte, co splňuje, co ne a kde údaj chybí.": ["Sie stellen ein, was Sie schaffen, und sehen bei jedem Ort, was erfüllt ist, was nicht und wo Angaben fehlen.", "Set what you can manage and see for each place what it meets, what it does not and where data is missing."],
+  "Plánování výletů a dovolených": ["Planung von Ausflügen und Urlauben", "Planning trips and holidays"],
+  "Jednodenní výlety a uložené itineráře v PLUS, vícedenní plánování a průvodci ke stažení v PREMIUM.": ["Tagesausflüge und gespeicherte Reisepläne in PLUS, mehrtägige Planung und Reiseführer zum Herunterladen in PREMIUM.", "Day trips and saved itineraries in PLUS, multi-day planning and downloadable guides in PREMIUM."],
+  "Průvodci, akce a výlety": ["Reiseführer, Veranstaltungen und Ausflüge", "Guides, events and excursions"],
+  "Hotové itineráře, plánování na míru a bezbariérové akce, workshopy a výlety s partnery. Připravujeme, termíny zatím nevypisujeme.": ["Fertige Reisepläne, individuelle Planung sowie barrierefreie Veranstaltungen, Workshops und Ausflüge mit Partnern. In Vorbereitung, Termine gibt es noch keine.", "Ready-made itineraries, custom planning and accessible events, workshops and excursions with partners. In preparation, no dates are announced yet."],
+  "Jižní Čechy a Bavorsko": ["Südböhmen und Bayern", "South Bohemia and Bavaria"],
+  "Vybíráme místa se vstupem přístupným na vozíku a s fotkou na Wikimedia Commons: čtyři z Jihočeského kraje, dvě z Dolního Bavorska a dvě z Horní Falce, vždy ta s nejvíce úpravami v OpenStreetMap. Fotky patří jejich autorům, licenci najdete po kliknutí na popisek.": ["Wir wählen Orte mit rollstuhlgerechtem Eingang und einem Foto auf Wikimedia Commons: vier aus der Südböhmischen Region, zwei aus Niederbayern und zwei aus der Oberpfalz, jeweils die mit den meisten Änderungen in OpenStreetMap. Die Fotos gehören ihren Urhebern, die Lizenz finden Sie über die Bildunterschrift.", "We pick places with a wheelchair accessible entrance and a photo on Wikimedia Commons: four from the South Bohemian Region, two from Lower Bavaria and two from the Upper Palatinate, always those with the most edits in OpenStreetMap. Photos belong to their authors; the licence is behind the caption link."],
+  "Základ zdarma, plánování navíc": ["Grundlage kostenlos, Planung dazu", "The basics free, planning extra"],
+  "Informace o přístupnosti a komunita jsou zdarma. Placené úrovně šetří čas s plánováním.": ["Angaben zur Barrierefreiheit und die Community sind kostenlos. Bezahlte Stufen sparen Zeit bei der Planung.", "Accessibility information and the community are free. Paid levels save time on planning."],
+  "Porovnat členství": ["Mitgliedschaften vergleichen", "Compare memberships"],
+  "Interaktivní mapa a podrobné údaje": ["Interaktive Karte und ausführliche Angaben", "Interactive map and detailed data"],
+  "Recenze, komunita a přidávání míst": ["Bewertungen, Community und neue Orte", "Reviews, community and adding places"],
+  "Accessibility Match a osobní profil požadavků": ["Accessibility Match und persönliches Anforderungsprofil", "Accessibility Match and personal requirements profile"],
+  "AI plánovač jednodenních výletů": ["KI-Planer für Tagesausflüge", "AI day trip planner"],
+  "Neomezené ukládání a export do PDF": ["Unbegrenztes Speichern und PDF-Export", "Unlimited saving and PDF export"],
+  "AI plánovač vícedenních dovolených": ["KI-Planer für mehrtägige Urlaube", "AI multi-day holiday planner"],
+  "Offline itineráře a Travel Concierge": ["Offline-Reisepläne und Travel Concierge", "Offline itineraries and Travel Concierge"],
+  "Sdílení s cestovním partnerem": ["Teilen mit Reisepartner", "Sharing with a travel partner"],
+  "Vyzkoušet úroveň (prototyp, nic se neplatí)": ["Stufe ausprobieren (Prototyp, nichts wird bezahlt)", "Try a level (prototype, nothing is paid)"],
+  "Začínáme v Jihočeském kraji a v Bavorsku, data máme pro celé Česko i Bavorsko. Detail ukáže podíl přístupných míst, obce a mapu.": ["Wir beginnen in der Südböhmischen Region und in Bayern, Daten haben wir für ganz Tschechien und Bayern. Das Detail zeigt den Anteil zugänglicher Orte, Gemeinden und die Karte.", "We start in the South Bohemian Region and Bavaria; we have data for all of Czechia and Bavaria. The detail shows the share of accessible places, towns and the map."],
+  "Provozujete hotel, restauraci nebo památku?": ["Sie betreiben ein Hotel, ein Restaurant oder eine Sehenswürdigkeit?", "Do you run a hotel, restaurant or attraction?"],
+  "Strukturovaný profil přístupnosti, viditelnost mezi lidmi, kteří ji hledají, a volitelné ověření a poradenství. Základní profil a opravy jsou zdarma. Placená viditelnost je vždy oddělená od hodnocení přístupnosti.": ["Ein strukturiertes Barrierefreiheitsprofil, Sichtbarkeit bei Menschen, die danach suchen, sowie optionale Prüfung und Beratung. Grundprofil und Korrekturen sind kostenlos. Bezahlte Sichtbarkeit ist immer von der Bewertung der Barrierefreiheit getrennt.", "A structured accessibility profile, visibility among people looking for it, and optional verification and consulting. The basic profile and corrections are free. Paid visibility is always separate from the accessibility rating."],
+});
+
+KP.i18n.add({
+  "Data se nepodařilo načíst. Otevřete web přes server, ne jako soubor.": ["Die Daten konnten nicht geladen werden. Öffnen Sie die Website über einen Server, nicht als Datei.", "The data could not be loaded. Open the site through a server, not as a file."]
+});

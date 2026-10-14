@@ -67,9 +67,12 @@
       let st, title, text;
       if (p.c === 'parkovani') { st = 'ok'; title = KP.t('Parkování pro držitele průkazu ZTP'); text = p.pk ? p.pk + (' ' + KP.t('vyhrazených míst podle OpenStreetMap.')) : KP.t('Vyhrazené parkovací místo.'); }
       else { const w = K.W[p.w || 'null']; st = w.st; title = w.label; text = w.help; }
+      // Základní verdikt o vstupu je vždy zdarma; procentní shoda s osobním profilem (Accessibility Match) je PLUS
+      const locked = !K.hasTier('match');
       return '<div id="pl-match"><div class="pl-verdict ' + st + '"><span class="status ' + st + ' big"><i></i></span><div><p class="pl-verdict-title">' + title + '</p><p class="pl-verdict-text">' + text + '</p></div></div>' +
-        ('<div class="pl-match-cta"><p><b>' + KP.t('Kolik procent vašich potřeb místo splňuje?') + '</b> ' + KP.t('Nastavte pomůcku, šířku dveří, výtah nebo sprchu. Shodu pak uvidíte u každého místa.') + '</p>') +
-        '<button class="btn btn-ghost btn-sm" type="button" data-open-needs-inline>' + K.icon('sliders') + (KP.t('Nastavit moje potřeby') + '</button></div></div>');
+        ('<div class="pl-match-cta"><p><b>' + KP.t('Kolik procent vašich potřeb místo splňuje?') + '</b> ' + K.tierBadge('match', { onlyLocked: true }) + ' ' + KP.t('Nastavte pomůcku, šířku dveří, výtah nebo sprchu. Shodu pak uvidíte u každého místa.') +
+          (locked ? ' ' + KP.t('Údaje o vstupu, WC a parkování zůstávají zdarma.') : '') + '</p>') +
+        '<button class="btn btn-ghost btn-sm" type="button" data-open-needs-inline>' + K.icon('sliders') + (locked ? KP.t('Zobrazit shodu') : KP.t('Nastavit moje potřeby')) + '</button></div></div>';
     }
     const m = K.matchScore(p, needs);
     const by = (s) => m.items.filter(i => i.state === s);
@@ -382,7 +385,10 @@
     return '<div class="pl-card pl-map"><iframe class="pl-gmap" src="' + K.gmaps.embed(p) + '" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="' + KP.t('Google mapa') + ': ' + K.esc(p.n) + '"></iframe>' +
       '<div class="pl-card-body"><a class="btn btn-primary btn-block" href="' + K.gmaps.directions(p, 'walking') + '" target="_blank" rel="noopener">' + K.icon('nav') + (KP.t('Navigovat pěšky nebo na vozíku') + '</a>') +
       '<div class="pl-modes"><a class="btn btn-ghost btn-sm" href="' + K.gmaps.directions(p, 'transit') + ('" target="_blank" rel="noopener">' + KP.t(KP.t('MHD')) + '</a><a class="btn btn-ghost btn-sm" href="') + K.gmaps.directions(p, 'driving') + ('" target="_blank" rel="noopener">' + KP.t('Autem') + '</a></div>') +
-      ('<p class="small muted">' + KP.t('Google Maps neumí trasu bez schodů. Bariéry v ulicích ukazujeme na stránce') + ' <a href="trasy.html?la=') + p.la + '&lo=' + p.lo + ('">' + KP.t('Trasy') + '</a>.</p></div></div>');
+      ('<p class="small muted">' + KP.t('Google Maps neumí trasu bez schodů. Bariéry v ulicích ukazujeme na stránce') + ' <a href="trasy.html?la=') + p.la + '&lo=' + p.lo + ('">' + KP.t('Trasy') + '</a>.</p>') +
+      // Jednodenní výlet do okolí: plánovač podle pravidel nad skutečnými daty (PLUS)
+      (p.o ? '<p class="small" style="margin:0"><a href="planovac.html?obec=' + encodeURIComponent(p.o) + '">' + K.esc(KP.t('Naplánovat výlet do okolí')) + '</a> <span data-tier-badge="dayPlanner">' + K.tierBadge('dayPlanner', { onlyLocked: true }) + '</span></p>' : '') +
+      '</div></div>';
   }
 
   function contact(p) {
@@ -454,7 +460,26 @@
 
   // ---------- Vykreslení a obnova jednotlivých sekcí ----------
   let P = null, NEAR = [];
-  const PARTS = { 'pl-match': matchBlock, 's-skore': scoreSec, 's-foto': photoSec, 's-komunita': communitySec, 's-potvrzeni': confirmSec, 's-zdroj': dataSource, 's-podnik': businessCard };
+  // ---------- Sledování změn (PLUS, prototyp: porovnání uloženého otisku údajů s aktuálními daty) ----------
+  const W = () => K.watch;
+  function watchLabel(on) { return K.icon(on ? 'check' : 'eye') + (on ? KP.t('Sledujete změny') : KP.t('Sledovat změny')) + (on ? '' : K.tierBadge('changeAlerts', { onlyLocked: true })); }
+  function changesBlock(p) {
+    if (!W() || !W().has(p.i)) return '<div id="pl-changes" hidden></div>';
+    const w = W().all()[p.i];
+    if (!K.hasTier('changeAlerts')) {
+      return '<div id="pl-changes" class="pl-changes"><p class="small muted">' + K.esc(KP.t('Toto místo sledujete. Upozornění na změny jsou součást členství PLUS.')) + ' ' + K.tierBadge('changeAlerts') + '</p></div>';
+    }
+    const ch = W().changes(p);
+    if (!ch.length) {
+      return '<div id="pl-changes" class="pl-changes"><p class="small muted">' + K.icon('check') + K.esc(K.t('Sledujete od {d}. Od té doby se údaje o přístupnosti nezměnily.', { d: K.fmtDate(w.date) })) + '</p></div>';
+    }
+    return '<div id="pl-changes" class="pl-changes is-changed" role="status"><p class="pl-label">' + K.esc(K.t('Změny od {d}', { d: K.fmtDate(w.date) })) + ' <span class="num">' + ch.length + '</span></p>' +
+      '<ul class="pl-chlist">' + ch.map(c => '<li><b>' + K.esc(c.label) + '</b>: <span class="pl-chfrom">' + K.esc(c.from) + '</span> <span aria-hidden="true">→</span><span class="sr-only">' + K.esc(KP.t('nově')) + '</span> <span class="pl-chto">' + K.esc(c.to) + '</span></li>').join('') + '</ul>' +
+      '<p class="small muted">' + K.esc(KP.t('Prototyp: porovnáváme otisk údajů uložený v tomto prohlížeči s aktuálními daty.')) + '</p>' +
+      '<button class="btn btn-ghost btn-sm" type="button" data-watch-ack>' + K.esc(KP.t('Beru na vědomí')) + '</button></div>';
+  }
+
+  const PARTS = { 'pl-changes': changesBlock, 'pl-match': matchBlock, 's-skore': scoreSec, 's-foto': photoSec, 's-komunita': communitySec, 's-potvrzeni': confirmSec, 's-zdroj': dataSource, 's-podnik': businessCard };
   function refresh(...ids) {
     ids.forEach(id => {
       const el = document.getElementById(id); if (!el) return;
@@ -486,15 +511,24 @@
       '<div class="pl-actions"><a class="btn btn-primary hide-md" href="' + K.gmaps.directions(p) + '" target="_blank" rel="noopener">' + K.icon('nav') + (KP.t('Navigovat') + '</a>') +
       '<a class="btn btn-ghost" href="' + K.gmaps.streetView(p) + '" target="_blank" rel="noopener">' + K.icon('eye') + 'Street View</a>' +
       '<button class="btn btn-ghost hide-md" type="button" data-save aria-pressed="' + on + '">' + saveLabel(on) + '</button>' +
+      '<a class="btn btn-ghost" href="itinerar.html?add=' + encodeURIComponent(p.i) + (p._r ? '&r=' + encodeURIComponent(p._r) : '') + '">' + K.icon('route') + (KP.t('Přidat do plánu') + '</a>') +
+      '<button class="btn btn-ghost" type="button" data-watch aria-pressed="' + !!(K.watch && K.watch.has(p.i)) + '">' + watchLabel(!!(K.watch && K.watch.has(p.i))) + '</button>' +
       '<button class="btn btn-ghost" type="button" id="share">' + K.icon('share') + (KP.t('Sdílet') + '</button>') +
       '<a class="btn btn-quiet" href="pridat.html?id=' + encodeURIComponent(p.i) + '&nahlasit=1">' + K.icon('flag') + (KP.t('Nahlásit změnu') + '</a></div></div>') + heroPhoto(p) + '</header>' +
       '<div class="pl-layout">' +
-      '<div class="pl-top">' + matchBlock(p) + tiles(p, near) + jumpNav(main + aside) + '</div>' +
+      '<div class="pl-top">' + changesBlock(p) + matchBlock(p) + tiles(p, near) + jumpNav(main + aside) + '</div>' +
       ('<aside class="pl-aside" aria-label="' + KP.t('Mapa, kontakt a zdroj dat') + '"><div class="pl-aside-map">') + mapCard(p) + '</div><div class="pl-aside-info">' + aside + '</div></aside>' +
       '<div class="pl-main">' + main + '</div>' +
       '</div>' +
       '<div class="pl-actionbar"><a class="btn btn-primary" href="' + K.gmaps.directions(p) + '" target="_blank" rel="noopener">' + K.icon('nav') + (KP.t('Navigovat') + '</a>') +
       '<button class="btn btn-ghost" type="button" data-save aria-pressed="' + on + '">' + saveLabel(on) + '</button></div>';
+  }
+
+  function syncSave(on) { ROOT().querySelectorAll('[data-save]').forEach(x => { x.setAttribute('aria-pressed', on); x.innerHTML = saveLabel(on); }); }
+  function syncWatch() {
+    const on = !!(K.watch && P && K.watch.has(P.i));
+    ROOT().querySelectorAll('[data-watch]').forEach(x => { x.setAttribute('aria-pressed', on); x.innerHTML = watchLabel(on); });
+    refresh('pl-changes');
   }
 
   // ---------- Události (delegované, přežijí obnovu sekcí) ----------
@@ -506,8 +540,26 @@
       if (t.matches('[data-open-needs-inline]')) { K.needsDrawer(); return; }
       if (t.matches('[data-save]')) {
         const now = K.saved.toggle(p.i, p);
-        root.querySelectorAll('[data-save]').forEach(x => { x.setAttribute('aria-pressed', now); x.innerHTML = saveLabel(now); });
-        K.toast(now ? KP.t('Místo uloženo do profilu.') : KP.t('Místo odebráno z uložených.'));
+        syncSave(now);
+        // Plný limit FREE: místo se neuložilo a core otevřel panel PLUS, hlášku „odebráno“ neukazujeme
+        if (!K.saved.blocked) K.toast(now ? KP.t('Místo uloženo do profilu.') : KP.t('Místo odebráno z uložených.'));
+        return;
+      }
+      if (t.matches('[data-watch]')) {
+        if (K.watch.has(p.i)) {
+          K.watch.remove(p.i); syncWatch(); K.toast(KP.t('Změny u tohoto místa už nesledujete.'));
+          return;
+        }
+        K.requireTier('changeAlerts', () => {
+          if (!K.watch.add(p)) { K.toast(KP.t('Úložiště prohlížeče je plné.')); return; }
+          // Sledují se uložená místa: místo se zároveň uloží do profilu
+          if (!K.saved.has(p.i) && K.saved.toggle(p.i, p)) syncSave(true);
+          syncWatch(); K.toast(KP.t('Sledujete změny. Při další návštěvě uvidíte, co se změnilo.'));
+        });
+        return;
+      }
+      if (t.matches('[data-watch-ack]')) {
+        K.watch.accept(p); refresh('pl-changes'); K.toast(KP.t('Změny vzaty na vědomí.'));
         return;
       }
       if (t.id === 'share') {
@@ -600,6 +652,12 @@
     if (location.hash) { const t = document.getElementById(location.hash.slice(1)); if (t) t.scrollIntoView(); }
     // Změna potřeb: přepočítat jen osobní shodu, mapa v pravém sloupci se znovu nenačítá
     document.addEventListener('kp:needs', () => refresh('pl-match'));
+    // Uložení dokončené až po vyzkoušení PLUS v panelu limitu; změna úrovně mění štítky a sledování
+    document.addEventListener('kp:saved', (e) => { if (P && e.detail && e.detail.id === P.i) syncSave(e.detail.saved); });
+    document.addEventListener('kp:tier', () => {
+      syncWatch(); refresh('pl-match');
+      ROOT().querySelectorAll('[data-tier-badge]').forEach(el => { el.innerHTML = K.tierBadge(el.dataset.tierBadge, { onlyLocked: true }); });
+    });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();

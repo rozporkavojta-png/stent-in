@@ -311,7 +311,8 @@
     } else if (n.active) {
       box.innerHTML = ('<p>' + KP.t('V profilu potřeb nemáte nastavený největší sklon, který zvládnete. Doplňte ho a u každé trasy uvidíte, jestli vám vyhovuje.') + '</p><button class="btn btn-primary btn-sm" type="button" data-open-needs-here>' + KP.t('Doplnit sklon') + '</button>');
     } else {
-      box.innerHTML = ('<p>' + KP.t('Vyhovuje vám trasa? Nastavte si v profilu potřeb největší sklon, který zvládnete, a u každé trasy to uvidíte.') + '</p><button class="btn btn-primary btn-sm" type="button" data-open-needs-here>' + KP.t('Nastavit profil potřeb') + '</button>');
+      // Shoda s profilem potřeb (Accessibility Match) je součást PLUS; údaje o trase zůstávají zdarma
+      box.innerHTML = ('<p>' + KP.t('Vyhovuje vám trasa? Nastavte si v profilu potřeb největší sklon, který zvládnete, a u každé trasy to uvidíte.') + ' ' + K.tierBadge('match', { onlyLocked: true }) + '</p><button class="btn btn-primary btn-sm" type="button" data-open-needs-here>' + KP.t('Nastavit profil potřeb') + '</button>');
     }
   }
 
@@ -426,7 +427,7 @@
 
   function matchBlock(t) {
     const n = K.getNeeds();
-    if (!n.active) return ('<div class="st-match st-match-off"><p class="st-match-q">' + KP.t('Vyhovuje vám tato trasa?') + '</p><p>' + KP.t('Nastavte si profil potřeb (pomůcka, největší sklon, WC, parkování) a porovnáme ho s údaji o trase.') + '</p><button class="btn btn-primary btn-sm" type="button" data-open-needs-here>' + KP.t('Nastavit profil potřeb') + '</button></div>');
+    if (!n.active) return ('<div class="st-match st-match-off"><p class="st-match-q">' + KP.t('Vyhovuje vám tato trasa?') + ' ' + K.tierBadge('match', { onlyLocked: true }) + '</p><p>' + KP.t('Nastavte si profil potřeb (pomůcka, největší sklon, WC, parkování) a porovnáme ho s údaji o trase.') + '</p><button class="btn btn-primary btn-sm" type="button" data-open-needs-here>' + KP.t('Nastavit profil potřeb') + '</button></div>');
     const r = match(t, n);
     const head = r.pct === null ? K.t('Chybí údaje pro porovnání') : K.t('{pct} % shoda s vašimi potřebami', { pct: r.pct });
     return '<div class="st-match st-' + r.status + ('"><p class="st-match-q">' + KP.t('Podle vašeho profilu (')) + esc(K.aidLabel(n)) + ')</p>' +

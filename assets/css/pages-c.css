@@ -173,6 +173,11 @@
 .ko-mine b { font: 700 2rem/1 var(--f-mono); background: var(--signal); color: var(--on-signal); padding: 2px 8px; margin: 2px 0; }
 .ko-more { margin: 24px 0 0; }
 
+/* Členství (prototyp): štítek PLUS u vlastních seznamů a poznámka */
+.ko-tier:empty { display: none; }
+.ko-tier .tier-tag { margin-left: 4px; vertical-align: .25em; }
+.ko-tier-note { margin: 12px 0; padding: 6px 0 6px 12px; border-left: 4px solid var(--signal); color: var(--ink-2); max-width: 46ch; }
+
 /* Kolekce */
 .ko-new { display: flex; gap: 12px; align-items: end; flex-wrap: wrap; }
 .ko-new .field { flex: 1 1 260px; }

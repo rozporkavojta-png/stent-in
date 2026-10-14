@@ -324,3 +324,16 @@ a.pl-vbadge:hover { color: var(--on-signal); text-decoration: underline; text-de
 .pl-upd { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .pl-upd li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: .86rem; color: var(--ink-2); }
 .pl-upd .badge { white-space: normal; }
+
+/* Sledování změn (PLUS, prototyp) a štítky členství */
+.pl-changes { margin: 0 0 20px; padding: 12px 0 12px 14px; border-left: 4px solid var(--line-strong); }
+.pl-changes.is-changed { border-left-color: var(--signal); background: var(--surface-2); padding-right: 14px; }
+.pl-changes p { margin: 0; }
+.pl-changes .pl-label { margin-bottom: 8px; }
+.pl-changes .btn { margin-top: 10px; min-height: 44px; }
+.pl-changes .i { width: 16px; height: 16px; vertical-align: -3px; margin-right: 6px; }
+.pl-chlist { list-style: none; padding: 0; margin: 0 0 8px; display: flex; flex-direction: column; gap: 6px; }
+.pl-chlist li { padding-bottom: 6px; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.pl-chfrom { text-decoration: line-through; color: var(--ink-3); }
+.pl-chto { font-weight: 700; }
+.pl-actions .tier-tag, .pl-match-cta .tier-tag { margin-left: 6px; }

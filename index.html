@@ -5,11 +5,11 @@
 <link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>kudyprojedu.cz</title>
-<meta name="description" content="Skutečná místa v Česku a v Bavorsku s údaji o přístupnosti pro lidi na vozíku a s omezenou pohyblivostí. Vstup, toaleta, parkování ZTP, odkud údaj je a kdy byl naposledy upraven.">
+<meta name="description" content="Platforma pro bezbariérové cestování. Začínáme v jižních Čechách a v Bavorsku. Konkrétní údaje o přístupnosti, fotky a zdroj každého údaje, plánování výletů a průvodci.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=15">
-<link rel="stylesheet" href="assets/css/pages-a.css?v=12">
+<link rel="stylesheet" href="assets/css/style.css?v=16">
+<link rel="stylesheet" href="assets/css/pages-a.css?v=13">
 </head>
 <body>
 <div id="site-header"></div>
@@ -17,8 +17,9 @@
 
   <section class="home-hero" aria-labelledby="hero-h">
     <div class="wrap">
-      <h1 id="hero-h"><span class="hero-word" data-i18n>Kudy projedu?</span><span class="hero-sub" data-i18n>Najděte místa, kam projedete na vozíku.</span></h1>
-      <p class="lede" data-i18n>Skutečná místa v celém Česku a v Bavorsku. U každého vidíte vstup, toaletu a parkování, odkud údaj je a kdy ho někdo naposledy upravil.</p>
+      <p class="kicker home-kicker" data-i18n>Bezbariérové cestování · jižní Čechy a Bavorsko</p>
+      <h1 id="hero-h"><span class="hero-word" data-i18n>Kudy projedu?</span><span class="hero-sub" data-i18n>Cestujte bez bariér po jižních Čechách a Bavorsku.</span></h1>
+      <p class="lede" data-i18n>Platforma pro lidi na vozíku a s omezenou pohyblivostí. U každého místa vidíte vstup, toaletu a parkování v konkrétních údajích, fotky a odkud údaj pochází. Mapa už pokrývá celé Česko i Bavorsko.</p>
       <form class="home-search" action="mapa.html" method="get" role="search">
         <label class="sr-only" for="hq" data-i18n>Obec nebo název místa</label>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
@@ -28,12 +29,17 @@
       </form>
       <div class="chip-row home-chips" aria-label="Rychlé volby" data-i18n-attr="aria-label">
         <a class="chip" href="mapa.html?wc=1" data-i18n>Přístupné WC</a>
-        <a class="chip" href="mapa.html?kat=ubytovani" data-i18n>Ubytování</a>
+        <a class="chip" href="ubytovani.html" data-i18n>Ubytování</a>
         <a class="chip" href="mapa.html?kat=pamatky" data-i18n>Památky</a>
         <a class="chip" href="mapa.html?kat=restaurace" data-i18n>Restaurace</a>
         <a class="chip" href="mapa.html?kat=parkovani" data-i18n>Parkování ZTP</a>
         <button class="chip" type="button" data-open-needs data-icon="sliders" data-i18n>Moje potřeby</button>
       </div>
+      <ul class="home-paths" aria-label="Hlavní cesty" data-i18n-attr="aria-label">
+        <li><a class="home-path" href="mapa.html"><b data-icon="map" data-i18n>Najít místo</b><span data-i18n>Mapa míst s údaji o přístupnosti, fotkami a zdrojem každého údaje. Zdarma.</span></a></li>
+        <li><a class="home-path" href="planovac.html"><b data-icon="route" data-i18n>Naplánovat výlet</b><span data-i18n>Jednodenní výlet ze skutečných míst podle vašich potřeb. V prototypu podle pravidel, v ostré verzi s AI.</span></a></li>
+        <li><a class="home-path" href="pruvodci.html"><b data-icon="book" data-i18n>Průvodci</b><span data-i18n>Itineráře po jižních Čechách a Bavorsku sestavené ze skutečných míst.</span></a></li>
+      </ul>
     </div>
   </section>
 
@@ -44,12 +50,30 @@
         <p class="band-note" data-i18n>Čísla se počítají přímo z dat mapy. Stav k <span id="fetched">5. 10. 2026 (Česko) a 7. 10. 2026 (Bavorsko)</span>. <span id="zeme-split"></span>. <a href="metodika.html#zdroje">Odkud data jsou</a></p>
       </div>
       <div class="band-stats" id="counts" aria-live="polite">
-        <p class="stat stat-main"><span class="n num" data-stat="total">…</span><span class="l" data-i18n>míst s údajem o přístupnosti</span></p>
-        <p class="stat"><span class="n num" data-stat="w_yes">…</span><span class="l" data-i18n>vstup přístupný na vozíku</span></p>
-        <p class="stat"><span class="n num" data-stat="w_limited">…</span><span class="l" data-i18n>vstup částečně přístupný</span></p>
-        <p class="stat"><span class="n num" data-stat="x">…</span><span class="l" data-i18n>míst s naměřenými údaji z otevřených dat</span></p>
-        <p class="stat"><span class="n num" data-stat="parkovani">…</span><span class="l" data-i18n>parkovišť s vyhrazeným místem ZTP</span></p>
+        <p class="stat stat-main"><span class="n num" data-stat="total">…</span><span class="l" data-i18n>míst s údajem o přístupnosti v Česku a v Bavorsku</span></p>
+        <p class="stat"><span class="n num" data-stat="jc">…</span><span class="l" data-i18n>míst v Jihočeském kraji</span></p>
+        <p class="stat"><span class="n num" data-stat="de">…</span><span class="l" data-i18n>míst v Bavorsku</span></p>
+        <p class="stat"><span class="n num" data-stat="w_yes">…</span><span class="l" data-i18n>se vstupem přístupným na vozíku</span></p>
+        <p class="stat"><span class="n num" data-stat="img">…</span><span class="l" data-i18n>míst s fotkou z Wikimedia Commons</span></p>
       </div>
+    </div>
+  </section>
+
+  <section class="section split" aria-labelledby="val-h">
+    <div class="wrap split-grid">
+      <div class="split-h">
+        <p class="kicker" data-i18n>Co platforma nabízí</p>
+        <h2 id="val-h" data-i18n>Údaje, podle kterých se dá rozhodnout</h2>
+        <p class="muted" data-i18n>Žádná nálepka „bezbariérové“. Rozměry, fotky a zdroj, abyste sami posoudili, jestli místo vyhovuje právě vám.</p>
+      </div>
+      <ul class="split-b rule-grid">
+        <li><h3 data-i18n>Detailní údaje o přístupnosti</h3><p data-i18n>Vstup, schody, šířka dveří, toaleta, parkování a u ubytování pokoj a koupelna. Kde údaj chybí, napíšeme to.</p></li>
+        <li><h3 data-i18n>Fotky a transparentní zdroje</h3><p data-i18n>U každého údaje vidíte, jestli pochází z otevřených dat, od komunity, nebo od provozovatele, a kdy byl naposledy upraven.</p></li>
+        <li><h3 data-i18n>Vyhledávání, recenze a komunita</h3><p data-i18n>Hledání, filtry, zkušenosti ostatních a přidávání míst jsou zdarma. Opravy údajů nikdy nezávisí na platbě.</p></li>
+        <li><p class="cl-tag"><span class="tier-tag tier-plus">PLUS</span></p><h3>Accessibility Match</h3><p data-i18n>Nastavíte, co zvládnete, a u každého místa uvidíte, co splňuje, co ne a kde údaj chybí.</p></li>
+        <li><p class="cl-tag"><span class="tier-tag tier-plus">PLUS</span> <span class="tier-tag tier-premium">PREMIUM</span></p><h3 data-i18n>Plánování výletů a dovolených</h3><p data-i18n>Jednodenní výlety a uložené itineráře v PLUS, vícedenní plánování a průvodci ke stažení v PREMIUM.</p></li>
+        <li><h3 data-i18n>Průvodci, akce a výlety</h3><p data-i18n>Hotové itineráře, plánování na míru a bezbariérové akce, workshopy a výlety s partnery. Připravujeme, termíny zatím nevypisujeme.</p></li>
+      </ul>
     </div>
   </section>
 
@@ -57,13 +81,48 @@
     <div class="wrap">
       <div class="head-row">
         <div>
-          <p class="kicker" data-i18n>Výběr z mapy</p>
+          <p class="kicker" data-i18n>Jižní Čechy a Bavorsko</p>
           <h2 id="ph-h" data-i18n>Místa s fotkou</h2>
         </div>
         <a class="btn btn-ghost" href="mapa.html" data-i18n>Celá mapa <span data-icon="arrow"></span></a>
       </div>
       <ul class="photo-grid" id="photos" aria-live="polite"></ul>
-      <p class="small muted photo-note" data-i18n>Vybíráme místa se vstupem přístupným na vozíku a s fotkou na Wikimedia Commons, jedno z každého z osmi krajů a ze čtyř bavorských vládních obvodů s nejvíce místy. Fotky patří jejich autorům, licenci najdete po kliknutí na popisek.</p>
+      <p class="small muted photo-note" data-i18n>Vybíráme místa se vstupem přístupným na vozíku a s fotkou na Wikimedia Commons: čtyři z Jihočeského kraje, dvě z Dolního Bavorska a dvě z Horní Falce, vždy ta s nejvíce úpravami v OpenStreetMap. Fotky patří jejich autorům, licenci najdete po kliknutí na popisek.</p>
+    </div>
+  </section>
+
+  <section class="section split" aria-labelledby="tier-h">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <p class="kicker" data-i18n>Členství</p>
+          <h2 id="tier-h" data-i18n>Základ zdarma, plánování navíc</h2>
+          <p class="muted head-note" data-i18n>Informace o přístupnosti a komunita jsou zdarma. Placené úrovně šetří čas s plánováním.</p>
+        </div>
+        <a class="btn btn-ghost" href="clenstvi.html" data-i18n>Porovnat členství <span data-icon="arrow"></span></a>
+      </div>
+      <ul class="home-tiers">
+        <li>
+          <p class="cl-tag"><span class="tier-tag tier-free">FREE</span></p>
+          <h3 data-i18n>Explore – objevuj bez bariér</h3>
+          <p class="price"><span data-tier-price="free">0 €</span></p>
+          <ul><li data-i18n>Interaktivní mapa a podrobné údaje</li><li data-i18n>Recenze, komunita a přidávání míst</li><li data-i18n>Uložení až 5 oblíbených míst</li></ul>
+        </li>
+        <li class="hl">
+          <p class="cl-tag"><span class="tier-tag tier-plus">PLUS</span></p>
+          <h3 data-i18n>Plan – cestuj podle svých pravidel</h3>
+          <p class="price"><span data-tier-price="plus">4,99 €</span> <small data-i18n>měsíčně</small></p>
+          <ul><li data-i18n>Accessibility Match a osobní profil požadavků</li><li data-i18n>AI plánovač jednodenních výletů</li><li data-i18n>Neomezené ukládání a export do PDF</li></ul>
+        </li>
+        <li>
+          <p class="cl-tag"><span class="tier-tag tier-premium">PREMIUM</span></p>
+          <h3 data-i18n>Travel – dovolená bez zbytečného stresu</h3>
+          <p class="price"><span data-tier-price="premium">9,99 €</span> <small data-i18n>měsíčně</small></p>
+          <ul><li data-i18n>AI plánovač vícedenních dovolených</li><li data-i18n>Offline itineráře a Travel Concierge</li><li data-i18n>Sdílení s cestovním partnerem</li></ul>
+        </li>
+      </ul>
+      <p class="callout small home-note" data-i18n>Jde o návrh budoucí nabídky. Některé funkce, zejména ověřování hotelů, plánování tras a concierge, budou vyžadovat další technický a personální rozvoj.</p>
+      <div class="home-row"><button class="btn btn-primary" type="button" data-tier-open data-i18n>Vyzkoušet úroveň (prototyp, nic se neplatí)</button></div>
     </div>
   </section>
 
@@ -80,39 +139,12 @@
     </div>
   </section>
 
-  <section class="section split" aria-labelledby="sp-h">
-    <div class="wrap split-grid">
-      <div class="split-h">
-        <p class="kicker" data-i18n>Vstup</p>
-        <h2 id="sp-h" data-i18n>Jak jsou na tom místa se zadaným vstupem</h2>
-      </div>
-      <div class="split-b">
-        <div class="split-bar" id="split" aria-hidden="true"></div>
-        <ul class="rule-list split-legend" id="split-legend"></ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section split" aria-labelledby="how-h">
-    <div class="wrap split-grid">
-      <div class="split-h">
-        <p class="kicker" data-i18n>Postup</p>
-        <h2 id="how-h" data-i18n>Jak to funguje</h2>
-      </div>
-      <ol class="split-b num-list">
-        <li><h3 data-i18n>Nastavte své potřeby</h3><p data-i18n>Čím se pohybujete a co potřebujete: bezbariérovou toaletu, parkování ZTP, jeden schod navíc. Ukládá se jen ve vašem prohlížeči.</p></li>
-        <li><h3 data-i18n>Najděte místo na mapě</h3><p data-i18n>Filtrujte podle země, kategorie, kraje nebo obvodu a konkrétních údajů. Tvar i barva značky ukazují, jestli místo vyhovuje právě vám.</p></li>
-        <li><h3 data-i18n>Zkontrolujte detail a vyrazte</h3><p data-i18n>Vstup, toaleta, parkování, fotky, Street View a datum poslední úpravy. Když zjistíte něco jiného, doplňte to pro další.</p></li>
-      </ol>
-    </div>
-  </section>
-
   <section class="section split" aria-labelledby="kr-h">
     <div class="wrap split-grid">
       <div class="split-h">
         <p class="kicker" data-i18n>Přehled</p>
         <h2 id="kr-h" data-i18n>Kraje a obvody</h2>
-        <p class="muted" data-i18n>Počet míst v mapě podle kraje v Česku a vládního obvodu v Bavorsku. Detail ukáže podíl přístupných míst, obce a mapu.</p>
+        <p class="muted" data-i18n>Začínáme v Jihočeském kraji a v Bavorsku, data máme pro celé Česko i Bavorsko. Detail ukáže podíl přístupných míst, obce a mapu.</p>
         <a class="btn btn-quiet" href="kraj.html" data-i18n>Přehled krajů a obvodů <span data-icon="arrow"></span></a>
       </div>
       <div class="split-b">
@@ -125,8 +157,8 @@
     <div class="wrap cta-grid">
       <div class="cta-col">
         <p class="kicker" data-i18n>Pro podniky a obce</p>
-        <h2 data-i18n>Provozujete hotel, restauraci nebo úřad?</h2>
-        <p data-i18n>Základní profil podniku je zdarma. Vyplňte kontrolní seznam jednou a hosté uvidí, jestli k vám projedou.</p>
+        <h2 data-i18n>Provozujete hotel, restauraci nebo památku?</h2>
+        <p data-i18n>Strukturovaný profil přístupnosti, viditelnost mezi lidmi, kteří ji hledají, a volitelné ověření a poradenství. Základní profil a opravy jsou zdarma. Placená viditelnost je vždy oddělená od hodnocení přístupnosti.</p>
         <div class="row"><a class="btn btn-signal btn-lg" href="pro-firmy.html" data-i18n>Pro podniky a obce</a></div>
       </div>
       <div class="cta-col">
@@ -141,10 +173,11 @@
 </main>
 <div id="site-footer"></div>
 <script src="assets/js/i18n.js?v=2"></script>
-<script src="assets/js/i18n/core.js?v=2"></script>
-<script src="assets/js/i18n/index.js?v=1"></script>
+<script src="assets/js/i18n/core.js?v=3"></script>
+<script src="assets/js/i18n/index.js?v=3"></script>
+<script src="assets/js/i18n/clenstvi.js?v=1"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=15"></script>
-<script src="assets/js/index.js?v=13"></script>
+<script src="assets/js/core.js?v=16"></script>
+<script src="assets/js/index.js?v=14"></script>
 </body>
 </html>

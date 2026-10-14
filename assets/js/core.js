@@ -68,6 +68,8 @@
     arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
     home: '<path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>',
     chevron: '<path d="m6 9 6 6 6-6"/>',
+    book: '<path d="M4 5a2 2 0 0 1 2-2h14v15H6a2 2 0 0 0-2 2Z"/><path d="M4 20a2 2 0 0 0 2 1h14v-3M8 7h8"/>',
+    calendar: '<rect x="3" y="5" width="18" height="16"/><path d="M3 10h18M8 3v4M16 3v4"/>',
     phone: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/>',
   };
   function icon(name, cls) {
@@ -132,8 +134,12 @@
   // Potřeby se čtou z localStorage jen jednou (mapa se ptá u každé značky); změna v jiné záložce cache zneplatní
   let needsCache = null;
   try { window.addEventListener('storage', e => { if (!e.key || e.key === 'kp.needs') needsCache = null; }); } catch (e) {}
-  function getNeeds() { if (!needsCache) needsCache = normNeeds(store.get('needs', {})); return Object.assign({}, needsCache); }
-  function setNeeds(n) { const v = normNeeds(n); store.set('needs', v); needsCache = v; document.dispatchEvent(new CustomEvent('kp:needs', { detail: v })); return v; }
+  // Osobní profil a Accessibility Match patří do PLUS: ve FREE se uložené potřeby nemažou, jen se nepoužijí (active = false)
+  function getNeeds() {
+    if (!needsCache) { needsCache = normNeeds(store.get('needs', {})); if (!hasTier('needsProfile')) needsCache.active = false; }
+    return Object.assign({}, needsCache);
+  }
+  function setNeeds(n) { const v = normNeeds(n); store.set('needs', v); needsCache = null; const g = getNeeds(); document.dispatchEvent(new CustomEvent('kp:needs', { detail: g })); return g; }
   function aidLabel(n) { return n.aid === 'jiné' ? (n.aidOther || t('jiná pomůcka')) : t(n.aid); }
 
   // ---------- Hodnocení místa (jen z údajů, které opravdu máme) ----------
@@ -764,25 +770,31 @@
 
   // ---------- Navigace ----------
   // Hlavní položky (desktop hlavička) – ostatní stránky jsou v menu „Více“.
+  // planovac.html, pruvodci.html a akce.html tvoří jiné části webu; odkazy jsou připravené.
   const NAV = [
     ['mapa.html', t('Mapa')],
+    ['planovac.html', t('Plánovat')],
+    ['pruvodci.html', t('Průvodci')],
     ['ubytovani.html', t('Ubytování')],
-    ['trasy.html', t('Trasy')],
-    ['kraj.html', t('Kraje')],
     ['pro-firmy.html', t('Pro podniky')],
   ];
   const MORE = [
+    ['stezky.html', t('Stezky'), 'tree'],
+    ['trasy.html', t('Trasy'), 'route'],
+    ['kraj.html', t('Kraje'), 'globe'],
+    ['akce.html', t('Akce'), 'calendar'],
+    ['clenstvi.html', t('Členství'), 'star'],
     ['komunita.html', t('Komunita'), 'users'],
     ['metodika.html', t('Jak měříme'), 'ruler'],
     ['zdroje.html', t('Zdroje a trh'), 'chart'],
     ['o-projektu.html', t('O projektu'), 'info'],
     ['pridat.html', t('Přidat nebo upravit místo'), 'plus'],
   ];
-  // Spodní lišta na mobilu
+  // Spodní lišta na mobilu (pátá položka je tlačítko Více)
   const TABS = [
     ['index.html', t('Domů'), 'home'],
     ['mapa.html', t('Mapa'), 'map'],
-    ['ubytovani.html', t('Ubytování'), 'bed'],
+    ['planovac.html', t('Plánovat'), 'route'],
     ['profil.html', t('Uložené'), 'bookmark'],
   ];
   function here() { return location.pathname.split('/').pop() || 'index.html'; }
@@ -796,7 +808,7 @@
       ('<nav class="main-nav" aria-label="' + t('Hlavní navigace') + '">') + NAV.map(([href, label]) => '<a href="' + href + '"' + (h === href ? ' aria-current="page"' : '') + '>' + label + '</a>').join('') +
       ('<div class="more"><button class="more-btn" type="button" aria-expanded="false" aria-haspopup="true" data-more>' + t('Více') + ' ') + icon('chevron') + '</button>' +
       '<div class="more-menu" hidden>' + MORE.map(([href, label, ic]) => '<a href="' + href + '"' + (h === href ? ' aria-current="page"' : '') + '>' + icon(ic) + label + '</a>').join('') + (KPI.i18n ? '<div class="more-lang">' + icon('globe') + '<span>' + t('Jazyk') + '</span>' + langSwitch() + '</div>' : '') + '</div></div></nav>' +
-      '<div class="header-tools">' + langSwitch('hide-md') +
+      '<div class="header-tools">' + langSwitch('hide-md') + tierPill() +
       ('<button class="btn btn-soft btn-sm needs-btn" type="button" data-open-needs aria-label="' + t('Moje potřeby') + '">') + icon('sliders') + ('<span class="lbl">' + t('Moje potřeby') + '</span><span class="dot" data-needs-flag hidden></span></button>') +
       '<a class="btn btn-primary btn-sm hide-md add-btn" href="pridat.html" aria-label="' + t('Přidat místo') + '">' + icon('plus') + '<span class="lbl">' + t('Přidat místo') + '</span></a>' +
       ('<a class="icon-btn hide-md" href="profil.html" aria-label="' + t('Můj profil a uložená místa') + '">') + icon('user') + '</a>' +
@@ -817,13 +829,14 @@
     const theme = document.documentElement.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     const wrap = document.createElement('div');
     const links = NAV.concat(MORE.map(x => [x[0], x[1], x[2]]));
-    const icons = { 'mapa.html': 'map', 'ubytovani.html': 'bed', 'trasy.html': 'route', 'kraj.html': 'globe', 'pro-firmy.html': 'building' };
+    const icons = { 'mapa.html': 'map', 'planovac.html': 'route', 'pruvodci.html': 'book', 'ubytovani.html': 'bed', 'pro-firmy.html': 'building' };
     wrap.innerHTML = '<div class="sheet-backdrop" data-close></div><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="more-title"><div class="grip"></div>' +
       ('<header><h2 id="more-title">' + t('Všechny stránky') + '</h2><button class="icon-btn" type="button" data-close aria-label="' + t('Zavřít') + '">') + icon('close') + '</button></header>' +
       '<div class="body"><div class="menu-list">' +
       links.map(([href, label, ic]) => '<a href="' + href + '"' + (h === href ? ' aria-current="page"' : '') + '>' + icon(ic || icons[href] || 'arrow') + label + '</a>').join('') +
       '<a href="profil.html">' + icon('user') + (t('Můj profil a uložená místa') + '</a>') +
       '<div class="menu-sep"></div>' +
+      '<button type="button" data-tier-open-sheet>' + icon('star') + t('Úroveň členství') + ' <span class="tier-tag tier-' + tier() + '">' + TIERS[tier()].label + '</span></button>' +
       '<button type="button" data-open-needs>' + icon('sliders') + (t('Moje potřeby') + '</button>') +
       '<button type="button" data-theme-toggle>' + icon(theme === 'dark' ? 'sun' : 'moon') + (theme === 'dark' ? t('Světlý režim') : t('Tmavý režim')) + '</button>' +
       (KPI.i18n ? '<div class="menu-lang">' + icon('globe') + '<span class="lbl">' + t('Jazyk') + '</span>' + langSwitch() + '</div>' : '') +
@@ -834,16 +847,17 @@
     wrap.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
     wrap.querySelector('[data-open-needs]').addEventListener('click', () => { close(); needsDrawer(); });
     wrap.querySelector('[data-theme-toggle]').addEventListener('click', () => { toggleTheme(); close(); });
+    wrap.querySelector('[data-tier-open-sheet]').addEventListener('click', () => { close(); tierSwitch(); });
     wrap.querySelector('a').focus();
   }
 
   function footer() {
     return '<footer class="site-footer"><div class="wrap"><div class="cols">' +
-      '<div><a class="brand" href="index.html">' + LOGO + ('<span>kudyprojedu<span class="dom">.cz</span></span></a><p class="small muted" style="margin-top:12px;max-width:34ch">' + t('Přístupnost v centimetrech, ne v nálepkách. Mapa míst pro lidi na vozíku a s omezenou pohyblivostí v Česku a v Bavorsku.') + '</p>') +
+      '<div><a class="brand" href="index.html">' + LOGO + ('<span>kudyprojedu<span class="dom">.cz</span></span></a><p class="small muted" style="margin-top:12px;max-width:34ch">' + t('Přístupnost v centimetrech, ne v nálepkách. Platforma pro bezbariérové cestování. Začínáme v jižních Čechách a v Bavorsku.') + '</p>') +
       '<div class="footer-tools"><button class="btn btn-ghost btn-sm" type="button" data-theme-toggle>' + icon('moon') + (t('Světlý / tmavý režim') + '</button>') + langSwitch() + '</div></div>' +
-      ('<div><h4>' + t('Hledat') + '</h4><ul><li><a href="mapa.html">' + t('Mapa míst') + '</a></li><li><a href="ubytovani.html">' + t('Ubytování') + '</a></li><li><a href="mapa.html#wc">' + t('Veřejné WC') + '</a></li><li><a href="trasy.html">' + t('Bariéry v ulicích') + '</a></li><li><a href="kraj.html">' + t('Kraje') + '</a></li></ul></div>') +
+      ('<div><h4>' + t('Hledat') + '</h4><ul><li><a href="mapa.html">' + t('Mapa míst') + '</a></li><li><a href="planovac.html">' + t('Plánovat výlet') + '</a></li><li><a href="pruvodci.html">' + t('Průvodci') + '</a></li><li><a href="ubytovani.html">' + t('Ubytování') + '</a></li><li><a href="mapa.html#wc">' + t('Veřejné WC') + '</a></li><li><a href="trasy.html">' + t('Bariéry v ulicích') + '</a></li><li><a href="kraj.html">' + t('Kraje') + '</a></li></ul></div>') +
       ('<div><h4>' + t('Přispět') + '</h4><ul><li><a href="pridat.html">' + t('Přidat nebo upravit místo') + '</a></li><li><a href="metodika.html#mereni">' + t('Jak měřit dveře a schody') + '</a></li><li><a href="komunita.html">' + t('Komunita') + '</a></li><li><a href="profil.html">' + t('Můj profil') + '</a></li></ul></div>') +
-      ('<div><h4>' + t('Pro organizace') + '</h4><ul><li><a href="pro-firmy.html">' + t('Pro podniky') + '</a></li><li><a href="pro-firmy.html#obce">' + t('Pro obce a kraje') + '</a></li><li><a href="pro-firmy.html#cenik">' + t('Ceník') + '</a></li><li><a href="zdroje.html">' + t('Zdroje a trh') + '</a></li></ul></div>') +
+      ('<div><h4>' + t('Pro organizace') + '</h4><ul><li><a href="clenstvi.html">' + t('Členství') + '</a></li><li><a href="pro-firmy.html">' + t('Pro podniky') + '</a></li><li><a href="pro-firmy.html#obce">' + t('Pro obce a kraje') + '</a></li><li><a href="pro-firmy.html#cenik">' + t('Ceník') + '</a></li><li><a href="zdroje.html">' + t('Zdroje a trh') + '</a></li></ul></div>') +
       ('<div><h4>' + t('Projekt') + '</h4><ul><li><a href="o-projektu.html">' + t('O projektu') + '</a></li><li><a href="o-projektu.html#plan">' + t('Plán rozvoje') + '</a></li><li><a href="metodika.html">' + t('Jak měříme') + '</a></li><li><a href="metodika.html#soukromi">' + t('Soukromí a GDPR') + '</a></li></ul><div class="partner-logos"><span>VŠTE ČB</span><span>OTH Regensburg</span><span>Interreg BY–CZ</span></div></div>') +
       ('</div><div class="legal"><span>' + t('© 2026 kudyprojedu.cz – studentský projekt STENT-IN') + '</span><span>' + t('Data © přispěvatelé OpenStreetMap (ODbL), Mapy bez bariér, Brno a IPR Praha (CC BY), Statutární město Ostrava (CC BY-SA 4.0) · Bavorsko: DB InfraGO OpenStation (CC0), Landeshauptstadt München a Stadt Würzburg (dl-de/by-2-0), Stadt Haar (CC BY 4.0), BayernCloud Tourismus (CC BY 4.0 a CC0) · fotky Wikimedia Commons · mapy Google') + ' · <a href="zdroje.html#bavorsko">' + t('Všechny zdroje a licence') + '</a></span></div></div></footer>');
   }
@@ -909,6 +923,7 @@
 
   // ---------- Panel „Moje potřeby“ ----------
   function needsDrawer() {
+    if (!hasTier('needsProfile')) { requireTier('needsProfile', needsDrawer); return; }
     const n = getNeeds();
     const wrap = document.createElement('div');
     wrap.innerHTML = '<div class="drawer-backdrop" data-close></div>' +
@@ -932,16 +947,37 @@
   }
 
   function toast(msg) {
+    if (Date.now() < TOAST_MUTE) return;
     const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status'); t.textContent = msg;
     document.body.appendChild(t); setTimeout(() => t.remove(), 3200);
   }
 
   // ---------- Uložená místa ----------
+  // FREE: nejvýš FREE_SAVE_LIMIT míst. toggle(id, p) vrací stav po kliknutí (true = uloženo, false = neuloženo).
+  // Když je limit plný, místo se neuloží, toggle vrátí false, nastaví saved.blocked = true a otevře panel
+  // requireTier('unlimitedSaves'). Když si uživatel v panelu vyzkouší PLUS, místo se uloží a přijde událost kp:saved.
+  // Při návratu na FREE se nic nemaže, jen nejde přidat další místo nad limit.
+  const FREE_SAVE_LIMIT = 5;
+  let TOAST_MUTE = 0;
   const saved = {
+    limit: () => (hasTier('plus') ? Infinity : FREE_SAVE_LIMIT),
+    blocked: false,
     all: () => store.get('saved', []),
     has: (id) => saved.all().includes(id),
-    toggle: (id, p) => { const s = saved.all(); const i = s.indexOf(id); if (i >= 0) s.splice(i, 1); else { s.push(id); rememberRegion(p || BYID.get(id)); } store.set('saved', s); return i < 0; },
+    toggle: (id, p) => {
+      saved.blocked = false;
+      const s = saved.all(); const i = s.indexOf(id);
+      if (i >= 0) { s.splice(i, 1); store.set('saved', s); fireSaved(id, false); return false; }
+      if (s.length >= saved.limit()) {
+        saved.blocked = true;
+        TOAST_MUTE = Date.now() + 400; // starší stránky po false ukazují „odebráno“: tu hlášku potlačíme
+        requireTier('unlimitedSaves', () => { const x = saved.all(); if (!x.includes(id)) { x.push(id); rememberRegion(p || BYID.get(id)); store.set('saved', x); } fireSaved(id, true); toast(t('Místo uloženo do profilu.')); });
+        return false;
+      }
+      s.push(id); rememberRegion(p || BYID.get(id)); store.set('saved', s); fireSaved(id, true); return true;
+    },
   };
+  function fireSaved(id, on) { document.dispatchEvent(new CustomEvent('kp:saved', { detail: { id, saved: on, count: saved.all().length } })); }
 
   // ---------- Komunita a podniky: FUNKČNÍ PROTOTYP bez serveru ----------
   // Vše se ukládá jen do localStorage tohoto prohlížeče (klíče kp.reviews, kp.confirm, kp.reports, kp.requests,
@@ -1225,6 +1261,187 @@
     },
   };
 
+  // ---------- Členství FREE / PLUS / PREMIUM: PROTOTYP bez plateb a účtů ----------
+  // Úroveň se jen simuluje přepínačem v prohlížeči (localStorage kp.tier, výchozí 'free'). Nic se neplatí,
+  // nikde se nesbírají platební údaje. API:
+  //   KP.TIERS                 {free, plus, premium}: {key, rank, label, name, claim, price, priceLabel}
+  //   KP.TIER_ORDER            ['free', 'plus', 'premium']
+  //   KP.tier()                aktuální úroveň 'free' | 'plus' | 'premium'
+  //   KP.setTier(t)            uloží úroveň, vyšle událost kp:tier (detail {tier, prev}) a kp:needs; vrací novou úroveň
+  //   KP.hasTier(min)          true, když aktuální úroveň ≥ min; min může být i název funkce z FEATURES_TIER
+  //   KP.FEATURES_TIER         funkce → nejnižší úroveň, která ji obsahuje
+  //   KP.FEATURE_INFO          funkce → {label, desc} pro panel a štítky
+  //   KP.tierOf(feature)       'free' | 'plus' | 'premium' (neznámá funkce = 'free')
+  //   KP.tierBadge(feature, {onlyLocked})  HTML štítku PLUS / PREMIUM ('' u funkce zdarma; onlyLocked: jen když ji úroveň nemá)
+  //   KP.tierTag(t)            HTML štítku úrovně (FREE / PLUS / PREMIUM)
+  //   KP.requireTier(feature, onOk)  úroveň stačí → zavolá onOk() a vrátí true; jinak otevře panel s vysvětlením,
+  //                            odkazem na clenstvi.html a tlačítkem „Vyzkoušet jako …“ (po přepnutí zavolá onOk) a vrátí false
+  //   KP.tierSwitch()          otevře panel s přepínačem úrovně
+  //   KP.tierPrice(t)          cena podle jazyka: „4,99 €“ / „€4.99“
+  //   KP.TIER_NOTE, KP.TIER_PROTO_NOTE  povinné poznámky o návrhu nabídky a o prototypu
+  const TIER_ORDER = ['free', 'plus', 'premium'];
+  const TIERS = {
+    free: { key: 'free', rank: 0, label: 'FREE', name: 'Explore', claim: t('objevuj bez bariér'), price: 0 },
+    plus: { key: 'plus', rank: 1, label: 'PLUS', name: 'Plan', claim: t('cestuj podle svých pravidel'), price: 4.99 },
+    premium: { key: 'premium', rank: 2, label: 'PREMIUM', name: 'Travel', claim: t('dovolená bez zbytečného stresu'), price: 9.99 },
+  };
+  function tierPrice(k) {
+    const x = TIERS[k] || TIERS.free;
+    const n = x.price ? x.price.toFixed(2) : '0';
+    return LANG === 'en' ? '€' + n : fmt(n) + ' €';
+  }
+  TIER_ORDER.forEach(k => { TIERS[k].priceLabel = TIERS[k].price ? t('{p} měsíčně', { p: tierPrice(k) }) : tierPrice(k); });
+  const TIER_NOTE = t('Jde o návrh budoucí nabídky. Některé funkce, zejména ověřování hotelů, plánování tras a concierge, budou vyžadovat další technický a personální rozvoj.');
+  const TIER_PROTO_NOTE = t('Prototyp: platby ani účty zatím neexistují. Úroveň se jen přepne v tomto prohlížeči, nic se neplatí.');
+  const FEATURES_TIER = {
+    match: 'plus', needsProfile: 'plus', dayPlanner: 'plus', unlimitedSaves: 'plus', customLists: 'plus',
+    advancedFilters: 'plus', changeAlerts: 'plus', pdfExport: 'plus',
+    multiDay: 'premium', concierge: 'premium', alternatives: 'premium', offline: 'premium', partnerShare: 'premium',
+    partnerPerks: 'premium', prioritySupport: 'premium', accessCheckCredit: 'premium',
+  };
+  const FEATURE_INFO = {
+    match: { label: 'Accessibility Match', desc: t('Automatické porovnání míst s vašimi osobními požadavky. U každého místa uvidíte, co splňuje, co ne a kde údaj chybí.') },
+    needsProfile: { label: t('Osobní profil požadavků'), desc: t('Uložíte si, čím se pohybujete a co zvládnete: šířku dveří, výšku schodu, sklon, WC nebo parkování. Podle toho se hodnotí každé místo.') },
+    dayPlanner: { label: t('Plánovač jednodenních výletů'), desc: t('Návrh výletu podle rozpočtu, zájmů a mobility. V prototypu jde o návrh sestavený podle pravidel nad skutečnými daty, v ostré verzi s AI.') },
+    unlimitedSaves: { label: t('Neomezené ukládání míst a itinerářů'), desc: t('Ve FREE si uložíte až {n} oblíbených míst. PLUS ukládá bez omezení.', { n: FREE_SAVE_LIMIT }) },
+    customLists: { label: t('Vlastní seznamy a sdílené cestovní plány'), desc: t('Místa si roztřídíte do seznamů a plán výletu pošlete odkazem.') },
+    advancedFilters: { label: t('Pokročilé filtry'), desc: t('Filtry podle konkrétních rozměrů a vybavení, třeba šířky dveří nebo sprchy v úrovni podlahy.') },
+    changeAlerts: { label: t('Upozornění na změny'), desc: t('Upozornění, když se u uloženého místa změní údaj o přístupnosti.') },
+    pdfExport: { label: t('Export itinerářů do PDF'), desc: t('Plán výletu uložíte jako PDF a vytisknete.') },
+    multiDay: { label: t('Plánovač vícedenních dovolených'), desc: t('Návrh dovolené včetně ubytování, dopravy a aktivit. V prototypu jde o návrh sestavený podle pravidel nad skutečnými daty, v ostré verzi s AI.') },
+    concierge: { label: 'Travel Concierge', desc: t('Pomoc s přípravou cesty a komunikací s hotely. Služba vyžaduje lidi v týmu, v prototypu ji jen popisujeme.') },
+    alternatives: { label: t('Návrhy alternativ'), desc: t('Individuální návrhy náhradního programu, když se plán změní.') },
+    offline: { label: t('Itineráře ke stažení'), desc: t('Cestovní itineráře ke stažení pro použití bez internetu.') },
+    partnerShare: { label: t('Sdílení s cestovním partnerem'), desc: t('Prémiové funkce může používat i jeden cestovní partner.') },
+    partnerPerks: { label: t('Výhody u partnerů'), desc: t('Zvýhodněné rezervace u partnerských poskytovatelů, pokud budou sjednány. Zatím žádné sjednané nejsou.') },
+    prioritySupport: { label: t('Přednostní podpora'), desc: t('Přednostní zákaznická podpora.') },
+    accessCheckCredit: { label: t('Kontrola dostupnosti ubytování'), desc: t('Jeden kredit ročně na individuální kontrolu dostupnosti vybraného ubytování.') },
+  };
+  let TIER_CACHE = null;
+  try { window.addEventListener('storage', e => { if (!e.key || e.key === 'kp.tier') { TIER_CACHE = null; needsCache = null; refreshTierPills(); } }); } catch (e) {}
+  function tier() {
+    if (!TIER_CACHE) { const v = store.get('tier', 'free'); TIER_CACHE = TIERS[v] ? v : 'free'; }
+    return TIER_CACHE;
+  }
+  function tierOf(feature) { return FEATURES_TIER[feature] || (TIERS[feature] ? feature : 'free'); }
+  function hasTier(min) { const need = TIERS[min] ? min : tierOf(min); return TIERS[tier()].rank >= TIERS[need].rank; }
+  function setTier(k) {
+    if (!TIERS[k]) return tier();
+    const prev = tier();
+    store.set('tier', k); TIER_CACHE = k; needsCache = null;
+    refreshTierPills();
+    document.dispatchEvent(new CustomEvent('kp:tier', { detail: { tier: k, prev } }));
+    if (prev !== k) document.dispatchEvent(new CustomEvent('kp:needs', { detail: getNeeds() }));
+    return k;
+  }
+  function tierTag(k, cls) { const x = TIERS[k] || TIERS.free; return '<span class="tier-tag tier-' + x.key + (cls ? ' ' + cls : '') + '">' + x.label + '</span>'; }
+  function tierBadge(feature, opts) {
+    const k = tierOf(feature), o = opts || {};
+    if (k === 'free' || (o.onlyLocked && hasTier(k))) return '';
+    const info = FEATURE_INFO[feature];
+    return '<span class="tier-tag tier-' + k + '" title="' + esc(t('Součást členství {tier}', { tier: TIERS[k].label }) + (info ? ': ' + info.label : '')) + '">' + TIERS[k].label + '</span>';
+  }
+  function tierPill() {
+    const k = tier();
+    return '<button class="tier-pill" type="button" data-tier-open aria-label="' + esc(t('Úroveň členství: {tier}. Změnit (prototyp)', { tier: TIERS[k].label })) + '">' + tierTag(k) + '</button>';
+  }
+  function refreshTierPills() {
+    const k = tier();
+    document.querySelectorAll('.tier-pill').forEach(b => { b.innerHTML = tierTag(k); b.setAttribute('aria-label', t('Úroveň členství: {tier}. Změnit (prototyp)', { tier: TIERS[k].label })); });
+    document.querySelectorAll('[data-tier-current]').forEach(el => { el.textContent = TIERS[k].label; });
+  }
+  // Panel vpravo (na mobilu zespodu); vrací funkci pro zavření
+  function tierPanel(title, bodyHtml, footHtml, onBind) {
+    const prevFocus = document.activeElement;
+    const wrap = document.createElement('div');
+    wrap.className = 'tier-layer';
+    wrap.innerHTML = '<div class="drawer-backdrop" data-close></div>' +
+      '<aside class="drawer tier-drawer" role="dialog" aria-modal="true" aria-labelledby="tier-title"><header><h2 id="tier-title">' + title + '</h2><button class="icon-btn" type="button" data-close aria-label="' + t('Zavřít') + '">' + icon('close') + '</button></header>' +
+      '<div class="body">' + bodyHtml + '</div>' + (footHtml ? '<footer class="tier-foot">' + footHtml + '</footer>' : '') + '</aside>';
+    document.body.appendChild(wrap);
+    const close = () => { wrap.remove(); if (prevFocus && prevFocus.focus && document.contains(prevFocus)) prevFocus.focus(); };
+    wrap.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', close));
+    wrap.addEventListener('keydown', e => {
+      if (e.key === 'Escape') close();
+      if (e.key === 'Tab') { // fokus zůstává v panelu
+        const f = [...wrap.querySelectorAll('a[href], button:not([disabled])')];
+        if (!f.length) return;
+        if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+        else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+      }
+    });
+    if (onBind) onBind(wrap, close);
+    const first = wrap.querySelector('[data-autofocus]') || wrap.querySelector('.drawer button');
+    if (first) first.focus();
+    return close;
+  }
+  function requireTier(feature, onOk) {
+    const need = tierOf(feature);
+    if (hasTier(need)) { if (onOk) onOk(); return true; }
+    const T = TIERS[need], info = FEATURE_INFO[feature] || { label: String(feature), desc: '' };
+    const body =
+      '<p class="kicker" style="margin:0">' + esc(t('Funkce členství {tier}', { tier: T.label })) + '</p>' +
+      '<h3 style="margin:0">' + esc(info.label) + ' ' + tierTag(need) + '</h3>' +
+      (info.desc ? '<p style="margin:0">' + esc(info.desc) + '</p>' : '') +
+      '<p class="muted" style="margin:0">' + esc(t(need === 'plus' ? 'Funkce patří do úrovně PLUS ({price}) a je i v PREMIUM.' : 'Funkce patří do úrovně PREMIUM ({price}).', { price: T.priceLabel })) + ' ' +
+        esc(t('Vaše úroveň teď: {tier}.', { tier: TIERS[tier()].label })) + '</p>' +
+      '<p class="callout small" style="margin:0">' + esc(TIER_NOTE) + '</p>' +
+      '<p class="small muted" style="margin:0">' + esc(TIER_PROTO_NOTE) + '</p>' +
+      '<p style="margin:0"><a href="clenstvi.html">' + esc(t('Porovnat FREE, PLUS a PREMIUM')) + '</a></p>';
+    const foot = '<button class="btn btn-primary" type="button" data-try data-autofocus>' + esc(t('Vyzkoušet jako {tier} (prototyp, nic se neplatí)', { tier: T.label })) + '</button>' +
+      '<button class="btn btn-ghost" type="button" data-close>' + esc(t('Teď ne')) + '</button>';
+    tierPanel(esc(t('Funkce {tier}', { tier: T.label })), body, foot, (wrap, close) => {
+      wrap.querySelector('[data-try]').addEventListener('click', () => {
+        setTier(need); close();
+        toast(t('Zkoušíte úroveň {tier}. Prototyp, nic se neplatí.', { tier: T.label }));
+        if (onOk) onOk();
+      });
+    });
+    return false;
+  }
+  function tierSwitch() {
+    const cur = tier();
+    const body = '<p style="margin:0">' + esc(t('Vyzkoušejte, jak by web fungoval s placeným členstvím. Přepnutí platí jen v tomto prohlížeči.')) + '</p>' +
+      '<div class="tier-options" role="group" aria-label="' + esc(t('Úroveň členství')) + '">' +
+      TIER_ORDER.map(k => { const x = TIERS[k]; return '<button type="button" class="tier-opt" data-set-tier="' + k + '" aria-pressed="' + (k === cur) + '">' + tierTag(k) +
+        '<span class="tier-opt-t"><b>' + esc(x.name) + '</b><span>' + esc(x.claim) + '</span></span><span class="tier-opt-p num">' + esc(x.priceLabel) + '</span></button>'; }).join('') + '</div>' +
+      '<p class="callout small" style="margin:0">' + esc(TIER_NOTE) + '</p>' +
+      '<p class="small muted" style="margin:0">' + esc(TIER_PROTO_NOTE) + '</p>';
+    const foot = '<a class="btn btn-ghost" href="clenstvi.html">' + esc(t('Co která úroveň obsahuje')) + '</a><button class="btn btn-primary" type="button" data-close>' + esc(t('Hotovo')) + '</button>';
+    tierPanel(esc(t('Úroveň členství')), body, foot, (wrap) => {
+      wrap.querySelectorAll('[data-set-tier]').forEach(b => b.addEventListener('click', () => {
+        setTier(b.dataset.setTier);
+        wrap.querySelectorAll('[data-set-tier]').forEach(x => x.setAttribute('aria-pressed', x === b));
+        toast(t('Zkoušíte úroveň {tier}. Prototyp, nic se neplatí.', { tier: TIERS[b.dataset.setTier].label }));
+      }));
+      const on = wrap.querySelector('[aria-pressed="true"]'); if (on) on.focus();
+    });
+  }
+  // Styl štítků a panelu členství je tady, protože hlavička je na každé stránce (style.css patří celému webu)
+  (function tierCss() {
+    if (document.getElementById('kp-tier-css')) return;
+    const st = document.createElement('style'); st.id = 'kp-tier-css';
+    st.textContent =
+      '.tier-tag{display:inline-flex;align-items:center;padding:2px 7px;border:1.5px solid var(--ink);border-radius:2px;font:700 .72rem/1.3 var(--f-mono);letter-spacing:.06em;color:var(--ink);background:var(--surface);white-space:nowrap;vertical-align:middle}' +
+      '.tier-tag.tier-plus{background:var(--signal);color:var(--on-signal);border-color:var(--signal)}' +
+      '.tier-tag.tier-premium{background:#101010;color:#FFD400;border-color:var(--rule)}' +
+      '.tier-pill{display:inline-grid;place-items:center;min-width:44px;min-height:44px;padding:0 4px;border:0;background:none;cursor:pointer}' +
+      '.tier-pill:hover .tier-tag{box-shadow:0 0 0 3px var(--signal)}' +
+      '.tier-drawer .body{gap:14px}' +
+      '.tier-foot{flex-wrap:wrap}.tier-foot .btn{flex:1 1 auto;white-space:normal;text-align:center}' +
+      '.tier-options{display:grid;border-top:1px solid var(--rule)}' +
+      '.tier-opt{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 12px;align-items:center;min-height:64px;padding:12px 8px;border:0;border-bottom:1px solid var(--rule);background:none;color:var(--ink);text-align:left;cursor:pointer;font:inherit}' +
+      '.tier-opt:hover{background:var(--surface-2)}' +
+      '.tier-opt[aria-pressed="true"]{box-shadow:inset 6px 0 0 var(--signal);padding-left:16px}' +
+      '.tier-opt[aria-pressed="true"] .tier-opt-t b::after{content:" \\2713"}' +
+      '.tier-opt-t{display:flex;flex-direction:column;min-width:0}.tier-opt-t span{color:var(--ink-2);font-size:.9rem}' +
+      '.tier-opt-p{font-weight:700;white-space:nowrap}' +
+      '.sheet .menu-list .tier-tag{margin-left:auto}' +
+      '@media (max-width:360px){.tier-opt{grid-template-columns:auto minmax(0,1fr)}.tier-opt-p{grid-column:2}}' +
+      '@media (max-width:1240px) and (min-width:900px){.add-btn .lbl{display:none}.add-btn{padding-inline:12px}}';
+    (document.head || document.documentElement).appendChild(st);
+  })();
+
   // ---------- Téma ----------
   function applyTheme(t) { if (t) document.documentElement.setAttribute('data-theme', t); else document.documentElement.removeAttribute('data-theme'); }
   applyTheme(store.get('theme', null));
@@ -1248,6 +1465,8 @@
     }
     document.querySelectorAll('[data-open-more]').forEach(b => b.addEventListener('click', moreSheet));
     document.querySelectorAll('[data-open-needs]').forEach(b => b.addEventListener('click', needsDrawer));
+    document.querySelectorAll('[data-tier-open]').forEach(b => b.addEventListener('click', tierSwitch));
+    document.addEventListener('kp:tier', refreshTierPills);
     const flag = () => { document.querySelectorAll('[data-needs-flag]').forEach(f => { f.hidden = !getNeeds().active; }); };
     flag(); document.addEventListener('kp:needs', flag);
     document.querySelectorAll('[data-icon]').forEach(el => { el.innerHTML = icon(el.dataset.icon) + el.innerHTML; });
@@ -1266,7 +1485,8 @@
 
   window.KP = Object.assign(window.KP || {}, { store, LANG, lc, nf, icon, CATS, SOURCES, W, T, FIELDS, getNeeds, setNeeds, completeness, missingFields, match, generalStatus, STATUS_LABEL, STATUS_SHORT,
     AIDS, DEFAULT_NEEDS, aidLabel, needsSummary, needsForm, AREAS, FEATURES, MEASURES, facts, facilitiesScore, matchScore, community, business, resizePhoto, PROTOTYPE_NOTE,
-    fmt, fmtDate, ageLabel, sourceBadge, statusHtml, isOsm, osmUrl, osmEditUrl, commonsImg, commonsPage, gmaps, loadPlaces, loadStats, loadRegionsIndex, loadRegion, loadPlacesInBounds, loadAll, loadTowns, findPlace, findPlaces, placeUrl, rememberRegion, regionMeta, regionByName, isRegionLoaded, krajName, zemeOf, ZEME, ZEME_LONG, OSM_DATE, toast, saved, needsDrawer, esc, placeById, distanceKm, LOGO, moreSheet, toggleTheme });
+    fmt, fmtDate, ageLabel, sourceBadge, statusHtml, isOsm, osmUrl, osmEditUrl, commonsImg, commonsPage, gmaps, loadPlaces, loadStats, loadRegionsIndex, loadRegion, loadPlacesInBounds, loadAll, loadTowns, findPlace, findPlaces, placeUrl, rememberRegion, regionMeta, regionByName, isRegionLoaded, krajName, zemeOf, ZEME, ZEME_LONG, OSM_DATE, toast, saved, needsDrawer, esc, placeById, distanceKm, LOGO, moreSheet, toggleTheme,
+    TIERS, TIER_ORDER, tier, setTier, hasTier, tierOf, FEATURES_TIER, FEATURE_INFO, tierBadge, tierTag, requireTier, tierSwitch, tierPrice, TIER_NOTE, TIER_PROTO_NOTE, FREE_SAVE_LIMIT });
   if (!window.KP.t) window.KP.t = t;
   if (!window.KP.tx) window.KP.tx = (x) => x;
   if (!window.KP.plural) window.KP.plural = (n, one, few, many) => { const a = Math.abs(n); return t(a === 1 ? one : a >= 2 && a <= 4 ? few : many); };
