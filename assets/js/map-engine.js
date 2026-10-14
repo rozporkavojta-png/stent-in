@@ -93,7 +93,8 @@
     loadCss('https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css');
     if (!window.L) await loadScript('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js');
     if (!L.markerClusterGroup) await loadScript('https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js');
-    const map = L.map(el, { zoomControl: true, preferCanvas: true }).setView([opts.lat, opts.lng], opts.zoom);
+    const map = L.map(el, { zoomControl: true, preferCanvas: true, zoomSnap: 0.25 }).setView([opts.lat, opts.lng], opts.zoom);
+    if (opts.zoom <= 7) map.fitBounds([[47.3, 9.0], [51.1, 18.9]], { padding: [8, 8], animate: false }); // celé Česko + Bavorsko i na mobilu
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">' + (window.KP && KP.t ? KP.t('přispěvatelé OpenStreetMap') : 'přispěvatelé OpenStreetMap') + '</a>' }).addTo(map);
     const cache = {};
     let fits = 0;

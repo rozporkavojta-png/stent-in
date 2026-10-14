@@ -138,3 +138,34 @@ větší s obrysem #7D8F76, clustery zelené kruhy (`.marker-cluster-kp`).
 Šířky 360, 390, 768, 1024, 1440 px bez vodorovného posunu; dotyk ≥ 44 px; klávesnice a viditelný fokus
 (`--focus`, 3 px); světlý i tmavý režim (`data-theme` i `prefers-color-scheme`); `prefers-reduced-motion`.
 Stav vždy tvar + text, nikdy jen barva. Němčina se nesmí lámat přes okraj (dlouhá slova `overflow-wrap`).
+## v5 – čistý web, lišta filtrů nahoře (14. 10. 2026)
+Paleta, logo, ikony KP.icon, data a funkce beze změny. Platí pravidla poctivosti výše.
+
+**a) Písmo.** Jen **Figtree** (Google Fonts, 400/500/600/700) pro vše; odkaz `family=Figtree:wght@400;500;600;700`. Zrušit Plus Jakarta, Fraunces, Caveat (`.handnote`, `.h-serif` = Figtree 600), Atkinson Mono (čísla `font-variant-numeric: tabular-nums`). `--f-display` = `--f-body` = `'Figtree', system-ui, sans-serif`.
+Škála (desktop / 390): H1 úvod 52/34 px, w700, lh 1.1, ls -0.02em · H1 stránky 40/30, w700, lh 1.15, -0.015em · H2 30/24, w600, lh 1.2, -0.01em · H3 20/18, w600, lh 1.3 · H4 16, w600, lh 1.4 · text 17/16, w400, lh 1.6 · malý 14, lh 1.5 · nadtitulek 13, w600, ls .04em, bez verzálek. Max 68 znaků na řádek. Žádné prolnutí pod -0.02em.
+
+**b) Úvod.** Bez blobu, ručního písma a čárkované cesty. Pořadí:
+1. Hero na `--bg` (#F7F7F5), střed, max 760 px: nadtitulek (claim), H1 1 řádek+, perex 1–2 řádky, **velké hledání** (výška 60, radius 999, bílé, stín sm, tlačítko #3A4A34 „Hledat“) a pod ním řada **čipů kategorií s ikonou** (Ubytování, Restaurace, WC, Parkování ZTP, Památky…) → odkaz `mapa.html?kat=…`. Mobil: vlevo, čipy vodorovně posuvné.
+2. **Pás fotek měst**: mřížka 4 (mobil 2/posuv), karty 4:3 radius 16, foto Commons + jméno + kraj + skutečný počet míst z dat + atribuce pod kartou drobně. Bez překryvných textů v obrázku.
+3. Tři cesty (Najít místo / Naplánovat / Průvodci) jako tiché karty s ikonou.
+4. Dále stávající sekce (doporučená, čísla z dat, úrovně, kraje) jen s novou typografií, střídání `--bg`/bílá, rozestup 80/56 px.
+
+**c) Mapa (mapa.html).** Pod hlavičkou **lepivá lišta přes celou šířku** (bílá, spodní linka + stín sm, výška ~64, z-index nad mapou):
+`[hledání 280–360 px] | čipy kategorií s ikonou (vodorovný posuv, šipky na PC) | ‖ | čipy rychlých filtrů (Vstup bez schodů, WC pro vozíčkáře, Parkování ZTP, Výtah, Změřeno, Foto) | [Další filtry (n)] [Řazení ▾] [Seznam/Mapa]`.
+Na šířce <1200 jsou kategorie a rychlé filtry 2 řádky lišty; <768: řádek 1 hledání + tlačítko Filtry (n), řádek 2 posuvné čipy (kategorie, pak rychlé).
+„Další filtry“ = stávající #kf-panel: PC popover/dialog 560 px pod tlačítkem, mobil spodní sheet; dole „Zrušit vše“ + „Zobrazit X míst“ (X ze skutečného počtu). Aktivní filtry jako odebíratelné čipy hned pod lištou (#kf-active).
+Seznam: PC **plovoucí panel vlevo nad mapou** 400 px, radius 16, stín md, odsazení 16, hlavička „Ve výřezu N míst“ + tlačítko skrýt (‹); skrytý = mapa přes celou šířku a plovoucí tlačítko „Seznam“. Mobil: mapa + spodní sheet (stávající #panel/#grip) se 3 polohami a plovoucí přepínač **Mapa / Seznam** dole uprostřed nad tabbarem. Legenda vpravo dole sbalitelná. Filtry v URL a KP API beze změny – mění se jen DOM pořadí/CSS.
+
+**d) Trasy a stezky.** Stejná lišta pod hlavičkou.
+– stezky.html: čipy-rozbalovačky jen pro pole z dat: Země, Kraj, Délka (do 2 / 2–5 / přes 5 km), Sklon (do 6…12,5 %, můj profil), Povrch (zpevněný / z poloviny), Typ (okruh / tam a zpět / A→B); přepínače-čipy Lavička, WC do 300 m, Parkování ZTP; Řazení; přepínač **Mřížka / Mapa**. Výsledky mřížka karet 3/2/1 (foto jen pokud je, jinak mapový náhled/ikona), fakta jako štítky (km, sklon, povrch).
+– trasy.html: záložky Bariéry / Naplánovat / Moje trasy jako segment v liště vlevo; v režimu Bariéry vpravo čipy vrstev (Schodiště, Obrubník, Povrch, Stoupání >6 %, Přechod, Šikmý obrubník…) s barevnou značkou = přepínače vrstev; panel vlevo jen pro plánování a seznam, sbalitelný.
+
+**e) Komponenty.**
+– Čip: výška 40 (min dotyk 44 přes padding/okraj), pill, 0 14px, Figtree 14/500, ikona 18; klid = bílé + 1px `--line`; hover `--paper-2`; **aktivní = #3A4A34, bílý text, ikona bílá**, aria-pressed; počítadlo v kroužku. Tmavý režim: aktivní #D9DED3 s tmavým textem.
+– Lišta: `position: sticky; top: výška hlavičky`; bílá (`--surface`), `box-shadow: 0 1px 0 var(--line), 0 4px 12px rgb(0 0 0/.04)`; vnitřní mezery 12/16, mezi skupinami svislý oddělovač.
+– Tlačítko Další filtry: čip s ikonou sliders, s počtem aktivních.
+– Karta výsledku: bílá, radius 16, 1px line, bez stínu; hover stín sm; obrázek 3:2 nahoře (je-li), název 16/600, místo 14 `--muted`, řádek odznaků přístupnosti (tvar+text), srdce vpravo nahoře 44 px. Karta seznamu na mapě: vodorovná, náhled 72 px.
+– Hledání: výška 48 (hero 60), radius 999, ikona vlevo, fokus 3 px `--focus`.
+– Stíny: sm `0 1px 2px rgb(0 0 0/.06)`, md `0 8px 24px rgb(0 0 0/.08)`; radius karty 16, panely 20.
+
+**Reference (Refero, převzato jen rozvržení):** Onefinestay výsledky (lišta filtrů ve 2 řádcích nad seznamem+mapou, popover filtru), Trulia (filtrový řádek pod hlavičkou, tlačítko seznam na mapě), Airbnb modal filtrů (sekce s pilulkami, „Vymazat vše“ + „Zobrazit N“), Tripadvisor domů (centrované hledání + řada kategorií s ikonami), komoot iOS (hledání + čip Filtry nad mapou, sheet s počtem), Google Maps iOS (čipy kategorií pod hledáním), Tripsy (sheet s filtry a řazením), styl Raus (klidná bezpatková typografie, karty r20, fotky v kartách).

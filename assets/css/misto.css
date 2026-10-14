@@ -125,7 +125,7 @@ a.pl-vbadge:hover { color: var(--on-brand); background: var(--brand-700); }
 .pl-src a { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; overflow-wrap: anywhere; min-height: 32px; }
 .pl-sec svg.inline, .pl-card svg.inline { width: 14px; height: 14px; flex: none; }
 .pl-claim { margin: 4px 0 14px; }
-.pl-label { font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin: 22px 0 8px; }
+.pl-label { font-size: .8rem; font-weight: 700; letter-spacing: .04em; color: var(--ink-3); margin: 22px 0 8px; }
 .pl-note { margin: 18px 0 0; }
 .pl-quote { margin: 4px 0 0; padding: 14px 18px; border-radius: var(--r); background: var(--brand-100); color: var(--ink); font-size: 1.05rem; line-height: 1.55; max-width: 66ch; }
 .pl-more summary { display: flex; align-items: center; min-height: 44px; cursor: pointer; color: var(--brand-900); font-weight: 700; }
@@ -215,14 +215,14 @@ body[data-no-tabbar] .pl-actionbar { bottom: env(safe-area-inset-bottom, 0px); }
 .pl-verdict.no > .status.big { background: var(--no-soft); }
 .pl-verdict .status.big i { width: 24px; height: 24px; }
 .pl-verdict .status.big.unk i { border-width: 4px; }
-.pl-verdict-title { font: 800 clamp(1.25rem, 2.2vw, 1.6rem)/1.15 var(--f-display); letter-spacing: -.02em; margin: 0; color: var(--heading); }
+.pl-verdict-title { font: 700 clamp(1.25rem, 2.2vw, 1.6rem)/1.15 var(--f-display); letter-spacing: -.02em; margin: 0; color: var(--heading); }
 .pl-verdict-text { margin: 4px 0 0; color: var(--ink-2); max-width: 60ch; }
 .pl-match-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 16px; padding: 14px 16px; border-radius: var(--r); background: var(--brand-100); }
 .pl-match-cta p { margin: 0; flex: 1 1 280px; color: var(--ink-2); font-size: .95rem; }
 .pl-match-cta b { color: var(--ink); }
 .pl-match-cta .tier-tag { margin-left: 4px; }
 .pl-match { grid-template-columns: auto minmax(0, 1fr); gap: 4px 20px; }
-.pl-match-pct { display: grid; place-items: center; min-width: 96px; height: 96px; border-radius: 50%; border: 6px solid var(--brand-500); font: 800 1.9rem/1 var(--f-display); letter-spacing: -.03em; color: var(--heading); }
+.pl-match-pct { display: grid; place-items: center; min-width: 96px; height: 96px; border-radius: 50%; border: 6px solid var(--brand-500); font: 700 1.9rem/1 var(--f-display); letter-spacing: -.02em; color: var(--heading); }
 .pl-match-pct small { font-size: .5em; }
 .pl-match-pct.is-none { color: var(--unk); border-color: var(--line-strong); border-style: dashed; }
 .pl-match .pl-verdict-text { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
@@ -257,7 +257,7 @@ body[data-no-tabbar] .pl-actionbar { bottom: env(safe-area-inset-bottom, 0px); }
 
 /* ---------- Skóre vybavení ---------- */
 .pl-score-big { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 20px; align-items: center; padding-bottom: 16px; }
-.pl-score-n { display: grid; place-items: center; min-width: 104px; height: 104px; border-radius: 50%; background: var(--brand-100); border: 6px solid var(--brand-500); font: 800 2rem/1 var(--f-display); letter-spacing: -.03em; color: var(--heading); }
+.pl-score-n { display: grid; place-items: center; min-width: 104px; height: 104px; border-radius: 50%; background: var(--brand-100); border: 6px solid var(--brand-500); font: 700 2rem/1 var(--f-display); letter-spacing: -.02em; color: var(--heading); }
 .pl-score-n small { font-size: .5em; }
 .pl-score-n.is-none { color: var(--unk); border-color: var(--line-strong); border-style: dashed; background: none; }
 .pl-score-big p { margin: 0; color: var(--ink-2); max-width: 46ch; }

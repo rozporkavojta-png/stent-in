@@ -90,4 +90,9 @@ KP.i18n.add({
   "Shoda s mými potřebami": ["Übereinstimmung mit meinen Bedürfnissen", "Match with my needs"],
   "S fotkou nahoře": ["Mit Foto zuerst", "With photo first"],
   "Zobrazit dalších {n}": ["Weitere {n} anzeigen", "Show {n} more"],
+  // v5: lišta filtrů
+  "Další filtry": ["Weitere Filter", "More filters"],
+  "Posunout doleva": ["Nach links blättern", "Scroll left"],
+  "Posunout doprava": ["Nach rechts blättern", "Scroll right"],
+  "Řadit výsledky": ["Ergebnisse sortieren", "Sort results"],
 });

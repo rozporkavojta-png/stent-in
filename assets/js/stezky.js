@@ -249,19 +249,29 @@
   // Stránka stezky.html
   // =====================================================================
   const $ = (s, r) => (r || document).querySelector(s);
+  const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
   const mobile = () => matchMedia('(max-width: 899px)').matches;
-  const PAGE = 20;
+  const narrow = () => matchMedia('(max-width: 767px)').matches;
+  const PAGE = 24;
   let ALL = [], TOWNS = null, shown = PAGE, map = null, here = null;
+  const TOWN_OF = new Map();
 
   function linkify(s) { return esc(s).replace(/(https?:\/\/[^\s)<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>'); }
+  const fold = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 
   // ---------- Katalog ----------
+  // Stav filtrů drží formulář #st-form (selecty a zaškrtávátka). Lišta nahoře (čipy, rozbalovačky, řazení)
+  // jen přepíná jeho pole a vyvolá change; filtrování a řazení je v filtered(). Filtry jen z polí, která v datech jsou.
   const F = ['zeme', 'kraj', 'delka', 'sklon', 'povrch', 'typ', 'sort'];
   const C = ['lav', 'wc', 'park'];
+  const DD_LABEL = { zeme: KP.t('Země'), kraj: KP.t('Kraj'), delka: KP.t('Délka'), sklon: KP.t('Sklon'), povrch: KP.t('Povrch'), typ: KP.t('Typ'), sort: KP.t('Řazení') };
+  const DD_HINT = { sklon: KP.t('Odhad z výškového modelu, krátké strmé kusy může přehlédnout.'), povrch: KP.t('Zpevněný = asfalt, beton nebo dlažba aspoň na 90 % délky.') };
+  const C_LABEL = { lav: KP.t('Lavička'), wc: KP.t('WC do 300 m'), park: KP.t('Parkování ZTP') };
   function readFilters() {
-    const o = {}; F.forEach(k => { o[k] = $('#f-' + k).value; }); C.forEach(k => { o[k] = $('#f-' + k).checked; }); return o;
+    const o = {}; F.forEach(k => { o[k] = $('#f-' + k).value; }); C.forEach(k => { o[k] = $('#f-' + k).checked; });
+    o.q = ($('#f-q').value || '').trim(); return o;
   }
-  function saveFilters() { const o = readFilters(); if (o.sort === 'blizko') o.sort = 'delka'; K.store.set('stezkyFilters', o); }
+  function saveFilters() { const o = readFilters(); if (o.sort === 'blizko') o.sort = 'delka'; delete o.q; K.store.set('stezkyFilters', o); }
   function restoreFilters() {
     const o = K.store.get('stezkyFilters', null); if (!o) return;
     F.forEach(k => { const el = $('#f-' + k); if (o[k] !== undefined && [...el.options].some(x => x.value === o[k])) el.value = o[k]; });
@@ -276,8 +286,14 @@
     if (f.sklon === 'me') { const n = K.getNeeds(); return n.active && n.slopeMax !== null ? n.slopeMax : null; }
     return f.sklon ? Number(f.sklon) : null;
   }
+  function townOf(t) {
+    if (!TOWNS) return '';
+    if (!TOWN_OF.has(t.id)) TOWN_OF.set(t.id, nearTown(t, TOWNS) || '');
+    return TOWN_OF.get(t.id);
+  }
+  function activeCount(f) { return F.filter(k => k !== 'sort' && f[k]).length + C.filter(k => f[k]).length; }
   function filtered() {
-    const f = readFilters(), lim = slopeLimit(f);
+    const f = readFilters(), lim = slopeLimit(f), q = fold(f.q);
     let list = ALL.filter(t => {
       if (f.zeme && t.zeme !== f.zeme) return false;
       if (f.kraj && t.kraj !== f.kraj) return false;
@@ -289,6 +305,7 @@
       if (f.lav && !(t.lavicky > 0)) return false;
       if (f.wc && !wcList(t).length) return false;
       if (f.park && !parkList(t).length) return false;
+      if (q && !fold([name(t), t.nazev_de, t.kraj, krajT(t.kraj), townOf(t)].join(' ')).includes(q)) return false;
       return true;
     });
     const by = {
@@ -298,9 +315,8 @@
       blizko: here ? (a, b) => K.distanceKm(here, { la: a.start[0], lo: a.start[1] }) - K.distanceKm(here, { la: b.start[0], lo: b.start[1] }) : (a, b) => a.delka_km - b.delka_km,
     };
     list = list.slice().sort(by[f.sort] || by.delka);
-    const nf = F.filter(k => k !== 'sort' && f[k]).length + C.filter(k => f[k]).length;
+    const nf = activeCount(f);
     $('#st-nf').hidden = !nf; $('#st-nf').textContent = nf;
-    $('#f-reset').hidden = !nf;
     return list;
   }
 
@@ -316,30 +332,63 @@
     }
   }
 
-  function row(t, n) {
-    const w = wh(t), fit = slopeFit(t, n), town = TOWNS ? nearTown(t, TOWNS) : '';
-    const s = surfStats(t);
+  // Náhled trasy na kartě: tvar trasy z geometrie OpenStreetMap a pod ním výškový profil z EU-DEM (jen skutečná data, žádná fotka)
+  function vizSvg(t) {
+    const W = 320, H = 150, PB = 44, pad = 16;
+    const parts = (t.geometrie || []).filter(p => p && p.length > 1);
+    let shape = '';
+    if (parts.length) {
+      const all = [].concat(...parts);
+      const lat0 = all.reduce((s, c) => s + c[0], 0) / all.length, kx = Math.cos(lat0 * Math.PI / 180);
+      let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+      all.forEach(c => { const x = c[1] * kx, y = c[0]; if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; });
+      const bw = W - pad * 2, bh = H - PB - pad - 10, sc = Math.min(bw / Math.max(x1 - x0, 1e-6), bh / Math.max(y1 - y0, 1e-6));
+      const ox = pad + (bw - (x1 - x0) * sc) / 2, oy = pad + (bh - (y1 - y0) * sc) / 2;
+      const P = c => (ox + (c[1] * kx - x0) * sc).toFixed(1) + ' ' + (oy + (y1 - c[0]) * sc).toFixed(1);
+      const d = parts.map(p => { const step = Math.max(1, Math.ceil(p.length / 140)); const pts = p.filter((_, i) => i % step === 0 || i === p.length - 1); return 'M' + pts.map(P).join('L'); }).join('');
+      const s0 = P(parts[0][0]).split(' ');
+      shape = '<path d="' + d + '" class="st-viz-case"/><path d="' + d + '" class="st-viz-route"/><circle cx="' + s0[0] + '" cy="' + s0[1] + '" r="4.5" class="st-viz-start"/>';
+    }
+    const prof = (t.profil || []).filter(p => p[1] != null);
+    let area = '';
+    if (prof.length > 1) {
+      const dMax = prof[prof.length - 1][0] || 1, hs = prof.map(p => p[1]), hMin = Math.min(...hs), hMax = Math.max(...hs), span = Math.max(15, hMax - hMin);
+      const X = d => (d / dMax * W).toFixed(1), Y = h => (H - 4 - (h - hMin) / span * (PB - 10)).toFixed(1);
+      const line = prof.map((p, i) => (i ? 'L' : 'M') + X(p[0]) + ' ' + Y(p[1])).join('');
+      area = '<path d="' + line + 'L' + W + ' ' + H + 'L0 ' + H + 'Z" class="st-viz-area"/><path d="' + line + '" class="st-viz-line"/>';
+    }
+    return '<svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">' + area + shape + '</svg>';
+  }
+
+  function card(t, n) {
+    const w = wh(t), fit = slopeFit(t, n), town = townOf(t);
+    const s = surfStats(t), saved = local.isSaved(t.id);
+    const tags = [
+      [K.icon('route'), km(t.delka_km), KP.t('Délka')],
+      [K.icon('mountain'), K.t('max. {n}', { n: pct(t.max_sklon) }), KP.t('Největší sklon')],
+      ['<span class="st-up" aria-hidden="true">↑</span>', Math.round(t.prevyseni_nahoru || 0) + ' m', KP.t('Stoupání')],
+      [K.icon('trail'), mainSurface(t), KP.t('Povrch')],
+    ];
+    if (t.lavicky) tags.push([K.icon('seat'), t.lavicky + ' ' + K.plural(t.lavicky, 'lavička', 'lavičky', 'laviček'), KP.t('Lavičky')]);
     const extras = [];
-    if (wcList(t).length) extras.push(K.icon('wc') + (wcAccessible(t).length ? KP.t('Bezbariérové WC u startu') : KP.t('WC u startu')));
-    if (parkList(t).length) extras.push(K.icon('parking') + KP.t('Parkování ZTP u startu'));
-    if (s.cobble >= 5) extras.push(K.icon('warn') + K.t('Kostky {n} %', { n: fmt(Math.round(s.cobble)) }));
-    if (t.schody > 0) extras.push(K.icon('stairs') + K.t('Schody {n}×', { n: t.schody }));
+    if (wcList(t).length) extras.push(['ok', K.icon('wc') + (wcAccessible(t).length ? KP.t('Bezbariérové WC u startu') : KP.t('WC u startu'))]);
+    if (parkList(t).length) extras.push(['ok', K.icon('parking') + KP.t('Parkování ZTP u startu')]);
+    if (s.cobble >= 5) extras.push(['warn', K.icon('warn') + K.t('Kostky {n} %', { n: fmt(Math.round(s.cobble)) })]);
+    if (t.schody > 0) extras.push(['warn', K.icon('stairs') + K.t('Schody {n}×', { n: t.schody })]);
+    if (t.sklon_poznamka) extras.push(['warn', K.icon('info') + KP.t('Sklon nejspíš zkreslený modelem, viz detail')]);
     const dist = here && t.start ? K.distanceKm(here, { la: t.start[0], lo: t.start[1] }) : null;
-    return '<li class="st-row" id="row-' + esc(t.id) + '" data-id="' + esc(t.id) + '">' +
-      '<p class="st-row-k">' + esc(TYP[t.typ] || t.typ) + ' · ' + esc(ZEME[t.zeme] || t.zeme) + ' · ' + esc(krajT(t.kraj)) + (dist !== null ? ' · <span class="num">' + fmt(dist.toFixed(dist < 10 ? 1 : 0)) + ' ' + K.t('km od vás') + '</span>' : '') + '</p>' +
-      '<h3><a href="' + detailUrl(t) + '">' + esc(name(t)) + '</a></h3>' +
-      (town || isGeneric(t) ? '<p class="st-row-sub">' + (town ? K.t('Poblíž obce') + ' ' + esc(town) : K.t('Úsek bez vlastního názvu')) + '</p>' : '') +
-      '<dl class="st-facts">' +
-      ('<div><dt>' + KP.t('Délka') + '</dt><dd class="num">') + km(t.delka_km) + '</dd></div>' +
-      ('<div><dt>' + KP.t('Největší sklon') + '</dt><dd class="num">') + pct(t.max_sklon) + '</dd></div>' +
-      ('<div><dt>' + KP.t('Stoupání') + '</dt><dd class="num">') + Math.round(t.prevyseni_nahoru || 0) + ' m</dd></div>' +
-      ('<div><dt>' + KP.t('Povrch') + '</dt><dd>') + esc(mainSurface(t)) + '</dd></div>' +
-      ('<div><dt>' + KP.t('Lavičky') + '</dt><dd class="num">') + (t.lavicky || 0) + '</dd></div>' +
-      '</dl>' +
-      '<p class="st-row-st">' + K.statusHtml(w[0], w[1]) + '</p>' +
-      (extras.length ? '<p class="st-row-x">' + extras.map(x => '<span>' + x + '</span>').join('') + '</p>' : '') +
+    return '<li class="st-card" id="row-' + esc(t.id) + '" data-id="' + esc(t.id) + '">' +
+      '<div class="st-viz">' + vizSvg(t) + '</div>' +
+      '<button class="st-heart" type="button" data-save-id="' + esc(t.id) + '" aria-pressed="' + saved + '" aria-label="' + esc(K.t('Uložit trasu {name}', { name: name(t) })) + '">' + K.icon(saved ? 'heart-filled' : 'heart') + '</button>' +
+      '<div class="st-card-b">' +
+      '<p class="st-card-k">' + esc(TYP[t.typ] || t.typ) + ' · ' + esc(krajT(t.kraj)) + (dist !== null ? ' · <span class="num">' + fmt(dist.toFixed(dist < 10 ? 1 : 0)) + ' ' + K.t('km od vás') + '</span>' : '') + '</p>' +
+      '<h3><a class="st-card-a" href="' + detailUrl(t) + '">' + esc(name(t)) + '</a></h3>' +
+      '<p class="st-card-sub">' + (town ? K.t('Poblíž obce') + ' ' + esc(town) : isGeneric(t) ? K.t('Úsek bez vlastního názvu') : esc(ZEME[t.zeme] || t.zeme)) + '</p>' +
+      '<ul class="st-tags">' + tags.map(x => '<li title="' + esc(x[2]) + '"><span class="sr-only">' + esc(x[2]) + ': </span>' + x[0] + '<span class="num">' + esc(x[1]) + '</span></li>').join('') + '</ul>' +
+      '<p class="st-card-st">' + K.statusHtml(w[0], w[1]) + '</p>' +
+      (extras.length ? '<ul class="st-x">' + extras.map(x => '<li class="st-x-' + x[0] + '">' + x[1] + '</li>').join('') + '</ul>' : '') +
       (fit ? ('<p class="st-fit"><span class="st-fit-q">' + KP.t('Vyhovuje vašemu profilu?') + '</span> ') + K.statusHtml(fit.st, fit.text) + '</p>' : '') +
-      '</li>';
+      '</div></li>';
   }
 
   let lastList = [];
@@ -350,13 +399,166 @@
     const cnt = list.length;
     const f = readFilters();
     const noLimit = f.sklon === 'me' && slopeLimit(f) === null ? (' <span class="small">' + KP.t('V profilu nemáte limit sklonu, filtr sklonu se nepoužil.') + '</span>') : '';
-    $('#st-count').innerHTML = (cnt ? '<b class="num">' + cnt + '</b> ' + K.plural(cnt, 'trasa', 'trasy', 'tras') + ' ' + K.t('z {n}', { n: ALL.length }) : K.t('Žádná trasa neodpovídá filtrům.')) + noLimit;
-    $('#st-list').innerHTML = cnt ? list.slice(0, shown).map(t => row(t, n)).join('')
+    $('#st-count').innerHTML = (cnt ? '<b class="num">' + cnt + '</b> ' + K.plural(cnt, 'trasa', 'trasy', 'tras') + ' <span class="muted">' + K.t('z {n}', { n: ALL.length }) + '</span>' : K.t('Žádná trasa neodpovídá filtrům.')) + noLimit;
+    $('#st-list').innerHTML = cnt ? list.slice(0, shown).map(t => card(t, n)).join('')
       : ('<li class="st-empty"><p>' + KP.t('Zkuste povolit delší trasy nebo větší sklon. Tras s údaji o sjízdnosti je zatím málo, protože je do OpenStreetMap zadává málo lidí.') + '</p><button class="btn btn-ghost" type="button" id="st-empty-reset">' + KP.t('Zrušit filtry') + '</button></li>');
     $('#st-more').hidden = cnt <= shown;
     $('#st-more').textContent = K.t('Zobrazit další trasy ({n})', { n: cnt - shown });
+    $('#st-sheet-go').textContent = K.t('Zobrazit výsledky ({n})', { n: cnt });
+    $('#f-reset').disabled = !activeCount(f);
+    syncBar(f);
     drawCatalogMap(list);
     saveFilters();
+  }
+
+  // ---------- Lišta filtrů ----------
+  const optText = (sel) => { const o = sel.options[sel.selectedIndex]; return o ? o.textContent.trim() : ''; };
+  function syncBar(f) {
+    f = f || readFilters();
+    $$('#st-fbar .fdd-btn').forEach(b => {
+      const k = b.dataset.dd, sel = $('#f-' + k), on = k !== 'sort' && !!sel.value;
+      b.querySelector('.fdd-v').textContent = k === 'sort' ? optText(sel) : on ? optText(sel) : '';
+      b.querySelector('.fdd-l').classList.toggle('sr-only', on);
+      b.classList.toggle('on', on);
+      if (k !== 'sort') b.setAttribute('aria-label', DD_LABEL[k] + ': ' + (on ? optText(sel) : KP.t('nevybráno')));
+      else b.setAttribute('aria-label', DD_LABEL.sort + ': ' + optText(sel));
+    });
+    $$('#st-fbar [data-c]').forEach(b => b.setAttribute('aria-pressed', String(!!f[b.dataset.c])));
+    // aktivní filtry jako odebíratelné čipy
+    const pills = [];
+    F.filter(k => k !== 'sort' && f[k]).forEach(k => pills.push(['f', k, DD_LABEL[k] + ': ' + optText($('#f-' + k))]));
+    C.filter(k => f[k]).forEach(k => pills.push(['c', k, C_LABEL[k]]));
+    if (f.q) pills.push(['q', 'q', '„' + f.q + '“']);
+    const box = $('#st-active');
+    box.hidden = !pills.length;
+    box.innerHTML = pills.map(p => '<button type="button" class="fbar-pill" data-rm="' + p[0] + ':' + p[1] + '" aria-label="' + esc(K.t('Odebrat filtr {f}', { f: p[2] })) + '"><span>' + esc(p[2]) + '</span>' + K.icon('close') + '</button>').join('') +
+      (pills.length > 1 ? '<button type="button" class="fbar-clear" data-rm="all">' + KP.t('Zrušit vše') + '</button>' : '');
+  }
+  function fire(el) { el.dispatchEvent(new Event('change', { bubbles: true })); }
+  function clearAll() { $('#st-form').reset(); $('#f-q').value = ''; }
+
+  // Rozbalovačka (popover pod čipem; na mobilu spodní panel)
+  let ddBtn = null;
+  function placePop() {
+    const pop = $('#st-pop'); if (!ddBtn || pop.hidden) return;
+    if (narrow()) { pop.style.left = pop.style.top = ''; return; }
+    const r = ddBtn.getBoundingClientRect(), w = pop.offsetWidth;
+    pop.style.top = Math.round(r.bottom + 8) + 'px';
+    pop.style.left = Math.round(Math.max(16, Math.min(r.left, innerWidth - w - 16))) + 'px';
+  }
+  function openDD(btn) {
+    const k = btn.dataset.dd, sel = $('#f-' + k), pop = $('#st-pop');
+    if (ddBtn === btn) { closeDD(true); return; }
+    closeDD(false);
+    ddBtn = btn;
+    pop.innerHTML = '<div class="fdd-head"><p class="fdd-h" id="fdd-h">' + esc(k === 'kraj' ? KP.t('Kraj nebo vládní obvod') : k === 'sklon' ? KP.t('Největší sklon') : k === 'typ' ? KP.t('Typ trasy') : DD_LABEL[k]) + '</p>' +
+      '<button class="icon-btn fdd-x" type="button" data-fdd-close aria-label="' + esc(KP.t('Zavřít')) + '">' + K.icon('close') + '</button></div>' +
+      '<div class="fdd-opts" role="radiogroup" aria-labelledby="fdd-h">' + [...sel.options].map(o =>
+        '<label class="fdd-opt"><input type="radio" name="fdd-' + k + '" value="' + esc(o.value) + '"' + (o.value === sel.value ? ' checked' : '') + '><span>' + esc(o.textContent.trim()) + '</span></label>').join('') + '</div>' +
+      (DD_HINT[k] ? '<p class="fdd-hint small">' + esc(DD_HINT[k]) + '</p>' : '');
+    pop.setAttribute('aria-labelledby', 'fdd-h');
+    pop.dataset.k = k;
+    pop.hidden = false;
+    btn.setAttribute('aria-expanded', 'true');
+    placePop();
+    const cur = pop.querySelector('input:checked') || pop.querySelector('input');
+    if (cur) cur.focus();
+  }
+  function closeDD(focusBack) {
+    const pop = $('#st-pop'); if (pop.hidden && !ddBtn) return;
+    pop.hidden = true; pop.innerHTML = '';
+    if (ddBtn) { ddBtn.setAttribute('aria-expanded', 'false'); if (focusBack) ddBtn.focus(); }
+    ddBtn = null;
+  }
+  function bindBar() {
+    const bar = $('#st-fbar'), pop = $('#st-pop');
+    bar.addEventListener('click', e => {
+      const dd = e.target.closest('.fdd-btn'); if (dd) { openDD(dd); return; }
+      const tg = e.target.closest('[data-c]');
+      if (tg) { const el = $('#f-' + tg.dataset.c); el.checked = !el.checked; fire(el); return; }
+      const ar = e.target.closest('[data-scroll]');
+      if (ar) { const sc = $('#st-chips'); sc.scrollBy({ left: Number(ar.dataset.scroll) * sc.clientWidth * 0.7, behavior: 'smooth' }); return; }
+      const v = e.target.closest('[data-view]'); if (v) setView(v.dataset.view);
+    });
+    // klik myší nebo dotykem vybere a zavře; šipky v rádiové skupině jen mění hodnotu (živě), Enter nebo Esc zavře
+    let byPointer = false;
+    pop.addEventListener('pointerdown', () => { byPointer = true; });
+    pop.addEventListener('change', e => {
+      const r = e.target; if (r.type !== 'radio') return;
+      const k = pop.dataset.k, sel = $('#f-' + k); sel.value = r.value; fire(sel);
+      if (byPointer) setTimeout(() => closeDD(true), 120);
+      byPointer = false;
+    });
+    pop.addEventListener('click', e => { if (e.target.closest('[data-fdd-close]')) closeDD(true); });
+    pop.addEventListener('keydown', e => {
+      if (e.key === 'Escape' || (e.key === 'Enter' && e.target.type === 'radio')) { e.preventDefault(); closeDD(true); }
+    });
+    pop.addEventListener('focusout', e => { if (e.relatedTarget && !pop.contains(e.relatedTarget) && e.relatedTarget !== ddBtn) closeDD(false); });
+    document.addEventListener('pointerdown', e => { if (ddBtn && !pop.contains(e.target) && !ddBtn.contains(e.target)) closeDD(false); });
+    window.addEventListener('scroll', () => requestAnimationFrame(placePop), { passive: true });
+    window.addEventListener('resize', () => { placePop(); arrows(); });
+    // šipky u vodorovně posuvných čipů (jen myš)
+    const sc = $('#st-chips'), wrap = $('#st-chips-wrap');
+    const arrows = () => { wrap.classList.toggle('can-prev', sc.scrollLeft > 4); wrap.classList.toggle('can-next', sc.scrollLeft + sc.clientWidth < sc.scrollWidth - 4); };
+    sc.addEventListener('scroll', arrows, { passive: true }); arrows();
+    // vyhledávání v názvu, obci a kraji
+    let qt = 0;
+    $('#f-q').addEventListener('input', () => { clearTimeout(qt); qt = setTimeout(() => render(), 180); });
+    $('#f-q').closest('.fbar-search').addEventListener('submit', e => e.preventDefault());
+    // aktivní filtry
+    $('#st-active').addEventListener('click', e => {
+      const b = e.target.closest('[data-rm]'); if (!b) return;
+      const [type, k] = b.dataset.rm.split(':');
+      if (type === 'all') { clearAll(); render(); $('#f-q').focus(); return; }
+      if (type === 'q') { $('#f-q').value = ''; render(); }
+      else if (type === 'c') { const el = $('#f-' + k); el.checked = false; fire(el); }
+      else { const el = $('#f-' + k); el.value = ''; if (k === 'zeme') fillKraje(); fire(el); }
+      const next = $('#st-active [data-rm]'); (next || $('#f-q')).focus();
+    });
+  }
+
+  // ---------- Spodní panel se všemi filtry (mobil) ----------
+  let sheetOpener = null;
+  function openSheet() {
+    closeDD(false);
+    sheetOpener = document.activeElement;
+    $('#st-sheet').hidden = false; $('#st-sheet-back').hidden = false;
+    document.documentElement.classList.add('st-lock');
+    $('#st-open-sheet').setAttribute('aria-expanded', 'true');
+    $('#f-zeme').focus();
+  }
+  function closeSheet() {
+    if ($('#st-sheet').hidden) return;
+    $('#st-sheet').hidden = true; $('#st-sheet-back').hidden = true;
+    document.documentElement.classList.remove('st-lock');
+    $('#st-open-sheet').setAttribute('aria-expanded', 'false');
+    if (sheetOpener && sheetOpener.focus) sheetOpener.focus();
+  }
+  function bindSheet() {
+    $('#st-open-sheet').addEventListener('click', openSheet);
+    $('#st-sheet-x').addEventListener('click', closeSheet);
+    $('#st-sheet-back').addEventListener('click', closeSheet);
+    $('#st-sheet-go').addEventListener('click', () => { closeSheet(); $('#st-count').scrollIntoView({ block: 'nearest' }); });
+    $('#st-sheet').addEventListener('keydown', e => {
+      if (e.key === 'Escape') { e.preventDefault(); closeSheet(); return; }
+      if (e.key !== 'Tab') return;
+      const f = $$('#st-sheet button:not([disabled]), #st-sheet select, #st-sheet input').filter(x => x.offsetParent !== null);
+      if (!f.length) return;
+      if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+      else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+    });
+  }
+
+  // ---------- Mřížka / Mapa ----------
+  let view = 'grid';
+  function setView(v) {
+    view = v === 'map' ? 'map' : 'grid';
+    $('#st-layout').dataset.view = view;
+    $$('#st-fbar [data-view]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
+    const fab = $('#st-viewfab');
+    fab.innerHTML = K.icon(view === 'map' ? 'list' : 'map') + '<span>' + (view === 'map' ? KP.t('Seznam') : KP.t('Mapa')) + '</span>';
+    K.store.set('stezkyView', view);
+    if (view === 'map') ensureMap().then(() => { if (map && map.engine === 'leaflet') { map.map.invalidateSize(); drawCatalogMap(lastList); } });
   }
 
   function drawCatalogMap(list) {
@@ -369,9 +571,9 @@
         const idx = lastList.findIndex(t => t.id === p.i);
         if (idx >= shown) { shown = idx + 1; render(true); }
         const el = document.getElementById('row-' + p.i); if (!el) return;
-        document.querySelectorAll('.st-row.is-active').forEach(x => x.classList.remove('is-active'));
-        el.classList.add('is-active'); el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        const a = el.querySelector('h3 a'); if (a) a.focus({ preventScroll: true });
+        $$('.st-card.is-active').forEach(x => x.classList.remove('is-active'));
+        el.classList.add('is-active'); el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        const a = el.querySelector('.st-card-a'); if (a) a.focus({ preventScroll: true });
       },
     });
     if (pts.length) map.fitTo(pts);
@@ -384,23 +586,22 @@
 
   async function initList() {
     $('#st-list-view').hidden = false;
-    restoreFilters(); fitBar();
-    if (mobile()) $('#st-filters').open = false;
+    restoreFilters(); fitBar(); bindBar(); bindSheet(); syncBar();
     try { ALL = await load(); } catch (e) { $('#st-count').textContent = KP.t('Data tras se nepodařilo načíst. Zkuste stránku obnovit.'); return; }
     $('#st-lede').textContent = K.t('{n} tras v Česku a v Bavorsku, které jsou v OpenStreetMap označené jako sjízdné na vozíku nebo mají „bezbariérová“ v názvu. U každé ukazujeme délku, sklon z výškového modelu, povrch a zázemí u startu.', { n: ALL.length });
     if (ALL.partial) K.toast(KP.t('Část tras se nepodařilo načíst.'));
     fillKraje();
     const k = (K.store.get('stezkyFilters', {}) || {}).kraj; if (k && [...$('#f-kraj').options].some(o => o.value === k)) $('#f-kraj').value = k;
     if ($('#f-sort').value === 'blizko') $('#f-sort').value = 'delka';
+    const q = new URLSearchParams(location.search).get('q'); if (q) $('#f-q').value = q.slice(0, 80);
     render();
-    if (!mobile()) ensureMap();
+    setView(K.store.get('stezkyView', 'grid'));
     K.loadTowns().then(t => { TOWNS = t; render(true); }).catch(() => {});
 
-    $('#st-form').addEventListener('change', e => { if (e.target.id === 'f-zeme') fillKraje(); render(); });
-    $('#st-form').addEventListener('reset', () => setTimeout(() => { fillKraje(); render(); }, 0));
-    $('#f-sort').addEventListener('change', () => {
-      if ($('#f-sort').value === 'blizko' && !here) {
-        if (!navigator.geolocation) { K.toast(KP.t('Prohlížeč neumí zjistit polohu.')); $('#f-sort').value = 'delka'; return; }
+    $('#st-form').addEventListener('change', e => {
+      if (e.target.id === 'f-zeme') fillKraje();
+      if (e.target.id === 'f-sort' && e.target.value === 'blizko' && !here) {
+        if (!navigator.geolocation) { K.toast(KP.t('Prohlížeč neumí zjistit polohu.')); e.target.value = 'delka'; render(); return; }
         $('#st-count').textContent = KP.t('Zjišťuji vaši polohu…');
         navigator.geolocation.getCurrentPosition(p => { here = { la: p.coords.latitude, lo: p.coords.longitude }; render(); },
           () => { K.toast(KP.t('Polohu se nepodařilo zjistit. Povolte ji v prohlížeči.')); $('#f-sort').value = 'delka'; render(); }, { timeout: 10000 });
@@ -408,43 +609,19 @@
       }
       render();
     });
+    $('#st-form').addEventListener('reset', () => setTimeout(() => { fillKraje(); render(); }, 0));
     $('#st-more').addEventListener('click', () => { shown += PAGE; render(true); });
-    $('#st-list').addEventListener('click', e => { if (e.target.id === 'st-empty-reset') { $('#st-form').reset(); } });
-    $('#st-maptoggle').addEventListener('click', () => {
-      const box = $('#st-mapbox'), open = !box.classList.contains('open');
-      box.classList.toggle('open', open); $('#st-maptoggle').setAttribute('aria-expanded', open);
-      $('#st-maptoggle').textContent = open ? KP.t('Skrýt mapu') : KP.t('Mapa');
-      if (open) ensureMap().then(() => { if (map && map.engine === 'leaflet') { map.map.invalidateSize(); drawCatalogMap(lastList); } });
+    $('#st-list').addEventListener('click', e => {
+      if (e.target.id === 'st-empty-reset') { clearAll(); render(); return; }
+      const h = e.target.closest('[data-save-id]'); if (!h) return;
+      const on = local.toggleSaved(h.dataset.saveId);
+      if (on === null) { K.toast(KP.t('Úložiště prohlížeče je plné.')); return; }
+      h.setAttribute('aria-pressed', String(on)); h.innerHTML = K.icon(on ? 'heart-filled' : 'heart');
+      K.toast(on ? KP.t('Trasa uložena v tomto prohlížeči.') : KP.t('Trasa odebrána z uložených.'));
     });
+    $('#st-viewfab').addEventListener('click', () => { setView(view === 'map' ? 'grid' : 'map'); $('#st-layout').scrollIntoView({ block: 'start' }); });
     $('#st-fitbar').addEventListener('click', e => { if (e.target.closest('[data-open-needs-here]')) K.needsDrawer(); });
     document.addEventListener('kp:needs', () => { fitBar(); render(true); });
-    bindQuick();
-  }
-
-  // Rychlé filtry nad katalogem (čipy a Vše / Česko / Bavorsko) jen přepínají pole formuláře, filtrování zůstává v render()
-  function bindQuick() {
-    const bar = $('.st-quickbar'); if (!bar) return;
-    const sync = () => {
-      bar.querySelectorAll('[data-q]').forEach(b => {
-        const [id, v] = b.dataset.q.split('='), el = $('#' + id);
-        b.setAttribute('aria-pressed', String(!!el && (v === undefined ? el.checked : el.value === v)));
-      });
-      bar.querySelectorAll('[data-zeme]').forEach(b => b.setAttribute('aria-pressed', String($('#f-zeme').value === b.dataset.zeme)));
-    };
-    bar.addEventListener('click', e => {
-      const b = e.target.closest('[data-q], [data-zeme]'); if (!b) return;
-      let el;
-      if (b.hasAttribute('data-zeme')) { el = $('#f-zeme'); el.value = b.dataset.zeme; }
-      else {
-        const [id, v] = b.dataset.q.split('='); el = $('#' + id); if (!el) return;
-        if (v === undefined) el.checked = !el.checked; else el.value = el.value === v ? '' : v;
-      }
-      el.dispatchEvent(new Event('change', { bubbles: true }));
-      sync();
-    });
-    $('#st-form').addEventListener('change', sync);
-    $('#st-form').addEventListener('reset', () => setTimeout(sync, 0));
-    sync();
   }
 
   // ---------- Detail trasy ----------
@@ -667,13 +844,16 @@
       '<a class="btn btn-ghost" href="itinerar.html?trasa=' + encodeURIComponent(t.id) + '">' + K.icon('plus') + (KP.t('Přidat do itineráře') + '</a>') +
       ('<button class="btn btn-quiet" type="button" data-gpx>' + KP.t('Stáhnout GPX') + '</button>') +
       '</div></header>' +
+      ('<nav class="st-toc" aria-label="' + KP.t('Obsah stránky trasy') + '">') +
+      [['h-map', KP.t('Mapa trasy')], ['h-prof', KP.t('Výškový profil')], ['h-surf', KP.t('Povrch')], ['h-start', KP.t('Zázemí')], ['h-comm', KP.t('Zkušenosti')], ['h-src', KP.t('Zdroje')]]
+        .map(x => '<a class="chip" href="#' + x[0] + '">' + esc(x[1]) + '</a>').join('') + '</nav>' +
 
       '<div class="st-dgrid">' +
       '<div class="st-dmain">' +
       ('<section class="st-tiles" aria-label="' + KP.t('Klíčové údaje') + '">') +
       tile(KP.t('Délka'), km(t.delka_km)) +
       tile(KP.t('Stoupání / klesání'), '↑ ' + Math.round(t.prevyseni_nahoru || 0) + ' m · ↓ ' + Math.round(t.prevyseni_dolu || 0) + ' m') +
-      tile(K.t('Největší sklon'), pct(t.max_sklon), K.t('průměrný') + ' ' + (t.prum_sklon != null ? pct(t.prum_sklon) : K.t('neznámý'))) +
+      tile(K.t('Největší sklon'), pct(t.max_sklon), K.t('průměrný') + ' ' + (t.prum_sklon != null ? pct(t.prum_sklon) : K.t('neznámý')) + (t.sklon_poznamka ? '<br>' + K.icon('warn') + ' ' + KP.t('nejspíš chyba výškového modelu, viz profil') : '')) +
       tile(KP.t('Úseky nad 6 %'), (t.useky_nad_6 || 0) + '×', K.t('{len} celkem', { len: meters(t.useky_nad_6_m || 0) })) +
       tile(KP.t('Úseky nad 8 %'), (t.useky_nad_8 || 0) + '×', K.t('{len} celkem', { len: meters(t.useky_nad_8_m || 0) })) +
       tile(KP.t('Výška'), Math.round(t.vyska_min) + '–' + Math.round(t.vyska_max) + ' m', KP.t('n. m.')) +

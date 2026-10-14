@@ -14,10 +14,10 @@
 <title>Bezbariérové trasy · Wherethru</title>
 <meta name="description" content="Katalog tras v Česku a v Bavorsku, které jsou v OpenStreetMap označené jako sjízdné na vozíku. Délka, sklon z výškového modelu, povrch, lavičky, WC a parkování ZTP u startu.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Caveat:wght@500&family=Fraunces:opsz,wght@9..144,600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=18">
-<link rel="stylesheet" href="assets/css/stezky.css?v=3">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=19">
 <link rel="stylesheet" href="assets/css/pages-e.css?v=1">
+<link rel="stylesheet" href="assets/css/stezky.css?v=4">
 </head>
 <body class="page-stezky">
 <div id="site-header"></div>
@@ -30,28 +30,75 @@
       <p class="kicker" data-i18n>Katalog tras</p>
       <h1 data-i18n>Bezbariérové trasy</h1>
       <p class="lede" id="st-lede" data-i18n>Trasy v Česku a v Bavorsku, které jsou v OpenStreetMap označené jako sjízdné na vozíku. U každé ukazujeme délku, sklon z výškového modelu, povrch a zázemí u startu.</p>
-      <div class="st-fitbar" id="st-fitbar" aria-live="polite"></div>
     </section>
 
-    <section class="wrap st-tools" aria-label="Filtry tras" data-i18n-attr="aria-label">
-      <div class="st-quickbar">
-        <div class="seg st-seg" role="group" aria-label="Země" data-i18n-attr="aria-label">
-          <button type="button" data-zeme="" aria-pressed="true" data-i18n>Vše</button>
-          <button type="button" data-zeme="CZ" aria-pressed="false" data-i18n>Česko</button>
-          <button type="button" data-zeme="DE" aria-pressed="false" data-i18n>Bavorsko</button>
+    <!-- Lišta filtrů pod hlavičkou (v5). Stav drží formulář #st-form (na mobilu ve spodním panelu), lišta ho jen přepíná. -->
+    <div class="fbar st-fbar" id="st-fbar" role="region" aria-label="Filtry tras" data-i18n-attr="aria-label">
+      <div class="fbar-in">
+        <div class="fbar-search" role="search">
+          <label class="sr-only" for="f-q" data-i18n>Hledat trasu</label>
+          <span class="fbar-search-ic" data-icon="search"></span>
+          <input id="f-q" type="search" autocomplete="off" placeholder="Název trasy, obec nebo kraj" data-i18n-attr="placeholder">
         </div>
-        <div class="chip-row st-quick" id="st-quick" role="group" aria-label="Rychlé filtry" data-i18n-attr="aria-label">
-          <button type="button" class="chip" data-q="f-delka=0-2" aria-pressed="false"><span data-icon="route"></span><span data-i18n>Do 2 km</span></button>
-          <button type="button" class="chip" data-q="f-sklon=6" aria-pressed="false"><span data-icon="mountain"></span><span data-i18n>Sklon do 6 %</span></button>
-          <button type="button" class="chip" data-q="f-povrch=paved" aria-pressed="false"><span data-icon="trail"></span><span data-i18n>Zpevněný povrch</span></button>
-          <button type="button" class="chip" data-q="f-wc" aria-pressed="false"><span data-icon="wc"></span><span data-i18n>WC u startu</span></button>
-          <button type="button" class="chip" data-q="f-park" aria-pressed="false"><span data-icon="parking"></span><span data-i18n>Parkování ZTP</span></button>
-          <button type="button" class="chip" data-q="f-lav" aria-pressed="false"><span data-icon="seat"></span><span data-i18n>Lavičky</span></button>
+        <button class="chip fbar-filters" type="button" id="st-open-sheet" aria-haspopup="dialog" aria-controls="st-sheet" aria-expanded="false"><span data-icon="sliders"></span><span data-i18n>Filtry</span><span class="chip-n" id="st-nf" hidden></span></button>
+        <div class="fbar-scroll" id="st-chips-wrap">
+          <button class="fbar-arrow prev" type="button" tabindex="-1" aria-hidden="true" data-scroll="-1"><span data-icon="chevron-left"></span></button>
+          <div class="fbar-chips" id="st-chips" role="group" aria-label="Filtry tras" data-i18n-attr="aria-label">
+            <button type="button" class="chip fdd-btn" data-dd="zeme" aria-haspopup="true" aria-expanded="false"><span data-icon="globe"></span><span class="fdd-l" data-i18n>Země</span><span class="fdd-v"></span><span class="fdd-car" aria-hidden="true"></span></button>
+            <button type="button" class="chip fdd-btn" data-dd="kraj" aria-haspopup="true" aria-expanded="false"><span data-icon="pin"></span><span class="fdd-l" data-i18n>Kraj</span><span class="fdd-v"></span><span class="fdd-car" aria-hidden="true"></span></button>
+            <button type="button" class="chip fdd-btn" data-dd="delka" aria-haspopup="true" aria-expanded="false"><span data-icon="route"></span><span class="fdd-l" data-i18n>Délka</span><span class="fdd-v"></span><span class="fdd-car" aria-hidden="true"></span></button>
+            <button type="button" class="chip fdd-btn" data-dd="sklon" aria-haspopup="true" aria-expanded="false"><span data-icon="mountain"></span><span class="fdd-l" data-i18n>Sklon</span><span class="fdd-v"></span><span class="fdd-car" aria-hidden="true"></span></button>
+            <button type="button" class="chip fdd-btn" data-dd="povrch" aria-haspopup="true" aria-expanded="false"><span data-icon="trail"></span><span class="fdd-l" data-i18n>Povrch</span><span class="fdd-v"></span><span class="fdd-car" aria-hidden="true"></span></button>
+            <button type="button" class="chip fdd-btn" data-dd="typ" aria-haspopup="true" aria-expanded="false"><span data-icon="compass"></span><span class="fdd-l" data-i18n>Typ</span><span class="fdd-v"></span><span class="fdd-car" aria-hidden="true"></span></button>
+            <span class="fbar-sep" aria-hidden="true"></span>
+            <button type="button" class="chip fbar-tg" data-c="lav" aria-pressed="false"><span data-icon="seat"></span><span data-i18n>Lavička</span></button>
+            <button type="button" class="chip fbar-tg" data-c="wc" aria-pressed="false"><span data-icon="wc"></span><span data-i18n>WC do 300 m</span></button>
+            <button type="button" class="chip fbar-tg" data-c="park" aria-pressed="false"><span data-icon="parking"></span><span data-i18n>Parkování ZTP</span></button>
+          </div>
+          <button class="fbar-arrow next" type="button" tabindex="-1" aria-hidden="true" data-scroll="1"><span data-icon="chevron-right"></span></button>
+        </div>
+        <div class="fbar-end">
+          <button type="button" class="chip fdd-btn fbar-sort" data-dd="sort" aria-haspopup="true" aria-expanded="false"><span class="fdd-l" data-i18n>Řazení</span><span class="fdd-v"></span><span class="fdd-car" aria-hidden="true"></span></button>
+          <div class="fbar-view" role="group" aria-label="Zobrazení" data-i18n-attr="aria-label">
+            <button type="button" data-view="grid" aria-pressed="true"><span data-icon="list"></span><span data-i18n>Mřížka</span></button>
+            <button type="button" data-view="map" aria-pressed="false"><span data-icon="map"></span><span data-i18n>Mapa</span></button>
+          </div>
         </div>
       </div>
-      <details class="st-filters" id="st-filters" open>
-        <summary><span data-icon="filter"></span><span data-i18n>Všechny filtry</span><span class="st-nf num" id="st-nf" hidden></span></summary>
-        <form id="st-form" class="st-form">
+    </div>
+    <div class="fdd-pop" id="st-pop" role="dialog" aria-modal="false" hidden></div>
+
+    <section class="wrap st-results" aria-label="Výsledky" data-i18n-attr="aria-label">
+      <div class="st-bar">
+        <p class="st-count" id="st-count" aria-live="polite" data-i18n>Načítám trasy…</p>
+        <div class="fbar-active" id="st-active" role="group" aria-label="Aktivní filtry" data-i18n-attr="aria-label"></div>
+      </div>
+      <div class="st-fitbar" id="st-fitbar" aria-live="polite"></div>
+      <div class="st-layout" id="st-layout" data-view="grid">
+        <ul class="st-grid" id="st-list"></ul>
+        <div class="st-mapbox" id="st-mapbox">
+          <div id="st-map" class="map-canvas" role="application" aria-label="Mapa startů tras" data-i18n-attr="aria-label"></div>
+        </div>
+      </div>
+      <button class="btn btn-ghost btn-block st-more" type="button" id="st-more" hidden data-i18n>Zobrazit další trasy</button>
+      <div class="st-source small">
+        <p data-i18n>Zdroj tras: © přispěvatelé <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> (ODbL), extrakty Geofabrik, stav 6. a 7. 10. 2026. Vybrali jsme relace a souvislé úseky cest s údajem <span class="mono">wheelchair=yes</span> nebo <span class="mono">limited</span> a trasy s „bezbariérová“ v názvu. Výšky: EU-DEM v1.1 s rozlišením 25 m (Copernicus, © Evropská unie), body po 50 m.</p>
+        <p data-i18n>Sklon z výškového modelu je odhad. Krátkou strmou rampu model nezachytí a u cesty ve svahu může ukázat sklon terénu vedle ní. Před cestou ověřte. <a href="metodika.html#zdroje">Jak s daty pracujeme</a></p>
+        <p data-i18n>Chcete spojit trasu s hotelem a restaurací? <a href="itinerar.html">Poskládejte si itinerář</a>. Bariéry v ulicích kolem najdete na stránce <a href="trasy.html">Trasy a bariéry</a>.</p>
+      </div>
+    </section>
+
+    <button class="st-viewfab" type="button" id="st-viewfab" aria-controls="st-layout"><span data-icon="map"></span><span id="st-viewfab-t" data-i18n>Mapa</span></button>
+
+    <!-- Všechny filtry: na mobilu spodní panel (tlačítko Filtry), formulář drží stav pro lištu -->
+    <div class="st-sheet-back" id="st-sheet-back" hidden></div>
+    <div class="st-sheet" id="st-sheet" role="dialog" aria-modal="true" aria-labelledby="st-sheet-h" hidden>
+      <div class="st-sheet-head">
+        <h2 id="st-sheet-h" data-i18n>Filtry</h2>
+        <button class="icon-btn" type="button" id="st-sheet-x" aria-label="Zavřít" data-i18n-attr="aria-label"><span data-icon="close"></span></button>
+      </div>
+      <form id="st-form" class="st-form">
+        <div class="st-form-body">
           <div class="field"><label for="f-zeme" data-i18n>Země</label>
             <select id="f-zeme"><option value="" data-i18n>Česko i Bavorsko</option><option value="CZ" data-i18n>Česko</option><option value="DE" data-i18n>Bavorsko</option></select></div>
           <div class="field"><label for="f-kraj" data-i18n>Kraj nebo vládní obvod</label>
@@ -66,22 +113,7 @@
             <span class="hint" id="f-povrch-h" data-i18n>Zpevněný = asfalt, beton nebo dlažba aspoň na 90 % délky.</span></div>
           <div class="field"><label for="f-typ" data-i18n>Typ trasy</label>
             <select id="f-typ"><option value="" data-i18n>Jakýkoli</option><option value="okruh" data-i18n>Okruh</option><option value="tam a zpět" data-i18n>Tam a zpět</option><option value="A→B" data-i18n>Z bodu do bodu</option></select></div>
-          <fieldset class="st-checks">
-            <legend data-i18n>Zázemí</legend>
-            <label class="check" data-i18n-text><input type="checkbox" id="f-lav"> Aspoň jedna lavička u trasy</label>
-            <label class="check" data-i18n-text><input type="checkbox" id="f-wc"> WC do 300 m od startu</label>
-            <label class="check" data-i18n-text><input type="checkbox" id="f-park"> Parkování ZTP do 300 m od startu</label>
-          </fieldset>
-          <div class="st-form-foot"><button class="btn btn-quiet btn-sm" type="reset" id="f-reset" data-i18n>Zrušit filtry</button></div>
-        </form>
-      </details>
-    </section>
-
-    <section class="wrap st-results" aria-label="Výsledky" data-i18n-attr="aria-label">
-      <div class="st-bar">
-        <p class="st-count" id="st-count" aria-live="polite" data-i18n>Načítám trasy…</p>
-        <div class="st-bar-r">
-          <label class="st-sort" for="f-sort"><span data-i18n>Řadit</span>
+          <div class="field"><label for="f-sort" data-i18n>Řazení</label>
             <select id="f-sort">
               <option value="delka" data-i18n>Nejkratší</option>
               <option value="delka-d" data-i18n>Nejdelší</option>
@@ -89,24 +121,20 @@
               <option value="lavicky" data-i18n>Nejvíc laviček</option>
               <option value="nazev" data-i18n>Podle názvu</option>
               <option value="blizko" data-i18n>Nejblíž mně</option>
-            </select>
-          </label>
-          <button class="btn btn-ghost btn-sm st-maptoggle" type="button" id="st-maptoggle" aria-controls="st-mapbox" aria-expanded="false" data-i18n>Mapa</button>
+            </select></div>
+          <fieldset class="st-checks">
+            <legend data-i18n>Zázemí</legend>
+            <label class="check" data-i18n-text><input type="checkbox" id="f-lav"> Aspoň jedna lavička u trasy</label>
+            <label class="check" data-i18n-text><input type="checkbox" id="f-wc"> WC do 300 m od startu</label>
+            <label class="check" data-i18n-text><input type="checkbox" id="f-park"> Parkování ZTP do 300 m od startu</label>
+          </fieldset>
         </div>
-      </div>
-      <div class="st-layout">
-        <ul class="st-list" id="st-list"></ul>
-        <div class="st-mapbox" id="st-mapbox">
-          <div id="st-map" class="map-canvas" role="application" aria-label="Mapa startů tras" data-i18n-attr="aria-label"></div>
+        <div class="st-sheet-foot">
+          <button class="btn btn-quiet" type="reset" id="f-reset" data-i18n>Zrušit vše</button>
+          <button class="btn btn-primary" type="button" id="st-sheet-go" data-i18n>Zobrazit trasy</button>
         </div>
-      </div>
-      <button class="btn btn-ghost btn-block st-more" type="button" id="st-more" hidden data-i18n>Zobrazit další trasy</button>
-      <div class="st-source small">
-        <p data-i18n>Zdroj tras: © přispěvatelé <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> (ODbL), extrakty Geofabrik, stav 6. a 7. 10. 2026. Vybrali jsme relace a souvislé úseky cest s údajem <span class="mono">wheelchair=yes</span> nebo <span class="mono">limited</span> a trasy s „bezbariérová“ v názvu. Výšky: EU-DEM v1.1 s rozlišením 25 m (Copernicus, © Evropská unie), body po 50 m.</p>
-        <p data-i18n>Sklon z výškového modelu je odhad. Krátkou strmou rampu model nezachytí a u cesty ve svahu může ukázat sklon terénu vedle ní. Před cestou ověřte. <a href="metodika.html#zdroje">Jak s daty pracujeme</a></p>
-        <p data-i18n>Chcete spojit trasu s hotelem a restaurací? <a href="itinerar.html">Poskládejte si itinerář</a>. Bariéry v ulicích kolem najdete na stránce <a href="trasy.html">Trasy a bariéry</a>.</p>
-      </div>
-    </section>
+      </form>
+    </div>
   </div>
 
   <!-- Detail trasy -->
@@ -118,11 +146,11 @@
 <div id="site-footer"></div>
 <script src="assets/js/i18n.js?v=3"></script>
 <script src="assets/js/i18n/core.js?v=6"></script>
-<script src="assets/js/i18n/stezky.js?v=2"></script>
+<script src="assets/js/i18n/stezky.js?v=3"></script>
 <script src="assets/js/config.js?v=12"></script>
 <script src="assets/icons/icons.js?v=1"></script>
 <script src="assets/js/core.js?v=18"></script>
-<script src="assets/js/map-engine.js?v=16"></script>
-<script src="assets/js/stezky.js?v=4"></script>
+<script src="assets/js/map-engine.js?v=18"></script>
+<script src="assets/js/stezky.js?v=5"></script>
 </body>
 </html>

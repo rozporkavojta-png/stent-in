@@ -1,14 +1,15 @@
 /* Stránka Mapa míst: filtry (assets/js/filters.js), výpis a mapa nad skutečnými daty z data/regions/ (Česko a Bavorsko).
    Data se načítají po regionech podle výřezu mapy (KP.loadRegion); když je ve výřezu moc míst, panel nabídne výběr kraje / obvodu.
-   PC: levý sloupec (hledání, kategorie, rychlé filtry, výsledky) + mapa; panel Filtry se vysune přes levý sloupec.
-   Mobil: mapa na celou výšku, nahoře hledání a kategorie, výsledky ve vysouvacím panelu (přepínač Mapa / Seznam),
-   panel Filtry zespodu. Filtry jsou v adrese stránky, takže jdou sdílet a tlačítko Zpět funguje. */
+   v5: lišta filtrů přes celou šířku pod hlavičkou (hledání, kategorie, rychlé filtry, Další filtry, řazení, Seznam/Mapa).
+   PC: mapa přes celou šířku, seznam jako plovoucí panel vlevo (jde skrýt), Další filtry = okno pod tlačítkem.
+   Mobil: mapa, výsledky ve vysouvacím panelu zespodu (3 polohy) a plovoucí přepínač Mapa / Seznam, Filtry zespodu.
+   Filtry jsou v adrese stránky, takže jdou sdílet a tlačítko Zpět funguje. */
 (function () {
   'use strict';
   const K = window.KP, KF = window.KPFilters, $ = (s) => document.querySelector(s), $$ = (s) => document.querySelectorAll(s);
   const PAGE = 40;
   const LIMIT = 45000; // víc míst najednou podle výřezu nenačítáme (paměť telefonu); stačí přiblížit nebo vybrat kraj
-  const view = { inView: true, sort: K.store.get('map.sort', 'complete'), shown: PAGE, active: null };
+  const view = { inView: true, sort: K.store.get('map.sort', 'complete'), shown: PAGE, active: null, list: K.store.get('map.list', true) !== false };
   const mqDesk = matchMedia('(min-width: 900px)');
   let ctrl = null, ALL = [], map = null, bounds = null, filtered = [], IDX = [], overview = false, loadingIds = null, TOWNS = [], myPos = null;
   const LOADED = {}; // id regionu → pole míst
@@ -51,6 +52,7 @@
 
   function render() {
     if (overview) {
+      $('#list-show-n').textContent = '';
       $('#count').innerHTML = '<span class="cnt-t">' + K.esc(KP.t('Vyberte oblast')) + '</span><span class="total">' + K.esc(ctrl.state.zeme ? K.ZEME[ctrl.state.zeme] : KP.t('Česko a Bavorsko')) + ': ' + fmtN(IDX.filter(r => !ctrl.state.zeme || r.zeme === ctrl.state.zeme).reduce((a, r) => a + r.pocet, 0)) + ' ' + K.esc(KP.t('míst')) + '</span>';
       $('#results').innerHTML = regionDirHtml();
       $('#more').hidden = true;
@@ -62,6 +64,7 @@
     $('#count').innerHTML = '<span class="num">' + fmtN(n) + '</span> <span class="cnt-t">' + K.esc(unit(n)) + ' ' + K.esc(view.inView ? KP.t('v oblasti mapy') : KP.t('v načtených oblastech')) + '</span>' +
       (loadingIds ? '<span class="total">' + K.esc(KP.t('Načítám další místa…')) + '</span>' : '') +
       (view.inView && filtered.length !== n ? '<span class="total">' + K.esc(KP.t('z {n} podle filtrů', { n: fmtN(filtered.length) })) + '</span>' : '');
+    $('#list-show-n').textContent = fmtN(n);
     $('#results').innerHTML = n ? list.slice(0, view.shown).map(p => KF.cardHtml(p, { mode: 'button', active: view.active })).join('') : emptyHtml();
     $('#more').hidden = n <= view.shown;
     $('#more').textContent = KP.t('Zobrazit dalších {n}', { n: fmtN(Math.min(PAGE, n - view.shown)) });
@@ -114,6 +117,7 @@
     $$('.rc[data-card]').forEach(b => b.classList.toggle('is-active', !!p && b.dataset.card === p.i));
     $('.map-layout').classList.toggle('has-preview', !!p);
     if (!p) { box.hidden = true; box.innerHTML = ''; if (map) map.focus(null); return; }
+    if (mqDesk.matches && !view.list) setList(true, false);
     box.hidden = false;
     box.innerHTML = previewHtml(p);
     const pn = box.querySelector('[data-pv-needs]');
@@ -134,23 +138,33 @@
     }
   }
 
-  // Náhled: na PC nad seznamem, na mobilu plovoucí karta dole na mapě. Rychlé filtry: na PC nahoře, na mobilu v panelu výsledků.
+  // Náhled: na PC nahoře v plovoucím seznamu, na mobilu plovoucí karta dole na mapě.
+  // Řazení: na PC v liště filtrů, na mobilu v hlavičce vysouvacího panelu.
   function placeParts() {
     const box = $('#preview');
-    if (mqDesk.matches) $('#panel').insertBefore(box, $('#results-head'));
+    if (mqDesk.matches) $('#panel-scroll').insertBefore(box, $('#results'));
     else $('.map-wrap').appendChild(box);
-    const slot = mqDesk.matches ? $('#quick-top') : $('#quick-sheet');
-    if ($('#kf-quick').parentElement !== slot) { slot.appendChild($('#kf-quick')); slot.appendChild($('#kf-active')); }
+    const sw = $('#sort-wrap');
+    if (mqDesk.matches) { if (sw.parentElement !== $('.kf-bar-end')) $('.kf-bar-end').insertBefore(sw, $('#view-seg')); }
+    else if (sw.parentElement !== $('#sheet-tools')) $('#sheet-tools').appendChild(sw);
+  }
+
+  // ---------- Seznam na PC: plovoucí panel vlevo, jde skrýt (mapa pak přes celou šířku) ----------
+  function setList(on, focus) {
+    view.list = on; K.store.set('map.list', on);
+    $('.map-layout').classList.toggle('list-off', !on);
+    $('#list-show').hidden = on;
+    $$('#view-seg [data-view]').forEach(b => b.setAttribute('aria-pressed', String((b.dataset.view === 'list') === on)));
+    if (focus) (on ? $('#list-hide') : $('#list-show')).focus();
   }
 
   // ---------- Vysouvací panel výsledků (mobil) ----------
   const SHEET = ['peek', 'half', 'full'];
   let sheetPos = 'peek';
   function sheetHeights() {
-    const H = $('.map-layout').clientHeight;
+    const H = $('#map-stage').clientHeight;
     const peek = parseFloat(getComputedStyle($('.map-layout')).getPropertyValue('--peek-h')) || 96;
-    const top = $('.map-top').offsetHeight;
-    return { peek, half: Math.max(peek + 80, Math.round(H * 0.55)), full: Math.max(peek + 80, H - top - 4) };
+    return { peek, half: Math.max(peek + 80, Math.round(H * 0.55)), full: Math.max(peek + 80, H - 8) };
   }
   function setSheet(pos) {
     sheetPos = pos;
@@ -160,7 +174,6 @@
     panel.style.height = sheetHeights()[pos] + 'px';
     const toMap = pos !== 'peek';
     $('#view-btn').innerHTML = K.icon(toMap ? 'map' : 'list') + '<span class="lbl">' + K.esc(toMap ? KP.t('Mapa') : KP.t('Seznam')) + '</span>';
-    $('#view-btn').setAttribute('aria-label', toMap ? KP.t('Zobrazit mapu') : KP.t('Zobrazit seznam'));
     $('#grip').setAttribute('aria-label', pos === 'full' ? KP.t('Zmenšit seznam') : KP.t('Zvětšit seznam'));
     $('#grip').setAttribute('aria-expanded', pos !== 'peek');
   }
@@ -169,7 +182,7 @@
     let drag = null, suppressClick = false;
     const start = (e) => {
       if (mqDesk.matches || e.button > 0) return;
-      if (e.currentTarget !== $('#grip') && e.target.closest('button, select, input, label, a, .kf-quick, .kf-active')) return;
+      if (e.currentTarget !== $('#grip') && e.target.closest('button, select, input, label, a')) return;
       drag = { y: e.clientY, h: panel.offsetHeight, t: performance.now(), moved: false, id: e.pointerId, el: e.currentTarget };
       panel.classList.add('dragging');
     };
@@ -206,6 +219,9 @@
       if (e.key === 'ArrowDown') { e.preventDefault(); setSheet(SHEET[Math.max(0, SHEET.indexOf(sheetPos) - 1)]); }
     });
     $('#view-btn').addEventListener('click', () => { if (view.active) select(null); setSheet(sheetPos === 'peek' ? 'full' : 'peek'); });
+    $('#list-hide').addEventListener('click', () => setList(false, true));
+    $('#list-show').addEventListener('click', () => setList(true, true));
+    $('#view-seg').addEventListener('click', (e) => { const b = e.target.closest('[data-view]'); if (b) setList(b.dataset.view === 'list', false); });
     let rt;
     window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => setSheet(sheetPos), 120); });
     mqDesk.addEventListener('change', () => { placeParts(); setSheet(mqDesk.matches ? sheetPos : 'peek'); });
@@ -301,6 +317,10 @@
     const wrap = $('#map-wrap'), pop = $('#layers'), btn = $('#layers-btn');
     const setTiles = (v) => { wrap.classList.toggle('tiles-color', v === 'color'); pop.querySelectorAll('[data-tiles]').forEach(b => b.setAttribute('aria-pressed', b.dataset.tiles === v)); K.store.set('map.tiles', v); };
     const setLegend = (on, save) => { $('#legend').hidden = !on; $('#legend-toggle').checked = on; if (save) K.store.set('map.legend', on); };
+    // Legenda vpravo dole jde sbalit na jedno tlačítko
+    const foldLegend = (open, save) => { $('#legend').classList.toggle('collapsed', !open); $('#legend-btn').setAttribute('aria-expanded', String(open)); if (save) K.store.set('map.legendOpen', open); };
+    foldLegend(K.store.get('map.legendOpen', true) !== false, false);
+    $('#legend-btn').addEventListener('click', () => foldLegend($('#legend').classList.contains('collapsed'), true));
     setTiles(K.store.get('map.tiles', 'soft'));
     setLegend(K.store.get('map.legend', mqDesk.matches) === true); // na mobilu je legenda jen na přání (Vrstvy mapy)
     const openPop = (on) => { pop.hidden = !on; btn.setAttribute('aria-expanded', on); if (on) { const b = pop.querySelector('[aria-pressed="true"]'); if (b) b.focus(); } };
@@ -309,16 +329,6 @@
     $('#legend-toggle').addEventListener('change', (e) => setLegend(e.target.checked, true));
     document.addEventListener('click', (e) => { if (!pop.hidden && !pop.contains(e.target) && e.target !== btn) openPop(false); });
     pop.addEventListener('keydown', (e) => { if (e.key === 'Escape') { e.stopPropagation(); openPop(false); btn.focus(); } });
-  }
-
-  // Řada kategorií: šipky na PC (myš neumí posouvat do strany)
-  function bindCatScroll() {
-    const row = $('#kf-cats'), wrap = row.parentElement;
-    const upd = () => { wrap.classList.toggle('can-prev', row.scrollLeft > 4); wrap.classList.toggle('can-next', row.scrollLeft + row.clientWidth < row.scrollWidth - 4); };
-    row.addEventListener('scroll', upd, { passive: true });
-    wrap.querySelectorAll('[data-scroll]').forEach(b => b.addEventListener('click', () => row.scrollBy({ left: Number(b.dataset.scroll) * row.clientWidth * 0.7, behavior: 'smooth' })));
-    new ResizeObserver(upd).observe(row);
-    setTimeout(upd, 50);
   }
 
   function setSort(v) {
@@ -373,13 +383,12 @@
     }, true);
     bindSheet();
     bindLayers();
-    bindCatScroll();
   }
 
   async function init() {
     ctrl = KF.create({
       id: 'mapa',
-      els: { search: $('#q'), form: $('#search-form'), filterBtn: $('#filters-open'), filterCount: $('#filter-count'), cats: $('#kf-cats'), quick: $('#kf-quick'), active: $('#kf-active'), panelHost: $('#kf-host') },
+      els: { bar: $('#kf-bar'), search: $('#q'), form: $('#search-form'), filterBtn: $('#filters-open'), filterCount: $('#filter-count'), cats: $('#kf-cats'), quick: $('#kf-quick'), active: $('#kf-active'), panelHost: $('#kf-host') },
       quick: ['step', 'wc', 'pk', 'lift', 'mer', 'img'],
       sections: ['cats', 'access', 'adv', 'source', 'more', 'area', 'needs'],
       obecMode: 'input',
@@ -392,6 +401,7 @@
     });
     placeParts();
     bind();
+    setList(view.list, false);
     setSheet('peek');
     try { IDX = await K.loadRegionsIndex(); }
     catch (e) { $('#count').textContent = KP.t('Data se nepodařilo načíst. Otevřete web přes server (viz README), ne jako soubor.'); return; }

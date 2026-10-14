@@ -422,7 +422,8 @@
       const list = activeList();
       const n = activeCount();
       if (el.filterCount) { el.filterCount.hidden = !n; el.filterCount.textContent = n; }
-      if (el.filterBtn) el.filterBtn.setAttribute('aria-label', n ? T('Filtry, zapnuto {n}', { n }) : T('Filtry'));
+      // Tlačítko s viditelným textem (čip v liště) si jméno bere z textu, ikonové tlačítko z aria-label
+      if (el.filterBtn && !el.filterBtn.classList.contains('kf-chip')) el.filterBtn.setAttribute('aria-label', n ? T('Filtry, zapnuto {n}', { n }) : T('Filtry'));
       if (!el.active) return;
       el.active.hidden = !list.length;
       el.active.innerHTML = list.length ? '<span class="kf-active-l">' + esc(T('Filtry')) + ':</span>' + list.map(([k, v, l]) =>
@@ -581,11 +582,27 @@
       lastFocus = document.activeElement && document.activeElement !== document.body ? document.activeElement : el.filterBtn;
       isOpen = true;
       P.panel.hidden = false; P.backdrop.hidden = false;
+      placePop();
       document.documentElement.classList.add('kf-lock');
       if (el.filterBtn) el.filterBtn.setAttribute('aria-expanded', 'true');
       const t = section && el.panelHost.querySelector('#kf-sec-' + section);
       if (t) { t.scrollIntoView({ block: 'start' }); const f = t.querySelector('input, button, select'); if (f) f.focus(); }
       else P.panel.querySelector('[data-kf-close]').focus();
+    }
+    // PC (>= 768 px): Další filtry jako okno 560 px pod tlačítkem v liště; mobil: spodní panel
+    const mqPop = matchMedia('(min-width: 768px)');
+    function placePop() {
+      const host = el.panelHost; if (!host) return;
+      const on = mode === 'dialog' && !!el.filterBtn && mqPop.matches && el.filterBtn.offsetParent !== null;
+      host.classList.toggle('kf-pop', on);
+      if (!on) return;
+      const r = el.filterBtn.getBoundingClientRect(), W = document.documentElement.clientWidth;
+      const w = Math.min(560, W - 32);
+      const right = Math.max(16, Math.min(W - r.right, W - 16 - w));
+      const top = Math.round(r.bottom + 8);
+      host.style.setProperty('--kf-pop-top', top + 'px');
+      host.style.setProperty('--kf-pop-right', Math.round(right) + 'px');
+      host.style.setProperty('--kf-pop-h', Math.max(280, innerHeight - top - 16) + 'px');
     }
     function close() {
       if (!isOpen) return;
@@ -655,14 +672,8 @@
         });
         // Myš: kolečko posouvá řadu kategorií do strany
       }
-      // Myš: kolečko posouvá řady kategorií a rychlých čipů do strany
-      [el.cats, el.quick].filter(Boolean).forEach(row => row.addEventListener('wheel', (e) => {
-        if (Math.abs(e.deltaY) > Math.abs(e.deltaX) && row.scrollWidth > row.clientWidth + 2) {
-          const max = row.scrollWidth - row.clientWidth;
-          if ((e.deltaY < 0 && row.scrollLeft <= 0) || (e.deltaY > 0 && row.scrollLeft >= max - 1)) return;
-          row.scrollLeft += e.deltaY; e.preventDefault();
-        }
-      }, { passive: false }));
+      // Posuvné řady v liště (šipky, stín na okraji, kolečko myši do strany): KPFilters.hscroll
+      if (el.bar) el.bar.querySelectorAll('.hs').forEach(hscroll);
       if (el.quick) el.quick.addEventListener('click', (e) => {
         const b = e.target.closest('[data-kf-q]'); if (!b) return;
         const k = b.dataset.kfQ;
@@ -684,6 +695,8 @@
       document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && isOpen) close(); });
       const mq = matchMedia('(min-width: 900px)');
       mq.addEventListener('change', () => { if (isOpen && cfg.panelMode() === 'inline') close(); applyMode(); });
+      let rt;
+      addEventListener('resize', () => { if (!isOpen) return; clearTimeout(rt); rt = setTimeout(placePop, 60); });
     }
 
     buildPanel();
@@ -719,5 +732,41 @@
     };
   }
 
-  window.KPFilters = { create, cardHtml, bindSave, syncSaves, sortList, attrs: A, hasX, hasR, isOsm, norm, W_DEF, W_ALL };
+  // ---------- Vodorovně posuvná řada čipů (.hs > .hs-sc) ----------
+  // Šipky na PC (myš neumí posouvat do strany), stín na okraji, kde řada pokračuje, kolečko myši posouvá do strany.
+  // Šipky i stín se ukážou jen tehdy, když řada opravdu přetéká (na každé šířce lišty přetéká jiný prvek).
+  function hscroll(wrap) {
+    if (!wrap || wrap.__hs) return; wrap.__hs = true;
+    const sc = [...wrap.children].find(c => c.classList.contains('hs-sc')); if (!sc) return;
+    const mk = (dir) => {
+      const f = document.createElement('span'); f.className = 'hs-fade ' + dir; f.setAttribute('aria-hidden', 'true'); wrap.appendChild(f);
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'hs-btn ' + dir; b.tabIndex = -1;
+      b.setAttribute('aria-label', dir === 'prev' ? T('Posunout doleva') : T('Posunout doprava'));
+      b.innerHTML = K.icon(dir === 'prev' ? 'chevron-left' : 'chevron-right');
+      b.addEventListener('click', () => sc.scrollBy({ left: (dir === 'prev' ? -1 : 1) * Math.max(160, sc.clientWidth * 0.7) }));
+      wrap.appendChild(b);
+    };
+    mk('prev'); mk('next');
+    const upd = () => {
+      const over = sc.scrollWidth > sc.clientWidth + 2 && getComputedStyle(sc).overflowX !== 'visible';
+      wrap.classList.toggle('can-prev', over && sc.scrollLeft > 4);
+      wrap.classList.toggle('can-next', over && sc.scrollLeft + sc.clientWidth < sc.scrollWidth - 4);
+    };
+    sc.addEventListener('scroll', upd, { passive: true });
+    sc.addEventListener('wheel', (e) => {
+      if (Math.abs(e.deltaY) <= Math.abs(e.deltaX) || sc.scrollWidth <= sc.clientWidth + 2 || getComputedStyle(sc).overflowX === 'visible') return;
+      const max = sc.scrollWidth - sc.clientWidth;
+      if ((e.deltaY < 0 && sc.scrollLeft <= 0) || (e.deltaY > 0 && sc.scrollLeft >= max - 1)) return;
+      sc.scrollBy({ left: e.deltaY, behavior: 'auto' }); e.preventDefault();
+    }, { passive: false });
+    // Klávesnice: fokus na čip mimo výřez řadu posune
+    sc.addEventListener('focusin', (e) => { if (e.target !== sc && e.target.scrollIntoView) e.target.scrollIntoView({ block: 'nearest', inline: 'nearest' }); });
+    if (window.ResizeObserver) { const ro = new ResizeObserver(upd); ro.observe(sc); [...sc.children].forEach(c => ro.observe(c)); }
+    if (window.MutationObserver) new MutationObserver(() => setTimeout(upd, 0)).observe(sc, { childList: true, subtree: true });
+    addEventListener('resize', upd);
+    setTimeout(upd, 60);
+    wrap.__hsUpdate = upd;
+  }
+
+  window.KPFilters = { create, cardHtml, bindSave, syncSaves, sortList, hscroll, attrs: A, hasX, hasR, isOsm, norm, W_DEF, W_ALL };
 })();

@@ -243,3 +243,12 @@ KP.i18n.add({
   "Výtah": ["Aufzug", "Lift"],
   "Vysoký obrubník ": ["Hoher Bordstein ", "High kerb "],
 });
+
+/* v5: lišta nad mapou a sbalitelný panel (trasy.html) */
+KP.i18n.add({
+  "Ovládání mapy bariér": ["Steuerung der Barrierenkarte", "Barrier map controls"],
+  "Vrstvy na mapě": ["Kartenebenen", "Map layers"],
+  "Skrýt panel": ["Seitenleiste ausblenden", "Hide panel"],
+  "Zobrazit panel": ["Seitenleiste einblenden", "Show panel"],
+  "Přístupná místa": ["Barrierefreie Orte", "Accessible places"],
+});

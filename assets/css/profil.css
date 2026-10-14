@@ -17,7 +17,7 @@
 .pf-stats a { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; min-height: 96px; padding: 14px; border-radius: var(--r); background: var(--brand-100); color: var(--ink-2); text-decoration: none; }
 .pf-stats a:hover { background: var(--brand-200); color: var(--ink); }
 .pf-stats svg { width: 22px; height: 22px; color: var(--brand-900); margin-bottom: 4px; }
-.pf-stats b { font: 800 1.6rem/1 var(--f-display); color: var(--heading); }
+.pf-stats b { font: 700 1.6rem/1 var(--f-display); color: var(--heading); }
 .pf-stats span { font-size: .84rem; line-height: 1.25; }
 @media (max-width: 1080px) { .pf-hero-card { grid-template-columns: auto minmax(0, 1fr); } .pf-stats { grid-column: 1 / -1; } }
 @media (max-width: 560px) {
@@ -41,7 +41,7 @@
 .pf-needs { border-top: 1px solid var(--line); padding-top: clamp(18px, 2.4vw, 26px); }
 .pf-head { margin-bottom: 14px; align-items: center; }
 .pf-head h2 { font-size: clamp(1.3rem, 2.2vw, 1.6rem); }
-.pf-count { display: inline-grid; place-items: center; min-width: 36px; height: 36px; padding: 0 10px; border-radius: var(--r-pill); background: var(--brand-200); color: var(--brand-900); font: 800 1rem/1 var(--f-display); letter-spacing: 0; }
+.pf-count { display: inline-grid; place-items: center; min-width: 36px; height: 36px; padding: 0 10px; border-radius: var(--r-pill); background: var(--brand-200); color: var(--brand-900); font: 700 1rem/1 var(--f-display); letter-spacing: 0; }
 .pf-count[hidden] { display: none; }
 .pf-sub { font-size: 1.1rem; margin: 24px 0 10px; }
 .pf-empty { padding: 20px; border-top: 0; border-radius: var(--r); background: var(--surface-2); }
@@ -77,7 +77,7 @@
 
 /* ---------- Členství (přesunuto z profil.js) ---------- */
 .pf-tier-now { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: 0 0 4px; }
-.pf-tier-now b { font: 800 clamp(1.4rem, 2.6vw, 1.8rem)/1.1 var(--f-display); color: var(--heading); }
+.pf-tier-now b { font: 700 clamp(1.4rem, 2.6vw, 1.8rem)/1.1 var(--f-display); color: var(--heading); }
 .pf-tier-now span:last-child { color: var(--ink-2); }
 .pf-tier-price { margin: 0 0 16px; font-weight: 700; }
 .pf-tier-list { list-style: none; margin: 0 0 16px; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 0 24px; }

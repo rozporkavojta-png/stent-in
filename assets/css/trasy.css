@@ -1,0 +1,103 @@
+/* Trasy a bariéry (trasy.html), v5: lišta pod hlavičkou (segment Bariéry / Naplánovat / Moje trasy, hledání obce,
+   čipy vrstev), plovoucí sbalitelný panel vlevo nad mapou, legenda vpravo dole. Na mobilu spodní panel (#grip) jako dřív.
+   Načítá se po pages-c.css, pages-e.css a stezky.css (odtud .fbar), proto selektory s .page-trasy. */
+
+.page-trasy .tr-app { display: flex; flex-direction: column; height: calc(100dvh - var(--tr-top, 94px)); min-height: 520px; grid-template-columns: none; }
+.page-trasy .tr-fbar { position: relative; top: auto; z-index: 1150; flex: none; }
+.page-trasy .tr-fbar .fbar-in { max-width: none; }
+.page-trasy .tr-body { position: relative; flex: 1; min-height: 0; }
+.page-trasy .tr-map { position: absolute; inset: 0; }
+
+/* Segment částí stránky */
+.page-trasy .tr-tabs { flex: none; display: inline-flex; gap: 2px; padding: 0; border: 0; background: var(--surface-2); border-radius: var(--r-pill); grid-template-columns: none; }
+.page-trasy .tr-tabs button { min-height: 44px; padding: 0 16px; border: 0; border-radius: var(--r-pill); background: transparent; color: var(--ink-2); font: 500 .875rem/1 var(--f-body); display: inline-flex; align-items: center; gap: 8px; cursor: pointer; white-space: nowrap; box-shadow: none; }
+.page-trasy .tr-tabs button svg { width: 18px; height: 18px; flex: none; }
+.page-trasy .tr-tabs button:hover { background: var(--surface-3); color: var(--ink); text-decoration: none; }
+.page-trasy .tr-tabs button[aria-selected="true"] { background: var(--chip-on); color: var(--chip-on-ink); font-weight: 600; box-shadow: none; }
+
+/* Hledání obce */
+.page-trasy .tr-find { flex: 0 0 384px; min-width: 0; display: flex; align-items: center; gap: 8px; }
+.page-trasy .tr-find .fbar-search { flex: 1; min-width: 0; }
+.page-trasy .tr-find .fbar-search input { padding-right: 76px; }
+.tr-find-go { position: absolute; right: 2px; top: 2px; bottom: 2px; padding: 0 16px; border: 0; border-radius: var(--r-pill); background: var(--brand-900); color: var(--on-brand); font: 600 .875rem/1 var(--f-body); cursor: pointer; min-width: 44px; }
+.tr-find-go:hover { background: var(--brand-700); }
+.page-trasy .tr-locate { flex: none; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line-strong); background: var(--surface); box-shadow: none; }
+.page-trasy .tr-locate:hover { background: var(--surface-2); color: var(--brand-900); }
+
+/* Čipy vrstev: zapnutá vrstva = světle zelený čip se značkou, vypnutá = bílý čip se šedou značkou (tvar + text, nikdy jen barva) */
+.page-trasy .tr-layers-bar { flex: 1 1 0; min-width: 0; }
+.page-trasy .tr-app:not([data-mode="bariery"]) .tr-layers-bar { display: none; }
+.tr-lgroup { flex: none; font: 600 .8125rem/1 var(--f-body); color: var(--ink-3); padding: 0 2px 0 4px; }
+.tr-lchip { position: relative; gap: 6px; padding: 0 14px 0 10px; }
+.tr-lchip input { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+.tr-lchip .tr-sw { width: 26px; height: 18px; margin: 0; }
+.tr-lchip:has(input:checked) { background: var(--brand-100); border-color: var(--brand-500); color: var(--ink); }
+.tr-lchip:has(input:checked)::after { content: ""; width: 6px; height: 11px; margin-left: 2px; border: solid var(--brand-900); border-width: 0 2px 2px 0; transform: rotate(45deg) translate(-1px, -2px); }
+.tr-lchip:not(:has(input:checked)) { color: var(--ink-3); }
+.tr-lchip:not(:has(input:checked)) .tr-sw { filter: grayscale(1); opacity: .45; }
+.tr-lchip:has(input:focus-visible) { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+@media (max-width: 1199px) {
+  .page-trasy .tr-layers-bar { order: 3; flex-basis: 100%; }
+}
+
+/* Plovoucí panel vlevo nad mapou (počítač) */
+@media (min-width: 900px) {
+  .page-trasy .tr-panel { position: absolute; top: 16px; left: 16px; bottom: 16px; width: 400px; z-index: 1001; border: 1px solid var(--line); border-right: 1px solid var(--line); border-radius: 20px; background: var(--surface); box-shadow: var(--shadow-md); overflow: hidden; }
+  .page-trasy .tr-app[data-panel="closed"] .tr-panel { display: none; }
+  .page-trasy .tr-app[data-panel="open"] .leaflet-top.leaflet-left { left: 424px; }
+  .page-trasy .tr-app[data-panel="closed"] .leaflet-top.leaflet-left { top: 60px; }
+}
+.page-trasy .tr-panel-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; padding: 18px 12px 12px 20px; border-bottom: 1px solid var(--line); flex: none; }
+.page-trasy .tr-head h1 { font-size: 1.375rem; line-height: 1.25; letter-spacing: -.01em; margin: 2px 0 4px; }
+.page-trasy .tr-head p { margin: 0; color: var(--ink-3); }
+.page-trasy .tr-collapse { flex: none; border: 1px solid var(--line); }
+.page-trasy .tr-scroll { padding: 16px 20px 20px; gap: 16px; background: var(--surface); }
+.tr-panel-fab { position: absolute; top: 16px; left: 16px; z-index: 1001; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid var(--line); border-radius: var(--r-pill); background: var(--surface); color: var(--ink); font: 600 .875rem/1 var(--f-body); box-shadow: var(--shadow-md); cursor: pointer; }
+.tr-panel-fab[hidden] { display: none; }
+.tr-panel-fab svg { width: 18px; height: 18px; color: var(--brand-900); }
+
+/* Obsah panelu v klidné typografii */
+.page-trasy .tr-status { background: var(--brand-100); border: 0; border-radius: 12px; padding: 10px 14px; font-size: .875rem; }
+.page-trasy .tr-summary { border-top: 0; padding: 14px 16px; border: 1px solid var(--line); border-radius: 16px; }
+.page-trasy .tr-summary b.num { font: 700 1.125rem/1 var(--f-body); letter-spacing: 0; }
+.page-trasy .tr-layers legend { font: 600 1rem var(--f-body); letter-spacing: 0; }
+.page-trasy .tr-group, .page-trasy .tr-legend .tr-group { font: 600 .8125rem/1.3 var(--f-body); letter-spacing: .04em; text-transform: none; color: var(--ink-3); border-bottom: 0; padding-bottom: 4px; }
+.page-trasy .tr-nearest { border-top: 1px solid var(--line); padding-top: 14px; }
+.page-trasy .tr-nearest h3 { font-size: 1rem; }
+.page-trasy .tr-nearest ol { border-top: 0; }
+.page-trasy .tr-h2 { font-size: 1.25rem; }
+.page-trasy .tr-picked { border-top: 0; padding: 14px 16px; border: 1px solid var(--line); border-radius: 16px; }
+.page-trasy .tr-picked-head h3 { font-size: 1.125rem; }
+.page-trasy .tr-pin { font: 600 .85rem var(--f-body); }
+.page-trasy .tr-plan-out { border-top: 1px solid var(--line); }
+.page-trasy .tr-rec-live { border-left: 4px solid var(--brand-200); }
+.page-trasy .tr-shared { border-top: 0; padding: 14px 16px; background: var(--brand-100); border-radius: 16px; }
+.page-trasy .tr-recbar { border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow-md); border-left: 6px solid var(--brand-500); }
+
+/* Legenda vpravo dole, sbalitelná */
+.page-trasy .tr-legend { top: auto; bottom: 28px; right: 12px; z-index: 900; border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow-md); font-size: .875rem; }
+.page-trasy .tr-legend summary { font: 600 .875rem var(--f-body); letter-spacing: 0; text-transform: none; padding: 0 14px; gap: 8px; }
+.page-trasy .tr-legend summary::before { display: none; }
+.page-trasy .tr-legend summary svg { width: 18px; height: 18px; color: var(--brand-900); }
+
+/* Mobil: lišta ve dvou až třech řádcích, panel jako spodní list nad mapou */
+@media (max-width: 899px) {
+  .page-trasy .tr-app { height: calc(100dvh - var(--tr-top, 86px) - var(--tabbar-h) - env(safe-area-inset-bottom, 0px)); min-height: 460px; overflow: hidden; display: flex; }
+  .page-trasy .tr-fbar .fbar-in { flex-wrap: wrap; padding: 8px 16px; gap: 8px; min-height: 0; }
+  .page-trasy .tr-tabs { order: 1; flex: 1 1 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .page-trasy .tr-tabs button { justify-content: center; padding: 0 8px; }
+  .page-trasy .tr-find { order: 2; flex: 1 1 100%; min-width: 0; }
+  .page-trasy .tr-layers-bar { order: 3; flex-basis: 100%; margin-inline: -16px; }
+  .page-trasy .tr-layers-bar .fbar-chips { padding-inline: 16px; }
+  .page-trasy .tr-panel { border-radius: 20px 20px 0 0; border-top: 1px solid var(--line); box-shadow: 0 -8px 24px rgb(0 0 0 / .1); }
+  .page-trasy .tr-panel-head { padding: 0 16px 8px; border-bottom: 0; }
+  .page-trasy .tr-head h1 { font-size: 1.125rem; margin: 0; }
+  .page-trasy .tr-head p { display: none; }
+  .page-trasy .tr-collapse, .tr-panel-fab { display: none !important; }
+  .page-trasy .tr-scroll { padding: 4px 16px 20px; }
+  .page-trasy .tr-legend { top: 10px; bottom: auto; right: 10px; }
+}
+@media (max-width: 420px) {
+  .page-trasy .tr-tabs button svg { display: none; }
+}

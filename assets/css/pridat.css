@@ -15,7 +15,7 @@
 #steps.steps > li + li::after { content: ""; position: absolute; top: 25px; right: calc(50% + 24px); left: calc(-50% + 24px); height: 2px; background: var(--line); border-radius: 2px; }
 #steps.steps > li:has(button.done) + li::after, #steps.steps > li:has(button.done) + li:has([aria-current="step"])::after { background: var(--brand-500); }
 #steps .steps-btn, #steps.steps button { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; width: 100%; min-height: 64px; padding: 2px 4px; border: 0; border-radius: var(--r); background: none; box-shadow: none; color: var(--ink-3); font: 700 .88rem/1.2 var(--f-body); text-align: center; white-space: normal; overflow: visible; cursor: pointer; }
-#steps.steps button::before { content: counter(s); display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--line-strong); background: var(--surface); color: var(--ink-2); font: 800 .95rem/1 var(--f-display); }
+#steps.steps button::before { content: counter(s); display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--line-strong); background: var(--surface); color: var(--ink-2); font: 700 .95rem/1 var(--f-display); }
 #steps.steps button:hover { color: var(--ink); background: var(--surface-2); }
 #steps.steps button.done { border-top: 0; color: var(--ink-2); }
 #steps.steps button.done::before { content: "\2713"; background: var(--brand-500); border-color: var(--brand-500); color: #fff; }

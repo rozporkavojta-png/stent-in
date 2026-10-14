@@ -19,50 +19,56 @@
 <meta property="og:image:alt" content="Wherethru – Objevuj · Plánuj · Zažij – bez bariér">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Caveat:wght@500&family=Fraunces:opsz,wght@9..144,600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=18">
-<link rel="stylesheet" href="assets/css/pages-a.css?v=16">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=19">
+<link rel="stylesheet" href="assets/css/pages-a.css?v=17">
 </head>
 <body>
 <div id="site-header"></div>
-<main id="main">
+<main id="main" class="home">
 
-  <!-- Úvod: nadpis, hledání a kategorie vlevo, skutečná fotka ve vlnitém výřezu vpravo -->
+  <!-- Úvod v5: čistý střed na --bg, nadtitulek, nadpis, perex, velké hledání a čipy kategorií. Bez fotky a dekoru. -->
   <section class="hero" aria-labelledby="hero-h">
-    <div class="wrap hero-grid">
-      <div class="hero-text">
-        <p class="hero-claim" data-i18n>Objevuj · Plánuj · Zažij – bez bariér</p>
-        <h1 id="hero-h" data-i18n>Cestujte bez bariér po Česku a Bavorsku</h1>
-        <p class="lede" data-i18n>U každého místa vidíte vstup, toaletu a parkování v konkrétních údajích, fotky a odkud údaj pochází.</p>
-        <form class="search-bar hero-search" action="mapa.html" method="get" role="search">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-          <label class="sr-only" for="hq" data-i18n>Obec nebo název místa</label>
-          <input id="hq" name="q" type="search" placeholder="Obec nebo místo, třeba Třeboň" autocomplete="off" list="hero-obce" data-i18n-attr="placeholder">
-          <datalist id="hero-obce"></datalist>
-          <button class="search-filter" type="button" data-open-needs aria-label="Moje potřeby: co potřebujete" title="Moje potřeby" data-i18n-attr="aria-label,title"><span data-icon="sliders"></span></button>
-          <button class="btn btn-primary hero-go" type="submit"><span class="go-ic" data-icon="search"></span><span class="go-lbl" data-i18n>Hledat</span></button>
-        </form>
-        <nav class="cat-chips hero-cats" aria-label="Kategorie na mapě" data-i18n-attr="aria-label">
-          <a class="cat-chip" href="mapa.html?kat=ubytovani"><span data-icon="bed"></span><span data-i18n>Ubytování</span></a>
-          <a class="cat-chip" href="mapa.html?kat=restaurace"><span data-icon="food"></span><span data-i18n>Restaurace</span></a>
-          <a class="cat-chip" href="mapa.html?kat=pamatky,kultura,priroda"><span data-icon="castle"></span><span data-i18n>Památky a zážitky</span></a>
-          <a class="cat-chip" href="mapa.html?kat=wc"><span data-icon="wc"></span><span data-i18n>WC</span></a>
-          <a class="cat-chip" href="mapa.html?kat=parkovani"><span data-icon="parking"></span><span data-i18n>Parkování ZTP</span></a>
-        </nav>
-      </div>
-      <figure class="hero-media">
-        <div class="wave-photo-left hero-photo">
-          <img src="assets/img/hero-cesky-krumlov.jpg" width="1400" height="630" alt="Český Krumlov, pohled z hradu na staré město a řeku Vltavu" data-i18n-attr="alt" fetchpriority="high" decoding="async">
+    <div class="wrap hero-center">
+      <p class="hero-claim" data-i18n>Objevuj · Plánuj · Zažij – bez bariér</p>
+      <h1 id="hero-h" data-i18n>Cestujte bez bariér po Česku a Bavorsku</h1>
+      <p class="lede" data-i18n>U každého místa vidíte vstup, toaletu a parkování v konkrétních údajích, fotky a odkud údaj pochází.</p>
+      <form class="search-bar hero-search" action="mapa.html" method="get" role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <label class="sr-only" for="hq" data-i18n>Obec nebo název místa</label>
+        <input id="hq" name="q" type="search" placeholder="Obec nebo místo, třeba Třeboň" autocomplete="off" list="hero-obce" data-i18n-attr="placeholder">
+        <datalist id="hero-obce"></datalist>
+        <button class="search-filter" type="button" data-open-needs aria-label="Moje potřeby: co potřebujete" title="Moje potřeby" data-i18n-attr="aria-label,title"><span data-icon="sliders"></span></button>
+        <button class="btn btn-primary hero-go" type="submit"><span class="go-ic" data-icon="search"></span><span class="go-lbl" data-i18n>Hledat</span></button>
+      </form>
+      <nav class="cat-chips hero-cats" aria-label="Kategorie na mapě" data-i18n-attr="aria-label">
+        <a class="cat-chip" href="mapa.html?kat=ubytovani"><span data-icon="bed"></span><span data-i18n>Ubytování</span></a>
+        <a class="cat-chip" href="mapa.html?kat=restaurace"><span data-icon="food"></span><span data-i18n>Restaurace</span></a>
+        <a class="cat-chip" href="mapa.html?kat=wc"><span data-icon="wc"></span><span data-i18n>WC</span></a>
+        <a class="cat-chip" href="mapa.html?kat=parkovani"><span data-icon="parking"></span><span data-i18n>Parkování ZTP</span></a>
+        <a class="cat-chip" href="mapa.html?kat=pamatky,kultura"><span data-icon="museum"></span><span data-i18n>Památky a muzea</span></a>
+        <a class="cat-chip" href="mapa.html?kat=priroda"><span data-icon="tree"></span><span data-i18n>Příroda a vyhlídky</span></a>
+        <a class="cat-chip" href="mapa.html?kat=doprava"><span data-icon="route"></span><span data-i18n>Nádraží</span></a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Pás fotek měst: skutečné obce, fotka z Wikimedia Commons (autor a licence pod kartou), počty míst z dat -->
+  <section class="section-tight home-dest" aria-labelledby="dest-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2 id="dest-h" data-i18n>Oblíbené cíle v Česku a Bavorsku</h2>
         </div>
-        <span class="route-deco hero-route" aria-hidden="true"></span>
-        <p class="handnote hero-hand" aria-hidden="true" data-i18n>Bez bariér. Blíž, než myslíš.</p>
-        <figcaption class="credit"><span data-i18n>Český Krumlov.</span> <span data-i18n>Foto:</span> VitVit, <a href="https://commons.wikimedia.org/wiki/File:%C4%8Cesk%C3%BD_Krumlov_z_hradu_1.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
-      </figure>
+        <a class="more-link" href="kraj.html"><span data-i18n>Kraje a obvody</span><span data-icon="arrow"></span></a>
+      </div>
+      <ul class="dest-grid" id="dest" aria-live="polite"></ul>
+      <p class="small muted dest-note" data-i18n>Počty jsou spočítané z dat mapy (OpenStreetMap a otevřená data, stav 5. 10. 2026 pro Česko a 7. 10. 2026 pro Bavorsko). Fotky z Wikimedia Commons, autor a licence u každé fotky.</p>
     </div>
   </section>
 
   <!-- Tři hlavní cesty -->
-  <section class="section-tight" aria-label="Hlavní cesty" data-i18n-attr="aria-label">
+  <section class="section-tight home-paths" aria-label="Hlavní cesty" data-i18n-attr="aria-label">
     <div class="wrap">
       <ul class="path-cards">
         <li><a class="path-card" href="mapa.html"><span class="path-ic" data-icon="map"></span><span class="path-txt"><b data-i18n>Najít místo</b><span data-i18n>Mapa míst s údaji o přístupnosti, fotkami a zdrojem každého údaje. Zdarma.</span></span><span class="path-go" data-icon="arrow"></span></a></li>
@@ -72,27 +78,12 @@
     </div>
   </section>
 
-  <!-- Oblíbené cíle: skutečné obce a počet míst se vstupem přístupným na vozíku z dat -->
-  <section class="section" aria-labelledby="dest-h">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <h2 id="dest-h" class="h-serif" data-i18n>Oblíbené cíle v Česku a Bavorsku</h2>
-          <p class="muted head-note" data-i18n>Místo hvězdiček ukazujeme, kolik míst v obci má v datech vstup přístupný na vozíku.</p>
-        </div>
-        <a class="more-link" href="kraj.html"><span data-i18n>Kraje a obvody</span><span data-icon="arrow"></span></a>
-      </div>
-      <ul class="dest-grid" id="dest" aria-live="polite"></ul>
-      <p class="small muted dest-note" data-i18n>Počty jsou spočítané z dat mapy (OpenStreetMap a otevřená data, stav 5. 10. 2026 pro Česko a 7. 10. 2026 pro Bavorsko). Fotky z Wikimedia Commons, autor a licence u každé fotky.</p>
-    </div>
-  </section>
-
   <!-- Doporučujeme: skutečná místa s fotkou, vybraná pevným pravidlem -->
   <section class="section section-alt" aria-labelledby="ph-h">
     <div class="wrap">
       <div class="section-head">
         <div>
-          <h2 id="ph-h" class="h-serif" data-i18n>Doporučujeme</h2>
+          <h2 id="ph-h" data-i18n>Doporučujeme</h2>
           <p class="muted head-note" data-i18n>Místa se vstupem přístupným na vozíku a fotkou na Wikimedia Commons.</p>
         </div>
         <a class="more-link" href="mapa.html"><span data-i18n>Celá mapa</span><span data-icon="arrow"></span></a>
@@ -107,7 +98,7 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <h2 id="num-h" class="h-serif" data-i18n>Co je teď v mapě</h2>
+          <h2 id="num-h" data-i18n>Co je teď v mapě</h2>
           <p class="muted head-note" data-i18n>Čísla se počítají přímo z dat mapy. Stav k <span id="fetched">5. 10. 2026 (Česko) a 7. 10. 2026 (Bavorsko)</span>. <span id="zeme-split"></span>.</p>
         </div>
         <a class="more-link" href="metodika.html#zdroje"><span data-i18n>Odkud data jsou</span><span data-icon="arrow"></span></a>
@@ -127,7 +118,7 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <h2 id="val-h" class="h-serif" data-i18n>Údaje, podle kterých se dá rozhodnout</h2>
+          <h2 id="val-h" data-i18n>Údaje, podle kterých se dá rozhodnout</h2>
           <p class="muted head-note" data-i18n>Žádná nálepka „bezbariérové“. Rozměry, fotky a zdroj, abyste sami posoudili, jestli místo vyhovuje právě vám.</p>
         </div>
       </div>
@@ -144,7 +135,7 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <h2 id="cat-h" class="h-serif" data-i18n>Co hledáte</h2>
+          <h2 id="cat-h" data-i18n>Co hledáte</h2>
           <p class="muted head-note" data-i18n>Počet míst v každé kategorii v Česku a v Bavorsku.</p>
         </div>
         <a class="more-link" href="mapa.html"><span data-i18n>Celá mapa</span><span data-icon="arrow"></span></a>
@@ -158,7 +149,7 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <h2 id="tier-h" class="h-serif" data-i18n>Základ zdarma, plánování navíc</h2>
+          <h2 id="tier-h" data-i18n>Základ zdarma, plánování navíc</h2>
           <p class="muted head-note" data-i18n>Informace o přístupnosti a komunita jsou zdarma. Placené úrovně šetří čas s plánováním.</p>
         </div>
         <a class="more-link" href="clenstvi.html"><span data-i18n>Porovnat členství</span><span data-icon="arrow"></span></a>
@@ -206,7 +197,7 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <h2 id="kr-h" class="h-serif" data-i18n>Kraje a obvody</h2>
+          <h2 id="kr-h" data-i18n>Kraje a obvody</h2>
           <p class="muted head-note" data-i18n>Začínáme v Jihočeském kraji a v Bavorsku, data máme pro celé Česko i Bavorsko. Detail ukáže podíl přístupných míst, obce a mapu.</p>
         </div>
         <a class="more-link" href="kraj.html"><span data-i18n>Přehled krajů a obvodů</span><span data-icon="arrow"></span></a>

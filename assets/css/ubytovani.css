@@ -1,39 +1,43 @@
-/* Stránka Ubytování – verze 4 Wherethru (DESIGN.md). Filtry a karty výsledků: assets/css/filters.css.
-   PC: panel Filtry jako stálý sloupec vlevo (lepkavý pod hlavičkou), vpravo výsledky v kartách. Mobil: panel Filtry zespodu. */
+/* Stránka Ubytování – v5 Wherethru. Lišta filtrů a karty výsledků: assets/css/filters.css.
+   Pod záhlavím lepivá lišta filtrů přes celou šířku (stejná jako na mapě), pod ní mřížka karet 3 / 2 / 1.
+   Další filtry: na PC okno pod tlačítkem, na mobilu spodní panel. */
 
-.ub-head { padding-bottom: 12px; }
+.ub-head { padding-bottom: 24px; }
 .ub-head-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 16px 48px; align-items: end; }
 .ub-head h1 { margin: 0 0 .3em; }
-.ub-head .lede { margin: 0; }
-.ub-tip { margin: 0; font-weight: 600; line-height: 1.45; }
+.ub-head .lede { margin: 0; max-width: 68ch; }
+.ub-tip { margin: 0; font-weight: 500; line-height: 1.5; }
 @media (max-width: 899px) { .ub-head-grid { grid-template-columns: minmax(0, 1fr); } }
 
-.ub-tools { display: flex; flex-direction: column; gap: 14px; padding-block: 16px 8px; }
-.ub-search { max-width: 720px; }
-.ub-tools .kf-cats .kf-cat { width: 104px; }
+/* Lišta: obsah zarovnaný s obsahem stránky */
+.ub-fbar { padding-inline: max(var(--gutter), calc((100% - var(--maxw)) / 2 + var(--gutter))); }
+@media (max-width: 767px) { .ub-fbar { padding-inline: 12px; } }
 
-.ub-layout { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 28px; align-items: start; padding-block: 20px clamp(40px, 6vw, 88px); }
-.ub-kf.kf-inline .kf-panel { position: sticky; top: calc(var(--header-h) + 16px); max-height: calc(100vh - var(--header-h) - 32px); max-height: calc(100dvh - var(--header-h) - 32px); }
-.ub-kf.kf-inline .kf-body { overflow-y: auto; overscroll-behavior: contain; }
-@media (max-width: 899px) {
-  .ub-layout { grid-template-columns: minmax(0, 1fr); gap: 0; padding-top: 8px; }
-  .ub-kf { display: contents; }
-}
-
-.ub-results { min-width: 0; display: flex; flex-direction: column; gap: 14px; }
-.ub-bar { display: flex; justify-content: space-between; align-items: flex-end; gap: 8px 16px; flex-wrap: wrap; }
+.ub-layout { display: block; padding-block: 24px clamp(48px, 6vw, 80px); }
+.ub-results { min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.ub-bar { display: flex; justify-content: space-between; align-items: baseline; gap: 8px 16px; flex-wrap: wrap; }
 .ub-count { margin: 0; font-size: 1rem; color: var(--ink-2); }
-.ub-count .num { font: 800 clamp(1.9rem, 4vw, 2.6rem)/1 var(--f-display); letter-spacing: -.04em; color: var(--heading); margin-right: 4px; }
-.ub-sort { display: inline-flex; align-items: center; gap: 8px; font-weight: 400; max-width: 100%; min-width: 0; }
-.ub-sort span { color: var(--ink-2); font-size: .95rem; }
-.ub-sort select { width: auto; flex: 0 1 auto; max-width: 100%; min-width: 0; text-overflow: ellipsis; min-height: 44px; padding-block: 6px; border-radius: var(--r-pill); border-color: var(--line); }
-.ub-match-note { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding: 12px 14px; background: var(--brand-100); border-radius: var(--r); }
-.ub-match-note p { margin: 0; flex: 1 1 240px; font-size: .92rem; }
-.ub-mn-ic { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--brand-900); color: var(--on-brand); flex: none; }
+.ub-count .num { font: 700 1.25rem/1 var(--f-display); font-variant-numeric: tabular-nums; color: var(--heading); margin-right: 4px; }
+.ub-match-note { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding: 12px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; }
+.ub-match-note p { margin: 0; flex: 1 1 240px; font-size: .875rem; line-height: 1.5; }
+.ub-mn-ic { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--brand-200); color: var(--ink); flex: none; }
 .ub-mn-ic svg { width: 20px; height: 20px; }
-.ub-list { grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); }
-.ub-list .rc { height: 100%; }
+
+/* Mřížka karet 3 / 2 / 1; karta s fotkou má obrázek 3:2 nahoře, bez fotky malou ikonu */
+.ub-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 1099px) { .ub-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 639px) { .ub-list { grid-template-columns: minmax(0, 1fr); gap: 12px; } }
 .ub-list > li { min-width: 0; }
 .ub-list > li.rc-empty { grid-column: 1 / -1; }
-.ub-more { margin-top: 4px; }
+.ub-list .rc { height: 100%; grid-template-columns: 48px minmax(0, 1fr); align-content: start; padding: 16px 52px 16px 16px; }
+.ub-list .rc-media { width: 48px; border-radius: 12px; }
+.ub-list .rc-media.no-photo svg { width: 24px; height: 24px; }
+.ub-list .rc-access { left: 46px; top: 8px; width: 24px; height: 24px; }
+.ub-list .rc-access svg { width: 14px; height: 14px; }
+.ub-list .rc:has(.rc-media img) { grid-template-columns: minmax(0, 1fr); padding: 0 16px 16px; gap: 12px; }
+.ub-list .rc:has(.rc-media img) .rc-media { grid-row: auto; width: auto; margin-inline: -16px; aspect-ratio: 3 / 2; border-radius: 15px 15px 0 0; }
+.ub-list .rc:has(.rc-media img) .rc-access { left: 12px; top: 12px; width: 28px; height: 28px; }
+.ub-list .rc:has(.rc-media img) .rc-save { top: 8px; right: 8px; background: var(--surface); box-shadow: var(--kf-shadow-sm); }
+.ub-list .rc:has(.rc-media img) .rc-body { padding-right: 0; }
+.ub-more { margin-top: 4px; border-radius: 999px; }
 .ub-source { margin-top: 16px; max-width: 80ch; }

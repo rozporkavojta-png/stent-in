@@ -126,4 +126,7 @@ KP.i18n.add({
   "Ukázat {n} míst mimo výřez": ["{n} Orte außerhalb des Ausschnitts zeigen", "Show {n} places outside the view"],
   "Řadím od středu mapy. Pro řazení od vás klepněte na Moje poloha.": ["Sortiert ab Kartenmitte. Für die Sortierung ab Ihrem Standort tippen Sie auf Mein Standort.", "Sorted from the map centre. Tap My location to sort from where you are."],
   "Nejdřív vyberte oblast na mapě": ["Wählen Sie zuerst ein Gebiet auf der Karte", "First choose an area on the map"],
+  // v5: plovoucí seznam a přepínač zobrazení
+  "Skrýt seznam": ["Liste ausblenden", "Hide list"],
+  "Zobrazení výsledků": ["Ergebnisansicht", "Results view"],
 });

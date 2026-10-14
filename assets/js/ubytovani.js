@@ -1,13 +1,12 @@
 /* Stránka Ubytování: výpis míst s c='ubytovani' ze všech regionů v data/regions/ (Česko a Bavorsko; výtah data/regions/ubytovani.json,
    záložně KP.loadAll). Filtry sdílí s mapou (assets/js/filters.js): hledání s tlačítkem Filtry, řada druhů ubytování s ikonami,
-   rychlé čipy přístupnosti, panel Filtry (PC stálý sloupec vlevo, mobil spodní panel), aktivní filtry, filtry v adrese stránky.
+   rychlé čipy přístupnosti v lepivé liště (v5), Další filtry (PC okno pod tlačítkem, mobil spodní panel), aktivní filtry, filtry v adrese stránky.
    Filtry pokojů (bezbariérový pokoj, sprcha, madla) jen z údajů, které opravdu máme (rešerše webů provozovatelů, pole r):
    [{ url, date, source_type, claim, items: { vstup, wc, pokoj, koupelna, parkovani, vytah, jine }, measurements: [{ co, hodnota, jednotka }] }] */
 (function () {
   'use strict';
   const K = window.KP, KF = window.KPFilters, $ = (s) => document.querySelector(s);
   const PAGE = 30;
-  const mqDesk = matchMedia('(min-width: 900px)');
   let ALL = [], shown = PAGE, ctrl = null, sortBy = K.store.get('ub.sort', 'complete');
   const nf = (n) => K.nf(n);
   const reports = (p) => (Array.isArray(p.r) ? p.r.filter(r => r && typeof r === 'object') : []);
@@ -54,15 +53,6 @@
     return { kraje, obce };
   }
 
-  function bindCatScroll() {
-    const row = $('#ub-typ'), wrap = row.parentElement;
-    const upd = () => { wrap.classList.toggle('can-prev', row.scrollLeft > 4); wrap.classList.toggle('can-next', row.scrollLeft + row.clientWidth < row.scrollWidth - 4); };
-    row.addEventListener('scroll', upd, { passive: true });
-    wrap.querySelectorAll('[data-scroll]').forEach(b => b.addEventListener('click', () => row.scrollBy({ left: Number(b.dataset.scroll) * row.clientWidth * 0.7, behavior: 'smooth' })));
-    new ResizeObserver(upd).observe(row);
-    setTimeout(upd, 50);
-  }
-
   async function init() {
     let data;
     $('#ub-count').textContent = KP.t('Načítám ubytování z Česka a Bavorska…');
@@ -78,11 +68,11 @@
     const quick = ['step', 'wc', 'lift', 'room', 'web', 'img'].filter(k => k === 'step' || ALL.some(p => KF.attrs[k](p)));
     ctrl = KF.create({
       id: 'ubytovani',
-      els: { search: $('#f-q'), form: $('#ub-form'), filterBtn: $('#ub-open'), filterCount: $('#ub-nfilters'), cats: $('#ub-typ'), quick: $('#ub-quick'), active: $('#ub-active'), panelHost: $('#ub-kf') },
+      els: { bar: $('#ub-bar'), search: $('#f-q'), form: $('#ub-form'), filterBtn: $('#ub-open'), filterCount: $('#ub-nfilters'), cats: $('#ub-typ'), quick: $('#ub-quick'), active: $('#ub-active'), panelHost: $('#ub-kf') },
       catMode: 'typ', quick, unit: ['ubytování', 'ubytování', 'ubytování'],
       sections: ['typ', 'access', 'room', 'adv', 'source', 'more', 'contact', 'area', 'needs'],
       obecMode: 'select',
-      panelMode: () => (mqDesk.matches ? 'inline' : 'dialog'),
+      panelMode: () => 'dialog', // v5: Další filtry z lišty – PC okno pod tlačítkem, mobil spodní panel
       areaOptions,
       onChange: () => render(true),
       onApply: () => { $('#ub-results').scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); },
@@ -116,7 +106,6 @@
       const md = img.closest('.rc-media'); if (!md) return;
       md.classList.add('no-photo'); md.setAttribute('aria-hidden', 'true'); md.innerHTML = K.icon('bed');
     }, true);
-    bindCatScroll();
     render(true);
   }
 

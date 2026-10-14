@@ -223,11 +223,13 @@
   // Legenda ve dvou skupinách: co překáží a co pomůže; v panelu zároveň přepínače vrstev
   function renderToggles() {
     const groups = [[KP.t('Překáží'), true], [KP.t('Pomůže'), false]];
-    $('#layer-toggles').innerHTML = groups.map(([title, bad]) => '<p class="tr-group">' + title + '</p>' +
-      Object.entries(TYPES).filter(([, t]) => t.bad === bad).map(([k, t]) =>
-        '<label class="check"><input type="checkbox" data-layer="' + k + '"' + (visible[k] ? ' checked' : '') + '> ' + swatch(t) + t.label + '</label>').join('')).join('');
     const pin = KPMap.pinSvg('ok').replace('width="34" height="42"', 'width="14" height="18"');
-    $('#place-sw').innerHTML = pin;
+    // v5: přepínače vrstev jako čipy v liště nad mapou (zaškrtávátko uvnitř čipu, stav tvar + text)
+    $('#layer-toggles').innerHTML = groups.map(([title, bad]) => '<span class="tr-lgroup">' + title + '</span>' +
+      Object.entries(TYPES).filter(([, t]) => t.bad === bad).map(([k, t]) =>
+        '<label class="chip tr-lchip"><input type="checkbox" data-layer="' + k + '"' + (visible[k] ? ' checked' : '') + '>' + swatch(t) + '<span>' + t.label + '</span></label>').join('')).join('<span class="fbar-sep" aria-hidden="true"></span>') +
+      '<span class="fbar-sep" aria-hidden="true"></span><label class="chip tr-lchip"><input type="checkbox" id="show-places"' + (placesOn ? ' checked' : '') + '><span class="tr-sw" aria-hidden="true">' + pin + '</span><span>' + KP.t('Přístupná místa') + '</span></label>';
+    requestAnimationFrame(layerArrows);
     $('#legend').innerHTML = groups.map(([title, bad]) => '<p class="tr-group">' + title + '</p><ul>' +
       Object.values(TYPES).filter(t => t.bad === bad).map(t => '<li>' + swatch(t) + t.label + '</li>').join('') + '</ul>').join('') +
       ('<p class="tr-group">' + KP.t('Místa') + '</p><ul><li><span class="tr-sw" aria-hidden="true">') + pin + ('</span>' + KP.t('Místo z databáze, barva a tvar podle přístupnosti') + '</li></ul>');
@@ -235,9 +237,23 @@
 
   // ---------- Panel: záložky a spodní panel na mobilu ----------
   const mobile = () => matchMedia('(max-width: 899px)').matches;
+  let placesOn = true;
+  function layerArrows() {
+    const sc = $('#layer-toggles'), wrap = $('#tr-layers-bar'); if (!sc || !wrap) return;
+    wrap.classList.toggle('can-prev', sc.scrollLeft > 4);
+    wrap.classList.toggle('can-next', sc.scrollLeft + sc.clientWidth < sc.scrollWidth - 4);
+  }
+  // Panel na počítači jde skrýt (mapa přes celou šířku) a vrátit plovoucím tlačítkem
+  function setPanel(open, focus) {
+    $('.tr-app').dataset.panel = open ? 'open' : 'closed';
+    $('#tr-collapse').setAttribute('aria-expanded', String(open));
+    $('#tr-panel-open').hidden = open;
+    K.store.set('trasyPanel', open ? 'open' : 'closed');
+    if (focus) (open ? $('#tr-collapse') : $('#tr-panel-open')).focus();
+  }
   const SHEET = ['peek', 'half', 'full'];
   function setSheet(st) { $('.tr-app').dataset.sheet = st; $('#grip').setAttribute('aria-expanded', st !== 'peek'); }
-  function sheetHeights() { const H = $('.tr-app').clientHeight; return { peek: 156, half: Math.round(H * 0.5), full: Math.round(H * 0.94) }; }
+  function sheetHeights() { const H = $('#tr-body').clientHeight; return { peek: 156, half: Math.round(H * 0.5), full: Math.round(H * 0.94) }; }
   function cycleSheet() { const cur = $('.tr-app').dataset.sheet; setSheet(SHEET[(SHEET.indexOf(cur) + 1) % 3]); }
   function bindSheet() {
     const panel = $('#tr-panel'), row = $('.tr-grip-row');
@@ -272,6 +288,9 @@
       const on = t.id === id; t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1;
       $('#' + t.getAttribute('aria-controls')).hidden = !on;
     });
+    $('.tr-app').dataset.mode = { 'tab-bariery': 'bariery', 'tab-plan': 'plan', 'tab-moje': 'moje' }[id] || 'bariery';
+    if (!mobile() && $('.tr-app').dataset.panel === 'closed') setPanel(true);
+    requestAnimationFrame(layerArrows);
   }
   function bindTabs() {
     const tabs = Array.from(document.querySelectorAll('.tr-tabs [role="tab"]'));
@@ -661,8 +680,15 @@
     });
     $('#tr-personal').addEventListener('click', e => { if (e.target.closest('[data-open-needs-tr]')) K.needsDrawer(); });
     document.addEventListener('kp:needs', () => { applyPersonal(); fillAid(); });
-    $('#layer-toggles').addEventListener('change', e => { const k = e.target.dataset.layer; if (!k) return; visible[k] = e.target.checked; drawLayers(); });
-    $('#show-places').addEventListener('change', showPlaces);
+    $('#layer-toggles').addEventListener('change', e => {
+      if (e.target.id === 'show-places') { placesOn = e.target.checked; showPlaces(); return; }
+      const k = e.target.dataset.layer; if (!k) return; visible[k] = e.target.checked; drawLayers();
+    });
+    $('#layer-toggles').addEventListener('scroll', layerArrows, { passive: true });
+    window.addEventListener('resize', layerArrows);
+    $('#tr-layers-bar').addEventListener('click', e => { const ar = e.target.closest('[data-scroll]'); if (ar) { const sc = $('#layer-toggles'); sc.scrollBy({ left: Number(ar.dataset.scroll) * sc.clientWidth * 0.7, behavior: 'smooth' }); } });
+    $('#tr-collapse').addEventListener('click', () => setPanel(false, true));
+    $('#tr-panel-open').addEventListener('click', () => setPanel(true, true));
     $('#nearest').addEventListener('click', e => { const b = e.target.closest('.tr-item'); if (b) { map.setView(+b.dataset.lat, +b.dataset.lng, 18); if (mobile()) setSheet('peek'); } });
     $('#picked').addEventListener('click', e => {
       if (e.target.closest('[data-close-picked]')) { $('#picked').hidden = true; return; }
@@ -679,7 +705,7 @@
 
   function showPlaces() {
     if (!map) return;
-    const on = $('#show-places').checked;
+    const on = placesOn;
     map.setPlaces(on ? places.filter(p => p.c !== 'parkovani' && (p.w === 'yes' || p.w === 'limited' || p.t === 'yes')) : [], {
       colorOf: p => K.generalStatus(p),
       onClick: p => {
@@ -715,6 +741,7 @@
   async function init() {
     setTop(); window.addEventListener('resize', setTop);
     setSheet(mobile() ? 'peek' : 'half');
+    if (!mobile() && K.store.get('trasyPanel', 'open') === 'closed') setPanel(false);
     syncInclineLabel(); renderPersonal(); renderToggles(); renderSaved(); bind(); bindRec(); bindTabs(); bindSheet(); recUI();
     sharedRoute = decodeShared(location.hash);
     if (sharedRoute) { showTab('tab-moje'); setSheet('half'); }

@@ -273,3 +273,28 @@ KP.i18n.add({
   "Lavičky": ["Bänke", "Benches"],
   "Všechny filtry": ["Alle Filter", "All filters"],
 });
+
+/* v5: lišta filtrů, karty tras a obsah detailu (stezky.html) */
+KP.i18n.add({
+  "Hledat trasu": ["Route suchen", "Search routes"],
+  "Název trasy, obec nebo kraj": ["Routenname, Ort oder Region", "Route name, town or region"],
+  "Lavička": ["Bank", "Bench"],
+  "Typ": ["Typ", "Type"],
+  "Zrušit vše": ["Alle zurücksetzen", "Clear all"],
+  "Řazení": ["Sortierung", "Sort"],
+  "Zobrazení": ["Ansicht", "View"],
+  "Mřížka": ["Raster", "Grid"],
+  "Aktivní filtry": ["Aktive Filter", "Active filters"],
+  "Zobrazit trasy": ["Routen anzeigen", "Show routes"],
+  "nevybráno": ["nicht gewählt", "not selected"],
+  "Odebrat filtr {f}": ["Filter {f} entfernen", "Remove filter {f}"],
+  "Zobrazit výsledky ({n})": ["Ergebnisse anzeigen ({n})", "Show results ({n})"],
+  "max. {n}": ["max. {n}", "max. {n}"],
+  "lavička": ["Bank", "bench"],
+  "lavičky": ["Bänke", "benches"],
+  "laviček": ["Bänke", "benches"],
+  "Uložit trasu {name}": ["Route {name} speichern", "Save route {name}"],
+  "Sklon nejspíš zkreslený modelem, viz detail": ["Neigung vermutlich vom Höhenmodell verfälscht, siehe Detail", "Gradient probably distorted by the elevation model, see details"],
+  "Obsah stránky trasy": ["Inhalt der Routenseite", "Route page contents"],
+  "nejspíš chyba výškového modelu, viz profil": ["vermutlich Fehler des Höhenmodells, siehe Profil", "probably an elevation model error, see profile"],
+});
