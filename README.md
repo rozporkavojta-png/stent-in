@@ -1,4 +1,6 @@
-# STENT-IN – kudyprojedu.cz
+# Wherethru – mapa bez bariér (STENT-IN)
+
+Značka **Wherethru** (dříve pracovní název kudyprojedu.cz). Design systém je popsaný v `DESIGN.md`.
 
 Studentský prototyp pro program **STENT-IN 2026** (VŠTE České Budějovice + OTH Regensburg, Interreg Bavorsko–Česko).
 Mapa skutečných míst v Česku a v Bavorsku s údaji o přístupnosti pro lidi na vozíku a s omezenou pohyblivostí:

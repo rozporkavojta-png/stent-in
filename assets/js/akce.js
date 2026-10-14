@@ -1,6 +1,6 @@
 /* Akce (akce.html): koncept komunitních setkání, workshopů a výletů, poctivý prázdný kalendář a formulář návrhu akce.
    PROTOTYP: návrhy se ukládají jen v localStorage (kp.eventProposals), nic se neodesílá, žádné akce ani termíny
-   si nevymýšlíme. Výhody PLUS a PREMIUM jsou jen popsané, úroveň se dá vyzkoušet přepínačem (KP.tierSwitch). */
+   si nevymýšlíme. Výhody Explorer a Traveller (klíče plus a premium) jsou jen popsané, úroveň se dá vyzkoušet přepínačem (KP.tierSwitch). */
 (function () {
   'use strict';
   const K = window.KP, t = (k, p) => K.t(k, p), esc = K.esc, $ = (s, r) => (r || document).querySelector(s);
@@ -89,7 +89,18 @@
     $('[data-switch]', $('#ak-tier-line')).addEventListener('click', () => K.tierSwitch());
   }
 
+  // Filtr kalendáře: akce zatím žádné nejsou, filtr jen poctivě řekne, že ani v dané skupině nic není
+  const EMPTY = { all: t('Zatím žádné naplánované akce'), vylet: t('Zatím žádné naplánované výlety'), setkani: t('Zatím žádná naplánovaná setkání'), workshop: t('Zatím žádné naplánované workshopy') };
+  function bindFilter() {
+    document.querySelectorAll('.ak-filters [data-ak]').forEach(b => b.addEventListener('click', () => {
+      document.querySelectorAll('.ak-filters [data-ak]').forEach(x => x.setAttribute('aria-pressed', x === b));
+      $('#ak-empty-h').textContent = EMPTY[b.dataset.ak] || EMPTY.all;
+      const k = $('#ak-kind'); if (k && b.dataset.ak !== 'all') k.value = b.dataset.ak;
+    }));
+  }
+
   function init() {
+    bindFilter();
     $('#ak-tier-note').textContent = K.TIER_NOTE;
     renderTier();
     document.addEventListener('kp:tier', renderTier);

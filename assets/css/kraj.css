@@ -1,0 +1,63 @@
+/* Kraje (kraj.html) – verze 4 Wherethru (DESIGN.md). Načítá se po pages-a.css a pages-d.css a přepisuje
+   vzhled v3 (linky, ostré pruhy) na karty s oblými rohy a jemnými stíny. Logika a čísla zůstávají v kraj.js. */
+
+.kr-head .kr-pick select { max-width: 100%; }
+.kr-head { position: relative; overflow: hidden; }
+.kr-head h1 { font-size: clamp(2rem, 4.6vw, 3.4rem); }
+
+/* Mezi sekcemi jen mezera, žádná linka */
+.kr-sec + .kr-sec > .wrap::before { display: none; }
+.kr-sec + .kr-sec { padding-top: 0; }
+.kr-sec { padding-block: 0 clamp(28px, 4vw, 48px); }
+.kr-tight { padding-block: 0 clamp(24px, 3vw, 40px); }
+
+/* Karty */
+.kr-card, .kr-share, .kr-two > div, .kr-info, .kr-gap-card, .kr-sec .table-wrap {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-card); box-shadow: var(--shadow); padding: clamp(16px, 2.4vw, 24px); min-width: 0;
+}
+.kr-sec .table-wrap { padding: 4px clamp(12px, 2vw, 20px); overflow-x: auto; }
+.kr-tablecard { padding-block: 4px; }
+.kr-note.kr-card { box-shadow: none; background: var(--brand-100); border-color: var(--brand-200); }
+
+/* Velká čísla */
+.kr-kpis { gap: 16px; }
+.kr-stat { border-top: 0; padding: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-card); box-shadow: var(--shadow); gap: 4px; }
+.kr-stat-ic { width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; background: var(--brand-100); color: var(--brand-900); margin-bottom: 8px; }
+.kr-stat-ic svg { width: 24px; height: 24px; }
+.kr-stat .n { font-size: clamp(1.9rem, 3.6vw, 2.8rem); color: var(--heading); }
+.kr-stat .l { color: var(--ink); }
+@media (max-width: 860px) { .kr-kpis { gap: 12px; } .kr-stat { padding: 16px; } }
+
+/* Podíl stavů: oblé pruhy */
+.kr-bar { border-radius: var(--r-pill); height: 32px; }
+.kr-bar.compact { height: 10px; }
+.kr-seg:first-child { border-radius: var(--r-pill) 0 0 var(--r-pill); }
+.kr-seg:last-child { border-radius: 0 var(--r-pill) var(--r-pill) 0; }
+.kr-seg:only-child { border-radius: var(--r-pill); }
+.kr-seg { color: #fff; font-family: var(--f-body); }
+.kr-share .kr-legend { border-top: 0; }
+.kr-share .kr-legend li { border-bottom-color: var(--line); }
+.kr-share .kr-legend li:last-child { border-bottom: 0; }
+
+/* Tabulka krajů */
+.kr-table { border-top: 0; }
+.kr-table tbody tr:last-child > * { border-bottom: 0; }
+.kr-table .kr-n { color: var(--heading); }
+@media (max-width: 720px) { .kr-table tr:last-child { border-bottom: 0; } }
+
+/* Mapa */
+.kr-map-wrap { border-radius: var(--r-card); border-color: var(--line); box-shadow: var(--shadow); }
+.kr-pickcard { border-radius: var(--r-card); border: 1px solid var(--line); margin-top: 12px; box-shadow: var(--shadow); padding: 16px 18px; }
+
+/* Obce a druhy míst */
+.kr-two { gap: 16px; }
+.kr-hbars { border-top: 0; }
+.kr-hbars li:last-child { border-bottom: 0; }
+.kr-hbar { border-radius: var(--r-pill); height: 10px; }
+.kr-hbar i { border-radius: var(--r-pill); }
+
+/* Odkazy (krajský plán, atlasy, organizace) */
+.kr-info-grid { gap: 16px; }
+.kr-info { border-top: 1px solid var(--line); padding-top: clamp(16px, 2.4vw, 24px); }
+.kr-info h3 { font-size: 1.1rem; }
+.kr-links li:last-child { border-bottom: 0; }

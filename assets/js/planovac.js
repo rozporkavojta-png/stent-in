@@ -1,4 +1,4 @@
-/* Plánovač: sdílené jádro plánů (window.KPPlan) a stránka planovac.html (jednodenní výlet, členství PLUS).
+/* Plánovač: sdílené jádro plánů (window.KPPlan) a stránka planovac.html (jednodenní výlet, členství Explorer = klíč plus).
    PROTOTYP bez serveru a bez AI: návrh skládají pravidla nad skutečnými daty (data/regions, data/trasy).
    Nic se nevymýšlí: časy a přesuny jsou odhad, chybějící údaje se ukazují jako nejistota.
 
@@ -68,7 +68,7 @@
   function saveGuarded(it, done) {
     const go = () => { const s = save(it); if (!s) { K.toast(t('Úložiště prohlížeče je plné.')); return; } if (done) done(s); };
     if (canSave(it)) { go(); return true; }
-    K.toast(t('Ve FREE si uložíte {n} itinerář. PLUS ukládá bez omezení.', { n: FREE_IT_LIMIT }));
+    K.toast(t('Ve Free si uložíte {n} itinerář. Explorer ukládá bez omezení.', { n: FREE_IT_LIMIT }));
     return K.requireTier('unlimitedSaves', go);
   }
   function remove(id) { return K.store.set('itineraries', all().filter(x => x.id !== id)); }
@@ -110,22 +110,22 @@
   // Pravidla plánování
   // =====================================================================
   const INTERESTS = [
-    { k: 'pamatky', label: t('Památky a hrady'), dur: 75, test: p => p.c === 'pamatky' && !/Muzeum|Galerie|Zoo|Zábavní park/.test(p.s || '') },
-    { k: 'muzea', label: t('Muzea a galerie'), dur: 90, test: p => p.c === 'pamatky' && /Muzeum|Galerie/.test(p.s || '') },
-    { k: 'priroda', label: t('Příroda a vyhlídky'), dur: 60, test: p => p.c === 'priroda' || !!p._trail },
-    { k: 'kultura', label: t('Divadlo, kino, kultura'), dur: 90, test: p => p.c === 'kultura' && !/Komunitní centrum|Knihovna/.test(p.s || '') },
-    { k: 'zabava', label: t('Zoo a zábavní parky'), dur: 150, test: p => p.c === 'pamatky' && /Zoo|Zábavní park/.test(p.s || '') },
-    { k: 'sport', label: t('Bazény a sport'), dur: 90, test: p => p.c === 'sport' },
-    { k: 'kavarny', label: t('Kavárny a cukrárny'), dur: 45, test: p => p.c === 'restaurace' && /Kavárna|Zmrzlina/.test(p.s || '') },
+    { k: 'pamatky', ic: 'castle', label: t('Památky a hrady'), dur: 75, test: p => p.c === 'pamatky' && !/Muzeum|Galerie|Zoo|Zábavní park/.test(p.s || '') },
+    { k: 'muzea', ic: 'museum', label: t('Muzea a galerie'), dur: 90, test: p => p.c === 'pamatky' && /Muzeum|Galerie/.test(p.s || '') },
+    { k: 'priroda', ic: 'tree', label: t('Příroda a vyhlídky'), dur: 60, test: p => p.c === 'priroda' || !!p._trail },
+    { k: 'kultura', ic: 'theater', label: t('Divadlo, kino, kultura'), dur: 90, test: p => p.c === 'kultura' && !/Komunitní centrum|Knihovna/.test(p.s || '') },
+    { k: 'zabava', ic: 'flag', label: t('Zoo a zábavní parky'), dur: 150, test: p => p.c === 'pamatky' && /Zoo|Zábavní park/.test(p.s || '') },
+    { k: 'sport', ic: 'swim', label: t('Bazény a sport'), dur: 90, test: p => p.c === 'sport' },
+    { k: 'kavarny', ic: 'cafe', label: t('Kavárny a cukrárny'), dur: 45, test: p => p.c === 'restaurace' && /Kavárna|Zmrzlina/.test(p.s || '') },
   ];
   const INT = {}; INTERESTS.forEach(x => { INT[x.k] = x; });
   const interestOf = (p) => { const x = INTERESTS.find(i => i.test(p)); return x ? x.k : null; };
   const LUNCH = /^(Restaurace|Hospoda|Pivní zahrádka|Rychlé občerstvení)$/;
   // Rychlost a dosah podle dopravy (odhad pro plánování, ne jízdní řád)
   const MODES = {
-    walk: { label: t('Pěšky nebo na vozíku'), short: t('pěšky nebo na vozíku'), radius: 2.5, lunchR: 0.8, speed: 3, detour: 1.3, overhead: 0, gm: 'walking' },
-    transit: { label: t('MHD a vlak'), short: t('MHD a vlakem'), radius: 12, lunchR: 3, speed: 20, detour: 1.3, overhead: 15, gm: 'transit' },
-    car: { label: t('Autem'), short: t('autem'), radius: 30, lunchR: 8, speed: 45, detour: 1.35, overhead: 10, gm: 'driving' },
+    walk: { ic: 'wheel', label: t('Pěšky nebo na vozíku'), short: t('pěšky nebo na vozíku'), radius: 2.5, lunchR: 0.8, speed: 3, detour: 1.3, overhead: 0, gm: 'walking' },
+    transit: { ic: 'train', label: t('MHD a vlak'), short: t('MHD a vlakem'), radius: 12, lunchR: 3, speed: 20, detour: 1.3, overhead: 15, gm: 'transit' },
+    car: { ic: 'parking', label: t('Autem'), short: t('autem'), radius: 30, lunchR: 8, speed: 45, detour: 1.35, overhead: 10, gm: 'driving' },
   };
   const PACE = {
     calm: { label: t('Klidné'), hint: t('3 zastávky, delší pauzy'), max: 3, buffer: 20, end: 16 * 60 + 30 },
@@ -393,13 +393,21 @@
   const AUTO_REGIONS = ['cz-jihocesky', 'de-dolni-bavorsko', 'de-horni-falc'];
   const AUTO_LABEL = t('Jižní Čechy a Bavorsko');
   const SUGGEST = ['České Budějovice', 'Český Krumlov', 'Třeboň', 'Tábor', 'Passau', 'Regensburg', 'Straubing'];
+  const TOWN_ALIAS = {
+    'pasov': 'Passau', 'řezno': 'Regensburg', 'mnichov': 'München', 'munich': 'München', 'norimberk': 'Nürnberg', 'nuremberg': 'Nürnberg',
+    'budweis': 'České Budějovice', 'krumau': 'Český Krumlov', 'krumau an der moldau': 'Český Krumlov', 'wittingau': 'Třeboň',
+    'šumava': 'Kašperské Hory', 'bohemian forest': 'Kašperské Hory', 'böhmerwald': 'Kašperské Hory',
+    'bavorský les': 'Zwiesel', 'bayerischer wald': 'Zwiesel', 'bavarian forest': 'Zwiesel',
+  };
   let TOWNS = null;
   async function towns() { if (!TOWNS) TOWNS = await K.loadTowns(); return TOWNS; }
   const isAuto = (v) => !String(v || '').trim() || String(v).trim().toLowerCase() === AUTO_LABEL.toLowerCase() || String(v).trim().toLowerCase() === 'jižní čechy a bavorsko';
   function townCenter(x) { return { la: (x[3] + x[5]) / 2, lo: (x[4] + x[6]) / 2 }; }
   async function findTown(name) {
-    const list = await towns(), q = String(name || '').trim().toLowerCase();
-    if (!q) return null;
+    const list = await towns(), q0 = String(name || '').trim().toLowerCase();
+    if (!q0) return null;
+    // České a cizí názvy měst a oblastí → obec v datech (oblast = výchozí obec uprostřed oblasti)
+    const q = (TOWN_ALIAS[q0] || q0).toLowerCase();
     const exact = list.filter(x => x[0].toLowerCase() === q).sort((a, b) => b[2] - a[2]);
     return exact[0] || list.filter(x => x[0].toLowerCase().startsWith(q)).sort((a, b) => b[2] - a[2])[0] || null;
   }
@@ -445,44 +453,59 @@
     const short = stop.dist * M.detour <= 1;
     const how = short ? MODES.walk.short : M.short;
     return '<li class="it-leg pl-leg"><span class="it-leg-line" aria-hidden="true"></span><div class="it-leg-b">' +
-      '<p class="small"><b>' + (fromLabel ? esc(fromLabel) : t('Přesun')) + '</b> · ' + t('asi {m} min {how}', { m: stop.travel, how }) +
-      ' · ' + t('vzdušnou čarou') + ' <span class="num">' + distTxt(stop.dist) + '</span> <span class="muted">(' + t('odhad') + ')</span></p>' +
-      '<div class="it-leg-links"><a class="btn btn-ghost btn-sm" href="' + gmDir(prev, stop.p, short ? 'walking' : M.gm) + '" target="_blank" rel="noopener">' + K.icon('nav') + t('Navigace v Google Maps') + '</a></div></div></li>';
+      '<p class="small pl-leg-t">' + K.icon(short ? 'wheel' : (M.ic || 'route')) + '<span><b>' + (fromLabel ? esc(fromLabel) : t('Přesun')) + '</b> · ' + t('asi {m} min {how}', { m: stop.travel, how }) +
+      ' · ' + t('vzdušnou čarou') + ' <span class="num">' + distTxt(stop.dist) + '</span> <span class="muted">(' + t('odhad') + ')</span></span></p>' +
+      '<div class="it-leg-links"><a class="btn btn-quiet btn-sm" href="' + gmDir(prev, stop.p, short ? 'walking' : M.gm) + '" target="_blank" rel="noopener">' + K.icon('nav') + t('Navigace v Google Maps') + '</a></div></div></li>';
+  }
+  // Náhled zastávky: fotka z Wikimedia Commons (jen když je v datech), jinak ikona kategorie
+  function thumbHtml(p) {
+    if (p.img) return '<figure class="pl-thumb"><img src="' + esc(K.commonsImg(p.img, 320)) + '" alt="" loading="lazy" decoding="async" width="320" height="240">' +
+      '<figcaption><a href="' + esc(K.commonsPage(p.img)) + '" target="_blank" rel="noopener">' + t('Foto: Wikimedia Commons') + '</a></figcaption></figure>';
+    const ic = p._trail ? 'trail' : ((K.CATS[p.c] || {}).icon || 'pin');
+    return '<div class="pl-thumb no-photo" aria-hidden="true">' + K.icon(ic) + '</div>';
   }
   function stopHtml(stop, idx, o) {
     const p = stop.p, ex = stop.ex || {};
     const why = reasons(stop), unk = unknowns(stop), fee = feeTxt(p);
     const svc = [];
-    if (ex.wcHere) svc.push(t('Bezbariérové WC přímo na místě'));
-    else if (ex.wc) svc.push(t('Bezbariérové WC {d} odsud', { d: distTxt(ex.wc.d) }) + ': <a href="' + K.placeUrl(ex.wc.x) + '">' + esc(ex.wc.x.n) + '</a>');
-    else if (!p._trail) svc.push(t('Bezbariérové WC poblíž v datech nemáme'));
-    if (ex.park) svc.push(t('Parkování ZTP {d} odsud', { d: distTxt(ex.park.d) }) + (ex.park.x.pk ? ' (' + t('počet stání: {n}', { n: ex.park.x.pk }) + ')' : '') + ': <a href="' + K.placeUrl(ex.park.x) + '">' + esc(ex.park.x.n || t('Parkování ZTP')) + '</a>');
-    else if (o.mode === 'car') svc.push(t('Vyhrazené stání ZTP do 500 m v datech nemáme'));
-    if (ex.station) svc.push(t('Nádraží {d} odsud', { d: distTxt(ex.station.d) }) + ': <a href="' + K.placeUrl(ex.station.x) + '">' + esc(ex.station.x.n) + '</a> ' + K.statusHtml(K.W[ex.station.x.w || 'null'].st, K.W[ex.station.x.w || 'null'].short));
+    if (ex.wcHere) svc.push([ 'wc-accessible', t('Bezbariérové WC přímo na místě') ]);
+    else if (ex.wc) svc.push(['wc-accessible', t('Bezbariérové WC {d} odsud', { d: distTxt(ex.wc.d) }) + ': <a href="' + K.placeUrl(ex.wc.x) + '">' + esc(ex.wc.x.n) + '</a>']);
+    else if (!p._trail) svc.push(['wc', t('Bezbariérové WC poblíž v datech nemáme'), 'is-miss']);
+    if (ex.park) svc.push(['parking-ztp', t('Parkování ZTP {d} odsud', { d: distTxt(ex.park.d) }) + (ex.park.x.pk ? ' (' + t('počet stání: {n}', { n: ex.park.x.pk }) + ')' : '') + ': <a href="' + K.placeUrl(ex.park.x) + '">' + esc(ex.park.x.n || t('Parkování ZTP')) + '</a>']);
+    else if (o.mode === 'car') svc.push(['parking', t('Vyhrazené stání ZTP do 500 m v datech nemáme'), 'is-miss']);
+    if (ex.station) svc.push(['train', t('Nádraží {d} odsud', { d: distTxt(ex.station.d) }) + ': <a href="' + K.placeUrl(ex.station.x) + '">' + esc(ex.station.x.n) + '</a> ' + K.statusHtml(K.W[ex.station.x.w || 'null'].st, K.W[ex.station.x.w || 'null'].short)]);
     let hours = '';
-    if (p.oh) hours = '<p class="small pl-oh">' + t('Otevírací doba podle OpenStreetMap') + ': <span class="num">' + esc(p.oh) + '</span>' +
-      (stop.fit === false ? ' <b class="pl-warn">' + K.icon('warn') + t('V plánovaný čas může být zavřeno.') + '</b>' : '') + '</p>';
+    if (p.oh) hours = '<p class="small pl-oh">' + K.icon('clock') + '<span>' + t('Otevírací doba podle OpenStreetMap') + ': <span class="num">' + esc(p.oh) + '</span>' +
+      (stop.fit === false ? ' <b class="pl-warn">' + K.icon('warn') + t('V plánovaný čas může být zavřeno.') + '</b>' : '') + '</span></p>';
     const head = [catLabel(p, stop.ik), p._trail ? krajT(p._trail.kraj) : p.o, stop.ik !== 'obed' && INT[stop.ik] && !p._trail ? INT[stop.ik].label : ''].filter(Boolean).map(esc).join(' · ');
+    const nm = esc(p.n), n = o.count || 0, i = typeof idx === 'number' ? idx : -1;
+    const ctrl = o.edit && i >= 0 ? '<div class="pl-ctrl" role="group" aria-label="' + esc(t('Úpravy zastávky {n}', { n: p.n })) + '">' +
+      '<button class="icon-btn" type="button" data-mv="' + i + ':-1"' + (i === 0 ? ' disabled' : '') + ' aria-label="' + esc(t('Posunout výš') + ': ' + p.n) + '">' + K.icon('chevron-up') + '</button>' +
+      '<button class="icon-btn pl-down" type="button" data-mv="' + i + ':1"' + (i >= n - 1 ? ' disabled' : '') + ' aria-label="' + esc(t('Posunout níž') + ': ' + p.n) + '">' + K.icon('chevron-up') + '</button>' +
+      '<button class="btn btn-quiet btn-sm" type="button" data-alt="' + i + '">' + K.icon('sparkle') + t('Nahradit') + ' ' + K.tierBadge('alternatives', { onlyLocked: true }) + '</button>' +
+      '<button class="btn btn-quiet btn-sm" type="button" data-rm="' + i + '">' + K.icon('trash') + t('Odebrat') + '</button></div>' : '';
     return '<li class="it-stop pl-stop" data-stop="' + idx + '"><span class="pl-time num"><b>' + hm(stop.arr) + '</b><span>' + stop.dur + ' min</span></span>' +
+      '<article class="pl-card">' + thumbHtml(p) +
       '<div class="it-stop-b"><p class="it-stop-k">' + head + '</p>' +
-      '<h3><a href="' + placeLink(p) + '">' + esc(p.n) + '</a></h3>' +
+      '<h3><a href="' + placeLink(p) + '">' + nm + '</a></h3>' +
       '<p class="it-stop-st">' + statusOf(stop) + (fee ? ' <span class="small muted">' + esc(fee) + '</span>' : '') + '</p>' +
-      '<p class="pl-k">' + t('Proč tady') + '</p><ul class="pl-why">' + why.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' +
-      (unk.length ? '<p class="pl-unk"><b>' + t('Nevíme') + ':</b> ' + unk.map(esc).join(' · ') + '</p>' : '') +
-      hours +
-      (svc.length ? '<ul class="pl-svc">' + svc.map(x => '<li>' + x + '</li>').join('') + '</ul>' : '') +
+      (svc.length ? '<ul class="pl-svc">' + svc.map(x => '<li' + (x[2] ? ' class="' + x[2] + '"' : '') + '>' + K.icon(x[0]) + '<span>' + x[1] + '</span></li>').join('') + '</ul>' : '') +
+      (unk.length ? '<p class="pl-unk"><span class="badge badge-unk">' + t('Nevíme') + '</span> ' + unk.map(esc).join(' · ') + '</p>' : '') +
+      (stop.fit === false ? hours : '') +
+      '<details class="pl-whyd"><summary>' + t('Proč tady') + '</summary><ul class="pl-why">' + why.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' + (stop.fit === false ? '' : hours) + '</details>' +
       '<div class="pl-links"><a class="btn btn-ghost btn-sm" href="' + placeLink(p) + '">' + t('Detail místa') + '</a>' +
-      '<a class="btn btn-quiet btn-sm" href="' + gmDir(null, p, (MODES[o.mode] || MODES.walk).gm) + '" target="_blank" rel="noopener">' + t('Navigovat sem') + '</a>' +
+      '<a class="btn btn-quiet btn-sm" href="' + gmDir(null, p, (MODES[o.mode] || MODES.walk).gm) + '" target="_blank" rel="noopener">' + K.icon('nav') + t('Navigovat sem') + '</a>' +
       (o.alt ? '<button class="btn btn-quiet btn-sm" type="button" data-alt="' + idx + '">' + t('Navrhnout alternativu') + ' ' + K.tierBadge('alternatives', { onlyLocked: true }) + '</button>' : '') +
-      '</div>' + (stop.altOf ? '<p class="small muted">' + t('Náhrada za: {n}', { n: esc(stop.altOf) }) + '</p>' : '') + '</div></li>';
+      '</div>' + (stop.altOf ? '<p class="small muted">' + t('Náhrada za: {n}', { n: esc(stop.altOf) }) + '</p>' : '') + ctrl + '</div></article></li>';
   }
-  // Celý den: zastávky a přesuny mezi nimi. o = { mode, alt, prefix (pro data-stop), from (bod startu s názvem) }
+  // Celý den: zastávky a přesuny mezi nimi. o = { mode, alt, edit, prefix (pro data-stop), from (bod startu s názvem) }
   function dayHtml(day, o) {
     let prev = day.from && day.from.n ? day.from : null;
+    const oo = Object.assign({}, o, { count: day.stops.length });
     return day.stops.map((s, i) => {
       const leg = prev ? legHtml(prev, s, o.mode, !i && day.from && day.from.n ? t('Z místa {n}', { n: day.from.n }) : '') : '';
       prev = s.p;
-      return leg + stopHtml(s, (o.prefix || '') + i, o);
+      return leg + stopHtml(s, o.prefix ? o.prefix + i : i, oo);
     }).join('');
   }
   function toStops(day, dayIdx) {
@@ -502,7 +525,7 @@
         if (prev) { state.layers.push(T.drawPin(map, [prev.la, prev.lo], T.pinSvg('H', 'end'), 28, prev.n)); pts.push(prev); }
         g.stops.forEach(s => {
           n++;
-          if (prev) state.layers.push(T.drawPath(map, [[prev.la, prev.lo], [s.p.la, s.p.lo]], { color: '#101010', weight: 3, dash: '6 8', cap: 'butt' }));
+          if (prev) state.layers.push(T.drawPath(map, [[prev.la, prev.lo], [s.p.la, s.p.lo]], { color: '#3A4A34', weight: 3, dash: '6 8', cap: 'butt' }));
           state.layers.push(T.drawPin(map, [s.p.la, s.p.lo], T.pinSvg(String(n), 'start'), 28, n + '. ' + s.p.n));
           pts.push(s.p); prev = s.p;
         });
@@ -514,17 +537,18 @@
   // ---------- Profil potřeb (mobilita) ----------
   function mobilityHtml() {
     const n = K.getNeeds();
-    if (!K.hasTier('needsProfile')) return '<p class="small">' + t('Bez PLUS plán vybírá podle obecného údaje o vstupu z OpenStreetMap.') + ' ' + K.tierBadge('needsProfile') + '</p>' +
+    if (!K.hasTier('needsProfile')) return '<p class="small">' + t('Bez úrovně Explorer plán vybírá podle obecného údaje o vstupu z OpenStreetMap.') + ' ' + K.tierBadge('needsProfile') + '</p>' +
       '<button class="btn btn-ghost btn-sm" type="button" data-needs>' + t('Nastavit profil potřeb') + '</button>';
     if (!n.active) return '<p class="small">' + t('Profil potřeb nemáte zapnutý. Plán zatím vybírá podle obecného údaje o vstupu.') + '</p>' +
       '<button class="btn btn-primary btn-sm" type="button" data-needs>' + t('Nastavit profil potřeb') + '</button>';
-    return '<p class="small"><b>' + t('Plán vybírá podle vašeho profilu') + ':</b> ' + esc(K.needsSummary(n).join(', ')) + '</p>' +
-      '<button class="btn btn-quiet btn-sm" type="button" data-needs>' + t('Upravit profil') + '</button>';
+    return '<p class="small">' + t('Plán vybírá podle vašeho profilu') + ':</p>' +
+      '<ul class="pl-needchips">' + K.needsSummary(n).filter(Boolean).map((x, i) => '<li>' + (i ? '' : K.icon('wheel')) + esc(x) + '</li>').join('') + '</ul>' +
+      '<button class="btn btn-quiet btn-sm" type="button" data-needs>' + K.icon('sliders') + t('Upravit profil') + '</button>';
   }
 
   // ---------- Formulář (společné pole pro oba plánovače) ----------
   function chipsHtml(name, items, selected, multi) {
-    return items.map(([k, label]) => '<button type="button" class="chip" data-' + name + '="' + k + '" aria-pressed="' + (multi ? selected.includes(k) : selected === k) + '">' + esc(label) + '</button>').join('');
+    return items.map(([k, label, ic]) => '<button type="button" class="chip" data-' + name + '="' + k + '" aria-pressed="' + (multi ? selected.includes(k) : selected === k) + '">' + (ic ? K.icon(ic) : '') + esc(label) + '</button>').join('');
   }
   function bindChips(root, name, multi, onChange) {
     root.addEventListener('click', e => {
@@ -550,6 +574,9 @@
     loadArea, candidates, planDay, retime, durOf, mkStop, extras, nearest, reasons, unknowns, feeTxt, towns, isAuto, findTown, townCenter, autoTowns,
     statusOf, catLabel, placeLink, dayHtml, stopHtml, legHtml, toStops, drawMap, mobilityHtml, chipsHtml, bindChips, chipVals, fillTownList, weekday, gmDir, krajT,
   };
+
+  // Při tisku (Export do PDF) rozbalíme „Proč tady“, aby důvody výběru byly i na papíře
+  window.addEventListener('beforeprint', () => document.querySelectorAll('.pl-whyd').forEach(d => { d.open = true; }));
 
   if (!document.body || !document.body.classList.contains('page-planovac')) return;
 
@@ -580,8 +607,8 @@
     };
     $('#pl-area').value = isAuto(v.area) ? AUTO_LABEL : v.area;
     $('#pl-date').value = v.date; $('#pl-start').value = v.start;
-    $('#pl-int').innerHTML = chipsHtml('int', INTERESTS.map(x => [x.k, x.label]), v.interests, true);
-    $('#pl-mode').innerHTML = chipsHtml('mode', MODE_KEYS.map(k => [k, MODES[k].label]), v.mode, false);
+    $('#pl-int').innerHTML = chipsHtml('int', INTERESTS.map(x => [x.k, x.label, x.ic]), v.interests, true);
+    $('#pl-mode').innerHTML = chipsHtml('mode', MODE_KEYS.map(k => [k, MODES[k].label, MODES[k].ic]), v.mode, false);
     $('#pl-pace').innerHTML = chipsHtml('pace', Object.keys(PACE).map(k => [k, PACE[k].label + ': ' + PACE[k].hint]), v.pace, false);
     $('#pl-budget').innerHTML = Object.keys(BUDGET).map(k => '<option value="' + k + '"' + (k === v.budget ? ' selected' : '') + '>' + esc(BUDGET[k].label) + '</option>').join('');
     $('#pl-lunch').checked = v.lunch;
@@ -666,13 +693,14 @@
       out.innerHTML = summaryHtml(false) +
         '<ol class="it-stops pl-stops">' + stopHtml(first, 0, { mode: P.f.mode }) + '</ol>' +
         '<div class="pl-lock"><p class="kicker">' + t('Náhled') + '</p><p><b>' + t('Plán má {n} zastávek.', { n: P.day.stops.length }) + '</b> ' +
-        t('Celý program s časy, přesuny, WC, parkováním ZTP a důvody výběru je součást PLUS.') + '</p>' +
+        t('Celý program s časy, přesuny, WC, parkováním ZTP a důvody výběru je součást úrovně Explorer.') + '</p>' +
         '<p class="small">' + esc(K.TIER_PROTO_NOTE) + '</p>' +
-        '<div class="row"><button class="btn btn-primary" type="button" data-unlock>' + t('Zobrazit celý plán') + ' ' + K.tierTag('plus') + '</button><a class="btn btn-ghost" href="clenstvi.html">' + t('Co obsahuje PLUS') + '</a></div></div>';
+        '<div class="row"><button class="btn btn-primary" type="button" data-unlock>' + t('Zobrazit celý plán') + ' ' + K.tierTag('plus') + '</button><a class="btn btn-ghost" href="clenstvi.html">' + t('Co obsahuje Explorer') + '</a></div></div>';
       return;
     }
     out.innerHTML = summaryHtml(true) +
-      '<ol class="it-stops pl-stops" aria-label="' + esc(t('Program výletu')) + '">' + dayHtml(P.day, { mode: P.f.mode }) + '</ol>' +
+      '<div class="pl-dayhead"><h3>' + t('Den {n}', { n: 1 }) + ' · ' + esc(weekday(P.date)) + '</h3><span class="small muted">' + t('Zastávky můžete přesunout, nahradit nebo odebrat. Časy se přepočítají.') + '</span></div>' +
+      '<ol class="it-stops pl-stops" aria-label="' + esc(t('Program výletu')) + '">' + dayHtml(P.day, { mode: P.f.mode, edit: true }) + '</ol>' +
       '<div class="pl-actions">' +
       '<button class="btn btn-primary" type="button" data-save>' + t('Uložit do itineráře') + '</button>' +
       '<button class="btn btn-ghost" type="button" data-share>' + K.icon('share') + t('Sdílet odkazem') + '</button>' +
@@ -683,6 +711,47 @@
       '<p class="small muted pl-print-hide">' + t('Čárkované čáry jsou přímé spojnice, ne skutečná cesta. Zdroje údajů: OpenStreetMap, otevřená data a weby provozovatelů, u každého místa v detailu.') + '</p>';
     S.map = null; S.layers = [];
     drawMap($('#pl-map'), S, [P.day]);
+  }
+
+  // ---------- Úpravy plánu: přesun, náhrada, odebrání (časy se přepočítají) ----------
+  function focusStop(i, sel) { const el = document.querySelector('[data-stop="' + i + '"] ' + (sel || 'h3 a')); if (el) el.focus(); }
+  function moveStop(i, d) {
+    const st = S.plan.day.stops, j = i + d;
+    if (j < 0 || j >= st.length) return;
+    [st[i], st[j]] = [st[j], st[i]];
+    retime(S.plan.day, S.plan.ctx); render();
+    K.toast(t('Zastávka přesunuta. Časy jsou přepočítané.'));
+    const btn = document.querySelector('[data-stop="' + j + '"] [data-mv="' + j + ':' + d + '"]:not([disabled])');
+    if (btn) btn.focus(); else focusStop(j);
+  }
+  function removeStop(i) {
+    const st = S.plan.day.stops; if (!st[i]) return;
+    const n = st[i].p.n;
+    if (st.length === 1) { K.toast(t('Poslední zastávku nelze odebrat. Sestavte plán znovu.')); return; }
+    st.splice(i, 1);
+    retime(S.plan.day, S.plan.ctx); render();
+    K.toast(t('Odebráno: {n}', { n }));
+    focusStop(Math.min(i, st.length - 1));
+  }
+  function replaceStop(i) {
+    const P = S.plan, day = P.day, stop = day.stops[i]; if (!stop) return;
+    P.rejected = P.rejected || new Set(); P.rejected.add(stop.p.i);
+    const taken = new Set(day.stops.map(s => s.p.i)), prev = i ? day.stops[i - 1].p : day.from, M = MODES[P.f.mode] || MODES.car;
+    const list = stop.lunch ? P.res.cands.lunch : P.res.cands.list;
+    let best = null, bv = -Infinity;
+    list.forEach(c => {
+      if (taken.has(c.p.i) || P.rejected.has(c.p.i)) return;
+      const d = K.distanceKm(prev, c.p); if (d > (stop.lunch ? M.lunchR : M.radius)) return;
+      const v = c.s - d / M.radius * 2.5 + (c.ik === stop.ik ? 1 : 0);
+      if (v > bv) { bv = v; best = c; }
+    });
+    if (!best) { K.toast(t('Další vhodné místo v dosahu jsme v datech nenašli.')); return; }
+    const ns = mkStop(best, 0, 0, 0, stop.lunch ? 60 : durOf(best.p, best.ik), null, stop.lunch);
+    ns.altOf = stop.altOf || stop.p.n;
+    day.stops[i] = ns;
+    retime(day, P.ctx); extras(ns, P.ctx.pool, P.f.mode); render();
+    K.toast(t('Náhrada: {n}', { n: best.p.n }));
+    focusStop(i);
   }
 
   function share() {
@@ -713,7 +782,13 @@
       const op = e.target.closest('[data-open]'); if (op) { e.preventDefault(); openInItinerary(op.dataset.open); return; }
       if (e.target.closest('[data-share]')) { share(); return; }
       if (e.target.closest('[data-pdf]')) { K.requireTier('pdfExport', () => setTimeout(() => window.print(), 50)); return; }
-      if (e.target.closest('[data-rerun]')) { run(false); }
+      if (e.target.closest('[data-rerun]')) { run(false); return; }
+      const mv = e.target.closest('[data-mv]');
+      if (mv && S.plan) { const [i, d] = mv.dataset.mv.split(':').map(Number); moveStop(i, d); return; }
+      const rm = e.target.closest('[data-rm]');
+      if (rm && S.plan) { removeStop(+rm.dataset.rm); return; }
+      const al = e.target.closest('[data-alt]');
+      if (al && S.plan) { const i = +al.dataset.alt; K.requireTier('alternatives', () => replaceStop(i)); }
     });
     $('#pl-area').addEventListener('focus', e => { if (isAuto(e.target.value)) e.target.select(); });
     document.addEventListener('kp:tier', () => { $('#pl-mob').innerHTML = mobilityHtml(); if (S.plan) run(false); });

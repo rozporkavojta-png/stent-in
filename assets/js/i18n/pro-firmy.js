@@ -291,3 +291,22 @@ KP.i18n.add({
   "Ostatní": ["Sonstiges", "Other"],
   "nepočítáme": ["nicht gezählt", "not counted"]
 });
+
+/* v4 Wherethru: nové texty stránky Pro podniky */
+KP.i18n.add({
+  "Úvod": ["Startseite", "Home"],
+  "Na této stránce": ["Auf dieser Seite", "On this page"],
+  "Cestovatelé si mohou připlatit <a href=\"clenstvi.html\">Explorer nebo Traveller</a> za plánování a pohodlí. Údaje o vašem podniku vidí všichni stejně, i ve Free.": ["Reisende können <a href=\"clenstvi.html\">Explorer oder Traveller</a> für Planung und Komfort dazubuchen. Die Angaben zu Ihrem Betrieb sehen alle gleich, auch in Free.", "Travellers can pay for <a href=\"clenstvi.html\">Explorer or Traveller</a> for planning and convenience. Everyone sees your business data the same way, even on Free."],
+  "Údaje o vstupu, WC a parkování vidí každý zdarma. Hosté s členstvím Explorer si navíc uloží své potřeby, třeba šířku dveří nebo sprchu v úrovni podlahy. Když údaje vyplníte, Accessibility Match u vás ukáže „vyhovuje“ a procento shody, ne „chybí údaje“.": ["Angaben zu Eingang, WC und Parken sieht jeder kostenlos. Gäste mit Explorer-Mitgliedschaft speichern zusätzlich ihre Bedürfnisse, etwa die Türbreite oder eine bodengleiche Dusche. Wenn Sie die Angaben ausfüllen, zeigt Accessibility Match bei Ihnen „passt“ und den Übereinstimmungsgrad, nicht „Angaben fehlen“.", "Anyone can see entrance, toilet and parking data for free. Guests with Explorer membership also save their needs, such as door width or a level-entry shower. Once you fill in the data, Accessibility Match shows “suitable” and a match percentage for you, not “data missing”."],
+  "Návrh budoucí nabídky, nic se neplatí": ["Entwurf des künftigen Angebots, nichts wird bezahlt", "Proposed future offer, nothing is charged"],
+  "Regionální licence": ["Regionallizenz", "Regional licence"],
+  "podle území": ["je nach Gebiet", "by area"],
+  "Mapa přístupných míst k vložení na web": ["Karte barrierefreier Orte zum Einbetten auf der Website", "Map of accessible places to embed on your website"],
+  "Report: kde v území chybí údaje o přístupnosti": ["Bericht: wo im Gebiet Angaben zur Barrierefreiheit fehlen", "Report: where accessibility data is missing in your area"],
+  "Mapování úřadů, škol a turistických cílů": ["Erfassung von Ämtern, Schulen und Ausflugszielen", "Mapping of offices, schools and visitor attractions"],
+  "Export dat v A11yJSON a CSV": ["Datenexport in A11yJSON und CSV", "Data export in A11yJSON and CSV"],
+  "Návrh, co upravit nejdřív": ["Vorschlag, was zuerst umgebaut werden sollte", "Proposal of what to fix first"],
+  "Co licence obsahuje": ["Was die Lizenz enthält", "What the licence includes"],
+  "Cestovatelé si mohou připlatit Explorer nebo Traveller za plánování a pohodlí. Údaje o vašem podniku vidí všichni stejně, i ve Free.": ["Reisende können <a href=\"clenstvi.html\">Explorer oder Traveller</a> für Planung und Komfort dazubuchen. Die Angaben zu Ihrem Betrieb sehen alle gleich, auch in Free.", "Travellers can pay for <a href=\"clenstvi.html\">Explorer or Traveller</a> for planning and convenience. Everyone sees your business data the same way, even on Free."],
+  "měsíčně, návrh ceny": ["pro Monat, Preisvorschlag", "per month, proposed price"],
+});

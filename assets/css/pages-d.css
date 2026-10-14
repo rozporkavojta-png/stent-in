@@ -10,7 +10,7 @@
 
 /* Velká čísla: linka nahoře, bez ikon a podkladu */
 .kr-kpis { display: grid; gap: 28px clamp(16px, 2.5vw, 32px); grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.kr-stat { margin: 0; display: flex; flex-direction: column; gap: 6px; border-top: 3px solid var(--ink); padding-top: 12px; min-width: 0; }
+.kr-stat { margin: 0; display: flex; flex-direction: column; gap: 6px; border-top: 3px solid var(--brand-200); padding-top: 12px; min-width: 0; }
 .kr-stat .n { font-size: clamp(2.2rem, 4.4vw, 3.4rem); }
 .kr-stat .l { color: var(--ink); font-weight: 700; }
 .kr-stat small { font-size: .88rem; }
@@ -66,7 +66,7 @@
 .kr-hbars li > small { grid-column: 2 / -1; margin-top: -8px; padding-bottom: 4px; }
 .kr-hbars .num { font-weight: 700; text-align: right; min-width: 3.5ch; word-spacing: -.25em; }
 .kr-hbar { height: 12px; background: var(--surface-3); overflow: hidden; }
-.kr-hbar i { display: block; height: 100%; background: var(--ink); }
+.kr-hbar i { display: block; height: 100%; background: var(--brand-500); }
 @media (max-width: 480px) { .kr-hbars li { grid-template-columns: minmax(0, 7.5rem) 1fr auto; } }
 
 .kr-gap td.num, .kr-gap th.num { text-align: right; white-space: nowrap; }
@@ -75,7 +75,7 @@
 /* Odkazy z rešerše: výpis s linkami */
 .kr-info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px clamp(24px, 4vw, 56px); }
 @media (max-width: 760px) { .kr-info-grid { grid-template-columns: 1fr; } }
-.kr-info { min-width: 0; border-top: 3px solid var(--ink); padding-top: 12px; }
+.kr-info { min-width: 0; border-top: 3px solid var(--brand-200); padding-top: 12px; }
 .kr-info h3 { font-size: 1.15rem; margin-bottom: 8px; }
 
 /* ---------- Ubytování (ubytovani.html) – verze 3: adresář s linkami, fotky jen kde jsou ---------- */
@@ -98,7 +98,7 @@
 .ub-chips .chip { min-height: 44px; }
 .ub-sel { position: relative; display: inline-flex; font-weight: 600; }
 .ub-sel .ub-l { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.ub-sel select.chip { width: auto; max-width: 220px; min-height: 44px; padding: 8px 36px 8px 14px; border-radius: 999px; border: 1.5px solid var(--ink); appearance: none; -webkit-appearance: none; font: 600 .93rem var(--f-body); text-overflow: ellipsis; }
+.ub-sel select.chip { width: auto; max-width: 220px; min-height: 44px; padding: 8px 36px 8px 14px; border-radius: 999px; border: 1.5px solid var(--line-strong); appearance: none; -webkit-appearance: none; font: 600 .93rem var(--f-body); text-overflow: ellipsis; }
 .ub-sel select option { color: var(--ink); background: var(--surface); }
 .ub-sel::after { content: ""; position: absolute; right: 16px; top: 50%; width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-70%) rotate(45deg); pointer-events: none; color: var(--ink); }
 .ub-sel:has(select.on)::after { color: var(--surface); }
@@ -116,7 +116,7 @@
   .ub-filters.sheet .ub-sel { display: flex; flex-direction: column; gap: 6px; width: 100%; }
   .ub-filters.sheet .ub-l { position: static; width: auto; height: auto; overflow: visible; clip: auto; font-weight: 600; }
   .ub-filters.sheet span.ub-l.ub-sheet-only { width: 100%; margin-top: 6px; }
-  .ub-filters.sheet .ub-sel select.chip { width: 100%; max-width: none; min-height: 48px; border-radius: 2px; }
+  .ub-filters.sheet .ub-sel select.chip { width: 100%; max-width: none; min-height: 48px; border-radius: var(--r-sm); }
   .ub-filters.sheet .ub-sel::after { top: auto; bottom: 19px; transform: rotate(45deg); }
   .ub-filters.sheet .ub-desk-only { display: none !important; }
   .ub-sheet-foot { gap: 8px; padding: 12px 20px; border-top: 1px solid var(--rule); }

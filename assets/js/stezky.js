@@ -183,11 +183,11 @@
     return new google.maps.Marker({ map: map.map, position: { lat: ll[0], lng: ll[1] }, title: title || '', icon: { url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg), scaledSize: new google.maps.Size(size, size), anchor: new google.maps.Point(size / 2, size / 2) } });
   }
   function pinSvg(letter, kind) {
-    const fill = kind === 'end' ? '#FFD400' : '#101010', ink = kind === 'end' ? '#101010' : '#FFFFFF';
-    const shape = kind === 'end' ? '<rect x="2" y="2" width="24" height="24" fill="' + fill + '" stroke="#101010" stroke-width="2"/>' : '<circle cx="14" cy="14" r="12" fill="' + fill + '" stroke="#FFFFFF" stroke-width="2"/>';
+    const fill = kind === 'end' ? '#FFFFFF' : '#3A4A34', ink = kind === 'end' ? '#3A4A34' : '#FFFFFF';
+    const shape = kind === 'end' ? '<rect x="2" y="2" width="24" height="24" rx="6" fill="' + fill + '" stroke="#3A4A34" stroke-width="2.5"/>' : '<circle cx="14" cy="14" r="12" fill="' + fill + '" stroke="#FFFFFF" stroke-width="2"/>';
     return '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">' + shape + '<text x="14" y="19" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="13" fill="' + ink + '">' + letter + '</text></svg>';
   }
-  const DOT = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="8" fill="#FFD400" stroke="#101010" stroke-width="3"/></svg>';
+  const DOT = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="8" fill="#7D8F76" stroke="#FFFFFF" stroke-width="3"/></svg>';
 
   // Poloha na geometrii podle vzdálenosti z profilu (profil a zjednodušená geometrie mají trochu jinou délku, proto poměrem)
   function geoIndex(t) {
@@ -418,6 +418,33 @@
     });
     $('#st-fitbar').addEventListener('click', e => { if (e.target.closest('[data-open-needs-here]')) K.needsDrawer(); });
     document.addEventListener('kp:needs', () => { fitBar(); render(true); });
+    bindQuick();
+  }
+
+  // Rychlé filtry nad katalogem (čipy a Vše / Česko / Bavorsko) jen přepínají pole formuláře, filtrování zůstává v render()
+  function bindQuick() {
+    const bar = $('.st-quickbar'); if (!bar) return;
+    const sync = () => {
+      bar.querySelectorAll('[data-q]').forEach(b => {
+        const [id, v] = b.dataset.q.split('='), el = $('#' + id);
+        b.setAttribute('aria-pressed', String(!!el && (v === undefined ? el.checked : el.value === v)));
+      });
+      bar.querySelectorAll('[data-zeme]').forEach(b => b.setAttribute('aria-pressed', String($('#f-zeme').value === b.dataset.zeme)));
+    };
+    bar.addEventListener('click', e => {
+      const b = e.target.closest('[data-q], [data-zeme]'); if (!b) return;
+      let el;
+      if (b.hasAttribute('data-zeme')) { el = $('#f-zeme'); el.value = b.dataset.zeme; }
+      else {
+        const [id, v] = b.dataset.q.split('='); el = $('#' + id); if (!el) return;
+        if (v === undefined) el.checked = !el.checked; else el.value = el.value === v ? '' : v;
+      }
+      el.dispatchEvent(new Event('change', { bubbles: true }));
+      sync();
+    });
+    $('#st-form').addEventListener('change', sync);
+    $('#st-form').addEventListener('reset', () => setTimeout(sync, 0));
+    sync();
   }
 
   // ---------- Detail trasy ----------
@@ -608,7 +635,7 @@
 
   function gpx(t) {
     const x = (s) => esc(s);
-    return '<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="kudyprojedu.cz" xmlns="http://www.topografix.com/GPX/1/1">\n<metadata><name>' + x(name(t)) + ('</name><desc>' + KP.t('Geometrie z OpenStreetMap (ODbL 1.0, © přispěvatelé OpenStreetMap)') + '</desc><link href="https://www.openstreetmap.org/copyright"><text>' + KP.t('© přispěvatelé OpenStreetMap') + '</text></link></metadata>\n<trk><name>') + x(name(t)) + '</name>\n' +
+    return '<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Wherethru" xmlns="http://www.topografix.com/GPX/1/1">\n<metadata><name>' + x(name(t)) + ('</name><desc>' + KP.t('Geometrie z OpenStreetMap (ODbL 1.0, © přispěvatelé OpenStreetMap)') + '</desc><link href="https://www.openstreetmap.org/copyright"><text>' + KP.t('© přispěvatelé OpenStreetMap') + '</text></link></metadata>\n<trk><name>') + x(name(t)) + '</name>\n' +
       (t.geometrie || []).map(part => '<trkseg>' + part.map(c => '<trkpt lat="' + c[0] + '" lon="' + c[1] + '"/>').join('') + '</trkseg>').join('\n') + '\n</trk>\n</gpx>\n';
   }
 
@@ -624,11 +651,11 @@
     let t = null;
     try { await load(); t = byId(id); } catch (e) { box.innerHTML = ('<p>' + KP.t('Data tras se nepodařilo načíst. Zkuste stránku obnovit.') + '</p><p><a href="stezky.html">' + KP.t('Zpět na všechny trasy') + '</a></p>'); return; }
     if (!t) { box.innerHTML = ('<nav class="crumbs st-crumbs"><a href="stezky.html">' + KP.t('Bezbariérové trasy') + '</a></nav><h1>' + KP.t('Trasu jsme nenašli') + '</h1><p>' + KP.t('Odkaz je možná starý.') + ' <a href="stezky.html">' + KP.t('Zobrazit všechny trasy') + '</a></p>'); return; }
-    document.title = name(t) + ' · ' + K.t('Bezbariérové trasy') + ' · kudyprojedu.cz';
+    document.title = name(t) + ' · ' + K.t('Bezbariérové trasy') + ' · Wherethru';
     const w = wh(t), s = t.start, segs = segments(t);
     const navUrl = 'https://www.google.com/maps/dir/?api=1&destination=' + s[0] + '%2C' + s[1];
     box.innerHTML =
-      ('<nav class="crumbs st-crumbs" aria-label="' + KP.t('Drobečková navigace') + '"><a href="stezky.html">' + KP.t('Bezbariérové trasy') + '</a><span aria-hidden="true">/</span><span>') + esc(krajT(t.kraj)) + '</span></nav>' +
+      ('<nav class="crumbs st-crumbs" aria-label="' + KP.t('Drobečková navigace') + '"><a href="stezky.html">' + KP.t('Bezbariérové trasy') + '</a><span aria-current="page">') + esc(krajT(t.kraj)) + '</span></nav>' +
       '<header class="st-dhead"><p class="kicker">' + esc(TYP[t.typ] || t.typ) + ' · ' + esc(ZEME[t.zeme] || t.zeme) + '</p>' +
       '<h1>' + esc(name(t)) + '</h1>' +
       '<p class="st-dsub" id="st-town">' + esc(krajT(t.kraj)) + (t.nazev_de && t.nazev_de !== t.nazev ? ' · ' + K.t('německy') + ' ' + esc(t.nazev_de) : '') + '</p>' +
@@ -684,7 +711,7 @@
     let dm = null, cursorObj = null;
     try {
       dm = await KPMap.create($('#st-dmap'), { lat: s[0], lng: s[1], zoom: 15 });
-      (t.geometrie || []).forEach(part => { drawPath(dm, part, { color: '#101010', weight: 8 }); drawPath(dm, part, { color: '#FFD400', weight: 4 }); });
+      (t.geometrie || []).forEach(part => { drawPath(dm, part, { color: '#FFFFFF', weight: 9 }); drawPath(dm, part, { color: '#3A4A34', weight: 5 }); });
       classRuns(segs).forEach(r => sliceGeo(gi, r.a, r.b).forEach(c =>
         drawPath(dm, c, r.k === '8' ? { color: '#B3261E', weight: 6 } : { color: '#985A00', weight: 6, dash: '8 8', cap: 'butt' })));
       drawPin(dm, s, pinSvg('S', 'start'), 28, KP.t('Start'));

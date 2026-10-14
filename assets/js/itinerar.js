@@ -191,8 +191,8 @@
     let prev = null;
     list.forEach(({ v }, i) => {
       const e = ends(v); if (!e) return;
-      if (v.kind === 'trail') (v.t.geometrie || []).forEach(part => { layers.push(T.drawPath(map, part, { color: '#101010', weight: 7 })); layers.push(T.drawPath(map, part, { color: '#FFD400', weight: 3 })); part.forEach(c => all.push({ la: c[0], lo: c[1] })); });
-      if (prev) layers.push(T.drawPath(map, [prev, e.a], { color: '#101010', weight: 3, dash: '6 8', cap: 'butt' }));
+      if (v.kind === 'trail') (v.t.geometrie || []).forEach(part => { layers.push(T.drawPath(map, part, { color: '#3A4A34', weight: 7 })); layers.push(T.drawPath(map, part, { color: '#C3CDBC', weight: 3 })); part.forEach(c => all.push({ la: c[0], lo: c[1] })); });
+      if (prev) layers.push(T.drawPath(map, [prev, e.a], { color: '#3A4A34', weight: 3, dash: '6 8', cap: 'butt' }));
       layers.push(T.drawPin(map, e.a, T.pinSvg(String(i + 1), 'start'), 28, (i + 1) + '. ' + label(v, {})));
       all.push({ la: e.a[0], lo: e.a[1] });
       prev = e.b;
@@ -209,7 +209,7 @@
     const lim = PL.limit();
     $('#it-limit').innerHTML = lim === Infinity
       ? K.t('Ukládáte bez omezení') + ' ' + K.tierTag(K.tier())
-      : K.t('Ve FREE si uložíte {n} itinerář. Uloženo {k} z {n}.', { n: lim, k: its.length }) + ' ' + K.t('PLUS ukládá bez omezení.');
+      : K.t('Ve Free si uložíte {n} itinerář. Uloženo {k} z {n}.', { n: lim, k: its.length }) + ' ' + K.t('Explorer ukládá bez omezení.');
   }
 
   // ---------- Přidávání ----------
@@ -249,7 +249,7 @@
     try {
       const all = await T.load();
       const groups = {};
-      all.forEach(t => { const k = K.t(T.ZEME[t.zeme] || t.zeme) + ', ' + krajT(t.kraj); (groups[k] = groups[k] || []).push(t); });
+      all.forEach(t => { const k = (T.ZEME[t.zeme] || t.zeme) + ', ' + krajT(t.kraj); (groups[k] = groups[k] || []).push(t); });
       $('#it-trail').innerHTML = ('<option value="">' + KP.t('Vyberte trasu') + '</option>') + Object.keys(groups).sort((a, b) => a.localeCompare(b, 'cs')).map(g =>
         '<optgroup label="' + esc(g) + '">' + groups[g].sort((a, b) => T.name(a).localeCompare(T.name(b), 'cs') || a.delka_km - b.delka_km).map(t => '<option value="' + esc(t.id) + '">' + esc(T.name(t)) + ' (' + T.km(t.delka_km) + ')</option>').join('') + '</optgroup>').join('');
     } catch (e) { $('#it-trail').innerHTML = ('<option value="">' + KP.t('Trasy se nepodařilo načíst') + '</option>'); }

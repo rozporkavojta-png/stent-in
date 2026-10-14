@@ -82,9 +82,9 @@
     return '<div class="head-row"><div>' + (kicker ? '<p class="kicker">' + kicker + '</p>' : '') + '<h2 id="' + id + '">' + title + '</h2>' + (note ? '<p class="muted head-note">' + note + '</p>' : '') + '</div></div>';
   }
 
-  // Velké číslo s popisem (.stat), bez ikon
-  function kpi(value, label, sub) {
-    return '<p class="stat kr-stat"><span class="n num">' + value + '</span><span class="l">' + label + '</span>' + (sub ? '<small class="muted">' + sub + '</small>' : '') + '</p>';
+  // Velké číslo s popisem (.stat) v kartě, volitelně s ikonou
+  function kpi(value, label, sub, ico) {
+    return '<p class="stat kr-stat">' + (ico ? '<span class="kr-stat-ic">' + K.icon(ico) + '</span>' : '') + '<span class="n num">' + value + '</span><span class="l">' + label + '</span>' + (sub ? '<small class="muted">' + sub + '</small>' : '') + '</p>';
   }
 
   // ---------- Přehled: kraje ČR a vládní obvody Bavorska (data/stats.json, by_region) ----------
@@ -98,15 +98,15 @@
       '<th scope="col">' + word + ('</th><th scope="col" class="num">' + KP.t('Míst') + '</th><th scope="col" class="kr-col-bar">' + KP.t('Vstupy podle stavu') + '</th><th scope="col" class="num">' + KP.t('Přístupných') + '</th><th scope="col" class="num">' + KP.t('Naměřeno') + '</th><th scope="col" class="num">' + KP.t('Fotky') + '</th></tr></thead><tbody>') +
       rows.map(r =>
         '<tr><th scope="row"><a href="' + shortSlug(r.k) + '">' + K.esc(K.krajName(r.k, r.z)) + '</a></th>' +
-        '<td class="num kr-n" data-l="Míst">' + nf(r.n) + '</td>' +
+        '<td class="num kr-n" data-l="' + KP.t('Míst') + '">' + nf(r.n) + '</td>' +
         '<td class="kr-col-bar">' + shareBar(r.w, r.n, { compact: true, noLegend: true }) + '</td>' +
-        '<td class="num" data-l="Přístupných">' + pct(r.w.yes, r.known) + '</td>' +
-        '<td class="num" data-l="Naměřeno">' + nf(r.x) + '</td>' +
-        '<td class="num" data-l="Fotky">' + nf(r.img) + '</td></tr>').join('') +
+        '<td class="num" data-l="' + KP.t('Přístupných') + '">' + pct(r.w.yes, r.known) + '</td>' +
+        '<td class="num" data-l="' + KP.t('Naměřeno') + '">' + nf(r.x) + '</td>' +
+        '<td class="num" data-l="' + KP.t('Fotky') + '">' + nf(r.img) + '</td></tr>').join('') +
       '</tbody></table>';
   }
   function renderOverview(stats) {
-    document.title = K.t('Kraje a obvody') + ' · kudyprojedu.cz';
+    document.title = K.t('Kraje a obvody') + ' · Wherethru';
     const br = (stats && stats.by_region) || {};
     const rows = Object.keys(br).map(id => regionRow(id, br[id])).sort((a, b) => b.n - a.n);
     if (!rows.length) { $('#kr-body').innerHTML = sec(('<p class="callout">' + KP.t('Přehled se nepodařilo spočítat. Zkuste stránku obnovit.') + '</p>'), { tight: true }); return; }
@@ -118,14 +118,14 @@
       return sec(head('kr-' + z + '-h', title, note, K.ZEME_LONG[z]) +
         '<p class="small muted">' + K.t('{n} míst, z toho {park} parkovišť ZTP · přístupných {pct} míst s údajem o vstupu · {x} s naměřenými údaji · {r} s údaji od provozovatele', { n: nf(t.n), park: nf(t.park), pct: pct(t.yes, t.known), x: nf(t.x), r: nf(t.r) }) + '</p>' +
         '<ul class="kr-legend kr-legend-top">' + ST.map(([, st, label]) => '<li>' + K.statusHtml(st, label) + '</li>').join('') + '</ul>' +
-        overviewTable(list, z), { label: 'kr-' + z + '-h' });
+        '<div class="kr-card kr-tablecard">' + overviewTable(list, z) + '</div>', { label: 'kr-' + z + '-h' });
     };
     $('#kr-body').innerHTML =
       sec('<div class="kr-kpis">' +
-        kpi(nf(all.n), KP.t('míst v Česku a Bavorsku'), K.t('{a} s údajem o vstupu, {b} parkovišť ZTP', { a: nf(all.known), b: nf(all.park) })) +
-        kpi(pct(all.yes, all.known), KP.t('míst přístupných na vozíku'), K.t('{a} z {b} s údajem o vstupu', { a: nf(all.yes), b: nf(all.known) })) +
-        kpi(nf(all.x), KP.t('míst s naměřenými údaji'), KP.t('z otevřených dat měst, krajů a DB')) +
-        kpi(nf(all.r), KP.t('míst s údaji od provozovatele'), KP.t('z rešerše webů provozovatelů a obcí')) +
+        kpi(nf(all.n), KP.t('míst v Česku a Bavorsku'), K.t('{a} s údajem o vstupu, {b} parkovišť ZTP', { a: nf(all.known), b: nf(all.park) }), 'pin') +
+        kpi(pct(all.yes, all.known), KP.t('míst přístupných na vozíku'), K.t('{a} z {b} s údajem o vstupu', { a: nf(all.yes), b: nf(all.known) }), 'wheel') +
+        kpi(nf(all.x), KP.t('míst s naměřenými údaji'), KP.t('z otevřených dat měst, krajů a DB'), 'ruler') +
+        kpi(nf(all.r), KP.t('míst s údaji od provozovatele'), KP.t('z rešerše webů provozovatelů a obcí'), 'building') +
         '</div>', { tight: true }) +
       part('cz', K.t('Všech {n} krajů', { n: rows.filter(r => r.z === 'cz').length }), KP.t('Seřazeno podle počtu míst. Pruh ukazuje všechna místa včetně těch bez údaje o vstupu (hlavně parkoviště), podíl přístupných počítáme jen z míst s údajem. Názvem kraje otevřete detail.')) +
       part('de', K.t('Všech {n} vládních obvodů', { n: rows.filter(r => r.z === 'de').length }), KP.t('Bavorsko se dělí na 7 vládních obvodů (Regierungsbezirke). Místa jsou ze stejných dotazů na OpenStreetMap jako v Česku, doplněná o otevřená data a rešerši webů. Názvy míst ponecháváme německy.')) +
@@ -154,8 +154,8 @@
     const open = BY_OPEN[k] || [];
     return sec(head('kr-by-h', KP.t('Souvislosti v obvodu'), KP.t('Čísla nejsou z naší databáze míst, ale z oficiální statistiky a dat Deutsche Bahn.'), K.esc(c.de)) +
       '<div class="kr-kpis">' +
-      kpi(nf(c.sb), KP.t('lidí s těžkým zdravotním postižením'), K.t('GdB ≥ 50, k 31. 12. 2025; {pct} % z {n} obyvatel', { pct: K.fmt((c.sb / c.obyv * 100).toFixed(1)), n: nf(c.obyv) })) +
-      kpi(K.t('{a} z {b}', { a: c.db[0], b: c.db[1] }), K.t('nádraží DB přístupných na vozíku'), K.t('{pct} podle DB InfraGO OpenStation', { pct: pct(c.db[0], c.db[1]) })) +
+      kpi(nf(c.sb), KP.t('lidí s těžkým zdravotním postižením'), K.t('GdB ≥ 50, k 31. 12. 2025; {pct} % z {n} obyvatel', { pct: K.fmt((c.sb / c.obyv * 100).toFixed(1)), n: nf(c.obyv) }), 'users') +
+      kpi(K.t('{a} z {b}', { a: c.db[0], b: c.db[1] }), K.t('nádraží DB přístupných na vozíku'), K.t('{pct} podle DB InfraGO OpenStation', { pct: pct(c.db[0], c.db[1]) }), 'train') +
       '</div>' +
       ('<p class="small muted">' + KP.t('Zdroje: Datenquelle: Bayerisches Landesamt für Statistik') + ', <a href="https://genesis-5-prod-extern.bayern.de/datenbank/online/statistic/22711" target="_blank" rel="noopener">' + KP.t('GENESIS-Online, statistika 22711') + '</a> ' + KP.t('a tabulka 12411-003r (CC BY 4.0)') + '; <a href="https://mobilithek.info/offers/879076212433727488" target="_blank" rel="noopener">' + KP.t('DB InfraGO – OpenStation') + '</a> ' + KP.t('(CC0 1.0), stav 7. 10. 2026.') + '</p>') +
       ('<div class="kr-info-grid"><div class="kr-info"><h3>' + KP.t('Otevřená data o přístupnosti v obvodu') + '</h3>') +
@@ -176,11 +176,11 @@
     const de = r.zeme === 'de';
     const a = aggregate(list);
     const name = fullName(k);
-    document.title = name + ' · kudyprojedu.cz';
+    document.title = name + ' · Wherethru';
     $('#kr-title').textContent = name;
     const kick = document.querySelector('.kr-head .kicker'); if (kick) kick.textContent = de ? K.t('Bavorsko · vládní obvod') : K.t('Česko · kraj');
-    $('#crumb-kraj').outerHTML = '<span aria-hidden="true">›</span><span aria-current="page">' + K.esc(name) + '</span>';
-    $('#kr-lede').textContent = (de ? K.t('Vládní obvod v Bavorsku ({de}).', { de: BY_CTX[k] ? BY_CTX[k].de : '' }) + ' ' : '') + K.t(de ? KP.t('V databázi je {n} {mist} z tohoto obvodu.') : KP.t('V databázi je {n} {mist} z tohoto kraje.'), { n: nf(a.n), mist: plural(a.n, K.t('místo'), K.t('místa'), K.t('míst')) }) + ' ' + K.t('Přístupných na vozíku je {pct} z těch, u kterých známe vstup.', { pct: pct(a.w.yes, a.acc) }) + (de ? ' ' + K.t('Názvy míst ponecháváme německy.') : '');
+    const cr = $('#crumb-kraj'); if (cr) { cr.innerHTML = '<span aria-current="page">' + K.esc(name) + '</span>'; cr.hidden = false; }
+    $('#kr-lede').textContent = (de ? K.t('Vládní obvod v Bavorsku ({de}).', { de: BY_CTX[k] ? BY_CTX[k].de : '' }) + ' ' : '') + K.t(de ? 'V databázi je {n} {mist} z tohoto obvodu.' : 'V databázi je {n} {mist} z tohoto kraje.', { n: nf(a.n), mist: plural(a.n, K.t('místo'), K.t('místa'), K.t('míst')) }) + ' ' + K.t('Přístupných na vozíku je {pct} z těch, u kterých známe vstup.', { pct: pct(a.w.yes, a.acc) }) + (de ? ' ' + K.t('Názvy míst ponecháváme německy.') : '');
 
     const cities = Object.values(a.cities).sort((x, y) => y.n - x.n);
     const topCities = cities.slice(0, 12);
@@ -193,10 +193,10 @@
 
     $('#kr-body').innerHTML =
       sec('<div class="kr-kpis">' +
-        kpi(nf(a.n), KP.t('míst v databázi'), K.t('{a} s údajem o vstupu, {b} parkovišť ZTP', { a: nf(a.acc), b: nf(a.park) })) +
-        kpi(nf(a.w.yes), KP.t('přístupných na vozíku'), K.t('{pct} míst s údajem o vstupu', { pct: pct(a.w.yes, a.acc) })) +
-        kpi(nf(a.tYes), KP.t('míst s bezbariérovým WC'), K.t('z toho {n} veřejných toalet', { n: nf(a.wcPublicYes) })) +
-        kpi(nf(a.parkSpots), KP.t('vyhrazených stání ZTP'), K.t('na {n} parkovištích', { n: nf(a.park) })) +
+        kpi(nf(a.n), KP.t('míst v databázi'), K.t('{a} s údajem o vstupu, {b} parkovišť ZTP', { a: nf(a.acc), b: nf(a.park) }), 'pin') +
+        kpi(nf(a.w.yes), KP.t('přístupných na vozíku'), K.t('{pct} míst s údajem o vstupu', { pct: pct(a.w.yes, a.acc) }), 'wheel') +
+        kpi(nf(a.tYes), KP.t('míst s bezbariérovým WC'), K.t('z toho {n} veřejných toalet', { n: nf(a.wcPublicYes) }), 'wc-accessible') +
+        kpi(nf(a.parkSpots), KP.t('vyhrazených stání ZTP'), K.t('na {n} parkovištích', { n: nf(a.park) }), 'parking-ztp') +
         '</div>', { tight: true }) +
 
       sec(('<div class="split-grid"><div class="split-h"><p class="kicker">' + KP.t('Vstup') + '</p><h2 id="kr-share-h">' + KP.t('Přístupnost vstupu') + '</h2><p class="muted small">') + K.t('{n} míst s údajem o vstupu (parkoviště nepočítáme). Hodnoty zadali dobrovolníci do OpenStreetMap.', { n: nf(a.acc) }) + '</p></div>' +
@@ -218,7 +218,7 @@
         '</div>') +
 
       sec(head('kr-gap-h', KP.t('Kde chybí data'), '', KP.t('Mezery v datech')) +
-        '<p class="text">' + K.t(de ? KP.t('U {pct} míst v obvodu ({a} z {b}) nevíme, jestli mají bezbariérovou toaletu. Pro člověka na vozíku je to často rozhodující údaj. Obce níže mají nejvyšší podíl míst bez něj; počítáme jen obce s aspoň 10 místy.') : KP.t('U {pct} míst v kraji ({a} z {b}) nevíme, jestli mají bezbariérovou toaletu. Pro člověka na vozíku je to často rozhodující údaj. Obce níže mají nejvyšší podíl míst bez něj; počítáme jen obce s aspoň 10 místy.'), { pct: pct(tUnkTotal, wcRelTotal), a: nf(tUnkTotal), b: nf(wcRelTotal) }) + '</p>' +
+        '<p class="text">' + K.t(de ? 'U {pct} míst v obvodu ({a} z {b}) nevíme, jestli mají bezbariérovou toaletu. Pro člověka na vozíku je to často rozhodující údaj. Obce níže mají nejvyšší podíl míst bez něj; počítáme jen obce s aspoň 10 místy.' : 'U {pct} míst v kraji ({a} z {b}) nevíme, jestli mají bezbariérovou toaletu. Pro člověka na vozíku je to často rozhodující údaj. Obce níže mají nejvyšší podíl míst bez něj; počítáme jen obce s aspoň 10 místy.', { pct: pct(tUnkTotal, wcRelTotal), a: nf(tUnkTotal), b: nf(wcRelTotal) }) + '</p>' +
         (gaps.length ? ('<div class="table-wrap"><table class="data kr-gap"><caption class="sr-only">' + KP.t('Obce s nejvyšším podílem míst bez údaje o toaletě') + '</caption><thead><tr><th scope="col">' + KP.t('Obec') + '</th><th scope="col" class="num">' + KP.t('Míst') + '</th><th scope="col" class="num">' + KP.t('Bez údaje o WC') + '</th><th scope="col" class="num">' + KP.t('Bez popisu, měření a fotky') + '</th><th scope="col" class="num">' + KP.t('Bez údaje o vstupu') + '</th></tr></thead><tbody>') +
           gaps.map(c => '<tr><th scope="row"><a href="mapa.html?kraj=' + encodeURIComponent(k) + '&amp;q=' + encodeURIComponent(c.o) + '">' + K.esc(c.o) + '</a></th><td class="num">' + nf(c.wcRel) + '</td><td class="num"><b>' + pct(c.tUnk, c.wcRel) + '</b></td><td class="num">' + pct(c.noDetail, c.acc) + '</td><td class="num">' + pct(c.wUnk, c.acc) + '</td></tr>').join('') +
           '</tbody></table></div>' : '<p class="muted">' + (de ? K.t('V obvodu není obec s aspoň 10 místy, u kterých by údaj o WC dával smysl.') : K.t('V kraji není obec s aspoň 10 místy, u kterých by údaj o WC dával smysl.')) + '</p>') +

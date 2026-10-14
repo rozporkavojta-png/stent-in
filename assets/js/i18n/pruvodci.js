@@ -128,3 +128,17 @@ KP.i18n.add({
   // Titulek a popis stránky (V7)
   "Hotoví průvodci po jižních Čechách a Bavorsku sestavení jen ze skutečných míst a zdrojů. U každé zastávky je vidět, co o přístupnosti víme, odkud a co chybí. Prototyp, nic se neprodává.": ["Fertige Reiseführer für Südböhmen und Bayern, nur aus echten Orten und Quellen zusammengestellt. Bei jeder Station sehen Sie, was wir über die Barrierefreiheit wissen, woher und was fehlt. Prototyp, es wird nichts verkauft.", "Ready-made guides to South Bohemia and Bavaria built only from real places and sources. Each stop shows what we know about accessibility, where it comes from and what is missing. Prototype, nothing is sold."],
 });
+
+/* v4 Wherethru (P4): katalog jako karty, filtry Víkend, Příroda, Města, názvy úrovní */
+KP.i18n.add({
+  "V ostré verzi se průvodci budou prodávat jednotlivě, ceny u nich jsou jen návrh. V členství Traveller budou ke stažení pro offline použití.": ["In der fertigen Version werden die Reiseführer einzeln verkauft, die Preise sind nur ein Vorschlag. Mit Traveller lassen sie sich offline herunterladen.", "In the live version guides will be sold individually; the prices are only a proposal. With Traveller they can be downloaded for offline use."],
+  "Víkend": ["Wochenende", "Weekend"],
+  "Města": ["Städte", "Cities"],
+  "Město": ["Stadt", "City"],
+  "Jeden den": ["Ein Tag", "One day"],
+  "Filtr průvodců": ["Reiseführer filtern", "Filter guides"],
+  "Zobrazit vše": ["Alle anzeigen", "Show all"],
+  "Víkend jsou průvodci na 2 až 3 dny. Příroda a Města počítáme ze zastávek: Příroda má zastávky ve třech a více obcích nebo aspoň dvě v přírodě.": ["Wochenende sind Reiseführer für 2 bis 3 Tage. Natur und Städte ergeben sich aus den Halten: Natur hat Halte in drei oder mehr Orten oder mindestens zwei in der Natur.", "Weekend means guides for 2 to 3 days. Nature and Cities come from the stops: Nature has stops in three or more towns or at least two in nature."],
+  "Celý průvodce se souhrnem u všech zastávek a verzí ke stažení bude v ostré verzi k zakoupení jednotlivě nebo v členství Traveller.": ["Den ganzen Reiseführer mit Übersicht zu allen Halten und Download gibt es in der fertigen Version einzeln oder mit Traveller.", "The full guide with a summary for every stop and a download will be sold individually or included in Traveller in the live version."],
+  "V ostré verzi se hotoví průvodci budou prodávat jednotlivě. V členství Traveller budou ke stažení pro offline použití. Zatím se nic neprodává a nic neplatíte.": ["In der fertigen Version werden die Reiseführer einzeln verkauft. Mit Traveller lassen sie sich offline herunterladen. Noch wird nichts verkauft und Sie zahlen nichts.", "In the live version guides will be sold individually. With Traveller they can be downloaded for offline use. Nothing is sold yet and you pay nothing."],
+});

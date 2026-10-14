@@ -71,7 +71,7 @@
   function shownFeatures() { return features.filter(isShown); }
   function syncInclineLabel() {
     const n = personal(), lim = inclineLimit();
-    TYPES.incline.label = K.t(n && n.slopeMax !== null ? KP.t('Sklon nad váš limit {n} %') : KP.t('Stoupání nad {n} %'), { n: K.fmt(lim) });
+    TYPES.incline.label = KP.t(n && n.slopeMax !== null ? 'Sklon nad váš limit {n} %' : 'Stoupání nad {n} %', { n: K.fmt(lim) });
   }
   function renderPersonal() {
     const box = $('#tr-personal'), n = K.getNeeds();
@@ -400,13 +400,13 @@
     if (map.engine === 'leaflet') return L.marker(ll, { icon: L.divIcon({ className: 'tr-mk', html: svg, iconSize: [size, size], iconAnchor: [size / 2, size / 2] }), keyboard: false, title, interactive: !!title }).addTo(M);
     return new google.maps.Marker({ map: M, position: { lat: ll[0], lng: ll[1] }, title, icon: { url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg), scaledSize: new google.maps.Size(size, size), anchor: new google.maps.Point(size / 2, size / 2) } });
   }
-  const VERTEX = '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="4.5" fill="#FFD400" stroke="#101010" stroke-width="2"/></svg>';
+  const VERTEX = '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="4.5" fill="#7D8F76" stroke="#FFFFFF" stroke-width="2"/></svg>';
   // komunitní překážka: žlutý trojúhelník s černým okrajem a vykřičníkem (odlišný od tvarů z OpenStreetMap)
-  const BAR_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><path d="M13 2 25 23H1Z" fill="#FFD400" stroke="#101010" stroke-width="2.4" stroke-linejoin="round"/><path d="M13 9v7M13 19v.5" stroke="#101010" stroke-width="2.6" stroke-linecap="round"/></svg>';
-  function stopSvg(n) { return '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="#101010" stroke="#FFFFFF" stroke-width="2"/><text x="13" y="17.5" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF">' + n + '</text></svg>'; }
+  const BAR_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><path d="M13 2 25 23H1Z" fill="#F6EBD6" stroke="#8A5A00" stroke-width="2.4" stroke-linejoin="round"/><path d="M13 9v7M13 19v.5" stroke="#8A5A00" stroke-width="2.6" stroke-linecap="round"/></svg>';
+  function stopSvg(n) { return '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="#3A4A34" stroke="#FFFFFF" stroke-width="2"/><text x="13" y="17.5" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF">' + n + '</text></svg>'; }
   function drawRoute(r) {
     const out = [], pts = (r.points || []).filter(c => okLL(c[0], c[1]));
-    if (pts.length > 1) { out.push(eLine(pts, { color: '#101010', weight: 8 })); out.push(eLine(pts, { color: '#FFD400', weight: 4 })); }
+    if (pts.length > 1) { out.push(eLine(pts, { color: '#FFFFFF', weight: 9 })); out.push(eLine(pts, { color: '#3A4A34', weight: 5 })); }
     pts.forEach(c => out.push(ePin(c, VERTEX, 12, '')));
     (r.stops || []).forEach((st, k) => { if (okLL(st.la, st.lo)) out.push(ePin([st.la, st.lo], stopSvg(k + 1), 26, (k + 1) + '. ' + (st.n || KP.t('Zastávka')))); });
     (r.barriers || []).forEach(b => { if (okLL(b.la, b.lo)) out.push(ePin([b.la, b.lo], BAR_SVG, 26, (CB[b.type] || CB.jine) + (b.note ? ': ' + b.note : ''))); });

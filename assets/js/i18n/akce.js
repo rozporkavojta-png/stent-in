@@ -90,7 +90,6 @@ KP.i18n.add({
   // Pravidla
   "Kdo akci pořádá, bude vždy vidět": ["Wer veranstaltet, ist immer zu sehen", "Who runs an event will always be shown"],
   "Pořádá platforma": ["Veranstaltet von der Plattform", "Run by the platform"],
-  "Akci připravuje tým kudyprojedu.cz. Přístupnost místa předem ověříme a za program odpovídáme.": ["Das Team von kudyprojedu.cz bereitet die Veranstaltung vor. Wir prüfen die Barrierefreiheit des Ortes vorab und verantworten das Programm.", "The kudyprojedu.cz team prepares the event. We check the venue's accessibility in advance and are responsible for the programme."],
   "S partnerem": ["Mit einem Partner", "With a partner"],
   "Výlet nebo workshop vede partner, třeba průvodce, dopravce nebo cestovní kancelář. U akce bude jméno partnera a kdo za co odpovídá.": ["Ein Partner leitet den Ausflug oder Workshop, etwa eine Reiseleitung, ein Verkehrsunternehmen oder ein Reisebüro. Bei der Veranstaltung stehen der Name des Partners und wer wofür verantwortlich ist.", "A partner such as a guide, carrier or travel agency leads the trip or workshop. The event will show the partner's name and who is responsible for what."],
   "Neformální setkání, které pořádá člen komunity. Platforma ho jen zveřejní a nepořádá ho.": ["Ein zwangloses Treffen, das ein Mitglied der Community organisiert. Die Plattform veröffentlicht es nur und veranstaltet es nicht.", "An informal meetup run by a community member. The platform only publishes it and does not run it."],
@@ -119,4 +118,26 @@ KP.i18n.add({
   "Do komunity": ["Zur Community", "Go to the community"],
   // Titulek a popis stránky (V7)
   "Komunitní setkání, workshopy a bezbariérové výlety v jižních Čechách a Bavorsku. Zatím nejsou naplánované žádné akce. Akci můžete navrhnout, v prototypu se návrh uloží jen ve vašem prohlížeči.": ["Community-Treffen, Workshops und barrierefreie Ausflüge in Südböhmen und Bayern. Derzeit sind keine Veranstaltungen geplant. Sie können eine Veranstaltung vorschlagen, im Prototyp wird der Vorschlag nur in Ihrem Browser gespeichert.", "Community meetups, workshops and accessible trips in South Bohemia and Bavaria. No events are scheduled yet. You can propose an event; in the prototype the proposal is saved only in your browser."],
+});
+
+/* v4 Wherethru (P4): filtry kalendáře, kroky „Jak to bude fungovat“, názvy úrovní */
+KP.i18n.add({
+  "Jak to bude fungovat": ["So wird es funktionieren", "How it will work"],
+  "Výlety": ["Ausflüge", "Trips"],
+  "Setkání": ["Treffen", "Meetups"],
+  "Filtr akcí": ["Veranstaltungen filtern", "Filter events"],
+  "Od nápadu k akci": ["Von der Idee zur Veranstaltung", "From idea to event"],
+  "Navrhnete akci": ["Sie schlagen etwas vor", "You suggest an event"],
+  "Napíšete, co by vás bavilo a kde. Jméno ani e-mail nepotřebujeme.": ["Sie schreiben, was Ihnen Spaß machen würde und wo. Name und E-Mail brauchen wir nicht.", "You write what you would enjoy and where. We need neither your name nor an email."],
+  "Ověříme místo": ["Wir prüfen den Ort", "We check the venue"],
+  "U akce bude odkaz na místo s údaji o vstupu, WC a parkování a datum, kdy je někdo ověřil.": ["Bei der Veranstaltung steht ein Link zum Ort mit Angaben zu Eingang, WC und Parken und dem Datum der Prüfung.", "Each event will link to the venue with details on the entrance, toilets and parking, and the date someone checked them."],
+  "Zveřejníme termín": ["Wir veröffentlichen den Termin", "We publish the date"],
+  "Akce dostane štítek podle toho, kdo ji pořádá: platforma, partner, nebo člen komunity.": ["Die Veranstaltung erhält ein Etikett je nach Veranstalter: Plattform, Partner oder Community-Mitglied.", "The event gets a label showing who organises it: the platform, a partner or a community member."],
+  "Potkáme se": ["Wir treffen uns", "We meet"],
+  "Setkání zdarma jsou otevřená všem. Placené workshopy a výlety budou za skutečné náklady.": ["Kostenlose Treffen sind für alle offen. Bezahlte Workshops und Ausflüge kosten nur die tatsächlichen Kosten.", "Free meetups are open to everyone. Paid workshops and trips will cost only their actual costs."],
+  "Výhody pro Explorer a Traveller": ["Vorteile für Explorer und Traveller", "Benefits for Explorer and Traveller"],
+  "Akci připravuje tým Wherethru. Přístupnost místa předem ověříme a za program odpovídáme.": ["Das Wherethru-Team bereitet die Veranstaltung vor. Wir prüfen die Barrierefreiheit vorab und verantworten das Programm.", "The Wherethru team prepares the event. We check the venue's accessibility in advance and are responsible for the programme."],
+  "Zatím žádné naplánované výlety": ["Noch keine geplanten Ausflüge", "No trips scheduled yet"],
+  "Zatím žádná naplánovaná setkání": ["Noch keine geplanten Treffen", "No meetups scheduled yet"],
+  "Zatím žádné naplánované workshopy": ["Noch keine geplanten Workshops", "No workshops scheduled yet"],
 });

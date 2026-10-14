@@ -2,98 +2,122 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Členství · kudyprojedu.cz</title>
-<meta name="description" content="Návrh členství FREE, PLUS a PREMIUM. Základní informace o přístupnosti zůstávají vždy zdarma, placené úrovně přidávají plánování a pomoc s cestou. Prototyp, nic se neplatí.">
+<title>Členství · Wherethru</title>
+<meta name="description" content="Návrh členství Free, Explorer a Traveller. Informace o přístupnosti zůstávají vždy zdarma, placené úrovně přidávají plánování a pomoc s cestou. Prototyp, nic se neplatí.">
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="assets/brand/site.webmanifest">
+<meta name="theme-color" content="#3A4A34">
+<meta name="application-name" content="Wherethru">
+<meta property="og:site_name" content="Wherethru">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Členství · Wherethru">
+<meta property="og:image" content="assets/brand/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Wherethru – Objevuj · Plánuj · Zažij – bez bariér">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=16">
-<link rel="stylesheet" href="assets/css/pages-a.css?v=13">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Caveat:wght@500&family=Fraunces:opsz,wght@9..144,600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=18">
+<link rel="stylesheet" href="assets/css/pages-a.css?v=15">
 </head>
 <body>
 <div id="site-header"></div>
 <main id="main">
 
   <section class="page-head">
-    <div class="wrap head-split">
+    <div class="wrap cl-head">
       <div>
         <p class="kicker" data-i18n>Členství</p>
-        <h1 data-i18n>Základ zdarma. Plánování navíc.</h1>
-        <p class="lede" data-i18n>Mapa, údaje o přístupnosti, fotky a komunita jsou zdarma pro každého. Placené úrovně PLUS a PREMIUM přidávají osobní porovnání míst, plánování výletů a pomoc s cestou.</p>
+        <h1 data-i18n>Vyberte si, jak cestujete</h1>
+        <p class="lede" data-i18n>Mapa, údaje o přístupnosti, fotky a komunita jsou zdarma pro každého. Explorer a Traveller přidávají osobní porovnání míst, plánování výletů a pomoc s cestou.</p>
+        <div class="cl-now" aria-live="polite">
+          <p class="kicker" data-i18n>Prototyp</p>
+          <p class="cl-now-line"><span data-i18n>Teď zkoušíte úroveň</span> <span id="cl-now-tag"></span></p>
+          <p class="small muted" data-i18n>Platby ani účty zatím neexistují. Úroveň se jen přepne v tomto prohlížeči, nic se neplatí a nic nezadáváte.</p>
+        </div>
       </div>
-      <div class="cl-now" aria-live="polite">
-        <p class="kicker" data-i18n>Prototyp</p>
-        <p class="cl-now-line"><span data-i18n>Teď zkoušíte úroveň</span> <span class="cl-now-tag" id="cl-now-tag"></span></p>
-        <p class="small muted" data-i18n>Platby ani účty zatím neexistují. Úroveň se jen přepne v tomto prohlížeči, nic se neplatí a nic nezadáváte.</p>
-      </div>
+      <figure class="cl-head-media">
+        <div class="wave-photo"><img src="assets/img/hero-cesky-krumlov.jpg" width="1400" height="630" alt="" decoding="async"></div>
+        <span class="route-deco" aria-hidden="true"></span>
+        <p class="handnote" aria-hidden="true" data-i18n>Víc přístupných míst. Blíž, než myslíš.</p>
+        <figcaption class="credit"><span data-i18n>Český Krumlov.</span> <span data-i18n>Foto:</span> VitVit, <a href="https://commons.wikimedia.org/wiki/File:%C4%8Cesk%C3%BD_Krumlov_z_hradu_1.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
+      </figure>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="tiers-h">
+  <section class="section-tight" aria-labelledby="tiers-h">
     <div class="wrap">
       <h2 id="tiers-h" class="sr-only" data-i18n>Úrovně členství</h2>
       <p class="callout cl-note" data-i18n>Jde o návrh budoucí nabídky. Některé funkce, zejména ověřování hotelů, plánování tras a concierge, budou vyžadovat další technický a personální rozvoj.</p>
-      <div class="plans cl-tiers">
+      <div class="price-grid cl-tiers">
 
-        <article class="plan cl-tier" data-tier-card="free" aria-labelledby="t-free">
-          <p class="cl-tag"><span class="tier-tag tier-free">FREE</span> <span class="cl-cur" data-i18n hidden>vaše úroveň</span></p>
-          <h3 id="t-free" data-i18n>Explore – objevuj bez bariér</h3>
-          <p class="price"><span data-tier-price="free">0 €</span></p>
-          <p class="cl-sub" data-i18n>Základní vyhledávání a komunita</p>
+        <article class="price-card cl-tier" data-tier-card="free" aria-labelledby="t-free">
+          <div class="cl-tier-top"><span class="cl-tier-ic" data-icon="mountain"></span><div><h3 id="t-free">Free</h3><p class="price-claim" data-i18n>Začni objevovat</p></div></div>
+          <p class="cl-cur" hidden><span data-i18n>vaše úroveň</span></p>
+          <p class="cl-price"><span class="price" data-tier-price="free">0 €</span> <span class="per" data-i18n>navždy</span></p>
           <ul>
-            <li data-i18n>Interaktivní mapa bezbariérových míst</li>
-            <li data-i18n>Podrobné informace o přístupnosti a fotografie</li>
-            <li data-i18n>Základní vyhledávání a filtrování</li>
-            <li data-i18n>Recenze a zkušenosti ostatních uživatelů</li>
-            <li data-i18n>Přidávání nových míst a hodnocení</li>
-            <li data-i18n>Uložení až 5 oblíbených míst</li>
+            <li><span data-icon="check"></span><span data-i18n>Interaktivní mapa bezbariérových míst</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Podrobné informace o přístupnosti a fotografie</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Základní vyhledávání a filtrování</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Recenze a zkušenosti ostatních uživatelů</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Přidávání nových míst a hodnocení</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Uložení až 5 oblíbených míst</span></li>
+            <li class="is-off"><span data-icon="close"></span><span><span class="sr-only" data-i18n>Není součástí:</span> <span data-i18n>Accessibility Match</span></span></li>
+            <li class="is-off"><span data-icon="close"></span><span><span class="sr-only" data-i18n>Není součástí:</span> <span data-i18n>Plánovač výletů a dovolených</span></span></li>
+            <li class="is-off"><span data-icon="close"></span><span><span class="sr-only" data-i18n>Není součástí:</span> <span data-i18n>Offline itineráře</span></span></li>
           </ul>
-          <p class="cl-quote" data-i18n>Uživatel si informace musí vyhledat a cestu sestavit sám.</p>
-          <button class="btn btn-ghost" type="button" data-try-tier="free" data-i18n>Přepnout na FREE</button>
+          <p class="cl-quote" data-i18n>Informace si vyhledáte a cestu sestavíte sami.</p>
+          <button class="btn btn-ghost" type="button" data-try-tier="free"><span data-i18n>Vyzkoušet Free</span></button>
+          <p class="cl-try-note" data-i18n>Prototyp, nic se neplatí.</p>
         </article>
 
-        <article class="plan cl-tier featured" data-tier-card="plus" aria-labelledby="t-plus">
-          <p class="cl-tag"><span class="tier-tag tier-plus">PLUS</span> <span class="cl-cur" data-i18n hidden>vaše úroveň</span></p>
-          <h3 id="t-plus" data-i18n>Plan – cestuj podle svých pravidel</h3>
-          <p class="price"><span data-tier-price="plus">4,99 €</span> <small data-i18n>měsíčně</small></p>
-          <p class="cl-sub" data-i18n>Inteligentní plánování a personalizace</p>
+        <article class="price-card is-sage cl-tier" data-tier-card="plus" aria-labelledby="t-plus">
+          <div class="cl-tier-top"><span class="cl-tier-ic" data-icon="tree"></span><div><h3 id="t-plus">Explorer</h3><p class="price-claim" data-i18n>Plánuj víc. Dojdi dál.</p></div></div>
+          <p class="cl-cur" hidden><span data-i18n>vaše úroveň</span></p>
+          <p class="cl-price"><span class="price" data-tier-price="plus">4,99 €</span> <span class="per" data-i18n>měsíčně</span></p>
           <ul>
-            <li data-i18n>Všechny funkce FREE</li>
-            <li data-i18n>Accessibility Match – automatické porovnání míst s osobními požadavky</li>
-            <li data-i18n>AI plánovač jednodenních výletů podle rozpočtu, zájmů a mobility</li>
-            <li data-i18n>Neomezené ukládání míst a itinerářů</li>
-            <li data-i18n>Vlastní seznamy a sdílené cestovní plány</li>
-            <li data-i18n>Pokročilé filtry včetně konkrétních rozměrů a vybavení</li>
-            <li data-i18n>Upozornění na změny v uložených místech</li>
-            <li data-i18n>Export itinerářů do PDF</li>
+            <li><span data-icon="check"></span><span data-i18n>Všechny funkce Free</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Accessibility Match – automatické porovnání míst s osobními požadavky</span></li>
+            <li><span data-icon="check"></span><span data-i18n>AI plánovač jednodenních výletů podle rozpočtu, zájmů a mobility</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Neomezené ukládání míst a itinerářů</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Vlastní seznamy a sdílené cestovní plány</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Pokročilé filtry včetně konkrétních rozměrů a vybavení</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Upozornění na změny v uložených místech</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Export itinerářů do PDF</span></li>
+            <li class="is-off"><span data-icon="close"></span><span><span class="sr-only" data-i18n>Není součástí:</span> <span data-i18n>Vícedenní dovolené a Travel Concierge</span></span></li>
+            <li class="is-off"><span data-icon="close"></span><span><span class="sr-only" data-i18n>Není součástí:</span> <span data-i18n>Offline itineráře</span></span></li>
           </ul>
-          <p class="cl-quote" data-i18n>Ideální pro uživatele, kteří pravidelně podnikají výlety a chtějí si vše plánovat pohodlněji.</p>
-          <button class="btn btn-primary" type="button" data-try-tier="plus" data-i18n>Vyzkoušet jako PLUS (prototyp, nic se neplatí)</button>
+          <p class="cl-quote" data-i18n>Pro lidi, kteří pravidelně jezdí na výlety a chtějí si vše plánovat pohodlněji.</p>
+          <button class="btn btn-primary" type="button" data-try-tier="plus"><span data-i18n>Vyzkoušet Explorer</span></button>
+          <p class="cl-try-note" data-i18n>Prototyp, nic se neplatí.</p>
         </article>
 
-        <article class="plan cl-tier" data-tier-card="premium" aria-labelledby="t-premium">
-          <p class="cl-tag"><span class="tier-tag tier-premium">PREMIUM</span> <span class="cl-cur" data-i18n hidden>vaše úroveň</span></p>
-          <h3 id="t-premium" data-i18n>Travel – dovolená bez zbytečného stresu</h3>
-          <p class="price"><span data-tier-price="premium">9,99 €</span> <small data-i18n>měsíčně</small></p>
-          <p class="cl-sub" data-i18n>Kompletní cestovní asistent</p>
+        <article class="price-card is-dark cl-tier" data-tier-card="premium" aria-labelledby="t-premium">
+          <p class="price-flag" data-i18n>Doporučujeme</p>
+          <div class="cl-tier-top"><span class="cl-tier-ic" data-icon="compass"></span><div><h3 id="t-premium">Traveller</h3><p class="price-claim" data-i18n>Maximum svobody na cestách</p></div></div>
+          <p class="cl-cur" hidden><span data-i18n>vaše úroveň</span></p>
+          <p class="cl-price"><span class="price" data-tier-price="premium">9,99 €</span> <span class="per" data-i18n>měsíčně</span></p>
           <ul>
-            <li data-i18n>Všechny funkce PLUS</li>
-            <li data-i18n>AI plánovač vícedenních dovolených včetně ubytování, dopravy a aktivit</li>
-            <li data-i18n>Travel Concierge – pomoc s přípravou cesty a komunikací s hotely</li>
-            <li data-i18n>Individuální návrhy alternativ při změně programu</li>
-            <li data-i18n>Cestovní itineráře ke stažení pro offline použití</li>
-            <li data-i18n>Sdílení prémiových funkcí s jedním cestovním partnerem</li>
-            <li data-i18n>Zvýhodněné rezervace u partnerských poskytovatelů, pokud budou sjednány</li>
-            <li data-i18n>Přednostní zákaznická podpora</li>
-            <li data-i18n>Jeden kredit ročně na individuální kontrolu dostupnosti vybraného ubytování</li>
+            <li><span data-icon="check"></span><span data-i18n>Všechny funkce Explorer</span></li>
+            <li><span data-icon="check"></span><span data-i18n>AI plánovač vícedenních dovolených včetně ubytování, dopravy a aktivit</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Travel Concierge – pomoc s přípravou cesty a komunikací s hotely</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Individuální návrhy alternativ při změně programu</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Cestovní itineráře ke stažení pro offline použití</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Sdílení prémiových funkcí s jedním cestovním partnerem</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Zvýhodněné rezervace u partnerských poskytovatelů, pokud budou sjednány</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Přednostní zákaznická podpora</span></li>
+            <li><span data-icon="check"></span><span data-i18n>Jeden kredit ročně na individuální kontrolu dostupnosti vybraného ubytování</span></li>
           </ul>
-          <p class="cl-quote" data-i18n>Prémiový servis pro lidi, kteří chtějí cestovat, ale nechtějí trávit hodiny organizací.</p>
-          <button class="btn btn-primary" type="button" data-try-tier="premium" data-i18n>Vyzkoušet jako PREMIUM (prototyp, nic se neplatí)</button>
+          <p class="cl-quote" data-i18n>Pro lidi, kteří chtějí cestovat, ale nechtějí trávit hodiny organizací.</p>
+          <button class="btn btn-primary" type="button" data-try-tier="premium"><span data-i18n>Vyzkoušet Traveller</span></button>
+          <p class="cl-try-note" data-i18n>Prototyp, nic se neplatí.</p>
         </article>
 
       </div>
-      <p class="price-note" data-i18n>Ceny jsou v eurech, protože platforma bude fungovat v Česku i v Bavorsku. Ceny a rozsah funkcí ověříme v rozhovorech se zákazníky a v pilotním předplatném.</p>
+      <p class="price-note" data-i18n>Ceny jsou v eurech, protože platforma bude fungovat v Česku i v Bavorsku. Ceny a rozsah funkcí ověříme v rozhovorech se zákazníky a v pilotním předplatném. Plánovače v prototypu skládají výlety podle pravidel nad skutečnými místy, AI zatím nepoužívají.</p>
     </div>
   </section>
 
@@ -101,14 +125,14 @@
     <div class="wrap split-grid">
       <div class="split-h">
         <p class="kicker" data-i18n>Srovnání</p>
-        <h2 id="cmp-h" data-i18n>Proč si připlatit?</h2>
+        <h2 id="cmp-h" class="h-serif" data-i18n>Proč si připlatit?</h2>
         <p class="muted" data-i18n>Placené úrovně šetří čas s plánováním. Informace o přístupnosti dostanete i bez nich.</p>
       </div>
       <div class="split-b">
         <div class="table-wrap cl-cmp-wrap">
           <table class="data cl-cmp">
-            <caption class="sr-only" data-i18n>Co obsahuje FREE, PLUS a PREMIUM</caption>
-            <thead><tr><th scope="col" data-i18n>Funkce</th><th scope="col"><span class="tier-tag tier-free">FREE</span></th><th scope="col"><span class="tier-tag tier-plus">PLUS</span></th><th scope="col"><span class="tier-tag tier-premium">PREMIUM</span></th></tr></thead>
+            <caption class="sr-only" data-i18n>Co obsahuje Free, Explorer a Traveller</caption>
+            <thead><tr><th scope="col" data-i18n>Funkce</th><th scope="col"><span class="tier-tag tier-free">Free</span></th><th scope="col"><span class="tier-tag tier-plus">Explorer</span></th><th scope="col"><span class="tier-tag tier-premium">Traveller</span></th></tr></thead>
             <tbody id="cmp-body"></tbody>
           </table>
         </div>
@@ -120,13 +144,13 @@
     <div class="wrap split-grid">
       <div class="split-h">
         <p class="kicker" data-i18n>Pravidla</p>
-        <h2 id="free-h" data-i18n>Co zůstane vždy zdarma</h2>
+        <h2 id="free-h" class="h-serif" data-i18n>Co zůstane vždy zdarma</h2>
       </div>
       <ul class="split-b rule-grid">
         <li><h3 data-i18n>Informace o přístupnosti</h3><p data-i18n>Vstup, toaleta, parkování, rozměry, fotky a zdroj každého údaje vidí každý. Placené úrovně je nikdy neskryjí.</p></li>
         <li><h3 data-i18n>Opravy a příspěvky</h3><p data-i18n>Přidat místo, opravit údaj nebo napsat zkušenost můžete vždy zdarma. Podniky zadávají a opravují základní údaje také zdarma.</p></li>
         <li><h3 data-i18n>Nezávislé hodnocení</h3><p data-i18n>Placená viditelnost podniků bude vždy oddělená od hodnocení přístupnosti a jasně označená. Za lepší hodnocení se zaplatit nedá.</p></li>
-        <li><h3 data-i18n>Hledání a komunita</h3><p data-i18n>Mapa, základní filtry, recenze a uložení až 5 oblíbených míst zůstávají ve FREE.</p></li>
+        <li><h3 data-i18n>Hledání a komunita</h3><p data-i18n>Mapa, základní filtry, recenze a uložení až 5 oblíbených míst zůstávají ve Free.</p></li>
       </ul>
     </div>
   </section>
@@ -135,8 +159,8 @@
     <div class="wrap split-grid">
       <div class="split-h">
         <p class="kicker" data-i18n>Otázky</p>
-        <h2 id="faq-h" data-i18n>Časté otázky</h2>
-        <a class="btn btn-quiet" href="o-projektu.html#prijmy" data-i18n>Jak se projekt bude financovat <span data-icon="arrow"></span></a>
+        <h2 id="faq-h" class="h-serif" data-i18n>Časté otázky</h2>
+        <a class="btn btn-quiet" href="o-projektu.html#prijmy"><span data-i18n>Jak se projekt bude financovat</span> <span data-icon="arrow"></span></a>
       </div>
       <div class="split-b cl-faq">
         <details>
@@ -161,40 +185,41 @@
         </details>
         <details>
           <summary data-i18n>Proč má concierge a kontrola ubytování limity?</summary>
-          <p data-i18n>Tyto služby dělají lidé, ne počítač. Proto mají v PREMIUM jasný limit, například jeden kredit ročně na kontrolu ubytování, a další použití se bude platit zvlášť.</p>
+          <p data-i18n>Tyto služby dělají lidé, ne počítač. Proto mají v úrovni Traveller jasný limit, například jeden kredit ročně na kontrolu ubytování, a další použití se bude platit zvlášť.</p>
         </details>
         <details>
           <summary data-i18n>Co se stane, když kliknu na Vyzkoušet?</summary>
-          <p data-i18n>Úroveň se uloží jen ve vašem prohlížeči a odemkne funkce prototypu. Nic nezadáváte a nic neplatíte. Zpět na FREE přepnete tady nebo štítkem úrovně v hlavičce.</p>
+          <p data-i18n>Úroveň se uloží jen ve vašem prohlížeči a odemkne funkce prototypu. Nic nezadáváte a nic neplatíte. Zpět na Free přepnete tady nebo štítkem úrovně v hlavičce.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <section class="home-cta" aria-labelledby="cl-biz-h">
-    <div class="wrap cta-grid">
-      <div class="cta-col">
+  <section class="section-tight" aria-label="Další kroky" data-i18n-attr="aria-label">
+    <div class="wrap cta-cards">
+      <div class="cta-card is-dark">
         <p class="kicker" data-i18n>Pro organizace</p>
-        <h2 id="cl-biz-h" data-i18n>Hotely, restaurace, památky a obce</h2>
+        <h2 data-i18n>Hotely, restaurace, památky a obce</h2>
         <p data-i18n>Základní profil a opravy údajů jsou zdarma. Placené jsou nástroje navíc: analytika, ověření, školení, poradenství a regionální licence.</p>
-        <div class="row"><a class="btn btn-signal btn-lg" href="pro-firmy.html" data-i18n>Pro podniky a obce</a></div>
+        <div class="row"><a class="btn btn-inverse btn-lg" href="pro-firmy.html" data-i18n>Pro podniky a obce</a></div>
       </div>
-      <div class="cta-col">
+      <div class="cta-card is-sage">
         <p class="kicker" data-i18n>Vyzkoušet</p>
         <h2 data-i18n>Naplánujte si výlet</h2>
         <p data-i18n>Plánovač skládá výlet ze skutečných míst v mapě. V prototypu podle pravidel, v ostré verzi s AI.</p>
-        <div class="row"><a class="btn btn-ghost" href="planovac.html" data-i18n>Plánovat výlet</a><a class="btn btn-quiet" href="pruvodci.html" data-i18n>Průvodci</a></div>
+        <div class="row"><a class="btn btn-primary" href="planovac.html" data-i18n>Plánovat výlet</a><a class="btn btn-quiet" href="pruvodci.html" data-i18n>Průvodci</a></div>
       </div>
     </div>
   </section>
 
 </main>
 <div id="site-footer"></div>
-<script src="assets/js/i18n.js?v=2"></script>
-<script src="assets/js/i18n/core.js?v=3"></script>
-<script src="assets/js/i18n/clenstvi.js?v=1"></script>
+<script src="assets/js/i18n.js?v=3"></script>
+<script src="assets/js/i18n/core.js?v=6"></script>
+<script src="assets/js/i18n/clenstvi.js?v=3"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=16"></script>
-<script src="assets/js/clenstvi.js?v=1"></script>
+<script src="assets/icons/icons.js?v=1"></script>
+<script src="assets/js/core.js?v=18"></script>
+<script src="assets/js/clenstvi.js?v=2"></script>
 </body>
 </html>

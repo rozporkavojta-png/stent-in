@@ -6,7 +6,7 @@
   const K = window.KP, KC = window.KPCheck, B = K.business, C = K.community, esc = K.esc;
   const $ = (s, r) => (r || document).querySelector(s), $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
   const PFX = 'ck', MAX_PH = 3;
-  const state = { p: null, step: 0, photos: {}, editClaim: false, kraje: null, krajeP: null, search: null };
+  const state = { p: null, step: 0, photos: {}, editClaim: false, kraje: null, krajeP: null, search: null, tab: 'prehled' };
 
   const plural = (n, a, b, c) => n + ' ' + K.plural(n, a, b, c);
   const catLabel = (p) => (K.CATS[p.c] || {}).label || (p.s && K.t(p.s)) || K.t('Místo');
@@ -23,6 +23,8 @@
     } catch (e) { /* bez URL API */ }
     $('#pd-work').hidden = false;
     renderAll();
+    const hs = location.hash && document.getElementById(location.hash.slice(1));
+    showTab(hs && hs.dataset.tab ? hs.dataset.tab : 'prehled', false);
     if (!(opts && opts.quiet)) { const h = $('#pd-place'); h.focus({ preventScroll: true }); h.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
   }
   function loadPhotos() {
@@ -31,12 +33,28 @@
     Object.keys(ph).forEach(a => { state.photos[a] = (ph[a] || []).map(src => ({ src })); });
   }
   function renderAll() {
-    renderPlace(); renderClaim(); renderCheck(); renderPreview(); renderWhy(); renderStats(); renderImprove(); renderNav(); renderMine();
+    renderPlace(); renderOverview(); renderClaim(); renderCheck(); renderPreview(); renderPhotos(); renderWhy(); renderStats(); renderImprove(); renderNav(); renderMine();
   }
+
+  // ---------- Záložky dashboardu: Přehled / Přístupnost / Fotky / Statistiky ----------
+  const TABS = ['prehled', 'pristupnost', 'fotky', 'statistiky'];
+  function showTab(tab, focus) {
+    if (!TABS.includes(tab)) tab = 'prehled';
+    state.tab = tab;
+    $$('#pd-work .pd-sec[data-tab]').forEach(sec => { sec.hidden = sec.dataset.tab !== tab; });
+    $$('#pd-nav [role="tab"]').forEach(b => { const on = b.dataset.tabBtn === tab; b.setAttribute('aria-selected', on ? 'true' : 'false'); b.tabIndex = on ? 0 : -1; });
+    const sel = $('#pd-nav [data-tab-btn="' + tab + '"]'), tl = $('#pd-nav .pd-tabs');
+    if (sel && tl && tl.scrollWidth > tl.clientWidth) tl.scrollLeft = Math.max(0, sel.offsetLeft - 16);
+    if (focus) { const b = $('#pd-nav [data-tab-btn="' + tab + '"]'); if (b) b.focus(); }
+  }
+  const tabOf = (id) => { const el = id && document.getElementById(id); return el && el.dataset ? el.dataset.tab : null; };
 
   function renderPlace() {
     const p = state.p, c = claimed();
-    $('#pd-place').innerHTML = '<div class="wrap pd-place-in">' +
+    const media = p.img
+      ? '<figure class="pd-place-media"><img src="' + K.commonsImg(p.img, 320) + '" alt="' + esc(KP.t('Fotografie') + ': ' + p.n) + '" loading="lazy" decoding="async"><figcaption><a href="' + K.commonsPage(p.img) + '" target="_blank" rel="noopener">' + KP.t('Foto: Wikimedia Commons') + ', ' + KP.t('autor a licence') + '</a></figcaption></figure>'
+      : '<div class="pd-place-media no-photo" aria-hidden="true">' + K.icon((K.CATS[p.c] || {}).icon || 'building') + '</div>';
+    $('#pd-place').innerHTML = '<div class="pd-place-in">' + media +
       '<div class="pd-place-txt"><p class="pd-place-cat">' + K.icon((K.CATS[p.c] || {}).icon || 'building') + esc(catLabel(p)) + (p.s && K.t(p.s) !== catLabel(p) ? ' · ' + esc(K.t(p.s)) : '') + '</p>' +
       '<h2 class="pd-place-name">' + esc(p.n) + '</h2>' +
       '<p class="pd-place-meta">' + esc([p.a, p.o, K.krajName(p.k, K.zemeOf(p)), K.ZEME[K.zemeOf(p)]].filter(Boolean).join(', ')) + '</p></div>' +
@@ -46,14 +64,45 @@
 
   function renderNav() {
     const pr = KC.progress(prof(), state.p.c), c = claimed();
+    const nPh = Object.values(prof().photos || {}).reduce((n, l) => n + (l || []).length, 0);
     const items = [
-      ['prevzeti', KP.t('Převzetí'), c ? KP.t('hotovo') : KP.t('nezačato'), c ? 'ok' : 'unk'],
-      ['checklist', KP.t('Checklist'), pr.pct + ' %', pr.complete ? 'ok' : pr.pct ? 'part' : 'unk'],
-      ['nahled', KP.t('Náhled profilu')], ['proc', KP.t('Proč vyplnit')], ['statistiky', KP.t('Analytika')], ['zlepsit', KP.t('Co zlepšit')],
-      ['tarify', KP.t('Tarify'), isBiz() ? 'Business' : KP.t('Zdarma'), isBiz() ? 'ok' : 'unk'],
+      ['prehled', 'home', KP.t('Přehled'), c ? KP.t('převzato') : KP.t('nepřevzato')],
+      ['pristupnost', 'wheel', KP.t('Přístupnost'), K.t('checklist {n} %', { n: pr.pct })],
+      ['fotky', 'camera', KP.t('Fotky'), nPh ? plural(nPh, 'fotka', 'fotky', 'fotek') : KP.t('zatím žádné')],
+      ['statistiky', 'chart', KP.t('Statistiky'), KP.t('prototyp')],
     ];
-    $('#pd-nav').innerHTML = ('<p class="pd-nav-t">' + KP.t('Profil podniku') + '</p><ul>') + items.map(([id, l, s, st]) =>
-      '<li><a href="#' + id + '"><span>' + l + '</span>' + (s ? '<small>' + K.statusHtml(st, s) + '</small>' : '') + '</a></li>').join('') + '</ul>';
+    $('#pd-nav').innerHTML = ('<div class="pd-tabs" role="tablist" aria-label="' + KP.t('Části profilu podniku') + '">') + items.map(([id, ic, l, sub]) =>
+      '<button type="button" role="tab" id="pd-tab-' + id + '" data-tab-btn="' + id + '" aria-selected="' + (state.tab === id) + '" tabindex="' + (state.tab === id ? 0 : -1) + '">' + K.icon(ic) + '<span class="pd-tab-l">' + l + '<small>' + esc(sub) + '</small></span></button>').join('') + '</div>' +
+      '<div class="pd-side-links"><a href="#tarify">' + K.icon('membership') + '<span>' + KP.t('Tarif') + ': ' + (isBiz() ? 'Business' : KP.t('Zdarma')) + '</span></a>' +
+      '<a href="' + K.placeUrl(state.p) + '">' + K.icon('eye') + '<span>' + KP.t('Veřejný detail') + '</span></a>' +
+      '<a href="#najit" data-other>' + K.icon('search') + '<span>' + KP.t('Jiný podnik') + '</span></a></div>';
+  }
+
+  // ---------- Přehled: úplnost údajů o přístupnosti spočtená z polí místa ----------
+  function ring(pct, label) {
+    const r = 52, c = 2 * Math.PI * r, v = Math.max(0, Math.min(100, pct || 0));
+    return '<div class="pd-ring" role="img" aria-label="' + esc(label + ': ' + v + ' %') + '"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="' + r + '" class="pd-ring-bg"/><circle cx="60" cy="60" r="' + r + '" class="pd-ring-v" stroke-dasharray="' + (c * v / 100).toFixed(1) + ' ' + c.toFixed(1) + '" transform="rotate(-90 60 60)"/></svg><span class="pd-ring-n" aria-hidden="true">' + v + ' %</span></div>';
+  }
+  function renderOverview() {
+    const box = $('#pd-overview'); if (!box) return;
+    const p = state.p, s = K.facilitiesScore(p), pr = KC.progress(prof(), p.c), c = claimed();
+    const areas = s.relevant.map(a => {
+      const d = s.detail[a] || {}, st = !d.tracked ? 'unk' : d.known === d.tracked ? 'ok' : d.known ? 'part' : 'unk';
+      return '<li>' + K.statusHtml(st, esc(K.AREAS[a])) + '<span class="pd-ov-n">' + K.t('{k} z {n}', { k: d.known || 0, n: d.tracked || 0 }) + '</span></li>';
+    }).join('');
+    const next = !c ? ['#prevzeti', KP.t('Převzít profil'), KP.t('Profil zatím nikdo nepřevzal. Po převzetí se odemkne checklist.')]
+      : !pr.complete ? ['#checklist', KP.t('Pokračovat na checklist'), K.t('Vyplněno {a} z {b} údajů a {c} z {d} fotek.', { a: pr.done, b: pr.total, c: pr.photosDone, d: pr.photosTotal })]
+        : ['#nahled', KP.t('Náhled profilu'), KP.t('Všechny údaje i fotky jsou vyplněné.')];
+    box.innerHTML = '<div class="pd-ov">' +
+      '<div class="card pd-ov-ring">' + ring(s.coverage, KP.t('Úplnost údajů o přístupnosti')) + '<div><h3>' + KP.t('Úplnost údajů o přístupnosti') + '</h3>' +
+        '<p class="small muted">' + K.t('Známe {k} z {n} sledovaných prvků. Spočítáno z údajů o místě ze všech zdrojů.', { k: s.known.filter(k => k.v !== 'na').length, n: s.tracked }) + '</p><ul class="pd-ov-areas">' + areas + '</ul></div></div>' +
+      '<div class="pd-ov-tiles">' +
+        '<div class="tile"><span class="k">' + K.icon('list') + KP.t('Úplnost checklistu') + '</span><span class="v">' + pr.pct + ' %</span></div>' +
+        '<div class="tile"><span class="k">' + K.icon('wheel') + KP.t('Accessibility Facilities Score') + '</span><span class="v">' + scoreText(s.total) + '</span></div>' +
+        '<div class="tile"><span class="k">' + K.icon('building') + KP.t('Převzetí') + '</span><span class="v pd-ov-st">' + (c ? K.statusHtml('ok', KP.t('hotovo')) : K.statusHtml('unk', KP.t('nezačato'))) + '</span></div>' +
+      '</div>' +
+      '<div class="card pd-ov-next"><div><h3>' + KP.t('Další krok') + '</h3><p class="small muted">' + esc(next[2]) + '</p></div><a class="btn btn-primary" href="' + next[0] + '">' + next[1] + '</a></div>' +
+      '</div>';
   }
 
   // Moje převzaté podniky (v tomto prohlížeči)
@@ -110,6 +159,7 @@
   }
   function goSection(id) {
     const s = document.getElementById(id); if (!s) return;
+    if (s.dataset.tab) showTab(s.dataset.tab);
     s.scrollIntoView({ block: 'start', behavior: 'smooth' });
     const h = s.querySelector('h2'); if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
   }
@@ -203,7 +253,7 @@
   }
   function goStep(k, focus) {
     state.step = k;
-    renderCheck(); renderPreview(); renderWhy(); renderImprove(); renderNav();
+    renderCheck(); renderPreview(); renderPhotos(); renderOverview(); renderWhy(); renderImprove(); renderNav();
     if (focus !== false) {
       const h = $('#pd-check .ck-h'); if (h) { h.focus({ preventScroll: true }); const sec = $('#checklist'); if (sec.getBoundingClientRect().top < 0 || $('#ck-panel').getBoundingClientRect().top > innerHeight) $('#pd-check .ck-steps').scrollIntoView({ block: 'start', behavior: 'smooth' }); }
     }
@@ -214,7 +264,7 @@
   function featState(v) { return v === true ? ['ok', KP.t('Ano')] : v === 'part' ? ['part', KP.t('Částečně')] : v === false ? ['no', KP.t('Ne')] : ['unk', KP.t('Netýká se')]; }
   function srcBadge(k) {
     if (k.local) return '<span class="badge badge-business">' + K.icon('building') + (KP.t('Provozovatel, jen zde') + '</span>');
-    return K.sourceBadge(k.src);
+    return K.sourceBadge(K.srcLevel(k.src, k.xs));
   }
   function renderPreview() {
     const p = state.p, s = K.facilitiesScore(p), pr = KC.progress(prof(), p.c), pf = prof();
@@ -229,9 +279,6 @@
     const feats = known.length ? '<ul class="rule-list pv-feats">' + known.map(k => { const [st, t] = featState(k.v); return '<li class="pv-feat"><span class="pv-f-l">' + esc(k.label) + '<small>' + K.AREAS[k.area] + (k.note && k.note !== k.label ? ' · ' + esc(k.note) : '') + '</small></span>' + K.statusHtml(st, t) + srcBadge(k) + '</li>'; }).join('') + '</ul>'
       : ('<p class="pd-empty">' + KP.t('O vybavení místa zatím nevíme nic. Návštěvníci uvidí „Chybí údaje“.') + '</p>');
     const phAreas = Object.keys(pf.photos || {}).filter(a => (pf.photos[a] || []).length);
-    const photos = phAreas.length ? '<ul class="pv-photos">' + [].concat(...phAreas.map(a => pf.photos[a].map((src, i) => '<li><figure class="photo"><img src="' + esc(src) + '" alt="' + esc((B.PHOTO_AREAS.find(x => x.key === a) || {}).label || a) + ', fotka ' + (i + 1) + '"><figcaption><span class="badge badge-tape">' + esc((B.PHOTO_AREAS.find(x => x.key === a) || {}).label || a) + ('</span> ' + KP.t('od provozovatele') + '</figcaption></figure></li>')))).join('') + '</ul>'
-      : ('<p class="pd-empty">' + KP.t('Zatím žádné fotky od provozovatele.') + '</p>');
-    const userPh = C.photos(p.i).filter(x => x.from === 'review').length;
     $('#pd-preview').innerHTML =
       '<div class="pv-top">' +
         ('<div class="tile pv-tile"><span class="k">' + KP.t('Accessibility Facilities Score') + '</span><span class="v pv-big">') + scoreText(s.total) + ('</span><small>' + KP.t('Podíl sledovaných prvků, které místo prokazatelně nabízí.') + '</small></div>') +
@@ -243,9 +290,28 @@
       ('<p class="small muted pv-expl">' + KP.t('Skóre počítá jen prvky, o kterých víme. Neznámé ho nesnižují ani nezvyšují. Údaje z checklistu jsou označené jako „Provozovatel“, dokud je mapovač neověří.') + ' <a href="metodika.html#overeni">' + KP.t('Úrovně ověření') + '</a></p>') +
       ('<h3 class="pv-h">' + KP.t('Skóre po oblastech') + '</h3><ul class="pv-areas">') + areaRows + '</ul>' +
       ('<h3 class="pv-h">' + KP.t('Vybavení, které návštěvníci uvidí') + '</h3>') + feats +
-      ('<h3 class="pv-h">' + KP.t('Fotky') + '</h3>') + photos + (userPh ? '<p class="small">' + K.t('Návštěvníci k místu přidali v tomto prohlížeči {n}.', { n: plural(userPh, 'fotku', 'fotky', 'fotek') }) + '</p>' : '') +
+      ('<p class="small pv-photo-link"><a href="#fotky">' + KP.t('Fotky') + '</a>: ' + (phAreas.length ? plural(phAreas.reduce((n, a) => n + pf.photos[a].length, 0), 'fotka', 'fotky', 'fotek') : KP.t('Zatím žádné fotky od provozovatele.')) + '</p>') +
       (pf.description ? ('<h3 class="pv-h">' + KP.t('Popis od provozovatele') + '</h3><p class="pv-desc">') + esc(pf.description) + '</p>' : '') +
       '<p class="small pd-note">' + esc(K.PROTOTYPE_NOTE) + (' ' + KP.t('Veřejný detail místa ukáže vaše údaje jen v tomto prohlížeči.') + ' <a href="') + K.placeUrl(p) + ('">' + KP.t('Otevřít detail místa') + '</a></p>');
+  }
+
+  // ---------- Fotky od provozovatele (z checklistu) ----------
+  function renderPhotos() {
+    const box = $('#pd-photos'); if (!box) return;
+    const p = state.p, pf = prof(), steps = KC.steps(p.c), isClaimed = !!claimed();
+    const label = (a) => (B.PHOTO_AREAS.find(x => x.key === a) || {}).label || a;
+    const phAreas = Object.keys(pf.photos || {}).filter(a => (pf.photos[a] || []).length);
+    const userPh = C.photos(p.i).filter(x => x.from === 'review').length;
+    const grid = phAreas.length ? '<ul class="pv-photos">' + [].concat(...phAreas.map(a => pf.photos[a].map((src, i) => '<li><figure class="photo"><img src="' + esc(src) + '" alt="' + esc(label(a)) + ', ' + KP.t('fotka') + ' ' + (i + 1) + '"><figcaption><span class="badge badge-brand">' + esc(label(a)) + ('</span> ' + KP.t('od provozovatele') + '</figcaption></figure></li>')))).join('') + '</ul>'
+      : '<div class="empty-state">' + K.icon('camera') + '<h3>' + KP.t('Zatím žádné fotky od provozovatele.') + '</h3><p>' + KP.t('Fotka vstupu, toalety nebo koupelny řekne víc než číslo. Host se rozhodne dřív a nemusí volat.') + '</p></div>';
+    const need = [];
+    steps.forEach((s, k) => s.photos.forEach(ph => { if (!((pf.photos || {})[ph.key] || []).length) need.push({ k, label: ph.label, step: s.label }); }));
+    const needHtml = need.length ? ('<h3 class="pv-h">' + KP.t('Které fotky chybí') + '</h3><ul class="rule-list pd-miss">') + need.map(n => '<li class="pd-miss-row"><div><b>' + esc(n.label) + '</b><small>' + esc(n.step) + '</small></div>' +
+      (isClaimed ? '<button type="button" class="btn btn-ghost btn-sm" data-goto-step="' + n.k + '">' + KP.t('Doplnit') + '</button>' : '<a class="btn btn-quiet btn-sm" href="#prevzeti">' + KP.t('Převzít a doplnit') + '</a>') + '</li>').join('') + '</ul>' : '';
+    box.innerHTML = grid + needHtml +
+      (userPh ? '<p class="small">' + K.t('Návštěvníci k místu přidali v tomto prohlížeči {n}.', { n: plural(userPh, 'fotku', 'fotky', 'fotek') }) + '</p>' : '') +
+      (p.img ? '<p class="small muted">' + KP.t('Celkový pohled na místo je z Wikimedia Commons a zůstává u místa s autorem a licencí.') + '</p>' : '') +
+      '<p class="small pd-note">' + esc(K.PROTOTYPE_NOTE) + '</p>';
   }
 
   // ---------- 4. Proč vyplnit ----------
@@ -255,7 +321,7 @@
     const ms = K.matchScore(p, needs), reqs = C.requests(p.i);
     const who = hasWc ? K.t('Návštěvník na mechanickém vozíku, který potřebuje bezbariérové WC,') : K.t('Návštěvník na mechanickém vozíku');
     $('#pd-why').innerHTML = '<ul class="rule-grid pd-why">' +
-      ('<li><h3>' + KP.t('Uvidí vás ti, kdo hledají') + '</h3><p>' + KP.t('Základní údaje vidí každý zdarma. Hosté s členstvím PLUS si uloží své potřeby a Accessibility Match jim místo s vyplněnými údaji ukáže jako „vyhovuje“, místo bez údajů jako „chybí údaje“.') + '</p>') +
+      ('<li><h3>' + KP.t('Uvidí vás ti, kdo hledají') + '</h3><p>' + KP.t('Základní údaje vidí každý zdarma. Hosté s členstvím Explorer si uloží své potřeby a Accessibility Match jim místo s vyplněnými údaji ukáže jako „vyhovuje“, místo bez údajů jako „chybí údaje“.') + '</p>') +
         '<p class="pd-live">' + who + ' ' + K.t('u vás teď uvidí') + ': ' + K.statusHtml(ms.status, K.STATUS_LABEL[ms.status]) + '<small>' + (ms.pct !== null ? K.t('{pct} % shoda', { pct: ms.pct }) + ', ' : '') + K.t('známe {k} z {n} údajů. Spočítáno z dat, která o místě máme.', { k: ms.known, n: ms.total }) + '</small></p></li>' +
       ('<li><h3>' + KP.t('Označení „Kompletní profil“') + '</h3><p>' + KP.t('Když vyplníte všechny údaje a fotky z checklistu, profil dostane označení, které návštěvník vidí hned ve výsledcích.') + '</p>') +
         '<p class="pd-live">' + (pr.complete ? K.statusHtml('ok', KP.t('Váš profil je kompletní')) : K.statusHtml('part', K.t('Chybí {n}', { n: plural(pr.missing.length, KP.t('položka'), KP.t('položky'), KP.t('položek')) }))) + '</p></li>' +
@@ -327,7 +393,8 @@
     const ia = interestAreas(reqs, reps), iaMax = ia.length ? ia[0][1] : 1;
     const iaHtml = ia.length ? '<ul class="pd-int">' + ia.map(([a, n]) => '<li><span>' + esc(K.AREAS[a] || a) + '</span><span class="rp-bar" aria-hidden="true"><i style="width:' + Math.round(n / iaMax * 100) + '%"></i></span><b>' + n + '</b></li>').join('') + '</ul>'
       : '<p class="pd-empty">' + KP.t('Zatím nikdo nežádal o konkrétní oblast ani nenahlásil změnu.') + '</p>';
-    $('#pd-stats').innerHTML =
+    const chart = '<figure class="pd-chart-empty"><div class="pd-chart-frame" aria-hidden="true"><span></span><span></span><span></span><span></span></div><figcaption><b>' + KP.t('Zobrazení profilu po týdnech') + '</b> <span class="proto-tag">' + KP.t('Prototyp') + '</span><br><span class="small muted">' + KP.t('Graf je prázdný schválně. Skutečné návštěvy prototyp neměří a čísla si nevymýšlíme. V ostré verzi se tu ukážou zobrazení ze všech návštěv.') + '</span></figcaption></figure>';
+    $('#pd-stats').innerHTML = chart +
       ('<p class="callout pd-stat-note"><b>' + KP.t('Jen tento prohlížeč.') + '</b> ' + KP.t('Počítáme jen to, co se stalo v tomto prohlížeči, třeba když jste si sami otevřeli detail místa nebo zadali žádost. Nejsou to skutečné návštěvy. V ostré verzi tu budou skutečné statistiky ze všech návštěv.') + '</p>') +
       (any ? '' : ('<p class="pd-empty">' + KP.t('Zatím žádná událost. Otevřete') + ' <a href="') + K.placeUrl(p) + ('">' + KP.t('detail místa') + '</a> ' + KP.t('nebo ho najděte v') + ' <a href="mapa.html">' + KP.t('mapě') + '</a> ' + KP.t('a čísla se tu změní.') + '</p>')) +
       '<p class="pd-stat-grp">' + KP.t('Zdarma pro každý profil') + '</p>' +
@@ -433,8 +500,23 @@
   // ---------- Události ----------
   function bind() {
     $('#pd-work').addEventListener('submit', e => { if (e.target.id === 'pd-claim-form') submitClaim(e); });
+    $('#pd-work').addEventListener('keydown', e => {
+      const b = e.target.closest && e.target.closest('#pd-nav [role="tab"]'); if (!b) return;
+      const i = TABS.indexOf(b.dataset.tabBtn), k = e.key;
+      const n = k === 'ArrowDown' || k === 'ArrowRight' ? i + 1 : k === 'ArrowUp' || k === 'ArrowLeft' ? i - 1 : k === 'Home' ? 0 : k === 'End' ? TABS.length - 1 : null;
+      if (n === null) return;
+      e.preventDefault(); showTab(TABS[(n + TABS.length) % TABS.length], true);
+    });
+    // Odkaz na sekci v jiné záložce (#checklist, #fotky…) nejdřív přepne záložku, pak prohlížeč posune stránku
+    document.addEventListener('click', e => {
+      const a = e.target.closest && e.target.closest('a[href^="#"]'); if (!a || !state.p) return;
+      const tab = tabOf(a.getAttribute('href').slice(1));
+      if (tab && tab !== state.tab) showTab(tab);
+    }, true);
     $('#pd-work').addEventListener('click', e => {
       const t = e.target;
+      const tb = t.closest('#pd-nav [role="tab"]');
+      if (tb) { showTab(tb.dataset.tabBtn); const m = $('#pd-place'); if (m.getBoundingClientRect().top < 0) m.scrollIntoView({ block: 'start', behavior: 'smooth' }); return; }
       if (t.closest('[data-other]')) { e.preventDefault(); $('#pd-q').focus(); $('#najit').scrollIntoView({ block: 'start', behavior: 'smooth' }); return; }
       if (t.closest('[data-claim-edit]')) { state.editClaim = true; renderClaim(); $('#cl-name').focus(); return; }
       if (t.closest('[data-claim-cancel]')) { state.editClaim = false; renderClaim(); return; }
@@ -470,7 +552,7 @@
       K.findPlace(id, c && c.place && c.place.r).then(p => { if (p) open(p); else K.toast(KP.t('Místo se nepodařilo načíst.')); }).catch(() => K.toast(KP.t('Místo se nepodařilo načíst.')));
     });
     // Data se mohla změnit v jiné záložce (detail místa, mapa)
-    addEventListener('storage', () => { renderTiers(); if (state.p) { renderStats(); renderWhy(); renderNav(); renderMine(); } });
+    addEventListener('storage', () => { renderTiers(); if (state.p) { renderStats(); renderWhy(); renderOverview(); renderPhotos(); renderNav(); renderMine(); } });
   }
 
   function init() {

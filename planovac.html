@@ -2,41 +2,64 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<link rel="icon" href="data:,">
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#3A4A34">
+<meta name="application-name" content="Wherethru">
+<meta property="og:site_name" content="Wherethru">
+<meta property="og:image" content="assets/brand/og-image.png">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Plánovač výletu · kudyprojedu.cz</title>
-<meta name="description" content="Jednodenní výlet bez bariér v jižních Čechách a Bavorsku: program s časy, přesuny, bezbariérovými WC a parkováním ZTP, sestavený ze skutečných dat. Prototyp členství PLUS.">
+<title>Plánovač výletu · Wherethru</title>
+<meta name="description" content="Jednodenní výlet bez bariér v jižních Čechách a Bavorsku: program s časy, přesuny, bezbariérovými WC a parkováním ZTP, sestavený ze skutečných dat. Prototyp členství Explorer.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=16">
-<link rel="stylesheet" href="assets/css/stezky.css?v=2">
-<link rel="stylesheet" href="assets/css/planovac.css?v=2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Caveat:wght@500&family=Fraunces:opsz,wght@9..144,600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=18">
+<link rel="stylesheet" href="assets/css/stezky.css?v=3">
+<link rel="stylesheet" href="assets/css/planovac.css?v=4">
 </head>
 <body class="page-planovac">
 <div id="site-header"></div>
 <main id="main">
-  <section class="wrap pl-head">
-    <p class="kicker"><span data-i18n>Plánovač jednodenního výletu</span> <span id="pl-tier"></span></p>
-    <h1 data-i18n>Výlet na jeden den, bez bariér</h1>
-    <p class="lede" data-i18n>Zadejte oblast, datum a co vás baví. Z míst, o jejichž přístupnosti máme údaje, složíme program s časy, přesuny, bezbariérovými WC a parkováním ZTP. U každé zastávky uvidíte, proč jsme ji vybrali a co nevíme.</p>
-    <p class="callout small pl-proto" id="pl-proto"></p>
-    <p class="small pl-links-top"><a href="dovolena.html" data-i18n>Vícedenní dovolená</a> · <a href="itinerar.html" data-i18n>Vlastní itinerář</a> · <a href="clenstvi.html" data-i18n>Členství FREE, PLUS a PREMIUM</a></p>
+  <section class="page-head pl-hero">
+    <div class="wrap">
+      <nav aria-label="Drobečková navigace" data-i18n-attr="aria-label"><ol class="crumbs"><li><a href="index.html" data-i18n>Domů</a></li><li><span aria-current="page" data-i18n>Plánovat</span></li></ol></nav>
+      <div class="pl-hero-in">
+        <div>
+          <p class="kicker"><span data-i18n>Plánovač jednodenního výletu</span> <span id="pl-tier"></span></p>
+          <h1 data-i18n>Výlet na jeden den, bez bariér</h1>
+          <p class="lede" data-i18n>Zadejte oblast, datum a co vás baví. Z míst, o jejichž přístupnosti máme údaje, složíme program s časy, přesuny, bezbariérovými WC a parkováním ZTP. U každé zastávky uvidíte, proč jsme ji vybrali a co nevíme.</p>
+        </div>
+        <div class="pl-hero-deco" aria-hidden="true"><span class="handnote" data-i18n>bez bariér</span><span class="route-deco"></span></div>
+      </div>
+      <nav class="seg pl-switch" aria-label="Druh plánu" data-i18n-attr="aria-label">
+        <a href="planovac.html" aria-current="page"><span data-icon="route"></span><span data-i18n>Jednodenní výlet</span></a>
+        <a href="dovolena.html"><span data-icon="calendar"></span><span data-i18n>Vícedenní dovolená</span></a>
+        <a href="itinerar.html"><span data-icon="list"></span><span data-i18n>Moje itineráře</span></a>
+      </nav>
+      <p class="small muted pl-proto" id="pl-proto"></p>
+    </div>
   </section>
 
   <div class="wrap pl-grid">
-    <form class="pl-form" id="pl-form" novalidate aria-labelledby="pl-form-h">
-      <h2 id="pl-form-h" class="st-h2" data-i18n>Zadání</h2>
+    <form class="pl-form card" id="pl-form" novalidate aria-labelledby="pl-form-h">
+      <h2 id="pl-form-h" class="h-serif pl-form-h" data-i18n>Vytvořte si výlet</h2>
       <div class="field">
-        <label for="pl-area" data-i18n>Obec nebo oblast</label>
-        <input id="pl-area" type="text" list="pl-towns" autocomplete="off" maxlength="80">
+        <label for="pl-area" data-i18n>Kam</label>
+        <div class="search-bar pl-where"><span data-icon="pin"></span><input id="pl-area" type="text" list="pl-towns" autocomplete="off" maxlength="80" aria-describedby="pl-area-h"></div>
         <datalist id="pl-towns"></datalist>
-        <span class="hint" data-i18n>Výchozí je oblast Jižní Čechy a Bavorsko. Data máme pro celé Česko a Bavorsko.</span>
+        <span class="hint" id="pl-area-h" data-i18n>Výchozí je oblast Jižní Čechy a Bavorsko. Data máme pro celé Česko a Bavorsko.</span>
         <div class="chip-row pl-sug" id="pl-sug" aria-label="Rychlá volba" data-i18n-attr="aria-label"></div>
       </div>
       <div class="pl-two">
         <div class="field"><label for="pl-date" data-i18n>Datum</label><input id="pl-date" type="date" required></div>
         <div class="field"><label for="pl-start" data-i18n>Začátek</label><input id="pl-start" type="time" value="09:30" step="900"></div>
       </div>
+      <fieldset class="pl-fs">
+        <legend data-i18n>Potřeby mobility</legend>
+        <div id="pl-mob"></div>
+      </fieldset>
       <fieldset class="pl-fs">
         <legend data-i18n>Co vás baví</legend>
         <div class="pl-chips" id="pl-int"></div>
@@ -55,32 +78,34 @@
         <select id="pl-budget"></select>
         <span class="hint" data-i18n>Orientační. Ceny vstupů většinou neznáme, víme jen, kde OpenStreetMap uvádí vstup zdarma nebo placený.</span>
       </div>
-      <fieldset class="pl-fs">
-        <legend data-i18n>Mobilita</legend>
-        <div id="pl-mob"></div>
-      </fieldset>
-      <button class="btn btn-primary btn-lg pl-go" type="submit" data-i18n>Navrhnout výlet</button>
+      <button class="btn btn-primary btn-lg pl-go" type="submit"><span data-icon="sparkle"></span><span data-i18n>Sestavit výlet</span></button>
+      <p class="small muted pl-honest" data-i18n>Návrh podle pravidel nad skutečnými daty. Nic si nevymýšlíme.</p>
     </form>
 
     <section class="pl-out" id="pl-out" aria-live="polite" aria-label="Návrh výletu" data-i18n-attr="aria-label">
       <div class="pl-status pl-intro">
-        <p class="kicker" data-i18n>Jak plán vzniká</p>
-        <p data-i18n>Vybíráme jen místa, u kterých známe přístupnost vstupu. S profilem potřeb (PLUS) je řadíme podle shody s vašimi požadavky. Přednost mají místa s naměřenými údaji, fotkou a údaji z webu provozovatele. Pak hledáme bezbariérové WC a parkování ZTP v okolí a hlídáme otevírací dobu, kde ji známe.</p>
-        <p class="small muted" data-i18n>Bez PLUS uvidíte náhled první zastávky.</p>
+        <h2 class="h-serif" data-i18n>Jak plán vzniká</h2>
+        <ol class="steps">
+          <li><div><h3 data-i18n>Jen místa se známou přístupností</h3><p data-i18n>Vybíráme místa, u kterých známe přístupnost vstupu. Přednost mají místa s naměřenými údaji, fotkou a údaji z webu provozovatele.</p></div></li>
+          <li><div><h3 data-i18n>Podle vašich potřeb</h3><p data-i18n>S profilem potřeb (Explorer) místa řadíme podle shody s vašimi požadavky. Bez profilu podle obecného údaje o vstupu.</p></div></li>
+          <li><div><h3 data-i18n>WC, parkování a otevírací doba</h3><p data-i18n>K zastávkám hledáme bezbariérové WC a parkování ZTP v okolí a hlídáme otevírací dobu, kde ji známe.</p></div></li>
+        </ol>
+        <p class="small muted" data-i18n>Bez úrovně Explorer uvidíte náhled první zastávky.</p>
       </div>
     </section>
   </div>
 </main>
 <div id="site-footer"></div>
-<script src="assets/js/i18n.js?v=2"></script>
-<script src="assets/js/i18n/core.js?v=3"></script>
+<script src="assets/js/i18n.js?v=3"></script>
+<script src="assets/js/i18n/core.js?v=6"></script>
 <script src="assets/js/i18n/stezky.js?v=1"></script>
 <script src="assets/js/i18n/itinerar.js?v=2"></script>
-<script src="assets/js/i18n/planovac.js?v=4"></script>
+<script src="assets/js/i18n/planovac.js?v=6"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=16"></script>
-<script src="assets/js/map-engine.js?v=12"></script>
-<script src="assets/js/stezky.js?v=3"></script>
-<script src="assets/js/planovac.js?v=3"></script>
+<script src="assets/icons/icons.js?v=1"></script>
+<script src="assets/js/core.js?v=18"></script>
+<script src="assets/js/map-engine.js?v=16"></script>
+<script src="assets/js/stezky.js?v=4"></script>
+<script src="assets/js/planovac.js?v=6"></script>
 </body>
 </html>

@@ -17,30 +17,7 @@
     setTimeout(() => { if (btn.isConnected) { delete btn.dataset.confirm; btn.textContent = btn.dataset.label || KP.t('Smazat'); } }, 5000);
   }
 
-  // Styly pro členství, sledování, seznamy a sdílení (pages-b.css patří i jiným stránkám, proto tady)
-  (function profilCss() {
-    if (document.getElementById('pf-tier-css')) return;
-    const st = document.createElement('style'); st.id = 'pf-tier-css';
-    st.textContent =
-      '.pf-tier-now{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:0 0 4px}' +
-      '.pf-tier-now b{font-family:var(--f-display);font-size:1.4rem}.pf-tier-now span:last-child{color:var(--ink-2)}' +
-      '.pf-tier-price{margin:0 0 16px;font-weight:700}' +
-      '.pf-tier-list{list-style:none;margin:0 0 16px;padding:0;border-top:1px solid var(--rule)}' +
-      '.pf-tier-list li{display:grid;grid-template-columns:84px minmax(0,1fr);gap:12px;align-items:center;min-height:44px;padding:8px 0;border-bottom:1px solid var(--line)}' +
-      '.pf-tier-list li.is-off{color:var(--ink-3)}' +
-      '.pf-mark{display:inline-flex;align-items:center}.pf-mark svg{width:20px;height:20px}' +
-      '.pf-lock{display:grid;gap:8px;padding:14px 16px;border:1px solid var(--rule);border-left:6px solid var(--signal);background:var(--surface);margin:0 0 12px}' +
-      '.pf-lock p{margin:0}.pf-lock .btn{justify-self:start}' +
-      '.pf-changes{list-style:none;margin:6px 0 0;padding:8px 12px;border-left:4px solid var(--signal);background:var(--surface-2);display:grid;gap:4px}' +
-      '.pf-chfrom{text-decoration:line-through;color:var(--ink-3)}.pf-chto{font-weight:700}' +
-      '.pf-collform{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 12px}.pf-collform input{flex:1 1 220px;min-height:44px}' +
-      '.pf-cplaces{list-style:none;margin:6px 0;padding:0;display:grid;gap:2px}' +
-      '.pf-cplaces li{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;min-height:44px}' +
-      '.pf-coll select{min-height:44px;max-width:100%}' +
-      '.pf-shared{padding:16px;border:2px solid var(--rule);border-left:8px solid var(--signal);margin:0 0 24px}' +
-      '.pf-shared h2{margin:0 0 8px}.pf-shared .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}';
-    document.head.appendChild(st);
-  })();
+  // Styly stránky jsou v assets/css/profil.css (dříve vkládané odsud)
 
   // ---------- Členství (PROTOTYP: úroveň jen v tomto prohlížeči, nic se neplatí) ----------
   // Co je vždy zdarma: přesné body úrovně FREE
@@ -73,6 +50,41 @@
       '<button class="btn btn-ghost btn-sm" type="button" data-try="' + K.esc(feature) + '">' + K.esc(KP.t('Vyzkoušet (prototyp)')) + '</button></div>';
   }
 
+  // ---------- Hlavička: úroveň a počty (jen data z tohoto prohlížeče) ----------
+  function renderHero() {
+    const k = K.tier(), T = K.TIERS[k];
+    const ht = $('#pf-hero-tier'); if (ht) ht.innerHTML = K.tierTag(k) + ' <span>' + K.esc(T.priceLabel) + '</span> <a href="#clenstvi">' + K.esc(KP.t('Změnit úroveň')) + '</a>';
+    const stat = (n, l, href, ico) => '<li><a href="' + href + '">' + K.icon(ico) + '<b class="num">' + K.nf(n) + '</b><span>' + l + '</span></a></li>';
+    const el = $('#pf-stats'); if (!el) return;
+    el.innerHTML = stat(K.saved.all().length, KP.t('uložených míst'), '#ulozena', 'heart') +
+      stat(C.myReviews().length, KP.t('hodnocení'), '#hodnoceni', 'message') +
+      stat(C.routes().length + C.itineraries().length, KP.t('tras a itinerářů'), '#trasy', 'route');
+  }
+
+  // ---------- Kdo cestuje: čipy skupin (volba nastaví pomůcku v profilu přístupnosti) ----------
+  const GROUPS = [['vozik', KP.t('Vozík'), 'wheel'], ['pohyblivost', KP.t('Snížená pohyblivost'), 'walker'], ['kocarek', KP.t('Kočárek'), 'stroller'],
+    ['zrak', KP.t('Zrak'), 'eye'], ['sluch', KP.t('Sluch'), 'hearing-loop'], ['jine', KP.t('Jiné'), 'plus']];
+  const WHEEL_AIDS = ['mechanický vozík', 'elektrický vozík', 'vozík s přídavným pohonem'];
+  function renderGroups() {
+    const el = $('#pf-groups'); if (!el) return;
+    const on = K.store.get('profileGroups', []);
+    el.innerHTML = GROUPS.map(([k, l, ic]) => '<button class="chip pf-gchip" type="button" data-group="' + k + '" aria-pressed="' + on.includes(k) + '">' + K.icon(ic) + '<span>' + l + '</span></button>').join('');
+    const note = $('#pf-groups-note');
+    if (note) note.textContent = KP.t('Volba Vozík, Snížená pohyblivost nebo Kočárek nastaví pomůcku v profilu přístupnosti. Zrak a sluch zatím shodu neovlivní, údajů o nich je v datech málo.');
+  }
+  function toggleGroup(k) {
+    const on = K.store.get('profileGroups', []), i = on.indexOf(k);
+    if (i >= 0) on.splice(i, 1); else on.push(k);
+    K.store.set('profileGroups', on);
+    if (i < 0) {
+      const n = K.getNeeds();
+      const aid = k === 'vozik' ? (WHEEL_AIDS.includes(n.aid) ? n.aid : 'mechanický vozík') : k === 'pohyblivost' ? (['chodítko', 'berle'].includes(n.aid) ? n.aid : 'chodítko') : k === 'kocarek' ? 'kočárek' : null;
+      if (aid && aid !== n.aid) { K.setNeeds(Object.assign(n, { aid })); K.toast(K.t('Pomůcka v profilu: {a}', { a: K.t(aid) })); }
+    }
+    renderGroups();
+    const b = document.querySelector('[data-group="' + k + '"]'); if (b) b.focus();
+  }
+
   // ---------- Profil přístupnosti (formulář přímo na stránce) ----------
   function renderNeeds() {
     const n = K.getNeeds(), has = K.hasTier('needsProfile');
@@ -80,7 +92,7 @@
     $('#needs-lock').hidden = has;
     if (!has) {
       $('#needs-state').innerHTML = K.tierBadge('needsProfile');
-      $('#needs-lock').outerHTML = '<div id="needs-lock">' + lockHtml('needsProfile', KP.t('Uložené potřeby se nemažou, ve FREE se jen nepoužijí.')) + '</div>';
+      $('#needs-lock').outerHTML = '<div id="needs-lock">' + lockHtml('needsProfile', KP.t('Uložené potřeby se nemažou, ve Free se jen nepoužijí.')) + '</div>';
       return;
     }
     $('#needs-state').innerHTML = n.active ? K.statusHtml('ok', KP.t('Zapnuto')) : K.statusHtml('unk', KP.t('Vypnuto'));
@@ -97,8 +109,10 @@
   }
 
   // ---------- Uložená místa ----------
+  // Karta uloženého místa (.place-tile): fotka 4:3 nebo ikona kategorie, kulatá ikona přístupnosti, srdíčko
   function placeRow(p, needs) {
-    const st = p.c !== 'parkovani' ? K.statusHtml(K.W[p.w || 'null'].st, K.W[p.w || 'null'].short) : '';
+    const park = p.c === 'parkovani', w = K.W[p.w || 'null'], st = park ? 'ok' : w.st;
+    const cat = K.CATS[p.c] || { icon: 'pin', label: '' };
     let fit = '';
     if (needs.active) {
       const m = K.matchScore(p, needs);
@@ -107,23 +121,29 @@
     }
     const fs = K.facilitiesScore(p);
     const fsTxt = fs.total === null ? K.t('Vybavení: bez údajů') : K.t('Vybavení {pct} % sledovaných prvků', { pct: fs.total });
-    const ph = p.img ? '<figure class="photo pf-ph"><img src="' + K.esc(K.commonsImg(p.img, 640)) + '" alt="" loading="lazy" decoding="async">' +
-      '<figcaption><a href="' + K.esc(K.commonsPage(p.img)) + ('" target="_blank" rel="noopener">' + KP.t('Foto: Wikimedia Commons') + '</a></figcaption></figure>') : '';
-    return '<li class="rule-row pf-row' + (ph ? ' has-ph' : '') + '">' + ph +
-      '<div class="pf-txt"><a class="pf-link" href="' + K.placeUrl(p) + '"><b>' + K.esc(p.n) + '</b></a>' +
-      '<small>' + K.esc([p.s && K.t(p.s), p.o, K.zemeOf(p) === 'de' ? K.t('Bavorsko') : ''].filter(Boolean).join(' · ')) + '</small>' + st + fit +
-      '<small>' + fsTxt + '</small></div></li>';
+    const media = p.img ? '<div class="place-tile-media"><img src="' + K.esc(K.commonsImg(p.img, 640)) + '" alt="" loading="lazy" decoding="async"></div>'
+      : '<div class="place-tile-media no-photo">' + K.icon(cat.icon) + '</div>';
+    const accLabel = park ? KP.t('Parkování pro držitele průkazu ZTP') : w.label;
+    return '<li class="place-tile pf-tile" data-cat-icon="' + K.esc(cat.icon) + '">' + media +
+      '<span class="place-tile-access' + (st === 'ok' ? '' : ' ' + st) + '" role="img" aria-label="' + K.esc(accLabel) + '" title="' + K.esc(accLabel) + '">' + K.icon(park ? 'parking-ztp' : 'wheel') + '</span>' +
+      '<button class="place-tile-save" type="button" aria-pressed="true" data-unsave="' + K.esc(p.i) + '" aria-label="' + K.esc(K.t('Odebrat z uložených: {n}', { n: p.n })) + '">' + K.icon('heart-filled') + '</button>' +
+      '<div class="place-tile-body"><h3><a href="' + K.placeUrl(p) + '">' + K.esc(p.n) + '</a></h3>' +
+      '<span class="meta">' + K.esc([p.s && K.t(p.s), p.o, K.zemeOf(p) === 'de' ? K.t('Bavorsko') : ''].filter(Boolean).join(' · ')) + '</span>' +
+      (park ? '' : K.statusHtml(w.st, w.short)) + fit + '<span class="meta">' + fsTxt + '</span>' +
+      (p.img ? '<a class="credit" href="' + K.esc(K.commonsPage(p.img)) + '" target="_blank" rel="noopener">' + KP.t('Foto: Wikimedia Commons') + '</a>' : '') + '</div></li>';
   }
-  // Fotka, která se nenačte, zmizí i s popiskem; řádek funguje dál bez ní
+  // Fotka, která se nenačte, se nahradí ikonou kategorie; karta funguje dál
   function dropBrokenPhotos(root) {
-    root.querySelectorAll('.pf-ph img').forEach(img => img.addEventListener('error', () => {
-      const li = img.closest('.pf-row'); if (li) li.classList.remove('has-ph'); img.closest('figure').remove();
+    root.querySelectorAll('.pf-tile .place-tile-media img').forEach(img => img.addEventListener('error', () => {
+      const li = img.closest('.pf-tile'), m = img.parentNode;
+      m.classList.add('no-photo'); m.innerHTML = K.icon(li ? li.dataset.catIcon : 'pin');
+      const cr = li && li.querySelector('.credit'); if (cr) cr.remove();
     }, { once: true }));
   }
   // FREE: nejvýš KP.FREE_SAVE_LIMIT míst; nad limit se nic nemaže, jen nejde přidat další
   function limitLine(n) {
     if (K.hasTier('unlimitedSaves')) return '';
-    return '<p class="small">' + K.esc(K.t('Uloženo {n} z {max} míst. Neomezené ukládání je součást PLUS.', { n, max: K.FREE_SAVE_LIMIT })) + ' ' + K.tierBadge('unlimitedSaves') + '</p>';
+    return '<p class="small">' + K.esc(K.t('Uloženo {n} z {max} míst. Neomezené ukládání je součást Explorer.', { n, max: K.FREE_SAVE_LIMIT })) + ' ' + K.tierBadge('unlimitedSaves') + '</p>';
   }
   let SAVED_ITEMS = null;
   function renderSaved() {
@@ -132,8 +152,8 @@
     if (!ids.length) { $('#saved').innerHTML = empty(KP.t('Zatím nemáte uložená žádná místa. Uložíte je tlačítkem Uložit v detailu místa.'), 'mapa.html', KP.t('Otevřít mapu')); return; }
     const draw = (items) => {
       const missing = ids.length - items.length, needs = K.getNeeds();
-      $('#saved').innerHTML = limitLine(ids.length) + (needs.active ? '' : ('<p class="small muted">' + (K.hasTier('match') ? KP.t('Shodu v procentech uvidíte, až vyplníte profil přístupnosti.') : KP.t('Shoda v procentech (Accessibility Match) je součást PLUS.') + ' ' + K.tierBadge('match')) + '</p>')) +
-        '<ul class="pf-list rule-list">' + items.map(p => placeRow(p, needs)).join('') + '</ul>' +
+      $('#saved').innerHTML = limitLine(ids.length) + (needs.active ? '' : ('<p class="small muted">' + (K.hasTier('match') ? KP.t('Shodu v procentech uvidíte, až vyplníte profil přístupnosti.') : KP.t('Shoda v procentech (Accessibility Match) je součást Explorer.') + ' ' + K.tierBadge('match')) + '</p>')) +
+        '<ul class="pf-tiles">' + items.map(p => placeRow(p, needs)).join('') + '</ul>' +
         (missing ? '<p class="small muted">' + K.t('{n} v aktuálních datech není.', { n: plural(missing, KP.t('uložené místo už'), KP.t('uložená místa už'), KP.t('uložených míst už')) }) + '</p>' : '');
       dropBrokenPhotos($('#saved'));
     };
@@ -163,7 +183,7 @@
     const savedOpts = K.saved.all();
     const form = has ? '<form class="pf-collform" data-coll-new><label class="sr-only" for="coll-name">' + K.esc(KP.t('Název seznamu')) + '</label>' +
       '<input id="coll-name" type="text" maxlength="60" placeholder="' + K.esc(KP.t('Název seznamu, třeba Výlet do Českých Budějovic')) + '" required>' +
-      '<button class="btn btn-ghost" type="submit">' + K.icon('plus') + K.esc(KP.t('Vytvořit seznam')) + '</button></form>' : lockHtml('customLists', KP.t('Vaše dřívější seznamy zůstávají, upravovat je jde v PLUS.'));
+      '<button class="btn btn-ghost" type="submit">' + K.icon('plus') + K.esc(KP.t('Vytvořit seznam')) + '</button></form>' : lockHtml('customLists', KP.t('Vaše dřívější seznamy zůstávají, upravovat je jde v Explorer.'));
     const row = (c) => {
       const places = c.ids.map(id => '<li><a href="' + K.placeUrl({ i: id, _r: (NAMES[id] && NAMES[id].r) || '' }) + '">' + K.esc(nameOf(id)) + '</a>' +
         (has ? '<button class="btn btn-quiet btn-sm" type="button" data-coll-rm="' + K.esc(c.id) + '" data-place="' + K.esc(id) + '">' + K.esc(KP.t('Odebrat')) + '</button>' : '') + '</li>').join('');
@@ -229,7 +249,7 @@
     if (!ids.length) { $('#watch').innerHTML = has ? empty(KP.t('Zatím nic nesledujete. V detailu místa zapněte Sledovat změny.'), 'mapa.html', KP.t('Najít místo'), true) : lockHtml('changeAlerts'); return; }
     const all = W.all();
     if (!has) {
-      $('#watch').innerHTML = lockHtml('changeAlerts', KP.t('Sledovaná místa zůstávají uložená, změny ukážeme v PLUS.')) +
+      $('#watch').innerHTML = lockHtml('changeAlerts', KP.t('Sledovaná místa zůstávají uložená, změny ukážeme v Explorer.')) +
         '<ul class="pf-list rule-list">' + ids.map(id => '<li class="rule-row pf-line"><span class="pf-txt">' + placeLink(id, all[id]) + '<small>' + K.esc(K.t('Sledujete od {d}', { d: K.fmtDate(all[id].date) })) + '</small></span></li>').join('') + '</ul>';
       return;
     }
@@ -346,6 +366,7 @@
   function bindActions() {
     document.querySelector('.pf-main').addEventListener('click', (e) => {
       const b = e.target.closest('button'); if (!b) return;
+      if (b.dataset.unsave) { K.saved.toggle(b.dataset.unsave); K.toast(KP.t('Místo odebráno z uložených.')); return; }
       if (b.dataset.delRev) confirmClick(b, null, () => { C.deleteReview(b.dataset.place, b.dataset.delRev); renderReviews(); K.toast(KP.t('Hodnocení smazáno.')); });
       else if (b.dataset.delRoute) confirmClick(b, null, () => { C.deleteRoute(b.dataset.delRoute); renderRoutes(); K.toast(KP.t('Trasa smazána.')); });
       else if (b.dataset.delIt) confirmClick(b, null, () => { C.deleteItinerary(b.dataset.delIt); renderRoutes(); K.toast(KP.t('Itinerář smazán.')); });
@@ -372,7 +393,8 @@
   function bindTierActions() {
     document.querySelector('.pf-layout').addEventListener('click', (e) => {
       const b = e.target.closest('button'); if (!b) return;
-      if (b.hasAttribute('data-tier-switch')) K.tierSwitch();
+      if (b.dataset.group) toggleGroup(b.dataset.group);
+      else if (b.hasAttribute('data-tier-switch')) K.tierSwitch();
       else if (b.dataset.try) K.requireTier(b.dataset.try, () => {});
       else if (b.dataset.unwatch) { K.watch.remove(b.dataset.unwatch); renderWatch(); K.toast(KP.t('Změny u tohoto místa už nesledujete.')); }
       else if (b.dataset.watchAck) { const p = (WATCH_ITEMS || []).find(x => x.i === b.dataset.watchAck); if (p) { K.watch.accept(p); renderWatch(); K.toast(KP.t('Změny vzaty na vědomí.')); } }
@@ -405,14 +427,14 @@
     return { k: o.k === 'partner' ? 'partner' : 'list', n: String(o.n || '').slice(0, 60), s: okList(o.s), l: Array.isArray(o.l) ? o.l.slice(0, 50).map(l => ({ n: String((l && l.n) || '').slice(0, 60), s: okList(l && l.s) })) : [] };
   }
 
-  function renderAll() { renderTier(); renderNeeds(); renderSaved(); renderCollections(); renderWatch(); renderPartner(); renderShared(); renderReviews(); renderRoutes(); renderClaims(); renderReports(); renderDrafts(); }
+  function renderAll() { renderHero(); renderGroups(); renderTier(); renderNeeds(); renderSaved(); renderCollections(); renderWatch(); renderPartner(); renderShared(); renderReviews(); renderRoutes(); renderClaims(); renderReports(); renderDrafts(); }
   function init() {
     SHARED = readShared();
     renderAll(); bindNeeds(); bindActions(); bindTierActions();
     if (SHARED) { const h = $('#shared-h'); if (h) { h.setAttribute('tabindex', '-1'); h.focus(); } }
     document.addEventListener('kp:needs', () => { renderNeeds(); renderSaved(); });
-    document.addEventListener('kp:tier', () => { renderTier(); renderNeeds(); renderSaved(); renderCollections(); renderWatch(); renderPartner(); renderShared(); });
-    document.addEventListener('kp:saved', () => { SAVED_ITEMS = null; renderSaved(); renderCollections(); });
+    document.addEventListener('kp:tier', () => { renderHero(); renderTier(); renderNeeds(); renderSaved(); renderCollections(); renderWatch(); renderPartner(); renderShared(); });
+    document.addEventListener('kp:saved', () => { SAVED_ITEMS = null; renderHero(); renderSaved(); renderCollections(); });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();

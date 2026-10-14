@@ -1,7 +1,7 @@
 /* Slovník: Jak měříme (metodika.html). Klíč = český text, [němčina, angličtina].
    Názvy předpisů, datových sad a organizací zůstávají v originále. */
 KP.i18n.add({
-  "Odkud pocházejí data kudyprojedu.cz, jak měřit dveře, schody, rampy a toalety a podle jakých norem hodnotíme přístupnost.": ["Woher die Daten von kudyprojedu.cz stammen, wie man Türen, Stufen, Rampen und Toiletten misst und nach welchen Normen wir die Barrierefreiheit bewerten.", "Where the kudyprojedu.cz data comes from, how to measure doors, steps, ramps and toilets, and which standards we use to rate accessibility."],
+  "Odkud pocházejí data Wherethru, jak měřit dveře, schody, rampy a toalety a podle jakých norem hodnotíme přístupnost.": ["Woher die Daten von Wherethru stammen, wie man Türen, Stufen, Rampen und Toiletten misst und nach welchen Normen wir die Barrierefreiheit bewerten.", "Where the Wherethru data comes from, how to measure doors, steps, ramps and toilets, and which standards we use to rate accessibility."],
   "Metodika a data": ["Methodik und Daten", "Method and data"],
   "Odkud údaje o přístupnosti pocházejí, co přesně znamenají a jak si dveře, schod nebo toaletu změříte sami. Hodnotíme podle české metodiky a norem, ne podle dojmu.": ["Woher die Angaben zur Barrierefreiheit stammen, was sie genau bedeuten und wie Sie Tür, Stufe oder Toilette selbst messen. Wir bewerten nach der tschechischen Methodik und nach Normen, nicht nach Eindruck.", "Where the accessibility data comes from, what exactly it means and how to measure a door, step or toilet yourself. We rate by the Czech method and standards, not by impression."],
   "Přístupný objekt podle metodiky POV": ["Zugängliches Gebäude nach der POV-Methodik", "Accessible building under the POV method"],
@@ -174,6 +174,7 @@ KP.i18n.add({
   "Zadali dobrovolníci nebo návštěvníci. Ukazujeme datum poslední úpravy a případně datum kontroly na místě.": ["Von Freiwilligen oder Besuchern eingetragen. Wir zeigen das Datum der letzten Änderung und gegebenenfalls das Datum der Prüfung vor Ort.", "Entered by volunteers or visitors. We show the date of the last change and, where available, the date of the on-site check."],
   "Vyplnil hotel, restaurace nebo úřad přes náš kontrolní seznam. Dokud to nikdo nepotvrdí, zůstává takto označené.": ["Von einem Hotel, Restaurant oder einer Behörde über unsere Checkliste ausgefüllt. Solange es niemand bestätigt, bleibt es so gekennzeichnet.", "Filled in by a hotel, restaurant or office using our checklist. It stays labelled this way until someone confirms it."],
   "Naměřil proškolený mapovač podle metodiky POV. Ověření platí 3 roky, pak ho obnovujeme.": ["Von einem geschulten Erfasser nach der POV-Methodik gemessen. Die Prüfung gilt 3 Jahre, dann erneuern wir sie.", "Measured by a trained surveyor using the POV method. Verification is valid for 3 years, then we renew it."],
+  "Převzali jsme je z otevřených dat měst, krajů nebo dopravců (třeba IPR Praha, Brno, DB nebo Mnichov). Uvádíme zdroj, licenci a datum. Sami jsme je neměřili.": ["Wir haben sie aus offenen Daten von Städten, Regionen oder Verkehrsunternehmen übernommen (etwa IPR Prag, Brünn, DB oder München). Wir nennen Quelle, Lizenz und Datum. Selbst gemessen haben wir sie nicht.", "We took them from open data of cities, regions or transport operators (such as IPR Prague, Brno, DB or Munich). We state the source, licence and date. We did not measure them ourselves."],
   "Když někdo nahlásí, že údaj už neplatí, označíme ho a požádáme provozovatele nebo mapovače o kontrolu.": ["Meldet jemand, dass eine Angabe nicht mehr stimmt, kennzeichnen wir sie und bitten den Betreiber oder einen Erfasser um Prüfung.", "If someone reports that an item is no longer valid, we flag it and ask the operator or a surveyor to check it."],
 
   // 06 Soukromí a GDPR
@@ -186,4 +187,10 @@ KP.i18n.add({
   "Export ve standardu A11yJSON": ["Export im Standard A11yJSON", "Export in the A11yJSON standard"],
   "Vlastní formát nevymýšlíme. Naměřená data ukládáme ve struktuře A11yJSON, otevřeného standardu nad GeoJSON od berlínské organizace Sozialhelden, kterou čte i Wheelmap. Obce, kraje a turistické centrály si tak data mohou převzít do svých systémů.": ["Wir erfinden kein eigenes Format. Gemessene Daten speichern wir in der Struktur <a href='https://sozialhelden.github.io/a11yjson/' target='_blank' rel='noopener'>A11yJSON</a>, einem offenen Standard auf Basis von GeoJSON der Berliner Organisation Sozialhelden, den auch Wheelmap liest. So können Gemeinden, Regionen und Tourismusverbände die Daten in ihre Systeme übernehmen.", "We do not invent our own format. We store measured data in the <a href='https://sozialhelden.github.io/a11yjson/' target='_blank' rel='noopener'>A11yJSON</a> structure, an open standard built on GeoJSON by the Berlin organisation Sozialhelden, which Wheelmap also reads. Municipalities, regions and tourist boards can import the data into their own systems."],
   "Ukázka struktury, ne údaje konkrétního místa.": ["Beispiel der Struktur, keine Daten eines bestimmten Ortes.", "Example of the structure, not data for a real place."]
+});
+
+/* v4 Wherethru: drobečková navigace */
+KP.i18n.add({
+  "Úvod": ["Startseite", "Home"],
+  "Drobečková navigace": ["Brotkrümelnavigation", "Breadcrumb"],
 });

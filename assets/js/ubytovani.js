@@ -1,203 +1,122 @@
-/* Stránka Ubytování: výpis míst s c='ubytovani' ze všech regionů v data/regions/ (Česko a Bavorsko; výtah data/regions/ubytovani.json, záložně KP.loadAll), filtry v řadě čipů (na mobilu ve spodním panelu) a řazení.
-   Výpis je adresář s linkami (verze 3, DESIGN.md), fotka z Wikimedia Commons jen u míst s polem img.
-   Pole r (nepovinné) = údaje z webu provozovatele:
+/* Stránka Ubytování: výpis míst s c='ubytovani' ze všech regionů v data/regions/ (Česko a Bavorsko; výtah data/regions/ubytovani.json,
+   záložně KP.loadAll). Filtry sdílí s mapou (assets/js/filters.js): hledání s tlačítkem Filtry, řada druhů ubytování s ikonami,
+   rychlé čipy přístupnosti, panel Filtry (PC stálý sloupec vlevo, mobil spodní panel), aktivní filtry, filtry v adrese stránky.
+   Filtry pokojů (bezbariérový pokoj, sprcha, madla) jen z údajů, které opravdu máme (rešerše webů provozovatelů, pole r):
    [{ url, date, source_type, claim, items: { vstup, wc, pokoj, koupelna, parkovani, vytah, jine }, measurements: [{ co, hodnota, jednotka }] }] */
 (function () {
   'use strict';
-  const K = window.KP, $ = (s) => document.querySelector(s), $$ = (s) => [...document.querySelectorAll(s)];
+  const K = window.KP, KF = window.KPFilters, $ = (s) => document.querySelector(s);
   const PAGE = 30;
-  const RANK = { yes: 0, limited: 1, null: 2, no: 3 };
-  const W_SETS = { yl: ['yes', 'limited'], y: ['yes'], l: ['limited'], u: ['null'], n: ['no'], all: ['yes', 'limited', 'null', 'no'] };
-  const TOGGLES = ['#f-wc', '#f-r', '#f-web'];
-  const mobile = matchMedia('(max-width: 899px)');
-  let ALL = [], shown = PAGE, NEEDS = null;
-
+  const mqDesk = matchMedia('(min-width: 900px)');
+  let ALL = [], shown = PAGE, ctrl = null, sortBy = K.store.get('ub.sort', 'complete');
   const nf = (n) => K.nf(n);
-  function norm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
-  function reports(p) { return Array.isArray(p.r) ? p.r.filter(r => r && typeof r === 'object') : []; }
-  const pressed = (s) => $(s).getAttribute('aria-pressed') === 'true';
-  const setPressed = (s, on) => $(s).setAttribute('aria-pressed', on ? 'true' : 'false');
+  const reports = (p) => (Array.isArray(p.r) ? p.r.filter(r => r && typeof r === 'object') : []);
 
-  function state() {
-    return {
-      q: norm($('#f-q').value.trim()), kraj: $('#f-kraj').value, obec: $('#f-obec').value, typ: $('#f-typ').value,
-      wKey: $('#f-w').value, w: new Set(W_SETS[$('#f-w').value] || W_SETS.yl),
-      wc: pressed('#f-wc'), r: pressed('#f-r'), web: pressed('#f-web'), sort: $('#f-sort').value,
-    };
-  }
-  // Kolik filtrů se liší od výchozího stavu (hledání a řazení se nepočítá)
-  function activeCount(s) { return [s.kraj, s.obec, s.typ, s.wKey !== 'yl', s.wc, s.r, s.web].filter(Boolean).length; }
-
-  function filter(s) {
-    return ALL.filter(p => {
-      if (s.kraj && p.k !== s.kraj) return false;
-      if (s.obec && p.o !== s.obec) return false;
-      if (s.typ && p.s !== s.typ) return false;
-      if (!s.w.has(String(p.w || 'null'))) return false;
-      if (s.wc && p.t !== 'yes') return false;
-      if (s.r && !reports(p).length) return false;
-      if (s.web && !(p.web || p.ph)) return false;
-      if (s.q && !norm(p.n + ' ' + (p.o || '') + ' ' + (p.s || '')).includes(s.q)) return false;
-      return true;
-    });
+  // Řazení: „Nejvíc údajů“ dává dopředu ubytování s údaji od provozovatele (jako dřív), ostatní řazení ze sdíleného modulu
+  function sorted(list) {
+    if (sortBy !== 'complete') return KF.sortList(list, sortBy === 'match' && !K.hasTier('match') ? 'complete' : sortBy);
+    const RANK = { yes: 0, limited: 1, null: 2, no: 3 };
+    return list.slice().sort((a, b) => (reports(b).length > 0) - (reports(a).length > 0) || b._c - a._c || RANK[String(a.w || 'null')] - RANK[String(b.w || 'null')] || a.n.localeCompare(b.n, 'cs'));
   }
 
-  function sort(list, by) {
-    const cmpName = (a, b) => a.n.localeCompare(b.n, 'cs');
-    const f = {
-      name: cmpName,
-      obec: (a, b) => (a.o || '').localeCompare(b.o || '', 'cs') || cmpName(a, b),
-      access: (a, b) => RANK[String(a.w || 'null')] - RANK[String(b.w || 'null')] || (b.t === 'yes') - (a.t === 'yes') || reports(b).length - reports(a).length || b._c - a._c || cmpName(a, b),
-      complete: (a, b) => (reports(b).length > 0) - (reports(a).length > 0) || b._c - a._c || RANK[String(a.w || 'null')] - RANK[String(b.w || 'null')] || cmpName(a, b),
-    }[by] || cmpName;
-    return list.slice().sort(f);
-  }
-
-  // Řádek adresáře: text vlevo, fotka z Wikimedia Commons vpravo (jen pokud existuje)
-  function cardHtml(p) {
-    const w = K.W[p.w || 'null'];
-    const rs = reports(p);
-    const unknown = [];
-    if (!p.t) unknown.push(K.t('toaleta'));
-    if (!rs.length) unknown.push(KP.t('pokoj a koupelna'));
-    const href = K.placeUrl(p);
-    const photo = p.img ? '<figure class="photo ub-photo"><a href="' + href + '" tabindex="-1" aria-hidden="true"><img src="' + K.commonsImg(p.img, 320) + '" srcset="' + K.commonsImg(p.img, 320) + ' 320w, ' + K.commonsImg(p.img, 640) + ' 640w" sizes="(min-width: 640px) 220px, 120px" width="320" height="213" alt="" loading="lazy" decoding="async"></a>' +
-      '<figcaption><a href="' + K.commonsPage(p.img) + ('" target="_blank" rel="noopener">' + KP.t('Foto: Wikimedia Commons') + '</a></figcaption></figure>') : '';
-    return '<li class="ub-row' + (p.img ? ' has-photo' : '') + '"><a class="ub-card" href="' + href + '">' +
-      '<span class="ub-name">' + K.esc(p.n) + '</span>' +
-      '<span class="ub-meta">' + K.esc([p.o, p.s && K.t(p.s), K.zemeOf(p) === 'de' ? K.t('Bavorsko') : ''].filter(Boolean).join(' · ')) + '</span>' +
-      '<span class="ub-facts">' + K.statusHtml(w.st, K.t('Vstup') + ': ' + K.lc(w.short)) +
-      (p.t ? K.statusHtml(K.T[p.t].st, K.T[p.t].label) : K.statusHtml('unk', KP.t('WC neuvedeno'))) + '</span>' + matchTag(p) +
-      (rs.length ? ('<span class="badge badge-business" title="' + KP.t('Údaj jsme přečetli na webu ubytování, neověřili jsme ho na místě.') + '">') + K.icon('building') + (KP.t('Podle webu provozovatele') + '</span>') : '') +
-      '<span class="ub-foot"><span class="ub-unknown">' + (unknown.length ? K.t('Neznáme') + ': ' + unknown.join(', ') : K.t('Údaje {pct} %', { pct: p._c })) + '</span>' +
-      ('<span class="ub-go">' + KP.t('Detail')) + K.icon('arrow') + '</span></span>' +
-      '</a>' + photo + '</li>';
-  }
-
-  // Accessibility Match (PLUS): shoda s osobním profilem jen při zapnutém profilu; údaje o vstupu a WC jsou vždy zdarma
-  function matchTag(p) {
-    if (!NEEDS || !NEEDS.active) return '';
-    const m = K.matchScore(p, NEEDS);
-    return '<span class="ub-match">' + K.statusHtml(m.status, m.pct === null ? KP.t('Shoda neznámá, chybí údaje') : K.t('{pct} % shoda · známe {k} z {n}', { pct: m.pct, k: m.known, n: m.total })) + '</span>';
-  }
+  // Accessibility Match (Explorer): shoda s osobním profilem jen při zapnutém profilu; údaje o vstupu a WC jsou vždy zdarma
   function matchNote() {
-    let el = $('#ub-match-note');
-    if (!el) { el = document.createElement('div'); el.id = 'ub-match-note'; el.className = 'ub-match-note'; el.style.cssText = 'display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin:0 0 12px;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)'; $('#ub-list').parentNode.insertBefore(el, $('#ub-list')); }
+    const el = $('#ub-match-note'), needs = K.getNeeds();
     const locked = !K.hasTier('match');
     const txt = locked ? KP.t('Shodu s vašimi potřebami v procentech ukazuje Accessibility Match.')
-      : NEEDS.active ? KP.t('U každého ubytování ukazujeme shodu s vaším profilem potřeb.') : KP.t('Nastavte si profil potřeb a u každého ubytování uvidíte shodu v procentech.');
-    el.innerHTML = '<p class="small" style="margin:0;flex:1 1 260px">' + K.esc(txt) + (locked ? ' ' + K.tierBadge('match') : '') + '</p>' +
-      '<button class="btn btn-quiet btn-sm" type="button" data-ub-needs>' + K.icon('sliders') + K.esc(locked ? KP.t('Zobrazit shodu') : NEEDS.active ? KP.t('Upravit potřeby') : KP.t('Nastavit potřeby')) + '</button>';
-  }
-
-  function fillObce() {
-    const kraj = $('#f-kraj').value, cur = $('#f-obec').value;
-    const counts = {};
-    ALL.forEach(p => { if (p.o && (!kraj || p.k === kraj)) counts[p.o] = (counts[p.o] || 0) + 1; });
-    const obce = Object.keys(counts).sort((a, b) => a.localeCompare(b, 'cs'));
-    $('#f-obec').innerHTML = ('<option value="">' + KP.t('Všechny obce') + '</option>') + obce.map(o => '<option value="' + K.esc(o) + '">' + K.esc(o) + ' (' + counts[o] + ')</option>').join('');
-    $('#f-obec').value = obce.includes(cur) ? cur : '';
-  }
-
-  function writeUrl(s) {
-    const sp = new URLSearchParams();
-    if (s.kraj) sp.set('kraj', s.kraj);
-    if (s.obec) sp.set('obec', s.obec);
-    if (s.wKey !== 'yl') sp.set('vstup', s.wKey);
-    if (s.wc) sp.set('wc', '1');
-    if (s.r) sp.set('provozovatel', '1');
-    const qs = sp.toString();
-    try { history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '')); } catch (e) { /* bez historie */ }
+      : needs.active ? KP.t('U každého ubytování ukazujeme shodu s vaším profilem potřeb.') : KP.t('Nastavte si profil potřeb a u každého ubytování uvidíte shodu v procentech.');
+    el.innerHTML = '<span class="ub-mn-ic" aria-hidden="true">' + K.icon('wheel') + '</span><p>' + K.esc(txt) + (locked ? ' ' + K.tierBadge('match') : '') + '</p>' +
+      '<button class="btn btn-secondary btn-sm" type="button" data-ub-needs>' + K.icon('sliders') + K.esc(locked ? KP.t('Zobrazit shodu') : needs.active ? KP.t('Upravit potřeby') : KP.t('Nastavit potřeby')) + '</button>';
   }
 
   function render(reset) {
     if (reset) shown = PAGE;
-    NEEDS = K.getNeeds();
     matchNote();
-    const s = state();
-    const list = sort(filter(s), s.sort);
+    const list = sorted(ctrl.run(ALL));
     const n = list.length, withR = ALL.filter(p => reports(p).length).length;
-    $('#ub-count').innerHTML = K.t('<b class="num">{n}</b> z {all} ubytování', { n: nf(n), all: nf(ALL.length) }) +
-      (withR ? '<span class="muted small"> · ' + K.t('{n} s údaji od provozovatele', { n: nf(withR) }) + '</span>' : '');
-    $('#ub-list').innerHTML = n ? list.slice(0, shown).map(cardHtml).join('')
-      : ('<li class="empty ub-empty"><p><b>' + KP.t('Filtrům nic neodpovídá.') + '</b></p><p class="small">' + KP.t('Zkuste jiný kraj nebo u vstupu zvolte i částečně přístupný.') + '</p>') + (s.r ? ('<p class="small">' + KP.t('Údaje z webů provozovatelů teprve doplňujeme.') + '</p>') : '') + ('<p class="small"><a href="pridat.html">' + KP.t('Znáte přístupné ubytování? Přidejte ho.') + '</a></p></li>');
+    $('#ub-count').innerHTML = KP.t('<b class="num">{n}</b> z {all} ubytování', { n: nf(n), all: nf(ALL.length) }) +
+      (withR ? '<span class="muted small"> · ' + K.esc(KP.t('{n} s údaji od provozovatele', { n: nf(withR) })) + '</span>' : '');
+    $('#ub-list').innerHTML = n ? list.slice(0, shown).map(p => KF.cardHtml(p, { mode: 'link', showCountry: true })).join('')
+      : '<li class="empty-state rc-empty">' + K.icon('bed') + '<h3>' + K.esc(KP.t('Filtrům nic neodpovídá.')) + '</h3><p>' + K.esc(KP.t('Zkuste jiný kraj nebo u vstupu zvolte i částečně přístupný.')) + '</p>' +
+        ctrl.relaxHtml(3) + (ctrl.state.src.has('web') ? '<p class="small">' + K.esc(KP.t('Údaje z webů provozovatelů teprve doplňujeme.')) + '</p>' : '') +
+        '<p class="small"><a href="pridat.html">' + K.esc(KP.t('Znáte přístupné ubytování? Přidejte ho.')) + '</a></p></li>';
     $('#ub-more').hidden = n <= shown;
-    $('#ub-more').textContent = K.t('Zobrazit dalších {n}', { n: Math.min(PAGE, n - shown) });
-    $('#ub-apply').textContent = n ? K.t('Zobrazit {n} ubytování', { n: nf(n) }) : K.t('Nic neodpovídá');
-    // Vzhled aktivních filtrů
-    [['#f-kraj', s.kraj], ['#f-obec', s.obec], ['#f-typ', s.typ], ['#f-w', s.wKey !== 'yl']].forEach(([sel, on]) => $(sel).classList.toggle('on', !!on));
-    const a = activeCount(s);
-    $('#ub-nfilters').hidden = !a; $('#ub-nfilters').textContent = a;
-    $('#f-reset').hidden = !a;
-    writeUrl(s);
+    $('#ub-more').textContent = KP.t('Zobrazit dalších {n}', { n: Math.min(PAGE, n - shown) });
   }
 
-  // ---------- Spodní panel s filtry (mobil) ----------
-  let lastFocus = null;
-  function openSheet() {
-    lastFocus = document.activeElement;
-    $('#ub-form').classList.add('sheet');
-    $('#ub-form').setAttribute('role', 'dialog'); $('#ub-form').setAttribute('aria-modal', 'true'); $('#ub-form').setAttribute('aria-labelledby', 'ub-sheet-title');
-    $('#ub-backdrop').hidden = false; $('#ub-open').setAttribute('aria-expanded', 'true');
-    document.documentElement.style.overflow = 'hidden';
-    $('#f-kraj').focus();
+  function areaOptions(s) {
+    const kn = {}; ALL.forEach(p => { if (p.k && (!s.zeme || K.zemeOf(p) === s.zeme)) kn[p.k] = (kn[p.k] || 0) + 1; });
+    const kraje = [];
+    ['cz', 'de'].forEach(z => Object.keys(kn).filter(k => ((K.regionByName(k) || {}).zeme || 'cz') === z).sort((a, b) => a.localeCompare(b, 'cs'))
+      .forEach(k => kraje.push({ value: k, label: K.LANG === 'cs' ? k : K.krajName(k), count: kn[k], group: K.ZEME[z] + ' ' + (z === 'de' ? KP.t('– vládní obvody') : KP.t('– kraje')) })));
+    const on = {}; ALL.forEach(p => { if (p.o && (!s.kraj || p.k === s.kraj) && (!s.zeme || K.zemeOf(p) === s.zeme)) on[p.o] = (on[p.o] || 0) + 1; });
+    const obce = Object.keys(on).sort((a, b) => a.localeCompare(b, 'cs')).map(o => [o, on[o]]);
+    return { kraje, obce };
   }
-  function closeSheet() {
-    if (!$('#ub-form').classList.contains('sheet')) return;
-    $('#ub-form').classList.remove('sheet');
-    ['role', 'aria-modal', 'aria-labelledby'].forEach(at => $('#ub-form').removeAttribute(at));
-    $('#ub-backdrop').hidden = true; $('#ub-open').setAttribute('aria-expanded', 'false');
-    document.documentElement.style.overflow = '';
-    if (lastFocus && lastFocus.focus) lastFocus.focus();
+
+  function bindCatScroll() {
+    const row = $('#ub-typ'), wrap = row.parentElement;
+    const upd = () => { wrap.classList.toggle('can-prev', row.scrollLeft > 4); wrap.classList.toggle('can-next', row.scrollLeft + row.clientWidth < row.scrollWidth - 4); };
+    row.addEventListener('scroll', upd, { passive: true });
+    wrap.querySelectorAll('[data-scroll]').forEach(b => b.addEventListener('click', () => row.scrollBy({ left: Number(b.dataset.scroll) * row.clientWidth * 0.7, behavior: 'smooth' })));
+    new ResizeObserver(upd).observe(row);
+    setTimeout(upd, 50);
   }
 
   async function init() {
-    let stats = null, data;
+    let data;
     $('#ub-count').textContent = KP.t('Načítám ubytování z Česka a Bavorska…');
     try {
-      [data, stats] = await Promise.all([
-        // Výtah jen s ubytováním (tools/build_web_index.py, asi 1,4 MB); bez něj projde všechny regiony
-        Promise.all([fetch('data/regions/ubytovani.json').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }), K.loadRegionsIndex()]).then(([d]) => d)
-          .catch(() => K.loadAll(p => p.c === 'ubytovani', { onProgress: (d, n) => { $('#ub-count').textContent = K.t('Načítám ubytování… {d} z {n} oblastí', { d, n }); } })),
-        K.loadStats().catch(() => null)]);
-    }
-    catch (e) { $('#ub-count').innerHTML = ('<span class="callout">' + KP.t('Data se nepodařilo načíst. Zkuste stránku obnovit.') + '</span>'); return; }
+      // Výtah jen s ubytováním (tools/build_web_index.py, asi 1,4 MB); bez něj projde všechny regiony
+      data = await Promise.all([fetch('data/regions/ubytovani.json').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }), K.loadRegionsIndex()]).then(([d]) => d)
+        .catch(() => K.loadAll(p => p.c === 'ubytovani', { onProgress: (d, n) => { $('#ub-count').textContent = KP.t('Načítám ubytování… {d} z {n} oblastí', { d, n }); } }));
+    } catch (e) { $('#ub-count').innerHTML = '<span class="callout">' + K.esc(KP.t('Data se nepodařilo načíst. Zkuste stránku obnovit.')) + '</span>'; return; }
     ALL = data;
     ALL.forEach(p => { p._c = K.completeness(p); });
 
-    const kn = {}; ALL.forEach(p => { if (p.k) kn[p.k] = (kn[p.k] || 0) + 1; });
-    const kraje = Object.keys(kn);
-    const zk = (z) => kraje.filter(k => ((K.regionByName(k) || {}).zeme || 'cz') === z).sort((a, b) => a.localeCompare(b, 'cs'));
-    $('#f-kraj').innerHTML += ['cz', 'de'].map(z => zk(z).length ? '<optgroup label="' + K.ZEME[z] + (z === 'de' ? (' ' + KP.t('– vládní obvody')) : (' ' + KP.t('– kraje'))) + '">' +
-      zk(z).map(k => '<option value="' + K.esc(k) + '">' + K.esc(K.LANG === 'cs' ? k : K.krajName(k)) + ' (' + kn[k] + ')</option>').join('') + '</optgroup>' : '').join('');
-    const typy = {}; ALL.forEach(p => { if (p.s) typy[p.s] = (typy[p.s] || 0) + 1; });
-    $('#f-typ').innerHTML += Object.entries(typy).sort((a, b) => b[1] - a[1]).map(([t, c]) => '<option value="' + K.esc(t) + '">' + K.esc(K.t(t)) + ' (' + c + ')</option>').join('');
+    // Rychlé čipy jen pro údaje, které v datech ubytování opravdu jsou
+    const quick = ['step', 'wc', 'lift', 'room', 'web', 'img'].filter(k => k === 'step' || ALL.some(p => KF.attrs[k](p)));
+    ctrl = KF.create({
+      id: 'ubytovani',
+      els: { search: $('#f-q'), form: $('#ub-form'), filterBtn: $('#ub-open'), filterCount: $('#ub-nfilters'), cats: $('#ub-typ'), quick: $('#ub-quick'), active: $('#ub-active'), panelHost: $('#ub-kf') },
+      catMode: 'typ', quick, unit: ['ubytování', 'ubytování', 'ubytování'],
+      sections: ['typ', 'access', 'room', 'adv', 'source', 'more', 'contact', 'area', 'needs'],
+      obecMode: 'select',
+      panelMode: () => (mqDesk.matches ? 'inline' : 'dialog'),
+      areaOptions,
+      onChange: () => render(true),
+      onApply: () => { $('#ub-results').scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); },
+    });
+    if (ctrl.state.kraj && !ALL.some(p => p.k === ctrl.state.kraj)) ctrl.setArea('kraj', '');
 
-    const sp = new URLSearchParams(location.search);
-    if (sp.get('kraj') && kraje.includes(sp.get('kraj'))) $('#f-kraj').value = sp.get('kraj');
-    fillObce();
-    if (sp.get('obec')) { $('#f-obec').value = sp.get('obec'); if ($('#f-obec').value !== sp.get('obec')) $('#f-obec').value = ''; }
-    if (W_SETS[sp.get('vstup')]) $('#f-w').value = sp.get('vstup');
-    if (sp.get('wc') === '1') setPressed('#f-wc', true);
-    if (sp.get('provozovatel') === '1') setPressed('#f-r', true);
-
-    let t;
-    $('#f-q').addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => render(true), 200); });
-    $('#f-kraj').addEventListener('change', () => { fillObce(); render(true); });
-    ['#f-obec', '#f-typ', '#f-w', '#f-sort'].forEach(s => $(s).addEventListener('change', () => render(true)));
-    TOGGLES.forEach(s => $(s).addEventListener('click', () => { setPressed(s, !pressed(s)); render(true); }));
-    $('#ub-form').addEventListener('submit', e => e.preventDefault());
-    $('#ub-form').addEventListener('reset', () => setTimeout(() => { TOGGLES.forEach(s => setPressed(s, false)); $('#f-w').value = 'yl'; fillObce(); render(true); }, 0));
+    $('#f-sort').value = sortBy;
+    if ($('#f-sort').value !== sortBy) { sortBy = 'complete'; $('#f-sort').value = sortBy; }
+    $('#f-sort').addEventListener('change', () => {
+      const v = $('#f-sort').value;
+      if (v === 'match' && !K.hasTier('match')) {
+        $('#f-sort').value = sortBy;
+        K.requireTier('match', () => { sortBy = 'match'; $('#f-sort').value = 'match'; K.store.set('ub.sort', 'match'); if (!K.getNeeds().active) K.needsDrawer(); render(true); });
+        return;
+      }
+      sortBy = v; K.store.set('ub.sort', v);
+      if (v === 'match' && !K.getNeeds().active) K.needsDrawer();
+      render(true);
+    });
     $('#ub-more').addEventListener('click', () => { shown += PAGE; render(false); });
-    document.addEventListener('click', e => { if (e.target.closest('[data-ub-needs]')) K.needsDrawer(); });
+    document.addEventListener('click', e => {
+      if (!e.target.closest('[data-ub-needs]')) return;
+      if (K.hasTier('match')) K.needsDrawer(); else K.requireTier('match', () => K.needsDrawer());
+    });
     document.addEventListener('kp:needs', () => render(false));
-
-    $('#ub-open').addEventListener('click', openSheet);
-    $('#ub-close').addEventListener('click', closeSheet);
-    $('#ub-apply').addEventListener('click', () => { closeSheet(); $('#ub-count').scrollIntoView({ block: 'nearest' }); });
-    $('#ub-backdrop').addEventListener('click', closeSheet);
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSheet(); });
-    mobile.addEventListener('change', e => { if (!e.matches) closeSheet(); });
+    ctrl.bindRelax($('#ub-list'));
+    KF.bindSave($('#ub-list'), (id) => ALL.find(p => p.i === id));
+    // Fotka z Commons se nenačetla: místo ní ikona
+    document.addEventListener('error', e => {
+      const img = e.target; if (!(img instanceof HTMLImageElement)) return;
+      const md = img.closest('.rc-media'); if (!md) return;
+      md.classList.add('no-photo'); md.setAttribute('aria-hidden', 'true'); md.innerHTML = K.icon('bed');
+    }, true);
+    bindCatScroll();
     render(true);
   }
 

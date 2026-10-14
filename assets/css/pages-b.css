@@ -1,12 +1,7 @@
-/* Stránky Jak měříme, Přidat místo, Můj profil. Verze 3 „městský průvodce“ (DESIGN.md):
-   linky místo krabic, ostré hrany, velké nadpisy Archivo, žlutá jen plošně a střídmě. */
+/* Stránky Jak měříme, Přidat místo, Můj profil. Wherethru v4 (DESIGN.md): jemné linky --rule (= --line), oblé karty, zelená paleta. */
 
 /* ---------- Hlavička stránky ---------- */
-.page-hero { padding-block: clamp(36px, 6vw, 72px) clamp(24px, 3vw, 40px); background: var(--surface); border-bottom: 1px solid var(--rule); }
-.page-hero h1 { margin: 0 0 .25em; }
-.page-hero .lede { margin: 0; max-width: 58ch; }
-.page-hero-sm { padding-block: clamp(28px, 4.5vw, 56px) clamp(20px, 3vw, 32px); }
-.page-hero-sm h1 { font-size: clamp(2.1rem, 5vw, 3.6rem); }
+/* .page-hero = .page-head (sjednoceno ve style.css od v4) */
 @media (min-width: 900px) {
   .page-hero-split .wrap { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: end; }
   .page-hero-split h1 { margin: 0; }
@@ -48,7 +43,7 @@
 .doc h3 { margin-top: 40px; }
 .doc ul, .doc ol { padding-left: 1.3em; margin: 0 0 1em; }
 .doc li { margin-bottom: .4em; }
-.doc code { font: 600 .9em var(--f-mono); background: var(--surface-2); padding: 1px 6px; border-radius: 0; overflow-wrap: anywhere; }
+.doc code { font: 600 .9em var(--f-mono); background: var(--surface-2); padding: 1px 6px; border-radius: var(--r-sm); overflow-wrap: anywhere; }
 .doc .table-wrap { margin-bottom: 4px; }
 .doc .note { margin-top: 12px; }
 .doc .callout { margin-top: 20px; }
@@ -83,7 +78,7 @@
   .toc-m { display: block; position: sticky; top: var(--header-h); z-index: 90; background: var(--surface); border-bottom: 1px solid var(--rule); }
   .toc-m summary { list-style: none; display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 8px var(--gutter); cursor: pointer; font: 700 .78rem var(--f-body); letter-spacing: .12em; text-transform: uppercase; }
   .toc-m summary::-webkit-details-marker { display: none; }
-  .toc-m summary::after { content: ""; width: 10px; height: 10px; border-right: 2px solid var(--ink); border-bottom: 2px solid var(--ink); transform: rotate(45deg); margin: -4px 4px 0 auto; flex: none; }
+  .toc-m summary::after { content: ""; width: 10px; height: 10px; border-right: 2px solid var(--line-strong); border-bottom: 2px solid var(--line-strong); transform: rotate(45deg); margin: -4px 4px 0 auto; flex: none; }
   .toc-m[open] summary::after { transform: rotate(-135deg); margin-top: 4px; }
   .toc-m-cur { color: var(--ink-2); font: 600 .95rem var(--f-body); letter-spacing: 0; text-transform: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
   .toc-m-list { display: grid; padding: 0 var(--gutter) 12px; max-height: 60vh; overflow: auto; border-top: 1px solid var(--rule); }
@@ -124,13 +119,13 @@
 .sub-tabs { margin: 0 -2px; padding: 2px; }
 .sub-tabs .chip { flex: none; min-height: 44px; }
 
-.fgroup { border: 0; border-radius: 0; padding: 0; margin: 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); min-width: 0; }
+.fgroup { border: 0; border-radius: var(--r-sm); padding: 0; margin: 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); min-width: 0; }
 .fgroup legend { width: 100%; font: 700 1.35rem/1.15 var(--f-display); letter-spacing: -.02em; padding: 0 0 10px; margin-bottom: 16px; border-bottom: 1px solid var(--rule); }
 .fgroup legend:focus { outline: none; }
 .fgroup .full { grid-column: 1 / -1; }
 .fgroup .check { padding: 10px 0; min-height: 44px; }
 .fgroup.is-off { display: none; }
-.step input[type="text"], .step input[type="search"], .step input[type="number"], .step select, .step textarea { min-height: 52px; font-size: 1.05rem; border: 2px solid var(--ink); border-radius: 0; background: var(--surface); }
+.step input[type="text"], .step input[type="search"], .step input[type="number"], .step select, .step textarea { min-height: 52px; font-size: 1.05rem; border: 2px solid var(--line-strong); border-radius: var(--r-sm); background: var(--surface); }
 .step textarea { min-height: 120px; }
 .step .input-unit span { color: var(--ink); }
 .check input[type="checkbox"] { width: 22px; height: 22px; }
@@ -146,9 +141,9 @@
 .place-pick button[aria-pressed="true"] { box-shadow: inset 6px 0 0 var(--signal); }
 .place-pick small { display: block; color: var(--ink-3); font-size: .88rem; }
 .pp-txt { min-width: 0; overflow-wrap: anywhere; }
-.pp-mark { width: 26px; height: 26px; display: grid; place-items: center; color: transparent; border: 2px solid var(--ink); }
+.pp-mark { width: 26px; height: 26px; display: grid; place-items: center; color: transparent; border: 2px solid var(--line-strong); }
 .pp-mark svg { width: 16px; height: 16px; }
-.place-pick button[aria-pressed="true"] .pp-mark { background: var(--ink); color: var(--surface); }
+.place-pick button[aria-pressed="true"] .pp-mark { background: var(--brand-900); color: var(--on-brand); }
 #new-place { padding-top: 16px; border-top: 3px solid var(--rule); }
 
 /* Typ místa: dva sloupce řádků s linkou, žádné dlaždice */
@@ -160,10 +155,10 @@
 .type-grid label:has(input:checked) input { accent-color: var(--on-signal); }
 
 /* Fotky */
-.dropzone { border: 2px dashed var(--ink); border-radius: 0; padding: 36px 16px; text-align: center; background: transparent; color: var(--ink); }
+.dropzone { border: 2px dashed var(--ink); border-radius: var(--r-sm); padding: 36px 16px; text-align: center; background: transparent; color: var(--ink); }
 .dropzone p { margin: 0 0 14px; }
 .dropzone.over { background: var(--signal); color: var(--on-signal); border-style: solid; }
-.dropzone:has(input:focus-visible) label { outline: 3px solid var(--ink); outline-offset: 2px; box-shadow: 0 0 0 6px var(--signal); }
+.dropzone:has(input:focus-visible) label { outline: 3px solid var(--focus); outline-offset: 2px; }
 .photo-list { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr)); }
 .photo-list:empty { display: none; }
 .photo-item { border-top: 1px solid var(--rule); padding-top: 10px; }
@@ -306,7 +301,7 @@
 .pf-photos { list-style: none; padding: 0; margin: 10px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; width: 100%; }
 .pf-photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; background: var(--surface-2); }
 /* Postup checklistu: černá linka se žlutou výplní, vedle vždy text */
-.pf-meter { width: 100%; max-width: 320px; height: 10px; border: 1.5px solid var(--ink); margin: 8px 0 2px; background: var(--surface); }
+.pf-meter { width: 100%; max-width: 320px; height: 10px; border: 1.5px solid var(--line-strong); margin: 8px 0 2px; background: var(--surface); }
 .pf-meter span { display: block; height: 100%; background: var(--signal); }
 
 @media (max-width: 899px) {

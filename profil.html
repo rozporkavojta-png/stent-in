@@ -2,59 +2,41 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<link rel="icon" href="data:,">
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#3A4A34">
+<meta name="application-name" content="Wherethru">
+<meta property="og:site_name" content="Wherethru">
+<meta property="og:image" content="assets/brand/og-image.png">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Můj profil · kudyprojedu.cz</title>
+<title>Můj profil · Wherethru</title>
 <meta name="description" content="Váš profil přístupnosti, uložená místa, hodnocení, trasy a profily podniků. Vše zůstává jen ve vašem prohlížeči.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=16">
-<link rel="stylesheet" href="assets/css/pages-b.css?v=12">
-<style>
-/* Členství (prototyp), sledované změny a sdílení s partnerem: jen pro tuto stránku */
-.pf-tier-now { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin: 0 0 4px; }
-.pf-tier-now b { font: 800 clamp(1.6rem, 3vw, 2.2rem)/1 var(--f-display); letter-spacing: -.03em; }
-.pf-tier-price { margin: 0 0 16px; color: var(--ink-2); }
-.pf-tier-list { list-style: none; padding: 0; margin: 0 0 16px; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 0 24px; border-top: 1px solid var(--rule); }
-.pf-tier-list li { display: grid; grid-template-columns: 4.6em minmax(0, 1fr); gap: 10px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--line); }
-.pf-tier-list li.is-off { color: var(--ink-3); }
-.pf-tier-list .pf-mark { font: 700 .9rem/1.3 var(--f-mono); }
-.pf-tier-list .pf-mark .i { width: 18px; height: 18px; vertical-align: -4px; }
-.pf-lock { display: flex; flex-direction: column; gap: 12px; padding: 14px 0 14px 14px; border-left: 4px solid var(--signal); }
-.pf-lock p { margin: 0; }
-.pf-lock .btn { align-self: flex-start; min-height: 44px; }
-.pf-row .pf-acts, .pf-line .pf-acts { position: relative; z-index: 1; }
-.pf-changes { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-direction: column; gap: 4px; }
-.pf-changes .pf-chfrom { text-decoration: line-through; color: var(--ink-3); }
-.pf-changes .pf-chto { font-weight: 700; }
-.pf-collform { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
-.pf-collform input { flex: 1 1 200px; min-height: 44px; }
-.pf-collform .btn, .pf-coll select, .pf-coll .btn { min-height: 44px; }
-.pf-coll .pf-cplaces { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-direction: column; gap: 2px; width: 100%; }
-.pf-coll .pf-cplaces li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 12px; border-bottom: 1px solid var(--line); }
-.pf-coll .pf-cplaces a { color: var(--ink); font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
-.pf-coll select { max-width: 100%; }
-.pf-shared { border: 1.5px solid var(--rule); padding: 16px; display: flex; flex-direction: column; gap: 10px; }
-.pf-shared h2 { margin: 0; font-size: 1.4rem; }
-.pf-shared p { margin: 0; }
-.pf-shared .row { display: flex; flex-wrap: wrap; gap: 8px; }
-.pf-shared .btn { min-height: 44px; }
-#partner-box { display: flex; flex-direction: column; gap: 12px; }
-#partner-box p { margin: 0; }
-#partner-box .btn { align-self: flex-start; min-height: 44px; }
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Caveat:wght@500&family=Fraunces:opsz,wght@9..144,600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=18">
+<link rel="stylesheet" href="assets/css/pages-b.css?v=13">
+<link rel="stylesheet" href="assets/css/profil.css?v=3">
 </head>
 <body>
 <div id="site-header"></div>
 <main id="main">
-  <header class="page-hero page-hero-sm">
+  <header class="page-head pf-hero">
     <div class="wrap">
-      <span class="kicker" data-i18n>Jen v tomto prohlížeči</span>
-      <h1 data-i18n>Můj profil</h1>
-      <p class="lede" data-i18n>Vaše potřeby, uložená místa, hodnocení, trasy a profily podniků. Bez registrace.</p>
+      <div class="pf-hero-card">
+        <span class="pf-avatar" data-icon="user" aria-hidden="true"></span>
+        <div class="pf-hero-txt">
+          <p class="kicker" data-i18n>Jen v tomto prohlížeči</p>
+          <h1 data-i18n>Můj profil</h1>
+          <p class="lede" data-i18n>Vaše potřeby, uložená místa, hodnocení, trasy a profily podniků. Bez registrace.</p>
+          <p id="pf-hero-tier" class="pf-hero-tier"></p>
+        </div>
+        <ul class="pf-stats" id="pf-stats" aria-label="Přehled vašich dat" data-i18n-attr="aria-label"></ul>
+      </div>
       <p class="pf-proto" data-i18n><b>Prototyp:</b> vše na této stránce je uložené jen ve vašem prohlížeči. V ostré verzi se hodnocení, trasy a profily podniků odešlou na server.</p>
-      <nav class="pf-toc" aria-label="Části profilu" data-i18n-attr="aria-label">
-        <a href="#clenstvi" data-i18n>Členství</a><a href="#potreby" data-i18n>Profil přístupnosti</a><a href="#ulozena" data-i18n>Uložená místa</a><a href="#sledovani" data-i18n>Sledované změny</a><a href="#hodnoceni" data-i18n>Hodnocení a fotky</a><a href="#trasy" data-i18n>Trasy a itineráře</a><a href="#podniky" data-i18n>Moje podniky</a><a href="#hlaseni" data-i18n>Hlášení a žádosti</a><a href="#prispevky" data-i18n>Příspěvky</a>
+      <nav class="chip-row pf-toc" aria-label="Části profilu" data-i18n-attr="aria-label">
+        <a class="chip" href="#potreby" data-i18n>Profil přístupnosti</a><a class="chip" href="#ulozena" data-i18n>Uložená místa</a><a class="chip" href="#clenstvi" data-i18n>Členství</a><a class="chip" href="#sledovani" data-i18n>Sledované změny</a><a class="chip" href="#hodnoceni" data-i18n>Hodnocení a fotky</a><a class="chip" href="#trasy" data-i18n>Trasy a itineráře</a><a class="chip" href="#podniky" data-i18n>Moje podniky</a><a class="chip" href="#hlaseni" data-i18n>Hlášení a žádosti</a><a class="chip" href="#prispevky" data-i18n>Příspěvky</a>
       </nav>
     </div>
   </header>
@@ -64,6 +46,11 @@
       <div class="pf-head">
         <h2 id="needs-h" data-i18n>Můj profil přístupnosti</h2>
         <span id="needs-state"></span>
+      </div>
+      <div class="pf-groups">
+        <h3 id="grp-h" data-i18n>Kdo cestuje</h3>
+        <div class="pf-chips" id="pf-groups" role="group" aria-labelledby="grp-h"></div>
+        <p class="small muted" id="pf-groups-note"></p>
       </div>
       <p class="small muted" data-i18n>Podle profilu u každého místa uvidíte shodu v procentech. Kde údaj chybí, shodu to nesnižuje, jen ukážeme menší jistotu.</p>
       <div id="needs-lock" class="pf-lock" hidden></div>
@@ -80,14 +67,6 @@
     <div class="pf-main">
       <div id="shared-in"></div>
 
-      <section class="pf-sec" id="clenstvi" aria-labelledby="tier-h">
-        <div class="pf-head">
-          <h2 id="tier-h" data-i18n>Moje členství</h2>
-          <span class="badge badge-soon" data-i18n>Prototyp</span>
-        </div>
-        <div id="tier-box"></div>
-      </section>
-
       <section class="pf-sec" id="ulozena" aria-labelledby="saved-h">
         <div class="pf-head">
           <h2 id="saved-h" data-i18n>Uložená místa</h2>
@@ -95,6 +74,14 @@
         </div>
         <div id="saved"><p class="muted" data-i18n>Načítám…</p></div>
         <div id="collections"></div>
+      </section>
+
+      <section class="pf-sec" id="clenstvi" aria-labelledby="tier-h">
+        <div class="pf-head">
+          <h2 id="tier-h" data-i18n>Moje členství</h2>
+          <span class="badge badge-soon" data-i18n>Prototyp</span>
+        </div>
+        <div id="tier-box"></div>
       </section>
 
       <section class="pf-sec" id="sledovani" aria-labelledby="watch-h">
@@ -165,13 +152,14 @@
   </div>
 </main>
 <div id="site-footer"></div>
-<script src="assets/js/i18n.js?v=2"></script>
-<script src="assets/js/i18n/core.js?v=3"></script>
-<script src="assets/js/i18n/profil.js?v=2"></script>
+<script src="assets/js/i18n.js?v=3"></script>
+<script src="assets/js/i18n/core.js?v=6"></script>
+<script src="assets/js/i18n/profil.js?v=4"></script>
 <script src="assets/js/i18n/sledovani.js?v=1"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=16"></script>
+<script src="assets/icons/icons.js?v=1"></script>
+<script src="assets/js/core.js?v=18"></script>
 <script src="assets/js/sledovani.js?v=1"></script>
-<script src="assets/js/profil.js?v=18"></script>
+<script src="assets/js/profil.js?v=20"></script>
 </body>
 </html>

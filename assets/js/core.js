@@ -1,4 +1,4 @@
-/* kudyprojedu.cz – sdílené jádro: hlavička, patička, ikony, profil potřeb, hodnocení míst. */
+/* Wherethru (dříve kudyprojedu.cz) – sdílené jádro: hlavička, patička, ikony, profil potřeb, hodnocení míst. */
 (function () {
   'use strict';
   // Překlady (assets/js/i18n.js). Bez něj zůstane čeština.
@@ -72,8 +72,54 @@
     calendar: '<rect x="3" y="5" width="18" height="16"/><path d="M3 10h18M8 3v4M16 3v4"/>',
     phone: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/>',
   };
+  // Synonyma názvů ikon (v4): staré názvy zůstávají, nové z assets/icons/ jsou aliasy. Každá skupina = jedna ikona.
+  const ICON_GROUPS = [
+    ['bed', 'accommodation', 'hotel', 'ubytovani'], ['food', 'restaurant', 'restaurants', 'restaurace', 'cafe'], ['wc', 'toilet', 'toilets'],
+    ['museum', 'attraction', 'attractions', 'pamatky', 'landmark'], ['theater', 'culture', 'kultura'], ['tree', 'nature', 'priroda', 'trail'],
+    ['parking', 'parkovani'], ['pharmacy', 'health', 'zdravi'], ['building', 'office', 'urady', 'business'], ['route', 'transport', 'doprava', 'plan', 'planner'],
+    ['heart', 'saved', 'favorite', 'favourite'], ['wheel', 'wheelchair', 'accessible', 'access'], ['user', 'profile', 'account'], ['sliders', 'filters', 'tune', 'needs'],
+    ['calendar', 'events', 'event', 'akce'], ['globe', 'language', 'region'], ['nav', 'navigation', 'direction'], ['locate', 'location', 'gps'],
+    ['chart', 'stats', 'statistics'], ['plus', 'add'], ['arrow', 'arrow-right'], ['chevron', 'chevron-down'], ['book', 'guide', 'guides'],
+    ['warn', 'warning', 'alert'], ['camera', 'photo', 'photos'], ['lift', 'elevator'], ['stairs', 'steps'], ['ruler', 'measure'],
+    ['message', 'chat', 'review', 'reviews'], ['shield', 'verified'], ['close', 'x'], ['check', 'ok'], ['shop', 'obchody'],
+    ['sport', 'swim'], ['home', 'domu'], ['map', 'mapa'], ['search', 'hledat'], ['menu', 'hamburger'], ['info', 'about'], ['users', 'community', 'komunita'],
+  ];
+  const ICON_ALIAS = {}; ICON_GROUPS.forEach(g => g.forEach(n => { ICON_ALIAS[n] = g; }));
+  // Sada ikon: přednostně window.KP_ICONS z assets/icons/icons.js (synchronně), jinak assets/icons/sprite.svg. Sprite se načte jednou, symboly se uloží do sessionStorage a další stránky je mají hned.
+  // Dokud sprite není, kreslí se vložené ikony výše; ikony vykreslené před načtením se pak přepíšou (svg[data-i]).
+  const SPRITE_URL = 'assets/icons/sprite.svg', SPRITE_KEY = 'kp.icons.v4';
+  let SPRITE = null;
+  try { const s = sessionStorage.getItem(SPRITE_KEY); if (s) SPRITE = JSON.parse(s); } catch (e) { /* bez úložiště */ }
+  function iconBody(name) {
+    const names = ICON_ALIAS[name] ? [name].concat(ICON_ALIAS[name]) : [name];
+    const SET = window.KP_ICONS; // assets/icons/icons.js (B1), načtený před core.js
+    if (SET) for (const n of names) if (SET[n]) return SET[n];
+    if (SPRITE) for (const n of names) if (SPRITE[n]) return SPRITE[n];
+    for (const n of names) if (P[n]) return P[n];
+    const fb = { sport: 'star', swim: 'star', shop: 'bookmark' }[name]; // jen pro vložené ikony, sada B1 je má
+    return fb ? P[fb] : '';
+  }
   function icon(name, cls) {
-    return '<svg class="' + (cls || 'i') + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (P[name] || '') + '</svg>';
+    return '<svg class="' + (cls || 'i') + '" data-i="' + esc(name) + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' + iconBody(name) + '</svg>';
+  }
+  function loadSprite() {
+    if (window.KP_ICONS || SPRITE || typeof fetch !== 'function') return;
+    try { if (sessionStorage.getItem(SPRITE_KEY + '.miss')) return; } catch (e) { /* bez úložiště */ }
+    fetch(SPRITE_URL).then(r => (r.ok ? r.text() : null)).then(txt => {
+      if (!txt) { try { sessionStorage.setItem(SPRITE_KEY + '.miss', '1'); } catch (e) { /* bez úložiště */ } return; }
+      const doc = new DOMParser().parseFromString(txt, 'image/svg+xml');
+      const map = {};
+      doc.querySelectorAll('symbol[id]').forEach(s => {
+        const vb = (s.getAttribute('viewBox') || '0 0 24 24').trim();
+        if (vb !== '0 0 24 24') return; // jen ikony 24 × 24
+        const id = s.id.replace(/^(icon|ico|i)[-_]/, '');
+        map[id] = s.innerHTML.replace(/\s+/g, ' ').trim();
+      });
+      if (!Object.keys(map).length) return;
+      SPRITE = map;
+      try { sessionStorage.setItem(SPRITE_KEY, JSON.stringify(map)); } catch (e) { /* plné úložiště */ }
+      document.querySelectorAll('svg[data-i]').forEach(el => { const b = iconBody(el.getAttribute('data-i')); if (b) el.innerHTML = b; });
+    }).catch(() => {});
   }
 
   // ---------- Kategorie ----------
@@ -84,16 +130,17 @@
     pamatky: { label: t('Památky a muzea'), icon: 'museum' },
     kultura: { label: t('Kultura'), icon: 'theater' },
     priroda: { label: t('Příroda a vyhlídky'), icon: 'tree' },
-    sport: { label: t('Sport a bazény'), icon: 'star' },
+    sport: { label: t('Sport a bazény'), icon: 'sport' },
     zdravi: { label: t('Zdravotnictví a lékárny'), icon: 'pharmacy' },
     urady: { label: t('Úřady, pošty, info'), icon: 'building' },
     doprava: { label: t('Nádraží'), icon: 'route' },
-    obchody: { label: t('Obchody'), icon: 'bookmark' },
+    obchody: { label: t('Obchody'), icon: 'shop' },
     parkovani: { label: t('Parkování ZTP'), icon: 'parking' },
   };
   // Zdroje dat – u každého údaje je vidět, odkud pochází
   const SOURCES = {
     overeno: { label: t('Ověřeno nezávisle'), short: t('Ověřeno'), cls: 'badge-verified', icon: 'shield', desc: t('Naměřil proškolený mapovač podle metodiky kategorizace přístupnosti.') },
+    otevrena: { label: t('Otevřená data'), short: t('Otevřená data'), cls: 'badge-community', icon: 'globe', desc: t('Údaj pochází z otevřených dat města, kraje nebo dopravce. Nezávisle jsme ho neověřili.') },
     komunita: { label: t('Zadala komunita (OpenStreetMap)'), short: 'OpenStreetMap', cls: 'badge-community', icon: 'users', desc: t('Údaj zadali dobrovolníci do OpenStreetMap. Stejná data používá Wheelmap.org.') },
     firma: { label: t('Uvedl provozovatel'), short: t('Provozovatel'), cls: 'badge-business', icon: 'building', desc: t('Údaj vyplnil provozovatel přes profil podniku.') },
   };
@@ -258,7 +305,7 @@
 
     // 1) Naměřené řádky z otevřených dat (Mapy bez bariér, IPR Praha, Brno, Ostrava, DB, Mnichov, Würzburg…)
     (Array.isArray(p.x) ? p.x : []).forEach(x => {
-      const S = 'overeno', ex = { url: x.url || '', date: x.date || '', label: x.label || '' };
+      const S = 'overeno', ex = { url: x.url || '', date: x.date || '', label: x.label || '', xs: x.src || '' };
       const rows = x.rows || [];
       const parallel = rows.some(r => r[0] === 'Typ stání' && /podéln/i.test(r[1]));
       const cabins = []; // rozměry kabin WC: plochu 150 × 150 vylučují, jen když jsou všechny kabiny užší
@@ -590,8 +637,10 @@
     const y = Math.floor(months / 12);
     return y === 1 ? t('před rokem') : t('před {n} lety', { n: y });
   }
+  // Štítek „Ověřeno“ jen u dat, která naměřil proškolený mapovač (Mapy bez bariér); ostatní otevřená data = „Otevřená data“.
+  function srcLevel(src, xs) { return src === 'overeno' && xs !== 'mapybezbarier' ? 'otevrena' : src; }
   function sourceBadge(level, extra) {
-    const s = SOURCES[level];
+    const s = SOURCES[level] || SOURCES.komunita;
     return '<span class="badge ' + s.cls + '" title="' + s.desc + '">' + icon(s.icon) + s.short + (extra ? ' · ' + extra : '') + '</span>';
   }
   function statusHtml(st, text) { return '<span class="status ' + st + '"><i></i>' + (text === undefined ? STATUS_SHORT[st] : text) + '</span>'; }
@@ -765,101 +814,154 @@
   }
   function zemeOf(p) { return p.z || (p._r ? p._r.slice(0, 2) : 'cz'); }
 
-  // ---------- Logo ----------
-  const LOGO = '<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="var(--tape)"/><path d="M9 15v10M31 15v10M9 20h22" stroke="var(--tape-ink)" stroke-width="2.6" stroke-linecap="round"/><path d="M15 20v-3M20 20v-5M25 20v-3" stroke="var(--tape-ink)" stroke-width="2" stroke-linecap="round"/></svg>';
+  // ---------- Logo (Wherethru) ----------
+  // Hlavička: assets/brand/logo.svg (tmavý režim logo-dark.svg). Když soubor chybí, zůstane textové logo „Where“ + „thru“.
+  const BRAND = 'Wherethru';
+  const LOGO_TEXT = '<span class="brand-text"><b>Where</b><span>thru</span></span>';
+  function logoImg(variant) {
+    const fail = 'onerror="this.remove();var b=document.querySelectorAll(\'.brand .brand-text[hidden]\');for(var i=0;i<b.length;i++)b[i].hidden=false"';
+    if (variant === 'white') return '<img class="brand-logo" src="assets/brand/logo-white.svg" alt="' + BRAND + '" ' + fail + '><span class="brand-text" hidden><b>Where</b><span>thru</span></span>';
+    return '<img class="brand-logo logo-light" src="assets/brand/logo.svg" alt="' + BRAND + '" ' + fail + '>' +
+      '<img class="brand-logo logo-dark" src="assets/brand/logo-dark.svg" alt="" aria-hidden="true">' +
+      '<span class="brand-text" hidden><b>Where</b><span>thru</span></span>';
+  }
+  // Zpětná kompatibilita: KP.LOGO = znak značky
+  const LOGO = '<img class="brand-mark" src="assets/brand/logo-mark.svg" alt="" aria-hidden="true">';
+  const CLAIM = t('Objevuj · Plánuj · Zažij – bez bariér');
 
-  // ---------- Navigace ----------
-  // Hlavní položky (desktop hlavička) – ostatní stránky jsou v menu „Více“.
-  // planovac.html, pruvodci.html a akce.html tvoří jiné části webu; odkazy jsou připravené.
+  // ---------- Navigace (DESIGN.md v4) ----------
+  // PC: Mapa · Plánovat (rozbalí) · Průvodci · Ubytování · Akce · Pro podniky · Více
+  const PLAN = [
+    ['planovac.html', t('Jednodenní výlet'), 'route', t('Program na jeden den podle vašich potřeb')],
+    ['dovolena.html', t('Vícedenní dovolená'), 'bed', t('Ubytování, doprava a program na víc dní')],
+    ['itinerar.html', t('Moje itineráře'), 'list', t('Vlastní plán dne z míst a tras')],
+  ];
+  const PLAN_PAGES = PLAN.map(x => x[0]);
+  // [href, popisek, volitelně 'opt' = na užší obrazovce se schová do menu Více]
   const NAV = [
     ['mapa.html', t('Mapa')],
-    ['planovac.html', t('Plánovat')],
+    ['#plan', t('Plánovat')],
     ['pruvodci.html', t('Průvodci')],
-    ['ubytovani.html', t('Ubytování')],
+    ['ubytovani.html', t('Ubytování'), 'opt'],
+    ['akce.html', t('Akce'), 'opt'],
     ['pro-firmy.html', t('Pro podniky')],
   ];
   const MORE = [
-    ['stezky.html', t('Stezky'), 'tree'],
-    ['trasy.html', t('Trasy'), 'route'],
-    ['kraj.html', t('Kraje'), 'globe'],
-    ['akce.html', t('Akce'), 'calendar'],
-    ['clenstvi.html', t('Členství'), 'star'],
     ['komunita.html', t('Komunita'), 'users'],
+    ['stezky.html', t('Stezky a trasy'), 'tree'],
+    ['kraj.html', t('Kraje'), 'globe'],
     ['metodika.html', t('Jak měříme'), 'ruler'],
-    ['zdroje.html', t('Zdroje a trh'), 'chart'],
+    ['zdroje.html', t('Zdroje'), 'chart'],
     ['o-projektu.html', t('O projektu'), 'info'],
-    ['pridat.html', t('Přidat nebo upravit místo'), 'plus'],
+    ['pridat.html', t('Přidat místo'), 'plus'],
+    ['clenstvi.html', t('Členství'), 'star'],
   ];
-  // Spodní lišta na mobilu (pátá položka je tlačítko Více)
+  const NAV_ICONS = { 'mapa.html': 'map', 'pruvodci.html': 'book', 'ubytovani.html': 'bed', 'akce.html': 'calendar', 'pro-firmy.html': 'building', 'trasy.html': 'route' };
+  // Spodní lišta na mobilu
   const TABS = [
     ['index.html', t('Domů'), 'home'],
     ['mapa.html', t('Mapa'), 'map'],
     ['planovac.html', t('Plánovat'), 'route'],
-    ['profil.html', t('Uložené'), 'bookmark'],
+    ['profil.html#ulozena', t('Uložené'), 'heart'],
+    ['profil.html', t('Profil'), 'user'],
   ];
   function here() { return location.pathname.split('/').pop() || 'index.html'; }
+  const cur = (href) => (here() === href ? ' aria-current="page"' : '');
 
   function header() {
     const h = here();
+    const planOn = PLAN_PAGES.includes(h);
+    const navLinks = NAV.map(([href, label, opt]) => {
+      if (href === '#plan') {
+        return '<div class="nav-drop"><button type="button" class="' + (planOn ? 'is-current' : '') + '" aria-expanded="false" aria-haspopup="true" aria-controls="nav-plan" data-menu>' + label + ' ' + icon('chevron') + '</button>' +
+          '<div class="nav-menu" id="nav-plan" hidden>' + PLAN.map(([u, l, ic, d]) => '<a href="' + u + '"' + cur(u) + '>' + icon(ic) + '<span>' + l + '<small>' + d + '</small></span></a>').join('') + '</div></div>';
+      }
+      return '<a href="' + href + '"' + cur(href) + (opt ? ' class="nav-opt"' : '') + '>' + label + '</a>';
+    }).join('');
+    const optInMore = NAV.filter(x => x[2] === 'opt').map(([href, label]) => '<a class="more-opt" href="' + href + '"' + cur(href) + '>' + icon(NAV_ICONS[href]) + label + '</a>').join('');
     return ('<a class="skip-link" href="#main">' + t('Přeskočit na obsah') + '</a>') +
       ('<div class="demo-bar">' + t('Studentský prototyp STENT-IN 2026') + '<span class="hide-md"> · ' + t('skutečná místa z otevřených dat, Česko a Bavorsko, stav k 7. 10. 2026') + '</span> · <a href="metodika.html#zdroje">' + t('Odkud data jsou') + '</a></div>') +
       '<header class="site-header"><div class="inner">' +
-      ('<a class="brand" href="index.html" aria-label="' + t('kudyprojedu.cz – úvod') + '">') + LOGO + '<span>kudyprojedu<span class="dom">.cz</span></span></a>' +
-      ('<nav class="main-nav" aria-label="' + t('Hlavní navigace') + '">') + NAV.map(([href, label]) => '<a href="' + href + '"' + (h === href ? ' aria-current="page"' : '') + '>' + label + '</a>').join('') +
-      ('<div class="more"><button class="more-btn" type="button" aria-expanded="false" aria-haspopup="true" data-more>' + t('Více') + ' ') + icon('chevron') + '</button>' +
-      '<div class="more-menu" hidden>' + MORE.map(([href, label, ic]) => '<a href="' + href + '"' + (h === href ? ' aria-current="page"' : '') + '>' + icon(ic) + label + '</a>').join('') + (KPI.i18n ? '<div class="more-lang">' + icon('globe') + '<span>' + t('Jazyk') + '</span>' + langSwitch() + '</div>' : '') + '</div></div></nav>' +
-      '<div class="header-tools">' + langSwitch('hide-md') + tierPill() +
-      ('<button class="btn btn-soft btn-sm needs-btn" type="button" data-open-needs aria-label="' + t('Moje potřeby') + '">') + icon('sliders') + ('<span class="lbl">' + t('Moje potřeby') + '</span><span class="dot" data-needs-flag hidden></span></button>') +
-      '<a class="btn btn-primary btn-sm hide-md add-btn" href="pridat.html" aria-label="' + t('Přidat místo') + '">' + icon('plus') + '<span class="lbl">' + t('Přidat místo') + '</span></a>' +
-      ('<a class="icon-btn hide-md" href="profil.html" aria-label="' + t('Můj profil a uložená místa') + '">') + icon('user') + '</a>' +
+      ('<a class="brand" href="index.html" aria-label="' + esc(t('Wherethru – úvod')) + '">') + logoImg() + '</a>' +
+      ('<nav class="main-nav" aria-label="' + t('Hlavní navigace') + '">') + navLinks +
+      ('<div class="nav-drop more"><button class="more-btn" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-more" data-menu data-more>' + t('Více') + ' ') + icon('chevron') + '</button>' +
+      '<div class="more-menu nav-menu" id="nav-more" hidden>' + optInMore + MORE.map(([href, label, ic]) => '<a href="' + href + '"' + cur(href) + '>' + icon(ic) + label + '</a>').join('') +
+      (KPI.i18n ? '<div class="more-lang">' + icon('globe') + '<span>' + t('Jazyk') + '</span>' + langSwitch() + '</div>' : '') + '</div></div></nav>' +
+      '<div class="header-tools">' +
+      '<span class="hide-md">' + langSwitch() + '</span>' +
+      '<span class="hide-md">' + tierPill() + '</span>' +
+      ('<button class="icon-btn needs-btn hide-md" type="button" data-open-needs aria-label="' + t('Moje potřeby') + '" title="' + t('Moje potřeby') + '">') + icon('sliders') + '<span class="dot" data-needs-flag hidden></span></button>' +
+      ('<a class="icon-btn hide-md" href="profil.html#ulozena" aria-label="' + t('Uložená místa') + '" title="' + t('Uložená místa') + '">') + icon('heart') + '<span class="count" data-saved-count hidden></span></a>' +
+      ('<a class="icon-btn hide-md" href="profil.html"' + cur('profil.html') + ' aria-label="' + t('Můj profil') + '" title="' + t('Můj profil') + '">') + icon('user') + '</a>' +
+      ('<a class="icon-btn mobile-only" href="mapa.html#hledat" aria-label="' + t('Hledat místo') + '">') + icon('search') + '</a>' +
+      ('<button class="icon-btn mobile-only" type="button" data-open-more aria-label="' + t('Menu: všechny stránky a nastavení') + '">') + icon('menu') + '</button>' +
       '</div></div></header>';
   }
 
-  // Přepínač CZ / DE / EN (i18n.js); na mobilu je v menu Více
+  // Přepínač CZ / DE / EN (i18n.js)
   function langSwitch(cls) { return KPI.i18n ? KPI.i18n.switcher(cls) : ''; }
   function tabbar() {
-    const h = here();
+    const h = here(), hash = location.hash;
     return ('<nav class="tabbar" aria-label="' + t('Spodní navigace') + '">') +
-      TABS.map(([href, label, ic]) => '<a href="' + href + '"' + (h === href ? ' aria-current="page"' : '') + '>' + icon(ic) + label + '</a>').join('') +
-      ('<button type="button" data-open-more aria-label="' + t('Další stránky a nastavení') + '">') + icon('menu') + (t('Více') + '</button></nav>');
+      TABS.map(([href, label, ic]) => {
+        const page = href.split('#')[0];
+        let on = h === page;
+        if (page === 'planovac.html') on = PLAN_PAGES.includes(h);
+        if (page === 'profil.html') on = h === 'profil.html' && ((href.indexOf('#') > 0) === (hash === '#ulozena'));
+        return '<a href="' + href + '"' + (on ? ' aria-current="page"' : '') + '>' + icon(ic) + '<span>' + label + '</span></a>';
+      }).join('') + '</nav>';
   }
 
   function moreSheet() {
     const h = here();
     const theme = document.documentElement.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const prevFocus = document.activeElement;
     const wrap = document.createElement('div');
-    const links = NAV.concat(MORE.map(x => [x[0], x[1], x[2]]));
-    const icons = { 'mapa.html': 'map', 'planovac.html': 'route', 'pruvodci.html': 'book', 'ubytovani.html': 'bed', 'pro-firmy.html': 'building' };
+    const link = ([href, label, ic]) => '<a href="' + href + '"' + (h === href ? ' aria-current="page"' : '') + '>' + icon(ic || NAV_ICONS[href] || 'arrow') + label + '</a>';
+    const group = (title, items) => '<p class="menu-group">' + title + '</p>' + items.map(link).join('');
     wrap.innerHTML = '<div class="sheet-backdrop" data-close></div><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="more-title"><div class="grip"></div>' +
-      ('<header><h2 id="more-title">' + t('Všechny stránky') + '</h2><button class="icon-btn" type="button" data-close aria-label="' + t('Zavřít') + '">') + icon('close') + '</button></header>' +
+      ('<header><h2 id="more-title">' + t('Menu') + '</h2><button class="icon-btn" type="button" data-close aria-label="' + t('Zavřít') + '">') + icon('close') + '</button></header>' +
       '<div class="body"><div class="menu-list">' +
-      links.map(([href, label, ic]) => '<a href="' + href + '"' + (h === href ? ' aria-current="page"' : '') + '>' + icon(ic || icons[href] || 'arrow') + label + '</a>').join('') +
-      '<a href="profil.html">' + icon('user') + (t('Můj profil a uložená místa') + '</a>') +
-      '<div class="menu-sep"></div>' +
-      '<button type="button" data-tier-open-sheet>' + icon('star') + t('Úroveň členství') + ' <span class="tier-tag tier-' + tier() + '">' + TIERS[tier()].label + '</span></button>' +
+      group(t('Objevuj'), [['mapa.html', t('Mapa'), 'map'], ['ubytovani.html', t('Ubytování'), 'bed'], ['pruvodci.html', t('Průvodci'), 'book'], ['akce.html', t('Akce'), 'calendar'], ['stezky.html', t('Stezky a trasy'), 'tree'], ['kraj.html', t('Kraje'), 'globe']]) +
+      group(t('Plánuj'), PLAN.map(x => [x[0], x[1], x[2]])) +
+      group(t('Další'), [['pro-firmy.html', t('Pro podniky'), 'building'], ['komunita.html', t('Komunita'), 'users'], ['pridat.html', t('Přidat místo'), 'plus'], ['clenstvi.html', t('Členství'), 'star'], ['metodika.html', t('Jak měříme'), 'ruler'], ['zdroje.html', t('Zdroje'), 'chart'], ['o-projektu.html', t('O projektu'), 'info']]) +
+      '<p class="menu-group">' + t('Nastavení') + '</p>' +
+      '<button type="button" data-tier-open-sheet>' + icon('star') + t('Úroveň členství') + ' ' + tierTag(tier()) + '</button>' +
       '<button type="button" data-open-needs>' + icon('sliders') + (t('Moje potřeby') + '</button>') +
       '<button type="button" data-theme-toggle>' + icon(theme === 'dark' ? 'sun' : 'moon') + (theme === 'dark' ? t('Světlý režim') : t('Tmavý režim')) + '</button>' +
       (KPI.i18n ? '<div class="menu-lang">' + icon('globe') + '<span class="lbl">' + t('Jazyk') + '</span>' + langSwitch() + '</div>' : '') +
       '</div></div></div>';
     document.body.appendChild(wrap);
-    const close = () => wrap.remove();
+    const close = () => { wrap.remove(); if (prevFocus && prevFocus.focus && document.contains(prevFocus)) prevFocus.focus(); };
     wrap.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', close));
-    wrap.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
-    wrap.querySelector('[data-open-needs]').addEventListener('click', () => { close(); needsDrawer(); });
+    wrap.addEventListener('keydown', e => {
+      if (e.key === 'Escape') close();
+      if (e.key === 'Tab') { // fokus zůstává v panelu
+        const f = [...wrap.querySelectorAll('a[href], button:not([disabled])')];
+        if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+        else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+      }
+    });
+    wrap.querySelector('[data-open-needs]').addEventListener('click', () => { wrap.remove(); needsDrawer(); });
     wrap.querySelector('[data-theme-toggle]').addEventListener('click', () => { toggleTheme(); close(); });
-    wrap.querySelector('[data-tier-open-sheet]').addEventListener('click', () => { close(); tierSwitch(); });
-    wrap.querySelector('a').focus();
+    wrap.querySelector('[data-tier-open-sheet]').addEventListener('click', () => { wrap.remove(); tierSwitch(); });
+    (wrap.querySelector('[aria-current="page"]') || wrap.querySelector('.sheet a')).focus();
   }
 
   function footer() {
-    return '<footer class="site-footer"><div class="wrap"><div class="cols">' +
-      '<div><a class="brand" href="index.html">' + LOGO + ('<span>kudyprojedu<span class="dom">.cz</span></span></a><p class="small muted" style="margin-top:12px;max-width:34ch">' + t('Přístupnost v centimetrech, ne v nálepkách. Platforma pro bezbariérové cestování. Začínáme v jižních Čechách a v Bavorsku.') + '</p>') +
-      '<div class="footer-tools"><button class="btn btn-ghost btn-sm" type="button" data-theme-toggle>' + icon('moon') + (t('Světlý / tmavý režim') + '</button>') + langSwitch() + '</div></div>' +
-      ('<div><h4>' + t('Hledat') + '</h4><ul><li><a href="mapa.html">' + t('Mapa míst') + '</a></li><li><a href="planovac.html">' + t('Plánovat výlet') + '</a></li><li><a href="pruvodci.html">' + t('Průvodci') + '</a></li><li><a href="ubytovani.html">' + t('Ubytování') + '</a></li><li><a href="mapa.html#wc">' + t('Veřejné WC') + '</a></li><li><a href="trasy.html">' + t('Bariéry v ulicích') + '</a></li><li><a href="kraj.html">' + t('Kraje') + '</a></li></ul></div>') +
-      ('<div><h4>' + t('Přispět') + '</h4><ul><li><a href="pridat.html">' + t('Přidat nebo upravit místo') + '</a></li><li><a href="metodika.html#mereni">' + t('Jak měřit dveře a schody') + '</a></li><li><a href="komunita.html">' + t('Komunita') + '</a></li><li><a href="profil.html">' + t('Můj profil') + '</a></li></ul></div>') +
-      ('<div><h4>' + t('Pro organizace') + '</h4><ul><li><a href="clenstvi.html">' + t('Členství') + '</a></li><li><a href="pro-firmy.html">' + t('Pro podniky') + '</a></li><li><a href="pro-firmy.html#obce">' + t('Pro obce a kraje') + '</a></li><li><a href="pro-firmy.html#cenik">' + t('Ceník') + '</a></li><li><a href="zdroje.html">' + t('Zdroje a trh') + '</a></li></ul></div>') +
-      ('<div><h4>' + t('Projekt') + '</h4><ul><li><a href="o-projektu.html">' + t('O projektu') + '</a></li><li><a href="o-projektu.html#plan">' + t('Plán rozvoje') + '</a></li><li><a href="metodika.html">' + t('Jak měříme') + '</a></li><li><a href="metodika.html#soukromi">' + t('Soukromí a GDPR') + '</a></li></ul><div class="partner-logos"><span>VŠTE ČB</span><span>OTH Regensburg</span><span>Interreg BY–CZ</span></div></div>') +
-      ('</div><div class="legal"><span>' + t('© 2026 kudyprojedu.cz – studentský projekt STENT-IN') + '</span><span>' + t('Data © přispěvatelé OpenStreetMap (ODbL), Mapy bez bariér, Brno a IPR Praha (CC BY), Statutární město Ostrava (CC BY-SA 4.0) · Bavorsko: DB InfraGO OpenStation (CC0), Landeshauptstadt München a Stadt Würzburg (dl-de/by-2-0), Stadt Haar (CC BY 4.0), BayernCloud Tourismus (CC BY 4.0 a CC0) · fotky Wikimedia Commons · mapy Google') + ' · <a href="zdroje.html#bavorsko">' + t('Všechny zdroje a licence') + '</a></span></div></div></footer>');
+    const col = (title, items) => '<div><h4>' + title + '</h4><ul>' + items.map(([href, label]) => '<li><a href="' + href + '">' + label + '</a></li>').join('') + '</ul></div>';
+    return '<footer class="site-footer"><div class="wrap">' +
+      '<div class="foot-top"><div class="foot-brand"><a class="brand" href="index.html" aria-label="' + esc(t('Wherethru – úvod')) + '">' + logoImg('white') + '</a>' +
+      '<p class="foot-claim">' + CLAIM + '</p>' +
+      '<p class="small muted" style="margin:10px 0 0">' + t('Přístupnost v centimetrech, ne v nálepkách. Mapa a plánování cest bez bariér po Česku a Bavorsku.') + '</p></div>' +
+      '<div class="footer-tools">' + langSwitch() + '<button class="btn btn-ghost btn-sm" type="button" data-theme-toggle>' + icon('moon') + t('Světlý / tmavý režim') + '</button></div></div>' +
+      '<div class="cols">' +
+      col(t('Objevuj'), [['mapa.html', t('Mapa míst')], ['ubytovani.html', t('Ubytování')], ['pruvodci.html', t('Průvodci')], ['stezky.html', t('Stezky a trasy')], ['trasy.html', t('Bariéry v ulicích')], ['mapa.html?wc=1', t('Veřejné WC')], ['kraj.html', t('Kraje')]]) +
+      col(t('Plánuj'), [['planovac.html', t('Jednodenní výlet')], ['dovolena.html', t('Vícedenní dovolená')], ['itinerar.html', t('Moje itineráře')], ['akce.html', t('Akce')], ['komunita.html', t('Komunita')], ['profil.html#ulozena', t('Uložená místa')]]) +
+      col(t('Pro podniky'), [['pro-firmy.html', t('Nabídka pro podniky')], ['podnik.html', t('Profil podniku')], ['pro-firmy.html#obce', t('Pro obce a kraje')], ['pridat.html', t('Přidat nebo upravit místo')], ['clenstvi.html', t('Členství')]]) +
+      '<div><h4>' + t('O projektu') + '</h4><ul>' + [['o-projektu.html', t('O projektu a tým')], ['o-projektu.html#plan', t('Plán rozvoje')], ['metodika.html', t('Jak měříme')], ['zdroje.html', t('Zdroje a trh')], ['metodika.html#soukromi', t('Soukromí a GDPR')]].map(([href, label]) => '<li><a href="' + href + '">' + label + '</a></li>').join('') +
+      '</ul><div class="partner-logos"><span>VŠTE ČB</span><span>OTH Regensburg</span><span>Interreg BY–CZ</span></div></div>' +
+      '</div><div class="legal"><span>' + t('© 2026 Wherethru, studentský projekt STENT-IN') + ' <span class="proto-tag">' + t('Prototyp') + '</span></span><span>' + t('Data © přispěvatelé OpenStreetMap (ODbL), Mapy bez bariér, Brno a IPR Praha (CC BY), Statutární město Ostrava (CC BY-SA 4.0) · Bavorsko: DB InfraGO OpenStation (CC0), Landeshauptstadt München a Stadt Würzburg (dl-de/by-2-0), Stadt Haar (CC BY 4.0), BayernCloud Tourismus (CC BY 4.0 a CC0) · fotky Wikimedia Commons · mapy Google') + ' · <a href="zdroje.html#bavorsko">' + t('Všechny zdroje a licence') + '</a></span></div></div></footer>';
   }
 
   // ---------- Formulář potřeb (panel „Moje potřeby“ i stránka profil.html) ----------
@@ -1281,9 +1383,10 @@
   //   KP.TIER_NOTE, KP.TIER_PROTO_NOTE  povinné poznámky o návrhu nabídky a o prototypu
   const TIER_ORDER = ['free', 'plus', 'premium'];
   const TIERS = {
-    free: { key: 'free', rank: 0, label: 'FREE', name: 'Explore', claim: t('objevuj bez bariér'), price: 0 },
-    plus: { key: 'plus', rank: 1, label: 'PLUS', name: 'Plan', claim: t('cestuj podle svých pravidel'), price: 4.99 },
-    premium: { key: 'premium', rank: 2, label: 'PREMIUM', name: 'Travel', claim: t('dovolená bez zbytečného stresu'), price: 9.99 },
+    // Názvy z mockupu (v4): Free / Explorer / Traveller; klíče free / plus / premium zůstávají
+    free: { key: 'free', rank: 0, label: 'Free', name: 'Free', claim: t('Začni objevovat'), price: 0 },
+    plus: { key: 'plus', rank: 1, label: 'Explorer', name: 'Explorer', claim: t('Plánuj víc. Dojdi dál.'), price: 4.99 },
+    premium: { key: 'premium', rank: 2, label: 'Traveller', name: 'Traveller', claim: t('Maximum svobody na cestách'), price: 9.99 },
   };
   function tierPrice(k) {
     const x = TIERS[k] || TIERS.free;
@@ -1303,7 +1406,7 @@
     match: { label: 'Accessibility Match', desc: t('Automatické porovnání míst s vašimi osobními požadavky. U každého místa uvidíte, co splňuje, co ne a kde údaj chybí.') },
     needsProfile: { label: t('Osobní profil požadavků'), desc: t('Uložíte si, čím se pohybujete a co zvládnete: šířku dveří, výšku schodu, sklon, WC nebo parkování. Podle toho se hodnotí každé místo.') },
     dayPlanner: { label: t('Plánovač jednodenních výletů'), desc: t('Návrh výletu podle rozpočtu, zájmů a mobility. V prototypu jde o návrh sestavený podle pravidel nad skutečnými daty, v ostré verzi s AI.') },
-    unlimitedSaves: { label: t('Neomezené ukládání míst a itinerářů'), desc: t('Ve FREE si uložíte až {n} oblíbených míst. PLUS ukládá bez omezení.', { n: FREE_SAVE_LIMIT }) },
+    unlimitedSaves: { label: t('Neomezené ukládání míst a itinerářů'), desc: t('V úrovni {free} si uložíte až {n} oblíbených míst. {plus} ukládá bez omezení.', { n: FREE_SAVE_LIMIT, free: 'Free', plus: 'Explorer' }) },
     customLists: { label: t('Vlastní seznamy a sdílené cestovní plány'), desc: t('Místa si roztřídíte do seznamů a plán výletu pošlete odkazem.') },
     advancedFilters: { label: t('Pokročilé filtry'), desc: t('Filtry podle konkrétních rozměrů a vybavení, třeba šířky dveří nebo sprchy v úrovni podlahy.') },
     changeAlerts: { label: t('Upozornění na změny'), desc: t('Upozornění, když se u uloženého místa změní údaj o přístupnosti.') },
@@ -1383,11 +1486,11 @@
       '<p class="kicker" style="margin:0">' + esc(t('Funkce členství {tier}', { tier: T.label })) + '</p>' +
       '<h3 style="margin:0">' + esc(info.label) + ' ' + tierTag(need) + '</h3>' +
       (info.desc ? '<p style="margin:0">' + esc(info.desc) + '</p>' : '') +
-      '<p class="muted" style="margin:0">' + esc(t(need === 'plus' ? 'Funkce patří do úrovně PLUS ({price}) a je i v PREMIUM.' : 'Funkce patří do úrovně PREMIUM ({price}).', { price: T.priceLabel })) + ' ' +
+      '<p class="muted" style="margin:0">' + esc(t(need === 'plus' ? 'Funkce patří do úrovně {tier} ({price}) a je i v {top}.' : 'Funkce patří do úrovně {tier} ({price}).', { tier: T.label, top: TIERS.premium.label, price: T.priceLabel })) + ' ' +
         esc(t('Vaše úroveň teď: {tier}.', { tier: TIERS[tier()].label })) + '</p>' +
       '<p class="callout small" style="margin:0">' + esc(TIER_NOTE) + '</p>' +
       '<p class="small muted" style="margin:0">' + esc(TIER_PROTO_NOTE) + '</p>' +
-      '<p style="margin:0"><a href="clenstvi.html">' + esc(t('Porovnat FREE, PLUS a PREMIUM')) + '</a></p>';
+      '<p style="margin:0"><a href="clenstvi.html">' + esc(t('Porovnat Free, Explorer a Traveller')) + '</a></p>';
     const foot = '<button class="btn btn-primary" type="button" data-try data-autofocus>' + esc(t('Vyzkoušet jako {tier} (prototyp, nic se neplatí)', { tier: T.label })) + '</button>' +
       '<button class="btn btn-ghost" type="button" data-close>' + esc(t('Teď ne')) + '</button>';
     tierPanel(esc(t('Funkce {tier}', { tier: T.label })), body, foot, (wrap, close) => {
@@ -1404,7 +1507,7 @@
     const body = '<p style="margin:0">' + esc(t('Vyzkoušejte, jak by web fungoval s placeným členstvím. Přepnutí platí jen v tomto prohlížeči.')) + '</p>' +
       '<div class="tier-options" role="group" aria-label="' + esc(t('Úroveň členství')) + '">' +
       TIER_ORDER.map(k => { const x = TIERS[k]; return '<button type="button" class="tier-opt" data-set-tier="' + k + '" aria-pressed="' + (k === cur) + '">' + tierTag(k) +
-        '<span class="tier-opt-t"><b>' + esc(x.name) + '</b><span>' + esc(x.claim) + '</span></span><span class="tier-opt-p num">' + esc(x.priceLabel) + '</span></button>'; }).join('') + '</div>' +
+        '<span class="tier-opt-t"><b>' + esc(x.claim) + '</b></span><span class="tier-opt-p num">' + esc(x.priceLabel) + '</span></button>'; }).join('') + '</div>' +
       '<p class="callout small" style="margin:0">' + esc(TIER_NOTE) + '</p>' +
       '<p class="small muted" style="margin:0">' + esc(TIER_PROTO_NOTE) + '</p>';
     const foot = '<a class="btn btn-ghost" href="clenstvi.html">' + esc(t('Co která úroveň obsahuje')) + '</a><button class="btn btn-primary" type="button" data-close>' + esc(t('Hotovo')) + '</button>';
@@ -1417,30 +1520,7 @@
       const on = wrap.querySelector('[aria-pressed="true"]'); if (on) on.focus();
     });
   }
-  // Styl štítků a panelu členství je tady, protože hlavička je na každé stránce (style.css patří celému webu)
-  (function tierCss() {
-    if (document.getElementById('kp-tier-css')) return;
-    const st = document.createElement('style'); st.id = 'kp-tier-css';
-    st.textContent =
-      '.tier-tag{display:inline-flex;align-items:center;padding:2px 7px;border:1.5px solid var(--ink);border-radius:2px;font:700 .72rem/1.3 var(--f-mono);letter-spacing:.06em;color:var(--ink);background:var(--surface);white-space:nowrap;vertical-align:middle}' +
-      '.tier-tag.tier-plus{background:var(--signal);color:var(--on-signal);border-color:var(--signal)}' +
-      '.tier-tag.tier-premium{background:#101010;color:#FFD400;border-color:var(--rule)}' +
-      '.tier-pill{display:inline-grid;place-items:center;min-width:44px;min-height:44px;padding:0 4px;border:0;background:none;cursor:pointer}' +
-      '.tier-pill:hover .tier-tag{box-shadow:0 0 0 3px var(--signal)}' +
-      '.tier-drawer .body{gap:14px}' +
-      '.tier-foot{flex-wrap:wrap}.tier-foot .btn{flex:1 1 auto;white-space:normal;text-align:center}' +
-      '.tier-options{display:grid;border-top:1px solid var(--rule)}' +
-      '.tier-opt{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 12px;align-items:center;min-height:64px;padding:12px 8px;border:0;border-bottom:1px solid var(--rule);background:none;color:var(--ink);text-align:left;cursor:pointer;font:inherit}' +
-      '.tier-opt:hover{background:var(--surface-2)}' +
-      '.tier-opt[aria-pressed="true"]{box-shadow:inset 6px 0 0 var(--signal);padding-left:16px}' +
-      '.tier-opt[aria-pressed="true"] .tier-opt-t b::after{content:" \\2713"}' +
-      '.tier-opt-t{display:flex;flex-direction:column;min-width:0}.tier-opt-t span{color:var(--ink-2);font-size:.9rem}' +
-      '.tier-opt-p{font-weight:700;white-space:nowrap}' +
-      '.sheet .menu-list .tier-tag{margin-left:auto}' +
-      '@media (max-width:360px){.tier-opt{grid-template-columns:auto minmax(0,1fr)}.tier-opt-p{grid-column:2}}' +
-      '@media (max-width:1240px) and (min-width:900px){.add-btn .lbl{display:none}.add-btn{padding-inline:12px}}';
-    (document.head || document.documentElement).appendChild(st);
-  })();
+  // Styl štítků úrovně (.tier-tag, .tier-pill, .tier-opt) je od v4 ve style.css.
 
   // ---------- Téma ----------
   function applyTheme(t) { if (t) document.documentElement.setAttribute('data-theme', t); else document.documentElement.removeAttribute('data-theme'); }
@@ -1455,14 +1535,31 @@
     const f = document.getElementById('site-footer'); if (f) f.outerHTML = footer();
     if (!document.querySelector('.tabbar') && !document.body.hasAttribute('data-no-tabbar')) document.body.insertAdjacentHTML('beforeend', tabbar());
     document.querySelectorAll('.site-footer [data-theme-toggle]').forEach(b => b.addEventListener('click', toggleTheme));
-    const mb = document.querySelector('[data-more]');
-    if (mb) {
-      const menu = mb.nextElementSibling;
-      const set = (open) => { menu.hidden = !open; mb.setAttribute('aria-expanded', open); };
-      mb.addEventListener('click', (e) => { e.stopPropagation(); set(menu.hidden); });
-      document.addEventListener('click', (e) => { if (!menu.hidden && !menu.contains(e.target)) set(false); });
-      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') set(false); });
+    // Rozbalovací menu v hlavičce (Plánovat, Více): klik, Escape, klik mimo; vždy otevřené jen jedno
+    const drops = [...document.querySelectorAll('.site-header [data-menu]')].map(btn => {
+      const menu = btn.nextElementSibling;
+      const set = (open, focusBtn) => { menu.hidden = !open; btn.setAttribute('aria-expanded', open); if (!open && focusBtn) btn.focus(); };
+      return { btn, menu, set };
+    });
+    drops.forEach(d => {
+      d.btn.addEventListener('click', (e) => { e.stopPropagation(); const open = d.menu.hidden; drops.forEach(x => x.set(false)); d.set(open); if (open) { const a = d.menu.querySelector('a'); if (a && e.detail === 0) a.focus(); } });
+      d.menu.addEventListener('keydown', (e) => {
+        const items = [...d.menu.querySelectorAll('a')].filter(a => a.offsetParent !== null), i = items.indexOf(document.activeElement);
+        if (e.key === 'ArrowDown') { e.preventDefault(); (items[i + 1] || items[0]).focus(); }
+        if (e.key === 'ArrowUp') { e.preventDefault(); (items[i - 1] || items[items.length - 1]).focus(); }
+      });
+      d.menu.addEventListener('focusout', (e) => { if (!d.menu.contains(e.relatedTarget) && e.relatedTarget !== d.btn) d.set(false); });
+    });
+    if (drops.length) {
+      document.addEventListener('click', (e) => { drops.forEach(d => { if (!d.menu.hidden && !d.menu.contains(e.target)) d.set(false); }); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') drops.forEach(d => { if (!d.menu.hidden) d.set(false, d.menu.contains(document.activeElement)); }); });
     }
+    // Uložená místa: počet u srdíčka v hlavičce
+    const savedCount = () => { const n = saved.all().length; document.querySelectorAll('[data-saved-count]').forEach(el => { el.hidden = !n; el.textContent = n; }); };
+    savedCount(); document.addEventListener('kp:saved', savedCount);
+    // Tlačítko Hledat na mobilu vede na mapa.html#hledat: zaměří první vyhledávací pole
+    if (location.hash === '#hledat') { const q = document.querySelector('main input[type="search"]'); if (q) setTimeout(() => q.focus(), 60); }
+    loadSprite();
     document.querySelectorAll('[data-open-more]').forEach(b => b.addEventListener('click', moreSheet));
     document.querySelectorAll('[data-open-needs]').forEach(b => b.addEventListener('click', needsDrawer));
     document.querySelectorAll('[data-tier-open]').forEach(b => b.addEventListener('click', tierSwitch));
@@ -1485,7 +1582,7 @@
 
   window.KP = Object.assign(window.KP || {}, { store, LANG, lc, nf, icon, CATS, SOURCES, W, T, FIELDS, getNeeds, setNeeds, completeness, missingFields, match, generalStatus, STATUS_LABEL, STATUS_SHORT,
     AIDS, DEFAULT_NEEDS, aidLabel, needsSummary, needsForm, AREAS, FEATURES, MEASURES, facts, facilitiesScore, matchScore, community, business, resizePhoto, PROTOTYPE_NOTE,
-    fmt, fmtDate, ageLabel, sourceBadge, statusHtml, isOsm, osmUrl, osmEditUrl, commonsImg, commonsPage, gmaps, loadPlaces, loadStats, loadRegionsIndex, loadRegion, loadPlacesInBounds, loadAll, loadTowns, findPlace, findPlaces, placeUrl, rememberRegion, regionMeta, regionByName, isRegionLoaded, krajName, zemeOf, ZEME, ZEME_LONG, OSM_DATE, toast, saved, needsDrawer, esc, placeById, distanceKm, LOGO, moreSheet, toggleTheme,
+    fmt, fmtDate, ageLabel, sourceBadge, srcLevel, statusHtml, isOsm, osmUrl, osmEditUrl, commonsImg, commonsPage, gmaps, loadPlaces, loadStats, loadRegionsIndex, loadRegion, loadPlacesInBounds, loadAll, loadTowns, findPlace, findPlaces, placeUrl, rememberRegion, regionMeta, regionByName, isRegionLoaded, krajName, zemeOf, ZEME, ZEME_LONG, OSM_DATE, toast, saved, needsDrawer, esc, placeById, distanceKm, LOGO, moreSheet, toggleTheme,
     TIERS, TIER_ORDER, tier, setTier, hasTier, tierOf, FEATURES_TIER, FEATURE_INFO, tierBadge, tierTag, requireTier, tierSwitch, tierPrice, TIER_NOTE, TIER_PROTO_NOTE, FREE_SAVE_LIMIT });
   if (!window.KP.t) window.KP.t = t;
   if (!window.KP.tx) window.KP.tx = (x) => x;

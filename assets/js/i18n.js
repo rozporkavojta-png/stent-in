@@ -1,4 +1,4 @@
-/* kudyprojedu.cz – jazyky čeština / němčina / angličtina.
+/* Wherethru – jazyky čeština / němčina / angličtina.
    Načítá se před core.js. API:
      KP.t(klíč, {param})      přeloží text; klíčem je český text nebo kód ('nav.x'). Chybí-li překlad, vrátí češtinu.
                               Parametry v textu: {n}, {name} … → KP.t('Dveře {n} cm', { n: 80 })
@@ -120,9 +120,15 @@
       });
     });
     if (r === document) {
-      // Titulek „Název stránky · kudyprojedu.cz“: přeloží se část před tečkou
-      const parts = document.title.split(' · ');
-      if (parts.length) { parts[0] = t(parts[0]); document.title = parts.join(' · '); }
+      // Titulek „Název stránky · Wherethru“: přeloží se část před tečkou
+      // (celý titulek nebo jeho části, například „Wherethru · Objevuj · Plánuj · Zažij – bez bariér“)
+      if (has(norm(document.title))) document.title = t(norm(document.title));
+      else {
+        const parts = document.title.split(' · ');
+        const claim = parts.length > 2 ? parts.slice(1).join(' · ') : null;
+        if (claim && has(claim)) document.title = t(parts[0]) + ' · ' + t(claim);
+        else document.title = parts.map(p => (has(p) ? t(p) : p)).join(' · ');
+      }
       const md = document.querySelector('meta[name="description"]');
       if (md && has(md.content)) md.content = t(md.content);
     }

@@ -2,95 +2,111 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<link rel="icon" href="data:,">
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#3A4A34">
+<meta name="application-name" content="Wherethru">
+<meta property="og:site_name" content="Wherethru">
+<meta property="og:image" content="assets/brand/og-image.png">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Akce · kudyprojedu.cz</title>
+<title>Akce · Wherethru</title>
 <meta name="description" content="Komunitní setkání, workshopy a bezbariérové výlety v jižních Čechách a Bavorsku. Zatím nejsou naplánované žádné akce. Akci můžete navrhnout, v prototypu se návrh uloží jen ve vašem prohlížeči.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=16">
-<link rel="stylesheet" href="assets/css/pages-a.css?v=13">
-<link rel="stylesheet" href="assets/css/pages-c.css?v=15">
-<link rel="stylesheet" href="assets/css/pruvodci.css?v=3">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Caveat:wght@500&family=Fraunces:opsz,wght@9..144,600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=18">
+<link rel="stylesheet" href="assets/css/pages-a.css?v=15">
+<link rel="stylesheet" href="assets/css/pages-c.css?v=16">
+<link rel="stylesheet" href="assets/css/pruvodci.css?v=5">
 </head>
 <body class="page-akce">
 <div id="site-header"></div>
 <main id="main">
 
-  <section class="page-head">
+  <section class="page-head ak-hero">
     <div class="wrap">
+      <nav aria-label="Drobečková navigace" data-i18n-attr="aria-label"><ol class="crumbs"><li><a href="index.html" data-i18n>Domů</a></li><li><a href="komunita.html" data-i18n>Komunita</a></li><li><span aria-current="page" data-i18n>Akce</span></li></ol></nav>
       <p class="kicker" data-i18n>Akce · prototyp</p>
       <h1 data-i18n>Setkání, workshopy a výlety bez bariér</h1>
       <p class="lede" data-i18n>Chceme, aby se lidé z komunity potkávali i mimo mapu: na setkáních, na workshopech o cestování a na výletech po jižních Čechách a Bavorsku.</p>
-      <nav class="ko-jump" aria-label="Obsah stránky" data-i18n-attr="aria-label">
-        <a href="#planovane" data-i18n>Naplánované akce</a><a href="#druhy" data-i18n>Co chystáme</a><a href="#navrh" data-i18n>Navrhnout akci</a><a href="#pravidla" data-i18n>Pravidla</a><a href="#pravni" data-i18n>Právní poznámka</a>
-      </nav>
+      <div class="page-head-actions"><a class="btn btn-primary" href="#navrh"><span data-icon="plus"></span><span data-i18n>Navrhnout akci</span></a><a class="btn btn-ghost" href="#jak" data-i18n>Jak to bude fungovat</a></div>
     </div>
   </section>
 
-  <section class="section" id="planovane" aria-labelledby="planovane-h">
-    <div class="wrap split-grid">
-      <div class="split-h">
-        <p class="kicker" data-i18n>Kalendář</p>
-        <h2 id="planovane-h" data-i18n>Naplánované akce</h2>
-        <p class="muted" data-i18n>Akce sem přidáme, až budou mít termín, místo a ověřenou přístupnost. Žádné ukázkové termíny si nevymýšlíme.</p>
+  <section class="section section-tight" id="planovane" aria-labelledby="planovane-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="kicker" data-i18n>Kalendář</p><h2 id="planovane-h" class="h-serif" data-i18n>Naplánované akce</h2></div>
       </div>
-      <div class="split-b">
-        <div class="ak-empty" role="status">
-          <h3 data-i18n>Zatím žádné naplánované akce</h3>
-          <p data-i18n>Platforma je ve fázi prototypu a žádnou akci zatím nepořádá. Máte nápad na setkání nebo výlet? Navrhněte ho.</p>
-          <a class="btn btn-primary" href="#navrh" data-i18n>Navrhnout akci</a>
-        </div>
+      <div class="seg ak-filters" role="group" aria-label="Filtr akcí" data-i18n-attr="aria-label">
+        <button type="button" data-ak="all" aria-pressed="true" data-i18n>Vše</button>
+        <button type="button" data-ak="vylet" aria-pressed="false" data-i18n>Výlety</button>
+        <button type="button" data-ak="setkani" aria-pressed="false" data-i18n>Setkání</button>
+        <button type="button" data-ak="workshop" aria-pressed="false" data-i18n>Workshopy</button>
       </div>
+      <div class="empty-state ak-empty">
+        <span data-icon="calendar" class="ic" aria-hidden="true"></span>
+        <h3 id="ak-empty-h" role="status" aria-live="polite" data-i18n>Zatím žádné naplánované akce</h3>
+        <p data-i18n>Platforma je ve fázi prototypu a žádnou akci zatím nepořádá. Máte nápad na setkání nebo výlet? Navrhněte ho.</p>
+        <p class="small muted" data-i18n>Akce sem přidáme, až budou mít termín, místo a ověřenou přístupnost. Žádné ukázkové termíny si nevymýšlíme.</p>
+        <a class="btn btn-primary" href="#navrh" data-i18n>Navrhnout akci</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="jak" aria-labelledby="jak-h">
+    <div class="wrap">
+      <div class="section-head"><div><p class="kicker" data-i18n>Jak to bude fungovat</p><h2 id="jak-h" class="h-serif" data-i18n>Od nápadu k akci</h2></div></div>
+      <ol class="steps ak-steps">
+        <li><div><h3 data-i18n>Navrhnete akci</h3><p data-i18n>Napíšete, co by vás bavilo a kde. Jméno ani e-mail nepotřebujeme.</p></div></li>
+        <li><div><h3 data-i18n>Ověříme místo</h3><p data-i18n>U akce bude odkaz na místo s údaji o vstupu, WC a parkování a datum, kdy je někdo ověřil.</p></div></li>
+        <li><div><h3 data-i18n>Zveřejníme termín</h3><p data-i18n>Akce dostane štítek podle toho, kdo ji pořádá: platforma, partner, nebo člen komunity.</p></div></li>
+        <li><div><h3 data-i18n>Potkáme se</h3><p data-i18n>Setkání zdarma jsou otevřená všem. Placené workshopy a výlety budou za skutečné náklady.</p></div></li>
+      </ol>
     </div>
   </section>
 
   <section class="section" id="druhy" aria-labelledby="druhy-h">
-    <div class="wrap split-grid">
-      <div class="split-h">
-        <p class="kicker" data-i18n>Koncept</p>
-        <h2 id="druhy-h" data-i18n>Co chystáme</h2>
-        <p data-i18n>Setkání zdarma udrží komunitu pohromadě. Workshopy a výlety s odborníky budou placené podle skutečných nákladů.</p>
-        <p class="callout small" data-i18n>Jde o návrh. Každý druh akce zavedeme až po ověření zájmu, kapacit a právních požadavků.</p>
-      </div>
-      <ul class="split-b ak-kinds">
-        <li><div><h3 data-i18n>Komunitní setkání</h3><p data-i18n>Neformální setkání v přístupné kavárně nebo parku. Sdílení tras, zkušeností a tipů.</p></div><span class="ak-price" data-i18n>zdarma</span></li>
-        <li><div><h3 data-i18n>Workshopy</h3><p data-i18n>Jak plánovat cestu, jak měřit přístupnost, jak zadávat údaje do mapy. Pro jednotlivce i pro provozovatele.</p></div><span class="ak-price"><span data-i18n>placené</span><small data-i18n>cena podle nákladů a počtu lidí</small></span></li>
-        <li><div><h3 data-i18n>Bezbariérové výlety</h3><p data-i18n>Jednodenní výlety s kvalifikovaným průvodcem a přístupnou dopravou. Vícedenní cesty jen ve spolupráci se zavedenou cestovní kanceláří.</p></div><span class="ak-price"><span data-i18n>placené</span><small data-i18n>s partnery, až budou sjednaní</small></span></li>
-        <li><div><h3 data-i18n>Akce od uživatelů</h3><p data-i18n>Kdokoli z komunity může navrhnout a uspořádat neformální setkání. Jasně je odlišíme od akcí, které pořádá platforma.</p></div><span class="ak-price" data-i18n>podle pořadatele</span></li>
+    <div class="wrap">
+      <div class="section-head"><div><p class="kicker" data-i18n>Koncept</p><h2 id="druhy-h" class="h-serif" data-i18n>Co chystáme</h2></div></div>
+      <p class="lede ak-lede" data-i18n>Setkání zdarma udrží komunitu pohromadě. Workshopy a výlety s odborníky budou placené podle skutečných nákladů.</p>
+      <ul class="grid grid-4 ak-kinds">
+        <li class="card" data-kind="setkani"><span data-icon="users" class="ak-ic" aria-hidden="true"></span><h3 data-i18n>Komunitní setkání</h3><p data-i18n>Neformální setkání v přístupné kavárně nebo parku. Sdílení tras, zkušeností a tipů.</p><span class="badge badge-ok" data-i18n>zdarma</span></li>
+        <li class="card" data-kind="workshop"><span data-icon="book" class="ak-ic" aria-hidden="true"></span><h3 data-i18n>Workshopy</h3><p data-i18n>Jak plánovat cestu, jak měřit přístupnost, jak zadávat údaje do mapy. Pro jednotlivce i pro provozovatele.</p><span class="badge badge-brand" data-i18n>placené</span><small class="muted" data-i18n>cena podle nákladů a počtu lidí</small></li>
+        <li class="card" data-kind="vylet"><span data-icon="mountain" class="ak-ic" aria-hidden="true"></span><h3 data-i18n>Bezbariérové výlety</h3><p data-i18n>Jednodenní výlety s kvalifikovaným průvodcem a přístupnou dopravou. Vícedenní cesty jen ve spolupráci se zavedenou cestovní kanceláří.</p><span class="badge badge-brand" data-i18n>placené</span><small class="muted" data-i18n>s partnery, až budou sjednaní</small></li>
+        <li class="card" data-kind="uzivatel"><span data-icon="message" class="ak-ic" aria-hidden="true"></span><h3 data-i18n>Akce od uživatelů</h3><p data-i18n>Kdokoli z komunity může navrhnout a uspořádat neformální setkání. Jasně je odlišíme od akcí, které pořádá platforma.</p><span class="badge badge-community" data-i18n>podle pořadatele</span></li>
       </ul>
+      <p class="callout small ak-callout" data-i18n>Jde o návrh. Každý druh akce zavedeme až po ověření zájmu, kapacit a právních požadavků.</p>
     </div>
   </section>
 
-  <section class="section" id="vyhody" aria-labelledby="vyhody-h">
-    <div class="wrap split-grid">
-      <div class="split-h">
-        <p class="kicker" data-i18n>Členství</p>
-        <h2 id="vyhody-h" data-i18n>Výhody pro PLUS a PREMIUM</h2>
-        <p class="muted" data-i18n>Jen u vybraných placených akcí a jen tam, kde to bude ekonomicky možné. Setkání zdarma jsou otevřená všem.</p>
-      </div>
-      <div class="split-b">
-        <ul class="ak-perks">
-          <li><span><span class="tier-tag tier-free">FREE</span></span><p data-i18n>Setkání zdarma, akce od uživatelů a návrh vlastní akce.</p></li>
-          <li><span><span class="tier-tag tier-plus">PLUS</span></span><p data-i18n>Předběžná registrace na vybrané placené akce, dřív než pro ostatní.</p></li>
-          <li><span><span class="tier-tag tier-premium">PREMIUM</span></span><p data-i18n>Předběžná registrace a sleva na vybrané placené akce a výlety, pokud ji partner nabídne.</p></li>
-        </ul>
-        <p class="small muted" id="ak-tier-line"></p>
-        <p class="callout small" id="ak-tier-note"></p>
-        <p><a class="btn btn-ghost" href="clenstvi.html" data-i18n>Porovnat členství</a></p>
-      </div>
+  <section class="section section-alt" id="vyhody" aria-labelledby="vyhody-h">
+    <div class="wrap">
+      <div class="section-head"><div><p class="kicker" data-i18n>Členství</p><h2 id="vyhody-h" class="h-serif" data-i18n>Výhody pro Explorer a Traveller</h2></div></div>
+      <p class="muted ak-lede" data-i18n>Jen u vybraných placených akcí a jen tam, kde to bude ekonomicky možné. Setkání zdarma jsou otevřená všem.</p>
+      <ul class="grid grid-3 ak-perks">
+        <li class="card"><span class="tier-tag tier-free">Free</span><p data-i18n>Setkání zdarma, akce od uživatelů a návrh vlastní akce.</p></li>
+        <li class="card is-sage"><span class="tier-tag tier-plus">Explorer</span><p data-i18n>Předběžná registrace na vybrané placené akce, dřív než pro ostatní.</p></li>
+        <li class="card is-dark"><span class="tier-tag tier-premium">Traveller</span><p data-i18n>Předběžná registrace a sleva na vybrané placené akce a výlety, pokud ji partner nabídne.</p></li>
+      </ul>
+      <p class="small muted" id="ak-tier-line"></p>
+      <p class="callout small" id="ak-tier-note"></p>
+      <p><a class="btn btn-ghost" href="clenstvi.html" data-i18n>Porovnat členství</a></p>
     </div>
   </section>
 
   <section class="section" id="navrh" aria-labelledby="navrh-h">
-    <div class="wrap split-grid">
-      <div class="split-h">
+    <div class="wrap ak-navrh">
+      <div class="ak-navrh-h">
         <p class="kicker" data-i18n>Návrh akce</p>
-        <h2 id="navrh-h" data-i18n>Navrhněte setkání nebo výlet</h2>
+        <h2 id="navrh-h" class="h-serif" data-i18n>Navrhněte setkání nebo výlet</h2>
         <p data-i18n>Napište, co by vás bavilo a kde. Nepotřebujeme jméno ani e-mail.</p>
         <p class="callout small" data-i18n>Prototyp: návrh se uloží jen v tomto prohlížeči. Nikam se neodesílá a nikdo jiný ho neuvidí.</p>
+        <h3 class="ak-mine-h" id="ak-mine-h" data-i18n>Vaše návrhy</h3>
+        <div id="ak-mine"></div>
       </div>
-      <div class="split-b">
+      <div class="card ak-formcard">
         <form class="ak-form" id="ak-form" novalidate>
           <div class="field"><label for="ak-name" data-i18n>Název akce</label><input id="ak-name" type="text" maxlength="100" required autocomplete="off" placeholder="Např. Setkání u Lipna" data-i18n-attr="placeholder"></div>
           <div class="two">
@@ -124,20 +140,18 @@
           <p class="small" id="ak-msg" role="status" aria-live="polite"></p>
           <button class="btn btn-primary" type="submit" data-i18n>Uložit návrh</button>
         </form>
-        <h3 class="ak-mine-h" id="ak-mine-h" data-i18n>Vaše návrhy</h3>
-        <div id="ak-mine"></div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="pravidla" aria-labelledby="pravidla-h">
+  <section class="section section-alt" id="pravidla" aria-labelledby="pravidla-h">
     <div class="wrap split-grid">
       <div class="split-h">
         <p class="kicker" data-i18n>Pravidla</p>
-        <h2 id="pravidla-h" data-i18n>Kdo akci pořádá, bude vždy vidět</h2>
+        <h2 id="pravidla-h" class="h-serif" data-i18n>Kdo akci pořádá, bude vždy vidět</h2>
       </div>
       <div class="split-b ko-trust">
-        <div class="ko-trust-row"><span><span class="badge badge-verified" data-i18n>Pořádá platforma</span></span><p data-i18n>Akci připravuje tým kudyprojedu.cz. Přístupnost místa předem ověříme a za program odpovídáme.</p></div>
+        <div class="ko-trust-row"><span><span class="badge badge-verified" data-i18n>Pořádá platforma</span></span><p data-i18n>Akci připravuje tým Wherethru. Přístupnost místa předem ověříme a za program odpovídáme.</p></div>
         <div class="ko-trust-row"><span><span class="badge badge-business" data-i18n>S partnerem</span></span><p data-i18n>Výlet nebo workshop vede partner, třeba průvodce, dopravce nebo cestovní kancelář. U akce bude jméno partnera a kdo za co odpovídá.</p></div>
         <div class="ko-trust-row"><span><span class="badge badge-community" data-i18n>Od uživatele</span></span><p data-i18n>Neformální setkání, které pořádá člen komunity. Platforma ho jen zveřejní a nepořádá ho.</p></div>
         <ul class="ko-principles ak-rules">
@@ -146,6 +160,7 @@
           <li data-i18n>Akce od uživatelů jsou zdarma nebo za skutečné náklady. Prodej a reklama jsou zakázané.</li>
           <li data-i18n>Osobní údaje účastníků, třeba informace o pomůcce, budou jen dobrovolné a jen pro pořadatele.</li>
         </ul>
+      
       </div>
     </div>
   </section>
@@ -166,29 +181,28 @@
           <li data-i18n>Ceny placených akcí budou vycházet z jejich přímých nákladů a počtu účastníků.</li>
         </ul>
         <p class="small muted" data-i18n>Nejde o právní radu. Před spuštěním placených akcí projdeme podmínky s právníkem.</p>
+      
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="dal-h">
-    <div class="wrap split-grid">
-      <div class="split-h">
-        <p class="kicker" data-i18n>Mezitím</p>
-        <h2 id="dal-h" data-i18n>Vyrazte na vlastní pěst</h2>
-      </div>
-      <ul class="split-b rule-list ko-works">
-        <li class="rule-row"><div><h3 data-i18n>Hotoví průvodci</h3><p data-i18n>Výlety po jižních Čechách a Bavorsku sestavené ze skutečných míst a zdrojů.</p><a class="btn btn-quiet" href="pruvodci.html" data-i18n>Otevřít průvodce</a></div></li>
-        <li class="rule-row"><div><h3 data-i18n>Komunita</h3><p data-i18n>Hodnocení, potvrzování údajů, sdílené trasy a seznamy míst.</p><a class="btn btn-quiet" href="komunita.html" data-i18n>Do komunity</a></div></li>
+  <section class="section section-alt" aria-labelledby="dal-h">
+    <div class="wrap">
+      <div class="section-head"><div><p class="kicker" data-i18n>Mezitím</p><h2 id="dal-h" class="h-serif" data-i18n>Vyrazte na vlastní pěst</h2></div></div>
+      <ul class="grid grid-2 ak-next">
+        <li class="card"><span data-icon="book" class="ak-ic" aria-hidden="true"></span><h3 data-i18n>Hotoví průvodci</h3><p data-i18n>Výlety po jižních Čechách a Bavorsku sestavené ze skutečných míst a zdrojů.</p><a class="btn btn-ghost" href="pruvodci.html" data-i18n>Otevřít průvodce</a></li>
+        <li class="card"><span data-icon="users" class="ak-ic" aria-hidden="true"></span><h3 data-i18n>Komunita</h3><p data-i18n>Hodnocení, potvrzování údajů, sdílené trasy a seznamy míst.</p><a class="btn btn-ghost" href="komunita.html" data-i18n>Do komunity</a></li>
       </ul>
     </div>
   </section>
 </main>
 <div id="site-footer"></div>
-<script src="assets/js/i18n.js?v=2"></script>
-<script src="assets/js/i18n/core.js?v=3"></script>
-<script src="assets/js/i18n/akce.js?v=3"></script>
+<script src="assets/js/i18n.js?v=3"></script>
+<script src="assets/js/i18n/core.js?v=6"></script>
+<script src="assets/js/i18n/akce.js?v=4"></script>
 <script src="assets/js/config.js?v=12"></script>
-<script src="assets/js/core.js?v=16"></script>
-<script src="assets/js/akce.js?v=1"></script>
+<script src="assets/icons/icons.js?v=1"></script>
+<script src="assets/js/core.js?v=18"></script>
+<script src="assets/js/akce.js?v=2"></script>
 </body>
 </html>

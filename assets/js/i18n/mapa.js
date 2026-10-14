@@ -104,3 +104,26 @@ KP.i18n.add({
   "Shoda s mými potřebami": ["Übereinstimmung mit meinen Bedürfnissen", "Match with my needs"],
   "Accessibility Match je součást členství PLUS. Údaje o vstupu, WC a parkování zůstávají zdarma.": ["Accessibility Match ist Teil der Mitgliedschaft PLUS. Angaben zu Eingang, WC und Parken bleiben kostenlos.", "Accessibility Match is part of the PLUS membership. Information on entrances, toilets and parking stays free."],
 });
+
+/* Mapa v4 Wherethru: vrstvy, řazení, přepínač Mapa / Seznam */
+KP.i18n.add({
+  "Posunout kategorie doleva": ["Kategorien nach links verschieben", "Scroll categories left"],
+  "Posunout kategorie doprava": ["Kategorien nach rechts verschieben", "Scroll categories right"],
+  "Rychlé filtry přístupnosti": ["Schnellfilter Barrierefreiheit", "Quick accessibility filters"],
+  "Vrstvy mapy": ["Kartenebenen", "Map layers"],
+  "Podklad mapy": ["Kartenhintergrund", "Base map"],
+  "Tlumený": ["Gedämpft", "Muted"],
+  "Barevný": ["Farbig", "Colour"],
+  "Legenda značek": ["Legende der Markierungen", "Marker legend"],
+  "Odznak na značce = vstup": ["Abzeichen an der Markierung = Eingang", "Badge on the marker = entrance"],
+  "Vzdálenost": ["Entfernung", "Distance"],
+  "Shoda s mými potřebami": ["Übereinstimmung mit meinen Bedürfnissen", "Match with my needs"],
+  "S fotkou nahoře": ["Mit Foto zuerst", "With photo first"],
+  "Naměřené nahoře": ["Gemessene zuerst", "Measured first"],
+  "Zobrazit mapu": ["Karte anzeigen", "Show map"],
+  "Zobrazit seznam": ["Liste anzeigen", "Show list"],
+  "Mapa": ["Karte", "Map"],
+  "Ukázat {n} míst mimo výřez": ["{n} Orte außerhalb des Ausschnitts zeigen", "Show {n} places outside the view"],
+  "Řadím od středu mapy. Pro řazení od vás klepněte na Moje poloha.": ["Sortiert ab Kartenmitte. Für die Sortierung ab Ihrem Standort tippen Sie auf Mein Standort.", "Sorted from the map centre. Tap My location to sort from where you are."],
+  "Nejdřív vyberte oblast na mapě": ["Wählen Sie zuerst ein Gebiet auf der Karte", "First choose an area on the map"],
+});

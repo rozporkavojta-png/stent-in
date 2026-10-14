@@ -256,3 +256,20 @@ KP.i18n.add({
   "Místa do 400 m od startu": ["Orte bis 400 m vom Start", "Places within 400 m of the start"],
   "Databázi míst se nepodařilo načíst.": ["Die Ortsdatenbank konnte nicht geladen werden.", "The place database could not be loaded."],
 });
+
+/* v4 Wherethru: rychlé filtry katalogu tras */
+KP.i18n.add({
+  "Úvod": ["Startseite", "Home"],
+  "Země": ["Land", "Country"],
+  "Vše": ["Alle", "All"],
+  "Česko": ["Tschechien", "Czechia"],
+  "Bavorsko": ["Bayern", "Bavaria"],
+  "Rychlé filtry": ["Schnellfilter", "Quick filters"],
+  "Do 2 km": ["Bis 2 km", "Up to 2 km"],
+  "Sklon do 6 %": ["Steigung bis 6 %", "Gradient up to 6%"],
+  "Zpevněný povrch": ["Befestigte Oberfläche", "Paved surface"],
+  "WC u startu": ["WC am Start", "Toilet at the start"],
+  "Parkování ZTP": ["Behindertenparkplatz", "Disabled parking"],
+  "Lavičky": ["Bänke", "Benches"],
+  "Všechny filtry": ["Alle Filter", "All filters"],
+});

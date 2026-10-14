@@ -1,0 +1,111 @@
+/* Můj profil (profil.html) – verze 4 Wherethru (DESIGN.md). Načítá se po pages-b.css a přepisuje vzhled v3:
+   hlavička jako karta s úrovní a počty, sekce jako bílé karty, uložená místa jako karty míst (.place-tile),
+   skupiny „Kdo cestuje“ jako čipy. Dříve vkládané styly z profil.js a z <style> v profil.html jsou tady. */
+
+/* ---------- Hlavička ---------- */
+.pf-hero { padding-bottom: 8px; }
+.pf-hero-card { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 20px 28px; align-items: center; padding: clamp(20px, 3vw, 32px); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-card); box-shadow: var(--shadow); }
+.pf-avatar { width: 88px; height: 88px; border-radius: 50%; display: grid; place-items: center; background: var(--brand-200); color: var(--brand-900); align-self: start; }
+.pf-avatar svg { width: 44px; height: 44px; }
+.pf-hero-txt { min-width: 0; }
+.pf-hero-txt .kicker { margin: 0 0 6px; }
+.pf-hero-txt h1 { margin: 0 0 6px; font-size: clamp(2rem, 4vw, 2.8rem); }
+.pf-hero-txt .lede { margin: 0; font-size: 1.05rem; }
+.pf-hero-tier { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 12px 0 0; color: var(--ink-2); font-size: .95rem; }
+.pf-hero-tier a { font-weight: 700; display: inline-flex; align-items: center; min-height: 44px; }
+.pf-stats { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(96px, 1fr)); gap: 10px; }
+.pf-stats a { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; min-height: 96px; padding: 14px; border-radius: var(--r); background: var(--brand-100); color: var(--ink-2); text-decoration: none; }
+.pf-stats a:hover { background: var(--brand-200); color: var(--ink); }
+.pf-stats svg { width: 22px; height: 22px; color: var(--brand-900); margin-bottom: 4px; }
+.pf-stats b { font: 800 1.6rem/1 var(--f-display); color: var(--heading); }
+.pf-stats span { font-size: .84rem; line-height: 1.25; }
+@media (max-width: 1080px) { .pf-hero-card { grid-template-columns: auto minmax(0, 1fr); } .pf-stats { grid-column: 1 / -1; } }
+@media (max-width: 560px) {
+  .pf-hero-card { grid-template-columns: 52px minmax(0, 1fr); gap: 16px 14px; }
+  .pf-avatar { width: 52px; height: 52px; } .pf-avatar svg { width: 26px; height: 26px; }
+  .pf-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .pf-stats a { padding: 12px 10px; min-height: 88px; }
+  .pf-stats b { font-size: 1.35rem; }
+}
+
+.pf-proto { margin: 16px 0 0; padding: 10px 14px; border: 0; border-radius: var(--r); background: var(--surface-2); max-width: none; font-size: .92rem; color: var(--ink-2); }
+.pf-toc { display: flex; flex-wrap: nowrap; gap: 8px; margin-top: 16px; padding-top: 0; border-top: 0; overflow-x: auto; }
+.pf-toc a.chip { white-space: nowrap; min-height: 44px; color: var(--ink-2); font-weight: 700; text-decoration: none; }
+.pf-toc a.chip:hover { text-decoration: none; }
+
+/* ---------- Rozvržení a karty ---------- */
+.pf-layout { gap: 24px 32px; padding-block: 24px 96px; }
+.pf-main { gap: 24px; }
+.pf-aside { gap: 16px; }
+.pf-needs, .pf-sec { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-card); box-shadow: var(--shadow); padding: clamp(18px, 2.4vw, 26px); scroll-margin-top: calc(var(--header-h) + 16px); min-width: 0; }
+.pf-needs { border-top: 1px solid var(--line); padding-top: clamp(18px, 2.4vw, 26px); }
+.pf-head { margin-bottom: 14px; align-items: center; }
+.pf-head h2 { font-size: clamp(1.3rem, 2.2vw, 1.6rem); }
+.pf-count { display: inline-grid; place-items: center; min-width: 36px; height: 36px; padding: 0 10px; border-radius: var(--r-pill); background: var(--brand-200); color: var(--brand-900); font: 800 1rem/1 var(--f-display); letter-spacing: 0; }
+.pf-count[hidden] { display: none; }
+.pf-sub { font-size: 1.1rem; margin: 24px 0 10px; }
+.pf-empty { padding: 20px; border-top: 0; border-radius: var(--r); background: var(--surface-2); }
+.pf-empty p { margin: 0 0 14px; }
+.pf-form .nf-group { border-top: 1px solid var(--line) !important; }
+.pf-form .nf-unit span { font-family: var(--f-body); }
+.pf-note.card { box-shadow: var(--shadow-sm); }
+@media (max-width: 899px) { .pf-layout { gap: 20px; padding-block: 16px 64px; } }
+
+/* ---------- Kdo cestuje ---------- */
+.pf-groups { display: flex; flex-direction: column; gap: 10px; padding: 16px; border-radius: var(--r); background: var(--brand-100); }
+.pf-groups h3 { font-size: 1.05rem; margin: 0; }
+.pf-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.pf-gchip svg { width: 20px; height: 20px; color: var(--brand-900); }
+.pf-gchip[aria-pressed="true"]::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--brand-900); margin-left: 2px; }
+.pf-groups p { margin: 0; }
+
+/* ---------- Uložená místa jako karty ---------- */
+.pf-tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 16px; }
+.pf-tile .place-tile-body { gap: 6px; }
+.pf-tile .status { font-size: .9rem; }
+.pf-tile .credit { position: relative; z-index: 2; align-self: flex-start; min-height: 32px; display: inline-flex; align-items: center; }
+.pf-fit { display: flex; flex-direction: column; gap: 2px; }
+.pf-fit small { color: var(--ink-3); font-size: .82rem; }
+
+/* ---------- Seznamy (řádky) ---------- */
+.pf-list.rule-list { padding: 0 16px; border-radius: var(--r); box-shadow: none; }
+.pf-link { font-size: 1.1rem; }
+.pf-row:hover .pf-link b { text-decoration-color: var(--brand-500); }
+.pf-meter { border: 0; border-radius: var(--r-pill); background: var(--surface-3); overflow: hidden; }
+.pf-meter span { background: var(--brand-500); border-radius: var(--r-pill); }
+.pf-photos img { border-radius: var(--r-sm); }
+
+/* ---------- Členství (přesunuto z profil.js) ---------- */
+.pf-tier-now { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: 0 0 4px; }
+.pf-tier-now b { font: 800 clamp(1.4rem, 2.6vw, 1.8rem)/1.1 var(--f-display); color: var(--heading); }
+.pf-tier-now span:last-child { color: var(--ink-2); }
+.pf-tier-price { margin: 0 0 16px; font-weight: 700; }
+.pf-tier-list { list-style: none; margin: 0 0 16px; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 0 24px; }
+.pf-tier-list li { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 12px; align-items: center; min-height: 44px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.pf-tier-list li.is-off { color: var(--ink-3); }
+.pf-mark { display: inline-flex; align-items: center; }
+.pf-mark svg { width: 20px; height: 20px; color: var(--brand-900); }
+.pf-lock { display: grid; gap: 8px; padding: 16px; border: 1px solid var(--brand-200); border-radius: var(--r); background: var(--brand-100); margin: 0 0 12px; }
+.pf-lock p { margin: 0; }
+.pf-lock .btn { justify-self: start; min-height: 44px; }
+
+/* ---------- Sledování, seznamy, sdílení ---------- */
+.pf-row .pf-acts, .pf-line .pf-acts { position: relative; z-index: 1; }
+.pf-changes { list-style: none; margin: 6px 0 0; padding: 10px 12px; border-radius: var(--r-sm); background: var(--warn-soft); display: grid; gap: 4px; }
+.pf-chfrom { text-decoration: line-through; color: var(--ink-3); }
+.pf-chto { font-weight: 700; }
+.pf-collform { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 12px; }
+.pf-collform input { flex: 1 1 220px; min-height: 44px; }
+.pf-collform .btn, .pf-coll select, .pf-coll .btn { min-height: 44px; }
+.pf-cplaces { list-style: none; margin: 6px 0; padding: 0; display: grid; gap: 2px; width: 100%; }
+.pf-cplaces li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 10px; min-height: 44px; border-bottom: 1px solid var(--line); }
+.pf-cplaces a { color: var(--ink); font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+.pf-coll select { max-width: 100%; }
+.pf-shared { padding: 18px; border: 1px solid var(--brand-200); border-radius: var(--r-card); background: var(--brand-100); margin: 0 0 8px; display: flex; flex-direction: column; gap: 10px; }
+.pf-shared h2 { margin: 0; font-size: 1.3rem; }
+.pf-shared p { margin: 0; }
+.pf-shared .row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+.pf-shared .btn { min-height: 44px; }
+#partner-box { display: flex; flex-direction: column; gap: 12px; }
+#partner-box p { margin: 0; }
+#partner-box .btn { align-self: flex-start; min-height: 44px; }

@@ -1,6 +1,6 @@
 /* Hotoví průvodci (pruvodci.html, detail pruvodci.html?id=…). Data: data/pruvodci.json ze skriptu tools/build_pruvodci.py,
    jen skutečná místa a trasy z dat webu. PROTOTYP: nic se neprodává, ceny jsou návrh. Celý průvodce a stažení
-   pro offline (HTML) nebo tisk do PDF jsou ukázka členství PREMIUM (KP.requireTier('offline')); bez něj je vidět náhled.
+   pro offline (HTML) nebo tisk do PDF jsou ukázka členství Traveller (klíč premium) (KP.requireTier('offline')); bez něj je vidět náhled.
    Údaje o přístupnosti každého místa jsou vždy zdarma v detailu místa, průvodce na ně jen odkazuje. */
 (function () {
   'use strict';
@@ -42,31 +42,54 @@
   function statesLine(s) {
     return ['ok', 'part', 'no', 'unk'].filter(k => s[k]).map(k => status(k, s[k] + ' × ' + stLabel(k).toLowerCase())).join('');
   }
+  // Typ průvodce počítáme ze skutečných zastávek, nic se neoznačuje ručně:
+  // Příroda = zastávky ve třech a více obcích nebo aspoň dvě v kategorii příroda; jinak Města. Víkend = 2 až 3 dny.
+  function kindOf(g) {
+    const st = [].concat(...g.days);
+    const towns = new Set(st.map(s => s.o).filter(Boolean)).size, nat = st.filter(s => s.c === 'priroda').length;
+    return { nature: towns >= 3 || nat >= 2, weekend: g.days_n >= 2 && g.days_n <= 3 };
+  }
+  function passes(g, f) {
+    if (f === 'all') return true;
+    if (f === 'cz' || f === 'de') return g.country === f;
+    const k = kindOf(g);
+    if (f === 'vikend') return k.weekend;
+    if (f === 'priroda') return k.nature;
+    if (f === 'mesta') return !k.nature;
+    return true;
+  }
+  function cardHtml(g) {
+    const ph = g.photos[0], k = kindOf(g), href = 'pruvodci.html?id=' + encodeURIComponent(g.id), title = pick(g.title);
+    const tags = [k.nature ? t('Příroda') : t('Město'), k.weekend ? t('Víkend') : (g.days_n === 1 ? t('Jeden den') : '')].filter(Boolean);
+    const media = ph
+      ? '<div class="place-tile-media"><img src="' + esc(K.commonsImg(ph.img, 640)) + '" alt="" loading="lazy" decoding="async" width="640" height="480"></div>'
+      : '<div class="place-tile-media no-photo" aria-hidden="true">' + K.icon(k.nature ? 'mountain' : 'castle') + '</div>';
+    return '<li class="place-tile pv-card">' + media +
+      '<span class="pv-tags">' + tags.map(x => '<span class="badge badge-brand">' + esc(x) + '</span>').join('') + '</span>' +
+      '<div class="place-tile-body">' +
+      '<p class="meta">' + esc(pick(g.area)) + ' · ' + esc(K.ZEME[g.country] || '') + '</p>' +
+      '<h3><a href="' + href + '">' + esc(title) + '</a></h3>' +
+      '<p class="pv-meta">' + K.icon('calendar') + '<span class="num">' + esc(daysTxt(g.days_n)) + '</span>' + K.icon('pin') + '<span class="num">' + esc(stopsTxt(g.stops_n)) + '</span></p>' +
+      '<p class="pv-states">' + statesLine(g.states) + '</p>' +
+      '<div class="pv-card-foot"><span><span class="pv-price num">' + esc(price(g.price_eur)) + '</span><small>' + t('návrh ceny, jednorázově') + '</small></span>' +
+      '<span class="pv-go" aria-hidden="true">' + K.icon('arrow') + '</span></div>' +
+      (ph ? '<p class="credit">' + t('Foto') + ': <a href="' + esc(K.commonsPage(ph.img)) + '" target="_blank" rel="noopener">Wikimedia Commons</a>, ' + t('autor a licence u fotky') + '</p>' : '') +
+      '</div></li>';
+  }
   function renderCatalog() {
-    const list = DATA.pruvodci.filter(g => FILTER === 'all' || g.country === FILTER);
+    const list = DATA.pruvodci.filter(g => passes(g, FILTER));
     $('#pv-count').textContent = t('Zobrazeno: {n}', { n: list.length + ' ' + K.plural(list.length, 'průvodce', 'průvodci', 'průvodců') });
-    $('#pv-list').innerHTML = list.map(g => {
-      const ph = g.photos[0];
-      return '<li class="pv-row">' +
-        (ph ? photoFig(ph.img, ph.n, 480) : '<div class="pv-nophoto" aria-hidden="true"><span>' + esc(pick(g.area)) + '</span></div>') +
-        '<div class="pv-row-b">' +
-        '<p class="kicker">' + esc(pick(g.area)) + ' · ' + esc(K.ZEME[g.country] || '') + '</p>' +
-        '<h3><a href="pruvodci.html?id=' + encodeURIComponent(g.id) + '">' + esc(pick(g.title)) + '</a></h3>' +
-        '<p class="pv-meta"><span class="num">' + esc(daysTxt(g.days_n)) + '</span><span class="num">' + esc(stopsTxt(g.stops_n)) + '</span></p>' +
-        '<p class="pv-who">' + esc(pick(g.who)) + '</p>' +
-        '<p class="pv-states">' + statesLine(g.states) + '</p>' +
-        '</div>' +
-        '<div class="pv-row-p"><span class="pv-price num">' + esc(price(g.price_eur)) + '</span><small>' + t('návrh ceny, jednorázově') + '</small>' +
-        '<a class="btn btn-ghost btn-sm" href="pruvodci.html?id=' + encodeURIComponent(g.id) + '">' + t('Otevřít průvodce') + '</a></div>' +
-        '</li>';
-    }).join('') || '<li class="pv-empty">' + t('Pro tento filtr zatím žádný průvodce není.') + '</li>';
+    $('#pv-list').innerHTML = list.map(cardHtml).join('') ||
+      '<li class="pv-empty empty-state">' + K.icon('book') + '<h3>' + t('Pro tento filtr zatím žádný průvodce není.') + '</h3><button class="btn btn-ghost" type="button" data-f-reset>' + t('Zobrazit vše') + '</button></li>';
+  }
+  function setFilter(f) {
+    FILTER = f;
+    document.querySelectorAll('.pv-filters [data-f]').forEach(x => x.setAttribute('aria-pressed', x.dataset.f === f));
+    renderCatalog();
   }
   function bindFilters() {
-    document.querySelectorAll('.pv-filters [data-f]').forEach(b => b.addEventListener('click', () => {
-      FILTER = b.dataset.f;
-      document.querySelectorAll('.pv-filters [data-f]').forEach(x => x.setAttribute('aria-pressed', x === b));
-      renderCatalog();
-    }));
+    document.querySelectorAll('.pv-filters [data-f]').forEach(b => b.addEventListener('click', () => setFilter(b.dataset.f)));
+    $('#pv-list').addEventListener('click', e => { if (e.target.closest('[data-f-reset]')) setFilter('all'); });
   }
 
   // ---------- Detail: co víme o zastávce ----------
@@ -151,7 +174,7 @@
 
   function renderDetail(g) {
     const full = fullAccess();
-    document.title = pick(g.title) + ' · ' + t('Průvodci') + ' · kudyprojedu.cz';
+    document.title = pick(g.title) + ' · ' + t('Průvodci') + ' · Wherethru';
     let n = 0;
     const program = g.days.map((d, i) => {
       const items = d.map(s => { n++; return (full || n <= PREVIEW) ? stopFull(s, n) : stopShort(s, n); }).join('');
@@ -159,7 +182,7 @@
     }).join('');
     const lock = full ? '' : '<div class="pv-lock" role="note"><p class="kicker">' + t('Náhled') + ' ' + K.tierBadge('offline') + '</p>' +
       '<p>' + t('V náhledu vidíte celé první {n} zastávky. U ostatních je název a stav vstupu. Údaje o přístupnosti každého místa najdete zdarma v jeho detailu.', { n: PREVIEW }) + '</p>' +
-      '<p class="small muted">' + t('Celý průvodce se souhrnem u všech zastávek a verzí ke stažení bude v ostré verzi k zakoupení jednotlivě nebo v členství PREMIUM.') + '</p>' +
+      '<p class="small muted">' + t('Celý průvodce se souhrnem u všech zastávek a verzí ke stažení bude v ostré verzi k zakoupení jednotlivě nebo v členství Traveller.') + '</p>' +
       '<button class="btn btn-primary" type="button" data-unlock>' + t('Zobrazit celý průvodce') + '</button></div>';
 
     const counts = '<ul class="rule-list pv-sum">' +
@@ -174,7 +197,7 @@
       '<p class="small muted">' + t('Sestaveno {date} skriptem tools/build_pruvodci.py z dat webu.', { date: K.fmtDate(DATA.vytvoreno) }) + '</p>';
 
     const html =
-      '<section class="page-head pv-dhead"><div class="wrap">' +
+      '<section class="page-head pv-dhead"><div class="wrap' + (g.photos[0] ? ' pv-dhead-in' : '') + '"><div>' +
       '<nav class="crumbs" aria-label="' + esc(t('Drobečková navigace')) + '"><a href="pruvodci.html">' + t('Průvodci') + '</a><span aria-hidden="true">/</span><span>' + esc(pick(g.title)) + '</span></nav>' +
       '<p class="kicker">' + esc(pick(g.area)) + ' · ' + esc(K.ZEME[g.country] || '') + '</p>' +
       '<h1>' + esc(pick(g.title)) + '</h1>' +
@@ -190,6 +213,8 @@
       '<button class="btn btn-ghost" type="button" data-print>' + t('Vytisknout nebo uložit PDF') + ' ' + K.tierBadge('offline', { onlyLocked: true }) + '</button>' +
       '</div>' +
       '<p class="small muted pv-proto">' + esc(K.TIER_PROTO_NOTE) + '</p>' +
+      '</div>' + (g.photos[0] ? '<figure class="pv-dphoto"><div class="wave-photo-left"><img src="' + esc(K.commonsImg(g.photos[0].img, 960)) + '" alt="' + esc(g.photos[0].n) + '" decoding="async"></div>' +
+        '<figcaption>' + esc(g.photos[0].n) + ' · ' + t('Foto') + ': ' + ext(K.commonsPage(g.photos[0].img), 'Wikimedia Commons') + ', ' + t('autor a licence u fotky') + '</figcaption></figure>' : '') +
       '</div></section>' +
       section('pv-co', t('Odkud jsou údaje'), t('Co o zastávkách víme'), t('Údaje od provozovatele, z otevřených dat a od komunity od sebe odlišujeme. Nic z toho jsme neměřili sami.'), counts) +
       section('pv-program', t('Program'), t('Zastávky po řadě'), t('Pořadí je návrh. Vzdálenosti jsou vzdušnou čarou, skutečná cesta bývá delší.'), program + lock) +
@@ -205,7 +230,7 @@
       section('pv-zdroje', t('Zdroje'), t('Odkud průvodce čerpá'), '', srcList) +
       section('pv-cena', t('Návrh nabídky'), t('Kolik by průvodce stál'), '',
         '<p class="pv-big num">' + esc(price(g.price_eur)) + ' <small>' + t('návrh ceny, jednorázově') + '</small></p>' +
-        '<p>' + t('V ostré verzi se hotoví průvodci budou prodávat jednotlivě. V členství PREMIUM budou ke stažení pro offline použití. Zatím se nic neprodává a nic neplatíte.') + '</p>' +
+        '<p>' + t('V ostré verzi se hotoví průvodci budou prodávat jednotlivě. V členství Traveller budou ke stažení pro offline použití. Zatím se nic neprodává a nic neplatíte.') + '</p>' +
         '<p class="callout small">' + esc(K.TIER_NOTE) + '</p>' +
         '<p><a class="btn btn-ghost" href="clenstvi.html">' + t('Porovnat členství') + '</a></p>');
 
@@ -231,9 +256,9 @@
         (known ? '<ul>' + known + '</ul>' : '') + (s.unknown.length ? '<p>' + S(t('Nevíme')) + ': ' + S(s.unknown.map(a => AREA_UNK[a] || a).join(', ')) + '</p>' : '') + '</li>';
     }).join('') + '</ol>').join('');
     const list = (title, arr, f) => arr.length ? '<h2>' + S(title) + '</h2><ul>' + arr.map(p => '<li>' + f(p) + '</li>').join('') + '</ul>' : '';
-    const doc = '<!doctype html><html lang="' + L + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>' + S(pick(g.title)) + ' · kudyprojedu.cz</title>' +
-      '<style>body{font:17px/1.5 system-ui,sans-serif;max-width:760px;margin:0 auto;padding:16px;color:#101010;background:#fff}h1{font-size:2rem;line-height:1.1}h2{border-top:3px solid #101010;padding-top:12px;margin-top:32px}h3{margin:.2em 0}li{margin:.4em 0}small{color:#555}.note{border-left:6px solid #FFD400;padding:8px 12px;background:#f2f1ec}@media(prefers-color-scheme:dark){body{background:#141413;color:#f2f1ec}h2{border-color:#f2f1ec}small{color:#bbb}.note{background:#262624}}</style></head><body>' +
-      '<p><b>kudyprojedu.cz</b> · ' + S(pick(g.area)) + '</p><h1>' + S(pick(g.title)) + '</h1><p>' + S(pick(g.intro)) + '</p><p>' + S(pick(g.who)) + '</p>' +
+    const doc = '<!doctype html><html lang="' + L + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>' + S(pick(g.title)) + ' · Wherethru</title>' +
+      '<style>body{font:17px/1.5 system-ui,sans-serif;max-width:760px;margin:0 auto;padding:16px;color:#1F261C;background:#F7F7F5}h1{font-size:2rem;line-height:1.1;color:#3A4A34}h2{color:#3A4A34;border-top:1px solid #D9DED3;padding-top:12px;margin-top:32px}h3{margin:.2em 0}li{margin:.4em 0}small{color:#55604F}.note{border-radius:14px;padding:10px 14px;background:#EBEEE7}@media(prefers-color-scheme:dark){body{background:#171C15;color:#EEF1EA}h1,h2{color:#A9BBA0;border-color:#323C2E}small{color:#AEB8A7}.note{background:#262E23}}</style></head><body>' +
+      '<p><b>Wherethru</b> · ' + S(pick(g.area)) + '</p><h1>' + S(pick(g.title)) + '</h1><p>' + S(pick(g.intro)) + '</p><p>' + S(pick(g.who)) + '</p>' +
       '<p class="note">' + S(t('Offline verze z prototypu. Údaje se mohou změnit, před cestou je ověřte u provozovatele. Staženo {date}.', { date: K.fmtDate(new Date().toISOString().slice(0, 10)) })) + '</p>' +
       stops +
       list(t('Bezbariérová WC'), g.wc, p => S(K.tx(p.n) + ' · ' + p.o + ' · ' + osmWc(p.t))) +

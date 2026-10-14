@@ -113,3 +113,20 @@ KP.i18n.add({
   "Plánovač dovolené": ["Urlaubsplaner", "Holiday planner"],
   "Vícedenní dovolená bez bariér v jižních Čechách a Bavorsku: ubytování s nejlepší shodou, program na každý den, doprava, nádraží a parkování ZTP. Sestaveno ze skutečných dat. Prototyp členství PREMIUM.": ["Barrierefreier mehrtägiger Urlaub in Südböhmen und Bayern: Unterkunft mit der besten Übereinstimmung, Programm für jeden Tag, Anreise, Bahnhöfe und Behindertenparkplätze. Aus echten Daten zusammengestellt. Prototyp der Mitgliedschaft PREMIUM.", "A step-free multi-day holiday in South Bohemia and Bavaria: the best-matching accommodation, a plan for each day, transport, stations and disabled parking. Built from real data. Prototype of the PREMIUM membership."],
 });
+
+/* v4 Wherethru (P4): nové texty dovolené a názvy úrovní */
+KP.i18n.add({
+  "Naplánujte dovolenou": ["Urlaub planen", "Plan your holiday"],
+  "Sestavit dovolenou": ["Urlaub zusammenstellen", "Build my holiday"],
+  "Nejdřív ubytování": ["Zuerst die Unterkunft", "Accommodation first"],
+  "Přednost má shoda s vaším profilem potřeb, údaje z webu provozovatele a známé vybavení.": ["Vorrang haben die Übereinstimmung mit Ihrem Bedürfnisprofil, Angaben von der Website des Betreibers und bekannte Ausstattung.", "Priority goes to the match with your needs profile, details from the operator's website and known facilities."],
+  "Program na každý den": ["Programm für jeden Tag", "A programme for every day"],
+  "Skládáme ho z míst v dosahu ubytování tak, aby se místa neopakovala.": ["Wir stellen es aus Orten in Reichweite der Unterkunft zusammen, ohne Wiederholungen.", "We build it from places within reach of the accommodation, without repeating places."],
+  "Doprava a parkování": ["Anreise und Parken", "Transport and parking"],
+  "K ubytování přidáme nejbližší nádraží s údaji o bezbariérovosti a parkování ZTP.": ["Zur Unterkunft fügen wir den nächsten Bahnhof mit Angaben zur Barrierefreiheit und Behindertenparkplätze hinzu.", "We add the nearest station with accessibility details and disabled parking to the accommodation."],
+  "Bez úrovně Traveller uvidíte náhled: ubytování a první den.": ["Ohne Traveller sehen Sie eine Vorschau: Unterkunft und erster Tag.", "Without Traveller you see a preview: accommodation and the first day."],
+  "Traveller obsahuje jeden kredit ročně na individuální kontrolu vybraného ubytování. Tady je jen ukázka, jak by to probíhalo.": ["Traveller enthält ein Guthaben pro Jahr für eine individuelle Prüfung einer Unterkunft. Hier sehen Sie nur, wie das ablaufen würde.", "Traveller includes one credit per year for an individual check of a chosen accommodation. This only shows how it would work."],
+  "Výběr z více ubytování, program na každý den, doprava, alternativy, offline itinerář a concierge jsou součást úrovně Traveller.": ["Auswahl aus mehreren Unterkünften, Programm für jeden Tag, Anreise, Alternativen, Offline-Reiseplan und Concierge gehören zu Traveller.", "A choice of accommodation, a programme for every day, transport, alternatives, an offline itinerary and concierge are part of Traveller."],
+  "Co obsahuje Traveller": ["Was Traveller enthält", "What Traveller includes"],
+  "Vícedenní dovolená bez bariér v jižních Čechách a Bavorsku: ubytování s nejlepší shodou, program na každý den, doprava, nádraží a parkování ZTP. Sestaveno ze skutečných dat. Prototyp členství Traveller.": ["Barrierefreier mehrtägiger Urlaub in Südböhmen und Bayern: Unterkunft mit der besten Übereinstimmung, Programm für jeden Tag, Anreise, Bahnhöfe und Behindertenparkplätze. Aus echten Daten zusammengestellt. Prototyp der Mitgliedschaft Traveller.", "A step-free multi-day holiday in South Bohemia and Bavaria: the best-matching accommodation, a plan for each day, transport, stations and disabled parking. Built from real data. Prototype of the Traveller membership."],
+});

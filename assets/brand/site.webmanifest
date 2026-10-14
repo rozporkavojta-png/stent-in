@@ -1,0 +1,17 @@
+{
+  "name": "Wherethru",
+  "short_name": "Wherethru",
+  "description": "Bezbariérová mapa a plánovač výletů pro Česko a Bavorsko. Studentský prototyp STENT-IN.",
+  "lang": "cs",
+  "start_url": "../../index.html",
+  "scope": "../../",
+  "display": "standalone",
+  "background_color": "#F7F7F5",
+  "theme_color": "#3A4A34",
+  "icons": [
+    { "src": "app-icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "app-icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "app-icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

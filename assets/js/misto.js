@@ -1,8 +1,9 @@
 /* Detail místa – vše z data/regions/ (OpenStreetMap + otevřená data měst + weby provozovatelů), nic se nedomýšlí.
    Odkaz: misto.html?id=<id>&r=<region>; starý odkaz bez r dohledá region přes data/regions/ids.json.
-   Rozvržení (verze 3, DESIGN.md): velký název a vedle něj fotka z Wikimedia Commons (pokud existuje),
-   osobní shoda, 4 klíčové údaje jako .tile, sekce jako výpisy s linkami, vpravo (desktop) lepící sloupec
-   bez rámečků s mapou, kontaktem, zdrojem dat a převzetím profilu. Na mobilu lepící spodní lišta s akcemi.
+   Rozvržení (verze 4 Wherethru, DESIGN.md): velká fotka z Wikimedia Commons nahoře (nebo prázdný stav s ikonou
+   kategorie) s tlačítky zpět / sdílet / uložit, pod ní karta s názvem, obcí a štítky zdroje údajů. Obsah je ve
+   záložkách Přehled · Přístupnost · Recenze · Fotky (odkazy #s-… samy přepnou záložku). Vpravo (desktop) lepící
+   sloupec s mapou, kontaktem, zdrojem dat a převzetím profilu. Na mobilu lepící spodní lišta s akcemi.
    Komunitní a podnikové funkce jsou FUNKČNÍ PROTOTYP: vše se ukládá jen v tomto prohlížeči (KP.community,
    KP.business) a stránka to vždy říká textem KP.PROTOTYPE_NOTE. Žádná čísla se nevymýšlejí. */
 (function () {
@@ -57,7 +58,7 @@
   function srcOf(p, c) {
     if (!c) return '';
     const d = c.date || (c.src === 'komunita' && p.u ? p.u : '');
-    return '<span class="pl-rsrc">' + K.sourceBadge(c.src, c.local ? KP.t('v tomto prohlížeči') : '') + (d ? '<span>' + (c.date ? KP.t('stav') + ' ' : KP.t('upraveno') + ' ') + K.fmtDate(d) + '</span>' : '') + '</span>';
+    return '<span class="pl-rsrc">' + K.sourceBadge(K.srcLevel(c.src, c.xs), c.local ? KP.t('v tomto prohlížeči') : '') + (d ? '<span>' + (c.date ? KP.t('stav') + ' ' : KP.t('upraveno') + ' ') + K.fmtDate(d) + '</span>' : '') + '</span>';
   }
 
   // ---------- Osobní shoda (Personal Match Score) ----------
@@ -168,7 +169,7 @@
       const head = '<div class="pl-sub"><h3>' + K.esc(K.tx(x.label) || SRC_NAMES[x.src] || x.src || KP.t('Otevřená data')) + '</h3>' + (x.cat && CAT_ST[x.cat] ? K.statusHtml(CAT_ST[x.cat], K.esc(K.t(x.cat))) : '') + '</div>';
       const more = rs.length > X_VISIBLE ? '<details class="pl-more"><summary>' + K.t('Zobrazit dalších {n} údajů', { n: rs.length - X_VISIBLE }) + '</summary>' + rows(rs.slice(X_VISIBLE)) + '</details>' : '';
       return '<div class="pl-group">' + head + rows(rs.slice(0, X_VISIBLE)) + more +
-        '<p class="pl-src">' + K.sourceBadge('overeno') + (x.date ? ('<span>' + KP.t('Stav') + ' ') + K.fmtDate(x.date) + '</span>' : '') +
+        '<p class="pl-src">' + K.sourceBadge(K.srcLevel('overeno', x.src)) + (x.date ? ('<span>' + KP.t('Stav') + ' ') + K.fmtDate(x.date) + '</span>' : '') +
         (x.license ? ('<span>' + KP.t('Licence') + ' ') + K.esc(x.license) + (x.attribution ? ', © ' + K.esc(x.attribution) : '') + '</span>' : '') +
         (safeUrl(x.url) ? ext(x.url, KP.t('Zdroj')) : '') + '</p></div>';
     }).join('');
@@ -195,7 +196,7 @@
         rows(items) +
         (meas.length ? ('<p class="pl-label">' + KP.t('Rozměry uvedené na webu') + '</p><ul class="kotas">') + meas.map(kota).join('') + '</ul>' : '') +
         (r.quote ? '<blockquote class="pl-quote">„' + K.esc(r.quote) + '“</blockquote>' : '') +
-        '<p class="pl-src"><span class="badge badge-business">' + K.icon('building') + K.esc(r.source_type || 'web provozovatele') + '</span>' +
+        '<p class="pl-src"><span class="badge badge-business">' + K.icon('building') + K.esc(KP.t(r.source_type || 'web provozovatele')) + '</span>' +
         (r.date ? ('<span>' + KP.t('Zkontrolováno') + ' ') + K.fmtDate(r.date) + '</span>' : '') + ext(safeUrl(r.url), K.esc(host(r.url))) + '</p></div>';
     }).join('');
     return sec('s-r', KP.t('Podle webu provozovatele'), inner +
@@ -267,14 +268,6 @@
     return sec('s-popis', KP.t('Popis přístupnosti'), '<blockquote class="pl-quote">' + K.esc((K.LANG === 'de' && p.de) || p.d || p.de) + '</blockquote>' + osmSrc(p));
   }
 
-  // Fotka z Wikimedia Commons: velká nahoře vedle názvu (3:2), s odkazem na autora a licenci
-  function heroPhoto(p) {
-    if (!p.img) return '';
-    const src = (w) => K.commonsImg(p.img, w);
-    return '<figure class="photo pl-photo"><img src="' + src(960) + '" srcset="' + src(640) + ' 640w, ' + src(960) + ' 960w, ' + src(1280) + ' 1280w" sizes="(min-width: 900px) 46vw, 100vw" width="960" height="640" alt="' + KP.t('Fotografie') + ': ' + K.esc(p.n) + '" decoding="async">' +
-      ('<figcaption>' + KP.t('Foto: Wikimedia Commons') + ', ') + ext(K.commonsPage(p.img), KP.t('autor a licence')) + '</figcaption></figure>';
-  }
-
   // ---------- Fotodokumentace po typech ----------
   function photoAreas(p) {
     return B.PHOTO_AREAS.filter(a => (p.c === 'ubytovani' || !a.hotel) && (p.c !== 'parkovani' || a.key === 'parkovani') && !(p.c === 'wc' && !['vstup', 'wc'].includes(a.key)));
@@ -296,7 +289,7 @@
       groups +
       (other.length ? ('<div class="pl-phrow"><div class="pl-phhead"><h3>' + KP.t('Další fotky') + '</h3></div><div class="pl-phgrid">') + other.map(fig).join('') + '</div></div>' : '') +
       local +
-      ('<p class="small pl-note">' + KP.t('Fotku přidáte k') + ' <a href="#s-komunita">' + KP.t('hodnocení místa') + '</a>' + KP.t(KP.t('. Provozovatel nahraje fotky v')) + ' <a href="podnik.html?') + qid(p) + ('">' + KP.t('profilu podniku') + '</a>.</p>') +
+      ('<p class="small pl-note">' + KP.t('Fotku přidáte k') + ' <a href="#s-komunita">' + KP.t('hodnocení místa') + '</a>' + KP.t('. Provozovatel nahraje fotky v') + ' <a href="podnik.html?') + qid(p) + ('">' + KP.t('profilu podniku') + '</a>.</p>') +
       ('<div class="pl-sv"><div><p class="pl-sv-title">' + KP.t('Prohlédněte si vstup ve Street View') + '</p><p class="small muted">' + KP.t('Snímky ulice od Google ukážou schody, obrubníky i dveře dřív, než vyrazíte. Stáří snímku uvidíte v Google Maps.') + '</p>') +
       '<a class="btn btn-ghost btn-sm" href="' + K.gmaps.streetView(p) + '" target="_blank" rel="noopener">' + K.icon('external') + (KP.t('Otevřít Street View') + '</a></div></div>'));
   }
@@ -331,10 +324,12 @@
       ('<div class="field"><label for="rv-parea">' + KP.t('Co je na fotkách') + '</label><select id="rv-parea">') + phAreas.map(a => '<option value="' + a.key + '">' + a.label + '</option>').join('') + ('<option value="">' + KP.t('Něco jiného') + '</option></select></div>') +
       '<p class="small pl-formmsg" id="rv-msg" role="status" aria-live="polite"></p>' +
       ('<div class="row"><button class="btn btn-primary" type="submit">' + KP.t('Uložit hodnocení') + '</button></div>') + proto() + '</form>';
-    return sec('s-komunita', KP.t('Hodnocení návštěvníků'),
-      ('<p class="pl-label">' + KP.t('Průměr po oblastech') + '</p>') + avg +
-      ('<p class="small muted">' + KP.t('Průměr počítáme jen z hodnocení uložených v tomto prohlížeči. Hodnocení ostatních lidí zatím nesbíráme, web nemá server.') + '</p>') +
-      ('<p class="pl-label">' + KP.t('Hodnocení') + '</p>') + items +
+    const body = list.length
+      ? ('<p class="pl-label">' + KP.t('Průměr po oblastech') + '</p>') + avg +
+        ('<p class="small muted">' + KP.t('Průměr počítáme jen z hodnocení uložených v tomto prohlížeči. Hodnocení ostatních lidí zatím nesbíráme, web nemá server.') + '</p>') +
+        ('<p class="pl-label">' + KP.t('Hodnocení') + '</p>') + items
+      : '<div class="empty-state pl-empty">' + K.icon('message') + '<h3>' + KP.t('Zatím bez recenzí') + '</h3><p>' + KP.t('Recenze jsou komunitní funkce ve fázi prototypu. Hodnocení ostatních lidí zatím nesbíráme, web nemá server. Vaše hodnocení se uloží jen v tomto prohlížeči.') + '</p></div>';
+    return sec('s-komunita', KP.t('Hodnocení návštěvníků'), body +
       '<details class="pl-write"' + (list.length ? '' : ' open') + '><summary class="btn btn-ghost">' + K.icon('star') + (KP.t('Ohodnotit místo') + '</summary>') + form + '</details>');
   }
 
@@ -384,7 +379,7 @@
   function mapCard(p) {
     return '<div class="pl-card pl-map"><iframe class="pl-gmap" src="' + K.gmaps.embed(p) + '" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="' + KP.t('Google mapa') + ': ' + K.esc(p.n) + '"></iframe>' +
       '<div class="pl-card-body"><a class="btn btn-primary btn-block" href="' + K.gmaps.directions(p, 'walking') + '" target="_blank" rel="noopener">' + K.icon('nav') + (KP.t('Navigovat pěšky nebo na vozíku') + '</a>') +
-      '<div class="pl-modes"><a class="btn btn-ghost btn-sm" href="' + K.gmaps.directions(p, 'transit') + ('" target="_blank" rel="noopener">' + KP.t(KP.t('MHD')) + '</a><a class="btn btn-ghost btn-sm" href="') + K.gmaps.directions(p, 'driving') + ('" target="_blank" rel="noopener">' + KP.t('Autem') + '</a></div>') +
+      '<div class="pl-modes"><a class="btn btn-ghost btn-sm" href="' + K.gmaps.directions(p, 'transit') + ('" target="_blank" rel="noopener">' + KP.t('MHD') + '</a><a class="btn btn-ghost btn-sm" href="') + K.gmaps.directions(p, 'driving') + ('" target="_blank" rel="noopener">' + KP.t('Autem') + '</a></div>') +
       ('<p class="small muted">' + KP.t('Google Maps neumí trasu bez schodů. Bariéry v ulicích ukazujeme na stránce') + ' <a href="trasy.html?la=') + p.la + '&lo=' + p.lo + ('">' + KP.t('Trasy') + '</a>.</p>') +
       // Jednodenní výlet do okolí: plánovač podle pravidel nad skutečnými daty (PLUS)
       (p.o ? '<p class="small" style="margin:0"><a href="planovac.html?obec=' + encodeURIComponent(p.o) + '">' + K.esc(KP.t('Naplánovat výlet do okolí')) + '</a> <span data-tier-badge="dayPlanner">' + K.tierBadge('dayPlanner', { onlyLocked: true }) + '</span></p>' : '') +
@@ -409,7 +404,7 @@
   function updates(p) {
     const out = [];
     if (K.isOsm(p)) out.push([K.sourceBadge('komunita'), (p.u ? KP.t('upraveno') + ' ' + K.fmtDate(p.u) + ' (' + K.ageLabel(p.u) + ')' : KP.t('datum úpravy neznáme')) + (', ' + KP.t('staženo') + ' ') + K.fmtDate(K.OSM_DATE[K.zemeOf(p)] || K.OSM_DATE.cz)]);
-    (Array.isArray(p.x) ? p.x : []).forEach(x => out.push([K.sourceBadge('overeno'), K.esc(SRC_NAMES[x.src] || x.label || KP.t('otevřená data')) + (x.date ? ', stav ' + K.fmtDate(x.date) : (', ' + KP.t('datum neuvedeno')))]));
+    (Array.isArray(p.x) ? p.x : []).forEach(x => out.push([K.sourceBadge(K.srcLevel('overeno', x.src)), K.esc(SRC_NAMES[x.src] || x.label || KP.t('otevřená data')) + (x.date ? ', stav ' + K.fmtDate(x.date) : (', ' + KP.t('datum neuvedeno')))]));
     (Array.isArray(p.r) ? p.r : []).filter(r => r && safeUrl(r.url)).forEach(r => out.push([K.sourceBadge('firma'), K.esc(host(r.url)) + (r.date ? (', ' + KP.t('zkontrolováno') + ' ') + K.fmtDate(r.date) : '')]));
     const bp = B.profile(p.i);
     if (bp) out.push([K.sourceBadge('firma', KP.t('v tomto prohlížeči')), 'profil podniku' + (bp.updated ? (', ' + KP.t('uloženo') + ' ') + K.fmtDate(bp.updated) : '')]);
@@ -426,7 +421,7 @@
       : ('<p class="small">' + KP.t('Údaje o přístupnosti pocházejí z') + ' ') + ext(K.osmUrl(p), K.t('OpenStreetMap (objekt {id}, verze {v})', { id: K.esc(p.i.slice(1)), v: K.esc(p.v || '–') })) + (', ' + KP.t('staženo') + ' ') + K.fmtDate(K.OSM_DATE[K.zemeOf(p)] || K.OSM_DATE.cz) + (K.zemeOf(p) === 'de' ? (' ' + KP.t('(výřez Geofabrik pro Bavorsko)')) : '') + (KP.t('. Data © přispěvatelé OpenStreetMap, licence ODbL.') + '</p>') +
         (p.r && p.r.length ? ('<p class="small">' + KP.t('Údaje „Podle webu provozovatele“ jsme převzali z uvedeného webu, data OSM nijak nemění.') + '</p>') : '');
     return ('<div class="pl-card" id="s-zdroj"><h2>' + KP.t('Zdroj dat a úplnost') + '</h2>') +
-      '<p class="pl-badges">' + (isResearch(p) ? K.sourceBadge('firma') : K.sourceBadge('komunita')) + (Array.isArray(p.x) && p.x.length ? K.sourceBadge('overeno') : '') + (B.profile(p.i) ? K.sourceBadge('firma', KP.t('v tomto prohlížeči')) : '') + '</p>' + body +
+      '<p class="pl-badges">' + (isResearch(p) ? K.sourceBadge('firma') : K.sourceBadge('komunita')) + (Array.isArray(p.x) && p.x.length ? K.sourceBadge(isCertified(p) ? 'overeno' : 'otevrena') : '') + (B.profile(p.i) ? K.sourceBadge('firma', KP.t('v tomto prohlížeči')) : '') + '</p>' + body +
       updates(p) +
       ('<div class="meter-row"><span class="small">' + KP.t('Úplnost údajů') + '</span><span class="num">') + c + ' %</span><div class="tape-meter" style="--v:' + c + ';grid-column:1/-1" aria-hidden="true"></div></div>' +
       ('<p class="small muted">' + KP.t('Úplnost říká, kolik důležitých údajů máme, ne jestli je místo přístupné.') + ' <a href="metodika.html#uplnost">' + KP.t('Jak ji počítáme') + '</a></p>') +
@@ -440,7 +435,7 @@
   function businessCard(p) {
     const mbb = (p.x || []).find(x => x && x.src === 'mapybezbarier');
     const ver = mbb
-      ? '<p class="pl-vbadge">' + K.icon('shield') + (KP.t('Ověřený profil') + '</p><p class="small">' + KP.t('Údaje pocházejí z profesionálního mapování') + ' ') + (safeUrl(mbb.url) ? ext(mbb.url, KP.t('Mapy bez bariér')) : KP.t('Mapy bez bariér')) + (' ' + KP.t('podle certifikované metodiky')) + (mbb.date ? ', stav ' + K.fmtDate(mbb.date) : '') + '.</p>'
+      ? '<p class="pl-vbadge">' + K.icon('shield') + (KP.t('Ověřený profil') + '</p><p class="small">' + KP.t('Údaje pocházejí z profesionálního mapování') + ' ') + (safeUrl(mbb.url) ? ext(mbb.url, KP.t('Mapy bez bariér')) : KP.t('Mapy bez bariér')) + (' ' + KP.t('podle certifikované metodiky')) + (mbb.date ? ', ' + KP.t('stav {d}', { d: K.fmtDate(mbb.date) }) : '') + '.</p>'
       : ('<p class="small"><b>' + KP.t('Profil není ověřený.') + '</b> ' + KP.t('Ověření na místě proškoleným mapovačem chystáme jako placenou službu pro podniky. Do té doby u každého údaje uvádíme, odkud pochází.') + ' <a href="metodika.html#overeni">' + KP.t('Jak ověřujeme') + '</a></p>');
     const cl = B.claimed(p.i);
     if (p.c === 'parkovani' || p.c === 'wc') return ('<div class="pl-card" id="s-podnik"><h2>' + KP.t('Ověření') + '</h2>') + ver + '</div>';
@@ -451,9 +446,101 @@
       ('<p class="small" style="margin:0"><a href="pro-firmy.html">' + KP.t('Co podnikům nabízíme') + '</a></p></div>');
   }
 
+  // Rychlé skoky uvnitř záložky Přístupnost
   function jumpNav(html) {
-    const items = [['s-skore', KP.t('Vybavení')], ['s-x', KP.t('Naměřeno')], ['s-r', KP.t('Od provozovatele')], ['s-hotel', KP.t('Pokoj')], ['s-osm', KP.t('Vstup a WC')], ['s-popis', KP.t('Popis')], ['s-foto', KP.t('Fotky')], ['s-komunita', KP.t('Hodnocení')], ['s-potvrzeni', KP.t('Platí to?')], ['s-okoli', KP.t('V okolí')], ['s-kontakt', KP.t('Kontakt')], ['s-podnik', KP.t('Pro provozovatele')]];
-    return ('<nav class="chip-row pl-jump" aria-label="' + KP.t('Na této stránce') + '">') + items.filter(([id]) => html.includes('id="' + id + '"')).map(([id, l]) => '<a class="chip" href="#' + id + '">' + l + '</a>').join('') + '</nav>';
+    const items = [['s-udaje', KP.t('Přehled údajů')], ['s-skore', KP.t('Vybavení')], ['s-x', KP.t('Naměřeno')], ['s-r', KP.t('Od provozovatele')], ['s-hotel', KP.t('Pokoj')], ['s-osm', KP.t('Vstup a WC')], ['s-potvrzeni', KP.t('Platí to?')]];
+    const list = items.filter(([id]) => html.includes('id="' + id + '"'));
+    if (list.length < 3) return '';
+    return ('<nav class="chip-row pl-jump" aria-label="' + KP.t('Na této stránce') + '">') + list.map(([id, l]) => '<a class="chip" href="#' + id + '">' + l + '</a>').join('') + '</nav>';
+  }
+
+  // ---------- Údaje o přístupnosti: ikona – údaj – hodnota (jen skutečná pole z K.facts) ----------
+  const F_ICON = { bezSchodu: 'step-free', dvere80: 'door-width', prah2: 'threshold', wcBb: 'wc-accessible', wcDvere80: 'door-width', wcMadla: 'grab-bars', wcOtoceni: 'turning',
+    prostory: 'building', vytah: 'lift', pruchody80: 'door-width', otoceni: 'turning', parkZTP: 'parking-ztp', parkSirka: 'parking', pokojBb: 'room-accessible', pokojDvere80: 'door-width',
+    sprcha: 'shower', sedatko: 'shower-seat', koupelnaMadla: 'grab-bars' };
+  const F_VAL = { true: ['ok', KP.t('Ano')], part: ['part', KP.t('Částečně')], false: ['no', KP.t('Ne')], na: ['na', KP.t('Netýká se')] };
+  const SRC_LBL = { overeno: KP.t('Naměřená data'), komunita: 'OpenStreetMap', firma: KP.t('Provozovatel') };
+  const srcShort = (c) => c && SRC_LBL[c.src] ? SRC_LBL[c.src] + (c.local ? ' · ' + KP.t('v tomto prohlížeči') : '') : '';
+  function detailList(p) {
+    if (p.c === 'parkovani') return '';
+    const s = K.facilitiesScore(p), fx = K.facts(p);
+    const li = (ico, label, val, cls, src) => '<li class="' + cls + '">' + K.icon(ico) + '<span>' + label + '</span><span class="v">' + val + '</span>' + (src ? '<span class="src">' + K.esc(src) + '</span>' : '') + '</li>';
+    const w = K.W[p.w || 'null'];
+    const rowsF = [li('wheel', KP.t('Vstup na vozíku'), w.short, 'is-' + w.st, p.w ? (isResearch(p) ? K.SOURCES.firma.short : 'OpenStreetMap') : '')];
+    K.FEATURES.filter(f => s.relevant.includes(f.a)).forEach(f => {
+      const c = fx.f[f.k], v = c ? F_VAL[String(c.v)] : null;
+      rowsF.push(li(F_ICON[f.k] || 'check', K.esc(f.label), v ? v[1] : KP.t('Neznámo'), 'is-' + (v ? v[0] : 'unk'), srcShort(c)));
+    });
+    const meas = Object.keys(fx.m).map(k => {
+      const c = fx.m[k];
+      return li('measure', K.esc(c.label), '<span class="num">' + K.esc(typeof c.v === 'number' ? K.fmt(c.v) : c.v) + (c.unit ? ' ' + K.esc(c.unit) : '') + '</span>', 'is-num', srcShort(c));
+    });
+    const known = rowsF.filter(x => !x.includes('class="is-unk"')).length;
+    return sec('s-udaje', KP.t('Údaje o přístupnosti'),
+      '<ul class="detail-list pl-dlist">' + rowsF.join('') + '</ul>' +
+      (meas.length ? '<p class="pl-label">' + KP.t('Rozměry') + '</p><ul class="detail-list pl-dlist">' + meas.join('') + '</ul>' : '') +
+      '<p class="small muted pl-note">' + KP.t('„Neznámo“ znamená, že údaj zatím nikdo nezadal. U každého údaje je jeho zdroj. Podrobnosti najdete níže.') + '</p>',
+      '<span class="small muted">' + K.t('známe {k} z {n}', { k: known, n: rowsF.length }) + '</span>');
+  }
+
+  // Štítky zdroje údajů v hlavičce: jen to, co v datech opravdu je
+  function headBadges(p) {
+    const b = [];
+    const xs = Array.isArray(p.x) ? p.x : [];
+    if (xs.some(x => x && x.src === 'mapybezbarier')) b.push('<a class="badge badge-verified" href="#s-x">' + K.icon('ruler') + KP.t('Naměřeno mapovačem') + '</a>');
+    if (xs.some(x => x && x.src !== 'mapybezbarier')) b.push('<a class="badge badge-brand" href="#s-x">' + K.icon('measure') + KP.t('Otevřená data') + '</a>');
+    if (Array.isArray(p.r) && p.r.some(r => r && safeUrl(r.url))) b.push('<a class="badge badge-business" href="#s-r">' + K.icon('building') + KP.t('Z webu provozovatele') + '</a>');
+    if (K.isOsm(p)) b.push('<a class="badge badge-community" href="#s-osm">' + K.icon('users') + 'OpenStreetMap</a>');
+    return b.join('');
+  }
+
+  // Velká fotka nahoře s tlačítky; bez fotky prázdný stav s ikonou kategorie
+  function hero(p, on) {
+    const ic = K.CATS[p.c] ? K.CATS[p.c].icon : 'pin';
+    const btns = '<div class="pl-hero-btns"><a class="pl-round" href="mapa.html" data-back aria-label="' + KP.t('Zpět') + '">' + K.icon('arrow-left') + '</a><span class="pl-hero-sp"></span>' +
+      '<button class="pl-round" type="button" data-share aria-label="' + KP.t('Sdílet') + '">' + K.icon('share') + '</button>' +
+      '<button class="pl-round" type="button" data-save="icon" aria-pressed="' + on + '" aria-label="' + KP.t('Uložit') + '">' + K.icon(on ? 'heart-filled' : 'heart') + '</button></div>';
+    if (!p.img) {
+      return '<div class="pl-hero-media no-photo">' + btns + '<div class="pl-nophoto"><span class="pl-nophoto-ic">' + K.icon(ic) + '</span><span class="small">' + KP.t('Fotku tohoto místa zatím nemáme.') + '</span></div>' +
+        '<svg class="pl-hero-deco" viewBox="0 0 400 120" aria-hidden="true" focusable="false"><path d="M0 100 C 80 100 90 40 170 50 S 290 110 400 30" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 8" stroke-linecap="round"/></svg></div>';
+    }
+    const src = (w) => K.commonsImg(p.img, w);
+    return '<figure class="pl-hero-media">' + btns + '<img src="' + src(1280) + '" srcset="' + src(640) + ' 640w, ' + src(960) + ' 960w, ' + src(1280) + ' 1280w, ' + src(1920) + ' 1920w" sizes="(min-width: 1240px) 1200px, 100vw" width="1280" height="720" alt="' + KP.t('Fotografie') + ': ' + K.esc(p.n) + '" decoding="async" fetchpriority="high">' +
+      '<figcaption>' + KP.t('Foto: Wikimedia Commons') + ', ' + ext(K.commonsPage(p.img), KP.t('autor a licence')) + '</figcaption></figure>';
+  }
+
+  const TABS = [['prehled', KP.t('Přehled')], ['pristupnost', KP.t('Přístupnost')], ['recenze', KP.t('Recenze')], ['fotky', KP.t('Fotky')]];
+  function tabCount(p, k) {
+    if (k === 'recenze') return C.reviews(p.i).length;
+    if (k === 'fotky') return C.photos(p.i).length + (p.img ? 1 : 0);
+    return 0;
+  }
+  function tabsHtml(p, active) {
+    return '<div class="tabs pl-tabbar" role="tablist" aria-label="' + KP.t('Části detailu místa') + '">' + TABS.map(([k, l]) => {
+      const n = tabCount(p, k), sel = k === active;
+      return '<button type="button" role="tab" id="tab-' + k + '" aria-controls="tp-' + k + '" aria-selected="' + sel + '" tabindex="' + (sel ? 0 : -1) + '" data-ptab="' + k + '">' + l + (n ? ' <span class="pl-tabn num">' + n + '</span>' : '') + '</button>';
+    }).join('') + '</div>';
+  }
+  function panel(k, active, inner) {
+    return '<div class="pl-panel" role="tabpanel" id="tp-' + k + '" aria-labelledby="tab-' + k + '" tabindex="-1"' + (k === active ? '' : ' hidden') + '>' + inner + '</div>';
+  }
+  function selectTab(k, focus) {
+    const root = ROOT();
+    if (!root.querySelector('#tp-' + k)) return;
+    root.querySelectorAll('[data-ptab]').forEach(b => { const on = b.dataset.ptab === k; b.setAttribute('aria-selected', on); b.tabIndex = on ? 0 : -1; if (on && focus) b.focus(); });
+    root.querySelectorAll('.pl-panel').forEach(x => { x.hidden = x.id !== 'tp-' + k; });
+  }
+  // Přepne záložku podle cíle (#prehled, #s-komunita…) a doskroluje k němu
+  function reveal(id, scroll) {
+    if (!id) return false;
+    const tp = document.getElementById('tp-' + id);
+    if (tp) { selectTab(id); if (scroll) $('.pl-tabbar').scrollIntoView({ block: 'start' }); return true; }
+    const el = document.getElementById(id);
+    if (!el || !ROOT().contains(el)) return false;
+    const pn = el.closest('.pl-panel');
+    if (pn) selectTab(pn.id.slice(3));
+    if (scroll) el.scrollIntoView({ block: 'start' });
+    return true;
   }
 
   const saveLabel = (on) => K.icon('bookmark') + (on ? KP.t('Uloženo') : KP.t('Uložit'));
@@ -467,7 +554,7 @@
     if (!W() || !W().has(p.i)) return '<div id="pl-changes" hidden></div>';
     const w = W().all()[p.i];
     if (!K.hasTier('changeAlerts')) {
-      return '<div id="pl-changes" class="pl-changes"><p class="small muted">' + K.esc(KP.t('Toto místo sledujete. Upozornění na změny jsou součást členství PLUS.')) + ' ' + K.tierBadge('changeAlerts') + '</p></div>';
+      return '<div id="pl-changes" class="pl-changes"><p class="small muted">' + K.esc(KP.t('Toto místo sledujete. Upozornění na změny jsou součást členství Explorer.')) + ' ' + K.tierBadge('changeAlerts') + '</p></div>';
     }
     const ch = W().changes(p);
     if (!ch.length) {
@@ -488,15 +575,20 @@
       const nu = document.getElementById(id);
       if (nu) nu.querySelectorAll('details').forEach((d, i) => { if (open[i] !== undefined && !d.classList.contains('pl-write')) d.open = open[i]; });
     });
+    syncTabs();
   }
 
   function render(p) {
-    document.title = p.n + ' · kudyprojedu.cz';
+    document.title = p.n + ' · Wherethru';
     const on = K.saved.has(p.i);
     const cat = K.CATS[p.c] ? K.CATS[p.c].label : '';
     const near = NEAR;
-    const main = scoreSec(p) + measured(p) + operatorInfo(p) + hotelSec(p) + basics(p, near) + description(p) + photoSec(p) + communitySec(p) + confirmSec(p) + nearby(p, near);
+    const access = detailList(p) + scoreSec(p) + measured(p) + operatorInfo(p) + hotelSec(p) + basics(p, near) + confirmSec(p);
+    const overview = changesBlock(p) + matchBlock(p) + tiles(p, near) + description(p) + nearby(p, near);
     const aside = contact(p) + dataSource(p) + businessCard(p);
+    const watching = !!(K.watch && K.watch.has(p.i));
+    const sub = [p.s && p.s !== (K.CATS[p.c] || {}).label && K.t(p.s) !== cat ? K.t(p.s) : '', [p.a, p.o].filter(Boolean).join(', ')].filter(Boolean).join(' · ');
+    const w = p.c === 'parkovani' ? null : K.W[p.w || 'null'];
 
     ROOT().innerHTML =
       ('<nav class="pl-crumbs" aria-label="' + KP.t('Drobečková navigace') + '"><a href="mapa.html">' + KP.t('Mapa') + '</a><span aria-hidden="true">›</span>') +
@@ -504,27 +596,43 @@
       (p.k ? '<a href="kraj.html?k=' + encodeURIComponent(p.k) + '">' + K.esc(K.LANG === 'cs' ? p.k : K.krajName(p.k)) + '</a><span aria-hidden="true">›</span>' : '') +
       (p.o ? '<a href="mapa.html?q=' + encodeURIComponent(p.o) + '">' + K.esc(p.o) + '</a><span aria-hidden="true">›</span>' : '') +
       '<span aria-current="page">' + K.esc(p.n) + '</span></nav>' +
-      '<header class="pl-head' + (p.img ? ' has-photo' : '') + '"><div class="pl-head-text">' +
-      (cat || isCertified(p) ? '<p class="pl-kick">' + (cat ? '<span class="kicker">' + K.esc(cat) + '</span>' : '') + (isCertified(p) ? '<a class="pl-vbadge" href="#s-podnik">' + K.icon('shield') + (KP.t('Ověřený profil') + '</a>') : '') + '</p>' : '') +
+      '<header class="pl-hero' + (p.img ? ' has-photo' : '') + '">' + hero(p, on) +
+      '<div class="pl-hero-card">' +
+      '<p class="pl-kick">' + (cat ? '<span class="pl-cat">' + K.icon(K.CATS[p.c].icon) + K.esc(cat) + '</span>' : '') + (isCertified(p) ? '<a class="pl-vbadge" href="#s-podnik">' + K.icon('shield') + KP.t('Ověřený profil') + '</a>' : '') + '</p>' +
       '<h1>' + K.esc(p.n) + '</h1>' +
-      '<p class="pl-meta">' + K.esc([p.s && p.s !== (K.CATS[p.c] || {}).label && K.t(p.s) !== cat ? K.t(p.s) : '', [p.a, p.o].filter(Boolean).join(', ')].filter(Boolean).join(' · ')) + '</p>' +
+      (sub ? '<p class="pl-meta">' + K.icon('pin') + '<span>' + K.esc(sub) + '</span></p>' : '') +
+      '<div class="pl-badges">' + (w ? K.statusHtml(w.st, w.label) : K.statusHtml('ok', KP.t('Parkování pro držitele průkazu ZTP'))) + headBadges(p) + '</div>' +
       '<div class="pl-actions"><a class="btn btn-primary hide-md" href="' + K.gmaps.directions(p) + '" target="_blank" rel="noopener">' + K.icon('nav') + (KP.t('Navigovat') + '</a>') +
-      '<a class="btn btn-ghost" href="' + K.gmaps.streetView(p) + '" target="_blank" rel="noopener">' + K.icon('eye') + 'Street View</a>' +
-      '<button class="btn btn-ghost hide-md" type="button" data-save aria-pressed="' + on + '">' + saveLabel(on) + '</button>' +
       '<a class="btn btn-ghost" href="itinerar.html?add=' + encodeURIComponent(p.i) + (p._r ? '&r=' + encodeURIComponent(p._r) : '') + '">' + K.icon('route') + (KP.t('Přidat do plánu') + '</a>') +
-      '<button class="btn btn-ghost" type="button" data-watch aria-pressed="' + !!(K.watch && K.watch.has(p.i)) + '">' + watchLabel(!!(K.watch && K.watch.has(p.i))) + '</button>' +
-      '<button class="btn btn-ghost" type="button" id="share">' + K.icon('share') + (KP.t('Sdílet') + '</button>') +
-      '<a class="btn btn-quiet" href="pridat.html?id=' + encodeURIComponent(p.i) + '&nahlasit=1">' + K.icon('flag') + (KP.t('Nahlásit změnu') + '</a></div></div>') + heroPhoto(p) + '</header>' +
+      '<button class="btn btn-ghost" type="button" data-watch aria-pressed="' + watching + '">' + watchLabel(watching) + '</button>' +
+      '<a class="btn btn-ghost" href="' + K.gmaps.streetView(p) + '" target="_blank" rel="noopener">' + K.icon('eye') + 'Street View</a>' +
+      '<a class="btn btn-quiet" href="pridat.html?id=' + encodeURIComponent(p.i) + '&nahlasit=1">' + K.icon('flag') + (KP.t('Nahlásit chybu') + '</a></div>') +
+      '</div></header>' +
       '<div class="pl-layout">' +
-      '<div class="pl-top">' + changesBlock(p) + matchBlock(p) + tiles(p, near) + jumpNav(main + aside) + '</div>' +
+      '<div class="pl-main">' + tabsHtml(p, 'prehled') +
+      panel('prehled', 'prehled', overview) +
+      panel('pristupnost', 'prehled', jumpNav(access) + access) +
+      panel('recenze', 'prehled', communitySec(p)) +
+      panel('fotky', 'prehled', photoSec(p)) +
+      '</div>' +
       ('<aside class="pl-aside" aria-label="' + KP.t('Mapa, kontakt a zdroj dat') + '"><div class="pl-aside-map">') + mapCard(p) + '</div><div class="pl-aside-info">' + aside + '</div></aside>' +
-      '<div class="pl-main">' + main + '</div>' +
       '</div>' +
       '<div class="pl-actionbar"><a class="btn btn-primary" href="' + K.gmaps.directions(p) + '" target="_blank" rel="noopener">' + K.icon('nav') + (KP.t('Navigovat') + '</a>') +
       '<button class="btn btn-ghost" type="button" data-save aria-pressed="' + on + '">' + saveLabel(on) + '</button></div>';
   }
 
-  function syncSave(on) { ROOT().querySelectorAll('[data-save]').forEach(x => { x.setAttribute('aria-pressed', on); x.innerHTML = saveLabel(on); }); }
+  function syncSave(on) {
+    ROOT().querySelectorAll('[data-save]').forEach(x => { x.setAttribute('aria-pressed', on); x.innerHTML = x.dataset.save === 'icon' ? K.icon(on ? 'heart-filled' : 'heart') : saveLabel(on); });
+  }
+  // Počty v záložkách (jen skutečné: vaše hodnocení a fotky v tomto prohlížeči + fotka z Commons)
+  function syncTabs() {
+    if (!P) return;
+    ['recenze', 'fotky'].forEach(k => {
+      const b = ROOT().querySelector('[data-ptab="' + k + '"]'); if (!b) return;
+      const n = tabCount(P, k), lab = TABS.find(x => x[0] === k)[1];
+      b.innerHTML = lab + (n ? ' <span class="pl-tabn num">' + n + '</span>' : '');
+    });
+  }
   function syncWatch() {
     const on = !!(K.watch && P && K.watch.has(P.i));
     ROOT().querySelectorAll('[data-watch]').forEach(x => { x.setAttribute('aria-pressed', on); x.innerHTML = watchLabel(on); });
@@ -537,6 +645,18 @@
     root.addEventListener('click', (e) => {
       const t = e.target.closest('button, a'); if (!t || !root.contains(t)) return;
       const p = P;
+      if (t.matches('[data-ptab]')) { selectTab(t.dataset.ptab); try { history.replaceState(null, '', '#' + t.dataset.ptab); } catch (er) { /* bez historie */ } return; }
+      // Odkaz na část stránky: přepnout záložku, ve které část leží
+      if (t.tagName === 'A' && /^#[\w-]+$/.test(t.getAttribute('href') || '')) {
+        if (reveal(t.getAttribute('href').slice(1), true)) { e.preventDefault(); try { history.replaceState(null, '', t.getAttribute('href')); } catch (er) { /* bez historie */ } }
+        return;
+      }
+      if (t.matches('[data-back]')) {
+        // Zpět tam, odkud uživatel přišel (jen v rámci webu), jinak na mapu
+        let same = false; try { same = !!document.referrer && new URL(document.referrer).origin === location.origin; } catch (er) { /* neplatný referrer */ }
+        if (same && history.length > 1) { e.preventDefault(); history.back(); }
+        return;
+      }
       if (t.matches('[data-open-needs-inline]')) { K.needsDrawer(); return; }
       if (t.matches('[data-save]')) {
         const now = K.saved.toggle(p.i, p);
@@ -562,7 +682,7 @@
         K.watch.accept(p); refresh('pl-changes'); K.toast(KP.t('Změny vzaty na vědomí.'));
         return;
       }
-      if (t.id === 'share') {
+      if (t.matches('[data-share]')) {
         const url = location.href;
         if (navigator.share) { navigator.share({ title: p.n, url }).catch(() => {}); return; }
         (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(() => K.toast(KP.t('Odkaz zkopírován.'))).catch(() => K.toast(url));
@@ -587,6 +707,14 @@
         K.toast(KP.t('Hodnocení smazáno.'));
         refresh('s-komunita', 's-foto', 's-zdroj');
       }
+    });
+    // Záložky: šipky vlevo/vpravo, Home, End (vzor WAI-ARIA Tabs)
+    root.addEventListener('keydown', (e) => {
+      const t = e.target.closest('[data-ptab]'); if (!t) return;
+      const all = [...root.querySelectorAll('[data-ptab]')], i = all.indexOf(t);
+      const j = e.key === 'ArrowRight' ? (i + 1) % all.length : e.key === 'ArrowLeft' ? (i - 1 + all.length) % all.length : e.key === 'Home' ? 0 : e.key === 'End' ? all.length - 1 : -1;
+      if (j < 0) return;
+      e.preventDefault(); selectTab(all[j].dataset.ptab, true);
     });
     root.addEventListener('change', (e) => {
       if (e.target.id === 'rv-aid') { const f = $('#rv-aid-other-f'); if (f) f.hidden = e.target.value !== 'jiné'; }
@@ -649,7 +777,8 @@
     NEAR = all.filter(x => Math.abs(x.la - p.la) < 0.02 && Math.abs(x.lo - p.lo) < 0.03).map(x => [K.distanceKm(p, x), x]).filter(([d]) => d <= 1.5).sort((a, b) => a[0] - b[0]).map(x => x[1]);
     render(p);
     bind();
-    if (location.hash) { const t = document.getElementById(location.hash.slice(1)); if (t) t.scrollIntoView(); }
+    if (location.hash) reveal(decodeURIComponent(location.hash.slice(1)), location.hash.slice(1) !== 'prehled');
+    window.addEventListener('hashchange', () => reveal(decodeURIComponent(location.hash.slice(1)), true));
     // Změna potřeb: přepočítat jen osobní shodu, mapa v pravém sloupci se znovu nenačítá
     document.addEventListener('kp:needs', () => refresh('pl-match'));
     // Uložení dokončené až po vyzkoušení PLUS v panelu limitu; změna úrovně mění štítky a sledování

@@ -1,4 +1,4 @@
-/* kudyprojedu.cz – sdílený standardizovaný checklist přístupnosti (profil podniku i komunitní příspěvek).
+/* Wherethru – sdílený standardizovaný checklist přístupnosti (profil podniku i komunitní příspěvek).
    Položky a fotky bere z KP.business (CHECKLIST, PHOTO_AREAS, checklistFor) v core.js; tady je jen vykreslení,
    čtení hodnot, rozdělení do kroků, hledání místa a štítek „co teď víme“ z KP.facts. */
 (function () {

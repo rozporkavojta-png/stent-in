@@ -320,3 +320,36 @@ KP.i18n.add({
   "Základní údaje vidí každý zdarma. Hosté s členstvím PLUS si uloží své potřeby a Accessibility Match jim místo s vyplněnými údaji ukáže jako „vyhovuje“, místo bez údajů jako „chybí údaje“.": ["Die Grundangaben sieht jeder kostenlos. Gäste mit PLUS-Mitgliedschaft speichern ihren Bedarf, und Accessibility Match zeigt einen Ort mit ausgefüllten Angaben als „passt“, einen Ort ohne Angaben als „Angaben fehlen“.", "Everyone sees the basic details for free. Guests with a PLUS membership save their needs, and Accessibility Match shows a place with filled-in details as “suitable” and a place without details as “data missing”."],
   "Ověření, školení, poradenství a propagaci lze objednat zvlášť, k tarifu Zdarma i Business. Ceny jsou návrh.": ["Prüfung, Schulung, Beratung und Werbung lassen sich separat bestellen, zum Tarif Kostenlos wie zu Business. Die Preise sind ein Vorschlag.", "Verification, training, consulting and promotion can be ordered separately, with the Free plan or with Business. Prices are a proposal."]
 });
+
+/* v4 Wherethru: dashboard podniku */
+KP.i18n.add({
+  "pro podniky": ["für Betriebe", "for businesses"],
+  "Prototyp": ["Prototyp", "Prototype"],
+  "Ukázka s daty vašeho místa.": ["Vorschau mit den Daten Ihres Ortes.", "Preview with your place's data."],
+  "Přehled": ["Übersicht", "Overview"],
+  "Přístupnost": ["Barrierefreiheit", "Accessibility"],
+  "Statistiky": ["Statistik", "Statistics"],
+  "převzato": ["übernommen", "claimed"],
+  "nepřevzato": ["nicht übernommen", "not claimed"],
+  "checklist {n} %": ["Checkliste {n} %", "checklist {n}%"],
+  "zatím žádné": ["noch keine", "none yet"],
+  "prototyp": ["Prototyp", "prototype"],
+  "Části profilu podniku": ["Teile des Betriebsprofils", "Parts of the business profile"],
+  "Tarif": ["Tarif", "Plan"],
+  "Úplnost údajů o přístupnosti": ["Vollständigkeit der Angaben zur Barrierefreiheit", "Completeness of accessibility data"],
+  "Známe {k} z {n} sledovaných prvků. Spočítáno z údajů o místě ze všech zdrojů.": ["Wir kennen {k} von {n} erfassten Merkmalen. Berechnet aus den Angaben zum Ort aus allen Quellen.", "We know {k} of {n} tracked features. Calculated from the place data from all sources."],
+  "{k} z {n}": ["{k} von {n}", "{k} of {n}"],
+  "Převzetí": ["Übernahme", "Claim"],
+  "Další krok": ["Nächster Schritt", "Next step"],
+  "Profil zatím nikdo nepřevzal. Po převzetí se odemkne checklist.": ["Das Profil hat noch niemand übernommen. Nach der Übernahme wird die Checkliste freigeschaltet.", "Nobody has claimed this profile yet. Claiming it unlocks the checklist."],
+  "Fotky od provozovatele": ["Fotos vom Betreiber", "Photos from the operator"],
+  "fotka": ["Foto", "photo"],
+  "Které fotky chybí": ["Welche Fotos fehlen", "Which photos are missing"],
+  "Celkový pohled na místo je z Wikimedia Commons a zůstává u místa s autorem a licencí.": ["Die Gesamtansicht des Ortes stammt aus Wikimedia Commons und bleibt mit Urheber und Lizenz beim Ort.", "The overall view of the place comes from Wikimedia Commons and stays with the place, with author and licence."],
+  "Zobrazení profilu po týdnech": ["Profilaufrufe nach Wochen", "Profile views by week"],
+  "Graf je prázdný schválně. Skutečné návštěvy prototyp neměří a čísla si nevymýšlíme. V ostré verzi se tu ukážou zobrazení ze všech návštěv.": ["Das Diagramm ist absichtlich leer. Der Prototyp misst keine echten Besuche, und wir erfinden keine Zahlen. In der fertigen Version erscheinen hier die Aufrufe aller Besuche.", "The chart is empty on purpose. The prototype does not measure real visits and we do not make up numbers. The live version will show views from all visits here."],
+  "Základní údaje vidí každý zdarma. Hosté s členstvím Explorer si uloží své potřeby a Accessibility Match jim místo s vyplněnými údaji ukáže jako „vyhovuje“, místo bez údajů jako „chybí údaje“.": ["Die Grundangaben sieht jeder kostenlos. Gäste mit Explorer-Mitgliedschaft speichern ihre Bedürfnisse, und Accessibility Match zeigt ihnen einen Ort mit ausgefüllten Angaben als „passt“, einen Ort ohne Angaben als „Angaben fehlen“.", "Anyone can see the basic data for free. Guests with Explorer membership save their needs, and Accessibility Match shows a place with completed data as “suitable” and a place without data as “data missing”."],
+  "Fotografie": ["Foto", "Photo"],
+  "Foto: Wikimedia Commons": ["Foto: Wikimedia Commons", "Photo: Wikimedia Commons"],
+  "autor a licence": ["Urheber und Lizenz", "author and licence"],
+});

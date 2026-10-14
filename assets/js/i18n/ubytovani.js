@@ -57,3 +57,11 @@ KP.i18n.add({
   "Upravit potřeby": ["Bedürfnisse ändern", "Edit needs"],
   "Nastavit potřeby": ["Bedürfnisse einstellen", "Set your needs"],
 });
+
+/* Ubytování v4 Wherethru: sdílené filtry */
+KP.i18n.add({
+  "Posunout druhy doleva": ["Arten nach links verschieben", "Scroll types left"],
+  "Posunout druhy doprava": ["Arten nach rechts verschieben", "Scroll types right"],
+  "Filtry ubytování": ["Filter für Unterkünfte", "Accommodation filters"],
+  "ubytování": ["Unterkünfte", "places to stay"],
+});

@@ -1,11 +1,12 @@
 /* Mapový modul: jedno rozhraní nad Google Maps (s klíčem) nebo Leaflet + OpenStreetMap (bez klíče).
    KPMap.create(el, opts) → Promise<adapter>
-   adapter.setPlaces(list, { colorOf, onClick }) · fitTo(list) · setView(lat, lng, zoom) · focus(place)
+   adapter.setPlaces(list, { colorOf, onClick, iconOf? → olivová kapka s ikonou kategorie }) · fitTo(list) · setView(lat, lng, zoom) · focus(place)
    adapter.onMove(fn(bounds)) · adapter.bounds() → {s,w,n,e} · adapter.addLayer(features) · adapter.engine */
 (function () {
   'use strict';
   const cfg = window.KP_CONFIG || {};
-  const COLORS = { ok: '#1D7A3E', part: '#B26B00', no: '#B22A20', unk: '#5D6D66', park: '#1F4FB8' };
+  const COLORS = { ok: '#2E6B3A', part: '#8A5A00', no: '#B3261E', unk: '#5D6A58', park: '#3A4A34' };
+  const BRAND = '#3A4A34', SAGE = '#7D8F76';
 
   // Značka: tvar podle stavu (kruh / trojúhelník / křížek / prázdný kruh) – rozlišitelné i bez barev
   function pinSvg(st, active) {
@@ -15,7 +16,23 @@
       : st === 'no' ? '<path d="m12.5 10.5 9 9m0-9-9 9" stroke="#fff" stroke-width="3" stroke-linecap="round"/>'
       : st === 'park' ? '<path d="M14 21V9h4a3.2 3.2 0 0 1 0 6.4h-4" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round"/>'
       : '<circle cx="17" cy="15" r="5.5" fill="none" stroke="#fff" stroke-width="2.6"/>';
-    return '<svg xmlns="http://www.w3.org/2000/svg" width="' + 34 * s + '" height="' + 42 * s + '" viewBox="0 0 34 42"><path d="M17 41C17 41 3 26.5 3 15a14 14 0 0 1 28 0c0 11.5-14 26-14 26Z" fill="' + c + '" stroke="' + (active ? '#FFC629' : '#fff') + '" stroke-width="' + (active ? 3 : 2) + '"/>' + inner + '</svg>';
+    return '<svg xmlns="http://www.w3.org/2000/svg" width="' + 34 * s + '" height="' + 42 * s + '" viewBox="0 0 34 42"><path d="M17 41C17 41 3 26.5 3 15a14 14 0 0 1 28 0c0 11.5-14 26-14 26Z" fill="' + c + '" stroke="' + (active ? SAGE : '#fff') + '" stroke-width="' + (active ? 3 : 2) + '"/>' + inner + '</svg>';
+  }
+
+  // Značka v4: olivová kapka s bílou ikonou kategorie (assets/icons, KP_ICONS); stav vstupu jako malý odznak vpravo
+  // nahoře (tvar + barva: kruh s fajfkou / trojúhelník / křížek / prázdný kruh). Vybraná značka je větší se šalvějovým obrysem.
+  function catPinSvg(iconName, st, active) {
+    const set = window.KP_ICONS || {}, al = window.KP_ICON_ALIASES || {};
+    const body = set[iconName] || set[al[iconName]] || set.pin || '';
+    const s = active ? 1.3 : 1;
+    const badge = st === 'ok' ? '<circle cx="30" cy="8" r="6.5" fill="' + COLORS.ok + '" stroke="#fff" stroke-width="2"/><path d="m27.2 8.2 2 2 3.8-4" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'
+      : st === 'part' ? '<circle cx="30" cy="8" r="6.5" fill="' + COLORS.part + '" stroke="#fff" stroke-width="2"/><path d="M30 4.6 33.3 10.6H26.7Z" fill="#fff"/>'
+      : st === 'no' ? '<circle cx="30" cy="8" r="6.5" fill="' + COLORS.no + '" stroke="#fff" stroke-width="2"/><path d="m27.6 5.6 4.8 4.8m0-4.8-4.8 4.8" stroke="#fff" stroke-width="1.9" stroke-linecap="round"/>'
+      : st === 'unk' ? '<circle cx="30" cy="8" r="6" fill="#fff" stroke="' + COLORS.unk + '" stroke-width="2.4"/>'
+      : '';
+    return '<svg xmlns="http://www.w3.org/2000/svg" width="' + Math.round(38 * s) + '" height="' + Math.round(46 * s) + '" viewBox="0 0 38 46">' +
+      '<path d="M18 44C18 44 3 29 3 17a15 15 0 0 1 30 0c0 12-15 27-15 27Z" fill="' + BRAND + '" stroke="' + (active ? SAGE : '#fff') + '" stroke-width="' + (active ? 3.2 : 2) + '"/>' +
+      '<g transform="translate(9.6 8.6) scale(.7)" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' + body + '</g>' + badge + '</svg>';
   }
 
   function loadScript(src) {
@@ -31,26 +48,29 @@
       center: { lat: opts.lat, lng: opts.lng }, zoom: opts.zoom, mapTypeControl: true, streetViewControl: true, fullscreenControl: false,
       clickableIcons: false, gestureHandling: 'greedy',
     });
-    let markers = [], byId = {}, clusterer = null, active = null, colorOf = () => 'unk';
-    const icon = (st, a) => ({ url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(pinSvg(st, a)), scaledSize: new google.maps.Size(a ? 42 : 34, a ? 52 : 42), anchor: new google.maps.Point(a ? 21 : 17, a ? 52 : 42) });
+    let markers = [], byId = {}, clusterer = null, active = null, colorOf = () => 'unk', iconOf = null;
+    const gicon = (st, a, ic) => ic
+      ? { url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(catPinSvg(ic, st, a)), scaledSize: new google.maps.Size(a ? 49 : 38, a ? 60 : 46), anchor: new google.maps.Point(a ? 23 : 18, a ? 57 : 44) }
+      : { url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(pinSvg(st, a)), scaledSize: new google.maps.Size(a ? 42 : 34, a ? 52 : 42), anchor: new google.maps.Point(a ? 21 : 17, a ? 52 : 42) };
+    const icon = (p, a) => gicon(colorOf(p), a, iconOf ? iconOf(p) : null);
     const api = {
       engine: 'google', map,
       setPlaces(list, o) {
-        colorOf = o.colorOf;
+        colorOf = o.colorOf; iconOf = o.iconOf || null;
         if (clusterer) clusterer.clearMarkers();
         markers.forEach(m => m.setMap(null)); byId = {};
         markers = list.map(p => {
-          const m = new google.maps.Marker({ position: { lat: p.la, lng: p.lo }, icon: icon(colorOf(p)), title: p.n });
+          const m = new google.maps.Marker({ position: { lat: p.la, lng: p.lo }, icon: icon(p), title: p.n });
           m.addListener('click', () => o.onClick(p)); byId[p.i] = m; return m;
         });
-        clusterer = new markerClusterer.MarkerClusterer({ map, markers, renderer: { render: ({ count, position }) => new google.maps.Marker({ position, label: { text: String(count), color: '#fff', fontWeight: '700' }, icon: { path: google.maps.SymbolPath.CIRCLE, scale: 16 + Math.min(14, Math.log2(count) * 2), fillColor: '#12211C', fillOpacity: .92, strokeColor: '#FFC629', strokeWeight: 3 }, zIndex: 1000 + count }) } });
+        clusterer = new markerClusterer.MarkerClusterer({ map, markers, renderer: { render: ({ count, position }) => new google.maps.Marker({ position, label: { text: String(count), color: '#fff', fontWeight: '700' }, icon: { path: google.maps.SymbolPath.CIRCLE, scale: 16 + Math.min(14, Math.log2(count) * 2), fillColor: SAGE, fillOpacity: .95, strokeColor: '#fff', strokeWeight: 3 }, zIndex: 1000 + count }) } });
       },
       fitTo(list) { if (!list.length) return; const b = new google.maps.LatLngBounds(); list.forEach(p => b.extend({ lat: p.la, lng: p.lo })); map.fitBounds(b, 40); },
       setView(lat, lng, z) { map.setCenter({ lat, lng }); map.setZoom(z); },
       focus(p) {
-        if (active && byId[active.i]) byId[active.i].setIcon(icon(colorOf(active)));
+        if (active && byId[active.i]) byId[active.i].setIcon(icon(active));
         active = p; if (!p) return;
-        const m = byId[p.i]; if (m) { m.setIcon(icon(colorOf(p), true)); m.setZIndex(9999); }
+        const m = byId[p.i]; if (m) { m.setIcon(icon(p, true)); m.setZIndex(9999); }
         map.panTo({ lat: p.la, lng: p.lo }); if (map.getZoom() < 15) map.setZoom(16);
       },
       onMove(fn) { map.addListener('idle', () => fn(api.bounds())); },
@@ -76,14 +96,23 @@
     const map = L.map(el, { zoomControl: true, preferCanvas: true }).setView([opts.lat, opts.lng], opts.zoom);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">' + (window.KP && KP.t ? KP.t('přispěvatelé OpenStreetMap') : 'přispěvatelé OpenStreetMap') + '</a>' }).addTo(map);
     const cache = {};
+    let fits = 0;
+    const csz = (c) => Math.round(34 + Math.min(16, Math.log2(c.getChildCount()) * 2));
     // Značka jako <img> s SVG v data URI – výrazně lehčí pro prohlížeč než vložené SVG v každé značce
-    const icon = (st, a) => { const k = st + (a ? 'a' : ''); return cache[k] || (cache[k] = L.icon({ iconUrl: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(pinSvg(st, a)), iconSize: a ? [42, 52] : [34, 42], iconAnchor: a ? [21, 52] : [17, 42] })); };
-    let group = null, byId = {}, active = null, colorOf = () => 'unk', onClick = () => {}, styleKey = null;
-    const mk = (p) => { const m = L.marker([p.la, p.lo], { icon: icon(colorOf(p)), title: p.n, keyboard: false }); m.on('click', () => onClick(p)); byId[p.i] = m; return m; };
+    const licon = (st, a, ic) => {
+      const k = (ic || '') + '|' + st + (a ? 'a' : '');
+      if (cache[k]) return cache[k];
+      return (cache[k] = ic
+        ? L.icon({ iconUrl: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(catPinSvg(ic, st, a)), iconSize: a ? [49, 60] : [38, 46], iconAnchor: a ? [23, 57] : [18, 44] })
+        : L.icon({ iconUrl: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(pinSvg(st, a)), iconSize: a ? [42, 52] : [34, 42], iconAnchor: a ? [21, 52] : [17, 42] }));
+    };
+    let group = null, byId = {}, active = null, colorOf = () => 'unk', iconOf = null, onClick = () => {}, styleKey = null;
+    const icon = (p, a) => licon(colorOf(p), a, iconOf ? iconOf(p) : null);
+    const mk = (p) => { const m = L.marker([p.la, p.lo], { icon: icon(p), title: p.n, alt: p.n, keyboard: false }); m.on('click', () => onClick(p)); byId[p.i] = m; return m; };
     const api = {
       engine: 'leaflet', map,
       setPlaces(list, o) {
-        colorOf = o.colorOf; onClick = o.onClick;
+        colorOf = o.colorOf; onClick = o.onClick; iconOf = o.iconOf || null;
         // S o.key (styl značek, např. potřeby uživatele) jen přidáme / odebereme rozdíl místo stavby celé vrstvy znovu
         if (group && o.key !== undefined && o.key === styleKey) {
           const next = new Set(list.map(p => p.i)), rem = [], add = [];
@@ -102,18 +131,22 @@
           group._topClusterLevel = new Proxy({}, { get: () => noop });
         }
         group = L.markerClusterGroup({ chunkedLoading: true, showCoverageOnHover: false, maxClusterRadius: 50, disableClusteringAtZoom: 17,
-          iconCreateFunction: c => L.divIcon({ className: '', html: '<div class="marker-cluster-kp" style="width:' + (34 + Math.min(16, Math.log2(c.getChildCount()) * 2)) + 'px;height:' + (34 + Math.min(16, Math.log2(c.getChildCount()) * 2)) + 'px">' + c.getChildCount() + '</div>', iconSize: [40, 40] }) });
+          iconCreateFunction: c => L.divIcon({ className: '', html: '<div class="marker-cluster-kp" style="width:' + csz(c) + 'px;height:' + csz(c) + 'px">' + c.getChildCount() + '</div>', iconSize: [csz(c), csz(c)] }) });
         byId = {};
         const ms = list.map(mk);
         group.addLayers(ms); map.addLayer(group);
       },
-      fitTo(list) { if (!list.length) return; map.fitBounds(L.latLngBounds(list.map(p => [p.la, p.lo])), { padding: [40, 40], maxZoom: 16 }); },
+      // První výřez bez animace: jinak by konec animace přepsal výřez nastavený hned po něm (obec nebo hledání z odkazu)
+      fitTo(list) {
+        if (!list.length) return;
+        map.fitBounds(L.latLngBounds(list.map(p => [p.la, p.lo])), { padding: [40, 40], maxZoom: 16, animate: fits++ > 0 });
+      },
       setView(lat, lng, z) { map.setView([lat, lng], z); },
       focus(p) {
-        if (active && byId[active.i]) byId[active.i].setIcon(icon(colorOf(active)));
+        if (active && byId[active.i]) { byId[active.i].setIcon(icon(active)); byId[active.i].setZIndexOffset(0); }
         active = p; if (!p) return;
         const m = byId[p.i];
-        const go = () => { if (m) { m.setIcon(icon(colorOf(p), true)); m.setZIndexOffset(1000); } };
+        const go = () => { if (m) { m.setIcon(icon(p, true)); m.setZIndexOffset(1000); } };
         if (m && group) group.zoomToShowLayer(m, go); else map.setView([p.la, p.lo], Math.max(map.getZoom(), 16));
       },
       onMove(fn) { map.on('moveend', () => fn(api.bounds())); },
@@ -131,7 +164,7 @@
   }
 
   window.KPMap = {
-    pinSvg,
+    pinSvg, catPinSvg,
     create(el, o) {
       const opts = Object.assign({ lat: (cfg.defaultCenter || {}).lat || 49.8, lng: (cfg.defaultCenter || {}).lng || 15.5, zoom: cfg.defaultZoom || 7 }, o || {});
       if (cfg.googleMapsApiKey) return createGoogle(el, opts).catch(err => { console.warn('Google Maps se nenačetly, používám OpenStreetMap', err); return createLeaflet(el, opts); });

@@ -1,4 +1,4 @@
-/* Stránka dovolena.html: vícedenní dovolená (členství PREMIUM). PROTOTYP bez serveru, bez AI a bez plateb.
+/* Stránka dovolena.html: vícedenní dovolená (členství Traveller = klíč premium). PROTOTYP bez serveru, bez AI a bez plateb.
    Návrh skládají pravidla nad skutečnými daty (KPPlan z planovac.js): ubytování podle shody, program na každý den,
    doprava (Google Maps, nádraží s údaji o bezbariérovosti, parkování ZTP), alternativy, offline soubor přes Blob,
    sdílení odkazem, Travel Concierge a kredit na kontrolu ubytování jen jako ukázka toku. Nic se neodesílá. */
@@ -38,8 +38,8 @@
     $('#dv-area').value = P.isAuto(v.area) ? P.AUTO_LABEL : v.area;
     $('#dv-date').value = v.date;
     $('#dv-days').innerHTML = DAY_OPTS.map(n => '<option value="' + n + '"' + (n === v.days ? ' selected' : '') + '>' + n + ' ' + K.plural(n, 'den', 'dny', 'dní') + '</option>').join('');
-    $('#dv-int').innerHTML = P.chipsHtml('int', P.INTERESTS.map(x => [x.k, x.label]), v.interests, true);
-    $('#dv-mode').innerHTML = P.chipsHtml('mode', ['car', 'transit', 'walk'].map(k => [k, P.MODES[k].label]), v.mode, false);
+    $('#dv-int').innerHTML = P.chipsHtml('int', P.INTERESTS.map(x => [x.k, x.label, x.ic]), v.interests, true);
+    $('#dv-mode').innerHTML = P.chipsHtml('mode', ['car', 'transit', 'walk'].map(k => [k, P.MODES[k].label, P.MODES[k].ic]), v.mode, false);
     $('#dv-pace').innerHTML = P.chipsHtml('pace', Object.keys(P.PACE).map(k => [k, P.PACE[k].label + ': ' + P.PACE[k].hint]), v.pace, false);
     $('#dv-budget').innerHTML = Object.keys(P.BUDGET).map(k => '<option value="' + k + '"' + (k === v.budget ? ' selected' : '') + '>' + esc(P.BUDGET[k].label) + '</option>').join('');
     $('#dv-lunch').checked = v.lunch;
@@ -273,7 +273,7 @@
     const T = S.trip, year = new Date().getFullYear();
     const c = K.store.get(CREDIT_KEY, null), used = c && c.year === year;
     const head = '<section class="dv-sec" aria-labelledby="dv-cr-h"><h2 id="dv-cr-h">' + t('Kontrola dostupnosti ubytování') + ' ' + K.tierBadge('accessCheckCredit', { onlyLocked: true }) + '</h2>' +
-      '<p>' + t('PREMIUM obsahuje jeden kredit ročně na individuální kontrolu vybraného ubytování. Tady je jen ukázka, jak by to probíhalo.') + '</p>';
+      '<p>' + t('Traveller obsahuje jeden kredit ročně na individuální kontrolu vybraného ubytování. Tady je jen ukázka, jak by to probíhalo.') + '</p>';
     if (!K.hasTier('accessCheckCredit')) return head + '<div class="row"><button class="btn btn-ghost" type="button" data-cr-unlock>' + t('Ukázat tok kontroly') + '</button></div></section>';
     return head + '<div class="dv-credit"><div class="stat"><span class="n num">' + (used ? 0 : 1) + '</span></div><p>' + t('Zbývající kredit v roce {y}', { y: year }) + (used ? '. ' + t('Ukázkově použit pro {h}, {d}.', { h: esc(c.n), d: K.fmtDate(c.date) }) : '') + '</p></div>' +
       (used ? '<div class="dv-done"><p><b>' + t('Co by se stalo dál') + '</b></p><ol class="dv-steps">' +
@@ -293,9 +293,9 @@
       out.innerHTML = summaryHtml() + hotels +
         '<section class="dv-sec"><h2>' + t('Program') + '</h2>' + daysHtml(1) + '</section>' +
         '<div class="pl-lock"><p class="kicker">' + t('Náhled') + '</p><p><b>' + t('Plán má {n} dní.', { n: T.days.length }) + '</b> ' +
-        t('Výběr z více ubytování, program na každý den, doprava, alternativy, offline itinerář a concierge jsou součást PREMIUM.') + '</p>' +
+        t('Výběr z více ubytování, program na každý den, doprava, alternativy, offline itinerář a concierge jsou součást úrovně Traveller.') + '</p>' +
         '<p class="small">' + esc(K.TIER_PROTO_NOTE) + '</p>' +
-        '<div class="row"><button class="btn btn-primary" type="button" data-unlock>' + t('Zobrazit celý plán') + ' ' + K.tierTag('premium') + '</button><a class="btn btn-ghost" href="clenstvi.html">' + t('Co obsahuje PREMIUM') + '</a></div></div>';
+        '<div class="row"><button class="btn btn-primary" type="button" data-unlock>' + t('Zobrazit celý plán') + ' ' + K.tierTag('premium') + '</button><a class="btn btn-ghost" href="clenstvi.html">' + t('Co obsahuje Traveller') + '</a></div></div>';
       return;
     }
     out.innerHTML = summaryHtml() + hotels +
@@ -330,9 +330,9 @@
         (svc.length ? '<br>' + svc.join(' · ') : '') + (unk.length ? '<br><i>' + t('Nevíme') + ': ' + unk.map(esc).join(', ') + '</i>' : '') +
         '<br><a href="' + abs(P.placeLink(p)) + '">' + t('Detail místa') + '</a> · <a href="' + P.gmDir(null, p, 'driving') + '">Google Maps</a> · <span class="mu">' + p.la.toFixed(5) + ', ' + p.lo.toFixed(5) + '</span></li>';
     };
-    const css = 'body{font:16px/1.5 system-ui,sans-serif;max-width:760px;margin:0 auto;padding:16px;color:#101010;background:#fff}h1{font-size:28px;margin:0 0 4px}h2{border-top:3px solid #101010;padding-top:8px;margin:24px 0 8px}ol{padding-left:0;list-style:none}li{border-bottom:1px solid #101010;padding:8px 0}.tm{background:#FFD400;padding:0 4px;font-family:monospace}.mu{color:#444}.note{border-left:6px solid #FFD400;background:#f2f2f2;padding:8px 12px}a{color:#101010}';
+    const css = 'body{font:16px/1.5 system-ui,sans-serif;max-width:760px;margin:0 auto;padding:16px;color:#1F261C;background:#F7F7F5}h1{font-size:28px;margin:0 0 4px;color:#3A4A34}h2{color:#3A4A34;border-top:1px solid #D9DED3;padding-top:12px;margin:24px 0 8px}ol{padding-left:0;list-style:none}li{background:#fff;border:1px solid #E3E7DF;border-radius:14px;padding:10px 14px;margin:8px 0}.tm{background:#3A4A34;color:#fff;border-radius:6px;padding:0 6px}.mu{color:#55604F}.note{background:#EBEEE7;border-radius:14px;padding:10px 14px}a{color:#3A4A34}';
     return '<!doctype html><html lang="' + lang + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>' + esc(toItinerary().name) + '</title><style>' + css + '</style></head><body>' +
-      '<h1>' + esc(toItinerary().name) + '</h1><p class="mu">kudyprojedu.cz · ' + t('staženo {d}', { d: K.fmtDate(P.isoDay(new Date())) }) + '</p>' +
+      '<h1>' + esc(toItinerary().name) + '</h1><p class="mu">Wherethru · ' + t('staženo {d}', { d: K.fmtDate(P.isoDay(new Date())) }) + '</p>' +
       '<p class="note">' + t('Návrh sestavený podle pravidel nad skutečnými daty; v ostré verzi s AI. Časy a přesuny jsou odhad, ne jízdní řád.') + ' ' + t('Údaje se mohou změnit, před cestou je ověřte.') + '</p>' +
       '<h2>' + t('Ubytování') + '</h2><p><b>' + esc(h.n) + '</b>' + (h.a ? ', ' + esc(h.a) : '') + (h.o ? ', ' + esc(h.o) : '') + '<br>' + esc(P.statusOf({ p: h, a: T.hotel.a }).replace(/<[^>]+>/g, '')) +
       (h.web ? '<br><a href="' + esc(h.web) + '">' + esc(h.web) + '</a>' : '') + (h.ph ? '<br>' + esc(h.ph) : '') + '</p>' +
