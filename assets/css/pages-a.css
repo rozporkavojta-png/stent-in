@@ -52,7 +52,7 @@ main > .section:not(.section-alt) + .section:not(.section-alt) { padding-top: 0;
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: center; }
 .hero-text { min-width: 0; }
 .hero-claim { font: 700 .82rem/1.4 var(--f-body); letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 14px; }
-.hero h1 { font-size: clamp(2.2rem, 5.2vw, 4rem); line-height: 1.02; letter-spacing: -.04em; margin: 0 0 16px; max-width: 14ch; }
+.hero h1 { font-size: clamp(2.2rem, 5.2vw, 4rem); line-height: 1.02; letter-spacing: -.02em; margin: 0 0 16px; max-width: 14ch; }
 .hero .lede { margin: 0 0 24px; max-width: 48ch; }
 .hero-search { max-width: 620px; }
 .hero-search .hero-go { padding-inline: 22px; }
