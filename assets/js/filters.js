@@ -434,8 +434,41 @@
     // Panel Filtry
     const P = {};
     let panelBuilt = false, lastFocus = null, isOpen = false;
+    const SEC_ICON = { cats: 'layers', typ: 'bed', access: 'wheel', room: 'room-accessible', adv: 'ruler', source: 'shield', more: 'camera', area: 'map', needs: 'sliders' };
+    const secList = [];
     function sec(id, title, body, badge) {
-      return '<fieldset class="kf-sec" id="kf-sec-' + id + '"><legend><span>' + esc(title) + '</span>' + (badge || '') + '</legend>' + body + '</fieldset>';
+      secList.push([id, title]);
+      return '<fieldset class="kf-sec" id="kf-sec-' + id + '" data-kf-sec="' + id + '"><legend><span>' + esc(title) + '</span>' + (badge || '') +
+        '<button type="button" class="kf-sec-clear" data-kf-sec-clear="' + id + '" hidden>' + esc(T('Vymazat')) + '</button></legend>' + body + '</fieldset>';
+    }
+    // Kolik filtrů je ve skupině zapnuto (číslo v navigaci panelu a tlačítko Zrušit u skupiny)
+    function secCount(id) {
+      const s = state;
+      switch (id) {
+        case 'cats': return s.cats.size;
+        case 'typ': return s.typ.size;
+        case 'access': return (wIsDefault(s.w) ? 0 : 1) + ['wc', 'pk', 'lift', 'ek'].filter(k => s[k]).length;
+        case 'room': return s.room ? 1 : 0;
+        case 'adv': return (s.door ? 1 : 0) + (s.shower ? 1 : 0) + (s.bars ? 1 : 0);
+        case 'source': return s.src.size + (s.chk ? 1 : 0);
+        case 'more': return ['img', 'desc', 'contact'].filter(k => s[k]).length;
+        case 'area': return ['zeme', 'kraj', 'obec'].filter(k => s[k]).length;
+        case 'needs': return s.needsOnly ? 1 : 0;
+      }
+      return 0;
+    }
+    function clearSec(id) {
+      const s = state;
+      if (id === 'cats') s.cats.clear();
+      else if (id === 'typ') s.typ.clear();
+      else if (id === 'access') { s.w = new Set(W_DEF); ['wc', 'pk', 'lift', 'ek'].forEach(k => { s[k] = false; }); }
+      else if (id === 'room') s.room = false;
+      else if (id === 'adv') { s.door = ''; s.shower = false; s.bars = false; }
+      else if (id === 'source') { s.src.clear(); s.chk = false; }
+      else if (id === 'more') ['img', 'desc', 'contact'].forEach(k => { s[k] = false; });
+      else if (id === 'area') { s.zeme = ''; s.kraj = ''; s.obec = ''; fillArea(); }
+      else if (id === 'needs') s.needsOnly = false;
+      changed({ key: id === 'area' ? 'kraj' : id, push: true });
     }
     const opt = (type, name, val, label, icon, nKey, extra) => '<label class="kf-opt"><input type="' + type + '" name="' + name + '" value="' + esc(val) + '"' + (extra || '') + '>' +
       (icon ? K.icon(icon) : '') + '<span class="t">' + label + '</span>' + (nKey ? '<span class="n" data-kf-n="' + nKey + '"></span>' : '') + '</label>';
@@ -479,11 +512,17 @@
         '<div class="kf-panel" id="kf-panel" role="dialog" aria-modal="true" aria-labelledby="kf-title" hidden>' +
         '<div class="kf-grip" aria-hidden="true"></div>' +
         '<header class="kf-head"><h2 id="kf-title">' + esc(T('Filtry')) + '</h2><button class="icon-btn" type="button" data-kf-close aria-label="' + esc(T('Zavřít filtry')) + '">' + K.icon('close') + '</button></header>' +
-        '<div class="kf-body">' + body + '</div>' +
+        '<div class="kf-find"><span class="kf-find-ic" aria-hidden="true">' + K.icon('search') + '</span><label class="sr-only" for="kf-find">' + esc(T('Hledat ve filtrech')) + '</label>' +
+          '<input id="kf-find" type="search" autocomplete="off" placeholder="' + esc(T('Hledat filtr, třeba výtah')) + '"></div>' +
+        '<div class="kf-main">' +
+        '<nav class="kf-rail" aria-label="' + esc(T('Skupiny filtrů')) + '"><ul>' + secList.map(([id, title]) =>
+          '<li><a href="#kf-sec-' + id + '" data-kf-go="' + id + '">' + K.icon(SEC_ICON[id] || 'check') + '<span class="t">' + esc(title) + '</span><span class="kf-rail-n" data-kf-rail-n="' + id + '" hidden></span></a></li>').join('') + '</ul></nav>' +
+        '<div class="kf-body">' + body + '<p class="kf-nofind" hidden>' + esc(T('Žádný filtr neodpovídá hledání.')) + '</p></div></div>' +
         '<footer class="kf-foot"><button class="btn btn-ghost" type="button" data-kf-reset>' + esc(T('Zrušit vše')) + '</button><button class="btn btn-primary" type="button" data-kf-apply>' + esc(T('Zobrazit místa')) + '</button></footer></div>';
       P.panel = host.querySelector('#kf-panel'); P.backdrop = host.querySelector('#kf-backdrop');
       P.apply = host.querySelector('[data-kf-apply]');
       P.kraj = host.querySelector('#kf-kraj'); P.obec = host.querySelector('#kf-obec'); P.door = host.querySelector('#kf-door');
+      P.body = host.querySelector('.kf-body'); P.find = host.querySelector('#kf-find'); P.rail = host.querySelector('.kf-rail');
       panelBuilt = true;
       fillArea();
       bindPanel();
@@ -521,6 +560,8 @@
       if (P.kraj && P.kraj.value !== state.kraj) { P.kraj.value = state.kraj; if (P.kraj.value !== state.kraj) fillArea(); }
       if (P.obec && document.activeElement !== P.obec) { if (cfg.obecMode === 'select') fillArea(); else P.obec.value = state.obec; }
       host.querySelectorAll('[data-kf-tier]').forEach(x => { x.innerHTML = K.tierBadge(x.dataset.kfTier, { onlyLocked: true }); });
+      host.querySelectorAll('[data-kf-rail-n]').forEach(x => { const n = secCount(x.dataset.kfRailN); x.hidden = !n; x.textContent = n; x.closest('a').classList.toggle('has-on', !!n); });
+      host.querySelectorAll('[data-kf-sec-clear]').forEach(x => { x.hidden = !secCount(x.dataset.kfSecClear); });
       const note = host.querySelector('#kf-needs-note');
       if (note) {
         const locked = !K.hasTier('match'), active = K.getNeeds().active;
@@ -539,11 +580,20 @@
           if (typBox.dataset.sig !== sig) { typBox.dataset.sig = sig; typBox.innerHTML = ks.map(k => opt('checkbox', 'kf-typ', k, esc(K.t(k)), typIcon(k), 'typ:' + k, state.typ.has(k) ? ' checked' : '')).join(''); }
         }
         const room = host.querySelector('#kf-sec-room');
-        if (room) room.hidden = !(counts.b.room || state.room);
+        if (room) {
+          const no = !(counts.b.room || state.room);
+          room.dataset.noData = no ? '1' : '';
+          if (no) room.hidden = true; else if (!P.find || !P.find.value) room.hidden = false;
+          const r = P.rail && P.rail.querySelector('[data-kf-go="room"]'); if (r) r.parentElement.hidden = room.hidden;
+        }
+        const known = counts.base > 0;
         host.querySelectorAll('[data-kf-n]').forEach(x => {
           const [g, k] = x.dataset.kfN.split(':');
           const v = g === 'cat' ? counts.cat[k] : g === 'typ' ? counts.typ[k] : g === 'w' ? counts.w[k] : g === 'src' ? counts.src[k] : counts.b[k];
-          x.textContent = K.nf(v || 0);
+          // Bez načtených míst (mapa čeká na výběr oblasti) čísla neukazujeme, jinak by všude svítila nula
+          x.textContent = known ? K.nf(v || 0) : '';
+          const row = x.closest('.kf-opt, .chip');
+          if (row) row.classList.toggle('is-zero', known && !v && !(row.querySelector('input') || {}).checked && row.getAttribute('aria-pressed') !== 'true');
         });
         if (P.apply) P.apply.textContent = counts.total ? T('Zobrazit {n}', { n: K.nf(counts.total) + ' ' + K.plural(counts.total, cfg.unit[0], cfg.unit[1], cfg.unit[2]) }) : ((cfg.emptyLabel && cfg.emptyLabel()) || T('Nic neodpovídá'));
       }
@@ -631,8 +681,57 @@
         if (e.target.closest('[data-kf-close]') || e.target === P.backdrop) { close(); return; }
         if (e.target.closest('[data-kf-apply]')) { close(); if (cfg.onApply) cfg.onApply(); return; }
         if (e.target.closest('[data-kf-reset]')) { reset(); return; }
+        const sc = e.target.closest('[data-kf-sec-clear]'); if (sc) { clearSec(sc.dataset.kfSecClear); return; }
+        const go = e.target.closest('[data-kf-go]');
+        if (go) {
+          e.preventDefault();
+          const t = host.querySelector('#kf-sec-' + go.dataset.kfGo); if (!t) return;
+          spyLock = Date.now() + 700; markRail(go.dataset.kfGo);
+          P.body.scrollTo({ top: t.offsetTop - P.body.offsetTop - 4, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+          return;
+        }
         if (e.target.closest('[data-kf-needs]')) { K.needsDrawer(); }
       });
+      // Navigace skupin sleduje, která skupina je v panelu nahoře
+      let spyLock = 0, spyRaf = 0;
+      function markRail(id) {
+        P.rail.querySelectorAll('[data-kf-go]').forEach(a => { const on = a.dataset.kfGo === id; a.classList.toggle('is-cur', on); if (on) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+        const cur = P.rail.querySelector('.is-cur');
+        if (cur && P.rail.scrollWidth > P.rail.clientWidth + 2) P.rail.scrollTo({ left: cur.parentElement.offsetLeft - 16 });
+      }
+      P.body.addEventListener('scroll', () => {
+        if (Date.now() < spyLock || spyRaf) return;
+        spyRaf = requestAnimationFrame(() => {
+          spyRaf = 0;
+          const top = P.body.getBoundingClientRect().top + 24;
+          const all = [...P.body.querySelectorAll('.kf-sec:not([hidden])')];
+          let cur = all[0] || null;
+          all.forEach(x => { if (x.getBoundingClientRect().top <= top) cur = x; });
+          if (P.body.scrollTop + P.body.clientHeight >= P.body.scrollHeight - 4 && all.length) cur = all[all.length - 1];
+          if (cur) markRail(cur.dataset.kfSec);
+        });
+      }, { passive: true });
+      markRail((P.body.querySelector('.kf-sec') || { dataset: {} }).dataset.kfSec);
+      // Hledání ve filtrech: nechá jen volby, jejichž text odpovídá (bez diakritiky); skupina se shodou v nadpisu zůstane celá
+      P.find.addEventListener('input', () => {
+        const q = norm(P.find.value.trim());
+        let any = false;
+        P.body.querySelectorAll('.kf-sec').forEach(x => {
+          if (x.dataset.noData === '1') return;
+          const whole = !q || norm(x.querySelector('legend').textContent).includes(q);
+          let hit = whole;
+          x.querySelectorAll('.kf-opt, .kf-w .chip, .kf-door, .field, .kf-zeme').forEach(o => {
+            const m = whole || norm(o.textContent).includes(q);
+            o.classList.toggle('kf-miss', !m); if (m) hit = true;
+          });
+          x.querySelectorAll('.kf-note, .kf-sub, [data-kf-needs]').forEach(o => o.classList.toggle('kf-miss', !whole));
+          x.hidden = !hit; if (hit) any = true;
+          const r = P.rail.querySelector('[data-kf-go="' + x.dataset.kfSec + '"]'); if (r) r.parentElement.hidden = !hit;
+        });
+        P.body.querySelector('.kf-nofind').hidden = any;
+        P.body.scrollTop = 0;
+      });
+      P.find.addEventListener('keydown', (e) => { if (e.key === 'Escape' && P.find.value) { e.stopPropagation(); P.find.value = ''; P.find.dispatchEvent(new Event('input')); } });
       P.panel.addEventListener('keydown', (e) => {
         if (mode !== 'dialog') return;
         if (e.key === 'Escape') { e.stopPropagation(); close(); return; }

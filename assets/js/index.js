@@ -112,7 +112,7 @@
     const br = st.by_region || {}, z = st.by_zeme || {};
     const vals = { total: tt.total, w_yes: tt.w_yes, w_limited: tt.w_limited, x: tt.x, img: tt.img, parkovani: c.parkovani,
       jc: (br['cz-jihocesky'] || {}).total, de: (z.de || {}).total };
-    document.querySelectorAll('[data-stat]').forEach(el => { const v = vals[el.dataset.stat]; el.textContent = v == null ? '–' : nf(v); });
+    document.querySelectorAll('[data-stat]').forEach(el => { const v = vals[el.dataset.stat]; if (v == null) el.textContent = '–'; else countUp(el, v); });
     const zl = $('#zeme-split');
     if (zl && z.cz && z.de) zl.textContent = t('Česko {a} · Bavorsko {b} míst', { a: nf(z.cz.total), b: nf(z.de.total) });
 
@@ -146,11 +146,37 @@
   // Ceny členství podle jazyka (KP.tierPrice); úroveň se přepíná v core.js
   function renderTierPrices() { document.querySelectorAll('[data-tier-price]').forEach(el => { el.textContent = K.tierPrice(el.dataset.tierPrice); }); }
 
+  // ---------- Animace (v6): odhalení sekcí při posunu a načítání čísel, jen bez prefers-reduced-motion ----------
+  const MOTION = !matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window;
+  let io = null;
+  function reveal(root) {
+    if (!MOTION) return;
+    if (!io) io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: .08 });
+    (root || document).querySelectorAll('.home > section:not(.hero) .section-head, .path-cards > li, .num-cards > *, .dest-grid > li, .tile-grid > li, .home > section:not(.hero) .wrap > ul > li, .home > section:not(.hero) .wrap > div > .card').forEach(el => {
+      if (el.hasAttribute('data-reveal')) return;
+      const sib = el.parentElement ? [...el.parentElement.children].indexOf(el) : 0;
+      el.setAttribute('data-reveal', ''); el.style.setProperty('--i', Math.min(sib, 6));
+      if (el.getBoundingClientRect().top < innerHeight * .9) requestAnimationFrame(() => el.classList.add('is-in')); else io.observe(el);
+    });
+  }
+  // Číslo naběhne od nuly ke skutečné hodnotě z dat, až je karta vidět
+  function countUp(el, v) {
+    if (!MOTION || !v) { el.textContent = nf(v); return; }
+    el.textContent = nf(0);
+    const go = () => { const t0 = performance.now(), d = 1200; const step = (t) => { const k = Math.min(1, (t - t0) / d), e = 1 - Math.pow(1 - k, 3); el.textContent = nf(Math.round(v * e)); if (k < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); };
+    const o = new IntersectionObserver((es) => { if (es.some(e => e.isIntersecting)) { o.disconnect(); go(); } }, { threshold: .4 });
+    o.observe(el);
+  }
+
   function init() {
+    if (MOTION) document.documentElement.classList.add('kp-anim');
     renderTierPrices();
     renderDest();
     renderPhotos(FEATURED);
     bindTowns();
+    reveal();
+    // Karty doplněné až po načtení dat (kraje, doporučená místa) se odhalí taky
+    if (MOTION && window.MutationObserver) { let rt; new MutationObserver(() => { clearTimeout(rt); rt = setTimeout(() => reveal(), 50); }).observe(document.getElementById('main'), { childList: true, subtree: true }); }
     document.addEventListener('kp:saved', syncSaves);
     K.loadStats().then(render).catch(() => {
       document.querySelectorAll('[data-stat]').forEach(el => { el.textContent = '–'; });

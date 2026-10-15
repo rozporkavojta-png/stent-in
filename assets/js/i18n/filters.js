@@ -95,4 +95,9 @@ KP.i18n.add({
   "Posunout doleva": ["Nach links blättern", "Scroll left"],
   "Posunout doprava": ["Nach rechts blättern", "Scroll right"],
   "Řadit výsledky": ["Ergebnisse sortieren", "Sort results"],
+  "Vymazat": ["Löschen", "Clear"],
+  "Hledat ve filtrech": ["In Filtern suchen", "Search filters"],
+  "Hledat filtr, třeba výtah": ["Filter suchen, z. B. Aufzug", "Find a filter, e.g. lift"],
+  "Skupiny filtrů": ["Filtergruppen", "Filter groups"],
+  "Žádný filtr neodpovídá hledání.": ["Kein Filter passt zur Suche.", "No filter matches your search."],
 });
