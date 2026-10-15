@@ -544,15 +544,18 @@ table.data td.num { text-align: right; }
 .more-menu .more-lang > span { flex: 1; }
 .more-menu .more-lang svg { width: 20px; height: 20px; color: var(--brand-500); }
 /* Hlavička na menších monitorech: jazyk se přesune do menu Více, aby se vešla i němčina */
-@media (min-width: 900px) and (max-width: 1279px) {
-  .header-tools .lang-switch { display: none; }
-  .more-menu .more-lang { display: flex; }
+/* Přepínač jazyka je v hlavičce vždy vidět; kde je málo místa (mobil, menší monitory), je zmenšený */
+.hdr-lang { display: inline-flex; flex: none; }
+@media (max-width: 1279px) {
   .header-tools .needs-btn .lbl { display: none; }
+  .hdr-lang .lang-switch { padding: 2px; gap: 0; }
+  .hdr-lang .lang-switch a { min-width: 32px; min-height: 32px; padding: 0 5px; font-size: .72rem; letter-spacing: .02em; }
 }
 @media (min-width: 1280px) and (max-width: 1439px) {
-  html[lang="de"] .header-tools .lang-switch { display: none; }
-  html[lang="de"] .more-menu .more-lang { display: flex; }
+  html[lang="de"] .hdr-lang .lang-switch a { min-width: 34px; padding: 0 5px; }
 }
+@media (max-width: 899px) { .hdr-lang { margin-right: 2px; } }
+@media (max-width: 379px) { .site-header .brand-logo { height: 24px; } .site-header .inner { gap: 6px; } .header-tools { gap: 0; } .hdr-lang .lang-switch a { min-width: 29px; padding: 0 3px; } }
 @media (min-width: 900px) and (max-width: 1179px) {
   .main-nav > a, .nav-drop > button { padding-inline: 9px; font-size: .92rem; }
   .site-header .inner { gap: 10px; }

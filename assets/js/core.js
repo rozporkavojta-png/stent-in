@@ -888,7 +888,7 @@
       '<div class="more-menu nav-menu" id="nav-more" hidden>' + optInMore + MORE.map(([href, label, ic]) => '<a href="' + href + '"' + cur(href) + '>' + icon(ic) + label + '</a>').join('') +
       (KPI.i18n ? '<div class="more-lang">' + icon('globe') + '<span>' + t('Jazyk') + '</span>' + langSwitch() + '</div>' : '') + '</div></div></nav>' +
       '<div class="header-tools">' +
-      '<span class="hide-md">' + langSwitch() + '</span>' +
+      '<span class="hdr-lang">' + langSwitch() + '</span>' +
       '<span class="hide-md">' + tierPill() + '</span>' +
       ('<button class="icon-btn needs-btn hide-md" type="button" data-open-needs aria-label="' + t('Moje potřeby') + '" title="' + t('Moje potřeby') + '">') + icon('sliders') + '<span class="dot" data-needs-flag hidden></span></button>' +
       ('<a class="icon-btn hide-md" href="profil.html#ulozena" aria-label="' + t('Uložená místa') + '" title="' + t('Uložená místa') + '">') + icon('heart') + '<span class="count" data-saved-count hidden></span></a>' +
