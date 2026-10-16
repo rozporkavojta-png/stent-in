@@ -1,7 +1,8 @@
 /* Mapový modul: jedno rozhraní nad Google Maps (s klíčem) nebo Leaflet + OpenStreetMap (bez klíče).
    KPMap.create(el, opts) → Promise<adapter>
    adapter.setPlaces(list, { colorOf, onClick, iconOf? → olivová kapka s ikonou kategorie }) · fitTo(list) · setView(lat, lng, zoom) · focus(place)
-   adapter.onMove(fn(bounds)) · adapter.bounds() → {s,w,n,e} · adapter.addLayer(features) · adapter.engine */
+   adapter.onMove(fn(bounds)) · adapter.bounds() → {s,w,n,e} · adapter.addLayer(features) · adapter.engine
+   adapter.overlay() → { set([{ id, kind: 'line'|'point', coords, color, weight, dash, casing, svg, size, title, popup }]), clear() } */
 (function () {
   'use strict';
   const cfg = window.KP_CONFIG || {};
@@ -82,6 +83,31 @@
           : new google.maps.Marker({ map, position: { lat: f.coords[0], lng: f.coords[1] }, title: f.title, icon: { path: google.maps.SymbolPath.CIRCLE, scale: 7, fillColor: f.color, fillOpacity: 1, strokeColor: '#fff', strokeWeight: 2 } }));
       },
       clearLayer(objs) { (objs || []).forEach(o => o.setMap(null)); },
+      // Překryvná vrstva (bariéry z OpenStreetMap) se stejným rozhraním jako u Leafletu: set(list), clear()
+      overlay() {
+        const objs = new Map(), info = new google.maps.InfoWindow();
+        const pop = (o, f, pos) => o.addListener('click', (e) => { if (!f.popup) return; info.setContent(typeof f.popup === 'function' ? f.popup() : f.popup); info.setPosition(pos || e.latLng); info.open({ map }); });
+        const make = (f) => {
+          if (f.kind === 'line') {
+            const path = f.coords.map(c => ({ lat: c[0], lng: c[1] }));
+            const dashed = !!f.dash;
+            const ln = new google.maps.Polyline({ map, path, strokeColor: f.color, strokeOpacity: dashed ? 0 : 1, strokeWeight: f.weight,
+              icons: dashed ? [{ icon: { path: 'M 0,-1 0,1', strokeOpacity: 1, strokeColor: f.color, strokeWeight: f.weight, scale: 2 }, offset: '0', repeat: '10px' }] : null });
+            pop(ln, f); return [ln];
+          }
+          const m = new google.maps.Marker({ map, position: { lat: f.coords[0], lng: f.coords[1] }, title: f.title, zIndex: f.z || 0,
+            icon: { url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(f.svg), scaledSize: new google.maps.Size(f.size, f.size), anchor: new google.maps.Point(f.size / 2, f.size / 2) } });
+          pop(m, f, m.getPosition()); return [m];
+        };
+        return {
+          set(list) {
+            const next = new Map(list.map(f => [f.id, f]));
+            objs.forEach((os, id) => { if (!next.has(id)) { os.forEach(o => o.setMap(null)); objs.delete(id); } });
+            next.forEach((f, id) => { if (!objs.has(id)) objs.set(id, make(f)); });
+          },
+          clear() { objs.forEach(os => os.forEach(o => o.setMap(null))); objs.clear(); info.close(); },
+        };
+      },
       locate() { return new Promise((res, rej) => navigator.geolocation ? navigator.geolocation.getCurrentPosition(p => { api.setView(p.coords.latitude, p.coords.longitude, 15); res(p.coords); }, rej) : rej()); },
     };
     return api;
@@ -160,6 +186,34 @@
       },
       clearLayer(objs) { (objs || []).forEach(o => map.removeLayer(o)); },
       locate() { return new Promise((res, rej) => navigator.geolocation ? navigator.geolocation.getCurrentPosition(p => { api.setView(p.coords.latitude, p.coords.longitude, 15); res(p.coords); }, rej) : rej()); },
+      // Překryvná vrstva s rozdílovým překreslením (bariéry z OpenStreetMap): body pod značkami míst, čáry na plátně
+      overlay() {
+        if (!map.getPane('kpOsm')) { map.createPane('kpOsm').style.zIndex = 590; }
+        const rend = L.canvas({ padding: 0.3, tolerance: 8 });
+        const grp = L.layerGroup().addTo(map), objs = new Map(), icons = {};
+        const ic = (svg, sz) => icons[svg + sz] || (icons[svg + sz] = L.icon({ iconUrl: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg), iconSize: [sz, sz], iconAnchor: [sz / 2, sz / 2], popupAnchor: [0, -sz / 2] }));
+        const make = (f) => {
+          if (f.kind === 'line') {
+            const parts = [];
+            if (f.casing) parts.push(L.polyline(f.coords, { renderer: rend, color: '#fff', weight: f.weight + 4, opacity: 0.95, interactive: false }));
+            parts.push(L.polyline(f.coords, { renderer: rend, color: f.color, weight: f.weight, dashArray: f.dash || null, lineCap: 'butt', opacity: 1 }));
+            const g = L.featureGroup(parts);
+            if (f.popup) g.bindPopup(f.popup, { maxWidth: 280, className: 'osm-popup', autoPanPaddingTopLeft: [12, 64] });
+            return g;
+          }
+          const m = L.marker(f.coords, { icon: ic(f.svg, f.size), title: f.title, alt: f.title, keyboard: false, pane: 'kpOsm', zIndexOffset: f.z || 0 });
+          if (f.popup) m.bindPopup(f.popup, { maxWidth: 280, className: 'osm-popup', autoPanPaddingTopLeft: [12, 64] });
+          return m;
+        };
+        return {
+          set(list) {
+            const next = new Map(list.map(f => [f.id, f]));
+            objs.forEach((o, id) => { if (!next.has(id)) { grp.removeLayer(o); objs.delete(id); } });
+            next.forEach((f, id) => { if (!objs.has(id)) { const o = make(f); objs.set(id, o); grp.addLayer(o); } });
+          },
+          clear() { grp.clearLayers(); objs.clear(); },
+        };
+      },
     };
     return api;
   }

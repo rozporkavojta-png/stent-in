@@ -849,6 +849,7 @@
   const MORE = [
     ['komunita.html', t('Komunita'), 'users'],
     ['stezky.html', t('Stezky a trasy'), 'tree'],
+    ['doprava.html', t('Doprava bez bariér'), 'bus'],
     ['kraj.html', t('Kraje'), 'globe'],
     ['metodika.html', t('Jak měříme'), 'ruler'],
     ['zdroje.html', t('Zdroje'), 'chart'],
@@ -888,7 +889,7 @@
       '<div class="more-menu nav-menu" id="nav-more" hidden>' + optInMore + MORE.map(([href, label, ic]) => '<a href="' + href + '"' + cur(href) + '>' + icon(ic) + label + '</a>').join('') +
       (KPI.i18n ? '<div class="more-lang">' + icon('globe') + '<span>' + t('Jazyk') + '</span>' + langSwitch() + '</div>' : '') + '</div></div></nav>' +
       '<div class="header-tools">' +
-      '<span class="hdr-lang">' + langSwitch() + '</span>' +
+      '<span class="hdr-lang">' + icon('globe') + langSwitch() + '</span>' +
       '<span class="hide-md">' + tierPill() + '</span>' +
       ('<button class="icon-btn needs-btn hide-md" type="button" data-open-needs aria-label="' + t('Moje potřeby') + '" title="' + t('Moje potřeby') + '">') + icon('sliders') + '<span class="dot" data-needs-flag hidden></span></button>' +
       ('<a class="icon-btn hide-md" href="profil.html#ulozena" aria-label="' + t('Uložená místa') + '" title="' + t('Uložená místa') + '">') + icon('heart') + '<span class="count" data-saved-count hidden></span></a>' +
@@ -922,7 +923,7 @@
     wrap.innerHTML = '<div class="sheet-backdrop" data-close></div><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="more-title"><div class="grip"></div>' +
       ('<header><h2 id="more-title">' + t('Menu') + '</h2><button class="icon-btn" type="button" data-close aria-label="' + t('Zavřít') + '">') + icon('close') + '</button></header>' +
       '<div class="body"><div class="menu-list">' +
-      group(t('Objevuj'), [['mapa.html', t('Mapa'), 'map'], ['ubytovani.html', t('Ubytování'), 'bed'], ['pruvodci.html', t('Průvodci'), 'book'], ['akce.html', t('Akce'), 'calendar'], ['stezky.html', t('Stezky a trasy'), 'tree'], ['kraj.html', t('Kraje'), 'globe']]) +
+      group(t('Objevuj'), [['mapa.html', t('Mapa'), 'map'], ['ubytovani.html', t('Ubytování'), 'bed'], ['pruvodci.html', t('Průvodci'), 'book'], ['akce.html', t('Akce'), 'calendar'], ['stezky.html', t('Stezky a trasy'), 'tree'], ['doprava.html', t('Doprava bez bariér'), 'bus'], ['kraj.html', t('Kraje'), 'globe']]) +
       group(t('Plánuj'), PLAN.map(x => [x[0], x[1], x[2]])) +
       group(t('Další'), [['pro-firmy.html', t('Pro podniky'), 'building'], ['komunita.html', t('Komunita'), 'users'], ['pridat.html', t('Přidat místo'), 'plus'], ['clenstvi.html', t('Členství'), 'star'], ['metodika.html', t('Jak měříme'), 'ruler'], ['zdroje.html', t('Zdroje'), 'chart'], ['o-projektu.html', t('O projektu'), 'info']]) +
       '<p class="menu-group">' + t('Nastavení') + '</p>' +
@@ -956,7 +957,7 @@
       '<p class="small muted" style="margin:10px 0 0">' + t('Přístupnost v centimetrech, ne v nálepkách. Mapa a plánování cest bez bariér po Česku a Bavorsku.') + '</p></div>' +
       '<div class="footer-tools">' + langSwitch() + '<button class="btn btn-ghost btn-sm" type="button" data-theme-toggle>' + icon('moon') + t('Světlý / tmavý režim') + '</button></div></div>' +
       '<div class="cols">' +
-      col(t('Objevuj'), [['mapa.html', t('Mapa míst')], ['ubytovani.html', t('Ubytování')], ['pruvodci.html', t('Průvodci')], ['stezky.html', t('Stezky a trasy')], ['trasy.html', t('Bariéry v ulicích')], ['mapa.html?wc=1', t('Veřejné WC')], ['kraj.html', t('Kraje')]]) +
+      col(t('Objevuj'), [['mapa.html', t('Mapa míst')], ['ubytovani.html', t('Ubytování')], ['pruvodci.html', t('Průvodci')], ['stezky.html', t('Stezky a trasy')], ['doprava.html', t('Doprava bez bariér')], ['trasy.html', t('Bariéry v ulicích')], ['mapa.html?wc=1', t('Veřejné WC')], ['kraj.html', t('Kraje')]]) +
       col(t('Plánuj'), [['planovac.html', t('Jednodenní výlet')], ['dovolena.html', t('Vícedenní dovolená')], ['itinerar.html', t('Moje itineráře')], ['akce.html', t('Akce')], ['komunita.html', t('Komunita')], ['profil.html#ulozena', t('Uložená místa')]]) +
       col(t('Pro podniky'), [['pro-firmy.html', t('Nabídka pro podniky')], ['podnik.html', t('Profil podniku')], ['pro-firmy.html#obce', t('Pro obce a kraje')], ['pridat.html', t('Přidat nebo upravit místo')], ['clenstvi.html', t('Členství')]]) +
       '<div><h4>' + t('O projektu') + '</h4><ul>' + [['o-projektu.html', t('O projektu a tým')], ['o-projektu.html#plan', t('Plán rozvoje')], ['metodika.html', t('Jak měříme')], ['zdroje.html', t('Zdroje a trh')], ['metodika.html#soukromi', t('Soukromí a GDPR')]].map(([href, label]) => '<li><a href="' + href + '">' + label + '</a></li>').join('') +

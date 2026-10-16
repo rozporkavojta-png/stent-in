@@ -324,6 +324,8 @@
     setTiles(K.store.get('map.tiles', 'soft'));
     setLegend(K.store.get('map.legend', mqDesk.matches) === true); // na mobilu je legenda jen na přání (Vrstvy mapy)
     const openPop = (on) => { pop.hidden = !on; btn.setAttribute('aria-expanded', on); if (on) { const b = pop.querySelector('[aria-pressed="true"]'); if (b) b.focus(); } };
+    // Tlačítko Zkusit znovu v nabídce (vrstvy z OpenStreetMap) mění obsah; klik uvnitř nabídky ji nezavře
+    pop.addEventListener('click', (e) => e.stopPropagation());
     btn.addEventListener('click', (e) => { e.stopPropagation(); openPop(pop.hidden); });
     pop.addEventListener('click', (e) => { const b = e.target.closest('[data-tiles]'); if (b) setTiles(b.dataset.tiles); });
     $('#legend-toggle').addEventListener('change', (e) => setLegend(e.target.checked, true));
@@ -414,6 +416,8 @@
       n.textContent = KP.t('Podklad: OpenStreetMap. U každého místa vede odkaz do Google Maps (navigace, Street View).');
       setTimeout(() => { n.hidden = true; }, 9000);
     }
+    // Vrstvy s prvky přístupnosti živě z OpenStreetMap (schody, obrubníky, rampy a výtahy, zastávky)
+    if (window.KPOsm) KPOsm.init(map, { pop: $('#layers'), legend: $('#legend-osm'), status: $('#osm-status'), note: $('#osm-note') });
     let mt;
     map.onMove(b => { bounds = b; view.shown = PAGE; render(); clearTimeout(mt); mt = setTimeout(ensureData, 250); });
     // Výchozí výřez: Česko a Bavorsko (nebo zvolená země / kraj / obec z odkazu)

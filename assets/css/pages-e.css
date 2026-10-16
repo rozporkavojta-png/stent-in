@@ -239,3 +239,7 @@ ol.grid, ul.grid { list-style: none; margin: 0; padding: 0; }
 .page-doc .doc > section { border-top: 0; padding-top: 0; }
 .page-doc .doc > section::before { color: var(--brand-500); }
 .page-doc .sources-list, .page-doc .doc .field-list { border-top-color: var(--line); }
+/* Pro podniky: hledání podniku rovnou na stránce (odešle na podnik.html?q=) */
+.pf-find { margin-top: 24px; max-width: 560px; min-height: 56px; padding: 0 6px 0 16px; }
+.pf-find input { min-height: 52px; }
+.pf-find .btn { min-height: 44px; padding-inline: 20px; }

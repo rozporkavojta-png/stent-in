@@ -563,6 +563,7 @@
     state.search = KC.placeSearch({ input: $('#pd-q'), list: $('#pd-pick'), hint: $('#pd-q-hint'), onPick: open, selected: () => state.p && state.p.i,
       emptyText: KP.t('Nic jsme nenašli. Zkuste jiný tvar názvu nebo přidejte obec. Když podnik v mapě není, přidejte ho přes formulář Přidat místo.') });
     const sp = new URLSearchParams(location.search), id = sp.get('id');
+    if (!id && sp.get('q')) { state.search.search(sp.get('q')); $('#najit').scrollIntoView({ block: 'start' }); }
     if (id) {
       $('#pd-q-hint').textContent = KP.t('Načítám podnik…');
       K.findPlace(id, sp.get('r')).then(p => {

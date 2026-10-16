@@ -154,12 +154,26 @@
         K.loadRegion(rid).then(arr => { st.regions[rid] = arr; run(); }).catch(() => { delete st.regions[rid]; });
       }
       const pool = [].concat(st.extra, ...Object.values(st.regions).filter(Array.isArray), st.wide && st.wide.q === q ? st.wide.hits : []);
-      const hits = [], seen = new Set(), sel = o.selected ? o.selected() : null;
+      const all = [], seen = new Set(), sel = o.selected ? o.selected() : null;
       for (const p of pool) {
         if (seen.has(p.i)) continue;
-        if (words.every(w => hay(p).includes(w))) { seen.add(p.i); hits.push(p); if (hits.length >= 25) break; }
+        if (words.every(w => hay(p).includes(w))) { seen.add(p.i); all.push(p); if (all.length >= 2000) break; }
       }
-      const wideBtn = !(st.wide && st.wide.q === q) ? '<li><button type="button" class="btn btn-quiet btn-sm ck-wide" data-wide>' + K.icon('search') + (KP.t('Hledat ve všech místech v Česku a v Bavorsku') + '</button></li>') : '';
+      // Řazení: shoda v názvu podniku před shodou jen v obci nebo adrese, začátek názvu před výskytem uprostřed,
+      // podnik přímo v hledané obci před okolními obcemi se stejným slovem v názvu (Třeboň před Chlum u Třeboně)
+      const town = rid ? (st.towns.find(t => t[1] === rid && (' ' + q + ' ').includes(' ' + norm(t[0]) + ' ')) || [])[0] : null;
+      const nameQ = town ? (' ' + q + ' ').replace(' ' + norm(town) + ' ', ' ').trim() : q;
+      const score = (p) => {
+        const n = norm(p.n), ob = norm(p.o);
+        let sc = 0;
+        if (nameQ && n === nameQ) sc += 100; else if (nameQ && n.startsWith(nameQ)) sc += 60; else if (nameQ && n.includes(nameQ)) sc += 40;
+        else sc += words.filter(w => n.includes(w)).length * 10;
+        if (town && ob === norm(town)) sc += 50; else if (!town && words.some(w => ob === w || ob.startsWith(w))) sc += 20;
+        return sc;
+      };
+      const sc = new Map(all.map(p => [p, score(p)]));
+      const hits = all.sort((a, b) => sc.get(b) - sc.get(a) || a.n.length - b.n.length).slice(0, 25);
+      const wideBtn = !(st.wide && st.wide.q === q) ? '<li><button type="button" class="btn ' + (hits.length ? 'btn-quiet' : 'btn-secondary') + ' btn-sm ck-wide" data-wide>' + K.icon('search') + (KP.t('Hledat ve všech místech v Česku a v Bavorsku') + '</button></li>') : '';
       o.list.innerHTML = (hits.length ? hits.map(p => '<li><button type="button" data-id="' + esc(p.i) + '" aria-pressed="' + (sel === p.i) + '">' +
         '<span class="pp-txt"><b>' + esc(p.n) + '</b><small>' + esc(p.s ? K.t(p.s) : (K.CATS[p.c] || {}).label || '') + ' · ' + esc([p.a, p.o, K.zemeOf(p) === 'de' ? K.t('Bavorsko') : ''].filter(Boolean).join(', ')) + '</small></span>' +
         '<span class="pp-mark">' + K.icon('check') + '</span></button></li>').join('')
@@ -180,7 +194,13 @@
     }
     let t;
     o.input.addEventListener('input', () => { clearTimeout(t); t = setTimeout(run, 150); });
-    o.input.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); clearTimeout(t); run(); } });
+    // Enter: když v dotazu není obec, prohledá rovnou všechna místa (jinak by hledání bez obce nic nenašlo)
+    o.input.addEventListener('keydown', e => {
+      if (e.key !== 'Enter') return;
+      e.preventDefault(); clearTimeout(t); run();
+      const q = norm(o.input.value.trim());
+      if (q.length >= 3 && !townRegion(q) && !(st.wide && st.wide.q === q)) everywhere();
+    });
     o.list.addEventListener('click', e => {
       if (e.target.closest('[data-wide]')) { everywhere(); return; }
       const b = e.target.closest('[data-id]'); if (!b) return;
@@ -191,10 +211,15 @@
     const ready = Promise.all([K.loadRegionsIndex(), K.loadTowns().catch(() => [])]).then(([idx, towns]) => {
       st.towns = towns;
       const total = idx.reduce((a, r) => a + (r.pocet || 0), 0);
-      o.hint.textContent = K.t('Napište název a obec. Hledáme mezi {n} místy v Česku a v Bavorsku.', { n: K.nf(total) });
+      o.hint.textContent = K.t('Napište název podniku a obec, třeba Penzion Vyhlídka Třeboň. Bez obce stiskněte Enter a prohledáme všech {n} míst.', { n: K.nf(total) });
       if (o.input.value.trim()) run();
     }).catch(() => { o.hint.textContent = KP.t('Seznam míst se nenačetl. Zkuste stránku načíst znovu.'); });
-    return { run, ready, addPlaces(list) { st.extra = st.extra.concat(list || []); } };
+    // Hledání z odkazu (?q=): s obcí běžné hledání, bez obce rovnou ve všech místech
+    function search(q) {
+      o.input.value = q;
+      return ready.then(() => { run(); const nq = norm(q.trim()); if (nq.length >= 3 && !townRegion(nq)) everywhere(); });
+    }
+    return { run, ready, search, addPlaces(list) { st.extra = st.extra.concat(list || []); } };
   }
 
   window.KPCheck = { STEP_DEF, steps, progress, fieldHtml, read, valueText, photoSlotHtml, placeSearch, known, knownHtml, VAL_TXT };

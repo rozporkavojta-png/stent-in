@@ -297,4 +297,7 @@ KP.i18n.add({
   "Sklon nejspíš zkreslený modelem, viz detail": ["Neigung vermutlich vom Höhenmodell verfälscht, siehe Detail", "Gradient probably distorted by the elevation model, see details"],
   "Obsah stránky trasy": ["Inhalt der Routenseite", "Route page contents"],
   "nejspíš chyba výškového modelu, viz profil": ["vermutlich Fehler des Höhenmodells, siehe Profil", "probably an elevation model error, see profile"],
+  "Stáhněte GPX a nahrajte ho do AllTrails na webu jako vlastní mapu (nahrání souboru). Trasa se vám pak ukáže i v aplikaci AllTrails. Údaje o sklonu, povrchu a schodech najdete jen tady.": ["Laden Sie die GPX-Datei herunter und laden Sie sie auf der AllTrails-Website als eigene Karte hoch (Datei hochladen). Dann sehen Sie die Route auch in der AllTrails-App. Angaben zu Steigung, Belag und Stufen finden Sie nur hier.", "Download the GPX and upload it on the AllTrails website as your own map (upload a file). The route then also shows in the AllTrails app. Gradient, surface and steps data are only here."],
+  "GPX pro AllTrails": ["GPX für AllTrails", "GPX for AllTrails"],
+  "Okolí trasy v AllTrails": ["Umgebung in AllTrails", "Area on AllTrails"],
 });

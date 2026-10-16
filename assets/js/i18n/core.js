@@ -532,4 +532,5 @@ KP.i18n.add({
   "bez bariér": ["ohne Barrieren", "without barriers"],
   "Kam": ["Wohin", "Where to"],
   "natrvalo": ["dauerhaft", "for good"],
+  "Doprava bez bariér": ["Barrierefrei unterwegs", "Step-free transport"],
 });

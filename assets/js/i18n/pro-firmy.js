@@ -309,4 +309,7 @@ KP.i18n.add({
   "Co licence obsahuje": ["Was die Lizenz enthält", "What the licence includes"],
   "Cestovatelé si mohou připlatit Explorer nebo Traveller za plánování a pohodlí. Údaje o vašem podniku vidí všichni stejně, i ve Free.": ["Reisende können <a href=\"clenstvi.html\">Explorer oder Traveller</a> für Planung und Komfort dazubuchen. Die Angaben zu Ihrem Betrieb sehen alle gleich, auch in Free.", "Travellers can pay for <a href=\"clenstvi.html\">Explorer or Traveller</a> for planning and convenience. Everyone sees your business data the same way, even on Free."],
   "měsíčně, návrh ceny": ["pro Monat, Preisvorschlag", "per month, proposed price"],
+  "Název podniku a obec": ["Name des Betriebs und Gemeinde", "Business name and town"],
+  "např. Penzion Vyhlídka Třeboň": ["z. B. Penzion Vyhlídka Třeboň", "e.g. Penzion Vyhlídka Třeboň"],
+  "Najít": ["Finden", "Find"],
 });

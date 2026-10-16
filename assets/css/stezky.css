@@ -409,3 +409,10 @@ html.st-lock { overflow: hidden; }
 .page-stezky .btn, .page-itinerar .btn { white-space: normal; text-align: center; }
 .page-stezky .btn-sm, .page-itinerar .btn-sm { min-height: 44px; }
 .page-stezky input[type="file"], .page-itinerar input[type="file"] { min-height: 44px; padding: 8px 0; font: inherit; max-width: 100%; }
+/* Propojení s AllTrails v hlavičce detailu trasy */
+.st-alltrails { margin-top: 16px; padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--r-card, 16px); background: var(--brand-100); max-width: 640px; }
+.st-alltrails .st-at-h { display: flex; align-items: center; gap: 8px; margin: 0 0 4px; color: var(--heading); }
+.st-alltrails .st-at-h svg { width: 20px; height: 20px; }
+.st-alltrails .small { margin: 0 0 10px; color: var(--ink-2); }
+.st-alltrails .row { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.st-alltrails .btn svg { width: 18px; height: 18px; }

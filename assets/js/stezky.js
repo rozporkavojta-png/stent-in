@@ -810,6 +810,20 @@
     return runs.length > 6 ? '<details class="st-det"><summary>' + K.t('Seznam úseků nad 6 % ({n})', { n: runs.length }) + '</summary>' + body + '</details>' : ('<h4 class="st-h4">' + KP.t('Úseky nad 6 %') + '</h4>') + body;
   }
 
+  // Propojení s AllTrails: AllTrails nemá veřejné API, proto odkaz na stejné okolí v AllTrails (výřez podle geometrie trasy)
+  // a návod, jak do AllTrails nahrát naše GPX. Údaje o přístupnosti zůstávají u nás, AllTrails je nemá.
+  function allTrails(t) {
+    const pts = [].concat(...(t.geometrie || []));
+    if (!pts.length) return '';
+    let n = -90, s = 90, e = -180, w = 180;
+    pts.forEach(c => { n = Math.max(n, c[0]); s = Math.min(s, c[0]); e = Math.max(e, c[1]); w = Math.min(w, c[1]); });
+    const pad = 0.01, f = (v) => v.toFixed(5);
+    const url = 'https://www.alltrails.com/explore?b_tl_lat=' + f(n + pad) + '&b_tl_lng=' + f(w - pad) + '&b_br_lat=' + f(s - pad) + '&b_br_lng=' + f(e + pad);
+    return '<div class="st-alltrails"><p class="st-at-h">' + K.icon('mountain') + '<b>AllTrails</b></p>' +
+      '<p class="small">' + esc(KP.t('Stáhněte GPX a nahrajte ho do AllTrails na webu jako vlastní mapu (nahrání souboru). Trasa se vám pak ukáže i v aplikaci AllTrails. Údaje o sklonu, povrchu a schodech najdete jen tady.')) + '</p>' +
+      '<p class="row"><button class="btn btn-secondary btn-sm" type="button" data-gpx>' + K.icon('download') + esc(KP.t('GPX pro AllTrails')) + '</button>' +
+      '<a class="btn btn-ghost btn-sm" href="' + url + '" target="_blank" rel="noopener">' + esc(KP.t('Okolí trasy v AllTrails')) + '</a></p></div>';
+  }
   function gpx(t) {
     const x = (s) => esc(s);
     return '<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Wherethru" xmlns="http://www.topografix.com/GPX/1/1">\n<metadata><name>' + x(name(t)) + ('</name><desc>' + KP.t('Geometrie z OpenStreetMap (ODbL 1.0, © přispěvatelé OpenStreetMap)') + '</desc><link href="https://www.openstreetmap.org/copyright"><text>' + KP.t('© přispěvatelé OpenStreetMap') + '</text></link></metadata>\n<trk><name>') + x(name(t)) + '</name>\n' +
@@ -843,7 +857,7 @@
       '<button class="btn btn-ghost" type="button" data-share>' + K.icon('share') + (KP.t('Sdílet') + '</button>') +
       '<a class="btn btn-ghost" href="itinerar.html?trasa=' + encodeURIComponent(t.id) + '">' + K.icon('plus') + (KP.t('Přidat do itineráře') + '</a>') +
       ('<button class="btn btn-quiet" type="button" data-gpx>' + KP.t('Stáhnout GPX') + '</button>') +
-      '</div></header>' +
+      '</div>' + allTrails(t) + '</header>' +
       ('<nav class="st-toc" aria-label="' + KP.t('Obsah stránky trasy') + '">') +
       [['h-map', KP.t('Mapa trasy')], ['h-prof', KP.t('Výškový profil')], ['h-surf', KP.t('Povrch')], ['h-start', KP.t('Zázemí')], ['h-comm', KP.t('Zkušenosti')], ['h-src', KP.t('Zdroje')]]
         .map(x => '<a class="chip" href="#' + x[0] + '">' + esc(x[1]) + '</a>').join('') + '</nav>' +

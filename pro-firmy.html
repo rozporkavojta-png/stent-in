@@ -16,10 +16,10 @@
 <script>/* Starší odkazy pro-firmy.html?id=… vedou na profil podniku */ (function () { var q = location.search; if (/[?&]id=/.test(q)) location.replace('podnik.html' + q + (location.hash === '#profil' ? '#checklist' : location.hash)); })();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=21">
-<link rel="stylesheet" href="assets/css/pages-a.css?v=17">
+<link rel="stylesheet" href="assets/css/style.css?v=22">
+<link rel="stylesheet" href="assets/css/pages-a.css?v=18">
 <link rel="stylesheet" href="assets/css/podnik.css?v=7">
-<link rel="stylesheet" href="assets/css/pages-e.css?v=1">
+<link rel="stylesheet" href="assets/css/pages-e.css?v=2">
 </head>
 <body class="page-pro-firmy">
 <div id="site-header"></div>
@@ -236,7 +236,13 @@
       <div class="split-h">
         <p class="kicker" data-i18n>Převzetí profilu</p>
         <h2 id="prevzit-h" class="h-serif" data-i18n>Najděte svůj podnik a převezměte ho</h2>
-        <div class="row pf-claim-row"><a class="btn btn-primary btn-lg" href="podnik.html" data-i18n>Profil podniku</a><a class="btn btn-ghost btn-lg" href="pridat.html?nove=1" data-i18n>Podnik v mapě není</a></div>
+        <form class="search-bar pf-find" action="podnik.html" method="get" role="search">
+          <span class="sb-ic" data-icon="search"></span>
+          <label class="sr-only" for="pf-q" data-i18n>Název podniku a obec</label>
+          <input id="pf-q" name="q" type="search" autocomplete="off" required placeholder="např. Penzion Vyhlídka Třeboň" data-i18n-attr="placeholder">
+          <button class="btn btn-primary" type="submit" data-i18n>Najít</button>
+        </form>
+        <div class="row pf-claim-row"><a class="btn btn-ghost btn-lg" href="podnik.html" data-i18n>Profil podniku</a><a class="btn btn-quiet btn-lg" href="pridat.html?nove=1" data-i18n>Podnik v mapě není</a></div>
       </div>
       <div class="split-b">
         <ol class="steps pf-steps">
@@ -280,11 +286,11 @@
 </main>
 <div id="site-footer"></div>
 <script src="assets/js/i18n.js?v=3"></script>
-<script src="assets/js/i18n/core.js?v=6"></script>
-<script src="assets/js/i18n/pro-firmy.js?v=6"></script>
+<script src="assets/js/i18n/core.js?v=7"></script>
+<script src="assets/js/i18n/pro-firmy.js?v=7"></script>
 <script src="assets/js/config.js?v=12"></script>
 <script src="assets/icons/icons.js?v=1"></script>
-<script src="assets/js/core.js?v=19"></script>
+<script src="assets/js/core.js?v=20"></script>
 <script src="assets/js/pro-firmy.js?v=3"></script>
 </body>
 </html>

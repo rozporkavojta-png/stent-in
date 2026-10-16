@@ -15,9 +15,9 @@
 <meta name="description" content="Mapa skutečných míst v Česku a v Bavorsku s údaji o přístupnosti pro lidi na vozíku: vstup, toaleta, parkování ZTP. Filtrujte podle svých potřeb.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=21">
+<link rel="stylesheet" href="assets/css/style.css?v=22">
 <link rel="stylesheet" href="assets/css/filters.css?v=7">
-<link rel="stylesheet" href="assets/css/mapa.css?v=16">
+<link rel="stylesheet" href="assets/css/mapa.css?v=17">
 </head>
 <body class="page-map">
 <div id="site-header"></div>
@@ -97,15 +97,27 @@
           <button type="button" data-tiles="color" aria-pressed="false" data-i18n>Barevný</button>
         </div>
         <label class="check"><input type="checkbox" id="legend-toggle" checked> <span data-i18n>Legenda značek</span></label>
+        <!-- Prvky přístupnosti živě z OpenStreetMap (assets/js/map-osm.js), jen od přiblížení 16 -->
+        <fieldset class="osm-layers" id="osm-layers">
+          <legend class="kicker" data-i18n>Bariéry z OpenStreetMap</legend>
+          <label class="check osm-check"><input type="checkbox" data-osm="steps"><span class="osm-sws" data-osm-sw="steps"></span><span class="osm-l" data-i18n>Schody</span><span class="osm-n" data-osm-n="steps"></span></label>
+          <label class="check osm-check"><input type="checkbox" data-osm="kerb"><span class="osm-sws" data-osm-sw="kerb"></span><span class="osm-l" data-i18n>Obrubníky</span><span class="osm-n" data-osm-n="kerb"></span></label>
+          <label class="check osm-check"><input type="checkbox" data-osm="ramp"><span class="osm-sws" data-osm-sw="ramp"></span><span class="osm-l" data-i18n>Rampy a výtahy</span><span class="osm-n" data-osm-n="ramp"></span></label>
+          <label class="check osm-check"><input type="checkbox" data-osm="stop"><span class="osm-sws" data-osm-sw="stop"></span><span class="osm-l" data-i18n>Bezbariérové zastávky</span><span class="osm-n" data-osm-n="stop"></span></label>
+          <p class="osm-status" id="osm-status" aria-live="polite" hidden></p>
+          <p class="osm-src"><span data-i18n>Zdroj</span>: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" data-i18n>přispěvatelé OpenStreetMap</a>, <span data-i18n>živě z OpenStreetMap</span></p>
+        </fieldset>
       </div>
       <div class="legend" id="legend">
         <button type="button" class="legend-btn" id="legend-btn" aria-expanded="true" aria-controls="legend-body"><span data-i18n>Legenda značek</span><span data-icon="chevron"></span></button>
         <div class="legend-body" id="legend-body">
           <span class="legend-t" data-i18n>Odznak na značce = vstup</span>
           <span class="status ok" data-i18n><i></i>Přístupné</span><span class="status part" data-i18n><i></i>Částečně</span><span class="status no" data-i18n><i></i>Nepřístupné</span><span class="status unk" data-i18n><i></i>Neuvedeno</span>
+          <div class="legend-osm" id="legend-osm" hidden></div>
         </div>
       </div>
       <p class="map-engine-note" id="engine-note" hidden></p>
+      <p class="osm-note" id="osm-note" role="status" hidden></p>
     </section>
 
     <!-- Mobil: přepínač Mapa / Seznam dole uprostřed -->
@@ -117,15 +129,16 @@
 </main>
 
 <script src="assets/js/i18n.js?v=3"></script>
-<script src="assets/js/i18n/core.js?v=6"></script>
+<script src="assets/js/i18n/core.js?v=7"></script>
 <script src="assets/js/i18n/xrows.js?v=1"></script>
 <script src="assets/js/i18n/filters.js?v=5"></script>
-<script src="assets/js/i18n/mapa.js?v=5"></script>
+<script src="assets/js/i18n/mapa.js?v=6"></script>
 <script src="assets/js/config.js?v=12"></script>
 <script src="assets/icons/icons.js?v=1"></script>
-<script src="assets/js/core.js?v=19"></script>
+<script src="assets/js/core.js?v=20"></script>
 <script src="assets/js/filters.js?v=8"></script>
-<script src="assets/js/map-engine.js?v=18"></script>
-<script src="assets/js/mapa.js?v=18"></script>
+<script src="assets/js/map-engine.js?v=19"></script>
+<script src="assets/js/map-osm.js?v=1"></script>
+<script src="assets/js/mapa.js?v=19"></script>
 </body>
 </html>

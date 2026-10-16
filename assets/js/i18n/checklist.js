@@ -30,4 +30,5 @@ KP.i18n.add({
   "Hledání se nepovedlo. Zkuste to znovu.": ["Die Suche hat nicht geklappt. Versuchen Sie es erneut.", "The search failed. Try again."],
   "Napište název a obec. Hledáme mezi {n} místy v Česku a v Bavorsku.": ["Geben Sie Name und Gemeinde ein. Wir suchen unter {n} Orten in Tschechien und Bayern.", "Type the name and town. We search {n} places in Czechia and Bavaria."],
   "Seznam míst se nenačetl. Zkuste stránku načíst znovu.": ["Die Ortsliste wurde nicht geladen. Laden Sie die Seite neu.", "The list of places did not load. Try reloading the page."],
+  "Napište název podniku a obec, třeba Penzion Vyhlídka Třeboň. Bez obce stiskněte Enter a prohledáme všech {n} míst.": ["Geben Sie Betrieb und Gemeinde ein, z. B. Penzion Vyhlídka Třeboň. Ohne Gemeinde drücken Sie Enter, dann durchsuchen wir alle {n} Orte.", "Type the business and town, e.g. Penzion Vyhlídka Třeboň. Without a town press Enter and we search all {n} places."],
 });
